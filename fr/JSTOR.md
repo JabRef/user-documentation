@@ -1,5 +1,4 @@
-Recherche JStor
-===============
+# Recherche JStor
 
 Pour utiliser cette fonction, choisissez **Recherche -&gt; Recherche Web**. L'interface de recherche apparaitra dans le panneau latéral. Sélectionnez **JSTOR** dans le menu déroulant. La recherche JStor s'effectue grâce au projet d'extraction de données de BibSonomy (http://scraper.bibsonomy.org/) pour extraire des informations des page web de JStor.
 

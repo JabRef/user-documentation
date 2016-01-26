@@ -1,5 +1,4 @@
-Menyimpan otomatis
-==================
+# Menyimpan otomatis
 
 Fitur otomatis sangat membantu anda agar tidak kehilangan data jika tiba-tiba komputer mati. Ketika menyimpan otomatis diaktifkan, JabRef akan menyimpan secara teratur (interval waktu penyimpanan dapat diatur) dengan terlebih dahulu melihat apakah basisdata ada perubahan sejak penyimpanan terakhir. Jika ditemukan adanya perubahan, JabRef akan menyimpan salinan basisdata dengan nama `.$[berkas]$`, dimana `[berkas]` adalah nama berkas basisdata yang diperiksa. Berkas hasil penyimpanan otomatis berada pada lokasi yang sama dengan berkas bib.
 

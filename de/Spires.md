@@ -1,5 +1,4 @@
-SPIRES-Suche
-============
+# SPIRES-Suche
 
 Die SPIRES Suchfunktion leitet lediglich ihre Suchanfrage an die SPIRES-Websuche weiter, so dass sie ihre Suchanfrage in der gleichen Weise eingeben sollten, wie bei der Websuche, nur können sie den Befehl *find* oder *fin* weglassen. Diese Hilfeseite gibt nur eine kurze Einführung, wie Suchanfragen formuliert werden können. Detailierte Informationen, wie sie SPIRES bedienen können, finden Sie auf der [Hilfewebseite zu SPIRES](http://www.slac.stanford.edu/spires/hep/help/index.shtml).
 

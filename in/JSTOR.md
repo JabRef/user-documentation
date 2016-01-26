@@ -1,5 +1,4 @@
-Pencarian JStor
-===============
+# Pencarian JStor
 
 Pencarian JStor tergantung dari proyek BibSonomy scraper (http://scraper.bibsonomy.org/) untuk mengambil informasi dari halaman web JStor.
 

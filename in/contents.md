@@ -1,8 +1,6 @@
-Daftar Isi Bantuan
-==================
+# Daftar Isi Bantuan
 
-Umum
-----
+## Umum
 
 -   [Tentang Jendela Bantuan](HelpHelp.html)
 -   [Informasi Umum](JabRefHelp.html)
@@ -10,8 +8,7 @@ Umum
 -   [Penyunting Entri](EntryEditorHelp.html)
 -   [Menyimpan otomatis](Autosave.html)
 
-Bidang dalam Entri
-------------------
+## Bidang dalam Entri
 
 -   [Informasi *Bibtex*](BibtexHelp.html)
 -   [External file links](FileLinks.html)
@@ -21,15 +18,13 @@ Bidang dalam Entri
 -   [Pengisian kata dalam bidang](ContentSelectorHelp.html)
 -   [Singkatan nama jurnal](JournalAbbreviations.html)
 
-Mencari dan mengurutkan entri
------------------------------
+## Mencari dan mengurutkan entri
 
 -   [Help on using *Groups*](GroupsHelp.html)
 -   [Menandai entri](MarkingHelp.html)
 -   [Pencarian di JabRef](SearchHelp.html)
 
-Pengaturan
-----------
+## Pengaturan
 
 -   [Penyunting string](StringEditorHelp.html)
 -   [Jendela properti basisdata](DatabaseProperties.html)
@@ -38,8 +33,7 @@ Pengaturan
 -   [Customizing entry types](CustomEntriesHelp.html)
 -   [Customizing general fields](GeneralFields.html)
 
-Impor/Ekspor
-------------
+## Impor/Ekspor
 
 -   [Penapis ekspor suaian](CustomExports.html)
 -   [Penapis impor suaian](CustomImports.html)
@@ -58,8 +52,7 @@ Impor/Ekspor
 -   [Command line options](CommandLine.html)
 -   [Remote operations](RemoteHelp.html)
 
-Lain-lain
----------
+## Lain-lain
 
 -   [Riwayat Perbaikan](RevisionHistory.html)
 -   [Tentang JabRef](About.html)

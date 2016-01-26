@@ -1,8 +1,6 @@
-ヘルプ目次
-==========
+# ヘルプ目次
 
-一般
-----
+## 一般
 
 -   [ヘルプウィンドウについて](HelpHelp.html)
 -   [一般的な情報](JabRefHelp.html)
@@ -10,8 +8,7 @@
 -   [項目エディタ](EntryEditorHelp.html)
 -   [自動保存](Autosave.html)
 
-フィールド
-----------
+## フィールド
 
 -   [*BibTeX*ヘルプ](BibtexHelp.html)
 -   [外部ファイルリンク](FileLinks.html)
@@ -23,15 +20,13 @@
 -   [特殊フィールド](SpecialFieldsHelp.html)
 -   [BibTeX文字列](StringsHelp.html)
 
-項目の検索と整序
-----------------
+## 項目の検索と整序
 
 -   [*グループ*を使うためのヘルプ](GroupsHelp.html)
 -   [項目の標識付け](MarkingHelp.html)
 -   [JabRefでの検索](SearchHelp.html)
 
-設定
-----
+## 設定
 
 -   [文字列エディタ](StringEditorHelp.html)
 -   [データベース特性ウィンドウ](DatabaseProperties.html)
@@ -40,8 +35,7 @@
 -   [項目型の調整](CustomEntriesHelp.html)
 -   [汎用フィールドの個人設定](GeneralFields.html)
 
-読み込み/書き出し
------------------
+## 読み込み/書き出し
 
 -   [ユーザー書出フィルタ](CustomExports.html)
 -   [ユーザー読込フィルタ](CustomImports.html)
@@ -64,8 +58,7 @@
 -   [コマンドラインオプション](CommandLine.html)
 -   [リモート操作](RemoteHelp.html)
 
-その他
-------
+## その他
 
 -   [更新履歴](RevisionHistory.html)
 -   [JabRefについて](About.html)
