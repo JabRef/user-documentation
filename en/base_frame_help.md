@@ -28,7 +28,7 @@ When a new entry is added, by default an [entry editor](EntryEditorHelp.md) for 
 Editing an entry
 ----------------
 
-To open an [entry editor](EntryEditorHelp.md) for an existing entry, simply double-click anywhere on the appropriate line will open the [entry editor](EntryEditorHelp.md) (or select the entry and press ENTER).
+To open an [entry editor](entry_editor_help.md) for an existing entry, simply double-click anywhere on the appropriate line will open the [entry editor](entry_editor_help.md) (or select the entry and press ENTER).
 
 Referencing a *bibtex* string in a field
 ----------------------------------------
@@ -37,4 +37,4 @@ In JabRef you write the contents of all fields the same way as you would in a te
   '\#jan\# 1997',
 which will be interpreted as the string named 'jan' followed by ' 1997'.
 
-See also: [string editor](StringEditorHelp.md).
+See also: [string editor](string_editor_help.md).
