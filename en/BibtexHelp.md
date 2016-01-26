@@ -39,7 +39,7 @@ Notes about some of the field types:
 -   **institution
     ** The sponsoring institution of a technical report.
 -   **journal
-    ** A journal name. The name of a journal can be abbreviated using a "string". To define such string, use the [string editor](StringEditorHelp.html).
+    ** A journal name. The name of a journal can be abbreviated using a "string". To define such string, use the [string editor](StringEditorHelp.md).
 -   **key
     ** Used for alphabetizing, cross referencing, and creating a label when the \`\`author'' information is missing. This field should not be confused with the key that appears in the `\cite` command and at the beginning of the database entry.
 -   **month

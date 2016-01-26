@@ -41,7 +41,7 @@ Hinweise zu einigen Feldtypen:
 -   **institution
     ** Die fördernde Institutions eines technischen Reports.
 -   **journal
-    ** Ein Zeitschriftenname. Mit Hilfe von "Strings" können Zeitschriftennamen abgekürzt werden. Zum Erstellen eines solchen Strings können Sie den [String-Editor](StringEditorHelp.html) benutzen oder die Funktionalität zur [Abkürzung von Zeitschriftentiteln](JournalAbbreviations.html) verwenden.
+    ** Ein Zeitschriftenname. Mit Hilfe von "Strings" können Zeitschriftennamen abgekürzt werden. Zum Erstellen eines solchen Strings können Sie den [String-Editor](StringEditorHelp.md) benutzen oder die Funktionalität zur [Abkürzung von Zeitschriftentiteln](JournalAbbreviations.md) verwenden.
 -   **key
     ** Dieses Feld wird zur Sortierung, zur Erstellung von Labels (falls kein `author` vorhanden ist) und für Querverweise (`crossref`) verwendet. Verwechseln Sie dieses Feld nicht mit dem `Bibtexkey`, der für die `\cite`-Kommandos gebraucht wird und am Anfang jedes Eintrags erscheint (im BibTeX-Quelltext).
 -   **month
@@ -73,7 +73,7 @@ Hinweise zu einigen Feldtypen:
 
 Bibliographie-Stile für BibTeX wurden von vielen Leuten entwickelt, und einige haben weitere Felder erstellt. Es folgt eine kleine Auswahl.
 
-Feldnamen, die mit einem Stern\* versehen sind, werden nicht direkt von JabRef unterstützt, können aber eingebunden werden (siehe [Eintragstypen anpassen](CustomEntriesHelp.html)).
+Feldnamen, die mit einem Stern\* versehen sind, werden nicht direkt von JabRef unterstützt, können aber eingebunden werden (siehe [Eintragstypen anpassen](CustomEntriesHelp.md)).
 
 -   **<span style="font-weight: normal; font-style: italic;"> affiliation\*</span>
     ** Die Zugehörigkeit eines Autors.

@@ -10,11 +10,11 @@ CiteSeer adalah sumber pustaka dijital saintifik serta mesin pencarian yang berf
 
 JabRef dapat memuaturun informasi acuan langsung dari basisdata CiteSeer. Untuk memulai proses muaturun, anda perlu menambahkan entri dalam basisdata anda dan menulis bidang citeseerurl dengan tautan halaman web CiteSeer. Bidang citeseerurl harus dalam bentuk salah satu format berikut:
 
-http://citeseer.ist.psu.edu/DDDDDD\[.html\], atau
+http://citeseer.ist.psu.edu/DDDDDD\[.md\], atau
 oai:CiteSeerPSU:DDDDDD, atau
 DDDDDD
 
-dimana DDDDD adalah angka urutan. Untuk memperoleh angka urutan (DDDDD) untuk entri CiteSeer, anda perlu ke halaman dokumen dengan format http://citeseer.ist.psu.edu/*namaTahunJudul*.html kemudian klik tombol tautan (Perbarui) utuk acuan. Nama URL untuk tautan Perbarui berisi angka ID untuk acuan ini.
+dimana DDDDD adalah angka urutan. Untuk memperoleh angka urutan (DDDDD) untuk entri CiteSeer, anda perlu ke halaman dokumen dengan format http://citeseer.ist.psu.edu/*namaTahunJudul*.md kemudian klik tombol tautan (Perbarui) utuk acuan. Nama URL untuk tautan Perbarui berisi angka ID untuk acuan ini.
 
 Setelah anda menambahkan bidang citeseerurl, anda bisa memuaturun bidang CiteSeer dengan memilih **BibTex -&gt; Impor Bidang dari CiteSeer**. Pastikan anda sudah memilih baris entri yang ingin diperbarui.
 
@@ -28,4 +28,4 @@ Apabila anda ingin menggunakan proxy server http, tuliskan nama server dan nomor
 
 `java -Dhttp.proxyHost="hostname"     -Dhttp.proxyPort="portnumber"`
 
-Pengaturan tersebut didokumentasikan di [Sun J2SE documentation](http://java.sun.com/j2se/1.4.2/docs/guide/net/properties.html).
+Pengaturan tersebut didokumentasikan di [Sun J2SE documentation](http://java.sun.com/j2se/1.4.2/docs/guide/net/properties.md).

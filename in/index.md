@@ -6,58 +6,58 @@ title: Daftar Isi Bantuan
 
 ## Umum
 
--   [Tentang Jendela Bantuan](HelpHelp.html)
--   [Informasi Umum](JabRefHelp.html)
--   [Jendela utama JabRef](BaseFrameHelp.html)
--   [Penyunting Entri](EntryEditorHelp.html)
--   [Menyimpan otomatis](Autosave.html)
+-   [Tentang Jendela Bantuan](HelpHelp.md)
+-   [Informasi Umum](JabRefHelp.md)
+-   [Jendela utama JabRef](BaseFrameHelp.md)
+-   [Penyunting Entri](EntryEditorHelp.md)
+-   [Menyimpan otomatis](Autosave.md)
 
 ## Bidang dalam Entri
 
--   [Informasi *Bibtex*](BibtexHelp.html)
--   [External file links](FileLinks.html)
--   [PDF/PS/URL/DOI links in JabRef](ExternalFiles.html)
--   [Cap waktu entri](TimeStampHelp.html)
--   [Bidang 'pemilik'](OwnerHelp.html)
--   [Pengisian kata dalam bidang](ContentSelectorHelp.html)
--   [Singkatan nama jurnal](JournalAbbreviations.html)
+-   [Informasi *Bibtex*](BibtexHelp.md)
+-   [External file links](FileLinks.md)
+-   [PDF/PS/URL/DOI links in JabRef](ExternalFiles.md)
+-   [Cap waktu entri](TimeStampHelp.md)
+-   [Bidang 'pemilik'](OwnerHelp.md)
+-   [Pengisian kata dalam bidang](ContentSelectorHelp.md)
+-   [Singkatan nama jurnal](JournalAbbreviations.md)
 
 ## Mencari dan mengurutkan entri
 
--   [Help on using *Groups*](GroupsHelp.html)
--   [Menandai entri](MarkingHelp.html)
--   [Pencarian di JabRef](SearchHelp.html)
+-   [Help on using *Groups*](GroupsHelp.md)
+-   [Menandai entri](MarkingHelp.md)
+-   [Pencarian di JabRef](SearchHelp.md)
 
 ## Pengaturan
 
--   [Penyunting string](StringEditorHelp.html)
--   [Jendela properti basisdata](DatabaseProperties.html)
--   [Pengaturan pratampilan entri](PreviewHelp.html)
--   [Customizing the BibTex key generator](LabelPatterns.html)
--   [Customizing entry types](CustomEntriesHelp.html)
--   [Customizing general fields](GeneralFields.html)
+-   [Penyunting string](StringEditorHelp.md)
+-   [Jendela properti basisdata](DatabaseProperties.md)
+-   [Pengaturan pratampilan entri](PreviewHelp.md)
+-   [Customizing the BibTex key generator](LabelPatterns.md)
+-   [Customizing entry types](CustomEntriesHelp.md)
+-   [Customizing general fields](GeneralFields.md)
 
 ## Impor/Ekspor
 
--   [Penapis ekspor suaian](CustomExports.html)
--   [Penapis impor suaian](CustomImports.html)
--   [Import inspection window](ImportInspectionDialog.html)
--   [The EndNote import/export filter set](EndNoteFilters.html)
--   [Using JabRef bibliographies in OpenOffice.org](OpenOfficeHelp.html)
--   [Mengambil entri dari Portal *ACM*](ACMPortalHelp.html)
--   [Mengambil entri dari *CiteSeer*](CiteSeerHelp.html)
--   [Mengambil entri dari *IEEExplore*](IEEEXploreHelp.html)
--   [Mengambil entri dari *Medline*](MedlineHelp.html)
--   [Pencarian *JStor*](JSTOR.html)
--   [Pencarian *ScienceDirect*](ScienceDirect.html)
--   [Pencarian *Spires*](Spires.html)
--   [Export to an External SQL Database](SQLExport.html)
--   [XMP metadata support in JabRef](XMPHelp.html)
--   [Command line options](CommandLine.html)
--   [Remote operations](RemoteHelp.html)
+-   [Penapis ekspor suaian](CustomExports.md)
+-   [Penapis impor suaian](CustomImports.md)
+-   [Import inspection window](ImportInspectionDialog.md)
+-   [The EndNote import/export filter set](EndNoteFilters.md)
+-   [Using JabRef bibliographies in OpenOffice.org](OpenOfficeHelp.md)
+-   [Mengambil entri dari Portal *ACM*](ACMPortalHelp.md)
+-   [Mengambil entri dari *CiteSeer*](CiteSeerHelp.md)
+-   [Mengambil entri dari *IEEExplore*](IEEEXploreHelp.md)
+-   [Mengambil entri dari *Medline*](MedlineHelp.md)
+-   [Pencarian *JStor*](JSTOR.md)
+-   [Pencarian *ScienceDirect*](ScienceDirect.md)
+-   [Pencarian *Spires*](Spires.md)
+-   [Export to an External SQL Database](SQLExport.md)
+-   [XMP metadata support in JabRef](XMPHelp.md)
+-   [Command line options](CommandLine.md)
+-   [Remote operations](RemoteHelp.md)
 
 ## Lain-lain
 
--   [Riwayat Perbaikan](RevisionHistory.html)
--   [Tentang JabRef](About.html)
+-   [Riwayat Perbaikan](RevisionHistory.md)
+-   [Tentang JabRef](About.md)
 

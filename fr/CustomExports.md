@@ -131,7 +131,7 @@ JabRef fournit la série suivante de formateurs :
 -   `RemoveWhitespace` : supprime tous les caractères espace.
 -   `Replace(ExpReg,RemplaceAvec)` : effectue le remplacement d'une expression régulière. Pour utiliser ce formateur, un argument en deux parties doit être fourni. Les parties sont séparées par une virgule. Pour indiquer le caractère virgule, utilisez la séquence d'échappement : \\,
     La première partie est l'expression régulière à rechercher. Notez bien que toute virgule doit y être précédée par un antislash, et, qu'en conséquence, un antislash dans l'expression régulière recherchée y est représenté par une paire d'anti-slash. Une description des expression régulières de Java peut être trouvée à :
-     http://java.sun.com/j2se/1.4.2/docs/api/java/util/regex/Pattern.html
+     http://java.sun.com/j2se/1.4.2/docs/api/java/util/regex/Pattern.md
     La seconde partie est le texte qui remplace tous les correspondances.
 -   `RisAuthors` : à documenter.
 -   `RisKeywords` : à documenter.

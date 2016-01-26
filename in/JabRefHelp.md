@@ -10,4 +10,4 @@ JabRef adalah program untuk menyunting basisdata *bibtex*. Program ini menggunak
 
 JabRef mempunyai fitur untuk mengurutkan dan mencari isi dari basisdata. Anda dapat dengan mudah menambah entri tanpa harus hafal informasi utama yang diperlukan, demikian pula kunci *bibtex* dapat dibuat secara otomatis. JabRef akan sangat berguna bagi yang menggunakan *bibtex* atau CiteMaker, tetapi juga bermanfaat bagi yang menggunakan sistem referensi lain atau sangat membantu bagi yang sekedar ingin merapikan sumber pustaka.
 
-[Jendela utama JabRef](BaseFrameHelp.html)
+[Jendela utama JabRef](BaseFrameHelp.md)

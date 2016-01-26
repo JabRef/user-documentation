@@ -38,7 +38,7 @@ Es folgt ein Beispiel:
       year = {2005},
       owner = {oezbek},
       timestamp = {2006.05.29},
-      url = {http://james.howison.name/publications.html}
+      url = {http://james.howison.name/publications.md}
     }
 
 wird umgewandelt in
@@ -48,7 +48,7 @@ wird umgewandelt in
         bibtex:year="2005"
         bibtex:title="Effective work practices for floss development: A model and propositions"
         bibtex:owner="oezbek"
-        bibtex:url="http://james.howison.name/publications.html"
+        bibtex:url="http://james.howison.name/publications.md"
         bibtex:booktitle="Hawaii International Conference On System Sciences (HICSS)"
         bibtex:timestamp="2006.05.29">
             <bibtex:author>
@@ -71,7 +71,7 @@ Beachten Sie die folgenden Warnungen, wenn Sie bibteXMP parsen möchten:
 Einige Links zu XMP und PDFs mit Anmerkungen (englisch):
 
 -   [James Howison's Blog "Themp---Managing Academic Papers like MP3s"](http://freelancepropaganda.com/themp/)
--   [XML.com-Artikel zu XMP](http://www.xml.com/pub/a/2004/09/22/xmp.html)
+-   [XML.com-Artikel zu XMP](http://www.xml.com/pub/a/2004/09/22/xmp.md)
 -   [PDFBox](http://pdfbox.apache.org/) von der Apache Software Foundation ist die von JabRef verwendete Java libraries zum Zugriff auf die PDFs und deren Metadaten
 -   [Gute Diskussion bei ArsTechnica zum Management von PDFs.](http://arstechnica.com/civis/viewtopic.php?f=19&t=408429)
 -   [Adobe XMP Spezifikation](http://www.adobe.com/content/dam/Adobe/en/devnet/xmp/pdfs/XMPSpecificationPart1.pdf)

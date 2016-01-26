@@ -16,7 +16,7 @@ Un type de fichier est défini par un nom, un icône, une extension de fichier e
 
 ## Ajouter des liens externes à une entrée
 
-Si le champ "File" (fichier) est inclus dans les [champs généraux](GeneralFields.html), vous pouvez éditer la liste des liens externes d'une entrée dans l'[éditeur d'entrées](EntryEditorHelp.html). L'éditeur d'entrée inclut des boutons pour insérer, éditer et supprimer des liens, ainsi que des boutons pour ré-ordonner la liste de liens.
+Si le champ "File" (fichier) est inclus dans les [champs généraux](GeneralFields.md), vous pouvez éditer la liste des liens externes d'une entrée dans l'[éditeur d'entrées](EntryEditorHelp.md). L'éditeur d'entrée inclut des boutons pour insérer, éditer et supprimer des liens, ainsi que des boutons pour ré-ordonner la liste de liens.
 
 Si vous avez un fichier à l'intérieur ou en aval de votre répertoire de fichiers (configuré dans **Préférences -&gt; Programmes externes -&gt; Liens vers les fichiers externes -&gt; Répertoire de fichiers principal**), si son extension correspondant à l'un des types de fichiers externes définis, et si son nom contient la clef d'une entrée BibTeX, le fichier pourra être lié automatiquement en cliquant sur le bouton **Auto** dans l'éditeur d'entrées. Les règles décrivant les noms de fichiers pouvant être liés automatiquement à une clef BibTeX peuvent être configurées dans **Préférences -&gt; Programmes externes -&gt; Liens vers les fichiers externes -&gt; Utiliser une recherche par expression régulière**.
 

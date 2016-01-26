@@ -8,13 +8,13 @@ title: Penyunting entri
 
 Dalam panel ini anda dapat mengisikan semua informasi yang relevan untuk entri yang anda pilih. Penyunting entri memeriksa semua tipe entri yang ada, dan memberikan anda keleluasaan untuk menyunting bidang-bidang utama yang diperlukan serta bidang tambahan lainnya yang akan digunakan dalam referensi menggunakan *bibtex*. Selain itu ada beberapa bidang yang akan dimasukkan dalam *Bidang umum*, yang umum ada untuk semua tipe entri.
 
-Anda sepenuhnya dapat mengatur bidang mana yang anda inginkan masuk dalam katagori diperlukan serta mana saja yang bersifat tambahan untuk tiap tipe entri. Selain itu anda juga bisa mengatur bidang apa saja yang akan masuk dalam tab Bidang umum. Silahkan baca [Pengaturan tipe entri](CustomEntriesHelp.html) untuk informasi yang lebih terperinci.
+Anda sepenuhnya dapat mengatur bidang mana yang anda inginkan masuk dalam katagori diperlukan serta mana saja yang bersifat tambahan untuk tiap tipe entri. Selain itu anda juga bisa mengatur bidang apa saja yang akan masuk dalam tab Bidang umum. Silahkan baca [Pengaturan tipe entri](CustomEntriesHelp.md) untuk informasi yang lebih terperinci.
 
-Informasi lain tentang bagaimana mengisi bidang yang ada, silahkan baca [Bantuan bibtex](BibtexHelp.html).
+Informasi lain tentang bagaimana mengisi bidang yang ada, silahkan baca [Bantuan bibtex](BibtexHelp.md).
 
 ## Panel penyunting entri
 
-Penyunting entri mempunyai enam panel: *Bidang diperlukan*, *Bidang tambahan*, *Umum*, *Abstrak*, *Ulasan* dan *sumber BibTeX*, dimana *Umum*, *Abstrak* dan *Ulasan* dapat diatur (baca [Pengaturan bidang umum](GeneralFields.html) untuk penjelasan terperinci). Dalam tiga panel yang pertama, TAB dan SHIFT-TAB bisa digunakan untuk menggerakkan lokasi bidang teks.
+Penyunting entri mempunyai enam panel: *Bidang diperlukan*, *Bidang tambahan*, *Umum*, *Abstrak*, *Ulasan* dan *sumber BibTeX*, dimana *Umum*, *Abstrak* dan *Ulasan* dapat diatur (baca [Pengaturan bidang umum](GeneralFields.md) untuk penjelasan terperinci). Dalam tiga panel yang pertama, TAB dan SHIFT-TAB bisa digunakan untuk menggerakkan lokasi bidang teks.
 
 Berpindah penyuntingan dari panel ke panel dapat menggunakan tombol TAB dengan kombinasi tombol ketik lainnya:CTRL-TAB atau CTRL-PLUS untuk berpindah ke tab sebelah kanan, sedangkan CTRL-SHIFT-TAB atau CTRL-MINUS untuk berpindah ke tab sebelah kiri. Anda dapat berpindah ke entri sebelumnya atau setelahnya dengan menekan CTRL-SHIFT-DOWN atau CTRL-SHIFT-UP. Anda bisa juga menggunakan tombol panah yang ada di kotak bantuan.
 
@@ -32,7 +32,7 @@ Apabila isi tidak dapat diterima, bidang akan berubah warna menjadi merah, yang 
 
 Tekan CTRL-G atau gunakan tombol 'membuat kunci BibTeX' (tongkat ajaib) untuk membuat kunci *bibtex* secara otomatis berdasarkan isi dari entri yang berada di Bidang diperlukan.
 
-Informasi lebih lanjut bagaimana JabRef membuat kunci *bibtex*, silahkan baca [Pengaturan pembuat kunci BibTex](LabelPatterns.html).
+Informasi lebih lanjut bagaimana JabRef membuat kunci *bibtex*, silahkan baca [Pengaturan pembuat kunci BibTex](LabelPatterns.md).
 
 ## Pengisian otomatis kata/nama
 

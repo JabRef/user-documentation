@@ -37,7 +37,7 @@ JabRefでXMP機能を使うには、以下のようにしてください。
           year = {2005},
           owner = {oezbek},
           timestamp = {2006.05.29},
-          url = {http://james.howison.name/publications.html}
+          url = {http://james.howison.name/publications.md}
         }
 
     これは以下のように変換されます。
@@ -46,7 +46,7 @@ JabRefでXMP機能を使うには、以下のようにしてください。
             bibtex:year="2005"
             bibtex:title="Effective work practices for floss development: A model and propositions"
             bibtex:owner="oezbek"
-            bibtex:url="http://james.howison.name/publications.html"
+            bibtex:url="http://james.howison.name/publications.md"
             bibtex:booktitle="Hawaii International Conference On System Sciences (HICSS)"
             bibtex:timestamp="2006.05.29">
                 <bibtex:author>
@@ -69,7 +69,7 @@ JabRefでXMP機能を使うには、以下のようにしてください。
     XMPと注釈付きPDFに関するリンク:
 
     -   [James Howisonのブログ「Themp---MP3のように学術論文を管理する」](http://freelancepropaganda.com/themp/)
-    -   [XMPに関するXML.comの記事](http://www.xml.com/pub/a/2004/09/22/xmp.html)
+    -   [XMPに関するXML.comの記事](http://www.xml.com/pub/a/2004/09/22/xmp.md)
     -   Apache Software Foundationの[PDFBox](http://pdfbox.apache.org/)は、PDFとメタデータ ストリームにアクセスするのに使われるJavaライブラリです。
     -   [PDF管理を論じているArsTechnica上の良いスレッド](http://arstechnica.com/civis/viewtopic.php?f=19&t=408429)
     -   [Adobe XMPの仕様](http://www.adobe.com/content/dam/Adobe/en/devnet/xmp/pdfs/XMPSpecificationPart1.pdf)

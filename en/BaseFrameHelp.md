@@ -23,13 +23,13 @@ This is the main window from where you work with your databases. Below the menub
 
 There are several ways to add a new entry. The **New entry** menu action shows a dialog where you can choose the type of the entry from a list. To bypass this dialog, there are also separate menu actions for each entry type, and keyboard shortcuts for the most common types.
 
-When a new entry is added, by default an [entry editor](EntryEditorHelp.html) for the entry will be opened. This behaviour can be toggled in the **Preferences** dialog.
+When a new entry is added, by default an [entry editor](EntryEditorHelp.md) for the entry will be opened. This behaviour can be toggled in the **Preferences** dialog.
 
 *Note:* We strongly recommend learning the shortcuts for the entry types you use most often, e.g. CTRL-SHIFT-A for adding an *article* entry.
 
 ## Editing an entry
 
-To open an [entry editor](EntryEditorHelp.html) for an existing entry, simply double-click anywhere on the appropriate line will open the [entry editor](EntryEditorHelp.html) (or select the entry and press ENTER).
+To open an [entry editor](EntryEditorHelp.md) for an existing entry, simply double-click anywhere on the appropriate line will open the [entry editor](EntryEditorHelp.md) (or select the entry and press ENTER).
 
 ## Referencing a *bibtex* string in a field
 
@@ -37,4 +37,4 @@ In JabRef you write the contents of all fields the same way as you would in a te
   '\#jan\# 1997',
 which will be interpreted as the string named 'jan' followed by ' 1997'.
 
-See also: [string editor](StringEditorHelp.html).
+See also: [string editor](StringEditorHelp.md).

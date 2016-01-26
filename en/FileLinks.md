@@ -16,7 +16,7 @@ A file type is specified by its name, a graphical icon, a file extension and an 
 
 ## Adding external links to an entry
 
-If the "file" field is included in [General fields](GeneralFields.html), you can edit the list of external links for an entry in the [Entry editor](EntryEditorHelp.html). The editor includes buttons for inserting, editing and removing links, as well as buttons for reordering the list of links.
+If the "file" field is included in [General fields](GeneralFields.md), you can edit the list of external links for an entry in the [Entry editor](EntryEditorHelp.md). The editor includes buttons for inserting, editing and removing links, as well as buttons for reordering the list of links.
 
 If you have a file within or below your file directory (set up in **Preferences -&gt; External programs -&gt; External file links -&gt; Main file directory**) with an extension matching one of the defined external file types, and a name containing a BibTeX entry's BibTeX key, the file can be autolinked by clicking on the **Auto** button in the entry editor. The rules for which file names can be autolinked to a BibTeX key can be set up in **Preferences -&gt; External programs -&gt; External file links -&gt; Use regular expression search**.
 
