@@ -37,7 +37,7 @@ To use the XMP-feature in JabRef you can do the following:
           year = {2005},
           owner = {oezbek},
           timestamp = {2006.05.29},
-          url = {http://james.howison.name/publications.md}
+          url = {http://james.howison.name/publications}
         }
 
     will be transformed into
@@ -46,7 +46,7 @@ To use the XMP-feature in JabRef you can do the following:
             bibtex:year="2005"
             bibtex:title="Effective work practices for floss development: A model and propositions"
             bibtex:owner="oezbek"
-            bibtex:url="http://james.howison.name/publications.md"
+            bibtex:url="http://james.howison.name/publications"
             bibtex:booktitle="Hawaii International Conference On System Sciences (HICSS)"
             bibtex:timestamp="2006.05.29">
                 <bibtex:author>
@@ -69,7 +69,7 @@ To use the XMP-feature in JabRef you can do the following:
     Some links about XMP and annotating PDFs:
 
     -   [James Howison's blog "Themp---Managing Academic Papers like MP3s"](http://freelancepropaganda.com/themp/)
-    -   [XML.com article about XMP](http://www.xml.com/pub/a/2004/09/22/xmp.md)
+    -   [XML.com article about XMP](http://www.xml.com/pub/a/2004/09/22/xmp)
     -   [PDFBox](http://pdfbox.apache.org/) by the Apache Software Foundation is the Jaba library used to access the PDFs and the metadata stream.
     -   [Good thread on ArsTechnica discussing the management of PDFs.](http://arstechnica.com/civis/viewtopic.php?f=19&t=408429)
     -   [Adobe XMP Specification](http://www.adobe.com/content/dam/Adobe/en/devnet/xmp/pdfs/XMPSpecificationPart1.pdf)

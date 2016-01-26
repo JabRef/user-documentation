@@ -30,4 +30,4 @@ Si vous avez besoin d'utiliser un serveur de proxy, passez le nom du serveur et 
 
 `java -Dhttp.proxyHost="hostname"     -Dhttp.proxyPort="portnumber"`
 
-Ces paramètres d'environnement sont expliqués dans la [documentation Oracle J2SE](http://docs.oracle.com/javase/1.4.2/docs/guide/net/properties.md).
+Ces paramètres d'environnement sont expliqués dans la [documentation Oracle J2SE](http://docs.oracle.com/javase/1.4.2/docs/guide/net/properties).

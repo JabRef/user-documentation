@@ -4,7 +4,7 @@ title: Les liens PDF/PS/URL/DOI dans JabRef
 
 # Les liens PDF/PS/URL/DOI dans JabRef
 
-**Note:** JabRef 2.3 et suivants offrent un [système amélioré pour les liens vers les fichiers externes](FileLinks.md).
+**Note:** JabRef 2.3 et suivants offrent un [système amélioré pour les liens vers les fichiers externes](FileLinks).
 
 JabRef vous permet de lier vos entrées avec des fichiers PDF ou PS stockés sur votre ordinateur, ainsi que de créer des liens vers des documents sur internet par l'intermédiaire d'une URL ou d'un identifiant DOI.
 
@@ -20,7 +20,7 @@ Il y a plusieurs façons d'ouvrir un fichier externe ou une page internet. Dans 
 
 Par défaut, le tableau des entrées contient deux colonnes dans lesquelles des icônes s'affichent pour les entrées possédant un lien vers un fichier externe ou une URL. La seconde colonne du tableau montre les icônes qui ouvrent les fichiers PDF et PS (uniquement le fichier PDF si les deux fichiers sont présents), et la troisième colonne montre les icônes ouvrant les URL et les DOI (uniquement l'URL si les deux liens sont présents). Vous ouvrez le fichier ou la page internet en cliquant sur une de ces icônes. Vous pouvez désactiver n'importe laquelle de ces fonctions en utilisant le menu **Options/ Préférences -&gt; Table des entrées**.
 
-**Remarque:** Si le champ n'apparaît pas dans l'éditeur d'entrée (dans l'onglet 'General'), Vous pourriez avoir à [personnaliser les champs généraux](GeneralFields.md).
+**Remarque:** Si le champ n'apparaît pas dans l'éditeur d'entrée (dans l'onglet 'General'), Vous pourriez avoir à [personnaliser les champs généraux](GeneralFields).
 
 ## Les répertoires PDF et PS principaux
 

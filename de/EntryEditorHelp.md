@@ -8,13 +8,13 @@ title: Der Eintrags-Editor
 
 Im Eintrags-Editor können Sie alle relevanten Informationen eines Eintrags festlegen. Der Editor überprüft den Eintragstyp und zeigt alle benötigten und optionalen Felder für den Gebrauch mit *BibTeX* an. Darüber hinaus gibt es einige Felder, die *Allgemeine Felder* genannt werden und für alle Eintragstypen gelten.
 
-Sie können die Felder, die für die einzelnen Eintragstypen als benötigt und optional angesehen werden, und auch die Allgemeinen Felder anpassen. Schlagen Sie unter [Eintragstypen anpassen](CustomEntriesHelp.md) nach, wenn Sie mehr Informationen darüber erhalten möchten.
+Sie können die Felder, die für die einzelnen Eintragstypen als benötigt und optional angesehen werden, und auch die Allgemeinen Felder anpassen. Schlagen Sie unter [Eintragstypen anpassen](CustomEntriesHelp) nach, wenn Sie mehr Informationen darüber erhalten möchten.
 
-Nähere Informationen darüber, was in die Felder eingetragen werden soll, finden sie in der [Bibtex Hilfe](BibtexHelp.md).
+Nähere Informationen darüber, was in die Felder eingetragen werden soll, finden sie in der [Bibtex Hilfe](BibtexHelp).
 
 ## Die Panels des Eintrags-Editors
 
-Der Eintrags-Editor besteht in der Standardeinstellung aus fünf Panels: *Benötigte Felder*, *Optionale Felder*, *General*, *Abstract* und *BibTeX Quelltext*, wobei *General* und *Abstract* vom Benutzer angepasst werden können (siehe dazu [Allgemeine Felder festlegen](GeneralFields.md)). In den ersten drei Panels können Sie mit TAB und SHIFT-TAB zwischen den einzelnen Feldern hin- und herwechseln.
+Der Eintrags-Editor besteht in der Standardeinstellung aus fünf Panels: *Benötigte Felder*, *Optionale Felder*, *General*, *Abstract* und *BibTeX Quelltext*, wobei *General* und *Abstract* vom Benutzer angepasst werden können (siehe dazu [Allgemeine Felder festlegen](GeneralFields)). In den ersten drei Panels können Sie mit TAB und SHIFT-TAB zwischen den einzelnen Feldern hin- und herwechseln.
 
 Zu einem anderen Panel gelangen Sie, indem Sie auf die Tabs klicken. Mit den folgenden Tastaturkürzeln können Sie ebenfalls zwischen den Panels navigieren: CTRL-TAB oder CTRL-PLUS wechselt zum Panel rechts vom aktuellen Panel, CTRL-SHIFT-TAB oder CTRL-MINUS wechselt dementsprechend zum Panel links vom aktuellen Panel. Außerdem können Sie zum nächsten oder vorherigen Eintrag wechseln, indem Sie "STRG-SHIFT-Pfeil nach unten" bzw. "STRG-SHIFT-Pfeil nach oben" oder die Pfeiltasten in der linken Toolbar drücken.
 
@@ -50,4 +50,4 @@ Mit STRG-SHIFT-K wird der *BibTeX* Key des ausgewählten Eintrags in die Zwische
 
 Um einen *BibTeX* Key für einen Eintrag automatisch erstellen zu lassen, drücken Sie STRG-G oder den entsprechenden (Zauberstab-)Knopf in der Toolbar-Leiste.
 
-Für nähere Informationen, wie die *BibTeX* Keys generiert werden, schauen Sie bitte unter [Anpassen der automatischen Generierung von BibTeX-keys](LabelPatterns.md) nach.
+Für nähere Informationen, wie die *BibTeX* Keys generiert werden, schauen Sie bitte unter [Anpassen der automatischen Generierung von BibTeX-keys](LabelPatterns) nach.

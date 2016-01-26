@@ -39,7 +39,7 @@ Notes à propos de certains types de champs :
 -   **institution
     ** L'institution ayant promue un rapport technique.
 -   **journal
-    ** Un nom de journal. Le nom d'un journal peut être abrégé en utilisant une "chaîne". Pour définir une chaîne, utilisez [l'éditeur de chaînes](StringEditorHelp.md).
+    ** Un nom de journal. Le nom d'un journal peut être abrégé en utilisant une "chaîne". Pour définir une chaîne, utilisez [l'éditeur de chaînes](StringEditorHelp).
 -   **key
     ** utilisé pour alphabétiser, renvoyer et créer une étiquette quand l'information sur "author" est manquante. Ce champ ne doit pas être confondu avec la clef qui est fournie dans la commande `\cite` et au début de l'entrée.
 -   **month

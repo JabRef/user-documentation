@@ -40,7 +40,7 @@ Catatan tentang beberapa tipe bidang:
 -   **institution
     ** Institusi yang mendukung atau memberi sponsor karya yang diterbitkan.
 -   **journal
-    ** Nama jurnal. Nama jurnal seringkali disingkat menggunakan "string". Untuk menuliskan string, gunakan [penyunting string](StringEditorHelp.md).
+    ** Nama jurnal. Nama jurnal seringkali disingkat menggunakan "string". Untuk menuliskan string, gunakan [penyunting string](StringEditorHelp).
 -   **key
     ** Digunakan untuk mengurutkan, referensi silang, dan membuat label apabila informasi \`\`author'' tidak ada. Bidang ini jangan diartikan sama dengan kunci bibtex yang dipanggil dengan perintah `\cite` serta yang ada di bagian awal entri basisdata.
 -   **month

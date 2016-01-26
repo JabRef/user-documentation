@@ -30,4 +30,4 @@ httpプロキシサーバーを使用する必要がある場合は、以下の�
 
 `java -Dhttp.proxyHost="ホスト名"     -Dhttp.proxyPort="ポート番号"`
 
-これらの環境設定は、[Oracle J2SE documentation](http://docs.oracle.com/javase/1.4.2/docs/guide/net/properties.md)に文書化されています。
+これらの環境設定は、[Oracle J2SE documentation](http://docs.oracle.com/javase/1.4.2/docs/guide/net/properties)に文書化されています。

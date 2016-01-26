@@ -8,13 +8,13 @@ title: L'éditeur d'entrées
 
 Dans l'éditeur d'entrées, vous pouvez spécifier toutes les informations pertinentes pour une entrée donnée. L'éditeur d'entrées vérifie le type de votre entrée et affiche tous les champs qui sont requis ou optionnels pour que *BibTeX* traite l'entrée. De plus, il y a plusieurs champs, appelés *Champs généraux*, qui sont communs à tous les types d'entrées.
 
-Vous pouvez personnaliser complètement les champs qui doivent être considérés comme requis ou optionnel pour chaque type d'entrée, ainsi que les champs apparaissant dans l'onglet Général. Voir [Personnaliser les types d'entrées](CustomEntriesHelp.md) pour plus d'informations à ce sujet.
+Vous pouvez personnaliser complètement les champs qui doivent être considérés comme requis ou optionnel pour chaque type d'entrée, ainsi que les champs apparaissant dans l'onglet Général. Voir [Personnaliser les types d'entrées](CustomEntriesHelp) pour plus d'informations à ce sujet.
 
-Pour des informations sur la façon de remplir les champs, voir [Aide sur BibTeX](BibtexHelp.md).
+Pour des informations sur la façon de remplir les champs, voir [Aide sur BibTeX](BibtexHelp).
 
 ## Le panneau à onglets de l'éditeur d'entrées
 
-L'éditeur d'entrée contient six onglets : *Champs requis*, *Champs optionnels*, *Général*, *Abstract*, *Review* et *Source BibTeX*. Les onglets *Général*, *Abstract* et *Review* peuvent être personnalisés (voir [Personnalisation des champs généraux](GeneralFields.md) pour plus de détails). A l'intérieur des trois premiers onglets, TAB et MAJ-TAB sont utilisés pour naviguer entre les champs de texte.
+L'éditeur d'entrée contient six onglets : *Champs requis*, *Champs optionnels*, *Général*, *Abstract*, *Review* et *Source BibTeX*. Les onglets *Général*, *Abstract* et *Review* peuvent être personnalisés (voir [Personnalisation des champs généraux](GeneralFields) pour plus de détails). A l'intérieur des trois premiers onglets, TAB et MAJ-TAB sont utilisés pour naviguer entre les champs de texte.
 
 Naviguez entre les onglets en cliquant sur les onglets ou en utilisant les combinaisons de touches suivantes pour vous déplacer vers la gauche ou la droite : CTRL-TAB ou CTRL-PLUS affiche l'onglet à droite, et CTRL-MAJ-TAB ou CTRL-MOINS affiche l'onglet à gauche. Vous pouvez aussi afficher l'entrée précédente ou suivante en appuyant respectivement sur CTRL-MAJ-DOWN ou CTRL-MAJ-UP, ainsi qu'en cliquant sur les boutons de la barre d'outils de l'éditeur d'entrées.
 
@@ -48,4 +48,4 @@ En appuyant CTRL-SHIFT-K copie la clef *BibTeX* de votre entrée vers le presse-
 
 Appuyez sur CTRL-G ou sur le bouton 'Créer la clef BibTeX' (la baguette magique) pour générer automatiquement une clef *BibTeX* à partir du contenu des champs requis.
 
-Pour plus d'informations sur la façon dont JabRef génère les clefs *BibTeX*, voir [Personnalisation du générateur de clefs BibTeX](LabelPatterns.md).
+Pour plus d'informations sur la façon dont JabRef génère les clefs *BibTeX*, voir [Personnalisation du générateur de clefs BibTeX](LabelPatterns).

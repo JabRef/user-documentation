@@ -6,51 +6,51 @@ title: Hilfe - Inhalt
 
 ## Allgemeines
 
--   [Über die Hilfe](HelpHelp.md)
--   [Allgemeines](JabRefHelp.md)
--   [Das Hauptfenster von JabRef](BaseFrameHelp.md)
--   [Der Eintrags-Editor](EntryEditorHelp.md)
+-   [Über die Hilfe](HelpHelp)
+-   [Allgemeines](JabRefHelp)
+-   [Das Hauptfenster von JabRef](BaseFrameHelp)
+-   [Der Eintrags-Editor](EntryEditorHelp)
 
 ## Felder
 
--   [*BibTeX* Hilfe](BibtexHelp.md)
--   [Links zu externen Dateien](FileLinks.md)
--   [Links zu PDF- und PS-Dateien, URLs und DOIs](ExternalFiles.md)
--   [Zeitstempel](TimeStampHelp.md)
--   [Das 'Besitzer' (owner) Feld](OwnerHelp.md)
--   [Wortauswahl verwalten](ContentSelectorHelp.md)
--   [Zeitschriftentitel abkürzen](JournalAbbreviations.md)
+-   [*BibTeX* Hilfe](BibtexHelp)
+-   [Links zu externen Dateien](FileLinks)
+-   [Links zu PDF- und PS-Dateien, URLs und DOIs](ExternalFiles)
+-   [Zeitstempel](TimeStampHelp)
+-   [Das 'Besitzer' (owner) Feld](OwnerHelp)
+-   [Wortauswahl verwalten](ContentSelectorHelp)
+-   [Zeitschriftentitel abkürzen](JournalAbbreviations)
 
 ## Einträge finden und sortieren
 
--   [Hilfe zu den *Gruppen*](GroupsHelp.md)
--   [Einträge markieren](MarkingHelp.md)
--   [Die Suchfunktionen von JabRef](SearchHelp.md)
+-   [Hilfe zu den *Gruppen*](GroupsHelp)
+-   [Einträge markieren](MarkingHelp)
+-   [Die Suchfunktionen von JabRef](SearchHelp)
 
 ## Einstellungen
 
--   [Eintragstypen anpassen](CustomEntriesHelp.md)
--   [Allgemeine Felder festlegen](GeneralFields.md)
--   [Anpassen der automatischen Generierung von BibTeX-keys](LabelPatterns.md)
--   [Eintragsvorschau anpassen](PreviewHelp.md)
--   [Der String-Editor](StringEditorHelp.md)
+-   [Eintragstypen anpassen](CustomEntriesHelp)
+-   [Allgemeine Felder festlegen](GeneralFields)
+-   [Anpassen der automatischen Generierung von BibTeX-keys](LabelPatterns)
+-   [Eintragsvorschau anpassen](PreviewHelp)
+-   [Der String-Editor](StringEditorHelp)
 
 ## Import/Export
 
--   [Einträge von *CiteSeer* abrufen](CiteSeerHelp.md)
--   [Einträge von *IEEExplore* abrufen](IEEEXploreHelp.md)
--   [Einträge von *Medline* abrufen](MedlineHelp.md)
--   [*JStor*-Suche](JSTOR.md)
--   [Exportfilter anpassen](CustomExports.md)
--   [Importfilter anpassen](CustomImports.md)
--   [Export in eine externe SQL-Datenbank](SQLExport.md)
--   [Externer Zugriff](RemoteHelp.md)
--   [Die Exportfilter und Importfilter für EndNote](EndNoteFilters.md)
--   [Import-Kontrollfenster](ImportInspectionDialog.md)
--   [JabRef-Bibliographien in OpenOffice.org benutzen](OpenOfficeHelp.md)
--   [XMP-Metadaten und JabRef](XMPHelp.md)
--   [Kommandozeilen-Optionen](CommandLine.md)
+-   [Einträge von *CiteSeer* abrufen](CiteSeerHelp)
+-   [Einträge von *IEEExplore* abrufen](IEEEXploreHelp)
+-   [Einträge von *Medline* abrufen](MedlineHelp)
+-   [*JStor*-Suche](JSTOR)
+-   [Exportfilter anpassen](CustomExports)
+-   [Importfilter anpassen](CustomImports)
+-   [Export in eine externe SQL-Datenbank](SQLExport)
+-   [Externer Zugriff](RemoteHelp)
+-   [Die Exportfilter und Importfilter für EndNote](EndNoteFilters)
+-   [Import-Kontrollfenster](ImportInspectionDialog)
+-   [JabRef-Bibliographien in OpenOffice.org benutzen](OpenOfficeHelp)
+-   [XMP-Metadaten und JabRef](XMPHelp)
+-   [Kommandozeilen-Optionen](CommandLine)
 
 ## Verschiedenes
 
--   [Versionsgeschichte](RevisionHistory.md)
+-   [Versionsgeschichte](RevisionHistory)

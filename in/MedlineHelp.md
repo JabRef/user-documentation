@@ -23,4 +23,4 @@ Apabila anda ingin menggunakan http proxy server, anda harus memasukkan nama ser
 
 `java -Dhttp.proxyHost="namakomputer"     -Dhttp.proxyPort="nomorport"`
 
-Pengaturan lingkungan ini didokumentasikan di [Sun J2SE documentation](http://docs.oracle.com/javase/1.4.2/docs/guide/net/properties.md).
+Pengaturan lingkungan ini didokumentasikan di [Sun J2SE documentation](http://docs.oracle.com/javase/1.4.2/docs/guide/net/properties).

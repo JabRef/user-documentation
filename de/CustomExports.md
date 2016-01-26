@@ -88,7 +88,7 @@ JabRef bietet die folgenden Formatierer, wobei einige von anderen abhängen:
 -   `Replace(regexp,ersetzedurch)` : führt eine Ersetzung mit einem Regulären Ausdruck durch. Um diesen Formatierer zu benutzen, muss ein zweiteiliges Argument mitgegeben werden. Die Teile werden durch ein Komma getrennt. Will man ein Komma ausgeben lassen, muss man es maskieren: \\,
 
     Der erste Teil ist der Reguläre Ausdruck, nach dem gesucht wird. Er wird normal geschrieben, ohne Backslashes (\\) zu maskieren. Eine Beschreibung von Regulären Ausdrücken ist hier zu finden:
-    http://java.sun.com/j2se/1.4.2/docs/api/java/util/regex/Pattern.md
+    http://java.sun.com/j2se/1.4.2/docs/api/java/util/regex/Pattern
 
     Der zweite Teil ist der Text, der für alle Treffer eingesetzt werden soll.
 

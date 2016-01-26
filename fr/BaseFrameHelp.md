@@ -25,13 +25,13 @@ Ceci est la fenêtre principale à partir de laquelle vous travaillez avec vos b
 
 Il y a plusieurs façons d'ajouter une nouvelle entrée. L'activation du menu **BibTeX/ Nouvelle entrée** affiche une fenêtre de dialogue où vous pouvez choisir le type d'entrée à partir d'une liste. Pour éviter cette fenêtre de dialogue, vous pouvez utilisez le menu **BibTeX/ Nouvelle entrée...** ainsi que des raccourcis clavier pour les types les plus courants.
 
-Lorsqu'une nouvelle entrée est ajoutée, par défaut, l'[éditeur d'entrées](EntryEditorHelp.md) s'ouvre. Ce comportement peut être modifié dans la fenêtre de dialogue **Préférences**.
+Lorsqu'une nouvelle entrée est ajoutée, par défaut, l'[éditeur d'entrées](EntryEditorHelp) s'ouvre. Ce comportement peut être modifié dans la fenêtre de dialogue **Préférences**.
 
 *Note :* Nous vous recommandons fortement d'apprendre les raccourcis clavier des types d'entrées que vous utilisez le plus souvent, tel que CTRL-SHIFT-A pour l'ajout d'une entrée *article*.
 
 ## Editer une entrée
 
-Pour ouvrir l'[éditeur d'entrées](EntryEditorHelp.md) sur une entrée existante, double-cliquez simplement sur la ligne correspondant à l'entrée (ou appuyez sur ENTREE après avoir sélectionné l'entrée).
+Pour ouvrir l'[éditeur d'entrées](EntryEditorHelp) sur une entrée existante, double-cliquez simplement sur la ligne correspondant à l'entrée (ou appuyez sur ENTREE après avoir sélectionné l'entrée).
 
 ## Référencer une chaîne *BibTeX* dans un champ
 
@@ -39,4 +39,4 @@ Dans JabRef vous écrivez le contenu de tous les champs de la même façon que d
   '\#jan\# 1997',
 ce qui sera interprété comme la chaîne nommée 'jan' suivie de '1997'.
 
-Voir aussi : [Editeur de chaîne](StringEditorHelp.md).
+Voir aussi : [Editeur de chaîne](StringEditorHelp).

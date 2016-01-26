@@ -23,13 +23,13 @@ Ini adalah jendela utama untuk bekerja pada basisdata anda. Dibawah kotak menu d
 
 Ada beberapa cara untuk menambah entri baru. Perintah menu **BibTeX -&gt; Entri baru** menampilkan dialog pilihan untuk memilih satu tipe entri dari yang ada. Jika anda tidak menginginkan menampilkan dialog ini, tersedia beberapa menu tersendiri untuk menggunakan tipe entri tertentu. Demikian juga ada pintasan langsung ke tipe yang umum digunakan.
 
-Ketika entri baru ditambahkan, [penyunting entri](EntryEditorHelp.md) akan muncul. Bagaimana munculnya penyunting entri ini dapat diatur dari menu **Preferensi-&gt; Penyunting Entri**.
+Ketika entri baru ditambahkan, [penyunting entri](EntryEditorHelp) akan muncul. Bagaimana munculnya penyunting entri ini dapat diatur dari menu **Preferensi-&gt; Penyunting Entri**.
 
 *Catatan:* Kami menyarankan anda mempelajari pintasan untuk menambah entri untuk berbagai tipe yang paling sering digunakan, misalnya CTRL-SHIFT-A untuk menambah entri *artikel*.
 
 ## Menyunting entri
 
-Untuk membuka [penyunting entri](EntryEditorHelp.md) dari entri yang sudah ada, klik-ganda di baris entri yang akan disunting, maka [Penyunting entri](EntryEditorHelp.md) akan dibuka (atau pada baris entri tekan ENTER).
+Untuk membuka [penyunting entri](EntryEditorHelp) dari entri yang sudah ada, klik-ganda di baris entri yang akan disunting, maka [Penyunting entri](EntryEditorHelp) akan dibuka (atau pada baris entri tekan ENTER).
 
 ## Mengacu string *bibtex* dalam bidang
 
@@ -37,4 +37,4 @@ Dalam JabRef cara menuliskan isi dalam bidang sama seperti yang anda lakukan pad
   '\#jan\# 1997',
 yang akan diartikan sebagai string 'jan' diikuti oleh ' 1997'.
 
-Baca juga: [penyunting string](StringEditorHelp.md).
+Baca juga: [penyunting string](StringEditorHelp).

@@ -10,4 +10,4 @@ JabRef ist ein Programm zur Verwaltung von *BibTeX*-Dateien. Es benutzt kein eig
 
 JabRef unterstützt Sortier- und Suchfunktionen, um einen Überblick über den Inhalt Ihrer Datei zu bekommen. Sie können der Datei ganz einfach neue Einträge hinzufügen, ohne sich daran erinnern zu müssen, welche Informationen benötigt werden. Außerdem kann JabRef *BibTeX* keys automatisch generieren. JabRef ist sehr nützlich, wenn Sie *BibTeX* oder CiteMaker benutzen, kann aber auch für diejenigen sinnvoll sein, die andere Bibliographie-Systeme benutzen oder schlicht und einfach ihre Literaturquellen organisieren wollen.
 
-[Das Hauptfenster von JabRef](BaseFrameHelp.md)
+[Das Hauptfenster von JabRef](BaseFrameHelp)

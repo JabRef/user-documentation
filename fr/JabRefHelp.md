@@ -10,4 +10,4 @@ JabRef est un programme permettant l'exploitation des bases de données *BibTeX*
 
 JabRef possède des fonctionnalités de tri et de recherche afin de vous donner une vue d'ensemble du contenu de vos bases de données. Vous pouvez facilement ajouter de nouvelles entrées à vos bases de données sans avoir à vous souvenir des informations requises, et les clefs *BibTeX* peuvent être générées automatiquement. JabRef sera surtout utile aux utilisateurs de *BibTeX* ou CiteMaker, mais il peut aussi être utile à ceux qui se servent d'autres systèmes de référencements ou qui veulent simplement organiser leurs sources bibliographiques.
 
-[La fenêtre principale de JabRef](BaseFrameHelp.md)
+[La fenêtre principale de JabRef](BaseFrameHelp)

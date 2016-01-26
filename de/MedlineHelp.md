@@ -23,4 +23,4 @@ Wenn Sie einen HTTP-Proxy-Server benutzen müssen, übergeben Sie den Servername
 
 `java -Dhttp.proxyHost="hostname"     -Dhttp.proxyPort="portnumber"`
 
-Diese Umgebungseinstellungen sind in der [Sun J2SE Dokumentation](http://docs.oracle.com/javase/1.4.2/docs/guide/net/properties.md) beschrieben.
+Diese Umgebungseinstellungen sind in der [Sun J2SE Dokumentation](http://docs.oracle.com/javase/1.4.2/docs/guide/net/properties) beschrieben.

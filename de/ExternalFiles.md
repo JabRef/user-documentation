@@ -4,7 +4,7 @@ title: Links zu PDF- und PS-Dateien, URLs und DOIs in JabRef
 
 # Links zu PDF- und PS-Dateien, URLs und DOIs in JabRef
 
-**Anmerkung:** Ab JabRef 2.3 gibt es ein [verbessertes System für Links zu externen Dateien](FileLinks.md).
+**Anmerkung:** Ab JabRef 2.3 gibt es ein [verbessertes System für Links zu externen Dateien](FileLinks).
 
 Mit JabRef können Sie Ihre Einträge mit den entsprechenden PDF- oder PS-Dateien, die sich auf Ihrem Computer befinden, verlinken. Ebenso ist es möglich, Dateien im Internet über ein URL oder DOI zu verlinken.
 

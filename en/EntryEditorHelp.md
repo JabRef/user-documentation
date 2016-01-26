@@ -8,13 +8,13 @@ title: The entry editor
 
 In this panel you can specify all relevant information on a single entry. The entry editor checks the type of your entry, and lists all the fields that are required, and the ones that are optional, for referring the entry with *bibtex*. In addition, there are several fields termed *General fields*, that are common to all entry types.
 
-You can fully customize which fields should be regarded as required and optional for each type of entry, and which fields appear in the General fields tabs. See [Customizing entry types](CustomEntriesHelp.md) for more information about this.
+You can fully customize which fields should be regarded as required and optional for each type of entry, and which fields appear in the General fields tabs. See [Customizing entry types](CustomEntriesHelp) for more information about this.
 
-For information about how the fields should be filled out, see [Bibtex help](BibtexHelp.md).
+For information about how the fields should be filled out, see [Bibtex help](BibtexHelp).
 
 ## The entry editor's panels
 
-The entry editor contains six panels: *Required fields*, *Optional fields*, *General*, *Abstract*, *Review* and *BibTeX source*, where *General*, *Abstract* and *Review* can be customized (see [Customizing general fields](GeneralFields.md) for details). Inside the three first panels, TAB and SHIFT-TAB are used to switch focus between the text fields.
+The entry editor contains six panels: *Required fields*, *Optional fields*, *General*, *Abstract*, *Review* and *BibTeX source*, where *General*, *Abstract* and *Review* can be customized (see [Customizing general fields](GeneralFields) for details). Inside the three first panels, TAB and SHIFT-TAB are used to switch focus between the text fields.
 
 Switch panels by clicking on the tabs, or navigate to the panel to the left or right using the following key combinations: CTRL-TAB or CTRL-PLUS switch to the tab to the right, and CTRL-SHIFT-TAB or CTRL-MINUS switch to the tab to the left. You can also switch to the next or previous entry by pressing CTRL-SHIFT-DOWN or CTRL-SHIFT-UP, respectively, or by clicking the appropriate toolbar button.
 
@@ -50,4 +50,4 @@ Pressing CTRL-SHIFT-K causes the *bibtex* key for your entry to be copied to the
 
 Press CTRL-G or the 'gen key' button (the magic wand) to autogenerate a *bibtex* key for your entry based on the contents of its required fields.
 
-For more information on how JabRef generates *bibtex* keys, see [Customizing the BibTex key generator](LabelPatterns.md).
+For more information on how JabRef generates *bibtex* keys, see [Customizing the BibTex key generator](LabelPatterns).

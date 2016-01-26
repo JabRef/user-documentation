@@ -16,7 +16,7 @@ Ein Dateityp besteht aus einem Namen, einem graphischen Icon, einer Dateierweite
 
 ## Datei-Links zu einem Eintrag hinzufügen
 
-Wenn bei den [Allgemeinen Feldern](GeneralFields.md) das Feld "file" eingetragen ist, können Sie die Liste der externen Links im [Eintrags-Editor](EntryEditorHelp.md) bearbeiten. Der Editor hat dann Schaltflächen zum Einfügen, Bearbeiten, Löschen und Sortieren der Links.
+Wenn bei den [Allgemeinen Feldern](GeneralFields) das Feld "file" eingetragen ist, können Sie die Liste der externen Links im [Eintrags-Editor](EntryEditorHelp) bearbeiten. Der Editor hat dann Schaltflächen zum Einfügen, Bearbeiten, Löschen und Sortieren der Links.
 
 Eine Datei kann mit Hilfe der **Auto**-Schaltfläche automatisch verlinkt werden, falls sie in Ihrem Dateiverzeichnis (**Einstellungen -&gt; Externe Programme -&gt; Links zu externen Dateien -&gt; Hauptverzeichnis**) oder einem Unterordner liegt, eine Dateierweiterung hat, die JabRef bekannt ist, und einen Namen hat, der mit dem BibTeX-Key des Eintrags übereinstimmt. Die Regeln, nach denen Dateinamen mit BibTeX-Keys automatisch verknüpft werden, können eingestellt werden unter **Einstellungen -&gt; Externe Programme -&gt; Links zu externen Dateien -&gt; Suche mit regulärem Ausdruck benutzen**.
 

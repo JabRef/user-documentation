@@ -126,7 +126,7 @@ JabRef provides the following set of formatters:
 -   `Replace(regexp,replacewith)` : does a regular expression replacement. To use this formatter, a two-part argument must be given. The parts are separated by a comma. To indicate the comma character, use an escape sequence: \\,
      
     The first part is the regular expression to search for. Remember that any commma character must be preceded by a backslash, and consequently a literal backslash must be written as a pair of backslashes. A description of Java regular expressions can be found at:
-     http://java.sun.com/j2se/1.4.2/docs/api/java/util/regex/Pattern.md
+     http://java.sun.com/j2se/1.4.2/docs/api/java/util/regex/Pattern
      
     The second part is the text to replace all matches with.
 -   `RTFChars` : replaces TeX-specific special characters (e.g. {\\^a} or {\\"{o}}) with their RTF representations, and translates LaTeX commands \\emph, \\textit, \\textbf into RTF equivalents.
