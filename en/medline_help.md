@@ -28,4 +28,4 @@ If you need to use an http proxy server, pass the server name and port number to
 
 `java -Dhttp.proxyHost="hostname"     -Dhttp.proxyPort="portnumber"`
 
-These environment settings are documented in the [Oracle J2SE documentation](http://docs.oracle.com/javase/1.4.2/docs/guide/net/properties.html).
+These environment settings are documented in the [Oracle J2SE documentation](http://docs.oracle.com/javase/1.4.2/docs/guide/net/properties.md).

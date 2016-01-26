@@ -1,7 +1,7 @@
 PDF/PS/URL/DOI links in JabRef
 ==============================
 
-**Note:** JabRef 2.3 and later versions offer an [improved system for external file links](FileLinks.html).
+**Note:** JabRef 2.3 and later versions offer an [improved system for external file links](FileLinks.md).
 
 JabRef lets you link up your entries with PDF or PS files stored on your system, as well as links to the document on the web in the form of an URL or a DOI identifier.
 
@@ -19,7 +19,7 @@ There are several ways to open an external file or web page. In the entry editor
 
 By default the entry table will contain two columns with icons for those entries that link to external files and URLs. You can disable any of these in **Preferences -&gt; Table**. The second column of the entry table shows icons for PDF or PS files (only PDF if both are present), and the third column shows icons for URL or DOI (only URL if both are present). You open the file or web page by clicking on an icon.
 
-**Note:** If the PS field does not appear in the entry editor (in the 'General' panel), you may have to [customize the entry types of the general fields](GeneralFields.html).
+**Note:** If the PS field does not appear in the entry editor (in the 'General' panel), you may have to [customize the entry types of the general fields](GeneralFields.md).
 
 The main PDF and PS directories
 -------------------------------
