@@ -1,3 +1,7 @@
+---
+title: Einträge markieren
+---
+
 # Einträge markieren
 
 Mit der Tastenkombination STRG-M können Sie Einträge *markieren* und diese Markierung mit STRG-SHIFT-M wieder aufheben. Diese Aktionen sind auch im Menü "Bearbeiten" zu finden.

@@ -1,3 +1,7 @@
+---
+title: The help window
+---
+
 # The help window
 
 *Opened by clicking the help button or pressing F1.*

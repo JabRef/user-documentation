@@ -1,3 +1,7 @@
+---
+title: CiteSeer-Import
+---
+
 # CiteSeer-Import
 
 CiteSeer ist eine digitale Bibliothek und Suchmaschine für wissenschaftliche Literatur, vornehmlich zu den Bereichen Computer und Informatik.

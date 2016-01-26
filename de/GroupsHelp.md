@@ -1,3 +1,7 @@
+---
+title: Gruppen
+---
+
 # Gruppen
 
 Mit Gruppen können Sie Ihre BibTeX-Datei in einer Baumstruktur anordnen, vergleichbar mit einer Dateistruktur in Ordnern und Unterordnern. Die beiden Hauptunterschiede sind:

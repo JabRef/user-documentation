@@ -1,3 +1,7 @@
+---
+title: Fetching Medline entries
+---
+
 # Fetching Medline entries
 
 To use this feature, choose **Search -&gt; Web search**, and the search interface will appear in the side pane. Select **Medline** in the dropdown menu.

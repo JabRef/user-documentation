@@ -1,3 +1,7 @@
+---
+title: Einträge von Medline abrufen
+---
+
 # Einträge von Medline abrufen
 
 MEDLINE ist die wichtigste Datenbank der *U.S. National Library of Medicine*. Sie enthält Literaturangaben von Zeitschriftenartikeln der Lebenswissenschaften, vornehmlich der Biomedizin.

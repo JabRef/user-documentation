@@ -1,3 +1,7 @@
+---
+title: Allgemeine Felder festlegen
+---
+
 # Allgemeine Felder festlegen
 
 Sie können dem Eintragseditor eine beliebige Anzahl von Tabs hinzufügen, die bei allen Eintragstypen sichtbar sind. Wählen Sie dazu den Menüeintrag "Optionen -&gt; Allgemeine Felder festlegen".

@@ -1,3 +1,7 @@
+---
+title: Mark entries
+---
+
 # Mark entries
 
 You have the option of *marking* entries. Keyboard shortcuts are CTRL-M and CTRL-SHIFT-M to mark and unmark the selected entries, respectively, and you can also access these actions in the menus.

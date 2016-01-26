@@ -1,3 +1,7 @@
+---
+title: JabRef-Bibliographien in OpenOffice.org benutzen
+---
+
 # JabRef-Bibliographien in OpenOffice.org benutzen
 
 JabRef kann Ihre Datei sowohl in das OpenOffice.org 1.1 **.sxc**-Tabellenkalkulationsformat als auch in das OpenDocument **.ods**-Tabellenkalkulationsformat, das von OpenOffice.org 2.0 benutzt wird, exportieren.

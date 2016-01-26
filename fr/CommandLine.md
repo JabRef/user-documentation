@@ -1,3 +1,7 @@
+---
+title: Les options de la ligne de commande
+---
+
 # Les options de la ligne de commande
 
 Bien que JabRef soit d'abord une application graphique, il offre plusieurs options pour la ligne de commande qui peuvent être utiles et qui peuvent réaliser des opérations de conversion de fichiers sans avoir à ouvrir l'interface graphique.

@@ -1,3 +1,7 @@
+---
+title: Récupération d'entrées depuis Medline
+---
+
 # Récupération d'entrées depuis Medline
 
 Pour utiliser cette fonction, choisissez **Recherche -&gt; Recherche Web**. L'interface de recherche apparaitra dans le panneau latéral. Sélectionnez **Medline** dans le menu déroulant.

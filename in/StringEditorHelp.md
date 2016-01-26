@@ -1,3 +1,7 @@
+---
+title: Penyunting string
+---
+
 # Penyunting string
 
 *Dibuka dari menu utama **BibTeX -&gt; Sunting entri** atau bisa juga dengan cara menekan tombol di kotak bantuan.*

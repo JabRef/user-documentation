@@ -1,3 +1,7 @@
+---
+title: Import-Kontrollfenster
+---
+
 # Import-Kontrollfenster
 
 Beim Importieren neuer Einträge aus einem unterstützten Format oder beim Herunterladen von Einträgen aus dem Internet werden diese Einträge zunächst im Import-Kontrollfenster gezeigt. Zu diesem Zeitpunkt wurden noch keine Einträge zu einer geöffneten Datei hinzugefügt.

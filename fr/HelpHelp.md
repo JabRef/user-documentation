@@ -1,3 +1,7 @@
+---
+title: La fenêtre d'aide
+---
+
 # La fenêtre d'aide
 
 *S'ouvre en cliquant sur le bouton d'aide ou en appuyant sur F1.*

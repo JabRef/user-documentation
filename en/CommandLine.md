@@ -1,3 +1,7 @@
+---
+title: Command line options
+---
+
 # Command line options
 
 Although JabRef is primarily a GUI based application, it offers several command line options that may be useful, and can even perform file conversion operations without opening the graphical interface.

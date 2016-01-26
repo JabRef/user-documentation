@@ -1,3 +1,7 @@
+---
+title: Champs spéciaux
+---
+
 # Champs spéciaux
 
 Les champs spéciaux permettent ces fonctionnalités :

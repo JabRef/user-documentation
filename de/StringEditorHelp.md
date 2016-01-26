@@ -1,3 +1,7 @@
+---
+title: Der String-Editor
+---
+
 # Der String-Editor
 
 *Zugriff über das Menü **BibTeX -&gt; Strings bearbeiten** oder durch Klick auf die Schaltfläche **Strings bearbeiten***.

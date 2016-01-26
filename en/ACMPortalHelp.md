@@ -1,3 +1,7 @@
+---
+title: Search ACM Portal
+---
+
 # Search ACM Portal
 
 The ACM Portal includes two databases: the ACM Digital Library that is a full text collection of every article published by ACM, including over 50 years of archives, and the Guide to Computing Literature that is a bibliographic collection from major publishers in computing with over one million entries.

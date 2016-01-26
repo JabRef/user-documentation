@@ -1,3 +1,7 @@
+---
+title: Personnalisation des champs généraux
+---
+
 # Personnalisation des champs généraux
 
 Vous pouvez ajouter un nombre arbitraire d'onglets dans l'éditeur d'entrées. Ceux-ci seront alors présents pour tous les types d'entrées. Pour personnaliser ces onglets, allez dans "Options -&gt; Configurer les champs généraux".

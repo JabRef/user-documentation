@@ -1,3 +1,7 @@
+---
+title: Recherche
+---
+
 # Recherche
 
 ## Raccourcis clavier

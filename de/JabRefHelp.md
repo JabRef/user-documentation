@@ -1,3 +1,7 @@
+---
+title: JabRef
+---
+
 # JabRef
 
 **Anmerkung:** Das Programm *BibTeX* wird in den Hilfedateien häufig erwähnt. *BibTeX* ist ein Hilfsprogramm zur Erstellung bibliographischer Angaben in LaTeX-Dokumenten, das Oren Patashnik entwickelt hat. Dasselbe Dateiformat wird von CiteMaker benutzt, einem Hilfsprogramm zur Erstellung von Bibliographien mit Adobe FrameMaker.

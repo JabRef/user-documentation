@@ -1,3 +1,7 @@
+---
+title: Récupération d'entrées en utilisant DiVA
+---
+
 # Récupération d'entrées en utilisant DiVA
 
 [DiVA (Digitala Vetenskapliga Arkivet)](http://www.diva-portal.org/) est une base de données de publications provenant d'environ [30 universités et établissements d'enseignement supérieur suédois](http://www.diva-portal.org/smash/aboutdiva.jsf).

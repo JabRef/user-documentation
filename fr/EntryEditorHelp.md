@@ -1,3 +1,7 @@
+---
+title: L'éditeur d'entrées
+---
+
 # L'éditeur d'entrées
 
 *On l'ouvre à partir de la fenêtre principale en double-cliquant n'importe où sur la ligne de l'entrée, ou en sélectionnant l'entrée et en appuyant sur ENTREE ou CTRL-D. L'éditeur d'entrées se ferme en appuyant sur ESC.*

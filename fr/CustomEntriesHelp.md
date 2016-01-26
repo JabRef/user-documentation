@@ -1,3 +1,7 @@
+---
+title: Personnaliser les types d'entrées
+---
+
 # Personnaliser les types d'entrées
 
 Pour accéder à cette fonction, cliquez sur le menu **Options --&gt; Personnaliser les types d'entrées**.

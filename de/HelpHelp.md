@@ -1,3 +1,7 @@
+---
+title: Das Hilfefenster
+---
+
 # Das Hilfefenster
 
 *Das Hilfefenster öffnet sich, wenn man den Hilfeknopf oder die Taste F1 drückt.*

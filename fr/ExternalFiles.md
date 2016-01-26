@@ -1,3 +1,7 @@
+---
+title: Les liens PDF/PS/URL/DOI dans JabRef
+---
+
 # Les liens PDF/PS/URL/DOI dans JabRef
 
 **Note:** JabRef 2.3 et suivants offrent un [système amélioré pour les liens vers les fichiers externes](FileLinks.html).

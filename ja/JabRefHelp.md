@@ -1,3 +1,7 @@
+---
+title: JabRef
+---
+
 # JabRef
 
 **《註》***BibTeX*プログラムは、各ヘルプファイル中で繰り返し言及されています。*BibTeX*は、Oren Patashniによって作られた、LaTeX文書中の書誌参照を生成するためのユーティリティです。同じデータベース形式が、Adobe FrameMaker中の書誌情報生成ユーティリティであるCiteMakerでも使用されています。

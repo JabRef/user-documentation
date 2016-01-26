@@ -1,3 +1,7 @@
+---
+title: Menandai entri
+---
+
 # Menandai entri
 
 Anda mempunyai pilihan bagaimana *menandai* entri. Pintasan tombol ketik CTRL-M untuk menandai entri, sedangkan CTRL-SHIFT-M untuk melepaskan tanda entri. Anda juga bisa melakukan pada menu.

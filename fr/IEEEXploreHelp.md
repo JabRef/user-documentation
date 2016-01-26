@@ -1,3 +1,7 @@
+---
+title: Recherche IEEEXplore
+---
+
 # Recherche IEEEXplore
 
 Pour utiliser cette fonction, choisissez **Recherche -&gt; Recherche Web**. L'interface de recherche apparaitra dans le panneau latéral. Sélectionnez **IEEEXplore** dans le menu déroulant.

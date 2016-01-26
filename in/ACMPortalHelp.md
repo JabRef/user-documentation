@@ -1,3 +1,7 @@
+---
+title: Pencarian melalui Portal ACM
+---
+
 # Pencarian melalui Portal ACM
 
 Portal ACM Portal mempunyai dua basisdata: Pustaka ACM Dijital yang mempunyai koleksi teks lengkap dari setiap publikasi artikel oleh ACM termasuk arsip yang berumur 50 tahun, serta Panduan untuk Computing Literature yang merupakan koleksi bibliografi dari penerbit yang terkenal dalam bidang komputer yang totalnya ada lebih dari satu juta entri.

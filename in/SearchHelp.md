@@ -1,3 +1,7 @@
+---
+title: Pencarian
+---
+
 # Pencarian
 
 Ada tiga pola pencarian yang bisa dilakukan dalam JabRef.

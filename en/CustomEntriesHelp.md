@@ -1,3 +1,7 @@
+---
+title: Customizing entry types
+---
+
 # Customizing entry types
 
 To customize entry types, select the menu **Options --&gt; Customize entry types**.

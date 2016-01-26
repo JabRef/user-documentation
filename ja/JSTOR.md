@@ -1,3 +1,7 @@
+---
+title: JStor 検索
+---
+
 # JStor 検索
 
 この機能を使うには、**検索→ウェブ検索**を選択すると、検索操作盤が側面に現れます。ドロップダウンメニューから**JStor**を選択してください。JStor検索は、JStorウェブページから情報を抽出するにあたって、BibSonomy scraperプロジェクト (http://scraper.bibsonomy.org/) に依存しています。

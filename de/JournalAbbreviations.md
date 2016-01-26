@@ -1,3 +1,7 @@
+---
+title: Zeitschriftentitel abkürzen
+---
+
 # Zeitschriftentitel abkürzen
 
 Diese Funktion kann unter **Optionen -&gt; Abkürzungen der Zeitschriften verwalten** eingestellt werden.

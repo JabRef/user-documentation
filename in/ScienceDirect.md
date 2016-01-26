@@ -1,3 +1,7 @@
+---
+title: Pencarian ScienceDirect
+---
+
 # Pencarian ScienceDirect
 
 Pencarian ScienceDirect tergantung pada proyek BibSonomy (http://scraper.bibsonomy.org/) untuk mengambil informasi dari halaman web ScienceDirect.

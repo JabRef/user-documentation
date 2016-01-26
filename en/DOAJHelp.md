@@ -1,3 +1,7 @@
+---
+title: Fetching entries from DOAJ
+---
+
 # Fetching entries from DOAJ
 
 [DOAJ (Directory of Open Access Journals)](http://doaj.org/) is a database covering open access journals.

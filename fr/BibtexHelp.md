@@ -1,3 +1,7 @@
+---
+title: A propos de *BibTeX*
+---
+
 # A propos de *BibTeX*
 
 JabRef vous aide à travailler avec vos bases de données *BibTeX*, mais certaines règles doivent être gardées à l'esprit lorsque vous éditez vos entrées afin d'obtenir un traitement correct de vos bases de données par le programme *BibTeX*.

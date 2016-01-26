@@ -1,3 +1,7 @@
+---
+title: Fenêtre de vérification des importations
+---
+
 # Fenêtre de vérification des importations
 
 Quand vous importez de nouvelles entrées à partir d'un format de référence connu, ou que vous récupérez des entrées directement sur internet, elles sont tout d'abord affichées dans une fenêtre pour leur vérification. A ce moment, aucune des entrées n'a encore été ajoutée à la base de données actuellement ouverte (si une base est ouverte).

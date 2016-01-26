@@ -1,3 +1,7 @@
+---
+title: Fetching entries using the Digital Object Identifier (DOI)
+---
+
 # Fetching entries using the Digital Object Identifier (DOI)
 
 To use this feature, choose **Search -&gt; Web search**, and the search interface will appear in the side pane. Select **DOI to BibTeX** in the dropdown menu.

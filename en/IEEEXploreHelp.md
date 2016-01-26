@@ -1,3 +1,7 @@
+---
+title: Search IEEEXplore
+---
+
 # Search IEEEXplore
 
 To use this feature, choose **Search -&gt; Web search**, and the search interface will appear in the side pane. Select **IEEEXplore** in the dropdown menu.

@@ -1,3 +1,7 @@
+---
+title: Singkatan nama jurnal
+---
+
 # Singkatan nama jurnal
 
 Fitur ini dapat diatur melalui menu **Pengaturan -&gt; Pengaturan singkatan jurnal**.

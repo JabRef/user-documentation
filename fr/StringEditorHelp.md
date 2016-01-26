@@ -1,3 +1,7 @@
+---
+title: L'éditeur de chaîne
+---
+
 # L'éditeur de chaîne
 
 *On l'ouvre à partir de la fenêtre principale par le menu **BibTeX -&gt; Editer les chaînes** ou en appuyant sur un des icônes de la barre d'outils. Le raccourci clavier est CTRL-T.*

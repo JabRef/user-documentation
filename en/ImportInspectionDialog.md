@@ -1,3 +1,7 @@
+---
+title: Import inspection window
+---
+
 # Import inspection window
 
 When you import new entries from a supported reference format, or fetch entries directly from the Internet, they are first shown in this window for inspection. At this point none of the entries have been added to the database you already have open (if any).

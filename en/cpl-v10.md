@@ -1,3 +1,7 @@
+---
+title: **Common Public License - v 1.0**
+---
+
 **Common Public License - v 1.0**
 
 ****

@@ -1,3 +1,7 @@
+---
+title: Help contents
+---
+
 # Help contents
 
 ## General

@@ -1,3 +1,7 @@
+---
+title: OpenOffice.org / LibreOffice の統合
+---
+
 # OpenOffice.org / LibreOffice の統合
 
 ## はじめに

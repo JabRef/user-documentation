@@ -1,3 +1,7 @@
+---
+title: Recherche Spires
+---
+
 # Recherche Spires
 
 Pour utiliser cette fonction, choisissez **Recherche -&gt; Recherche Web**. L'interface de recherche apparaitra dans le panneau latéral. Sélectionnez **Spires** dans le menu déroulant.

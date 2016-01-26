@@ -1,3 +1,7 @@
+---
+title: Custom export filters
+---
+
 # Custom export filters
 
 JabRef allows you to define and use your own export filters, in the same way as the standard export filters are defined. An export filter is defined by one or more *layout files*, which with the help of a collection of built-in formatter routines specify the format of the exported files. Your layout files must be prepared in a text editor outside of JabRef.

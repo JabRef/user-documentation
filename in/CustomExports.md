@@ -1,3 +1,7 @@
+---
+title: Penapis ekspor atursendiri
+---
+
 # Penapis ekspor atursendiri
 
 Dalam JabRef, anda dapat mengatur sendiri penapis ekspor sesuai dengan kehendak anda sendiri, dengan cara seperti yang digunakan penapis standar lainnya. Penapis ekspor didefinisikan dengan satu atau beberapa *berkas tataletak*, yang dapat disiapkan dengan cara merubah dari rutin pemformat sudah ada. Berkas tataletak anda perlu disiapkan dengan penyunting teks lain di luar JabRef.

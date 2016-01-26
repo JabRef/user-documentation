@@ -1,3 +1,7 @@
+---
+title: Datei-Links in JabRef
+---
+
 # Datei-Links in JabRef
 
 JabRef lässt Sie Ihre Einträge mit Dateien jeden Typs verlinken, die Sie auf Ihrem System gespeichert haben. Außerdem sind Links zu Dokumenten im Internet in der Form eines URL oder eines DOI möglich. Jedem Eintrag kann eine beliebige Anzahl von Datei-Links zugeordnet werden und jede verlinkte Datei kann schnell aus JabRef heraus geöffnet werden.

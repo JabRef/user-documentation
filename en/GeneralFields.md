@@ -1,3 +1,7 @@
+---
+title: Customizing general fields
+---
+
 # Customizing general fields
 
 You can add an arbitrary number of tabs to the entry editor. These will be present for all entry types. To customize these tabs, go to "Options -&gt; Set up general fields".

@@ -1,3 +1,7 @@
+---
+title: Penyunting entri
+---
+
 # Penyunting entri
 
 *Dibuka dari jendela utama dengan klik-ganda salah satu baris daftar entri yang ada, atau dengan cara memilih salah satu baris kemudian tekan ENTER. Untuk menutup panel penyunting dengan cara menekan tombol ESC.*

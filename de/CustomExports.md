@@ -1,3 +1,7 @@
+---
+title: Exportfilter anpassen
+---
+
 # Exportfilter anpassen
 
 Mit JabRef können Sie Ihre eigenen Exportfilter definieren und genau so wie die Standard-Exportfilter benutzen. Ein Exportfilter wird durch eine oder mehr *Layout-Dateien* definiert, die mittels eingebauter Formatierprogramme das Format der exportierten Dateien festlegen. Ihre Layout-Datei müssen Sie in einem separaten Texteditor erstellen.

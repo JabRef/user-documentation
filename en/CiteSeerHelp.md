@@ -1,3 +1,7 @@
+---
+title: Importing From CiteSeerX
+---
+
 # Importing From CiteSeerX
 
 To use this feature, choose **Search -&gt; Web search**, and the search interface will appear in the side pane. Select **CiteSeerX** in the dropdown menu.

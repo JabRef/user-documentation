@@ -1,3 +1,7 @@
+---
+title: The string editor
+---
+
 # The string editor
 
 *Opened from the main window by **BibTeX -&gt; Edit strings** or pressing a button in the toolbar.*

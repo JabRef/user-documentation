@@ -1,3 +1,7 @@
+---
+title: Récupération d'entrées depuis CiteSeerX
+---
+
 # Récupération d'entrées depuis CiteSeerX
 
 Pour utiliser cette fonction, choisissez **Recherche -&gt; Recherche Web**. L'interface de recherche apparaitra dans le panneau latéral. Sélectionnez **CiteSeerX** dans le menu déroulant.

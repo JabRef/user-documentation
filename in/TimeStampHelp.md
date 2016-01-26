@@ -1,3 +1,7 @@
+---
+title: Cap waktu entri
+---
+
 # Cap waktu entri
 
 Fitur ini bisa dipilih dan diatur melalui menu **Pengaturan -&gt; Preferensi -&gt; Umum**.

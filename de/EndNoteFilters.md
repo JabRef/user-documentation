@@ -1,3 +1,7 @@
+---
+title: EndNote Exportfilter
+---
+
 # EndNote Exportfilter
 
 ## Exportieren aus JabRef

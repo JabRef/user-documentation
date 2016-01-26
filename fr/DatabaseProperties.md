@@ -1,3 +1,7 @@
+---
+title: Propriétés de la base de données.
+---
+
 # Propriétés de la base de données.
 
 *Se configurent à partir de la fenêtre principale en sélectionnant **Fichier -&gt; Propriétés de la base de données***

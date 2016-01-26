@@ -1,3 +1,7 @@
+---
+title: Liens de fichier dans JabRef
+---
+
 # Liens de fichier dans JabRef
 
 JabRef vous permet de lier vos entrées avec des fichiers de n'importe quel type stockés sur votre système, ainsi qu'avec des documents sur internet sous forme d'une URL ou d'un identifiant DOI. Chaque entrée peut contenir un nombre arbitraire de liens de fichier et chaque fichier lié peut être ouvert rapidement depuis JabRef.

@@ -1,3 +1,7 @@
+---
+title: Journal abbreviations
+---
+
 # Journal abbreviations
 
 This feature can be configured under **Options -&gt; Manage journal abbreviations**.

@@ -1,3 +1,7 @@
+---
+title: Importfilter anpassen
+---
+
 # Importfilter anpassen
 
 JabRef bietet Ihnen die Möglichkeit, ganz ähnlich den Standard-Importern, eigene Importer zu definieren und zu benutzen. Man definiert einen Importer durch eine oder mehrere Java *Klassen*, die Dateinhalte aus einem sogenannten *Input stream* lesen und daraus BibTex-Einträge erzeugen. Sie können vorkompilierte Importer einbinden, die Sie vielleicht von SourceForge erhalten haben (siehe "Ihre Arbeit anderen zur Verfügung stellen"). Sie können auch mit Grundkenntnissen der Java-Programmierung eigene Importer für für Sie wichtige Referenzquellen erstellen oder neue, verbesserte Versionen existierender Importer einbinden, ohne JabRef neu zu kompilieren.

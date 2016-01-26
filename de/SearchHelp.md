@@ -1,3 +1,7 @@
+---
+title: Suchfunktionen
+---
+
 # Suchfunktionen
 
 *STRG-F* fokussiert das Suchfeld.

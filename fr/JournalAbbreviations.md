@@ -1,3 +1,7 @@
+---
+title: Abréviations des journaux
+---
+
 # Abréviations des journaux
 
 Cette fonction peut être configurée dans **Options -&gt; Gérer les abréviations de journaux**.

@@ -1,3 +1,7 @@
+---
+title: Database properties window
+---
+
 # Database properties window
 
 *Opened from the main window by selecting **File -&gt; Database properties***

@@ -1,3 +1,7 @@
+---
+title: Groups
+---
+
 # Groups
 
 Groups allow to structure a BibTeX database in a tree-like way that is similar to organizing files on disk in directories and subdirectories. The two main differences are:

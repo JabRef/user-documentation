@@ -1,3 +1,7 @@
+---
+title: Jendela propereti basisdata
+---
+
 # Jendela propereti basisdata
 
 *Dibuka dari meu utama **Berkas -&gt; Properti basisdata***

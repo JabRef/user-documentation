@@ -1,3 +1,7 @@
+---
+title: Daftar Isi Bantuan
+---
+
 # Daftar Isi Bantuan
 
 ## Umum

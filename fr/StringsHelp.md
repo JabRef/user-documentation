@@ -1,3 +1,7 @@
+---
+title: Aide sur les chaînes
+---
+
 # Aide sur les chaînes
 
 *BibTeX* permet d'avoir des chaînes constantes en utilisant `@String {key = value}`. JabRef est capable de les gérer en utilisant **BibTeX -&gt; Editer les chaînes**, ce qui ouvre l'[Editeur de chaînes](StringEditorHelp.html). Ces valeurs peuvent être utilisées dans des champs. Par exemple, vous pouvez avoir 

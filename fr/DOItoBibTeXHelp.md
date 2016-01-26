@@ -1,3 +1,7 @@
+---
+title: Récupération d'entrées en utilisant l'identifiant d'objet numérique (DOI)
+---
+
 # Récupération d'entrées en utilisant l'identifiant d'objet numérique (DOI)
 
 Pour utiliser cette fonction, choisissez **Recherche -&gt; recherche Web**, et l'interface de recherche s'affichera dans le panneau latéral. Sélectionnez **DOI vers BibTeX** dans le menu déroulant.

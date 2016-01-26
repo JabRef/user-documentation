@@ -1,3 +1,7 @@
+---
+title: Recherche Google Scholar
+---
+
 # Recherche Google Scholar
 
 JabRef peut rechercher et télécharger des citations depuis Google Scholar. Pour utiliser cette fonction, choisissez **Recherche -&gt; recherche Web**, et l'interface de recherche s'affichera dans le panneau latéral. Sélectionnez **Google Scholar** dans le menu déroulant.

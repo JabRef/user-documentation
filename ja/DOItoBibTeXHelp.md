@@ -1,3 +1,7 @@
+---
+title: Digital Object Identifier (DOI)を使用して項目を取得する
+---
+
 # Digital Object Identifier (DOI)を使用して項目を取得する
 
 この機能を使うには、**検索→ウェブ検索**を選択すれば、操作盤が側面に表示されますので、そのドロップダウンメニューから**DOI to BibTeX**を選択してください。

@@ -1,3 +1,7 @@
+---
+title: Google Scholarを検索
+---
+
 # Google Scholarを検索
 
 JabRefは、Google Scholarで検索を行い、引用をダウンロードすることができます。この機能を使うには、**検索→ウェブ検索**を選択すれば、操作盤が側面に表示されますので、そのドロップダウンメニューから**Google Scholar**を選択してください。

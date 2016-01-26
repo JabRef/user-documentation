@@ -1,3 +1,7 @@
+---
+title: Etiqueter les entrées
+---
+
 # Etiqueter les entrées
 
 Vous avez la possibilité d'*étiqueter* des entrées. Les raccourcis claviers sont CTRL-M et CTRL-MAJ-M pour, respectivement, étiqueter et désétiqueter les entrées sélectionnées. Vous pouvez aussi accéder à ces actions en utilisant le menu **Edition**.

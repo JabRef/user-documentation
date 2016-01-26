@@ -1,3 +1,7 @@
+---
+title: Horodatage des entrées
+---
+
 # Horodatage des entrées
 
 Cette fonction peut être activée et configurée sous **Options -&gt; Préférences -&gt; Général**.

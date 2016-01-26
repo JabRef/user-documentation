@@ -1,3 +1,7 @@
+---
+title: The entry editor
+---
+
 # The entry editor
 
 *Opened from main window by double-clicking anywhere on the line of the entry, or selecting the entry and pressing ENTER or CTRL-D. The panel is closed by pressing ESC.*

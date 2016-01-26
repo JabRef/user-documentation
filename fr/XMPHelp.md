@@ -1,3 +1,7 @@
+---
+title: Support des metadonnées XMP dans JabRef
+---
+
 # Support des metadonnées XMP dans JabRef
 
 NdT : Menus à vérifier !!!

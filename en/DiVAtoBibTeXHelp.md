@@ -1,3 +1,7 @@
+---
+title: Fetching entries from DiVA
+---
+
 # Fetching entries from DiVA
 
 [DiVA (Digitala Vetenskapliga Arkivet)](http://www.diva-portal.org/) is a database with publications from about [30](http://www.diva-portal.org/smash/aboutdiva.jsf) Swedish universities and colleges of higher education.

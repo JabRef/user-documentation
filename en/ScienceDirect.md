@@ -1,3 +1,7 @@
+---
+title: ScienceDirect search
+---
+
 # ScienceDirect search
 
 To use this feature, choose **Search -&gt; Web search**, and the search interface will appear in the side pane. Select **ScienceDirect** in the dropdown menu.

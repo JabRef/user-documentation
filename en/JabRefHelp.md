@@ -1,3 +1,7 @@
+---
+title: JabRef
+---
+
 # JabRef
 
 **Note:** The *bibtex* program is mentioned many times in these help files. *Bibtex* is a utility for the generation of bibliographic references in LaTeX documents, created by Oren Patashnik. The same database format is also used with CiteMaker, a utility for bibliography generation in Adobe FrameMaker.

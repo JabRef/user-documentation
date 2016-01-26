@@ -1,3 +1,7 @@
+---
+title: DiVAから項目を取得する
+---
+
 # DiVAから項目を取得する
 
 [DiVA (Digitala Vetenskapliga Arkivet)](http://www.diva-portal.org/)は、およそ[30](http://www.diva-portal.org/smash/aboutdiva.jsf)校のスウェーデンの大学および高等教育機関からの出版物のデータベースです。

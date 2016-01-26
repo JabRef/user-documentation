@@ -1,3 +1,7 @@
+---
+title: Autosave
+---
+
 # Autosave
 
 The autosave feature helps prevent loss of data if your computer or JabRef crashes. When autosave is enabled, JabRef will check regularly (with a configurable time interval) whether any of your databases have been modified since your last save. For each one that has, JabRef will save a copy of the database in the file named `.$[file]$`, where `[file]` is the file name of the database in question. The autosave file lies in the same directory as the bib file.

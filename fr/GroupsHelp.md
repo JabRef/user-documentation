@@ -1,3 +1,7 @@
+---
+title: Les groupes
+---
+
 # Les groupes
 
 Les groupes permettent de structurer une base de données BibTeX selon une arborescence rappelant l'organisation des fichiers sur un disque dur dans des répertoires et sous-répertoires. Les deux principales différences sont :

@@ -1,3 +1,7 @@
+---
+title: Contenu de l'aide
+---
+
 # Contenu de l'aide
 
 ## Général

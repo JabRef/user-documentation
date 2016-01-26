@@ -1,3 +1,7 @@
+---
+title: The JabRef main window
+---
+
 # The JabRef main window
 
 *Note:* most menu actions referred in the following have keyboard shortcuts, and many are available from the toolbar. The keyboard shortcuts are found in the pull-down menus.

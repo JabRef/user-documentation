@@ -1,3 +1,7 @@
+---
+title: Jendela Bantuan
+---
+
 # Jendela Bantuan
 
 *Dibuka dengan cara klik menu Bantuan atau tekan F1.*

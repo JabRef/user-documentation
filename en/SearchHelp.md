@@ -1,3 +1,7 @@
+---
+title: Searching
+---
+
 # Searching
 
 ## Keyboard shortcuts

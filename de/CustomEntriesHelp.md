@@ -1,3 +1,7 @@
+---
+title: Eintragstypen anpassen
+---
+
 # Eintragstypen anpassen
 
 Um Eintragstypen anzupassen, wählen Sie den Menüpunkt **Optionen --&gt; Eintragstypen anpassen**.

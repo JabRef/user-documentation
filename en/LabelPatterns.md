@@ -1,3 +1,7 @@
+---
+title: Customizing the BibTeX key generator
+---
+
 # Customizing the BibTeX key generator
 
 In the ‘Key pattern’ tab in Preferences, one can set the fields used in auto generation of BibTex labels. The pattern can be set for each of the standard entry types.

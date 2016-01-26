@@ -1,3 +1,7 @@
+---
+title: Kommandozeilen-Optionen
+---
+
 # Kommandozeilen-Optionen
 
 Obwohl JabRef in erster Linie ein Programm mit grafischer Benutzeroberfläche ist, bietet es einige nützliche Optionen für die Kommandozeile und kann sogar Dateikonvertierungen durchführen, ohne die grafische Benutzeroberfläche zu öffnen.

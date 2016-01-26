@@ -1,3 +1,7 @@
+---
+title: Personnalisation du générateur de clefs BibTeX
+---
+
 # Personnalisation du générateur de clefs BibTeX
 
 Dans le menu ‘Paramétrage des clefs’ de la fenêtre Préférences, on peut indiquer les champs à utiliser pour la génération automatique des clefs BibTeX. La définition peut être faite pour chacune des entrées standards.

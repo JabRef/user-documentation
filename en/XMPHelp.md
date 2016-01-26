@@ -1,3 +1,7 @@
+---
+title: XMP metadata support in JabRef
+---
+
 # XMP metadata support in JabRef
 
 XMP is a standard created by Adobe Systems for storing metadata (data about data) in files. An well known example for metadata are MP3 tags, which can be used to describe artist, album and song name of a MP3 file. Adding metadata to MP3 helps other people to identify the songs correctly independent of file-name and can provide means for software (MP3 players for instance) to sort and group songs.

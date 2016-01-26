@@ -1,3 +1,7 @@
+---
+title: Remote operation
+---
+
 # Remote operation
 
 This feature can be toggled and configured under **Preferences -&gt; Advanced**.

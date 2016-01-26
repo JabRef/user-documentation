@@ -1,3 +1,7 @@
+---
+title: Das Hauptfenster von JabRef
+---
+
 # Das Hauptfenster von JabRef
 
 *Anmerkung:* Die meisten Menüfunktionen, auf die im Folgenden hingewiesen wird, haben Tastenkürzel, und viele Funktionen können über die Werkzeugleiste aufgerufen werden.

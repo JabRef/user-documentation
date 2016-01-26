@@ -1,3 +1,7 @@
+---
+title: Search the GVK (Common Union Catalogue)
+---
+
 # Search the GVK (Common Union Catalogue)
 
 The GVK search capability can be used to query the [GVK](http://www.gbv.de/) (Common Union Catalogue) and automatically import references into JabRef.

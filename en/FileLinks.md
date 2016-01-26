@@ -1,3 +1,7 @@
+---
+title: File links in JabRef
+---
+
 # File links in JabRef
 
 JabRef lets you link up your entries with files of any type stored on your system, as well as links to the document on the web in the form of an URL or a DOI identifier. Each entry can have an arbitrary number of file links, and each linked file can be opened quickly from JabRef.

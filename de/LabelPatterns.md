@@ -1,3 +1,7 @@
+---
+title: Anpassen der automatischen Erstellung von BibTeX-Keys
+---
+
 # Anpassen der automatischen Erstellung von BibTeX-Keys
 
 Im Tab "Key-Muster" im Dialog "Einstellungen" kann man die Felder bestimmen, die zur automatischen Generierung der BibTeX-Labels (bibtexkey) herangezogen werden. Das Muster kann für jeden der vorgegebenen Eintragstypen bestimmt werden.

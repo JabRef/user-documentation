@@ -1,3 +1,7 @@
+---
+title: JabRef
+---
+
 # JabRef
 
 **Catatan:** Program *bibtex* sering disebut pada berkas bantuan. *Bibtex* adalah suatu piranti yang dibuat oleh Oren Patashnik untuk membuat referensi bibliografi dalam dokumen LaTeX. Format basisdata yang sama juga digunakan pada CiteMaker yang merupakan piranti pembuat bibliografi pada Adobe FrameMaker.

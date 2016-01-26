@@ -1,3 +1,7 @@
+---
+title: Field content selector
+---
+
 # Field content selector
 
 This feature allows you to store a selection of often-used words or phrases that you use often in your database. By default it is enabled for the fields *Journal*, *Author*, *Keywords* and *Publisher*, but you can also add selectors to other fields, in the upper part of the *Manage* dialog (menu **Tools --&gt; Manage content selectors**).

@@ -1,3 +1,7 @@
+---
+title: Filtres d'exportation personnalisés
+---
+
 # Filtres d'exportation personnalisés
 
 JabRef vous permet de définir et d'utiliser vos propres filtres d'exportation de la même manière que les filtres d'exportation standards. Un filtre d'exportation est défini par un ou plusieurs *fichiers gabarit* qui, avec l'aide d'un certain nombre de routines internes de formatage, définissent le format des fichiers exportés. Vos fichiers gabarit doivent être préparés avec un éditeur de texte à l'extérieur de JabRef.

@@ -1,3 +1,7 @@
+---
+title: Wortauswahl verwalten
+---
+
 # Wortauswahl verwalten
 
 Diese Funktion ermöglicht es, eine Auswahl von oft benutzten Wörtern oder Phrasen zu speichern. In der Standardeinstellung ist sie für die Felder *Journal*, *Keywords* und *Publisher* aktiviert, aber Sie können die Funktion auch in anderen Feldern verwenden, indem Sie diese Felder im oberen Teil des Dialogs *Extras -&gt; Wortauswahl verwalten* hinzufügen.

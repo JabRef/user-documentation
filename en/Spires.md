@@ -1,3 +1,7 @@
+---
+title: Spires search
+---
+
 # Spires search
 
 To use this feature, choose **Search -&gt; Web search**, and the search interface will appear in the side pane. Select **Spires** in the dropdown menu.

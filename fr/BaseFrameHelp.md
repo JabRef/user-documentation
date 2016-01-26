@@ -1,3 +1,7 @@
+---
+title: La fenêtre principale de JabRef
+---
+
 # La fenêtre principale de JabRef
 
 *Note :* La plupart des menus dont il est question dans les paragraphes suivants ont des raccourcis claviers, et beaucoup sont accessibles depuis la barre d'outils. Les raccourcis clavier sont affichés dans les menus déroulants.

@@ -1,3 +1,7 @@
+---
+title: Mengambil entri dari Medline
+---
+
 # Mengambil entri dari Medline
 
 MEDLINE adalah basisdata utama kedokteran di U.S. National Library. Basisdata ini berisi referensi dari artikel jurnal yang berkaitan dengan sains kehidupan dengan konsentrasi pada biomedicine.

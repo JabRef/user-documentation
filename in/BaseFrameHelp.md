@@ -1,3 +1,7 @@
+---
+title: Jendela utama JabRef
+---
+
 # Jendela utama JabRef
 
 *Catatan:* sebagian besar perintah yang dituliskan dibawah ini mempunyai pintasan menggunakan papan ketik, beberapa perintah lain dari kotak bantuan. Pintasan dapat dilihat dari ketika menggunakan menu utama.

@@ -1,3 +1,7 @@
+---
+title: Der Eintrags-Editor
+---
+
 # Der Eintrags-Editor
 
 *Geöffnet wird der Eintrags-Editor im Hauptfenster durch einen Doppelklick auf die Zeile eines Eintrags oder durch Drücken auf ENTER. Der Eintrags-Editor wird geschlossen, indem man auf ESC drückt.*

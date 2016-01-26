@@ -1,3 +1,7 @@
+---
+title: Pencarian Spires
+---
+
 # Pencarian Spires
 
 Fungsi pencarian Spires sebenarnya meneruskan kata carian anda ke web pencarian Spires, sehingga anda juga harus mengikuti cara yang digunakan si situs Spires, kecuali anda tidak perlu menggunakan perintah *find* atau *fin*. Halamn bantuan ini memberikan pengantar ringkas untuk menulis perintah pencariannya. Bantuan yang lebih terperinci dapat ditemukan pada halaman web http://www.slac.stanford.edu/spires/hep/help/index.shtml.

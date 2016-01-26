@@ -1,3 +1,7 @@
+---
+title: Export in eine externe SQL-Datenbank
+---
+
 # Export in eine externe SQL-Datenbank
 
 JabRef kann Inhalte einer BibTeX-Datei in eine MySQL- und PostgreSQL-Datenbank exportieren. Auch die Informationen zu Gruppen werden dabei berücksichtigt.

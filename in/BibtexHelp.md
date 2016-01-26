@@ -1,3 +1,7 @@
+---
+title: Tentang *bibtex*
+---
+
 # Tentang *bibtex*
 
 JabRef membantu anda bekerja menggunakan basisdata *bibtex*, namun ada beberapa aturan yang harus anda ikuti ketika melakukan penyuntingan entri, untuk memastikan bahwa basidata anda dapat dibaca dengan benar oleh program *bibtex*.

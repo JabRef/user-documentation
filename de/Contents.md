@@ -1,3 +1,7 @@
+---
+title: Hilfe - Inhalt
+---
+
 # Hilfe - Inhalt
 
 ## Allgemeines

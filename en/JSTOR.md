@@ -1,3 +1,7 @@
+---
+title: JStor search
+---
+
 # JStor search
 
 To use this feature, choose **Search -&gt; Web search**, and the search interface will appear in the side pane. Select **JStor** in the dropdown menu. The JStor search relies on the BibSonomy scraper project (http://scraper.bibsonomy.org/) to extract information from the JStor web page.

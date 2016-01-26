@@ -1,3 +1,7 @@
+---
+title: IEEEXplore durchsuchen
+---
+
 # IEEEXplore durchsuchen
 
 IEEEXplore bietet Zugang zu Literatur in den Bereichen Elektrotechnik, Informatik und Elektronik.

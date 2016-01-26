@@ -1,3 +1,7 @@
+---
+title: JabRef における PDF/PS/URL/DOI リンク
+---
+
 # JabRef における PDF/PS/URL/DOI リンク
 
 **《註》**JabRef 2.3以降の版は、[改善された外部ファイルリンクシステム](FileLinks.html)を装備しています。

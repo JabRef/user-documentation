@@ -1,3 +1,7 @@
+---
+title: Entry time stamps
+---
+
 # Entry time stamps
 
 This feature can be toggled and configured under **Options -&gt; Preferences -&gt; General**.

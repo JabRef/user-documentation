@@ -1,3 +1,7 @@
+---
+title: About *bibtex*
+---
+
 # About *bibtex*
 
 JabRef helps you work with your *bibtex* databases, but there are still rules to keep in mind when editing your entries, to ensure that your database is treated properly by the *bibtex* program.

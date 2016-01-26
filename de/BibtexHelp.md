@@ -1,3 +1,7 @@
+---
+title: Über *BibTeX*
+---
+
 # Über *BibTeX*
 
 JabRef hilft Ihnen bei der Arbeit mit Ihren *BibTeX*-Dateien, aber es müssen dennoch Regeln beachtet werden, wenn Sie Ihre Einträge bearbeiten. Nur so kann sichergestellt werden, dass *BibTeX* Ihre Datei richtig verarbeiten kann.

@@ -1,3 +1,7 @@
+---
+title: JStor durchsuchen
+---
+
 # JStor durchsuchen
 
 Folgende Beschreibung stammt von der JStor-Webseite:

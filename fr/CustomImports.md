@@ -1,3 +1,7 @@
+---
+title: Filtres d'importation personnalisés
+---
+
 # Filtres d'importation personnalisés
 
 JabRef vous permet de définir et d'utiliser vos propres formats d'importation, d'une façon très similaire aux filtres d'importation standard qui sont définis. Un filtre d'importation est défini par une ou plusieurs *classes* Java qui analyse le contenu d'un fichier à partir d'un flux d'entrée et crée des entrées BibTeX. Ainsi, avec un peu de programmation de base en Java, vous pouvez ajouter un format d'importation correspondant à votre source de références favorite ou enregistrer une version améliorée d'un format d'importation existant. De plus, cela vous permet d'ajouter des formats d'importation personnalisés compilés que vous pourriez obtenir à partir de SourceForge (par exemple) sans avoir à recompiler JabRef (voir plus bas "Partager votre travail").
