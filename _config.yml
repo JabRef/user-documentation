@@ -5,7 +5,7 @@ safe: false
 ### site serving configuration ###
 exclude: [CNAME, README.md, .gitignore]
 include: ['de/', 'en/', 'fr/', 'in/', 'ja/']
-permalink: / ## disables post output
+permalink: pretty
 timezone: null
 lsi: false
 highlighter: pygments
