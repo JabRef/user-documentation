@@ -50,7 +50,7 @@ Import/Export
 -   [Using JabRef with OpenOffice.org or LibreOffice](OpenOfficeIntegration.md)
 -   [Fetching entries from *ACM* Portal](ACMPortalHelp.md)
 -   [Fetching entries from *CiteSeerX*](CiteSeerHelp.md)
--   [Fetching entries from *DiVA*](DiVAtoBibTeXHelp.md)
+-   [Fetching entries from *DiVA*](diva_to_bibtex_help.md)
 -   [Fetching entries from *DOAJ*](DOAJHelp.md)
 -   [Fetching entries using the *DOI to BibTeX Converter*](DOItoBibTeXHelp.md)
 -   [Fetching entries from *Google Scholar*](GoogleScholarHelp.md)
