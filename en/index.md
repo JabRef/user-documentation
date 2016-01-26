@@ -66,5 +66,3 @@ title: Help contents
 ## Miscellaneous
 
 -   [Revision history](RevisionHistory.md)
--   [About JabRef](About.md)
-

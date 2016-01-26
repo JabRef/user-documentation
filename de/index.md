@@ -54,5 +54,3 @@ title: Hilfe - Inhalt
 ## Verschiedenes
 
 -   [Versionsgeschichte](RevisionHistory.md)
--   [Über JabRef](About.md)
-

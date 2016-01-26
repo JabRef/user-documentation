@@ -65,5 +65,3 @@ title: ヘルプ目次
 ## その他
 
 -   [更新履歴](RevisionHistory.md)
--   [JabRefについて](About.md)
-

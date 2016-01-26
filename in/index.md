@@ -59,5 +59,3 @@ title: Daftar Isi Bantuan
 ## Lain-lain
 
 -   [Riwayat Perbaikan](RevisionHistory.md)
--   [Tentang JabRef](About.md)
-

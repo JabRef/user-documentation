@@ -65,5 +65,3 @@ title: Contenu de l'aide
 ## Divers
 
 -   [Historique des révisions (en anglais)](RevisionHistory.md)
--   [About JabRef](About.md)
-
