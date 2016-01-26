@@ -10,8 +10,8 @@ Source: https://github.com/JabRef/help.jabref.org
 
 General help on translating JabRef: https://github.com/JabRef/jabref/wiki/Translating-JabRef
 
-[English](en/)
-[French](fr/)
-[German](de/)
-[Indonesian](in/)
-[Japanese](jp/)
+ * [English](en/)
+ * [French](fr/)
+ * [German](de/)
+ * [Indonesian](in/)
+ * [Japanese](jp/)
