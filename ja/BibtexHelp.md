@@ -1,5 +1,5 @@
 ---
-title: *BibTeX* について
+title: BibTeX について
 ---
 
 # *BibTeX* について
