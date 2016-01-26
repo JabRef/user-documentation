@@ -4,7 +4,7 @@ Help contents
 General
 -------
 
--   [About the Help window](help_help.html)
+-   [About the Help window](help_help.md)
 -   [General information](JabRefHelp.html)
 -   [The JabRef main window](BaseFrameHelp.html)
 -   [Entry editor](EntryEditorHelp.html)
