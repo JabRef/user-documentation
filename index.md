@@ -6,4 +6,4 @@ title: JabRef Help
 
 This hosts the help of JabRef.
 
-Currently in planning state.
+[English](/en/index.md)
