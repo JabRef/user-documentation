@@ -21,7 +21,7 @@ Adding a new entry
 
 There are several ways to add a new entry. The **New entry** menu action shows a dialog where you can choose the type of the entry from a list. To bypass this dialog, there are also separate menu actions for each entry type, and keyboard shortcuts for the most common types.
 
-When a new entry is added, by default an [entry editor](EntryEditorHelp.md) for the entry will be opened. This behaviour can be toggled in the **Preferences** dialog.
+When a new entry is added, by default an [entry editor](entry_editor_help.md) for the entry will be opened. This behaviour can be toggled in the **Preferences** dialog.
 
 *Note:* We strongly recommend learning the shortcuts for the entry types you use most often, e.g. CTRL-SHIFT-A for adding an *article* entry.
 
