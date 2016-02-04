@@ -8,7 +8,10 @@ include: ['de/', 'en/', 'fr/', 'in/', 'ja/']
 permalink: pretty
 timezone: null
 lsi: false
-highlighter: pygments
+#pygments is not supported by GitHub. See https://help.github.com/articles/page-build-failed-config-file-error/#fixing-highlighting-errors
+#See also https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
+#We have to use rouge
+highlighter: rouge
 # Hint by http://milanaryal.com/2015/writing-on-github-pages-and-jekyll-using-markdown/ and http://ajoz.github.io/2014/06/29/i-want-my-github-flavored-markdown/
 markdown: redcarpet
 redcarpet:
