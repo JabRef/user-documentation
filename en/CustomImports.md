@@ -28,51 +28,58 @@ Let us assume that we want to import files of the following form:
 
 In your favorite IDE or text editor create a class derived from `ImportFormat` that implements methods `getFormatName()`, `isRecognizedFormat` and `importEntries()`. Here is an example:
 
-    import java.io.*;
-    import java.util.*;
-    import net.sf.jabref.*;
-    import net.sf.jabref.imports.ImportFormat;
-    import net.sf.jabref.imports.ImportFormatReader;
+import java.io.*;
+import java.util.*;
 
-    public class SimpleCsvImporter extends ImportFormat {
+import net.sf.jabref.importer.ImportFormatReader;
+import net.sf.jabref.importer.OutputPrinter;
+import net.sf.jabref.importer.fileformat.ImportFormat;
+import net.sf.jabref.model.entry.BibEntry;
+import net.sf.jabref.model.entry.BibtexEntryTypes;
 
-      public String getFormatName() {
+public class SimpleCSVImporter extends ImportFormat {
+
+    @Override
+    public String getFormatName() {
         return "Simple CSV Importer";
-      }
+    }
 
-      public boolean isRecognizedFormat(InputStream stream) throws IOException {
+    @Override
+    public boolean isRecognizedFormat(InputStream stream) throws IOException {
         return true; // this is discouraged except for demonstration purposes
-      }
+    }
 
-      public List importEntries(InputStream stream) throws IOException {
-            ArrayList bibitems = new ArrayList();
+    @Override
+    public List<BibEntry> importEntries(InputStream stream, OutputPrinter printer) throws IOException {
+        List<BibEntry> bibitems = new ArrayList<>();
         BufferedReader in = new BufferedReader(ImportFormatReader.getReaderDefaultEncoding(stream));
 
         String line = in.readLine();
         while (line != null) {
-          if (!"".equals(line.trim())) {
-            String[] fields = line.split(";");
-            BibEntry be = new BibEntry(Util.createNeutralId());
-            be.setType(BibtexEntryType.getType("techreport"));
-            be.setField("year", fields[0]);
-            be.setField("author", fields[1]);
-            be.setField("title", fields[2]);
-            bibitems.add(be);
-            line = in.readLine();
-          }
+            if (!line.trim().isEmpty()) {
+                String[] fields = line.split(";");
+                BibEntry be = new BibEntry();
+                be.setType(BibtexEntryTypes.TECHREPORT);
+                be.setField("year", fields[0]);
+                be.setField("author", fields[1]);
+                be.setField("title", fields[2]);
+                bibitems.add(be);
+                line = in.readLine();
+            }
         }
-            return bibitems;
-      }
+        return bibitems;
     }
+}
 
-Note that the example is in the default package. Suppose you have saved it under `/mypath/SimpleCsvImporter.java`. Also suppose the JabRef-2.0.jar is in the same folder as `SimpleCsvImporter.java` and Java is on your command path. Compile it using a JSDK 1.4 e.g. with
 
-    javac -classpath JabRef-2.0.jar SimpleCsvImporter.java
+Note that the example is in the default package. Suppose you have saved it under `/mypath/SimpleCSVImporter.java`. Also suppose the JabRef-2.0.jar is in the same folder as `SimpleCSVImporter.java` and Java is on your command path. Compile it using a JSDK 1.4 e.g. with
 
-Now there should be a file `/mypath/SimpleCsvImporter.class`.
+    javac -classpath JabRef-2.0.jar SimpleCSVImporter.java
 
-In JabRef, open **Options -&gt; Manage custom imports**, and click **Add from folder**. Navigate to `/mypath` and click the **Select ...** button. Select the `SimpleCsvImporter.class` and click the **Select ...** button. Your importer should now appear in the list of custom importers under the name "Simple CSV Importer" and, after you click **Close** also in the **File -&gt; Import -&gt; Custom Importers** and **File -&gt; Import and Append -&gt; Custom Importers** submenus of the JabRef window.
+Now there should be a file `/mypath/SimpleCSVImporter.class`.
+
+In JabRef, open **Options -&gt; Manage custom imports**, and click **Add from folder**. Navigate to `/mypath` and click the **Select ...** button. Select the `SimpleCSVImporter.class` and click the **Select ...** button. Your importer should now appear in the list of custom importers under the name "Simple CSV Importer" and, after you click **Close** also in the **File -&gt; Import -&gt; Custom Importers** and **File -&gt; Import and Append -&gt; Custom Importers** submenus of the JabRef window.
 
 ## Sharing your work
 
-With custom importer files, it's fairly simple to share custom import formats between users. If you write an import filter for a format not supported by JabRef, or an improvement over an existing one, we encourage you to post your work on our SourceForge.net page. We'd be happy to distribute a collection of submitted import files, or to add to the selection of standard importers.
+With custom importer files, it's fairly simple to share custom import formats between users. If you write an import filter for a format not supported by JabRef, or an improvement over an existing one, we encourage you to post your work on our GitHub page. We'd be happy to distribute a collection of submitted import files, or to add to the selection of standard importers.
