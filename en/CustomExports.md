@@ -122,6 +122,7 @@ JabRef provides the following set of formatters:
 -   `NoSpaceBetweenAbbreviations` : LayoutFormatter that removes the space between abbreviated First names. Example: J. R. R. Tolkien becomes J.R.R. Tolkien.
 -   `NotFoundFormatter` : Formatter used to signal that a formatter hasn't been found. This can be used for graceful degradation if a layout uses an undefined format.
 -   `Number` : outputs the 1-based sequence number of the current entry in the current export. This formatter can be used to make a numbered list of entries. The sequence number depends on the current entry's place in the current sort order, not on the number of calls to this formatter.
+-   `Ordinal` : replaces numbers with ordinals so `1` is replaced with `1st` etc.
 -   `RemoveBrackets` : removes all curly brackets "{" or "}".
 -   `RemoveBracketsAddComma` : removes all curly brackets "{" or "}". The closing curly bracket is replaced by a comma.
 -   `RemoveLatexCommands` : removes LaTeX commands like `\em`, `\textbf`, etc. If used together with `HTMLChars` or `XMLChars`, this formatter should be called last.
