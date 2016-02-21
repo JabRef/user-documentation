@@ -114,7 +114,7 @@ JabRef provides the following set of formatters:
 -   `FormatPagesForHTML` : replaces "--" with "-".
 -   `FormatPagesForXML` : replaces "--" with an XML en-dash.
 -   `GetOpenOfficeType` : returns the number used by the OpenOffice.org bibliography system (versions 1.x and 2.x) to denote the type of this entry.
--   `HTMLChars` : replaces TeX-specific special characters (e.g. {\\^a} or {\\"{o}}) with their HTML representations, and translates LaTeX commands \\emph, \\textit, \\textbf into HTML equivalents.
+-   `HTMLChars` : replaces TeX-specific special characters (e.g. `{\"{a}}` or `{\sigma})` with their HTML representations, and translates LaTeX commands `\emph`, `\textit`, `\textbf`, `\texttt`, `\underline`, `\textsuperscript`, `\textsubscript`, `\sout` into HTML equivalents.
 -   `HTMLParagraphs` : interprets two consecutive newlines (e.g. \\n \\n) as the beginning of a new paragraph and creates paragraph-html-tags accordingly.
 -   `IfPlural` : outputs its first argument if the input field looks like an author list with two or more names, or its second argument otherwise. E.g. `\format[IfPlural(Eds.,Ed.)]{\editor}` will output "Eds." if there is more than one editor, and "Ed." if there is only one.
 -   `JournalAbbreviator` : The given input text is abbreviated according to the journal abbreviation lists. If no abbreviation for input is found (e.g. not in list or already abbreviated), the input will be returned unmodified. For instance, when using `\format[JournalAbbreviator]{\journal}`, "Physical Review Letters" gets "Phys. Rev. Lett."
