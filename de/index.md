@@ -36,18 +36,18 @@ title: Hilfe - Inhalt
 -   [Der String-Editor](StringEditorHelp)
 
 ## Import/Export
-
+-   [Benutzerdefiniete Exportfilter](CustomExports)
+-   [Benutzerdefiniete Importfilter](CustomImports)
+-   [Import-Kontrollfenster](ImportInspectionDialog)
+-   [Die Exportfilter und Importfilter für EndNote](EndNoteFilters)
+-   [JabRef-Bibliographien in OpenOffice.org benutzen](OpenOfficeHelp)
 -   [Einträge von *CiteSeer* abrufen](CiteSeerHelp)
 -   [Einträge von *IEEExplore* abrufen](IEEEXploreHelp)
 -   [Einträge von *Medline* abrufen](MedlineHelp)
 -   [*JStor*-Suche](JSTOR)
--   [Exportfilter anpassen](CustomExports)
--   [Importfilter anpassen](CustomImports)
+-   [*INSPIRE*-Suche](INSPIRE)
 -   [Export in eine externe SQL-Datenbank](SQLExport)
 -   [Externer Zugriff](RemoteHelp)
--   [Die Exportfilter und Importfilter für EndNote](EndNoteFilters)
--   [Import-Kontrollfenster](ImportInspectionDialog)
--   [JabRef-Bibliographien in OpenOffice.org benutzen](OpenOfficeHelp)
 -   [XMP-Metadaten und JabRef](XMPHelp)
 -   [Kommandozeilen-Optionen](CommandLine)
 

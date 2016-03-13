@@ -56,7 +56,7 @@ title: ヘルプ目次
 -   [*Medline*から項目を取得する](MedlineHelp)
 -   [*JStor* 検索](JSTOR)
 -   [*ScienceDirect* 検索](ScienceDirect)
--   [*Spires* 検索](Spires)
+-   [*INSPIRE* 検索](INSPIRE)
 -   [外部SQLデータベースへの書き出し](SQLExport)
 -   [JabRefにおけるXMPメタデータ サポート](XMPHelp)
 -   [コマンドラインオプション](CommandLine)

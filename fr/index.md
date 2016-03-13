@@ -56,7 +56,7 @@ title: Contenu de l'aide
 -   [Récupération d'entrées depuis *Medline*](MedlineHelp)
 -   [Récupération d'entrées depuis *JStor*](JSTOR)
 -   [Récupération d'entrées depuis *ScienceDirect*](ScienceDirect)
--   [Récupération d'entrées depuis *Spires*](Spires)
+-   [Récupération d'entrées depuis *INSPIRE*](INSPIRE)
 -   [Exporter vers une base de données SQL externe](SQLExport)
 -   [Support des métadonnées XMP dans JabRef](XMPHelp)
 -   [Options de la ligne de commande](CommandLine)

@@ -57,7 +57,7 @@ title: Help contents
 -   [Fetching entries from *Medline*](MedlineHelp)
 -   [*JStor* search](JSTOR)
 -   [*ScienceDirect* search](ScienceDirect)
--   [*Spires* search](Spires)
+-   [*INSPIRE* search](INSPIRE)
 -   [Export to an External SQL Database](SQLExport)
 -   [XMP metadata support in JabRef](XMPHelp)
 -   [Command line options](CommandLine)

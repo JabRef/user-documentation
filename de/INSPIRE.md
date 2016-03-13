@@ -1,14 +1,16 @@
 ---
-title: SPIRES-Suche
+title: INSPIRE-Suche
 ---
 
-# SPIRES-Suche
+# INSPIRE-Suche
 
-Die SPIRES Suchfunktion leitet lediglich ihre Suchanfrage an die SPIRES-Websuche weiter, so dass sie ihre Suchanfrage in der gleichen Weise eingeben sollten, wie bei der Websuche, nur können sie den Befehl *find* oder *fin* weglassen. Diese Hilfeseite gibt nur eine kurze Einführung, wie Suchanfragen formuliert werden können. Detailierte Informationen, wie sie SPIRES bedienen können, finden Sie auf der [Hilfewebseite zu SPIRES](http://www.slac.stanford.edu/spires/hep/help/index.shtml).
+**INSPIRE** ist eine Open Acces Literaturdatenbank für Hochenergiephysik. INSPIRE ist der Nachfolger der Spires (Stanford Physics Information Retrieval System) Datenbank.
+
+Die INSPIRE Suchfunktion leitet lediglich ihre Suchanfrage an die INSPIRE-Websuche weiter, so dass sie ihre Suchanfrage in der gleichen Weise eingeben sollten, wie bei der Websuche, nur können sie den Befehl *find* oder *fin* weglassen. Diese Hilfeseite gibt nur eine kurze Einführung, wie Suchanfragen formuliert werden können. Detailierte Informationen, wie sie INSPIRE bedienen können, finden Sie auf der [Hilfewebseite zu INSPIRE](http://inspirehep.net/info/hep/search-tips).
 
 Ihre Suchanfrage kann aus mehreren Teilen zusammengesetzt sein, die durch die logischen Verknüpfungen *and* (und) und *or* (oder) verkettet sind. Jeder Teil besteht aus einem Buchstaben oder Wort, das den Typ des Suchfeldes angibt, gefolgt von einem Leerzeichen und dem Suchtext.
 
-Die folgende Liste zeigt einige der Felder field indicators, die verwendet werden können:
+Die folgende Liste zeigt einige der verwendbaren Befehle: 
 
 -   *a* oder *author*: Suche nach Autornamen
 -   *t* oder *title*: Suche nach Titel
