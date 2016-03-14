@@ -12,10 +12,7 @@ lsi: false
 #See also https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
 #We have to use rouge
 highlighter: rouge
-# Hint by http://milanaryal.com/2015/writing-on-github-pages-and-jekyll-using-markdown/ and http://ajoz.github.io/2014/06/29/i-want-my-github-flavored-markdown/
-markdown: redcarpet
-redcarpet:
-  extensions: ["smart", "tables", "no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data"]
+markdown: kramdown
 
 defaults:
   -
