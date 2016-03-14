@@ -1,10 +1,10 @@
 ---
-title: Pencarian Spires
+title: Pencarian INSPIRE
 ---
 
-# Pencarian Spires
+# Pencarian INSPIRE
 
-Fungsi pencarian Spires sebenarnya meneruskan kata carian anda ke web pencarian Spires, sehingga anda juga harus mengikuti cara yang digunakan si situs Spires, kecuali anda tidak perlu menggunakan perintah *find* atau *fin*. Halamn bantuan ini memberikan pengantar ringkas untuk menulis perintah pencariannya. Bantuan yang lebih terperinci dapat ditemukan pada halaman web http://www.slac.stanford.edu/spires/hep/help/index.shtml.
+Fungsi pencarian INSPIRE sebenarnya meneruskan kata carian anda ke web pencarian INSPIRE, sehingga anda juga harus mengikuti cara yang digunakan si situs INSPIRE, kecuali anda tidak perlu menggunakan perintah *find* atau *fin*. Halamn bantuan ini memberikan pengantar ringkas untuk menulis perintah pencariannya. Bantuan yang lebih terperinci dapat ditemukan pada halaman web http://inspirehep.net/info/hep/search-tips.
 
 Pencarian anda dapat terdiri dari beberapa bagian, menggunakan *and* dan *or* sebagai operator logika. Setiap bagian dapat berupa huruf atau kata yang menyatakan tipe bidang pencarian, diikuti spasi kemudian teks yang dicari.
 
