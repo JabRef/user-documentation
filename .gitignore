@@ -1,4 +1,9 @@
 _site/
 .*
-!/.gitignore
+!/.git*
+!/.travis.yml
 Gemfile.lock
+npm-debug.log
+
+# IntelliJ
+*.iml
