@@ -4,4 +4,4 @@ title: Riwayat Perbaikan
 
 # Riwayat Perbaikan
 
-Please refer to [http://jabref.sourceforge.net/revisionhistory.php](http://jabref.sourceforge.net/revisionhistory.php%22) for a complete history in English.
+Please refer to <https://github.com/JabRef/jabref/blob/master/CHANGELOG.md> for a complete history in English.

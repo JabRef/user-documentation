@@ -4,4 +4,4 @@ title: 更新履歴
 
 # 更新履歴
 
-完全な履歴については、[英語版のページ](../en/RevisionHistory)を参照してください。
+Please refer to <https://github.com/JabRef/jabref/blob/master/CHANGELOG.md> for a complete history in English.
