@@ -13,5 +13,3 @@ To start a search, enter the words of your query, and press **Enter** or the **F
 You may choose which database to search and you may opt to download the abstracts along with the cite information for each entry, by checking the **Include abstracts** checkbox.
 
 Frequent connections to ACM Portal may get your IP banned for hours. To avoid this, JabRef will for each search display a preview of the first page of entries returned by the server. You can then choose which entries to download.
-
-Please email Aaron Chen **nextAaron@gmail.com** for any suggestions.
