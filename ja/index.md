@@ -6,7 +6,6 @@ title: ヘルプ目次
 
 ## 一般
 
--   [ヘルプウィンドウについて](HelpHelp)
 -   [一般的な情報](JabRefHelp)
 -   [JabRef 基本ウィンドウ](BaseFrameHelp)
 -   [項目エディタ](EntryEditorHelp)

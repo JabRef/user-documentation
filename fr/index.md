@@ -6,7 +6,6 @@ title: Contenu de l'aide
 
 ## Général
 
--   [A propos de la fenêtre d'aide](HelpHelp)
 -   [Informations générales](JabRefHelp)
 -   [La fenêtre principale de JabRef](BaseFrameHelp)
 -   [Éditeur d'entrées](EntryEditorHelp)

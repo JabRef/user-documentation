@@ -6,7 +6,6 @@ title: Daftar Isi Bantuan
 
 ## Umum
 
--   [Tentang Jendela Bantuan](HelpHelp)
 -   [Informasi Umum](JabRefHelp)
 -   [Jendela utama JabRef](BaseFrameHelp)
 -   [Penyunting Entri](EntryEditorHelp)
