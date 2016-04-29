@@ -4,7 +4,7 @@ title: Personnaliser les types d'entrées
 
 # Personnaliser les types d'entrées
 
-Pour accéder à cette fonction, cliquez sur le menu **Options --&gt; Personnaliser les types d'entrées**.
+Pour accéder à cette fonction, cliquez sur le menu **BibTeX --&gt; Personnaliser les types d'entrées**.
 
 Lors de la personnalisation d'un type d'entrée, vous définissez à la fois son apparence dans l'éditeur d'entrées et ce qui est nécessaire pour que JabRef considère une entrée comme complète. Vous pouvez aussi bien changer les types d'entrée existants qu'en définir de nouveaux.
 
