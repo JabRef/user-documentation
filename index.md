@@ -14,4 +14,4 @@ General help on translating JabRef: https://github.com/JabRef/jabref/wiki/Transl
  * [French](fr/)
  * [German](de/)
  * [Indonesian](in/)
- * [Japanese](jp/)
+ * [Japanese](ja/)
