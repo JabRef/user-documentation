@@ -4,7 +4,7 @@ title: JabRef Help
 
 # JabRef Help
 
-This site hosts the help of [JabRef](http://www.jabref.org).
+This site hosts the help of [JabRef](http://www.jabref.org/).
 
 A FAQ is available at <http://www.jabref.org/faq/>.
 
