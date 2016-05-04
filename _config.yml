@@ -3,11 +3,15 @@ host: 0.0.0.0
 safe: false
 
 ### site serving configuration ###
+
+#serve .md files without trailing slash
+permalink: /:categories/:title
+
 exclude: [CNAME, README.md, .gitignore, vendor]
 include: ['de/', 'en/', 'fr/', 'in/', 'ja/']
-permalink: pretty
 timezone: null
 lsi: false
+
 #pygments is not supported by GitHub. See https://help.github.com/articles/page-build-failed-config-file-error/#fixing-highlighting-errors
 #See also https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
 #We have to use rouge
