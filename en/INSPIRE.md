@@ -1,10 +1,10 @@
 ---
-title: INSPIRE Search 
+title: INSPIRE Search
 ---
 
 # INSPIRE search
 
-**INSPIRE** is an open acces High-Energy Physics Literature Database. It is the successor of the SPIRES (Stanford Physics Information Retrieval System) database.
+**INSPIRE** is an open acces High-Energy Physics Literature Database. It is the successor of the Spires (Stanford Physics Information Retrieval System) database.
 
 To use this feature, choose **Search -&gt; Web search**, and the search interface will appear in the side pane. Select **INSPIRE** in the dropdown menu.
 

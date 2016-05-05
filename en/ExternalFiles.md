@@ -1,5 +1,6 @@
 ---
 title: PDF/PS/URL/DOI links in JabRef
+outdated: true
 ---
 
 # PDF/PS/URL/DOI links in JabRef

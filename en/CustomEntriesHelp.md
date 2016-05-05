@@ -4,7 +4,7 @@ title: Customizing entry types
 
 # Customizing entry types
 
-To customize entry types, select the menu **Options --&gt; Customize entry types**.
+To customize entry types, select the menu **BibTeX --&gt; Customize entry types**.
 
 When customizing an entry type, you both define how its entry editor should look, and what it takes for JabRef to consider an entry complete. You can both make changes to the existing entry types, and define new ones.
 

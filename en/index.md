@@ -6,15 +6,16 @@ title: Help contents
 
 ## General
 
--   [About the Help window](HelpHelp)
 -   [General information](JabRefHelp)
 -   [The JabRef main window](BaseFrameHelp)
 -   [Entry editor](EntryEditorHelp)
 -   [Autosave](Autosave)
-
+-   [Command line options](CommandLine)
+-   [Remote operations](RemoteHelp)
+   
 ## Fields
 
--   [*Bibtex* help](BibtexHelp)
+-   [Bibtex help](BibtexHelp)
 -   [External file links](FileLinks)
 -   [PDF/PS/URL/DOI links in JabRef](ExternalFiles)
 -   [Entry time stamps](TimeStampHelp)
@@ -26,9 +27,9 @@ title: Help contents
 
 ## Finding and sorting entries
 
--   [Help on using *Groups*](GroupsHelp)
+-   [Using groups](GroupsHelp)
 -   [Marking entries](MarkingHelp)
--   [Searching in JabRef](SearchHelp)
+-   [Searching in your database](SearchHelp)
 
 ## Setup
 
@@ -46,22 +47,33 @@ title: Help contents
 -   [Import inspection window](ImportInspectionDialog)
 -   [The EndNote import/export filter set](EndNoteFilters)
 -   [Using JabRef with OpenOffice.org or LibreOffice](OpenOfficeIntegration)
--   [Fetching entries from *ACM* Portal](ACMPortalHelp)
--   [Fetching entries from *CiteSeerX*](CiteSeerHelp)
--   [Fetching entries from *DiVA*](DiVAtoBibTeXHelp)
--   [Fetching entries from *DOAJ*](DOAJHelp)
--   [Fetching entries using the *DOI to BibTeX Converter*](DOItoBibTeXHelp)
--   [Fetching entries from *Google Scholar*](GoogleScholarHelp)
--   [Fetching entries from *IEEExplore*](IEEEXploreHelp)
--   [Fetching entries using the *ISBN to BibTeX Converter*](ISBNtoBibTeXHelp)
--   [Fetching entries from *Medline*](MedlineHelp)
--   [*JStor* search](JSTOR)
--   [*ScienceDirect* search](ScienceDirect)
--   [*INSPIRE* search](INSPIRE)
 -   [Export to an External SQL Database](SQLExport)
 -   [XMP metadata support in JabRef](XMPHelp)
--   [Command line options](CommandLine)
--   [Remote operations](RemoteHelp)
+ 
+
+## Fetching entries from the web
+
+### ...using publication identifiers
+
+-   [Fetching entries from the *DOI*](DOItoBibTeXHelp)
+-   [Fetching entries from the *ISBN*](ISBNtoBibTeXHelp)
+
+### ...using online bibliographic database
+
+-   [Fetching entries from *ACM*](ACMPortalHelp)
+-   [Fetching entries from *ADS*](ADSHelp)
+-   [Fetching entries from *arXiv*](arXivHelp)
+-   [Fetching entries from *CiteSeerX*](CiteSeerHelp)
+-   [Fetching entries from *DBLP*](DBLPHelp)
+-   [Fetching entries from *DiVA*](DiVAtoBibTeXHelp)
+-   [Fetching entries from *DOAJ*](DOAJHelp)
+-   [Fetching entries from *Google Scholar*](GoogleScholarHelp)
+-   [Fetching entries from *GVK*](GVKHelp)
+-   [Fetching entries from *IEEExplore*](IEEEXploreHelp)
+-   [Fetching entries from *INSPIRE*](INSPIRE)
+-   [Fetching entries from *Medline*](MedlineHelp)
+-   [Fetching entries from *ScienceDirect*](ScienceDirect)
+-   [Fetching entries from *Springer*](Springer)
 
 ## Miscellaneous
 

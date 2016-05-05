@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-1 col-md-2"></div>
+        <div class="col-xs-10 col-md-8">
+          {% if page.outdated %}
+            <div class="alert alert-danger" style="text-align: center; margin-top: 10px;" role="alert">
+              <p><b>Caution:</b> Parts of this information are outdated.</p>
+              <p>Please help us to improve this page <a href="{{site.github.repository_url}}/blob/gh-pages/{{page.path}}">on GitHub</a>.</p>
+            </div>
+          {% endif %}
+          {{ content }}
+        </div>
+        <div class="col-xs-2 col-md-4"></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-1 col-md-2"></div>
+        <div class="col-xs-3 col-md-3">

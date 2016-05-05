@@ -1,12 +1,12 @@
 ---
-title: Recherche Spires
+title: Recherche INSPIRE
 ---
 
-# Recherche Spires
+# Recherche INSPIRE
 
-Pour utiliser cette fonction, choisissez **Recherche -&gt; Recherche Web**. L'interface de recherche apparaitra dans le panneau latéral. Sélectionnez **Spires** dans le menu déroulant.
+Pour utiliser cette fonction, choisissez **Recherche -&gt; Recherche Web**. L'interface de recherche apparaitra dans le panneau latéral. Sélectionnez **INSPIRE** dans le menu déroulant.
 
-La fonction de recherche Spires ne fait en fait que lancer des requêtes de recherche sur le serveur web Spires ; aussi, vous devez construire vos requêtes comme si vous alliez sur le serveur web, sauf que vous ne devez pas inclure les commandes *find* et *fin*. Cette page d'aide vous donne uniquement une brève introduction aux requêtes de recherche. Une aide plus longue sur les recherches dans Spires est disponible sur la page http://www.slac.stanford.edu/spires/hep/help/index.shtml (en anglais).
+La fonction de recherche INSPIRE ne fait en fait que lancer des requêtes de recherche sur le serveur web INSPIRE ; aussi, vous devez construire vos requêtes comme si vous alliez sur le serveur web, sauf que vous ne devez pas inclure les commandes *find* et *fin*. Cette page d'aide vous donne uniquement une brève introduction aux requêtes de recherche. Une aide plus longue sur les recherches dans INSPIRE est disponible sur la page http://inspirehep.net/info/hep/search-tips (en anglais).
 
 Votre requête peut se composer de plusieurs parties combinées en utilisant *and* et *or* comme opérateurs logiques. Chaque partie est composée d'une lettre ou d'un mot spécifiant le champ de recherche, suivi par un espace et le texte à rechercher.
 

@@ -1,5 +1,7 @@
 ## JabRef Web-based Help
 
+[![Build Status](https://travis-ci.org/JabRef/help.jabref.org.svg?branch=master)](https://travis-ci.org/JabRef/help.jabref.org)
+
 This repository is intended to replace the offline help within [JabRef](http://www.jabref.org/) and the [help on the sourceforge.net page](http://jabref.sourceforge.net/help/Contents.php) at http://help.jabref.org/.
 
 Feel free to improve the page using the [issue tracker](https://github.com/JabRef/help.jabref.org/issues) or [pull requests](https://github.com/JabRef/help.jabref.org/pulls).

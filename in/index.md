@@ -6,7 +6,6 @@ title: Daftar Isi Bantuan
 
 ## Umum
 
--   [Tentang Jendela Bantuan](HelpHelp)
 -   [Informasi Umum](JabRefHelp)
 -   [Jendela utama JabRef](BaseFrameHelp)
 -   [Penyunting Entri](EntryEditorHelp)
@@ -50,7 +49,7 @@ title: Daftar Isi Bantuan
 -   [Mengambil entri dari *Medline*](MedlineHelp)
 -   [Pencarian *JStor*](JSTOR)
 -   [Pencarian *ScienceDirect*](ScienceDirect)
--   [Pencarian *Spires*](Spires)
+-   [Pencarian *INSPIRE*](INSPIRE)
 -   [Export to an External SQL Database](SQLExport)
 -   [XMP metadata support in JabRef](XMPHelp)
 -   [Command line options](CommandLine)

@@ -4,7 +4,7 @@ title: Eintragstypen anpassen
 
 # Eintragstypen anpassen
 
-Um Eintragstypen anzupassen, wählen Sie den Menüpunkt **Optionen --&gt; Eintragstypen anpassen**.
+Um Eintragstypen anzupassen, wählen Sie den Menüpunkt **BibTeX --&gt; Eintragstypen anpassen**.
 
 Wenn Sie einen Eintragstyp anpassen, definieren Sie sowohl sein Erscheinungsbild im Eintragseditor als auch die Bedingungen, nach denen JabRef einen Eintrag als vollständig akzeptiert. Sie können die bestehenden Eintragstypen verändern und neue hinzufügen.
 

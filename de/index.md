@@ -6,7 +6,6 @@ title: Hilfe - Inhalt
 
 ## Allgemeines
 
--   [Über die Hilfe](HelpHelp)
 -   [Allgemeines](JabRefHelp)
 -   [Das Hauptfenster von JabRef](BaseFrameHelp)
 -   [Der Eintrags-Editor](EntryEditorHelp)

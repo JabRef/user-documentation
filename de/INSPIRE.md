@@ -4,7 +4,7 @@ title: INSPIRE-Suche
 
 # INSPIRE-Suche
 
-**INSPIRE** ist eine Open Acces Literaturdatenbank für Hochenergiephysik. INSPIRE ist der Nachfolger der SPIRES (Stanford Physics Information Retrieval System) Datenbank.
+**INSPIRE** ist eine Open Acces Literaturdatenbank für Hochenergiephysik. INSPIRE ist der Nachfolger der Spires (Stanford Physics Information Retrieval System) Datenbank.
 
 Die INSPIRE Suchfunktion leitet lediglich ihre Suchanfrage an die INSPIRE-Websuche weiter, so dass sie ihre Suchanfrage in der gleichen Weise eingeben sollten, wie bei der Websuche, nur können sie den Befehl *find* oder *fin* weglassen. Diese Hilfeseite gibt nur eine kurze Einführung, wie Suchanfragen formuliert werden können. Detailierte Informationen, wie sie INSPIRE bedienen können, finden Sie auf der [Hilfewebseite zu INSPIRE](http://inspirehep.net/info/hep/search-tips).
 
