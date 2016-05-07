@@ -1,17 +1,16 @@
 ---
-title: Search IEEEXplore
+title: Fetching entries from IEEEXplore
 ---
 
-# Search IEEEXplore
+# Fetching entries from IEEEXplore
 
-To use this feature, choose **Search -&gt; Web search**, and the search interface will appear in the side pane. Select **IEEEXplore** in the dropdown menu.
+[IEEEXplore](http://ieeexplore.ieee.org/Xplore/home.jsp)is a scholarly research database that indexes, abstracts, and provides full-text for articles and papers on computer science, electrical engineering and electronics. IEEEXplore comprises over 180 journals, over 1,400 conference proceedings, more than 3,800 technical standards, over 1,800 eBooks and over 400 educational courses ([Wikipedia](https://en.wikipedia.org/wiki/IEEE_Xplore))
 
-IEEEXplore delivers access to technical literature in electrical engineering, computer science, and electronics. To start a search, enter the words of your query, and press **Enter** or the **Fetch** button.
+To fetch entries from IEEEXplore, choose **Search -&gt; Web search**, and the search interface will appear in the side pane. Select **IEEEXplore** in the dropdown menu. To start a search, enter the words of your query, and press **Enter** or the **Fetch** button.
 
-The search is done in guest mode, which means that a maximum of 100 results will be returned.
+By checking the **Include abstracts** checkbox, you may opt to download the abstracts along with the cite information for each entry. This will NOT cause more network queries.
 
-You may opt to download the abstracts along with the cite information for each entry, by checking the **Include abstracts** checkbox. This will NOT cause more network queries.
-
-The option to download BibTeX citations directly from IEEEXplore is not working yet.
-
-Please email Oscar Gustafsson **ogib73@gmail.com** or Aaron Chen **nextAaron@gmail.com** for any suggestions.
+##Notes##
+- The search is done in guest mode, which means that a maximum of 100 results will be returned.
+- The option to download BibTeX citations directly from IEEEXplore is not working yet.
+- Please email Oscar Gustafsson **ogib73@gmail.com** or Aaron Chen **nextAaron@gmail.com** for any suggestions.
