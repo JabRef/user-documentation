@@ -25,8 +25,4 @@ In both cases, press **Enter** or the **Fetch** button. If you use a text search
 
 ## Using a Proxy Server
 
-If you need to use an http proxy server, pass the server name and port number to java at runtime.
-
-`java -Dhttp.proxyHost="hostname"     -Dhttp.proxyPort="portnumber"`
-
-These environment settings are documented in the [Oracle J2SE documentation](https://docs.oracle.com/javase/8/docs/technotes/guides/net/proxies.html).
+If you need to use an HTTP proxy server, you can configure JabRef to use a proxy using the "Network" preferences (**Options -&gt; Preferences -&gt; Network**).
