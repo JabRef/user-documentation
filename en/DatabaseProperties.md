@@ -1,5 +1,6 @@
 ---
 title: Database properties window
+outdated: true
 ---
 
 # Database properties window
