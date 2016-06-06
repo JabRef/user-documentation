@@ -35,8 +35,8 @@ title: Hilfe - Inhalt
 -   [Der String-Editor](StringEditorHelp)
 
 ## Import/Export
--   [Benutzerdefiniete Exportfilter](CustomExports)
--   [Benutzerdefiniete Importfilter](CustomImports)
+-   [Benutzerdefinierte Exportfilter](CustomExports)
+-   [Benutzerdefinierte Importfilter](CustomImports)
 -   [Import-Kontrollfenster](ImportInspectionDialog)
 -   [Die Exportfilter und Importfilter für EndNote](EndNoteFilters)
 -   [JabRef-Bibliographien in OpenOffice.org benutzen](OpenOfficeHelp)
