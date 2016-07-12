@@ -87,12 +87,6 @@ For example, let's assume I wish to group by keyword. Before exporting the file,
 
 `\begingroup{keywords}New Category:     \format[HTMLChars]{\keywords}      \endgroup{keywords}`
 
-## Sharing your work
-
-With external layout files, it's fairly simple to share custom export formats between users. If you write an export filter for a format not supported by JabRef, or an improvement over an existing one, we encourage you to post your work on our SourceForge.net page. The same goes for formatter classes that you write. We'd be happy to distribute a collection of submitted layout files, or to add to the selection of standard export filters and formatters.
-
-Starting with JabRef 2.4 you can also package your ExportFormat or LayoutFormatter as a plug-in. If you do so, you can provide a single zip-file to other user to make use of your ExportFormat. For an example download the JabRef source release and have a look at the directory `src/resources/plugins/`. Don't hesitate to stop by the forums on Sourceforge, since we don't have extensive documentation, yet.
-
 ## Built-in export formatters
 
 JabRef provides the following set of formatters:
