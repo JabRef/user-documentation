@@ -311,5 +311,3 @@ Large example:
 > you would use
 >
 > `1@*@{ll}, {f}.@@2@1@{ll}, {f}.@2@ and {ll},         {f}.@@*@1..-3@{ll}, {f}., @-2@{ll}, {f}.@-1@ and {ll},         {f}.`
-
-If somebody would like to write a better tutorial about this: Write a mail to one of the JabRef mailinglists!
