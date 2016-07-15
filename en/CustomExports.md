@@ -95,7 +95,8 @@ JabRef provides the following set of formatters:
 -   `CreateBibORDFAuthors` : formats authors for according to the requirements of the Bibliographic Ontology (bibo).
 -   `CreateDocBookAuthors` : formats the author field in DocBook style.
 -   `CreateDocBookEditors` : formats the editor field in DocBook style.
--   `CurrentDate` : outputs the current date. With no argument, this formatter outputs the current date and time in the format "yyyy.MM.dd hh:mm:ss z" (date, time and time zone). By giving a different format string as argument, the date format can be customized. E.g. `\format[CurrentDate]{yyyy.MM.dd}` will give the date only, e.g. 2005.11.30.
+-   `CurrentDate` : outputs the current date. With no argument, this formatter outputs the current date and time in the format "yyyy.MM.dd hh:mm:ss z" (date, time and time zone). By giving a different format string as argument, the date format can be customized. For example `\format[CurrentDate]{yyyy.MM.dd}` will give the date only, e.g. 2005.11.30.
+-   `DateFormatter` : formats a date. With no argument, the date is given in ISO-format (yyyy-MM-dd), which is also the expected format of the input. The argument may contain `yyyy`, `MM`, and `dd` in any combination. For example `\format[DateFormatter(MM/yyyy)]{\date}` will output 07/2016 if the date field contains 2016-07-15.
 -   `Default` : takes a single argument, which serves as a default value. If the string to format is non-empty, it is output without changes. If it is empty, the default value is output. For instance, `\format[Default(unknown)]{\year}` will output the entry's year if set, and "unknown" if no year is set.
 -   `DOIStrip` : strips any prefixes from the DOI string.
 -   `DOICheck` : provides the full url for a DOI link.
