@@ -1,5 +1,6 @@
 ---
 title: JabRef におけるファイルリンク
+outdated: true
 ---
 
 # JabRef におけるファイルリンク

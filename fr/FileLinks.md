@@ -1,5 +1,6 @@
 ---
 title: Liens de fichier dans JabRef
+outdated: true
 ---
 
 # Liens de fichier dans JabRef
