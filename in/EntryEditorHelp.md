@@ -1,5 +1,6 @@
 ---
 title: Penyunting entri
+outdated: true
 ---
 
 # Penyunting entri

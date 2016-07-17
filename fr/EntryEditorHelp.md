@@ -1,5 +1,6 @@
 ---
 title: L'éditeur d'entrées
+outdated: true
 ---
 
 # L'éditeur d'entrées

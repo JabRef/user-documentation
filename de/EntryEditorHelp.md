@@ -1,5 +1,6 @@
 ---
 title: Der Eintrags-Editor
+outdated: true
 ---
 
 # Der Eintrags-Editor
