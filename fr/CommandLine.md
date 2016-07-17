@@ -1,5 +1,6 @@
 ---
 title: Les options de la ligne de commande
+outdated: true
 ---
 
 # Les options de la ligne de commande

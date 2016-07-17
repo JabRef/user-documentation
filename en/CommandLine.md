@@ -1,5 +1,6 @@
 ---
 title: Command line options
+outdated: true
 ---
 
 # Command line options

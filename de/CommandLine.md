@@ -1,5 +1,6 @@
 ---
 title: Kommandozeilen-Optionen
+outdated: true
 ---
 
 # Kommandozeilen-Optionen
