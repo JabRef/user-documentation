@@ -4,6 +4,15 @@ title: Contenu de l'aide
 
 # Contenu de l'aide
 
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <strong>You can't find a solution to your problem? You still have questions?</strong>
+  </div>
+  <div class="panel-body">
+    <a class="btn btn-default" role="button" href="http://discourse.jabref.org">Use the (English) online forum to get more support!</a>
+  </div>
+</div>
+
 ## Général
 
 -   [Informations générales](JabRefHelp)

@@ -4,6 +4,15 @@ title: Hilfe - Inhalt
 
 # Hilfe - Inhalt
 
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <strong>Keine Lösung gefunden? Es sind immer noch Fragen offen?</strong>
+  </div>
+  <div class="panel-body">
+    <a class="btn btn-default" role="button" href="http://discourse.jabref.org">Im (englischsprachigen) Onlineforum gibt es weitere Hilfe!</a>
+  </div>
+</div>
+
 ## Allgemeines
 
 -   [Allgemeines](JabRefHelp)
