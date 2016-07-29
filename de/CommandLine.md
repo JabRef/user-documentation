@@ -5,11 +5,11 @@ outdated: true
 
 # Kommandozeilen-Optionen
 
-Obwohl JabRef in erster Linie ein Programm mit grafischer Benutzeroberfläche ist, bietet es einige nützliche Optionen für die Kommandozeile und kann sogar Dateikonvertierungen durchführen, ohne die grafische Benutzeroberfläche zu öffnen.
+Obwohl JabRef in erster Linie ein Programm mit grafischer Benutzeroberfläche ist, bietet es einige nützliche Optionen für die Kommandozeile und kann sogar Dateikonvertierungen durchführen, ohne die grafische Benutzeroberfläche zu öffnen. Um die Kommandozeilenoptionen zu nutzen benötigen Sie die JAR-Version von JabRef. Diese können Sie entweder direkt von der JabRef-Downloadseite herunterladen. Falls Sie JabRef bereits installiert haben, finden Sie die JAR-Datei bereits im Installationsorder von JabRef.
 
 Sie können eine oder mehrere BibTeX-Dateien laden, indem Sie auf der Kommandozeile die entsprechenden Dateinamen auflisten. Achten Sie darauf, alle gewünschten Optionen anzugeben, bevor Sie die Dateinamen anfügen. Außerdem müssen Sie sich vergewissern, dass der erste Dateiname nicht als Argument einer Option missverstanden werden kann - falls eine Bool'sche Option wie `-n` oder `-l` direkt vor einem Dateinamen steht, müssen Sie also "true" als Argument angeben. Das Beispielkommando:
 
-`jabref -o filetoexport.xml,docbook -n true     original.bib`
+`java -jar JabRef.jar -o filetoexport.xml,docbook -n true     original.bib`
 
 lädt die Datei `original.bib`, exportiert sie in das Docbook-Format, speichert sie unter dem Namen `filetoexport.xml` und unterdrückt das Laden der grafischen Oberfläche. Das Word *true* verhindert, dass der Dateiname als Argument der Option `-n` interpretiert wird.
 

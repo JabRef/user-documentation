@@ -9,7 +9,7 @@ Bien que JabRef soit d'abord une application graphique, il offre plusieurs optio
 
 Vous pouvez spécifier le chargement d'un ou de plusieurs fichiers BibTeX en indiquant simplement leurs noms. Prenez la précaution de spécifier l'ensemble des options avant la liste des fichiers. Vous devez toujours vérifier que le premier nom de fichier ne sera pas compris comme l'argument d'une option - cela veut simplement dire que si une option de type logique comme `-n` ou `-l` précède immédiatement un nom de fichier, il faut ajouter le mot "true" comme argument. Par exemple, la commande
 
-`jabref -o filetoexport.xml,docbook -n true     original.bib`
+`java -jar JabRef.jar -o filetoexport.xml,docbook -n true     original.bib`
 
 va charger correctement le fichier `original.bib` et l'exporter au format docbook dans le fichier `filetoexport.xml` sans afficher l'interface graphique. Le mot *true* évite que le nom de fichier ne soit interpréter comme un argument de l'option `-n`
 
@@ -55,7 +55,7 @@ Cette option indique à JabRef d'importer les préférences de l'utilisateur pr�
 
 JabRef enregistre toutes les entrées de la base correspondant à un terme de recherche donné dans un nouveau fichier. Le format du fichier d'exportation peut être choisi, le format par défaut étant un tableau html (avec résumé et BibTeX, fourni par tablerefsabsbib).
 
-Appel : `JabRef.jar -m [field=]TermeDeRecherche,FichierDeSortie[,FormatExportation] -n true FichierEntrée`
+Appel : `java -jar JabRef.jar -m [field=]TermeDeRecherche,FichierDeSortie[,FormatExportation] -n true FichierEntrée`
 
 Pour des informations sur la fonction de recherche, voyez l'aide sur la 'recherche avancée'. De plus, il est aussi possible de recherche des entrées sur une période temporelle au lieu de les rechercher uniquement pour une année donnée.
 
