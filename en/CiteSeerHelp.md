@@ -1,9 +1,9 @@
 ---
-title: Importing From CiteSeerX
+title: Fetching entries from CiteSeerX
 ---
 
-# Importing From CiteSeerX
+# Fetching entries from CiteSeerX
 
-To use this feature, choose **Search -&gt; Web search**, and the search interface will appear in the side pane. Select **CiteSeerX** in the dropdown menu.
+[CiteSeerX](http://csxstatic.ist.psu.edu/about) is a public search engine for scientific and academic papers primarily with a focus on computer and information science. However, CiteSeerX has been expanding into other scholarly domains such as economics, physics and others ([Wikipedia](https://en.wikipedia.org/wiki/CiteSeer)). 
 
-CiteSeerX is an evolving scientific literature digital library and search engine that focuses primarily on the literature in computer and information science. CiteSeerx aims to improve the dissemination of scientific literature and to provide improvements in functionality, usability, availability, cost, comprehensiveness, efficiency, and timeliness in the access of scientific and scholarly knowledge.
+To fetch entries from CiteSeerX, choose **Search -&gt; Web search**, and the search interface will appear in the side pane. Select **CiteSeerX** in the dropdown menu. To start a search, enter the words of your query, and press **Enter** or the **Fetch** button.

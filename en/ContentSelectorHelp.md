@@ -1,5 +1,6 @@
 ---
 title: Field content selector
+outdated: true
 ---
 
 # Field content selector

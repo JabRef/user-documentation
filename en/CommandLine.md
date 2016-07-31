@@ -1,14 +1,15 @@
 ---
 title: Command line options
+outdated: true
 ---
 
 # Command line options
 
-Although JabRef is primarily a GUI based application, it offers several command line options that may be useful, and can even perform file conversion operations without opening the graphical interface.
+Although JabRef is primarily a GUI based application, it offers several command line options that may be useful, and can even perform file conversion operations without opening the graphical interface. The command line options are only available when using the JAR version of JabRef. You can directly download the JAR file from our download site, or, if you already have installed JabRef, you can find the file in your installation folder.
 
 You can always specify one or more BibTeX files to load by simply listing their filenames. Take care to specify all options before your list of file names. You must make sure the first file name is not misunderstood as being an argument for an option - this simply means that if a boolean option like `-n` or `-l` immediately precedes a file name, add the word "true" as an argument. For instance, the command line:
 
-`jabref -o filetoexport.xml,docbook -n true     original.bib`
+`java -jar JabRef.jar -o filetoexport.xml,docbook -n true     original.bib`
 
 will correctly load the file `original.bib`, export it in docbook format to `filetoexport.xml`, and suppress the GUI. The word *true* prevents the file name from being interpreted as an argument to the -n option.
 
@@ -54,7 +55,7 @@ This option causes JabRef to import user preferences exported using the `-x` opt
 
 JabRef saves all the database entries matching to a given search term in a new file. The export file's format can be chosen, the default format is html-table (with abstract and bibtex, provided by tablerefsabsbib).
 
-Call: `JabRef.jar -m [field=]searchTerm,outputFile[,exportFormat] -n true inputFile`
+Call: `java -jar JabRef.jar -m [field=]searchTerm,outputFile[,exportFormat] -n true inputFile`
 
 For information referring to the search function see the documentation for 'advanced search'. In addition it is also possible to search for entries within a timeframe instead of only searching for entries of a certain year.
 

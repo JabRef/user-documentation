@@ -1,5 +1,6 @@
 ---
 title: 項目エディタ
+outdated: true
 ---
 
 # 項目エディタ

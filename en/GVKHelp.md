@@ -1,18 +1,16 @@
 ---
-title: Search the GVK (Common Union Catalogue)
+title: Fetching entries from GVK
 ---
 
-# Search the GVK (Common Union Catalogue)
+# Fetching entries from GVK
 
-The GVK search capability can be used to query the [GVK](http://www.gbv.de/) (Common Union Catalogue) and automatically import references into JabRef.
+[GVK](https://gso.gbv.de), the GBV Union Catalogue, is a multimaterial bibliographic database of seven German federal states. It covers  41.5 million records of books, conference proceedings, periodicals, dissertations, microfilms and electronic resources. 
 
-To use this feature, choose **Search -&gt; Web search**, and the search interface will appear in the side pane. Select **GVKFetcher** in the dropdown menu.
+To fetch entries from GVK, choose **Search -&gt; Web search**, and the search interface will appear in the side pane. Select **GVK (Gemeinsamer Verbundkatalog)** in the dropdown menu. To start a search, enter the words of your query, and press **Enter** or the **Fetch** button.
 
-You can simply enter words / names / years you want to search for, or you can specify search keys.
+You can simply enter words / names / years you want to search for, or you can specify search keys. Supported keys are:
 
-Supported keywords are
-
--   all - all words. Not specifing a search key results in an "all" search
+-   all - all words. Not specifYing a search key results in an "all" search
 -   tit - title words
 -   per - authors, editors, etc.
 -   thm - topics
@@ -28,7 +26,7 @@ Supported keywords are
 
 -   queries can be combined with "and". The use of "and" is optional, though.
 -   in many cases you can use the truncation sign "?"
--   spaces in person names are not supported - I am working on it. Please use the truncation sign ? after the first name for several given names. E.g. "per Maas,jan?"
+-   spaces in person names are not supported yet. Please use the truncation sign ? after the first name for several given names. E.g. "per Maas,jan?"
 
 ### Sample queries
 

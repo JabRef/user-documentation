@@ -1,14 +1,15 @@
 ---
-title: Search ACM Portal
+title: Fetching entries from ACM Portal
 ---
 
-# Search ACM Portal
+# Fetching entries from ACM Portal
 
-The ACM Portal includes two databases: the ACM Digital Library that is a full text collection of every article published by ACM, including over 50 years of archives, and the Guide to Computing Literature that is a bibliographic collection from major publishers in computing with over one million entries.
+The [ACM Portal](https://dl.acm.org) includes two databases  ([Wikipedia](https://en.wikipedia.org/wiki/Association_for_Computing_Machinery#Portal_and_Digital_Library)):
+- the **ACM Digital Library** that is a full text collection of every article published by the [Association for Computing Machinery](https://www.acm.org), including over 60 years of archives
+from articles, magazines and conference proceedings.
+- the **Guide to Computing Literature** that is a bibliographic collection from major publishers in computing with over one million entries.
 
-JabRef can download citations from the ACM Portal database. To use this feature, choose **Search -&gt; Web search**, and the search interface will appear in the side pane. Select **ACM Portal** in the dropdown menu.
-
-To start a search, enter the words of your query, and press **Enter** or the **Fetch** button.
+To fetch entries from ACM, choose **Search -&gt; Web search**, and the search interface will appear in the side pane. Select **ACM portal** in the dropdown menu. To start a search, enter the words of your query, and press **Enter** or the **Fetch** button.
 
 You may choose which database to search and you may opt to download the abstracts along with the cite information for each entry, by checking the **Include abstracts** checkbox.
 

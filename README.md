@@ -6,6 +6,8 @@ This repository is intended to replace the offline help within [JabRef](http://w
 
 Feel free to improve the page using the [issue tracker](https://github.com/JabRef/help.jabref.org/issues) or [pull requests](https://github.com/JabRef/help.jabref.org/pulls).
 
+See also our [guidelines and quick start guide on contributing](CONTRIBUTING.md).
+
 Execute `gem install bundler`, `bundle install`, and `bundle exec jekyll serve` to serve this page locally at http://localhost:4000/.
 Source: https://help.github.com/articles/using-jekyll-with-pages/#installing-jekyll
 At windows, this works with [RubyInstaller](http://rubyinstaller.org/downloads) and the [Development Kit](https://github.com/oneclick/rubyinstaller/wiki/Development-Kit).

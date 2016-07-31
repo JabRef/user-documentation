@@ -87,12 +87,6 @@ For example, let's assume I wish to group by keyword. Before exporting the file,
 
 `\begingroup{keywords}New Category:     \format[HTMLChars]{\keywords}      \endgroup{keywords}`
 
-## Sharing your work
-
-With external layout files, it's fairly simple to share custom export formats between users. If you write an export filter for a format not supported by JabRef, or an improvement over an existing one, we encourage you to post your work on our SourceForge.net page. The same goes for formatter classes that you write. We'd be happy to distribute a collection of submitted layout files, or to add to the selection of standard export filters and formatters.
-
-Starting with JabRef 2.4 you can also package your ExportFormat or LayoutFormatter as a plug-in. If you do so, you can provide a single zip-file to other user to make use of your ExportFormat. For an example download the JabRef source release and have a look at the directory `src/resources/plugins/`. Don't hesitate to stop by the forums on Sourceforge, since we don't have extensive documentation, yet.
-
 ## Built-in export formatters
 
 JabRef provides the following set of formatters:
@@ -101,7 +95,8 @@ JabRef provides the following set of formatters:
 -   `CreateBibORDFAuthors` : formats authors for according to the requirements of the Bibliographic Ontology (bibo).
 -   `CreateDocBookAuthors` : formats the author field in DocBook style.
 -   `CreateDocBookEditors` : formats the editor field in DocBook style.
--   `CurrentDate` : outputs the current date. With no argument, this formatter outputs the current date and time in the format "yyyy.MM.dd hh:mm:ss z" (date, time and time zone). By giving a different format string as argument, the date format can be customized. E.g. `\format[CurrentDate]{yyyy.MM.dd}` will give the date only, e.g. 2005.11.30.
+-   `CurrentDate` : outputs the current date. With no argument, this formatter outputs the current date and time in the format "yyyy.MM.dd hh:mm:ss z" (date, time and time zone). By giving a different format string as argument, the date format can be customized. For example `\format[CurrentDate]{yyyy.MM.dd}` will give the date only, e.g. 2005.11.30.
+-   `DateFormatter` : formats a date. With no argument, the date is given in ISO-format (yyyy-MM-dd), which is also the expected format of the input. The argument may contain `yyyy`, `MM`, and `dd` in any combination. For example `\format[DateFormatter(MM/yyyy)]{\date}` will output 07/2016 if the date field contains 2016-07-15.
 -   `Default` : takes a single argument, which serves as a default value. If the string to format is non-empty, it is output without changes. If it is empty, the default value is output. For instance, `\format[Default(unknown)]{\year}` will output the entry's year if set, and "unknown" if no year is set.
 -   `DOIStrip` : strips any prefixes from the DOI string.
 -   `DOICheck` : provides the full url for a DOI link.
@@ -311,5 +306,3 @@ Large example:
 > you would use
 >
 > `1@*@{ll}, {f}.@@2@1@{ll}, {f}.@2@ and {ll},         {f}.@@*@1..-3@{ll}, {f}., @-2@{ll}, {f}.@-1@ and {ll},         {f}.`
-
-If somebody would like to write a better tutorial about this: Write a mail to one of the JabRef mailinglists!

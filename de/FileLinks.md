@@ -1,5 +1,6 @@
 ---
 title: Datei-Links in JabRef
+outdated: true
 ---
 
 # Datei-Links in JabRef

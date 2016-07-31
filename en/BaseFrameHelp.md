@@ -12,7 +12,7 @@ This is the main window from where you work with your databases. Below the menub
 -   Double-click a line of the table to edit the entry content. You can navigate the table with the arrow keys.
 -   The table is sorted according to a set of fields of your choosing. The default sort order can be set up in **Preferences -&gt; Entry table**, but to more quickly change the order, click the header of a column to set it as the primary sort criterion, or reverse the sorting if it is already set. Another click will deselect the column as sorting criterion. Hold down **CONTROL** and click a column to add, reverse or remove it as a sub-criterion after the primary column. You can add an arbitrary number of sub-criteria, but only three levels will be stored for the next time you start JabRef.
 -   Adjust the width of each column by dragging the borders between their headers.
--   Color codes can be toggled in the **Preferences** dialog, and they help you visualize the completeness of your database by coloring cells as follows:
+-   Color codes can be toggled in the **Preferences** dialog (select **Appearance** and activate option "Color codes for optional and required fields). They help you visualize the completeness of your database by coloring cells as follows:
     -   A <span style="color: red">red</span> cell in the leftmost column denotes an incomplete entry.
     -   A <span style="color: #909000">yellow</span> cell in the leftmost column denotes an entry that doesn't define all required fields by itself, but that contains a cross-reference.
     -   A <span style="color: blue">blue</span> cell denotes a required field.

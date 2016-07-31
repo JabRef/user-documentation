@@ -1,5 +1,6 @@
 ---
 title: The entry editor
+outdated: true
 ---
 
 # The entry editor
