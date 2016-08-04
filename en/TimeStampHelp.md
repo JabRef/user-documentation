@@ -4,9 +4,12 @@ title: Entry time stamps
 
 # Entry time stamps
 
-This feature can be toggled and configured under **Options -&gt; Preferences -&gt; General**.
+JabRef can optionally set a field to contain the date an entry was added to the database. 
 
-JabRef can automatically set a field to contain the date an entry was added to the database.
+You can disable or enable this feature by entering **Preferences -&gt; General**, and selecting/deselecting the line *'mark new entries with addition date'*. You can also change the date format (see below). 
+If an entry with a timestamp is pasted or imported, the field is updated with the current date if *'Overwrite'* is checked.
+By default, the date is added in a field called *'timestamp'*, which is visible in the **General fields** tab in the [entry editor](EntryEditorHelp). You can alter the name of this field.
+Finally, the value of the timestamp field will be updated upon changes in the entry if *'Update timestamp on modification'* is checked.
 
 ## Formatting
 
