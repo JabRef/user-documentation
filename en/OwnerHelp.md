@@ -4,6 +4,10 @@ title: The 'owner' field
 
 # The 'owner' field
 
-JabRef can optionally mark all new entries added or imported to a database with your username. You can disable or enable this feature by entering **Preferences -&gt; General**, and you can also change the name used to mark your entries. The default name used is your user name.
+JabRef can optionally mark all new entries added or imported to a database with your username.
 
-The name will be added in a field called 'owner', which by default is visible in the **General fields** tab in the Entry Editor.
+You can disable or enable this feature by entering **Preferences -&gt; General**, and selecting/deselecting the line *'mark new entries with owner name'*.
+You can also change the name used to mark your entries. The default name used is your user name.
+Finally, if you check *'Overwrite'*, the owner of an existing entry will be overwritten with your username after you alter this entry.
+
+The owner name is added in a field called *'owner'*, which by default is visible in the **General fields** tab in the [entry editor](EntryEditorHelp).
