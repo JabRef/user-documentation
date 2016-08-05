@@ -4,6 +4,6 @@ title: Fetching entries from Springer
 
 # Fetching entries from Springer
 
-To use this feature, choose **Search -&gt; Web search**, and the search interface will appear in the side pane. Select **Springer** in the dropdown menu.
+[Springer](https://www.springer.com/) (aka Springer Science+Business Media) is a global publishing company that publishes books, e-books and peer-reviewed journals in science, technical and medical publishing. Springer also hosts a number of scientific databases, including SpringerLink, Springer Protocols, and SpringerImages ([Wikipedia](https://en.wikipedia.org/wiki/Springer_Science%2BBusiness_Media)).
 
-Enter the text you want to search for in the search field and press **Enter** or the **Fetch** button.
+To fetch entries from Springer, choose **Search -&gt; Web search**, and the search interface will appear in the side pane. Select **Springer** in the dropdown menu. To start a search, enter the words of your query, and press **Enter** or the **Fetch** button.
