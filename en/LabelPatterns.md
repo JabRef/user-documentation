@@ -4,7 +4,7 @@ title: Customizing the BibTeX key generator
 
 # Customizing the BibTeX key generator
 
-In the ‘Key pattern’ tab in Preferences, one can set the fields used in auto generation of BibTex labels. The pattern can be set for each of the standard entry types.
+In the ‘BibTeX key generator’ tab of the Preferences, one can set the pattern used in auto generation of BibTex labels. The pattern can be set for each of the standard entry types. Additionally, if you right click the tab of a database, the menu "BibTex key patterns" allows to set specific key patterns for this database.
 
 ## Key patterns
 
@@ -57,7 +57,7 @@ A field name (or one of the above pseudo-field names) may optionally be followed
 -   **:upper**: Forces the text inserted by the field marker to be in uppercase. For example, **\[auth:upper\]** expands the last name of the first author in uppercase.
 -   **:(x)**: Replace x by any string. The string between the parentheses will be inserted if the field marker preceding this modifier resolves to an empty value. For instance, the marker **\[volume:(unknown)\]** will return the entry's volume if set, and the string **unknown** if the entry's `volume` field is not set.
 
-If you haven't defined a key pattern for a certain entry type, the **Default key pattern** will be used. You can change the default pattern - its setting is above the list of entry types in the **Key pattern** section of the **Preferences** dialog.
+If you have not defined a key pattern for a certain entry type, the **Default pattern** will be used. You can change the default pattern - its setting is above the list of entry types in the **BibTeX key generator** section of the **Preferences** dialog.
 
 The default key pattern is \[auth\]\[year\], and this could produce keys like e.g. `Yared1998` If the key is not unique in the current database, it is made unique by adding one of the letters a-z until a unique key is found. Thus, the labels might look like:
 
@@ -68,3 +68,9 @@ The default key pattern is \[auth\]\[year\], and this could produce keys like e.
 ## Regular expression replace
 
 After the key pattern has been applied to produce a key, you can choose to have the key generator search for occurrences of a specific regular expression, and replace it with a string. The regular expression and replacement string are entered in the text fields below the list of key patterns. If the replacement string is empty, matches of the regular expression will simply be removed from the generated key. For instance, `\p{Punct}` or `[:/%]` can be replaced by nothing to remove unwanted characters from the key. This may be useful when naming PDFs according to BibTeX keys.
+
+## Key generator settings
+
+The behavior of the key generator can be altered to better suit your needs. A specific section can be found in **Options  -&gt; Preferences**, tab **BibTeX key generator**.
+
+
