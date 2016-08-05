@@ -4,7 +4,7 @@ title: Help on Strings
 
 # Help on Strings
 
-*Bibtex* supports storing constant strings using `@String {key = value}`. JabRef supports managing them using **BibTeX -&gt; Edit strings**, which opens the [String Editor](StringEditorHelp). These values can be used in fields. For example, you can have:
+*BibTeX* supports storing constant strings using `@String {key = value}`. JabRef supports managing them using **BibTeX -&gt; Edit strings**, which opens the [String Editor](StringEditorHelp). These values can be used in fields. For example, you can have:
 
     @String { kopp = "Kopp, Oliver" }
     @String { kubovy = "Kubovy, Jan" }
@@ -12,7 +12,7 @@ title: Help on Strings
 
 and then in some entry for example: `@Misc{ author = kopp # et # kubovy }` or `@Misc{ author = kopp # " and " # kubovy }`. In the JabRef field editor, the author has to be inserted as `#kopp# #et# #kubovy#` or `#kopp# and #kubovy#`.
 
-JabRef enhances the concept of Strings to add a type to those `@String`s. The issue is how to preserve such type of a string in a bibtex file. JabRefadds the type though prefixes:
+JabRef enhances the concept of Strings to add a type to those `@String`s. The issue is how to preserve such type of a string in a BibTeX file. JabRef adds the type though prefixes:
 
 -   `@String { aKopp = "Kopp, Oliver" }` is a `@String` with the type author.
 -   `@String { iMIT = "{Massachusetts Institute of Technology ({MIT})}" }` is a `@String` with the type of institution.
