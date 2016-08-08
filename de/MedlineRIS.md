@@ -5,6 +5,7 @@ title: Medline vs. MedlinePlain vs. RIS
 # Unterschiede der Formate
 Das MedlinePlain Format kann in in einer gewöhnlichen ".txt" Datei erstellt werden. Hierbei werden die Felder Namen am Anfang jeder Zeile geschrieben.
 Beim Medline Format handelt es sich um eine XML Datei. Dort gibt man den Feldnamen zwischen '<' und '>' an. Für seine ausführliche Beschreibung siehe https://www.nlm.nih.gov/bsd/licensee/elements_descriptions.html .
+MedlinePlain und Medline(XML) sind immer vom Typ "Article".
 RIS funktioniert genau wie MedlinePlain, nur dass die Dateiendung hier ".ris" ist.
 
 ## Tabelle mit Feldern
