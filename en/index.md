@@ -45,7 +45,7 @@ title: Help contents
 -   [String editor](StringEditorHelp)
 -   [Database properties window](DatabaseProperties)
 -   [Entry preview setup](PreviewHelp)
--   [Customizing the BibTex key generator](LabelPatterns)
+-   [Customizing the BibTex key generator](BibtexKeyPatterns)
 -   [Customizing entry types](CustomEntriesHelp)
 -   [Customizing general fields](GeneralFields)
 

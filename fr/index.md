@@ -43,7 +43,7 @@ title: Contenu de l'aide
 -   [Éditeur de chaînes](StringEditorHelp)
 -   [Propriétés de la base de données](DatabaseProperties)
 -   [Configuration de l'aperçu des entrées](PreviewHelp)
--   [Personnalisation du générateur de clefs BibTeX](LabelPatterns)
+-   [Personnalisation du générateur de clefs BibTeX](BibtexKeyPatterns)
 -   [Personnalisation des types d'entrées](CustomEntriesHelp)
 -   [Personnalisation des champs généraux](GeneralFields)
 
