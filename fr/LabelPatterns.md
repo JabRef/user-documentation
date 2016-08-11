@@ -2,6 +2,6 @@
 title: Personnalisation du générateur de clefs BibTeX
 ---
 
-This file has been renamed with Version 3.6.
+Ce fichier a changé de nom avec la Version 3.6.
 
-You can access the new version [here](BibtexKeyPatterns).
+Vous pouvez accéder à la nouvelle version [ici](BibtexKeyPatterns).
