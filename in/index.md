@@ -41,7 +41,7 @@ title: Daftar Isi Bantuan
 -   [Penyunting string](StringEditorHelp)
 -   [Jendela properti basisdata](DatabaseProperties)
 -   [Pengaturan pratampilan entri](PreviewHelp)
--   [Customizing the BibTex key generator](LabelPatterns)
+-   [Customizing the BibTex key generator](BibtexKeyPatterns)
 -   [Customizing entry types](CustomEntriesHelp)
 -   [Customizing general fields](GeneralFields)
 

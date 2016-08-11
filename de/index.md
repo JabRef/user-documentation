@@ -39,7 +39,7 @@ title: Hilfe - Inhalt
 
 -   [Eintragstypen anpassen](CustomEntriesHelp)
 -   [Allgemeine Felder festlegen](GeneralFields)
--   [Anpassen der automatischen Generierung von BibTeX-keys](LabelPatterns)
+-   [Anpassen der automatischen Generierung von BibTeX-keys](BibtexKeyPatterns)
 -   [Eintragsvorschau anpassen](PreviewHelp)
 -   [Der String-Editor](StringEditorHelp)
 

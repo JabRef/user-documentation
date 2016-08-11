@@ -43,7 +43,7 @@ title: ヘルプ目次
 -   [文字列エディタ](StringEditorHelp)
 -   [データベース特性ウィンドウ](DatabaseProperties)
 -   [項目プレビューの設定](PreviewHelp)
--   [BibTeX鍵生成方法の調整](LabelPatterns)
+-   [BibTeX鍵生成方法の調整](BibtexKeyPatterns)
 -   [項目型の調整](CustomEntriesHelp)
 -   [汎用フィールドの個人設定](GeneralFields)
 
