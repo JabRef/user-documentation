@@ -100,6 +100,7 @@ JabRef provides the following set of formatters:
 -   `Default` : takes a single argument, which serves as a default value. If the string to format is non-empty, it is output without changes. If it is empty, the default value is output. For instance, `\format[Default(unknown)]{\year}` will output the entry's year if set, and "unknown" if no year is set.
 -   `DOIStrip` : strips any prefixes from the DOI string.
 -   `DOICheck` : provides the full url for a DOI link.
+-   `EntryTypeFormatter` : camel case of entry types, so "inbook" -> "InBook".
 -   `FileLink(filetype)` : if no argument is given, this formatter outputs the first external file link encoded in the field. To work, the formatter must be supplied with the contents of the "file" field.
 
     This formatter takes the name of an external file type as an optional argument, specified in parentheses after the formatter name. For instance, `\format[FileLink(pdf)]{\file}` specifies `pdf` as an argument. When an argument is given, the formatter selects the first file link of the specified type. In the example, the path to the first PDF link will be output.
