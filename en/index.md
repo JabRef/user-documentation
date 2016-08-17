@@ -34,11 +34,12 @@ title: Help contents
 -   [Special Fields](SpecialFieldsHelp)
 -   [Bibtex Strings](StringsHelp)
 
-## Finding and sorting entries
+## Finding, sorting and cleaning entries
 
 -   [Using groups](GroupsHelp)
 -   [Marking entries](MarkingHelp)
 -   [Searching in your database](SearchHelp)
+-   [Find duplicated entries](FindDuplicates)
 
 ## Setup
 
