@@ -1,24 +1,28 @@
 ---
-title: Medline vs. MedlinePlain vs. RIS
+title: Medline (txt) vs. Medline (XML) vs. RIS
 ---
 
 # Differences of the Formats
-The MedlinePlain format can be used in a simple ".txt" document. Here, you have to write the field names at the beginning of every line.
-The Medline format is a XML document. The field name has to be written between '<' and '>'. For futher information visit https://www.nlm.nih.gov/bsd/licensee/elements_descriptions.html .
-MedlinePlain and Medline(XML) have the type "article".
-RIS works similar to MedlinePlain, only that the extension is ".ris".
+The Medline (txt) format can be used by a simple text document.
+Here, you have to write the field names at the beginning of each line.
+The Medline (xml) format is a XML document.
+The field name has to be written between `<` and `>`.
+For futher information visit https://www.nlm.nih.gov/bsd/licensee/elements_descriptions.html.
+Medline (txt) and Medline (XML) always take the type "article".
+RIS works similar to Medline (txt) with the difference that different fields are supported and the file extension is "ris".
+
+In other sources, you might encounter "MedlinePlain" as synonym for "Medline (txt)" and "Medline" as synonym for "Medline (xml)".
 
 ## Table with fields 
-|Field             |MedlinePlain|Medline (XML) |RIS|
+|Field             |Medline (txt)|Medline (XML) |RIS|
 |:---------------:|:------:|:------:|:-----:|
 |Abstract         |**AB**  |**Abstract / AbstractText** |**AB** |
 |Affiliation      |**AD**  |        |       |
 |Article Date||**ArticleDate**||
 |Article Identifier| **AID**|**Article**|   |
 |Article Title|   |**ArticleTitle**| |
-|Author           |   **AU**     |  |  **AU/A1**     |
+|Author           |   **AU**     | **AuthorList** |  **AU/A1**     |
 |Author Identifier|**AUID**|        |       |
-|Author List | |**AuthorList**|   |
 |Book Title       |**BTI** ||**BT** |
 |Chemical List|  |**ChemicalList**|  |
 |Citation Subset|  |**CitationSubset**|  |
@@ -30,12 +34,11 @@ RIS works similar to MedlinePlain, only that the extension is ".ris".
 |Create Date      |**CRDT**|        |       |
 |Country |  |**Country**|  |
 |Data Bank List | |**DataBankList**| |
-|Date             |        |        | **Y2**|
 |Date Completed   |**DCOM**|**DateCompleted**|       |
 |Date Created     | **DA** |**DateCreated**|       |
 |Date Last Revised|**LR**  |**DateRevised**|       |
 |Date of Electronic Publication|**DEP**|  | |
-|Date of Publication|**DP**| |       |
+|Date of Publication|**DP**| | **Y2**  |
 |Delete Citation|  |**DeleteCitation**|  |
 |DOI              |        |        |**DOI**|
 |Edition          |**EN**  |        |       |
@@ -56,12 +59,10 @@ RIS works similar to MedlinePlain, only that the extension is ".ris".
 |ISSN             |**IS**  |**ISSN**|       |
 |ISSN Linking     |       |**ISSNLinking**|       |
 |Issue            |**IP**  |**Issue**| **IS** |
-|Journal          |        |**Journal**|**JO/JF/JA** |
 |Journal Issue    |  |**JournalIssue**|    |
+|Journal Title    | **JT**  |**Journal**|**JO/JF/JA** |
 |Journal Title Abbreviation| **TA**| | |
-|Journal Title    |**JT**  ||    |
-|Keywords         |        |   | **KW** |
-|Keyword List       |        |**KeywordList**|  |
+|Keywords         |        | **KeywordList** | **KW** |
 |Language         |**LA**  |**Language**|    |
 |Location Identifier| **LID**|    |    |
 |Manuscript Identifier| **MID**|    |    |
@@ -108,7 +109,7 @@ RIS works similar to MedlinePlain, only that the extension is ".ris".
 |Type             |       |   | **TY** |
 |URL              |       |    |  **UR** |
 |User Text        |       |    | **U1-U3**|
-|Volume           |**VI** |**Volume**|**VL**|    
+|Volume           |**VI** |**Volume**|**VL**|
 |Volume Title     |**VTI**|    |    |
 |Vernacular Title|  |**VernacularTitle**|  |
 |Year             |       |   |**PY/Y1**|

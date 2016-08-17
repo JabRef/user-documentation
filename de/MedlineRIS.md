@@ -1,24 +1,28 @@
 ---
-title: Medline vs. MedlinePlain vs. RIS
+title: Medline (txt) vs. Medline (XML) vs. RIS
 ---
 
 # Unterschiede der Formate
-Das MedlinePlain Format kann in in einer gewöhnlichen ".txt" Datei erstellt werden. Hierbei werden die Felder Namen am Anfang jeder Zeile geschrieben.
-Beim Medline Format handelt es sich um eine XML Datei. Dort gibt man den Feldnamen zwischen '<' und '>' an. Für seine ausführliche Beschreibung siehe https://www.nlm.nih.gov/bsd/licensee/elements_descriptions.html .
-MedlinePlain und Medline(XML) sind immer vom Typ "Article".
-RIS funktioniert genau wie MedlinePlain, nur dass die Dateiendung hier ".ris" ist.
+Das Medline (txt) Format kann in in einer gewöhnlichen "txt" Datei erstellt werden.
+Hierbei werden die Felder Namen am Anfang jeder Zeile geschrieben.
+Bei Medline (XML) handelt es sich um eine XML-Datei.
+Dort gibt man den Feldnamen zwischen `<` und `>` an.
+Für eine ausführliche Beschreibung ist unter <https://www.nlm.nih.gov/bsd/licensee/elements_descriptions.html> verfügbar.
+Medline (txt) und Medline (XML) sind immer vom Typ "Article".
+RIS ist wie Medline (txt) Test-basiert, mit dem Unterschied, dass die Dateiendung "ris" ist und dass unterschiedliche Felder unterstützt werden.
+
+In anderen Quellen wird "MedlinePlain" als Synonym für "Medline (txt)" sowie "Medline" als Synonym für "Medline (XML)" verwendet.
 
 ## Tabelle mit Feldern
-|Feld             |MedlinePlain |Medline (XML)|RIS|
+|Feld             |Medline (txt) | Medline (XML) | RIS |
 |:---------------:|:------:|:------:|:-----:|
 |Abstract         |**AB**  |**Abstract / AbstractText** |**AB** |
 |Affiliation      |**AD**  |        |       |
 |Article Date||**ArticleDate**||
 |Article Identifier| **AID**|**Article**|   |
 |Article Title|   |**ArticleTitle**| |
-|Author           |   **AU**     |  |  **AU/A1**     |
+|Author           |   **AU**     | **AuthorList** |  **AU/A1**     |
 |Author Identifier|**AUID**|        |       |
-|Author List | |**AuthorList**|   |
 |Book Title       |**BTI** ||**BT** |
 |Chemical List|  |**ChemicalList**|  |
 |Citation Subset|  |**CitationSubset**|  |
@@ -30,12 +34,11 @@ RIS funktioniert genau wie MedlinePlain, nur dass die Dateiendung hier ".ris" is
 |Create Date      |**CRDT**|        |       |
 |Country |  |**Country**|  |
 |Data Bank List | |**DataBankList**| |
-|Date             |        |        | **Y2**|
 |Date Completed   |**DCOM**|**DateCompleted**|       |
 |Date Created     | **DA** |**DateCreated**|       |
 |Date Last Revised|**LR**  |**DateRevised**|       |
 |Date of Electronic Publication|**DEP**|  | |
-|Date of Publication|**DP**| |       |
+|Date of Publication|**DP**| | **Y2**  |
 |Delete Citation|  |**DeleteCitation**|  |
 |DOI              |        |        |**DOI**|
 |Edition          |**EN**  |        |       |
@@ -56,12 +59,10 @@ RIS funktioniert genau wie MedlinePlain, nur dass die Dateiendung hier ".ris" is
 |ISSN             |**IS**  |**ISSN**|       |
 |ISSN Linking     |       |**ISSNLinking**|       |
 |Issue            |**IP**  |**Issue**| **IS** |
-|Journal          |        |**Journal**|**JO/JF/JA** |
 |Journal Issue    |  |**JournalIssue**|    |
+|Journal Title    | **JT**  |**Journal**|**JO/JF/JA** |
 |Journal Title Abbreviation| **TA**| | |
-|Journal Title    |**JT**  ||    |
-|Keywords         |        |   | **KW** |
-|Keyword List       |        |**KeywordList**|  |
+|Keywords         |        | **KeywordList** | **KW** |
 |Language         |**LA**  |**Language**|    |
 |Location Identifier| **LID**|    |    |
 |Manuscript Identifier| **MID**|    |    |
@@ -108,7 +109,7 @@ RIS funktioniert genau wie MedlinePlain, nur dass die Dateiendung hier ".ris" is
 |Type             |       |   | **TY** |
 |URL              |       |    |  **UR** |
 |User Text        |       |    | **U1-U3**|
-|Volume           |**VI** |**Volume**|**VL**|    
+|Volume           |**VI** |**Volume**|**VL**|
 |Volume Title     |**VTI**|    |    |
 |Vernacular Title|  |**VernacularTitle**|  |
 |Year             |       |   |**PY/Y1**|
