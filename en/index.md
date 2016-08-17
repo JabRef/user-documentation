@@ -58,7 +58,7 @@ title: Help contents
 -   [Using JabRef with OpenOffice.org or LibreOffice](OpenOfficeIntegration)
 -   [Export to an External SQL Database](SQLExport)
 -   [XMP metadata support in JabRef](XMPHelp)
- 
+-   [Comparison of Medline and RIS](MedlineRIS)
 
 ## Fetching entries from the web
 
