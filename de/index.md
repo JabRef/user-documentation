@@ -54,7 +54,6 @@ title: Hilfe - Inhalt
 -   [Einträge von *Medline* abrufen](MedlineHelp)
 -   [*JStor*-Suche](JSTOR)
 -   [*INSPIRE*-Suche](INSPIRE)
--   [Export in eine externe SQL-Datenbank](SQLExport)
 -   [Externer Zugriff](RemoteHelp)
 -   [XMP-Metadaten und JabRef](XMPHelp)
 -   [Kommandozeilen-Optionen](CommandLine)
