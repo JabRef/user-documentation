@@ -18,6 +18,7 @@ title: Hilfe - Inhalt
 -   [Allgemeines](JabRefHelp)
 -   [Das Hauptfenster von JabRef](BaseFrameHelp)
 -   [Der Eintrags-Editor](EntryEditorHelp)
+-   [Kommandozeilen-Optionen](CommandLine)
 
 ## Felder
 
@@ -44,19 +45,20 @@ title: Hilfe - Inhalt
 -   [Der String-Editor](StringEditorHelp)
 
 ## Import/Export
--   [Benutzerdefinierte Exportfilter](CustomExports)
--   [Benutzerdefinierte Importfilter](CustomImports)
 -   [Import-Kontrollfenster](ImportInspectionDialog)
 -   [Die Exportfilter und Importfilter für EndNote](EndNoteFilters)
 -   [JabRef-Bibliographien in OpenOffice.org benutzen](OpenOfficeHelp)
+-   [Externer Zugriff](RemoteHelp)
+-   [XMP-Metadaten und JabRef](XMPHelp)
+-   [Benutzerdefinierte Exportfilter](CustomExports)
+-   [Benutzerdefinierte Importfilter](CustomImports)
+-   [Beschreibung der Gemeinsamkeiten und Unterschiede von Medline und RIS](MedlineRIS)
+
+## Einträge aus dem Internet abrufen
 -   [Einträge von *CiteSeer* abrufen](CiteSeerHelp)
 -   [Einträge von *IEEExplore* abrufen](IEEEXploreHelp)
 -   [Einträge von *Medline* abrufen](MedlineHelp)
--   [*JStor*-Suche](JSTOR)
 -   [*INSPIRE*-Suche](INSPIRE)
--   [Externer Zugriff](RemoteHelp)
--   [XMP-Metadaten und JabRef](XMPHelp)
--   [Kommandozeilen-Optionen](CommandLine)
 
 ## Verschiedenes
 
