@@ -17,7 +17,7 @@ In other sources, you might encounter "MedlinePlain" as synonym for "Medline (tx
 ## Table with fields 
 
 |Field             |Medline (txt)|Medline (XML) |RIS|
-|:---------------:|:------:|:------:|:-----:|
+|---------------|------|------|-----|
 |Abstract         |**AB**  |**Abstract / AbstractText** |**AB** |
 |Affiliation      |**AD**  |        |       |
 |Article Date||**ArticleDate**||

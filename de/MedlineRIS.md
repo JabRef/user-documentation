@@ -17,7 +17,7 @@ In anderen Quellen wird "MedlinePlain" als Synonym für "Medline (txt)" sowie "M
 ## Tabelle mit Feldern
 
 |Feld             |Medline (txt) | Medline (XML) | RIS |
-|:---------------:|:------:|:------:|:-----:|
+|---------------|------|------|-----|
 |Abstract         |**AB**  |**Abstract / AbstractText** |**AB** |
 |Affiliation      |**AD**  |        |       |
 |Article Date||**ArticleDate**||
