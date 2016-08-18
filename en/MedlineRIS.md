@@ -1,8 +1,8 @@
 ---
-title: Medline (txt) vs. Medline (XML) vs. RIS
+title: Comparison of the Medline (txt), Medline (XML), and RIS format
 ---
 
-# Differences of the Formats
+# Comparison of the Medline (txt), Medline (XML), and RIS format
 
 The Medline (txt) format can be used by a simple text document.
 Here, you have to write the field names at the beginning of each line.
