@@ -8,6 +8,11 @@ title: Fetching entries from GVK
 
 To fetch entries from GVK, choose **Search -&gt; Web search**, and the search interface will appear in the side pane. Select **GVK (Gemeinsamer Verbundkatalog)** in the dropdown menu. To start a search, enter the words of your query, and press **Enter** or the **Fetch** button.
 
+The results are displayed in the [import inspection window](ImportInspectionDialog).
+In case an error occurs, it is shown in a popup.
+
+# Advanced search
+
 You can simply enter words / names / years you want to search for, or you can specify search keys. Supported keys are:
 
 -   all - all words. Not specifYing a search key results in an "all" search
