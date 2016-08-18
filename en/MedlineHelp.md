@@ -23,6 +23,9 @@ There are two ways of specifying which entries to download:
 
 In both cases, press **Enter** or the **Fetch** button. If you use a text search, you will be prompted with the number of entries found, and given a choice of how many to download.
 
+Then, the results are displayed in the [import inspection window](ImportInspectionDialog).
+In case an error occurs, it is shown in a popup.
+
 ## Using a Proxy Server
 
 If you need to use an HTTP proxy server, you can configure JabRef to use a proxy using the "Network" preferences (**Options -&gt; Preferences -&gt; Network**).
