@@ -10,6 +10,9 @@ To fetch entries from IEEEXplore, choose **Search -&gt; Web search**, and the se
 
 By checking the **Include abstracts** checkbox, you may opt to download the abstracts along with the cite information for each entry. This will NOT cause more network queries.
 
+The results are displayed in the [import inspection window](ImportInspectionDialog).
+In case an error occurs, it is shown in a popup.
+
 ##Notes##
 - The search is done in guest mode, which means that a maximum of 100 results will be returned.
 - The option to download BibTeX citations directly from IEEEXplore is not working yet.
