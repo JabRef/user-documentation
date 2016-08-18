@@ -15,12 +15,13 @@ Entries are first shown in the inspection window. Note that, if this takes too l
 
 Once the entries displayed in the inspection window, none of them have been added to one of your databases yet.
 
-[Screenshot of the inspection window](./images/InspectionWindow.png)
+![Screenshot of the inspection window](./images/InspectionWindow.png)
 
 By default, all the entries are selected for importation, as shown by the checked boxes in the *Keep* column. You can select/unselect an entry by clicking on these check boxes.
 On the left panel, buttons allow you to **Select all** the entries for importation, or to **Deselect all** the entries.
 
-A left click on an entry (out of the check box and icons) let you choose it. As usual, you can choose several of them by using the *Shift* or the *Ctrl* keys. Then, pushing the button **Delete** on the left panel will remove the choosen entries from the table.
+A left click on an entry (out of the check box and icons) let you choose it. It displays an preview of the entry below the entry table.
+As usual, you can choose several entries by using the *Shift* or the *Ctrl* keys. Then, pushing the button **Delete** on the left panel will remove the choosen entries from the table.
 
 A right click on an entry displays a drop-down menu which allows you to:
 
