@@ -3,6 +3,7 @@ title: Medline (txt) vs. Medline (XML) vs. RIS
 ---
 
 # Unterschiede der Formate
+
 Das Medline (txt) Format kann in in einer gewöhnlichen "txt" Datei erstellt werden.
 Hierbei werden die Felder Namen am Anfang jeder Zeile geschrieben.
 Bei Medline (XML) handelt es sich um eine XML-Datei.
@@ -14,6 +15,7 @@ RIS ist wie Medline (txt) Test-basiert, mit dem Unterschied, dass die Dateiendun
 In anderen Quellen wird "MedlinePlain" als Synonym für "Medline (txt)" sowie "Medline" als Synonym für "Medline (XML)" verwendet.
 
 ## Tabelle mit Feldern
+
 |Feld             |Medline (txt) | Medline (XML) | RIS |
 |:---------------:|:------:|:------:|:-----:|
 |Abstract         |**AB**  |**Abstract / AbstractText** |**AB** |
