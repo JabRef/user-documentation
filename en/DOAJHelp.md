@@ -8,6 +8,9 @@ title: Fetching entries from DOAJ
 
 To fetch entries from DOAJ, choose **Search -&gt; Web search**, and the search interface will appear in the side pane. Select **DOAJ** in the dropdown menu. To start a search, enter the words of your query, and press **Enter** or the **Fetch** button.
 
+The results are displayed in the [import inspection window](ImportInspectionDialog).
+In case an error occurs, it is shown in a popup.
+
 It is possible to limit the search by adding a field name to the search, as **field:text**. The supported fields area:
 
 -   title: The title of the article
