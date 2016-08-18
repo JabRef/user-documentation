@@ -11,7 +11,7 @@ To fetch entries from GVK, choose **Search -&gt; Web search**, and the search in
 The results are displayed in the [import inspection window](ImportInspectionDialog).
 In case an error occurs, it is shown in a popup.
 
-# Advanced search
+## Advanced search
 
 You can simply enter words / names / years you want to search for, or you can specify search keys. Supported keys are:
 
