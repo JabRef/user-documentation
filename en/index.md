@@ -83,7 +83,7 @@ title: Help contents
 -   [Fetching entries from *INSPIRE*](INSPIRE)
 -   [Fetching entries from *Medline*](MedlineHelp)
 -   [Fetching entries from *ScienceDirect*](ScienceDirect)
--   [Fetching entries from *Springer*](Springer)
+-   [Fetching entries from *Springer*](SpringerHelp)
 
 ## Miscellaneous
 
