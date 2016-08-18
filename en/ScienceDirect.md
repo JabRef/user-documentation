@@ -9,3 +9,8 @@ To use this feature, choose **Search -&gt; Web search**, and the search interfac
 The ScienceDirect search relies on the BibSonomy scraper project (http://scraper.bibsonomy.org/) to extract information from the ScienceDirect web page.
 
 This fetcher attempts to run a quick search in the ScienceDirect web site, resulting in up to 100 hits. All hits are then imported.
+
+The results are displayed in the [import inspection window](ImportInspectionDialog).
+In case an error occurs, it is shown in a popup.
+
+
