@@ -13,7 +13,8 @@ To fetch entries from Google Scholar, choose **Search -&gt; Web search**, and th
 
 ## Traffic limitations
 
-Google scholar can block "automated" crawls which generate too much traffic in a short time. JabRef uses a two-step approach to avoid this: JabRef displays at first a preview of the first page of entries returned by the server for each search. You can then choose which entries to fetch.
+Google scholar can block "automated" crawls which generate too much traffic in a short time. JabRef uses a two-step approach to avoid this: JabRef displays at first a preview of the first page of entries returned by the server for each search. You can then choose which entries to fetch. The results are then displayed in the [import inspection window](ImportInspectionDialog).
+In case an error occurs, it is shown in a popup.
 
 However, after too much crawls JabRef --- or more correct: your IP address --- could be blocked. 
 To unblock your IP, do a Google scholar search in your browser. You will be asked to show that you are not a robot (a CAPTCHA challenge).
