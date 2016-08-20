@@ -22,6 +22,7 @@ When two potential duplicates are found, their fields are displayed side-by-side
 The differences between the two entries can be emphasized through the drop-down menu located
 at the upper right-hand corner of the window.
 Five ways of displaying the differences are offered:
+
 - **plain text**: as is, no emphasis
 - **show diff** - word: differences are shown in the right entry. Full words are struck out in red if they are removed from the left entry or underlined in blue if they are added to the right entry. 
 - **show diff** - character: differences are shown in the right entry. Individual characters are struck out in red or underlined in blue as above.
@@ -46,6 +47,7 @@ If you right-click on the preview, you can **Print entry preview** or **Copy pre
 ![Screenshot of the buttons to choose which entry to keep](./images/FindDuplicatesWindow-Selecting.png)
 
 You are offered to:
+
 - **Automatically remove exact duplicates**. This button shows up if there are exact duplicates. Clicking that leads to all exact duplicates to be removed.
 - **Keep left** entry. Removes the right entry.
 - **Keep right** entry. Removes the left entry.
