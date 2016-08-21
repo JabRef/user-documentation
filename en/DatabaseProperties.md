@@ -4,7 +4,7 @@ title: Database properties window
 
 # Database properties window
 
-Each database can have specific properties that can be modified through **File -&gt; Database Properties**).
+Each database can have specific properties that can be modified through **File -&gt; Database properties**) or by right clicking on the tab of the database and choosing "Database properties".
 These specific properties override the generic properties defined in **Options -&gt; Preferences**.
 
 The database-specific properties are stored in the database itself.
@@ -18,7 +18,7 @@ In most of cases these are stored in the bib-file database using text blocks sta
 
 This setting determines which character encoding JabRef will use when writing this database to disk. Changing this setting will override the setting made in Preferences dialog for this database. JabRef specifies the encoding near the top of the bib file, in order to be able to use the correct encoding next time you open the file.
 
-The dropdown menu allows to select one encoding. UTF-8 is highly recommended.
+The dropdown menu allows to select one encoding. `UTF-8` is highly recommended.
 
 
 ## Override default file directories
