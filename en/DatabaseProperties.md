@@ -1,28 +1,62 @@
 ---
 title: Database properties window
-outdated: true
 ---
 
 # Database properties window
 
-*Opened from the main window by selecting **File -&gt; Database properties***
+Each database can have specific properties that can be modified through **File -&gt; Database Properties**).
+These specific properties override the generic properties defined in **Options -&gt; Preferences**.
 
-The database properties window lets you set certain database-specific settings.
+The database-specific properties are stored in the database itself.
+This way, when moving the database to another computer, these properties are preserved. 
+In most of cases, special fields starting with *@Comment{jabref-meta:* are used. 
+
+In most of cases these are stored in the bib-file database using text blocks starting with *@Comment{jabref-meta:* . 
+
 
 ## Database encoding
 
 This setting determines which character encoding JabRef will use when writing this database to disk. Changing this setting will override the setting made in Preferences dialog for this database. JabRef specifies the encoding near the top of the bib file, in order to be able to use the correct encoding next time you open the file.
 
+The dropdown menu allows to select one encoding. UTF-8 is highly recommended.
+
+
 ## Override default file directories
 
-These settings are used to specify which directory will be used to search for general file links (specified in the *file* field), and for legacy PDF/PS links (the *pdf* and *ps* fields were used in JabRef versions prior to 2.3, but should in current versions be replaced by general file links).
+In your database, files (PDF, etc.) can be linked to an entry. The list of these files are stored in the *file* field of the entry. The location of these files has to be specified.
+
+For your database, you can define a **general file directory** and a **user-specific file directory**.
+These settings override the *main file directory* defined in the Preferences dialog.
 
 Relative directories can be specified. This means that the location of the files will be interpreted relative to the location of the bib file. Simply setting a directory to "." (without quotes) means that the files should reside in the same directory as the bib file.
 
-These settings override the general file directories specified in the Preferences dialog. If no values are set, the general directories will be used.
+*Note: the legacy PDF/PS links (i.e. the *pdf* and *ps* fields, which were used in JabRef versions prior to 2.3), should in current versions be replaced by general file links.* This can be done using **Quality -&gt; Cleanup entries...** and enabling *Upgrade external PDF/PS links to use the 'file' field*.
+
+
+## Save sort order
+
+When saving the database, the order of the entries will be preserved if **Save entries in their original order** is selected.
+Alternatively, by selecting **Save entries ordered as specified**, you can choose to sort the entries using three criteria.
+For each criterion, you can type-in the field to be used and select the order.
+
 
 ## Database protection
 
-This setting lets you enforce reviewing of external changes before the database can be saved. Without the protection enabled, users have the option to save even if other users have made changes to the file, without reviewing the changes - although they will be warned about the changes. When the protection is enabled, users will only be able to save after any external changes have been reviewed and merged (however, the user can disable individual changes in the course of reviewing them).
+While you edit a shared database, another user may be editing it too.
+By default, saving the database will overwrite changes done by others (although a warning message about the changes will be displayed). 
+
+To avoid discarding changes involuntarily, and hence to allow a smooth collaborative work,
+you can choose to *Refuse to save the database before external changes have been reviewed*.
+This setting lets you enforce reviewing of external changes before the database can be saved: 
+users will only be able to save the database after any external changes have been reviewed and either merged or rejected.
 
 **Note:** this is not a security feature, merely a way to prevent users from overwriting other users' changes inadvertently. This feature does not protect your database against malicious users.
+
+
+## Save actions
+
+Field formatting can be tidied up when saving the database. That ensures your entries to have consistent formatting.
+If you check **Enable save actions**, the list of actions can be configured.
+Each action is defined by:
+- an entry field (upon which the action will be applied).
+- the type of action to be carried out (such as *HTML to LaTeX*, which converts HTML code to LaTeX code, as described in the window).
