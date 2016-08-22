@@ -1,5 +1,6 @@
 ---
 title: Searching
+outdated:true
 ---
 
 # Searching
