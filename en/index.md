@@ -50,6 +50,11 @@ title: Help contents
 -   [Customizing entry types](CustomEntriesHelp)
 -   [Customizing general fields](GeneralFields)
 
+## Collaborative work
+
+Besides sharing BibTeX files using version control systems, JabRef supports collaborative work using a SQL database.
+More informatoin is available at [SQLDatabase](SQLDatabase).
+
 ## Import/Export
 
 -   [Custom export filters](CustomExports)
@@ -57,7 +62,6 @@ title: Help contents
 -   [Import inspection window](ImportInspectionDialog)
 -   [The EndNote import/export filter set](EndNoteFilters)
 -   [Using JabRef with OpenOffice.org or LibreOffice](OpenOfficeIntegration)
--   [Export to an External SQL Database](SQLExport)
 -   [XMP metadata support in JabRef](XMPHelp)
 -   [Comparison of Medline and RIS](MedlineRIS)
 

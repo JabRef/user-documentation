@@ -4,6 +4,10 @@ title: Export to an External SQL Database
 
 # Export to an External SQL Database
 
+**This help applies for older versions of JabRef.
+From JabRef 3.6 onwards, [collaborative working on a SQL database](SQLDatabase) is supported**
+
+
 JabRef is capable of exporting the contents of the BibTeX database, along with groups information, to an external MySQL or PostgreSQL database.
 
 You just need to be sure you have an user/password with full privileges on a MySQL or PostgreSQL server.
