@@ -1,8 +1,8 @@
 ---
-title: Migration of pre-3.6 databases into shared database
+title: Migration of pre-3.6 databases into a shared database
 ---
 
-# Migration of pre-3.6 databases into shared database
+# Migration of pre-3.6 databases into a shared database
 
 ## Context
 
