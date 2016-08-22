@@ -1,5 +1,6 @@
 ---
 title: EndNote Export Filter
+outdated: true
 ---
 
 # EndNote Export Filter
