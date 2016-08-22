@@ -15,7 +15,7 @@ So all databases with an pre-3.6 structure are no longer supported.
 
 ## Migration
 
-To migrate your pre-3.6 database into new shared database you will have to follow these steps:
+To migrate your pre-3.6 SQL database into new shared database you have to follow these steps:
 
 -	Download and install [JabRef 3.5](https://github.com/JabRef/jabref/releases/tag/v3.5)
 -	Open JabRef and goto **File** -> **Import from external SQL database**
@@ -29,3 +29,4 @@ To migrate your pre-3.6 database into new shared database you will have to follo
 -	Choose the file you saved locally and import it
 
 After that the content is available on shared database and you can work live on it.
+More information about the live editing is provided at [SQLDatabase](SQLDatabase).
