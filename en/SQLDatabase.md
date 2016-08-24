@@ -46,4 +46,3 @@ If you choose to work offline, JabRef will convert the shared database to a loca
 ## Try it out
 
 You can test the shared database support by using <https://www.freemysqlhosting.net>.
-terminated
