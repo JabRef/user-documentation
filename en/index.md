@@ -86,8 +86,9 @@ More informatoin is available at [SQLDatabase](SQLDatabase).
 -   [Fetching entries from *IEEExplore*](IEEEXploreHelp)
 -   [Fetching entries from *INSPIRE*](INSPIRE)
 -   [Fetching entries from *Medline*](MedlineHelp)
--   [Fetching entries from *ScienceDirect*](ScienceDirect)
 -   [Fetching entries from *Springer*](SpringerHelp)
+
+<!--  -   [Fetching entries from *ScienceDirect*](ScienceDirect) -->
 
 ## Miscellaneous
 
