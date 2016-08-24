@@ -8,7 +8,7 @@ JabRef is able to support collaborative work using a shared SQL database.
 This feature is available since JabRef 3.6.
 If you used to work with an older version of JabRef, please refer to [SQLDatabaseMigration](SQLDatabaseMigration) for information how to update your data.
 
-To use this feature you have to connect to a remote database. To do so you have to open the **File** in the menu bar and then  **Open remote database** dialog and fill it out. Under the field **Database type** you can choose between PostgreSQL, MySQL and Oracle depending on your remote database. Then, you have to fill out the rest of the fields with the according information.
+To use this feature you have to connect to a remote database. To do so you have to open **File** in the menu bar and then click the **Open remote database** item. The **Open remote database** dialog will open and you have to fill it out. Under the field **Database type** you can choose between PostgreSQL, MySQL and Oracle depending on your remote database. Then, you have to fill out the rest of the fields with the according information.
 
 ![Screenshot of Open shared database dialog] (./images/open-shared-database-dialog.png)
 
