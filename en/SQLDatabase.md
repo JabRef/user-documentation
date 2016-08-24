@@ -41,6 +41,9 @@ You can choose to keep the BibEntry in the database by clicking **Keep** or upda
 If you experience a problem with your connection to your shared database, the **Connection lost** dialog will show up.
 You can choose to **Reconnect**, **Work offline** or **Close database**.
 If you choose to work offline, JabRef will convert the shared database to a local .bib database.
+When you are connected again, you have to manually import your changes from your local database into the shared database. (Copy & paste)
+But before you import it into the shared database, make sure to check if changes happened during your offline time.
+Otherwise you might override someone else's work.
 
 ![Screenshot of Connection lost dialog](./images/connection-lost-dialog.png) 
 
