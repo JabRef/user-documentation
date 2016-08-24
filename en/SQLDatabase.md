@@ -8,7 +8,7 @@ JabRef is able to support collaborative work using a shared SQL database.
 This feature is available since JabRef 3.6.
 If you used to work with an older version of JabRef, please refer to [SQLDatabaseMigration](SQLDatabaseMigration) for information how to update your data.
 
-To use this feature you have to connect to a remote database. To do so you have to open **File** in the menu bar and then click the **Open remote database** item. The **Open remote database** dialog will open and you have to fill it out. Under the field **Database type** you can choose between PostgreSQL, MySQL and Oracle depending on your remote database. Then, you have to fill out the rest of the fields with the according information.
+To use this feature you have to connect to a remote database. To do so you have to open **File** in the menu bar and then click the **Open remote database** item. The **Open remote database** dialog will open and you will have to fill in the remote's database connection settings. Under the field **Database type** you can choose between PostgreSQL, MySQL and Oracle depending on your remote database. Then, you have to fill out the rest of the fields with the according information.
 
 ![Screenshot of Open shared database dialog] (./images/open-shared-database-dialog.png)
 
@@ -20,11 +20,11 @@ JabRef will constantly check if there is a newer version available. Also, you ca
 
 ![Screenshot of Update refused dialog] (./images/update.refused-merge dialog.png) 
 
-The **Update refused** dialog can also take a different form, if the BibEntry you currently work on has been deleted on the shared side. You can choose to keep it by clicking **Keep**, or update to the shared side and click **Close**.
+The **Update refused** dialog can also take a different form, if the BibEntry you currently work on has been deleted on the shared side. You can choose to keep the file/entry in the database by clicking **Keep** or update to the shared side and click **Close**.
 
 ![Screenshot of Update refused dialog due to a deleted entry] (./images/update-refuse-deleted entry-dialog.png)
 
-While working with this feature you might experience a connection loss. In this case, the **Connection lost** dialog will show up. You can choose to **Reconnect**, **Work offline** or **Close database**. If you choose to work offline, JabRef will convert the shared database to a normal local .bib database.
+If you experience a problem with your connection to your shared database, the **Connection lost** dialog will show up. You can choose to **Reconnect**, **Work offline** or **Close database**. If you choose to work offline, JabRef will convert the shared database to a local .bib database.
 
 ![Screenshot of Connection lost dialog] (./images/connection-lost-dialog.png) 
 
