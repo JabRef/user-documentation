@@ -14,7 +14,7 @@ To use this feature you have to connect to a remote database.
 To do so you have to open **File** in the menu bar and then click the **Open shared database** item.
 The **Open shared database** dialog will open and you will have to fill in the shared's database connection settings.
 Under the field **Database type** you can choose between PostgreSQL, MySQL and Oracle depending on your shared database.
-Then, you have to fill out the rest of the fields with the according information. 
+Then, you have to fill out the remaining fields with the according information.
 If you like you can save your password by clicking the **Remember password?** checkbox.
 
 ![Screenshot of Open shared database dialog](./images/open-shared-database-dialog.png)
@@ -41,7 +41,7 @@ You can choose to keep the BibEntry in the database by clicking **Keep** or upda
 If you experience a problem with your connection to your shared database, the **Connection lost** dialog will show up.
 You can choose to **Reconnect**, **Work offline** or **Close database**.
 If you choose to work offline, JabRef will convert the shared database to a local .bib database.
-When you are connected again, you have to manually import your changes from your local database into the shared database. (Copy & paste)
+Since you are no longer working online, but instead on a local database, you will have to import your work via copy and paste into the shared database.
 But before you import it into the shared database, make sure to check if changes happened during your offline time.
 Otherwise you might override someone else's work.
 
