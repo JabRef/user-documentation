@@ -18,12 +18,12 @@ Then, you have to fill out the rest of the fields with the according information
 
 ![Screenshot of Open shared database dialog] (./images/open-shared-database-dialog.png)
 
-JabRef will automatically detect your changes and push them to the shared side.
 After connecting to your shared database, your main window should look like this:
 
 ![Screenshot of JabRef with an open shared database] (./images/open-shared-databse-screenshot.png)
 
-JabRef will constantly check if there is a newer version available.
+JabRef will automatically detect your changes and push them to the shared side.
+JabRef will also constantly check if there is a newer version available.
 If you experience connection issues, you can pull changes from your shared database via the icon in the icon bar.
 If a newer version is available, JabRef will try to automatically merge the new version and your local copy.
 If this fails, the **Update refused** dialog will show up. You will then have to manually merge using the **Update refused** dialog.
@@ -33,7 +33,7 @@ Confirm your merge by clicking on **Merge entries**.
 ![Screenshot of Update refused dialog] (./images/update.refused-merge dialog.png) 
 
 The **Update refused** dialog can also take a different form, if the BibEntry you currently work on has been deleted on the shared side.
-You can choose to keep the file/entry in the database by clicking **Keep** or update to the shared side and click **Close**.
+You can choose to keep the BibEntry in the database by clicking **Keep** or update to the shared side and click **Close**.
 
 ![Screenshot of Update refused dialog due to a deleted entry] (./images/update-refuse-deleted entry-dialog.png)
 
@@ -43,4 +43,6 @@ If you choose to work offline, JabRef will convert the shared database to a loca
 
 ![Screenshot of Connection lost dialog] (./images/connection-lost-dialog.png) 
 
-You can test this feature using (https://www.freemysqlhosting.net).
+## Try it out
+
+You can test the shared database support by using (https://www.freemysqlhosting.net).
