@@ -30,12 +30,12 @@ If this fails, the **Update refused** dialog will show up. You will then have to
 The dialog helps you by pointing out the differences, you then will have to choose if you want to keep your local version or update to the shared version.
 Confirm your merge by clicking on **Merge entries**.
 
-![Screenshot of Update refused dialog](./images/update.refused-merge dialog.png) 
+![Screenshot of Update refused dialog](./images/update-refused-merge-dialog.png) 
 
 The **Update refused** dialog can also take a different form, if the BibEntry you currently work on has been deleted on the shared side.
 You can choose to keep the BibEntry in the database by clicking **Keep** or update to the shared side and click **Close**.
 
-![Screenshot of Update refused dialog due to a deleted entry](./images/update-refuse-deleted entry-dialog.png)
+![Screenshot of Update refused dialog due to a deleted entry](./images/update-refused-deleted-entry-dialog.png)
 
 If you experience a problem with your connection to your shared database, the **Connection lost** dialog will show up.
 You can choose to **Reconnect**, **Work offline** or **Close database**.
@@ -46,3 +46,4 @@ If you choose to work offline, JabRef will convert the shared database to a loca
 ## Try it out
 
 You can test the shared database support by using <https://www.freemysqlhosting.net>.
+terminated
