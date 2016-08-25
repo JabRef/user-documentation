@@ -44,8 +44,8 @@ Most of the time simply reconnecting will fix this problem, if that's not the ca
 Pick **Work offline** if you want to make sure your changes are saved.
 If you think there is nothing to save just pick **Close database**.
 If you choose to work offline, JabRef will convert the shared database to a local .bib database.
-However you are no longer working online, but instead on a local database, you will have to import your work via copy and paste into the shared database.
-But before you import it into the shared database, make sure to check if changes happened during your offline time.
+Since you are no longer working online, but instead on a local database, you will have to import your work via copy and paste into the shared database.
+However before you import it into the shared database, make sure to check if changes happened during your offline time.
 Otherwise you might override someone else's work.
 
 ![Screenshot of Connection lost dialog](./images/connection-lost-dialog.png) 
