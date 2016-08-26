@@ -19,7 +19,7 @@ java -jar JabRef.jar [OPTIONS] [BIBTEX_FILE]
 
 You can always specify one or more BibTeX files to load by simply listing their filenames.
 Take care to specify all options before your list of file names.
-You must make sure that the first file name is not misunderstood as being an argument for an option; this simply means that if a boolean option like `-n` or `-l` immediately precedes a file name, add the word `true` as an argument.
+Ensure that the first file name is not misunderstood as being an argument for an option; this simply means that if a boolean option like `-n` or `-l` immediately precedes a file name, add the word `true` as an argument.
 For instance, the command line:
 
 `java -jar JabRef.jar -o filetoexport.xml,docbook -n true original.bib`
@@ -37,7 +37,7 @@ The word *true* prevents the file name from being interpreted as an argument to 
 ### Help: `-h`
 (or `--help`)
 
-Displays a summary of the command line options (including the list of available import and export formats), and quit immediately.
+Displays a summary of the command line options, including the list of available import and export formats.
 
 
 ### No-GUI mode: `-n`
@@ -45,7 +45,7 @@ Displays a summary of the command line options (including the list of available 
 
 Suppresses the JabRef window (i.e. no GUI - Graphic User Interface - is displayed).
 
-It causes the program to quit immediately once the command line options have been processed.
+It causes the program to exit immediately once the command line options have been processed.
 This option is useful for performing file conversion operations from the command line or a script.
 
 
@@ -55,7 +55,7 @@ This option is useful for performing file conversion operations from the command
 Import or load the file `filename`.
 
 If only the filename is specified (or if the filename is followed by a comma and a `*` character), JabRef will attempt to detect the file format automatically.
-This should work for all BibTeX files, and also for files in any import format supported by JabRef.
+This works for BibTeX files, and also for all files in a supported import format.
 If the filename is followed by a comma and the name of an import format, the given import filter will be used.
 
 Use the `-h` option to get the list of available import formats.
@@ -63,7 +63,7 @@ Use the `-h` option to get the list of available import formats.
 If an export option is also specified, the import will always be processed first, and the imported or loaded file will be used by the export filter.
 If the GUI is not suppressed (using the `-n` option), any imported or loaded file will show up in the main window.
 
-If `--importToOpen` is used, the content of the file will be imported to the opened tab.
+If `--importToOpen` is used, the content of the file will be imported into the opened tab.
 
 *Note:* The `-i` option can be specified only once, and for one file only.
 
@@ -109,7 +109,7 @@ Information about to the search function is given in ['advanced search' document
 Query a Web fetcher and import the entries.
 
 Pass both the name of a fetcher and your search term or paper id (e.g. `--fetch=Medline:cancer`), and the given fetcher will be run.
-Some fetchers will still display GUI if they need feedback from you. 
+Some fetchers will still display a GUI window if they need feedback from you. 
 
 The fetchers listed in the Web search panel can be run from the command line.
 To get the list of available fetchers, run `--fetch` without parameters.
@@ -120,7 +120,7 @@ To get the list of available fetchers, run `--fetch` without parameters.
 
 Extract a subdatabase from a .aux file:
 
-When you compile a LaTeX document (e.g. `infile.tex`), a .aux file is created (`infile.aux`).
+When you compile a LaTeX document (e.g. `infile.tex`), an .aux file is created (`infile.aux`).
 Among other things, it contains the list of entries used in your document.
 JabRef can extract the references used from the `base-BibTeX-file` to a new .bib file (`outfile.bib`).
 This way, you will have a subdatabase containing only the entries used in the .tex file.
