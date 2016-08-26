@@ -56,3 +56,7 @@ That's it! We'll review your changes and publish them at [help.jabref.org](http:
 
 ## Advanced editing
 To edit more than one file at a time, to add screenshots and for other more advanced changes we recommend to checkout this repository locally and to create a PR of your changes using the standard git and GitHub workflow.
+
+### Tables
+The best way to enter tables is to use this [Table generator](http://www.tablesgenerator.com/markdown_tables) for Markdown.
+It has the nice feature to generate markdown tables from different sources, e.g. you can directly copy the table from a spreadsheet or upload a csv files. Just copy and paste the generated markdown.
