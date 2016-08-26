@@ -169,6 +169,6 @@ Do not open any files at startup
 Display the version number of JabRef.
 
 
-### Debug mode: `--debub`
+### Debug mode: `--debug`
 
 Show debug level messages.
