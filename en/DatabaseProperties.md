@@ -68,7 +68,7 @@ Each action is defined by:
 
 ## Shared database
 
-Note that some properties are not available for [shared databases](http://help.jabref.org/en/SQLDatabase) as they are not handled like a *.bib* file.
+Note that some properties are not available for shared [SQL databases](http://help.jabref.org/en/SQLDatabase) as they are not handled like a *.bib* file.
 The following properties are not available:
 - Database encoding *(always UTF-8)*
 - Save sort order
