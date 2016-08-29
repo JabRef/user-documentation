@@ -52,8 +52,8 @@ title: Help contents
 
 ## Collaborative work
 
-Besides sharing BibTeX files using version control systems, JabRef supports collaborative work using a SQL database.
-More informatoin is available at [SQLDatabase](SQLDatabase).
+- [using a Bib(La)TeX file](SharedBibFile)
+- [using a SQL database](SQLDatabase)
 
 ## Import/Export
 
