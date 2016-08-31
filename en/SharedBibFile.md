@@ -11,7 +11,7 @@ This works well on network drives.
 
 *Note:* the use of a version control system (SVN, git, etc.) is recommended as this will allow for reverting changes.
 
-To make the sharing of a Bib(La)TeX database easier, it is recommanded to set specific database properties.
+To make the sharing of a Bib(La)TeX database easier, it is recommended to set specific database properties.
 In the menu **File -> database properties**:
 - Select `UTF-8` as encoding.
 - Define a `General file directory`, which will be used to store shared PDF (and other) files.
