@@ -15,8 +15,12 @@ lsi: false
 #pygments is not supported by GitHub. See https://help.github.com/articles/page-build-failed-config-file-error/#fixing-highlighting-errors
 #See also https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
 #We have to use rouge
+#http://idratherbewriting.com/2016/02/21/bug-with-kramdown-and-rouge-with-github-pages/
 highlighter: rouge
 markdown: kramdown
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
 
 defaults:
   -
