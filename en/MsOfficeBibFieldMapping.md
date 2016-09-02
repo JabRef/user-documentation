@@ -2,7 +2,7 @@
 title: MS Office Bibliography xml format 
 ---
 
-# Field Mapping between Office and JabRef 
+# Field Mapping between MS Office and JabRef 
 
 ## Introduction
 JabRef supports the MS Office Bibliography xml format for exporting and importing.
