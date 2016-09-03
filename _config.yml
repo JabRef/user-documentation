@@ -23,6 +23,8 @@ kramdown:
   auto_ids: true
   syntax_highlighter: rouge
 
+sass:
+  sass_dir: _sass
 
 defaults:
   -
