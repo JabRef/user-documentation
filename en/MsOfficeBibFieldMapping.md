@@ -63,7 +63,7 @@ Addtionally, some fields have to be treated differently during import/export.
 | authors         | Authors       |
 | editors         | Editors       |
 
-###BibTeX/BibLaTex only fields
+### BibTeX/BibLaTex only fields
 The following fields are BibTeX/BibLaTex only fields, they have no representation in office xml.
 In the resulting xml file they are represented with the prefix `BIBTEX_`
 
@@ -87,7 +87,7 @@ In the resulting xml file they are represented with the prefix `BIBTEX_`
 
 The xml field `SourceType` contains the associated entry type from the first table, while the original BibTeX/BibLaTex entrytype is preserved in the field `BIBTEX_ENTRY`.
 
-###MS-Bib only fields
+### MS-Bib only fields
 The following fields are XML-only fields, they have no BibTeX/BibLaTex representation:
 In the resulting bib database they are represented with the prefix `msbib-`.
 
