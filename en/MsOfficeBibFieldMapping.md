@@ -39,7 +39,7 @@ Therefore this help file provides a list of all field mappings.
 
 ##Field mappings
 The field mapping for import and export is mostly the same, but there are some differences, as not all field exists in both formats.
-Addtionally, some fields have to be treated different during import/export.
+Addtionally, some fields have to be treated differently during import/export.
 
 | BibTeX/BibLaTex | XML field     |
 |-----------------|---------------|
