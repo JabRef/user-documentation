@@ -1,19 +1,19 @@
 ---
 title: MS Office Bibliography xml format
 ---
+<link rel="stylesheet" href="../css/main.css">
+# Field Mapping between MS-Office and JabRef
 
-#Field Mapping between MS-Office and JabRef
-
-##Introduction
+## Introduction
 JabRef supports the MS Office Bibliography xml format for exporting and importing.
 Some field names in the xml format differ from the field names in the BibTeX/BibLaTex format and can therefore be not directly mapped between the formats.
 Therefore this help file provides a list of all field mappings.
 
 
-##Entry Type Mappings
+## Entry Type Mappings
 
 
-| BibTeX/BibLaTex entry type | XML entry type        |
+| BibTeX/BibLaTex entry type | XML entry type       |
 |---------------------------|-----------------------|
 | book                      | Book                  |
 | inbook                    | BookSection           |
@@ -34,10 +34,10 @@ Therefore this help file provides a list of all field mappings.
 | electronic                | ElectronicSource      |
 | online                    | InternetSite          |
 | periodical                | ArticleInAPeriodical  |
+{:.markdown-body}
 
 
-
-##Field mappings
+## Field mappings
 The field mapping for import and export is mostly the same, but there are some differences, as not all field exists in both formats.
 Addtionally, some fields have to be treated differently during import/export.
 
@@ -63,7 +63,7 @@ Addtionally, some fields have to be treated differently during import/export.
 | authors         | Authors       |
 | editors         | Editors       |
 
-###BibTeX/BibLaTex only fields
+### BibTeX/BibLaTex only fields
 The following fields are BibTeX/BibLaTex only fields, they have no representation in office xml.
 In the resulting xml file they are represented with the prefix `BIBTEX_`
 
@@ -85,7 +85,7 @@ In the resulting xml file they are represented with the prefix `BIBTEX_`
 | &lt;BibTexEntryType&gt;     | BIBTEX_Entry        |
 | &lt;BibTexEntryType&gt;     | SourceType          |
 
-###MS-Bib only fields
+### MS-Bib only fields
 The following fields are XML-only fields, they have no BibTeX/BibLaTex representation:
 In the resulting bib database they are represented with the prefix `msbib-`
 
@@ -121,7 +121,7 @@ In the resulting bib database they are represented with the prefix `msbib-`
 | msbib-counsel                 | counsels                                            |
 
 
-###Special Export treatment
+### Special Export treatment
 The following fields are treated as follows during epxort:
 
 
@@ -143,7 +143,7 @@ The following fields are treated as follows during epxort:
 | &lt;Entry Type is patent&gt; number | PatentNumber   |
 
 
-###Special Import treatment
+### Special Import treatment
 The following fields are treated as follows during import:
 
 
