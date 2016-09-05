@@ -2,15 +2,15 @@
 title: MS Office Bibliography xml format
 ---
 
-#Field Mapping between MS-Office and JabRef
+# Field Mapping between MS-Office and JabRef
 
-##Introduction
+## Introduction
 JabRef supports the MS Office Bibliography xml format for exporting and importing.
 Some field names in the xml format differ from the field names in the BibTeX/BibLaTex format and can therefore be not directly mapped between the formats.
 Therefore this help file provides a list of all field mappings.
 
 
-##Entry Type Mappings
+## Entry Type Mappings
 
 
 | BibTeX/BibLaTex entry type | XML entry type        |
@@ -37,7 +37,7 @@ Therefore this help file provides a list of all field mappings.
 
 
 
-##Field mappings
+## Field mappings
 The field mapping for import and export is mostly the same, but there are some differences, as not all field exists in both formats.
 Addtionally, some fields have to be treated differently during import/export.
 
@@ -85,9 +85,11 @@ In the resulting xml file they are represented with the prefix `BIBTEX_`
 | &lt;BibTexEntryType&gt;     | BIBTEX_Entry        |
 | &lt;BibTexEntryType&gt;     | SourceType          |
 
+The xml field `SourceType` contains the associated entry type from the first table, while the original BibTeX/BibLaTex entrytype is preserved in the field `BIBTEX_ENTRY`.
+
 ###MS-Bib only fields
 The following fields are XML-only fields, they have no BibTeX/BibLaTex representation:
-In the resulting bib database they are represented with the prefix `msbib-`
+In the resulting bib database they are represented with the prefix `msbib-`.
 
 | BibTeX/BibLaTex represenation | XML field                                           |
 |-------------------------------|-----------------------------------------------------|
@@ -121,7 +123,7 @@ In the resulting bib database they are represented with the prefix `msbib-`
 | msbib-counsel                 | counsels                                            |
 
 
-###Special Export treatment
+### Special Export treatment
 The following fields are treated as follows during epxort:
 
 
@@ -137,13 +139,13 @@ The following fields are treated as follows during epxort:
 | issn                          | StandardNumber |
 | lccn                          | StandardNumber |
 | mrnumer                       | StandardNumber |
-| address                       | Address        |
-| location                      | Address        |
+| address                       | City, StateProvince, CountryRegion|
+| location                      | City, StateProvince, CountryRegion|
 | &lt;EntryType is thesis&gt;         | ThesisType     |
 | &lt;Entry Type is patent&gt; number | PatentNumber   |
 
 
-###Special Import treatment
+### Special Import treatment
 The following fields are treated as follows during import:
 
 
@@ -151,3 +153,4 @@ The following fields are treated as follows during import:
 |-------------------------------|----------------|
 | organization                  | ConferenceName |
 | journaltitle                  | Journal        |
+| location                      | City, StateProvince, CountryRegion|
