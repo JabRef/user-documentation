@@ -1,7 +1,6 @@
 ---
 title: MS Office Bibliography xml format
 ---
-<link rel="stylesheet" href="../css/main.css">
 # Field Mapping between MS-Office and JabRef
 
 ## Introduction
