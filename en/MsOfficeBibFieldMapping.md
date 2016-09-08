@@ -33,12 +33,12 @@ Therefore this help file provides a list of all field mappings.
 | electronic                | ElectronicSource      |
 | online                    | InternetSite          |
 | periodical                | ArticleInAPeriodical  |
-{:.markdown-body}
+
 
 
 ## Field mappings
 The field mapping for import and export is mostly the same, but there are some differences, as not all field exists in both formats.
-Addtionally, some fields have to be treated different during import/export.
+Addtionally, some fields have to be treated differently during import/export.
 
 | BibTeX/BibLaTex | XML field     |
 |-----------------|---------------|
@@ -62,7 +62,7 @@ Addtionally, some fields have to be treated different during import/export.
 | authors         | Authors       |
 | editors         | Editors       |
 
-### BibTeX/BibLaTex only fields
+### BibTeX/BibLaTeX only fields
 The following fields are BibTeX/BibLaTex only fields, they have no representation in office xml.
 In the resulting xml file they are represented with the prefix `BIBTEX_`
 
@@ -84,9 +84,11 @@ In the resulting xml file they are represented with the prefix `BIBTEX_`
 | &lt;BibTexEntryType&gt;     | BIBTEX_Entry        |
 | &lt;BibTexEntryType&gt;     | SourceType          |
 
+The xml field `SourceType` contains the associated entry type from the first table, while the original BibTeX/BibLaTex entrytype is preserved in the field `BIBTEX_ENTRY`.
+
 ### MS-Bib only fields
 The following fields are XML-only fields, they have no BibTeX/BibLaTex representation:
-In the resulting bib database they are represented with the prefix `msbib-`
+In the resulting bib database they are represented with the prefix `msbib-`.
 
 | BibTeX/BibLaTex represenation | XML field                                           |
 |-------------------------------|-----------------------------------------------------|
@@ -136,8 +138,8 @@ The following fields are treated as follows during epxort:
 | issn                          | StandardNumber |
 | lccn                          | StandardNumber |
 | mrnumer                       | StandardNumber |
-| address                       | Address        |
-| location                      | Address        |
+| address                       | City, StateProvince, CountryRegion|
+| location                      | City, StateProvince, CountryRegion|
 | &lt;EntryType is thesis&gt;         | ThesisType     |
 | &lt;Entry Type is patent&gt; number | PatentNumber   |
 
@@ -150,3 +152,4 @@ The following fields are treated as follows during import:
 |-------------------------------|----------------|
 | organization                  | ConferenceName |
 | journaltitle                  | Journal        |
+| location                      | City, StateProvince, CountryRegion|
