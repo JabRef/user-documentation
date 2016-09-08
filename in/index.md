@@ -19,6 +19,8 @@ title: Daftar Isi Bantuan
 -   [Jendela utama JabRef](BaseFrameHelp)
 -   [Penyunting Entri](EntryEditorHelp)
 -   [Menyimpan otomatis](Autosave)
+-   [Command line options](CommandLine)
+-   [Remote operations](RemoteHelp)
 
 ## Bidang dalam Entri
 
@@ -29,12 +31,15 @@ title: Daftar Isi Bantuan
 -   [Bidang 'pemilik'](OwnerHelp)
 -   [Pengisian kata dalam bidang](ContentSelectorHelp)
 -   [Singkatan nama jurnal](JournalAbbreviations)
+-   [Special Fields](SpecialFieldsHelp)
+-   [Bibtex Strings](StringsHelp)
 
 ## Mencari dan mengurutkan entri
 
 -   [Help on using *Groups*](GroupsHelp)
 -   [Menandai entri](MarkingHelp)
 -   [Pencarian di JabRef](SearchHelp)
+-   [Find duplicated entries](FindDuplicates)
 
 ## Pengaturan
 
@@ -45,24 +50,49 @@ title: Daftar Isi Bantuan
 -   [Customizing entry types](CustomEntriesHelp)
 -   [Customizing general fields](GeneralFields)
 
+## Collaborative work
+
+Besides sharing BibTeX files using version control systems, JabRef supports collaborative work using a SQL database.
+More informatoin is available at [SQLDatabase](SQLDatabase).
+
 ## Impor/Ekspor
 
 -   [Penapis ekspor suaian](CustomExports)
 -   [Penapis impor suaian](CustomImports)
 -   [Import inspection window](ImportInspectionDialog)
 -   [The EndNote import/export filter set](EndNoteFilters)
--   [Using JabRef bibliographies in OpenOffice.org](OpenOfficeHelp)
--   [Mengambil entri dari Portal *ACM*](ACMPortalHelp)
--   [Mengambil entri dari *CiteSeer*](CiteSeerHelp)
--   [Mengambil entri dari *IEEExplore*](IEEEXploreHelp)
--   [Mengambil entri dari *Medline*](MedlineHelp)
--   [Pencarian *JStor*](JSTOR)
--   [Pencarian *ScienceDirect*](ScienceDirect)
--   [Pencarian *INSPIRE*](INSPIRE)
--   [Export to an External SQL Database](SQLExport)
+-   [Using JabRef with OpenOffice.org or LibreOffice](OpenOfficeIntegration)
 -   [XMP metadata support in JabRef](XMPHelp)
--   [Command line options](CommandLine)
--   [Remote operations](RemoteHelp)
+-   [Comparison of Medline and RIS](MedlineRIS)
+-   [Field Mapping between MS-Office and JabRef](MsOfficeBibFieldMapping)
+
+
+## Fetching entries from the web
+
+### ...using publication identifiers
+
+
+-   [Fetching entries from the *DOI*](DOItoBibTeXHelp)
+-   [Fetching entries from the *ISBN*](ISBNtoBibTeXHelp)
+
+### ...using online bibliographic database
+
+-   [Mengambil entri dari Portal *ACM*](ACMPortalHelp)
+- 	[Mengambil entri dari Portal *ADS*](ADSHelp)
+-   [Mengambil entri dari Portal *arXiv*](arXivHelp)
+-   [Mengambil entri dari Portal *CiteSeer*](CiteSeerHelp)
+-   [Mengambil entri dari Portal *DBLP*](DBLPHelp)
+-   [Mengambil entri dari Portal *DiVA*](DiVAtoBibTeXHelp)
+-   [Mengambil entri dari Portal *DOAJ*](DOAJHelp)
+-   [Mengambil entri dari Portal *Google Scholar*](GoogleScholarHelp)
+-   [Mengambil entri dari Portal *IEEExplore*](IEEEXploreHelp)
+-   [Mengambil entri dari Portal *INSPIRE*](INSPIRE)
+-   [Mengambil entri dari Portal *Medline*](MedlineHelp)
+-   [Mengambil entri dari Portal *Springer*](SpringerHelp)
+
+<!--  -  [Pencarian *ScienceDirect*](ScienceDirect) -->
+
+
 
 ## Lain-lain
 
