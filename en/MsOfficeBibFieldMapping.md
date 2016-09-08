@@ -1,7 +1,6 @@
 ---
 title: MS Office Bibliography xml format
 ---
-
 # Field Mapping between MS-Office and JabRef
 
 ## Introduction
@@ -13,7 +12,7 @@ Therefore this help file provides a list of all field mappings.
 ## Entry Type Mappings
 
 
-| BibTeX/BibLaTex entry type | XML entry type        |
+| BibTeX/BibLaTex entry type | XML entry type       |
 |---------------------------|-----------------------|
 | book                      | Book                  |
 | inbook                    | BookSection           |
@@ -63,7 +62,7 @@ Addtionally, some fields have to be treated differently during import/export.
 | authors         | Authors       |
 | editors         | Editors       |
 
-### BibTeX/BibLaTex only fields
+### BibTeX/BibLaTeX only fields
 The following fields are BibTeX/BibLaTex only fields, they have no representation in office xml.
 In the resulting xml file they are represented with the prefix `BIBTEX_`
 
