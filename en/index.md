@@ -64,6 +64,7 @@ More informatoin is available at [SQLDatabase](SQLDatabase).
 -   [Using JabRef with OpenOffice.org or LibreOffice](OpenOfficeIntegration)
 -   [XMP metadata support in JabRef](XMPHelp)
 -   [Comparison of Medline and RIS](MedlineRIS)
+-   [Field Mapping between MS-Office and JabRef](MsOfficeBibFieldMapping)
 
 ## Fetching entries from the web
 
