@@ -53,8 +53,8 @@ title: Hilfe - Inhalt
 
 ## Gemeinsames arbeiten
 
-Neben dem Teilen von BibTeX Dateien über Versionskontrollsysteme unterstützt JabRef gemeinames Abrbeiten mit Hilfe einer SQL-Datenbank.
-Weitere Informationen sind verfügbar unter [SQLDatabase](SQLDatabase).
+- [Verwenden von Bib(La)TeX Dateien](SharedBibFile)
+- [Verwenden einer SQL-Datenbank](SQLDatabase)
 
 
 ## Import/Export

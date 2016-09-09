@@ -52,8 +52,8 @@ title: Daftar Isi Bantuan
 
 ## Collaborative work
 
-Besides sharing BibTeX files using version control systems, JabRef supports collaborative work using a SQL database.
-More informatoin is available at [SQLDatabase](SQLDatabase).
+- [using a Bib(La)TeX file](SharedBibFile)
+- [using a SQL database](SQLDatabase)
 
 ## Impor/Ekspor
 
@@ -78,7 +78,7 @@ More informatoin is available at [SQLDatabase](SQLDatabase).
 ### ...using online bibliographic database
 
 -   [Mengambil entri dari Portal *ACM*](ACMPortalHelp)
-- 	[Mengambil entri dari Portal *ADS*](ADSHelp)
+-   [Mengambil entri dari Portal *ADS*](ADSHelp)
 -   [Mengambil entri dari Portal *arXiv*](arXivHelp)
 -   [Mengambil entri dari Portal *CiteSeer*](CiteSeerHelp)
 -   [Mengambil entri dari Portal *DBLP*](DBLPHelp)
