@@ -66,9 +66,9 @@ Each action is defined by:
 - an entry field (upon which the action will be applied).
 - the type of action to be carried out (such as *HTML to LaTeX*, which converts HTML code to LaTeX code, as described in the window).
 
-## Shared database
+## Shared SQL database
 
-Note that some properties are not available for [shared databases](http://help.jabref.org/en/SQLDatabase) as they are not handled like a *.bib* file.
+Note that some properties are not available for shared [SQL databases](http://help.jabref.org/en/SQLDatabase) as they are not handled like a *.bib* file.
 The following properties are not available:
 - Database encoding *(always UTF-8)*
 - Save sort order

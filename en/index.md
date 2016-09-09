@@ -52,8 +52,8 @@ title: Help contents
 
 ## Collaborative work
 
-Besides sharing BibTeX files using version control systems, JabRef supports collaborative work using a SQL database.
-More informatoin is available at [SQLDatabase](SQLDatabase).
+- [using a Bib(La)TeX file](SharedBibFile)
+- [using a SQL database](SQLDatabase)
 
 ## Import/Export
 
@@ -64,7 +64,7 @@ More informatoin is available at [SQLDatabase](SQLDatabase).
 -   [Using JabRef with OpenOffice.org or LibreOffice](OpenOfficeIntegration)
 -   [XMP metadata support in JabRef](XMPHelp)
 -   [Comparison of Medline and RIS](MedlineRIS)
--   [Field Mapping between MS-Office and JabRef](MsOfficeBibFieldMapping)
+-   [Field mapping between MS Office and JabRef](MsOfficeBibFieldMapping)
 
 ## Fetching entries from the web
 
