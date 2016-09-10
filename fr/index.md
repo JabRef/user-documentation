@@ -19,6 +19,8 @@ title: Contenu de l'aide
 -   [La fenêtre principale de JabRef](BaseFrameHelp)
 -   [Éditeur d'entrées](EntryEditorHelp)
 -   [Sauvegarde automatique](Autosave)
+-   [Options de la ligne de commande](CommandLine)
+-   [Opérations à distance](RemoteHelp)
 
 ## Champs
 
@@ -37,6 +39,8 @@ title: Contenu de l'aide
 -   [Utilisation des *Groupes*](GroupsHelp)
 -   [Étiqueter des entrées](MarkingHelp)
 -   [Recherche dans JabRef](SearchHelp)
+-   [Trouver les doublons](FindDuplicates)
+
 
 ## Configuration
 
@@ -47,6 +51,13 @@ title: Contenu de l'aide
 -   [Personnalisation des types d'entrées](CustomEntriesHelp)
 -   [Personnalisation des champs généraux](GeneralFields)
 
+
+## Collaborative work
+
+- [using a Bib(La)TeX file](SharedBibFile)
+- [using a SQL database](SQLDatabase)
+
+
 ## Importation/Exportation
 
 -   [Filtres d'exportation personnalisés](CustomExports)
@@ -54,21 +65,34 @@ title: Contenu de l'aide
 -   [Fenêtre de vérification des importations](ImportInspectionDialog)
 -   [Filtres d'importation/exportation d'EndNote](EndNoteFilters)
 -   [Utiliser JabRef avec OpenOffice.org ou LibreOffice](OpenOfficeIntegration)
--   [Récupération d'entrées depuis le portail *ACM*](ACMPortalHelp)
--   [Récupération d'entrées depuis *CiteSeerX*](CiteSeerHelp)
--   [Récupération d'entrées depuis *DiVA*](DiVAtoBibTeXHelp)
--   [Récupération d'entrées avec le convertisseur *DOI vers BibTeX*](DOItoBibTeXHelp)
--   [Récupération d'entrées depuis *Google Scholar*](GoogleScholarHelp)
--   [Récupération d'entrées depuis *IEEExplore*](IEEEXploreHelp)
--   [Récupération d'entrées avec le convertisseur *ISBN vers BibTeX*](ISBNtoBibTeXHelp)
--   [Récupération d'entrées depuis *Medline*](MedlineHelp)
--   [Récupération d'entrées depuis *JStor*](JSTOR)
--   [Récupération d'entrées depuis *ScienceDirect*](ScienceDirect)
--   [Récupération d'entrées depuis *INSPIRE*](INSPIRE)
--   [Exporter vers une base de données SQL externe](SQLExport)
 -   [Support des métadonnées XMP dans JabRef](XMPHelp)
--   [Options de la ligne de commande](CommandLine)
--   [Opérations à distance](RemoteHelp)
+-   [Comparison of Medline and RIS](MedlineRIS)
+-   [Field Mapping between MS-Office and JabRef](MsOfficeBibFieldMapping)
+
+## Chercher les entrées à partir du web
+
+### ...en utilisant des identifiants de publication
+
+-   [Récupération d'entrées depuis *DOI*](DOItoBibTeXHelp)
+-   [Récupération d'entrées depuis *ISBN*](ISBNtoBibTeXHelp)
+
+### ...using online bibliographic database
+
+-   [Récupération d'entrées depuis le portail *ACM*](ACMPortalHelp)
+-   [Récupération d'entrées depuis *ADS*](ADSHelp)
+-   [Récupération d'entrées depuis *arXiv*](arXivHelp)
+-   [Récupération d'entrées depuis *CiteSeerX*](CiteSeerHelp)
+-   [Récupération d'entrées depuis *DBLP*](DBLPHelp)
+-   [Récupération d'entrées depuis *DiVA*](DiVAtoBibTeXHelp)
+-   [Récupération d'entrées depuis *DOAJ*](DOAJHelp)
+-   [Récupération d'entrées depuis *Google Scholar*](GoogleScholarHelp)
+-   [Récupération d'entrées depuis *GVK*](GVKHelp)
+-   [Récupération d'entrées depuis *IEEExplore*](IEEEXploreHelp)
+-   [Récupération d'entrées depuis *INSPIRE*](INSPIRE)
+-   [Récupération d'entrées depuis *Medline*](MedlineHelp)
+-   [Récupération d'entrées depuis *Springer*](SpringerHelp)
+
+<!--  -   [Fetching entries from *ScienceDirect*](ScienceDirect) -->
 
 ## Divers
 
