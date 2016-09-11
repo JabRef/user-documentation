@@ -1,3 +1,7 @@
+---
+title: Best Practices
+---
+
 # Helpful groups
 
 - Group for your own papers: `author=YOURSELF`
