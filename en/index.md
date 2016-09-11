@@ -21,6 +21,7 @@ title: Help contents
 -   [Autosave](Autosave)
 -   [Command line options](CommandLine)
 -   [Remote operations](RemoteHelp)
+- [JabRef Best Practices](BestPractices)
    
 ## Fields
 
