@@ -4,97 +4,144 @@ title: Installation
 
 # Installation
 
-**This help page gets relevant if the [JavaFX](https://builds.jabref.org/javafx/) technology will be released!**
+This page describes how to install Java, which is requiered for JabRef.
+JabRef itself can be either installed using the installer or just running the jar file.
+You get these files from <https://www.jabref.org/#downloads>.
 
-This guide helps you to install Java which enable to run JabRef with ported JavaFX user interface elements.
+On Windows, the installer automatically downloads the OracleJDK.
+You can also install it manually as described here.
+
+The installation steps are written having the [JavaFX development branch](https://builds.jabref.org/javafx/) in mind.
+Thus, it especially describes installing JavaFX.
 
 ## Supported JDKs and JREs
 
 JavaFX is not included in every Java runtime environment or development kit.
-Therefore we highly recommend to use [Oracle Java 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html) because JavaFX is already included since Java 1.8.0_60.
+Therefore, we highly recommend to use [Oracle Java 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html).
+JavaFX is included since Java 1.8.0_60.
+The other official support for JavaFX is [OpenJDK](http://openjdk.java.net/install/index.html) with the external library [OpenJFX](http://packages.ubuntu.com/wily/openjfx-source).
+Unfortunately, the installation is not always straight forward.
+Therefore, we only recommend this if you know what you are doing.
+In case you want to use OpenJDK with OpenJFX in general you should follow this [instructions](https://wiki.openjdk.java.net/display/OpenJFX/Building+OpenJFX).
+For Ubuntu 16.04 LTS head to [Installation Commands](#ubuntu-openjdk-16-04).
 
-The other official support for JavaFX would be [OpenJDK](http://openjdk.java.net/install/index.html) with the external library [OpenJFX](http://packages.ubuntu.com/wily/openjfx-source). Unfortunately the installation isn't always straight forward which is why we only recommend this if you know what you are doing. If you want to use OpenJDK with OpenJFX in general you should follow this [instructions](https://wiki.openjdk.java.net/display/OpenJFX/Building+OpenJFX). For Ubuntu 16.04 LTS you can use the section in [Installation Commands](#ubuntu-openjdk-16-04).
 
-## Verify Java installation
+## Verify Java Installation
 
-If you don't know your Java version, you can check it by typing the following command into your command-line interface:
+In case you already have a Java versio installed - or you closely followed the below steps, you can check your Java version by typing the following command into your command line interface:
 
 `java -version`
 
-It's possible to store several Java version at the same time.
-Set your required java on linux distributions with following command:
+It is possible having multiple Java version at the same time.
+Set your required Java on linux distributions using following command:
 
-`alternatives --config java`
+`sudo update-alternatives --config java`
 
-Choose it with typing the the number which belongs to the java version.
-Your java version should look like this, depending on your operating system and JDK/JRE:
 
-**Oracle Java 64-Bit:**
+Choose it by typing the number belonging to the Java version.
+Your Java version should look like this, depending on your operating system and JDK/JRE:
 
-Java version "1.8.0\_x" 
-Java(TM) SE Runtime Environment (build 1.8.x)
-Java HotSpot(TM) 64-Bit Server VM (build 25.x, mixed mode)
 
 **Oracle Java 32-Bit:**
 
-Java version "1.8.0\_x" 
+```
+Java version "1.8.0_x" 
 Java(TM) SE Runtime Environment (build 1.8.x)
 Java HotSpot(TM) Client  VM (build 25.x, mixed mode)
+```
 
-**OpenJDK 64-Bit:**
 
-OpenJDK version "1.8.0\_x" 
-OpenJDK Runtime Environment (build 1.8.0\_x)
-OpenJDK 64-Bit Server VM (build 25.x, mixed mode)
+**Oracle Java 64-Bit:**
+
+```
+Java version "1.8.0_x" 
+Java(TM) SE Runtime Environment (build 1.8.x)
+Java HotSpot(TM) 64-Bit Server VM (build 25.x, mixed mode)
+```
+
 
 **OpenJDK 32-Bit:**
 
+```
 OpenJDK version "1.8.0\_x" 
 OpenJDK Runtime Environment (build 1.8.0\_x)
 OpenJDK Client VM (build 25.x, mixed mode)
+```
 
+
+**OpenJDK 64-Bit:**
+
+```
+OpenJDK version "1.8.0_x" 
+OpenJDK Runtime Environment (build 1.8.0_x)
+OpenJDK 64-Bit Server VM (build 25.x, mixed mode)
+```
 
 
 ## Installation Commands
 
-### Ubuntu Oracle Java
-Install oracle JDK with "personal packages archiv(ppa)" which includes an automated update function.
-If you want to install JRE or install java without ppa you should follow this [instuctions](https://wiki.ubuntuusers.de/Java/Installation/Oracle_Java/Java_8/).
 
-1. Add repository `sudo add-apt-repository ppa:webupd8team/java`
-2. Update package list `sudo apt-get update`
-3. Install  `sudo apt-get install oracle-java8-installer`
+### Ubuntu and Oracle Java
 
-### Ubuntu OpenJDK 16.04
+This applies for both 32bit and 64bit and both Ubuntu 14.04 LTS and 16.04 LTS.
 
-1. Install Java with `sudo apt-get install openjdk-8-jdk`
-2. Install JavaFX with `sudo apt-get install openjfx`
+Install Oracle JDK with "personal packages archiv (ppa)" which includes an automated update function.
+If you want to install JRE or install java without ppa you should follow these [instructions](https://wiki.ubuntuusers.de/Java/Installation/Oracle_Java/Java_8/).
 
-### Fedora 23 Oracle Java
+1. Add repository: `sudo add-apt-repository ppa:webupd8team/java`
+2. Update package list: `sudo apt-get update`
+3. Install: `sudo apt-get install oracle-java8-installer`
 
-1. Download rpm-file from [oracle](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
-2. Navigate to the folder where you downloaded the rpm-file
-3. Install with `rpm -ivh jdk-8u101-linux-x64.rpm`
-4. Upgrade with `rpm -Uvh jdk-8u101-linux-x64.rpm`
-5. Set alternatives with `alternatives --config java` (Choose Oracle version)
 
-### Debian Jessie 8
+### Ubuntu 16.04 and OpenJDK
 
-1. Download tag.gz-file from [oracle](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+Just install JavaFX by executing `sudo apt-get install openjfx`
+
+
+### Debian Jessie 8 and Oracle Java
+
+#### Using the ppa
+
+1. Add repository: `sudo sh -c 'echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" >> /etc/apt/sources.list'`
+2. Add GPG key: `sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EEA14886`
+3. Update package list: `sudo apt-get update`
+4. Install: `sudo apt-get install oracle-java8-installer`
+
+Based on: <http://tecadmin.net/install-java-8-on-debian/>
+
+#### Directly from Oracle
+
+1. Download tag.gz-file from the [Java SE Development Kit 8 Downloads] site
 2. Navigate to the folder where you downloaded the tar.gz-file
 3. Create package with `make-jpkg jdk-[Version]-linux-x64.tar.gz` including the most recent Java version instead of`[Version]`
 4. Get root access with `su`
 5. Install with `dpkg -i oracle-java8-jdk_[Version].deb`
 
-### CentOS 6 or 7
-1. Download rpm-file from [oracle](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+
+### Fedora 23 and Oracle Java
+
+1. Download rpm-file from the [Java SE Development Kit 8 Downloads] site
+2. Navigate to the folder where you downloaded the rpm-file
+3. Install: `rpm -ivh jdk-8u101-linux-x64.rpm`
+4. Upgrade: `rpm -Uvh jdk-8u101-linux-x64.rpm`
+5. Set alternatives: `alternatives --config java` (choose Oracle version)
+
+
+### CentOS 6 or 7 and Oracle Java
+
+1. Download rpm-file from the [Java SE Development Kit 8 Downloads] site
 2. Install with `sudo yum localinstall jre-[Version]-linux-[BIT].rpm` include the most recent Java version for `[Version]` and `i586` or `x64` for `[BIT]` depending on your OS version
 
-### Windows
 
-1. Download exe-file from [oracle](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+### Windows and Oracle Java
+
+1. Download exe file from the [Java SE Development Kit 8 Downloads] site
 2. Run installation wizzard
 
-### Mac OS
-1. Download dmg-file from [oracle](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+
+### Mac OS and Oracle Java
+
+1. Download dmg-file from the [Java SE Development Kit 8 Downloads] site
 2. Run installation wizzard
+
+ [Java SE Development Kit 8 Downloads]: http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
