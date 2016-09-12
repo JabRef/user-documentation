@@ -6,48 +6,59 @@ title: Installation
 
 **This help page gets relevant if the [JavaFX](https://builds.jabref.org/javafx/) technology will be released!**
 
-This guide instructs you to install Java in order to run JabRef.
+This guide helps you to install Java which enable to run JabRef with ported JavaFX user interface elements.
 
-## Necessary Pakages
+## Supported JDKs and JREs
 
 JavaFX is not included in every Java runtime environment or development kit.
-We highly recommend to use [Oracle Java 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html), because JavaFX is already included since Java 8.
+Therefore we highly recommend to use [Oracle Java 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html) because JavaFX is already included since Java 1.8.0_60.
 
-An alternative to Oracle Java would be OpenJDK with the external library OpenJFX. We only recommend this if you know what you are doing. If you want to use OpenJDK you should follow this [instructions](https://wiki.openjdk.java.net/display/OpenJFX/Building+OpenJFX)
+The other official support for JavaFX would be [OpenJDK](http://openjdk.java.net/install/index.html) with the external library [OpenJFX](http://packages.ubuntu.com/wily/openjfx-source). Unfortunately the installation isn't always straight forward which is why we only recommend this if you know what you are doing. If you want to use OpenJDK with OpenJFX in general you should follow this [instructions](https://wiki.openjdk.java.net/display/OpenJFX/Building+OpenJFX). For Ubuntu 16.04 LTS you can use the section in [Installation Commands](#ubuntu-openjdk-16-04).
 
-You can download these different versions here:
+## Verify Java installation
 
-* [Oracle Java 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
-* [OpenJDK](http://openjdk.java.net/install/index.html)
-* [OpenJFX](http://packages.ubuntu.com/wily/openjfx-source)
-
-You can check your Java version by typing the following command into your command-line interface:
+If you don't know your Java version, you can check it by typing the following command into your command-line interface:
 
 `java -version`
 
-It should return messages like this, depending on your operating system:
+It's possible to store several Java version at the same time.
+Set your required java on linux distributions with following command:
+
+`alternatives --config java`
+
+Choose it with typing the the number which belongs to the java version.
+Your java version should look like this, depending on your operating system and JDK/JRE:
 
 **Oracle Java 64-Bit:**
 
-Java version "1.8.0\_101" Java(TM) SE Runtime Environment (build 1.8.x)Java HotSpot(TM) 64-Bit Server VM (build 25.x, mixed mode)
+Java version "1.8.0\_x" 
+Java(TM) SE Runtime Environment (build 1.8.x)
+Java HotSpot(TM) 64-Bit Server VM (build 25.x, mixed mode)
 
 **Oracle Java 32-Bit:**
 
-Java version "1.8.0\_101" Java(TM) SE Runtime Environment (build 1.8.x)Java HotSpot(TM) Client  VM (build 25.x, mixed mode)
+Java version "1.8.0\_x" 
+Java(TM) SE Runtime Environment (build 1.8.x)
+Java HotSpot(TM) Client  VM (build 25.x, mixed mode)
 
 **OpenJDK 64-Bit:**
 
-Openjdk version "1.8.0\_91" OpenJDK Runtime Environment (build 1.8.0\_x)OpenJDK 64-Bit Server VM (build 25.x, mixed mode)
+OpenJDK version "1.8.0\_x" 
+OpenJDK Runtime Environment (build 1.8.0\_x)
+OpenJDK 64-Bit Server VM (build 25.x, mixed mode)
 
 **OpenJDK 32-Bit:**
 
-Openjdk version "1.8.0\_91" OpenJDK Runtime Environment (build 1.8.0\_x)OpenJDK Client VM (build 25.x, mixed mode)
+OpenJDK version "1.8.0\_x" 
+OpenJDK Runtime Environment (build 1.8.0\_x)
+OpenJDK Client VM (build 25.x, mixed mode)
+
 
 
 ## Installation Commands
 
 ### Ubuntu Oracle Java
-Install oracle JDK with "personal packages archiv" that includes an automated update function.
+Install oracle JDK with "personal packages archiv(ppa)" which includes an automated update function.
 If you want to install JRE or install java without ppa you should follow this [instuctions](https://wiki.ubuntuusers.de/Java/Installation/Oracle_Java/Java_8/).
 
 1. Add repository `sudo add-apt-repository ppa:webupd8team/java`
