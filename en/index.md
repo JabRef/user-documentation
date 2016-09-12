@@ -15,6 +15,7 @@ title: Help contents
 
 ## General
 
+- [Installation](Installation)
 - [General information](JabRefHelp)
 - [The JabRef main window](BaseFrameHelp)
 - [Entry editor](EntryEditorHelp)
