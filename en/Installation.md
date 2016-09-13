@@ -4,11 +4,11 @@ title: Installation
 
 # Installation
 
-This page describes how to install Java, which is requiered for JabRef.
+This page describes how to install Java, which is required for JabRef.
 JabRef itself can be either installed using the installer or just running the jar file.
 You get these files from <https://www.jabref.org/#downloads>.
 
-On Windows, the installer automatically downloads the OracleJDK.
+On Windows, the installer automatically downloads the OracleJDK (i.e. Java).
 You can also install it manually as described here.
 
 The installation steps are written having the [JavaFX development branch](https://builds.jabref.org/javafx/) in mind.
@@ -23,22 +23,22 @@ The other official support for JavaFX is [OpenJDK](http://openjdk.java.net/insta
 Unfortunately, the installation is not always straight forward.
 Therefore, we only recommend this if you know what you are doing.
 In case you want to use OpenJDK with OpenJFX in general you should follow this [instructions](https://wiki.openjdk.java.net/display/OpenJFX/Building+OpenJFX).
-For Ubuntu 16.04 LTS head to [Installation Commands](#ubuntu-openjdk-16-04).
+For Ubuntu 16.04 LTS head to the section [Installation Commands](#ubuntu-openjdk-16-04).
 
 
 ## Verify Java Installation
 
-In case you already have a Java versio installed - or you closely followed the below steps, you can check your Java version by typing the following command into your command line interface:
+In case you already have a Java version installed - or you closely followed the steps below, you can check your Java version by typing the following command into your command line interface:
 
 `java -version`
 
 It is possible having multiple Java version at the same time.
-Set your required Java on linux distributions using following command:
+Set your preferred Java version on Linux distributions using the following command:
 
 `sudo update-alternatives --config java`
 
+and choose it by typing the number matching the Java version.
 
-Choose it by typing the number belonging to the Java version.
 Your Java version should look like this, depending on your operating system and JDK/JRE:
 
 
@@ -85,13 +85,13 @@ OpenJDK 64-Bit Server VM (build 25.x, mixed mode)
 
 This applies for both 32bit and 64bit and both Ubuntu 14.04 LTS and 16.04 LTS.
 
-Install Oracle JDK with "personal packages archiv (ppa)" which includes an automated update function.
-If you want to install JRE or install java without ppa you should follow these [instructions](https://wiki.ubuntuusers.de/Java/Installation/Oracle_Java/Java_8/).
+Install Oracle JDK with "personal packages archiv (ppa)" which includes an automated update function:
 
 1. Add repository: `sudo add-apt-repository ppa:webupd8team/java`
 2. Update package list: `sudo apt-get update`
 3. Install: `sudo apt-get install oracle-java8-installer`
 
+If you want to install JRE or install java without ppa you should follow these [instructions](https://help.ubuntu.com/community/Java).
 
 ### Ubuntu 16.04 and OpenJDK
 
