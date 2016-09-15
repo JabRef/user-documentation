@@ -406,6 +406,19 @@ def create_markdown(extended):
     creates a markdown file of the current status (maybe call `update` before?) and opens it (`status.md`)
     :param extended: boolean: it the specific pages should be included in the status report
     """
+
+    def write_table_line(language):
+        num_pages_translated = len(get_translated_pages(language=language))
+        num_pages_not_translated = len(get_not_translated_pages(main_language=MAIN_LANGUAGE, secondary_language=language))
+        num_pages_outdated = len(get_outdated_pages(language=language))
+        num_pages_old = len(get_old_help_pages_redirecting_to_new_one(language=language))
+        percent_translated = int((1 - num_pages_not_translated / float(num_pages_not_translated + num_pages_translated)) * 100)
+        percent_outdated = int((num_pages_outdated / float(num_pages_translated)) * 100)
+        markdown_text.append("| {lang} | {translated} | {not_translated} | {outdated} | {old_pages} | {percent_translated} | {percent_outdated} |\n"
+            .format(lang=language, translated=num_pages_translated, not_translated=num_pages_not_translated, outdated=num_pages_outdated,
+            old_pages=num_pages_old, percent_translated=percent_translated, percent_outdated=percent_outdated))
+        return num_pages_outdated != 0, num_pages_not_translated != 0
+
     main_not_translated_pages = get_pages_not_in_main_language()
     num_languages_main_not_translated_pages = len(main_not_translated_pages)
     num_main_not_translated_pages = 0
@@ -433,21 +446,12 @@ def create_markdown(extended):
 
     markdown_text.append("\n| Language | translated | not translated | outdated | old pages | % translated | % outdated |\n")
     markdown_text.append(  "| -------- | ---------- | -------------- | -------- | --------- | ------------ | ---------- |\n")
-    num_pages_main = len(get_translated_pages(language=MAIN_LANGUAGE))
-    are_pages_outdated = False
-    are_pages_not_translated = False
-    for language in get_all_languages():
-        num_pages_translated = len(get_translated_pages(language=language))
-        num_pages_not_translated = len(get_not_translated_pages(main_language=MAIN_LANGUAGE, secondary_language=language))
-        num_pages_outdated = len(get_outdated_pages(language=language))
-        num_pages_old = len(get_old_help_pages_redirecting_to_new_one(language=language))
-        percent_translated = (1 - num_pages_not_translated / float(num_pages_main)) * 100
-        percent_outdated = (num_pages_outdated / float(num_pages_translated)) * 100
-        markdown_text.append("| {lang} | {translated} | {not_translated} | {outdated} | {old_pages} | {percent_translated} | {percent_outdated} |\n"
-            .format(lang=language, translated=num_pages_translated, not_translated=num_pages_not_translated, outdated=num_pages_outdated,
-            old_pages=num_pages_old, percent_translated=percent_translated, percent_outdated=percent_outdated))
-        are_pages_outdated = True if num_pages_outdated != 0 else are_pages_outdated
-        are_pages_not_translated = True if num_pages_not_translated != 0 else are_pages_not_translated
+
+    are_pages_outdated, are_pages_not_translated = write_table_line(language=MAIN_LANGUAGE)
+    for language in get_other_languages():
+        pages_outdated, are_pages_not_translated = write_table_line(language=language)
+        are_pages_outdated |= pages_outdated
+        are_pages_outdated |= are_pages_not_translated
 
     if extended:
         if are_pages_outdated:
