@@ -6,10 +6,10 @@
   "Fields": "フィールド",
   "Finding, sorting and cleaning entries": "項目の検索と整序",
   "Setup": "設定",
-  "Collaborative work": "",
+  "Collaborative work": "共同作業",
   "Import/Export": "読み込み/書き出し",
-  "Fetching entries from the web": "",
-  "... using publication identifiers": "",
-  "... using online bibliographic database": "",
+  "Fetching entries from the web": "ウェブから項目を取得する",
+  "... using publication identifiers": "刊行識別子を使用して",
+  "... using online bibliographic database": "オンライン書誌データベースを使用して",
   "Miscellaneous": "その他"
 }
