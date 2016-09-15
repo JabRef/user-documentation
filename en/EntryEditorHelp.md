@@ -1,6 +1,7 @@
 ---
 title: The entry editor
 outdated: true
+helpCategories: ["General"]
 ---
 
 # The entry editor

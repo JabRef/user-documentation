@@ -1,6 +1,7 @@
 ---
 title: Special Fields
 outdated: true
+helpCategories: ["Fields"]
 ---
 
 # Special Fields

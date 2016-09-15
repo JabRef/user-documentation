@@ -1,5 +1,6 @@
 ---
 title: Entry preview setup
+helpCategories: ["Setup"]
 ---
 
 # Entry preview setup

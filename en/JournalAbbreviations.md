@@ -1,5 +1,6 @@
 ---
 title: Journal abbreviations
+helpCategories: ["Fields"]
 ---
 
 # Journal abbreviations

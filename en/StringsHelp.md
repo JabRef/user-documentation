@@ -1,5 +1,6 @@
 ---
 title: Help on Strings
+helpCategories: ["Fields"]
 ---
 
 # Help on Strings

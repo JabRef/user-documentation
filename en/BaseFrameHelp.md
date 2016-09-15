@@ -1,5 +1,6 @@
 ---
 title: The JabRef main window
+helpCategories: ["General"]
 ---
 
 # The JabRef main window

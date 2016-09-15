@@ -1,5 +1,6 @@
 ---
 title: JabRef
+helpCategories: ["General"]
 ---
 
 # JabRef

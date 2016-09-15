@@ -1,5 +1,6 @@
 ---
 title: Shared SQL Database
+helpCategories: ["Collaborative work"]
 ---
 
 # Shared SQL Database

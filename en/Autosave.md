@@ -1,5 +1,6 @@
 ---
 title: Autosave
+helpCategories: ["General"]
 ---
 
 # Autosave

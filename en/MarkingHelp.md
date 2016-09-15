@@ -1,5 +1,6 @@
 ---
 title: Mark entries
+helpCategories: ["Finding, sorting and cleaning entries"]
 ---
 
 # Mark entries

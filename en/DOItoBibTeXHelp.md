@@ -1,5 +1,6 @@
 ---
 title: Fetching entries using the Digital Object Identifier (DOI)
+helpCategories: ["Fetching entries from the web", "... using publication identifiers"]
 ---
 
 # Fetching entries using the Digital Object Identifier (DOI)

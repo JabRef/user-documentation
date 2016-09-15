@@ -1,5 +1,6 @@
 ---
 title: Database properties window
+helpCategories: ["Setup"]
 ---
 
 # Database properties window

@@ -1,5 +1,6 @@
 ---
 title: Customizing general fields
+helpCategories: ["Setup"]
 ---
 
 # Customizing general fields

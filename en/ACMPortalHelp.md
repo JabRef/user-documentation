@@ -1,5 +1,6 @@
 ---
 title: Fetching entries from ACM Portal
+helpCategories: ["Fetching entries from the web", "... using online bibliographic database"]
 ---
 
 # Fetching entries from ACM Portal

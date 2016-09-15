@@ -1,6 +1,7 @@
 ---
 title: Field content selector
 outdated: true
+helpCategories: ["Fields"]
 ---
 
 # Field content selector

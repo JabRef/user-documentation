@@ -1,5 +1,6 @@
 ---
 title: ScienceDirect search
+helpCategories: ["Fetching entries from the web", "... using online bibliographic database"]
 ---
 
 # ScienceDirect search

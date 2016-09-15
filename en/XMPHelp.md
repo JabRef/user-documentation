@@ -1,5 +1,6 @@
 ---
 title: XMP metadata support in JabRef
+helpCategories: ["Import/Export"]
 ---
 
 # XMP metadata support in JabRef

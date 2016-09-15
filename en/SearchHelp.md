@@ -1,6 +1,7 @@
 ---
 title: Searching
 outdated: true
+helpCategories: ["Finding, sorting and cleaning entries"]
 ---
 
 # Searching

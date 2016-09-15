@@ -1,5 +1,6 @@
 ---
 title: The string editor
+helpCategories: ["Setup"]
 ---
 
 # The string editor
