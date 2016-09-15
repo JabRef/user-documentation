@@ -635,6 +635,7 @@ args = parser.parse_args()
 if args.command == COMMAND_STATUS:
     status(extended=args.extended, markdown=args.markdown)
 elif args.command == COMMAND_UPDATE:
+    delete_all_generated_redirecting_pages(extended=args.extended)
     update_index(extended=args.extended)
 elif args.command == COMMAND_CLEAN:
     delete_all_generated_redirecting_pages(extended=args.extended)
