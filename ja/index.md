@@ -20,7 +20,7 @@ title: ヘルプ目次
 -   [項目エディタ](EntryEditorHelp)
 -   [自動保存](Autosave)
 -   [コマンドラインオプション](CommandLine)
--    [リモート操作](RemoteHelp)
+-   [リモート操作](RemoteHelp)
 
 ## フィールド
 
@@ -39,7 +39,7 @@ title: ヘルプ目次
 -   [*グループ*を使うためのヘルプ](GroupsHelp)
 -   [項目の標識付け](MarkingHelp)
 -   [JabRefでの検索](SearchHelp)
--   [Find duplicated entries](FindDuplicates)
+-   [重複項目の検出](FindDuplicates)
 
 ## 設定
 
@@ -51,10 +51,10 @@ title: ヘルプ目次
 -   [汎用フィールドの個人設定](GeneralFields)
 
 
-## Collaborative work
+## 共同作業
 
-- [using a Bib(La)TeX file](SharedBibFile)
-- [using a SQL database](SQLDatabase)
+-   [Bib(La)TeXファイルを使用して](SharedBibFile)
+-   [SQLデータベースを使用して](SQLDatabase)
 
 
 ## 読み込み/書き出し
@@ -65,28 +65,28 @@ title: ヘルプ目次
 -   [EndNote読込/書出フィルタセット](EndNoteFilters)
 -   [OpenOffice.orgやLibreOfficeでJabRef書誌情報を利用するには](OpenOfficeIntegration)
 -   [JabRefにおけるXMPメタデータ サポート](XMPHelp)
--   [Comparison of Medline and RIS](MedlineRIS)
+-   [MedlineとRISの比較](MedlineRIS)
 -   [Field Mapping between MS-Office and JabRef](MsOfficeBibFieldMapping)
 
 
-## Fetching entries from the web
+## ウェブから項目を取得する
 
-### ...using publication identifiers
+### ...刊行識別子を使用して
 
--   [Fetching entries from the *DOI*を使用して項目を取得する](DOItoBibTeXHelp)
--   [Fetching entries from the *ISBN*を使用して項目を取得する](ISBNtoBibTeXHelp)
+-   [*DOI*から項目を取得](DOItoBibTeXHelp)
+-   [*ISBN*から項目を取得](ISBNtoBibTeXHelp)
 
-### ...using online bibliographic database
+### ...オンライン書誌データベースを使用して
 
--	[*ACM* Portalから項目を取得する](ACMPortalHelp)
+-	  [*ACM* Portalから項目を取得](ACMPortalHelp)
 -   [Fetching entries from *ADS*](ADSHelp)
 -   [Fetching entries from *arXiv*](arXivHelp)
--   [*CiteSeerX*から項目を取得する](CiteSeerHelp)
--   [*DiVA*から項目を取得する](DiVAtoBibTeXHelp)
+-   [*CiteSeerX*から項目を取得](CiteSeerHelp)
+-   [*DiVA*から項目を取得](DiVAtoBibTeXHelp)
 -   [Fetching entries from *DOAJ*](DOAJHelp)
 -   [Fetching entries from *GVK*](GVKHelp)
--   [*Google Scholar*から項目を取得する](GoogleScholarHelp)
--   [*IEEExplore*から項目を取得する](IEEEXploreHelp)
+-   [*Google Scholar*から項目を取得](GoogleScholarHelp)
+-   [*IEEExplore*から項目を取得](IEEEXploreHelp)
 -   [*INSPIRE* 検索](INSPIRE)
 -   [Fetching entries from *Medline*](MedlineHelp)
 -   [Fetching entries from *Springer*](SpringerHelp)
