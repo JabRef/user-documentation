@@ -1,6 +1,7 @@
 ---
 title: PDF/PS/URL/DOI links in JabRef
 outdated: true
+helpCategories: ["Fields"]
 ---
 
 # PDF/PS/URL/DOI links in JabRef

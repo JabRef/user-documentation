@@ -9,91 +9,95 @@ title: Daftar Isi Bantuan
     <strong>You can't find a solution to your problem? You still have questions?</strong>
   </div>
   <div class="panel-body">
-    <a class="btn btn-default" role="button" href="http://discourse.jabref.org">Use the (English) online forum to get more support!</a>
-  </div>(English) 
+    <a class="btn btn-default" role="button" href="http://discourse.jabref.org">Use the online forum to get more support!</a>
+  </div>
 </div>
 
-## Umum
 
--   [Informasi Umum](JabRefHelp)
--   [Jendela utama JabRef](BaseFrameHelp)
--   [Penyunting Entri](EntryEditorHelp)
--   [Menyimpan otomatis](Autosave)
--   [Command line options](CommandLine)
--   [Remote operations](RemoteHelp)
+## Umum
+- [Menyimpan otomatis](/in/Autosave)
+- [Jendela utama JabRef](/in/BaseFrame)
+- [Best Practices](/in/BestPractices)
+- [Command line use and options](/in/CommandLine)
+- [Penyunting entri](/in/EntryEditor)
+- [Installation](/in/Installation)
+- [JabRef](/in/JabRef)
+- [Remote operation](/in/Remote)
+
 
 ## Bidang dalam Entri
+- [Tentang *bibtex*](/in/Bibtex)
+- [Pengisian kata dalam bidang](/in/ContentSelector)
+- [PDF/PS/URL/DOI links in JabRef](/in/ExternalFiles)
+- [File links in JabRef](/in/FileLinks)
+- [Singkatan nama jurnal](/in/JournalAbbreviations)
+- [Bidang 'pemilik'](/in/Owner)
+- [Special Fields](/in/SpecialFields)
+- [Help on Strings](/in/Strings)
+- [Cap waktu entri](/in/TimeStamp)
 
--   [Informasi *Bibtex*](BibtexHelp)
--   [External file links](FileLinks)
--   [PDF/PS/URL/DOI links in JabRef](ExternalFiles)
--   [Cap waktu entri](TimeStampHelp)
--   [Bidang 'pemilik'](OwnerHelp)
--   [Pengisian kata dalam bidang](ContentSelectorHelp)
--   [Singkatan nama jurnal](JournalAbbreviations)
--   [Special Fields](SpecialFieldsHelp)
--   [Bibtex Strings](StringsHelp)
 
 ## Mencari dan mengurutkan entri
+- [Find duplicates](/in/FindDuplicates)
+- [Groups](/in/Groups)
+- [Menandai entri](/in/Marking)
+- [Pencarian](/in/Search)
 
--   [Help on using *Groups*](GroupsHelp)
--   [Menandai entri](MarkingHelp)
--   [Pencarian di JabRef](SearchHelp)
--   [Find duplicated entries](FindDuplicates)
 
 ## Pengaturan
+- [Customizing the BibTeX key generator](/in/BibtexKeyPatterns)
+- [Customizing entry types](/in/CustomEntries)
+- [Jendela propereti basisdata](/in/DatabaseProperties)
+- [Customizing general fields](/in/GeneralFields)
+- [Pengaturan pratampilan entri](/in/Preview)
+- [Penyunting string](/in/StringEditor)
 
--   [Penyunting string](StringEditorHelp)
--   [Jendela properti basisdata](DatabaseProperties)
--   [Pengaturan pratampilan entri](PreviewHelp)
--   [Customizing the BibTex key generator](BibtexKeyPatterns)
--   [Customizing entry types](CustomEntriesHelp)
--   [Customizing general fields](GeneralFields)
 
 ## Collaborative work
+- [Shared SQL Database](/in/SQLDatabase)
+- [Migration of pre-3.6 SQL databases into a shared database](/in/SQLDatabaseMigration)
+- [Sharing a BibLaTeX Database](/in/SharedBibFile)
 
-- [using a Bib(La)TeX file](SharedBibFile)
-- [using a SQL database](SQLDatabase)
 
 ## Impor/Ekspor
-
--   [Penapis ekspor suaian](CustomExports)
--   [Penapis impor suaian](CustomImports)
--   [Import inspection window](ImportInspectionDialog)
--   [The EndNote import/export filter set](EndNoteFilters)
--   [Using JabRef with OpenOffice.org or LibreOffice](OpenOfficeIntegration)
--   [XMP metadata support in JabRef](XMPHelp)
--   [Comparison of Medline and RIS](MedlineRIS)
--   [Field Mapping between MS-Office and JabRef](MsOfficeBibFieldMapping)
-
-
-## Fetching entries from the web
-
-### ...using publication identifiers
+- [Penapis ekspor atursendiri](/in/CustomExports)
+- [Custom import filters](/in/CustomImports)
+- [EndNote Export Filter](/in/EndNoteFilters)
+- [Import inspection window](/in/ImportInspectionDialog)
+- [Comparison of the Medline (txt), Medline (XML), and RIS format](/in/MedlineRIS)
+- [MS Office Bibliography xml format](/in/MsOfficeBibFieldMapping)
+- [OpenOffice/LibreOffice integration](/in/OpenOfficeIntegration)
+- [Export to an External SQL Database](/in/SQLExport)
+- [XMP metadata support in JabRef](/in/XMP)
 
 
--   [Fetching entries from the *DOI*](DOItoBibTeXHelp)
--   [Fetching entries from the *ISBN*](ISBNtoBibTeXHelp)
+## F
 
-### ...using online bibliographic database
 
--   [Mengambil entri dari Portal *ACM*](ACMPortalHelp)
--   [Mengambil entri dari Portal *ADS*](ADSHelp)
--   [Mengambil entri dari Portal *arXiv*](arXivHelp)
--   [Mengambil entri dari Portal *CiteSeer*](CiteSeerHelp)
--   [Mengambil entri dari Portal *DBLP*](DBLPHelp)
--   [Mengambil entri dari Portal *DiVA*](DiVAtoBibTeXHelp)
--   [Mengambil entri dari Portal *DOAJ*](DOAJHelp)
--   [Mengambil entri dari Portal *Google Scholar*](GoogleScholarHelp)
--   [Mengambil entri dari Portal *IEEExplore*](IEEEXploreHelp)
--   [Mengambil entri dari Portal *INSPIRE*](INSPIRE)
--   [Mengambil entri dari Portal *Medline*](MedlineHelp)
--   [Mengambil entri dari Portal *Springer*](SpringerHelp)
+### ... using publication identifiers
+- [Fetching entries using the Digital Object Identifier (DOI)](/in/DOItoBibTeX)
+- [Fetching entries using the ISBN number](/in/ISBNtoBibTeX)
 
-<!--  -  [Pencarian *ScienceDirect*](ScienceDirect) -->
+
+### ... using online bibliographic database
+- [Pencarian melalui Portal ACM](/in/ACMPortal)
+- [Fetching entries from ADS](/in/ADS)
+- [Impor entri dari CiteSeer](/in/CiteSeer)
+- [Fetching entries from DBLP](/in/DBLP)
+- [Fetching entries from DOAJ](/in/DOAJ)
+- [Fetching entries from DiVA](/in/DiVAtoBibTeX)
+- [Fetching entries from GVK](/in/GVK)
+- [Fetching entries from Google Scholar](/in/GoogleScholar)
+- [Pencarian IEEEXplore](/in/IEEEXplore)
+- [Pencarian INSPIRE](/in/INSPIRE)
+- [Mengambil entri dari Medline](/in/Medline)
+- [Pencarian ScienceDirect](/in/ScienceDirect)
+- [Fetching entries from Springer](/in/Springer)
+- [Fetching entries from arXiv](/in/arXiv)
 
 
 
 ## Lain-lain
+- [Riwayat Perbaikan](/in/RevisionHistory)
 
--   [Riwayat Perbaikan](RevisionHistory)
+

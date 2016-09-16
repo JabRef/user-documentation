@@ -1,6 +1,7 @@
 ---
 title: EndNote Export Filter
 outdated: true
+helpCategories: ["Import/Export"]
 ---
 
 # EndNote Export Filter

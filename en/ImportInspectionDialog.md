@@ -1,5 +1,6 @@
 ---
 title: Import inspection window
+helpCategories: ["Import/Export"]
 ---
 
 # Import inspection window

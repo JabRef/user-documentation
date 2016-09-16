@@ -1,6 +1,8 @@
 ---
 title: MS Office Bibliography xml format
+helpCategories: ["Import/Export"]
 ---
+
 # Field Mapping between MS-Office and JabRef
 
 ## Introduction

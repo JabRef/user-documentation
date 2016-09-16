@@ -1,5 +1,6 @@
 ---
 title: Sharing a BibLaTeX Database
+helpCategories: ["Collaborative work"]
 ---
 
 # Sharing a Bib(La)TeX Database

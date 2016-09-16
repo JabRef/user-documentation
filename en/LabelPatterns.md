@@ -1,7 +1,4 @@
 ---
-title: Customizing the BibTeX key generator
+redirect:  /en/BibtexKeyPatterns
+layout:    redirect
 ---
-
-This file has been renamed with Version 3.6.
-
-You can access the new version [here](BibtexKeyPatterns).

@@ -1,5 +1,6 @@
 ---
 title: Installation
+helpCategories: ["General"]
 ---
 
 # Installation

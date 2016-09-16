@@ -1,6 +1,7 @@
 ---
 title: File links in JabRef
 outdated: true
+helpCategories: ["Fields"]
 ---
 
 # File links in JabRef

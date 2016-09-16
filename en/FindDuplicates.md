@@ -1,5 +1,6 @@
 ---
 title: Find duplicates
+helpCategories: ["Finding, sorting and cleaning entries"]
 ---
 
 # Find duplicates

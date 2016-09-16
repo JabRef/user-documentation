@@ -1,5 +1,6 @@
 ---
 title: Best Practices
+helpCategories: ["General"]
 ---
 
 # Helpful groups
