@@ -88,6 +88,8 @@ In the resulting xml file they are represented with the prefix `BIBTEX_`
 | &lt;BibTexEntryType&gt;     | BIBTEX_Entry        |
 | &lt;BibTexEntryType&gt;     | SourceType          |
 | key (not BibTeX-Key)        | BIBTEX_KEY          |
+
+
 The xml field `SourceType` contains the associated entry type from the first table, while the original BibTeX/BibLaTex entrytype is preserved in the field `BIBTEX_ENTRY`.
 
 ### MS-Bib only fields
