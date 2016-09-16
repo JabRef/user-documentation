@@ -20,6 +20,7 @@ except ImportError, e:
 COMMAND_STATUS = "status"
 COMMAND_UPDATE = "update"
 COMMAND_CLEAN = "clean"
+COMMAND_REMOVE_SUFFIX = "removeHelpSuffix"
 
 MAIN_LANGUAGE = "en"
 
@@ -54,6 +55,7 @@ def read_file(filename, encoding="UTF-8"):
 def write_file(filename, content):
     """
     writes the lines to the file in `UTF-8`
+
     :param filename: string
     :param content: list: the lines to write
     """
@@ -107,17 +109,17 @@ def get_other_languages():
     """
     :return: list of strings: all but the main language
     """
-    all_languages = get_all_languages()
-    all_languages.remove(MAIN_LANGUAGE)
-    return all_languages
+    return [f for f in listdir(".") if
+        isdir(join(".", f)) and not f.startswith("_") and not f.startswith(".") and not f.startswith("css") and not f.startswith(MAIN_LANGUAGE)]
 
 
 def get_all_languages():
     """
-    :return: list: of strings all languages
+    :return: list: of strings all languages with the main language at the beginning
     """
-    return [f for f in listdir(".") if
-        isdir(join(".", f)) and not f.startswith("_") and not f.startswith(".") and not f.startswith("css")]
+    languages = get_other_languages()
+    languages.insert(0, MAIN_LANGUAGE)
+    return languages
 
 
 def get_help_pages_in(language):
@@ -224,6 +226,7 @@ def is_old_help_page_redirecting_to_new_one(language, page):
 def create_redirect_page(language, page):
     """
     creates a page which redirects to the main language one
+
     :param language: string
     :param page: string
     """
@@ -253,6 +256,7 @@ def delete_redirecting_help_pages(language):
 def delete_all_generated_redirecting_pages(extended):
     """
     deletes all the generated pages (inlcuding status.md)
+
     :param extended: if True then the deleted pages will be printed
     """
     for language in get_all_languages():
@@ -265,7 +269,7 @@ def delete_all_generated_redirecting_pages(extended):
             deleted_pages.append("index.md")
         num_deleted_pages = len(deleted_pages)
         logger.ok("Deleted {num_deleted_pages} page(s) for language '{lang}'".format(lang=language, num_deleted_pages=num_deleted_pages))
-        if extended:
+        if extended and num_deleted_pages != 0:
             logger.neutral("\t{}".format(deleted_pages))
     if os.path.isfile(FILE_STATUS):
         os.remove(FILE_STATUS)
@@ -356,6 +360,7 @@ def get_outdated_pages(language):
 def check_language_status(language, extended):
     """
     checks the status of this language and prints it on the console (maybe call `update` before?)
+
     :param language: string
     :param extended: boolean: if the specific pages should be printed
     """
@@ -373,7 +378,7 @@ def check_language_status(language, extended):
         else:
             for key, value in main_not_translated_pages.iteritems():
                 logger.error("\tlanguage '{lang}' has {count} additional page(s)".format(lang=key, count=len(value)))
-                if extended:
+                if extended and len(value) != 0:
                     logger.neutral("\t\t{pages}".format(pages=value))
 
     else:
@@ -404,21 +409,9 @@ def check_language_status(language, extended):
 def create_markdown(extended):
     """
     creates a markdown file of the current status (maybe call `update` before?) and opens it (`status.md`)
+
     :param extended: boolean: it the specific pages should be included in the status report
     """
-
-    def write_table_line(language):
-        num_pages_translated = len(get_translated_pages(language=language))
-        num_pages_not_translated = len(get_not_translated_pages(main_language=MAIN_LANGUAGE, secondary_language=language))
-        num_pages_outdated = len(get_outdated_pages(language=language))
-        num_pages_old = len(get_old_help_pages_redirecting_to_new_one(language=language))
-        percent_translated = int((1 - num_pages_not_translated / float(num_pages_not_translated + num_pages_translated)) * 100)
-        percent_outdated = int((num_pages_outdated / float(num_pages_translated)) * 100)
-        markdown_text.append("| {lang} | {translated} | {not_translated} | {outdated} | {old_pages} | {percent_translated} | {percent_outdated} |\n"
-            .format(lang=language, translated=num_pages_translated, not_translated=num_pages_not_translated, outdated=num_pages_outdated,
-            old_pages=num_pages_old, percent_translated=percent_translated, percent_outdated=percent_outdated))
-        return num_pages_outdated != 0, num_pages_not_translated != 0
-
     main_not_translated_pages = get_pages_not_in_main_language()
     num_languages_main_not_translated_pages = len(main_not_translated_pages)
     num_main_not_translated_pages = 0
@@ -438,7 +431,7 @@ def create_markdown(extended):
                 .format(count_pages=num_main_not_translated_pages, count_language=num_languages_main_not_translated_pages))
         for key, value in main_not_translated_pages.iteritems():
             markdown_text.append("  - language `{lang}` has {count} additional page(s)\n".format(lang=key, count=len(value)))
-            if extended:
+            if extended and len(value) != 0:
                 for page in value:
                     link = get_file_link(language=key, page=page)
                     markdown_text.append("    - [{page}]({link})\n".format(page=page, link=link))
@@ -446,12 +439,20 @@ def create_markdown(extended):
 
     markdown_text.append("\n| Language | translated | not translated | outdated | old pages | % translated | % outdated |\n")
     markdown_text.append(  "| -------- | ---------- | -------------- | -------- | --------- | ------------ | ---------- |\n")
-
-    are_pages_outdated, are_pages_not_translated = write_table_line(language=MAIN_LANGUAGE)
-    for language in get_other_languages():
-        pages_outdated, are_pages_not_translated = write_table_line(language=language)
-        are_pages_outdated |= pages_outdated
-        are_pages_outdated |= are_pages_not_translated
+    are_pages_outdated = False
+    are_pages_not_translated = False
+    for language in get_all_languages():
+        num_pages_translated = len(get_translated_pages(language=language))
+        num_pages_not_translated = len(get_not_translated_pages(main_language=MAIN_LANGUAGE, secondary_language=language))
+        num_pages_outdated = len(get_outdated_pages(language=language))
+        num_pages_old = len(get_old_help_pages_redirecting_to_new_one(language=language))
+        percent_translated = int((1 - num_pages_not_translated / float(num_pages_not_translated + num_pages_translated)) * 100)
+        percent_outdated = int((num_pages_outdated / float(num_pages_translated)) * 100)
+        markdown_text.append("| {lang} | {translated} | {not_translated} | {outdated} | {old_pages} | {percent_translated} | {percent_outdated} |\n"
+            .format(lang=language, translated=num_pages_translated, not_translated=num_pages_not_translated, outdated=num_pages_outdated,
+            old_pages=num_pages_old, percent_translated=percent_translated, percent_outdated=percent_outdated))
+        are_pages_outdated |= num_pages_outdated != 0
+        are_pages_not_translated |= num_pages_not_translated != 0
 
     if extended:
         if are_pages_outdated:
@@ -481,6 +482,7 @@ def create_markdown(extended):
 def status(extended, markdown):
     """
     checks the current status (maybe call `update` before?)
+
     :param extended: boolean: if the specific pages should be included
     :param markdown: boolean: if a markdown file should be created
     """
@@ -493,6 +495,7 @@ def status(extended, markdown):
 def generate_missing_redirects(language):
     """
     generates all the redirecting pages depending on the main page (including the old-to-new help pages)
+
     :return: list of strings: the redirected pages
     """
     if language == MAIN_LANGUAGE:
@@ -507,6 +510,7 @@ def generate_missing_redirects(language):
 def update_index(extended):
     """
     updates the index of all languages
+
     :param extended: boolean: if the pages which could not be processed be printed
     """
     def get_link_title_and_categories(language, page):
@@ -535,6 +539,7 @@ def update_index(extended):
     def create_index_file(order, index_file, index, indentation=2):
         """
         creates the index file out of the category order and the presorted pages
+
         :param order: list of strings: the order of the categories
         :param index_file: list of strings
         :param index: dict of strings and dicts: the presorted pages
@@ -562,6 +567,7 @@ def update_index(extended):
         index_file.append("\n")
 
     for language in get_all_languages():
+        renamed_pages = remove_help_suffix(language=language)
         redirected_pages = generate_missing_redirects(language=language)
 
         missing_frontmatter = []
@@ -598,8 +604,13 @@ def update_index(extended):
 
         num_missing_frontmatter = len(missing_frontmatter)
         num_redirected_pages = len(redirected_pages)
+        num_renamed_pages = len(renamed_pages)
 
         logger.ok("Language: '{language}'".format(language=language))
+        logger.ok("\tremoved the 'Help' suffix from {} pages".format(num_renamed_pages))
+        if extended and num_renamed_pages != 0:
+            logger.neutral("\t\t{}".format(renamed_pages))
+
         if language != MAIN_LANGUAGE:
             logger.ok("\tredirected {} page(s)".format(num_redirected_pages))
             if num_redirected_pages != 0 and extended:
@@ -607,10 +618,43 @@ def update_index(extended):
 
         log = logger.ok if num_missing_frontmatter == 0 else logger.error
         log("\t{} page(s) with missing frontmatter".format(num_missing_frontmatter))
-        if num_missing_frontmatter != 0 and extended:
+        if extended and num_missing_frontmatter != 0:
             logger.neutral("\t\t{}".format(missing_frontmatter))
 
         logger.ok("\tcreated index with {} page(s)".format(num_pages_on_index))
+
+
+def remove_help_suffix(language):
+    """
+    removes the help suffix from all pages and adds redirects in english, run `update` afterwards
+
+    :param language: string
+    :return: list of (string, string): (old page, new page)
+    """
+    renamed_files = []
+    for page in get_help_pages_in(language=language):
+        if page.endswith("Help.md") and not is_old_help_page_redirecting_to_new_one(language=language, page=page):
+            new_page = page.replace("Help.md", ".md")
+            old_path = get_local_file_path(language=language, page=page)
+            new_path = get_local_file_path(language=language, page=new_page)
+            os.rename(old_path, new_path)
+            renamed_files.append((page, new_page))
+
+            if language == MAIN_LANGUAGE:
+                redirect = get_redirect_page_content(language=language, page=new_page)
+                write_file(filename=old_path, content=redirect)
+
+    return renamed_files
+
+
+def remove_all_help_suffixes(extended):
+    for language in get_all_languages():
+        renamed_pages = remove_help_suffix(language=language)
+        num_renamed_pages = len(renamed_pages)
+        logger.ok("Language: '{language}'".format(language=language))
+        logger.ok("\tremoved the 'Help' suffix from {} pages".format(num_renamed_pages))
+        if extended and num_renamed_pages != 0:
+            logger.neutral("\t\t{}".format(renamed_pages))
 
 
 parser = argparse.ArgumentParser()
@@ -631,6 +675,11 @@ parser_clean = subparser.add_parser(COMMAND_CLEAN,
 parser_clean.add_argument("-e", "--extended", action="store_true", dest="extended", default=False,
     help="The output is much more sophisticated")
 
+parser_suffix = subparser.add_parser(COMMAND_REMOVE_SUFFIX,
+    help="Removes the 'Help' suffix from all pages and create redirects")
+parser_suffix.add_argument("-e", "--extended", action="store_true", dest="extended", default=False,
+    help="The output is much more sophisticated")
+
 args = parser.parse_args()
 if args.command == COMMAND_STATUS:
     status(extended=args.extended, markdown=args.markdown)
@@ -639,3 +688,5 @@ elif args.command == COMMAND_UPDATE:
     update_index(extended=args.extended)
 elif args.command == COMMAND_CLEAN:
     delete_all_generated_redirecting_pages(extended=args.extended)
+elif args.command == COMMAND_REMOVE_SUFFIX:
+    remove_all_help_suffixes(extended=args.extended)
