@@ -64,6 +64,8 @@ Addtionally, some fields have to be treated differently during import/export.
 | authors         | Authors       |
 | editors         | Editors       |
 
+
+
 ### BibTeX/BibLaTeX only fields
 The following fields are BibTeX/BibLaTex only fields, they have no representation in office xml.
 In the resulting xml file they are represented with the prefix `BIBTEX_`
@@ -85,7 +87,7 @@ In the resulting xml file they are represented with the prefix `BIBTEX_`
 | paper                       | BIBTEX_Paper        |
 | &lt;BibTexEntryType&gt;     | BIBTEX_Entry        |
 | &lt;BibTexEntryType&gt;     | SourceType          |
-
+| key (not BibTeX-Key)        | BIBTEX_KEY          |
 The xml field `SourceType` contains the associated entry type from the first table, while the original BibTeX/BibLaTex entrytype is preserved in the field `BIBTEX_ENTRY`.
 
 ### MS-Bib only fields
@@ -143,7 +145,8 @@ The following fields are treated as follows during epxort:
 | address                       | City, StateProvince, CountryRegion|
 | location                      | City, StateProvince, CountryRegion|
 | &lt;EntryType is thesis&gt;         | ThesisType     |
-| &lt;Entry Type is patent&gt; number | PatentNumber   |
+| &lt;EntryType is patent&gt; number | PatentNumber   |
+| number (entry is not patent and issue is not present) | Number
 
 
 ### Special Import treatment
