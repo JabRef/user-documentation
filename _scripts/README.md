@@ -3,6 +3,7 @@
 Example: Italian (it)
 
 1. Create `it` folder
+1. Create `_includes/link-to-main-it.html` and `link-to-toc-it.html`
 2. Create `_scripts/localization/it.json`
 3. Run `_scripts/automate.py update`
 
