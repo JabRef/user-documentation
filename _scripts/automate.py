@@ -446,11 +446,14 @@ def create_markdown(extended):
         num_pages_not_translated = len(get_not_translated_pages(main_language=MAIN_LANGUAGE, secondary_language=language))
         num_pages_outdated = len(get_outdated_pages(language=language))
         num_pages_old = len(get_old_help_pages_redirecting_to_new_one(language=language))
-        percent_translated = int((1 - num_pages_not_translated / float(num_pages_not_translated + num_pages_translated)) * 100)
-        percent_outdated = int((num_pages_outdated / float(num_pages_translated)) * 100)
+        percent_translated = int((1 - num_pages_not_translated / float(num_pages_not_translated + num_pages_translated)) * 100) \
+            if num_pages_not_translated + num_pages_translated != 0 else 100
+        percent_outdated = int((num_pages_outdated / float(num_pages_translated)) * 100) if num_pages_translated != 0 else 0
+
         markdown_text.append("| {lang} | {translated} | {not_translated} | {outdated} | {old_pages} | {percent_translated} | {percent_outdated} |\n"
             .format(lang=language, translated=num_pages_translated, not_translated=num_pages_not_translated, outdated=num_pages_outdated,
             old_pages=num_pages_old, percent_translated=percent_translated, percent_outdated=percent_outdated))
+
         are_pages_outdated |= num_pages_outdated != 0
         are_pages_not_translated |= num_pages_not_translated != 0
 
@@ -671,7 +674,7 @@ parser_update.add_argument("-e", "--extended", action="store_true", dest="extend
     help="The output is much more sophisticated")
 
 parser_clean = subparser.add_parser(COMMAND_CLEAN,
-    help="Removes all the generated redirect files (CAUTION: index page may not work anymore")
+    help="Removes all the generated redirect files (CAUTION: index page may not work anymore)")
 parser_clean.add_argument("-e", "--extended", action="store_true", dest="extended", default=False,
     help="The output is much more sophisticated")
 
