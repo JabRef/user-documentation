@@ -137,6 +137,14 @@ def get_categories_order():
     return json.loads(read_file(FILE_CATEGORIES_ORDER))
 
 
+def get_include_page_path_to_main(language):
+    return "_includes/link-to-main-{}.html".format(language)
+
+
+def get_include_page_path_to_toc(language):
+    return "_includes/link-to-toc-{}.html".format(language)
+
+
 def get_localization(language, key):
     """
     :param language: string
@@ -261,6 +269,16 @@ def delete_all_generated_redirecting_pages(extended):
     """
     for language in get_all_languages():
         deleted_pages = []
+
+        include_page_path_to_main = get_include_page_path_to_main(language=language)
+        if os.path.isfile(include_page_path_to_main):
+            os.remove(include_page_path_to_main)
+            deleted_pages.append(include_page_path_to_main)
+        include_page_path_to_toc = get_include_page_path_to_toc(language=language)
+        if os.path.isfile(include_page_path_to_toc):
+            os.remove(include_page_path_to_toc)
+            deleted_pages.append(include_page_path_to_toc)
+
         if language != MAIN_LANGUAGE:
             deleted_pages = delete_redirecting_help_pages(language=language)
         index = get_local_file_path(language=language, page="index.md")
@@ -510,6 +528,19 @@ def generate_missing_redirects(language):
     return redirected_pages
 
 
+def generate_inlcudes(language):
+    """
+    generates the two layouts `back to main` and `back to toc`
+
+    :param language: string
+    """
+    back_to_mainpage = u"<a href=\"..\">{}</a>\n".format(get_localization(language=language, key="Back to main page"))
+    write_file(filename=get_include_page_path_to_main(language=language), content=back_to_mainpage)
+
+    back_to_mainpage = u"<a href=\".\">{}</a>\n".format(get_localization(language=language, key="Back to table of contents"))
+    write_file(filename=get_include_page_path_to_toc(language=language), content=back_to_mainpage)
+
+
 def update_index(extended):
     """
     updates the index of all languages
@@ -572,6 +603,7 @@ def update_index(extended):
     for language in get_all_languages():
         renamed_pages = remove_help_suffix(language=language)
         redirected_pages = generate_missing_redirects(language=language)
+        generate_inlcudes(language=language)
 
         missing_frontmatter = []
         num_pages_on_index = 0
@@ -610,6 +642,7 @@ def update_index(extended):
         num_renamed_pages = len(renamed_pages)
 
         logger.ok("Language: '{language}'".format(language=language))
+        logger.ok("\tgenerated the 'inlcude' pages")
         logger.ok("\tremoved the 'Help' suffix from {} pages".format(num_renamed_pages))
         if extended and num_renamed_pages != 0:
             logger.neutral("\t\t{}".format(renamed_pages))
