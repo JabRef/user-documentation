@@ -1,3 +1,11 @@
+## Add a new langauge
+
+Example: Italian (it)
+
+1. Create `it` folder
+2. Create `_scripts/localization/it.json`
+3. Run `_scripts/automate.py update`
+
 ## Installatation Notes
 
 ### Windows
