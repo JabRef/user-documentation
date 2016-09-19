@@ -1,8 +1,6 @@
 ---
-title: /&gt;
+title: Filtre d'exportation EndNote
 ---
-
-/&gt;
 
 # Filtre d'exportation EndNote
 
