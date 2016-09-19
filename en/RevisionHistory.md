@@ -1,5 +1,6 @@
 ---
 title: Revision history
+helpCategories: ["Miscellaneous"]
 ---
 
 # Revision history

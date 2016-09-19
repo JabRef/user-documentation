@@ -11,3 +11,6 @@ CNAME
 
 # IntelliJ
 *.iml
+
+# python
+*.pyc

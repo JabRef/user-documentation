@@ -1,5 +1,6 @@
 ---
 title: Export to an External SQL Database
+helpCategories: ["Import/Export"]
 ---
 
 # Export to an External SQL Database

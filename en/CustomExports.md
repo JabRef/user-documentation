@@ -1,5 +1,6 @@
 ---
 title: Custom export filters
+helpCategories: ["Import/Export"]
 ---
 
 # Custom export filters

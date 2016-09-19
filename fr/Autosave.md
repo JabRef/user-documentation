@@ -1,6 +1,8 @@
 ---
-title: La fonction de sauvegarde automatique aide à prévenir la perte de données si votre ordinateur ou JabRef plante. Quand la sauvegarde automatique est activée, JabRef vérifie régulièrement (à un intervalle de temps configurable) si l'une de vos bases a été modifiée depuis votre dernier enregistrement. Si c'est le cas, JabRef créera une copie de la base dans un fichier nommé `.$[fichier]$`, où `[fichier]` est le nom de fichier de la base en question. Le fichier de sauvegarde automatique se trouve dans le même répertoire que le fichier bib.
+title: Sauvegarde automatique
 ---
+
+# Sauvegarde automatique
 
 La fonction de sauvegarde automatique aide à prévenir la perte de données si votre ordinateur ou JabRef plante. Quand la sauvegarde automatique est activée, JabRef vérifie régulièrement (à un intervalle de temps configurable) si l'une de vos bases a été modifiée depuis votre dernier enregistrement. Si c'est le cas, JabRef créera une copie de la base dans un fichier nommé `.$[fichier]$`, où `[fichier]` est le nom de fichier de la base en question. Le fichier de sauvegarde automatique se trouve dans le même répertoire que le fichier bib.
 

@@ -13,86 +13,91 @@ title: Help contents
   </div>
 </div>
 
+
 ## General
+- [Autosave](/en/Autosave)
+- [The JabRef main window](/en/BaseFrame)
+- [Best Practices](/en/BestPractices)
+- [Command line use and options](/en/CommandLine)
+- [The entry editor](/en/EntryEditor)
+- [Installation](/en/Installation)
+- [JabRef](/en/JabRef)
+- [Remote operation](/en/Remote)
 
-- [Installation](Installation)
-- [General information](JabRefHelp)
-- [The JabRef main window](BaseFrameHelp)
-- [Entry editor](EntryEditorHelp)
-- [Autosave](Autosave)
-- [Command line options](CommandLine)
-- [Remote operations](RemoteHelp)
-- [JabRef Best Practices](BestPractices)
-   
+
 ## Fields
+- [About *BibTeX*](/en/Bibtex)
+- [Field content selector](/en/ContentSelector)
+- [PDF/PS/URL/DOI links in JabRef](/en/ExternalFiles)
+- [File links in JabRef](/en/FileLinks)
+- [Journal abbreviations](/en/JournalAbbreviations)
+- [The 'owner' field](/en/Owner)
+- [Special Fields](/en/SpecialFields)
+- [Help on Strings](/en/Strings)
+- [Entry time stamps](/en/TimeStamp)
 
-- [Bibtex help](BibtexHelp)
-- [External file links](FileLinks)
-- [PDF/PS/URL/DOI links in JabRef](ExternalFiles)
-- [Entry time stamps](TimeStampHelp)
-- [The ‘owner’ field](OwnerHelp)
-- [Field content selector](ContentSelectorHelp)
-- [Journal abbreviations](JournalAbbreviations)
-- [Special Fields](SpecialFieldsHelp)
-- [Bibtex Strings](StringsHelp)
 
 ## Finding, sorting and cleaning entries
+- [Find duplicates](/en/FindDuplicates)
+- [Groups](/en/Groups)
+- [Mark entries](/en/Marking)
+- [Searching](/en/Search)
 
-- [Using groups](GroupsHelp)
-- [Marking entries](MarkingHelp)
-- [Searching in your database](SearchHelp)
-- [Find duplicated entries](FindDuplicates)
 
 ## Setup
+- [Customizing the BibTeX key generator](/en/BibtexKeyPatterns)
+- [Customizing entry types](/en/CustomEntries)
+- [Database properties window](/en/DatabaseProperties)
+- [Customizing general fields](/en/GeneralFields)
+- [Entry preview setup](/en/Preview)
+- [The string editor](/en/StringEditor)
 
-- [String editor](StringEditorHelp)
-- [Database properties window](DatabaseProperties)
-- [Entry preview setup](PreviewHelp)
-- [Customizing the BibTex key generator](BibtexKeyPatterns)
-- [Customizing entry types](CustomEntriesHelp)
-- [Customizing general fields](GeneralFields)
 
 ## Collaborative work
+- [Shared SQL Database](/en/SQLDatabase)
+- [Migration of pre-3.6 SQL databases into a shared database](/en/SQLDatabaseMigration)
+- [Sharing a BibLaTeX Database](/en/SharedBibFile)
 
-- [using a Bib(La)TeX file](SharedBibFile)
-- [using a SQL database](SQLDatabase)
 
 ## Import/Export
+- [Custom export filters](/en/CustomExports)
+- [Custom import filters](/en/CustomImports)
+- [EndNote Export Filter](/en/EndNoteFilters)
+- [Import inspection window](/en/ImportInspectionDialog)
+- [Comparison of the Medline (txt), Medline (XML), and RIS format](/en/MedlineRIS)
+- [MS Office Bibliography xml format](/en/MsOfficeBibFieldMapping)
+- [OpenOffice/LibreOffice integration](/en/OpenOfficeIntegration)
+- [Export to an External SQL Database](/en/SQLExport)
+- [XMP metadata support in JabRef](/en/XMP)
 
-- [Custom export filters](CustomExports)
-- [Custom import filters](CustomImports)
-- [Import inspection window](ImportInspectionDialog)
-- [The EndNote import/export filter set](EndNoteFilters)
-- [Using JabRef with OpenOffice.org or LibreOffice](OpenOfficeIntegration)
-- [XMP metadata support in JabRef](XMPHelp)
-- [Comparison of Medline and RIS](MedlineRIS)
-- [Field mapping between MS Office and JabRef](MsOfficeBibFieldMapping)
 
 ## Fetching entries from the web
 
-### ...using publication identifiers
 
-- [Fetching entries from the *DOI*](DOItoBibTeXHelp)
-- [Fetching entries from the *ISBN*](ISBNtoBibTeXHelp)
+### ... using publication identifiers
+- [Fetching entries using the Digital Object Identifier (DOI)](/en/DOItoBibTeX)
+- [Fetching entries using the ISBN number](/en/ISBNtoBibTeX)
 
-### ...using online bibliographic database
 
-- [Fetching entries from *ACM*](ACMPortalHelp)
-- [Fetching entries from *ADS*](ADSHelp)
-- [Fetching entries from *arXiv*](arXivHelp)
-- [Fetching entries from *CiteSeerX*](CiteSeerHelp)
-- [Fetching entries from *DBLP*](DBLPHelp)
-- [Fetching entries from *DiVA*](DiVAtoBibTeXHelp)
-- [Fetching entries from *DOAJ*](DOAJHelp)
-- [Fetching entries from *Google Scholar*](GoogleScholarHelp)
-- [Fetching entries from *GVK*](GVKHelp)
-- [Fetching entries from *IEEExplore*](IEEEXploreHelp)
-- [Fetching entries from *INSPIRE*](INSPIRE)
-- [Fetching entries from *Medline*](MedlineHelp)
-- [Fetching entries from *Springer*](SpringerHelp)
+### ... using online bibliographic database
+- [Fetching entries from ACM Portal](/en/ACMPortal)
+- [Fetching entries from ADS](/en/ADS)
+- [Fetching entries from CiteSeerX](/en/CiteSeer)
+- [Fetching entries from DBLP](/en/DBLP)
+- [Fetching entries from DOAJ](/en/DOAJ)
+- [Fetching entries from DiVA](/en/DiVAtoBibTeX)
+- [Fetching entries from GVK](/en/GVK)
+- [Fetching entries from Google Scholar](/en/GoogleScholar)
+- [Fetching entries from IEEEXplore](/en/IEEEXplore)
+- [Fetching entries from INSPIRE-HEP](/en/INSPIRE)
+- [Fetching entries from MEDLINE](/en/Medline)
+- [ScienceDirect search](/en/ScienceDirect)
+- [Fetching entries from Springer](/en/Springer)
+- [Fetching entries from arXiv](/en/arXiv)
 
-<!--  - [Fetching entries from *ScienceDirect*](ScienceDirect) -->
+
 
 ## Miscellaneous
+- [Revision history](/en/RevisionHistory)
 
-- [Revision history](RevisionHistory)
+

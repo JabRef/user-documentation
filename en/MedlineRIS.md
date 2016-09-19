@@ -1,5 +1,6 @@
 ---
 title: Comparison of the Medline (txt), Medline (XML), and RIS format
+helpCategories: ["Import/Export"]
 ---
 
 # Comparison of the Medline (txt), Medline (XML), and RIS format
