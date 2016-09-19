@@ -1,7 +1,7 @@
 ## Script overview
 
 The Script has following commands available (each can be shown when called with the help parameter `-h` on any of the positional parameters)
-- `$ python _scrtips/automate.py status [-e|--extended] [-m --markdown]` d
+- `$ python _scrtips/automate.py status [-e|--extended] [-m --markdown]` 
   - prints the current status to the console
   - `[-e|--extended]` prints the relevant pages (also applies to the markdown mode)
   - `[-m --markdown]` write the status int the markdown syntax and opens the file
