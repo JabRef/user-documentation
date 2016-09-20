@@ -137,6 +137,14 @@ def get_categories_order():
     return json.loads(read_file(FILE_CATEGORIES_ORDER))
 
 
+def get_include_page_path_to_main(language):
+    return "_includes/link-to-main-{}.html".format(language)
+
+
+def get_include_page_path_to_toc(language):
+    return "_includes/link-to-toc-{}.html".format(language)
+
+
 def get_localization(language, key):
     """
     :param language: string
@@ -261,6 +269,16 @@ def delete_all_generated_redirecting_pages(extended):
     """
     for language in get_all_languages():
         deleted_pages = []
+
+        include_page_path_to_main = get_include_page_path_to_main(language=language)
+        if os.path.isfile(include_page_path_to_main):
+            os.remove(include_page_path_to_main)
+            deleted_pages.append(include_page_path_to_main)
+        include_page_path_to_toc = get_include_page_path_to_toc(language=language)
+        if os.path.isfile(include_page_path_to_toc):
+            os.remove(include_page_path_to_toc)
+            deleted_pages.append(include_page_path_to_toc)
+
         if language != MAIN_LANGUAGE:
             deleted_pages = delete_redirecting_help_pages(language=language)
         index = get_local_file_path(language=language, page="index.md")
@@ -446,11 +464,14 @@ def create_markdown(extended):
         num_pages_not_translated = len(get_not_translated_pages(main_language=MAIN_LANGUAGE, secondary_language=language))
         num_pages_outdated = len(get_outdated_pages(language=language))
         num_pages_old = len(get_old_help_pages_redirecting_to_new_one(language=language))
-        percent_translated = int((1 - num_pages_not_translated / float(num_pages_not_translated + num_pages_translated)) * 100)
-        percent_outdated = int((num_pages_outdated / float(num_pages_translated)) * 100)
+        percent_translated = int((1 - num_pages_not_translated / float(num_pages_not_translated + num_pages_translated)) * 100) \
+            if num_pages_not_translated + num_pages_translated != 0 else 100
+        percent_outdated = int((num_pages_outdated / float(num_pages_translated)) * 100) if num_pages_translated != 0 else 0
+
         markdown_text.append("| {lang} | {translated} | {not_translated} | {outdated} | {old_pages} | {percent_translated} | {percent_outdated} |\n"
             .format(lang=language, translated=num_pages_translated, not_translated=num_pages_not_translated, outdated=num_pages_outdated,
             old_pages=num_pages_old, percent_translated=percent_translated, percent_outdated=percent_outdated))
+
         are_pages_outdated |= num_pages_outdated != 0
         are_pages_not_translated |= num_pages_not_translated != 0
 
@@ -505,6 +526,19 @@ def generate_missing_redirects(language):
         create_redirect_page(language=language, page=page)
         redirected_pages.append(page)
     return redirected_pages
+
+
+def generate_inlcudes(language):
+    """
+    generates the two layouts `back to main` and `back to toc`
+
+    :param language: string
+    """
+    back_to_mainpage = u"<a href=\"..\">{}</a>\n".format(get_localization(language=language, key="Back to main page"))
+    write_file(filename=get_include_page_path_to_main(language=language), content=back_to_mainpage)
+
+    back_to_mainpage = u"<a href=\".\">{}</a>\n".format(get_localization(language=language, key="Back to table of contents"))
+    write_file(filename=get_include_page_path_to_toc(language=language), content=back_to_mainpage)
 
 
 def update_index(extended):
@@ -569,6 +603,7 @@ def update_index(extended):
     for language in get_all_languages():
         renamed_pages = remove_help_suffix(language=language)
         redirected_pages = generate_missing_redirects(language=language)
+        generate_inlcudes(language=language)
 
         missing_frontmatter = []
         num_pages_on_index = 0
@@ -607,6 +642,7 @@ def update_index(extended):
         num_renamed_pages = len(renamed_pages)
 
         logger.ok("Language: '{language}'".format(language=language))
+        logger.ok("\tgenerated the 'inlcude' pages")
         logger.ok("\tremoved the 'Help' suffix from {} pages".format(num_renamed_pages))
         if extended and num_renamed_pages != 0:
             logger.neutral("\t\t{}".format(renamed_pages))
@@ -671,7 +707,7 @@ parser_update.add_argument("-e", "--extended", action="store_true", dest="extend
     help="The output is much more sophisticated")
 
 parser_clean = subparser.add_parser(COMMAND_CLEAN,
-    help="Removes all the generated redirect files (CAUTION: index page may not work anymore")
+    help="Removes all the generated redirect files (CAUTION: index page may not work anymore)")
 parser_clean.add_argument("-e", "--extended", action="store_true", dest="extended", default=False,
     help="The output is much more sophisticated")
 
