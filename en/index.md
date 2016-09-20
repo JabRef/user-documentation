@@ -55,8 +55,8 @@ title: Help contents
 
 ## Collaborative work
 - [Shared SQL Database](/en/SQLDatabase)
-- [Migration of pre-3.6 SQL databases into a shared database](/en/SQLDatabaseMigration)
-- [Sharing a BibLaTeX Database](/en/SharedBibFile)
+- [Migration of pre-3.6 SQL databases into a shared SQL database](/en/SQLDatabaseMigration)
+- [Sharing a Bib(La)TeX Database](/en/SharedBibFile)
 
 
 ## Import/Export
