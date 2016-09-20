@@ -154,7 +154,7 @@ Save to a new file all the database entries matching the given search term.
 If the filename is followed by a comma and an export format, the given export filter will be used. 
 Otherwise, the default format *html-table* (with *Abstract* and *BibTeX*, provided by *tablerefsabsbib*) is used.
 
-Information about to the search function is given in ['advanced search' documentation](SearchHelp.md).
+Information about to the search function is given in ['advanced search' documentation](Search).
 
 *Note:* In addition it is also possible to search for entries within a time frame such as `Year=1989-2005`
 (instead of only searching for entries of a certain year as in `Year=2005`). 
