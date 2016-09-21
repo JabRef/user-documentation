@@ -6,10 +6,10 @@ title: ヘルプ目次
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <strong>You can't find a solution to your problem? You still have questions?</strong>
+    <strong>抱えている問題の解決策が見つからないのですか？もっと詳しく訊きたいのですか？</strong>
   </div>
   <div class="panel-body">
-    <a class="btn btn-default" role="button" href="http://discourse.jabref.org">Use the online forum to get more support!</a>
+    <a class="btn btn-default" role="button" href="http://discourse.jabref.org">オンラインフォーラムでもっとサポートを受けられます！<div style="font-size:small;">（英語でね(^_-)）</div></a>
   </div>
 </div>
 
@@ -17,10 +17,10 @@ title: ヘルプ目次
 ## 一般
 - [自動保存](/ja/Autosave)
 - [JabRef 基本ウィンドウ](/ja/BaseFrame)
-- [Best Practices](/ja/BestPractices)
+- [ベスト・プラクティス](/ja/BestPractices)
 - [コマンドライン オプション](/ja/CommandLine)
 - [項目エディタ](/ja/EntryEditor)
-- [Installation](/ja/Installation)
+- [導入方法](/ja/Installation)
 - [JabRef](/ja/JabRef)
 - [リモート操作](/ja/Remote)
 
@@ -99,5 +99,3 @@ title: ヘルプ目次
 
 ## その他
 - [更新履歴](/ja/RevisionHistory)
-
-
