@@ -1,5 +1,6 @@
 ---
 title: Pencarian
+outdated: true
 ---
 
 # Pencarian

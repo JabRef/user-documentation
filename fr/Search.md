@@ -1,5 +1,6 @@
 ---
 title: Recherche
+outdated: true
 ---
 
 # Recherche
