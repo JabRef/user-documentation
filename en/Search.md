@@ -8,7 +8,7 @@ helpCategories: ["Finding, sorting and cleaning entries"]
 ## Keyboard shortcuts
 
 - <kbd>CTRL</kbd> + <kbd>F</kbd> focuses the search interface.
-- <kbd>SHIFT</kbd> + <kbd>CTRL</kbd> + <kbd>F</kbd> runs a global search with the current search string.
+- <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>F</kbd> runs a global search with the current search string.
 
 ## Search modes
 
@@ -61,16 +61,16 @@ Next to the search text field, there are several check boxes to toggle following
   - Whether or not the search query is case sensitive
   
 - Regular expressions
-  - Whether or not the search query can be described with Regex 
+  - Whether or not the search query can be described by Regex 
   
 - Display setting
-  - Filter - Displays only entries which match the search
-  - Float - Entries which do not match the search are grayed-out
+  - Filter - Displays only entries which match the search query
+  - Float - Entries which do not match the search query are grayed-out
   
 - Global search
-  - if on
+  - activated:
     - the search query will be taken over when switching tabs
     - the external search result window will show matches in all database
-  - if off
+  - deactivated:
     - each tab will remember its search query
-    - the external search result window will show matches in the current database
+    - the external search result window will only show matches in the current database
