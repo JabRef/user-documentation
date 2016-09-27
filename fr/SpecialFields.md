@@ -1,10 +1,11 @@
 ---
 title: Champs spéciaux
+outdated: true
 ---
 
 # Champs spéciaux
 
-Les champs spéciaux permettent ces fonctionnalités :
+Les champs spéciaux permettent ces fonctionnalités :
 
 -   évaluer les publications lues
 -   marquer les publications selon leur pertinence pour le travail

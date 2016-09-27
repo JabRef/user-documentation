@@ -1,5 +1,6 @@
 ---
 title: Les liens PDF/PS/URL/DOI dans JabRef
+outdated: true
 ---
 
 # Les liens PDF/PS/URL/DOI dans JabRef
@@ -10,7 +11,7 @@ JabRef vous permet de lier vos entrées avec des fichiers PDF ou PS stockés sur
 
 ## Configurer les visionneurs externes
 
-Le programme doit savoir quels visionneurs externes utiliser pour les fichiers PDF et PS ainsi que pour les pages internet. Ils sont par défaut configurés avec des valeurs qui fonctionnent probablement avec votre système d'exploitation ; aussi, il est très possible que vous n'ayez pas besoin de changer ces valeurs
+Le programme doit savoir quels visionneurs externes utiliser pour les fichiers PDF et PS ainsi que pour les pages internet. Ils sont par défaut configurés avec des valeurs qui fonctionnent probablement avec votre système d'exploitation ; aussi, il est très possible que vous n'ayez pas besoin de changer ces valeurs
 
 Pour changer la configuration des visionneurs externes, allez dans le menu **Options -&gt; Préférences -&gt; Programmes externes**.
 
@@ -36,19 +37,19 @@ Vous pouvez définir des répertoires PDF et PS spécifiques à une base de donn
 
 ## <a href="" id="RegularExpressionSearch">Utiliser la recherche d'expressions régulières pour les liaisons automatiques</a>
 
-Dans les sections précédentes, la fonction de liaison automatique de JabRef était décrite : si vous choisissiez des noms de fichiers qui correspondaient à la clef BibTex suivi de l'extension, JabRef était capable de trouver les fichiers automatiquement.
+Dans les sections précédentes, la fonction de liaison automatique de JabRef était décrite : si vous choisissiez des noms de fichiers qui correspondaient à la clef BibTex suivi de l'extension, JabRef était capable de trouver les fichiers automatiquement.
 
 A partir de JabRef 2.2, il est possible d'avoir une plus grande flexibilité dans la forme du nom grâce à l'utilisation d'une expression régulière pour la recherche. Dans la plupart des cas, adapter l'expression régulière donnée par défaut devrait suffire.
 
 Si vous ouvrez les préférences pour les programmes externes (Options -&gt; Préférences -&gt; Programmes externes), vous y trouverez une option nommée "Rechercher l'expression régulière". Cocher cette option vous permettra d'entrer votre propre expression régulière pour la recherche dans les répertoires PDF.
 
-Voici la syntaxe à utiliser :
+Voici la syntaxe à utiliser :
 
 -   `*` - Rechercher dans tous les sous-répertoires directs en excluant le répertoire courant et tout autre sous-répertoire.
 -   `**` - Rechercher récursivement dans tous les sous-répertoires ET dans le répertoire courant.
 -   `.` et `..` - Le répertoire courant et le répertoire parent.
 -   `[title]` - Toutes les expressions entre crochets sont remplacées par le champ correspondant dans l'entrée courante.
 -   `[extension]` - Remplacement par l'extension de fichier du champ que vous utilisez.
--   Tout autre texte est interprété comme une expression régulière. Mais attention : vous devez remplacer chaque caractère anti-slash (\\) par deux anti-slashs (\\\\) afin d'éviter la confusion avec un séparateur de répertoire .
+-   Tout autre texte est interprété comme une expression régulière. Mais attention : vous devez remplacer chaque caractère anti-slash (\\) par deux anti-slashs (\\\\) afin d'éviter la confusion avec un séparateur de répertoire .
 
 Par défaut, l'expression régulière de recherche est `**/.*[bibtexkey].*\\.[extension]`. Comme vous pouvez le voir cela effectuera la recherche dans tous les sous-répertoires du répertoire défini pour l'extension (par exemple dans le répertoire PDF) de tout nom de fichier qui possède la bonne extension et qui contient quelque part la clef BibTeX.

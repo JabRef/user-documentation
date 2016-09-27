@@ -53,7 +53,7 @@ title: Contenu de l’aide
 - [L'éditeur de chaîne](/fr/StringEditor)
 
 
-## Collaborative work
+## Travail collaboratif
 - [Shared SQL Database](/fr/SQLDatabase)
 - [Migration of pre-3.6 SQL databases into a shared database](/fr/SQLDatabaseMigration)
 - [Sharing a BibLaTeX Database](/fr/SharedBibFile)

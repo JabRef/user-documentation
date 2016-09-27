@@ -1,5 +1,6 @@
 ---
 title: Sélecteur de contenu de champ
+outdated: true
 ---
 
 # Sélecteur de contenu de champ
