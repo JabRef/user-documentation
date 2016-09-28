@@ -1,6 +1,11 @@
+# we test at Ubuntu Trusty (Ubuntu 14.04 LTS)
+# see https://docs.travis-ci.com/user/trusty-ci-environment/
+sudo: required
+dist: trusty
+
 language: ruby
 rvm:
-- 2.1
+- 2.3.1
 
 # Assume bundler is being used, therefore
 # the `install` step will run `bundle install` by default.
