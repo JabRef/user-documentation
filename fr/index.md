@@ -91,7 +91,7 @@ title: Contenu de l’aide
 - [Récupération d'entrées à partir du numéro ISBN](/fr/ISBNtoBibTeX)
 
 
-### en utilisant une base de données bibliographique en ligne
+### ... en utilisant une base de données bibliographique en ligne
 - [Récupération d'entrées depuis le portail *ACM*](/fr/ACMPortal)
 - [Fetching entries from ADS](/fr/ADS)
 - [Récupération d'entrées depuis CiteSeerX](/fr/CiteSeer)
