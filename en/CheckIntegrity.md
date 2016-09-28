@@ -11,4 +11,4 @@ NOTICE: This feature is not described with enough details. Please contribute by 
 
 JabRef can check the integrity of a database.
 
-This feature is available throuth **Quality -&gt; Check integrity...**.
+This feature is available through **Quality -&gt; Check integrity...**.
