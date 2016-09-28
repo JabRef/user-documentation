@@ -1,3 +1,4 @@
+from __future__ import print_function
 import argparse
 import codecs
 import datetime
@@ -143,6 +144,25 @@ def get_include_page_path_to_main(language):
 
 def get_include_page_path_to_toc(language):
     return "_includes/link-to-toc-{}.html".format(language)
+
+
+def does_category_exist(key):
+    """
+    Checks if the key is in the main language file
+
+    :param key: string
+    :return: boolean
+    """
+    file_path = get_language_file_path(language=MAIN_LANGUAGE)
+    try:
+        return key in json.loads(read_file(file_path))
+    except IOError:
+        logger.error("Cannot find main language file '{}'".format(MAIN_LANGUAGE))
+    except ValueError:
+        logger.error("Main language file is no valid json file '{}'".format(MAIN_LANGUAGE))
+    except KeyError:
+        logger.error("Language '{lang}' has no key '{key}'".format(lang=MAIN_LANGUAGE, key=key))
+    return False
 
 
 def get_localization(language, key):
@@ -534,10 +554,10 @@ def generate_inlcudes(language):
 
     :param language: string
     """
-    back_to_mainpage = u"<a href=\"..\">{}</a>\n".format(get_localization(language=language, key="Back to main page"))
+    back_to_mainpage = u"<a href=\"..\">{}</a>\r\n".format(get_localization(language=language, key="Back to main page"))
     write_file(filename=get_include_page_path_to_main(language=language), content=back_to_mainpage)
 
-    back_to_mainpage = u"<a href=\".\">{}</a>\n".format(get_localization(language=language, key="Back to table of contents"))
+    back_to_mainpage = u"<a href=\".\">{}</a>\r\n".format(get_localization(language=language, key="Back to table of contents"))
     write_file(filename=get_include_page_path_to_toc(language=language), content=back_to_mainpage)
 
 
@@ -568,6 +588,10 @@ def update_index(extended):
                 if not categories:
                     categories = main_post[FRONTMATTER_CATEGORIES] if FRONTMATTER_CATEGORIES in main_post.keys() else []
 
+                for key in categories:
+                    if not does_category_exist(key):
+                        logger.error(u"Following category is not going to be considered '{lang}', '{file}', '{key}'".format(lang=language, file=page, key=key))
+
         return file_link, title, categories
 
     def create_index_file(order, index_file, index, indentation=2):
@@ -587,17 +611,17 @@ def update_index(extended):
         last_category = ""
         for category in order:
             if type(category) is list:
-                create_index_file(order=category, index_file=index_file, index=index[last_category],
-                    indentation=indentation + 1)
+                create_index_file(order=category, index_file=index_file, index=index[last_category], indentation=indentation + 1)
             else:
                 last_category = category
                 if category not in index.keys():
-                    logger.error("\tFollowing category is non-existent: {category}".format(category=category))
+                    logger.error(u"\tFollowing category is non-existent: {category}".format(category=category))
                     continue
                 translated_category = get_localization(language=language, key=category)
                 index_file.append(u"\n{indentation} {title}\n".format(indentation="#" * indentation, title=translated_category))
                 create_index_file(order=[], index_file=index_file, index=index[category], indentation=indentation + 1)
 
+        considered = True
         index_file.append("\n")
 
     for language in get_all_languages():
@@ -642,7 +666,7 @@ def update_index(extended):
         num_renamed_pages = len(renamed_pages)
 
         logger.ok("Language: '{language}'".format(language=language))
-        logger.ok("\tgenerated the 'inlcude' pages")
+        logger.ok("\tgenerated the 'include' pages")
         logger.ok("\tremoved the 'Help' suffix from {} pages".format(num_renamed_pages))
         if extended and num_renamed_pages != 0:
             logger.neutral("\t\t{}".format(renamed_pages))
@@ -652,10 +676,10 @@ def update_index(extended):
             if num_redirected_pages != 0 and extended:
                 logger.neutral("\t\t{}".format(redirected_pages))
 
-        log = logger.ok if num_missing_frontmatter == 0 else logger.error
-        log("\t{} page(s) with missing frontmatter".format(num_missing_frontmatter))
-        if extended and num_missing_frontmatter != 0:
-            logger.neutral("\t\t{}".format(missing_frontmatter))
+        if num_missing_frontmatter != 0:
+            logger.error("\t{} page(s) with missing frontmatter".format(num_missing_frontmatter))
+            if extended:
+                logger.neutral("\t\t{}".format(missing_frontmatter))
 
         logger.ok("\tcreated index with {} page(s)".format(num_pages_on_index))
 
