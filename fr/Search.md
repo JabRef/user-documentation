@@ -25,23 +25,23 @@ Dans une recherche normale, le programme recherche dans votre base les occurrenc
 
 ### <a href="" id="advanced"></a> Recherche avancée
 
-Afin de rechercher uniquement des champs spécifiques et/ou d'inclure des opérateurs logiques dans l'expression à rechercher, une syntaxe particulière est disponible. Par exemple, pour rechercher les entrées dont l'auteur est "Miller", entrez (excepté en mode de recherche incrémentale) :
+Afin de rechercher uniquement des champs spécifiques et/ou d'inclure des opérateurs logiques dans l'expression à rechercher, une syntaxe particulière est disponible. Par exemple, pour rechercher les entrées dont l'auteur est "Miller", entrez (excepté en mode de recherche incrémentale) :
 
 author = miller
 
-A la fois la spécification du champ et le terme à rechercher peuvent être des expressions régulières. Si un terme à rechercher contient des espaces, le mettre entre guillemets. Il ne faut *jamais* utiliser d'espace dans la spécification du champ ! Par exemple, pour rechercher les entrées à propos de traitement d'images, entrez :
+A la fois la spécification du champ et le terme à rechercher peuvent être des expressions régulières. Si un terme à rechercher contient des espaces, le mettre entre guillemets. Il ne faut *jamais* utiliser d'espace dans la spécification du champ ! Par exemple, pour rechercher les entrées à propos de traitement d'images, entrez :
 
 title|keywords = "traitement d'images"
 
-Vous pouvez utiliser "and", "or", "not", et les parenthèses de la façon habituelle :
+Vous pouvez utiliser "and", "or", "not", et les parenthèses de la façon habituelle :
 
 (author = miller or title|keywords = "traitement d'images") and not author = brown
 
-En fait, le signe "=" signifie "contient". La recherche d'une correspondance exacte est possible en utilisant "matches" ou "==". Utilisez "!=" pour tester si le terme à rechercher n'est *pas* contenu dans le champ (un équivalent de "not ... contains ..."). Si vous spécifiez un type de champ dans l'expression à rechercher, la sélection des types de champs (requis, optionnels, généraux) apparaissant dans les paramètres de recherche n'est pas prise en compte. Pour chercher des entrées d'un certain type, un pseudo-champ nommé "entrytype" est disponible :
+En fait, le signe "=" signifie "contient". La recherche d'une correspondance exacte est possible en utilisant "matches" ou "==". Utilisez "!=" pour tester si le terme à rechercher n'est *pas* contenu dans le champ (un équivalent de "not ... contains ..."). Si vous spécifiez un type de champ dans l'expression à rechercher, la sélection des types de champs (requis, optionnels, généraux) apparaissant dans les paramètres de recherche n'est pas prise en compte. Pour chercher des entrées d'un certain type, un pseudo-champ nommé "entrytype" est disponible :
 
 entrytype = thesis
 
-recherchera les entrées dont le type (tel qu'affiché dans la colonne "Entrytype") contient le mot "thesis" (et qui sera donc "phdthesis" ou "mastersthesis"). Le pseudo-champ "bibtexkey" permet de rechercher dans les clefs de citation, tel que :
+recherchera les entrées dont le type (tel qu'affiché dans la colonne "Entrytype") contient le mot "thesis" (et qui sera donc "phdthesis" ou "mastersthesis"). Le pseudo-champ "bibtexkey" permet de rechercher dans les clefs de citation, tel que :
 
 bibtexkey = miller2005
 

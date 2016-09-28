@@ -1,5 +1,6 @@
 ---
 title: Propriétés de la base de données.
+outdated: true
 ---
 
 # Propriétés de la base de données.
@@ -24,4 +25,4 @@ Ces paramètres supplantent les répertoires spécifiés dans la fenêtre de pr�
 
 Ce paramètre vous permet d'obliger la relecture des changements externes avant que la base de données ne soit sauvée. Si cette protection n'est pas activée, les utilisateurs pourront sauver la base même si les autres utilisateurs ont effectués des changements dans le fichier, sans passer en revue les changements - un message leur indiquera cependant que des changements ont été effectués. Quand la protection est activée, les utilisateurs pourront sauver la base uniquement après avoir parcouru et fusionné les changements externes (cependant, l'utilisateur pourra annuler des changements individuels au cours de sa relecture).
 
-**Note :** Ceci n'est pas une fonction de sécurité, mais juste une façon d'éviter que des utilisateurs écrasent par inadvertance les changements effectués par d'autres utilisateurs. Cette fonction ne protège pas votre base de données contre des utilisateurs indélicats.
+**Note :** Ceci n'est pas une fonction de sécurité, mais juste une façon d'éviter que des utilisateurs écrasent par inadvertance les changements effectués par d'autres utilisateurs. Cette fonction ne protège pas votre base de données contre des utilisateurs indélicats.

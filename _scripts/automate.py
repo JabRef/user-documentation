@@ -127,7 +127,7 @@ def get_help_pages_in(language):
     :param language: string
     :return: list of strings: all help pages (including redirecting pages)
     """
-    return [f for f in listdir(language) if isfile(join(language, f)) and f.endswith(".md") and not f == "index.md" and not f == "cpl-v10.md"]
+    return [f for f in listdir(language) if isfile(join(language, f)) and f.endswith(".md") and not f == "index.md"]
 
 
 def get_categories_order():

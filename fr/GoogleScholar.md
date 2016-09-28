@@ -1,5 +1,6 @@
 ---
 title: Recherche Google Scholar
+outdated: true
 ---
 
 # Recherche Google Scholar
