@@ -554,10 +554,10 @@ def generate_inlcudes(language):
 
     :param language: string
     """
-    back_to_mainpage = u"<a href=\"..\">{}</a>\r\n".format(get_localization(language=language, key="Back to main page"))
+    back_to_mainpage = u"<a href=\"..\">{}</a>\n".format(get_localization(language=language, key="Back to main page"))
     write_file(filename=get_include_page_path_to_main(language=language), content=back_to_mainpage)
 
-    back_to_mainpage = u"<a href=\".\">{}</a>\r\n".format(get_localization(language=language, key="Back to table of contents"))
+    back_to_mainpage = u"<a href=\".\">{}</a>\n".format(get_localization(language=language, key="Back to table of contents"))
     write_file(filename=get_include_page_path_to_toc(language=language), content=back_to_mainpage)
 
 
