@@ -1,5 +1,6 @@
 ---
 title: Suchfunktionen
+outdated: true
 ---
 
 # Suchfunktionen

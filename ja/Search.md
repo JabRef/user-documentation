@@ -1,5 +1,6 @@
 ---
 title: 検索
+outdated: true
 ---
 
 # 検索
