@@ -1,6 +1,6 @@
 {
-  "Back to main page": "",
-  "Back to table of contents": "",
+  "Back to main page": "Retour à la page d'accueil",
+  "Back to table of contents": "Retour à la table des matières",
   "Help contents": "Contenu de l’aide",
   "You can't find a solution to your problem? You still have questions?": "Vous ne trouvez pas de solutions à votre problème ? Vous avez encore des questions?",
   "Use the online forum to get more support!": "Demandez de l'aide sur le forum en ligne (en anglais)!",
@@ -8,10 +8,10 @@
   "Fields": "Champs",
   "Finding, sorting and cleaning entries": "Recherche et tri des entrées",
   "Setup": "Configuration",
-  "Collaborative work": "",
+  "Collaborative work": "Travail collaboratif",
   "Import/Export": "Importation/Exportation",
   "Fetching entries from the web": "Chercher les entrées à partir du web",
   "... using publication identifiers": "... en utilisant des identifiants de publication",
-  "... using online bibliographic database": "",
+  "... using online bibliographic database": "... en utilisant une base de données bibliographique en ligne",
   "Miscellaneous": "Divers"
 }
