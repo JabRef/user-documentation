@@ -32,30 +32,41 @@ title: ヘルプ目次
 - [JabRef におけるファイルリンク](/ja/FileLinks)
 - [学術誌名の短縮形](/ja/JournalAbbreviations)
 - [「owner」フィールド](/ja/Owner)
+- [Set/clear/rename fields](/ja/SetClearRenameFields)
 - [特殊フィールド](/ja/SpecialFields)
 - [文字列ヘルプ](/ja/Strings)
 - [項目の時間スタンプ](/ja/TimeStamp)
 
 
 ## 項目の検索と整序
+- [Check integrity](/ja/CheckIntegrity)
+- [Cleanup entries](/ja/CleanupEntries)
 - [重複の検出](/ja/FindDuplicates)
+- [Find unlinked files](/ja/FindUnlinkedFiles)
 - [グループ](/ja/Groups)
 - [項目の標識付け](/ja/Marking)
+- [Merge entries](/ja/MergeEntries)
+- [Replace string](/ja/ReplaceString)
 - [検索](/ja/Search)
+- [Synchronize file links](/ja/SynchroFileLinks)
 
 
 ## 設定
 - [BibTeX鍵(キー)生成方法の調整](/ja/BibtexKeyPatterns)
 - [項目型の調整](/ja/CustomEntries)
+- [Customize entry types](/ja/CustomEntryTypes)
+- [Customize key bindings](/ja/CustomKeyBindings)
 - [データベース特性ウィンドウ](/ja/DatabaseProperties)
+- [Manage external file types](/ja/ExternalFileTypes)
 - [汎用フィールドの個人設定](/ja/GeneralFields)
 - [項目プレビューの設定](/ja/Preview)
+- [Manage protected terms](/ja/ProtectedTerms)
 - [文字列エディタ](/ja/StringEditor)
 
 
 ## 共同作業
-- [Shared SQL Database](/ja/SQLDatabase)
-- [Migration of pre-3.6 SQL databases into a shared database](/ja/SQLDatabaseMigration)
+- [共有SQLデータベース](/ja/SQLDatabase)
+- [Migration of pre-3.6 SQL databases into a shared SQL database](/ja/SQLDatabaseMigration)
 - [BibLaTeXデータベースを共有する](/ja/SharedBibFile)
 
 
@@ -66,6 +77,7 @@ title: ヘルプ目次
 - [読込検査ウィンドウ](/ja/ImportInspectionDialog)
 - [Medline (txt)形式とMedline (XML)形式およびRIS形式の比較](/ja/MedlineRIS)
 - [MS Office Bibliography xml format](/ja/MsOfficeBibFieldMapping)
+- [New subdatabase based on AUX file](/ja/NewBasedOnAux)
 - [OpenOffice.org / LibreOffice の統合](/ja/OpenOfficeIntegration)
 - [外部SQLデータベースへの書き出し](/ja/SQLExport)
 - [JabRefにおけるXMPメタデータ サポート](/ja/XMP)
@@ -81,7 +93,7 @@ title: ヘルプ目次
 
 ### オンライン書誌データベースを使用して
 - [ACM Portalの検索](/ja/ACMPortal)
-- [Fetching entries from ADS](/ja/ADS)
+- [ADSから項目を取得する](/ja/ADS)
 - [CiteSeerXから読み込む](/ja/CiteSeer)
 - [Fetching entries from DBLP](/ja/DBLP)
 - [Fetching entries from DOAJ](/ja/DOAJ)
@@ -99,3 +111,5 @@ title: ヘルプ目次
 
 ## その他
 - [更新履歴](/ja/RevisionHistory)
+
+

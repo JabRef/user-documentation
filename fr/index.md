@@ -32,40 +32,52 @@ title: Contenu de l’aide
 - [Liens de fichier dans JabRef](/fr/FileLinks)
 - [Abréviations des journaux](/fr/JournalAbbreviations)
 - [Le champ 'owner' (propriétaire)](/fr/Owner)
+- [Set/clear/rename fields](/fr/SetClearRenameFields)
 - [Champs spéciaux](/fr/SpecialFields)
 - [Aide sur les chaînes](/fr/Strings)
 - [Horodatage des entrées](/fr/TimeStamp)
 
 
 ## Recherche et tri des entrées
+- [Check integrity](/fr/CheckIntegrity)
+- [Cleanup entries](/fr/CleanupEntries)
 - [Find duplicates](/fr/FindDuplicates)
+- [Find unlinked files](/fr/FindUnlinkedFiles)
 - [Les groupes](/fr/Groups)
 - [Etiqueter les entrées](/fr/Marking)
+- [Merge entries](/fr/MergeEntries)
+- [Replace string](/fr/ReplaceString)
 - [Recherche](/fr/Search)
+- [Synchronize file links](/fr/SynchroFileLinks)
 
 
 ## Configuration
 - [Personnalisation du générateur de clefs BibTeX](/fr/BibtexKeyPatterns)
 - [Personnaliser les types d'entrées](/fr/CustomEntries)
+- [Customize entry types](/fr/CustomEntryTypes)
+- [Customize key bindings](/fr/CustomKeyBindings)
 - [Propriétés de la base de données.](/fr/DatabaseProperties)
+- [Manage external file types](/fr/ExternalFileTypes)
 - [Personnalisation des champs généraux](/fr/GeneralFields)
 - [Configuration de l'aperçu des entrées](/fr/Preview)
+- [Manage protected terms](/fr/ProtectedTerms)
 - [L'éditeur de chaîne](/fr/StringEditor)
 
 
 ## Travail collaboratif
 - [Shared SQL Database](/fr/SQLDatabase)
-- [Migration of pre-3.6 SQL databases into a shared database](/fr/SQLDatabaseMigration)
+- [Migration of pre-3.6 SQL databases into a shared SQL database](/fr/SQLDatabaseMigration)
 - [Sharing a BibLaTeX Database](/fr/SharedBibFile)
 
 
 ## Importation/Exportation
 - [Filtres d'exportation personnalisés](/fr/CustomExports)
 - [Filtres d'importation personnalisés](/fr/CustomImports)
-- [/&gt;](/fr/EndNoteFilters)
+- [Filtre d'exportation EndNote](/fr/EndNoteFilters)
 - [Fenêtre de vérification des importations](/fr/ImportInspectionDialog)
 - [Comparison of the Medline (txt), Medline (XML), and RIS format](/fr/MedlineRIS)
 - [MS Office Bibliography xml format](/fr/MsOfficeBibFieldMapping)
+- [New subdatabase based on AUX file](/fr/NewBasedOnAux)
 - [Intégration dans OpenOffice/LibreOffice](/fr/OpenOfficeIntegration)
 - [Exportation vers une base de données SQL externe](/fr/SQLExport)
 - [Support des metadonnées XMP dans JabRef](/fr/XMP)
@@ -79,7 +91,7 @@ title: Contenu de l’aide
 - [Récupération d'entrées à partir du numéro ISBN](/fr/ISBNtoBibTeX)
 
 
-### ... using online bibliographic database
+### en utilisant une base de données bibliographique en ligne
 - [Récupération d'entrées depuis le portail *ACM*](/fr/ACMPortal)
 - [Fetching entries from ADS](/fr/ADS)
 - [Récupération d'entrées depuis CiteSeerX](/fr/CiteSeer)

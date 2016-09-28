@@ -32,30 +32,41 @@ title: Help contents
 - [File links in JabRef](/it/FileLinks)
 - [Journal abbreviations](/it/JournalAbbreviations)
 - [The 'owner' field](/it/Owner)
+- [Set/clear/rename fields](/it/SetClearRenameFields)
 - [Special Fields](/it/SpecialFields)
 - [Help on Strings](/it/Strings)
 - [Entry time stamps](/it/TimeStamp)
 
 
 ## Finding, sorting and cleaning entries
+- [Check integrity](/it/CheckIntegrity)
+- [Cleanup entries](/it/CleanupEntries)
 - [Find duplicates](/it/FindDuplicates)
+- [Find unlinked files](/it/FindUnlinkedFiles)
 - [Groups](/it/Groups)
 - [Mark entries](/it/Marking)
+- [Merge entries](/it/MergeEntries)
+- [Replace string](/it/ReplaceString)
 - [Searching](/it/Search)
+- [Synchronize file links](/it/SynchroFileLinks)
 
 
 ## Setup
 - [Customizing the BibTeX key generator](/it/BibtexKeyPatterns)
 - [Customizing entry types](/it/CustomEntries)
+- [Customize entry types](/it/CustomEntryTypes)
+- [Customize key bindings](/it/CustomKeyBindings)
 - [Database properties window](/it/DatabaseProperties)
+- [Manage external file types](/it/ExternalFileTypes)
 - [Customizing general fields](/it/GeneralFields)
 - [Entry preview setup](/it/Preview)
+- [Manage protected terms](/it/ProtectedTerms)
 - [The string editor](/it/StringEditor)
 
 
 ## Collaborative work
 - [Shared SQL Database](/it/SQLDatabase)
-- [Migration of pre-3.6 SQL databases into a shared database](/it/SQLDatabaseMigration)
+- [Migration of pre-3.6 SQL databases into a shared SQL database](/it/SQLDatabaseMigration)
 - [Sharing a BibLaTeX Database](/it/SharedBibFile)
 
 
@@ -66,6 +77,7 @@ title: Help contents
 - [Import inspection window](/it/ImportInspectionDialog)
 - [Comparison of the Medline (txt), Medline (XML), and RIS format](/it/MedlineRIS)
 - [MS Office Bibliography xml format](/it/MsOfficeBibFieldMapping)
+- [New subdatabase based on AUX file](/it/NewBasedOnAux)
 - [OpenOffice/LibreOffice integration](/it/OpenOfficeIntegration)
 - [Export to an External SQL Database](/it/SQLExport)
 - [XMP metadata support in JabRef](/it/XMP)

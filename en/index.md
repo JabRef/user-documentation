@@ -32,31 +32,42 @@ title: Help contents
 - [File links in JabRef](/en/FileLinks)
 - [Journal abbreviations](/en/JournalAbbreviations)
 - [The 'owner' field](/en/Owner)
+- [Set/clear/rename fields](/en/SetClearRenameFields)
 - [Special Fields](/en/SpecialFields)
 - [Help on Strings](/en/Strings)
 - [Entry time stamps](/en/TimeStamp)
 
 
 ## Finding, sorting and cleaning entries
+- [Check integrity](/en/CheckIntegrity)
+- [Cleanup entries](/en/CleanupEntries)
 - [Find duplicates](/en/FindDuplicates)
+- [Find unlinked files](/en/FindUnlinkedFiles)
 - [Groups](/en/Groups)
 - [Mark entries](/en/Marking)
+- [Merge entries](/en/MergeEntries)
+- [Replace string](/en/ReplaceString)
 - [Searching](/en/Search)
+- [Synchronize file links](/en/SynchroFileLinks)
 
 
 ## Setup
 - [Customizing the BibTeX key generator](/en/BibtexKeyPatterns)
 - [Customizing entry types](/en/CustomEntries)
+- [Customize entry types](/en/CustomEntryTypes)
+- [Customize key bindings](/en/CustomKeyBindings)
 - [Database properties window](/en/DatabaseProperties)
+- [Manage external file types](/en/ExternalFileTypes)
 - [Customizing general fields](/en/GeneralFields)
 - [Entry preview setup](/en/Preview)
+- [Manage protected terms](/en/ProtectedTerms)
 - [The string editor](/en/StringEditor)
 
 
 ## Collaborative work
 - [Shared SQL Database](/en/SQLDatabase)
 - [Migration of pre-3.6 SQL databases into a shared SQL database](/en/SQLDatabaseMigration)
-- [Sharing a Bib(La)TeX Database](/en/SharedBibFile)
+- [Sharing a BibLaTeX Database](/en/SharedBibFile)
 
 
 ## Import/Export
@@ -66,6 +77,7 @@ title: Help contents
 - [Import inspection window](/en/ImportInspectionDialog)
 - [Comparison of the Medline (txt), Medline (XML), and RIS format](/en/MedlineRIS)
 - [MS Office Bibliography xml format](/en/MsOfficeBibFieldMapping)
+- [New subdatabase based on AUX file](/en/NewBasedOnAux)
 - [OpenOffice/LibreOffice integration](/en/OpenOfficeIntegration)
 - [Export to an External SQL Database](/en/SQLExport)
 - [XMP metadata support in JabRef](/en/XMP)

@@ -32,30 +32,41 @@ title: Hilfe - Inhalt
 - [Datei-Links in JabRef](/de/FileLinks)
 - [Zeitschriftentitel abkürzen](/de/JournalAbbreviations)
 - [Das 'Besitzer' (owner) Feld](/de/Owner)
+- [Set/clear/rename fields](/de/SetClearRenameFields)
 - [Special Fields](/de/SpecialFields)
 - [Help on Strings](/de/Strings)
 - [Zeitstempel](/de/TimeStamp)
 
 
 ## Einträge finden und sortieren
+- [Check integrity](/de/CheckIntegrity)
+- [Cleanup entries](/de/CleanupEntries)
 - [Find duplicates](/de/FindDuplicates)
+- [Find unlinked files](/de/FindUnlinkedFiles)
 - [Gruppen](/de/Groups)
 - [Einträge markieren](/de/Marking)
+- [Merge entries](/de/MergeEntries)
+- [Replace string](/de/ReplaceString)
 - [Suchfunktionen](/de/Search)
+- [Synchronize file links](/de/SynchroFileLinks)
 
 
 ## Einstellungen
 - [Anpassen der automatischen Erstellung von BibTeX-Keys](/de/BibtexKeyPatterns)
 - [Eintragstypen anpassen](/de/CustomEntries)
+- [Customize entry types](/de/CustomEntryTypes)
+- [Customize key bindings](/de/CustomKeyBindings)
 - [Database properties window](/de/DatabaseProperties)
+- [Manage external file types](/de/ExternalFileTypes)
 - [Allgemeine Felder festlegen](/de/GeneralFields)
 - [Eintragsvorschau einstellen](/de/Preview)
+- [Manage protected terms](/de/ProtectedTerms)
 - [Der String-Editor](/de/StringEditor)
 
 
 ## Gemeinsames arbeiten
 - [Shared SQL Database](/de/SQLDatabase)
-- [Migration of pre-3.6 SQL databases into a shared database](/de/SQLDatabaseMigration)
+- [Migration of pre-3.6 SQL databases into a shared SQL database](/de/SQLDatabaseMigration)
 - [Sharing a BibLaTeX Database](/de/SharedBibFile)
 
 
@@ -66,6 +77,7 @@ title: Hilfe - Inhalt
 - [Import-Kontrollfenster](/de/ImportInspectionDialog)
 - [Medline (txt) vs. Medline (XML) vs. RIS](/de/MedlineRIS)
 - [MS Office Bibliography xml format](/de/MsOfficeBibFieldMapping)
+- [New subdatabase based on AUX file](/de/NewBasedOnAux)
 - [JabRef-Bibliographien in OpenOffice.org benutzen](/de/OpenOfficeIntegration)
 - [Export to an External SQL Database](/de/SQLExport)
 - [Unterstützung von XMP-Metadaten in JabRef](/de/XMP)

@@ -32,30 +32,41 @@ title: Daftar Isi Bantuan
 - [File links in JabRef](/in/FileLinks)
 - [Singkatan nama jurnal](/in/JournalAbbreviations)
 - [Bidang 'pemilik'](/in/Owner)
+- [Set/clear/rename fields](/in/SetClearRenameFields)
 - [Special Fields](/in/SpecialFields)
 - [Help on Strings](/in/Strings)
 - [Cap waktu entri](/in/TimeStamp)
 
 
 ## Mencari dan mengurutkan entri
+- [Check integrity](/in/CheckIntegrity)
+- [Cleanup entries](/in/CleanupEntries)
 - [Find duplicates](/in/FindDuplicates)
+- [Find unlinked files](/in/FindUnlinkedFiles)
 - [Groups](/in/Groups)
 - [Menandai entri](/in/Marking)
+- [Merge entries](/in/MergeEntries)
+- [Replace string](/in/ReplaceString)
 - [Pencarian](/in/Search)
+- [Synchronize file links](/in/SynchroFileLinks)
 
 
 ## Pengaturan
 - [Customizing the BibTeX key generator](/in/BibtexKeyPatterns)
 - [Customizing entry types](/in/CustomEntries)
+- [Customize entry types](/in/CustomEntryTypes)
+- [Customize key bindings](/in/CustomKeyBindings)
 - [Jendela propereti basisdata](/in/DatabaseProperties)
+- [Manage external file types](/in/ExternalFileTypes)
 - [Customizing general fields](/in/GeneralFields)
 - [Pengaturan pratampilan entri](/in/Preview)
+- [Manage protected terms](/in/ProtectedTerms)
 - [Penyunting string](/in/StringEditor)
 
 
 ## Collaborative work
 - [Shared SQL Database](/in/SQLDatabase)
-- [Migration of pre-3.6 SQL databases into a shared database](/in/SQLDatabaseMigration)
+- [Migration of pre-3.6 SQL databases into a shared SQL database](/in/SQLDatabaseMigration)
 - [Sharing a BibLaTeX Database](/in/SharedBibFile)
 
 
@@ -66,6 +77,7 @@ title: Daftar Isi Bantuan
 - [Import inspection window](/in/ImportInspectionDialog)
 - [Comparison of the Medline (txt), Medline (XML), and RIS format](/in/MedlineRIS)
 - [MS Office Bibliography xml format](/in/MsOfficeBibFieldMapping)
+- [New subdatabase based on AUX file](/in/NewBasedOnAux)
 - [OpenOffice/LibreOffice integration](/in/OpenOfficeIntegration)
 - [Export to an External SQL Database](/in/SQLExport)
 - [XMP metadata support in JabRef](/in/XMP)
