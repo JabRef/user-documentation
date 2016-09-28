@@ -86,12 +86,12 @@ title: ヘルプ目次
 ## ウェブから項目を取得する
 
 
-### 刊行識別子を使用して
+### ... 刊行識別子を使用して
 - [Digital Object Identifier (DOI)を使用して項目を取得する](/ja/DOItoBibTeX)
 - [ISBN番号を使用して項目を取得する](/ja/ISBNtoBibTeX)
 
 
-### オンライン書誌データベースを使用して
+### ... オンライン書誌データベースを使用して
 - [ACM Portalの検索](/ja/ACMPortal)
 - [ADSから項目を取得する](/ja/ADS)
 - [CiteSeerXから読み込む](/ja/CiteSeer)

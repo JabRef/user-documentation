@@ -27,8 +27,8 @@ The Script has following commands available (each can be shown when called with 
 Example: Italian (it)
 
 1. Create `it` folder
-2. Create `_scripts/localization/it.json` (copy `en.json` and delete/translate the values)
-3. Run `_scripts/automate.py update`
+2. Create `it/localization_it.json` (copy `en/localization_en.json` and delete/translate the values)
+3. Run `python _scripts/automate.py update`
 4. Add the Italian index to the main index if some of the pages are translated into Italian
 
 ## Installatation Notes
