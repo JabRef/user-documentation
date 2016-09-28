@@ -38,7 +38,7 @@ def get_language_file_path(language):
     :param language: string
     :return: string: path to where the language file lies
     """
-    return "_scripts/localization/{}.json".format(language)
+    return "{lang}/localization_{lang}.json".format(lang=language)
 
 
 def read_file(filename, encoding="UTF-8"):
