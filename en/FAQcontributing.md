@@ -14,7 +14,7 @@ See our [CONTRIBUTING.md](https://github.com/JabRef/jabref/blob/master/CONTRIBUT
 
 ## Q: I would like to help translating JabRef to another language. How do I get started?
 
-A: We encourage you to read [Translating JabRef](https://github.com/JabRef/jabref/wiki/Translating-JabRef).
+A: We encourage you to read [Translating JabRef Interface](https://github.com/JabRef/jabref/wiki/Translating-JabRef-Interface) and [Translating JabRef Help](https://github.com/JabRef/jabref/wiki/Translating-JabRef-Help).
 
 ## Q: Can I make a donation? How?
 
