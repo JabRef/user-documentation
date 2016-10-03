@@ -12,7 +12,7 @@ We have a lot of [open issues](https://github.com/JabRef/jabref/issues).
 If you want to be sure to work on something the core developers currently do not handle, check the [issues tagged with asking-for-a-pull-request](https://github.com/JabRef/jabref/labels/asking-for-a-pull-request).
 See our [CONTRIBUTING.md](https://github.com/JabRef/jabref/blob/master/CONTRIBUTING.md) for detailed information and further links.
 
-## Q: How can I improve the documentatoin of JabRef?
+## Q: How can I improve the documentation of JabRef?
 
 Please follow [our contribution guidelines](https://github.com/JabRef/help.jabref.org/blob/gh-pages/CONTRIBUTING.md).
 
