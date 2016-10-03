@@ -14,6 +14,16 @@ title: ヘルプ目次
 </div>
 
 
+## FAQ
+- [Contributing](/ja/FAQcontributing)
+- [General](/ja/FAQgeneral)
+- [JabRef and Linux](/ja/FAQlinux)
+- [JabRef and Mac OS X](/ja/FAQosx)
+- [Other](/ja/FAQother)
+- [Sharing](/ja/FAQsharing)
+- [JabRef and Windows](/ja/FAQwindows)
+
+
 ## 一般
 - [自動保存](/ja/Autosave)
 - [JabRef 基本ウィンドウ](/ja/BaseFrame)

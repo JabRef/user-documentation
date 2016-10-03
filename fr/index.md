@@ -14,6 +14,16 @@ title: Contenu de l’aide
 </div>
 
 
+## FAQ
+- [Contributing](/fr/FAQcontributing)
+- [General](/fr/FAQgeneral)
+- [JabRef and Linux](/fr/FAQlinux)
+- [JabRef and Mac OS X](/fr/FAQosx)
+- [Other](/fr/FAQother)
+- [Sharing](/fr/FAQsharing)
+- [JabRef and Windows](/fr/FAQwindows)
+
+
 ## Général
 - [Sauvegarde automatique](/fr/Autosave)
 - [La fenêtre principale de JabRef](/fr/BaseFrame)
@@ -67,7 +77,7 @@ title: Contenu de l’aide
 ## Travail collaboratif
 - [Shared SQL Database](/fr/SQLDatabase)
 - [Migration of pre-3.6 SQL databases into a shared SQL database](/fr/SQLDatabaseMigration)
-- [Sharing a BibLaTeX Database](/fr/SharedBibFile)
+- [Sharing a Bib(La)TeX Database](/fr/SharedBibFile)
 
 
 ## Importation/Exportation
