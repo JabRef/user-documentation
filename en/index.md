@@ -14,6 +14,16 @@ title: Help contents
 </div>
 
 
+## FAQ
+- [Contributing](/en/FAQcontributing)
+- [General](/en/FAQgeneral)
+- [JabRef and Linux](/en/FAQlinux)
+- [JabRef and Mac OS X](/en/FAQosx)
+- [Other](/en/FAQother)
+- [Sharing](/en/FAQsharing)
+- [JabRef and Windows](/en/FAQwindows)
+
+
 ## General
 - [Autosave](/en/Autosave)
 - [The JabRef main window](/en/BaseFrame)
@@ -67,7 +77,7 @@ title: Help contents
 ## Collaborative work
 - [Shared SQL Database](/en/SQLDatabase)
 - [Migration of pre-3.6 SQL databases into a shared SQL database](/en/SQLDatabaseMigration)
-- [Sharing a BibLaTeX Database](/en/SharedBibFile)
+- [Sharing a Bib(La)TeX Database](/en/SharedBibFile)
 
 
 ## Import/Export

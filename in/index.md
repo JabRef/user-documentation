@@ -14,6 +14,16 @@ title: Daftar Isi Bantuan
 </div>
 
 
+## FAQ
+- [Contributing](/in/FAQcontributing)
+- [General](/in/FAQgeneral)
+- [JabRef and Linux](/in/FAQlinux)
+- [JabRef and Mac OS X](/in/FAQosx)
+- [Other](/in/FAQother)
+- [Sharing](/in/FAQsharing)
+- [JabRef and Windows](/in/FAQwindows)
+
+
 ## Umum
 - [Menyimpan otomatis](/in/Autosave)
 - [Jendela utama JabRef](/in/BaseFrame)
@@ -67,7 +77,7 @@ title: Daftar Isi Bantuan
 ## Collaborative work
 - [Shared SQL Database](/in/SQLDatabase)
 - [Migration of pre-3.6 SQL databases into a shared SQL database](/in/SQLDatabaseMigration)
-- [Sharing a BibLaTeX Database](/in/SharedBibFile)
+- [Sharing a Bib(La)TeX Database](/in/SharedBibFile)
 
 
 ## Impor/Ekspor
