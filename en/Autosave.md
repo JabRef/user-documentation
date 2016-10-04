@@ -7,20 +7,25 @@ helpCategories: ["General"]
 
 ## Purpose
 
-The autosave feature helps prevent loss of data if your computer or JabRef crashes. 
+The autosave feature helps to prevent loss of data by saving the opened database on user interactions.
+So there is no need to save the database manually after changing it.
+Furthermore it synchronizes your local files which are associated with appropriate [SQLDatabase](shared databases).
 
-## Configuration
+## Activation
 
 ![Screenshot of the autosave preferences](./images/AutoSave.png)
 
-You can activate and configure the autosave feature through **Options -&gt; Preferences**, and then by choosing **File** on the left panel. At the lower part of a window, a section is dedicated to **AutoSave**.
+You can activate the autosave feature through **Options -&gt; Preferences**, and then by choosing **File** on the left panel. At the lower part of the window, a section is dedicated to **AutoSave**.
 
-First, you can choose to activate autosave (recommended) or not. You can then choose the delay between two autosaves. Finally, you can choose to be prompted if JabRef is using an autosaved file (hence you know something went wrong).
 
-## Functioning
+## Autosave for local databases
 
-When autosave is enabled, JabRef will check regularly (with the configurable time interval) whether any of your databases have been modified since your last save. For each one that has, JabRef will save a copy of the database in the file named `.$[file]$`, where `[file]` is the file name of the database in question. The autosave file lies in the same directory as the bib file.
+If you are working on **.bib** files which are located on your file system, the feature will detect your changes automatically and save them without further intervention.
 
-The autosave file will be deleted whenever you actively save the database, and if you quit JabRef normally. However, if JabRef is shut down due to a crash, the autosave file will remain on disk. In this case, JabRef will detect it the next time you attempt to open the database. JabRef will use the autosaved file to recover the database.
+## Autosave for shared databases
 
-Autosave is enabled by default, with a save interval of 5 minutes. If you prefer, you can disable the option to prompt before using an autosave. In this case, JabRef will quietly recover the database without providing any notifications.
+Generally you are able to save a shared database after connecting to it. This feature enables a full synchronization of your local bib file with the [SQLDatabase](shared SQLdatabase).
+
+## Remarks
+
+Both features are enabled by default.
