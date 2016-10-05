@@ -9,7 +9,7 @@ helpCategories: ["General"]
 
 The autosave feature helps to prevent loss of data by saving the opened database on user interactions.
 So there is no need to save the database manually after changing it.
-Furthermore it synchronizes your local files which are associated with appropriate [SQLDatabase](shared databases).
+Furthermore it synchronizes your local files which are associated with appropriate [shared SQL databases](SQLDatabase).
 
 ## Activation
 
@@ -24,7 +24,7 @@ If you are working on **.bib** files which are located on your file system, the 
 
 ## Autosave for shared databases
 
-Generally you are able to save a shared database after connecting to it. This feature enables a full synchronization of your local bib file with the [SQLDatabase](shared SQLdatabase).
+Generally you are able to save a shared database after connecting to it. This feature enables a full synchronization of your local bib file with the [shared SQL database](SQLDatabase) which could simoultaneously be used by other collaborators.
 
 ## Remarks
 
