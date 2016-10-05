@@ -1,5 +1,7 @@
 ---
 title: 特殊フィールド
+outdated: true
+helpCategories: ["フィールド"]
 ---
 
 # 特殊フィールド

@@ -1,5 +1,7 @@
 ---
 title: EndNote書出フィルタ
+outdated: true
+helpCategories: ["読み込み/書き出し"]
 ---
 
 # EndNote書出フィルタ
@@ -15,7 +17,7 @@ EndNoteの既定の読込フィルタは、複数の著者や編者を適切に�
 1.  組み込みフィルタを使用して、ファイルを後から修正します。ファイルをEndNoteで開くには、EndNoteで新規データベースを作成するか、既存のデータベースを開いてください。その後、**File → Import**を選んで **Choose File** をクリックし、書き出したファイルを選択してから **Choose** をクリックしてください。**Import Options** をクリックして、**EndNote Import** を選択します。**Import** をクリックすれば、読み込みが始まります。読み込み後、**Edit → Change Text** を選択し、**Any Field** を **Author** に変更します。" and "を検索フィールドに入力し(引用符なし)、変更フィールドにリターン文字を入力して(Mac OS Xではoption-return、Windows XPではctrl-return)、**Change** をクリックしてください。同じことを **Secondary Author** フィールドについても繰り返します。
 2.  *EndNote Extras* に *EndNote Import from JabRef filter* を導入します。下記の **進んだ使い方** の指示に従ってください。ファイルをEndNoteで開くには、EndNoteで新規データベースを作成するか、既存のデータベースを開いてください。その後、**File → Import**を選んで **Choose File** をクリックし、書き出したファイルを選択してから **Choose** をクリックしてください。**Import Options** をクリックして、**EndNote Import from JabRef** を選択します(もしこれが表示されていなければ Other filters を選択してください。それでも表示されていなければ、フィルタが正しく導入されていません)。**Import** をクリックすれば、読み込みが始まります。
 
-## 注記
+## 註記
 
 EndNote書出フィルタは、BibTeX項目型を以下のように EndNote reference type に対応させます。
 
