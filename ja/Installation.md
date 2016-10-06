@@ -1,9 +1,6 @@
 ---
 title: 導入方法
-<<<<<<< HEAD
 helpCategories: ["一般"]
-=======
->>>>>>> JabRef/gh-pages
 ---
 
 # 導入方法
@@ -149,8 +146,4 @@ JREを導入したい場合や，ppaなしでjavaを導入したい場合には�
 1. [Java SE Development Kit 8 Downloads]サイトからdmgファイルをダウンロードする
 2. インストール・ウィザードを実行する
 
-<<<<<<< HEAD
  [Java SE Development Kit 8 Downloads]: <http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html>
-=======
- [Java SE Development Kit 8 Downloads]： http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
->>>>>>> JabRef/gh-pages
