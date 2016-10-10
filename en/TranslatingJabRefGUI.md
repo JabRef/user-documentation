@@ -45,7 +45,7 @@ Easy!
 See the *step-by-step guide* below. Instead of downloading the English files  (JabRef_en.properties and Menu_en.properties), use directly the ones for your language.
 
 
-### Translation status (on September 28, 2016 - Branch `master`)
+### Translation status (on October 10, 2016 - Branch `master`)
 
 Note: To get the current status from your local repository, run
 `python ./scripts/syncLang.py status --extended`
@@ -55,76 +55,76 @@ Note: To get the current status from your local repository, run
 
 | File                           | % done|
 | ------------------------------ | --- |
-| Menu_zh.properties             |  87 |
+| Menu_zh.properties             |  86 |
 | JabRef_zh.properties           |  77 |
 
 #### Danish
 | File                           | % done|
 | ------------------------------ | --- |
-| Menu_da.properties             |  87 |
+| Menu_da.properties             |  86 |
 | JabRef_da.properties           |  61 |
 
 #### Dutch
 
 | File                           | % done|
 | ------------------------------ | --- |
-| Menu_nl.properties             |  89 |
+| Menu_nl.properties             |  86 |
 | JabRef_nl.properties           |  40 |
 
 #### French
 
 | File                           | % done|
 | ------------------------------ | --- |
-| Menu_fr.properties             |  98 |
-| JabRef_fr.properties           |  99 |
+| Menu_fr.properties             | 100 |
+| JabRef_fr.properties           | 100 |
 
 #### German
 
 | File                           | % done|
 | ------------------------------ | --- |
-| Menu_de.properties             |  98 |
+| Menu_de.properties             | 100 |
 | JabRef_de.properties           |  99 |
 
 #### Indonesian
 
 | File                           | % done|
 | ------------------------------ | --- |
-| Menu_in.properties             |  87 |
+| Menu_in.properties             |  86 |
 | JabRef_in.properties           |  77 |
 
 #### Italian
 
 | File                           | % done|
 | ------------------------------ | --- |
-| Menu_it.properties             |  92 |
-| JabRef_it.properties           |  99 |
+| Menu_it.properties             | 100 |
+| JabRef_it.properties           | 100 |
 
 #### Japanese
 
 | File                           | % done|
 | ------------------------------ | --- |
-| Menu_ja.properties             |  98 |
+| Menu_ja.properties             |  96 |
 | JabRef_ja.properties           |  98 |
 
 #### Norwegian
 
 | File                           | % done|
 | ------------------------------ | --- |
-| Menu_no.properties             |  96 |
+| Menu_no.properties             |  94 |
 | JabRef_no.properties           |  61 |
 
 #### Persian
 
 | File                           | % done|
 | ------------------------------ | --- |
-| Menu_fa.properties             |  87 |
+| Menu_fa.properties             |  86 |
 | JabRef_fa.properties           |   1 |
 
 #### Portuguese (Brazil)
 
 | File                           | % done|
 | ------------------------------ | --- |
-| Menu_pt_br.properties          |  87 |
+| Menu_pt_br.properties          |  86 |
 | JabRef_pt_br.properties        |  76 |
 
 #### Russian
@@ -138,14 +138,14 @@ Note: To get the current status from your local repository, run
 
 | File                           | % done|
 | ------------------------------ | --- |
-| Menu_es.properties             |  87 |
+| Menu_es.properties             |  86 |
 | JabRef_es.properties           |  87 |
 
 #### Swedish
 
 | File                           | % done|
 | ------------------------------ | --- |
-| Menu_sv.properties             |  97 |
+| Menu_sv.properties             |  95 |
 | JabRef_sv.properties           |  89 |
 
 #### Turkish
@@ -159,7 +159,7 @@ Note: To get the current status from your local repository, run
 
 | File                           | % done|
 | ------------------------------ | --- |
-| Menu_vi.properties             |  71 |
+| Menu_vi.properties             | 100 |
 | JabRef_vi.properties           |  52 |
 
 
