@@ -28,4 +28,4 @@ Generally you are able to save a shared database after connecting to it. This fe
 ## Remarks
 
 By default this feature is disabled for local databases.
-It has to be kept apart from the main backup functionality as the backup is running continuously without users influence.
+It has to be kept apart from the [main backup functionality](Backup) as the backup is running continuously without users influence.
