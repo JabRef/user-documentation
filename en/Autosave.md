@@ -7,8 +7,7 @@ helpCategories: ["General"]
 
 ## Purpose
 
-The autosave feature helps to prevent loss of data by saving the opened database on user interactions.
-So there is no need to save the database manually after changing it.
+The autosave feature helps to to save an opened database without manual intervention.
 Furthermore it synchronizes your local files which are associated with appropriate [shared SQL databases](SQLDatabase).
 
 ## Activation
@@ -28,4 +27,4 @@ Generally you are able to save a shared database after connecting to it. This fe
 
 ## Remarks
 
-Both features are enabled by default.
+By default this feature is disabled for local databases.
