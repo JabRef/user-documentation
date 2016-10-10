@@ -12,9 +12,13 @@ We have a lot of [open issues](https://github.com/JabRef/jabref/issues).
 If you want to be sure to work on something the core developers currently do not handle, check the [issues tagged with asking-for-a-pull-request](https://github.com/JabRef/jabref/labels/asking-for-a-pull-request).
 See our [CONTRIBUTING.md](https://github.com/JabRef/jabref/blob/master/CONTRIBUTING.md) for detailed information and further links.
 
+## Q: How can I improve the documentation of JabRef?
+
+Please follow [our contribution guidelines](https://github.com/JabRef/help.jabref.org/blob/gh-pages/CONTRIBUTING.md).
+
 ## Q: I would like to help translating JabRef to another language. How do I get started?
 
-A: We encourage you to read [Translating JabRef](https://github.com/JabRef/jabref/wiki/Translating-JabRef).
+A: We encourage you to read [Translating JabRef](https://github.com/JabRef/jabref/wiki/Translating-JabRef-Interface).
 
 ## Q: Can I make a donation? How?
 

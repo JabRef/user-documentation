@@ -1,5 +1,6 @@
 ---
 title: 更新履歴
+helpCategories: ["その他"]
 ---
 
 # 更新履歴

@@ -1,10 +1,11 @@
 ---
-title: 文字列ヘルプ
+title: 文字列に関するヘルプ
+helpCategories: ["フィールド"]
 ---
 
-# 文字列ヘルプ
+# 文字列に関するヘルプ
 
-*BibTeX*は、`@String {鍵(キー) = 値}` と指定することで固定文字列を記憶させることをサポートしています。 JabRefは、文字列の管理を**BibTeX→文字列を編集**(これは[文字列エディタ](StringEditorHelp)を開きます)でサポートしています。指定した値は、フィールド中で使用することができます。例えば、BibTeXファイル中で
+*BibTeX* は、`@String {鍵(キー) = 値}` と指定することで固定文字列を記憶させることをサポートしています。 JabRefは、文字列の管理を **BibTeX→文字列を編集** (これは[文字列エディタ](StringEditorHelp)を開きます)でサポートしています。指定した値は、フィールド中で使用することができます。例えば、BibTeXファイル中で
 
     @String { kopp = "Kopp, Oliver" }
     @String { kubovy = "Kubovy, Jan" }
