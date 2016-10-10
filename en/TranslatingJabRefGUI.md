@@ -260,7 +260,7 @@ Using git, you will be able to keep your local files updated, and to translate n
 
 #### Testing the translation
 
-For a translation to be available within JabRef, a corresponding line must be added in the Java class GUIGlobals (found in the directory `/src/main/java/net/sf/jabref/GUIGlobals.java` in the JabRef source code tree). The line is inserted in the static {} section where the map LANGUAGES is populated. The code must of course be recompiled after this modification.
+For a translation to be available within JabRef, a corresponding line must be added in the Java class GUIGlobals (found in the directory `/src/main/java/net/sf/jabref/logic/l10n/Languages.java` in the JabRef source code tree). The line is inserted in the static {} section where the map LANGUAGES is populated. The code must of course be recompiled after this modification.
 
 To test your translation you must be able to compile the source tree after making your additions.
 This requires you to install the [Java Development Kit](http://www.oracle.com/technetwork/java/javase/downloads/index.html).
