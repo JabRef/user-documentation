@@ -7,12 +7,12 @@ helpCategories: ["General"]
 
 ## Purpose
 
-This module is always running in the background while you are working on a _bib_ database. It makes a _backup copy_ 
+This module is always running in the background while you are working on a _BibTeX database_. It makes a _backup copy_ 
 and keeps that up-to-date on every user interaction.
 
-_E.g.: When you change a field the new value would get saved into the backup copy._
+_E.g., When you change a field the new value would get saved into the backup copy._
  
-Assumed that _JabRef_ crashes while you are working on a _bib_ database. When you try again to open the file _JabRef_ crashed with,
+Assumed that _JabRef_ crashes while you are working on a _BibTeX database_. When you try again to open the file _JabRef_ crashed with
 you will get the following dialog:
 
 ![Screenshot of the backup dialog](./images/backup_found.png)
