@@ -178,4 +178,4 @@ A: You have to start vim with the option `--servername` (such as `vim --serverna
 
 ## Q: Is JabRef free for private and corporate use?
 
-A: Yes it is. JabRef is distributed under the MIT License, which [allow the following usage](https://tldrlegal.com/license/mit-license).
+A: Yes it is. JabRef is distributed under the MIT License, which [allows the following usage](https://tldrlegal.com/license/mit-license).
