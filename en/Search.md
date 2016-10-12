@@ -46,6 +46,7 @@ The `=` sign is actually a shorthand for `contains`.
 Searching for an exact match is possible using `matches` or `==`.
 Using `!=` tests if the search term is *not* contained in the field (equivalent to `not ... contains ...`).
 The selection of field types to search (required, optional, all) is always overruled by the field specification in the search expression.
+If a field is not given, all fields are searched. For example, `video and year == 1932` will search for entries with any field containing `video` and the field `year` being exactly `1932`.
 
 #### Pseudo fields
 
@@ -54,9 +55,9 @@ JabRef defines the following pseudo fields:
 |            |                |               |
 |------------|----------------|---------------|
 | **Pseudo field** | **Purpose** | **Example** |
-|`anyfield`| Search in any field | `anyfield contains fruit`: search for entries having one of its fields containing the word **fruit** |
-|`anykeyword`| Search among the keywords | `anykeyword matches apple`: search for entries which has the word **apple** among its keywords |
-|`bibtexkey` | Search for citation keys | `bibtexkey = miller2005`: searche for an entry whose BibTeX key is **miller2005**|
+|`anyfield`| Search in any field | `anyfield contains fruit`: search for entries having one of its fields containing the word **fruit**. This is identical to just writing `apple`. It may be more useful as `anyfield matches apple`, where one field must be exactly `apple` for a match. |
+|`anykeyword`| Search among the keywords | `anykeyword matches apple`: search for entries which has the word **apple** among its keywords. However, as this also matches `pineapple`, it may be more useful in searches of the type `anykeyword matches apple`, which will not match `apples` or `pineapple` |
+|`bibtexkey` | Search for citation keys | `bibtexkey == miller2005`: search for an entry whose BibTeX key is **miller2005**|
 |`entrytype`| Search for entries of a certain type |  `entrytype = thesis`: search entries whose type (as displayed in the `entrytype` column) contains the word **thesis** (which would be **phdthesis** and **mastersthesis**)|
 
 ## Search settings
