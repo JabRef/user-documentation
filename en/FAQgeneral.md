@@ -171,3 +171,11 @@ A: Google scholar is blocking "automated" crawls which generate too much traffic
 However, after too much crawls JabRef is being blocked.
 
 To solve this issue, see the section *Traffic limitations* in the [Google Scholar help](GoogleScholar).
+
+## Q: JabRef does not push to vim, although I have configured the right path and server name. What is going on?
+
+A: You have to start vim with the option `--servername` (such as `vim --servername MyVimServer`). If you get the `Unknown option argument` message, it means your version of  vim does not include the *clientserver* feature (you can check with `vim --version`). In such a case, you have to install another version of `vim`.
+
+## Q: Is JabRef free for private and corporate use?
+
+A: Yes it is. JabRef is distributed under the MIT License, which [allow the following usage](https://tldrlegal.com/license/mit-license).
