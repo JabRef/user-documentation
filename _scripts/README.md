@@ -1,23 +1,24 @@
 ## Script overview
 
-The Script has following commands available (each can be shown when called with the help parameter `-h` on any of the positional parameters)
-- `$ python _scrtips/automate.py status [-e|--extended] [-m --markdown]` 
+The Script has following commands available (each can be shown when called with the help parameter `-h` on any of the positional parameters):
+
+- `$ python _scripts/automate.py status [-e|--extended] [-m --markdown]` 
   - prints the current status to the console
   - `[-e|--extended]` prints the relevant pages (also applies to the markdown mode)
   - `[-m --markdown]` write the status int the markdown syntax and opens the file
   
 
-- `$ python _scrtips/automate.py update [-e|--extended]`
+- `$ python _scripts/automate.py update [-e|--extended]`
   - updates all the redirecting pages and the index file of each language as well as the inlcude pages
   - `[-e|--extended]` prints the relevant pages
     
   
-- `$ python _scrtips/automate.py clean [-e|--extended]`
+- `$ python _scripts/automate.py clean [-e|--extended]`
   - removes all the generated pages, the help site may not work afterwards
   - `[-e|--extended]` prints the deleted pages
   
   
-- `$ python _scrtips/automate.py removeHelpSuffix [-e|--extended]`
+- `$ python _scripts/automate.py removeHelpSuffix [-e|--extended]`
   - removes from all help pages the `Help` suffix and creates redirects for them, this gets also called on each `update`
   - `[-e|--extended]` prints the renamed pages
 
