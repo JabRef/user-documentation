@@ -7,6 +7,22 @@ helpCategories: ["Fields"]
 
 JabRef helps you work with your *BibTeX* databases, but there are still rules to keep in mind when editing your entries, to ensure that your database is treated properly by the *BibTeX* program.
 
+## JabRef's conventions
+
+### Fields in the header of a bib file
+
+JabRef stores the encoding of the file and (in case a shared [SQL database](https://help.jabref.org/en/SQLDatabase) is used) the ID of the shared database in the header of the bib file.
+
+#### Encoding
+
+`% Encoding: <encoding>`: States the encoding of a BibTeX file. E.g., `% Encoding: UTF-8`
+
+#### Shared Id
+
+To enable [auto save](https://help.jabref.org/en/Autosave), JabRef adds `% DBID: <id>` to the header.
+This helps JabRef identifying the SQL database where the file belongs.
+E.g., `% DBID: 2mvhh73ge3hc5fosdsvuoa808t`.
+
 ## Standard *BibTeX* fields
 
 There is a lot of different fields in *BibTeX*, and some additional fields that you can set in JabRef.
