@@ -34,10 +34,11 @@ Confirm your merge by clicking on **Merge entries**.
 
 ![Screenshot of Update refused dialog](./images/update-refused-merge-dialog.png) 
 
-The **Update refused** dialog can also take a different form, if the BibEntry you currently work on has been deleted on the shared side.
-You can choose to keep the BibEntry in the database by clicking **Keep** or update to the shared side and click **Close**.
+If you are working on an entry which is deleted simultaneously by another client you will get the following popup:
 
 ![Screenshot of Update refused dialog due to a deleted entry](./images/update-refused-deleted-entry-dialog.png)
+
+Then you are able to recover the entry using the **Undo** function.
 
 If you experience a problem with your connection to your shared database, the **Connection lost** dialog will show up.
 You can choose to **Reconnect**, **Work offline** or **Close database**.
