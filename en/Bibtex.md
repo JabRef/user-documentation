@@ -11,7 +11,7 @@ JabRef helps you work with your *BibTeX* databases, but there are still rules to
 
 ### Fields in the header of a bib file
 
-JabRef stores the encoding of the file and (in case a shared [SQL database](https://help.jabref.org/en/SQLDatabase) is used) the ID of the shared database in the header of the bib file.
+JabRef stores the encoding of the file and (in case a shared [SQL database](SQLDatabase) is used) the ID of the shared database in the header of the bib file.
 
 #### Encoding
 
@@ -19,7 +19,7 @@ JabRef stores the encoding of the file and (in case a shared [SQL database](http
 
 #### Shared Id
 
-To enable [auto save](https://help.jabref.org/en/Autosave), JabRef adds `% DBID: <id>` to the header.
+To enable [auto save](Autosave), JabRef adds `% DBID: <id>` to the header.
 This helps JabRef identifying the SQL database where the file belongs.
 E.g., `% DBID: 2mvhh73ge3hc5fosdsvuoa808t`.
 
