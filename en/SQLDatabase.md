@@ -12,13 +12,13 @@ If you used to work with an older version of JabRef, please refer to [SQLDatabas
 ## Usage
 
 To use this feature you have to connect to a remote database. 
-To do so you have to open **File** in the menu bar and then click the **Open shared database** item.
-The **Open shared database** dialog will open and you will have to fill in the shared's database connection settings.
+To do so you have to open **File** in the menu bar and then click the **Connect to shared database** item.
+The **Connect to shared database** dialog will open and you will have to fill in the shared's database connection settings.
 Under the field **Database type** you can choose between PostgreSQL (at least version 9.1), MySQL, and Oracle depending on your shared database.
 Then, you have to fill out the remaining fields with the according information.
 If you like you can save your password by clicking the **Remember password?** checkbox.
 
-![Screenshot of Open shared database dialog](./images/open-shared-database-dialog.png)
+![Screenshot of Connect to shared database dialog](./images/open-shared-database-dialog.png)
 
 After connecting to your shared database, your main window should look like this:
 
