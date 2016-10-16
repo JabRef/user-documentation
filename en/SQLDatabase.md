@@ -53,4 +53,4 @@ Otherwise you might override someone else's work.
 
 ## Try it out
 
-You can test the shared database support by using <https://www.freemysqlhosting.net>.
+You can test the shared SQL database support by using <https://www.freemysqlhosting.net>.
