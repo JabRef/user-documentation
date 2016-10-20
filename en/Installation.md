@@ -64,7 +64,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.x, mixed mode)
 **OpenJDK 32-Bit:**
 
 ```
-OpenJDK version "1.8.0\_x" 
+OpenJDK version "1.8.0_x" 
 OpenJDK Runtime Environment (build 1.8.0\_x)
 OpenJDK Client VM (build 25.x, mixed mode)
 ```
