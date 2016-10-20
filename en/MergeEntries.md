@@ -41,7 +41,7 @@ If you right-click on the preview, you can **Print entry preview** or **Copy pre
 
 ## Final merging
 
-![Screenshot of choosing to merge or not](./images/MergeEntries-PreviewAndCode.png)
+![Screenshot of choosing to merge or not](./images/MergeEntries-Selecting.png)
 
 Finally, after selecting which fields to keep, you can decide to **Merge entries**. Alternatively, you can press **Cancel**.
 
