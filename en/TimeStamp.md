@@ -5,12 +5,24 @@ helpCategories: ["Fields"]
 
 # Entry time stamps
 
-JabRef can optionally set a field to contain the date an entry was added to the database. 
+JabRef can optionally set a field to contain the date an entry was added to the database.
 
-You can disable or enable this feature by entering **Preferences -&gt; General**, and selecting/deselecting the line *'mark new entries with addition date'*. You can also change the date format (see below). 
-If an entry with a timestamp is pasted or imported, the field is updated with the current date if *'Overwrite'* is checked.
-By default, the date is added in a field called *'timestamp'*, which is visible in the **General fields** tab in the [entry editor](EntryEditorHelp). You can alter the name of this field.
-Finally, the value of the timestamp field will be updated upon changes in the entry if *'Update timestamp on modification'* is checked.
+## Configuration
+
+You can disable or enable this feature by entering **Options -&gt; Preferences -&gt; General**, and selecting/deselecting the line *'Mark new entries with addition date'*.
+
+If an entry with a timestamp is pasted or imported, the field is updated with the current date if *'Overwrite'* is checked. The value of the timestamp field will be updated upon changes in the entry if *'Update timestamp on modification'* is checked.
+
+By default, the date is added in a field called *'timestamp'*, which is visible in the **General fields** tab in the [entry editor](EntryEditor). You can alter the name of this field.
+The *date format* can also be customized (see below).
+
+## Usage
+
+The timestamp field can be edited in the **General fields** tab of the [entry editor](EntryEditor).
+
+You can manually alter the value by typing in the date and time of your choice. Also, by clicking on the calendar icon located at the right end of the field, you can select the date you want in a calendar. Additionaly, by clicking on *Today*, the current date is added. By clicking on *None*, the field is emptied.
+
+![Screenshot of the calendar](./images/TimeStamp-Calendar.png)
 
 ## Formatting
 
@@ -30,4 +42,3 @@ These designators can be combined along with punctuation and whitespace. A coupl
 -   **yyyy.MM.dd** gives **2005.09.14**
 -   **yy.MM.dd** gives **05.09.14**
 -   **yyyy.MM.dd HH:mm** gives **2005.09.14 17:45**
-
