@@ -10,9 +10,9 @@ helpCategories: ["General"]
 
 In this panel you can specify all relevant information on a single entry. The entry editor checks the type of your entry, and lists all the fields that are required, and the ones that are optional, for referring the entry with *bibtex*. In addition, there are several fields termed *General fields*, that are common to all entry types.
 
-You can fully customize which fields should be regarded as required and optional for each type of entry, and which fields appear in the General fields tabs. See [Customizing entry types](CustomEntriesHelp) for more information about this.
+You can fully customize which fields should be regarded as required and optional for each type of entry, and which fields appear in the General fields tabs. See [Customizing entry types](CustomEntries) for more information about this.
 
-For information about how the fields should be filled out, see [Bibtex help](BibtexHelp).
+For information about how the fields should be filled out, see [Bibtex help](Bibtex).
 
 ## The entry editor's panels
 
