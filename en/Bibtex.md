@@ -43,7 +43,7 @@ The following fields are recognized by the default bibliography styles:
 -   **editor** This field is analogue to the *author* field. If there is also an `author` field, then the `editor` field gives the editor of the book or collection in which the reference appears.
 -   **howpublished** How something strange has been published. The first word should be capitalized.
 -   **institution** The sponsoring institution of a technical report.
--   **journal** The name of a journal or magazine. The name of a journal can be abbreviated using a "string". To define such string, use the [string editor](StringEditorHelp).
+-   **journal** The name of a journal or magazine. The name of a journal can be abbreviated using a "string". To define such string, use the [string editor](StringEditor).
 -   **key** Used for alphabetizing, cross referencing, and creating a label when the \`\`author'' information is missing. This field should not be confused with the key that appears in the `\cite` command and at the beginning of the database entry.
 -   **month** The month in which the work was published or, for an unpublished work, in which it was written. You should use the standard three-letter abbreviation of the English names (jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec).
 -   **note** Any additional information that can help the reader. The first word should be capitalized.
@@ -88,13 +88,12 @@ To help in managing your bibliography, and extend the features of BibTeX, JabRef
 
 - [External files](ExternalFiles)
 - [General fields](GeneralFields)
-- [Owner](OwnerHelp)
-- [Quality and grading](SpecialFieldsHelp)
-- [Time stamp](TimeStampHelp)
+- [Owner](Owner)
+- [Quality and grading](SpecialFields)
+- [Time stamp](TimeStamp)
 
 ## Define your own fields
-You can create new fields by [editing (or creating) entry
-types](CustomEntriesHelp).
+You can create new fields by [editing (or creating) entry types](CustomEntries).
 
 ## Hints on fields
 

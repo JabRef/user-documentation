@@ -8,7 +8,7 @@ helpCategories: ["Import/Export"]
 ## Purpose
 
 When you import new entries from a supported reference format, or fetch entries directly from the Internet, the inspection window allows you to select the entries you want to keep, to [avoid adding duplicated entries](FindDuplicates),
-and to perform some simple operations like generating BibTeX keys for the entries, or adding them to [groups](GroupsHelp). If you are importing into an existing database, it is often easier to perform these operations before they are mixed in between the entries of your database.
+and to perform some simple operations like generating BibTeX keys for the entries, or adding them to [groups](Groups). If you are importing into an existing database, it is often easier to perform these operations before they are mixed in between the entries of your database.
 
 # The inspection window
 

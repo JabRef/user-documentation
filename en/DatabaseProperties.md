@@ -11,8 +11,8 @@ These specific properties override the generic properties defined in **Options -
 ![Screenshot for Database Properties](./images/DatabaseProperties.png)
 
 The database-specific properties are stored in the database itself.
-This way, when moving the database to another computer, these properties are preserved. 
-In most of cases these are stored in the bib-file database using text blocks starting with *@Comment{jabref-meta:* . 
+This way, when moving the database to another computer, these properties are preserved.
+In most of cases these are stored in the bib-file database using text blocks starting with *@Comment{jabref-meta:* .
 
 
 ## Database encoding
@@ -49,11 +49,11 @@ For each criterion, you can type-in the field to be used and select the order.
 ## Database protection
 
 While you edit a shared database, another user may be editing it too.
-By default, saving the database will overwrite changes done by others (although a warning message about the changes will be displayed). 
+By default, saving the database will overwrite changes done by others (although a warning message about the changes will be displayed).
 
 To avoid discarding changes involuntarily, and hence to allow a smooth collaborative work,
 you can choose to *Refuse to save the database before external changes have been reviewed*.
-This setting lets you enforce reviewing of external changes before the database can be saved: 
+This setting lets you enforce reviewing of external changes before the database can be saved:
 users will only be able to save the database after any external changes have been reviewed and either merged or rejected.
 
 *Note:* this is not a security feature, merely a way to prevent users from overwriting other users' changes inadvertently. This feature does not protect your database against malicious users.
@@ -69,7 +69,7 @@ Each action is defined by:
 
 ## Shared SQL database
 
-Note that some properties are not available for shared [SQL databases](http://help.jabref.org/en/SQLDatabase) as they are not handled like a *.bib* file.
+Note that some properties are not available for shared [SQL databases](SQLDatabase) as they are not handled like a *.bib* file.
 The following properties are not available:
 - Database encoding *(always UTF-8)*
 - Save sort order
