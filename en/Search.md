@@ -5,10 +5,35 @@ helpCategories: ["Finding, sorting and cleaning entries"]
 
 # Searching
 
-## Keyboard shortcuts
+The search feature can be accessed through the menu **Search -&gt; Search**
+Additionnaly, two keyboard shortcuts are available:
 
 - <kbd>CTRL</kbd> + <kbd>F</kbd> focuses the search interface.
 - <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>F</kbd> runs a global search with the current search string.
+
+Searching includes two modes (normal and advanced), along with several settings.
+
+## Search settings
+
+Next to the search text field, there are several check boxes to toggle following options:
+
+- Case sensitivity
+  - Whether or not the search query is case sensitive
+
+- Regular expressions
+  - Whether or not the search query can be described by Regex
+
+- Display setting
+  - Filter - Displays only entries which match the search query
+  - Float - Entries which do not match the search query are grayed-out
+
+- Global search
+  - activated:
+    - the search query will be taken over when switching tabs
+    - the external search result window will show matches in all database
+  - deactivated:
+    - each tab will remember its search query
+    - the external search result window will only show matches in the current database
 
 ## Search modes
 
@@ -60,24 +85,76 @@ JabRef defines the following pseudo fields:
 |`bibtexkey` | Search for citation keys | `bibtexkey == miller2005`: search for an entry whose BibTeX key is **miller2005**|
 |`entrytype`| Search for entries of a certain type |  `entrytype = thesis`: search entries whose type (as displayed in the `entrytype` column) contains the word **thesis** (which would be **phdthesis** and **mastersthesis**)|
 
-## Search settings
+#### Regular expressions
 
-Next to the search text field, there are several check boxes to toggle following options:
+##### Background
 
-- Case sensitivity
-  - Whether or not the search query is case sensitive
+Regular expressions (regex for short) define a language for specifying the text to be matched, for example when searching. JabRef uses regular expressions as defined in Java. Documentation is available at [https://docs.oracle.com/javase/tutorial/essential/regex/](https://docs.oracle.com/javase/tutorial/essential/regex/).
 
-- Regular expressions
-  - Whether or not the search query can be described by Regex
+The examples below are all in lower case, but lower case regexs match also upper- and mixed case strings.
 
-- Display setting
-  - Filter - Displays only entries which match the search query
-  - Float - Entries which do not match the search query are grayed-out
+##### Examples
 
-- Global search
-  - activated:
-    - the search query will be taken over when switching tabs
-    - the external search result window will show matches in all database
-  - deactivated:
-    - each tab will remember its search query
-    - the external search result window will only show matches in the current database
+###### Searching for entries with an empty or missing field
+
+- `.` means any character
+- `+` means one or more times
+
+`author != .+`
+
+###### Searching for a given word
+
+- `\b` means word boundary
+- `\B` means not a word boundary
+
+`keywords = \buv\b`
+matches *uv* but not *lluvia* (it does match *uv-b* however)
+
+`author = \bblack\b`
+matches *black* but neither *blackwell* nor *blacker*
+
+`author == black`
+does not match *john black*, but
+`author = \bblack\b`
+does.
+
+`author = \bblack\B`
+matches *blackwell* and *blacker*, but not *black*.
+
+###### Searching with optional spelling
+
+- `?` means none or one copy of the preceeding character.
+- `{n,m}` means at least *n*, but not more than *m* copies of the preceding character.
+- `[ ]` defines a character class
+
+`title =neighbou?r`
+matches *neighbour* and *neighbor*, and also *neighbours* and *neighbors*, and *neighbouring* and *neighboring*, etc.
+
+`title = neighbou?rs?\b`
+matches *neighbour* and *neighbor*, and also *neighbours* and *neighbors*, but neither *neighbouring* nor *neighboring*.
+
+`author = s[aá]nchez`
+matches *sanchez* and *sánchez*.
+
+`abstract = model{1,2}ing`
+matches *modeling* and *modelling*.
+
+`abstract = modell?ing`
+also matches *modeling* and *modelling*.
+
+###### Searching for strings with a special character ( <([{\^-=$!|]})?&ast;+.> )
+
+If a special character (< ( [ { \ ^ - = $ ! | ] } ) ? &ast; + . >) is included in your search string, it has to be escaped with a backslash, such as `\}` for *}*.
+
+It means that to search for a string including a backslash, two consecutive backslaskes (`\\`) have to be used:
+`abstract = xori{\\c{c}}o` matches *xoriço*.
+
+###### Searching for strings with double quotation marks (`"`)
+
+The character `"` has a special meaning: it is used to group words into phrases for exact matches. So, if you search for a string that includes a double quotation, the double quotation character has to be replaced with the hexadecimal character 22 in ASCII table `\x22`.
+
+Hence, to search for  *{\"O}quist* as an author, you must input `author = \{\\\x22O\}quist`, with regular expressions enabled (Note: the *{*, *\* and the *}* are escaped with a backslash; see above).
+
+`\"` does not work as an escape for `"`.
+Hence, neither `author = {\"O}quist` with regular expression disabled,
+nor `author = \{\\\"O\}quist` with regular expression enabled, will find anything even if the name *{\"O}quist* exists in the database.
