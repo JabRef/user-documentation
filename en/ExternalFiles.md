@@ -28,7 +28,7 @@ By default the entry table will contain two columns with icons for those entries
 
 JabRef makes it easy to link PDF and PS files to your entries. To take advantage of this, you have to indicate in **Options -&gt; Preferences -&gt; External programs** your main PDF and PS directories. All PDF and PS files that are stored in or below each of these directories will be referred to with a relative path by JabRef, making it easy for you if you need to move the PDF and PS directories, or if several users use the same database from different network places.
 
-Additionally, if you give your PDF and PS files names that correspond to the relevant entry's bibtex key (plus '.pdf' or '.ps'), JabRef will be able to search your main directories and its subfolders for the correct PDF and PS. Once the correctly-named PDF or PS is in place you access this function by clicking the 'Auto' button next to the PDF and PS fields in the entry editor. If the PDF or PS is found, the field will immediately be set.
+Additionally, if you give your PDF and PS files names that correspond to the relevant entry's BibTeX key (plus '.pdf' or '.ps'), JabRef will be able to search your main directories and its subfolders for the correct PDF and PS. Once the correctly-named PDF or PS is in place you access this function by clicking the 'Auto' button next to the PDF and PS fields in the entry editor. If the PDF or PS is found, the field will immediately be set.
 
 If you name a PDF or PS file as mentioned, you can also open the file without setting the PDF or PS field of the entry at all. The downside is that the PDF or PS icon will not appear in the table unless you do (manually or with the 'Auto' button).
 
@@ -38,7 +38,7 @@ You can set PDF and PS directories specific to a database (**File -&gt; Database
 
 ## <a href="" id="RegularExpressionSearch">Using Regular Expression Search for Auto-Linking</a>
 
-In the previous sections JabRef's auto-linking feature was described: If you choose names for your files corresponding to the bibtex-key + plus the extension, JabRef will automatically be able to find it.
+In the previous sections JabRef's auto-linking feature was described: If you choose names for your files corresponding to the BibTeX-key + plus the extension, JabRef will automatically be able to find it.
 
 Since JabRef 2.2 it is now possible to have greater flexibility in the naming scheme by using regular expression for the search. In most cases it should not be necessary though to adapt the given default.
 
@@ -53,4 +53,4 @@ The following syntax is understood:
 -   `[extension]` - Is replaced by the file-extension of the field you are using.
 -   All other text is interpreted as a regular expression. But caution: You need to escape backslashes by putting two backslashes after each other to not confuse them with the path-separator.
 
-The default for searches is `**/.*[bibtexkey].*\\.[extension]`. As you can see this will search in all subdirectories of the extension-based directory (for instance in the PDF directory) for any file that has the correct extension and contains the Bibtex-key somewhere.
+The default for searches is `**/.*[bibtexkey].*\\.[extension]`. As you can see this will search in all subdirectories of the extension-based directory (for instance in the PDF directory) for any file that has the correct extension and contains the BibTeX-key somewhere.

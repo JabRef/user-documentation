@@ -29,7 +29,7 @@ There is a lot of different fields in *BibTeX*, and some additional fields that 
 
 The following fields are recognized by the default bibliography styles:
 
--   **Bibtexkey** A unique string used to refer to the entry in LaTeX documents. Note that when referencing an entry from LaTeX, the key must match case-sensitively with the reference string.
+-   **bibtexkey** A unique string used to refer to the entry in LaTeX documents. Note that when referencing an entry from LaTeX, the key must match case-sensitively with the reference string.
 -   **address** Usually the address of the `publisher` or other type of institution. For major publishing houses, you may omit the information entirely or give simply the city. For small publishers, on the other hand, you can help the reader by giving the complete address.
 -   **annote** An annotation. It is not used by the standard bibliography styles, but may be used by others that produce an annotated bibliography.
 -   **author** This field should contain the complete author list for your entry. The names are separated by the word *and*, even if there are more than two authors. Each name can be written in two equivalent forms:

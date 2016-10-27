@@ -10,7 +10,7 @@ An well known example for metadata are MP3 tags, which can be used to describe a
 Adding metadata to MP3 helps other people to identify the songs correctly independent of file-name and can provide means for software (MP3 players for instance) to sort and group songs.
 
 With XMP-support the JabRef team tries to bring the advantages of metadata to the world of reference managers.
-You can now choose to "Write XMP" metadata in the General Tab of JabRef, which will put all the Bibtex information into the PDF.
+You can now choose to "Write XMP" metadata in the General Tab of JabRef, which will put all the BibTeX information into the PDF.
 If you then email this PDF to a colleague she can just drag the file into JabRef and all information that you entered will be available to her.
 
 ## Usage
@@ -23,7 +23,7 @@ To use the XMP-feature in JabRef you can do the following:
 -   To verify if it worked you can open the PDF in Adobe Acrobat and select "File -&gt; Document Properties -&gt; Additional Metadata -&gt; Advanced". In the tree to the right you should see an entry called "http://purl.org/net/bibteXMP". This works only with Adobe Acrobat, not with Adobe Reader.
 -   If you don't have Adobe Acrobat, you can use `pdfinfo` instead in order to see the XMP metadata. `pdfinfo` is part of [Xpdf](http://www.foolabs.com/xpdf/) and [Popple](http://poppler.freedesktop.org).
 
-## BibteXmp Fileformat
+## BibTeXmp Fileformat
 
 XMP uses a subset of the Resource Description Framework (RDF) to store data.
 For JabRef a new metadata format is used which maps very closely to BibTeX.
@@ -51,7 +51,7 @@ The following is an example of the mapping
     }
 
 will be transformed into
-    
+
     <rdf:Description xmlns:bibtex="http://jabref.sourceforge.net/bibteXMP/"
         bibtex:bibtexkey="CroAnnHow05"
         bibtex:year="2005"
@@ -71,7 +71,7 @@ will be transformed into
         <bibtex:entrytype>Inproceedings</bibtex:entrytype>
     </rdf:Description>
 
-Beware of the following caveats if you trying to parse bibteXMP:
+Beware of the following caveats if you trying to parse BibTeXMP:
 
 -   In RDF attribute-value pairs can also be expressed as nodes and vice versa.
 

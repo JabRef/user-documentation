@@ -18,7 +18,7 @@ This is the main window from where you work with your databases. Below the menub
     -   A <span style="color: #909000">yellow</span> cell in the leftmost column denotes an entry that doesn't define all required fields by itself, but that contains a cross-reference.
     -   A <span style="color: blue">blue</span> cell denotes a required field.
     -   A <span style="color: green">green</span> cell denotes an optional field.
-    -   An uncolored cell denotes a field which is not used by the *bibtex* program for this type of entry. The field can still be edited in JabRef.
+    -   An uncolored cell denotes a field which is not used by the *BibTeX* program for this type of entry. The field can still be edited in JabRef.
 
 ## Adding a new entry
 
@@ -32,7 +32,7 @@ When a new entry is added, by default an [entry editor](EntryEditor) for the ent
 
 To open an [entry editor](EntryEditor) for an existing entry, simply double-click anywhere on the appropriate line will open the [entry editor](EntryEditor) (or select the entry and press ENTER).
 
-## Referencing a *bibtex* string in a field
+## Referencing a *BibTeX* string in a field
 
 In JabRef you write the contents of all fields the same way as you would in a text editor, with one exception: to reference a string, enclose the name of the string in a set of \# characters, e.g.:
   '\#jan\# 1997',

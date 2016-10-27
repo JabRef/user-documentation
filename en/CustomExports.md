@@ -266,7 +266,7 @@ If none of the available formatters can do what you want to achieve, you can add
 
 ## Using Custom Name Formatters
 
-From JabRef 2.2, it is possible to define custom name formatters using the bibtex-sty-file syntax. This allows ultimate flexibility, but is a cumbersome to write
+From JabRef 2.2, it is possible to define custom name formatters using the BibTeX-sty-file syntax. This allows ultimate flexibility, but is a cumbersome to write
 
 You can define your own formatter in the preference tab "Name Formatter" using the following format and then use it with the name given to it as any other formatter
 
@@ -285,13 +285,13 @@ For instance with an authorlist of "Joe Doe and Mary Jane and Bruce Bar and Arth
 -   \* will affect all of them
 -   2..-1 will affect Mary, Bruce and Arthur
 
-The `<format>`-strings use the Bibtex formatter format:
+The `<format>`-strings use the BibTeX formatter format:
 
 The four letters v, f, l, j indicate the name parts von, first, last, jr which are used within curly braces. A single letter v, f, l, j indicates that the name should be abbreviated. If one of these letters or letter pairs is encountered JabRef will output all the respective names (possibly abbreviated), but the whole expression in curly braces is only printed if the name part exists.
 
 For instance if the format is "{ll} {vv {von Part}} {ff}" and the names are "Mary Kay and John von Neumann", then JabRef will output "Kay Mary" (with two space between last and first) and "Neuman von von Part John".
 
-I give two examples but would rather point you to the bibtex documentation.
+I give two examples but would rather point you to the BibTeX documentation.
 
 Small example: `"{ll}, {f.}"` will turn `"Joe Doe"` into `"Doe, J."`
 

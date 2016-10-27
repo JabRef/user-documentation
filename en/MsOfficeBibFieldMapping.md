@@ -7,14 +7,14 @@ helpCategories: ["Import/Export"]
 
 ## Introduction
 JabRef supports the MS Office Bibliography xml format for exporting and importing.
-Some field names in the xml format differ from the field names in the BibTeX/BibLaTex format and can therefore be not directly mapped between the formats.
+Some field names in the xml format differ from the field names in the BibTeX/BibLaTeX format and can therefore be not directly mapped between the formats.
 Therefore this help file provides a list of all field mappings.
 
 
 ## Entry Type Mappings
 
 
-| BibTeX/BibLaTex entry type | XML entry type       |
+| BibTeX/BibLaTeX entry type | XML entry type       |
 |---------------------------|-----------------------|
 | book                      | Book                  |
 | inbook                    | BookSection           |
@@ -42,7 +42,7 @@ Therefore this help file provides a list of all field mappings.
 The field mapping for import and export is mostly the same, but there are some differences, as not all field exists in both formats.
 Addtionally, some fields have to be treated differently during import/export.
 
-| BibTeX/BibLaTex | XML field     |
+| BibTeX/BibLaTeX | XML field     |
 |-----------------|---------------|
 | bibtexkey       | Tag           |
 | title           | Title         |
@@ -71,7 +71,7 @@ The following fields are BibTeX/BibLaTex only fields, they have no representatio
 In the resulting xml file they are represented with the prefix `BIBTEX_`
 
 
-| BibTeX/BibLaTex only fields | XML representation  |
+| BibTeX/BibLaTeX only fields | XML representation  |
 |-----------------------------|---------------------|
 | series                      | BIBTEX_Series       |
 | abstract                    | BIBTEX_Abstract     |
@@ -132,7 +132,7 @@ In the resulting bib database they are represented with the prefix `msbib-`.
 The following fields are treated as follows during epxort:
 
 
-| BibTeX/BibLaTex represenation | XML field      |
+| BibTeX/BibLaTeX represenation | XML field      |
 |-------------------------------|----------------|
 | booktitle                     | ConferenceName |
 | journal                       | JournalName    |
@@ -155,7 +155,7 @@ The following fields are treated as follows during epxort:
 The following fields are treated as follows during import:
 
 
-| BibTeX/BibLaTex represenation | XML field      |
+| BibTeX/BibLaTeX represenation | XML field      |
 |-------------------------------|----------------|
 | organization                  | ConferenceName |
 | journaltitle                  | Journal        |
