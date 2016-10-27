@@ -67,7 +67,7 @@ Several special field markers are offered, which extract only a specific part of
 
 #### Other key patterns
 
--   **\[`firstpage`\]**: The number of the first page of the publication (Caution: this will return the lowest number found in the pages field, since bibtex allows `7,41,73--97` or `43+`.)
+-   **\[`firstpage`\]**: The number of the first page of the publication (Caution: this will return the lowest number found in the pages field, since BibTeX allows `7,41,73--97` or `43+`.)
 -   **\[`keywordN`\]**: Keyword number N from the “keywords” field, assuming keywords are separated by commas or semicolons.
 -   **\[`lastpage`\]**: The number of the last page of the publication (See the remark on `firstpage`)
 -   **\[`shortyear`\]**: The last 2 digits of the publication year

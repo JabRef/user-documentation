@@ -63,7 +63,7 @@ A: Yes. Go to **Search -&gt; Web Search** to enable the Web search.
 A Web search box appears on the left side of JabRef.
 The name of a web search is selected (e.g. “ACM Portal”).
 Click on it and change it to “DOI to BibTeX”.
-Enter the DOI in the field and press “Fetch”.
+Enter the DOI in the field and press **Fetch**.
 A search starts and the result is displayed in a new pop up window.
 One entry should appear.
 Just push “OK” to insert the entry into the database.
@@ -147,7 +147,7 @@ For German readers, there is the [dante e.V. FAQ](http://projekte.dante.de/Dante
 ## Q: Where is the RenameFile plugin? How to rename file automatically after importing entries?
 
 A: JabRef does not support plugin anymore (version > 2.11). However the plugin features are progressively integrated.
-Renaming of files is now part of the "Cleanup Entries" feature (brush button in the toolbar or CTRL+SHIFT+F7).
+Renaming of files is now part of the "Cleanup Entries" feature (brush button in the toolbar or <kdb>CTRL</kdb>+<kdb>SHIFT</kdb>+<kdb>F7</kdb>).
 Then, you can rename attached files based on the BibTeX key.  You can change the format (pattern) under
 **Options -&gt; Preferences -&gt; Import**, by altering the pattern under "Default PDF file link action".
 

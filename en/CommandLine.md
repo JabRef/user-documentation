@@ -16,7 +16,7 @@ You can directly download the JAR file from our [download site](https://www.foss
 
 java -jar JabRef.jar [OPTIONS] [BIBTEX_FILE]
 
-*Note:* you may have to replace `JabRef.jar` by the actual name of the `.jar` file. 
+*Note:* you may have to replace `JabRef.jar` by the actual name of the `.jar` file.
 
 You can always specify one or more BibTeX files to load by simply listing their filenames.
 Take care to specify all options before your list of file names.
@@ -56,7 +56,7 @@ Options: [-a <FILE>] [-asfl] [-b] [-d <FILE>] [--debug] [-f <FILE>] [-g]
  -f,--fetch <FILE>                   Run Fetcher, e.g.
                                      "--fetch=Medline:cancer"
  -g,--generateBibtexKeys             Regenerate all keys for the entries
-                                     in a bibtex file
+                                     in a BibTeX file
  -h,--help                           Display help on command line options
  -i,--import <FILE>                  Import file: filename[,import format]
     --importToOpen <FILE>            Import to open tab
@@ -137,7 +137,7 @@ If a file is imported using the `-i` option, that file will be exported.
 If no `-i` option is used, the *last* file specified (and successfully loaded) will be exported.
 
 If only filename is specified, it will be exported in BibTeX format.
-If the filename is followed by a comma and an export format, the given export filter will be used. 
+If the filename is followed by a comma and an export format, the given export filter will be used.
 
 A custom export filter can be used, and will be preferred if the export name matches both a custom and a standard export filter.
 
@@ -151,15 +151,15 @@ If the GUI is not suppressed (using the `-n` option), any export operation will 
 
 Save to a new file all the database entries matching the given search term.
 
-If the filename is followed by a comma and an export format, the given export filter will be used. 
+If the filename is followed by a comma and an export format, the given export filter will be used.
 Otherwise, the default format *html-table* (with *Abstract* and *BibTeX*, provided by *tablerefsabsbib*) is used.
 
 Information about to the search function is given in ['advanced search' documentation](Search).
 
 *Note:* In addition it is also possible to search for entries within a time frame such as `Year=1989-2005`
-(instead of only searching for entries of a certain year as in `Year=2005`). 
+(instead of only searching for entries of a certain year as in `Year=2005`).
 
-*Note:* Search terms containing blanks need to be bracketed by quotation marks, as in 
+*Note:* Search terms containing blanks need to be bracketed by quotation marks, as in
 `(author=bock or title|keywords="computer methods")and not(author=sager)`
 
 
@@ -169,7 +169,7 @@ Information about to the search function is given in ['advanced search' document
 Query a Web fetcher and import the entries.
 
 Pass both the name of a fetcher and your search term or paper id (e.g. `--fetch=Medline:cancer`), and the given fetcher will be run.
-Some fetchers will still display a GUI window if they need feedback from you. 
+Some fetchers will still display a GUI window if they need feedback from you.
 
 The fetchers listed in the Web search panel can be run from the command line.
 To get the list of available fetchers, run `--fetch` without parameters.
@@ -186,13 +186,13 @@ JabRef can extract the references used from the `base-BibTeX-file` to a new .bib
 This way, you will have a subdatabase containing only the entries used in the .tex file.
 
 
-### Set file links: `-asfl` 
+### Set file links: `-asfl`
 (or `--automaticallySetFileLinks`)
 
 Automatically set file links.
 
 
-### Regenerate keys: `-g` 
+### Regenerate keys: `-g`
 (or `--generateBibtexKeys`)
 
 Regenerate all keys for the entries of a BibTeX file.

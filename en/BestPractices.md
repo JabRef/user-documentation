@@ -14,8 +14,8 @@ Sort your entries with the `bibtexkey` on save (can be set in the database prope
 
 # Use Integrity Check often
 
-Use `Quality -> Integrity Check` often to ensure that the quality of your database does not degrade. 
+Use `Quality -> Integrity Check` often to ensure that the quality of your database does not degrade.
 
 # Enable save actions
 
-Specify your save actions (can be set in the database properties). This ensures that your bibtex file will look more consistent. 
+Specify your save actions (can be set in the database properties). This ensures that your BibTeX file will look more consistent.

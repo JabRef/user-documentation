@@ -9,6 +9,6 @@ To use this feature, choose **Search -&gt; Web search**, and the search interfac
 
 This fetcher uses <http://dx.doi.org/> to convert an DOI to a BibTeX entry.
 
-Enter the DOI in the search field and press **Enter** or the **Fetch** button. 
+Enter the DOI in the search field and press <kdb>RETURN</kdb> or the **Fetch** button. 
 The results are displayed in the [import inspection window](ImportInspectionDialog).
 In case an error occurs, it is shown in a popup.

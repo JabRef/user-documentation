@@ -8,7 +8,7 @@ helpCategories: ["Fetching entries from the web", "... using online bibliographi
 [MEDLINE](https://www.nlm.nih.gov/pubs/factsheets/medline.html) is a bibliographic database of life sciences and biomedical information. It includes bibliographic information for articles from academic journals covering medicine, nursing, pharmacy, dentistry, veterinary medicine, and health care. MEDLINE also covers much of the literature in biology and biochemistry, as well as fields such as molecular evolution ([Wikipedia](https://en.wikipedia.org/wiki/MEDLINE)).
 
 
-To fetch entries from MEDLINE, choose **Search -&gt; Web search**, and the search interface will appear in the side pane. Select **MEDLINE** in the dropdown menu. To start a search, enter the words of your query, and press **Enter** or the **Fetch** button.
+To fetch entries from MEDLINE, choose **Search -&gt; Web search**, and the search interface will appear in the side pane. Select **MEDLINE** in the dropdown menu. To start a search, enter the words of your query, and press <kdb>RETURN</kdb> or the **Fetch** button.
 
 There are two ways of specifying which entries to download:
 
@@ -22,7 +22,7 @@ There are two ways of specifying which entries to download:
     -  Anderson \[au\] AND Nature \[ta\]
     -  Population \[ta\]
 
-In both cases, press **Enter** or the **Fetch** button. If you use a text search, you will be prompted with the number of entries found, and given a choice of how many to download.
+In both cases, press <kdb>RETURN</kdb> or the **Fetch** button. If you use a text search, you will be prompted with the number of entries found, and given a choice of how many to download.
 
 Then, the results are displayed in the [import inspection window](ImportInspectionDialog).
 In case an error occurs, it is shown in a popup.

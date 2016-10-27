@@ -5,7 +5,7 @@ helpCategories: ["Setup"]
 
 # The string editor
 
-[Strings](Strings) can be edided by **BibTeX -&gt; Edit strings** or pressing a button in the toolbar.
+[Strings](Strings) can be edited by **BibTeX -&gt; Edit strings** or pressing a button in the toolbar.
 
 *Strings* are the *BibTeX* equivalent to constants in a programming language. Each string is defined with a unique *name* and a *content*. Elsewhere in the database, the name can be used to represent the content.
 

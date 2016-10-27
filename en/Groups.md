@@ -16,7 +16,7 @@ Group definitions are database-specific; they are saved as a `@COMMENT` block in
 
 ## Interface
 
-The groups interface is shown in the side pane on the left of the screen. It can be toggled on or off by pressing `CTRL-SHIFT-G` or by the groups button in the toolbar. The interface has several buttons, but most functions are accessed via a context ("right-click") menu. Drag and Drop is also supported.
+The groups interface is shown in the side pane on the left of the screen. It can be toggled on or off by pressing <kdb>CTRL</kdb>+<kdb>SHIFT</kdb>+<kdb>G</kdb>` or by the groups button in the toolbar. The interface has several buttons, but most functions are accessed via a context ("right-click") menu. Drag and Drop is also supported.
 
 <table>
 <colgroup>
