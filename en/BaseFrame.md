@@ -11,7 +11,7 @@ This is the main window from where you work with your databases. Below the menub
 
 -   You decide which fields are shown in the table by checking the fields you want to see in the **Preferences** dialog.
 -   Double-click a line of the table to edit the entry content. You can navigate the table with the arrow keys.
--   The table is sorted according to a set of fields of your choosing. The default sort order can be set up in **Preferences -&gt; Entry table**, but to more quickly change the order, click the header of a column to set it as the primary sort criterion, or reverse the sorting if it is already set. Another click will deselect the column as sorting criterion. Hold down **CONTROL** and click a column to add, reverse or remove it as a sub-criterion after the primary column. You can add an arbitrary number of sub-criteria, but only three levels will be stored for the next time you start JabRef.
+-   The table is sorted according to a set of fields of your choosing. The default sort order can be set up in **Preferences -&gt; Entry table**, but to more quickly change the order, click the header of a column to set it as the primary sort criterion, or reverse the sorting if it is already set. Another click will deselect the column as sorting criterion. Hold down <kdb>CTRL</kdb> and click a column to add, reverse or remove it as a sub-criterion after the primary column. You can add an arbitrary number of sub-criteria, but only three levels will be stored for the next time you start JabRef.
 -   Adjust the width of each column by dragging the borders between their headers.
 -   Color codes can be toggled in the **Preferences** dialog (select **Appearance** and activate option "Color codes for optional and required fields). They help you visualize the completeness of your database by coloring cells as follows:
     -   A <span style="color: red">red</span> cell in the leftmost column denotes an incomplete entry.
@@ -26,11 +26,11 @@ There are several ways to add a new entry. The **New entry** menu action shows a
 
 When a new entry is added, by default an [entry editor](EntryEditor) for the entry will be opened. This behaviour can be toggled in the **Preferences** dialog.
 
-*Note:* We strongly recommend learning the shortcuts for the entry types you use most often, e.g. CTRL-SHIFT-A for adding an *article* entry.
+*Note:* We strongly recommend learning the shortcuts for the entry types you use most often, e.g. <kdb>CTRL</kdb>+<kdb>SHIFT</kdb>+<kdb>A</kdb> for adding an *article* entry.
 
 ## Editing an entry
 
-To open an [entry editor](EntryEditor) for an existing entry, simply double-click anywhere on the appropriate line will open the [entry editor](EntryEditor) (or select the entry and press ENTER).
+To open an [entry editor](EntryEditor) for an existing entry, simply double-click anywhere on the appropriate line will open the [entry editor](EntryEditor) (or select the entry and press <kdb>RETURN</kdb>).
 
 ## Referencing a *BibTeX* string in a field
 
