@@ -14,7 +14,7 @@ To make the cursor jump to the search field, you can:
 - select the menu **Search -&gt; Search**.
 - press <kbd>CTRL</kbd> + <kbd>F</kbd>.
 
-Additionnaly, <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>F</kbd> also activates the global search setting.
+Additionally, <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>F</kbd> also activates the global search setting.
 
 
 Searching includes two modes (normal and advanced), along with several settings.
@@ -29,7 +29,7 @@ At the right of the search text field, several buttons allow for selecting some 
 - Global search
   - activated:
     - the search query will be taken over when switching tabs
-    - the external search result window will show matches in all database
+    - the external search result window will show matches in all databases
   - deactivated:
     - each tab will remember its search query
     - the external search result window will only show matches in the current database
@@ -43,8 +43,8 @@ At the right of the search text field, several buttons allow for selecting some 
   - Whether or not the search query is case sensitive.
 
 - Display setting
-  - _Filter_ - Displays only entries which match the search query
-  - _Float_ - Entries which do not match the search query are grayed-out
+  - _Filter_ - Displays only entries which match the search query, non-matches are hidden
+  - _Float_ -  Matching entries are moved to the top, entries which do not match the search query are grayed-out
 
 
 ## Search modes
