@@ -5,27 +5,26 @@ helpCategories: ["Finding, sorting and cleaning entries"]
 
 # Searching
 
-The search feature can be accessed through the menu **Search -&gt; Search**
-Additionnaly, two keyboard shortcuts are available:
+The search bar is located between the icon bar and the database tabs.
 
-- <kbd>CTRL</kbd> + <kbd>F</kbd> focuses the search interface.
-- <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>F</kbd> runs a global search with the current search string.
+![Screenshot of the search bar](./images/Search-Bar.png)
+
+To make the cursor jump to the search field, you can:
+- click in the search field.
+- select the menu **Search -&gt; Search**.
+- press <kbd>CTRL</kbd> + <kbd>F</kbd>.
+
+Additionnaly, <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>F</kbd> also activates the global search setting.
+
 
 Searching includes two modes (normal and advanced), along with several settings.
 
 ## Search settings
 
-Next to the search text field, there are several check boxes to toggle following options:
+At the right of the search text field, several buttons allow for selecting some settings:
 
-- Case sensitivity
-  - Whether or not the search query is case sensitive
-
-- Regular expressions
-  - Whether or not the search query can be described by Regex
-
-- Display setting
-  - Filter - Displays only entries which match the search query
-  - Float - Entries which do not match the search query are grayed-out
+- New window
+  - When pressed, the results are displayed in a dedicated window.
 
 - Global search
   - activated:
@@ -34,6 +33,19 @@ Next to the search text field, there are several check boxes to toggle following
   - deactivated:
     - each tab will remember its search query
     - the external search result window will only show matches in the current database
+
+
+
+- Regular expressions
+    - Whether or not the search query uses [regular expressions](Search#regex).
+
+- Case sensitivity
+  - Whether or not the search query is case sensitive.
+
+- Display setting
+  - _Filter_ - Displays only entries which match the search query
+  - _Float_ - Entries which do not match the search query are grayed-out
+
 
 ## Search modes
 
@@ -52,11 +64,11 @@ To stop displaying the search results, just clear the search field again, press 
 
 #### Syntax
 
-In order to search specific fields only and/or include logical operators in the search expression, a special syntax is available in which these can be specified. E.g. to search for entries whose author is **Miller**, enter:
+In order to search specific fields only and/or include logical operators in the search expression, a special syntax is available in which these can be specified. E.g. to search for entries whose an author contains **miller**, enter:
 
 `author = miller`
 
-Both the field specification and the search term support regular expressions.
+Both the field specification and the search term support [regular expressions](Search#regex).
 If the search term contains spaces, enclose it in quotes.
 Do *not* use spaces in the field specification!
 E.g. to search for entries about image processing, type:
@@ -85,24 +97,29 @@ JabRef defines the following pseudo fields:
 |`bibtexkey` | Search for citation keys | `bibtexkey == miller2005`: search for an entry whose BibTeX key is **miller2005**|
 |`entrytype`| Search for entries of a certain type |  `entrytype = thesis`: search entries whose type (as displayed in the `entrytype` column) contains the word **thesis** (which would be **phdthesis** and **mastersthesis**)|
 
-#### Regular expressions
+#### <a href="" id="regex"></a> Regular expressions
 
 ##### Background
 
-Regular expressions (regex for short) define a language for specifying the text to be matched, for example when searching. JabRef uses regular expressions as defined in Java. Documentation is available at [https://docs.oracle.com/javase/tutorial/essential/regex/](https://docs.oracle.com/javase/tutorial/essential/regex/).
+Regular expressions (regex for short) define a language for specifying the text to be matched, for example when searching. JabRef uses regular expressions as defined in Java. For extensive information, please, look at the [documentation](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html)
+and at the [tutorial](https://docs.oracle.com/javase/tutorial/essential/regex/).
 
-The examples below are all in lower case, but lower case regexs match also upper- and mixed case strings.
 
-##### Examples
+##### Regular expressions and casing
 
-###### Searching for entries with an empty or missing field
+By default, regular expressions do not account for upper/lower casing.
+Hence, while the examples below are all in lower case, they match also upper- and mixed case strings.
+
+If casing is important to your search, activate the case-sensitive button.
+
+##### Searching for entries with an empty or missing field
 
 - `.` means any character
 - `+` means one or more times
 
 `author != .+`
 
-###### Searching for a given word
+##### Searching for a given word
 
 - `\b` means word boundary
 - `\B` means not a word boundary
@@ -121,7 +138,7 @@ does.
 `author = \bblack\B`
 matches *blackwell* and *blacker*, but not *black*.
 
-###### Searching with optional spelling
+##### Searching with optional spelling
 
 - `?` means none or one copy of the preceeding character.
 - `{n,m}` means at least *n*, but not more than *m* copies of the preceding character.
@@ -142,19 +159,20 @@ matches *modeling* and *modelling*.
 `abstract = modell?ing`
 also matches *modeling* and *modelling*.
 
-###### Searching for strings with a special character ( <([{\^-=$!|]})?&ast;+.> )
+##### Searching for strings with a special character ( ()[]{}\^-=$!|?&ast;+. )
 
-If a special character (< ( [ { \ ^ - = $ ! | ] } ) ? &ast; + . >) is included in your search string, it has to be escaped with a backslash, such as `\}` for *}*.
+If a special character (i.e. ( ) [ ] { } \ ^ - = $ ! | ? &ast; + . ) is included in your search string, it has to be escaped with a backslash, such as `\}` for *}*.
 
 It means that to search for a string including a backslash, two consecutive backslaskes (`\\`) have to be used:
 `abstract = xori{\\c{c}}o` matches *xoriço*.
 
-###### Searching for strings with double quotation marks (`"`)
+##### Searching for strings with double quotation marks (`"`)
 
-The character `"` has a special meaning: it is used to group words into phrases for exact matches. So, if you search for a string that includes a double quotation, the double quotation character has to be replaced with the hexadecimal character 22 in ASCII table `\x22`.
+The character `"` has a special meaning: it is used to group words into phrases for exact matches.
+So, if you search for a string that includes a double quotation, the double quotation character has to be replaced with the hexadecimal character 22 in ASCII table `\x22`.
 
-Hence, to search for  *{\"O}quist* as an author, you must input `author = \{\\\x22O\}quist`, with regular expressions enabled (Note: the *{*, *\* and the *}* are escaped with a backslash; see above).
+Hence, to search for  *{\"o}quist* as an author, you must input `author = \{\\\x22o\}quist`, with regular expressions enabled (Note: the *{*, *\* and the *}* are escaped with a backslash; see above).
 
-`\"` does not work as an escape for `"`.
-Hence, neither `author = {\"O}quist` with regular expression disabled,
-nor `author = \{\\\"O\}quist` with regular expression enabled, will find anything even if the name *{\"O}quist* exists in the database.
+Indeed, `\"` does not work as an escape for `"`.
+Hence, neither `author = {\"o}quist` with regular expression disabled,
+nor `author = \{\\\"O\}quist` with regular expression enabled, will find anything even if the name *{\"o}quist* exists in the database.
