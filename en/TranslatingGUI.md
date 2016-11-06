@@ -59,6 +59,7 @@ Note: To get the current status from your local repository, run
 | JabRef_zh.properties           |  77 |
 
 #### Danish
+
 | File                           | % done|
 | ------------------------------ | --- |
 | Menu_da.properties             |  86 |
