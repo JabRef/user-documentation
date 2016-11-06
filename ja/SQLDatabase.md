@@ -1,6 +1,5 @@
 ---
 title: 共有SQLデータベース
-helpCategories: ["共同作業"]
 ---
 
 # 共有SQLデータベース

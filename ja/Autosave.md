@@ -1,6 +1,5 @@
 ---
 title: 自動保存
-helpCategories: ["一般"]
 ---
 
 # 自動保存

@@ -1,6 +1,5 @@
 ---
 title: 導入方法
-helpCategories: ["一般"]
 ---
 
 # 導入方法

@@ -584,9 +584,11 @@ def update_index(extended):
                 if not title:
                     title = main_post[FRONTMATTER_TITLE] if FRONTMATTER_TITLE in main_post.keys() else ""
 
-                categories = post[FRONTMATTER_CATEGORIES] if FRONTMATTER_CATEGORIES in post.keys() else []
-                if not categories:
-                    categories = main_post[FRONTMATTER_CATEGORIES] if FRONTMATTER_CATEGORIES in main_post.keys() else []
+                if language != MAIN_LANGUAGE and FRONTMATTER_CATEGORIES in post.keys():
+                    logger.warn(u"categories are only needed to be declared in the {main} file, ignoring categories in following: '{lang}', '{file}'".format(main=MAIN_LANGUAGE, lang=language, file=page))
+
+                # getting the categories from the english file, prevents getting a translated category
+                categories = main_post[FRONTMATTER_CATEGORIES] if FRONTMATTER_CATEGORIES in main_post.keys() else []
 
                 for key in categories:
                     if not does_category_exist(key):

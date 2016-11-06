@@ -1,7 +1,6 @@
 ---
 title: EndNote書出フィルタ
 outdated: true
-helpCategories: ["読み込み/書き出し"]
 ---
 
 # EndNote書出フィルタ

@@ -1,6 +1,5 @@
 ---
 title: 文字列エディタ
-helpCategories: ["設定"]
 ---
 
 # 文字列エディタ

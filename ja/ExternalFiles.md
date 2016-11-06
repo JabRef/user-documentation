@@ -1,7 +1,6 @@
 ---
 title: JabRef における PDF/PS/URL/DOI リンク
 outdated: true
-helpCategories: ["フィールド"]
 ---
 
 # JabRef における PDF/PS/URL/DOI リンク

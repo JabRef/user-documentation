@@ -1,7 +1,6 @@
 ---
 title: フィールド内容選択メニュー
 outdated: true
-helpCategories: ["フィールド"]
 ---
 
 # フィールド内容選択メニュー

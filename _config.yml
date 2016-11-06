@@ -13,7 +13,7 @@ timezone: null
 lsi: false
 
 google_analytics_key: UA-74055103-1 ## put YOUR key here to enable tracking! (blank to disable)
-favicon: jabref.ico #put a path like: "img/favicon.ico"
+favicon: /jabref.ico #put a path like: "img/favicon.ico"
 gems:
   - jekyll-sitemap
 

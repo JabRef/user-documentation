@@ -1,6 +1,5 @@
 ---
 title: 検索
-helpCategories: ["項目の検索・整序・整理"]
 ---
 
 # 検索

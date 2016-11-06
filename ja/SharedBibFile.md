@@ -1,6 +1,5 @@
 ---
 title: BibLaTeXデータベースを共有する
-helpCategories: ["共同作業"]
 ---
 
 # Bib(La)TeXデータベースを共有する

@@ -19,7 +19,7 @@ A: You are not obliged to cite JabRef, but we would greatly appreciate it if you
 ```
 @Manual{JabRef_software,
   title = {JabRef},
-  author = {{JabRef Development Team}},
+  author = { {JabRef Development Team} },
   year = {2016},
   url = {http://www.jabref.org}
 }

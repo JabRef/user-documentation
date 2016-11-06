@@ -1,7 +1,6 @@
 ---
 title: JabRef におけるファイルリンク
 outdated: true
-helpCategories: ["フィールド"]
 ---
 
 # JabRef におけるファイルリンク

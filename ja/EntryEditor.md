@@ -1,7 +1,6 @@
 ---
 title: 項目エディタ
 outdated: true
-helpCategories: ["一般"]
 ---
 
 # 項目エディタ

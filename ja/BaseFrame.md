@@ -1,6 +1,5 @@
 ---
 title: JabRef 基本ウィンドウ
-helpCategories: ["一般"]
 ---
 
 # JabRef 基本ウィンドウ

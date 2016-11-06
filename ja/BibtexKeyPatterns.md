@@ -1,6 +1,5 @@
 ---
 title: BibTeX鍵(キー)生成方法の調整
-helpCategories: ["設定"]
 ---
 
 # BibTeX鍵(キー)生成方法の調整

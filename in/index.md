@@ -44,7 +44,7 @@ title: Daftar Isi Bantuan
 - [Bidang 'pemilik'](/in/Owner)
 - [Set/clear/rename fields](/in/SetClearRenameFields)
 - [Special Fields](/in/SpecialFields)
-- [Help on Strings](/in/Strings)
+- [Strings](/in/Strings)
 - [Cap waktu entri](/in/TimeStamp)
 
 
@@ -53,6 +53,7 @@ title: Daftar Isi Bantuan
 - [Cleanup entries](/in/CleanupEntries)
 - [Find duplicates](/in/FindDuplicates)
 - [Find unlinked files](/in/FindUnlinkedFiles)
+- [Get BibTeX data from DOI](/in/GetBibTeXDataFromDOI)
 - [Groups](/in/Groups)
 - [Menandai entri](/in/Marking)
 - [Merge entries](/in/MergeEntries)
@@ -93,7 +94,7 @@ title: Daftar Isi Bantuan
 - [XMP metadata support in JabRef](/in/XMP)
 
 
-## F
+## Fetching entries from the web
 
 
 ### ... using publication identifiers
@@ -113,13 +114,17 @@ title: Daftar Isi Bantuan
 - [Pencarian IEEEXplore](/in/IEEEXplore)
 - [Pencarian INSPIRE](/in/INSPIRE)
 - [Mengambil entri dari Medline](/in/Medline)
-- [Pencarian ScienceDirect](/in/ScienceDirect)
 - [Fetching entries from Springer](/in/Springer)
 - [Fetching entries from arXiv](/in/arXiv)
 
 
 
+## Contributing
+- [Translating the JabRef Interface](/in/TranslatingGUI)
+
+
 ## Lain-lain
+- [License](/in/License)
 - [Riwayat Perbaikan](/in/RevisionHistory)
 
 
