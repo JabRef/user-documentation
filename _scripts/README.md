@@ -25,8 +25,8 @@ The Script has following commands available (each can be shown when called with 
 
 ## Note when translating pages
  
- - Categories must no be translated (they are only needed in the english pages and are ignored in all other languages).
- - If the title in the yaml frontmatter (this is at the beginning at each page surrounded by `---`) starts with a special character (eg. `*`) the whole title must be surrounded by quotation marks (`"`).
+ - Categories must not be translated (they are only needed in the English pages and are ignored in all other languages).
+ - If the title in the yaml frontmatter (this is at the beginning at each page surrounded by `---`) starts with a special character (eg. `*`), the whole title must be surrounded by quotation marks (`"`).
  - You cannot enclose text with `{{ ... }}` as this will get interpreted as Liquid syntax and not displayed as is. Use `{ { ... } }` instead (with spaces between the braces).
 
 
