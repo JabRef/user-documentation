@@ -73,3 +73,20 @@ To edit more than one file at a time, to add screenshots and for other more adva
 
 The best way to enter tables is to use this [Table generator](http://www.tablesgenerator.com/markdown_tables) for Markdown.
 It has the nice feature to generate markdown tables from different sources, e.g. you can directly copy the table from a spreadsheet or upload a csv files. Just copy and paste the generated markdown.
+
+
+## Note when translating pages
+
+ - Categories must not be translated (they are only needed in the English pages and are ignored in all other languages).
+ - If the title in the yaml frontmatter (this is at the beginning at each page surrounded by `---`) starts with a special character (eg. `*`), the whole title must be surrounded by quotation marks (`"`).
+ - You cannot enclose text with `{{ ... }}` as this will get interpreted as Liquid syntax and not displayed as is. Use `{ { ... } }` instead (with spaces between the braces).
+
+
+## Adding a new language
+
+Example: Italian (it)
+
+1. Create `it` folder
+2. Create `it/localization_it.json` (copy `en/localization_en.json` and delete/translate the values)
+3. Run `python _scripts/automate.py update`
+4. Add the Italian index to the main index if some of the pages are translated into Italian
