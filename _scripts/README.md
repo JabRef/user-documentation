@@ -1,6 +1,6 @@
 ## Script overview
 
-The Script has following commands available (each can be shown when called with the help parameter `-h` on any of the positional parameters):
+The script has following commands available (each can be shown when called with the help parameter `-h` on any of the positional parameters):
 
 - `$ python _scripts/automate.py status [-e|--extended] [-m --markdown]` 
   - prints the current status to the console
@@ -39,11 +39,12 @@ Example: Italian (it)
 3. Run `python _scripts/automate.py update`
 4. Add the Italian index to the main index if some of the pages are translated into Italian
 
-## Installatation Notes
+## Installatation notes
 
 ### Windows
 
-1. [Install Chocolatey](https://chocolatey.org/install)
-2. `choco install python2`
-3. Switch back to normal command prompt
-4. `c:\tools\python2\Scripts\pip install python-frontmatter`
+1. Open cmd.exe with administrative privilidges
+2. [Install Chocolatey](https://chocolatey.org/install)
+3. `choco install python2`
+4. Switch back to normal command prompt
+5. `c:\tools\python2\Scripts\pip install python-frontmatter`
