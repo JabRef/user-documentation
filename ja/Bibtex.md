@@ -1,6 +1,5 @@
 ---
-title: *BibTeX* について
-helpCategories: ["フィールド"]
+title: "*BibTeX* について"
 ---
 
 # *BibTeX* について

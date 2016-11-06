@@ -53,6 +53,7 @@ title: Contenu de l’aide
 - [Cleanup entries](/fr/CleanupEntries)
 - [Find duplicates](/fr/FindDuplicates)
 - [Find unlinked files](/fr/FindUnlinkedFiles)
+- [Get BibTeX data from DOI](/fr/GetBibTeXDataFromDOI)
 - [Les groupes](/fr/Groups)
 - [Etiqueter les entrées](/fr/Marking)
 - [Merge entries](/fr/MergeEntries)
@@ -113,13 +114,17 @@ title: Contenu de l’aide
 - [Recherche IEEEXplore](/fr/IEEEXplore)
 - [Recherche INSPIRE](/fr/INSPIRE)
 - [Récupération d'entrées depuis Medline](/fr/Medline)
-- [Recherche ScienceDirect](/fr/ScienceDirect)
 - [Fetching entries from Springer](/fr/Springer)
 - [Fetching entries from arXiv](/fr/arXiv)
 
 
 
+## Contribuer
+- [Translating the JabRef Interface](/fr/TranslatingGUI)
+
+
 ## Divers
+- [License](/fr/License)
 - [Historique des révisions (en anglais)](/fr/RevisionHistory)
 
 

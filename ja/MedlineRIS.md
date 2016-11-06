@@ -1,6 +1,5 @@
 ---
 title: Medline (txt)形式とMedline (XML)形式およびRIS形式の比較
-helpCategories: ["読み込み/書き出し"]
 ---
 
 # Medline (txt)形式とMedline (XML)形式およびRIS形式の比較

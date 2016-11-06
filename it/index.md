@@ -44,7 +44,7 @@ title: Help contents
 - [The 'owner' field](/it/Owner)
 - [Set/clear/rename fields](/it/SetClearRenameFields)
 - [Special Fields](/it/SpecialFields)
-- [Help on Strings](/it/Strings)
+- [Strings](/it/Strings)
 - [Entry time stamps](/it/TimeStamp)
 
 
@@ -53,6 +53,7 @@ title: Help contents
 - [Cleanup entries](/it/CleanupEntries)
 - [Find duplicates](/it/FindDuplicates)
 - [Find unlinked files](/it/FindUnlinkedFiles)
+- [Get BibTeX data from DOI](/it/GetBibTeXDataFromDOI)
 - [Groups](/it/Groups)
 - [Mark entries](/it/Marking)
 - [Merge entries](/it/MergeEntries)
@@ -113,13 +114,17 @@ title: Help contents
 - [Fetching entries from IEEEXplore](/it/IEEEXplore)
 - [Fetching entries from INSPIRE-HEP](/it/INSPIRE)
 - [Fetching entries from MEDLINE](/it/Medline)
-- [ScienceDirect search](/it/ScienceDirect)
 - [Fetching entries from Springer](/it/Springer)
 - [Fetching entries from arXiv](/it/arXiv)
 
 
 
+## Contributing
+- [Translating the JabRef Interface](/it/TranslatingGUI)
+
+
 ## Miscellaneous
+- [License](/it/License)
 - [Revision history](/it/RevisionHistory)
 
 

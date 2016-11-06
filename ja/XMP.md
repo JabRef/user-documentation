@@ -1,6 +1,5 @@
 ---
 title: JabRefにおけるXMPメタデータ サポート
-helpCategories: ["読み込み/書き出し"]
 ---
 
 # JabRefにおけるXMPメタデータ サポート

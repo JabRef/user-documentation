@@ -44,7 +44,7 @@ title: Hilfe - Inhalt
 - [Das 'Besitzer' (owner) Feld](/de/Owner)
 - [Set/clear/rename fields](/de/SetClearRenameFields)
 - [Special Fields](/de/SpecialFields)
-- [Help on Strings](/de/Strings)
+- [Strings](/de/Strings)
 - [Zeitstempel](/de/TimeStamp)
 
 
@@ -53,6 +53,7 @@ title: Hilfe - Inhalt
 - [Cleanup entries](/de/CleanupEntries)
 - [Find duplicates](/de/FindDuplicates)
 - [Find unlinked files](/de/FindUnlinkedFiles)
+- [Get BibTeX data from DOI](/de/GetBibTeXDataFromDOI)
 - [Gruppen](/de/Groups)
 - [Einträge markieren](/de/Marking)
 - [Merge entries](/de/MergeEntries)
@@ -113,13 +114,17 @@ title: Hilfe - Inhalt
 - [IEEEXplore durchsuchen](/de/IEEEXplore)
 - [INSPIRE-Suche](/de/INSPIRE)
 - [Einträge von Medline abrufen](/de/Medline)
-- [ScienceDirect search](/de/ScienceDirect)
 - [Fetching entries from Springer](/de/Springer)
 - [Fetching entries from arXiv](/de/arXiv)
 
 
 
+## Contributing
+- [Translating the JabRef Interface](/de/TranslatingGUI)
+
+
 ## Verschiedenes
+- [License](/de/License)
 - [Versionsgeschichte (auf Englisch)](/de/RevisionHistory)
 
 

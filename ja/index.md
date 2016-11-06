@@ -6,12 +6,22 @@ title: ヘルプ目次
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <strong>抱えている問題の解決策が見つからない？もっと詳しく訊きたい？</strong>
+    <strong>抱えている問題の解決策が見つからないのですか？もっと詳しく訊きたいのですか？</strong>
   </div>
   <div class="panel-body">
-    <a class="btn btn-default" role="button" href="http://discourse.jabref.org">オンラインフォーラムでもっとサポートを受けられます！<div style="font-size:small;">（英語でね(^.-)）</div></a>
+    <a class="btn btn-default" role="button" href="http://discourse.jabref.org">オンラインフォーラムでもっとサポートを受けられます！<div style="font-size:small;">（英語でね(^_-)）</div></a>
   </div>
 </div>
+
+
+## FAQ
+- [Contributing](/ja/FAQcontributing)
+- [General](/ja/FAQgeneral)
+- [JabRef and Linux](/ja/FAQlinux)
+- [JabRef and Mac OS X](/ja/FAQosx)
+- [Other](/ja/FAQother)
+- [Sharing](/ja/FAQsharing)
+- [JabRef and Windows](/ja/FAQwindows)
 
 
 ## 一般
@@ -26,7 +36,7 @@ title: ヘルプ目次
 
 
 ## フィールド
-- [BibTeX について](/ja/Bibtex)
+- [*BibTeX* について](/ja/Bibtex)
 - [フィールド内容選択メニュー](/ja/ContentSelector)
 - [JabRef における PDF/PS/URL/DOI リンク](/ja/ExternalFiles)
 - [JabRef におけるファイルリンク](/ja/FileLinks)
@@ -38,11 +48,12 @@ title: ヘルプ目次
 - [項目の時間スタンプ](/ja/TimeStamp)
 
 
-## 項目の検索・整序・整理
+## 項目の検索と整序
 - [Check integrity](/ja/CheckIntegrity)
 - [Cleanup entries](/ja/CleanupEntries)
 - [重複の検出](/ja/FindDuplicates)
 - [Find unlinked files](/ja/FindUnlinkedFiles)
+- [Get BibTeX data from DOI](/ja/GetBibTeXDataFromDOI)
 - [グループ](/ja/Groups)
 - [項目の標識付け](/ja/Marking)
 - [Merge entries](/ja/MergeEntries)
@@ -83,7 +94,7 @@ title: ヘルプ目次
 - [JabRefにおけるXMPメタデータ サポート](/ja/XMP)
 
 
-## ウェブから項目を取得するには
+## ウェブから項目を取得する
 
 
 ### ... 刊行識別子を使用して
@@ -91,7 +102,7 @@ title: ヘルプ目次
 - [ISBN番号を使用して項目を取得するには](/ja/ISBNtoBibTeX)
 
 
-### ...オンライン書誌データベースを使用して
+### ... オンライン書誌データベースを使用して
 - [ACM Portalから項目を取得するには](/ja/ACMPortal)
 - [ADSから項目を取得するには](/ja/ADS)
 - [CiteSeerXから項目を取得するには](/ja/CiteSeer)
@@ -103,11 +114,17 @@ title: ヘルプ目次
 - [IEEEXploreから項目を取得するには](/ja/IEEEXplore)
 - [INSPIRE-HEPから項目を取得するには](/ja/INSPIRE)
 - [MEDLINEから項目を取得するには](/ja/Medline)
-- [ScienceDirect 検索](/ja/ScienceDirect)
 - [Springerから項目を取得するには](/ja/Springer)
 - [arXivから項目を取得するには](/ja/arXiv)
 
 
 
+## Contributing
+- [Translating the JabRef Interface](/ja/TranslatingGUI)
+
+
 ## その他
+- [License](/ja/License)
 - [更新履歴](/ja/RevisionHistory)
+
+

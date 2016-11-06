@@ -1,6 +1,5 @@
 ---
 title: 「owner」フィールド
-helpCategories: ["フィールド"]
 ---
 
 # 「owner」フィールド

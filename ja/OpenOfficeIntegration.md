@@ -1,6 +1,5 @@
 ---
 title: OpenOffice.org / LibreOffice の統合
-helpCategories: ["読み込み/書き出し"]
 ---
 
 # OpenOffice.org / LibreOffice の統合

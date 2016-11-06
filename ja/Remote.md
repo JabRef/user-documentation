@@ -1,6 +1,5 @@
 ---
 title: リモート操作
-helpCategories: ["一般"]
 ---
 
 # リモート操作

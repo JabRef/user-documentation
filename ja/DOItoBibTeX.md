@@ -1,6 +1,5 @@
 ---
 title: Digital Object Identifier (DOI)を使用して項目を取得するには
-helpCategories: ["ウェブから項目を取得するには", "... 刊行識別子を使用して"]
 ---
 
 # Digital Object Identifier (DOI)を使用して項目を取得するには

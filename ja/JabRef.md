@@ -1,6 +1,5 @@
 ---
 title: JabRef
-helpCategories: ["一般"]
 ---
 
 # JabRef

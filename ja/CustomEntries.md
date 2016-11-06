@@ -1,6 +1,5 @@
 ---
 title: 項目型の調整
-helpCategories: ["設定"]
 ---
 
 # 項目型の調整

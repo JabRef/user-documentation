@@ -1,6 +1,5 @@
 ---
 title: MS Office文献XML形式
-helpCategories: ["読み込み/書き出し"]
 ---
 
 # MS-OfficeとJabRefの間のフィールド・マッピング

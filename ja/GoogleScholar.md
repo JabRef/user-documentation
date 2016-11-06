@@ -1,6 +1,5 @@
 ---
 title: Google Scholarから項目を取得するには
-helpCategories: ["ウェブから項目を取得するには", "... オンライン書誌データベースを使用して"]
 ---
 
 # Google Scholarから項目を取得するには
