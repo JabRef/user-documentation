@@ -1,13 +1,10 @@
 ---
 title: Cleanup entries
 helpCategories: ["Finding, sorting and cleaning entries"]
+stub: true
 ---
 
 # Cleanup entries
-
-```
-NOTICE: This feature is not described with enough details. Please contribute by editing this help file.
-```
 
 JabRef can cleanup the entries of a database.
 
