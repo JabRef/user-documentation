@@ -136,6 +136,15 @@ Based on: <http://tecadmin.net/install-java-8-on-debian/>
 
 ### Windows and Oracle Java
 
+The "modern" way:
+
+1. Install chocolatey by following the steps described at https://chocolatey.org/install
+2. Execute `choco install jre8`
+
+At any time, you can update to the latest Java runtime environment by executing `choco upgrade all`.
+
+The "old" way:
+
 1. Download exe file from the [Java SE Development Kit 8 Downloads] site
 2. Run installation wizzard
 
