@@ -5,6 +5,16 @@ helpCategories: ["FAQ"]
 
 # JabRef and Windows
 
+## Q: I have issues with my high resolution display.
+
+You have to change the "compatibility settings" for JabRef to "Disable scaling for high DPI settings".
+Further information is available at https://www.microsoft.com/surface/en-us/support/apps-and-windows-store/app-display-issues?os=windows-10
+
+Further reading: https://github.com/JabRef/jabref/issues/415
+and
+http://discourse.jabref.org/t/jabref-3-6-on-hires-laptop-screen-messed-up/277.
+
+
 ## Q: How can I use JabRef as backend for Microsoft Word?
 
 A: You can directly use the references in Word's internal reference manager.
