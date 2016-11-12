@@ -1,6 +1,7 @@
 ---
 title: Searching
 helpCategories: ["Finding, sorting and cleaning entries"]
+since: 3.7
 ---
 
 # Searching
