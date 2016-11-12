@@ -30,3 +30,5 @@ Generally you are able to save a shared database after connecting to it. This fe
 
 By default this feature is disabled for local databases.
 It has to be kept apart from the [main backup functionality](Backup) as the backup is running continuously without users influence.
+
+By using the [gitignore.io](https://www.gitignore.io/) service, you can generate an appropriate `.gitignore` file by opening https://www.gitignore.io/api/jabref.
