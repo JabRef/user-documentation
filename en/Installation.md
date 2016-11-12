@@ -13,7 +13,7 @@ On Windows, the installer automatically downloads the OracleJDK (i.e. Java).
 You can also install it manually as described here.
 
 The installation steps are written having the [JavaFX development branch](https://builds.jabref.org/javafx/) in mind.
-Thus, it especially describes installing JavaFX.
+Thus, it especially describes installing [JavaFX].
 
 ## Supported JDKs and JREs
 
@@ -33,7 +33,7 @@ In case you already have a Java version installed - or you closely followed the 
 
 `java -version`
 
-It is possible having multiple Java version at the same time.
+It is possible having multiple Java versions at the same time.
 Set your preferred Java version on Linux distributions using the following command:
 
 `sudo update-alternatives --config java`
@@ -41,7 +41,6 @@ Set your preferred Java version on Linux distributions using the following comma
 and choose it by typing the number matching the Java version.
 
 Your Java version should look like this, depending on your operating system and JDK/JRE:
-
 
 **Oracle Java 32-Bit:**
 
@@ -65,7 +64,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.x, mixed mode)
 
 ```
 OpenJDK version "1.8.0_x" 
-OpenJDK Runtime Environment (build 1.8.0\_x)
+OpenJDK Runtime Environment (build 1.8.0_x)
 OpenJDK Client VM (build 25.x, mixed mode)
 ```
 
@@ -78,9 +77,11 @@ OpenJDK Runtime Environment (build 1.8.0_x)
 OpenJDK 64-Bit Server VM (build 25.x, mixed mode)
 ```
 
+If this does not report to be a product from Oracle (for instance tells you that it is a GCJ VM) even if you have installed the Oracle JVM then you need to change your setup.
+In the following, the installation is documented for Ubuntu, Debian, Fedora, CentOS, Windows, and MacOSX.
+
 
 ## Installation Commands
-
 
 ### Ubuntu and Oracle Java
 
@@ -155,3 +156,4 @@ The "old" way:
 2. Run installation wizzard
 
  [Java SE Development Kit 8 Downloads]: http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+ [JavaFX]: https://en.wikipedia.org/wiki/JavaFX
