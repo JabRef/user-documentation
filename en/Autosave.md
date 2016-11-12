@@ -20,7 +20,7 @@ You can activate the autosave feature through **Options -&gt; Preferences**, and
 
 ## Autosave for local databases
 
-If you are working on **.bib** files which are located on your file system, the feature will detect your changes automatically and save them without further intervention.
+If you are working on `.bib` files which are located on your file system, the feature will detect your changes automatically and save them without further intervention.
 
 ## Autosave for shared databases
 
