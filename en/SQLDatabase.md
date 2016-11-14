@@ -1,6 +1,7 @@
 ---
 title: Shared SQL Database
 helpCategories: ["Collaborative work"]
+since: 3.6
 ---
 
 # Shared SQL Database
