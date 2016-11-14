@@ -63,9 +63,9 @@ users will only be able to save the database after any external changes have bee
 
 Field formatting can be tidied up when saving the database. That ensures your entries to have consistent formatting.
 If you check **Enable save actions**, the list of actions can be configured.
-Each action is defined by:
-- an entry field (upon which the action will be applied).
-- the type of action to be carried out (such as *HTML to LaTeX*, which converts HTML code to LaTeX code, as described in the window).
+
+For more information see [SaveActions].
+
 
 ## Shared SQL database
 

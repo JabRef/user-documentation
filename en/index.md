@@ -58,6 +58,7 @@ title: Help contents
 - [Mark entries](/en/Marking)
 - [Merge entries](/en/MergeEntries)
 - [Replace string](/en/ReplaceString)
+- [Save actions](/en/SaveActions)
 - [Searching](/en/Search)
 - [Synchronize file links](/en/SynchroFileLinks)
 
