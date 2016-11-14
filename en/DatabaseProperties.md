@@ -64,7 +64,7 @@ users will only be able to save the database after any external changes have bee
 Field formatting can be tidied up when saving the database. That ensures your entries to have consistent formatting.
 If you check **Enable save actions**, the list of actions can be configured.
 
-For more information see [SaveActions].
+For more information see [Save Actions](Save Actions).
 
 
 ## Shared SQL database
