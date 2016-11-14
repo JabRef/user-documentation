@@ -26,6 +26,7 @@ title: Help contents
 
 ## General
 - [Autosave](/it/Autosave)
+- [Backup](/it/Backup)
 - [The JabRef main window](/it/BaseFrame)
 - [Best Practices](/it/BestPractices)
 - [Command line use and options](/it/CommandLine)
@@ -58,6 +59,7 @@ title: Help contents
 - [Mark entries](/it/Marking)
 - [Merge entries](/it/MergeEntries)
 - [Replace string](/it/ReplaceString)
+- [Save actions](/it/SaveActions)
 - [Searching](/it/Search)
 - [Synchronize file links](/it/SynchroFileLinks)
 

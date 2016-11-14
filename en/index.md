@@ -26,6 +26,7 @@ title: Help contents
 
 ## General
 - [Autosave](/en/Autosave)
+- [Backup](/en/Backup)
 - [The JabRef main window](/en/BaseFrame)
 - [Best Practices](/en/BestPractices)
 - [Command line use and options](/en/CommandLine)

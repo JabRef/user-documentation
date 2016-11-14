@@ -26,6 +26,7 @@ title: ヘルプ目次
 
 ## 一般
 - [自動保存](/ja/Autosave)
+- [Backup](/ja/Backup)
 - [JabRef 基本ウィンドウ](/ja/BaseFrame)
 - [ベスト・プラクティス](/ja/BestPractices)
 - [コマンドラインの使用法とオプション](/ja/CommandLine)
@@ -58,6 +59,7 @@ title: ヘルプ目次
 - [項目の標識付け](/ja/Marking)
 - [Merge entries](/ja/MergeEntries)
 - [Replace string](/ja/ReplaceString)
+- [Save actions](/ja/SaveActions)
 - [検索](/ja/Search)
 - [Synchronize file links](/ja/SynchroFileLinks)
 

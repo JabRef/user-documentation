@@ -26,6 +26,7 @@ title: Daftar Isi Bantuan
 
 ## Umum
 - [Menyimpan otomatis](/in/Autosave)
+- [Backup](/in/Backup)
 - [Jendela utama JabRef](/in/BaseFrame)
 - [Best Practices](/in/BestPractices)
 - [Command line use and options](/in/CommandLine)
@@ -58,6 +59,7 @@ title: Daftar Isi Bantuan
 - [Menandai entri](/in/Marking)
 - [Merge entries](/in/MergeEntries)
 - [Replace string](/in/ReplaceString)
+- [Save actions](/in/SaveActions)
 - [Pencarian](/in/Search)
 - [Synchronize file links](/in/SynchroFileLinks)
 

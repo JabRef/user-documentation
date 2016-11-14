@@ -26,6 +26,7 @@ title: Contenu de l’aide
 
 ## Général
 - [Sauvegarde automatique](/fr/Autosave)
+- [Backup](/fr/Backup)
 - [La fenêtre principale de JabRef](/fr/BaseFrame)
 - [Best Practices](/fr/BestPractices)
 - [Les options de la ligne de commande](/fr/CommandLine)
@@ -58,6 +59,7 @@ title: Contenu de l’aide
 - [Etiqueter les entrées](/fr/Marking)
 - [Merge entries](/fr/MergeEntries)
 - [Replace string](/fr/ReplaceString)
+- [Save actions](/fr/SaveActions)
 - [Recherche](/fr/Search)
 - [Synchronize file links](/fr/SynchroFileLinks)
 
