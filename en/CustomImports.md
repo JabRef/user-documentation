@@ -30,33 +30,44 @@ Let us assume that we want to import files of the following form:
 In your favorite IDE or text editor create a class derived from `ImportFormat` that implements methods `getFormatName()`, `isRecognizedFormat` and `importEntries()`. Here is an example:
 
 ``` java
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
-import net.sf.jabref.importer.ImportFormatReader;
-import net.sf.jabref.importer.OutputPrinter;
-import net.sf.jabref.importer.fileformat.ImportFormat;
+import net.sf.jabref.logic.importer.Importer;
+import net.sf.jabref.logic.importer.ParserResult;
+import net.sf.jabref.logic.util.FileExtensions;
 import net.sf.jabref.model.entry.BibEntry;
 import net.sf.jabref.model.entry.BibtexEntryTypes;
 
-public class SimpleCSVImporter extends ImportFormat {
+public class SimpleCSVImporter extends Importer {
 
     @Override
-    public String getFormatName() {
+    public String getName() {
         return "Simple CSV Importer";
     }
 
     @Override
-    public boolean isRecognizedFormat(InputStream stream) throws IOException {
+    public FileExtensions getExtensions() {
+        return FileExtensions.TXT;
+    }
+
+    @Override
+    public String getDescription() {
+        return "Imports CSV files, where every field is separated by a semicolon.";
+    }
+
+    @Override
+    public boolean isRecognizedFormat(BufferedReader reader) {
         return true; // this is discouraged except for demonstration purposes
     }
 
     @Override
-    public List<BibEntry> importEntries(InputStream stream, OutputPrinter printer) throws IOException {
+    public ParserResult importDatabase(BufferedReader input) throws IOException {
         List<BibEntry> bibitems = new ArrayList<>();
-        BufferedReader in = new BufferedReader(ImportFormatReader.getReaderDefaultEncoding(stream));
 
-        String line = in.readLine();
+        String line = input.readLine();
         while (line != null) {
             if (!line.trim().isEmpty()) {
                 String[] fields = line.split(";");
@@ -66,10 +77,10 @@ public class SimpleCSVImporter extends ImportFormat {
                 be.setField("author", fields[1]);
                 be.setField("title", fields[2]);
                 bibitems.add(be);
-                line = in.readLine();
-            }   
+                line = input.readLine();
+            }
         }
-        return bibitems;
+        return new ParserResult(bibitems);
     }
 }
 ```
