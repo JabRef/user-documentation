@@ -31,3 +31,8 @@ A: Donations keeps us going! You can use Paypal, Flattr, or bank transfers.
 Your institution/company can contribute too, through bank transfer for example.
 All details are provided at <https://donations.jabref.or>.
 
+Our team consists of volunteers.
+To provide better support, we are currently trying to get a funded developer on board.
+Please consider supporting this:
+
+[![Support](https://supporterhq.com/api/b/8rzilokn64agwryeus1y17b0r)](https://supporterhq.com/give/8rzilokn64agwryeus1y17b0r)
