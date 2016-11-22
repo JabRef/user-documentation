@@ -45,6 +45,8 @@ When saving the database, the order of the entries will be preserved if **Save e
 Alternatively, by selecting **Save entries ordered as specified**, you can choose to sort the entries using three criteria.
 For each criterion, you can type-in the field to be used and select the order.
 
+*Note: Entries containing a `crossref` field will always be placed prior to the other entries. This is a necessary preliminary for BibTeX to be able to determine the correct referenced values. (See: [Tame the BeaST](http://ctan.org/pkg/tamethebeast), p. 26)*
+
 
 ## Database protection
 
