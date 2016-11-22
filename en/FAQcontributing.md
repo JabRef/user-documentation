@@ -35,4 +35,4 @@ Our team consists of volunteers.
 To provide better support, we are currently trying to get a funded developer on board.
 Please consider supporting this:
 
-[![Support](https://supporterhq.com/api/b/8rzilokn64agwryeus1y17b0r)](https://supporterhq.com/give/8rzilokn64agwryeus1y17b0r)
+[![Support](https://supporterhq.com/api/b/8rzilokn64agwryeus1y17b0r/JabRef)](https://supporterhq.com/support/8rzilokn64agwryeus1y17b0r/JabRef)
