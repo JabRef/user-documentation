@@ -1,6 +1,7 @@
 ---
 title: Fetching entries from DiVA
 helpCategories: ["Fetching entries from the web", "... using online bibliographic database"]
+outdated: true
 ---
 
 # Fetching entries from DiVA
