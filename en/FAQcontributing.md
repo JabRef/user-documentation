@@ -5,29 +5,42 @@ helpCategories: ["FAQ"]
 
 # Contributing
 
-## I am a programmer. How can I join the JabRef project?
+## I am not a programmer
 
-We follow the usual GitHub pull request approach.
-We have a lot of [open issues](https://github.com/JabRef/jabref/issues).
-If you want to be sure to work on something the core developers currently do not handle, check the [issues tagged with asking-for-a-pull-request](https://github.com/JabRef/jabref/labels/asking-for-a-pull-request).
-See our [CONTRIBUTING.md](https://github.com/JabRef/jabref/blob/master/CONTRIBUTING.md) for detailed information and further links.
 
-## I am a programmer and want to learn about code quality.
-
-Please head to [codecov](https://codecov.io/github/JabRef/jabref) to see current code coverage and where to improve our tests.
-You can head to [codacy](https://www.codacy.com/app/simonharrer/jabref/dashboard) to learn about one analysis of JabRef's code quality.
-
-## I would like to improve the help page. What are the steps?
+### I would like to improve the help page. What are the steps?
 
 Please follow our [CONTRIBUTING.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/CONTRIBUTING.md) file.
 
-## I would like to help translating JabRef to another language. How do I get started?
 
-A: We encourage you to read about [translating JabRef](TranslatingGUI).
+### I would like to help translating JabRef to another language. How do I get started?
 
-## Can I make a donation? How?
+We encourage you to read about [translating JabRef](TranslatingGUI).
 
-A: Donations keeps us going! You can use Paypal, Flattr, or bank transfers.
+
+### I want to keep Wikipedia pages up-to-date
+
+JabRef improves -- and Wikipedia pages should keep up!
+
+Simply click on "Edit" (top right-hand tab).
+
+Currently existing pages are:
+
+- Deutsch: https://de.wikipedia.org/wiki/JabRef
+- English: https://en.wikipedia.org/wiki/JabRef
+- Español: https://es.wikipedia.org/wiki/JabRef
+- Français: https://fr.wikipedia.org/wiki/JabRef
+- Русский: https://ru.wikipedia.org/wiki/JabRef
+- Svenska: https://sv.wikipedia.org/wiki/JabRef
+- Українська: https://uk.wikipedia.org/wiki/JabRef
+- 中文: https://zh.wikipedia.org/wiki/JabRef
+
+If there is no page for you own language, you can easily create one.
+
+
+### Can I make a donation? How?
+
+Donations keeps us going! You can use Paypal, Flattr, or bank transfers.
 Your institution/company can contribute too, through bank transfer for example.
 All details are provided at <https://donations.jabref.or>.
 
@@ -36,3 +49,20 @@ To provide better support, we are currently trying to get a funded developer on 
 Please consider supporting this:
 
 [![Support](https://supporterhq.com/api/b/8rzilokn64agwryeus1y17b0r/JabRef)](https://supporterhq.com/support/8rzilokn64agwryeus1y17b0r/JabRef)
+
+
+## I am a programmer
+
+
+### I want to learn about code quality
+
+Please head to [codecov](https://codecov.io/github/JabRef/jabref) to see current code coverage and where to improve our tests.
+You can head to [codacy](https://www.codacy.com/app/simonharrer/jabref/dashboard) to learn about one analysis of JabRef's code quality.
+
+
+### How can I join the JabRef project?
+
+We follow the usual GitHub pull request approach.
+We have a lot of [open issues](https://github.com/JabRef/jabref/issues).
+If you want to be sure to work on something the core developers currently do not handle, check the [issues tagged with asking-for-a-pull-request](https://github.com/JabRef/jabref/labels/asking-for-a-pull-request).
+See our [CONTRIBUTING.md](https://github.com/JabRef/jabref/blob/master/CONTRIBUTING.md) for detailed information and further links.
