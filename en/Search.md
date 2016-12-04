@@ -160,9 +160,9 @@ matches *modeling* and *modelling*.
 `abstract = modell?ing`
 also matches *modeling* and *modelling*.
 
-##### Searching for strings with a special character ( ()[]{}\^-=$!|?&ast;+. )
+##### Searching for strings with a special character (`()[]{}\^-=$!|?*+.`)
 
-If a special character (i.e. ( ) [ ] { } \ ^ - = $ ! | ? &ast; + . ) is included in your search string, it has to be escaped with a backslash, such as `\}` for *}*.
+If a special character (i.e. `(` `)` `[` `]` `{` `}` `\` `^` `-` `=` `$` `!` `|` `?` `*` `+` `.` ) is included in your search string, it has to be escaped with a backslash, such as `\}` for `}`.
 
 It means that to search for a string including a backslash, two consecutive backslaskes (`\\`) have to be used:
 `abstract = xori{\\c{c}}o` matches *xoriço*.
