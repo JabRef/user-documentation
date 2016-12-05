@@ -1,6 +1,7 @@
 ---
 title: Creating entries using the Digital Object Identifier (DOI)
 helpCategories: ["Fetching entries from the web", "... using publication identifiers"]
+Since: 3.6
 ---
 
 # Creating entries using the Digital Object Identifier (DOI)
@@ -15,4 +16,4 @@ Then, <http://dx.doi.org/> (provided by <http://crossref.org/>) is used to conve
 The found entry is opened in an entry editor.
 In case an error occurs, a popup is shown.
 
-![Screenshot of new entry dialog](./images/NewEntryChooseType.png)
+![Screenshot of new entry dialog](./images/NewEntryChooseType-IDGeneratorHighlighted.png)
