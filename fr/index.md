@@ -101,6 +101,7 @@ title: Contenu de l’aide
 
 ### ... en utilisant des identifiants de publication
 - [Récupération d'entrées en utilisant l'identifiant d'objet numérique (DOI)](/fr/DOItoBibTeX)
+- [Récupération d'entrées en utilisant DiVA](/fr/DiVAtoBibTeX)
 - [Récupération d'entrées à partir du numéro ISBN](/fr/ISBNtoBibTeX)
 
 
@@ -110,7 +111,6 @@ title: Contenu de l’aide
 - [Récupération d'entrées depuis CiteSeerX](/fr/CiteSeer)
 - [Fetching entries from DBLP](/fr/DBLP)
 - [Fetching entries from DOAJ](/fr/DOAJ)
-- [Récupération d'entrées en utilisant DiVA](/fr/DiVAtoBibTeX)
 - [Fetching entries from GVK](/fr/GVK)
 - [Recherche Google Scholar](/fr/GoogleScholar)
 - [Recherche IEEEXplore](/fr/IEEEXplore)

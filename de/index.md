@@ -100,8 +100,9 @@ title: Hilfe - Inhalt
 
 
 ### ... über Veröffentlichungskennung
-- [Fetching entries using the Digital Object Identifier (DOI)](/de/DOItoBibTeX)
-- [Fetching entries using the ISBN number](/de/ISBNtoBibTeX)
+- [Creating entries using the Digital Object Identifier (DOI)](/de/DOItoBibTeX)
+- [Creating entries from DiVA](/de/DiVAtoBibTeX)
+- [Creating entries using an ISBN number](/de/ISBNtoBibTeX)
 
 
 ### ... über Online-Datenbanken
@@ -110,7 +111,6 @@ title: Hilfe - Inhalt
 - [CiteSeer-Import](/de/CiteSeer)
 - [Fetching entries from DBLP](/de/DBLP)
 - [Fetching entries from DOAJ](/de/DOAJ)
-- [Fetching entries from DiVA](/de/DiVAtoBibTeX)
 - [Fetching entries from GVK](/de/GVK)
 - [Fetching entries from Google Scholar](/de/GoogleScholar)
 - [IEEEXplore durchsuchen](/de/IEEEXplore)
@@ -121,7 +121,7 @@ title: Hilfe - Inhalt
 
 
 
-## Contributing
+## Beitragen
 - [Translating the JabRef Interface](/de/TranslatingGUI)
 
 

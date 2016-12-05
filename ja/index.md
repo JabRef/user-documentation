@@ -101,6 +101,7 @@ title: ヘルプ目次
 
 ### ... 刊行識別子を使用して
 - [Digital Object Identifier (DOI)を使用して項目を取得するには](/ja/DOItoBibTeX)
+- [DiVAから項目を取得するには](/ja/DiVAtoBibTeX)
 - [ISBN番号を使用して項目を取得するには](/ja/ISBNtoBibTeX)
 
 
@@ -110,7 +111,6 @@ title: ヘルプ目次
 - [CiteSeerXから項目を取得するには](/ja/CiteSeer)
 - [DBLPから項目を取得するには](/ja/DBLP)
 - [DOAJから項目を取得するには](/ja/DOAJ)
-- [DiVAから項目を取得するには](/ja/DiVAtoBibTeX)
 - [GVKから項目を取得するには](/ja/GVK)
 - [Google Scholarから項目を取得するには](/ja/GoogleScholar)
 - [IEEEXploreから項目を取得するには](/ja/IEEEXplore)

@@ -100,8 +100,9 @@ title: Daftar Isi Bantuan
 
 
 ### ... using publication identifiers
-- [Fetching entries using the Digital Object Identifier (DOI)](/in/DOItoBibTeX)
-- [Fetching entries using the ISBN number](/in/ISBNtoBibTeX)
+- [Creating entries using the Digital Object Identifier (DOI)](/in/DOItoBibTeX)
+- [Creating entries from DiVA](/in/DiVAtoBibTeX)
+- [Creating entries using an ISBN number](/in/ISBNtoBibTeX)
 
 
 ### ... using online bibliographic database
@@ -110,7 +111,6 @@ title: Daftar Isi Bantuan
 - [Impor entri dari CiteSeer](/in/CiteSeer)
 - [Fetching entries from DBLP](/in/DBLP)
 - [Fetching entries from DOAJ](/in/DOAJ)
-- [Fetching entries from DiVA](/in/DiVAtoBibTeX)
 - [Fetching entries from GVK](/in/GVK)
 - [Fetching entries from Google Scholar](/in/GoogleScholar)
 - [Pencarian IEEEXplore](/in/IEEEXplore)

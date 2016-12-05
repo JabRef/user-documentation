@@ -4,7 +4,7 @@
   "Help contents": "Hilfe - Inhalt",
   "You can't find a solution to your problem? You still have questions?": "Keine Lösung gefunden? Es sind immer noch Fragen offen?",
   "Use the online forum to get more support!": "Im (englischsprachigen) Onlineforum gibt es weitere Hilfe",
-  "FAQ": "",
+  "FAQ": "FAQ",
   "General": "Allgemeines",
   "Fields": "Felder",
   "Finding, sorting and cleaning entries": "Einträge finden und sortieren",
@@ -14,6 +14,6 @@
   "Fetching entries from the web": "Einträge aus dem Internet abrufen",
   "... using publication identifiers": "... über Veröffentlichungskennung",
   "... using online bibliographic database": "... über Online-Datenbanken",
-  "Contributing": "",
+  "Contributing": "Beitragen",
   "Miscellaneous": "Verschiedenes"
 }

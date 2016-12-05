@@ -100,8 +100,9 @@ title: Help contents
 
 
 ### ... using publication identifiers
-- [Fetching entries using the Digital Object Identifier (DOI)](/en/DOItoBibTeX)
-- [Fetching entries using the ISBN number](/en/ISBNtoBibTeX)
+- [Creating entries using the Digital Object Identifier (DOI)](/en/DOItoBibTeX)
+- [Creating entries from DiVA](/en/DiVAtoBibTeX)
+- [Creating entries using an ISBN number](/en/ISBNtoBibTeX)
 
 
 ### ... using online bibliographic database
@@ -110,7 +111,6 @@ title: Help contents
 - [Fetching entries from CiteSeerX](/en/CiteSeer)
 - [Fetching entries from DBLP](/en/DBLP)
 - [Fetching entries from DOAJ](/en/DOAJ)
-- [Fetching entries from DiVA](/en/DiVAtoBibTeX)
 - [Fetching entries from GVK](/en/GVK)
 - [Fetching entries from Google Scholar](/en/GoogleScholar)
 - [Fetching entries from IEEEXplore](/en/IEEEXplore)
