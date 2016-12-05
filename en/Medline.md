@@ -15,14 +15,15 @@ There are two ways of specifying which entries to download:
 1.  Enter one or more MEDLINE IDs (separated by comma/semicolon) in the text field.
 2.  Enter a set of names and/or words to search for. You can use the operators *and* and *or* and parentheses to refine your search expression. See [MEDLINE/OVID operators](http://www.ovid.com/site/products/ovidguide/medline.htm) for full description.
   Examples:
-    -  May \[au\] AND Anderson \[au\]
-    -  Anderson RM \[au\] HIV \[ti\]
-    -  Valleron \[au\] 1988:2000\[dp\] HIV \[ti\]
-    -  Valleron \[au\] AND 1987:2000\[dp\] AND (AIDS \[ti\] OR HIV\[ti\])
-    -  Anderson \[au\] AND Nature \[ta\]
-    -  Population \[ta\]
+    -  `May \[au\] AND Anderson \[au\]`
+    -  `Anderson RM \[au\] HIV \[ti\]`
+    -  `Valleron \[au\] 1988:2000\[dp\] HIV \[ti\]`
+    -  `Valleron \[au\] AND 1987:2000\[dp\] AND (AIDS \[ti\] OR HIV\[ti\])`
+    -  `Anderson \[au\] AND Nature \[ta\]`
+    -  `Population \[ta\]`
 
-In both cases, press <kdb>RETURN</kdb> or the **Fetch** button. If you use a text search, you will be prompted with the number of entries found, and given a choice of how many to download.
+In both cases, press <kdb>Return</kdb> or the **Fetch** button.
+If you use a text search, you will be prompted with the number of entries found, and given a choice of how many to download.
 
 Then, the results are displayed in the [import inspection window](ImportInspectionDialog).
 In case an error occurs, it is shown in a popup.
