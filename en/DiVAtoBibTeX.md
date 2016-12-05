@@ -1,6 +1,6 @@
 ---
 title: Creating entries from DiVA
-helpCategories: ["Fetching entries from the web", "... using online bibliographic database"]
+helpCategories: ["Fetching entries from the web", "... using publication identifiers"]
 since: 3.6
 ---
 
