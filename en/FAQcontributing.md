@@ -38,11 +38,16 @@ Currently existing pages are:
 If there is no page for you own language, you can easily create one.
 
 
+### I have some cool feature requests
+
+[Come discuss about it!](http://discourse.jabref.org/)
+
+
 ### Can I make a donation? How?
 
 Donations keeps us going! You can use Paypal, Flattr, or bank transfers.
 Your institution/company can contribute too, through bank transfer for example.
-All details are provided at <https://donations.jabref.or>.
+All details are provided at <https://donations.jabref.org>.
 
 Our team consists of volunteers.
 To provide better support, we are currently trying to get a funded developer on board.
@@ -60,9 +65,13 @@ Please head to [codecov](https://codecov.io/github/JabRef/jabref) to see current
 You can head to [codacy](https://www.codacy.com/app/simonharrer/jabref/dashboard) to learn about one analysis of JabRef's code quality.
 
 
-### How can I join the JabRef project?
+### I want to start with something easy
 
-We follow the usual GitHub pull request approach.
-We have a lot of [open issues](https://github.com/JabRef/jabref/issues).
-If you want to be sure to work on something the core developers currently do not handle, check the [issues tagged with asking-for-a-pull-request](https://github.com/JabRef/jabref/labels/asking-for-a-pull-request).
-See our [CONTRIBUTING.md](https://github.com/JabRef/jabref/blob/master/CONTRIBUTING.md) for detailed information and further links.
+We collect small issues at <https://github.com/koppor/jabref/issues>.
+You can read up there to find something easy to start with.
+Then, check our [CONTRIBUTING.md](https://github.com/JabRef/jabref/blob/master/CONTRIBUTING.md) for detailed information and further links.
+
+
+### I want something with huge impact
+
+Then, the [issues intended for external contributions](https://github.com/JabRef/jabref/labels/asking-for-a-pull-request) are the right place to look at.
