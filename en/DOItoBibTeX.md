@@ -1,7 +1,7 @@
 ---
 title: Creating entries using the Digital Object Identifier (DOI)
 helpCategories: ["Fetching entries from the web", "... using publication identifiers"]
-since: 3.6
+since: 3.7
 ---
 
 # Creating entries using the Digital Object Identifier (DOI)
