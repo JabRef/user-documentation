@@ -100,14 +100,16 @@ title: Daftar Isi Bantuan
 
 
 ### ... using publication identifiers
+- [Creating entries from SAO/NASA Astrophysics Data System](/in/ADStoBibTeX)
 - [Creating entries using the Digital Object Identifier (DOI)](/in/DOItoBibTeX)
 - [Creating entries from DiVA](/in/DiVAtoBibTeX)
 - [Creating entries using an ISBN number](/in/ISBNtoBibTeX)
+- [Creating entries from Medline](/in/MedlinetoBibTeX)
 
 
 ### ... using online bibliographic database
 - [Pencarian melalui Portal ACM](/in/ACMPortal)
-- [Fetching entries from ADS](/in/ADS)
+- [Fetching entries from SAO/NASA Astrophysics Data System](/in/ADS)
 - [Impor entri dari CiteSeer](/in/CiteSeer)
 - [Fetching entries from DBLP](/in/DBLP)
 - [Fetching entries from DOAJ](/in/DOAJ)
@@ -115,9 +117,11 @@ title: Daftar Isi Bantuan
 - [Fetching entries from Google Scholar](/in/GoogleScholar)
 - [Pencarian IEEEXplore](/in/IEEEXplore)
 - [Pencarian INSPIRE](/in/INSPIRE)
+- [Fetching entries from MathSciNet](/in/MathSciNet)
 - [Mengambil entri dari Medline](/in/Medline)
 - [Fetching entries from Springer](/in/Springer)
 - [Fetching entries from arXiv](/in/arXiv)
+- [Fetching entries from zbMATH](/in/zbMATH)
 
 
 

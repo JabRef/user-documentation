@@ -100,14 +100,16 @@ title: Contenu de l’aide
 
 
 ### ... en utilisant des identifiants de publication
+- [Creating entries from SAO/NASA Astrophysics Data System](/fr/ADStoBibTeX)
 - [Récupération d'entrées en utilisant l'identifiant d'objet numérique (DOI)](/fr/DOItoBibTeX)
 - [Récupération d'entrées en utilisant DiVA](/fr/DiVAtoBibTeX)
 - [Récupération d'entrées à partir du numéro ISBN](/fr/ISBNtoBibTeX)
+- [Creating entries from Medline](/fr/MedlinetoBibTeX)
 
 
 ### ... en utilisant une base de données bibliographique en ligne
 - [Récupération d'entrées depuis le portail *ACM*](/fr/ACMPortal)
-- [Fetching entries from ADS](/fr/ADS)
+- [Fetching entries from SAO/NASA Astrophysics Data System](/fr/ADS)
 - [Récupération d'entrées depuis CiteSeerX](/fr/CiteSeer)
 - [Fetching entries from DBLP](/fr/DBLP)
 - [Fetching entries from DOAJ](/fr/DOAJ)
@@ -115,9 +117,11 @@ title: Contenu de l’aide
 - [Recherche Google Scholar](/fr/GoogleScholar)
 - [Recherche IEEEXplore](/fr/IEEEXplore)
 - [Recherche INSPIRE](/fr/INSPIRE)
+- [Fetching entries from MathSciNet](/fr/MathSciNet)
 - [Récupération d'entrées depuis Medline](/fr/Medline)
 - [Fetching entries from Springer](/fr/Springer)
 - [Fetching entries from arXiv](/fr/arXiv)
+- [Fetching entries from zbMATH](/fr/zbMATH)
 
 
 

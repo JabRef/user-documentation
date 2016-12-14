@@ -100,14 +100,16 @@ title: Help contents
 
 
 ### ... using publication identifiers
+- [Creating entries from SAO/NASA Astrophysics Data System](/it/ADStoBibTeX)
 - [Creating entries using the Digital Object Identifier (DOI)](/it/DOItoBibTeX)
 - [Creating entries from DiVA](/it/DiVAtoBibTeX)
 - [Creating entries using an ISBN number](/it/ISBNtoBibTeX)
+- [Creating entries from Medline](/it/MedlinetoBibTeX)
 
 
 ### ... using online bibliographic database
 - [Fetching entries from ACM Portal](/it/ACMPortal)
-- [Fetching entries from ADS](/it/ADS)
+- [Fetching entries from SAO/NASA Astrophysics Data System](/it/ADS)
 - [Fetching entries from CiteSeerX](/it/CiteSeer)
 - [Fetching entries from DBLP](/it/DBLP)
 - [Fetching entries from DOAJ](/it/DOAJ)
@@ -115,9 +117,11 @@ title: Help contents
 - [Fetching entries from Google Scholar](/it/GoogleScholar)
 - [Fetching entries from IEEEXplore](/it/IEEEXplore)
 - [Fetching entries from INSPIRE-HEP](/it/INSPIRE)
+- [Fetching entries from MathSciNet](/it/MathSciNet)
 - [Fetching entries from MEDLINE](/it/Medline)
 - [Fetching entries from Springer](/it/Springer)
 - [Fetching entries from arXiv](/it/arXiv)
+- [Fetching entries from zbMATH](/it/zbMATH)
 
 
 
