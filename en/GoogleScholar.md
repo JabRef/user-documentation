@@ -10,7 +10,7 @@ helpCategories: ["Fetching entries from the web", "... using online bibliographi
 
 ## Usage
 
-To fetch entries from Google Scholar, choose **Search -&gt; Web search**, and the search interface will appear in the side pane. Select **Google Scholar** in the dropdown menu. To start a search, enter the words of your query, and press <kdb>RETURN</kdb> or the **Fetch** button.
+To fetch entries from Google Scholar, choose **Search -&gt; Web search**, and the search interface will appear in the side pane. Select **Google Scholar** in the dropdown menu. To start a search, enter the words of your query, and press <kbd>Enter</kbd> or the **Fetch** button.
 
 ## Traffic limitations
 

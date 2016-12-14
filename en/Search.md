@@ -13,9 +13,9 @@ The search bar is located between the icon bar and the database tabs.
 To make the cursor jump to the search field, you can:
 - click in the search field.
 - select the menu **Search -&gt; Search**.
-- press <kbd>CTRL</kbd> + <kbd>F</kbd>.
+- press <kbd>Ctrl</kbd> + <kbd>F</kbd>.
 
-Additionally, <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>F</kbd> also activates the global search setting.
+Additionally, <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd> also activates the global search setting.
 
 
 Searching includes two modes (normal and advanced), along with several settings.
@@ -59,7 +59,7 @@ Only entries containing all words will be considered matches.
 To search for sequences of words, enclose the sequences in double quotes.
 For instance, the query **progress "marine aquaculture"** will match entries containing both the word "progress" and the phrase "marine aquaculture".
 All entries that don't match are hidden, leaving for display the matching entries only (filter mode), or are grayed-out (float mode).
-To stop displaying the search results, just clear the search field again, press <kbd>ESC</kbd> or click on the "Clear" (`X`) button.
+To stop displaying the search results, just clear the search field again, press <kbd>Esc</kbd> or click on the "Clear" (`X`) button.
 
 ### <a href="" id="advanced"></a>Advanced search
 

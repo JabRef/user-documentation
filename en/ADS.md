@@ -11,7 +11,7 @@ Abstracts are available free online for almost all articles, and full scanned ar
 
 To fetch entries from SAO/NASA Astrophysics Data System, choose **Search -&gt; Web search**, and the search interface will appear in the side pane.
 Select **SAO/NASA Astrophysics Data System** in the dropdown menu.
-To start a search, enter the words of your query, and press <kdb>Enter</kdb> or the **Fetch** button.
+To start a search, enter the words of your query, and press <kbd>Enter</kbd> or the **Fetch** button.
 
 Then, the results are displayed in the [import inspection window](ImportInspectionDialog).
 In case an error occurs, it is shown in a popup.

@@ -5,7 +5,7 @@ helpCategories: ["Finding, sorting and cleaning entries"]
 
 # Mark entries
 
-You have the option of *marking* entries. Keyboard shortcuts are <kdb>CTRL</kdb>+<kdb>M</kdb> and <kdb>CTRL</kdb>+<kdb>SHIFT</kdb>+<kdb>M</kdb> to mark and unmark the selected entries, respectively, and you can also access these actions in the menu **Edit** or by right-clicking on the entry and selecting the relevant action.
+You have the option of *marking* entries. Keyboard shortcuts are <kbd>Ctrl</kbd> + <kbd>M</kbd> and <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>M</kbd> to mark and unmark the selected entries, respectively, and you can also access these actions in the menu **Edit** or by right-clicking on the entry and selecting the relevant action.
 
 Marking is not the same as selecting entries. Marked entries behave differently from other entries in two ways. First, they are always displayed with a different background color in the entry table. Second, they will float to the top of your entry list, as long as your table is not sorted according to groups.
 

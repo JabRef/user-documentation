@@ -7,7 +7,7 @@ helpCategories: ["Fetching entries from the web", "... using online bibliographi
 
 [GVK](https://gso.gbv.de), the GBV Union Catalogue, is a multimaterial bibliographic database of seven German federal states. It covers  41.5 million records of books, conference proceedings, periodicals, dissertations, microfilms and electronic resources.
 
-To fetch entries from GVK, choose **Search -&gt; Web search**, and the search interface will appear in the side pane. Select **GVK (Gemeinsamer Verbundkatalog)** in the dropdown menu. To start a search, enter the words of your query, and press <kdb>RETURN</kdb> or the **Fetch** button.
+To fetch entries from GVK, choose **Search -&gt; Web search**, and the search interface will appear in the side pane. Select **GVK (Gemeinsamer Verbundkatalog)** in the dropdown menu. To start a search, enter the words of your query, and press <kbd>Enter</kbd> or the **Fetch** button.
 
 The results are displayed in the [import inspection window](ImportInspectionDialog).
 In case an error occurs, it is shown in a popup.

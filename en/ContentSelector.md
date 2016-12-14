@@ -10,4 +10,4 @@ This feature allows you to store a selection of often-used words or phrases that
 
 The word selection is database-specific, and is saved along with your references in the .bib file.
 
-To add a new word, you can simply write it into the selector combo box and press <kdb>RETURN</kdb>. Using the *Manage* dialog you can also remove words that you have added.
+To add a new word, you can simply write it into the selector combo box and press <kbd>Enter</kbd>. Using the *Manage* dialog you can also remove words that you have added.
