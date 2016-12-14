@@ -31,3 +31,18 @@ In case an error occurs, it is shown in a popup.
 ## Using a Proxy Server
 
 If you need to use an HTTP proxy server, you can configure JabRef to use a proxy using the "Network" preferences (**Options -&gt; Preferences -&gt; Network**).
+
+## Mass downloading of articles
+
+JabRef is not intended to be a tool for mass download of citations.
+The purpose of the WebFetchers (such as the Medline Fetcher) is to simplify download of single, or at least few entries without using the browser. 
+That means, one tries to import the bibliographic information of already known publications in a simple way.
+
+However, it is still possible to import hundreds or even thousands of entries from medline using the export functionality of the database itself.
+Perfom the search query you like, and then choose the "Send to" -&gt; "File" export (choose Medline or XML as format):
+
+![medline-export](https://cloud.githubusercontent.com/assets/676652/21082470/83635c92-bfdc-11e6-9345-3dd2f356e18f.png)
+
+ The downloaded file can then be imported using JabRefs "File" -&gt; "Import into current/new database" feature.
+ Note: depending on the number the import might require some - or quite a lot of time.
+ It was tried in 2016 with an exported XML file of 130MB an over 11000 found entries, which required more than 10 minutes of import.
