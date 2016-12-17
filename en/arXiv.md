@@ -9,7 +9,7 @@ helpCategories: ["Fetching entries from the web", "... using online bibliographi
 
 
 To fetch entries from arXiv, choose **Search -&gt; Web search**, and the search interface will appear in the side pane. Select **ArXiv.org** in the dropdown menu.
-Enter the words of your query, and press <kdb>RETURN</kdb> or the **Fetch** button. 
+Enter the words of your query, and press <kbd>Enter</kbd> or the **Fetch** button.
 
 The results are displayed in the [import inspection window](ImportInspectionDialog).
 In case an error occurs, it is shown in a popup.

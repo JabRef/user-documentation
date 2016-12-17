@@ -11,7 +11,7 @@ since: 3.7
 
 To fetch entries from zbMATH, choose **Search -&gt; Web search**, and the search interface will appear in the side pane.
 Select **zbMATH** in the dropdown menu.
-To start a search, enter the words of your query, and press <kdb>Enter</kdb> or the **Fetch** button.
+To start a search, enter the words of your query, and press <kbd>Enter</kbd> or the **Fetch** button.
 
 Then, the results are displayed in the [import inspection window](ImportInspectionDialog).
 In case an error occurs, it is shown in a popup.

@@ -11,7 +11,7 @@ from articles, magazines and conference proceedings.
 - the **Guide to Computing Literature** that is a bibliographic collection from major publishers in computing with over one million entries.
 
 To fetch entries from ACM, choose **Search -&gt; Web search**, and the search interface will appear in the side pane. Select **ACM portal** in the dropdown menu. You may choose which database to search and you may opt to download the abstracts along with the cite information for each entry, by checking the **Include abstracts** checkbox.
-To start a search, enter the words of your query, and press <kdb>RETURN</kdb> or the **Fetch** button. 
+To start a search, enter the words of your query, and press <kbd>Enter</kbd> or the **Fetch** button.
 
 Frequent connections to ACM Portal may get your IP banned for hours. To avoid this, JabRef will for each search display a preview of the first page of entries returned by the server. You can then choose which entries to download.
 
