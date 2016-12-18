@@ -14,6 +14,10 @@ Yes, there is. See <http://askubuntu.com/a/721387/196423> for details.
 JabRef requires at least Java 8.
 Please follow the steps provided on our [installation page](Installation).
 
+You might see the error message `Error: Could not find or load main class net.sf.jabref.JabRefMain`.
+This means, you do not have [JavaFX](https://en.wikipedia.org/wiki/JavaFX) support activated in your Java runtime environment.
+This typically happens if you use [OpenJDK](http://openjdk.java.net/), where one needs to setup [OpenJFX](https://wiki.openjdk.java.net/display/OpenJFX/Main) seperately.
+
 ## I am on Debian/Ubuntu and clicking on the JabRef icon works, but I cannot start JabRef from the command line. What is wrong?
 
 You have several Java Virtual Machines installed, and under the command line the wrong one is chosen.
