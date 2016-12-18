@@ -1,5 +1,6 @@
 _site/
 .*
+!/.editorconfig
 !/.git*
 !/.travis.yml
 Gemfile.lock
