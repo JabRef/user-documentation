@@ -66,8 +66,7 @@ title: ヘルプ目次
 
 ## 設定
 - [BibTeX鍵(キー)生成方法の調整](/ja/BibtexKeyPatterns)
-- [項目型の調整](/ja/CustomEntries)
-- [Customize entry types](/ja/CustomEntryTypes)
+- [項目型の調整](/ja/CustomEntryTypes)
 - [Customize key bindings](/ja/CustomKeyBindings)
 - [データベース特性ウィンドウ](/ja/DatabaseProperties)
 - [Manage external file types](/ja/ExternalFileTypes)

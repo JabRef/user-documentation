@@ -1,4 +1,4 @@
 ---
-redirect:   /en/CustomEntries
+redirect:   /in/CustomEntryTypes
 layout:     redirect
 ---

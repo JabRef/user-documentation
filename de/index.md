@@ -66,8 +66,7 @@ title: Hilfe - Inhalt
 
 ## Einstellungen
 - [Anpassen der automatischen Erstellung von BibTeX-Keys](/de/BibtexKeyPatterns)
-- [Eintragstypen anpassen](/de/CustomEntries)
-- [Customize entry types](/de/CustomEntryTypes)
+- [Eintragstypen anpassen](/de/CustomEntryTypes)
 - [Customize key bindings](/de/CustomKeyBindings)
 - [Database properties window](/de/DatabaseProperties)
 - [Manage external file types](/de/ExternalFileTypes)

@@ -66,8 +66,7 @@ title: Help contents
 
 ## Setup
 - [Customizing the BibTeX key generator](/it/BibtexKeyPatterns)
-- [Customizing entry types](/it/CustomEntries)
-- [Customize entry types](/it/CustomEntryTypes)
+- [Customizing entry types](/it/CustomEntryTypes)
 - [Customize key bindings](/it/CustomKeyBindings)
 - [Database properties window](/it/DatabaseProperties)
 - [Manage external file types](/it/ExternalFileTypes)

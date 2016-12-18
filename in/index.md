@@ -66,8 +66,7 @@ title: Daftar Isi Bantuan
 
 ## Pengaturan
 - [Customizing the BibTeX key generator](/in/BibtexKeyPatterns)
-- [Customizing entry types](/in/CustomEntries)
-- [Customize entry types](/in/CustomEntryTypes)
+- [Customizing entry types](/in/CustomEntryTypes)
 - [Customize key bindings](/in/CustomKeyBindings)
 - [Jendela propereti basisdata](/in/DatabaseProperties)
 - [Manage external file types](/in/ExternalFileTypes)

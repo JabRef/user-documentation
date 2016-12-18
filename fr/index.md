@@ -66,8 +66,7 @@ title: Contenu de l’aide
 
 ## Configuration
 - [Personnalisation du générateur de clefs BibTeX](/fr/BibtexKeyPatterns)
-- [Personnaliser les types d'entrées](/fr/CustomEntries)
-- [Customize entry types](/fr/CustomEntryTypes)
+- [Personnaliser les types d'entrées](/fr/CustomEntryTypes)
 - [Customize key bindings](/fr/CustomKeyBindings)
 - [Propriétés de la base de données.](/fr/DatabaseProperties)
 - [Manage external file types](/fr/ExternalFileTypes)
