@@ -1,7 +1,6 @@
 ---
 title: Customizing entry types
 helpCategories: ["Setup"]
-stub: true
 ---
 
 # Customizing entry types
