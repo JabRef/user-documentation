@@ -7,13 +7,13 @@ helpCategories: ["FAQ"]
 
 ## 私はプログラマーではありません
 
-### Q: JabRefの取扱説明書類を改善するには，どうすればいいでしょうか．
+### JabRefの取扱説明書類を改善するには，どうすればいいでしょうか．
 
 [私たちの貢献上のガイドライン](https://github.com/JabRef/help.jabref.org/blob/gh-pages/CONTRIBUTING.md)の指示に従ってください．
 
-### Q: JabRefを別の言語に翻訳するのを手伝いたいと思っています．どこから手をつけたらいいでしょうか．
+### JabRefを別の言語に翻訳するのを手伝いたいと思っています．どこから手をつけたらいいでしょうか．
 
-A: [JabRefを翻訳する](TranslatingGUI)に目を通していただくことをお勧めします．
+[JabRefを翻訳する](TranslatingGUI)に目を通していただくことをお勧めします．
 
 ### Wikipediaページを最新にしておきたいのです．
 
@@ -40,9 +40,9 @@ JabRefは改良されていきます −−− Wkpediaページも追随させ�
 [議論をしに来てください！](http://discourse.jabref.org/)
 
 
-### Q: 寄付をしても良いですか．どのようにすれば良いでしょうか．
+### 寄付をしても良いですか．どのようにすれば良いでしょうか．
 
-A: 寄付のおかげで，私たちは継続が可能となります！PaypalやFlattr，銀行送金が利用できます．
+寄付のおかげで，私たちは継続が可能となります！PaypalやFlattr，銀行送金が利用できます．
 ご所属の組織・企業名義でも，銀行送金等を通して，貢献いただくことが可能です．
 全詳細は <https://github.com/JabRef/jabref/wiki/Donations> にあります．
 
