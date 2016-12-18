@@ -6,9 +6,13 @@ helpCategories: ["Fields"]
 
 # File links in JabRef
 
-JabRef lets you link up your entries with files of any type stored on your system, as well as links to the document on the web in the form of an URL or a DOI identifier. Each entry can have an arbitrary number of file links, and each linked file can be opened quickly from JabRef.
+JabRef lets you link up your entries with files of any type stored on your system.
+Thereby, it uses the field `file`, which contains a list of linked files.
+Each entry can have an arbitrary number of file links, and each linked file can be opened quickly from JabRef.
+The fields `url` and `doi` are used as links to documents on the web in the form of an URL or a DOI identifier respectively.
 
-In BibTeX terms, the file links of an entry are encoded in a single field. However, from within JabRef they appear as an editable list of links accessed from the entry editor along with other BibTeX fields.
+In BibTeX terms, the file links are stored as text in the field `file`.
+From within JabRef, however, they appear as an editable list of links accessed from the entry editor along with other BibTeX fields.
 
 ## Setting up external file types
 
