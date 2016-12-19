@@ -17,11 +17,11 @@ Please contact the author of the respective plugin and ask him to port his plugi
 A: You are not obliged to cite JabRef, but we would greatly appreciate it if you do.
 
 ```
-@Manual{JabRef_software,
+@Manual{JabRef,
   title = {JabRef},
-  author = { {JabRef Development Team} },
+  author = {{JabRef Development Team}},
   year = {2016},
-  url = {http://www.jabref.org}
+  url = {https://www.jabref.org}
 }
 ```
 
