@@ -606,7 +606,7 @@ def update_index(extended):
         :param indentation: int: how much the category is indented
         """
         # 2 loops to write the link before subsections
-        for key, value in sorted(index.iteritems()):
+        for key, value in sorted(index.items(), key=lambda x:x[1]):
             if type(value) is not dict:
                 index_file.append(u"- [{title}]({link})\n".format(title=value, link=key))
 

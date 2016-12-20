@@ -15,83 +15,83 @@ title: Contenu de l’aide
 
 
 ## FAQ
-- [Contributing](/fr/FAQcontributing)
 - [General](/fr/FAQgeneral)
 - [JabRef and Linux](/fr/FAQlinux)
 - [JabRef and Mac OS X](/fr/FAQosx)
+- [JabRef and Windows](/fr/FAQwindows)
 - [Other](/fr/FAQother)
 - [Sharing](/fr/FAQsharing)
-- [JabRef and Windows](/fr/FAQwindows)
+- [貢献方法](/fr/FAQcontributing)
 
 
 ## Général
-- [Sauvegarde automatique](/fr/Autosave)
+- [Accès à distance](/fr/Remote)
 - [Backup](/fr/Backup)
-- [La fenêtre principale de JabRef](/fr/BaseFrame)
 - [Best Practices](/fr/BestPractices)
-- [Les options de la ligne de commande](/fr/CommandLine)
-- [L'éditeur d'entrées](/fr/EntryEditor)
 - [Installation](/fr/Installation)
 - [JabRef](/fr/JabRef)
-- [Accès à distance](/fr/Remote)
+- [L'éditeur d'entrées](/fr/EntryEditor)
+- [La fenêtre principale de JabRef](/fr/BaseFrame)
+- [Les options de la ligne de commande](/fr/CommandLine)
+- [Sauvegarde automatique](/fr/Autosave)
 
 
 ## Champs
 - [A propos de *BibTeX*](/fr/Bibtex)
-- [Sélecteur de contenu de champ](/fr/ContentSelector)
+- [Abréviations des journaux](/fr/JournalAbbreviations)
+- [Aide sur les chaînes](/fr/Strings)
+- [Champs spéciaux](/fr/SpecialFields)
+- [Horodatage des entrées](/fr/TimeStamp)
+- [Le champ 'owner' (propriétaire)](/fr/Owner)
 - [Les liens PDF/PS/URL/DOI dans JabRef](/fr/ExternalFiles)
 - [Liens de fichier dans JabRef](/fr/FileLinks)
-- [Abréviations des journaux](/fr/JournalAbbreviations)
-- [Le champ 'owner' (propriétaire)](/fr/Owner)
 - [Set/clear/rename fields](/fr/SetClearRenameFields)
-- [Champs spéciaux](/fr/SpecialFields)
-- [Aide sur les chaînes](/fr/Strings)
-- [Horodatage des entrées](/fr/TimeStamp)
+- [Sélecteur de contenu de champ](/fr/ContentSelector)
 
 
 ## Recherche et tri des entrées
+- [Add unlinked PDFs including BibTeX data into the database](/fr/FindUnlinkedFiles)
 - [Check integrity](/fr/CheckIntegrity)
 - [Cleanup entries](/fr/CleanupEntries)
+- [Etiqueter les entrées](/fr/Marking)
 - [Find duplicates](/fr/FindDuplicates)
-- [Add unlinked PDFs including BibTeX data into the database](/fr/FindUnlinkedFiles)
 - [Get BibTeX data from DOI](/fr/GetBibTeXDataFromDOI)
 - [Les groupes](/fr/Groups)
-- [Etiqueter les entrées](/fr/Marking)
 - [Merge entries](/fr/MergeEntries)
+- [Recherche](/fr/Search)
 - [Replace string](/fr/ReplaceString)
 - [Save actions](/fr/SaveActions)
-- [Recherche](/fr/Search)
 - [Synchronize file links](/fr/SynchroFileLinks)
 
 
 ## Configuration
+- [Configuration de l'aperçu des entrées](/fr/Preview)
+- [Customize key bindings](/fr/CustomKeyBindings)
+- [L'éditeur de chaîne](/fr/StringEditor)
+- [Manage external file types](/fr/ExternalFileTypes)
+- [Manage protected terms](/fr/ProtectedTerms)
+- [Personnalisation des champs généraux](/fr/GeneralFields)
 - [Personnalisation du générateur de clefs BibTeX](/fr/BibtexKeyPatterns)
 - [Personnaliser les types d'entrées](/fr/CustomEntryTypes)
-- [Customize key bindings](/fr/CustomKeyBindings)
 - [Propriétés de la base de données.](/fr/DatabaseProperties)
-- [Manage external file types](/fr/ExternalFileTypes)
-- [Personnalisation des champs généraux](/fr/GeneralFields)
-- [Configuration de l'aperçu des entrées](/fr/Preview)
-- [Manage protected terms](/fr/ProtectedTerms)
-- [L'éditeur de chaîne](/fr/StringEditor)
 
 
 ## Travail collaboratif
-- [Shared SQL Database](/fr/SQLDatabase)
 - [Migration of pre-3.6 SQL databases into a shared SQL database](/fr/SQLDatabaseMigration)
+- [Shared SQL Database](/fr/SQLDatabase)
 - [Sharing a Bib(La)TeX Database](/fr/SharedBibFile)
 
 
 ## Importation/Exportation
+- [Comparison of the Medline (txt), Medline (XML), and RIS format](/fr/MedlineRIS)
+- [Exportation vers une base de données SQL externe](/fr/SQLExport)
+- [Fenêtre de vérification des importations](/fr/ImportInspectionDialog)
+- [Filtre d'exportation EndNote](/fr/EndNoteFilters)
 - [Filtres d'exportation personnalisés](/fr/CustomExports)
 - [Filtres d'importation personnalisés](/fr/CustomImports)
-- [Filtre d'exportation EndNote](/fr/EndNoteFilters)
-- [Fenêtre de vérification des importations](/fr/ImportInspectionDialog)
-- [Comparison of the Medline (txt), Medline (XML), and RIS format](/fr/MedlineRIS)
+- [Intégration dans OpenOffice/LibreOffice](/fr/OpenOfficeIntegration)
 - [MS Office Bibliography xml format](/fr/MsOfficeBibFieldMapping)
 - [New subdatabase based on AUX file](/fr/NewBasedOnAux)
-- [Intégration dans OpenOffice/LibreOffice](/fr/OpenOfficeIntegration)
-- [Exportation vers une base de données SQL externe](/fr/SQLExport)
 - [Support des metadonnées XMP dans JabRef](/fr/XMP)
 
 
@@ -99,28 +99,28 @@ title: Contenu de l’aide
 
 
 ### ... en utilisant des identifiants de publication
-- [Creating entries from SAO/NASA Astrophysics Data System](/fr/ADStoBibTeX)
-- [Récupération d'entrées en utilisant l'identifiant d'objet numérique (DOI)](/fr/DOItoBibTeX)
-- [Récupération d'entrées en utilisant DiVA](/fr/DiVAtoBibTeX)
-- [Récupération d'entrées à partir du numéro ISBN](/fr/ISBNtoBibTeX)
 - [Creating entries from Medline](/fr/MedlinetoBibTeX)
+- [Creating entries from SAO/NASA Astrophysics Data System](/fr/ADStoBibTeX)
+- [Récupération d'entrées en utilisant DiVA](/fr/DiVAtoBibTeX)
+- [Récupération d'entrées en utilisant l'identifiant d'objet numérique (DOI)](/fr/DOItoBibTeX)
+- [Récupération d'entrées à partir du numéro ISBN](/fr/ISBNtoBibTeX)
 
 
 ### ... en utilisant une base de données bibliographique en ligne
-- [Récupération d'entrées depuis le portail *ACM*](/fr/ACMPortal)
-- [Fetching entries from SAO/NASA Astrophysics Data System](/fr/ADS)
-- [Récupération d'entrées depuis CiteSeerX](/fr/CiteSeer)
 - [Fetching entries from DBLP](/fr/DBLP)
 - [Fetching entries from DOAJ](/fr/DOAJ)
 - [Fetching entries from GVK](/fr/GVK)
-- [Recherche Google Scholar](/fr/GoogleScholar)
-- [Recherche IEEEXplore](/fr/IEEEXplore)
-- [Recherche INSPIRE](/fr/INSPIRE)
 - [Fetching entries from MathSciNet](/fr/MathSciNet)
-- [Récupération d'entrées depuis Medline](/fr/Medline)
+- [Fetching entries from SAO/NASA Astrophysics Data System](/fr/ADS)
 - [Fetching entries from Springer](/fr/Springer)
 - [Fetching entries from arXiv](/fr/arXiv)
 - [Fetching entries from zbMATH](/fr/zbMATH)
+- [Recherche Google Scholar](/fr/GoogleScholar)
+- [Recherche IEEEXplore](/fr/IEEEXplore)
+- [Recherche INSPIRE](/fr/INSPIRE)
+- [Récupération d'entrées depuis CiteSeerX](/fr/CiteSeer)
+- [Récupération d'entrées depuis Medline](/fr/Medline)
+- [Récupération d'entrées depuis le portail *ACM*](/fr/ACMPortal)
 
 
 
@@ -129,7 +129,7 @@ title: Contenu de l’aide
 
 
 ## Divers
-- [License](/fr/License)
 - [Historique des révisions (en anglais)](/fr/RevisionHistory)
+- [License](/fr/License)
 
 

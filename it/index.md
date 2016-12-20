@@ -15,45 +15,45 @@ title: Help contents
 
 
 ## FAQ
-- [Contributing](/it/FAQcontributing)
 - [General](/it/FAQgeneral)
 - [JabRef and Linux](/it/FAQlinux)
 - [JabRef and Mac OS X](/it/FAQosx)
+- [JabRef and Windows](/it/FAQwindows)
 - [Other](/it/FAQother)
 - [Sharing](/it/FAQsharing)
-- [JabRef and Windows](/it/FAQwindows)
+- [貢献方法](/it/FAQcontributing)
 
 
 ## General
 - [Autosave](/it/Autosave)
 - [Backup](/it/Backup)
-- [The JabRef main window](/it/BaseFrame)
 - [Best Practices](/it/BestPractices)
 - [Command line use and options](/it/CommandLine)
-- [The entry editor](/it/EntryEditor)
 - [Installation](/it/Installation)
 - [JabRef](/it/JabRef)
 - [Remote operation](/it/Remote)
+- [The JabRef main window](/it/BaseFrame)
+- [The entry editor](/it/EntryEditor)
 
 
 ## Fields
 - [About *BibTeX*](/it/Bibtex)
+- [Entry time stamps](/it/TimeStamp)
 - [Field content selector](/it/ContentSelector)
-- [PDF/PS/URL/DOI links in JabRef](/it/ExternalFiles)
 - [File links in JabRef](/it/FileLinks)
 - [Journal abbreviations](/it/JournalAbbreviations)
-- [The 'owner' field](/it/Owner)
+- [PDF/PS/URL/DOI links in JabRef](/it/ExternalFiles)
 - [Set/clear/rename fields](/it/SetClearRenameFields)
 - [Special Fields](/it/SpecialFields)
 - [Strings](/it/Strings)
-- [Entry time stamps](/it/TimeStamp)
+- [The 'owner' field](/it/Owner)
 
 
 ## Finding, sorting and cleaning entries
+- [Add unlinked PDFs including BibTeX data into the database](/it/FindUnlinkedFiles)
 - [Check integrity](/it/CheckIntegrity)
 - [Cleanup entries](/it/CleanupEntries)
 - [Find duplicates](/it/FindDuplicates)
-- [Add unlinked PDFs including BibTeX data into the database](/it/FindUnlinkedFiles)
 - [Get BibTeX data from DOI](/it/GetBibTeXDataFromDOI)
 - [Groups](/it/Groups)
 - [Mark entries](/it/Marking)
@@ -65,33 +65,33 @@ title: Help contents
 
 
 ## Setup
-- [Customizing the BibTeX key generator](/it/BibtexKeyPatterns)
-- [Customizing entry types](/it/CustomEntryTypes)
 - [Customize key bindings](/it/CustomKeyBindings)
-- [Database properties window](/it/DatabaseProperties)
-- [Manage external file types](/it/ExternalFileTypes)
+- [Customizing entry types](/it/CustomEntryTypes)
 - [Customizing general fields](/it/GeneralFields)
+- [Customizing the BibTeX key generator](/it/BibtexKeyPatterns)
+- [Database properties window](/it/DatabaseProperties)
 - [Entry preview setup](/it/Preview)
+- [Manage external file types](/it/ExternalFileTypes)
 - [Manage protected terms](/it/ProtectedTerms)
 - [The string editor](/it/StringEditor)
 
 
 ## Collaborative work
-- [Shared SQL Database](/it/SQLDatabase)
 - [Migration of pre-3.6 SQL databases into a shared SQL database](/it/SQLDatabaseMigration)
+- [Shared SQL Database](/it/SQLDatabase)
 - [Sharing a Bib(La)TeX Database](/it/SharedBibFile)
 
 
 ## Import/Export
+- [Comparison of the Medline (txt), Medline (XML), and RIS format](/it/MedlineRIS)
 - [Custom export filters](/it/CustomExports)
 - [Custom import filters](/it/CustomImports)
 - [EndNote Export Filter](/it/EndNoteFilters)
+- [Export to an External SQL Database](/it/SQLExport)
 - [Import inspection window](/it/ImportInspectionDialog)
-- [Comparison of the Medline (txt), Medline (XML), and RIS format](/it/MedlineRIS)
 - [MS Office Bibliography xml format](/it/MsOfficeBibFieldMapping)
 - [New subdatabase based on AUX file](/it/NewBasedOnAux)
 - [OpenOffice/LibreOffice integration](/it/OpenOfficeIntegration)
-- [Export to an External SQL Database](/it/SQLExport)
 - [XMP metadata support in JabRef](/it/XMP)
 
 
@@ -99,16 +99,15 @@ title: Help contents
 
 
 ### ... using publication identifiers
-- [Creating entries from SAO/NASA Astrophysics Data System](/it/ADStoBibTeX)
-- [Creating entries using the Digital Object Identifier (DOI)](/it/DOItoBibTeX)
 - [Creating entries from DiVA](/it/DiVAtoBibTeX)
-- [Creating entries using an ISBN number](/it/ISBNtoBibTeX)
 - [Creating entries from Medline](/it/MedlinetoBibTeX)
+- [Creating entries from SAO/NASA Astrophysics Data System](/it/ADStoBibTeX)
+- [Creating entries using an ISBN number](/it/ISBNtoBibTeX)
+- [Creating entries using the Digital Object Identifier (DOI)](/it/DOItoBibTeX)
 
 
 ### ... using online bibliographic database
 - [Fetching entries from ACM Portal](/it/ACMPortal)
-- [Fetching entries from SAO/NASA Astrophysics Data System](/it/ADS)
 - [Fetching entries from CiteSeerX](/it/CiteSeer)
 - [Fetching entries from DBLP](/it/DBLP)
 - [Fetching entries from DOAJ](/it/DOAJ)
@@ -116,8 +115,9 @@ title: Help contents
 - [Fetching entries from Google Scholar](/it/GoogleScholar)
 - [Fetching entries from IEEEXplore](/it/IEEEXplore)
 - [Fetching entries from INSPIRE-HEP](/it/INSPIRE)
-- [Fetching entries from MathSciNet](/it/MathSciNet)
 - [Fetching entries from MEDLINE](/it/Medline)
+- [Fetching entries from MathSciNet](/it/MathSciNet)
+- [Fetching entries from SAO/NASA Astrophysics Data System](/it/ADS)
 - [Fetching entries from Springer](/it/Springer)
 - [Fetching entries from arXiv](/it/arXiv)
 - [Fetching entries from zbMATH](/it/zbMATH)
