@@ -87,3 +87,18 @@ A field name (or one of the above pseudo-field names) may optionally be followed
 ## Regular expression replace
 
 After the key pattern has been applied to produce a key, you can choose to have the key generator search for occurrences of a specific regular expression, and replace it with a string. The regular expression and replacement string are entered in the text fields below the list of key patterns. If the replacement string is empty, matches of the regular expression will simply be removed from the generated key. For instance, `\p{Punct}` or `[:/%]` can be replaced by nothing to remove unwanted characters from the key. This may be useful when naming PDFs according to BibTeX keys.
+
+## How to configure
+
+To change the pattern to `[authors]:[camel]`, execute the following steps:
+
+1. Open the preferences
+![Options Preferences](./images/OptionsPreferences.png)
+
+1. Navigate to "BibTeX key generator"
+![BibTeX key generator preferences](./images/Preferences - BibTeX key generator.png)
+
+1. Change the default pattern to `[authors]:[camel]`.
+![BibTeX key generator preferences - authors camel](./images/Preferences - BibTeX key generator - authors camel.png)
+
+1. Click "OK"
