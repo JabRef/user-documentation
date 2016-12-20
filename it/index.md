@@ -53,7 +53,7 @@ title: Help contents
 - [Check integrity](/it/CheckIntegrity)
 - [Cleanup entries](/it/CleanupEntries)
 - [Find duplicates](/it/FindDuplicates)
-- [Find unlinked files](/it/FindUnlinkedFiles)
+- [Add unlinked PDFs including BibTeX data into the database](/it/FindUnlinkedFiles)
 - [Get BibTeX data from DOI](/it/GetBibTeXDataFromDOI)
 - [Groups](/it/Groups)
 - [Mark entries](/it/Marking)

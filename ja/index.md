@@ -53,7 +53,7 @@ title: ヘルプ目次
 - [Check integrity](/ja/CheckIntegrity)
 - [Cleanup entries](/ja/CleanupEntries)
 - [重複の検出](/ja/FindDuplicates)
-- [Find unlinked files](/ja/FindUnlinkedFiles)
+- [Add unlinked PDFs including BibTeX data into the database](/ja/FindUnlinkedFiles)
 - [Get BibTeX data from DOI](/ja/GetBibTeXDataFromDOI)
 - [グループ](/ja/Groups)
 - [項目の標識付け](/ja/Marking)

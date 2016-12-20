@@ -53,7 +53,7 @@ title: Daftar Isi Bantuan
 - [Check integrity](/in/CheckIntegrity)
 - [Cleanup entries](/in/CleanupEntries)
 - [Find duplicates](/in/FindDuplicates)
-- [Find unlinked files](/in/FindUnlinkedFiles)
+- [Add unlinked PDFs including BibTeX data into the database](/in/FindUnlinkedFiles)
 - [Get BibTeX data from DOI](/in/GetBibTeXDataFromDOI)
 - [Groups](/in/Groups)
 - [Menandai entri](/in/Marking)

@@ -53,7 +53,7 @@ title: Contenu de l’aide
 - [Check integrity](/fr/CheckIntegrity)
 - [Cleanup entries](/fr/CleanupEntries)
 - [Find duplicates](/fr/FindDuplicates)
-- [Find unlinked files](/fr/FindUnlinkedFiles)
+- [Add unlinked PDFs including BibTeX data into the database](/fr/FindUnlinkedFiles)
 - [Get BibTeX data from DOI](/fr/GetBibTeXDataFromDOI)
 - [Les groupes](/fr/Groups)
 - [Etiqueter les entrées](/fr/Marking)
