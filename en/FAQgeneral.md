@@ -16,6 +16,7 @@ Please contact the author of the respective plugin and ask him to port his plugi
 
 A: You are not obliged to cite JabRef, but we would greatly appreciate it if you do.
 
+{% raw %}
 ```
 @Manual{JabRef,
   title = {JabRef},
@@ -24,6 +25,7 @@ A: You are not obliged to cite JabRef, but we would greatly appreciate it if you
   url = {https://www.jabref.org}
 }
 ```
+{% endraw %}
 
 ## Q: Are there any publications dealing with JabRef?
 
