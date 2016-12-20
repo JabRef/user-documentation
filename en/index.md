@@ -15,13 +15,13 @@ title: Help contents
 
 
 ## FAQ
+- [Contributing](/en/FAQcontributing)
 - [General](/en/FAQgeneral)
 - [JabRef and Linux](/en/FAQlinux)
 - [JabRef and Mac OS X](/en/FAQosx)
 - [JabRef and Windows](/en/FAQwindows)
 - [Other](/en/FAQother)
 - [Sharing](/en/FAQsharing)
-- [貢献方法](/en/FAQcontributing)
 
 
 ## General

@@ -15,13 +15,13 @@ title: Contenu de l’aide
 
 
 ## FAQ
+- [Contributing](/fr/FAQcontributing)
 - [General](/fr/FAQgeneral)
 - [JabRef and Linux](/fr/FAQlinux)
 - [JabRef and Mac OS X](/fr/FAQosx)
 - [JabRef and Windows](/fr/FAQwindows)
 - [Other](/fr/FAQother)
 - [Sharing](/fr/FAQsharing)
-- [貢献方法](/fr/FAQcontributing)
 
 
 ## Général

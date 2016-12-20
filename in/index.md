@@ -15,13 +15,13 @@ title: Daftar Isi Bantuan
 
 
 ## FAQ
+- [Contributing](/in/FAQcontributing)
 - [General](/in/FAQgeneral)
 - [JabRef and Linux](/in/FAQlinux)
 - [JabRef and Mac OS X](/in/FAQosx)
 - [JabRef and Windows](/in/FAQwindows)
 - [Other](/in/FAQother)
 - [Sharing](/in/FAQsharing)
-- [貢献方法](/in/FAQcontributing)
 
 
 ## Umum
