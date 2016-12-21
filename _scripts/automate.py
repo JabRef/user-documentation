@@ -513,8 +513,9 @@ def create_markdown(extended):
                 if len(not_translated_pages) != 0:
                     markdown_text.append("  - `{language}`\n".format(language=language))
                     for page in not_translated_pages:
-                        link = get_file_link(language=MAIN_LANGUAGE, page=page)
-                        markdown_text.append("    - {page} ([en]({link}))\n".format(page=page, link=link))
+                        link_en = get_file_link(language=MAIN_LANGUAGE, page=page)
+                        link = get_file_link(language=language, page=page)
+                        markdown_text.append("    - [{page}]({link}) ([en]({link_en}))\n".format(page=page, link=link, link_en=link_en))
 
     write_file(filename=FILE_STATUS, content=markdown_text)
     webbrowser.open(FILE_STATUS)
