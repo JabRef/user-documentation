@@ -475,22 +475,22 @@ def create_markdown(extended):
                     markdown_text.append("    - [{page}]({link})\n".format(page=page, link=link))
         markdown_text.append("\n")
 
-    markdown_text.append("\n| Language | translated | not translated | outdated | old pages | % translated | % outdated |\n")
-    markdown_text.append(  "| -------- | ---------- | -------------- | -------- | --------- | ------------ | ---------- |\n")
+    markdown_text.append("\n| Language | translated | not translated | outdated |  % translated | % outdated |\n")
+    markdown_text.append(  "| -------- | ---------- | -------------- | -------- |  ------------ | ---------- |\n")
     are_pages_outdated = False
     are_pages_not_translated = False
     for language in get_all_languages():
         num_pages_translated = len(get_translated_pages(language=language))
         num_pages_not_translated = len(get_not_translated_pages(main_language=MAIN_LANGUAGE, secondary_language=language))
         num_pages_outdated = len(get_outdated_pages(language=language))
-        num_pages_old = len(get_old_help_pages_redirecting_to_new_one(language=language))
+        # num_pages_old = len(get_old_help_pages_redirecting_to_new_one(language=language))
         percent_translated = int((1 - num_pages_not_translated / float(num_pages_not_translated + num_pages_translated)) * 100) \
             if num_pages_not_translated + num_pages_translated != 0 else 100
         percent_outdated = int((num_pages_outdated / float(num_pages_translated)) * 100) if num_pages_translated != 0 else 0
 
-        markdown_text.append("| {lang} | {translated} | {not_translated} | {outdated} | {old_pages} | {percent_translated} | {percent_outdated} |\n"
+        markdown_text.append("| {lang} | {translated} | {not_translated} | {outdated} | {percent_translated} | {percent_outdated} |\n"
             .format(lang=language, translated=num_pages_translated, not_translated=num_pages_not_translated, outdated=num_pages_outdated,
-            old_pages=num_pages_old, percent_translated=percent_translated, percent_outdated=percent_outdated))
+            percent_translated=percent_translated, percent_outdated=percent_outdated))
 
         are_pages_outdated |= num_pages_outdated != 0
         are_pages_not_translated |= num_pages_not_translated != 0
