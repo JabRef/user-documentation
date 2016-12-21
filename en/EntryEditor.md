@@ -1,10 +1,10 @@
 ---
-title: The entry editor
+title: BibTeX entry editor
 outdated: true
 helpCategories: ["General"]
 ---
 
-# The entry editor
+# BibTeX entry editor
 
 *Opened from main window by double-clicking anywhere on the line of the entry, or selecting the entry and pressing <kbd>Enter</kbd> or <kbd>Ctrl</kbd> + <kbd>D</kbd>. The panel is closed by pressing <kbd>Esc</kbd>.*
 

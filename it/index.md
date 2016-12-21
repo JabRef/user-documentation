@@ -28,12 +28,12 @@ title: Help contents
 - [Autosave](/it/Autosave)
 - [Backup](/it/Backup)
 - [Best Practices](/it/BestPractices)
+- [BibTeX entry editor](/it/EntryEditor)
 - [Command line use and options](/it/CommandLine)
 - [Installation](/it/Installation)
 - [JabRef](/it/JabRef)
+- [JabRef's main window](/it/BaseFrame)
 - [Remote operation](/it/Remote)
-- [The JabRef main window](/it/BaseFrame)
-- [The entry editor](/it/EntryEditor)
 
 
 ## Fields
