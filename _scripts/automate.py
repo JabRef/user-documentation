@@ -30,7 +30,7 @@ FRONTMATTER_TITLE = "title"
 FRONTMATTER_OUTDATED = "outdated"
 
 FILE_CATEGORIES_ORDER = "_scripts/categories.json"
-FILE_STATUS = "status.md"
+FILE_STATUS = "_includes/status.md"
 
 
 def get_language_file_path(language):
