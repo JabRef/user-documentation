@@ -1,6 +1,5 @@
 ---
 title: 貢献方法
-helpCategories: ["FAQ"]
 ---
 
 # 貢献方法
