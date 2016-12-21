@@ -101,6 +101,7 @@ title: Contenu de l’aide
 ### ... en utilisant des identifiants de publication
 - [Creating entries from Medline](/fr/MedlinetoBibTeX)
 - [Creating entries from SAO/NASA Astrophysics Data System](/fr/ADStoBibTeX)
+- [Creating entries using the title](/fr/TitleToBibTeX)
 - [Récupération d'entrées en utilisant DiVA](/fr/DiVAtoBibTeX)
 - [Récupération d'entrées en utilisant l'identifiant d'objet numérique (DOI)](/fr/DOItoBibTeX)
 - [Récupération d'entrées à partir du numéro ISBN](/fr/ISBNtoBibTeX)

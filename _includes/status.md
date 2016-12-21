@@ -1,15 +1,15 @@
-### Help pages status (2016-12-21 07:05 - Branch `gh-pages` `fbc7611`)
+### Help pages status (2016-12-21 08:35 - Branch `gh-pages` `77d1d00`)
 - Main language: `en`
 - Available languages: `de`, `fr`, `in`, `it`, `ja`
 
 | Language | translated | not translated | outdated |  % translated | % outdated |
 | -------- | ---------- | -------------- | -------- |  ------------ | ---------- |
-| en | 82 | 0 | 6 | 100 | 7 |
-| de | 32 | 50 | 4 | 39 | 12 |
-| fr | 41 | 41 | 10 | 50 | 24 |
-| in | 21 | 61 | 2 | 25 | 9 |
-| it | 0 | 82 | 0 | 0 | 0 |
-| ja | 57 | 25 | 6 | 69 | 10 |
+| en | 83 | 0 | 6 | 100 | 7 |
+| de | 32 | 51 | 4 | 38 | 12 |
+| fr | 41 | 42 | 10 | 49 | 24 |
+| in | 21 | 62 | 2 | 25 | 9 |
+| it | 0 | 83 | 0 | 0 | 0 |
+| ja | 57 | 26 | 6 | 68 | 10 |
 
 - Outdated page(s):
   - `en`
@@ -95,6 +95,7 @@
     - SQLExport.md ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/SQLExport.md))
     - Strings.md ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/Strings.md))
     - SynchroFileLinks.md ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/SynchroFileLinks.md))
+    - TitleToBibTeX.md ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/TitleToBibTeX.md))
     - TranslatingGUI.md ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/TranslatingGUI.md))
     - zbMATH.md ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/zbMATH.md))
   - `fr`
@@ -137,6 +138,7 @@
     - SQLDatabase.md ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/SQLDatabase.md))
     - SQLDatabaseMigration.md ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/SQLDatabaseMigration.md))
     - SynchroFileLinks.md ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/SynchroFileLinks.md))
+    - TitleToBibTeX.md ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/TitleToBibTeX.md))
     - TranslatingGUI.md ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/TranslatingGUI.md))
     - zbMATH.md ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/zbMATH.md))
   - `in`
@@ -198,6 +200,7 @@
     - SQLExport.md ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/SQLExport.md))
     - Strings.md ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/Strings.md))
     - SynchroFileLinks.md ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/SynchroFileLinks.md))
+    - TitleToBibTeX.md ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/TitleToBibTeX.md))
     - TranslatingGUI.md ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/TranslatingGUI.md))
     - XMP.md ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/XMP.md))
     - zbMATH.md ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/zbMATH.md))
@@ -281,6 +284,7 @@
     - Strings.md ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/Strings.md))
     - SynchroFileLinks.md ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/SynchroFileLinks.md))
     - TimeStamp.md ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/TimeStamp.md))
+    - TitleToBibTeX.md ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/TitleToBibTeX.md))
     - TranslatingGUI.md ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/TranslatingGUI.md))
     - XMP.md ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/XMP.md))
     - zbMATH.md ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/zbMATH.md))
@@ -308,5 +312,6 @@
     - ReplaceString.md ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/ReplaceString.md))
     - SaveActions.md ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/SaveActions.md))
     - SynchroFileLinks.md ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/SynchroFileLinks.md))
+    - TitleToBibTeX.md ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/TitleToBibTeX.md))
     - TranslatingGUI.md ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/TranslatingGUI.md))
     - zbMATH.md ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/zbMATH.md))

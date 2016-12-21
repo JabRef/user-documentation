@@ -101,6 +101,7 @@ title: ヘルプ目次
 ### ... 刊行識別子を使用して
 - [Creating entries from Medline](/ja/MedlinetoBibTeX)
 - [Creating entries from SAO/NASA Astrophysics Data System](/ja/ADStoBibTeX)
+- [Creating entries using the title](/ja/TitleToBibTeX)
 - [DiVAから項目を取得するには](/ja/DiVAtoBibTeX)
 - [Digital Object Identifier (DOI)を使用して項目を取得するには](/ja/DOItoBibTeX)
 - [ISBN番号を使用して項目を取得するには](/ja/ISBNtoBibTeX)

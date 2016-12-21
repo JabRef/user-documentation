@@ -104,6 +104,7 @@ title: Help contents
 - [Creating entries from SAO/NASA Astrophysics Data System](/it/ADStoBibTeX)
 - [Creating entries using an ISBN number](/it/ISBNtoBibTeX)
 - [Creating entries using the Digital Object Identifier (DOI)](/it/DOItoBibTeX)
+- [Creating entries using the title](/it/TitleToBibTeX)
 
 
 ### ... using online bibliographic database
