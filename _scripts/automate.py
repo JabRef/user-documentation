@@ -5,7 +5,6 @@ import datetime
 import json
 import os
 import subprocess
-import webbrowser
 from os import listdir
 from os.path import isfile, join, isdir
 
@@ -518,7 +517,6 @@ def create_markdown(extended):
                         markdown_text.append("    - [{page}]({link}) ([en]({link_en}))\n".format(page=page, link=link, link_en=link_en))
 
     write_file(filename=FILE_STATUS, content=markdown_text)
-    webbrowser.open(FILE_STATUS)
 
 
 def status(extended, markdown):
@@ -749,6 +747,7 @@ if args.command == COMMAND_STATUS:
 elif args.command == COMMAND_UPDATE:
     delete_all_generated_redirecting_pages(extended=args.extended)
     update_index(extended=args.extended)
+    create_markdown(extended=args.extended)
 elif args.command == COMMAND_CLEAN:
     delete_all_generated_redirecting_pages(extended=args.extended)
 elif args.command == COMMAND_REMOVE_SUFFIX:
