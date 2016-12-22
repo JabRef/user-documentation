@@ -1,4 +1,7 @@
-### Help pages status (2016-12-21 18:18 - Branch `HEAD` `6f149fe`)
+---
+title: Translation Status
+---
+### Help pages status (2016-12-22 06:10 - Branch `gh-pages` `2c3a477`)
 - Main language: `en`
 - Available languages: `de`, `fr`, `in`, `it`, `ja`
 

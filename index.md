@@ -12,13 +12,8 @@ This site hosts the help of [JabRef](http://www.jabref.org/).
  * [Indonesian](in/)
  * [Japanese](ja/)
 
-<div class="bg-info">
-{% capture text %}
+<p class="bg-info">
 Please help to keep the help pages updated.
-See [CONTRIBUTING.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/CONTRIBUTING.md) for a step-by-step guide.
-{% endcapture %}
-{{ text | markdownify }}
-</div>
-
-{% capture status %}{% include status.md %}{% endcapture %}
-{{ status  | markdownify }}
+See <a href="https://github.com/JabRef/help.jabref.org/blob/gh-pages/CONTRIBUTING.md">CONTRIBUTING.md</a> for a step-by-step guide.
+The current status is shown at <a href="status">our status page</a>.
+</p>

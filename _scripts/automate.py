@@ -29,7 +29,7 @@ FRONTMATTER_TITLE = "title"
 FRONTMATTER_OUTDATED = "outdated"
 
 FILE_CATEGORIES_ORDER = "_scripts/categories.json"
-FILE_STATUS = "_includes/status.md"
+FILE_STATUS = "status.md"
 
 
 def get_language_file_path(language):
@@ -456,6 +456,7 @@ def create_markdown(extended):
         num_main_not_translated_pages += len(lang)
 
     markdown_text = []
+    markdown_text.append("---\ntitle: Translation Status\n---\n")
     date = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
     markdown_text.append("### Help pages status ({date} - Branch `{branch}` `{hash}`)\n".format(date=date,
         branch=get_current_branch(), hash=get_current_hash_short()))
