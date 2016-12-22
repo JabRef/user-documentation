@@ -748,7 +748,7 @@ if args.command == COMMAND_STATUS:
 elif args.command == COMMAND_UPDATE:
     delete_all_generated_redirecting_pages(extended=args.extended)
     update_index(extended=args.extended)
-    create_markdown(extended=args.extended)
+    create_markdown(extended=True)
 elif args.command == COMMAND_CLEAN:
     delete_all_generated_redirecting_pages(extended=args.extended)
 elif args.command == COMMAND_REMOVE_SUFFIX:
