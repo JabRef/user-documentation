@@ -30,6 +30,6 @@ For Ubuntu you may also have a look at the [Ubuntu page on Java](https://help.ub
 
 As far as we know, JabRef is not yet running on these free JVMs, due of our dependencies.
 However, JabRef is reported to run nicely on the [IcedTea](http://fedoraproject.org/wiki/Features/IcedTea) runtime, which is based on the [OpenJDK](http://openjdk.java.net/) built with [GNU Classpath](http://www.gnu.org/software/classpath/) to fill in missing classes.
-Some issues have been encountered with the LookAndFell (see issues [#393](https://github.com/JabRef/jabref/issues/393) and [#2003](https://github.com/JabRef/jabref/issues/2003)).
+Some issues have been encountered with the look and feel (see issues [#393](https://github.com/JabRef/jabref/issues/393) and [#2003](https://github.com/JabRef/jabref/issues/2003)).
 Please let us know if newer versions give different results.
 If you have an idea or the expertise to make JabRef work under Classpath, let us know.
