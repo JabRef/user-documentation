@@ -91,7 +91,8 @@ It has the nice feature to generate markdown tables from different sources, e.g.
 
 3. Navigate to the version in the target language. For instance, https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/MergeEntries.md
 
-4. Click on edit (see above)
+4. Click on the pencil icon
+  ![Click on the pencil icon](en/images/screenshot-edit-pencil.png)
 
 5. Replace text with the one of the clipboard
   - Click into the text area
@@ -100,12 +101,12 @@ It has the nice feature to generate markdown tables from different sources, e.g.
 
 6. Remove the "category"
   The category is translated in [localization_ja.json](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/localization_ja.json) and thus does not need to be kept there.
-  ![RAW-marked-all](en/images/screenshot-raw-marked-all.png)
+  ![RAW-marked-all](en/images/screenshot-edit-ja-mergeentries.png)
 
 7. Translate
 
 8. Save your changes
-  Seee [Saving the changes](#saving-the-changes)
+  See [Saving the changes](#saving-the-changes)
 
 9. Upload images
   In case you want to upload images, navigate to the "images" subfolder and press "Upload images"
