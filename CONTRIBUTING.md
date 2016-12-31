@@ -81,6 +81,36 @@ It has the nice feature to generate markdown tables from different sources, e.g.
  - If the title in the yaml frontmatter (this is at the beginning at each page surrounded by `---`) starts with a special character (eg. `*`), the whole title must be surrounded by quotation marks (`"`).
  - You cannot enclose text with `{{ ... }}` as this will get interpreted as Liquid syntax and not displayed as is. Use `{ { ... } }` instead (with spaces between the braces).
 
+### Fetch the English version
+
+1. View the page you want to translate in raw. For instance, navigate to https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/MergeEntries.md and click on RAW.
+  ![RAW](en/images/screenshot-raw.png)
+
+2. Copy all the text. (<kbd>Ctrl</kbd> + <kbd>A</kbd>, <kbd>Ctrl</kbd> + <kbd>C</kbd>)
+  ![RAW-marked-all](en/images/screenshot-raw-marked-all.png)
+
+3. Navigate to the version in the target language. For instance, https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/MergeEntries.md
+
+4. Click on edit (see above)
+
+5. Replace text with the one of the clipboard
+  - Click into the text area
+  - <kbd>Ctrl</kbd> + <kbd>A</kbd>
+  - <kbd>Ctrl</kbd> + <kbd>V</kbd>
+
+6. Remove the "category"
+  The category is translated in [localization_ja.json](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/localization_ja.json) and thus does not need to be kept there.
+  ![RAW-marked-all](en/images/screenshot-raw-marked-all.png)
+
+7. Translate
+
+8. Save your changes
+  Seee [Saving the changes](#saving-the-changes)
+
+9. Upload images
+  In case you want to upload images, navigate to the "images" subfolder and press "Upload images"
+  ![ja-upload-images](en/images/screenshot-ja-upload-images.png)
+
 
 ## Adding a new language
 
