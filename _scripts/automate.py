@@ -497,25 +497,25 @@ def create_markdown(extended):
 
     if extended:
         if are_pages_outdated:
-            markdown_text.append("\n- Outdated page(s):\n")
+            markdown_text.append("\n\n## Outdated page(s):\n")
             for language in get_all_languages():
                 pages_outdated = get_outdated_pages(language=language)
                 if len(pages_outdated) != 0:
-                    markdown_text.append("  - `{language}`\n".format(language=language))
+                    markdown_text.append("\n### `{language}`\n\n".format(language=language))
                     for page in pages_outdated:
                         link = get_file_link(language=language, page=page)
-                        markdown_text.append("    - [{page}]({link})\n".format(page=page, link=link))
+                        markdown_text.append("- [{page}]({link})\n".format(page=page, link=link))
 
         if are_pages_not_translated:
-            markdown_text.append("- Not translated page(s):\n")
+            markdown_text.append("\n## Not translated page(s):\n\n")
             for language in get_other_languages():
                 not_translated_pages = get_not_translated_pages(main_language=MAIN_LANGUAGE, secondary_language=language)
                 if len(not_translated_pages) != 0:
-                    markdown_text.append("  - `{language}`\n".format(language=language))
+                    markdown_text.append("\n### `{language}`\n\n".format(language=language))
                     for page in not_translated_pages:
                         link_en = get_file_link(language=MAIN_LANGUAGE, page=page)
                         link = get_file_link(language=language, page=page)
-                        markdown_text.append("    - [{page}]({link}) ([en]({link_en}))\n".format(page=page, link=link, link_en=link_en))
+                        markdown_text.append("- [{page}]({link}) ([en]({link_en}))\n".format(page=page, link=link, link_en=link_en))
 
     write_file(filename=FILE_STATUS, content=markdown_text)
 
