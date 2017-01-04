@@ -42,6 +42,7 @@ title: Help contents
 - [Field content selector](/en/ContentSelector)
 - [File links in JabRef](/en/FileLinks)
 - [Journal abbreviations](/en/JournalAbbreviations)
+- [Links to other entries](/en/EntryLinks)
 - [PDF/PS/URL/DOI links in JabRef](/en/ExternalFiles)
 - [Set/clear/rename fields](/en/SetClearRenameFields)
 - [Special Fields](/en/SpecialFields)

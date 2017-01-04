@@ -40,6 +40,7 @@ title: Daftar Isi Bantuan
 - [Bidang 'pemilik'](/in/Owner)
 - [Cap waktu entri](/in/TimeStamp)
 - [File links in JabRef](/in/FileLinks)
+- [Links to other entries](/in/EntryLinks)
 - [PDF/PS/URL/DOI links in JabRef](/in/ExternalFiles)
 - [Pengisian kata dalam bidang](/in/ContentSelector)
 - [Set/clear/rename fields](/in/SetClearRenameFields)

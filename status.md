@@ -1,18 +1,18 @@
 ---
 title: Translation Status
 ---
-### Help pages status (2016-12-31 14:05 - Branch `gh-pages` `b022aed`)
+### Help pages status (2017-01-04 15:35 - Branch `gh-pages` `00f76f8`)
 - Main language: `en`
 - Available languages: `de`, `fr`, `in`, `it`, `ja`
 
 | Language | translated | not translated | outdated |  % translated | % outdated |
 | -------- | ---------- | -------------- | -------- |  ------------ | ---------- |
-| en | 83 | 0 | 6 | 100 | 7 |
-| de | 32 | 51 | 4 | 38 | 12 |
-| fr | 41 | 42 | 10 | 49 | 24 |
-| in | 21 | 62 | 2 | 25 | 9 |
-| it | 0 | 83 | 0 | 0 | 0 |
-| ja | 57 | 26 | 6 | 68 | 10 |
+| en | 84 | 0 | 6 | 100 | 7 |
+| de | 32 | 52 | 4 | 38 | 12 |
+| fr | 41 | 43 | 10 | 48 | 24 |
+| in | 21 | 63 | 2 | 25 | 9 |
+| it | 0 | 84 | 0 | 0 | 0 |
+| ja | 57 | 27 | 6 | 67 | 10 |
 
 
 ## Outdated page(s):
@@ -80,6 +80,7 @@ title: Translation Status
 - [DiVAtoBibTeX.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/de/DiVAtoBibTeX.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/DiVAtoBibTeX.md))
 - [DOAJ.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/de/DOAJ.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/DOAJ.md))
 - [DOItoBibTeX.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/de/DOItoBibTeX.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/DOItoBibTeX.md))
+- [EntryLinks.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/de/EntryLinks.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/EntryLinks.md))
 - [ExternalFileTypes.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/de/ExternalFileTypes.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/ExternalFileTypes.md))
 - [FAQcontributing.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/de/FAQcontributing.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/FAQcontributing.md))
 - [FAQgeneral.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/de/FAQgeneral.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/FAQgeneral.md))
@@ -129,6 +130,7 @@ title: Translation Status
 - [CustomKeyBindings.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/fr/CustomKeyBindings.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/CustomKeyBindings.md))
 - [DBLP.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/fr/DBLP.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/DBLP.md))
 - [DOAJ.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/fr/DOAJ.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/DOAJ.md))
+- [EntryLinks.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/fr/EntryLinks.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/EntryLinks.md))
 - [ExternalFileTypes.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/fr/ExternalFileTypes.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/ExternalFileTypes.md))
 - [FAQcontributing.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/fr/FAQcontributing.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/FAQcontributing.md))
 - [FAQgeneral.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/fr/FAQgeneral.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/FAQgeneral.md))
@@ -181,6 +183,7 @@ title: Translation Status
 - [DOAJ.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/in/DOAJ.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/DOAJ.md))
 - [DOItoBibTeX.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/in/DOItoBibTeX.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/DOItoBibTeX.md))
 - [EndNoteFilters.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/in/EndNoteFilters.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/EndNoteFilters.md))
+- [EntryLinks.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/in/EntryLinks.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/EntryLinks.md))
 - [ExternalFiles.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/in/ExternalFiles.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/ExternalFiles.md))
 - [ExternalFileTypes.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/in/ExternalFileTypes.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/ExternalFileTypes.md))
 - [FAQcontributing.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/in/FAQcontributing.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/FAQcontributing.md))
@@ -255,6 +258,7 @@ title: Translation Status
 - [DOItoBibTeX.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/DOItoBibTeX.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/DOItoBibTeX.md))
 - [EndNoteFilters.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/EndNoteFilters.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/EndNoteFilters.md))
 - [EntryEditor.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/EntryEditor.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/EntryEditor.md))
+- [EntryLinks.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/EntryLinks.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/EntryLinks.md))
 - [ExternalFiles.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/ExternalFiles.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/ExternalFiles.md))
 - [ExternalFileTypes.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/ExternalFileTypes.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/ExternalFileTypes.md))
 - [FAQcontributing.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/FAQcontributing.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/FAQcontributing.md))
@@ -320,6 +324,7 @@ title: Translation Status
 - [CheckIntegrity.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/CheckIntegrity.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/CheckIntegrity.md))
 - [CleanupEntries.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/CleanupEntries.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/CleanupEntries.md))
 - [CustomKeyBindings.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/CustomKeyBindings.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/CustomKeyBindings.md))
+- [EntryLinks.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/EntryLinks.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/EntryLinks.md))
 - [ExternalFileTypes.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/ExternalFileTypes.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/ExternalFileTypes.md))
 - [FAQgeneral.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/FAQgeneral.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/FAQgeneral.md))
 - [FAQlinux.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/FAQlinux.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/FAQlinux.md))
