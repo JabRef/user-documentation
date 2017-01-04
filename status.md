@@ -1,9 +1,9 @@
 ---
 title: Translation Status
 ---
-### Help pages status (2017-01-04 15:35 - Branch `gh-pages` `00f76f8`)
+### Help pages status (2017-01-04 17:01 - Branch `gh-pages` `64686a0`)
 - Main language: `en`
-- Available languages: `de`, `fr`, `in`, `it`, `ja`
+- Available languages: `de`, `fr`, `in`, `ja`
 
 | Language | translated | not translated | outdated |  % translated | % outdated |
 | -------- | ---------- | -------------- | -------- |  ------------ | ---------- |
@@ -11,7 +11,6 @@ title: Translation Status
 | de | 32 | 52 | 4 | 38 | 12 |
 | fr | 41 | 43 | 10 | 48 | 24 |
 | in | 21 | 63 | 2 | 25 | 9 |
-| it | 0 | 84 | 0 | 0 | 0 |
 | ja | 57 | 27 | 6 | 67 | 10 |
 
 
@@ -229,93 +228,6 @@ title: Translation Status
 - [TranslatingGUI.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/in/TranslatingGUI.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/TranslatingGUI.md))
 - [XMP.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/in/XMP.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/XMP.md))
 - [zbMATH.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/in/zbMATH.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/zbMATH.md))
-
-### `it`
-
-- [ACMPortal.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/ACMPortal.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/ACMPortal.md))
-- [ADS.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/ADS.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/ADS.md))
-- [ADStoBibTeX.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/ADStoBibTeX.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/ADStoBibTeX.md))
-- [arXiv.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/arXiv.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/arXiv.md))
-- [Autosave.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/Autosave.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/Autosave.md))
-- [Backup.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/Backup.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/Backup.md))
-- [BaseFrame.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/BaseFrame.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/BaseFrame.md))
-- [BestPractices.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/BestPractices.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/BestPractices.md))
-- [Bibtex.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/Bibtex.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/Bibtex.md))
-- [BibtexKeyPatterns.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/BibtexKeyPatterns.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/BibtexKeyPatterns.md))
-- [CheckIntegrity.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/CheckIntegrity.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/CheckIntegrity.md))
-- [CiteSeer.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/CiteSeer.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/CiteSeer.md))
-- [CleanupEntries.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/CleanupEntries.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/CleanupEntries.md))
-- [CommandLine.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/CommandLine.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/CommandLine.md))
-- [ContentSelector.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/ContentSelector.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/ContentSelector.md))
-- [CustomEntryTypes.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/CustomEntryTypes.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/CustomEntryTypes.md))
-- [CustomExports.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/CustomExports.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/CustomExports.md))
-- [CustomImports.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/CustomImports.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/CustomImports.md))
-- [CustomKeyBindings.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/CustomKeyBindings.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/CustomKeyBindings.md))
-- [DatabaseProperties.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/DatabaseProperties.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/DatabaseProperties.md))
-- [DBLP.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/DBLP.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/DBLP.md))
-- [DiVAtoBibTeX.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/DiVAtoBibTeX.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/DiVAtoBibTeX.md))
-- [DOAJ.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/DOAJ.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/DOAJ.md))
-- [DOItoBibTeX.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/DOItoBibTeX.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/DOItoBibTeX.md))
-- [EndNoteFilters.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/EndNoteFilters.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/EndNoteFilters.md))
-- [EntryEditor.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/EntryEditor.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/EntryEditor.md))
-- [EntryLinks.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/EntryLinks.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/EntryLinks.md))
-- [ExternalFiles.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/ExternalFiles.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/ExternalFiles.md))
-- [ExternalFileTypes.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/ExternalFileTypes.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/ExternalFileTypes.md))
-- [FAQcontributing.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/FAQcontributing.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/FAQcontributing.md))
-- [FAQgeneral.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/FAQgeneral.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/FAQgeneral.md))
-- [FAQlinux.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/FAQlinux.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/FAQlinux.md))
-- [FAQosx.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/FAQosx.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/FAQosx.md))
-- [FAQother.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/FAQother.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/FAQother.md))
-- [FAQsharing.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/FAQsharing.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/FAQsharing.md))
-- [FAQwindows.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/FAQwindows.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/FAQwindows.md))
-- [FileLinks.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/FileLinks.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/FileLinks.md))
-- [FindDuplicates.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/FindDuplicates.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/FindDuplicates.md))
-- [FindUnlinkedFiles.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/FindUnlinkedFiles.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/FindUnlinkedFiles.md))
-- [GeneralFields.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/GeneralFields.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/GeneralFields.md))
-- [GetBibTeXDataFromDOI.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/GetBibTeXDataFromDOI.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/GetBibTeXDataFromDOI.md))
-- [GoogleScholar.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/GoogleScholar.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/GoogleScholar.md))
-- [Groups.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/Groups.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/Groups.md))
-- [GVK.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/GVK.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/GVK.md))
-- [IEEEXplore.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/IEEEXplore.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/IEEEXplore.md))
-- [ImportInspectionDialog.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/ImportInspectionDialog.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/ImportInspectionDialog.md))
-- [INSPIRE.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/INSPIRE.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/INSPIRE.md))
-- [Installation.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/Installation.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/Installation.md))
-- [ISBNtoBibTeX.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/ISBNtoBibTeX.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/ISBNtoBibTeX.md))
-- [JabRef.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/JabRef.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/JabRef.md))
-- [JournalAbbreviations.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/JournalAbbreviations.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/JournalAbbreviations.md))
-- [License.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/License.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/License.md))
-- [Marking.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/Marking.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/Marking.md))
-- [MathSciNet.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/MathSciNet.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/MathSciNet.md))
-- [Medline.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/Medline.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/Medline.md))
-- [MedlineRIS.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/MedlineRIS.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/MedlineRIS.md))
-- [MedlinetoBibTeX.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/MedlinetoBibTeX.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/MedlinetoBibTeX.md))
-- [MergeEntries.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/MergeEntries.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/MergeEntries.md))
-- [MsOfficeBibFieldMapping.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/MsOfficeBibFieldMapping.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/MsOfficeBibFieldMapping.md))
-- [NewBasedOnAux.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/NewBasedOnAux.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/NewBasedOnAux.md))
-- [OpenOfficeIntegration.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/OpenOfficeIntegration.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/OpenOfficeIntegration.md))
-- [Owner.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/Owner.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/Owner.md))
-- [Preview.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/Preview.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/Preview.md))
-- [ProtectedTerms.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/ProtectedTerms.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/ProtectedTerms.md))
-- [Remote.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/Remote.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/Remote.md))
-- [ReplaceString.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/ReplaceString.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/ReplaceString.md))
-- [RevisionHistory.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/RevisionHistory.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/RevisionHistory.md))
-- [SaveActions.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/SaveActions.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/SaveActions.md))
-- [Search.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/Search.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/Search.md))
-- [SetClearRenameFields.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/SetClearRenameFields.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/SetClearRenameFields.md))
-- [SharedBibFile.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/SharedBibFile.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/SharedBibFile.md))
-- [SpecialFields.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/SpecialFields.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/SpecialFields.md))
-- [Springer.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/Springer.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/Springer.md))
-- [SQLDatabase.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/SQLDatabase.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/SQLDatabase.md))
-- [SQLDatabaseMigration.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/SQLDatabaseMigration.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/SQLDatabaseMigration.md))
-- [SQLExport.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/SQLExport.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/SQLExport.md))
-- [StringEditor.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/StringEditor.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/StringEditor.md))
-- [Strings.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/Strings.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/Strings.md))
-- [SynchroFileLinks.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/SynchroFileLinks.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/SynchroFileLinks.md))
-- [TimeStamp.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/TimeStamp.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/TimeStamp.md))
-- [TitleToBibTeX.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/TitleToBibTeX.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/TitleToBibTeX.md))
-- [TranslatingGUI.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/TranslatingGUI.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/TranslatingGUI.md))
-- [XMP.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/XMP.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/XMP.md))
-- [zbMATH.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/it/zbMATH.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/zbMATH.md))
 
 ### `ja`
 
