@@ -37,13 +37,23 @@ A: This may be because the preferences need to be reset.
 Execute `java -jar JabRef-X.Y.jar --prdef all -n` (with `X.Y` the version of JabRef).
 On Windows, if that does not help, execute `regedit` and delete the folder `HKEY\_CURRENT\_USER\SOFTWARE\JavaSoft\Prefs\net\sf\jabref`.
 
-## Q: Does JabRef support Chinese characters?
+## Q: Does JabRef support non-English languages or UTF8 in general?
 
-A: Yes. Go to **Options -&gt; Preferences -&gt; General -&gt; Default Encoding**.
-Set it to *UTF8*.
-At "Appearance" set table font as *simsun* (or any other Chinese font).
-At "General", you can change the UI language to *Chinese*.
-More information are available at <http://yenlung.km.nccu.edu.tw/xms/read_attach.php?id=61> (alternative: <https://web.archive.org/web/20111027034912/http://yenlung.math.nccu.edu.tw/~yenlung/notes/latex_in_Windows.pdf>).
+A: Yes.
+ - Go to **Options -&gt; Preferences -&gt; General**.
+   - At "Default Encoding" select *UTF8*.
+   - At "Lanaguge" select required alternative UI language if required.
+ - Go to **Options -&gt; Preferences -&gt; Appearance**.
+   - Click "Set table font"
+     - Set "Font family" as *dialog*.
+     
+### Note
+The *dialog* font may fail to show characters correctly if the language-specific Input Method Editor (IME) is not installed.  In this case a unicode font must be selected that contains the character ranges for the required lanaguge.  For example *simsun* for Chinese, *dotum* for Korean etc.  See <https://en.wikipedia.org/wiki/List_of_typefaces_included_with_Microsoft_Windows> for further language/font pairs for Windows.
+
+Further language-specific instructions are available at:
+  - Traditional Chinese
+    - <http://yenlung.km.nccu.edu.tw/xms/read_attach.php?id=61>
+    - <https://web.archive.org/web/20111027034912/http://yenlung.math.nccu.edu.tw/~yenlung/notes/latex_in_Windows.pdf>
 
 ## Q: When I have an instance of Jabref running and double click another BibTeX file it is opened in a new JabRef instance. Is it possible to open it in a new tab in the first instance?
 
