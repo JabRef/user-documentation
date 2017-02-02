@@ -150,7 +150,7 @@ The following fields are treated as follows during epxort:
 | location                      | City, StateProvince, CountryRegion|
 | &lt;EntryType is thesis&gt;         | ThesisType     |
 | &lt;EntryType is patent&gt; number | PatentNumber   |
-| number (entry is not patent)) | Number
+| number (entry is not patent) | Number
 
 
 ### Special Import treatment
