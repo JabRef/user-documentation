@@ -58,4 +58,5 @@ For more information on how JabRef generates *BibTeX* keys, see [Customizing the
 
 By selecting this Tab, we are sending the title of the selected paper to Mr. DLib. Mr. DLib is a service that calculates recommendations for you based on this title. After a short loading time the recommendations are listed in the Related Articles Tab.
 For detailed information see [Mr. DLibs help page](http://mr-dlib.org/information-for-users/information-about-mr-dlib-for-jabref-users/#). The following image shows the Related Articles Tab with recommendations to the selected item.
-![Screenshot of the Related Articles Tab](./images/mrdlib_screenshot.png)
+![Screenshot of the Related Articles Tab](./images/mrdlib_screenshot.PNG)
+
