@@ -56,6 +56,8 @@ Für nähere Informationen, wie die *BibTeX* Keys generiert werden, schauen Sie 
 ## Ähnliche Dokumente
 
 Wird der Tab "ähnliche Dokumente" im EntryEditor ausgewählt, so wird der Titel des ausgewählten Items an Mr. DLib gesendet.
+
 Mr. DLib ist ein Dienst, der aus diesem Titel ähnliche Dokumente berechnet. Nach einer kurzen Ladezeit werden hier die ähnlichen Dokumente aufgelistet. Für detailierte Informationen hierzu besuchen Sie die Hilfe Seite von [Mr. DLib](http://mr-dlib.org/information-for-users/information-about-mr-dlib-for-jabref-users/#).
 Der folgende screenshot zeigt den "Ähnliche Dokumente" Tab im Entry Editor mit Empfehlungen zum ausgewählten Eintrag.
+
 ![Screenshot of the Related Articles Tab](./images/sceenshot_related_articles_de.PNG)
