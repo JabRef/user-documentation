@@ -15,6 +15,8 @@ The only requirement for a valid export filter is the existence of a file with t
 
 To see examples of how export filters are made, look for the package containing the layout files for the standard export filters on our download page.
 
+Regarding tool support, there is the [Export-Filter Editor for Jabref](https://sourceforge.net/projects/efe/) to quickly create export filters.
+
 ### Layout files
 
 Let us assume that we are creating an HTML export filter. While the export filter only needs to consist of a single **.layout** file, which in this case could be called *html.layout*, you may also want to add two files called *html.begin.layout* and *html.end.layout*. The former contains the header part of the output, and the latter the footer part. JabRef will look for these two files whenever the export filter is used, and if found, either of these will be copied verbatim to the output before or after the individual entries are written.
