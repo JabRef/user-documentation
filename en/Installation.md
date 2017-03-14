@@ -128,6 +128,7 @@ Based on: <http://tecadmin.net/install-java-8-on-debian/>
 4. Upgrade: `rpm -Uvh jdk-8u101-linux-x64.rpm`
 5. Set alternatives: `alternatives --config java` (choose Oracle version)
 
+Recent JabRef builds are available at <https://build.opensuse.org/package/show/home:cornell_vrdc/jabref3>.
 
 ### CentOS 6 or 7 and Oracle Java
 
