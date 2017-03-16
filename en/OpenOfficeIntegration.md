@@ -187,4 +187,5 @@ If you are using numbered citations, the number for each entry will be automatic
 -   There is currently no support for footnote based citations.
 -   The cursor may be poorly positioned after inserting a citation.
 -   Copy-pasting the example style file directly from this page can give an unparseable file. To avoid this, instead download the example file from the link in the download section.
+- Make sure that `libreoffice-java-common` is installed on Linux for LibreOffice 5, otherwise important libraries are missing.
 
