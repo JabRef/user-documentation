@@ -151,6 +151,7 @@ The following fields are treated as follows during epxort:
 | &lt;EntryType is thesis&gt;         | ThesisType     |
 | &lt;EntryType is patent&gt; number | PatentNumber   |
 | number (entry is not patent) | Number
+| Authors/Editors (single author/entry is enclosed in curly braces) | Corporate |
 
 
 ### Special Import treatment
