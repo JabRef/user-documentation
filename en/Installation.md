@@ -158,3 +158,10 @@ The "old" way:
 
  [Java SE Development Kit 8 Downloads]: http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
  [JavaFX]: https://en.wikipedia.org/wiki/JavaFX
+
+
+## JabRef and OpenOffice/LibreOffice integration
+
+The connection from JabRef to Libre Office requires some office related `jar`-archives to be present.
+The Windows installer for OpenOffice/LibreOffice automatically installs the required libraries.
+For Linux you have to install the package `libreoffice-java-common`.
