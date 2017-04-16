@@ -1,8 +1,8 @@
 ---
 title: Installation
-helpCategories: ["General"]
+helpCategories:
+  - General
 ---
-
 # Installation
 
 This page describes how to install Java, which is required for JabRef.
@@ -14,6 +14,26 @@ You can also install it manually as described here.
 
 The installation steps are written having the [JavaFX development branch](https://builds.jabref.org/javafx/) in mind.
 Thus, it especially describes installing [JavaFX].
+
+## Table of Contents
+
+<!-- toc -->
+
+- [Supported JDKs and JREs](#supported-jdks-and-jres)
+- [Verify Java Installation](#verify-java-installation)
+- [Installation Commands](#installation-commands)
+  * [Ubuntu and Oracle Java](#ubuntu-and-oracle-java)
+  * [Ubuntu 16.04 and OpenJDK](#ubuntu-1604-and-openjdk)
+  * [Debian Jessie 8 and Oracle Java](#debian-jessie-8-and-oracle-java)
+    + [Using the ppa](#using-the-ppa)
+    + [Directly from Oracle](#directly-from-oracle)
+  * [Fedora 23 and Oracle Java](#fedora-23-and-oracle-java)
+  * [CentOS 6 or 7 and Oracle Java](#centos-6-or-7-and-oracle-java)
+  * [Windows and Oracle Java](#windows-and-oracle-java)
+  * [Mac OS and Oracle Java](#mac-os-and-oracle-java)
+- [JabRef and OpenOffice/LibreOffice integration](#jabref-and-openofficelibreoffice-integration)
+
+<!-- tocstop -->
 
 ## Supported JDKs and JREs
 
@@ -156,12 +176,12 @@ The "old" way:
 1. Download dmg-file from the [Java SE Development Kit 8 Downloads] site
 2. Run installation wizzard
 
- [Java SE Development Kit 8 Downloads]: http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
- [JavaFX]: https://en.wikipedia.org/wiki/JavaFX
-
-
 ## JabRef and OpenOffice/LibreOffice integration
 
 The connection from JabRef to Libre Office requires some office related `jar`-archives to be present.
 The Windows installer for OpenOffice/LibreOffice automatically installs the required libraries.
 For Linux you have to install the package `libreoffice-java-common`.
+
+ [Java SE Development Kit 8 Downloads]: http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+ [JavaFX]: https://en.wikipedia.org/wiki/JavaFX
+
