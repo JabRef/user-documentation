@@ -54,7 +54,7 @@ In case you already have a Java version installed - or you closely followed the 
 `java -version`
 
 It is possible having multiple Java versions at the same time.
-Set your preferred Java version on Linux distributions using the following command:
+On debian based Linux distributions set your preferred Java version using the following command:
 
 `sudo update-alternatives --config java`
 
