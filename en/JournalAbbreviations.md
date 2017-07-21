@@ -41,7 +41,7 @@ Once you click *OK*, if you have selected a file, and the table contains at leas
 
 You can link to a number of external lists. These links can be set up in the lower part of the **Manage journal abbreviations** window. External lists are similar to the personal list - the only difference is that JabRef does not provide an interface for editing the external lists.
 
-External lists can be found at the [JabRef's repository of journal abbreviation lists](https://github.com/JabRef/reference-abbreviations/tree/master/journals).
+External lists can be found at [JabRef's repository abbreviation lists](http://abbrv.jabref.org/).
 
 To add a new external list, if necessary, click the **+** button to add another slot to the interface. Then use either the *Browse* or *Download* button next to one of the slots in the lower part of the window:
 
