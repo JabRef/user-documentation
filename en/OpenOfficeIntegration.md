@@ -171,7 +171,9 @@ Author-year citations referring more than one entry will by default be sorted ch
 
 The **LAYOUT** section describes how the bibliography entry for each entry type in JabRef should appear. Each line should start with either the name of a BibTeX entry type, or the word `default`, followed by a '='. The `default` layout will be used for all entry types for which an explicit layout hasn't been given.
 
-The remainder of each line defines the layout, with normal text and spaces appearing literally in the bibliography entry. Information from the BibTeX entry is inserted by adding `\field` markers with the appropriate field name (e.g. `\author` for inserting the author names). Formatting information for the field can be included here, following JabRef's standard export layout syntax. Refer to [JabRef's documentation on custom export filters](CustomExports) for more information about which formatters are available.
+The remainder of each line defines the layout, with normal text and spaces appearing literally in the bibliography entry.
+Information from the BibTeX entry is inserted by adding `\field` markers with the appropriate field name (e.g. `\author` for inserting the author names). Formatting information for the field can be included here, following JabRef's standard export layout syntax.
+Refer to [JabRef's documentation on custom export filters](CustomExports) for more information about which formatters are available and tooling hints.
 
 If author-year citations are used, you have to explicitly specify the position of the "uniquefier" letter that is added to distinguish similar-looking citations. This is done by including a marker for the virtual field `uniq`, typically right after the year (as shown in the example style file). The `uniq` field is automatically set correctly for each entry before its reference text is laid out.
 
@@ -185,4 +187,6 @@ If you are using numbered citations, the number for each entry will be automatic
 -   There is currently no support for footnote based citations.
 -   The cursor may be poorly positioned after inserting a citation.
 -   Copy-pasting the example style file directly from this page can give an unparseable file. To avoid this, instead download the example file from the link in the download section.
+- Make sure that `libreoffice-java-common` is installed on Linux for LibreOffice 5, otherwise important libraries are missing.
+- Open Office 4 will only work running under a 32-bit Java JRE/JDK on Windows because there is no 64-bit version of OpenOffice yet.
 

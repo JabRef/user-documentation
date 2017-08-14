@@ -66,8 +66,10 @@ That's it! We'll review your changes and publish them at [help.jabref.org](http:
 
 ## Advanced editing
 
-To edit more than one file at a time, to add screenshots and for other more advanced changes we recommend to checkout this repository locally and to create a PR of your changes using the standard git and GitHub workflow.
-
+- If the title in the yaml frontmatter (this is at the beginning at each page surrounded by `---`) starts with a special character (eg. `*`), the whole title must be surrounded by quotation marks (`"`).
+- You cannot enclose text with `{{ ... }}` as this will get interpreted as Liquid syntax and not displayed as is.
+   Surround it with `{% raw %}` ... `{% endraw %}` as in [FAQgeneral.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/FAQgeneral.md#q-i-am-using-jabref-in-my-work-should-i-cite-jabref-in-my-publications)
+- To edit more than one file at a time, to add screenshots, and for other more advanced changes we recommend to checkout this repository locally and to create a PR of your changes using the standard git and GitHub workflow.
 
 ### Tables
 
@@ -77,9 +79,40 @@ It has the nice feature to generate markdown tables from different sources, e.g.
 
 ## Note when translating pages
 
- - Categories must not be translated (they are only needed in the English pages and are ignored in all other languages).
- - If the title in the yaml frontmatter (this is at the beginning at each page surrounded by `---`) starts with a special character (eg. `*`), the whole title must be surrounded by quotation marks (`"`).
- - You cannot enclose text with `{{ ... }}` as this will get interpreted as Liquid syntax and not displayed as is. Use `{ { ... } }` instead (with spaces between the braces).
+Categories must not be translated (they are only needed in the English pages and are ignored in all other languages).
+Use the `localization_XY.json` file to translate the categories.
+For instance, [localization_ja.json](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/localization_ja.json).
+
+### Fetch the English version
+
+1. View the page you want to translate in raw. For instance, navigate to https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/MergeEntries.md and click on RAW.
+  ![RAW](en/images/screenshot-raw.png)
+
+2. Copy all the text. (<kbd>Ctrl</kbd> + <kbd>A</kbd>, <kbd>Ctrl</kbd> + <kbd>C</kbd>)
+  ![RAW-marked-all](en/images/screenshot-raw-marked-all.png)
+
+3. Navigate to the version in the target language. For instance, https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/MergeEntries.md
+
+4. Click on the pencil icon
+  ![Click on the pencil icon](en/images/screenshot-edit-pencil.png)
+
+5. Replace text with the one of the clipboard
+  - Click into the text area
+  - <kbd>Ctrl</kbd> + <kbd>A</kbd>
+  - <kbd>Ctrl</kbd> + <kbd>V</kbd>
+
+6. Remove the "category"
+  The category is translated in [localization_ja.json](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/localization_ja.json) and thus does not need to be kept there.
+  ![RAW-marked-all](en/images/screenshot-edit-ja-mergeentries.png)
+
+7. Translate
+
+8. Save your changes
+  See [Saving the changes](#saving-the-changes)
+
+9. Upload images
+  In case you want to upload images, navigate to the "images" subfolder and press "Upload images"
+  ![ja-upload-images](en/images/screenshot-ja-upload-images.png)
 
 
 ## Adding a new language

@@ -10,4 +10,4 @@ This feature allows you to store a selection of often-used words or phrases that
 
 The word selection is database-specific, and is saved along with your references in the .bib file.
 
-To add a new word, you can simply write it into the selector combo box and press <kbd>Enter</kbd>. Using the *Manage* dialog you can also remove words that you have added.
+To add a new word in the entry editor, you can simply click into the text box for the field for which you configured the selectors. A drop down menu will appear and you can select the keyword of your choice. This mechanism is based on the autocompletion functionality in JabRef. Therefore, you need to have autocompletion enabled in your preferences.

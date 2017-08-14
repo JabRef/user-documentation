@@ -40,6 +40,7 @@ title: ヘルプ目次
 - [*BibTeX* について](/ja/Bibtex)
 - [JabRef における PDF/PS/URL/DOI リンク](/ja/ExternalFiles)
 - [JabRef におけるファイルリンク](/ja/FileLinks)
+- [Links to other entries](/ja/EntryLinks)
 - [「owner」フィールド](/ja/Owner)
 - [フィールドを設定/クリア/名称変更](/ja/SetClearRenameFields)
 - [フィールド内容選択メニュー](/ja/ContentSelector)

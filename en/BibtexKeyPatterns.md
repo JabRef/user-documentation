@@ -68,6 +68,7 @@ Several special field markers are offered, which extract only a specific part of
 #### Other key patterns
 
 -   **\[`firstpage`\]**: The number of the first page of the publication (Caution: this will return the lowest number found in the pages field, since BibTeX allows `7,41,73--97` or `43+`.)
+-   **\[`pageprefix`\]**: The non-digit prefix of pages (like "L" for L7) or "" if no non-digit prefix exists (like "" for `7,41,73--97`) .
 -   **\[`keywordN`\]**: Keyword number N from the “keywords” field, assuming keywords are separated by commas or semicolons.
 -   **\[`lastpage`\]**: The number of the last page of the publication (See the remark on `firstpage`)
 -   **\[`shortyear`\]**: The last 2 digits of the publication year
@@ -77,9 +78,9 @@ Several special field markers are offered, which extract only a specific part of
 A field name (or one of the above pseudo-field names) may optionally be followed by one or more modifiers. Modifiers are applied in the order they are specified.
 
 -   **:abbr**: Abbreviates the text produced by the field name or spcial field marker. Only the first character and subsequent characters following white space will be included. For examples:
-  -  **\[journal:abbr\]** would from the journal name “Journal of Fish Biology” produce “JoFB”.
-  -  **\[title:abbr\]** would from the title “An awesome paper on JabRef” produce “AAPoJ”.
-  -  **\[camel:abbr\]** would from the title “An awesome paper on produce “AAPOJ”.
+   -  **\[journal:abbr\]** would from the journal name “Journal of Fish Biology” produce “JoFB”.
+   -  **\[title:abbr\]** would from the title “An awesome paper on JabRef” produce “AAPoJ”.
+   -  **\[camel:abbr\]** would from the title “An awesome paper on produce “AAPOJ”.
 -   **:lower**: Forces the text inserted by the field marker to be in lowercase. For example, **\[auth:lower\]** expands the last name of the first author in lowercase.
 -   **:upper**: Forces the text inserted by the field marker to be in uppercase. For example, **\[auth:upper\]** expands the last name of the first author in uppercase.
 -   **:(x)**: Replace x by any string. The string between the parentheses will be inserted if the field marker preceding this modifier resolves to an empty value. For instance, the marker **\[volume:(unknown)\]** will return the entry's volume if set, and the string **unknown** if the entry's `volume` field is not set.

@@ -63,6 +63,7 @@ Addtionally, some fields have to be treated differently during import/export.
 | pages           | Pages         |
 | authors         | Authors       |
 | editors         | Editors       |
+| volumes         | NumberVolumes |
 
 
 
@@ -88,6 +89,7 @@ In the resulting xml file they are represented with the prefix `BIBTEX_`
 | &lt;BibTexEntryType&gt;     | BIBTEX_Entry        |
 | &lt;BibTexEntryType&gt;     | SourceType          |
 | key (not BibTeX-Key)        | BIBTEX_KEY          |
+| pubstate                    | BITEX_Pubstate      |
 
 
 The xml field `SourceType` contains the associated entry type from the first table, while the original BibTeX/BibLaTex entrytype is preserved in the field `BIBTEX_ENTRY`.
@@ -139,7 +141,7 @@ The following fields are treated as follows during epxort:
 | journaltitle                  | JournalName    |
 | month                         | Month          |
 | date                          | year           |
-| issue                         | number         |
+| issue                         | issue          |
 | isbn                          | StandardNumber |
 | issn                          | StandardNumber |
 | lccn                          | StandardNumber |
@@ -148,7 +150,8 @@ The following fields are treated as follows during epxort:
 | location                      | City, StateProvince, CountryRegion|
 | &lt;EntryType is thesis&gt;         | ThesisType     |
 | &lt;EntryType is patent&gt; number | PatentNumber   |
-| number (entry is not patent and issue is not present) | Number
+| number (entry is not patent) | Number
+| Authors/Editors (single author/editor is enclosed in curly braces) | Corporate |
 
 
 ### Special Import treatment

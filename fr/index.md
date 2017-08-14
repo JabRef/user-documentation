@@ -45,6 +45,7 @@ title: Contenu de l’aide
 - [Le champ 'owner' (propriétaire)](/fr/Owner)
 - [Les liens PDF/PS/URL/DOI dans JabRef](/fr/ExternalFiles)
 - [Liens de fichier dans JabRef](/fr/FileLinks)
+- [Links to other entries](/fr/EntryLinks)
 - [Set/clear/rename fields](/fr/SetClearRenameFields)
 - [Sélecteur de contenu de champ](/fr/ContentSelector)
 

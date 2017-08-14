@@ -498,7 +498,7 @@ def create_markdown(extended):
 
     if extended:
         if are_pages_outdated:
-            markdown_text.append("\n\n## Outdated pages:\n")
+            markdown_text.append("\n\n## Outdated page(s):\n")
             for language in get_all_languages():
                 pages_outdated = get_outdated_pages(language=language)
                 if len(pages_outdated) != 0:
@@ -508,7 +508,7 @@ def create_markdown(extended):
                         markdown_text.append("- [{page}]({link})\n".format(page=page, link=link))
 
         if are_pages_not_translated:
-            markdown_text.append("\n\n## Not translated pages:\n\n")
+            markdown_text.append("\n\n## Not translated page(s):\n\n")
             for language in get_other_languages():
                 not_translated_pages = get_not_translated_pages(main_language=MAIN_LANGUAGE, secondary_language=language)
                 if len(not_translated_pages) != 0:

@@ -67,11 +67,11 @@ You can head to [codacy](https://www.codacy.com/app/simonharrer/jabref/dashboard
 
 ### I want to start with something easy
 
-We collect small issues at <https://github.com/koppor/jabref/issues>.
+We collect small issues at <https://github.com/JabRef/jabref/labels/beginner> and at <https://github.com/koppor/jabref/labels/beginner>.
 You can read up there to find something easy to start with.
 Then, check our [CONTRIBUTING.md](https://github.com/JabRef/jabref/blob/master/CONTRIBUTING.md) for detailed information and further links.
 
 
 ### I want something with huge impact
 
-Then, the [issues intended for external contributions](https://github.com/JabRef/jabref/labels/asking-for-a-pull-request) are the right place to look at.
+Then, the [issues intended for external contributions](https://github.com/JabRef/jabref/labels/help-wanted) are the right place to look at.

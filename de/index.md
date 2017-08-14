@@ -39,6 +39,7 @@ title: Hilfe - Inhalt
 ## Felder
 - [Das 'Besitzer' (owner) Feld](/de/Owner)
 - [Datei-Links in JabRef](/de/FileLinks)
+- [Links to other entries](/de/EntryLinks)
 - [Links zu PDF- und PS-Dateien, URLs und DOIs in JabRef](/de/ExternalFiles)
 - [Set/clear/rename fields](/de/SetClearRenameFields)
 - [Special Fields](/de/SpecialFields)
