@@ -44,52 +44,50 @@ Easy!
 
 See the *step-by-step guide* below. Instead of downloading the English files  (JabRef_en.properties and Menu_en.properties), use directly the ones for your language.
 
-### Localization files status (2017-08-14 07:55 - Branch `master` `ce5038dd3`)
+### Localization files status (2017-08-31 16:45 - Branch `master` `fae0964`)
 
 Note: To get the current status from your local repository, run
 `python ./scripts/syncLang.py markdown`
 
 | Property file | Keys | Keys translated | Keys not translated | % translated |
 | ------------- | ---- | --------------- | ------------------- | ------------ |
-| JabRef_en.properties | 1622 | 1622 | 0 | 100 |
-| JabRef_da.properties | 1622 | 884 | 738 | 54 |
-| JabRef_de.properties | 1622 | 1613 | 9 | 99 |
-| JabRef_el.properties | 1622 | 1296 | 326 | 79 |
-| JabRef_es.properties | 1622 | 1609 | 13 | 99 |
-| JabRef_fa.properties | 1622 | 1 | 1621 | 0 |
-| JabRef_fr.properties | 1622 | 1619 | 3 | 99 |
-| JabRef_in.properties | 1622 | 1131 | 491 | 69 |
-| JabRef_it.properties | 1622 | 1617 | 5 | 99 |
-| JabRef_ja.properties | 1622 | 1502 | 120 | 92 |
-| JabRef_nl.properties | 1622 | 582 | 1040 | 35 |
-| JabRef_no.properties | 1622 | 879 | 743 | 54 |
-| JabRef_pt_BR.properties | 1622 | 1112 | 510 | 68 |
-| JabRef_ru.properties | 1622 | 1435 | 187 | 88 |
-| JabRef_sv.properties | 1622 | 1322 | 300 | 81 |
-| JabRef_tr.properties | 1622 | 1613 | 9 | 99 |
-| JabRef_vi.properties | 1622 | 898 | 724 | 55 |
-| JabRef_zh.properties | 1622 | 1236 | 386 | 76 |
+| JabRef_en.properties | 1593 | 1593 | 0 | 100 |
+| JabRef_ja.properties | 1593 | 1587 | 6 | 99 |
+| JabRef_vi.properties | 1593 | 964 | 629 | 60 |
+| JabRef_de.properties | 1593 | 1593 | 0 | 100 |
+| JabRef_no.properties | 1593 | 951 | 642 | 59 |
+| JabRef_fr.properties | 1593 | 1588 | 5 | 99 |
+| JabRef_es.properties | 1593 | 1555 | 38 | 97 |
+| JabRef_ru.properties | 1593 | 1518 | 75 | 95 |
+| JabRef_tr.properties | 1593 | 1566 | 27 | 98 |
+| JabRef_it.properties | 1593 | 1591 | 2 | 99 |
+| JabRef_fa.properties | 1593 | 1 | 1592 | 0 |
+| JabRef_pt_BR.properties | 1593 | 1189 | 404 | 74 |
+| JabRef_da.properties | 1593 | 954 | 639 | 59 |
+| JabRef_nl.properties | 1593 | 641 | 952 | 40 |
+| JabRef_in.properties | 1593 | 1209 | 384 | 75 |
+| JabRef_sv.properties | 1593 | 1393 | 200 | 87 |
+| JabRef_zh.properties | 1593 | 1274 | 319 | 79 |
 
 | Property file | Keys | Keys translated | Keys not translated | % translated |
 | ------------- | ---- | --------------- | ------------------- | ------------ |
-| Menu_en.properties | 110 | 110 | 0 | 100 |
-| Menu_da.properties | 110 | 89 | 21 | 80 |
-| Menu_de.properties | 110 | 110 | 0 | 100 |
-| Menu_el.properties | 110 | 80 | 30 | 72 |
-| Menu_es.properties | 110 | 110 | 0 | 100 |
-| Menu_fa.properties | 110 | 89 | 21 | 80 |
-| Menu_fr.properties | 110 | 110 | 0 | 100 |
-| Menu_in.properties | 110 | 89 | 21 | 80 |
-| Menu_it.properties | 110 | 110 | 0 | 100 |
-| Menu_ja.properties | 110 | 104 | 6 | 94 |
-| Menu_nl.properties | 110 | 89 | 21 | 80 |
-| Menu_no.properties | 110 | 98 | 12 | 89 |
-| Menu_pt_BR.properties | 110 | 89 | 21 | 80 |
-| Menu_ru.properties | 110 | 102 | 8 | 92 |
-| Menu_sv.properties | 110 | 99 | 11 | 90 |
-| Menu_tr.properties | 110 | 110 | 0 | 100 |
-| Menu_vi.properties | 110 | 103 | 7 | 93 |
-| Menu_zh.properties | 110 | 110 | 0 | 100 |
+| Menu_en.properties | 109 | 109 | 0 | 100 |
+| Menu_in.properties | 109 | 93 | 16 | 85 |
+| Menu_tr.properties | 109 | 107 | 2 | 98 |
+| Menu_zh.properties | 109 | 107 | 2 | 98 |
+| Menu_vi.properties | 109 | 107 | 2 | 98 |
+| Menu_ja.properties | 109 | 108 | 1 | 99 |
+| Menu_fr.properties | 109 | 108 | 1 | 99 |
+| Menu_sv.properties | 109 | 103 | 6 | 94 |
+| Menu_fa.properties | 109 | 93 | 16 | 85 |
+| Menu_nl.properties | 109 | 93 | 16 | 85 |
+| Menu_ru.properties | 109 | 102 | 7 | 93 |
+| Menu_de.properties | 109 | 109 | 0 | 100 |
+| Menu_es.properties | 109 | 102 | 7 | 93 |
+| Menu_da.properties | 109 | 93 | 16 | 85 |
+| Menu_pt_BR.properties | 109 | 93 | 16 | 85 |
+| Menu_no.properties | 109 | 102 | 7 | 93 |
+| Menu_it.properties | 109 | 107 | 2 | 98 |
 
 ## Translating JabRef into a new language
 
