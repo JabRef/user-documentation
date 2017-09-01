@@ -1,5 +1,6 @@
 ---
 title: 特殊フィールド
+outdated: true
 ---
 
 # 特殊フィールド

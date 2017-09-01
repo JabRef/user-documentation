@@ -7,14 +7,14 @@ helpCategories: ["Import/Export"]
 
 ## Introduction
 JabRef supports the MS Office Bibliography xml format for exporting and importing.
-Some field names in the xml format differ from the field names in the BibTeX/BibLaTex format and can therefore be not directly mapped between the formats.
+Some field names in the xml format differ from the field names in the BibTeX/BibLaTeX format and can therefore be not directly mapped between the formats.
 Therefore this help file provides a list of all field mappings.
 
 
 ## Entry Type Mappings
 
 
-| BibTeX/BibLaTex entry type | XML entry type       |
+| BibTeX/BibLaTeX entry type | XML entry type       |
 |---------------------------|-----------------------|
 | book                      | Book                  |
 | inbook                    | BookSection           |
@@ -42,7 +42,7 @@ Therefore this help file provides a list of all field mappings.
 The field mapping for import and export is mostly the same, but there are some differences, as not all field exists in both formats.
 Addtionally, some fields have to be treated differently during import/export.
 
-| BibTeX/BibLaTex | XML field     |
+| BibTeX/BibLaTeX | XML field     |
 |-----------------|---------------|
 | bibtexkey       | Tag           |
 | title           | Title         |
@@ -63,6 +63,7 @@ Addtionally, some fields have to be treated differently during import/export.
 | pages           | Pages         |
 | authors         | Authors       |
 | editors         | Editors       |
+| volumes         | NumberVolumes |
 
 
 
@@ -71,7 +72,7 @@ The following fields are BibTeX/BibLaTex only fields, they have no representatio
 In the resulting xml file they are represented with the prefix `BIBTEX_`
 
 
-| BibTeX/BibLaTex only fields | XML representation  |
+| BibTeX/BibLaTeX only fields | XML representation  |
 |-----------------------------|---------------------|
 | series                      | BIBTEX_Series       |
 | abstract                    | BIBTEX_Abstract     |
@@ -88,6 +89,7 @@ In the resulting xml file they are represented with the prefix `BIBTEX_`
 | &lt;BibTexEntryType&gt;     | BIBTEX_Entry        |
 | &lt;BibTexEntryType&gt;     | SourceType          |
 | key (not BibTeX-Key)        | BIBTEX_KEY          |
+| pubstate                    | BITEX_Pubstate      |
 
 
 The xml field `SourceType` contains the associated entry type from the first table, while the original BibTeX/BibLaTex entrytype is preserved in the field `BIBTEX_ENTRY`.
@@ -132,14 +134,14 @@ In the resulting bib database they are represented with the prefix `msbib-`.
 The following fields are treated as follows during epxort:
 
 
-| BibTeX/BibLaTex represenation | XML field      |
+| BibTeX/BibLaTeX represenation | XML field      |
 |-------------------------------|----------------|
 | booktitle                     | ConferenceName |
 | journal                       | JournalName    |
 | journaltitle                  | JournalName    |
 | month                         | Month          |
 | date                          | year           |
-| issue                         | number         |
+| issue                         | issue          |
 | isbn                          | StandardNumber |
 | issn                          | StandardNumber |
 | lccn                          | StandardNumber |
@@ -148,14 +150,15 @@ The following fields are treated as follows during epxort:
 | location                      | City, StateProvince, CountryRegion|
 | &lt;EntryType is thesis&gt;         | ThesisType     |
 | &lt;EntryType is patent&gt; number | PatentNumber   |
-| number (entry is not patent and issue is not present) | Number
+| number (entry is not patent) | Number
+| Authors/Editors (single author/editor is enclosed in curly braces) | Corporate |
 
 
 ### Special Import treatment
 The following fields are treated as follows during import:
 
 
-| BibTeX/BibLaTex represenation | XML field      |
+| BibTeX/BibLaTeX represenation | XML field      |
 |-------------------------------|----------------|
 | organization                  | ConferenceName |
 | journaltitle                  | Journal        |

@@ -1,14 +1,24 @@
 ---
-title: Fetching entries using the ISBN number
+title: Creating entries using an ISBN number
 helpCategories: ["Fetching entries from the web", "... using publication identifiers"]
+since: 3.8
 ---
 
-# Fetching entries using the ISBN number
+# Creating entries using an ISBN number
 
-To use this feature, choose **Search -&gt; Web search**, and the search interface will appear in the side pane. Select **ISBN to BibTeX** in the dropdown menu.
+To use this feature, choose **BibTeX -&gt; New entry...**.
+In the lower part, there is the box "ID-based entry generator".
+In the field "ID type", you can select "ISBN".
+The field "ID" is focused.
+Enter the ISBN here and press <kbd>Enter</kbd> to generate an entry based on the Id.
+You can also click on "Generate".
+Then, [eBook.de's](http://www.ebook.de/) API is used to convert an ISBN to a BibTeX entry.
+If no entry is found, the fetcher offered at <https://bibtex.chimbori.com/> is used.
+The found entry is opened in an entry editor.
+In case an error occurs, a popup is shown.
 
-This fetcher uses [eBook.de's](http://www.ebook.de/) API to convert an ISBN to a BibTeX entry.
+All fetched entries contain a `url` field.
+This field points to the URL of the book at the respective online book store.
+In case you buy the book using the link, the service providers (ebook.de or chimbori.com) receive a commission to fund the service.
 
-Enter the ISBN number in the search field and press **Enter** or the **Fetch** button. 
-The results are displayed in the [import inspection window](ImportInspectionDialog).
-In case an error occurs, it is shown in a popup.
+![Screenshot of new entry dialog](./images/NewEntryChooseType-IDGeneratorHighlighted-ISBN.png)

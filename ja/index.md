@@ -15,111 +15,123 @@ title: ヘルプ目次
 
 
 ## FAQ
-- [Contributing](/ja/FAQcontributing)
 - [General](/ja/FAQgeneral)
 - [JabRef and Linux](/ja/FAQlinux)
 - [JabRef and Mac OS X](/ja/FAQosx)
+- [JabRef and Windows](/ja/FAQwindows)
 - [Other](/ja/FAQother)
 - [Sharing](/ja/FAQsharing)
-- [JabRef and Windows](/ja/FAQwindows)
+- [貢献方法](/ja/FAQcontributing)
 
 
 ## 一般
-- [自動保存](/ja/Autosave)
-- [JabRef 基本ウィンドウ](/ja/BaseFrame)
-- [ベスト・プラクティス](/ja/BestPractices)
-- [コマンドライン オプション](/ja/CommandLine)
-- [項目エディタ](/ja/EntryEditor)
-- [導入方法](/ja/Installation)
+- [Backup](/ja/Backup)
 - [JabRef](/ja/JabRef)
+- [JabRef 基本ウィンドウ](/ja/BaseFrame)
+- [コマンドラインの使用法とオプション](/ja/CommandLine)
+- [ベスト・プラクティス](/ja/BestPractices)
 - [リモート操作](/ja/Remote)
+- [導入方法](/ja/Installation)
+- [自動保存](/ja/Autosave)
+- [項目エディタ](/ja/EntryEditor)
 
 
 ## フィールド
-- [BibTeX について](/ja/Bibtex)
-- [フィールド内容選択メニュー](/ja/ContentSelector)
+- [*BibTeX* について](/ja/Bibtex)
 - [JabRef における PDF/PS/URL/DOI リンク](/ja/ExternalFiles)
 - [JabRef におけるファイルリンク](/ja/FileLinks)
-- [学術誌名の短縮形](/ja/JournalAbbreviations)
+- [Links to other entries](/ja/EntryLinks)
 - [「owner」フィールド](/ja/Owner)
-- [Set/clear/rename fields](/ja/SetClearRenameFields)
+- [フィールドを設定/クリア/名称変更](/ja/SetClearRenameFields)
+- [フィールド内容選択メニュー](/ja/ContentSelector)
+- [学術誌名の短縮形](/ja/JournalAbbreviations)
+- [文字列に関するヘルプ](/ja/Strings)
 - [特殊フィールド](/ja/SpecialFields)
-- [文字列ヘルプ](/ja/Strings)
 - [項目の時間スタンプ](/ja/TimeStamp)
 
 
 ## 項目の検索と整序
+- [Add unlinked PDFs including BibTeX data into the database](/ja/FindUnlinkedFiles)
 - [Check integrity](/ja/CheckIntegrity)
 - [Cleanup entries](/ja/CleanupEntries)
-- [重複の検出](/ja/FindDuplicates)
-- [Find unlinked files](/ja/FindUnlinkedFiles)
-- [グループ](/ja/Groups)
-- [項目の標識付け](/ja/Marking)
+- [Get BibTeX data from DOI](/ja/GetBibTeXDataFromDOI)
 - [Merge entries](/ja/MergeEntries)
 - [Replace string](/ja/ReplaceString)
-- [検索](/ja/Search)
+- [Save actions](/ja/SaveActions)
 - [Synchronize file links](/ja/SynchroFileLinks)
+- [グループ](/ja/Groups)
+- [検索](/ja/Search)
+- [重複の検出](/ja/FindDuplicates)
+- [項目の標識付け](/ja/Marking)
 
 
 ## 設定
 - [BibTeX鍵(キー)生成方法の調整](/ja/BibtexKeyPatterns)
-- [項目型の調整](/ja/CustomEntries)
-- [Customize entry types](/ja/CustomEntryTypes)
 - [Customize key bindings](/ja/CustomKeyBindings)
-- [データベース特性ウィンドウ](/ja/DatabaseProperties)
 - [Manage external file types](/ja/ExternalFileTypes)
-- [汎用フィールドの個人設定](/ja/GeneralFields)
-- [項目プレビューの設定](/ja/Preview)
 - [Manage protected terms](/ja/ProtectedTerms)
+- [データベース特性ウィンドウ](/ja/DatabaseProperties)
 - [文字列エディタ](/ja/StringEditor)
+- [汎用フィールドの調整](/ja/GeneralFields)
+- [項目プレビューの設定](/ja/Preview)
+- [項目型の調整](/ja/CustomEntryTypes)
 
 
 ## 共同作業
-- [共有SQLデータベース](/ja/SQLDatabase)
-- [Migration of pre-3.6 SQL databases into a shared SQL database](/ja/SQLDatabaseMigration)
 - [BibLaTeXデータベースを共有する](/ja/SharedBibFile)
+- [共有SQLデータベース](/ja/SQLDatabase)
+- [第3.6版以前のSQLデータベースから共有データベースへの移行](/ja/SQLDatabaseMigration)
 
 
 ## 読み込み/書き出し
-- [ユーザー書出フィルタ](/ja/CustomExports)
-- [ユーザー読込フィルタ](/ja/CustomImports)
 - [EndNote書出フィルタ](/ja/EndNoteFilters)
-- [読込検査ウィンドウ](/ja/ImportInspectionDialog)
+- [JabRefにおけるXMPメタデータ サポート](/ja/XMP)
+- [MS Office文献XML形式](/ja/MsOfficeBibFieldMapping)
 - [Medline (txt)形式とMedline (XML)形式およびRIS形式の比較](/ja/MedlineRIS)
-- [MS Office Bibliography xml format](/ja/MsOfficeBibFieldMapping)
 - [New subdatabase based on AUX file](/ja/NewBasedOnAux)
 - [OpenOffice.org / LibreOffice の統合](/ja/OpenOfficeIntegration)
+- [ユーザー書出フィルタ](/ja/CustomExports)
+- [ユーザー読込フィルタ](/ja/CustomImports)
 - [外部SQLデータベースへの書き出し](/ja/SQLExport)
-- [JabRefにおけるXMPメタデータ サポート](/ja/XMP)
+- [読込検査ウィンドウ](/ja/ImportInspectionDialog)
 
 
 ## ウェブから項目を取得する
 
 
 ### ... 刊行識別子を使用して
-- [Digital Object Identifier (DOI)を使用して項目を取得する](/ja/DOItoBibTeX)
-- [ISBN番号を使用して項目を取得する](/ja/ISBNtoBibTeX)
+- [Creating entries from Medline](/ja/MedlinetoBibTeX)
+- [Creating entries from SAO/NASA Astrophysics Data System](/ja/ADStoBibTeX)
+- [Creating entries using the title](/ja/TitleToBibTeX)
+- [DiVAから項目を取得するには](/ja/DiVAtoBibTeX)
+- [Digital Object Identifier (DOI)を使用して項目を取得するには](/ja/DOItoBibTeX)
+- [ISBN番号を使用して項目を取得するには](/ja/ISBNtoBibTeX)
 
 
 ### ... オンライン書誌データベースを使用して
-- [ACM Portalの検索](/ja/ACMPortal)
-- [ADSから項目を取得する](/ja/ADS)
-- [CiteSeerXから読み込む](/ja/CiteSeer)
-- [Fetching entries from DBLP](/ja/DBLP)
-- [Fetching entries from DOAJ](/ja/DOAJ)
-- [DiVAから項目を取得する](/ja/DiVAtoBibTeX)
-- [Fetching entries from GVK](/ja/GVK)
-- [Google Scholarを検索](/ja/GoogleScholar)
-- [IEEEXploreの検索](/ja/IEEEXplore)
-- [INSPIRE 検索](/ja/INSPIRE)
-- [Medlineから項目を取得する](/ja/Medline)
-- [ScienceDirect 検索](/ja/ScienceDirect)
-- [Fetching entries from Springer](/ja/Springer)
-- [Fetching entries from arXiv](/ja/arXiv)
+- [ACM Portalから項目を取得するには](/ja/ACMPortal)
+- [ADSから項目を取得するには](/ja/ADS)
+- [CiteSeerXから項目を取得するには](/ja/CiteSeer)
+- [DBLPから項目を取得するには](/ja/DBLP)
+- [DOAJから項目を取得するには](/ja/DOAJ)
+- [Fetching entries from MathSciNet](/ja/MathSciNet)
+- [Fetching entries from zbMATH](/ja/zbMATH)
+- [GVKから項目を取得するには](/ja/GVK)
+- [Google Scholarから項目を取得するには](/ja/GoogleScholar)
+- [IEEEXploreから項目を取得するには](/ja/IEEEXplore)
+- [INSPIRE-HEPから項目を取得するには](/ja/INSPIRE)
+- [MEDLINEから項目を取得するには](/ja/Medline)
+- [Springerから項目を取得するには](/ja/Springer)
+- [arXivから項目を取得するには](/ja/arXiv)
 
+
+
+## Contributing
+- [Translating the JabRef Interface](/ja/TranslatingGUI)
 
 
 ## その他
+- [License](/ja/License)
 - [更新履歴](/ja/RevisionHistory)
 
 

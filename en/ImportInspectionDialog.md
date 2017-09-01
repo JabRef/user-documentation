@@ -8,7 +8,7 @@ helpCategories: ["Import/Export"]
 ## Purpose
 
 When you import new entries from a supported reference format, or fetch entries directly from the Internet, the inspection window allows you to select the entries you want to keep, to [avoid adding duplicated entries](FindDuplicates),
-and to perform some simple operations like generating BibTeX keys for the entries, or adding them to [groups](GroupsHelp). If you are importing into an existing database, it is often easier to perform these operations before they are mixed in between the entries of your database.
+and to perform some simple operations like generating BibTeX keys for the entries, or adding them to [groups](Groups). If you are importing into an existing database, it is often easier to perform these operations before they are mixed in between the entries of your database.
 
 # The inspection window
 
@@ -22,7 +22,7 @@ By default, all the entries are selected for importation, as shown by the checke
 On the left panel, buttons allow you to **Select all** the entries for importation, or to **Deselect all** the entries.
 
 A left click on an entry (out of the check box and icons) let you choose it. It displays an preview of the entry below the entry table.
-As usual, you can choose several entries by using the *Shift* or the *Ctrl* keys. Then, pushing the button **Delete** on the left panel will remove the choosen entries from the table.
+As usual, you can choose several entries by using the <kbd>Shift</kbd> or the <kbd>Ctrl</kbd> keys. Then, pushing the button **Delete** on the left panel will remove the choosen entries from the table.
 
 A right click on an entry displays a drop-down menu which allows you to:
 

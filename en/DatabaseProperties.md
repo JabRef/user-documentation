@@ -11,8 +11,8 @@ These specific properties override the generic properties defined in **Options -
 ![Screenshot for Database Properties](./images/DatabaseProperties.png)
 
 The database-specific properties are stored in the database itself.
-This way, when moving the database to another computer, these properties are preserved. 
-In most of cases these are stored in the bib-file database using text blocks starting with *@Comment{jabref-meta:* . 
+This way, when moving the database to another computer, these properties are preserved.
+In most of cases these are stored in the bib-file database using text blocks starting with *@Comment{jabref-meta:* .
 
 
 ## Database encoding
@@ -45,15 +45,17 @@ When saving the database, the order of the entries will be preserved if **Save e
 Alternatively, by selecting **Save entries ordered as specified**, you can choose to sort the entries using three criteria.
 For each criterion, you can type-in the field to be used and select the order.
 
+*Note: Entries containing a `crossref` field will always be placed prior to the other entries. This is a necessary preliminary for BibTeX to be able to determine the correct referenced values. (See: [Tame the BeaST](http://ctan.org/pkg/tamethebeast), p. 26)*
+
 
 ## Database protection
 
 While you edit a shared database, another user may be editing it too.
-By default, saving the database will overwrite changes done by others (although a warning message about the changes will be displayed). 
+By default, saving the database will overwrite changes done by others (although a warning message about the changes will be displayed).
 
 To avoid discarding changes involuntarily, and hence to allow a smooth collaborative work,
 you can choose to *Refuse to save the database before external changes have been reviewed*.
-This setting lets you enforce reviewing of external changes before the database can be saved: 
+This setting lets you enforce reviewing of external changes before the database can be saved:
 users will only be able to save the database after any external changes have been reviewed and either merged or rejected.
 
 *Note:* this is not a security feature, merely a way to prevent users from overwriting other users' changes inadvertently. This feature does not protect your database against malicious users.
@@ -63,13 +65,13 @@ users will only be able to save the database after any external changes have bee
 
 Field formatting can be tidied up when saving the database. That ensures your entries to have consistent formatting.
 If you check **Enable save actions**, the list of actions can be configured.
-Each action is defined by:
-- an entry field (upon which the action will be applied).
-- the type of action to be carried out (such as *HTML to LaTeX*, which converts HTML code to LaTeX code, as described in the window).
+
+For more information see [Save Actions](Save Actions).
+
 
 ## Shared SQL database
 
-Note that some properties are not available for shared [SQL databases](http://help.jabref.org/en/SQLDatabase) as they are not handled like a *.bib* file.
+Note that some properties are not available for shared [SQL databases](SQLDatabase) as they are not handled like a *.bib* file.
 The following properties are not available:
 - Database encoding *(always UTF-8)*
 - Save sort order

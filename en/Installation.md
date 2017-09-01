@@ -1,8 +1,8 @@
 ---
 title: Installation
-helpCategories: ["General"]
+helpCategories:
+  - General
 ---
-
 # Installation
 
 This page describes how to install Java, which is required for JabRef.
@@ -13,7 +13,27 @@ On Windows, the installer automatically downloads the OracleJDK (i.e. Java).
 You can also install it manually as described here.
 
 The installation steps are written having the [JavaFX development branch](https://builds.jabref.org/javafx/) in mind.
-Thus, it especially describes installing JavaFX.
+Thus, it especially describes installing [JavaFX].
+
+## Table of Contents
+
+<!-- toc -->
+
+- [Supported JDKs and JREs](#supported-jdks-and-jres)
+- [Verify Java Installation](#verify-java-installation)
+- [Installation Commands](#installation-commands)
+  * [Ubuntu and Oracle Java](#ubuntu-and-oracle-java)
+  * [Ubuntu 16.04 and OpenJDK](#ubuntu-1604-and-openjdk)
+  * [Debian Jessie 8 and Oracle Java](#debian-jessie-8-and-oracle-java)
+    + [Using the ppa](#using-the-ppa)
+    + [Directly from Oracle](#directly-from-oracle)
+  * [Fedora 23 and Oracle Java](#fedora-23-and-oracle-java)
+  * [CentOS 6 or 7 and Oracle Java](#centos-6-or-7-and-oracle-java)
+  * [Windows and Oracle Java](#windows-and-oracle-java)
+  * [Mac OS and Oracle Java](#mac-os-and-oracle-java)
+- [JabRef and OpenOffice/LibreOffice integration](#jabref-and-openofficelibreoffice-integration)
+
+<!-- tocstop -->
 
 ## Supported JDKs and JREs
 
@@ -33,15 +53,14 @@ In case you already have a Java version installed - or you closely followed the 
 
 `java -version`
 
-It is possible having multiple Java version at the same time.
-Set your preferred Java version on Linux distributions using the following command:
+It is possible having multiple Java versions at the same time.
+On debian based Linux distributions set your preferred Java version using the following command:
 
 `sudo update-alternatives --config java`
 
 and choose it by typing the number matching the Java version.
 
 Your Java version should look like this, depending on your operating system and JDK/JRE:
-
 
 **Oracle Java 32-Bit:**
 
@@ -64,8 +83,8 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.x, mixed mode)
 **OpenJDK 32-Bit:**
 
 ```
-OpenJDK version "1.8.0\_x" 
-OpenJDK Runtime Environment (build 1.8.0\_x)
+OpenJDK version "1.8.0_x" 
+OpenJDK Runtime Environment (build 1.8.0_x)
 OpenJDK Client VM (build 25.x, mixed mode)
 ```
 
@@ -78,9 +97,11 @@ OpenJDK Runtime Environment (build 1.8.0_x)
 OpenJDK 64-Bit Server VM (build 25.x, mixed mode)
 ```
 
+If this does not report to be a product from Oracle (for instance tells you that it is a GCJ VM) even if you have installed the Oracle JVM then you need to change your setup.
+In the following, the installation is documented for Ubuntu, Debian, Fedora, CentOS, Windows, and MacOSX.
+
 
 ## Installation Commands
-
 
 ### Ubuntu and Oracle Java
 
@@ -127,6 +148,7 @@ Based on: <http://tecadmin.net/install-java-8-on-debian/>
 4. Upgrade: `rpm -Uvh jdk-8u101-linux-x64.rpm`
 5. Set alternatives: `alternatives --config java` (choose Oracle version)
 
+Recent JabRef builds are available at <https://build.opensuse.org/package/show/home:cornell_vrdc/jabref3>.
 
 ### CentOS 6 or 7 and Oracle Java
 
@@ -135,6 +157,15 @@ Based on: <http://tecadmin.net/install-java-8-on-debian/>
 
 
 ### Windows and Oracle Java
+
+The "modern" way:
+
+1. Install chocolatey by following the steps described at https://chocolatey.org/install
+2. Execute `choco install jre8`
+
+At any time, you can update to the latest Java runtime environment by executing `choco upgrade all`.
+
+The "old" way:
 
 1. Download exe file from the [Java SE Development Kit 8 Downloads] site
 2. Run installation wizzard
@@ -145,4 +176,12 @@ Based on: <http://tecadmin.net/install-java-8-on-debian/>
 1. Download dmg-file from the [Java SE Development Kit 8 Downloads] site
 2. Run installation wizzard
 
+## JabRef and OpenOffice/LibreOffice integration
+
+The connection from JabRef to Libre Office requires some office related `jar`-archives to be present.
+The Windows installer for OpenOffice/LibreOffice automatically installs the required libraries.
+For Linux you have to install the package `libreoffice-java-common`.
+
  [Java SE Development Kit 8 Downloads]: http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+ [JavaFX]: https://en.wikipedia.org/wiki/JavaFX
+

@@ -16,7 +16,7 @@ Group definitions are database-specific; they are saved as a `@COMMENT` block in
 
 ## Interface
 
-The groups interface is shown in the side pane on the left of the screen. It can be toggled on or off by pressing `CTRL-SHIFT-G` or by the groups button in the toolbar. The interface has several buttons, but most functions are accessed via a context ("right-click") menu. Drag and Drop is also supported.
+The groups interface is shown in the side pane on the left of the screen. It can be toggled on or off by pressing <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>G</kbd> or by the groups button in the toolbar. The interface has several buttons, but most functions are accessed via a context ("right-click") menu. Drag and Drop is also supported.
 
 <table>
 <colgroup>
@@ -47,7 +47,7 @@ In JabRef there are four different types of groups:
 1.  The group **All Entries**, which -- as the name suggests -- contains all entries, is always present and cannot be edited or removed.
 2.  **Static groups** behave like directories on disk and contain only those entries that you explicitly assign to them.
 3.  **Dynamic groups based on keyword search** contain entries in which a certain BibTeX field (e.g. `keywords`) contains a certain keyword (e.g. `electrical`). This method does not require manual assignment of entries, but uses information that is already present in the database. If all entries in your database have suitable keywords in their `keywords` field, using this type of group might be the best choice.
-4.  **Dynamic groups based on free-form search expressions** contain entries that match a specified search expression, using the same syntax as the [search panel](SearchHelp) on the side pane. This [syntax](SearchHelp#advanced) supports logical operators (`AND`, `OR`, `NOT`) and allows to specify one or more BibTeX fields to search, facilitating more flexible group definitions than a keyword search (e.g. `author=smith         and title=electrical`).
+4.  **Dynamic groups based on free-form search expressions** contain entries that match a specified search expression, using the same syntax as the [search panel](Search) on the side pane. This [syntax](Search#advanced) supports logical operators (`AND`, `OR`, `NOT`) and allows to specify one or more BibTeX fields to search, facilitating more flexible group definitions than a keyword search (e.g. `author=smith         and title=electrical`).
 
 Every group that you create is of one of the last three types. The group editing dialog, which is invoked by double-clicking on a group, shows a short description of the selected/edited group in plain English.
 
@@ -73,7 +73,7 @@ Two types of conditions can be used:
 This method groups entries in which a specified BibTeX field (e.g. `keywords`) contains a specified search term (e.g. `electrical`). Obviously, for this to work, the grouping field must be present in every entry, and its content must be accurate. The above example would group all entries referring to something electrical. Using the field `author` allows to group entries by a certain author, etc. The search can either be done as a plain-text or a regular expression search. In the former case, JabRef allows to manually assign/remove entries to/from the group by simply appending/removing the search term to/from the content of the grouping field. This makes sense only for the `keywords` field or for self-defined fields, but obviously not for fields like `author` or `year`.
 
 **Using a free-form search expression**  
-This is similar to the above, but rather than search a single field for a single search term, the [search expression syntax](SearchHelp#advanced) can be used, which supports logical operators (`AND`, `OR`, `NOT`) and allows to search multiple BibTeX fields. For example, the search expression `keywords=regression and not         keywords=linear` groups entries concerned with non-linear regression.
+This is similar to the above, but rather than search a single field for a single search term, the [search expression syntax](Search#advanced) can be used, which supports logical operators (`AND`, `OR`, `NOT`) and allows to search multiple BibTeX fields. For example, the search expression `keywords=regression and not         keywords=linear` groups entries concerned with non-linear regression.
 
 In the groups view, dynamic groups are shown in *italics* by default. This can be turned off in the preferences (Options -&gt; Preferences -&gt; Groups, box "Show dynamic groups in italics").
 

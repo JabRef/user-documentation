@@ -5,7 +5,7 @@ dist: trusty
 
 language: ruby
 rvm:
-- 2.3.1
+- 2.3.3
 
 # Assume bundler is being used, therefore
 # the `install` step will run `bundle install` by default.

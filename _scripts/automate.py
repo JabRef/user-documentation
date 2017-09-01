@@ -5,7 +5,6 @@ import datetime
 import json
 import os
 import subprocess
-import webbrowser
 from os import listdir
 from os.path import isfile, join, isdir
 
@@ -457,8 +456,10 @@ def create_markdown(extended):
         num_main_not_translated_pages += len(lang)
 
     markdown_text = []
+    markdown_text.append("---\ntitle: Translation Status\n---\n")
     date = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
-    markdown_text.append("### Help pages status ({date} - Branch `{branch}` `{hash}`)\n".format(date=date,
+    markdown_text.append("# Help pages status\n")
+    markdown_text.append(u"{date} \u2013 `{hash}`\n\n".format(date=date,
         branch=get_current_branch(), hash=get_current_hash_short()))
     markdown_text.append("- Main language: `{main}`\n".format(main=MAIN_LANGUAGE))
     markdown_text.append("- Available languages: {other}\n".format(
@@ -475,49 +476,49 @@ def create_markdown(extended):
                     markdown_text.append("    - [{page}]({link})\n".format(page=page, link=link))
         markdown_text.append("\n")
 
-    markdown_text.append("\n| Language | translated | not translated | outdated | old pages | % translated | % outdated |\n")
-    markdown_text.append(  "| -------- | ---------- | -------------- | -------- | --------- | ------------ | ---------- |\n")
+    markdown_text.append("\n| Language | translated | not translated | outdated |  % translated | % outdated |\n")
+    markdown_text.append(  "| -------- | ---------- | -------------- | -------- |  ------------ | ---------- |\n")
     are_pages_outdated = False
     are_pages_not_translated = False
     for language in get_all_languages():
         num_pages_translated = len(get_translated_pages(language=language))
         num_pages_not_translated = len(get_not_translated_pages(main_language=MAIN_LANGUAGE, secondary_language=language))
         num_pages_outdated = len(get_outdated_pages(language=language))
-        num_pages_old = len(get_old_help_pages_redirecting_to_new_one(language=language))
+        # num_pages_old = len(get_old_help_pages_redirecting_to_new_one(language=language))
         percent_translated = int((1 - num_pages_not_translated / float(num_pages_not_translated + num_pages_translated)) * 100) \
             if num_pages_not_translated + num_pages_translated != 0 else 100
         percent_outdated = int((num_pages_outdated / float(num_pages_translated)) * 100) if num_pages_translated != 0 else 0
 
-        markdown_text.append("| {lang} | {translated} | {not_translated} | {outdated} | {old_pages} | {percent_translated} | {percent_outdated} |\n"
+        markdown_text.append("| {lang} | {translated} | {not_translated} | {outdated} | {percent_translated} | {percent_outdated} |\n"
             .format(lang=language, translated=num_pages_translated, not_translated=num_pages_not_translated, outdated=num_pages_outdated,
-            old_pages=num_pages_old, percent_translated=percent_translated, percent_outdated=percent_outdated))
+            percent_translated=percent_translated, percent_outdated=percent_outdated))
 
         are_pages_outdated |= num_pages_outdated != 0
         are_pages_not_translated |= num_pages_not_translated != 0
 
     if extended:
         if are_pages_outdated:
-            markdown_text.append("\n- Outdated page(s):\n")
+            markdown_text.append("\n\n## Outdated page(s):\n")
             for language in get_all_languages():
                 pages_outdated = get_outdated_pages(language=language)
                 if len(pages_outdated) != 0:
-                    markdown_text.append("  - `{language}`\n".format(language=language))
+                    markdown_text.append("\n### `{language}`\n\n".format(language=language))
                     for page in pages_outdated:
                         link = get_file_link(language=language, page=page)
-                        markdown_text.append("    - [{page}]({link})\n".format(page=page, link=link))
+                        markdown_text.append("- [{page}]({link})\n".format(page=page, link=link))
 
         if are_pages_not_translated:
-            markdown_text.append("- Not translated page(s):\n")
+            markdown_text.append("\n\n## Not translated page(s):\n\n")
             for language in get_other_languages():
                 not_translated_pages = get_not_translated_pages(main_language=MAIN_LANGUAGE, secondary_language=language)
                 if len(not_translated_pages) != 0:
-                    markdown_text.append("  - `{language}`\n".format(language=language))
+                    markdown_text.append("\n### `{language}`\n\n".format(language=language))
                     for page in not_translated_pages:
-                        link = get_file_link(language=MAIN_LANGUAGE, page=page)
-                        markdown_text.append("    - {page} ([en]({link}))\n".format(page=page, link=link))
+                        link_en = get_file_link(language=MAIN_LANGUAGE, page=page)
+                        link = get_file_link(language=language, page=page)
+                        markdown_text.append("- [{page}]({link}) ([en]({link_en}))\n".format(page=page, link=link, link_en=link_en))
 
     write_file(filename=FILE_STATUS, content=markdown_text)
-    webbrowser.open(FILE_STATUS)
 
 
 def status(extended, markdown):
@@ -584,9 +585,11 @@ def update_index(extended):
                 if not title:
                     title = main_post[FRONTMATTER_TITLE] if FRONTMATTER_TITLE in main_post.keys() else ""
 
-                categories = post[FRONTMATTER_CATEGORIES] if FRONTMATTER_CATEGORIES in post.keys() else []
-                if not categories:
-                    categories = main_post[FRONTMATTER_CATEGORIES] if FRONTMATTER_CATEGORIES in main_post.keys() else []
+                if language != MAIN_LANGUAGE and FRONTMATTER_CATEGORIES in post.keys():
+                    logger.warn(u"categories are only needed to be declared in the {main} file, ignoring categories in following: '{lang}', '{file}'".format(main=MAIN_LANGUAGE, lang=language, file=page))
+
+                # getting the categories from the english file, prevents getting a translated category
+                categories = main_post[FRONTMATTER_CATEGORIES] if FRONTMATTER_CATEGORIES in main_post.keys() else []
 
                 for key in categories:
                     if not does_category_exist(key):
@@ -604,7 +607,7 @@ def update_index(extended):
         :param indentation: int: how much the category is indented
         """
         # 2 loops to write the link before subsections
-        for key, value in sorted(index.iteritems()):
+        for key, value in sorted(index.items(), key=lambda x:x[1]):
             if type(value) is not dict:
                 index_file.append(u"- [{title}]({link})\n".format(title=value, link=key))
 
@@ -746,6 +749,7 @@ if args.command == COMMAND_STATUS:
 elif args.command == COMMAND_UPDATE:
     delete_all_generated_redirecting_pages(extended=args.extended)
     update_index(extended=args.extended)
+    create_markdown(extended=True)
 elif args.command == COMMAND_CLEAN:
     delete_all_generated_redirecting_pages(extended=args.extended)
 elif args.command == COMMAND_REMOVE_SUFFIX:

@@ -145,4 +145,4 @@ JREを導入したい場合や，ppaなしでjavaを導入したい場合には�
 1. [Java SE Development Kit 8 Downloads]サイトからdmgファイルをダウンロードする
 2. インストール・ウィザードを実行する
 
- [Java SE Development Kit 8 Downloads]： http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+ [Java SE Development Kit 8 Downloads]: <http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html>

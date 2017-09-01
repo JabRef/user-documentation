@@ -52,3 +52,12 @@ Mit STRG-SHIFT-K wird der *BibTeX* Key des ausgewählten Eintrags in die Zwische
 Um einen *BibTeX* Key für einen Eintrag automatisch erstellen zu lassen, drücken Sie STRG-G oder den entsprechenden (Zauberstab-)Knopf in der Toolbar-Leiste.
 
 Für nähere Informationen, wie die *BibTeX* Keys generiert werden, schauen Sie bitte unter [Anpassen der automatischen Generierung von BibTeX-keys](LabelPatterns) nach.
+
+## Ähnliche Dokumente
+
+Wird der Tab "Ähnliche Dokumente" im EntryEditor ausgewählt, so wird der Titel des ausgewählten Items an Mr. DLib gesendet.
+
+Mr. DLib ist ein Dienst, der aus diesem Titel ähnliche Dokumente berechnet. Nach einer kurzen Ladezeit werden hier diese Dokumente aufgelistet. Für detailierte Informationen hierzu besuchen Sie die Hilfeseite von [Mr. DLib](http://mr-dlib.org/information-for-users/information-about-mr-dlib-for-jabref-users/#).
+Der folgende screenshot zeigt den "Ähnliche Dokumente" Tab im Entry Editor mit Empfehlungen zum ausgewählten Eintrag.
+
+![Screenshot of the Related Articles Tab](./images/sceenshot_related_articles_de.PNG)

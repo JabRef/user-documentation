@@ -25,8 +25,8 @@ As soon you are running on any JabRef 3.x version, you can use the installer to 
 
 ## Q: I am trying to install JabRef, but I am blocked by "JabRef Installer can’t be opened because it is from an unidentified developer."
 
-A: To override that, Ctrl+click instead, and choose "open", which gives the same warning but the possibility to override it. then you can install.
+A: To override that, <kbd>Ctrl</kbd> + <kbd>Click</kbd> instead, and choose "open", which gives the same warning but the possibility to override it. then you can install.
 
 ## Q: I am trying to install JabRef, but I am blocked by  "JabRef Installer error: Error downloading the Java(TM) Runtime Environment. Please check your internet connection and start setup again."
 
-A: The problem is caused because you do not have Java 8 installed, and the automatic download and installation is somehow failing... It can be downloaded here manually: http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+A: The problem occurs because you do not have Java 8 installed, and the automatic download and installation is somehow failing... It can be downloaded here manually: <http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html>.

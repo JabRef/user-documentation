@@ -7,6 +7,10 @@ helpCategories: ["Import/Export"]
 
 JabRef allows you to define and use your own export filters, in the same way as the standard export filters are defined. An export filter is defined by one or more *layout files*, which with the help of a collection of built-in formatter routines specify the format of the exported files. Your layout files must be prepared in a text editor outside of JabRef.
 
+The custom export format of JabRef is an alternative to the [Citation Style Language](http://citationstyles.org/), which is an XML-based format to describe bibliographic rendering.
+
+Existing public files are collected at <https://layouts.jabref.org>.
+
 ## Adding a custom export filter
 
 The only requirement for a valid export filter is the existence of a file with the extension **.layout**. To add a new custom export filter, open the dialog box **Options -&gt; Manage custom exports**, and click **Add new**. A new dialog box will appear, allowing you to specify a name for the export filter (which will appear as one of the choices in the File type dropdown menu of the file dialog when you use the **File -&gt; Export** menu choice in the JabRef window), the path to the **.layout** file, and the preferred file extension for the export filter (which will be the suggested extension in the file dialog when you use the export filter).
@@ -14,6 +18,8 @@ The only requirement for a valid export filter is the existence of a file with t
 ## Creating the export filter
 
 To see examples of how export filters are made, look for the package containing the layout files for the standard export filters on our download page.
+
+Regarding tool support, there is the [Export-Filter Editor for Jabref](https://sourceforge.net/projects/efe/) to quickly create export filters.
 
 ### Layout files
 
@@ -266,7 +272,7 @@ If none of the available formatters can do what you want to achieve, you can add
 
 ## Using Custom Name Formatters
 
-From JabRef 2.2, it is possible to define custom name formatters using the bibtex-sty-file syntax. This allows ultimate flexibility, but is a cumbersome to write
+From JabRef 2.2, it is possible to define custom name formatters using the BibTeX-sty-file syntax. This allows ultimate flexibility, but is a cumbersome to write
 
 You can define your own formatter in the preference tab "Name Formatter" using the following format and then use it with the name given to it as any other formatter
 
@@ -285,13 +291,13 @@ For instance with an authorlist of "Joe Doe and Mary Jane and Bruce Bar and Arth
 -   \* will affect all of them
 -   2..-1 will affect Mary, Bruce and Arthur
 
-The `<format>`-strings use the Bibtex formatter format:
+The `<format>`-strings use the BibTeX formatter format:
 
 The four letters v, f, l, j indicate the name parts von, first, last, jr which are used within curly braces. A single letter v, f, l, j indicates that the name should be abbreviated. If one of these letters or letter pairs is encountered JabRef will output all the respective names (possibly abbreviated), but the whole expression in curly braces is only printed if the name part exists.
 
 For instance if the format is "{ll} {vv {von Part}} {ff}" and the names are "Mary Kay and John von Neumann", then JabRef will output "Kay Mary" (with two space between last and first) and "Neuman von von Part John".
 
-I give two examples but would rather point you to the bibtex documentation.
+I give two examples but would rather point you to the BibTeX documentation.
 
 Small example: `"{ll}, {f.}"` will turn `"Joe Doe"` into `"Doe, J."`
 

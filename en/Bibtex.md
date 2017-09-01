@@ -7,13 +7,29 @@ helpCategories: ["Fields"]
 
 JabRef helps you work with your *BibTeX* databases, but there are still rules to keep in mind when editing your entries, to ensure that your database is treated properly by the *BibTeX* program.
 
+## JabRef's conventions
+
+### Fields in the header of a bib file
+
+JabRef stores the encoding of the file and (in case a shared [SQL database](SQLDatabase) is used) the ID of the shared database in the header of the bib file.
+
+#### Encoding
+
+`% Encoding: <encoding>`: States the encoding of a BibTeX file. E.g., `% Encoding: UTF-8`
+
+#### Shared Id
+
+To enable [auto save](Autosave), JabRef adds `% DBID: <id>` to the header.
+This helps JabRef identifying the SQL database where the file belongs.
+E.g., `% DBID: 2mvhh73ge3hc5fosdsvuoa808t`.
+
 ## Standard *BibTeX* fields
 
 There is a lot of different fields in *BibTeX*, and some additional fields that you can set in JabRef.
 
 The following fields are recognized by the default bibliography styles:
 
--   **Bibtexkey** A unique string used to refer to the entry in LaTeX documents. Note that when referencing an entry from LaTeX, the key must match case-sensitively with the reference string.
+-   **bibtexkey** A unique string used to refer to the entry in LaTeX documents. Note that when referencing an entry from LaTeX, the key must match case-sensitively with the reference string.
 -   **address** Usually the address of the `publisher` or other type of institution. For major publishing houses, you may omit the information entirely or give simply the city. For small publishers, on the other hand, you can help the reader by giving the complete address.
 -   **annote** An annotation. It is not used by the standard bibliography styles, but may be used by others that produce an annotated bibliography.
 -   **author** This field should contain the complete author list for your entry. The names are separated by the word *and*, even if there are more than two authors. Each name can be written in two equivalent forms:
@@ -27,7 +43,7 @@ The following fields are recognized by the default bibliography styles:
 -   **editor** This field is analogue to the *author* field. If there is also an `author` field, then the `editor` field gives the editor of the book or collection in which the reference appears.
 -   **howpublished** How something strange has been published. The first word should be capitalized.
 -   **institution** The sponsoring institution of a technical report.
--   **journal** The name of a journal or magazine. The name of a journal can be abbreviated using a "string". To define such string, use the [string editor](StringEditorHelp).
+-   **journal** The name of a journal or magazine. The name of a journal can be abbreviated using a "string". To define such string, use the [string editor](StringEditor).
 -   **key** Used for alphabetizing, cross referencing, and creating a label when the \`\`author'' information is missing. This field should not be confused with the key that appears in the `\cite` command and at the beginning of the database entry.
 -   **month** The month in which the work was published or, for an unpublished work, in which it was written. You should use the standard three-letter abbreviation of the English names (jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec).
 -   **note** Any additional information that can help the reader. The first word should be capitalized.
@@ -72,13 +88,12 @@ To help in managing your bibliography, and extend the features of BibTeX, JabRef
 
 - [External files](ExternalFiles)
 - [General fields](GeneralFields)
-- [Owner](OwnerHelp)
-- [Quality and grading](SpecialFieldsHelp)
-- [Time stamp](TimeStampHelp)
+- [Owner](Owner)
+- [Quality and grading](SpecialFields)
+- [Time stamp](TimeStamp)
 
 ## Define your own fields
-You can create new fields by [editing (or creating) entry
-types](CustomEntriesHelp).
+You can create new fields by [editing (or creating) entry types](CustomEntries).
 
 ## Hints on fields
 

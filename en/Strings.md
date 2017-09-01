@@ -1,11 +1,11 @@
 ---
-title: Help on Strings
+title: Strings
 helpCategories: ["Fields"]
 ---
 
-# Help on Strings
+# Strings
 
-*BibTeX* supports storing constant strings using `@String {key = value}`. JabRef supports managing them using **BibTeX -&gt; Edit strings**, which opens the [String Editor](StringEditorHelp). These values can be used in fields. For example, you can have:
+*BibTeX* supports storing constant strings using `@String {key = value}`. JabRef supports managing them using **BibTeX -&gt; Edit strings**, which opens the [String Editor](StringEditor). These values can be used in fields. For example, you can have:
 
     @String { kopp = "Kopp, Oliver" }
     @String { kubovy = "Kubovy, Jan" }

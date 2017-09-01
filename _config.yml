@@ -11,13 +11,11 @@ exclude: [CNAME, README.md, .gitignore, vendor]
 include: ['de/', 'en/', 'fr/', 'in/', 'ja/']
 timezone: null
 lsi: false
-
 google_analytics_key: UA-74055103-1 ## put YOUR key here to enable tracking! (blank to disable)
+favicon: /jabref.ico #put a path like: "img/favicon.ico"
 
 gems:
   - jekyll-sitemap
-
-
 
 #pygments is not supported by GitHub. See https://help.github.com/articles/page-build-failed-config-file-error/#fixing-highlighting-errors
 #See also https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
