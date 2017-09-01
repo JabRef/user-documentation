@@ -44,7 +44,7 @@ Easy!
 
 See the *step-by-step guide* below. Instead of downloading the English files  (JabRef_en.properties and Menu_en.properties), use directly the ones for your language.
 
-### Localization files status (2017-09-01 10:37 - Branch `master` `e46d5ee`)
+### Localization files status (2017-09-01 19:01 - Branch `master` `846afc3`)
 
 Note: To get the current status from your local repository, run `python ./scripts/syncLang.py markdown`
 
@@ -53,7 +53,7 @@ Note: To get the current status from your local repository, run `python ./script
 | [JabRef_en.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_en.properties) | 1625 | 1625 | 0 | 100 |
 | [JabRef_ja.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_ja.properties) | 1625 | 1623 | 2 | 99 |
 | [JabRef_vi.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_vi.properties) | 1625 | 898 | 727 | 55 |
-| [JabRef_de.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_de.properties) | 1625 | 1613 | 12 | 99 |
+| [JabRef_de.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_de.properties) | 1625 | 1625 | 0 | 100 |
 | [JabRef_no.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_no.properties) | 1625 | 879 | 746 | 54 |
 | [JabRef_fr.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_fr.properties) | 1625 | 1625 | 0 | 100 |
 | [JabRef_es.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_es.properties) | 1625 | 1609 | 16 | 99 |
@@ -89,6 +89,7 @@ Note: To get the current status from your local repository, run `python ./script
 | [Menu_pt_BR.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/Menu_pt_BR.properties) | 110 | 89 | 21 | 80 |
 | [Menu_no.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/Menu_no.properties) | 110 | 98 | 12 | 89 |
 | [Menu_it.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/Menu_it.properties) | 110 | 110 | 0 | 100 |
+
 
 ## Translating JabRef into a new language
 
