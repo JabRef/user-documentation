@@ -1,4 +1,11 @@
 ---
-redirect:   /en/CheckIntegrity
-layout:     redirect
+title: 整合性検査
+helpCategories: ["項目の検索・整序・剪定"]
+stub: true
 ---
+
+# 整合性検査
+
+JabRefは，データベースの整合性を検査することができます．
+
+この機能は，**品質→整合性検査...** で有効にすることができます．

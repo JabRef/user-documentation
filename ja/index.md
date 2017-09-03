@@ -9,7 +9,7 @@ title: ヘルプ目次
     <strong>抱えている問題の解決策が見つからないのですか？もっと詳しく訊きたいのですか？</strong>
   </div>
   <div class="panel-body">
-    <a class="btn btn-default" role="button" href="http://discourse.jabref.org">オンラインフォーラムでもっとサポートを受けられます！<div style="font-size:small;">（英語でね(^_-)）</div></a>
+  <a class="btn btn-default" role="button" href="http://discourse.jabref.org">オンラインフォーラムでもっとサポートを受けられます！<div style="font-size:small;">（英語でね）</div></a>
   </div>
 </div>
 
@@ -25,7 +25,7 @@ title: ヘルプ目次
 
 
 ## 一般
-- [Backup](/ja/Backup)
+- [バックアップ](/ja/Backup)
 - [JabRef](/ja/JabRef)
 - [JabRef 基本ウィンドウ](/ja/BaseFrame)
 - [コマンドラインの使用法とオプション](/ja/CommandLine)
@@ -40,7 +40,7 @@ title: ヘルプ目次
 - [*BibTeX* について](/ja/Bibtex)
 - [JabRef における PDF/PS/URL/DOI リンク](/ja/ExternalFiles)
 - [JabRef におけるファイルリンク](/ja/FileLinks)
-- [Links to other entries](/ja/EntryLinks)
+- [他の項目へのリンク](/ja/EntryLinks)
 - [「owner」フィールド](/ja/Owner)
 - [フィールドを設定/クリア/名称変更](/ja/SetClearRenameFields)
 - [フィールド内容選択メニュー](/ja/ContentSelector)
@@ -50,15 +50,15 @@ title: ヘルプ目次
 - [項目の時間スタンプ](/ja/TimeStamp)
 
 
-## 項目の検索と整序
-- [Add unlinked PDFs including BibTeX data into the database](/ja/FindUnlinkedFiles)
-- [Check integrity](/ja/CheckIntegrity)
-- [Cleanup entries](/ja/CleanupEntries)
-- [Get BibTeX data from DOI](/ja/GetBibTeXDataFromDOI)
-- [Merge entries](/ja/MergeEntries)
-- [Replace string](/ja/ReplaceString)
-- [Save actions](/ja/SaveActions)
-- [Synchronize file links](/ja/SynchroFileLinks)
+## 項目の検索・整序・剪定
+- [リンクされていないBibTeXデータを含むPDFをデータベースに追加するには](/ja/FindUnlinkedFiles)
+- [整合性検査](/ja/CheckIntegrity)
+- [項目の剪定](/ja/CleanupEntries)
+- [DOIからBibTeXデータを取得するには](/ja/GetBibTeXDataFromDOI)
+- [項目の統合](/ja/MergeEntries)
+- [文字列の置換](/ja/ReplaceString)
+- [保存時動作](/ja/SaveActions)
+- [ファイルリンクの同期](/ja/SynchroFileLinks)
 - [グループ](/ja/Groups)
 - [検索](/ja/Search)
 - [重複の検出](/ja/FindDuplicates)
@@ -67,9 +67,9 @@ title: ヘルプ目次
 
 ## 設定
 - [BibTeX鍵(キー)生成方法の調整](/ja/BibtexKeyPatterns)
-- [Customize key bindings](/ja/CustomKeyBindings)
-- [Manage external file types](/ja/ExternalFileTypes)
-- [Manage protected terms](/ja/ProtectedTerms)
+- [キー割当の調整](/ja/CustomKeyBindings)
+- [外部ファイル型の管理](/ja/ExternalFileTypes)
+- [予約語の管理](/ja/ProtectedTerms)
 - [データベース特性ウィンドウ](/ja/DatabaseProperties)
 - [文字列エディタ](/ja/StringEditor)
 - [汎用フィールドの調整](/ja/GeneralFields)
@@ -88,7 +88,7 @@ title: ヘルプ目次
 - [JabRefにおけるXMPメタデータ サポート](/ja/XMP)
 - [MS Office文献XML形式](/ja/MsOfficeBibFieldMapping)
 - [Medline (txt)形式とMedline (XML)形式およびRIS形式の比較](/ja/MedlineRIS)
-- [New subdatabase based on AUX file](/ja/NewBasedOnAux)
+- [AUXファイルからの新規部分データベース](/ja/NewBasedOnAux)
 - [OpenOffice.org / LibreOffice の統合](/ja/OpenOfficeIntegration)
 - [ユーザー書出フィルタ](/ja/CustomExports)
 - [ユーザー読込フィルタ](/ja/CustomImports)
@@ -100,11 +100,11 @@ title: ヘルプ目次
 
 
 ### ... 刊行識別子を使用して
-- [Creating entries from Medline](/ja/MedlinetoBibTeX)
-- [Creating entries from SAO/NASA Astrophysics Data System](/ja/ADStoBibTeX)
-- [Creating entries using the title](/ja/TitleToBibTeX)
-- [DiVAから項目を取得するには](/ja/DiVAtoBibTeX)
-- [Digital Object Identifier (DOI)を使用して項目を取得するには](/ja/DOItoBibTeX)
+- [Medlineを使用して項目を作成するには](/ja/MedlinetoBibTeX)
+- [SAO/NASA Astrophysics Data Systemを使用して項目を作成するには](/ja/ADStoBibTeX)
+- [タイトルを使用して項目を作成するには](/ja/TitleToBibTeX)
+- [DiVAを使用して項目を作成するには](/ja/DiVAtoBibTeX)
+- [Digital Object Identifier (DOI)を使用して項目を作成するには](/ja/DOItoBibTeX)
 - [ISBN番号を使用して項目を取得するには](/ja/ISBNtoBibTeX)
 
 
@@ -114,8 +114,8 @@ title: ヘルプ目次
 - [CiteSeerXから項目を取得するには](/ja/CiteSeer)
 - [DBLPから項目を取得するには](/ja/DBLP)
 - [DOAJから項目を取得するには](/ja/DOAJ)
-- [Fetching entries from MathSciNet](/ja/MathSciNet)
-- [Fetching entries from zbMATH](/ja/zbMATH)
+- [MathSciNetから項目を取得するには](/ja/MathSciNet)
+- [zbMATHから項目を取得するには](/ja/zbMATH)
 - [GVKから項目を取得するには](/ja/GVK)
 - [Google Scholarから項目を取得するには](/ja/GoogleScholar)
 - [IEEEXploreから項目を取得するには](/ja/IEEEXplore)
@@ -126,12 +126,10 @@ title: ヘルプ目次
 
 
 
-## Contributing
+## 貢献するには
 - [Translating the JabRef Interface](/ja/TranslatingGUI)
 
 
 ## その他
 - [License](/ja/License)
 - [更新履歴](/ja/RevisionHistory)
-
-
