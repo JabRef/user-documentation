@@ -2,7 +2,7 @@
 title: Translation Status
 ---
 # Help pages status
-2017-08-14 07:52 – `4d033f2`
+2017-09-04 07:05 – `655ea6f`
 
 - Main language: `en`
 - Available languages: `de`, `fr`, `in`, `ja`
@@ -13,7 +13,7 @@ title: Translation Status
 | de | 32 | 52 | 4 | 38 | 12 |
 | fr | 41 | 43 | 10 | 48 | 24 |
 | in | 21 | 63 | 2 | 25 | 9 |
-| ja | 57 | 27 | 6 | 67 | 10 |
+| ja | 76 | 8 | 6 | 90 | 7 |
 
 
 ## Outdated page(s):
@@ -234,30 +234,11 @@ title: Translation Status
 
 ### `ja`
 
-- [ADStoBibTeX.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/ADStoBibTeX.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/ADStoBibTeX.md))
-- [Backup.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/Backup.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/Backup.md))
-- [CheckIntegrity.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/CheckIntegrity.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/CheckIntegrity.md))
-- [CleanupEntries.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/CleanupEntries.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/CleanupEntries.md))
-- [CustomKeyBindings.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/CustomKeyBindings.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/CustomKeyBindings.md))
-- [EntryLinks.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/EntryLinks.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/EntryLinks.md))
-- [ExternalFileTypes.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/ExternalFileTypes.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/ExternalFileTypes.md))
 - [FAQgeneral.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/FAQgeneral.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/FAQgeneral.md))
 - [FAQlinux.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/FAQlinux.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/FAQlinux.md))
 - [FAQosx.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/FAQosx.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/FAQosx.md))
 - [FAQother.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/FAQother.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/FAQother.md))
 - [FAQsharing.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/FAQsharing.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/FAQsharing.md))
 - [FAQwindows.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/FAQwindows.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/FAQwindows.md))
-- [FindUnlinkedFiles.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/FindUnlinkedFiles.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/FindUnlinkedFiles.md))
-- [GetBibTeXDataFromDOI.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/GetBibTeXDataFromDOI.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/GetBibTeXDataFromDOI.md))
 - [License.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/License.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/License.md))
-- [MathSciNet.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/MathSciNet.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/MathSciNet.md))
-- [MedlinetoBibTeX.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/MedlinetoBibTeX.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/MedlinetoBibTeX.md))
-- [MergeEntries.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/MergeEntries.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/MergeEntries.md))
-- [NewBasedOnAux.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/NewBasedOnAux.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/NewBasedOnAux.md))
-- [ProtectedTerms.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/ProtectedTerms.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/ProtectedTerms.md))
-- [ReplaceString.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/ReplaceString.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/ReplaceString.md))
-- [SaveActions.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/SaveActions.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/SaveActions.md))
-- [SynchroFileLinks.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/SynchroFileLinks.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/SynchroFileLinks.md))
-- [TitleToBibTeX.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/TitleToBibTeX.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/TitleToBibTeX.md))
 - [TranslatingGUI.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/TranslatingGUI.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/TranslatingGUI.md))
-- [zbMATH.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/zbMATH.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/zbMATH.md))
