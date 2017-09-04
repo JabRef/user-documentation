@@ -35,3 +35,8 @@ Use [AutoHotkey](http://www.autohotkey.com/) and [JabRef.ahk](https://github.com
 
 Ensure that you executed `choco install jre8` (which is offered by [chocolatey](https://chocolatey.org/)).
 If you still encounter issues, use [Jarfix](https://johann.loefflmann.net/en/software/jarfix/index.html) to restore the file association to the jar file.
+
+
+#### Q: I get `WARNING: Could not open/create prefs root node Software\JavaSoft\Prefs at root 0x80000002. Windows RegCreateKeyEx(...) returned error code 5.`
+
+Start regedit and create the following key: `HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\JavaSoft\Prefs`. [[source](https://stackoverflow.com/a/20798112/873282)]
