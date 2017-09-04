@@ -33,7 +33,7 @@ Falls die Inhalte nicht akzeptabel sind, wird das Feld mit roter Farbe hinterleg
 
 ## Autovervollständigung von Wörtern und Namen
 
-Der Eintragseditor bietet die Autovervollständigung von Wörtern. Im Dialog *Optionen -&gt; Einstellungen* können Sie auswählen, in welchen Feldern die Autovervollständigung aktiviert werden soll.
+Der Eintragseditor bietet die Autovervollständigung von Wörtern. Im Dialog *Optionen → Einstellungen* können Sie auswählen, in welchen Feldern die Autovervollständigung aktiviert werden soll.
 
 Bei aktiver Autovervollständigung zeichnet JabRef alle Worte auf, die in jedem der ausgewählten Felder der Datei vorkommen. Immer wenn Sie den Anfang eines dieser Wörter schreiben, wird das Wort sichtbar vorgeschlagen. Sie können den Vorschlag ignorieren, indem Sie einfach weiterschreiben. Um den Vorschlag anzunehmen, drücken Sie entweder auf *ENTER* oder benutzen die Pfeiltasten oder andere Tasten, um die Auswahlbox um die vorgeschlagenen Buchstaben zu entfernen.
 

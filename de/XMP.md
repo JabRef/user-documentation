@@ -12,10 +12,10 @@ Mit der XMP-Unterstützung versucht das JabRef-Team, die Vorteile von Metadaten 
 
 Um die XMP-Funktionen in JabRef zu nutzen, gehen Sie folgendermaßen vor:
 
--   Zum *Importieren einer einzelnen PDF-Datei mit Metadaten* wählen Sie **Datei -&gt; Importieren in \[neue|aktuelle\] Datenbank** und im anschließenden Dialog als Dateiformat **PDF mit XMP-Anmerkungen** aus. Sie können die PDF-Datei stattdessen auch mit der Maus auf das Hauptfenster von JabRef ziehen.
+-   Zum *Importieren einer einzelnen PDF-Datei mit Metadaten* wählen Sie **Datei → Importieren in \[neue|aktuelle\] Datenbank** und im anschließenden Dialog als Dateiformat **PDF mit XMP-Anmerkungen** aus. Sie können die PDF-Datei stattdessen auch mit der Maus auf das Hauptfenster von JabRef ziehen.
 -   Um *bibliographische Informationen in eine verlinkte PDF-Datei zu schreiben*, klicken Sie auf **XMP schreiben** im **Allgemein**-Tab des Eintragseditors.
--   Wenn Sie *alle PDFs einer Datei mit Metadaten versehen* wollen, wählen Sie **Extras -&gt; XMP-Metadaten in PDFs schreiben**.
--   Um zu überprüfen, ob das Schreiben der Metadaten funktioniert hat, öffnen Sie die Datei in Adobe Acrobat und wählen **Datei -&gt; Dokumenteigenschaften** und dann unter dem Reiter **Beschreibung** die Schaltfläche **Zusätzliche Metadaten**. Wenn Sie links "Erweitert" auswählen, sollten Sie im rechten Teil des Dialogs einen Eintrag "http://jabref.sourceforge.net/bibteXMP" sehen, der die entsprechenden Metadaten enthält. Dies geht nur mit dem Vollprogramm Adobe Acrobat, nicht mit dem Adobe Reader.
+-   Wenn Sie *alle PDFs einer Datei mit Metadaten versehen* wollen, wählen Sie **Extras → XMP-Metadaten in PDFs schreiben**.
+-   Um zu überprüfen, ob das Schreiben der Metadaten funktioniert hat, öffnen Sie die Datei in Adobe Acrobat und wählen **Datei → Dokumenteigenschaften** und dann unter dem Reiter **Beschreibung** die Schaltfläche **Zusätzliche Metadaten**. Wenn Sie links "Erweitert" auswählen, sollten Sie im rechten Teil des Dialogs einen Eintrag "http://jabref.sourceforge.net/bibteXMP" sehen, der die entsprechenden Metadaten enthält. Dies geht nur mit dem Vollprogramm Adobe Acrobat, nicht mit dem Adobe Reader.
 -   Wer kein Adobe Acrobat zur Verfügung hat, kann stattdessen das Programm *pdfinfo* verwenden, um die XMP-Metadaten zu überprüfen. *pdfinfo* ist Teil von Xpdf (`www.foolabs.com/xpdf`) und Poppler (`http://poppler.freedesktop.org`).
 
 ## BibteXmp Dateiformat

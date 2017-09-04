@@ -4,7 +4,7 @@ title: Abréviations des journaux
 
 # Abréviations des journaux
 
-Cette fonction peut être configurée dans **Options -&gt; Gérer les abréviations de journaux**.
+Cette fonction peut être configurée dans **Options → Gérer les abréviations de journaux**.
 
 JabRef peut basculer automatiquement les noms de journaux entre leurs formes abrégées et non abrégées tant que les noms sont contenus dans une de vos listes de journaux. JabRef inclut une très longue liste d'abréviations de journaux, toutefois il est probable qu'elle soit incomplète pour les travaux de beaucoup d'utilisateurs. Vous pouvez ajouter des abréviations à partir d'un nombre quelconque de listes, chacune correspond à un fichier texte présent sur votre disque dur.
 
@@ -18,7 +18,7 @@ La conversion de noms de journaux peut être effectuée depuis l'éditeur d'entr
 
 Si le nom du journal actuel n'est pas trouvé dans la liste des journaux, le champ ne sera pas modifié.
 
-Pour convertir en une seule fois les noms de journaux de beaucoup d'entrées, vous pouvez sélectionner ces entrées et choisir **Outils -&gt; Abréger les noms de journaux (ISO)**, **Outils -&gt; Abréger les noms de journaux (MEDLINE)** ou **Outils -&gt; Développer les noms des journaux**. Ces trois actions abrégeront ou développeront les noms de journaux pour toutes les entrées sélectionnées dont le nom de journal a pu être trouvé dans vos listes de journaux.
+Pour convertir en une seule fois les noms de journaux de beaucoup d'entrées, vous pouvez sélectionner ces entrées et choisir **Outils → Abréger les noms de journaux (ISO)**, **Outils → Abréger les noms de journaux (MEDLINE)** ou **Outils → Développer les noms des journaux**. Ces trois actions abrégeront ou développeront les noms de journaux pour toutes les entrées sélectionnées dont le nom de journal a pu être trouvé dans vos listes de journaux.
 
 ## Paramétrer vos listes de journaux
 

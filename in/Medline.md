@@ -6,7 +6,7 @@ title: Mengambil entri dari Medline
 
 MEDLINE adalah basisdata utama kedokteran di U.S. National Library. Basisdata ini berisi referensi dari artikel jurnal yang berkaitan dengan sains kehidupan dengan konsentrasi pada biomedicine.
 
-JabRef dapat melaukan muaturun dari basisdata Medline. Untuk menggunakan fitur ini, pilih **Pencarian Web -&gt; Pencarian Medline**, kemudaian dialog pencarian Medline akan muncul di jendela sebelah kiri.
+JabRef dapat melaukan muaturun dari basisdata Medline. Untuk menggunakan fitur ini, pilih **Pencarian Web → Pencarian Medline**, kemudaian dialog pencarian Medline akan muncul di jendela sebelah kiri.
 
 Ada dua cara untuk memilih entri yang akan dimuaturun:
 

@@ -4,7 +4,7 @@ title: Jendela propereti basisdata
 
 # Jendela propereti basisdata
 
-*Dibuka dari meu utama **Berkas -&gt; Properti basisdata***
+*Dibuka dari meu utama **Berkas → Properti basisdata***
 
 Jendela properti basisdata membantu anda untuk mengatur beberapa hal yang terkait dengan basisdata.
 

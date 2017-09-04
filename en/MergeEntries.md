@@ -7,7 +7,7 @@ helpCategories: ["Finding, sorting and cleaning entries"]
 
 JabRef can help you merging entries of your database.
 
-First, select the two entries to be merged. Then select the menu **Quality -&gt; Merge entries...**.
+First, select the two entries to be merged. Then select the menu **Quality → Merge entries...**.
 The **Merge entries** window will pop-up.
 
 ## Parallel display of the entries' fields

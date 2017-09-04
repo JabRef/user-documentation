@@ -9,7 +9,7 @@ JabRef can optionally set a field to contain the date an entry was added to the 
 
 ## Configuration
 
-You can disable or enable this feature by entering **Options -&gt; Preferences -&gt; General**, and selecting/deselecting the line *'Mark new entries with addition date'*.
+You can disable or enable this feature by entering **Options → Preferences → General**, and selecting/deselecting the line *'Mark new entries with addition date'*.
 
 If an entry with a timestamp is pasted or imported, the field is updated with the current date if *'Overwrite'* is checked. The value of the timestamp field will be updated upon changes in the entry if *'Update timestamp on modification'* is checked.
 

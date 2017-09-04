@@ -6,4 +6,4 @@ stub: true
 
 # Replace string
 
-This feature is available through **Search -&gt; Replace string...**.
+This feature is available through **Search → Replace string...**.

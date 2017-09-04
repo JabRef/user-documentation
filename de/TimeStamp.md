@@ -4,7 +4,7 @@ title: Zeitstempel
 
 # Zeitstempel
 
-Die Benutzung des Zeitstempels kann unter **Einstellungen -&gt; Allgemeines** an- und abgestellt sowie verändert werden.
+Die Benutzung des Zeitstempels kann unter **Einstellungen → Allgemeines** an- und abgestellt sowie verändert werden.
 
 JabRef kann automatisch ein Feld setzen, das das Datum enthält, an dem der Eintrag zur Datei hinzugefügt wurde.
 

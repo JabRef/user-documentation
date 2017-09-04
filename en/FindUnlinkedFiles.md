@@ -5,7 +5,7 @@ helpCategories: ["Finding, sorting and cleaning entries"]
 
 # Find unlinked files
 
-This feature is available through **Quality -&gt; Find unlinked files...**.
+This feature is available through **Quality → Find unlinked files...**.
 
 The following description appeared first on [tex.stackexchange.com](http://tex.stackexchange.com/a/344310/9075).
 

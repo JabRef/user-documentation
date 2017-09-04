@@ -4,7 +4,7 @@ title: Externer Zugriff
 
 # Externer Zugriff
 
-Diese Funktion kann unter **Einstellungen -&gt; Erweitert** eingestellt werden.
+Diese Funktion kann unter **Einstellungen → Erweitert** eingestellt werden.
 
 *Beachten Sie, dass das Aktivieren dieser Funktion mit Windows XP SP2 (und möglicherweise auch mit anderen Konfigurationen) zu einer Meldung führen kann, die besagt, dass bestimmte Funktionen des Programms von der Windows-Firewall geblockt wurden. Sie können die Firewall anweisen, weiterhin zu blocken, denn die Firewall beeinträchtigt den Externen Zugriff von JabRef nicht.*
 

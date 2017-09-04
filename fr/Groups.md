@@ -74,7 +74,7 @@ Cette méthode groupe les entrées dans lesquelles un champ BibTeX spécifié (p
 **Utiliser une expression de recherche de forme libre**  
 Ceci est similaire à ce qui est décrit ci-dessus mais, au lieu de rechercher dans un seul champ pour un unique terme de recherche, la [syntaxe des expressions de recherche](SearchHelp#advanced) peut être utilisées, autorisant l'emploi d'opérateurs logiques (`AND`, `OR`, `NOT`) et permettant les recherches sur plusieurs champs BibTeX. Par exemple, l'expression de recherche `keywords=régression         and not keywords=linéaire` groupe les entrées concernant la régression non-linéaire.
 
-Dans le panneau des groupes, les groupes dynamiques sont par défaut affichés en *italique*. Cela peut être modifié dans les préférences (Options -&gt; Préférences -&gt; Groupes, case "Afficher les groupes dynamiques en italique").
+Dans le panneau des groupes, les groupes dynamiques sont par défaut affichés en *italique*. Cela peut être modifié dans les préférences (Options → Préférences → Groupes, case "Afficher les groupes dynamiques en italique").
 
 ### Contexte hiérarchique
 

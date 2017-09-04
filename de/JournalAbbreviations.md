@@ -4,7 +4,7 @@ title: Zeitschriftentitel abkürzen
 
 # Zeitschriftentitel abkürzen
 
-Diese Funktion kann unter **Optionen -&gt; Abkürzungen der Zeitschriften verwalten** eingestellt werden.
+Diese Funktion kann unter **Optionen → Abkürzungen der Zeitschriften verwalten** eingestellt werden.
 
 JabRef kann automatisch zwischen Zeitschriftentiteln in abgekürzter und ausführlicher Form hin- und herschalten, sofern die Titel in einer Ihrer Zeitschriftenlisten enthalten ist. Sie können mehrere dieser Listen benutzen, die Sie als externe Textdateien anlegen.
 

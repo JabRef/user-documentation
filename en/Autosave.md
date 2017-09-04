@@ -15,7 +15,7 @@ Furthermore it synchronizes your local files which are associated with appropria
 
 ![Screenshot of the autosave preferences](./images/AutoSave.png)
 
-You can activate the autosave feature through **Options -&gt; Preferences**, and then by choosing **File** on the left panel. At the lower part of the window, a section is dedicated to **AutoSave**.
+You can activate the autosave feature through **Options → Preferences**, and then by choosing **File** on the left panel. At the lower part of the window, a section is dedicated to **AutoSave**.
 
 
 ## Autosave for local databases

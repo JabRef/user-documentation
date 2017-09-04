@@ -4,7 +4,7 @@ title: Singkatan nama jurnal
 
 # Singkatan nama jurnal
 
-Fitur ini dapat diatur melalui menu **Pengaturan -&gt; Pengaturan singkatan jurnal**.
+Fitur ini dapat diatur melalui menu **Pengaturan → Pengaturan singkatan jurnal**.
 
 JabRef dapat secara otomatis merubah dari bentuk singkatan ke nama penuh dan sebaliknya, selama nama jurnal dan singkatannya ada dalam daftar anda. Anda bisa menggunakan memperoleh daftar singkatan dari beberapa berkas yang ada dalam cakra padat anda.
 
@@ -18,7 +18,7 @@ Pengubahan nama jurnal dapat dilakukan dari penyunting entri atau dari menu **Al
 
 Jika nama jurnal tidak ada dalam daftar, maka nama jurnal tidak akan berubah sama sekali.
 
-Untuk merubah nama jurnal bersamaan, anda dapat memilih beberapa entri yang ingin anda ubah nama jurnalnya, kemudian dari menu **AlatBantuan -&gt; Singkatan nama jurnal (ISO)**, **AlatBantuan -&gt; Singkatan nama jurnal (MEDLINE)** atau **AlatBantuan -&gt; Tidak menyingkat nama jurnal**. Ketiga perintah tersebut dapat menyingkat atau menggunakan nama lengkap dari entri pilihan dimana nama jurnal ada dalam daftar jurnal.
+Untuk merubah nama jurnal bersamaan, anda dapat memilih beberapa entri yang ingin anda ubah nama jurnalnya, kemudian dari menu **AlatBantuan → Singkatan nama jurnal (ISO)**, **AlatBantuan → Singkatan nama jurnal (MEDLINE)** atau **AlatBantuan → Tidak menyingkat nama jurnal**. Ketiga perintah tersebut dapat menyingkat atau menggunakan nama lengkap dari entri pilihan dimana nama jurnal ada dalam daftar jurnal.
 
 ## Membuat daftar nama jurnal
 

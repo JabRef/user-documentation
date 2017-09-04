@@ -6,7 +6,7 @@ title: Pencarian melalui Portal ACM
 
 Portal ACM Portal mempunyai dua basisdata: Pustaka ACM Dijital yang mempunyai koleksi teks lengkap dari setiap publikasi artikel oleh ACM termasuk arsip yang berumur 50 tahun, serta Panduan untuk Computing Literature yang merupakan koleksi bibliografi dari penerbit yang terkenal dalam bidang komputer yang totalnya ada lebih dari satu juta entri.
 
-JabRef dapat melakukan muaturun acuan dari postal basisdata ACM. Untuk menggunakan fitur ini, pilih **Pencarian Web -&gt; Pencarian Portal ACM**, kemudian dialog pencarian akan muncul di sebelah kiri jendela.
+JabRef dapat melakukan muaturun acuan dari postal basisdata ACM. Untuk menggunakan fitur ini, pilih **Pencarian Web → Pencarian Portal ACM**, kemudian dialog pencarian akan muncul di sebelah kiri jendela.
 
 Untuk memulai pencarian, tulislah kata yang ingin anda cari, kemudian tekan **Enter** atau tekan tombol**Mencari**.
 

@@ -4,7 +4,7 @@ title: Accès à distance
 
 # Accès à distance
 
-Cette fonction peut être activée et configurée dans **Préférences -&gt; Avancé**.
+Cette fonction peut être activée et configurée dans **Préférences → Avancé**.
 
 *Notez qu'activer cette fonction sous Windows XP SP2 (et probablement d'autres configurations) peut afficher une boîte de message disant que certaines fonctions du programme ont été bloquées par le pare-feu de Windows. Vous pouvez en toute sécurité dire au pare-feu de continuer à bloquer ; le pare-feu n'interférera pas avec l'accès à distance de JabRef.*
 

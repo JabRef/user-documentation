@@ -4,7 +4,7 @@ title: Recherche IEEEXplore
 
 # Recherche IEEEXplore
 
-Pour utiliser cette fonction, choisissez **Recherche -&gt; Recherche Web**. L'interface de recherche apparaitra dans le panneau latéral. Sélectionnez **IEEEXplore** dans le menu déroulant.
+Pour utiliser cette fonction, choisissez **Recherche → Recherche Web**. L'interface de recherche apparaitra dans le panneau latéral. Sélectionnez **IEEEXplore** dans le menu déroulant.
 
 IEEEXplore permet l'accès à de la litterature technique en génie électrique, informatique et électronique. Pour lancer une recherche, entrez les mots de votre requête et appuyez sur **Entrée** ou sur le bouton **Rechercher**.
 

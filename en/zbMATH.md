@@ -9,7 +9,7 @@ since: 3.7
 [zbMATH](https://www.zbmath.org/) is a reviewing service providing reviews and abstracts for articles in pure and applied mathematics ([Wikipedia](https://en.wikipedia.org/wiki/Zentralblatt_MATH)).
 
 
-To fetch entries from zbMATH, choose **Search -&gt; Web search**, and the search interface will appear in the side pane.
+To fetch entries from zbMATH, choose **Search → Web search**, and the search interface will appear in the side pane.
 Select **zbMATH** in the dropdown menu.
 To start a search, enter the words of your query, and press <kbd>Enter</kbd> or the **Fetch** button.
 

@@ -8,7 +8,7 @@ JabRef vous permet de définir et d'utiliser vos propres filtres d'exportation d
 
 ## Ajout d'un filtre d'exportation personnalisé
 
-La seule obligation pour avoir un filtre d'exportation valide est l'existence d'un fichier avec l'extension **.layout**. Pour ajouter un nouveau filtre d'exportation, on utilise le menu **Options -&gt; Gérer les exportations personnalisées**, et on clique sur **Ajouter nouvelle**. Une nouvelle boite de dialogue apparaît et vous permet de spécifier le nom du nouveau filtre d'exportation (ce nom apparaîtra ensuite comme l'un des choix du menu déroulant "Type de fichier" de la fenêtre de dialogue affectée au menu **Fichier -&gt; Exporter** de la fenêtre principale de JabRef), le chemin du fichier **.layout**, et l'extension de fichier préférée par le filtre d'exportation (c'est cette extension qui sera suggérée dans la boite de dialogue lorsque le filtre sera utilisé).
+La seule obligation pour avoir un filtre d'exportation valide est l'existence d'un fichier avec l'extension **.layout**. Pour ajouter un nouveau filtre d'exportation, on utilise le menu **Options → Gérer les exportations personnalisées**, et on clique sur **Ajouter nouvelle**. Une nouvelle boite de dialogue apparaît et vous permet de spécifier le nom du nouveau filtre d'exportation (ce nom apparaîtra ensuite comme l'un des choix du menu déroulant "Type de fichier" de la fenêtre de dialogue affectée au menu **Fichier → Exporter** de la fenêtre principale de JabRef), le chemin du fichier **.layout**, et l'extension de fichier préférée par le filtre d'exportation (c'est cette extension qui sera suggérée dans la boite de dialogue lorsque le filtre sera utilisé).
 
 ## Création d'un filtre d'exportation
 
@@ -235,14 +235,14 @@ Par exemple, une entrée pourrait contenir un lien de fichier vers le fichier "/
 donnera la sortie suivante :
 
         1. John's final report (/home/john/report.pdf)
-        
+
 
 Si l'entrée contient un second lien de fichier vers le fichier "/home/john/draft.txt" du type "Text file" avec la description 'An early "draft"', le sortie sera comme suit :
 
         1. John's final report (/home/john/report.pdf)
         2. An early "draft" (/home/john/draft.txt)
 
-        
+
 
 Si le formateur a été appelé avec un second argument, la liste sera filtrée. Par exemple :
 
@@ -252,7 +252,7 @@ affichera uniquement le texte suivant :
 
         1. An early "draft" (/home/john/draft.txt)
 
-        
+
 
 Si l'on veut que cette sortie soit incluse dans une sortie en style XML, les guillemets dans la description de fichier pourrait causer problème. En ajoutant deux arguments additionnels pour traduire les guillemets en caractères XML, on résoudra ce problème :
 
@@ -262,7 +262,7 @@ affichera la sortie suivante :
 
         1. An early "draft" (/home/john/draft.txt)
 
-        
+
 
 Des paires de remplacement supplémentaires pourraient être ajoutées.
 

@@ -4,7 +4,7 @@ title: Récupération d'entrées en utilisant l'identifiant d'objet numérique (
 
 # Récupération d'entrées en utilisant l'identifiant d'objet numérique (DOI)
 
-Pour utiliser cette fonction, choisissez **Recherche -&gt; recherche Web**, et l'interface de recherche s'affichera dans le panneau latéral. Sélectionnez **DOI vers BibTeX** dans le menu déroulant.
+Pour utiliser cette fonction, choisissez **Recherche → recherche Web**, et l'interface de recherche s'affichera dans le panneau latéral. Sélectionnez **DOI vers BibTeX** dans le menu déroulant.
 
 Ce moteur de recherche utilise <http://dx.doi.org/> pour convertir un DOI en une entrée BibTeX.
 

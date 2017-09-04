@@ -5,7 +5,7 @@ outdated: true
 
 # Propriétés de la base de données.
 
-*Se configurent à partir de la fenêtre principale en sélectionnant **Fichier -&gt; Propriétés de la base de données***
+*Se configurent à partir de la fenêtre principale en sélectionnant **Fichier → Propriétés de la base de données***
 
 La fenêtre des propriétés de la base de données vous permet de configurer certains paramètres spécifiques à la base de données.
 

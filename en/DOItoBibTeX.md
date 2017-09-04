@@ -6,7 +6,7 @@ since: 3.7
 
 # Creating entries using the Digital Object Identifier (DOI)
 
-To use this feature, choose **BibTeX -&gt; New entry...**.
+To use this feature, choose **BibTeX → New entry...**.
 In the lower part, there is the box "ID-based entry generator".
 In the field "ID type", "DOI" should be already selected.
 The field "ID" is focused.

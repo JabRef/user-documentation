@@ -5,8 +5,8 @@ helpCategories: ["Setup"]
 
 # Database properties window
 
-Each database can have specific properties that can be modified through **File -&gt; Database properties**) or by right clicking on the tab of the database and choosing "Database properties".
-These specific properties override the generic properties defined in **Options -&gt; Preferences**.
+Each database can have specific properties that can be modified through **File → Database properties**) or by right clicking on the tab of the database and choosing "Database properties".
+These specific properties override the generic properties defined in **Options → Preferences**.
 
 ![Screenshot for Database Properties](./images/DatabaseProperties.png)
 
@@ -30,13 +30,13 @@ For your database, you can define a **General file directory** and a **User-spec
 These settings override the *main file directory* defined in the Preferences dialog.
 
 The **General file directory** is a common path for all the users of a shared database.  
-The **User-specific file directory** allows each user to have its own file directory for the database. If defined, it overrides the **General file directory**.  
+The **User-specific file directory** allows each user to have its own file directory for the database. If defined, it overrides the **General file directory**.
 
 JabRef stores the name of the current system alongside the **User-specific file directory**. This assumes that each user of the database has a different system name. For example, when using the computer *laptop*, the entry in the bib file is @Comment{jabref-meta: fileDirectory-jabref-laptop:\\somedir;}
 
 Relative directories can be specified. This means that the location of the files will be interpreted relative to the location of the bib file. Simply setting a directory to "." (without quotes) means that the files should reside in the same directory as the bib file.
 
-*Note: the legacy PDF/PS links (i.e. the *pdf* and *ps* fields, which were used in JabRef versions prior to 2.3), should in current versions be replaced by general file links.* This can be done using **Quality -&gt; Cleanup entries...** and enabling *Upgrade external PDF/PS links to use the 'file' field*.
+*Note: the legacy PDF/PS links (i.e. the *pdf* and *ps* fields, which were used in JabRef versions prior to 2.3), should in current versions be replaced by general file links.* This can be done using **Quality → Cleanup entries...** and enabling *Upgrade external PDF/PS links to use the 'file' field*.
 
 
 ## Save sort order

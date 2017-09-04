@@ -12,7 +12,7 @@ The search bar is located between the icon bar and the database tabs.
 
 To make the cursor jump to the search field, you can:
 - click in the search field.
-- select the menu **Search -&gt; Search**.
+- select the menu **Search → Search**.
 - press <kbd>Ctrl</kbd> + <kbd>F</kbd>.
 
 Additionally, <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd> also activates the global search setting.

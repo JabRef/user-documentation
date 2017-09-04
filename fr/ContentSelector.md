@@ -5,7 +5,7 @@ outdated: true
 
 # Sélecteur de contenu de champ
 
-Cette opération vous permet d'enregistrer une sélection de mots et de phrases que vous utilisez souvent dans votre base de données. Par défaut, c'est possible avec les champs *Journal*, *Author*, *Keywords* et *Publisher* mais vous pouvez aussi ajouter des sélecteurs à d'autres champs, en utilisant la partie supérieure de la fenêtre *Gérer les sélecteurs* (menu **Outils --&gt; Gérer les sélecteurs de contenu**).
+Cette opération vous permet d'enregistrer une sélection de mots et de phrases que vous utilisez souvent dans votre base de données. Par défaut, c'est possible avec les champs *Journal*, *Author*, *Keywords* et *Publisher* mais vous pouvez aussi ajouter des sélecteurs à d'autres champs, en utilisant la partie supérieure de la fenêtre *Gérer les sélecteurs* (menu **Outils -→ Gérer les sélecteurs de contenu**).
 
 La sélection des mots est spécifique à la base de données et sauvegardée avec vos références dans le fichier .bib.
 

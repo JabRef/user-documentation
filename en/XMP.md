@@ -17,10 +17,10 @@ If you then email this PDF to a colleague she can just drag the file into JabRef
 
 To use the XMP-feature in JabRef you can do the following:
 
--   To **import a single annotated PDF-file** that contains XMP you can select "File -&gt; Import into... -&gt; XMP-annotated PDF" or drag the file into the main view.
+-   To **import a single annotated PDF-file** that contains XMP you can select "File → Import into... → XMP-annotated PDF" or drag the file into the main view.
 -   To **write the bibliographic information to the associated PDF** do the following: Double click the entry in the main view, go to the "General" tab and click on "Write XMP".
--   If you want **to annotate all the PDFs in a given database** you can select "Tools -&gt; Write XMP for database"
--   To verify if it worked you can open the PDF in Adobe Acrobat and select "File -&gt; Document Properties -&gt; Additional Metadata -&gt; Advanced". In the tree to the right you should see an entry called "http://purl.org/net/bibteXMP". This works only with Adobe Acrobat, not with Adobe Reader.
+-   If you want **to annotate all the PDFs in a given database** you can select "Tools → Write XMP for database"
+-   To verify if it worked you can open the PDF in Adobe Acrobat and select "File → Document Properties → Additional Metadata → Advanced". In the tree to the right you should see an entry called "http://purl.org/net/bibteXMP". This works only with Adobe Acrobat, not with Adobe Reader.
 -   If you don't have Adobe Acrobat, you can use `pdfinfo` instead in order to see the XMP metadata. `pdfinfo` is part of [Xpdf](http://www.foolabs.com/xpdf/) and [Popple](http://poppler.freedesktop.org).
 
 ## BibTeXmp Fileformat

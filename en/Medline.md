@@ -8,7 +8,7 @@ helpCategories: ["Fetching entries from the web", "... using online bibliographi
 [MEDLINE](https://www.nlm.nih.gov/pubs/factsheets/medline.html) is a bibliographic database of life sciences and biomedical information. It includes bibliographic information for articles from academic journals covering medicine, nursing, pharmacy, dentistry, veterinary medicine, and health care. MEDLINE also covers much of the literature in biology and biochemistry, as well as fields such as molecular evolution ([Wikipedia](https://en.wikipedia.org/wiki/MEDLINE)).
 
 
-To fetch entries from MEDLINE, choose **Search -&gt; Web search**, and the search interface will appear in the side pane. Select **MEDLINE** in the dropdown menu. To start a search, enter the words of your query, and press <kbd>Enter</kbd> or the **Fetch** button.
+To fetch entries from MEDLINE, choose **Search → Web search**, and the search interface will appear in the side pane. Select **MEDLINE** in the dropdown menu. To start a search, enter the words of your query, and press <kbd>Enter</kbd> or the **Fetch** button.
 
 There are two ways of specifying which entries to download:
 
@@ -30,7 +30,7 @@ In case an error occurs, it is shown in a popup.
 
 ## Using a Proxy Server
 
-If you need to use an HTTP proxy server, you can configure JabRef to use a proxy using the "Network" preferences (**Options -&gt; Preferences -&gt; Network**).
+If you need to use an HTTP proxy server, you can configure JabRef to use a proxy using the "Network" preferences (**Options → Preferences → Network**).
 
 ## Mass downloading of articles
 
@@ -39,12 +39,12 @@ The purpose of the WebFetchers (such as the Medline Fetcher) is to simplify down
 That means, one tries to import the bibliographic information of already known publications in a simple way.
 
 However, it is still possible to import hundreds or even thousands of entries from medline using the export functionality of the database itself.
-Perfom the search query you like, and then choose the "Send to" -&gt; "File" export (choose Medline or XML as format):
+Perfom the search query you like, and then choose the "Send to" → "File" export (choose Medline or XML as format):
 
 ![medline-export](https://cloud.githubusercontent.com/assets/676652/21082470/83635c92-bfdc-11e6-9345-3dd2f356e18f.png)
 
- The downloaded file can then be imported using JabRefs "File" -&gt; "Import into current/new database" feature.
+ The downloaded file can then be imported using JabRefs "File" → "Import into current/new database" feature.
  Note: depending on the number the import might require some - or quite a lot of time.
  It was tried in 2016 with an exported XML file of 130MB an over 11000 found entries, which required more than 10 minutes of import.
 
- *Apart from fetching entries by using a full search it is also possible to directly create a BibTeX entry using the* ***BibTeX -&gt; New Entry*** *dialog. More details can be found [here](MedlinetoBibTeX).*
+ *Apart from fetching entries by using a full search it is also possible to directly create a BibTeX entry using the* ***BibTeX → New Entry*** *dialog. More details can be found [here](MedlinetoBibTeX).*

@@ -6,4 +6,4 @@ stub: true
 
 # Synchronize file links
 
-This feature is available through **Quality -&gt; Synchronize file links...**.
+This feature is available through **Quality → Synchronize file links...**.

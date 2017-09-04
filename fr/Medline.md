@@ -4,7 +4,7 @@ title: Récupération d'entrées depuis Medline
 
 # Récupération d'entrées depuis Medline
 
-Pour utiliser cette fonction, choisissez **Recherche -&gt; Recherche Web**. L'interface de recherche apparaitra dans le panneau latéral. Sélectionnez **Medline** dans le menu déroulant.
+Pour utiliser cette fonction, choisissez **Recherche → Recherche Web**. L'interface de recherche apparaitra dans le panneau latéral. Sélectionnez **Medline** dans le menu déroulant.
 
 MEDLINE est la principale base de données bibliographique de la bibliothèque nationale de médecine des États-Unis. Elle contient des références à des articles de journaux sur les sciences de la vie avec une spécialisation sur la biomédecine.
 

@@ -6,7 +6,7 @@ title: Einträge von Medline abrufen
 
 MEDLINE ist die wichtigste Datenbank der *U.S. National Library of Medicine*. Sie enthält Literaturangaben von Zeitschriftenartikeln der Lebenswissenschaften, vornehmlich der Biomedizin.
 
-JabRef kann Literaturangaben von der Medline-Datenbank herunterladen. Um diese Funktion zu nutzen, wählen Sie **Extras -&gt; Medline abrufen**, so dass der Medline-Dialog im linken Seitenfeld erscheint.
+JabRef kann Literaturangaben von der Medline-Datenbank herunterladen. Um diese Funktion zu nutzen, wählen Sie **Extras → Medline abrufen**, so dass der Medline-Dialog im linken Seitenfeld erscheint.
 
 Es gibt zwei Möglichkeiten, die Auswahl der Einträge vorzunehmen, die heruntergeladen werden sollen:
 

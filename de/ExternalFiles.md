@@ -12,17 +12,17 @@ Mit JabRef können Sie Ihre Einträge mit den entsprechenden PDF- oder PS-Dateie
 
 JabRef benötigt Informationen darüber, welche Programme es für PDF- und PS-Dateien und Internetseiten benutzen soll. In der Standardeinstellung werden sie auf Werte gesetzt, die wahrscheinlich zu Ihrem Betriebssystem passen, so dass eine gute Chance besteht, dass Sie diese Werte nicht zu verändern brauchen.
 
-Um die Einstellungen der externen Programme zu ändern, öffnen Sie den Unterpunkt *Externe Programme* im Dialog *Optionen -&gt; Einstellungen*.
+Um die Einstellungen der externen Programme zu ändern, öffnen Sie den Unterpunkt *Externe Programme* im Dialog *Optionen → Einstellungen*.
 
 ## Externe Dateien oder Links öffnen
 
 Es gibt verschiedene Möglichkeiten, wie man externe Dateien oder Internetseiten aus JabRef öffnen kann. Im Eintrags-Editor können Sie einfach auf das Textfeld, das ein DOI oder URL enthält, doppelklicken. In der Tabellenansicht können Sie einen Eintrag auswählen und die Menüeinträge (unter *Extras*), die Tastenkombinationen (in der Standardeinstellung F4 für PDF/PS und F3 für DOI/URL) oder das Kontextmenü (mit der rechten Maustaste) benutzen, um die Datei oder Internetseite zu öffnen. Schließlich können Sie auch auf ein PDF-, PS-, URL- oder DOI-Icon in der Tabelle klicken.
 
-In der Standardeinstellung zeigt die Tabellenansicht zwei Spalten mit Icons für die Einträge, die mit externen Dateien oder URLs verlinkt sind. Beide Spalten können im Unterpunkt *Tabellenansicht* des Dialogs *Optionen -&gt; Einstellungen* ausgeblendet werden. Die zweite Spalte zeigt Icons für PDF- oder PS-Dateien (nur PDF, wenn beide vorhanden sind), die dritte Spalte zeigt Icons für URL oder DOI (nur URL, wenn beide vorhanden sind).
+In der Standardeinstellung zeigt die Tabellenansicht zwei Spalten mit Icons für die Einträge, die mit externen Dateien oder URLs verlinkt sind. Beide Spalten können im Unterpunkt *Tabellenansicht* des Dialogs *Optionen → Einstellungen* ausgeblendet werden. Die zweite Spalte zeigt Icons für PDF- oder PS-Dateien (nur PDF, wenn beide vorhanden sind), die dritte Spalte zeigt Icons für URL oder DOI (nur URL, wenn beide vorhanden sind).
 
 ## Der Standard-Ordner für PDF-Dateien
 
-PDF-Dateien erhalten von JabRef eine "Spezialbehandlung", um das Verlinken mit den entsprechenden Einträgen so einfach wie möglich zu gestalten. Um diese "Spezialbehandlung" nutzen zu können, müssen Sie im Unterpunkt *Externe Programme* des Dialogs *Optionen -&gt; Einstellungen* einen Ordner als Standard-Ordner für Ihre PDF-Dateien angeben. Alle PDF-Dateien, die in diesem Ordner oder einem Unterordner gespeichert sind, werden mit einer relativen Pfadangabe referenziert, so dass Sie problemlos PDF-Verzeichnisse verschieben oder mit mehreren Benutzern von verschiedenen Netzwerkarbeitsplätzen aus an derselben Datei arbeiten können.
+PDF-Dateien erhalten von JabRef eine "Spezialbehandlung", um das Verlinken mit den entsprechenden Einträgen so einfach wie möglich zu gestalten. Um diese "Spezialbehandlung" nutzen zu können, müssen Sie im Unterpunkt *Externe Programme* des Dialogs *Optionen → Einstellungen* einen Ordner als Standard-Ordner für Ihre PDF-Dateien angeben. Alle PDF-Dateien, die in diesem Ordner oder einem Unterordner gespeichert sind, werden mit einer relativen Pfadangabe referenziert, so dass Sie problemlos PDF-Verzeichnisse verschieben oder mit mehreren Benutzern von verschiedenen Netzwerkarbeitsplätzen aus an derselben Datei arbeiten können.
 
 Wenn Sie Ihren PDF-Dateien dann noch Namen geben, die mit dem BibTeX Key des entsprechenden Eintrags übereinstimmen (plus '.pdf' im Dateinamen), sucht JabRef in Ihrem Standard-PDF-Ordner und dessen Unterordnern nach der richtigen PDF-Datei. Sobald die korrekt benannte PDF-Datei sich dort befindet, klicken Sie auf die Schaltfläche *Auto* neben dem PDF-Feld im Eintrags-Editor. Wenn die PDF-Datei gefunden wird, wird das Feld entsprechend gesetzt.
 
@@ -30,7 +30,7 @@ Wenn Sie eine PDF-Datei wie beschrieben benennen, können Sie sie auch öffnen, 
 
 ## Dateispezifische PDF- und PS-Verzeichnisse
 
-Sie können für jede Datei eigene PDF- und PS-Verzeichnisse angeben (**Datei -&gt; Eigenschaften der Datei**). Diese Verzeichnisse ersetzen dann die Standardverzeichnisse.
+Sie können für jede Datei eigene PDF- und PS-Verzeichnisse angeben (**Datei → Eigenschaften der Datei**). Diese Verzeichnisse ersetzen dann die Standardverzeichnisse.
 
 ## <a href="" id="RegularExpressionSearch">Die Suche mit regulären Ausdrücken für automatische Verknüpfungen nutzen</a>
 
@@ -38,7 +38,7 @@ Wenn Sie Dateinamen verwenden, die dem bibtexkey ergänzt um die Dateiendung ent
 
 Ab Version 2.2 ist mit Hilfe von regulären Ausdrücken eine größere Flexibilität beim Benennen der Dateien gewährleistet. In den meisten Fällen dürfte das Standardverhalten bereits ausreichend sein.
 
-In den Einstellungen zu externen Programmen (**Optionen -&gt; Einstellungen -&gt; Externe Programme**) findet sich eine Option "Suche mit regulärem Ausdruck benutzen". Wenn Sie diese Option aktivieren, können Sie für die Suche in PDF-Verzeichnissen einen eigenen regulären Ausdruck angeben.
+In den Einstellungen zu externen Programmen (**Optionen → Einstellungen → Externe Programme**) findet sich eine Option "Suche mit regulärem Ausdruck benutzen". Wenn Sie diese Option aktivieren, können Sie für die Suche in PDF-Verzeichnissen einen eigenen regulären Ausdruck angeben.
 
 Die folgende Syntax wird verwendet:
 

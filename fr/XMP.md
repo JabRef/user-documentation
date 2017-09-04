@@ -14,10 +14,10 @@ Avec le support de XMP, l'équipe de développement de JabRef introduit les avan
 
 Pour utiliser la fonction XMP dans JabRef, vous pouvez faire les choses suivantes :
 
--   **Importer un unique fichier PDF annoté** contenant les métadonnées XMP. Vous pouvez sélectionner "Fichier -&gt; Importer dans... -&gt; PDF avec annotations XMP" ou faire glisser le fichier dans la fenêtre principale.
+-   **Importer un unique fichier PDF annoté** contenant les métadonnées XMP. Vous pouvez sélectionner "Fichier → Importer dans... → PDF avec annotations XMP" ou faire glisser le fichier dans la fenêtre principale.
 -   **Ecrire les informations bibliographiques dans le fichier PDF associé.** Pour cela, double-cliquez sur l'entrée dans la fenêtre principale, allez dans l'onglet "General" et cliquer sur "Ecrire XMP".
--   Si vous voulez **annoter tous les PDFs dans une base de données déterminée** vous pouvez sélectionner "Outils -&gt; Ecrire XMP pour la base de données"
--   Pour vérifier si cela a fonctionné, vous pouvez ouvrir le PDF dans Adobe Acrobat et sélectionner "Fichier -&gt; Propriétés du Document -&gt; Métadonnées additionnelles -&gt; Avancé". Dans l'arborescence sur la droite vous devriez voir une entrée nommée "http://purl.org/net/bibteXMP". Cela fonctionne uniquement avec Adobe Acrobat, et pas avec Adobe Reader.
+-   Si vous voulez **annoter tous les PDFs dans une base de données déterminée** vous pouvez sélectionner "Outils → Ecrire XMP pour la base de données"
+-   Pour vérifier si cela a fonctionné, vous pouvez ouvrir le PDF dans Adobe Acrobat et sélectionner "Fichier → Propriétés du Document → Métadonnées additionnelles → Avancé". Dans l'arborescence sur la droite vous devriez voir une entrée nommée "http://purl.org/net/bibteXMP". Cela fonctionne uniquement avec Adobe Acrobat, et pas avec Adobe Reader.
 -   Si vous n'avez pas Adobe Acrobat, vous pouvez utiliser *pdfinfo* à la place afin de voir les métadonnées XMP. *pdfinfo* fait partie de Xpdf (`www.foolabs.com/xpdf`) et Poppler (`http://poppler.freedesktop.org`).
 
 ## Format de fichier BibteXmp

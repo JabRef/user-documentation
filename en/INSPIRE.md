@@ -7,7 +7,7 @@ helpCategories: ["Fetching entries from the web", "... using online bibliographi
 
 [INSPIRE-HEP](https://inspirehep.net/?ln=en) is an open access digital library for the field of high energy physics ([Wikipedia](https://en.wikipedia.org/wiki/INSPIRE-HEP)).
 
-To fetch entries from INSPIRE-HEP, choose **Search -&gt; Web search**, and the search interface will appear in the side pane. Select **INSPIRE** in the dropdown menu. To start a search, enter the words of your query, and press <kbd>Enter</kbd> or the **Fetch** button.
+To fetch entries from INSPIRE-HEP, choose **Search → Web search**, and the search interface will appear in the side pane. Select **INSPIRE** in the dropdown menu. To start a search, enter the words of your query, and press <kbd>Enter</kbd> or the **Fetch** button.
 
 The results are displayed in the [import inspection window](ImportInspectionDialog).
 In case an error occurs, it is shown in a popup.

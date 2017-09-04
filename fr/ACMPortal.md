@@ -4,7 +4,7 @@ title: Récupération d'entrées depuis le portail *ACM*
 
 # Récupération d'entrées depuis le portail *ACM*
 
-Pour utiliser cette fonction, choisissez **Recherche -&gt; Recherche Web**. L'interface de recherche apparaitra dans le panneau latéral. Sélectionnez **ACM Portal** dans le menu déroulant.
+Pour utiliser cette fonction, choisissez **Recherche → Recherche Web**. L'interface de recherche apparaitra dans le panneau latéral. Sélectionnez **ACM Portal** dans le menu déroulant.
 
 Pour démarrer la recherche, entrer les mots de votre requête et appuyer sur **Entrée** ou sur le bouton **Rechercher**.
 

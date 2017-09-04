@@ -4,7 +4,7 @@ title: Horodatage des entrées
 
 # Horodatage des entrées
 
-Cette fonction peut être activée et configurée sous **Options -&gt; Préférences -&gt; Général**.
+Cette fonction peut être activée et configurée sous **Options → Préférences → Général**.
 
 JabRef peut automatiquement insérer un champ qui contient la date à laquelle une entrée a été ajoutée à la base de données.
 

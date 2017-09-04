@@ -16,7 +16,7 @@ DDDDDD
 
 wobei DDDDDD eine Ziffernfolge darstellt. Um diese Ziffernfolge (DDDDDD) für einen CiteSeer-Eintrag zu finden, gehen Sie auf die Dokumentseite der Literaturangabe des Formats http://citeseer.ist.psu.edu/*nameYearTitle* und klicken den (Update)-Link für diese Literaturangabe. Die URL für den Update-Link beinhaltet die numerische ID für diese Literaturangabe.
 
-Sobald Sie das Feld *citeseerurl* belegt haben, können Sie die CiteSeer-Felder herunterladen, indem Sie **BibTeX -&gt; Felder von CiteSeer importieren** auswählen. Achten Sie darauf, dass Sie die Zeile(n) ausgewählt haben, die Sie aktualisieren wollen.
+Sobald Sie das Feld *citeseerurl* belegt haben, können Sie die CiteSeer-Felder herunterladen, indem Sie **BibTeX → Felder von CiteSeer importieren** auswählen. Achten Sie darauf, dass Sie die Zeile(n) ausgewählt haben, die Sie aktualisieren wollen.
 
 ## Eine Datei mit zitierenden Literaturangaben erzeugen
 

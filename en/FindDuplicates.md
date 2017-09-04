@@ -7,7 +7,7 @@ helpCategories: ["Finding, sorting and cleaning entries"]
 
 JabRef can look for duplicated entries inside a database.
 
-This feature is accessible directly through  **Quality -&gt; Find duplicates**.
+This feature is accessible directly through  **Quality → Find duplicates**.
 It is also used when [importing new entries](ImportInspectionDialog)
 from a supported reference format or directly from the Internet.
 
@@ -25,7 +25,7 @@ at the upper right-hand corner of the window.
 Five ways of displaying the differences are offered:
 
 - **plain text**: as is, no emphasis
-- **show diff** - word: differences are shown in the right entry. Full words are struck out in red if they are removed from the left entry or underlined in blue if they are added to the right entry. 
+- **show diff** - word: differences are shown in the right entry. Full words are struck out in red if they are removed from the left entry or underlined in blue if they are added to the right entry.
 - **show diff** - character: differences are shown in the right entry. Individual characters are struck out in red or underlined in blue as above.
 - **show symmetric diff** - word: differences are shown on both sides. Words are underlined and displayed in color.
 - **show symmetric diff** - character: differences are shown on both sides.  Characters are underlined and displayed in color.
@@ -55,4 +55,4 @@ You are offered to:
 - **Keep both** entries, meaning that you consider the two entries are not duplicates.
 - **Keep merged entry only**, meaning that the merged entry is the best. Both previous entries are removed.
 - **Cancel**, which will end the duplicate finding.
- 
+

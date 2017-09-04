@@ -6,7 +6,7 @@ title: Pencarian IEEEXplore
 
 IEEEXplore mempunyai banyak koleksi yang berhubungan dengan pustaka teknik bidang teknik elektro, sain komputer, serta elektronika.
 
-JabRef dapat melakukan muaturun langsung dari basisdata IEEEXplore. Untuk menggunakan fitur ini, Pilih **Pencarian Web -&gt; Pencarian IEEEXplore**, kemudian dialog pencarian akan muncul di jendela sebelah kiri.
+JabRef dapat melakukan muaturun langsung dari basisdata IEEEXplore. Untuk menggunakan fitur ini, Pilih **Pencarian Web → Pencarian IEEEXplore**, kemudian dialog pencarian akan muncul di jendela sebelah kiri.
 
 Untuk memulai pencarian, tulislah kata yang ingin anda cari, kemudian tekan **Enter** atau tekan tombol **Mencari**.
 

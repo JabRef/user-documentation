@@ -13,7 +13,7 @@ Existing public files are collected at <https://layouts.jabref.org>.
 
 ## Adding a custom export filter
 
-The only requirement for a valid export filter is the existence of a file with the extension **.layout**. To add a new custom export filter, open the dialog box **Options -&gt; Manage custom exports**, and click **Add new**. A new dialog box will appear, allowing you to specify a name for the export filter (which will appear as one of the choices in the File type dropdown menu of the file dialog when you use the **File -&gt; Export** menu choice in the JabRef window), the path to the **.layout** file, and the preferred file extension for the export filter (which will be the suggested extension in the file dialog when you use the export filter).
+The only requirement for a valid export filter is the existence of a file with the extension **.layout**. To add a new custom export filter, open the dialog box **Options → Manage custom exports**, and click **Add new**. A new dialog box will appear, allowing you to specify a name for the export filter (which will appear as one of the choices in the File type dropdown menu of the file dialog when you use the **File → Export** menu choice in the JabRef window), the path to the **.layout** file, and the preferred file extension for the export filter (which will be the suggested extension in the file dialog when you use the export filter).
 
 ## Creating the export filter
 

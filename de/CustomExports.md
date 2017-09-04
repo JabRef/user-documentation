@@ -8,7 +8,7 @@ Mit JabRef können Sie Ihre eigenen Exportfilter definieren und genau so wie die
 
 ## Hinzufügen eines Exportfilters
 
-Die einzige Voraussetzung für einen Exportfilter ist, daß eine Datei mit der Endung **.layout** vorhanden ist. Um einen neuen, eigenen Exportfilter hinzuzufügen, öffnen Sie das Dialogfenster **Optionen -&gt; Verwalte externe Exportfilter** und klicken auf die Schaltfläche **Neu**. Es öffnet sich ein neues Fenster, in dem Sie einen Namen (der als Auswahl im Dateityp-Dropdownmenü erscheint, wenn man **Datei -&gt; Exportieren** im JabRef-Hauptfenster wählt), eine Pfadangabe zur **.layout**-Datei und die gewünschte Dateiendung für den Exportfilter angeben können. Wenn Sie den Exportfilter benutzen, wird diese Endung im Datei-Dialog automatisch vorgeschlagen.
+Die einzige Voraussetzung für einen Exportfilter ist, daß eine Datei mit der Endung **.layout** vorhanden ist. Um einen neuen, eigenen Exportfilter hinzuzufügen, öffnen Sie das Dialogfenster **Optionen → Verwalte externe Exportfilter** und klicken auf die Schaltfläche **Neu**. Es öffnet sich ein neues Fenster, in dem Sie einen Namen (der als Auswahl im Dateityp-Dropdownmenü erscheint, wenn man **Datei → Exportieren** im JabRef-Hauptfenster wählt), eine Pfadangabe zur **.layout**-Datei und die gewünschte Dateiendung für den Exportfilter angeben können. Wenn Sie den Exportfilter benutzen, wird diese Endung im Datei-Dialog automatisch vorgeschlagen.
 
 ## Das Erstellen des Exportfilters
 
@@ -108,7 +108,7 @@ Falls keiner der verfügbaren Formatierer das Ergebnis erzielt, das Sie erreiche
 
 Mit JabRef 2.2 ist es jetzt möglich, eigene Namens-Formatierer zu definieren. Dazu wird die Syntax der Bibliographie-Stile (bst) verwendet. Das erlaubt äußerste Flexibilität, ist allerdings aufwändig in der Schreibweise.
 
-Sie können unter **Optionen -&gt; Einstellungen -&gt; Namens-Formatierer** Ihren eigenen Formatierer schreiben. Benutzen Sie das folgende Format: `<Fall1>@<Bereich11>@<Format>@<Bereich12>@<Format>@<Bereich13>...@@       <Fall2>@<Bereich21>@... und so weiter.`
+Sie können unter **Optionen → Einstellungen → Namens-Formatierer** Ihren eigenen Formatierer schreiben. Benutzen Sie das folgende Format: `<Fall1>@<Bereich11>@<Format>@<Bereich12>@<Format>@<Bereich13>...@@       <Fall2>@<Bereich21>@... und so weiter.`
 
 Dieses Format teilt die Aufgabe, eine Liste von Autoren zu formatieren, in unterschiedliche Fälle abhängig von der Zahl der Autoren (das ist nötig, weil manche Formate sich je nach der Zahl der Autoren unterscheiden). Die einzelnen Fälle werden durch `@@` voneinander getrennt und enthalten Anweisungen, wie jeder einzelne Autor in diesem Fall zu formatieren ist. Diese Anweisungen werden durch `@` getrennt.
 

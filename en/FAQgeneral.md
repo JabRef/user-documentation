@@ -40,13 +40,13 @@ On Windows, if that does not help, execute `regedit` and delete the folder `HKEY
 ## Q: Does JabRef support non-English languages or UTF8 in general?
 
 A: Yes.
- - Go to **Options -&gt; Preferences -&gt; General**.
+ - Go to **Options → Preferences → General**.
    - At "Default Encoding" select *UTF8*.
    - At "Lanaguge" select required alternative UI language if required.
- - Go to **Options -&gt; Preferences -&gt; Appearance**.
+ - Go to **Options → Preferences → Appearance**.
    - Click "Set table font"
      - Set "Font family" as *dialog*.
-     
+
 ### Note
 The *dialog* font may fail to show characters correctly if the language-specific Input Method Editor (IME) is not installed.  In this case a unicode font must be selected that contains the character ranges for the required lanaguge.  For example *simsun* for Chinese, *dotum* for Korean etc.  See <https://en.wikipedia.org/wiki/List_of_typefaces_included_with_Microsoft_Windows> for further language/font pairs for Windows.
 
@@ -57,21 +57,21 @@ Further language-specific instructions are available at:
 
 ## Q: When I have an instance of Jabref running and double click another BibTeX file it is opened in a new JabRef instance. Is it possible to open it in a new tab in the first instance?
 
-A: Yes. Go to **Options -&gt; Preferences -&gt; Advanced -&gt; Remote operation**.
+A: Yes. Go to **Options → Preferences → Advanced → Remote operation**.
 Put a checkmark to “Listen for remote operation on port:”.
 This option allows new instances of JabRef to detect the instance already running, and pass files to that instead of opening a new window.
 Note: This is the default [since JabRef 3.0](https://github.com/JabRef/jabref/blob/master/CHANGELOG.md#30---2015-11-29).
 
 ## Q: I have a JabRef open. If I open a BibTeX file from my web browser, a new JabRef is started. I want the file to be opened in the currently opened JabRef. Is this possible?
 
-A: Yes. Go to **Options -&gt; Preferences -&gt; Advanced -&gt; “Remote operation”**.
+A: Yes. Go to **Options → Preferences → Advanced → “Remote operation”**.
 Put a checkmark to “Listen for remote operation on port:”.
 This option allows new instances of JabRef to detect the instance already running, and pass files to that instead of opening a new window.
 Note: This is the default [since JabRef 3.0](https://github.com/JabRef/jabref/blob/master/CHANGELOG.md#30---2015-11-29).
 
 ## Q: I have a DOI. Is it possible to create an entry directly out of the DOI?
 
-A: Yes. Go to **Search -&gt; Web Search** to enable the Web search.
+A: Yes. Go to **Search → Web Search** to enable the Web search.
 A Web search box appears on the left side of JabRef.
 The name of a web search is selected (e.g. “ACM Portal”).
 Click on it and change it to “DOI to BibTeX”.
@@ -83,7 +83,7 @@ For further informatio, please, consult the dedicated help file about the [DOI-t
 
 ## Q: I have an ISBN. Is it possible to create an entry directly out of the ISBN?
 
-A: Yes. Go to  **Search -&gt; Web Search** to enable the Web search.
+A: Yes. Go to  **Search → Web Search** to enable the Web search.
 A Web search box appears on the left side of JabRef.
 The name of a web search is selected (e.g. “ACM Portal”).
 Click on it and change it to “ISBN to BibTeX”.
@@ -92,12 +92,12 @@ For further informatio, please, consult the dedicated help file about the [ISBN-
 
 ## Q: I miss a field *translator*, *lastfollowedon*, ... How can I add such fields?
 
-A: To add this *translator* field to all entry types, you can use **Options -&gt; Set up general fields** and add a *translator* field under one of JabRef's general field tabs.
-To add this *translator* field to a specific entry type, edit the specific entry type(s) (**Options -&gt; Customize entry types**) and add a *translator* field under required fields or optional fields, as you like.
+A: To add this *translator* field to all entry types, you can use **Options → Set up general fields** and add a *translator* field under one of JabRef's general field tabs.
+To add this *translator* field to a specific entry type, edit the specific entry type(s) (**Options → Customize entry types**) and add a *translator* field under required fields or optional fields, as you like.
 
 ## Q: How do I prevent JabRef from introducing line breaks in certain fields (such as “title”) when saving the .bib file?
 
-A: Open **Options -&gt; Preferences**.
+A: Open **Options → Preferences**.
 In the “File” panel, you will find an option called “Do not wrap the following fields when saving”.
 This option contains a semicolon-separated list of field names.
 Any field you add to this list will always be stored without introduction of line breaks.
@@ -109,7 +109,7 @@ A: Yes, you can use the parameter `--importToOpen bibfile` of the [command line]
 ## Q: I want to link external files with paths relative to my .bib file, so I can easily move my database along with its files to another directory. Is this possible?
 
 A: Yes. You need to override the default file directory for this specific database.
-Go to **File -&gt; Database properties**. You can override the **Default file directory** setting.
+Go to **File → Database properties**. You can override the **Default file directory** setting.
 There, you can either enter the path in **General file directory** (for it to be valid for all users of the file) or in **User-specific file directory** (for it to be valid for you only).
 If you simply enter “.” (a dot, without the quotes), the file directory will be the same as the .bib file directory.
 To place your files in a subdirectory called **subdir**, you can enter **“./subdir”** (without the quotes).
@@ -117,7 +117,7 @@ Files will automatically be linked with relative paths if the files are placed i
 
 ## Q: I want to export my bibliography entries into a simple text file so that I can import them into a spreadsheet easily. Is this possible?
 
-A: Yes. Use **File -&gt; Export**.
+A: Yes. Use **File → Export**.
 Under “Filter:”, choose “OpenOffice/LibreOffice CSV (\*.csv)”.
 
 ## Q: How can I add and remove keywords of multiple entries?
@@ -137,14 +137,14 @@ If you want to set a directory for you only (so that other users should use the 
 
 ## Q: When linking a file, I cannot set the correct type. How can I add new types?
 
-A: Go to **Options -&gt; Manage external file types**.
+A: Go to **Options → Manage external file types**.
 Here you can add arbitrary types.
 
 ## Q: Is there a portable version of JabRef?
 
 A: Store the file jabref.jar on the drive.
 It can be opened directly on any computer offering a Java installation by double clicking the `jar` file.
-In **Options -&gt; Preferences -&gt; General**, be sure to activate "Load and Save preferences from/to jabref.xml on start-up (memory stick mode)".
+In **Options → Preferences → General**, be sure to activate "Load and Save preferences from/to jabref.xml on start-up (memory stick mode)".
 
 ## Q: When an organization is provided as author, my BibTeX style doesn't recognize it. For instance, “European Commission” is converted to “Commission, E.”.
 
@@ -161,21 +161,21 @@ For German readers, there is the [dante e.V. FAQ](http://projekte.dante.de/Dante
 A: JabRef does not support plugin anymore (version > 2.11). However the plugin features are progressively integrated.
 Renaming of files is now part of the "Cleanup Entries" feature (brush button in the toolbar or <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F7</kbd>).
 Then, you can rename attached files based on the BibTeX key.  You can change the format (pattern) under
-**Options -&gt; Preferences -&gt; Import**, by altering the pattern under "Default PDF file link action".
+**Options → Preferences → Import**, by altering the pattern under "Default PDF file link action".
 
 ## Q: I have a JabRef database and I would like to export a subset to BibTeX (or BibLaTeX) format. How to do this?
 
 A: Your JabRef database is already a file in Bib(La)TeX format. Simply select the entries to be exported, and then
-choose **File-&gt;Save Selected as...**. More details on [stackexchange.com](https://tex.stackexchange.com/questions/82554/jabref-can-it-export-a-subset-of-the-bibliography-in-BibTeX-format).
+choose **File→Save Selected as...**. More details on [stackexchange.com](https://tex.stackexchange.com/questions/82554/jabref-can-it-export-a-subset-of-the-bibliography-in-BibTeX-format).
 
 ## Q: I have a JabRef database and I would like to export the subset corresponding to my LaTeX file. How to do this?
 
-A: Upon compilation, LaTeX generates a file with the extension ".aux". This files contains the keys of the cited references (among other things). Using this AUX file, JabRef can extract the relevant entries. Choose the menu **Tools -&gt; New subdatabase based on AUX file**. Then select the reference database (among the opened ones), and specify the AUX file.
+A: Upon compilation, LaTeX generates a file with the extension ".aux". This files contains the keys of the cited references (among other things). Using this AUX file, JabRef can extract the relevant entries. Choose the menu **Tools → New subdatabase based on AUX file**. Then select the reference database (among the opened ones), and specify the AUX file.
 
 
 ## Q: When I modify my database, I would like that JabRef performs entry cleaning automatically. How to do this?
 
-A: In **File -&gt; Database properties**, you will find a section named "Save actions". After enabling this feature, you can choose which actions should be performed for each field upon saving. That should help you keep your database tidy.
+A: In **File → Database properties**, you will find a section named "Save actions". After enabling this feature, you can choose which actions should be performed for each field upon saving. That should help you keep your database tidy.
 
 ## Q: Search on Google scholar does not work anymore. What is going on?
 

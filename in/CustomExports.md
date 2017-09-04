@@ -8,7 +8,7 @@ Dalam JabRef, anda dapat mengatur sendiri penapis ekspor sesuai dengan kehendak 
 
 ## Menambah penapis ekspor atursendiri
 
-Berkas penapis ekspor yang sah harus mempunyai ekstensi **.layout**. Untuk menambahkan penapis ekspor atursendiri baru, **Pengaturan -&gt; Pengaturan ekspor atursendiri**, kemudian klik **Tambah baru**. Kotak dialog pengaturan akan muncul. Anda perlu menuliskan nama penapis ekspor (yang akan muncul dalam pilihan ketika anda menggunakan menu **Berkas -&gt; Ekspor**), lokasi berkas **.layout**, serta ekstensi berkas untuk penapis ekspor (yang akan disarankan ketika anda menggunakan penapis ekspor atursendiri yang anda buat).
+Berkas penapis ekspor yang sah harus mempunyai ekstensi **.layout**. Untuk menambahkan penapis ekspor atursendiri baru, **Pengaturan → Pengaturan ekspor atursendiri**, kemudian klik **Tambah baru**. Kotak dialog pengaturan akan muncul. Anda perlu menuliskan nama penapis ekspor (yang akan muncul dalam pilihan ketika anda menggunakan menu **Berkas → Ekspor**), lokasi berkas **.layout**, serta ekstensi berkas untuk penapis ekspor (yang akan disarankan ketika anda menggunakan penapis ekspor atursendiri yang anda buat).
 
 ## Membuat penapis ekspor
 
@@ -140,14 +140,14 @@ JabRef provides the following set of formatters:
 
 To accommodate for the numerous citation styles, the `Authors` formatter allows flexible control over the layout of the author list. The formatter takes a comma-separated list of options, by which the default values can be overridden. The following option/value pairs are currently available, where the default values are given in curly brackets.
 
-`AuthorSort = [ {FirstFirst} | LastFirst | LastFirstFirstFirst ]`  
+`AuthorSort = [ {FirstFirst} | LastFirst | LastFirstFirstFirst ]`
 specifies the order in which the author names are formatted.
 
 -   `FirstFirst` : first names are followed by the surname.
 -   `LastFirst` : the authors' surnames are followed by their first names, separated by a comma.
 -   `LastFirstFirstFirst` : the first author is formatted as LastFirst, the subsequent authors as FirstFirst.
 
-`AuthorAbbr = [ FullName | LastName | {Initials} | InitialsNoSpace | FirstInitial | MiddleInitial ]`  
+`AuthorAbbr = [ FullName | LastName | {Initials} | InitialsNoSpace | FirstInitial | MiddleInitial ]`
 specifies how the author names are abbreviated.
 
 -   `FullName` : shows full author names; first names are not abbreviated.
@@ -157,7 +157,7 @@ specifies how the author names are abbreviated.
 -   `FirstInitial` : only first initial is shown.
 -   `MiddleInitial` : first name is shown, but all middle names are abbreviated.
 
-`AuthorPunc = [ {FullPunc} | NoPunc | NoComma | NoPeriod ]`  
+`AuthorPunc = [ {FullPunc} | NoPunc | NoComma | NoPeriod ]`
 specifies the punctuation used in the author list when `AuthorAbbr` is used
 
 -   `FullPunc` : no changes are made to punctuation.
@@ -165,16 +165,16 @@ specifies the punctuation used in the author list when `AuthorAbbr` is used
 -   `NoComma` : all commas are removed from the author name.
 -   `NoPeriod` : all full stops are removed from the author name.
 
-`AuthorSep = [ {Comma} | And | Colon | Semicolon | Sep=<string> ]`  
+`AuthorSep = [ {Comma} | And | Colon | Semicolon | Sep=<string> ]`
 specifies the separator to be used between authors. Any separator can be specified, with the `Sep=<string>` option. Note that appropriate spaces need to be added around `string`.
 
-`AuthorLastSep = [ Comma | {And} | Colon | Semicolon | Amp | Oxford | LastSep=<string> ]`  
+`AuthorLastSep = [ Comma | {And} | Colon | Semicolon | Amp | Oxford | LastSep=<string> ]`
 specifies the last separator in the author list. Any separator can be specified, with the `LastSep=<string>` option. Note that appropriate spaces need to be added around `string`.
 
-`AuthorNumber = [ {inf} | <integer> ]`  
+`AuthorNumber = [ {inf} | <integer> ]`
 specifies the number of authors that are printed. If the number of authors exceeds the maximum specified, the authorlist is replaced by the first author, followed by `EtAlString`.
 
-`EtAlString = [ { et al.} | EtAl=<string> ]`  
+`EtAlString = [ { et al.} | EtAl=<string> ]`
 specifies the string used to replace multiple authors. Any string can be given, using `EtAl=<string>`
 
 If an option is unspecified, the default value (shown in curly brackets above) is used. Therefore, only layout options that differ from the defaults need to be specified. The order in which the options are defined is (mostly) irrelevant. So, for example,
@@ -191,16 +191,16 @@ As mentioned, the order in which the options are specified is irrelevant. There 
 
 Given the following authors, *"Joe James Doe and Mary Jane and Bruce Bar and Arthur Kay"* ,the `Authors` formatter will give the following results:
 
-`Authors()`, or equivalently, `Authors(FirstFirst,Initials,FullPunc,Comma,And,inf,EtAl= et al.)`  
+`Authors()`, or equivalently, `Authors(FirstFirst,Initials,FullPunc,Comma,And,inf,EtAl= et al.)`
     J. J. Doe, M. Jane, B. Bar and A. Kay
 
-`Authors(LastFirstFirstFirst,MiddleInitial,Semicolon)`  
+`Authors(LastFirstFirstFirst,MiddleInitial,Semicolon)`
     Doe, Joe J.; Mary Jane; Bruce Bar and Arthur Kay
 
-`Authors(LastFirst,InitialsNoSpace,NoPunc,Oxford)`  
+`Authors(LastFirst,InitialsNoSpace,NoPunc,Oxford)`
     Doe JJ, Jane M, Bar B, and Kay A
 
-`Authors(2,EtAl= and others)`  
+`Authors(2,EtAl= and others)`
     J. J. Doe and others
 
 Most commonly available citation formats should be possible with this formatter. For even more advanced options, consider using the Custom Formatters detailed below.

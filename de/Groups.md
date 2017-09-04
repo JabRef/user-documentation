@@ -74,7 +74,7 @@ Diese Methode gruppiert Einträge, bei denen ein bestimmtes BibTeX Feld (z.B. `k
 **Einen freien Suchausdruck verwenden**  
 Diese Vorgehensweise ist ganz ähnlich wie die eben beschriebene, aber statt nur ein Feld nach einem Suchausdruck zu durchsuchen, kann hierbei die [Syntax der Suche](SearchHelp#advanced) angewendet werden, die logische Operatoren (`AND`, `OR`, `NOT`) und die Suche in mehreren Feldern gleichzeitig unterstützt. So fasst z.B. die Suchanfrage `keywords=Regression AND NOT         keywords=linear` Einträge, die sich mit nicht-linearer Regression beschäftigen, zu einer Gruppe zusammen.
 
-In der Gruppenansicht werden dynamische Gruppen standardmäßig *kursiv* dargestellt. Dies kann unter **Optionen -&gt; Einstellungen -&gt; Gruppen** abgestellt werden.
+In der Gruppenansicht werden dynamische Gruppen standardmäßig *kursiv* dargestellt. Dies kann unter **Optionen → Einstellungen → Gruppen** abgestellt werden.
 
 ### Hierarchischer Kontext
 

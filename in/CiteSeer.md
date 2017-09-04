@@ -16,11 +16,11 @@ DDDDDD
 
 dimana DDDDD adalah angka urutan. Untuk memperoleh angka urutan (DDDDD) untuk entri CiteSeer, anda perlu ke halaman dokumen dengan format http://citeseer.ist.psu.edu/*namaTahunJudul* kemudian klik tombol tautan (Perbarui) utuk acuan. Nama URL untuk tautan Perbarui berisi angka ID untuk acuan ini.
 
-Setelah anda menambahkan bidang citeseerurl, anda bisa memuaturun bidang CiteSeer dengan memilih **BibTex -&gt; Impor Bidang dari CiteSeer**. Pastikan anda sudah memilih baris entri yang ingin diperbarui.
+Setelah anda menambahkan bidang citeseerurl, anda bisa memuaturun bidang CiteSeer dengan memilih **BibTex → Impor Bidang dari CiteSeer**. Pastikan anda sudah memilih baris entri yang ingin diperbarui.
 
 ## Membuat Basisdata Acuan
 
-Dengan memberikan referensi, anda aka dapat membuat daftar dalam dokumen anda yang mengacu pada referensi. Agar dapat menggunakan fitur ini, setiap acuan dalam basisdata harus mempunyai bidang citeseerurl dengan format seperti ditulis di subbab **Mengimpor entri dari CiteSeer** diatas. Untuk menggunakan fitur ini, pilih **Pencarian Web -&gt; Ambil data acuan dari CiteSeer**.
+Dengan memberikan referensi, anda aka dapat membuat daftar dalam dokumen anda yang mengacu pada referensi. Agar dapat menggunakan fitur ini, setiap acuan dalam basisdata harus mempunyai bidang citeseerurl dengan format seperti ditulis di subbab **Mengimpor entri dari CiteSeer** diatas. Untuk menggunakan fitur ini, pilih **Pencarian Web → Ambil data acuan dari CiteSeer**.
 
 ## Menggunakan Proxy Server
 

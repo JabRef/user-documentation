@@ -7,7 +7,7 @@ helpCategories: ["Fields"]
 
 JabRef can automatically toggle journal names between abbreviated and unabbreviated form, as long as the names are contained in one of your journal lists.
 
-This feature can be configured under **Options -&gt; Manage journal abbreviations**.
+This feature can be configured under **Options → Manage journal abbreviations**.
 
 JabRef includes a fairly extensive build-in list of journal abbreviations, but it it still likely to be incomplete for the purposes of many users. You can add abbreviations in the form of a personal list or external lists.
 
@@ -21,7 +21,7 @@ Journal name conversion can be accessed either from within the entry editor, or 
 
 If the current journal name is not found in your journal lists, the field will not be modified.
 
-To convert the journal names of many entries in bulk, you can select any number of entries, and choose **Tools -&gt; Abbreviate journal names (ISO)**, **Tools -&gt; Abbreviate journal names (MEDLINE)** or **Tools -&gt; Unabbreviate journal names**. These three actions will abbreviate and unabbreviate the journal names of all selected entries for which the journal name could be found in your journal lists.
+To convert the journal names of many entries in bulk, you can select any number of entries, and choose **Tools → Abbreviate journal names (ISO)**, **Tools → Abbreviate journal names (MEDLINE)** or **Tools → Unabbreviate journal names**. These three actions will abbreviate and unabbreviate the journal names of all selected entries for which the journal name could be found in your journal lists.
 
 ## Setting up additional journal lists
 

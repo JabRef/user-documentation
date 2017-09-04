@@ -8,7 +8,7 @@ stub: true
 
 JabRef can cleanup the entries of a database.
 
-To carry a cleanup of the entries, go to **Quality -&gt; Cleanup entries...**.
+To carry a cleanup of the entries, go to **Quality → Cleanup entries...**.
 
 ![Screenshot for Cleanup Entries](./images/CleanupEntries.png)
 

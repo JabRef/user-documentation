@@ -10,7 +10,7 @@ Ini adalah jendela utama untuk bekerja pada basisdata anda. Dibawah kotak menu d
 
 -   Untuk merubah bidang apa saja yang dimunculkan pada kolom tabel, anda dapat mengaturnya dari dialog **Preferensi**.
 -   Untuk menyunting entri basisdata di salah satu baris, anda perlu klik-ganda di baris tersebut. Anda bisa melihat isi basisdata di tiap baris atau navigasi dengan menggunakan tombol panah naik/turun.
--   Kolom tabel diurutkan menurut urutan pada bidang yang anda pilih. Cara pengurutan bawaan dapat dirubah dari **Preferensi -&gt; Tabel entri**, tetapi cara yang lebih cepat untuk merubah urutan, klik pada judul kolom yang anda pilih sebagai kriteria utama, atau membalik urutan jika sudah ditentukan urutan. Jika di klik lagi, akan melepaskan sebagai pilihan kriteria utama urutan. Tekan dan tahan tombol **Ctrl** serta klik salah satu kolom untuk tambah kriteria, membalik urutan atau menghapus sub-kriteria. Anda bisa menambah beberapa sub-kriteria, tetapi hanya dibatasi sampai tiga sub-kriteria yang disimpan ketika menjalankan ulang JabRef.
+-   Kolom tabel diurutkan menurut urutan pada bidang yang anda pilih. Cara pengurutan bawaan dapat dirubah dari **Preferensi → Tabel entri**, tetapi cara yang lebih cepat untuk merubah urutan, klik pada judul kolom yang anda pilih sebagai kriteria utama, atau membalik urutan jika sudah ditentukan urutan. Jika di klik lagi, akan melepaskan sebagai pilihan kriteria utama urutan. Tekan dan tahan tombol **Ctrl** serta klik salah satu kolom untuk tambah kriteria, membalik urutan atau menghapus sub-kriteria. Anda bisa menambah beberapa sub-kriteria, tetapi hanya dibatasi sampai tiga sub-kriteria yang disimpan ketika menjalankan ulang JabRef.
 -   Untuk mengatur lebar kolom, anda dapat menyeret pada batas judul kolom yang anda inginkan.
 -   Tanda warna dapat diubah sesuai keinginan melalui dialog **Preferensi**, sehingga membantu mengenali tampilan dan makna basisdata anda dengan melihat warna sel sebagai berikut:
     -   Warna <span style="color: red">merah</span> di sel kolom paling kiri menunjukkan entri tidak lengkap.
@@ -21,9 +21,9 @@ Ini adalah jendela utama untuk bekerja pada basisdata anda. Dibawah kotak menu d
 
 ## Menambah entri baru
 
-Ada beberapa cara untuk menambah entri baru. Perintah menu **BibTeX -&gt; Entri baru** menampilkan dialog pilihan untuk memilih satu tipe entri dari yang ada. Jika anda tidak menginginkan menampilkan dialog ini, tersedia beberapa menu tersendiri untuk menggunakan tipe entri tertentu. Demikian juga ada pintasan langsung ke tipe yang umum digunakan.
+Ada beberapa cara untuk menambah entri baru. Perintah menu **BibTeX → Entri baru** menampilkan dialog pilihan untuk memilih satu tipe entri dari yang ada. Jika anda tidak menginginkan menampilkan dialog ini, tersedia beberapa menu tersendiri untuk menggunakan tipe entri tertentu. Demikian juga ada pintasan langsung ke tipe yang umum digunakan.
 
-Ketika entri baru ditambahkan, [penyunting entri](EntryEditorHelp) akan muncul. Bagaimana munculnya penyunting entri ini dapat diatur dari menu **Preferensi-&gt; Penyunting Entri**.
+Ketika entri baru ditambahkan, [penyunting entri](EntryEditorHelp) akan muncul. Bagaimana munculnya penyunting entri ini dapat diatur dari menu **Preferensi→ Penyunting Entri**.
 
 *Catatan:* Kami menyarankan anda mempelajari pintasan untuk menambah entri untuk berbagai tipe yang paling sering digunakan, misalnya CTRL-SHIFT-A untuk menambah entri *artikel*.
 

@@ -6,7 +6,7 @@ since: 3.8
 
 # Creating entries using an ISBN number
 
-To use this feature, choose **BibTeX -&gt; New entry...**.
+To use this feature, choose **BibTeX → New entry...**.
 In the lower part, there is the box "ID-based entry generator".
 In the field "ID type", you can select "ISBN".
 The field "ID" is focused.

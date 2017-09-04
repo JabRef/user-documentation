@@ -8,4 +8,4 @@ stub: true
 
 JabRef can check the integrity of a database.
 
-This feature is available through **Quality -&gt; Check integrity...**.
+This feature is available through **Quality → Check integrity...**.

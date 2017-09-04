@@ -145,7 +145,7 @@ This guide presents a quick way to begin with translation without the need to in
 
 In Popeye, create a project for JabRef_en.properties, where no translation exists:
 
-  1. Go to **File -&gt; New Project**
+  1. Go to **File → New Project**
   2. Click **next**
   3. On the line **reference file**, click on "**...**"
   4. Select "All files" as **File type**
@@ -156,7 +156,7 @@ In Popeye, create a project for JabRef_en.properties, where no translation exist
   9. Select **pl** and click on **select**
   11. Click on **apply**
   12. Click on **finish**
-  13. Go to **File -&gt; Save project**
+  13. Go to **File → Save project**
   14. Choose "JabRef.ppf" as file name and click on **Save**
 
 Proceed similarly using the file Menu_en.properties  for the translation of the menu (project Menu.ppf).

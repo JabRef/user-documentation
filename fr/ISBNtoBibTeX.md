@@ -4,7 +4,7 @@ title: Récupération d'entrées à partir du numéro ISBN
 
 # Récupération d'entrées à partir du numéro ISBN
 
-Pour utiliser cette fonction, choisissez **Recherche -&gt; recherche Web**, et l'interface de recherche s'affichera dans le panneau latéral. Sélectionnez **ISBN vers BibTeX** dans le menu déroulant.
+Pour utiliser cette fonction, choisissez **Recherche → recherche Web**, et l'interface de recherche s'affichera dans le panneau latéral. Sélectionnez **ISBN vers BibTeX** dans le menu déroulant.
 
 Ce moteur de recherche utilise [eBook.de's](ttp://www.ebook.de/) API pour convertir un ISBN en une entrée BibTeX.
 
