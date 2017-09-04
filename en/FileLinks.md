@@ -60,6 +60,11 @@ In this case, JabRef starts searching for PDF files in the directory of the `bib
 
 ![Use the BIB file location as primary file directory](images/Preferences-File-UseTheBibFileLocationAsPrimaryFileDirectory.png).
 
+Relative file directories obviously only work in the library properties fo a bib file, e.g. `a.bib` → Library properties → General file directory → `papers`.
+Assume to have two bib files: `a.bib` and `b.bib` located in different directories:
+`a.bib` located at `C:\a.bib` and `b.bib` located at `X:\b.bib`.
+When I click on the `+` icon in the general Tab of file `a.bib`, the popup is opened in the directory `C:\papers` (assuming `C:\papers` exists).
+
 
 ## Auto linking files
 
