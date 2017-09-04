@@ -117,6 +117,7 @@ For instance, [localization_ja.json](https://github.com/JabRef/help.jabref.org/b
 10. Advanced update
     You can also clone the repository and do the usual git workflow.
     Run `python _scripts/automate.py update` to update the `index.md` file.
+    More information on `automate.py` is available at <https://github.com/JabRef/help.jabref.org/tree/gh-pages/_scripts>.
 
 ## Adding a new language
 
