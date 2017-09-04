@@ -36,27 +36,34 @@ The editor includes buttons for inserting, editing and removing links, as well a
 
 ## Directories for files
 
-JabRef offers following directories:
+JabRef offers following directory settings:
 
 1. Options → Preferences → File → External file links → Main file directory
    ![Main file directory](images/Preferences-File-MainFileDirectory.png)
-2. File → Library properties → General file directory
+2. File → Library properties → General file directory.
 3. File → Library properties → User-specific file directory
    ![Override default file directories](images/LibraryProperties-OverrideDefaultFileDirectories.png)
 
-One of thes settings is required.
+One of these settings is required.
 Mostly the "Main file directory" is enough.
+
+JabRef enables setting a directory per database.
 When sharing a library across multiple persons, each user might have a different directory.
 Either each user can set his directory in the "Main file directory".
 In case the group also shares papers and thus there are two directories (the private one and a group-shared one), one can set a directory within the library (the "General file directory").
 In case a user has a different location of the shared folder (e.g., different paths on Linux and Windows), he can use the "User-specific file directory".
 This settings is persisted in the `bib` file in a way that it does not overwrite the setting of another user.
-For this, JabRef uses the username of the currently logged in user.
+For this, JabRef uses the username of the currently logged in user (`-<loginname>` is used as suffix in the `jabref-meta` field).
 So, both `mary` and `aileen` can set a different user-specific file directory.
+
+If JabRef saves an attached file and my loginname matches the name stored in the `bib` file, it chooses that directory.
+If no match is found, it uses the "General file directory" of the bib file.
+If that is not found, it uses the one configured at Options → Preferences → File → External file links ("Main file directory").
 
 In some settings, the bib file is stored in **the same directory** as the PDF files.
 Then, one ignore all the above directories and enable "use the BIB file location as primary file directory".
 In this case, JabRef starts searching for PDF files in the directory of the `bib` file.
+It is also possible to achieve this result by setting `.` as "General file directory" in the library properties.
 
 ![Use the BIB file location as primary file directory](images/Preferences-File-UseTheBibFileLocationAsPrimaryFileDirectory.png).
 
