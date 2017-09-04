@@ -44,14 +44,14 @@ Easy!
 
 See the *step-by-step guide* below. Instead of downloading the English files  (JabRef_en.properties and Menu_en.properties), use directly the ones for your language.
 
-### Localization files status (2017-09-01 19:01 - Branch `master` `846afc3`)
+### Localization files status (2017-09-04 09:56 - Branch `master` `4ebf095`)
 
 Note: To get the current status from your local repository, run `python ./scripts/syncLang.py markdown`
 
 | Property file | Keys | Keys translated | Keys not translated | % translated |
 | ------------- | ---- | --------------- | ------------------- | ------------ |
 | [JabRef_en.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_en.properties) | 1625 | 1625 | 0 | 100 |
-| [JabRef_ja.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_ja.properties) | 1625 | 1623 | 2 | 99 |
+| [JabRef_ja.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_ja.properties) | 1625 | 1625 | 0 | 100 |
 | [JabRef_vi.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_vi.properties) | 1625 | 898 | 727 | 55 |
 | [JabRef_de.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_de.properties) | 1625 | 1625 | 0 | 100 |
 | [JabRef_no.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_no.properties) | 1625 | 879 | 746 | 54 |
