@@ -44,7 +44,7 @@ Easy!
 
 See the *step-by-step guide* below. Instead of downloading the English files  (JabRef_en.properties and Menu_en.properties), use directly the ones for your language.
 
-### Localization files status (2017-09-13 10:33 - Branch `master` `c9445d4`)
+### Localization files status (2017-09-13 11:17 - Branch `master` `23a0610`)
 
 Note: To get the current status from your local repository, run `python ./scripts/syncLang.py markdown`
 
@@ -55,7 +55,7 @@ Note: To get the current status from your local repository, run `python ./script
 | [JabRef_vi.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_vi.properties) | 1626 | 898 | 728 | 55 |
 | [JabRef_de.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_de.properties) | 1626 | 1626 | 0 | 100 |
 | [JabRef_no.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_no.properties) | 1626 | 879 | 747 | 54 |
-| [JabRef_fr.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_fr.properties) | 1626 | 1625 | 1 | 99 |
+| [JabRef_fr.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_fr.properties) | 1626 | 1626 | 0 | 100 |
 | [JabRef_es.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_es.properties) | 1626 | 1609 | 17 | 98 |
 | [JabRef_ru.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_ru.properties) | 1626 | 1435 | 191 | 88 |
 | [JabRef_tr.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_tr.properties) | 1626 | 1613 | 13 | 99 |
