@@ -5,8 +5,7 @@ dist: trusty
 
 language: ruby
 rvm:
-- 2.3.3
-
+- 2.4.1
 # Assume bundler is being used, therefore
 # the `install` step will run `bundle install` by default.
 script: ./cibuild.sh
