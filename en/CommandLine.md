@@ -8,15 +8,18 @@ helpCategories: ["General"]
 ## Purpose and functioning
 
 Although JabRef is primarily a GUI based application, it offers several command line options that may be useful, and can even perform file conversion operations without opening the graphical interface.
-The command line options are only available when using the JAR version of JabRef.
-You can directly download the JAR file from our [download site](https://www.fosshub.com/JabRef.html), or, if you already have installed JabRef, you can find the file in your installation folder.
 
 
 ## Basics
 
+```sh
 java -jar JabRef.jar [OPTIONS] [BIBTEX_FILE]
+```
 
-*Note:* you may have to replace `JabRef.jar` by the actual name of the `.jar` file.
+*Note:* you may have to replace `JabRef.jar` by the actual name of the `.jar` file (you can find the file in your installation folder)
+
+On Windows, you can also directly use the executable, that is,
+`JabRef.exe [OPTIONS] [BIBTEX_FILE]`. In this case, no output is written to the console unless you specify the `-console` option.
 
 You can always specify one or more BibTeX files to load by simply listing their filenames.
 Take care to specify all options before your list of file names.
@@ -31,73 +34,28 @@ The word *true* prevents the file name from being interpreted as an argument to 
 
 ## Options
 
-`[-a <FILE>] [-asfl] [-b] [-d <FILE>] [--debug] [-f <FILE>] [-g]
-       [-h] [-i <FILE>] [--importToOpen <FILE>] [-m <FILE>] [-n] [-o
-       <FILE>] [-p <FILE>] [-v] [-x <FILE>]`
+- [Help: `-h`](#help--h)
+- [No-GUI mode: `-n`](#no-gui-mode--n)
+- [Import file: `-i filename[,import format]`](import-file--i-filenameimport-format)
+- [Export file: `-o filename[,export format]`](#export-file--o-filenameexport-format)
+- [Export matching entries: `-m [field]searchTerm,outputFile:file[,exportFormat]`](#export-matching-entries--m-fieldsearchtermoutputfilefileexportformat)
+- [Fetch entries from Web: `-f=FetcherName:QueryString`](#fetch-entries-from-web--ffetchernamequerystring)
+- [Subdatabase from .aux file: `-a infile[.aux],outfile[.bib] base-BibTeX-file`](#subdatabase-from-aux-file--a-infileauxoutfilebib-base-bibtex-file)
+- [Set file links: `-asfl`](#set-file-links--asfl)
+- [Regenerate keys: `-g`](#regenerate-keys--g)
+- [Export preferences: `-x filename`](#export-preferences--x-filename)
+- [Import preferences: `-p filename`](#import-preferences--p-filename)
+- [Reset preferences: `-d key`](#reset-preferences--d-key)
+- [No files at startup: `-b`](#no-files-at-startup--b)
+- [Version: `-v`](#version--v)
+- [Debug mode: `--debug`](#debug-mode---debug)
+- [Display output in the console: `--console`](#display-output-in-the-console---console)
+
 
 ### Help: `-h`
 (or `--help`)
 
 Displays a summary of the command line options, including the list of available import and export formats.
-
-```
-usage: jabref [OPTIONS] [BIBTEX_FILE]
-
-Options: [-a <FILE>] [-asfl] [-b] [-d <FILE>] [--debug] [-f <FILE>] [-g]
-       [-h] [-i <FILE>] [--importToOpen <FILE>] [-l] [-m <FILE>] [-n] [-o
-       <FILE>] [-p <FILE>] [-v] [-x <FILE>]
- -a,--aux <FILE>                     Subdatabase from aux:
-                                     file[.aux],new[.bib]
- -asfl,--automaticallySetFileLinks   Automatically set file links
- -b,--blank                          Do not open any files at startup
- -d,--prdef <FILE>                   Reset preferences (key1,key2,... or
-                                     'all')
-    --debug                          Show debug level messages
- -f,--fetch <FILE>                   Run Fetcher, e.g.
-                                     "--fetch=Medline:cancer"
- -g,--generateBibtexKeys             Regenerate all keys for the entries
-                                     in a BibTeX file
- -h,--help                           Display help on command line options
- -i,--import <FILE>                  Import file: filename[,import format]
-    --importToOpen <FILE>            Import to open tab
- -l,--loads                          Load session
- -m,--exportMatches <FILE>           [field]searchTerm,outputFile:
-                                     file[,exportFormat]
- -n,--nogui                          No GUI. Only process command line
-                                     options.
- -o,--output <FILE>                  Output or export file:
-                                     filename[,export format]
- -p,--primp <FILE>                   Import preferences from file
- -v,--version                        Display version
- -x,--prexp <FILE>                   Export preferences to file
-
-Available import formats:
-  BibTeX         : bibtex
-  BibTeXML       : bibtexml
-  Biblioscape    : biblioscape
-  Copac          : cpc
-  INSPEC         : inspec
-  ISI            : isi
-  MSBib          : msbib
-  Medline        : medline
-  MedlinePlain   : medlineplain
-  Ovid           : ovid
-  PDFcontent     : pdfcontent
-  REPEC New Economic Papers (NEP) : repecnep
-  RIS            : ris
-  Refer/Endnote  : refer
-  SilverPlatter  : silverplatter
-  Sixpack        : sixpack
-  XMP-annotated PDF : xmpannotatedpdf
-  text citations : textcitations
-
-Available export formats: MSBib, bibordf, bibtexml, din1505, docbook,
-endnote, harvard, html, iso690rtf, iso690txt, listrefs, misq, mods,
-mysql, ods, oocalc, oocsv, postgresql, ris, simplehtml, tablerefs,
-tablerefsabsbib
-
-Please report issues at https://github.com/JabRef/jabref/issues
-```
 
 
 ### No-GUI mode: `-n`
@@ -232,3 +190,7 @@ Display the version number of JabRef.
 ### Debug mode: `--debug`
 
 Show debug level messages.
+
+### Display output in the console: `--console`
+
+Show info and error messages in the console. Only necessary if you use `JabRef.exe` instead of the `.jar` file.
