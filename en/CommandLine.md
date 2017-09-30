@@ -34,22 +34,22 @@ The word *true* prevents the file name from being interpreted as an argument to 
 
 ## Options
 
-- [Help: `-h`](#help----h-)
-- [No-GUI mode: `-n`](#no-gui-mode----n-)
-- [Import file: `-i filename[,import format]`](#import-file----i-filename--import-format--)
-- [Export file: `-o filename[,export format]`](#export-file----o-filename--export-format--)
-- [Export matching entries: `-m [field]searchTerm,outputFile:file[,exportFormat]`](#export-matching-entries----m--field-searchterm-outputfile-file--exportformat--)
-- [Fetch entries from Web: `-f=FetcherName:QueryString`](#fetch-entries-from-web----f-fetchername-querystring-)
-- [Subdatabase from .aux file: `-a infile[.aux],outfile[.bib] base-BibTeX-file`](#subdatabase-from-aux-file----a-infile-aux--outfile-bib--base-bibtex-file-)
-- [Set file links: `-asfl`](#set-file-links----asfl-)
-- [Regenerate keys: `-g`](#regenerate-keys----g-)
-- [Export preferences: `-x filename`](#export-preferences----x-filename-)
-- [Import preferences: `-p filename`](#import-preferences----p-filename-)
-- [Reset preferences: `-d key`](#reset-preferences----d-key-)
-- [No files at startup: `-b`](#no-files-at-startup----b-)
-- [Version: `-v`](#version----v-)
-- [Debug mode: `--debug`](#debug-mode-----debug-)
-- [Display output in the console: `--console`](#display-output-in-the-console-----console-)
+- [Help: `-h`](#help--h)
+- [No-GUI mode: `-n`](#no-gui-mode--n)
+- [Import file: `-i filename[,import format]`](import-file--i-filenameimport-format)
+- [Export file: `-o filename[,export format]`](#export-file--o-filenameexport-format)
+- [Export matching entries: `-m [field]searchTerm,outputFile:file[,exportFormat]`](#export-matching-entries--m-fieldsearchtermoutputfilefileexportformat)
+- [Fetch entries from Web: `-f=FetcherName:QueryString`](#fetch-entries-from-web--ffetchernamequerystring)
+- [Subdatabase from .aux file: `-a infile[.aux],outfile[.bib] base-BibTeX-file`](#subdatabase-from-aux-file--a-infileauxoutfilebib-base-bibtex-file)
+- [Set file links: `-asfl`](#set-file-links--asfl)
+- [Regenerate keys: `-g`](#regenerate-keys--g)
+- [Export preferences: `-x filename`](#export-preferences--x-filename)
+- [Import preferences: `-p filename`](#import-preferences--p-filename)
+- [Reset preferences: `-d key`](#reset-preferences--d-key)
+- [No files at startup: `-b`](#no-files-at-startup--b)
+- [Version: `-v`](#version--v)
+- [Debug mode: `--debug`](#debug-mode---debug)
+- [Display output in the console: `--console`](#display-output-in-the-console---console)
 
 
 ### Help: `-h`
