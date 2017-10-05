@@ -26,14 +26,15 @@ Simply click on "Edit" (top right-hand tab).
 
 Currently existing pages are:
 
-- Deutsch: https://de.wikipedia.org/wiki/JabRef
-- English: https://en.wikipedia.org/wiki/JabRef
-- Español: https://es.wikipedia.org/wiki/JabRef
-- Français: https://fr.wikipedia.org/wiki/JabRef
-- Русский: https://ru.wikipedia.org/wiki/JabRef
-- Svenska: https://sv.wikipedia.org/wiki/JabRef
-- Українська: https://uk.wikipedia.org/wiki/JabRef
-- 中文: https://zh.wikipedia.org/wiki/JabRef
+- Deutsch: [https://de.wikipedia.org/wiki/JabRef](https://de.wikipedia.org/wiki/JabRef)
+- English: [https://en.wikipedia.org/wiki/JabRef](https://en.wikipedia.org/wiki/JabRef)
+- Español: [https://es.wikipedia.org/wiki/JabRef](https://es.wikipedia.org/wiki/JabRef)
+- Français: [https://fr.wikipedia.org/wiki/JabRef](https://fr.wikipedia.org/wiki/JabRef)
+- Italiano: [https://it.wikipedia.org/wiki/JabRef](https://it.wikipedia.org/wiki/JabRef)
+- Русский: [https://ru.wikipedia.org/wiki/JabRef](https://ru.wikipedia.org/wiki/JabRef)
+- Svenska: [https://sv.wikipedia.org/wiki/JabRef](https://sv.wikipedia.org/wiki/JabRef)
+- Українська: [https://uk.wikipedia.org/wiki/JabRef](https://uk.wikipedia.org/wiki/JabRef)
+- 中文: [https://zh.wikipedia.org/wiki/JabRef](https://zh.wikipedia.org/wiki/JabRef)
 
 If there is no page for you own language, you can easily create one.
 
