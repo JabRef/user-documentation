@@ -33,4 +33,4 @@ A: The problem occurs because you do not have Java 8 installed, and the automati
 
 ## Q: Some characters are not displayed in the main table (math characters or some upper-cased letter).
 
-A: This might be a problem related to the font you are using. You can download some other font that support mathematical alphanumeric symbols, for example, FreeSerif or Cambria Math.
+A: This might be a problem related to the font you are using. You can download some other font that supports mathematical alphanumeric symbols, for example, FreeSerif or Cambria Math.
