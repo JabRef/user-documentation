@@ -30,3 +30,7 @@ A: To override that, <kbd>Ctrl</kbd> + <kbd>Click</kbd> instead, and choose "ope
 ## Q: I am trying to install JabRef, but I am blocked by  "JabRef Installer error: Error downloading the Java(TM) Runtime Environment. Please check your internet connection and start setup again."
 
 A: The problem occurs because you do not have Java 8 installed, and the automatic download and installation is somehow failing... It can be downloaded here manually: <http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html>.
+
+## Q: Some characters are not displayed in the main table (math characters or some upper-cased letter).
+
+A: This might be a problem related to the font you are using. You can download some other font that support mathematical alphanumeric symbols, for example, FreeSerif or Cambria Math.
