@@ -31,6 +31,10 @@ A: To override that, <kbd>Ctrl</kbd> + <kbd>Click</kbd> instead, and choose "ope
 
 A: The problem occurs because you do not have Java 8 installed, and the automatic download and installation is somehow failing... It can be downloaded here manually: <http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html>.
 
+#### Q: Jabref slow/hangs on MacOS Sierra
+
+A: This is a problem some users experience in JabRef 4.0 or later on MacOS Sierra. It seems this is a bug in the networking part of Java on MacOS. You can try to add localhost explicitely to `/etc/hosts` as described [here](https://dzone.com/articles/macos-sierra-problems-with-javanetinetaddress-getl).
+
 #### Q: Some characters are not displayed in the main table (math characters or some upper-cased letter).
 
 A: This might be a problem related to the font you are using. You can download some other font that supports mathematical alphanumeric symbols, for example, FreeSerif or Cambria Math. A list of fonts supporting Math Unicode blocks is available at <http://www.fileformat.info/info/unicode/block/mathematical_alphanumeric_symbols/fontsupport.htm>.
