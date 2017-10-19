@@ -176,7 +176,11 @@ The "old" way:
 1. Download dmg-file from the [Java SE Development Kit 8 Downloads] site
 2. Run installation wizzard
 
-Some users with macOS Sierra have reported freezes in JabRef. Apparantely, [adding a host mapping for 127.0.0.1](https://dzone.com/articles/macos-sierra-problems-with-javanetinetaddress-getl) seems to solve these issues.
+## Freezes when running JabRef
+
+Some users with macOS Sierra have reported freezes when using JabRef. Apparently, [adding a host mapping for 127.0.0.1](https://dzone.com/articles/macos-sierra-problems-with-javanetinetaddress-getl) seems to solve these issues.
+
+Random freezes have also been reported on several Linux distributions. It seems that the `GTKLookAndFeel` is causing these problems and selecting a different look and feel class under `Options -> Appearance -> Look and Feel` solves the problem.
 
 ## JabRef and OpenOffice/LibreOffice integration
 
