@@ -13,7 +13,7 @@ Yes, there is. See <http://askubuntu.com/a/721387/196423> for details.
 
 JabRef requires Java 8.
 Please follow the steps provided on our [installation page](Installation).
-JabRef does not yet run under Java 9. See (https://github.com/JabRef/jabref/issues/2594)
+JabRef does not yet run under Java 9. See <https://github.com/JabRef/jabref/issues/2594>
 
 You might see the error message `Error: Could not find or load main class net.sf.jabref.JabRefMain`.
 This means, you do not have [JavaFX](https://en.wikipedia.org/wiki/JavaFX) support activated in your Java runtime environment.
