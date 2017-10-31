@@ -28,6 +28,7 @@ Thus, it especially describes installing [JavaFX].
     + [Using the ppa](#using-the-ppa)
     + [Directly from Oracle](#directly-from-oracle)
   * [Fedora 23 and Oracle Java](#fedora-23-and-oracle-java)
+  * [Fedora and OpenJDK](#fedora-and-openjdk)
   * [CentOS 6 or 7 and Oracle Java](#centos-6-or-7-and-oracle-java)
   * [Windows and Oracle Java](#windows-and-oracle-java)
   * [Mac OS and Oracle Java](#mac-os-and-oracle-java)
@@ -149,6 +150,10 @@ Based on: <http://tecadmin.net/install-java-8-on-debian/>
 5. Set alternatives: `alternatives --config java` (choose Oracle version)
 
 Recent JabRef builds are available at <https://build.opensuse.org/package/show/home:cornell_vrdc/jabref3>.
+
+### Fedora and OpenJDK
+
+Install JavaFX (actually OpenJFX) by executing `sudo dnf install openjfx java-1.8.0-openjdk-openjfx`
 
 ### CentOS 6 or 7 and Oracle Java
 
