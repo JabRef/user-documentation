@@ -44,51 +44,51 @@ Easy!
 
 See the *step-by-step guide* below. Instead of downloading the English files  (JabRef_en.properties and Menu_en.properties), use directly the ones for your language.
 
-### Localization files status (2017-10-05 14:10 - Branch `master` `effe334`)
+### Localization files status (2017-11-22 11:57 - Branch `master` `a3e9a92`)
 
 Note: To get the current status from your local repository, run `python ./scripts/syncLang.py markdown`
 
 | Property file | Keys | Keys translated | Keys not translated | % translated |
 | ------------- | ---- | --------------- | ------------------- | ------------ |
-| [JabRef_en.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_en.properties) | 1629 | 1629 | 0 | 100 |
-| [JabRef_ja.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_ja.properties) | 1629 | 1625 | 4 | 99 |
-| [JabRef_vi.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_vi.properties) | 1629 | 898 | 731 | 55 |
-| [JabRef_de.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_de.properties) | 1629 | 1626 | 3 | 99 |
-| [JabRef_no.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_no.properties) | 1629 | 879 | 750 | 53 |
-| [JabRef_fr.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_fr.properties) | 1629 | 1626 | 3 | 99 |
-| [JabRef_es.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_es.properties) | 1629 | 1609 | 20 | 98 |
-| [JabRef_ru.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_ru.properties) | 1629 | 1435 | 194 | 88 |
-| [JabRef_tr.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_tr.properties) | 1629 | 1629 | 0 | 100 |
-| [JabRef_it.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_it.properties) | 1629 | 1625 | 4 | 99 |
-| [JabRef_el.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_el.properties) | 1629 | 80 | 1549 | 4 |
-| [JabRef_fa.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_fa.properties) | 1629 | 1 | 1628 | 0 |
-| [JabRef_pt_BR.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_pt_BR.properties) | 1629 | 1112 | 517 | 68 |
-| [JabRef_da.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_da.properties) | 1629 | 884 | 745 | 54 |
-| [JabRef_nl.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_nl.properties) | 1629 | 582 | 1047 | 35 |
-| [JabRef_in.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_in.properties) | 1629 | 1131 | 498 | 69 |
-| [JabRef_sv.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_sv.properties) | 1629 | 1322 | 307 | 81 |
-| [JabRef_zh.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_zh.properties) | 1629 | 1236 | 393 | 75 |
+| [Menu_en.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/Menu_en.properties) | 110 | 110 | 0 | 100 |
+| [Menu_da.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/Menu_da.properties) | 110 | 89 | 21 | 80 |
+| [Menu_de.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/Menu_de.properties) | 110 | 110 | 0 | 100 |
+| [Menu_el.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/Menu_el.properties) | 110 | 75 | 35 | 68 |
+| [Menu_es.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/Menu_es.properties) | 110 | 110 | 0 | 100 |
+| [Menu_fa.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/Menu_fa.properties) | 110 | 89 | 21 | 80 |
+| [Menu_fr.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/Menu_fr.properties) | 110 | 110 | 0 | 100 |
+| [Menu_in.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/Menu_in.properties) | 110 | 89 | 21 | 80 |
+| [Menu_it.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/Menu_it.properties) | 110 | 110 | 0 | 100 |
+| [Menu_ja.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/Menu_ja.properties) | 110 | 110 | 0 | 100 |
+| [Menu_nl.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/Menu_nl.properties) | 110 | 89 | 21 | 80 |
+| [Menu_no.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/Menu_no.properties) | 110 | 98 | 12 | 89 |
+| [Menu_pt_BR.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/Menu_pt_BR.properties) | 110 | 101 | 9 | 91 |
+| [Menu_ru.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/Menu_ru.properties) | 110 | 102 | 8 | 92 |
+| [Menu_sv.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/Menu_sv.properties) | 110 | 99 | 11 | 90 |
+| [Menu_tr.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/Menu_tr.properties) | 110 | 110 | 0 | 100 |
+| [Menu_vi.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/Menu_vi.properties) | 110 | 103 | 7 | 93 |
+| [Menu_zh.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/Menu_zh.properties) | 110 | 110 | 0 | 100 |
 
 | Property file | Keys | Keys translated | Keys not translated | % translated |
 | ------------- | ---- | --------------- | ------------------- | ------------ |
-| [Menu_en.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/Menu_en.properties) | 110 | 110 | 0 | 100 |
-| [Menu_el.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/Menu_el.properties) | 110 | 75 | 35 | 68 |
-| [Menu_in.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/Menu_in.properties) | 110 | 89 | 21 | 80 |
-| [Menu_tr.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/Menu_tr.properties) | 110 | 110 | 0 | 100 |
-| [Menu_zh.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/Menu_zh.properties) | 110 | 110 | 0 | 100 |
-| [Menu_vi.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/Menu_vi.properties) | 110 | 103 | 7 | 93 |
-| [Menu_ja.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/Menu_ja.properties) | 110 | 110 | 0 | 100 |
-| [Menu_fr.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/Menu_fr.properties) | 110 | 110 | 0 | 100 |
-| [Menu_sv.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/Menu_sv.properties) | 110 | 99 | 11 | 90 |
-| [Menu_fa.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/Menu_fa.properties) | 110 | 89 | 21 | 80 |
-| [Menu_nl.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/Menu_nl.properties) | 110 | 89 | 21 | 80 |
-| [Menu_ru.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/Menu_ru.properties) | 110 | 102 | 8 | 92 |
-| [Menu_de.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/Menu_de.properties) | 110 | 110 | 0 | 100 |
-| [Menu_es.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/Menu_es.properties) | 110 | 110 | 0 | 100 |
-| [Menu_da.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/Menu_da.properties) | 110 | 89 | 21 | 80 |
-| [Menu_pt_BR.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/Menu_pt_BR.properties) | 110 | 89 | 21 | 80 |
-| [Menu_no.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/Menu_no.properties) | 110 | 98 | 12 | 89 |
-| [Menu_it.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/Menu_it.properties) | 110 | 110 | 0 | 100 |
+| [JabRef_en.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_en.properties) | 1641 | 1641 | 0 | 100 |
+| [JabRef_da.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_da.properties) | 1641 | 879 | 762 | 53 |
+| [JabRef_de.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_de.properties) | 1641 | 1632 | 9 | 99 |
+| [JabRef_el.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_el.properties) | 1641 | 80 | 1561 | 4 |
+| [JabRef_es.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_es.properties) | 1641 | 1603 | 38 | 97 |
+| [JabRef_fa.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_fa.properties) | 1641 | 2 | 1639 | 0 |
+| [JabRef_fr.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_fr.properties) | 1641 | 1628 | 13 | 99 |
+| [JabRef_in.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_in.properties) | 1641 | 1126 | 515 | 68 |
+| [JabRef_it.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_it.properties) | 1641 | 1619 | 22 | 98 |
+| [JabRef_ja.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_ja.properties) | 1641 | 1622 | 19 | 98 |
+| [JabRef_nl.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_nl.properties) | 1641 | 580 | 1061 | 35 |
+| [JabRef_no.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_no.properties) | 1641 | 874 | 767 | 53 |
+| [JabRef_pt_BR.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_pt_BR.properties) | 1641 | 1156 | 485 | 70 |
+| [JabRef_ru.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_ru.properties) | 1641 | 1430 | 211 | 87 |
+| [JabRef_sv.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_sv.properties) | 1641 | 1319 | 322 | 80 |
+| [JabRef_tr.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_tr.properties) | 1641 | 1623 | 18 | 98 |
+| [JabRef_vi.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_vi.properties) | 1641 | 893 | 748 | 54 |
+| [JabRef_zh.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_zh.properties) | 1641 | 1231 | 410 | 75 |
 
 ## Translating JabRef into a new language
 
