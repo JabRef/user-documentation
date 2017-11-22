@@ -8,41 +8,20 @@ helpCategories: ["Contributing"]
 ## Introduction
 
 JabRef comes with a set of translations into different languages, currently:
-Chinese (simplified), Danish, Dutch, English, French, German, Indonesian, Italian, Japanese, Norwegian, Persian, Portuguese (Brazil), Russian, Spanish, Swedish, Turkish and Vietnamese.
+Chinese (simplified), Danish, Dutch, English, Farsi, French, German, Indonesian, Italian, Japanese, Norwegian, Persian, Portuguese (Brazil), Russian, Spanish, Swedish, Turkish and Vietnamese.
 
-If the JabRef Interface already exists in your language, you can help improve it.
+If the JabRef interface already exists in your language, you can help improve it.
 Otherwise, you can start translating JabRef into your own language.
 
-
-## Improving an existing translation
-
-### Directly in your web browser
-
-Github offers to edit the files directly without requiring to download them or to use git.
-Go to [https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n).
-
 For each language, there are two files (`xx` denotes the country code for the language):
-
 - `Menu_xx.properties`: translation of menu items
 - `JabRef_xx.properties`: translation of the other items
 
-To edit a file, click on the filename, and then click on the pencil icon (to the top right-hand).
-When you are done, add a message at the bottom and click on "Propose file change".
-Then, click on "Create pull request".
-You are done.
-Easy!
+## Improving an existing translation
 
-#### Example for menus in Italian:
+The following tables indicates how many items are waiting for translation in your preferred language: if ``Key not translated`` is not equal to zero, you are welcome to contribute!
 
-1. Click on [https://github.com/JabRef/jabref/blob/master/src/main/resources/l10n/Menu_it.properties](https://github.com/JabRef/jabref/blob/master/src/main/resources/l10n/Menu_it.properties)
-2. Click on the pencil
-3. Edit directly in the browser
-4. Click on "propose file change" (as shown at [https://github.com/JabRef/help.jabref.org/blob/gh-pages/CONTRIBUTING.md#saving-the-changes](https://github.com/JabRef/help.jabref.org/blob/gh-pages/CONTRIBUTING.md#saving-the-changes))
-5. Then, click on "create pull request"
-
-### Using Popeye
-
-See the *step-by-step guide* below. Instead of downloading the English files  (JabRef_en.properties and Menu_en.properties), use directly the ones for your language.
+You can improve the translation directly in your web browser or using a dedicated software (Popeye) - See below.
 
 ### Localization files status (2017-11-22 11:57 - Branch `master` `a3e9a92`)
 
@@ -89,6 +68,29 @@ Note: To get the current status from your local repository, run `python ./script
 | [JabRef_tr.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_tr.properties) | 1641 | 1623 | 18 | 98 |
 | [JabRef_vi.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_vi.properties) | 1641 | 893 | 748 | 54 |
 | [JabRef_zh.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_zh.properties) | 1641 | 1231 | 410 | 75 |
+
+### Directly in your web browser
+
+Github offers to edit the files directly without requiring to download them or to use git.
+
+To edit a file, click on the filename in the above tables, and then click on the pencil icon (to the top right-hand corner).
+When you are done, add a message at the bottom and click on "Propose file change" (as shown at [https://github.com/JabRef/help.jabref.org/blob/gh-pages/CONTRIBUTING.md#saving-the-changes](https://github.com/JabRef/help.jabref.org/blob/gh-pages/CONTRIBUTING.md#saving-the-changes)).
+Then, click on "Create pull request".
+You are done.
+Easy!
+
+#### Example for menus in Italian:
+
+1. Click on ``Menu_it.properties`` in the above tables.
+2. Click on the pencil
+3. Edit directly in the browser
+4. Click on "propose file change"
+5. Then, click on "create pull request"
+
+### Using Popeye
+
+See the *step-by-step guide* below. Instead of downloading the English files  (JabRef_en.properties and Menu_en.properties), use directly the ones for your language.
+
 
 ## Translating JabRef into a new language
 
