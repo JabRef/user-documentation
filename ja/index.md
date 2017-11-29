@@ -1,137 +1,132 @@
 ---
-title: ヘルプ目次
+title: Help contents
 ---
-
-# ヘルプ目次
+# Help contents
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <strong>抱えている問題の解決策が見つからないのですか？もっと詳しく訊きたいのですか？</strong>
+    <strong>You can't find a solution to your problem? You still have questions?</strong>
   </div>
   <div class="panel-body">
-    <a class="btn btn-default" role="button" href="http://discourse.jabref.org">オンラインフォーラムでもっとサポートを受けられます！<div style="font-size:small;">（英語でね）</div></a>
+    <a class="btn btn-default" role="button" href="http://discourse.jabref.org">Use the online forum to get more support!</a>
   </div>
 </div>
 
-
 ## FAQ
-- [General](/ja/FAQgeneral)
-- [JabRef and Linux](/ja/FAQlinux)
-- [JabRef and Mac OS X](/ja/FAQosx)
-- [JabRef and Windows](/ja/FAQwindows)
-- [Other](/ja/FAQother)
-- [Sharing](/ja/FAQsharing)
-- [貢献方法](/ja/FAQcontributing)
 
+- [Contributing](/en/FAQcontributing)
+- [General](/en/FAQgeneral)
+- [JabRef and Linux](/en/FAQlinux)
+- [JabRef and Mac OS X](/en/FAQosx)
+- [JabRef and Windows](/en/FAQwindows)
+- [Other](/en/FAQother)
+- [Sharing](/en/FAQsharing)
 
-## 一般
-- [JabRef](/ja/JabRef)
-- [JabRef 基本ウィンドウ](/ja/BaseFrame)
-- [コマンドラインの使用法とオプション](/ja/CommandLine)
-- [バックアップ](/ja/Backup)
-- [ベスト・プラクティス](/ja/BestPractices)
-- [リモート操作](/ja/Remote)
-- [導入方法](/ja/Installation)
-- [自動保存](/ja/Autosave)
-- [項目エディタ](/ja/EntryEditor)
+## General
 
+- [Autosave](/en/Autosave)
+- [Backup](/en/Backup)
+- [Best Practices](/en/BestPractices)
+- [BibTeX entry editor](/en/EntryEditor)
+- [Command line use and options](/en/CommandLine)
+- [Installation](/en/Installation)
+- [JabRef](/en/JabRef)
+- [JabRef's main window](/en/BaseFrame)
+- [Remote operation](/en/Remote)
 
-## フィールド
-- [*BibTeX* について](/ja/Bibtex)
-- [JabRef における PDF/PS/URL/DOI リンク](/ja/ExternalFiles)
-- [JabRef におけるファイルリンク](/ja/FileLinks)
-- [「owner」フィールド](/ja/Owner)
-- [フィールドを設定/クリア/名称変更](/ja/SetClearRenameFields)
-- [フィールド内容選択メニュー](/ja/ContentSelector)
-- [他の項目へのリンク](/ja/EntryLinks)
-- [学術誌名の短縮形](/ja/JournalAbbreviations)
-- [文字列に関するヘルプ](/ja/Strings)
-- [特殊フィールド](/ja/SpecialFields)
-- [項目の時間スタンプ](/ja/TimeStamp)
+## Fields
 
+- [About *BibTeX*](/en/Bibtex)
+- [Entry time stamps](/en/TimeStamp)
+- [Field content selector](/en/ContentSelector)
+- [File links in JabRef](/en/FileLinks)
+- [Journal abbreviations](/en/JournalAbbreviations)
+- [Links to other entries](/en/EntryLinks)
+- [PDF/PS/URL/DOI links in JabRef](/en/ExternalFiles)
+- [Set/clear/rename fields](/en/SetClearRenameFields)
+- [Special Fields](/en/SpecialFields)
+- [Strings](/en/Strings)
+- [The 'owner' field](/en/Owner)
 
-## 項目の検索・整序・剪定
-- [DOIからBibTeXデータを取得するには](/ja/GetBibTeXDataFromDOI)
-- [グループ](/ja/Groups)
-- [ファイルリンクの同期](/ja/SynchroFileLinks)
-- [リンクされていないBibTeXデータを含むPDFをデータベースに追加するには](/ja/FindUnlinkedFiles)
-- [保存時動作](/ja/SaveActions)
-- [整合性検査](/ja/CheckIntegrity)
-- [文字列の置換](/ja/ReplaceString)
-- [検索](/ja/Search)
-- [重複の検出](/ja/FindDuplicates)
-- [項目の剪定](/ja/CleanupEntries)
-- [項目の標識付け](/ja/Marking)
-- [項目の統合](/ja/MergeEntries)
+## Finding, sorting and cleaning entries
 
+- [Add unlinked PDFs including BibTeX data into the database](/en/FindUnlinkedFiles)
+- [Check integrity](/en/CheckIntegrity)
+- [Cleanup entries](/en/CleanupEntries)
+- [Find duplicates](/en/FindDuplicates)
+- [Get BibTeX data from DOI](/en/GetBibTeXDataFromDOI)
+- [Groups](/en/Groups)
+- [Mark entries](/en/Marking)
+- [Merge entries](/en/MergeEntries)
+- [Replace string](/en/ReplaceString)
+- [Save actions](/en/SaveActions)
+- [Searching](/en/Search)
+- [Synchronize file links](/en/SynchroFileLinks)
 
-## 設定
-- [BibTeX鍵(キー)生成方法の調整](/ja/BibtexKeyPatterns)
-- [キー割当の調整](/ja/CustomKeyBindings)
-- [データベース特性ウィンドウ](/ja/DatabaseProperties)
-- [予約語の管理](/ja/ProtectedTerms)
-- [外部ファイル型の管理](/ja/ExternalFileTypes)
-- [文字列エディタ](/ja/StringEditor)
-- [汎用フィールドの調整](/ja/GeneralFields)
-- [項目プレビューの設定](/ja/Preview)
-- [項目型の調整](/ja/CustomEntryTypes)
+## Setup
 
+- [Customize key bindings](/en/CustomKeyBindings)
+- [Customizing entry types](/en/CustomEntryTypes)
+- [Customizing general fields](/en/GeneralFields)
+- [Customizing the BibTeX key generator](/en/BibtexKeyPatterns)
+- [Database properties window](/en/DatabaseProperties)
+- [Entry preview setup](/en/Preview)
+- [Manage external file types](/en/ExternalFileTypes)
+- [Manage protected terms](/en/ProtectedTerms)
+- [The string editor](/en/StringEditor)
 
-## 共同作業
-- [BibLaTeXデータベースを共有する](/ja/SharedBibFile)
-- [共有SQLデータベース](/ja/SQLDatabase)
-- [第3.6版以前のSQLデータベースから共有データベースへの移行](/ja/SQLDatabaseMigration)
+## Collaborative work
 
+- [Migration of pre-3.6 SQL databases into a shared SQL database](/en/SQLDatabaseMigration)
+- [Shared SQL Database](/en/SQLDatabase)
+- [Sharing a Bib(La)TeX Database](/en/SharedBibFile)
 
-## 読み込み/書き出し
-- [AUXファイルからの新規部分データベース](/ja/NewBasedOnAux)
-- [EndNote書出フィルタ](/ja/EndNoteFilters)
-- [JabRefにおけるXMPメタデータ サポート](/ja/XMP)
-- [MS Office文献XML形式](/ja/MsOfficeBibFieldMapping)
-- [Medline (txt)形式とMedline (XML)形式およびRIS形式の比較](/ja/MedlineRIS)
-- [OpenOffice.org / LibreOffice の統合](/ja/OpenOfficeIntegration)
-- [ユーザー書出フィルタ](/ja/CustomExports)
-- [ユーザー読込フィルタ](/ja/CustomImports)
-- [外部SQLデータベースへの書き出し](/ja/SQLExport)
-- [読込検査ウィンドウ](/ja/ImportInspectionDialog)
+## Import/Export
 
+- [Comparison of the Medline (txt), Medline (XML), and RIS format](/en/MedlineRIS)
+- [Custom export filters](/en/CustomExports)
+- [Custom import filters](/en/CustomImports)
+- [EndNote Export Filter](/en/EndNoteFilters)
+- [Export to an External SQL Database](/en/SQLExport)
+- [Import inspection window](/en/ImportInspectionDialog)
+- [MS Office Bibliography xml format](/en/MsOfficeBibFieldMapping)
+- [New subdatabase based on AUX file](/en/NewBasedOnAux)
+- [OpenOffice/LibreOffice integration](/en/OpenOfficeIntegration)
+- [XMP metadata support in JabRef](/en/XMP)
 
-## ウェブから項目を取得する
+## Fetching entries from the web
 
+### ... using publication identifiers
 
-### ... 刊行識別子を使用して
-- [DiVAを使用して項目を作成するには](/ja/DiVAtoBibTeX)
-- [Digital Object Identifier (DOI)を使用して項目を作成するには](/ja/DOItoBibTeX)
-- [ISBN番号を使用して項目を取得するには](/ja/ISBNtoBibTeX)
-- [Medlineを使用して項目を作成するには](/ja/MedlinetoBibTeX)
-- [SAO/NASA Astrophysics Data Systemを使用して項目を作成するには](/ja/ADStoBibTeX)
-- [タイトルを使用して項目を作成するには](/ja/TitleToBibTeX)
+- [Creating entries from DiVA](/en/DiVAtoBibTeX)
+- [Creating entries from Medline](/en/MedlinetoBibTeX)
+- [Creating entries from SAO/NASA Astrophysics Data System](/en/ADStoBibTeX)
+- [Creating entries using an ISBN number](/en/ISBNtoBibTeX)
+- [Creating entries using the Digital Object Identifier (DOI)](/en/DOItoBibTeX)
+- [Creating entries using the title](/en/TitleToBibTeX)
 
+### ... using online bibliographic database
 
-### ... オンライン書誌データベースを使用して
-- [ACM Portalから項目を取得するには](/ja/ACMPortal)
-- [ADSから項目を取得するには](/ja/ADS)
-- [CiteSeerXから項目を取得するには](/ja/CiteSeer)
-- [DBLPから項目を取得するには](/ja/DBLP)
-- [DOAJから項目を取得するには](/ja/DOAJ)
-- [GVKから項目を取得するには](/ja/GVK)
-- [Google Scholarから項目を取得するには](/ja/GoogleScholar)
-- [IEEEXploreから項目を取得するには](/ja/IEEEXplore)
-- [INSPIRE-HEPから項目を取得するには](/ja/INSPIRE)
-- [MEDLINEから項目を取得するには](/ja/Medline)
-- [MathSciNetから項目を取得するには](/ja/MathSciNet)
-- [Springerから項目を取得するには](/ja/Springer)
-- [arXivから項目を取得するには](/ja/arXiv)
-- [zbMATHから項目を取得するには](/ja/zbMATH)
+- [Fetching entries from ACM Portal](/en/ACMPortal)
+- [Fetching entries from CiteSeerX](/en/CiteSeer)
+- [Fetching entries from DBLP](/en/DBLP)
+- [Fetching entries from DOAJ](/en/DOAJ)
+- [Fetching entries from GVK](/en/GVK)
+- [Fetching entries from Google Scholar](/en/GoogleScholar)
+- [Fetching entries from IEEEXplore](/en/IEEEXplore)
+- [Fetching entries from INSPIRE-HEP](/en/INSPIRE)
+- [Fetching entries from MEDLINE](/en/Medline)
+- [Fetching entries from MathSciNet](/en/MathSciNet)
+- [Fetching entries from SAO/NASA Astrophysics Data System](/en/ADS)
+- [Fetching entries from Springer](/en/Springer)
+- [Fetching entries from arXiv](/en/arXiv)
+- [Fetching entries from zbMATH](/en/zbMATH)
 
+## Contributing
 
+- [Translating the JabRef Interface](/en/TranslatingGUI)
 
-## 貢献するには
-- [Translating the JabRef Interface](/ja/TranslatingGUI)
+## Miscellaneous
 
-
-## その他
-- [License](/ja/License)
-- [更新履歴](/ja/RevisionHistory)
-
-
+- [License](/en/License)
+- [Revision history](/en/RevisionHistory)
