@@ -1,7 +1,8 @@
 ---
-title: Versionsgeschichte (auf Englisch)
+title: Revision history
+helpCategories:
+  - Miscellaneous
 ---
+# Revision history
 
-# Versionsgeschichte (auf Englisch)
-
-Die vollstä Versionsgeschichte ist auf Englisch unter <https://github.com/JabRef/jabref/blob/master/CHANGELOG.md> zu finden.
+Please refer to <https://github.com/JabRef/jabref/blob/master/CHANGELOG.md> for a complete history in English.
