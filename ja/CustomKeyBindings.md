@@ -1,12 +1,11 @@
 ---
-title: キー割当の調整
-helpCategories: ["設定"]
+title: Customize key bindings
+helpCategories:
+  - Setup
 stub: true
 ---
+# Customize key bindings
 
-# キー割当の調整
+This feature is available through **Options → Customize key bindings**.
 
-この機能は，**オプション→キー割当の調整** で利用することができます．
-
-「割当をリセット」ボタンを押すことで，キー割当を既定値にリセットすることができます．
-この機能は，特に3.8.2版以前のJabRefからアップグレードした時に便利です．
+You can reset the key bindings to default by pressing the "Default" button. This is especially useful when upgrading from a JabRef version before 3.8.2.
