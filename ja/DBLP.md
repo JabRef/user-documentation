@@ -1,11 +1,13 @@
 ---
-title: DBLPから項目を取得するには
+title: Fetching entries from DBLP
+helpCategories:
+  - Fetching entries from the web
+  - '... using online bibliographic database'
 ---
+# Fetching entries from DBLP
 
-# DBLPから項目を取得するには
+[DBLP](http://dblp.uni-trier.de/db/) is a computer science bibliography website listing more than 3.1 million journal articles, conference papers, and other publications on computer science ([Wikipedia](https://en.wikipedia.org/wiki/DBLP)).
 
-[DBLP](http://dblp.uni-trier.de/db/)は，計算機科学に関する310万を超える学術誌論文・学会論文他の出版物を収録した，計算機科学文献ウェブサイトです([Wikipedia](https://en.wikipedia.org/wiki/DBLP))．
+To fetch entries from DBLP, choose **Search → Web search**, and the search interface will appear in the side pane. Select **DBLP** in the dropdown menu. To start a search, enter the words of your query, and press <kbd>Enter</kbd> or the **Fetch** button.
 
-DBLPから項目を取得するには，**検索 → ウェブ検索** を選択してください．すると，サイドペインに検索インタフェースが現れますので，ドロップダウンメニューから，**DBLP** を選択します．そこで，質問を入力し，**Enter** を押すか，**取得** ボタンを押して，検索を開始してください．
-
-結果は，[読込検査ウィンドウ](ImportInspectionDialog)に表示されます．エラーが発生した場合には，ポップアップに表示されます．
+The results are displayed in the [import inspection window](ImportInspectionDialog). In case an error occurs, it is shown in a popup.
