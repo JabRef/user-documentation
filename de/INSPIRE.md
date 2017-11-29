@@ -1,25 +1,32 @@
 ---
-title: INSPIRE-Suche
+title: Fetching entries from INSPIRE-HEP
+helpCategories:
+  - Fetching entries from the web
+  - '... using online bibliographic database'
 ---
+# Fetching entries from INSPIRE-HEP
 
-# INSPIRE-Suche
+[INSPIRE-HEP](https://inspirehep.net/?ln=en) is an open access digital library for the field of high energy physics ([Wikipedia](https://en.wikipedia.org/wiki/INSPIRE-HEP)).
 
-**INSPIRE** ist eine Open Acces Literaturdatenbank für Hochenergiephysik. INSPIRE ist der Nachfolger der Spires (Stanford Physics Information Retrieval System) Datenbank.
+To fetch entries from INSPIRE-HEP, choose **Search → Web search**, and the search interface will appear in the side pane. Select **INSPIRE** in the dropdown menu. To start a search, enter the words of your query, and press <kbd>Enter</kbd> or the **Fetch** button.
 
-Die INSPIRE Suchfunktion leitet lediglich ihre Suchanfrage an die INSPIRE-Websuche weiter, so dass sie ihre Suchanfrage in der gleichen Weise eingeben sollten, wie bei der Websuche, nur können sie den Befehl *find* oder *fin* weglassen. Diese Hilfeseite gibt nur eine kurze Einführung, wie Suchanfragen formuliert werden können. Detailierte Informationen, wie sie INSPIRE bedienen können, finden Sie auf der [Hilfewebseite zu INSPIRE](http://inspirehep.net/info/hep/search-tips).
+The results are displayed in the [import inspection window](ImportInspectionDialog). In case an error occurs, it is shown in a popup.
 
-Ihre Suchanfrage kann aus mehreren Teilen zusammengesetzt sein, die durch die logischen Verknüpfungen *and* (und) und *or* (oder) verkettet sind. Jeder Teil besteht aus einem Buchstaben oder Wort, das den Typ des Suchfeldes angibt, gefolgt von einem Leerzeichen und dem Suchtext.
+## Query syntax
 
-Die folgende Liste zeigt einige der verwendbaren Befehle: 
+The INSPIRE-HEP search function merely passes your search queries onto the INSPIRE-HEP web search, so you should build your queries in the same way, except omitting the *find* or *fin* command. This help page will only give a brief introduction to the search queries. More extensive help on searching INSPIRE-HEP can be found on the page http://inspirehep.net/info/hep/search-tips .
 
--   *a* oder *author*: Suche nach Autornamen
--   *t* oder *title*: Suche nach Titel
--   *j*: Journal. Hier kann entweder die übliche Abkürzung oder die CODEN-Abkürzung aus 5 Buchstaben für das Journal verwendet werden. Volume und Seite können auch durch Komma getrennt angegeben werden. Zum Beispiel, *j Phys. Rev.,D54,1* sucht im Journal Phys. Rev., Volume D54, Seite 1.
--   *k*: Suche in den Schlüsselworten
+Your query can be composed of several parts, combined using *and* and *or* as logical operators. Each part is composed of a letter or word indicating the type of field to search, followed by a space and the text to search for.
 
-Beispielsuchanfragen:
+The following list shows some of the field indicators that can be used:
 
--   *a smith and a jones*: Suche nach Einträgen mit den Autoren "smith" und "jones"
--   *a smith or a jones*: Suche nach Einträgen mit entweder dem Autor "smith" oder dem Autor "jones"
--   *a smith and not t processor*: Suche nach dem Autor "smith" und unterdrücke Werke mit "processor" im Titel
+- *a* or *author*: search author names
+- *t* or *title*: search in title
+- *j*: journal. Here either the common abbreviation or the 5 letter CODEN abbreviation for a journal can be used. Volume and page can also be included, separated by commas. For instance, *j Phys. Rev.,D54,1* looks in the journal Phys. Rev., volume D54, page 1.
+- *k*: search in keywords
 
+Example queries:
+
+- *a smith and a jones*: search for references with authors "smith" and "jones"
+- *a smith or a jones*: search for references with either author "smith" or author "jones"
+- *a smith and not t processor*: search for author "smith" and omit references with "processor" in the title
