@@ -1,17 +1,14 @@
 ---
-title: SAO/NASA Astrophysics Data Systemを使用して項目を作成するには
-helpCategories: ["ウェブから項目を取得する", "... 刊行識別子を使用して"]
+title: Creating entries from SAO/NASA Astrophysics Data System
+helpCategories:
+  - Fetching entries from the web
+  - '... using publication identifiers'
 since: 3.7
 ---
+# Creating entries from SAO/NASA Astrophysics Data System
 
-# SAO/NASA Astrophysics Data Systemを使用して項目を作成するには
+[SAO/NASA Astrophysics Data System](http://www.adsabs.harvard.edu/) is an online database of over eight million astronomy and physics papers from both peer reviewed and non-peer reviewed sources. Abstracts are available free online for almost all articles, and full scanned articles are available in Graphics Interchange Format (GIF) and Portable Document Format (PDF) for older articles ([Wikipedia](https://en.wikipedia.org/wiki/Astrophysics_Data_System)).
 
+To use this feature, choose **BibTeX → New entry...**. In the lower part, there is the box "ID-based entry generator". In the field "ID type", "SAO/NASA Astrophysics Data System" can be selected (see screenshot below). Select the field "ID" and enter the SAO/NASA Astrophysics Data System ID here (e.g., `2013Sci...339..671W`) and press <kbd>Enter</kbd> to generate an entry based on the Id. You can also click on "Generate". The found entry is opened in an entry editor. In case an error occurs, a popup is shown.
 
-[SAO/NASA Astrophysics Data System](http://www.adsabs.harvard.edu/)は，査読付きおよび査読無しのソースから収集した800万を超える天文学・物理学論文のオンラインデータベースです．概要は，ほぼ全ての論文についてオンラインで無料閲覧することができ，スキャンした完全な論文は，古い論文について，Graphics Interchange Format (GIF)およびPortable Document Format (PDF)形式で閲覧可能です（[Wikipedia](https://en.wikipedia.org/wiki/Astrophysics_Data_System)）．
-
-この機能を使用するには，**BibTeX→新規項目...** を選択すると，下部に「IDから項目を生成」ボックスがあるので，「ID型」フィールドで「SAO/NASA Astrophysics Data System」を選択します（下記スクリーンショットを参照）．
-「ID」フィールドにSAO/NASA Astrophysics Data System IDを入力し（例：`2013Sci...339..671W`），<kbd>Enter</kbd>を押すと，IDに基づいて項目が作成されます．「生成」ボタンを押してもかまいません．
-検出された項目が項目エディタに開かれます．
-エラーが発生すると，ポップアップが表示されます．
-
-![新規項目ダイアログのスクリーンショット](../en/images/NewEntryChooseType-IDGeneratorHighlighted-ADS.png)
+![Screenshot of new entry dialog](./images/NewEntryChooseType-IDGeneratorHighlighted-ADS.png)
