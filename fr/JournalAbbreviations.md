@@ -1,44 +1,53 @@
 ---
-title: Abréviations des journaux
+title: Journal abbreviations
+helpCategories:
+  - Fields
 ---
+# Journal abbreviations
 
-# Abréviations des journaux
+JabRef can automatically toggle journal names between abbreviated and unabbreviated form, as long as the names are contained in one of your journal lists.
 
-Cette fonction peut être configurée dans **Options → Gérer les abréviations de journaux**.
+This feature can be configured under **Options → Manage journal abbreviations**.
 
-JabRef peut basculer automatiquement les noms de journaux entre leurs formes abrégées et non abrégées tant que les noms sont contenus dans une de vos listes de journaux. JabRef inclut une très longue liste d'abréviations de journaux, toutefois il est probable qu'elle soit incomplète pour les travaux de beaucoup d'utilisateurs. Vous pouvez ajouter des abréviations à partir d'un nombre quelconque de listes, chacune correspond à un fichier texte présent sur votre disque dur.
+JabRef includes a fairly extensive build-in list of journal abbreviations, but it it still likely to be incomplete for the purposes of many users. You can add abbreviations in the form of a personal list or external lists.
 
-## Utiliser cette fonction
+## Using the feature
 
-La conversion de noms de journaux peut être effectuée depuis l'éditeur d'entrées ou depuis le menu **Outils**. Dans l'éditeur d'entrées, vous trouverez un bouton nommé *Masquer/afficher l'abréviation* à droite du champ *journal*. Cliquer sur ce bouton changera le mode d'affichage du nom du journal. Trois modes sont possibles :
+Journal name conversion can be accessed either from within the entry editor, or from the **Tools** menu. In the entry editor you will find a button labeled *Toggle abbreviation* by the *journal* field. Clicking this button will cause the current journal name to be switched to the next of three modes:
 
--   Nom complet, par exemple "Aquacultural Engineering"
--   Abréviation ISO, par exemple "Aquacult. Eng."
--   Abréviation MEDLINE, par exemple "Aquacult Eng"
+- Full name, e.g. "Aquacultural Engineering"
+- ISO abbreviation, e.g. "Aquacult. Eng."
+- MEDLINE abbreviation, e.g. "Aquacult Eng"
 
-Si le nom du journal actuel n'est pas trouvé dans la liste des journaux, le champ ne sera pas modifié.
+If the current journal name is not found in your journal lists, the field will not be modified.
 
-Pour convertir en une seule fois les noms de journaux de beaucoup d'entrées, vous pouvez sélectionner ces entrées et choisir **Outils → Abréger les noms de journaux (ISO)**, **Outils → Abréger les noms de journaux (MEDLINE)** ou **Outils → Développer les noms des journaux**. Ces trois actions abrégeront ou développeront les noms de journaux pour toutes les entrées sélectionnées dont le nom de journal a pu être trouvé dans vos listes de journaux.
+To convert the journal names of many entries in bulk, you can select any number of entries, and choose **Tools → Abbreviate journal names (ISO)**, **Tools → Abbreviate journal names (MEDLINE)** or **Tools → Unabbreviate journal names**. These three actions will abbreviate and unabbreviate the journal names of all selected entries for which the journal name could be found in your journal lists.
 
-## Paramétrer vos listes de journaux
+## Setting up additional journal lists
 
-En plus de la liste inclue par défaut dans JabRef, vous pouvez avoir plusieurs listes sous la forme de fichiers texte externes liés depuis JabRef. La liste par défaut peut être éditée depuis JabRef.
+In addition to the build-in journal list, you can have a personal list and external lists.
 
-### Votre liste personnelle des abréviations de journaux
+Any entry in your personal journal list will override an entry with the same full journal name in one of the external lists. Similarly, the external lists are given precedence in the order they are listed.
 
-Votre liste personnelle de journaux est gérée dans la partie supérieure de la fenêtre **Gérer les abréviations de journaux**. Pour commencer à construire votre liste d'abréviations de journaux, choisissez *Nouveau fichier*, et entrez manuellement le nom du fichier ou utilisez le bouton *Explorer*. Si vous disposez déjà d'un fichier que vous souhaitez utiliser comme point de départ, choisissez *Fichier existant* et utilisez le bouton *Explorer* pour choisir le fichier. La table sera mise à jour pour tenir compte du contenu de la liste sélectionnée.
+### Your personal journal abbreviations list
 
-La table et les boutons d'outils à sa droite vous permettent d'ajouter, de supprimer et d'éditer les entrées de journaux. Pour chaque entrée, vous devez fournir le nom complet du journal et son abréviation ISO (par exemple "Aquacultural Engineering" et "Aquacult. Eng."). Pour éditer une entrée, double-cliquez sur sa ligne dans la table.
+Your personal journal list is managed in the central part of the **Manage journal abbreviations** window. To start building your personal journal abbreviations list, choose *New file*, and enter a filename manually or using the *Browse* button. If you already have a file that you want to use as a starting point, use the *Browse* button on the line starting wiht *Existing file*. The table will update to show the contents of the list you have selected.
 
-Une fois que vous avez cliqué sur *OK*, si vous avez sélectionné un fichier et que la table contient au moins une entrée, le contenu de la table sera stocké dans le fichier sélectionné, et la liste des journaux de JabRef sera mise à jour.
+The table and the tool buttons to the right allow you to add, remove and edit journal entries. For each entry you must provide the full journal name, and the ISO abbreviation (e.g. "Aquacultural Engineering" and "Aquacult. Eng."). To edit an entry, double-click its row in the table.
 
-### Listes externes de journaux
+Once you click *OK*, if you have selected a file, and the table contains at least one entry, the table contents will be stored to the selected file, and JabRef's list of journals will be updated.
 
-En plus de votre liste personnelle, vous pouvez relier plusieurs listes externes. Ces liens peuvent être paramétré dans la partie inférieure de la fenêtre **Gérer les abréviations de journaux**. Les listes externes sont similaires à la liste personnelle - la seule différence est que JabRef ne fournit pas d'interface pour éditer les listes externes.
+### External journal lists
 
-Pour ajouter une nouvelle liste externe, cliquez sur le bouton **+**. Cela ajoutera une nouvelle entrée à l'interface. Ensuite, utilisez soit le bouton *Explorer* soit le bouton *Télécharger* situé à coté d'une des entrées de la partie inférieure de la fenêtre.
+You can link to a number of external lists. These links can be set up in the lower part of the **Manage journal abbreviations** window. External lists are similar to the personal list - the only difference is that JabRef does not provide an interface for editing the external lists.
 
--   Le bouton *Explorer* vous permet de sélectionner un fichier existant sur votre ordinateur.
--   Le bouton *Télécharger* vous permet de télécharger une liste depuis l'internet en entrant une URL, de la stocker dans un fichier local sur votre ordinateur et de la lier comme une liste de journaux depuis JabRef. L'URL sera par défaut l'adresse de la liste de journaux disponible depuis la page web de JabRef. Cette liste est incomplète mais pourra être améliorée dans le futur.
+External lists can be found at [JabRef's repository abbreviation lists](http://abbrv.jabref.org/).
 
-Toute entrée dans votre liste personnelle de journaux sera prioritaire devant une entrée ayant le même nom complet dans l'une des listes externes. De même, les listes externes sont prioritaires selon l'ordre dans lequel elles sont listées.
+To add a new external list, if necessary, click the **+** button to add another slot to the interface. Then use either the *Browse* or *Download* button next to one of the slots in the lower part of the window:
+
+- The *Browse* button allows you to select an existing file on your computer.
+- The *Download* button allows you to download a list over the internet by entering an URL, store it to a local file on your computer, and link to it as a journal list from JabRef.
+
+#### Contributing a external journal list
+
+We want to expand both the build-in list and the selection of smaller lists, so if you have set up a representative list for your own subject area, we would appreciate it if you share your list via [github](https://github.com/JabRef/reference-abbreviations) or by dropping a note on [our forum](http://discourse.jabref.org/).
