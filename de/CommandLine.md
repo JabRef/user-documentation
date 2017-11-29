@@ -1,60 +1,171 @@
 ---
-title: Kommandozeilen-Optionen
-outdated: true
+title: Command line use and options
+helpCategories:
+  - General
 ---
+# Command line use and options
 
-# Kommandozeilen-Optionen
+## Purpose and functioning
 
-Obwohl JabRef in erster Linie ein Programm mit grafischer Benutzeroberfläche ist, bietet es einige nützliche Optionen für die Kommandozeile und kann sogar Dateikonvertierungen durchführen, ohne die grafische Benutzeroberfläche zu öffnen. Um die Kommandozeilenoptionen zu nutzen benötigen Sie die JAR-Version von JabRef. Diese können Sie entweder direkt von der JabRef-Downloadseite herunterladen. Falls Sie JabRef bereits installiert haben, finden Sie die JAR-Datei bereits im Installationsorder von JabRef.
+Although JabRef is primarily a GUI based application, it offers several command line options that may be useful, and can even perform file conversion operations without opening the graphical interface.
 
-Sie können eine oder mehrere BibTeX-Dateien laden, indem Sie auf der Kommandozeile die entsprechenden Dateinamen auflisten. Achten Sie darauf, alle gewünschten Optionen anzugeben, bevor Sie die Dateinamen anfügen. Außerdem müssen Sie sich vergewissern, dass der erste Dateiname nicht als Argument einer Option missverstanden werden kann - falls eine Bool'sche Option wie `-n` oder `-l` direkt vor einem Dateinamen steht, müssen Sie also "true" als Argument angeben. Das Beispielkommando:
+## Basics
 
-`java -jar JabRef.jar -o filetoexport.xml,docbook -n true     original.bib`
+```sh
+java -jar JabRef.jar [OPTIONS] [BIBTEX_FILE]
+```
 
-lädt die Datei `original.bib`, exportiert sie in das Docbook-Format, speichert sie unter dem Namen `filetoexport.xml` und unterdrückt das Laden der grafischen Oberfläche. Das Word *true* verhindert, dass der Dateiname als Argument der Option `-n` interpretiert wird.
+*Note:* you may have to replace `JabRef.jar` by the actual name of the `.jar` file (you can find the file in your installation folder)
 
-## Hilfe: -h
+On Windows, you can also directly use the executable, that is, `JabRef.exe [OPTIONS] [BIBTEX_FILE]`. In this case, no output is written to the console unless you specify the `-console` option.
 
-Diese Option veranlasst JabRef, eine Zusammenfassung der Kommandozeilen-Optionen anzuzeigen und das Programm unmittelbar darauf zu schließen.
+You can always specify one or more BibTeX files to load by simply listing their filenames. Take care to specify all options before your list of file names. Ensure that the first file name is not misunderstood as being an argument for an option; this simply means that if a boolean option like `-n` or `-l` immediately precedes a file name, add the word `true` as an argument. For instance, the command line:
 
-## Kein GUI-Modus: -n
+`java -jar JabRef.jar -o filetoexport.xml,docbook -n true original.bib`
 
-Diese Option unterdrückt sowohl das JabRef-Fenster als auch den Eröffnungsbildschirm, der normalerweise beim Programmstart angezeigt wird. Das Programm wird beendet, sobald die Kommandozeilen-Optionen abgearbeitet wurden.
+will correctly load the file `original.bib`, export it in docbook format to `filetoexport.xml`, and suppress the GUI. The word *true* prevents the file name from being interpreted as an argument to the `-n` option.
 
-Diese Option ist nützlich, um Dateikonvertierungen von der Kommandozeile oder mit Hilfe eines Scripts durchzuführen.
+## Options
 
-## Datei importieren: -i Dateiname\[,Importformat\]
+- [Help: `-h`](#help--h)
+- [No-GUI mode: `-n`](#no-gui-mode--n)
+- [Import file: `-i filename[,import format]`](import-file--i-filenameimport-format)
+- [Export file: `-o filename[,export format]`](#export-file--o-filenameexport-format)
+- [Export matching entries: `-m [field]searchTerm,outputFile:file[,exportFormat]`](#export-matching-entries--m-fieldsearchtermoutputfilefileexportformat)
+- [Fetch entries from Web: `-f=FetcherName:QueryString`](#fetch-entries-from-web--ffetchernamequerystring)
+- [Subdatabase from .aux file: `-a infile[.aux],outfile[.bib] base-BibTeX-file`](#subdatabase-from-aux-file--a-infileauxoutfilebib-base-bibtex-file)
+- [Set file links: `-asfl`](#set-file-links--asfl)
+- [Regenerate keys: `-g`](#regenerate-keys--g)
+- [Export preferences: `-x filename`](#export-preferences--x-filename)
+- [Import preferences: `-p filename`](#import-preferences--p-filename)
+- [Reset preferences: `-d key`](#reset-preferences--d-key)
+- [No files at startup: `-b`](#no-files-at-startup--b)
+- [Version: `-v`](#version--v)
+- [Debug mode: `--debug`](#debug-mode---debug)
+- [Display output in the console: `--console`](#display-output-in-the-console---console)
 
-Bei dieser Option importiert oder lädt JabRef eine bestimmte Datei. Wenn nur ein Dateiname angegeben wird oder ein Komma und ein \*-Zeichen hinter dem Dateinamen stehen, versucht JabRef, das Dateiformat automatisch zu erkennen. Das sollte bei allen BibTeX-Dateien ebenso funktionieren wie bei Dateien, die in einem der von JabRef unterstützten Importformate vorliegen. Wenn dem Dateinamen ein Komma und ein Importformat folgen, wird der angegebene Importfilter benutzt. Mit der Option `-h` können Sie sich eine Liste der verfügbaren Importformate anzeigen lassen.
+### Help: `-h`
 
-Wenn Sie zusätzlich eine Export-Option angeben, wird der Import immer zuerst ausgeführt, bevor die importierte oder geladene Datei an den Exportfilter übergeben wird. Falls die grafische Oberfläche nicht mit der Option `-n` unterdrückt wird, werden alle geladenen oder importierten Dateien im Hauptfenster von JabRef angezeigt.
+(or `--help`)
 
-Die Option `-i` kann nur einmal angegeben werden und nimmt als Argument maximal eine Datei.
+Displays a summary of the command line options, including the list of available import and export formats.
 
-## Datei exportieren: -o Dateiname\[,Exportformat\]
+### No-GUI mode: `-n`
 
-Diese Option veranlasst JabRef, eine Datei zu speichern oder zu exportieren, die von derselben Kommandozeile geladen oder importiert wurde. Wenn eine Datei mit der Option `-i` importiert wurde, wird diese Datei exportiert. Ansonsten wird die Datei exportiert, die *zuletzt* - ohne die Option `-i` - angegeben (und erfolgreich geladen) wurde.
+(or `--nogui`)
 
-Wird nur ein Dateiname angegeben, so wird diese Datei im BibTeX-Format gespeichert. Wenn dem Dateinamen ein Komma und ein Exportformat folgen, wird der angegebene Exportfilter benutzt. Auf diese Weise wird auch ein benutzerdefinierter Exportfilter angewendet; wenn der Name sowohl auf einen Standard-Exportfilter, als auch auf einen benutzerdefinierten Exportfilter zutrifft, wird der benutzerdefinierte verwendet.
+Suppresses the JabRef window (i.e. no GUI - Graphic User Interface - is displayed).
 
-Mit der Option `-h` können Sie sich eine Liste der verfügbaren Exportformate anzeigen lassen.
+It causes the program to exit immediately once the command line options have been processed. This option is useful for performing file conversion operations from the command line or a script.
 
-Falls die Option `-n` nicht aufgerufen wurde, wird jeder Exportvorgang durchgeführt, bevor das JabRef-Fenster geöffnet wird. Dort werden dann die importierten Dateien angezeigt.
+### Import file: `-i filename[,import format]`
 
-Die Option `-o` kann nur einmal angegeben werden und nimmt als Argument maximal eine Datei.
+(or `--import filename[,import format]` or `--importToOpen filename[,import format]`)
 
-## Einstellungen exportieren: -x Dateiname
+Import or load the file `filename`.
 
-Mit dieser Option können Sie JabRef veranlassen, alle Benutzer-Einstellungen in eine XML-Datei zu speichern. Nach dem Export startet JabRef normal.
+If only the filename is specified (or if the filename is followed by a comma and a `*` character), JabRef will attempt to detect the file format automatically. This works for BibTeX files, and also for all files in a supported import format. If the filename is followed by a comma and the name of an import format, the given import filter will be used.
 
-## Einstellungen importieren: -p Dateiname
+Use the `-h` option to get the list of available import formats.
 
-Mit dieser Option importiert JabRef Benutzer-Einstellungen, die mit der Option `-x` exportiert wurden. Nach dem Import startet JabRef normal.
+If an export option is also specified, the import will always be processed first, and the imported or loaded file will be used by the export filter. If the GUI is not suppressed (using the `-n` option), any imported or loaded file will show up in the main window.
 
-## Nur benutzte Einträge exportieren: -a Dateiname\[.aux\],neueBibDatei\[.bib\]
+If `--importToOpen` is used, the content of the file will be imported into the opened tab.
 
-Manchmal ist es nützlich, eine BibTeX-Datei zu haben, die nur die benutzten Einträge enthält. Eine Liste dieser benutzten Einträge findet sich in einer .aux-Datei (sobald Sie LaTeX aufgerufen haben). JabRef kann diese Datei analysieren, um eine neue BibTeX-Datei zu erstellen, die nur die bekannten und benutzten Einträge enthält. Das bedeutet, dass ein Eintrag, der in der Standard-BibTeX-Datei nicht definiert ist, auch nicht in die neue Datei geschrieben werden kann.
+*Note:* The `-i` option can be specified only once, and for one file only.
 
-## Aus dem Internet abrufen: --fetch==Name des Fetchers:Suchausdruck
+### Export file: `-o filename[,export format]`
 
-Die *Fetcher*, also die direkte Suche in Online-Datenbanken, die Sie im Menü **Internet** finden, können auch von der Kommandozeile aus gestartet werden. Nutzen Sie dazu die Option `--fetch` und geben sowohl den Namen des Fetchers (z.B. 'ieee', 'medline' oder 'jstor') als auch den Suchausdruck oder die ID des gesuchten Mediums an. Beachten Sie, dass einige Fetcher eine graphische Oberfläche (GUI) anzeigen, falls Sie eine Rückmeldung von Ihnen brauchen. Um eine Übersicht der verfügbaren Fetcher zu erhalten, geben Sie `--fetch` ohne Parameter ein.
+(or `--output filename[,export format]`
+
+Export or save a file imported or loaded by the same command line.
+
+If a file is imported using the `-i` option, that file will be exported. If no `-i` option is used, the *last* file specified (and successfully loaded) will be exported.
+
+If only filename is specified, it will be exported in BibTeX format. If the filename is followed by a comma and an export format, the given export filter will be used.
+
+A custom export filter can be used, and will be preferred if the export name matches both a custom and a standard export filter.
+
+If the GUI is not suppressed (using the `-n` option), any export operation will be performed before the JabRef window is opened, and the imported database will show up in the window.
+
+*Note:* The `-o` option can be specified only once, and for one file only.
+
+### Export matching entries: `-m [field]searchTerm,outputFile:file[,exportFormat]`
+
+(or `--exportMatches [field]searchTerm,outputFile:file[,exportFormat]`)
+
+Save to a new file all the database entries matching the given search term.
+
+If the filename is followed by a comma and an export format, the given export filter will be used. Otherwise, the default format *html-table* (with *Abstract* and *BibTeX*, provided by *tablerefsabsbib*) is used.
+
+Information about to the search function is given in ['advanced search' documentation](Search).
+
+*Note:* In addition it is also possible to search for entries within a time frame such as `Year=1989-2005` (instead of only searching for entries of a certain year as in `Year=2005`).
+
+*Note:* Search terms containing blanks need to be bracketed by quotation marks, as in `(author=bock or title|keywords="computer methods")and not(author=sager)`
+
+### Fetch entries from Web: `-f=FetcherName:QueryString`
+
+(or `--fetch=FetcherName:QueryString`)
+
+Query a Web fetcher and import the entries.
+
+Pass both the name of a fetcher and your search term or paper id (e.g. `--fetch=Medline:cancer`), and the given fetcher will be run. Some fetchers will still display a GUI window if they need feedback from you.
+
+The fetchers listed in the Web search panel can be run from the command line. To get the list of available fetchers, run `--fetch` without parameters.
+
+### Subdatabase from .aux file: `-a infile[.aux],outfile[.bib] base-BibTeX-file`
+
+(or `--aux infile[.aux],outfile[.bib] base-BibTeX-file`)
+
+Extract a subdatabase from a .aux file:
+
+When you compile a LaTeX document (e.g. `infile.tex`), an .aux file is created (`infile.aux`). Among other things, it contains the list of entries used in your document. JabRef can extract the references used from the `base-BibTeX-file` to a new .bib file (`outfile.bib`). This way, you will have a subdatabase containing only the entries used in the .tex file.
+
+### Set file links: `-asfl`
+
+(or `--automaticallySetFileLinks`)
+
+Automatically set file links.
+
+### Regenerate keys: `-g`
+
+(or `--generateBibtexKeys`)
+
+Regenerate all keys for the entries of a BibTeX file.
+
+### Export preferences: `-x filename`
+
+(or `--prexp filename`)
+
+Export user preferences to an XML file. After exporting, JabRef will start normally.
+
+### Import preferences: `-p filename`
+
+(or `--primp filename`)
+
+Import user preferences from an XML file (exported using the `-x` option, or through the GUI). After importing, JabRef will start normally.
+
+### Reset preferences: `-d key`
+
+(or `--prdef key`)
+
+Reset preferences (key1, key2,..., or `all`).
+
+### No files at startup: `-b`
+
+(or `--blank`) Do not open any files at startup
+
+### Version: `-v`
+
+(or `--version`)
+
+Display the version number of JabRef.
+
+### Debug mode: `--debug`
+
+Show debug level messages.
+
+### Display output in the console: `--console`
+
+Show info and error messages in the console. Only necessary if you use `JabRef.exe` instead of the `.jar` file.
