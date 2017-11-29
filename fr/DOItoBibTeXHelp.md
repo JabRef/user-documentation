@@ -1,4 +1,4 @@
 ---
-redirect:   /fr/DOItoBibTeX
-layout:     redirect
+redirect: /en/DOItoBibTeX
+layout: redirect
 ---
