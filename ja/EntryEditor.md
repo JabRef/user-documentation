@@ -1,54 +1,63 @@
 ---
-title: 項目エディタ
+title: BibTeX entry editor
 outdated: true
+helpCategories:
+  - General
 ---
+# BibTeX entry editor
 
-# 項目エディタ
+*Opened from main window by double-clicking anywhere on the line of the entry, or selecting the entry and pressing <kbd>Enter</kbd> or <kbd>Ctrl</kbd> + <kbd>D</kbd>. The panel is closed by pressing <kbd>Esc</kbd>.*
 
-*基本ウィンドウで当該項目行の適当なところをダブルクリックするか、項目を選んでENTER鍵またはCTRL-Dを押すと開きます。パネルはESC鍵を押すと閉じます。*
+In this panel you can specify all relevant information on a single entry. The entry editor checks the type of your entry, and lists all the fields that are required, and the ones that are optional, for referring the entry with *BibTeX*. In addition, there are several fields termed *General fields*, that are common to all entry types.
 
-このパネルでは、単一の項目に関連したすべての情報を指定することができます。項目エディタは、ご使用の項目の型を確認し、この項目を *BibTeX* で参照するための、必須フィールドと非必須フィールドとをすべて列挙します。くわえて、すべての項目型に共通な *汎用フィールド* と名付けられたフィールドがあります。
+You can fully customize which fields should be regarded as required and optional for each type of entry, and which fields appear in the General fields tabs. See [Customizing entry types](CustomEntries) for more information about this.
 
-項目型のそれぞれについて、どのフィールドが必須で、どのフィールドが非必須か、またどのフィールドが汎用フィールドタブに表示されるべきかを、完全に指定することができます。これについて詳しくは、[項目型の調整](CustomEntriesHelp)を参照してください。
+For information about how the fields should be filled out, see [BibTeX help](Bibtex).
 
-フィールドをどのように埋めていくべきかについての情報は、[BibTeXヘルプ](BibtexHelp)をご覧ください。
+## The entry editor's panels
 
-## 項目エディタのパネル
+The entry editor contains six panels: *Required fields*, *Optional fields*, *General*, *Abstract*, *Review* and *BibTeX source*, where *General*, *Abstract* and *Review* can be customized (see [Customizing general fields](GeneralFields) for details). Inside the three first panels, <kbd>Tab</kbd> and <kbd>Shift</kbd> + <kbd>Tab</kbd> are used to switch focus between the text fields.
 
-項目エディタには、*必須フィールド*・*非必須フィールド*・*汎用*・*概要*・*レビュー*・*BibTeXソース* の6つのパネルがあります。ここで、*汎用*・*概要*・*レビュー* はカスタマイズ可能です([汎用フィールドの個人設定](GeneralFields)を参照)。最初の3つのパネルでは、TABとSHIFT-TABがテキストフィールド間でフォーカスを移すのに使用できます。
+Switch panels by clicking on the tabs, or navigate to the panel to the left or right using the following key combinations: <kbd>Ctrl</kbd> + <kbd>Tab</kbd> or <kbd>Ctrl</kbd> + <kbd> + </kbd> switch to the tab to the right, and <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Tab</kbd> or <kbd>Ctrl</kbd> + <kbd>-</kbd> switch to the tab to the left. You can also switch to the next or previous entry by pressing <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Down</kbd> or <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Up</kbd>, respectively, or by clicking the appropriate toolbar button.
 
-パネルを切り替えるにはタブをクリックするか、以下のキーの組み合わせで左右のパネルに移動してください。右側のタブに異動するには、CTRL-TABまたはCTRL-プラス、左側のタブに異動するには、CTRL-SHIFT-TABまたはCTRL-マイナスを使います。また、次または前の項目に移動するには、それぞれCTRL-SHIFT-↓またはCTRL-SHIFT-↑を押すか、適切なツールバーボタンをクリックしてください。
+The *BibTeX source* panel shows how the entry will appear when the database is saved in *BibTeX* format. If you wish, you can edit the *BibTeX* source directly in this panel. When you move to a different panel, press <kbd>Ctrl</kbd> + <kbd>S</kbd> or close the entry editor, JabRef will try to parse the contents of the source panel. If there are problems, you will be notified, and given the option to edit your entry further, or to revert to the former contents. If **Show source by default** is checked in the **General options** tab of the **Preferences** dialog, the source panel will be the one shown each time you open the entry editor. If you prefer editing the source rather than using the other four panels, you should check this option.
 
-*BibTeXソース* パネルは、データベースが *BibTeX* 形式に保存されたときに、項目がどのように表記されるかを示します。お望みならば、このパネルで *BibTeX* ソースを直接編集することもできます。別のパネルに移動したり、CTRL-Sを押したり、あるいは項目エディタを閉じたりした際に、JabRefはソースパネルの内容を解析しようと試みます。問題がある場合には、それを通知して、その項目をさらに編集するのか、以前の内容に戻すのかの選択肢を提示します。**設定** ダイアログの **項目エディタ** タブにある **既定でBibTeXソースを表示** を有効にすると、項目エディタを開く度に、ソースパネルが表示されます。BibTeXの提供する4つのパネルではなく、ソースで編集することをお好みならば、このオプションを有効にしてください。
+**Tip:** If your database contains fields unknown to JabRef, these will be visible in the source panel.
 
-**一口メモ** お使いのデータベースにJabRefが知らないフィールドが含まれている場合、これらはソースパネルから見ることができます。
+**Tip:** the *pdf* and *url* fields support Drag and Drop operations. You can drop there an url from your browser. either a link to a pdf file (that JabRef can download for you) or you can keep the link.
 
-**一口メモ** *pdf* および *url* フィールドは、ドラッグ＆ドロップ操作をサポートしています。ここにブラウザからURLをドラッグしたり、PDFファイルをドラッグしてJabRefにダウンロードさせるか、リンクのままにしておいたりすることができます。
+## Field consistency checking
 
-## フィールド整合性検査
+When the contents of a field is changed, JabRef checks if the new contents are acceptable. For field types that are used by *BibTeX*, the contents are checked with respect to the use of the '\#' character. The hash symbol is *only* to be used in pairs (except in escaped form, '\\\#'), wrapping the name of a *BibTeX* string that is referenced. Note that JabRef does not check if the referenced string actually exists (this is not trivial, since the *BibTeX* style you use can define an arbitrary set of strings unknown to JabRef).
 
-フィールドの内容が変更された場合、JabRefは新しい内容を受諾可能かどうか検査します。*BibTeX* が使用するフィールド型については、「\#」文字の使用法に関しての検査も行われます。「\#」記号は、(「\\\#」の形でエスケープされている場合を除き)*つねに* 対で使用され、参照されている *BibTeX* 文字列を囲みます。なお、JabRefは、参照されている文字列が実際に存在するかどうかの検査は行わないので注意してください(これは自明ではありません。自分で使用する *BibTeX* スタイルは、JabRefが知らない文字列を好きなだけ定義することができるからです)。
+If the contents are not accepted, the field will turn red, indicating an error. In this case the change will not be stored.
 
-内容が受諾されなければ、フィールドが赤く表示されてエラーであることを示します。この場合には、変更点は保存されません。
+## Word/name autocompletion
 
-## 単語/名称自動補完
+The entry editor offers autocompletion of words. In the Preferences dialog you can enable or disable autocompletion, and choose for which fields autocompletion is active.
 
-項目エディタでは、単語の自動補完を使うことができます。設定ダイアログで、自動補完を有効にしたり無効にしたりすることができる他、どのフィールドで自動補完をアクティブにするか選ぶことができます。
+With autocompletion, JabRef records all words that appear in each of the chosen fields throughout your database. Whenever you write the beginning of one of these words, it will be suggested visually. To ignore the suggestion, simply write on. To accept the suggestion, either press <kbd>Enter</kbd> or use your arrow keys or other keys to remove the selection box around the suggested characters.
 
-自動補完が有効にすると、選択した各フィールドでデータベース中に現れる単語をすべて記録します。これらの単語のどれかを書き始めると、画面上でその候補が提案されます。提案候補を無視するには、そのまま書き続けてください。候補を受け入れるには、*ENTER* を押すか、矢印キーを押すか、あるいは他の文字を押して提案文字脇の選択ボックスを消してください。
+*Note:* the words considered for suggestion are only the ones appearing in the same field in entries of the same database as the one you are editing. There are many ways to realise this kind of feature, and if you feel it should have been implemented differently, we'd like to hear your suggestions!
 
-*《註》* 提案候補の単語は、編集しているデータベースの同じフィールドに現れる単語のみです。この種の機能を実現するには様々な方法が考えられ、もしこれとは違う実装をするべきだと考えられる方がおられれば、ご提案をお聞かせください。
+## Copy *BibTeX* key including citation command.
 
-## *BibTeX* 鍵を引用コマンド付きでコピーする
+Pressing <kbd>Ctrl</kbd> + <kbd>K</kbd> or the 'key' button causes the *BibTeX* key for your entry including the surrounding to be copied to the clipboard.
 
-CTRL-Kか「鍵」ボタンを押すと、その項目の *BibTeX* 鍵の前後に引用コマンドを付したものがクリップボードにコピーされます。
+## Copy *BibTeX* key
 
-## *BibTeX* 鍵をコピーする
+Pressing <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>K</kbd> causes the *BibTeX* key for your entry to be copied to the clipboard.
 
-CTRL-SHIFT-Kを押すと、その項目の *BibTeX* 鍵がクリップボードにコピーされます。
+## Autogenerate *BibTeX* key
 
-## *BibTeX* 鍵自動生成
+Press <kbd>Ctrl</kbd> + <kbd>G</kbd> or the 'gen key' button (the magic wand) to autogenerate a *BibTeX* key for your entry based on the contents of its required fields.
 
-当該項目の必須フィールドの内容に基づいて *BibTeX* 鍵を自動生成させるには、CTRL-Gを押すか「鍵生成」ボタン(魔法の杖)を押してください。
+For more information on how JabRef generates *BibTeX* keys, see [Customizing the BibTex key generator](LabelPatterns).
 
-JabRefがどうやって *BibTeX* 鍵を生成するかについての詳しい情報は、[BibTeX鍵生成方法の調整](LabelPatterns)をご覧ください。
+## Related Articles Tab
+
+By selecting this Tab, we are sending the title of the selected paper to Mr. DLib.
+
+Mr. DLib is a service that calculates recommendations for you based on this title. After a short loading time the recommendations are listed in the Related Articles Tab. For detailed information see [Mr. DLibs help page](http://mr-dlib.org/information-for-users/information-about-mr-dlib-for-jabref-users/#). The following image shows the Related Articles Tab with recommendations to the selected item.
+
+![Screenshot of the Related Articles Tab](./images/sceenshot_related_articles_en.PNG)
