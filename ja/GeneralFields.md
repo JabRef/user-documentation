@@ -1,15 +1,18 @@
 ---
-title: 汎用フィールドの調整
+title: Customizing general fields
+helpCategories:
+  - Setup
 ---
+# Customizing general fields
 
-# 汎用フィールドの個人設定
+You can add an arbitrary number of tabs to the entry editor. These will be present for all entry types. To customize these tabs, go to **Options → Set up general fields**.
 
-項目エディタには、好きな数だけタブを追加することができます。これはどの項目型に対しても表示されます。タブを編集するには、**オプション→汎用フィールドを設定** を開いてください。
+You specify one tab on each line. The line should start with the name of the tab, followed by a colon (:), and the fields it should contain, separated by semicolons (;).
 
-一行ごとに一つのタブを指定します。各行の行頭にはタブ名を書いてコロン(:)を続け、その後にタブに入れるフィールドをセミコロン(;)で区切って書き入れます。
+For example:
 
-例：
-  General:url;keywords;doi;pdf
-  Abstract:abstract;annote
+    General:url;keywords;doi;pdf
+    Abstract:abstract;annote
+    
 
-これは、*url*・*keywords*・*doi*・*pdf* の各フィールドを含む「General」と云う名のタブと、*abstract*・*annote* の各フィールドを含む「Abstract」と云う名のタブを生成します。
+will give one tab named "General" containing the fields *url*, *keywords*, *doi* and *pdf*, and another tab named "Abstract" containing the fields *abstract* and *annote*.
