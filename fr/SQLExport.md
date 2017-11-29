@@ -1,21 +1,22 @@
 ---
-title: Exportation vers une base de données SQL externe
+title: Export to an External SQL Database
+helpCategories:
+  - Import/Export
 ---
+# Export to an External SQL Database
 
-# Exportation vers une base de données SQL externe
+**This help applies for older versions of JabRef. From JabRef 3.6 onwards, [collaborative working on a SQL database](SQLDatabase) is supported**
 
-JabRef est capable d'exporter le contenu de la base BibTeX, ainsi que les informations sur les groupes, dans une base de données externe MySQL ou PostgreSQL.
+JabRef is capable of exporting the contents of the BibTeX database, along with groups information, to an external MySQL or PostgreSQL database.
 
-Vous avez juste besoin d'avoir un utilisateur/mot de passe avec tous les privilèges sur un serveur MySQL ou PostgreSQL
+You just need to be sure you have an user/password with full privileges on a MySQL or PostgreSQL server.
 
-## Exportation
+## Export
 
-1.  Choisissez **Fichier → Exporter vers une base SQL externe**, ou cliquez sur le bouton correspondant dans la barre d'outils.
-2.  Sélectionnez le type de base de données à partir du menu déroulant pour le*Type de Serveur*.
-3.  Entrez les informations de connexion de la base de données, et cliquez sur **Connecter**.
+1. Choose **File → Export to external SQL database**, or click the corresponding button on the toolbar.
+2. Select the database type from the drop down menu for *Server Type*.
+3. Enter the database connection information, and click **Connect**.
 
-JabRef se connectera alors à la base de données spécifiée, créera de nouvelles tables et remplira ces tables avec les informations sur les entrées et sur les groupes. Vous serez en mesure d'exporter autant de base de données bib que vous désirez sans perdre les données précédemment explorée. Le système reconnaît une base de données uniquement par son chemin complet (structure des répertoires + nom de fichier). Dans le cas où vous exportez la même base de données plus d'une fois, les données de cette base seront mises à jour dans la base de données SQL. Notez que les informations de connexion ne vous seront pas demandées lors des prochaines exportations. Si vous souhaitez exporter vers une base de données différente, vous pouvez changez les informations de connexion en choisissant **Fichier → Connecter vers une base SQL externe** (ou en cliquant sur le bouton correspondant dans le barre d'outils), puis en effectuant une exportation.
+JabRef will then connect to the specified database, create new tables, and populate those tables with entries and groups information. You will be able to export as many JabRef bib databases as you want without losing the previously explored data. The system recognize a database uniquely by its full path (directory structure + filename). In case you export the same JabRef database more than once, the data of that database will be update in the SQL database. Note that you will not be prompted for the connection information on subsequent exports. If you would like to export to a different database, you can change the connection information by choosing **File → Connect to external SQL database** (or by clicking the associated toolbar button), and then performing an export. Since version 2.8 tables are not dropped, and user is able to store more than one JabRef database into a single SQL database.
 
-A partir de la version 2.8 de JabRef, les tables ne sont plus effacées et l'utilisateur peut stocker plus d'une base de données JabRef dans une unique base de données SQL.
-
-Lors de l'importation d'une base de données à partir d'une base de données SQL, (**Fichier → Importer depuis une base SQL externe**), JabRef mettra chaque base trouvée dans un onglet différent.
+When importing a database from an SQL database (**File → Import from external SQL database**), JabRef will place each database found in a different tab.
