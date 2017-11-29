@@ -23,7 +23,7 @@ The following tables indicates how many items are waiting for translation in you
 
 You can improve the translation directly in your web browser or using a dedicated software (Popeye) - See below.
 
-### Localization files status (2017-11-22 11:57 - Branch `master` `a3e9a92`)
+### Localization files status (2017-11-29 19:57 - Branch `master` `42ba568ea`)
 
 Note: To get the current status from your local repository, run `python ./scripts/syncLang.py markdown`
 
@@ -56,7 +56,7 @@ Note: To get the current status from your local repository, run `python ./script
 | [JabRef_el.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_el.properties) | 1641 | 80 | 1561 | 4 |
 | [JabRef_es.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_es.properties) | 1641 | 1603 | 38 | 97 |
 | [JabRef_fa.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_fa.properties) | 1641 | 2 | 1639 | 0 |
-| [JabRef_fr.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_fr.properties) | 1641 | 1628 | 13 | 99 |
+| [JabRef_fr.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_fr.properties) | 1641 | 1641 | 0 | 100 |
 | [JabRef_in.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_in.properties) | 1641 | 1126 | 515 | 68 |
 | [JabRef_it.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_it.properties) | 1641 | 1619 | 22 | 98 |
 | [JabRef_ja.properties](https://github.com/JabRef/jabref/tree/master/src/main/resources/l10n/JabRef_ja.properties) | 1641 | 1622 | 19 | 98 |
