@@ -1,14 +1,10 @@
 ---
-title: タイトルを使用して項目を作成するには
-helpCategories: ["ウェブから項目を取得する", "... 刊行識別子を使用して"]
+title: Creating entries using the title
+helpCategories:
+  - Fetching entries from the web
+  - '... using publication identifiers'
 since: 3.8.1
 ---
+# Creating entries using the title of an entry
 
-# タイトルを使用して項目を作成するには
-
-この機能を使用するには，**BibTeX→新規項目...** を選択すると，下部に「IDから項目を生成」ボックスがあるので，「ID型」フィールドで「Title」を選択します．
-「ID」フィールドにタイトルを入力し，<kbd>Enter</kbd>を押すと，タイトルに基づいて項目が作成されます．「生成」ボタンを押してもかまいません．
-すると，（<http://crossref.org/>が提供している）<http://dx.doi.org/>が，DOIを特定するのに用いられ，与えられたDOIをBibTeX項目に変換します．
-検出された項目が項目エディタに開かれます．
-エラーが発生すると，ポップアップが表示されます．
-DOIを特定することができなかった場合には，項目は生成されません．
+To use this feature, choose **BibTeX → New entry...**. In the lower part, there is the box "ID-based entry generator". In the field "ID type", you can select "Title". The field "ID" is focused. Enter the title here and press <kbd>Enter</kbd> to generate an entry based on the title. You can also click on "Generate". Then, <http://dx.doi.org/> (provided by <http://crossref.org/>) is used to determine the DOI and convert the determined DOI to a BibTeX entry. The found entry is opened in an entry editor. In case an error occurs, a popup is shown. In case no DOI could be determined, no entry is created.
