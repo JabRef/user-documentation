@@ -1,148 +1,166 @@
 ---
-title: 導入方法
+title: Installation
+helpCategories:
+  - General
 ---
+# Installation
 
-# 導入方法
+This page describes how to install Java, which is required for JabRef. JabRef itself can be either installed using the installer or just running the jar file. You get these files from <https://www.jabref.org/#downloads>.
 
-このページでは，JabRefに必要なJavaの導入の仕方を説明します．
-JabRef自体は，導入プログラムを使用して導入することも，jarファイルを直接実行することもできます．
-これらのファイルは，<https://www.jabref.org/#downloads>で入手できます．
+On Windows, the installer automatically downloads the OracleJDK (i.e. Java). You can also install it manually as described here.
 
-Windowsでは，導入プログラムが，自動的にOracleJDK（すなわちJava）をダウンロードします．
-しかし，ここで述べられているように手動で導入することもできます．
+The installation steps are written having the [JavaFX development branch](https://builds.jabref.org/javafx/) in mind. Thus, it especially describes installing [JavaFX](https://en.wikipedia.org/wiki/JavaFX).
 
-導入手順は，[JavaFX開発ブランチ](https://builds.jabref.org/javafx/)を念頭に書かれています．
-したがって，特にJavaFXの導入について述べます．
+## Table of Contents
 
-## サポートされているJDKとJRE
+<!-- toc -->
 
-JavaFXは，全てのJavaランタイム環境やJava開発環境に含まれているわけではありません．
-ですので，JavaFXがJava 1.8.0_60以来含まれている，[Oracle Java 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html)を利用することを強く推奨します．
-他に，JavaFXを正式にサポートしているものには，外部ライブラリ付きの
-[OpenJDK](http://openjdk.java.net/install/index.html)と [OpenJFX](http://packages.ubuntu.com/wily/openjfx-source)
-がありますが，残念ながら，この導入作業はいつもわかりやすいものではありません．
-したがって，この方法は，事情のよくわかっている方にのみ推奨いたします．
-もしどうしても，OpenJDKとOpenJFXを使用したい場合には，一般的に，この[説明](https://wiki.openjdk.java.net/display/OpenJFX/Building+OpenJFX)にしたがった方が良いでしょう．
-Ubuntu 16.04 LTSの場合には，[インストール・コマンド](#ubuntu-openjdk-16-04)の節をご覧ください．
+- [Supported JDKs and JREs](#supported-jdks-and-jres)
+- [Verify Java Installation](#verify-java-installation)
+- [Installation Commands](#installation-commands) 
+  - [Ubuntu and Oracle Java](#ubuntu-and-oracle-java)
+  - [Ubuntu 16.04 and OpenJDK](#ubuntu-1604-and-openjdk)
+  - [Debian Jessie 8 and Oracle Java](#debian-jessie-8-and-oracle-java) 
+    - [Using the ppa](#using-the-ppa)
+    - [Directly from Oracle](#directly-from-oracle)
+  - [Fedora 23 and Oracle Java](#fedora-23-and-oracle-java)
+  - [Fedora and OpenJDK](#fedora-and-openjdk)
+  - [CentOS 6 or 7 and Oracle Java](#centos-6-or-7-and-oracle-java)
+  - [Windows and Oracle Java](#windows-and-oracle-java)
+  - [Mac OS and Oracle Java](#mac-os-and-oracle-java)
+- [JabRef and OpenOffice/LibreOffice integration](#jabref-and-openofficelibreoffice-integration)
 
+<!-- tocstop -->
 
-## Java環境を確認する
+## Supported JDKs and JREs
 
-すでにJavaが導入済みの場合や，下記のステップに正しく従った場合には，コマンドライン・インタフェースに
+JavaFX is not included in every Java runtime environment or development kit. Therefore, we highly recommend to use [Oracle Java 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html). JavaFX is included since Java 1.8.0_60. The other official support for JavaFX is [OpenJDK](http://openjdk.java.net/install/index.html) with the external library [OpenJFX](http://packages.ubuntu.com/wily/openjfx-source). Unfortunately, the installation is not always straight forward. Therefore, we only recommend this if you know what you are doing. In case you want to use OpenJDK with OpenJFX in general you should follow this [instructions](https://wiki.openjdk.java.net/display/OpenJFX/Building+OpenJFX). For Ubuntu 16.04 LTS head to the section [Installation Commands](#ubuntu-openjdk-16-04).
+
+## Verify Java Installation
+
+In case you already have a Java version installed - or you closely followed the steps below, you can check your Java version by typing the following command into your command line interface:
 
 `java -version`
 
-というコマンドを入力すれば，どのJavaバージョンが導入されているかをチェックすることができます．
-同時に複数のJavaバージョンが導入済みのこともありえます．
-Linuxディストリビューションの場合には，
+It is possible having multiple Java versions at the same time. On debian based Linux distributions set your preferred Java version using the following command:
 
 `sudo update-alternatives --config java`
 
-というコマンドを使用して，望むJavaバージョンの番号を入力すれば，優先するJavaバージョンを設定することができます．
+and choose it by typing the number matching the Java version.
 
-使用中のJavaバージョンは，使用しているオペレーティング・システムとJDK/JREに依存して，下記のように表示されるはずです．
+Your Java version should look like this, depending on your operating system and JDK/JRE:
 
+**Oracle Java 32-Bit:**
 
-**Oracle Java 32ビット:**
+    Java version "1.8.0_x" 
+    Java(TM) SE Runtime Environment (build 1.8.x)
+    Java HotSpot(TM) Client  VM (build 25.x, mixed mode)
+    
 
-```
-Java version "1.8.0_x"
-Java(TM) SE Runtime Environment (build 1.8.x)
-Java HotSpot(TM) Client  VM (build 25.x, mixed mode)
-```
+**Oracle Java 64-Bit:**
 
+    Java version "1.8.0_x" 
+    Java(TM) SE Runtime Environment (build 1.8.x)
+    Java HotSpot(TM) 64-Bit Server VM (build 25.x, mixed mode)
+    
 
-**Oracle Java 64ビット:**
+**OpenJDK 32-Bit:**
 
-```
-Java version "1.8.0_x"
-Java(TM) SE Runtime Environment (build 1.8.x)
-Java HotSpot(TM) 64-Bit Server VM (build 25.x, mixed mode)
-```
+    OpenJDK version "1.8.0_x" 
+    OpenJDK Runtime Environment (build 1.8.0_x)
+    OpenJDK Client VM (build 25.x, mixed mode)
+    
 
+**OpenJDK 64-Bit:**
 
-**OpenJDK 32ビット:**
+    OpenJDK version "1.8.0_x" 
+    OpenJDK Runtime Environment (build 1.8.0_x)
+    OpenJDK 64-Bit Server VM (build 25.x, mixed mode)
+    
 
-```
-OpenJDK version "1.8.0\_x"
-OpenJDK Runtime Environment (build 1.8.0\_x)
-OpenJDK Client VM (build 25.x, mixed mode)
-```
+If this does not report to be a product from Oracle (for instance tells you that it is a GCJ VM) even if you have installed the Oracle JVM then you need to change your setup. In the following, the installation is documented for Ubuntu, Debian, Fedora, CentOS, Windows, and MacOSX.
 
+## Installation Commands
 
-**OpenJDK 64ビット:**
+### Ubuntu and Oracle Java
 
-```
-OpenJDK version "1.8.0_x"
-OpenJDK Runtime Environment (build 1.8.0_x)
-OpenJDK 64-Bit Server VM (build 25.x, mixed mode)
-```
+This applies for both 32bit and 64bit and both Ubuntu 14.04 LTS and 16.04 LTS.
 
+Install Oracle JDK with "personal packages archiv (ppa)" which includes an automated update function:
 
-## インストール・コマンド
+1. Add repository: `sudo add-apt-repository ppa:webupd8team/java`
+2. Update package list: `sudo apt-get update`
+3. Install: `sudo apt-get install oracle-java8-installer`
 
+If you want to install JRE or install java without ppa you should follow these [instructions](https://help.ubuntu.com/community/Java).
 
-### UbuntuとOracle Java
+### Ubuntu 16.04 and OpenJDK
 
-下記は，32ビットと64ビットの両方，およびUbuntu 14.04 LTSと16.04 LTSの両方に該当します．
+Just install JavaFX by executing `sudo apt-get install openjfx`
 
-以下に示すように，OracleJDKを，自動更新関数を含んだ「personal packages archiv (ppa)」とともにインストールします．
+### Debian Jessie 8 and Oracle Java
 
-1. リポジトリを追加：`sudo add-apt-repository ppa:webupd8team/java`
-2. パッケージ一覧を更新：`sudo apt-get update`
-3. インストール：`sudo apt-get install oracle-java8-installer`
+#### Using the ppa
 
-JREを導入したい場合や，ppaなしでjavaを導入したい場合には，この[説明](https://help.ubuntu.com/community/Java)にしたがってください．
+1. Add repository: `sudo sh -c 'echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" >> /etc/apt/sources.list'`
+2. Add GPG key: `sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EEA14886`
+3. Update package list: `sudo apt-get update`
+4. Install: `sudo apt-get install oracle-java8-installer`
 
-### Ubuntu 16.04とOpenJDK
+Based on: <http://tecadmin.net/install-java-8-on-debian/>
 
-`sudo apt-get install openjfx`を実行して，JavaFXをインストールしてください．
+#### Directly from Oracle
 
+1. Download tag.gz-file from the [Java SE Development Kit 8 Downloads](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) site
+2. Navigate to the folder where you downloaded the tar.gz-file
+3. Create package with `make-jpkg jdk-[Version]-linux-x64.tar.gz` including the most recent Java version instead of`[Version]`
+4. Get root access with `su`
+5. Install with `dpkg -i oracle-java8-jdk_[Version].deb`
 
-### Debian Jessie 8とOracle Java
+### Fedora 23 and Oracle Java
 
-#### ppaを使用する
+1. Download rpm-file from the [Java SE Development Kit 8 Downloads](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) site
+2. Navigate to the folder where you downloaded the rpm-file
+3. Install: `rpm -ivh jdk-8u101-linux-x64.rpm`
+4. Upgrade: `rpm -Uvh jdk-8u101-linux-x64.rpm`
+5. Set alternatives: `alternatives --config java` (choose Oracle version)
 
-1. リポジトリを追加：`sudo sh -c 'echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" >> /etc/apt/sources.list'`
-2. GPG鍵を追加：`sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EEA14886`
-3. パッケージ一覧を更新：`sudo apt-get update`
-4. インストール：`sudo apt-get install oracle-java8-installer`
+Recent JabRef builds are available at <https://build.opensuse.org/package/show/home:cornell_vrdc/jabref3>.
 
-出典：<http://tecadmin.net/install-java-8-on-debian/>
+### Fedora and OpenJDK
 
-#### Oracleから直接
+Install JavaFX (actually OpenJFX) by executing `sudo dnf install openjfx java-1.8.0-openjdk-openjfx`
 
-1. [Java SE Development Kit 8 Downloads]サイトからtar.gzファイルをダウンロードする
-2. tar.gzファイルをダウンロードしたフォルダに移動する
-3. `make-jpkg jdk-[バージョン]-linux-x64.tar.gz`（`[バージョン]`を最新のJavaバージョンに置き換える）を実行して，パッケージを作成する
-4. `su`を実行してrootアクセスを獲得する
-5. `dpkg -i oracle-java8-jdk_[Version].deb`でインストールする
+### CentOS 6 or 7 and Oracle Java
 
+1. Download rpm-file from the [Java SE Development Kit 8 Downloads](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) site
+2. Install with `sudo yum localinstall jre-[Version]-linux-[BIT].rpm` include the most recent Java version for `[Version]` and `i586` or `x64` for `[BIT]` depending on your OS version
 
-### Fedora 23とOracle Java
+### Windows and Oracle Java
 
-1. [Java SE Development Kit 8 Downloads]サイトからrpmファイルをダウンロードする
-2. rpmファイルをダウンロードしたフォルダに移動する
-3. インストール：`rpm -ivh jdk-8u101-linux-x64.rpm`
-4. 更新：`rpm -Uvh jdk-8u101-linux-x64.rpm`
-5. 優先版を選択：`alternatives --config java`（Oracle版を選択）
+The "modern" way:
 
+1. Install chocolatey by following the steps described at https://chocolatey.org/install
+2. Execute `choco install jre8`
 
-### CentOS 6または7とOracle Java
+At any time, you can update to the latest Java runtime environment by executing `choco upgrade all`.
 
-1. [Java SE Development Kit 8 Downloads]サイトからrpmファイルをダウンロードする
-2. `sudo yum localinstall jre-[バージョン]-linux-[ビット].rpm`（`[バージョン]`を最新のJavaバージョンに置き換え，`[ビット]`をOSの版によって`i586`か`x64`に置き換える）を実行して，インストールする
+The "old" way:
 
+1. Download exe file from the [Java SE Development Kit 8 Downloads](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) site
+2. Run installation wizzard
 
-### WindowsとOracle Java
+### Mac OS and Oracle Java
 
-1. [Java SE Development Kit 8 Downloads]サイトからexeファイルをダウンロードする
-2. インストール・ウィザードを実行する
+1. Download dmg-file from the [Java SE Development Kit 8 Downloads](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) site
+2. Run installation wizzard
 
+## Freezes when running JabRef
 
-### Mac OSとOracle Java
+Some users with macOS Sierra have reported freezes when using JabRef. Apparently, [adding a host mapping for 127.0.0.1](https://dzone.com/articles/macos-sierra-problems-with-javanetinetaddress-getl) seems to solve these issues.
 
-1. [Java SE Development Kit 8 Downloads]サイトからdmgファイルをダウンロードする
-2. インストール・ウィザードを実行する
+Random freezes have also been reported on several Linux distributions. It seems that the `GTKLookAndFeel` is causing these problems and selecting a different look and feel class under `Options -> Appearance -> Look and Feel` solves the problem.
 
- [Java SE Development Kit 8 Downloads]: <http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html>
+## JabRef and OpenOffice/LibreOffice integration
+
+The connection from JabRef to Libre Office requires some office related `jar`-archives to be present. The Windows installer for OpenOffice/LibreOffice automatically installs the required libraries. For Linux you have to install the package `libreoffice-java-common`.
