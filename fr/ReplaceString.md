@@ -1,9 +1,7 @@
 ---
-title: Replace string
+title: ""
 helpCategories:
-  - Finding, sorting and cleaning entries
-stub: true
+  - ""
+stub: ""
 ---
-# Replace string
-
-This feature is available through **Search → Replace string...**.
+#
