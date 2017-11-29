@@ -1,11 +1,13 @@
 ---
-title: Springerから項目を取得するには
+title: Fetching entries from Springer
+helpCategories:
+  - Fetching entries from the web
+  - '... using online bibliographic database'
 ---
+# Fetching entries from Springer
 
-# Springerから項目を取得するには
+[Springer](https://www.springer.com/) (aka Springer Science+Business Media) is a global publishing company that publishes books, e-books and peer-reviewed journals in science, technical and medical publishing. Springer also hosts a number of scientific databases, including SpringerLink, Springer Protocols, and SpringerImages ([Wikipedia](https://en.wikipedia.org/wiki/Springer_Science%2BBusiness_Media)).
 
-[Springer](https://www.springer.com/) (別名Springer Science+Business Media)は，書籍や電子書籍をはじめ，科学・技術・医学等の分野の査読付学術誌を発行している世界規模の出版社です．また，Springerは，SpringerLink・Springer Protocols・SpringerImages等，多くの科学データベースを運用しています([Wikipedia](https://ja.wikipedia.org/wiki/シュプリンガー・サイエンス・アンド・ビジネス・メディア))．
+To fetch entries from Springer, choose **Search → Web search**, and the search interface will appear in the side pane. Select **Springer** in the dropdown menu. To start a search, enter the words of your query, and press <kbd>Enter</kbd> or the **Fetch** button.
 
-Springerから項目を取得するには，**検索 → ウェブ検索** を選択してください．すると，サイドペインに検索インタフェースが現れますので，ドロップダウンメニューから，**Springer** を選択します．そこで，質問を入力し，**Enter** 鍵を押すか，**取得** ボタンを押して，検索を開始してください．
-
-結果は，[読込検査ウィンドウ](ImportInspectionDialog)に表示されます．エラーが発生した場合には，ポップアップに表示されます．
+The results are displayed in the [import inspection window](ImportInspectionDialog). In case an error occurs, it is shown in a popup.
