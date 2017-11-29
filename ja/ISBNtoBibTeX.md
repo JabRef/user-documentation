@@ -1,11 +1,14 @@
 ---
-title: ISBN番号を使用して項目を取得するには
+title: Creating entries using an ISBN number
+helpCategories:
+  - Fetching entries from the web
+  - '... using publication identifiers'
+since: 3.8
 ---
+# Creating entries using an ISBN number
 
-# ISBN番号を使用して項目を取得するには
+To use this feature, choose **BibTeX → New entry...**. In the lower part, there is the box "ID-based entry generator". In the field "ID type", you can select "ISBN". The field "ID" is focused. Enter the ISBN here and press <kbd>Enter</kbd> to generate an entry based on the Id. You can also click on "Generate". Then, [eBook.de's](http://www.ebook.de/) API is used to convert an ISBN to a BibTeX entry. If no entry is found, the fetcher offered at <https://bibtex.chimbori.com/> is used. The found entry is opened in an entry editor. In case an error occurs, a popup is shown.
 
-この機能を使うには，**検索 → ウェブ検索** を選択すれば，操作盤が側面に表示されますので，そのドロップダウンメニューから **ISBN to BibTeX** を選択してください．
+All fetched entries contain a `url` field. This field points to the URL of the book at the respective online book store. In case you buy the book using the link, the service providers (ebook.de or chimbori.com) receive a commission to fund the service.
 
-この取得子は，ISBNからBibTeX項目に変換するのに，[eBook.de's API](ttp://www.ebook.de/)を使用しています．
-
-検索フィールドにISBN番号を入力し，**Enter** 鍵を押すか **取得** ボタンを押してください．結果は，[読込検査ウィンドウ](ImportInspectionDialog)に表示されます．エラーが発生した場合には，ポップアップに表示されます．
+![Screenshot of new entry dialog](./images/NewEntryChooseType-IDGeneratorHighlighted-ISBN.png)
