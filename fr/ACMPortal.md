@@ -1,19 +1,15 @@
 ---
-title: Récupération d'entrées depuis le portail *ACM*
+title: Fetching entries from ACM Portal
+helpCategories:
+  - Fetching entries from the web
+  - '... using online bibliographic database'
 ---
+# Fetching entries from ACM Portal
 
-# Récupération d'entrées depuis le portail *ACM*
+The [ACM Portal](https://dl.acm.org) includes two databases ([Wikipedia](https://en.wikipedia.org/wiki/Association_for_Computing_Machinery#Portal_and_Digital_Library)): - the **ACM Digital Library** that is a full text collection of every article published by the [Association for Computing Machinery](https://www.acm.org), including over 60 years of archives from articles, magazines and conference proceedings. - the **Guide to Computing Literature** that is a bibliographic collection from major publishers in computing with over one million entries.
 
-Pour utiliser cette fonction, choisissez **Recherche → Recherche Web**. L'interface de recherche apparaitra dans le panneau latéral. Sélectionnez **ACM Portal** dans le menu déroulant.
+To fetch entries from ACM, choose **Search → Web search**, and the search interface will appear in the side pane. Select **ACM portal** in the dropdown menu. You may choose which database to search and you may opt to download the abstracts along with the cite information for each entry, by checking the **Include abstracts** checkbox. To start a search, enter the words of your query, and press <kbd>Enter</kbd> or the **Fetch** button.
 
-Pour démarrer la recherche, entrer les mots de votre requête et appuyer sur **Entrée** ou sur le bouton **Rechercher**.
+Frequent connections to ACM Portal may get your IP banned for hours. To avoid this, JabRef will for each search display a preview of the first page of entries returned by the server. You can then choose which entries to download.
 
-Le portail ACM inclut deux bases de données : le bibliothèque numérique ACM ("ACM Digital Library") qui est la collection complète de tous les articles publiés par ACM, incluant plus de 50 ans d'archives, et le Guide sur la Littérature Informatique ("Guide to Computing Literature") qui est une collection bibliographique provenant de grands éditeurs en informatique et contenant plus d'un million d'entrées.
-
-Vous pouvez choisir la base de données sur laquelle portera la recherche. Vous pouvez décider de télécharger les résumés avec les autres informations de chaque entrée en validant la case à cocher **Inclure les résumés**.
-
-Pour éviter de mettre une pression excessive sur le site internet du portail ACM, JabRef refusera de télécharger plus qu'un certain nombre d'entrées.
-
-À ce moment, des connexions fréquentes au portail ACM vont causer l'interdiction de votre adresse IP pour plusieurs heures. Aussi, JabRef attendra 5 secondes entre chaque connexion, et le processus de téléchargement sera très lent.
-
-Pour toute suggestion, envoyez s'il vous plaît un courriel à Aaron Chen **nextAaron@gmail.com**.
+Then, the results are displayed in the [import inspection window](ImportInspectionDialog).
