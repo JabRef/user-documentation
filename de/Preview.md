@@ -1,7 +1,8 @@
 ---
-title: Eintragsvorschau einstellen
+title: Entry preview setup
+helpCategories:
+  - Setup
 ---
+# Entry preview setup
 
-# Eintragsvorschau einstellen
-
-Die Eintragsvorschau wird mit denselben Mechanismen erstellt, die auch bei den [Exportfiltern](CustomExports) angewendet werden. Bei der Vorschau durchläuft ein Eintrag eins von zwei möglichen Layouts (die sie mit F9 wechseln können) und erstellt HTML-Code, der im Vorschaudialog angezeigt wird. Aussehen und Inhalt der Vorschau können mit derselben Syntax verändert werden, die in der Hilfe zur Anpassung der [Exportfilter](CustomExports) beschrieben wird.
+The entry preview is created using the same mechanism as used by the [Custom export filter](CustomExports) facility. When previewed, an entry is processed using one of the two alternative layouts (you can switch between the two layouts by pressing <kbd>F9</kbd>) to produce HTML code which is displayed by the preview panel. To modify the appearance and contents of the preview you need to edit the preview layouts using the syntax described in the help file on [Custom export filters](CustomExports).
