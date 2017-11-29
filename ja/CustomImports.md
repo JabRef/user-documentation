@@ -1,61 +1,74 @@
 ---
-title: ユーザー読込フィルタ
+title: Custom import filters
+helpCategories:
+  - Import/Export
 ---
+# Custom import filters
 
-# ユーザー読込フィルタ
+JabRef allows you to define and use your own importers, in very much the same way as the standard import filters are defined. An import filter is defined by one or more Java *classes*, which parse the contents of a file from an input stream and create BibTex entries. So with some basic Java programming you can add an importer for your favorite source of references or register a new, improved version of an existing importer. Also, this allows you to add compiled custom importers that you might have obtained e.g. from SourceForge without rebuilding JabRef (see "Sharing your work").
 
-JabRefでは，標準読込フィルタが定義されているのとほとんど同じ方法で，あなた自身の読込フィルタを定義して使うことができます．読込フィルタは，1つ以上のJava *クラス* として定義され，入力ストリームからファイルの内容を解析し，BibTeX項目を生成します．つまり，簡単なJavaプログラミングで，あなたの気に入った文献ソースの読込フィルタを追加したり，既存読込フィルタの改善版を新しく登録したりすることができます．また，これによって，例えばSourceForgeなどから入手したコンパイル済みのユーザー読込フィルタを追加することもできます(「作業を共有する」を参照)．
+Custom importers take precedence over standard importers. This way, you can override existing importers for the Autodetect and Command Line features of JabRef. Custom importers are ordered by name.
 
-ユーザー読込フィルタは，標準読込フィルタよりも優先されます．こうして，JabRefの自動検出機構やコマンドライン機構によって既存の読込フィルタを上書きすることができます．ユーザー読込フィルタは，名称順に整序されます．
+## Adding a custom import filter
 
-## ユーザー読込フィルタを追加する
+Make sure, you have a compiled custom import filter (one or more `.class` files as described below) and the class files are in a directory structure according to their package structure. To add a new custom import filter, open the dialog box **Options → Manage custom imports**, and click **Add from folder**. A file chooser will appear, allowing you to select the classpath of your importer, i.e. the directory where the top folder of the package structure of your importer resides. In a second file chooser you select your importer class file, which must be derived from `ImportFormat`. By clicking **Select new ImportFormat Subclass**, your new importer will appear in the list of custom import filters. All custom importers will appear in the **File → Import → Custom Importers** and **File → Import and Append → Custom Importers** submenus of the JabRef window.
 
-コンパイルしたユーザー読込フィルタ(上述のように1つ以上の`.class`ファイル)とクラスファイルが，そのパッケージ構造と同じディレクトリ構造に配置されるようにしてください．新規ユーザー読込フィルタを追加するには，**オプション→ユーザー読込の管理** ダイアログボックスを開き，**フォルダから追加** を押してください．ファイル選択ウィンドウが開き，ユーザー読込のクラスパス——つまりユーザー読込のパッケージ構造の最上位フォルダがあるディレクトリ——を選択することができます．二つめのファイル選択ウィンドウでは，ユーザー読込クラスファイルを選択してください．これは`ImportFormat`から派生していなくてはなりません．**新しいImportFormatサブクラスを選択** を押すと，ユーザー読込フィルタの一覧の中に新しいユーザーフィルタが表示されます．ユーザー読込はすべて，JabRefウィンドウサブメニューの **ファイル→読み込み→ユーザー読込** と **ファイル→読み込んで追加→ユーザー読込** に表示されます．
+Please note that if you move the class to another directory you will have to remove and re-add the importer. If you add a custom importer under a name that already exists, the existing importer will be replaced. Although in some cases it is possible to update an existing custom importer without restarting JabRef (when the importer is not on the classpath), we recommend restarting JabRef after updating an custom-importer. You can also register importers contained in a ZIP- or JAR-file, simply select the Zip- or Jar-archive, then the entry (class-file) that represents the new importer.
 
-クラスを別のディレクトリに移動した場合には，読込をいったん削除して追加し直さなくてはならないことに注意してください．既に存在する名称のユーザー読込を追加すると，既存の読込は置換されます．JabRefを再起動しないで既存のユーザー読込を更新することができることもありますが(読込がクラスパスにない場合)，ユーザー読込を更新した時にはJabRefを再起動することを推奨します．zipファイルもしくはjarファイルに含まれる読込を登録することも可能です．単にzipファイルもしくはjarファイルを選択して，新規読込を表す項目(クラスファイル)を選択してください．
+## Creating an import filter
 
-## 読込フィルタを作成する
+For examples and some helpful files on how to build your own importer, please check our download page.
 
-ユーザー読込のビルドのしかたに関する用例と参考になるファイルについては，JabRefのダウンロードページをご覧ください．
+### A simple example
 
-### 簡単な例
-
-以下の形のファイルを読み込みたいものと仮定しましょう．
+Let us assume that we want to import files of the following form:
 
     1936;John Maynard Keynes;The General Theory of Employment, Interest and Money
     2003;Boldrin & Levine;Case Against Intellectual Monopoly
     2004;ROBERT HUNT AND JAMES BESSEN;The Software Patent Experiment
+    
 
-お好きなIDEやテキストエディタで，`getFormatName()`・`isRecognizedFormat`・`importEntries()`の各メソッドを実装している`ImportFormat`からの派生クラスを作成してください．下記はその用例です．
+In your favorite IDE or text editor create a class derived from `ImportFormat` that implements methods `getFormatName()`, `isRecognizedFormat` and `importEntries()`. Here is an example:
 
-``` java
-import java.io.*;
-import java.util.*;
+```java
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
-import net.sf.jabref.importer.ImportFormatReader;
-import net.sf.jabref.importer.OutputPrinter;
-import net.sf.jabref.importer.fileformat.ImportFormat;
+import net.sf.jabref.logic.importer.Importer;
+import net.sf.jabref.logic.importer.ParserResult;
+import net.sf.jabref.logic.util.FileExtensions;
 import net.sf.jabref.model.entry.BibEntry;
 import net.sf.jabref.model.entry.BibtexEntryTypes;
 
-public class SimpleCSVImporter extends ImportFormat {
+public class SimpleCSVImporter extends Importer {
 
     @Override
-    public String getFormatName() {
+    public String getName() {
         return "Simple CSV Importer";
     }
 
     @Override
-    public boolean isRecognizedFormat(InputStream stream) throws IOException {
+    public FileExtensions getExtensions() {
+        return FileExtensions.TXT;
+    }
+
+    @Override
+    public String getDescription() {
+        return "Imports CSV files, where every field is separated by a semicolon.";
+    }
+
+    @Override
+    public boolean isRecognizedFormat(BufferedReader reader) {
         return true; // this is discouraged except for demonstration purposes
     }
 
     @Override
-    public List<BibEntry> importEntries(InputStream stream, OutputPrinter printer) throws IOException {
+    public ParserResult importDatabase(BufferedReader input) throws IOException {
         List<BibEntry> bibitems = new ArrayList<>();
-        BufferedReader in = new BufferedReader(ImportFormatReader.getReaderDefaultEncoding(stream));
 
-        String line = in.readLine();
+        String line = input.readLine();
         while (line != null) {
             if (!line.trim().isEmpty()) {
                 String[] fields = line.split(";");
@@ -65,22 +78,23 @@ public class SimpleCSVImporter extends ImportFormat {
                 be.setField("author", fields[1]);
                 be.setField("title", fields[2]);
                 bibitems.add(be);
-                line = in.readLine();
-            }   
+                line = input.readLine();
+            }
         }
-        return bibitems;
+        return new ParserResult(bibitems);
     }
 }
 ```
 
-用例は既定パッケージにあることに留意してください．これを`/mypath/SimpleCsvImporter.java`に保存したものとしましょう．また，JabRef-2.0.jarが`SimpleCsvImporter.java`と同じフォルダにあり，Javaがコマンドパス上にあるものとしましょう．これをJSDK 1.4を使ってコンパイルします．例えば，
+Note that the example is in the default package. Suppose you have saved it under `/mypath/SimpleCSVImporter.java`. Also suppose the JabRef-2.0.jar is in the same folder as `SimpleCSVImporter.java` and Java is on your command path. Compile it using a JSDK 1.4 e.g. with
 
-    javac -classpath JabRef-2.0.jar SimpleCsvImporter.java
+    javac -classpath JabRef-2.0.jar SimpleCSVImporter.java
+    
 
-とすると， `/mypath/SimpleCsvImporter.class`というファイルができあがるはずです．
+Now there should be a file `/mypath/SimpleCSVImporter.class`.
 
-JabRefから **オプション→ユーザー読込の管理** を開き，**フォルダから追加** ボタンを押してください． `/mypath`に移動し，**選択...** ボタンを押します．`SimpleCsvImporter.class`を選択し，**選択...** を押してください．すると，この読込がユーザー読込一覧に「Simple CSV Importer」という名称で表示されるようになるので，**閉じる** を押すと，JabRefウィンドウサブメニューの **ファイル→読み込み→ユーザー読込** と **ファイル→読み込んで追加→ユーザー読込** に表示されます．
+In JabRef, open **Options → Manage custom imports**, and click **Add from folder**. Navigate to `/mypath` and click the **Select ...** button. Select the `SimpleCSVImporter.class` and click the **Select ...** button. Your importer should now appear in the list of custom importers under the name "Simple CSV Importer" and, after you click **Close** also in the **File → Import → Custom Importers** and **File → Import and Append → Custom Importers** submenus of the JabRef window.
 
-## 作業の共有
+## Sharing your work
 
-ユーザー読込ファイルを使用すれば，ユーザー間でユーザー読込形式を共有することは，たいへん容易です．JabRefでサポートされていない書式の読込フィルタを書いたり，既存のフィルタを改善した場合，その成果をぜひSourceForge.netページに投稿してください．喜んで，投稿された読込ファイルのコレクションを配布したり，標準読込フィルタのセレクションに追加したりしたいと思います．
+With custom importer files, it's fairly simple to share custom import formats between users. If you write an import filter for a format not supported by JabRef, or an improvement over an existing one, we encourage you to post your work on our GitHub page. We'd be happy to distribute a collection of submitted import files, or to add to the selection of standard importers.
