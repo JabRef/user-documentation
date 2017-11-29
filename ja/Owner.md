@@ -1,11 +1,12 @@
 ---
-title: 「owner」フィールド
+title: The 'owner' field
+helpCategories:
+  - Fields
 ---
+# The 'owner' field
 
-# 「owner」フィールド
+JabRef can optionally mark all new entries added or imported to a database with your username.
 
-JabRefでは、データベースに追加したり読み込んだりした新しい項目すべてに、あなたのユーザー名を付加することができます。
+You can disable or enable this feature by entering **Preferences → General**, and selecting/deselecting the line *'mark new entries with owner name'*. You can also change the name used to mark your entries. The default name used is your user name. Finally, if an entry with a field owner is pasted or imported, the field is updated with your owner name if *'Overwrite'* is checked.
 
-この機能は、**設定→一般** に入って，*「新規項目にオーナー名を記載」* 行を選択/非選択することで，有効にしたり無効にしたりすることができます．また、項目に付加するオーナー名も変更することができます。*「上書き」* がチェックされていると，オーナー フィールドを持つ項目を貼り付けたり読み込んだりした時に，オーナー フィールドは，あなたのオーナー名で上書きされます．
-
-オーナー名は、*「owner」* というフィールドに書き込まれ、既定では、[項目エディタ](EntryEditorHelp)の **汎用フィールド** タブに表示されます。
+The owner name is added in a field called *'owner'*, which by default is visible in the **General fields** tab in the [entry editor](EntryEditor).
