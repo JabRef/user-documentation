@@ -1,16 +1,15 @@
 ---
-title: 項目の剪定
-helpCategories: ["項目の検索・整序・剪定"]
+title: Cleanup entries
+helpCategories:
+  - Finding, sorting and cleaning entries
 stub: true
 ---
+# Cleanup entries
 
-# 項目の剪定
+JabRef can cleanup the entries of a database.
 
-JabRefはデータベースの項目を剪定することができます．
+To carry a cleanup of the entries, go to **Quality → Cleanup entries...**.
 
-項目の剪定を実行するには，**品質→項目の剪定...** を開いてください．
+![Screenshot for Cleanup Entries](./images/CleanupEntries.png)
 
-![項目の剪定のスクリーンショット](../en/images/CleanupEntries.png)
-
-下部では「フィールド整形を実行」を選択することができ，そこでは様々な[保存時動作](SaveActions)を選択することができます．
-データベースモードに依存して，「BibTeXに対する推奨」か「BibLaTeXに対する推奨」ボタンが表示されますが，これを押すと，各モード用に推奨される剪定が呼び出されます．
+In the lower part, you can choose "Run field formatter", where you can choose different [Save Actions](SaveActions). Dependend on the database mode, "Recommended for BibTeX" or "Recommended for BibLaTeX". When pressing this button, the recommended cleanups for the respective mode is called.
