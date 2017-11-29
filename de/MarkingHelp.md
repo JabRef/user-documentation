@@ -1,4 +1,4 @@
 ---
-redirect:   /de/Marking
-layout:     redirect
+redirect: /en/Marking
+layout: redirect
 ---
