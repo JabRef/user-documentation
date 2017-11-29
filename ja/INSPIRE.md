@@ -1,30 +1,32 @@
 ---
-title: INSPIRE-HEPから項目を取得するには
+title: Fetching entries from INSPIRE-HEP
+helpCategories:
+  - Fetching entries from the web
+  - '... using online bibliographic database'
 ---
+# Fetching entries from INSPIRE-HEP
 
-# INSPIRE-HEPから項目を取得するには
+[INSPIRE-HEP](https://inspirehep.net/?ln=en) is an open access digital library for the field of high energy physics ([Wikipedia](https://en.wikipedia.org/wiki/INSPIRE-HEP)).
 
-[INSPIRE-HEP](https://inspirehep.net/?ln=en)は，高エネルギー物理学分野のオープンアクセス・デジタル・ライブラリです ([Wikipedia](https://en.wikipedia.org/wiki/INSPIRE-HEP))．
+To fetch entries from INSPIRE-HEP, choose **Search → Web search**, and the search interface will appear in the side pane. Select **INSPIRE** in the dropdown menu. To start a search, enter the words of your query, and press <kbd>Enter</kbd> or the **Fetch** button.
 
-INSPIRE-HEPから項目を取得するには，**検索 → ウェブ検索** を選択してください．すると，サイドペインに検索インタフェースが現れますので，ドロップダウンメニューから，**INSPIRE** を選択します．そこで，質問を入力し，**Enter** 鍵を押すか，**取得** ボタンを押して，検索を開始してください．
+The results are displayed in the [import inspection window](ImportInspectionDialog). In case an error occurs, it is shown in a popup.
 
-結果は，[読込検査ウィンドウ](ImportInspectionDialog)に表示されます．エラーが発生した場合には，ポップアップに表示されます．
+## Query syntax
 
-##問い合わせ文法
+The INSPIRE-HEP search function merely passes your search queries onto the INSPIRE-HEP web search, so you should build your queries in the same way, except omitting the *find* or *fin* command. This help page will only give a brief introduction to the search queries. More extensive help on searching INSPIRE-HEP can be found on the page http://inspirehep.net/info/hep/search-tips .
 
-INSPIRE-HEP検索は，検索クエリをINSPIREウェブサーチにそのまま渡しますので，*find* あるいは *fin* コマンドを省く外は，そのままクエリを構成してください．このヘルプページは，検索クエリへの簡単な導入を行うだけですので，INSPIRE検索の詳細なヘルプについては，http://inspirehep.net/info/hep/search-tipsを参照してください．
+Your query can be composed of several parts, combined using *and* and *or* as logical operators. Each part is composed of a letter or word indicating the type of field to search, followed by a space and the text to search for.
 
-論理演算子として *and* および *or* を使用して結合することで，複数の部分を持つクエリを構成することができます．各部分は，検索するフィールド型を示す文字または単語の後に空白を置き，その後に検索する文字列を置くことで構成されます．
+The following list shows some of the field indicators that can be used:
 
-以下の一覧は，使用することができるフィールド指示子の一部を示したものです．
+- *a* or *author*: search author names
+- *t* or *title*: search in title
+- *j*: journal. Here either the common abbreviation or the 5 letter CODEN abbreviation for a journal can be used. Volume and page can also be included, separated by commas. For instance, *j Phys. Rev.,D54,1* looks in the journal Phys. Rev., volume D54, page 1.
+- *k*: search in keywords
 
--   *a* または *author*: 著者名を検索
--   *t* または *title*: タイトルを検索
--   *j*: 学術誌名．ここでは，当該学術誌のよく使われる短縮形か5文字CODEN短縮形を使用することができます．巻号とページもコンマ区切りで含めることができます．例えば，*j Phys. Rev.,D54,1* とすると，Phys. Rev., volume D54, page 1を検索します．
--   *k*: キーワードを検索
+Example queries:
 
-クエリの例:
-
--   *a smith and a jones*: 著者に"smith"と"jones"が含まれる文献を検索
--   *a smith or a jones*: 著者が"smith"か"jones"であるような文献を検索
--   *a smith and not t processor*: 著者"smith"を検索するが，タイトルに"processor"があるものを省略
+- *a smith and a jones*: search for references with authors "smith" and "jones"
+- *a smith or a jones*: search for references with either author "smith" or author "jones"
+- *a smith and not t processor*: search for author "smith" and omit references with "processor" in the title
