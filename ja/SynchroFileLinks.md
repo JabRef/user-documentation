@@ -1,9 +1,7 @@
 ---
-title: Synchronize file links
+title: ""
 helpCategories:
-  - Finding, sorting and cleaning entries
-stub: true
+  - ""
+stub: ""
 ---
-# Synchronize file links
-
-This feature is available through **Quality → Synchronize file links...**.
+#
