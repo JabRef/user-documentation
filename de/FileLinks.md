@@ -1,28 +1,102 @@
 ---
-title: Datei-Links in JabRef
-outdated: true
+title: File links in JabRef
+helpCategories:
+  - Fields
 ---
+# File links in JabRef
 
-# Datei-Links in JabRef
+JabRef lets you link up your entries with files of any type stored on your system. Thereby, it uses the field `file`, which contains a list of linked files. Each entry can have an arbitrary number of file links, and each linked file can be opened quickly from JabRef. The fields `url` and `doi` are used as links to documents on the web in the form of an URL or a DOI identifier respectively. See [External Files](ExternalFiles) for an explanation.
 
-JabRef lässt Sie Ihre Einträge mit Dateien jeden Typs verlinken, die Sie auf Ihrem System gespeichert haben. Außerdem sind Links zu Dokumenten im Internet in der Form eines URL oder eines DOI möglich. Jedem Eintrag kann eine beliebige Anzahl von Datei-Links zugeordnet werden und jede verlinkte Datei kann schnell aus JabRef heraus geöffnet werden.
+In BibTeX terms, the file links are stored as text in the field `file`. From within JabRef, however, they appear as an editable list of links accessed from the entry editor along with other BibTeX fields.
 
-Was BibTeX angeht, werden die Datei-Links eines Eintrags in ein einzelnes Feld geschrieben. In JabRef erscheinen sie aber als editierbare Liste von Links, die im Eintrags-Editor zugänglich sind.
+## Table of contents
 
-## Einrichten der Dateitypen
+<!-- toc -->
 
-Für jeden Datei-Link muss ein Dateityp gewählt werden, damit das richtige Programm zum Öffnen der Datei und das entsprechende Icon gefunden werden. Die Liste der Dateitypen können Sie einsehen und bearbeiten, indem Sie **Optionen → Externe Dateitypen verwalten** wählen oder auf die Schaltfläche **Externe Dateitypen verwalten** im Bereich **Externe Programme** des Einstellungs-Dialogs klicken.
+- [Adding external links to an entry](#adding-external-links-to-an-entry)
+- [Directories for files](#directories-for-files)
+- [Auto linking files](#auto-linking-files) 
+  - [Using Regular Expression Search for Auto-Linking](#using-regular-expression-search-for-auto-linking)
+- [Opening external files](#opening-external-files)
+- [Setting up external file types](#setting-up-external-file-types)
 
-Ein Dateityp besteht aus einem Namen, einem graphischen Icon, einer Dateierweiterung und einer Anwendung zum Öffnen der Dateien. Wenn Sie Windows benutzen, können Sie den Namen der Anwendung weglassen, wenn Sie das Standardprogramm verwenden wollen.
+<!-- tocstop -->
 
-## Datei-Links zu einem Eintrag hinzufügen
+## Adding external links to an entry
 
-Wenn bei den [Allgemeinen Feldern](GeneralFields) das Feld "file" eingetragen ist, können Sie die Liste der externen Links im [Eintrags-Editor](EntryEditorHelp) bearbeiten. Der Editor hat dann Schaltflächen zum Einfügen, Bearbeiten, Löschen und Sortieren der Links.
+If the "file" field is included in [General fields](GeneralFields), you can edit the list of external links for an entry in the [Entry editor](EntryEditor). The editor includes buttons for inserting, editing and removing links, as well as buttons for reordering the list of links.
 
-Eine Datei kann mit Hilfe der **Auto**-Schaltfläche automatisch verlinkt werden, falls sie in Ihrem Dateiverzeichnis (**Einstellungen → Externe Programme → Links zu externen Dateien → Hauptverzeichnis**) oder einem Unterordner liegt, eine Dateierweiterung hat, die JabRef bekannt ist, und einen Namen hat, der mit dem BibTeX-Key des Eintrags übereinstimmt. Die Regeln, nach denen Dateinamen mit BibTeX-Keys automatisch verknüpft werden, können eingestellt werden unter **Einstellungen → Externe Programme → Links zu externen Dateien → Suche mit regulärem Ausdruck benutzen**.
+![list of linked files](images/EntryEditor-LinkedFiles.png)
 
-Um eine Datei herunterzuladen und mit einem Eintrag zu verlinken, benutzen Sie die Schaltfläche **Download** im Eintrags-Editor. Es erscheint ein Dialog, in dem Sie den URL eingeben müssen. Die Datei wird dann in Ihr Hauptverzeichnis gespeichert, anhand des BibTeX-Keys benannt und mit dem Eintrag verknüpft.
+## Directories for files
 
-## Externe Dateien öffnen
+JabRef offers following directory settings:
 
-Es gibt mehrere Möglichkeiten, externe Dateien oder Internetseiten zu öffnen. In der Tabellenansicht können Sie einen Eintrag auswählen und mit dem Menü, einem Tastenkürzel oder dem Kontextmenü den ersten externen Link öffnen. Falls in der Tabellenansicht die Spalte **file** angezeigt wird (**Einstellungen → Tabellenansicht → Spezielle Spalten → Datei-Spalten anzeigen**), können Sie auch auf das Icon klicken, um den ersten Link eines Eintrags zu öffnen. Um weitere Links zu öffnen, klicken Sie mit der rechten Maustaste auf das Icon (Mac OS X: **Strg-Klick**); es erscheint dann ein Menü mit allen Links.
+1. Options → Preferences → File → External file links → Main file directory ![Main file directory](images/Preferences-File-MainFileDirectory.png)
+2. File → Library properties → General file directory.
+3. File → Library properties → User-specific file directory ![Override default file directories](images/LibraryProperties-OverrideDefaultFileDirectories.png)
+
+One of these settings is required. Mostly the "Main file directory" is enough.
+
+JabRef enables setting a directory per database. When sharing a library across multiple persons, each user might have a different directory. Either each user can set his directory in the "Main file directory". In case the group also shares papers and thus there are two directories (the private one and a group-shared one), one can set a directory within the library (the "General file directory"). In case a user has a different location of the shared folder (e.g., different paths on Linux and Windows), he can use the "User-specific file directory". This settings is persisted in the `bib` file in a way that it does not overwrite the setting of another user. For this, JabRef uses the username of the currently logged in user (`-<loginname>` is used as suffix in the `jabref-meta` field). So, both `mary` and `aileen` can set a different user-specific file directory.
+
+If JabRef saves an attached file and my loginname matches the name stored in the `bib` file, it chooses that directory. If no match is found, it uses the "General file directory" of the bib file. If that is not found, it uses the one configured at Options → Preferences → File → External file links ("Main file directory").
+
+In some settings, the bib file is stored in **the same directory** as the PDF files. Then, one ignore all the above directories and enable "use the BIB file location as primary file directory". In this case, JabRef starts searching for PDF files in the directory of the `bib` file. It is also possible to achieve this result by setting `.` as "General file directory" in the library properties.
+
+![Use the BIB file location as primary file directory](images/Preferences-File-UseTheBibFileLocationAsPrimaryFileDirectory.png).
+
+Relative file directories obviously only work in the library properties fo a bib file, e.g. `a.bib` → Library properties → General file directory → `papers`. Assume to have two bib files: `a.bib` and `b.bib` located in different directories: `a.bib` located at `C:\a.bib` and `b.bib` located at `X:\b.bib`. When I click on the `+` icon in the general Tab of file `a.bib`, the popup is opened in the directory `C:\papers` (assuming `C:\papers` exists).
+
+## Auto linking files
+
+If you have a file within or below one of your file directories with an extension matching one of the defined external file types, and a name containing a BibTeX entry's BibTeX key, the file can be autolinked by clicking on the **Auto** button in the entry editor.
+
+![auto link file](images/EntryEditor-AutoLinkFile.png)
+
+The rules for which file names can be autolinked to a BibTeX key can be set up in **Preferences → File → External file links → Use regular expression search**.
+
+![Preferences for extenral file links](images/Preferences-File-ExternalFileLinks.png)
+
+If you want to download a file and link to it from a BibTeX entry, you can do this by clicking the **Download** button in the entry editor.
+
+![Download from URL](images/EntryEditor-General-DownloadFileFromUrl.png)
+
+A dialog box will appear, prompting you to enter the URL. The file will be downloaded to your main file directory, named based on the entry's BibTeX key, and finally linked from the entry.
+
+JabRef uses all directories set at [Directories for files](#directories-for-files) to search for the files. JabRef starts in the user-specific file directory, then the general file directory and finally the main file directory to handle files.
+
+### [Using Regular Expression Search for Auto-Linking](){#RegularExpressionSearch}
+
+It is possible to have greater flexibility in the naming scheme by using regular expression for the search. In most cases it should not be necessary though to adapt the given default.
+
+If you open the external preferences (Options → Preferences → File) you will find an option called "Use regular expression search". Checking this option will allow you to enter your own regular expression for search in the PDF directories.
+
+![Use regular expression search](images/Preferences-File-UseRegularExpressionSearch.png)
+
+The following syntax is understood:
+
+- `*` - Search in all immediate all subdirectories excluding the current and any deeper subdirectories.
+- `**` - Search in all subdirectories recursively AND the current directory.
+- `.` and `..` - The current directory and the parent directory.
+- `[title]` - All expressions in square brackets are replace by the corresponding field in the current entry
+- `[extension]` - Is replaced by the file-extension of the field you are using.
+- All other text is interpreted as a regular expression. But caution: You need to escape backslashes by putting two backslashes after each other to not confuse them with the path-separator.
+
+The default for searches is `**/.*[bibtexkey].*\\.[extension]`. As you can see this will search in all subdirectories of the extension-based directory (for instance in the PDF directory) for any file that has the correct extension and contains the BibTeX-key somewhere.
+
+## Opening external files
+
+There are several ways to open an external file or web page. In the entry table, you can click on the PDF icon to open the PDF. In case there are multiple PDFs linked, always the first one is opened. You can also right click on the line of the entry in the entry table and select "Open file". There is also a keyboard shorcut for this: In the default setting, this is <kbd>F4</kbd>, but [it can also be customized](CustomKeyBindings).
+
+To access any of an entry's links, click on the icon with the right mouse button (or <kbd>Ctrl</kbd> + <kbd>Click</kbd> on Mac OS X) to bring up a menu showing all links.
+
+## Setting up external file types
+
+In general, there is no need to change the settings of external file types. So, this setting is for advanced users.
+
+For each file link, a file type must be chosen, to determine what icon should be used and what application should be called to open the file. The list of file types can be viewed and edited by choosing **Options → Manage external file types**, or by clicking the **Manage external file types** button in the **External programs** tab of the Preferences dialog.
+
+A file type is specified by its name, a graphical icon, a file extension and an application to view the files. On Windows, the name of the application can be omitted in order to use Window's default viewer instead.
+
+![Manage external file types](images/ManageExternalFileTypes.png)
