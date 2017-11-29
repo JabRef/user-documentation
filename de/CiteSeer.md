@@ -1,31 +1,13 @@
 ---
-title: CiteSeer-Import
+title: Fetching entries from CiteSeerX
+helpCategories:
+  - Fetching entries from the web
+  - '... using online bibliographic database'
 ---
+# Fetching entries from CiteSeerX
 
-# CiteSeer-Import
+[CiteSeerX](http://csxstatic.ist.psu.edu/about) is a public search engine for scientific and academic papers primarily with a focus on computer and information science. However, CiteSeerX has been expanding into other scholarly domains such as economics, physics and others ([Wikipedia](https://en.wikipedia.org/wiki/CiteSeer)).
 
-CiteSeer ist eine digitale Bibliothek und Suchmaschine für wissenschaftliche Literatur, vornehmlich zu den Bereichen Computer und Informatik.
+To fetch entries from CiteSeerX, choose **Search → Web search**, and the search interface will appear in the side pane. Select **CiteSeerX** in the dropdown menu. To start a search, enter the words of your query, and press <kbd>Enter</kbd> or the **Fetch** button.
 
-## Importieren eines Eintrags von CiteSeer
-
-JabRef kann Informationen über eine bestimmte Literaturangabe aus der CiteSeer-Datenbank herunterladen. Um diesen Vorgang zu starten, fügen Sie Ihrer Datei einen neuen Eintrag hinzu und belegen das Feld *citeseerurl* mit einem Link zur entsprechenden Inhaltsseite auf CiteSeer. Das Feld *citeseerurl* muss in einem der folgenden Formate eingegeben werden:
-
-http://citeseer.ist.psu.edu/DDDDDD\[\], oder
-oai:CiteSeerPSU:DDDDDD, oder
-DDDDDD
-
-wobei DDDDDD eine Ziffernfolge darstellt. Um diese Ziffernfolge (DDDDDD) für einen CiteSeer-Eintrag zu finden, gehen Sie auf die Dokumentseite der Literaturangabe des Formats http://citeseer.ist.psu.edu/*nameYearTitle* und klicken den (Update)-Link für diese Literaturangabe. Die URL für den Update-Link beinhaltet die numerische ID für diese Literaturangabe.
-
-Sobald Sie das Feld *citeseerurl* belegt haben, können Sie die CiteSeer-Felder herunterladen, indem Sie **BibTeX → Felder von CiteSeer importieren** auswählen. Achten Sie darauf, dass Sie die Zeile(n) ausgewählt haben, die Sie aktualisieren wollen.
-
-## Eine Datei mit zitierenden Literaturangaben erzeugen
-
-Mit einem Satz von Literaturangaben können Sie eine Liste der Dokumente erzeugen, die die einzelnen Literaturangaben ihrerseits zitieren. Dazu muss jede Literaturangabe der entsprechenden Datenbank-Datei ein ausgefülltes citeseerurl-Feld besitzen, dessen Inhalt dem in **Importieren eines Eintrags von CiteSeer** beschriebenen Format entspricht. Sie können diese Funktion nutzen, indem Sie **Zitierende Literatur von CiteSeer abrufen** auswählen.
-
-## Benutzung eines Proxy-Servers
-
-Wenn Sie einen HTTP-Proxy-Server benutzen müssen, übergeben Sie den Servernamen und die Portnummer an Java.
-
-`java -Dhttp.proxyHost="hostname"     -Dhttp.proxyPort="portnumber"`
-
-Diese Umgebungseinstellungen sind in der [Sun J2SE Dokumentation](http://java.sun.com/j2se/1.4.2/docs/guide/net/properties) beschrieben.
+The results are displayed in the [import inspection window](ImportInspectionDialog). In case an error occurs, it is shown in a popup.
