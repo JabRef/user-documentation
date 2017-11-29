@@ -1,4 +1,4 @@
 ---
-redirect:   /de/ISBNtoBibTeX
-layout:     redirect
+redirect: /en/ISBNtoBibTeX
+layout: redirect
 ---
