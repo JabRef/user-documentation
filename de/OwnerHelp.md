@@ -1,4 +1,4 @@
 ---
-redirect:   /de/Owner
-layout:     redirect
+redirect: /en/Owner
+layout: redirect
 ---
