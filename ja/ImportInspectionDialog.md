@@ -1,43 +1,43 @@
 ---
-title: 読込検査ウィンドウ
-helpCategories: ["読み込み/書き出し"]
+title: Import inspection window
+helpCategories:
+  - Import/Export
 ---
+# Import inspection window
 
-# 読込検査ウィンドウ
+## Purpose
 
-## 目的
+When you import new entries from a supported reference format, or fetch entries directly from the Internet, the inspection window allows you to select the entries you want to keep, to [avoid adding duplicated entries](FindDuplicates), and to perform some simple operations like generating BibTeX keys for the entries, or adding them to [groups](Groups). If you are importing into an existing database, it is often easier to perform these operations before they are mixed in between the entries of your database.
 
-サポートされている文献形式から項目を読み込んだり，インターネットから直接項目を取得したりした際，表示される検査ウィンドウでは，[重複した項目を登録してしまうことを避けるために](FindDuplicates)，保持したい項目を選択することができるほか，項目のBibTeX鍵を生成したり，[グループ](GroupsHelp)に追加したりと云った簡単な操作を行うことができます．既存データベースへの読み込みを行う場合，各項目が既存データベースの項目の中に紛れてしまう前に，これらの操作を行っておいた方が楽なことが良くあります．
+# The inspection window
 
-# 検査ウィンドウ
+Entries are first shown in the inspection window. Note that, if this takes too long (for example), you can click on the button **Stop** at the bottom of the window.
 
-項目は，まず初めに検査ウィンドウに表示されます．もしこの操作に時間がかかりすぎたりする場合には，ウィンドウ下部の **停止** ボタンを押して止めることができます．
+Once the entries displayed in the inspection window, none of them have been added to one of your databases yet.
 
-検査ウィンドウに項目が表示された時点では，これらの項目は，まだどのデータベースにも追加されていません．
+![Screenshot of the inspection window](./images/InspectionWindow.png)
 
-![検査ウィンドウのスクリーンショット](../en/images/InspectionWindow.png)
+By default, all the entries are selected for importation, as shown by the checked boxes in the *Keep* column. You can select/unselect an entry by clicking on these check boxes. On the left panel, buttons allow you to **Select all** the entries for importation, or to **Deselect all** the entries.
 
-既定では，*維持* 列のチェックボックスが選択されていることからわかるように，全ての項目が読み込まれるよう選択されています．これらのチェックボックスをクリックすることで，項目を選択したり解除したりすることができます．左パネルには，読み込む項目を **全て選択** するボタンや，**全て選択解除** するボタンがあります．
+A left click on an entry (out of the check box and icons) let you choose it. It displays an preview of the entry below the entry table. As usual, you can choose several entries by using the <kbd>Shift</kbd> or the <kbd>Ctrl</kbd> keys. Then, pushing the button **Delete** on the left panel will remove the choosen entries from the table.
 
-項目を（チェックボックスやアイコンの外で）左クリックすると，項目を選択することができます．すると，項目のプレビューが項目表の下に表示されます．標準操作通りに，*Shift* 鍵や *Ctrl* 鍵を用いて，複数の項目を選択することができます．そして，左パネルの **削除** ボタンを押すと，選択した項目をテーブルから削除することができます．
+A right click on an entry displays a drop-down menu which allows you to:
 
-項目を右クリックすると，ドロップダウン メニューが表示され，
+- delete the entry
+- add the entry to a group
+- link a local file to the entry
+- download the file corresponding to the entry
+- automatically set file links to the entry
+- attach an URL to the entry
 
-- 項目を削除する
-- 項目をグループに追加する
-- ローカルファイルを項目にリンクする
-- 項目に対応するファイルをダウンロードする
-- 自動的にファイルを項目にリンクする
-- URLを項目に追記する
+## Duplicated entries
 
-といったことができます．
+Potential duplicates are pointed out by an icon in the second column. A click on this icon allows you to [check the similarities](FindDuplicates). A button on the left panel allows you to **Deselect all duplicates** (without inspection).
 
-## 重複項目
-重複している可能性のあるものは，第２列に表示されるアイコンで示唆されます．このアイコンをクリックすると，[類似性をチェック](FindDuplicates)することができます．左パネルのボタンで，**重複を全て選択解除** することができます（検査なしに）．
+## BibTeX key generation
 
-## BibTeX鍵の生成
+On the left panel, if the box **Generate keys** is checked, keys will be automatically generated on import. You can also choose to generate the keys now by clicking on the button **Generate now**.
 
-左パネルにおいて **鍵を生成** がチェックされていると，読み込みに際して，鍵が自動的に生成されます．また，**いま生成する** ボタンをクリックすると，それらの鍵をいま生成することができます．
+## Importation into the database
 
-## データベースへの読み込み
-項目の選択を終えると，ウィンドウ下部にある **OK** をクリックすることで，これらの項目をデータベースに追加することができます．あるいは，読み込みを **取消** することもできます．
+Once you are done with the entry selection, you can add these entries to your database by clicking on **OK** at the bottom of the window. Alternatively, you can **Cancel** the import.
