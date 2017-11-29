@@ -1,20 +1,20 @@
 ---
-title: BibLaTeXデータベースを共有する
+title: Sharing a Bib(La)TeX Database
+helpCategories:
+  - Collaborative work
 ---
+# Sharing a Bib(La)TeX Database
 
-# Bib(La)TeXデータベースを共有する
+JabRef allows to share both Bib(La)TeX database and [SQL database](SQLDatabase).
 
-JabRefでは，Bib(La)TeXデータベースと[SQLデータベース](SQLDatabase)を共有することができます．
+When sharing a Bib(La)TeX database, JabRef automatically recognizes a change in the `bib` file on disk and notifies the user of it. This works well on network drives.
 
-Bib(La)TeXデータベースを共有する際，JabRefは，ディスク上の`bib`ファイルが変更されたことを自動的に認識し，ユーザーにそれを通知します．
-これは，ネットワークドライブに対しても，正常に機能します．
+*Note:* the use of a version control system (SVN, git, etc.) is recommended as this will allow for reverting changes.
 
-*《註》* 変更点を戻すことができるように，バージョン管理システム（SVN・gitなど）を利用することが推奨されます．
+To make the sharing of a Bib(La)TeX database easier, it is recommended to set specific database properties. In the menu **File -> database properties**:
 
-Bib(La)TeXデータベースの共有を簡単にするために，データベース特性をいくつか設定することが推奨されます．
-**ファイル→データベース特性** において，以下の操作を行います．
-- エンコーディングとして`UTF-8`を選択．
-- `一般ファイルディレクトリ`を定義．これは，共有するPDF他のファイルを保管するのに用いられます．
-- 整序順を定義（`year`・`author`・`title`が推奨されます）．
-- `データベースを保存する前に，外部から加えられた変更点の審査を強制する`を有効化．
-- 項目のフォーマットが整合性を保てるように，`保存アクションを有効化`を有効化し，そのアクションを定義します．
+- Select `UTF-8` as encoding.
+- Define a `General file directory`, which will be used to store shared PDF (and other) files.
+- Define a sort order (`year`, `author`, `title` is recommended).
+- Check `Refuse to save the database before external changes have been reviewed`.
+- Check `Enable save actions`, and defines these actions, to help enforcing a consistent format for the entries.
