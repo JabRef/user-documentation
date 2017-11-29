@@ -1,31 +1,25 @@
 ---
-title: バックアップ
-helpCategories: ["一般"]
+title: Backup
+helpCategories:
+  - General
 since: 3.7
 ---
+# Backup
 
-# バックアップ
+## Purpose
 
-## 目的
+This module is always running in the background while you are working on a *BibTeX database*. It makes a *backup copy* and keeps that up-to-date on every user interaction. For instance, when you change a field the new value would get saved into the backup copy.
 
-このモジュールは，_BibTeXデータベース_　での作業中，常にバックグラウンドで動いており，
-ユーザーが操作をするごとに _バックアップコピー_ を作成して，それを最新に保っています．
-例えば，フィールドに変更を加える時には，新しい値はバックアップコピーに保存されます．
+Assumed that *JabRef* crashes while you are working on a *BibTeX database*. When you try again to open the file *JabRef* crashed with you will get the following dialog:
 
- _BibTeXデータベース_ で作業中に，_JabRef_ が クラッシュしたものとしましょう．
- _JabRef_ がクラッシュした時に開かれていたファイルをサイド開こうとすると，次のようなダイアログが現れます．
+![Screenshot of the backup dialog](./images/backup_found.png)
 
-![バックアップダイアログのスクリーンショット](./images/backup_found.png)
+Now you have the possibility to restore your changes which would normally get lost.
 
-ここで，通常であれば失われていた変更点を取り戻す機会が得られます．
+## Remarks
 
-## 註
-
-既定でこの機能は有効にされており，ユーザーが設定しなくても常に実行されています．
-[gitignore.io](https://www.gitignore.io/)サービスを使用すれば，https://www.gitignore.io/api/jabref を開くことで，適切な`.gitignore`ファイルが生成されます．
+By default this feature is enabled and it is running continuously without users influence. By using the [gitignore.io](https://www.gitignore.io/) service, you can generate an appropriate `.gitignore` file by opening https://www.gitignore.io/api/jabref.
 
 ## Offstage
 
-`.bib`ファイルを開くと，_JabRef_ は同時に`.sav`ファイルを生成し，これが現在のバッファとして使用されます．
-_JabRef_ が正常に閉じられると，`.sav`ファイルは削除されます．
-正常に閉じられなかった場合には，このファイルが，次回のデータベース回復に用いられます．
+While opening a `.bib` file, *JabRef* simoultaneously creates a `.sav` file which is used as a current buffer. If *JabRef* gets closed normally the `.sav` file will be removed. Otherwise this file is going to be used for database restoration next time.
