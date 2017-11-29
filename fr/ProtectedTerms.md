@@ -1,9 +1,7 @@
 ---
-title: Manage protected terms
+title: ""
 helpCategories:
-  - Setup
-stub: true
+  - ""
+stub: ""
 ---
-# Manage protected terms
-
-This feature is available through **Options → Manage protected terms**.
+#
