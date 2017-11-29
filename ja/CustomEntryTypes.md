@@ -1,39 +1,40 @@
 ---
-title: 項目型の調整
+title: Customizing entry types
+helpCategories:
+  - Setup
 ---
+# Customizing entry types
 
-# 項目型の調整
+To customize entry types, select the menu **BibTeX -→ Customize entry types**.
 
-項目型を調整するには、**オプション→項目型を調整** メニューを選択してください。
+When customizing an entry type, you both define how its entry editor should look, and what it takes for JabRef to consider an entry complete. You can both make changes to the existing entry types, and define new ones.
 
-項目型を調整する際、その項目エディタの外観を定義するとともに、JabRefが項目入力を完了したと見なす基準を定義しなくてはなりません。変更は、既存の項目型に対して加えることもできますし、新規のものを定義することもできます。
+Note that no modifications you make in this dialog will be stored until you click **Apply** or **OK**. If you click **Cancel** or simply close the dialog, unapplied changes will be lost.
 
-このダイアログで加えた変更は、**適用** か **OK** を押すまで保存されないことに注意してください。**取消** もしくはダイアログを閉じた場合には、適用済みでない変更は失われます。
+## Using the entry customization dialog
 
-## 項目型調整ダイアログを使う
+The entry customization dialog is divided in three main panels. The leftmost panel is where you can select an entry type for modification, and add new ones. The middle panel is used for setting up the required fields of the selected entry type, and the right panel for setting up the optional fields.
 
-項目型調整ダイアログは3つの主要パネルに分かたれています。左パネルは、修正する項目型を選んだり新しい項目型を付け加えたりする場所です。中央パネルは、選択した項目型の必須フィールドを設定するのに用いられ、右パネルは非必須フィールドを設定するのに使用されます。
+### Adding and removing entry types
 
-### 項目型の追加と削除
+The currently available entry types are listed in the left panel. Whenever you select an entry type, the other panels will update to show what fields are required and optional for this entry type.
 
-現在使用することのできる項目型は、左パネルに羅列されます。項目型を選ぶと、他の2つのパネルが更新されて、この項目型に対してどれが必須でどれが非必須のフィールドかが表示されます。
+To add a new entry type, you must enter a name for it in the text field below the type list, and click **Add**. The new entry type will be added to the list, and selected for modification.
 
-新規項目型を追加するには、項目型一覧下のテキストフィールドに名称を入力して、**追加** ボタンを押す必要があります。すると、新規項目型が一覧に追加されて選択状態になり、修正ができるようになります。
+To remove a custom entry type, select it and click **Remove**. This operation will only be available for custom entry types that are not merely modifications of standard types. It is not possible to remove a standard entry type.
 
-自作した項目型を削除するには、その項目型を選択して、**削除** ボタンを押してください。この操作は、標準項目型に手を加えただけのものではない自作項目型に対してのみ行うことができます。標準項目型を削除することはできません。
+To return a modified standard type to its default setup, select it and click **Default**. This operation will only be available for customized entry types that modify a standard type.
 
-変更を加えた標準型を既定の設定に戻すには、その型を選択して **既定値** を押します。この操作は、標準型に変更を加えた自作項目型に対してのみ行うことができます。
+## Editing entry types
 
-## 項目型を編集する
+When an entry type is selected, the current required and optional fields will be listed in the center and right panels of the dialog. The process of editing the lists are identical for the required and optional fields.
 
-項目型を選択すると、その必須フィールドと非必須フィールドが、ダイアログの中央パネルと右パネルに列挙されます。一覧の編集方法は、必須フィールド・非必須フィールドともに共通です。
+To add a new field, edit the text field below the list, or select a field name from the dropdown menu, then click **Add**. The chosen field name will be added at the end of the list.
 
-新規フィールドを追加するには、一覧下のテキストフィールドを編集するか、ドロップダウンメニューからフィールド名を選択し、**追加** を押してください。選択したフィールド名が、一覧末尾に追加されます。
+To remove one or more fields, select them in the list, and click **Remove**.
 
-フィールドを一つないしそれ以上削除するには、対象となるものを一覧から選択して、**削除** を押します。
+To change the order of the fields, choose one field name, and click the arrow buttons to move it up or down in the list.
 
-フィールド順を変更するには、フィールド名を一つ選択して、矢印ボタンを押し、そのフィールド名を一覧内で上下させてください。
+### Either/or fields
 
-### 論理和(OR)フィールド
-
-項目型の中には、必須フィールドに論理和(OR)条件を持つものがあります。例えば、*book* 項目は、*author* か *editor* フィールドの一方もしくは双方が満たされれば、完成します。自作項目型でそのような条件を課すには、代替条件下にあるフィールド群をスラッシュで区切ったフィールド名を追加します。例えば、*author/editor* は、上述の *book* 項目型が持つ条件と同じ条件を指定することになります。
+Certain entry types have an either-or condition in their required fields. For instance, a *book* entry is complete with either the *author* or the *editor* field, or both. To indicate such a condition in a custom entry type, you should add a field named as the set of alternative fields separated by slashes, for instance *author/editor* indicates the condition mentioned above for the *book* entry type.
