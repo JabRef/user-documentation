@@ -1,16 +1,14 @@
 ---
-title: DiVAを使用して項目を作成するには
-helpCategories: ["ウェブから項目を取得する", "... 刊行識別子を使用して"]
+title: Creating entries from DiVA
+helpCategories:
+  - Fetching entries from the web
+  - '... using publication identifiers'
 since: 3.7
 ---
+# Creating entries from DiVA
 
-# DiVAを使用して項目を作成するには
+[DiVA (Digitala Vetenskapliga Arkivet)](http://www.diva-portal.org/) is a database with publications from about [40](www.diva-portal.org/smash/aboutdiva.jsf) Swedish universities and research institutions.
 
-[DiVA (Digitala Vetenskapliga Arkivet)](http://www.diva-portal.org/)は、およそ[40校](http://www.diva-portal.org/smash/aboutdiva.jsf)のスウェーデンの大学および高等教育機関からの出版物のデータベースです。
+To use this feature, choose **BibTeX → New entry...**. In the lower part, there is the box "ID-based entry generator". In the field "ID type", "DiVA" can be selected (see screenshot below). Select the field "ID" and enter the DiVA here (e.g., `diva2:260746`) and press <kbd>Enter</kbd> to generate an entry based on the Id. You can also click on "Generate". The found entry is opened in an entry editor. In case an error occurs, a popup is shown.
 
-この機能を使用するには，**BibTeX→新規項目...** を選択すると，下部に「IDから項目を生成」ボックスがあるので，「ID型」フィールドで「DiVA」を選択します（下記スクリーンショットを参照）．
-「ID」フィールドにDiVAを入力し（例：`diva2:260746`），<kbd>Enter</kbd>を押すと，IDに基づいて項目が作成されます．「生成」ボタンを押してもかまいません．
-検出された項目が項目エディタに開かれます．
-エラーが発生すると，ポップアップが表示されます．
-
-![新規項目ダイアログのスクリーンショット](../en/images/NewEntryChooseType-IDGeneratorHighlighted-Diva.png)
+![Screenshot of new entry dialog](./images/NewEntryChooseType-IDGeneratorHighlighted-Diva.png)
