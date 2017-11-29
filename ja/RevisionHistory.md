@@ -1,7 +1,8 @@
 ---
-title: 更新履歴
+title: Revision history
+helpCategories:
+  - Miscellaneous
 ---
-
-# 更新履歴
+# Revision history
 
 Please refer to <https://github.com/JabRef/jabref/blob/master/CHANGELOG.md> for a complete history in English.
