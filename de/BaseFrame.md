@@ -1,43 +1,41 @@
 ---
-title: Das Hauptfenster von JabRef
+title: JabRef's main window
+helpCategories:
+  - General
 ---
+# JabRef's main window
 
-# Das Hauptfenster von JabRef
+*Note:* most menu actions referred in the following have keyboard shortcuts, and many are available from the toolbar. The keyboard shortcuts are found in the pull-down menus.
 
-*Anmerkung:* Die meisten Menüfunktionen, auf die im Folgenden hingewiesen wird, haben Tastenkürzel, und viele Funktionen können über die Werkzeugleiste aufgerufen werden.
+This is the main window from where you work with your databases. Below the menubar and the toolbar is a tabbed pane containing a panel for each of your currently open databases. When you select one of these panels, a table appears, listing all the database's entries, as well as a configurable selection of their fields.
 
-Dies ist das Hauptfenster, in dem Sie mit Ihrer Datei arbeiten. Unter der Menüleiste und der Werkzeugleiste befindet sich die Tableiste mit Tabs (Reitern) für jede Ihrer geöffneten Dateien. Wenn Sie einen dieser Tabs anklicken, erscheint eine Tabelle, die alle Datensätze und einige der Datenfelder auflistet.
+- You decide which fields are shown in the table by checking the fields you want to see in the **Preferences** dialog.
+- Double-click a line of the table to edit the entry content. You can navigate the table with the arrow keys.
+- The table is sorted according to a set of fields of your choosing. The default sort order can be set up in **Preferences → Entry table**, but to more quickly change the order, click the header of a column to set it as the primary sort criterion, or reverse the sorting if it is already set. Another click will deselect the column as sorting criterion. Hold down <kbd>Ctrl</kbd> and click a column to add, reverse or remove it as a sub-criterion after the primary column. You can add an arbitrary number of sub-criteria, but only three levels will be stored for the next time you start JabRef.
+- Adjust the width of each column by dragging the borders between their headers.
+- Color codes can be toggled in the **Preferences** dialog (select **Appearance** and activate option "Color codes for optional and required fields). They help you visualize the completeness of your database by coloring cells as follows: 
+    - A <span style="color: red">red</span> cell in the leftmost column denotes an incomplete entry.
+    - A <span style="color: #909000">yellow</span> cell in the leftmost column denotes an entry that doesn't define all required fields by itself, but that contains a cross-reference.
+    - A <span style="color: blue">blue</span> cell denotes a required field.
+    - A <span style="color: green">green</span> cell denotes an optional field.
+    - An uncolored cell denotes a field which is not used by the *BibTeX* program for this type of entry. The field can still be edited in JabRef.
 
--   Die Auswahl der entsprechenden Felder können Sie im **Einstellungs**-Dialog vornehmen.
--   Mit einem Doppelklick auf eine Tabellenzeile können Sie den Inhalt bearbeiten (der [Eintragseditor](EntryEditorHelp) wird geöffnet). Sie können mit den Pfeiltasten innerhalb der Tabelle navigieren. Wenn Sie einen Buchstaben drücken, springen Sie zu dem ersten Eintrag, der mit diesem Buchstaben beginnt (abhängig von der Spalte, nach der Sie die Tabelle sortiert haben).
--   Die Tabelle wird nach einem Feld Ihrer Wahl sortiert. Sie können das Standardverhalten unter **Optionen → Einstellungen → Tabellenansicht** angeben. Um die Sortierreihenfolge schnell zu ändern, klicken Sie einfach auf die Kopfzeile einer Spalte; damit haben Sie das primäre Sortierkriterium definiert. Klicken Sie erneut auf den Spaltenkopf, um die Sortierrichtung umzukehren. Ein weiterer Klick sorgt dafür, dass die Spalte nicht mehr zur Sortierung herangezogen wird. Halten Sie die CONTROL-Taste beim Klicken auf einen Spaltenknopf gedrückt, um eine zweite Spalte als sekundäres Sortierkriterium festzulegen. Sie können beliebig viele Spalten zur Sortierung heranziehen.
--   Sie können die Breite der Tabellenspalten einstellen, indem Sie die Trennlinie zwischen den Spaltenköpfen anklicken und verschieben. Die Reihenfolge der Spalten können Sie festlegen, indem Sie mit der Maus auf den Spaltenkopf klicken und die Spalte an die gewünschte Stelle ziehen.
--   Im **Einstellungs**-Dialog können Sie festlegen, ob die Tabelle an die Bildschirmgröße angepasst werden soll oder nicht. Aktivieren Sie diese Funktion, um sicherzustellen, dass Sie die gesamte Tabelle sehen können. Deaktivieren Sie diese Funktion, wenn mehr Informationen dargestellt werden sollen.
--   Die Farbanzeige kann ebenfalls im **Einstellungs**-Dialog ein- und ausgeschaltet werden. Die Farbanzeige illustriert, ob Ihre Daten vollständig sind, indem sie die Zellen wie folgt darstellt:
-    -   Eine <span style="color: red">rote</span> Zelle in der linken Spalte kennzeichnet einen unvollständigen Eintrag.
-    -   Eine <span style="color: #909000">gelbe</span> Zelle in der linken Spalte kennzeichnet einen Eintrag, der nicht alle benötigten Felder selbst enthält, der aber einen Querverweis enthält.
-    -   Eine <span style="color: blue">blaue</span> Zelle kennzeichnet ein benötigtes Feld.
-    -   Eine <span style="color: green">grüne</span> Zelle kennzeichnet ein optionales Feld.
-    -   Eine farblose (weiße) Zelle kennzeichnet ein Feld, das von BibTeX für diesen Eintragstyp nicht benutzt wird. Das Feld can selbstverständlich in JabRef bearbeitet werden.
+## Adding a new entry
 
-## Einen neuen Eintrag hinzufügen
+There are several ways to add a new entry. The **New entry** menu action shows a dialog where you can choose the type of the entry from a list. To bypass this dialog, there are also separate menu actions for each entry type, and keyboard shortcuts for the most common types.
 
-Es gibt verschiedene Möglichkeiten, einen neuen Eintrag hinzuzufügen. Im Menü **BibTeX** führt ein Klick auf **Neuer Eintrag** zu einem Dialog, in dem Sie den Eintragstyp aus einer Liste wählen können. Um diesen Dialog zu umgehen, gibt es auch eigene Menüpunkte für jeden Eintragstyp und außerdem Tastenkürzel für die gängigsten Typen.
+When a new entry is added, by default an [entry editor](EntryEditor) for the entry will be opened. This behaviour can be toggled in the **Preferences** dialog.
 
-Wenn ein Eintrag hinzugefügt wird, wird standardmäßig ein [Editor](EntryEditorHelp) für den Eintrag geöffnet. Sie können dieses Verhalten im **Einstellungs**-Dialog abstellen.
+*Note:* We strongly recommend learning the shortcuts for the entry types you use most often, e.g. <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>A</kbd> for adding an *article* entry.
 
-*Anmerkung:* Wir empfehlen dringend, sich die Tastenkürzel für die Eintragstypen einzuprägen, die Sie am häufigsten benutzen, z.B. STRG-SHIFT-A für einen Zeitschriftenaufsatz (*article*).
+In the dialog, you can also create an entry based on Id. See <http://help.jabref.org/en/#using-publication-identifiers> for an overview on all available fetchers. For instance, when having an ISBN number, you can select "ISBN" als Id type and then fetch it. See <ISBNtoBibTeX> for details.
 
-## Einen Eintrag bearbeiten
+## Editing an entry
 
-Um den [Eintrags-Editor](EntryEditorHelp) zur Bearbeitung eines existierenden Eintrags zu öffnen, klicken Sie einfach doppelt auf die Zeile des Eintrags oder markieren den Eintrag und drücken auf ENTER.
+To open an [entry editor](EntryEditor) for an existing entry, simply double-click anywhere on the appropriate line will open the [entry editor](EntryEditor) (or select the entry and press <kbd>Enter</kbd>).
 
-## Einen *BibTeX* String in einem Feld verwenden
+## Referencing a *BibTeX* string in a field
 
-In JabRef schreiben Sie den Inhalt aller Felder so, wie Sie es in einem Texteditor machen würden, mit einer Ausnahme: um einen String (Anm. d. Übers.: eine Art Abkürzung) zu verwenden, umschließen Sie den Namen des Strings mit je einem \#, z.B.
+In JabRef you write the contents of all fields the same way as you would in a text editor, with one exception: to reference a string, enclose the name of the string in a set of \# characters, e.g.:   '\#jan\# 1997', which will be interpreted as the string named 'jan' followed by ' 1997'.
 
-  '\#jan\# 1997',
-
-was interpretiert wird als String mit dem Namen 'jan' gefolgt von '1997'.
-
-Vergleichen Sie auch die Hilfeseite zum [String-Editor](StringEditorHelp).
+See also: [string editor](StringEditor).
