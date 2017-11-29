@@ -1,4 +1,4 @@
 ---
-redirect:   /de/GVK
-layout:     redirect
+redirect: /en/GVK
+layout: redirect
 ---
