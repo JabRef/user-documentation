@@ -1,42 +1,41 @@
 ---
-title: La fenêtre principale de JabRef
+title: JabRef's main window
+helpCategories:
+  - General
 ---
+# JabRef's main window
 
-# La fenêtre principale de JabRef
+*Note:* most menu actions referred in the following have keyboard shortcuts, and many are available from the toolbar. The keyboard shortcuts are found in the pull-down menus.
 
-*Note :* La plupart des menus dont il est question dans les paragraphes suivants ont des raccourcis claviers, et beaucoup sont accessibles depuis la barre d'outils. Les raccourcis clavier sont affichés dans les menus déroulants.
+This is the main window from where you work with your databases. Below the menubar and the toolbar is a tabbed pane containing a panel for each of your currently open databases. When you select one of these panels, a table appears, listing all the database's entries, as well as a configurable selection of their fields.
 
-Ceci est la fenêtre principale à partir de laquelle vous travaillez avec vos bases de données. En dessous de la barre de menus et de la barre d'outils se trouve un panneau à onglets contenant un onglet pour chacune de vos bases de données actuellement ouvertes. Quand vous sélectionnez un de ces onglets, un tableau apparaît, listant toutes les entrées de la base de données, ainsi qu'une sélection configurable de leurs champs.
+- You decide which fields are shown in the table by checking the fields you want to see in the **Preferences** dialog.
+- Double-click a line of the table to edit the entry content. You can navigate the table with the arrow keys.
+- The table is sorted according to a set of fields of your choosing. The default sort order can be set up in **Preferences → Entry table**, but to more quickly change the order, click the header of a column to set it as the primary sort criterion, or reverse the sorting if it is already set. Another click will deselect the column as sorting criterion. Hold down <kbd>Ctrl</kbd> and click a column to add, reverse or remove it as a sub-criterion after the primary column. You can add an arbitrary number of sub-criteria, but only three levels will be stored for the next time you start JabRef.
+- Adjust the width of each column by dragging the borders between their headers.
+- Color codes can be toggled in the **Preferences** dialog (select **Appearance** and activate option "Color codes for optional and required fields). They help you visualize the completeness of your database by coloring cells as follows: 
+    - A <span style="color: red">red</span> cell in the leftmost column denotes an incomplete entry.
+    - A <span style="color: #909000">yellow</span> cell in the leftmost column denotes an entry that doesn't define all required fields by itself, but that contains a cross-reference.
+    - A <span style="color: blue">blue</span> cell denotes a required field.
+    - A <span style="color: green">green</span> cell denotes an optional field.
+    - An uncolored cell denotes a field which is not used by the *BibTeX* program for this type of entry. The field can still be edited in JabRef.
 
--   Vous décidez des champs affichés dans ce tableau en cochant les champs que vous voulez voir dans la fenêtre de dialogue **Préférences**.
--   Pour éditer la valeur d'un champ, double-cliquez sur la ligne que vous voulez modifiez. Vous pouvez naviguer dans le tableau en utilisant les flèches du clavier.
--   Le tableau est trié selon une série de champs de votre choix. L'ordre de tri par défaut peut être configuré dans **Options → Préférences → Table des entrées** mais pour changer plus rapidement cet ordre, cliquez l'entête d'une colonne pour la définir comme critère de tri principal, ou inverser l'ordre du tri s'il est déjà défini. Un clic supplémentaire désélectionnera la colonne comme critère de tri. Maintenez la touche **CONTROL** enfoncée et cliquez sur un autre entête de colonne pour l'ajouter, l'inverser ou l'enlever comme critère de tri auxiliaire. Vous pouvez ajouter un nombre arbitraire de critères auxiliaires, mais uniquement trois niveaux seront mémorisés pour le démarrage suivant de JabRef.
--   Vous pouvez ajuster la largeur des colonnes en faisant glisser les limites entre les entêtes.
--   Dans la fenêtre de dialogue **Préférences**, choisissez si le tableau doit être redimensionné pour s'ajuster à la fenêtre. Sélectionnez cette option pour toujours voir l'ensemble du tableau, et désélectionnez là pour permettre l'affichage de plus d'informations.
--   Les codes de couleurs vous aident à visualiser l'état de votre base de données. Les cellules sont colorées de la façon suivante :
-    -   Une cellule <span style="color: red">rouge</span> dans la colonne la plus à gauche signale une entrée incomplète.
-    -   Une cellule <span style="color: #909000">jaune</span> dans la colonne la plus à gauche signale une entrée qui ne définit pas par elle-même l'ensemble des champs requis, mais qui contient un renvoi.
-    -   Une cellule <span style="color: blue">bleue</span> correspond à un champ requis.
-    -   Une cellule <span style="color: green">verte</span> correspond à un champ optionnel.
-    -   Une cellule sans couleur correspond à un champ qui n'est pas utilisé par le programme *BibTeX* pour ce type d'entrée. Le champ peut cependant être édité dans JabRef.
--   Les codes de couleurs peuvent être modifiés dans la fenêtre de dialogue **Préférences**.
+## Adding a new entry
 
-## Ajouter une nouvelle entrée
+There are several ways to add a new entry. The **New entry** menu action shows a dialog where you can choose the type of the entry from a list. To bypass this dialog, there are also separate menu actions for each entry type, and keyboard shortcuts for the most common types.
 
-Il y a plusieurs façons d'ajouter une nouvelle entrée. L'activation du menu **BibTeX/ Nouvelle entrée** affiche une fenêtre de dialogue où vous pouvez choisir le type d'entrée à partir d'une liste. Pour éviter cette fenêtre de dialogue, vous pouvez utilisez le menu **BibTeX/ Nouvelle entrée...** ainsi que des raccourcis clavier pour les types les plus courants.
+When a new entry is added, by default an [entry editor](EntryEditor) for the entry will be opened. This behaviour can be toggled in the **Preferences** dialog.
 
-Lorsqu'une nouvelle entrée est ajoutée, par défaut, l'[éditeur d'entrées](EntryEditorHelp) s'ouvre. Ce comportement peut être modifié dans la fenêtre de dialogue **Préférences**.
+*Note:* We strongly recommend learning the shortcuts for the entry types you use most often, e.g. <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>A</kbd> for adding an *article* entry.
 
-*Note :* Nous vous recommandons fortement d'apprendre les raccourcis clavier des types d'entrées que vous utilisez le plus souvent, tel que CTRL-SHIFT-A pour l'ajout d'une entrée *article*.
+In the dialog, you can also create an entry based on Id. See <http://help.jabref.org/en/#using-publication-identifiers> for an overview on all available fetchers. For instance, when having an ISBN number, you can select "ISBN" als Id type and then fetch it. See <ISBNtoBibTeX> for details.
 
-## Editer une entrée
+## Editing an entry
 
-Pour ouvrir l'[éditeur d'entrées](EntryEditorHelp) sur une entrée existante, double-cliquez simplement sur la ligne correspondant à l'entrée (ou appuyez sur ENTREE après avoir sélectionné l'entrée).
+To open an [entry editor](EntryEditor) for an existing entry, simply double-click anywhere on the appropriate line will open the [entry editor](EntryEditor) (or select the entry and press <kbd>Enter</kbd>).
 
-## Référencer une chaîne *BibTeX* dans un champ
+## Referencing a *BibTeX* string in a field
 
-Dans JabRef vous écrivez le contenu de tous les champs de la même façon que dans un éditeur de texte, à une exception près : pour référencer une chaîne, entourer le nom de la chaîne avec le caractère \#, tel que dans :
-  '\#jan\# 1997',
-ce qui sera interprété comme la chaîne nommée 'jan' suivie de '1997'.
+In JabRef you write the contents of all fields the same way as you would in a text editor, with one exception: to reference a string, enclose the name of the string in a set of \# characters, e.g.:   '\#jan\# 1997', which will be interpreted as the string named 'jan' followed by ' 1997'.
 
-Voir aussi : [Editeur de chaîne](StringEditorHelp).
+See also: [string editor](StringEditor).
