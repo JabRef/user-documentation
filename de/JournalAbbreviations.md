@@ -1,44 +1,53 @@
 ---
-title: Zeitschriftentitel abkürzen
+title: Journal abbreviations
+helpCategories:
+  - Fields
 ---
+# Journal abbreviations
 
-# Zeitschriftentitel abkürzen
+JabRef can automatically toggle journal names between abbreviated and unabbreviated form, as long as the names are contained in one of your journal lists.
 
-Diese Funktion kann unter **Optionen → Abkürzungen der Zeitschriften verwalten** eingestellt werden.
+This feature can be configured under **Options → Manage journal abbreviations**.
 
-JabRef kann automatisch zwischen Zeitschriftentiteln in abgekürzter und ausführlicher Form hin- und herschalten, sofern die Titel in einer Ihrer Zeitschriftenlisten enthalten ist. Sie können mehrere dieser Listen benutzen, die Sie als externe Textdateien anlegen.
+JabRef includes a fairly extensive build-in list of journal abbreviations, but it it still likely to be incomplete for the purposes of many users. You can add abbreviations in the form of a personal list or external lists.
 
-## Benutzungshinweise
+## Using the feature
 
-Die Abkürzung von Zeitschriftentiteln können Sie von Eintragseditor oder vom Menü **Extras** aus ein- und ausschalten. Im Eintragseditor benutzen Sie dazu den Button **Abkürzung an-/abschalten** neben dem **Journal**-Feld. Es wird zwischen drei Modi hin- und hergeschaltet:
+Journal name conversion can be accessed either from within the entry editor, or from the **Tools** menu. In the entry editor you will find a button labeled *Toggle abbreviation* by the *journal* field. Clicking this button will cause the current journal name to be switched to the next of three modes:
 
--   Kompletter Name, z.B. "Aquacultural Engineering"
--   ISO-Abkürzung, z.B. "Aquacult. Eng."
--   MEDLINE-Abkürzung, z.B. "Aquacult Eng"
+- Full name, e.g. "Aquacultural Engineering"
+- ISO abbreviation, e.g. "Aquacult. Eng."
+- MEDLINE abbreviation, e.g. "Aquacult Eng"
 
-Falls der Zeitschriftenname sich nicht in Ihren Zeitschriftenlisten findet, wird das Feld nicht verändert.
+If the current journal name is not found in your journal lists, the field will not be modified.
 
-Um die Zeitschriftennamen mehrerer Einträge auf einmal zu konvertieren, können Sie eine beliebige Anzahl von Einträgen auswählen und im Menü **Extras** einen der Einträge **Zeitschriftennamen abkürzen (ISO)**, **Zeitschriftennamen abkürzen (MEDLINE)** und **Abkürzung der Zeitschriften aufheben** wählen. Diese drei Aktionen sorgen dafür, dass bei allen ausgewählten Einträgen die Zeitschriftennamen, die in den Zeitschriftenlisten gefunden werden konnten, abgekürzt oder komplett ausgeschrieben werden.
+To convert the journal names of many entries in bulk, you can select any number of entries, and choose **Tools → Abbreviate journal names (ISO)**, **Tools → Abbreviate journal names (MEDLINE)** or **Tools → Unabbreviate journal names**. These three actions will abbreviate and unabbreviate the journal names of all selected entries for which the journal name could be found in your journal lists.
 
-## Zeitschriftenlisten verwalten
+## Setting up additional journal lists
 
-Sie können mehrere Zeitschriftenlisten als externe Textdateien benutzen, die mit JabRef verlinkt sind. Die primäre Liste kann in JabRef selbst verwaltet werden.
+In addition to the build-in journal list, you can have a personal list and external lists.
 
-### Ihre persönliche Zeitschriften-Abkürzungsliste
+Any entry in your personal journal list will override an entry with the same full journal name in one of the external lists. Similarly, the external lists are given precedence in the order they are listed.
 
-Ihre persönliche Liste verwalten Sie im oberen Teil des **Abkürzung der Zeitschriftennamen**-Dialogs. Wählen Sie **Neue Datei** und geben einen Dateinamen ein oder klicken auf den **Durchsuchen**-Button. Wenn Sie bereits eine Datei haben, die Sie als Grundlage nehmen wollen, wählen Sie stattdessen **Bestehende Datei** und benutzen den **Durchsuchen**-Button zum Auswählen dieser Datei. Die Tabelle zeigt dann den Inhalt der Liste, die Sie ausgewählt haben.
+### Your personal journal abbreviations list
 
-Sie können mit Hilfe der **+** und **-** Buttons an der rechten Seite Einträge hinzufügen oder entfernen. Für jeden Eintrag müssen Sie den vollständigen Zeitschriftennamen und die ISO-Abkürzung angeben (z.B. "Aquacultural Engineering" und "Aquacult. Eng."). Mit einem Doppelklick auf die Tabellenzeile können Sie die Einträge bearbeiten.
+Your personal journal list is managed in the central part of the **Manage journal abbreviations** window. To start building your personal journal abbreviations list, choose *New file*, and enter a filename manually or using the *Browse* button. If you already have a file that you want to use as a starting point, use the *Browse* button on the line starting wiht *Existing file*. The table will update to show the contents of the list you have selected.
 
-Sobald Sie auf **OK** klicken (oder wenn Sie eine bestehende Datei ausgewält haben), enthält die Tabelle mindestens eine Zeile. Der Tabelleninhalt wird in die ausgewählte Datei geschrieben und die Zeitschriftenliste von JabRef wird aktualisiert.
+The table and the tool buttons to the right allow you to add, remove and edit journal entries. For each entry you must provide the full journal name, and the ISO abbreviation (e.g. "Aquacultural Engineering" and "Aquacult. Eng."). To edit an entry, double-click its row in the table.
 
-### Externe Zeitschriftenlisten
+Once you click *OK*, if you have selected a file, and the table contains at least one entry, the table contents will be stored to the selected file, and JabRef's list of journals will be updated.
 
-Zusätzlich zu Ihrer persönlichen Liste können Sie mehrere externe Listen verlinken. Diese Verknüpfungen werden im unteren Teil des **Abkürzung der Zeitschriftennamen**-Dialogs verwaltet. Externe Listen sind den persönlichen Listen ähnlich - der einzige Unterschied ist, dass Sie nicht mit JabRef selbst verwaltet werden können.
+### External journal lists
 
-Um eine externe Liste hinzuzufügen, klicken Sie zunächst auf den **+** Knopf, falls nötig (das fügt eine weitere Zeile hinzu). Dann benutzen Sie entweder den **Durchsuchen**- oder den **Herunterladen**-Button.
+You can link to a number of external lists. These links can be set up in the lower part of the **Manage journal abbreviations** window. External lists are similar to the personal list - the only difference is that JabRef does not provide an interface for editing the external lists.
 
--   Mit dem **Durchsuchen**-Knopf können Sie eine auf Ihrem Computer bestehende Datei auswählen.
--   Mit dem **Herunterladen**-Knopf können Sie eine Liste aus dem Internet herunterladen, indem Sie eine URL angeben. Die Datei wird auf Ihrem Computer gespeichert und mit JabRef verlinkt. Die URL ist standardmäßig die Adresse einer Zeitschriftenliste auf der JabRef-Homepage. Diese Liste ist unvollständig, wird in Zukunft aber ausgebaut.
+External lists can be found at [JabRef's repository abbreviation lists](http://abbrv.jabref.org/).
 
-Jeder Eintrag in Ihrer persönlichen Liste überschreibt einen Eintrag mit demselben vollständigen Zeitschriftennamen in einer Ihrer externen Listen. In ähnlicher Weise werden die externen Listen in der Reihenfolge, wie sie aufgelistet werden, abgearbeitet.
+To add a new external list, if necessary, click the **+** button to add another slot to the interface. Then use either the *Browse* or *Download* button next to one of the slots in the lower part of the window:
+
+- The *Browse* button allows you to select an existing file on your computer.
+- The *Download* button allows you to download a list over the internet by entering an URL, store it to a local file on your computer, and link to it as a journal list from JabRef.
+
+#### Contributing a external journal list
+
+We want to expand both the build-in list and the selection of smaller lists, so if you have set up a representative list for your own subject area, we would appreciate it if you share your list via [github](https://github.com/JabRef/reference-abbreviations) or by dropping a note on [our forum](http://discourse.jabref.org/).
