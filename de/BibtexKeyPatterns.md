@@ -1,63 +1,101 @@
 ---
-title: Anpassen der automatischen Erstellung von BibTeX-Keys
+title: Customizing the BibTeX key generator
+helpCategories:
+  - Setup
 ---
+# Customizing the BibTeX key generator
 
-# Anpassen der automatischen Erstellung von BibTeX-Keys
+The pattern used in the auto generation of BibTeX labels can be set for each of the standard entry types in **Options → Preferences**, tab **BibTeX key generator**. Additionally, if you right click the tab of a database, the menu **BibTeX key patterns** allows to set specific key patterns for this database.
 
-Im Tab "Key-Muster" im Dialog "Einstellungen" kann man die Felder bestimmen, die zur automatischen Generierung der BibTeX-Labels (bibtexkey) herangezogen werden. Das Muster kann für jeden der vorgegebenen Eintragstypen bestimmt werden.
+## Key patterns
 
-## Key-Muster
+The key pattern can contain any text you wish, in addition to field markers that indicate that a specific field of the entry should be inserted at that position of the key. A field marker generally consists of the field name enclosed in square braces, e.g. **\[volume\]**. If the field is undefined in an entry at the time of key generation, no text will be inserted by the field marker.
 
-Das Muster kann beliebigen Text enthalten, unabhängig von und zusätzlich zu den Feldmarken, die angeben, dass ein bestimmtes Feld des Eintrags an dieser Stelle des Keys eingefügt werden soll. Eine Feldmarke besteht gewöhnlich aus dem Feldnamen in eckigen Klammern, z.B. **\[volume\]**. Wenn dieses Feld zum Zeitpunkt der Erstellung des Keys leer ist, wird kein Text eingefügt.
+### Default key pattern
 
-Es gibt außerdem mehrere spezielle Feldmarken, die nur einen bestimmten Teil aus einem Feld extrahieren. Sie werden unten aufgelistet. Natürlich können Sie auch neue spezielle Feldmarken vorschlagen.
+If you have not defined a key pattern for a certain entry type, the **Default pattern** will be used. You can change the default pattern - its setting is above the list of entry types in the **BibTeX key generator** section of the **Preferences** dialog.
 
-Spezielle Feldmarken:
+The default key pattern is \[auth\]\[year\], and this could produce keys like e.g. `Yared1998` If the key is not unique in the current database, it is made unique by adding one of the letters a-z until a unique key is found. Thus, the labels might look like:
 
--   **\[`auth`\]**: Der Nachname des ersten Autors.
--   **\[`authors`\]**: Die Nachnamen aller Autoren.
--   **\[`authorLast`\]**: Der Nachname des letzten Autors
--   **\[`authorsN`\]**: Die Nachnamen von bis zu N Autoren. Falls es mehr Autoren gibt, wird EtAl angehängt.
--   **\[`authorsAlpha`\]**: Wie bei dem BibTeX-Stil "alpha". Ein Autor: Erste drei Buchstaben des Nachnamens. Zwei bis vier Autoren: Der erste Buchstabe jedes Nachnamens wird hintereinandergehägt. Mehr als vier Autoren: Jeweils der erste Buchstabe der ersten drei Nachnamens wird hintereinandergehängt. Zusätzlich ein "+" am Ende.
--   **\[`authIniN`\]**: Der Anfang des Nachnamens von jedem Autoren, wobei nicht mehr als N Buchstaben verwendet werden.
--   **\[`authorIni`\]**: Die ersten 5 Buchstaben des Nachnamens des ersten Autors und die Initialen der Nachnamen der restlichen Autoren.
--   **\[`authN`\]**: Die ersten N Buchstaben des Nachnamens des ersten Autors.
--   **\[`authN_M`\]**: Die ersten N Buchstaben des Nachnamens des M. Autors.
--   **\[`auth.auth.ea`\]**: Die Nachnamen der beiden ersten Autoren und ".ea", falls es mehr als zwei Autoren sind.
--   **\[`auth.etal`\]**: Der Nachname des ersten Autors und der Nachname des zweiten Autors bei zwei Autoren bzw. ".etal" bei mehr als zwei Autoren.
--   **\[`authshort`\]**: Der Nachname bei einem Autor; der erste Buchstabe der Nachnamen von bis zu drei Autoren, falls mehr als ein Autor vorhanden ist. Ein Plus (+) wird angehängt, falls es mehr als drei Autoren gibt.
+`Yared1998` `Yared1998a` `Yared1998b`
 
-**Anmerkung:**Falls es keinen Autor gibt (z.B. bei einem Buch mit Herausgeber), benutzen die genannten \[auth...\]-Feldmarken den oder die Herausgeber, die im editor-Feld angegeben wurden. Also werden die Herausgeber eines Buches ohne Autor für die Label-Erstellung wie Autoren behandelt. Falls Sie dieses Verhalten nicht wünschen und die Feldmarke stattdessen bei einem leeren author-Feld zu nichts expandieren soll, müssen Sie **pureauth** statt **auth** verwenden, z.B.: **\[pureauth\]** oder **\[pureauthors3\]**.
+### Special field markers
 
--   **\[`edtr`\]**: Der Nachname des ersten Herausgebers.
--   **\[`editors`\]**: Die Nachnamen aller Herausgeber.
--   **\[`editorLast`\]**: Der Nachname des letzten Herausgebers.
--   **\[`edtrIniN`\]**: Der Anfang des Nachnamens von jedem Herausgeber, wobei nicht mehr als N Buchstaben verwendet werden.
--   **\[`editorIni`\]**: Die ersten 5 Buchstaben des Nachnamens des Herausgebers und die Initialen der Nachnamen der restlichen Herausgeber.
--   **\[`edtrN`\]**: Die ersten N Buchstaben des Nachnamens des ersten Herausgebers.
--   **\[`edtrN_M`\]**: Die ersten N Buchstaben des Nachnamens des M. Herausgebers.
--   **\[`edtr.edtr.ea`\]**: Der Nachname der ersten beiden Herausgeber und ".ea", falls es mehr als zwei Herausgeber sind.
--   **\[`edtrshort`\]**: Der Nachname bei einem Herausgeber; der erste Buchstabe der Nachnamen von bis zu drei Herausgebern, falls mehr als ein Herausgeber vorhanden ist. Ein Plus (+) wird angehängt, falls es mehr als drei Herausgeber gibt.
--   **\[`firstpage`\]**: Die erste Seitenzahl einer Veröffentlichung (pages).
--   **\[`keywordN`\]**: Stichwort Nummer N aus dem Feld "keywords", gesetzt den Fall, dass die Stichworte durch Komma oder Semikolon voneinander getrennt sind.
--   **\[`lastpage`\]**: Die letzte Seitenzahl einer Veröffentlichung (pages).
--   **\[`shorttitle`\]**: Die ersten 3 Worte eines Titels (title).
--   **\[`shortyear`\]**: Die letzten 2 Ziffern des Jahrgangs (year).
--   **\[`veryshorttitle`\]**: Die ersten beiden Worte des Titels (title), wobei 'the', 'a' und 'an' ausgelassen werden.
+Several special field markers are offered, which extract only a specific part of a field. Feel free to suggest new special field markers.
 
-Hinter einem Feldnamen (oder einem der oben aufgeführten Pseudo-Feldnamen) kann ein Modifikator stehen. Modifikatoren werden in der Reihenfolge angewendet, in der sie angegeben wurden.
+#### Author-related key patterns
 
--   **:abbr**: Kürzt den Text, der von einem Feldnamen oder speziellen Feldmarken gebildet wird. Nur der erste Buchstabe und weitere Buchstaben, die auf ein Leerzeichen folgen, werden berücksichtigt. Zum Beispiel würde **\[journal:abbr\]** die Zeitschrift "Jorunal of Fish Biology" zu "JoFB" wandeln.
--   **:lower**: Wandelt den von der Feldmarke eingefügten Text in Kleinbuchstaben. So wird beispielsweise bei **\[auth:lower\]** der Nachname des ersten Autors in Kleinbuchstaben ausgegeben.
+- **\[`auth`\]**: The last name of the first author
+- **\[`authors`\]**: The last name of all authors
+- **\[`authorLast`\]**: The last name of the last author
+- **\[`authorsN`\]**: The last name of up to N authors. If there are more authors, “EtAl” is appended.
+- **\[`authorsAlpha`\]**: Corresponds to the BibTeX style “alpha”. One author: First three letters of the last name. Two to four authors: First letters of last names concatenated. More than four authors: First letters of last names of first three authors concatenated. “+” at the end.
+- **\[`authIniN`\]**: The beginning of each author's last name, using no more than N characters.
+- **\[`authorIni`\]**: The first 5 characters of the first author's last name, and the last name initials of the remaining authors.
+- **\[`authN`\]**: The first N characters of the first author's last name
+- **\[`authN_M`\]**: The first N characters of the Mth author's last name
+- **\[`auth.auth.ea`\]**: The last name of the first two authors, and “.ea” if there are more than two.
+- **\[`auth.etal`\]**: The last name of the first author, and the last name of the second author if there are two authors or “.etal” if there are more than two.
+- **\[`authEtAl`\]**: The last name of the first author, and the last name of the second author if there are two authors or “EtAl” if there are more than two. This is similar to `auth.etal`. The difference is that the authors are not separated by “.” and in case of more than 2 authors “EtAl” instead of “.etal” is appended.
+- **\[`authshort`\]**: The last name if one author is given; the first character of up to three authors' last names if more than one author is given. A plus character is added, if there are more than three authors.
+- **\[`authForeIni`\]**: The forename initial of the first author.
+- **\[`authorLastForeIni`\]**: The forename initial of the last author.
 
-Wenn Sie keine Key-Muster für einen bestimmten Eintragstyp angeben, wird das vorgegebene Muster (default pattern) verwendet. Sie können das vorgegebene Muster natürlich ebenfalls anpassen - seine Einstellung befindet sich über der Liste der Eintragstypen im Tab **Key-Muster** des Dialogs **Einstellungen**.
+**Note:** If there is no author (as in the case of an edited book), then all of the above **`[auth...]`** markers will use the editor(s) (if any) as a fallback. Thus, the editor(s) of a book with no author will be treated as the author(s) for label-generation purposes. If you do not want this behaviour, i.e. you require a marker which expands to nothing if there is no author, use **`pureauth`** instead of **`auth`** in the above codes. For example, **`[pureauth]`**, or **`[pureauthors3]`**.
 
-Das vorgegebene Key-Muster ist \[auth\]\[year\], das Keys wie z.B. `Yared1998` generiert. Falls der Key in der geöffneten Datei nicht eindeutig sein sollte, wird einer der Buchstaben a-z angefügt, bis ein eindeutiger Key gefunden ist. Dementsprechend könnten die Labels wie folgt aussehen:
+#### Editor-related key patterns
 
-`Yared1998`
-`Yared1998a`
-`Yared1998b`
+- **\[`edtr`\]**: The last name of the first editor
+- **\[`edtrIniN`\]**: The beginning of each editor's last name, using no more than N characters
+- **\[`editors`\]**: The last name of all editors
+- **\[`editorLast`\]**: The last name of the last editor
+- **\[`editorIni`\]**: The first 5 characters of the first editor's last name, and the last name initials of the remaining editors.
+- **\[`edtrN`\]**: The first N characters of the first editor's last name
+- **\[`edtrN_M`\]**: The first N characters of the Mth editor's last name
+- **\[`edtr.edtr.ea`\]**: The last name of the first two editors, and “.ea” if there are more than two.
+- **\[`edtrshort`\]**: The last name if one editor is given; the first character of up to three editors' last names if more than one editor is given. A plus character is added, if there are more than three editors.
+- **\[`edtrForeIni`\]**: The forename initial of the first editor.
+- **\[`editorLastForeIni`\]**: The forename initial of the last editor.
 
-## Ersetzen eines regulären Ausdrucks
+#### Title-related key patterns
 
-Nachdem das Key-Muster angewendet wurde, um einen BibTeX-Key zu erstellen, können Sie den Key-Generator nach einem bestimmten regulären Ausdruck suchen und ihn durch eine Zeichenfolge ersetzen lassen. Der reguläre Ausdruck und die Zeichenfolge, die ihn ersetzen soll, werden in den Textfeldern unter der Liste der Key-Muster eingegeben. Falls das Feld zur Ersetzung des regulären Ausdrucks leer ist, werden die mit der Suche übereinstimmenden regulären Ausdrücke einfach gelöscht.
+- **\[`shorttitle`\]**: The first 3 words of the title
+- **\[`veryshorttitle`\]**: The first word of the title, discounting ‘the’, ‘a’, ‘an’.
+- **\[`camel`\]**: Capitalize and concatenate all the words of the title. For example, `An awesome paper on JabRef` will become `AnAwesomePaperOnJabref`
+- **\[`title`\]**: Capitalize all the significant words of the title, and concatenate them. For example, `An awesome paper on JabRef` will become `AnAwesomePaperonJabref`
+
+#### Other key patterns
+
+- **\[`firstpage`\]**: The number of the first page of the publication (Caution: this will return the lowest number found in the pages field, since BibTeX allows `7,41,73--97` or `43+`.)
+- **\[`pageprefix`\]**: The non-digit prefix of pages (like "L" for L7) or "" if no non-digit prefix exists (like "" for `7,41,73--97`) .
+- **\[`keywordN`\]**: Keyword number N from the “keywords” field, assuming keywords are separated by commas or semicolons.
+- **\[`lastpage`\]**: The number of the last page of the publication (See the remark on `firstpage`)
+- **\[`shortyear`\]**: The last 2 digits of the publication year
+
+## Modifiers
+
+A field name (or one of the above pseudo-field names) may optionally be followed by one or more modifiers. Modifiers are applied in the order they are specified.
+
+- **:abbr**: Abbreviates the text produced by the field name or spcial field marker. Only the first character and subsequent characters following white space will be included. For examples: 
+   - **\[journal:abbr\]** would from the journal name “Journal of Fish Biology” produce “JoFB”.
+   - **\[title:abbr\]** would from the title “An awesome paper on JabRef” produce “AAPoJ”.
+   - **\[camel:abbr\]** would from the title “An awesome paper on produce “AAPOJ”.
+- **:lower**: Forces the text inserted by the field marker to be in lowercase. For example, **\[auth:lower\]** expands the last name of the first author in lowercase.
+- **:upper**: Forces the text inserted by the field marker to be in uppercase. For example, **\[auth:upper\]** expands the last name of the first author in uppercase.
+- **:(x)**: Replace x by any string. The string between the parentheses will be inserted if the field marker preceding this modifier resolves to an empty value. For instance, the marker **\[volume:(unknown)\]** will return the entry's volume if set, and the string **unknown** if the entry's `volume` field is not set.
+
+## Regular expression replace
+
+After the key pattern has been applied to produce a key, you can choose to have the key generator search for occurrences of a specific regular expression, and replace it with a string. The regular expression and replacement string are entered in the text fields below the list of key patterns. If the replacement string is empty, matches of the regular expression will simply be removed from the generated key. For instance, `\p{Punct}` or `[:/%]` can be replaced by nothing to remove unwanted characters from the key. This may be useful when naming PDFs according to BibTeX keys.
+
+## How to configure
+
+To change the pattern to `[authors]:[camel]`, execute the following steps:
+
+1. Open the preferences ![Options Preferences](./images/OptionsPreferences.png)
+
+2. Navigate to "BibTeX key generator" ![BibTeX key generator preferences](./images/Preferences - BibTeX key generator.png)
+
+3. Change the default pattern to `[authors]:[camel]`. ![BibTeX key generator preferences - authors camel](./images/Preferences - BibTeX key generator - authors camel.png)
+
+4. Click "OK"
