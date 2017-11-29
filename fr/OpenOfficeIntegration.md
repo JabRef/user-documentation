@@ -1,51 +1,52 @@
 ---
-title: Intégration dans OpenOffice/LibreOffice
+title: OpenOffice/LibreOffice integration
+helpCategories:
+  - Import/Export
 ---
-
-# Intégration dans OpenOffice/LibreOffice
+# OpenOffice/LibreOffice integration
 
 ## Introduction
 
-Cette fonction offre une interface pour insérer des citations et formater une bibliographie dans un document OpenOffice ou LibreOffice Writer à partir de JabRef.
+This feature offers an interface for inserting citations and formatting a Bibliography in an OpenOffice or LibreOffice Writer document from JabRef.
 
-Tout au long de ce document d'aide, lorsque le nom *OpenOffice* est utilisé, il peut être remplacé par *LibreOffice*.
+Throughout this help document, whenever the name *OpenOffice* is used, it can be interchanged with *LibreOffice*.
 
-## Utiliser l'interface OpenOffice/LibreOffice
+## Using the OpenOffice/LibreOffice interface
 
-Pour communiquer avec OpenOffice, JabRef doit tout d'abord se connecter à une instance active d'OpenOffice. Vous devez démarrez OpenOffice et ouvrir votre document avant de vous y connecter à partir de JabRef. JabRef a besoin de connaître la localisation de vos exécutables OpenOffice (**soffice.exe** sous Windows et **soffice** sous les autres systémes d'exploitation) et le répertoire où se trouvent plusieurs fichiers OpenOffice jar. Si vous lancez la connexion en cliquant sur le bouton **Connexion automatique**, JabRef tentera automatiquement de déterminer ses emplacements. Si cela ne fonctionne pas, vous devez établir la connexion en utilisant le bouton **Connexion manuelle** qui ouvrira une fenêtre vous demandant les emplacements nécessaires.
+To communicate with OpenOffice, JabRef must first connect to a running OpenOffice instance. You need to start OpenOffice and enter your document before connecting from JabRef. JabRef needs to know the location of your OpenOffice executable (**soffice.exe** on Windows, and **soffice** on other platforms), and the directory where several OpenOffice jar files reside. If you connect by clicking the **Connect** button, JabRef will try to automatically determine these locations. If this does not work, you need to connect using the **Manual connect** button, which will open a window asking you for the needed locations.
 
-Après que la connexion ait été établie, vous pouvez insérer des citations en sélectionnant une ou plusieurs entrées dans JabRef et en utilisant le bouton **Envoyer vers OpenOffice** dans le menu déroulant de la barre d'outils de JabRef ou en utilisant le bouton approprié dans la sous-fenêtre OpenOffice du panneau latéral. Cela insérera les citations pour les entrées sélectionnées à l'emplacement actuel du curseur dans le document OpenOffice et mettra à jour la bibliographie afin qu'elle contienne la référence complète.
+After the connection has been established, you can insert citations by selecting one or more entries in JabRef and using the **Push to OpenOffice** button in the dropdown menu of JabRef's toolbar, or by using the appropriate button in the OpenOffice panel in the side pane. This will insert citations for the selected entries at the current cursor position in the OpenOffice document, and update the bibliography to contain the full reference.
 
-**Note :** JabRef n'utilise pas le système de bibliographie intégré à OpenOffice à cause des limitations de ce système. Un document contenant des citations insérées par JabRef ne sera en général pas compatible avec d'autres gestionnaires de références tels que Bibus et Zotero.
+**Note:** JabRef does not use OpenOffice's built-in bibliography system, because of the limitations of that system. A document containing citations inserted from JabRef will not generally be compatible with other reference managers such as Bibus and Zotero.
 
-Deux types de citations différents peuvent être insérés - soit une citation entre parenthèses, "(Auteur 2007)", soit une citation dans le texte "Author (2007)". Cette distinction est uniquement pertinente si les citations auteur-année sont utilisées au lieu des citations numérotées, mais cette distinction sera conservée si vous basculer entre les deux styles.
+Two different types of citations can be inserted - either a citation in parenthesis, "(Author 2007)", or an in-text citation, "Author (2007)". This distinction is only meaningful if author-year citations are used instead of numbered citations, but the distinction will be preserved if you switch between the two styles.
 
-Si vous modifiez les entrées dans JabRef après l'insertion de leurs citations dans OpenOffice, vous devrez synchroniser la bibliographie. Le bouton **Synchroniser la bibliographie OO** mettra à jour toutes les entrées de la bibliographie tant que leurs clefs BibTeX n'ont pas été modifiées (JabRef encode la clef BibTeX dans le nom de la référence pour chaque citation afin de suivre quelle clef BibTeX a l'entrée JabRef originale).
+If you modify entries in JabRef after inserting their citations into OpenOffice, you will need to synchronize the bibliography. The **Sync OO bibliography** button will update all entries of the bibliography, provided their BibTeX keys have not been altered (JabRef encodes the BibTeX key into the reference name for each citation to keep track of which BibTeX key the original JabRef entry has).
 
-## Le fichier de style
+## The style file
 
-Pour configurer le style de citation, vous devez sélectionner un style de fichier ou utiliser un des styles par défaut. Le style définit le format des citations et le format de la bibliographie. Vous pouvez utiliser des formateurs d'exportations standards de JabRef pour traiter les champs des entrées avant qu'ils soient envoyés à OpenOffice. Grâce à l'existence de ce fichier de style, vous disposez d'une flexibilité aussi grande que possible dans les styles de citation. Vous pouvez changer de fichier de style à tout moment et utiliser le bouton **Mettre à jour** pour que votre bibliographie suive ce nouveau style.
+To customize the citation style you need to select a style file, or use one of the default styles. The style defines the format of citations and the format of the bibliography. You can use standard JabRef export formatters to process entry fields before they are sent to OpenOffice. Through the style file, the intention is to give as much flexibility in citation styles as possible. You can switch style files at any time, and use the **Update** button to refresh your bibliography to follow the new style.
 
-En cliquant sur le bouton **Sélectionner le style** vous pouvez ouvrir une fenêtre qui permet de sélectionner soit le style par défaut soit un fichier de style externe. Si vous voulez créer un nouveau style basé sur celui par défaut, vous pouvez cliquer sur le bouton **Aperçu** afin d'afficher le contenu du style par défaut que vous pouvez copier dans un éditeur de texte et modifier.
+By clicking the **Select style** button you can bring up a window that allows selection of either the default style or an external style file. If you want to create a new style based on the default, you can click the **View** button to bring up the default style contents, which can be copied into a text editor and modified.
 
-Pour choisir un fichier de style externe, vous avez deux possibilités. Soit vous choisissez directement un fichier de style, soit vous paramétrez un répertoire de fichiers de style. Si vous choisissez cette dernière possibilité, vous pourrez voir la liste des styles de ce répertoire (et de ces sous-répertoires) et en choisir un à partir de cette liste.
+To choose an external style file, you have two options. Either you can choose a style file directly, or you can set a style file directory. If you do the latter, you will see a list of styles from that directory (and subdirectories), and can choose one from that list.
 
-Voici un exemple de fichier de style :
+Here is an example style file:
 
     NAME
     Example style file for JabRef-OpenOffice integration.
-
+    
     JOURNALS
     Journal name 1
     Journal name 2
-
+    
     PROPERTIES
     Title="References"
     IsSortByPosition="false"
     IsNumberEntries="false"
     ReferenceParagraphFormat="Default"
     ReferenceHeaderParagraphFormat="Heading 1"
-
+    
     CITATION
     AuthorField="author/editor"
     YearField="year"
@@ -69,119 +70,115 @@ Voici un exemple de fichier de style :
     CitationCharacterFormat="Default"
     MultiCiteChronological="false"
     PageInfoSeparator="; "
-
+    
     LAYOUT
     article=\format[AuthorLastFirst,AuthorAbbreviator,AuthorAndsReplacer]{\author}
     (<b>\year\uniq</b>). <i>\title</i>, \journal \volume\begin{pages} :
     \format[FormatPagesForHTML]{\pages}\end{pages}.
-
+    
     book=\format[AuthorLastFirst,AuthorAbbreviator,AuthorAndsReplacer]{\author}\begin{editor}
     \format[AuthorLastFirst,AuthorAbbreviator,AuthorAndsReplacer]{\editor} (Ed.)\end{editor},
     <b>\year\uniq</b>. <i>\title</i>. \publisher, \address.
-
+    
     incollection=\format[AuthorLastFirst,AuthorAbbreviator,AuthorAndsReplacer]{\author}
     (<b>\year\uniq</b>). <i>\title</i>. In: \format[AuthorLastFirst,
     AuthorAbbreviator,AuthorAndsReplacer]{\editor} (Ed.), <i>\booktitle</i>, \publisher.
-
+    
     inbook=\format[AuthorLastFirst,AuthorAbbreviator,AuthorAndsReplacer]{\author}
     (<b>\year\uniq</b>). <i>\chapter</i>. In: \format[AuthorLastFirst,
     AuthorAbbreviator,AuthorAndsReplacer]{\editor} (Ed.), <i>\title</i>, \publisher.
-
+    
     phdthesis=\format[AuthorLastFirst,AuthorAbbreviator,AuthorAndsReplacer]{\author}
     (<b>\year\uniq</b>). <i>\title</i>, \school.
-
+    
     default=\format[AuthorLastFirst,AuthorAbbreviator,AuthorAndsReplacer]{\author}
     (<b>\year\uniq</b>). <i>\title</i>, \journal \volume\begin{pages} :
     \format[FormatPagesForHTML]{\pages}\end{pages}.
+    
 
-(Notez que la mise en page de chaque type d'entrée doit être limité à une seule ligne dans le fichier de style - ci-dessus, les lignes sont coupées pour faciliter la lecture)
+(Note that the layout for each entry type must be constrained to a single line in the style file - above, the lines are broken up to improve readability.)
 
-### Propriétés générales
+### Global properties
 
-La section **PROPERTIES** décrit les propriétés générales de la bibliographie. Le tableau ci-dessous décrit les propriétés disponibles :
+The **PROPERTIES** section describes global properties for the bibliography. The following table describes the available properties:
 
-|                                |          |                       |                                                                                                                                                                                                        |
-|--------------------------------|----------|-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Propriété**                  | **Type** | **Valeur par défaut** | **Description**                                                                                                                                                                                        |
-| IsNumberEntries                | booléen  | `false`               | Détermine le type de citations à utiliser. Si `true`, des citations numérotées seront utilisées. Si `false`, des citations auteur-année seront utilisées.                                              |
-| IsSortByPosition               | booléen  | `false`               | Détermine comment la bibliographie est triée. Si vrai, les entrées seront triées selon l'ordre dans lequel elles sont citées. Si faux, les entrées seront classées par ordre alphabétique des auteurs. |
-| ReferenceParagraphFormat       | chaîne   | `Default`             | Donne le nom du format de paragraphe à utiliser pour la liste de références. Ce format doit être défini dans votre document OpenOffice.                                                                |
-| ReferenceHeaderParagraphFormat | chaîne   | `Heading 1`           | Donne le nom du format de paragraphe à utiliser pour le titre de la liste de références. Ce format doit être défini dans votre document OpenOffice.                                                    |
-| Title                          | chaîne   | `Bibliography`        | Le texte à entrer comme titre de la liste de références.                                                                                                                                               |
+|                                |          |                   |                                                                                                                                                                                                |
+| ------------------------------ | -------- | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Property**                   | **Type** | **Default value** | **Description**                                                                                                                                                                                |
+| IsNumberEntries                | boolean  | `false`           | Determines the type of citations to use. If `true`, number citations will be used. If `false`, author-year citations will be used.                                                             |
+| IsSortByPosition               | boolean  | `false`           | Determines how the bibliography is sorted. If true, the entries will be sorted according to the order in which they are cited. If false, the entries will be sorted alphabetically by authors. |
+| ReferenceParagraphFormat       | string   | `Default`         | Gives the name of the paragraph format to be used for the reference list. This format must be defined in your OpenOffice document.                                                             |
+| ReferenceHeaderParagraphFormat | string   | `Heading 1`       | Gives the name of the paragraph format to be used for the headline of the reference list. This format must be defined in your OpenOffice document.                                             |
+| Title                          | string   | `Bibliography`    | The text to enter as the headline of the reference list.                                                                                                                                       |
 
-### Propriétés des citations
+### Citation properties
 
-La section **CITATION** décrit le format des marqueurs de citation insérés dans le texte.
+The **CITATION** section describes the format of the citation markers inserted into the text.
 
-Le tableau ci-dessous donne une brève description de toutes les propriétés de citation disponibles. Les propriétés qui n'apparaissent pas dans le fichier de style garderont leur valeur par défaut.
+The following table gives a brief description of all the available citation properties. Properties that are not given in the style file will keep their default value.
 
-|                           |          |                       |                                                                                                                                                                                                                                                                                                                                                                            |
-|---------------------------|----------|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Propriété**             | **Type** | **Valeur par défaut** | **Description**                                                                                                                                                                                                                                                                                                                                                            |
-| AuthorField               | chaîne   | `author/editor`       | Champ BibTeX contenant les noms des auteurs. Peut contenir des champs alternatifs, par exemple `author/editor`                                                                                                                                                                                                                                                             |
-| AuthorLastSeparator       | chaîne   | ` & `                 | Texte inséré entre les deux derniers noms d'auteur.                                                                                                                                                                                                                                                                                                                        |
-| AuthorLastSeparatorInText | chaîne   |                       | Si spécifiés, cette propriété écrase `AuthorLastSeparator` pour les citations dans le texte telles que `Smith & Jones (2001)`.                                                                                                                                                                                                                                             |
-| AuthorSeparator           | chaîne   | `, `                  | Texte inséré entre les noms d'auteurs excepté pour les deux derniers.                                                                                                                                                                                                                                                                                                      |
-| BracketAfter              | chaîne   | `]`                   | La parenthèse fermante des citations.                                                                                                                                                                                                                                                                                                                                      |
-| BracketAfterInList        | chaîne   | \]                    | La parenthèse fermante pour la numérotation des citations dans la liste des références.                                                                                                                                                                                                                                                                                    |
-| BracketBefore             | chaîne   | `[`                   | La parenthèse ouvrante des citations.                                                                                                                                                                                                                                                                                                                                      |
-| BracketBeforeInList       | chaîne   | \[                    | La parenthèse ouvrante pour la numérotation des citations dans la liste des références.                                                                                                                                                                                                                                                                                    |
-| CitationCharacterFormat   | chaîne   | `Default`             | Si `FormatCitations` est mis à `true`, le format de caractère ayant le nom donné par cette propriété sera appliqué aux citations. Le format de caractère doit être défini dans votre document OpenOffice.                                                                                                                                                                  |
-| CitationSeparator         | chaîne   | `; `                  | Texte inséré entre les éléments quand une citation contient plusieurs entrées, par exemple `[Smith 2001; Jones             2002]`                                                                                                                                                                                                                                          |
-| EtAlString                | chaîne   | ` et al. `            | Texte inséré après les noms d'auteur quand tous les auteurs ne sont pas listés, par exemple `[Smith et al. 2001]`                                                                                                                                                                                                                                                          |
-| FormatCitations           | booléen  | `false`               | Détermine si le formatage doit être appliqué aux citations. Si vrai, un format de caractère sera appliqué aux citations. La propriété `CitationCharacterFormat` contrôle quel format doit être appliqué. Le format doit être défini dans votre document OpenOffice. Tout paramètre et effet de caractère peut être choisit dans OpenOffice pour votre format de caractère. |
-| GroupedNumbersSeparator   | chaîne   | `-`                   | Texte inséré entre les nombres quand les citations numériques sont groupées, par exemple `[4-6]`                                                                                                                                                                                                                                                                           |
-| InTextYearSeparator       | chaîne   | Single Space          | Texte inséré entre les noms d'auteur et la parenthèse ouvrante avant l'année dans les citations dans le texte.                                                                                                                                                                                                                                                             |
-| ItalicEtAl                | boolean  | `true`                | Si `true`, la chaîne "et al." dans les marqueurs de citation est mis en italique.                                                                                                                                                                                                                                                                                          |
-| MaxAuthors                | integer  | `3`                   | Le nombre maximum d'auteurs à lister dans une citation qui apparaît précédemment dans le document.                                                                                                                                                                                                                                                                         |
-| MaxAuthorsFirst           | integer  | `3`                   | Le nombre maximum d'auteurs à lister dans une citation qui apparaît pour la première fois.                                                                                                                                                                                                                                                                                 |
-| MinimumGroupingCount      | integer  | `3`                   | Le nombre minimum d'entrées consécutives qu'une citation doit contenir avant que les nombres soient groupés, par exemple `[4-6]` ou `[4; 5; 6]`.                                                                                                                                                                                                                           |
-| MultiCiteChronological    | booléen  | `true`                | Si `true`, les entrées multiples d'une même citation sont triées chronologiquement. Sinon, elles sont sorties alphabétiquement.                                                                                                                                                                                                                                            |
-| PageInfoSeparator         | chaîne   | `; `                  | Pour des citations avec des informations complémentaires, par exemple des numéros de page, cette chaîne est insérée entre l'année (pour les citations auteur-année) ou le numéro de citation (pour les citations numérotées) et les informations complémentaires. Par exemple, le texte entre `2001` et `p. 301` dans `[Smith 2001; p. 301]`.                              |
-| UniquefierSeparator       | chaîne   | `, `                  | Texte inséré entre les lettres utilisées pour différencier les citations ayant des auteurs et année similaires. Par exemple le texte entre `a` et `b` dans `[Smith 2001a, b]`.                                                                                                                                                                                             |
-| YearField                 | chaîne   | `year`                | Le champ BibTeX pour l'année de publication.                                                                                                                                                                                                                                                                                                                               |
-| YearSeparator             | chaîne   | Single Space          | Texte inséré entre les noms d'auteurs et l'année dans les citations entre parenthèses telle que `[Smith 2001]`.                                                                                                                                                                                                                                                            |
+|                           |          |                   |                                                                                                                                                                                                                                                                                                                                                                               |
+| ------------------------- | -------- | ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Property**              | **Type** | **Default value** | **Description**                                                                                                                                                                                                                                                                                                                                                               |
+| AuthorField               | string   | `author/editor`   | BibTeX field containing author names. Can specify fallback field, e.g. `author/editor`                                                                                                                                                                                                                                                                                        |
+| AuthorLastSeparator       | string   | `&`           | Text inserted between the two last author names.                                                                                                                                                                                                                                                                                                                              |
+| AuthorLastSeparatorInText | string   |                   | If specified, this propery overrides `AuthorLastSeparator` for in-text citations such as `Smith & Jones (2001)`.                                                                                                                                                                                                                                                          |
+| AuthorSeparator           | string   | `,`               | Text inserted between author names except the last two.                                                                                                                                                                                                                                                                                                                       |
+| BracketAfter              | string   | `]`               | The closing bracket of citations.                                                                                                                                                                                                                                                                                                                                             |
+| BracketAfterInList        | string   | \]               | The closing bracket for citation numbering in the reference list.                                                                                                                                                                                                                                                                                                             |
+| BracketBefore             | string   | `[`               | The opening bracket of citations.                                                                                                                                                                                                                                                                                                                                             |
+| BracketBeforeInList       | string   | \[               | The opening bracket for citation numbering in the reference list.                                                                                                                                                                                                                                                                                                             |
+| CitationCharacterFormat   | string   | `Default`         | If `FormatCitations` is set to `true`, the character format with the name given by this property will be applied to citations. The character format must be defined in your OpenOffice document.                                                                                                                                                                              |
+| CitationSeparator         | string   | `;`               | Text inserted between items when a citation contains multiple entries, e.g. `[Smith 2001; Jones             2002]`                                                                                                                                                                                                                                                            |
+| EtAlString                | string   | `et al.`          | Text inserted after author names when not all authors are listed, e.g. `[Smith et al. 2001]`                                                                                                                                                                                                                                                                                  |
+| FormatCitations           | boolean  | `false`           | Determines whether formatting should be applied to citations. If true, a character format will be applied to the citations. The property `CitationCharacterFormat` controls which format should be applied, and the given format must be defined in your OpenOffice document. Any font settings and effects can be chosen within OpenOffice for your chosen character format. |
+| GroupedNumbersSeparator   | string   | `-`               | Text inserted between numbers when numbered citations are grouped, e.g. `[4-6]`                                                                                                                                                                                                                                                                                               |
+| InTextYearSeparator       | string   | Single Space      | Text inserted between author names and starting bracket before year in in-text citations.                                                                                                                                                                                                                                                                                     |
+| ItalicEtAl                | boolean  | `true`            | If true, the "et al." string in citation markers is italicized.                                                                                                                                                                                                                                                                                                               |
+| MaxAuthors                | integer  | `3`               | The maximum number of authors to list in a citation that has appeared earlier in the document.                                                                                                                                                                                                                                                                                |
+| MaxAuthorsFirst           | integer  | `3`               | The maximum number of authors to list in a citation when appearing for the first time.                                                                                                                                                                                                                                                                                        |
+| MinimumGroupingCount      | integer  | `3`               | The minimum number of consecutive entries a citation should contain before the numbers are grouped, e.g. `[4-6]` vs. `[4; 5; 6]`.                                                                                                                                                                                                                                             |
+| MultiCiteChronological    | boolean  | `true`            | If `true`, multiple entries in the same citation are sorted chronologically, otherwise they are sorted alphabetically.                                                                                                                                                                                                                                                        |
+| PageInfoSeparator         | string   | `;`               | For citations with extra information, e.g. page numbers, this string is inserted between the year (for author-year citations) or the citation number (for numbered citations) and the extra information. E.g. the text between `2001` and `p. 301` in `[Smith 2001; p. 301]`.                                                                                                 |
+| UniquefierSeparator       | string   | `,`               | Text inserted between letters used to differentiate citations with similar authors and year. E.g. the text between `a` and `b` in `[Smith 2001a, b]`.                                                                                                                                                                                                                         |
+| YearField                 | string   | `year`            | The BibTeX field to get publication year from.                                                                                                                                                                                                                                                                                                                                |
+| YearSeparator             | string   | Single Space      | Text inserted between author names and year in parenthesis citations such as `[Smith 2001]`.                                                                                                                                                                                                                                                                                  |
 
-Si des entrées numérotées sont utilisées, les propriétés `BracketBefore` et `BracketAfter` sont les plus importantes - elles définissent quels caractères sont utilisés dans le numéro de citation. La citation est composée ainsi :
-`[BracketBefore][Number][BracketAfter]`
-où \[Number\] est le nombre dans la citation, déterminé selon l'ordre de la bibliographie et/ou la position de cette citation dans le texte. Si une citation correspond à plusieurs entrées, elles seront séparées par la chaîne donnée dans la propriété `CitationSeparator` (par exemple, si `CitationSeparator`=;, la citation ressemblera à `[2;4;6]`). Si au moins deux entrées correspondent à des numéros consécutifs, ces numéros seront groupés (par exemple `[2-4]` pour 2, 3 and 4 ou `[2;5-7]` pour 2, 5, 6 et 7). La propriété `GroupedNumbersSeparator` (par défaut `-`) détermine quelle chaîne sépare le premier et le dernier élément des numéros groupés. La propriété entière `MinimumGroupingCount` (par défaut 3) détermine quel nombre de numéros consécutifs est autorisé avant que les entrées ne soient groupées. Si `MinimumGroupingCount`=3, les numéros 2 et 3 ne seront pas groupés, tandis que 2, 3, 4 le seront. Si `MinimumGroupingCount`=0, aucun groupement ne sera effectué quel que soit le nombre de numéros consécutifs.
+If numbered entries are used, the `BracketBefore` and `BracketAfter` properties are the most important - they define which characters the citation number is wrapped in. The citation is composed as follows: `[BracketBefore][Number][BracketAfter]` where \[Number\] is the number of the citation, determined according to the ordering of the bibliography and/or the position of the citation in the text. If a citation refers to several entries, these will be separated by the string given in the property `CitationSeparator` (for instance, if `CitationSeparator`=;, the citation could look like `[2;4;6]`). If two or more of the entries have a series of consecutive numbers, the numbers can be grouped (for instance `[2-4]` for 2, 3 and 4 or `[2;5-7]` for 2, 5, 6 and 7). The property `GroupedNumbersSeparator` (default `-`) determines which string separates the first and last of the grouped numbers. The integer property `MinimumGroupingCount` (default 3) determines what number of consecutive numbers is required before entries are grouped. If `MinimumGroupingCount`=3, the numbers 2 and 3 will not be grouped, while 2, 3, 4 will be. If `MinimumGroupingCount`=0, no grouping will be done regardless of the number of consecutive numbers.
 
-Si des entrées numérotées ne sont pas utilisées, des citations auteur-année seront créées sur la base des propriétés de citation. Une citation entre parenthèses est composée ainsi :
-`[BracketBefore][Author][YearSeparator][Year][BracketAfter]`
-où \[Author\] est le résultat du ou des champs donnés dans la propriété `AuthorField` et le formatage d'une liste d'auteurs. Cette liste peu contenir jusqu'à `MaxAuthors` noms - s'il y en à plus, la liste sera composée du premier auteur et du texte spécifié dans la propriété `EtAlString`. Si la propriété `MaxAuthorsFirst` est donnée, elle est prioritaire sur `MaxAuthors` la première fois que chaque citation apparaît dans le texte.
+If numbered entries are not used, author-year citations will be created based on the citation properties. A parenthesis citation is composed as follows: `[BracketBefore][Author][YearSeparator][Year][BracketAfter]` where \[Author\] is the result of looking up the field or fields given in the `AuthorField` property, and formatting a list of authors. The list can contain up to `MaxAuthors` names - if more are present, the list will be composed as the first author plus the text specified in the property `EtAlString`. If the property `MaxAuthorsFirst` is given, it overrides `MaxAuthors` the first time each citation appears in the text.
 
-Si plusieurs champs séparés par des slashs sont donnés dans la propriété `AuthorField`, ils seront considérés successivement si le premier champ est vide pour l'entrée BibTeX considérée. Dans l'exemple ci-dessus, le champ "author" sera utilisé ; mais, s'il est vide le champ "editor" sera utilisé en remplacement.
+If several, slash-separated, fields are given in the `AuthorField` property, they will be looked up successively if the first field is empty for the given BibTeX entry. In the example above, the "author" field will be used, but if empty, the "editor" field will be used as a backup.
 
-Les noms de la liste d'auteurs seront séparés par le texte donné par la propriété `AuthorSeparator`, exceptés pour les deux derniers noms qui seront séparés par le texte spécifié dans `AuthorLastSeparator`. Si la propriété `AuthorLastSeparatorInText` est spécifiée, elle remplace le précédent pour les citations du type "dans le texte". Cela permet d'avoir des citations comme `(Olsen & Jensen, 2008)` et `Olsen and Jensen (2008)` avec un même style.
+The names in the author list will be separated by the text given by the `AuthorSeparator` property, except for the last two names, which will be separated by the text given by `AuthorLastSeparator`. If the property `AuthorLastSeparatorInText` is given, it overrides the former for citations of the in-text type. This makes it possible to get citations like `(Olsen & Jensen, 2008)` and `Olsen and         Jensen (2008)` for the same style.
 
-\[Year\] est la résultante du ou des champs spécifiés dans la propriété \[YearField\].
+\[Year\] is the result of looking up the field or fields given in the \[YearField\] property.
 
-Une citation "dans le texte" est composée comme suit :
-`[Author][InTextYearSeparator][BracketBefore][Year][BracketAfter]`
-où \[Author\] et \[Year\] sont traités exactement de la même façon que pour les citations entre parenthèses.
+An in-text citation is composed as follows: `[Author][InTextYearSeparator][BracketBefore][Year][BracketAfter]` where \[Author\] and \[Year\] are resolved in exactly the same way as for the parenthesis citations.
 
-Si deux sources différentes sont citées et si elles ont les mêmes auteurs et années de publication, et si des citations auteur-année sont utilisées, leurs appels nécessiteront une modification afin d'être rendue discernables. Ceci est fait automatiquement en rajoutant une lettre après l'année pour chacune de ces publications ; 'a' pour la première référence citée, 'b' pour la suivante, et ainsi de suite. Par exemple, si l'auteur "Olsen" a deux papiers cités pour 2005, les appels de citation seront modifiés en `(Olsen, 2005a)` et `(Olsen, 2005b)`. Dans la mise en page de la bibliographie, l'utisation d'une lettre "singularisante" sera indiquée explicitement par l'insertion du champ virtuel `uniq`.
+If two different cited sources have the same authors and publication year, and author-year citations are used, their markers will need modification in order to be distinguishable. This is done automatically by appending a letter after the year for each of the publications; 'a' for the first cited reference, 'b' for the next, and so on. For instance, if the author "Olsen" has two cited papers from 2005, the citation markers will be modified to `(Olsen, 2005a)` and `(Olsen, 2005b)`. In the bibliography layout, the placement of the "uniquefier" letter is indicated explicitly by inserting the virtual field `uniq`.
 
-Si plusieurs entrées ayant été "singularisées" sont citées ensemble, elles seront groupées dans l'appel à référence. Par exemple, des deux entrées données ci-dessus en exemple sont citées ensemble, l'appel à référence sera `(Olsen, 2005a, b)` au lieu de `Olsen, 2005a; Olsen, 2005b)`. Les lettres discrimantes regroupées (a et b dans notre exemple) seront séparés par une chaîne spécifiée par la propriété `UniquefierSeparator`.
+If several entries that have been "uniquefied" are cited together, they will be grouped in the citation marker. For instance, of the two entries in the example above are cited together, the citation marker will be `(Olsen, 2005a, b)` rather than `Olsen, 2005a; Olsen, 2005b)`. The grouped uniquefier letters (a and b in our example) will be separated by the string specified by the `UniquefierSeparator` property.
 
-Les citations auteur-année faisant référence à plus d'une entrée seront par défaut triée chronologiquement. Si vous souhaitez qu'elles soient triées alphabétiquement, la propriété de citation `MultiCiteChronological` doit être paramétrée à `false.`.
+Author-year citations referring more than one entry will by default be sorted chronologically. If you wish them to be sorted alphabetically, the citation property `MultiCiteChronological` should be set to `false.`.
 
-### Mise en page de la liste de références
+### Reference list layout
 
-La section **LAYOUT** décrit comment doit apparaître l'entrée bibliographique correspondant à chaque type d'entrée de JabRef. Chaque ligne doit débuter soit avec le nom d'un type d'entrée BibTeX, soit avec le mot `default`, suivi par un '='. La mise en page `default` sera utilisée pour toutes les entrées où une mise en page n'a pas été spécifiée.
+The **LAYOUT** section describes how the bibliography entry for each entry type in JabRef should appear. Each line should start with either the name of a BibTeX entry type, or the word `default`, followed by a '='. The `default` layout will be used for all entry types for which an explicit layout hasn't been given.
 
-Le reste de chaque ligne définit la mise en page, avec le texte et les espaces habituels apparaissant directement dans l'entrée bibliographique. Les informations provenant de l'entrée BibTeX sont insérées en ajoutant des marqueurs `\field` avec le nom de fichier approprié (par exemple `\author` pour insérer les noms des auteurs). Les informations de formatage pour le champ peuvent être inclues ici, en suivant la syntaxe de JabRef pour la mise en page d'exportation. Voir [la documentation de JabRef sur les filtres d'exportation personnalisés](CustomExports) pour plus d'informations sur les formateurs disponibles.
+The remainder of each line defines the layout, with normal text and spaces appearing literally in the bibliography entry. Information from the BibTeX entry is inserted by adding `\field` markers with the appropriate field name (e.g. `\author` for inserting the author names). Formatting information for the field can be included here, following JabRef's standard export layout syntax. Refer to [JabRef's documentation on custom export filters](CustomExports) for more information about which formatters are available and tooling hints.
 
-Si des citations auteur-année sont utilisées, vous devez spécifier explicitement la position de la lettre "singularisante" qui est ajoutée pour distinguer des citations similaires. Ceci est effectué en incluant le champ virtuel `uniq`, typiquement juste après l'année (comme montré dans l'exemple du fichier de style). Le champ `uniq` est automatiquement paramétré correctement pour chaque entrée avant que son texte de référence soit mis en page.
+If author-year citations are used, you have to explicitly specify the position of the "uniquefier" letter that is added to distinguish similar-looking citations. This is done by including a marker for the virtual field `uniq`, typically right after the year (as shown in the example style file). The `uniq` field is automatically set correctly for each entry before its reference text is laid out.
 
-Pour spécifier le formatage dans la bibliographie, vous pouvez utiliser les paires de balises de style HTML &lt;b&gt; &lt;/b&gt;, &lt;i&gt; &lt;/i&gt;, &lt;sup&gt; &lt;/sup&gt; and &lt;sub&gt; &lt;/sub&gt; pour définir respectivement du texte en gras, en italique, en exposant et en indice.
+To indicate formatting in the bibliography, you can use the HTML-like tag pairs <b> </b>, <i> </i>, <sup> </sup> and <sub> </sub> to specify bold text, italic text, superscript and subscript, respectively.
 
-Si vous utilisez des citations numérotées, le numéro de chaque entrée sera automatiquement inséré au début de chaque entrée dans le liste de références. Par défaut, les numéros seront mis entre les même parenthèses que définies pour les citations. Les propriétés de citations optionelles `BracketBeforeInList` et `BracketAfterInList` remplacent `BracketBefore` et `BracketAfter` si elles sont paramétrées. Elles peuvent être utilisées si vous voulez des types différents de parenthèses (ou pas de parenthèses) dans votre liste de références. Notez que ce ne sont pas nécessairement des parenthèses ; cela peut être toute combinaison de caractères.
+If you are using numbered citations, the number for each entry will be automatically inserted at the start of each entry in the reference list. By default, the numbers will be enclosed in the same brackets defined for citations. The optional citation properties `BracketBeforeInList` and `BracketAfterInList` override `BracketBefore` and `BracketAfter` if set. These can be used if you want different types of brackets (or no brackets) in the reference list. Note that these need not be brackets as such - they can be any combination of characters.
 
-## Problèmes connus
+## Known issues
 
--   Assurez-vous d'enregistrer votre document Write dans le format OpenDocument (odt). Enregistrer au format Word perdra vos marques de références.
--   Il n'y a actuellement pas de citations basés sur des notes de bas de page.
--   Le curseur peut être mal positionné après l'insertion d'une citation.
--   Copier-coller le fichier de style en exemple directement à partir de cette page donnera un fichier non utilisable. Pour éviter cela, téléchargez le fichier d'exemple à partir du lien dans la section de téléchargement.
-
+- Make sure to save your Writer document in OpenDocument format (odt). Saving to Word format will lose your reference marks.
+- There is currently no support for footnote based citations.
+- The cursor may be poorly positioned after inserting a citation.
+- Copy-pasting the example style file directly from this page can give an unparseable file. To avoid this, instead download the example file from the link in the download section.
+- Make sure that `libreoffice-java-common` is installed on Linux for LibreOffice 5, otherwise important libraries are missing.
+- Open Office 4 will only work running under a 32-bit Java JRE/JDK on Windows because there is no 64-bit version of OpenOffice yet.
