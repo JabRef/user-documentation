@@ -1,40 +1,145 @@
 ---
-title: Suchfunktionen
-outdated: true
+title: Searching
+helpCategories:
+  - Finding, sorting and cleaning entries
+since: 3.7
 ---
+# Searching
 
-# Suchfunktionen
+The search bar is located between the icon bar and the database tabs.
 
-*STRG-F* fokussiert das Suchfeld.
+![Screenshot of the search bar](./images/Search-Bar.png)
 
-## Normale Suche
+To make the cursor jump to the search field, you can: - click in the search field. - select the menu **Search → Search**. - press <kbd>Ctrl</kbd> + <kbd>F</kbd>.
 
-Hierbei sucht das Programm nach allen Vorkommen der Wörter ihres Suchausdrucks, sobald Sie ENTER drücken. Nur Einträge, die alle Wörter enthalten, gelten als Treffer. Um nach festen Ausdrücken zu suchen, müssen Sie die Wörter in doppelte Anführungszeichen einfassen. Zum Beispiel findet die Suchanfrage **progress "marine acquaculture"** Einträge, die sowohl das wort "progress" als auch den Ausdruck "marine acquaculture" aufweisen. Alle Einträge, die keine Treffer sind, werden entweder ausgeblendet, so dass nur die Treffer sichtbar sind (Option **Filter**), oder sie werden grau dargestellt, während die Treffer oben angezeigt werden (Option **Oben einsortieren**). Um die Trefferanzeige zu beenden, einfach den Suchbegriff Zurücksetzen, ESCAPE drücken oder auf die "Zurücksetzen" Schaltfläche klicken.
+Additionally, <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd> also activates the global search setting.
 
-## <a href="" id="advanced">Feldbezeichner und logische Operatoren</a>
+Searching includes two modes (normal and advanced), along with several settings.
 
-Um nur einige bestimmte Felder zu durchsuchen und/oder logische Operatoren im Suchbegriff zu benutzen, wird eine spezielle Syntax zur Verfügung gestellt. Um beispielsweise nach Einträgen mit dem Autor "Miller" zu suchen, geben Sie
+## Search settings
 
-author = miller
+At the right of the search text field, several buttons allow for selecting some settings:
 
-in das Suchfeld ein. Falls der Suchbegriff Leerzeichen enthält, schließen Sie ihn in Anführungszeichen ein. Benutzen Sie *nie* Leerzeichen in dem Feldbezeichner. Um beispielsweise nach Einträgen über Karl den Großen zu suchen, geben Sie folgendes ein:
+- New window
+  
+  - When pressed, the results are displayed in a dedicated window.
 
-title|keywords = "Karl der Große"
+- Global search
+  
+  - activated: 
+    - the search query will be taken over when switching tabs
+    - the external search result window will show matches in all databases
+  - deactivated: 
+    - each tab will remember its search query
+    - the external search result window will only show matches in the current database
 
-Sie können "and", "or", "not" und Klammern verwenden:
+- Regular expressions - Whether or not the search query uses [regular expressions](Search#regex).
 
-(author = miller or title|keywords = "Karl der Große") and not author = brown
+- Case sensitivity
+  
+  - Whether or not the search query is case sensitive.
 
-... sucht nach Einträgen, in denen entweder der Autor "Miller" heißt oder im title- oder keywords-Feld der Begriff "Karl der Große" steht; gleichzeitig werden die Einträge mit dem Autor "Brown" nicht angezeigt.
+- Display setting
+  
+  - *Filter* - Displays only entries which match the search query, non-matches are hidden
+  - *Float* - Matching entries are moved to the top, entries which do not match the search query are grayed-out
 
-Das "="-Zeichen ist eigentlich eine Abkürzung für "enthält" ("contains"). Wenn man nach genauen Treffern suchen möchte, muss man "==" oder "matches" ("übereinstimmen") eingeben. "!=" sucht nach Einträgen, bei denen der Suchbegriff *nicht* enthalten ist. Die Auswahl von Feldern, die durchsucht werden sollen (benötigte, optionale, allgemeine Felder), wird ignoriert, wenn man im Suchausdruck Feldbezeichner verwendet. Um nach Einträgen eines bestimmten Typs zu suchen, gibt es ein Pseudofeld namens "entrytype":
+## Search modes
 
-entrytype = thesis
+There are two search modes in JabRef.
 
-… findet z.B. Einträge, deren Typ (wie in der Spalte "Entrytype" dargestellt) das Wort "thesis" enthält (z.B. "phdthesis" und "mastersthesis"). Ebenso erlaubt das Pseudofeld "bibtexkey" die Suche nach BibTeX-Keys, z.B.:
+### Normal search
 
-bibtexkey = miller2005
+In a normal search, the program searches your database for all occurrences of the words in your search string, once you entered it. Only entries containing all words will be considered matches. To search for sequences of words, enclose the sequences in double quotes. For instance, the query **progress "marine aquaculture"** will match entries containing both the word "progress" and the phrase "marine aquaculture". All entries that don't match are hidden, leaving for display the matching entries only (filter mode), or are grayed-out (float mode). To stop displaying the search results, just clear the search field again, press <kbd>Esc</kbd> or click on the "Clear" (`X`) button.
 
-## Suchoptionen
+### [](){#advanced}Advanced search
 
-Neben dem Suchfeld befinden sich Optionen für das Beachten von Groß- und Kleinschreibung und dem Nutzen regulärer Ausdrücke.
+#### Syntax
+
+In order to search specific fields only and/or include logical operators in the search expression, a special syntax is available in which these can be specified. E.g. to search for entries whose an author contains **miller**, enter:
+
+`author = miller`
+
+Both the field specification and the search term support [regular expressions](Search#regex). If the search term contains spaces, enclose it in quotes. Do *not* use spaces in the field specification! E.g. to search for entries about image processing, type:
+
+`title|keywords = "image processing"`
+
+You can use `and`, `or`, `not`, and parentheses as intuitively expected:
+
+`(author = miller or title|keywords = "image processing") and not author = brown`
+
+The `=` sign is actually a shorthand for `contains`. Searching for an exact match is possible using `matches` or `==`. Using `!=` tests if the search term is *not* contained in the field (equivalent to `not ... contains ...`). The selection of field types to search (required, optional, all) is always overruled by the field specification in the search expression. If a field is not given, all fields are searched. For example, `video and year == 1932` will search for entries with any field containing `video` and the field `year` being exactly `1932`.
+
+#### Pseudo fields
+
+JabRef defines the following pseudo fields:
+
+|                  |                                      |                                                                                                                                                                                                                                                                   |
+| ---------------- | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Pseudo field** | **Purpose**                          | **Example**                                                                                                                                                                                                                                                       |
+| `anyfield`       | Search in any field                  | `anyfield contains fruit`: search for entries having one of its fields containing the word **fruit**. This is identical to just writing `apple`. It may be more useful as `anyfield matches apple`, where one field must be exactly `apple` for a match.          |
+| `anykeyword`     | Search among the keywords            | `anykeyword matches apple`: search for entries which has the word **apple** among its keywords. However, as this also matches `pineapple`, it may be more useful in searches of the type `anykeyword matches apple`, which will not match `apples` or `pineapple` |
+| `bibtexkey`      | Search for citation keys             | `bibtexkey == miller2005`: search for an entry whose BibTeX key is **miller2005**                                                                                                                                                                                 |
+| `entrytype`      | Search for entries of a certain type | `entrytype = thesis`: search entries whose type (as displayed in the `entrytype` column) contains the word **thesis** (which would be **phdthesis** and **mastersthesis**)                                                                                        |
+
+#### [](){#regex} Regular expressions
+
+##### Background
+
+Regular expressions (regex for short) define a language for specifying the text to be matched, for example when searching. JabRef uses regular expressions as defined in Java. For extensive information, please, look at the [documentation](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html) and at the [tutorial](https://docs.oracle.com/javase/tutorial/essential/regex/).
+
+##### Regular expressions and casing
+
+By default, regular expressions do not account for upper/lower casing. Hence, while the examples below are all in lower case, they match also upper- and mixed case strings.
+
+If casing is important to your search, activate the case-sensitive button.
+
+##### Searching for entries with an empty or missing field
+
+- `.` means any character
+- `+` means one or more times
+
+`author != .+`
+
+##### Searching for a given word
+
+- `\b` means word boundary
+- `\B` means not a word boundary
+
+`keywords = \buv\b` matches *uv* but not *lluvia* (it does match *uv-b* however)
+
+`author = \bblack\b` matches *black* but neither *blackwell* nor *blacker*
+
+`author == black` does not match *john black*, but `author = \bblack\b` does.
+
+`author = \bblack\B` matches *blackwell* and *blacker*, but not *black*.
+
+##### Searching with optional spelling
+
+- `?` means none or one copy of the preceeding character.
+- `{n,m}` means at least *n*, but not more than *m* copies of the preceding character.
+- `[ ]` defines a character class
+
+`title =neighbou?r` matches *neighbour* and *neighbor*, and also *neighbours* and *neighbors*, and *neighbouring* and *neighboring*, etc.
+
+`title = neighbou?rs?\b` matches *neighbour* and *neighbor*, and also *neighbours* and *neighbors*, but neither *neighbouring* nor *neighboring*.
+
+`author = s[aá]nchez` matches *sanchez* and *sánchez*.
+
+`abstract = model{1,2}ing` matches *modeling* and *modelling*.
+
+`abstract = modell?ing` also matches *modeling* and *modelling*.
+
+##### Searching for strings with a special character (`()[]{}\^-=$!|?*+.`)
+
+If a special character (i.e. `(` `)` `[` `]` `{` `}` `` `^` `-` `=` `$` `!` `|` `?` `*` `+` `.` ) is included in your search string, it has to be escaped with a backslash, such as `\}` for `}`.
+
+It means that to search for a string including a backslash, two consecutive backslaskes (`\`) have to be used: `abstract = xori{\\c{c}}o` matches *xoriço*.
+
+##### Searching for strings with double quotation marks (`"`)
+
+The character `"` has a special meaning: it is used to group words into phrases for exact matches. So, if you search for a string that includes a double quotation, the double quotation character has to be replaced with the hexadecimal character 22 in ASCII table `\x22`.
+
+Hence, to search for *{\"o}quist* as an author, you must input `author = \{\\\x22o\}quist`, with regular expressions enabled (Note: the *{*, ** and the *}* are escaped with a backslash; see above).
+
+Indeed, `\"` does not work as an escape for `"`. Hence, neither `author = {\"o}quist` with regular expression disabled, nor `author = \{\\\"O\}quist` with regular expression enabled, will find anything even if the name *{\"o}quist* exists in the database.
