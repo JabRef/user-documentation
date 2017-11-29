@@ -1,4 +1,4 @@
 ---
-redirect:   /fr/DOAJ
-layout:     redirect
+redirect: /en/DOAJ
+layout: redirect
 ---

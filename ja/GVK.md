@@ -1,39 +1,41 @@
 ---
-title: GVKから項目を取得するには
+title: Fetching entries from GVK
+helpCategories:
+  - Fetching entries from the web
+  - '... using online bibliographic database'
 ---
+# Fetching entries from GVK
 
-# GVKから項目を取得するには
+[GVK](https://gso.gbv.de), the GBV Union Catalogue, is a multimaterial bibliographic database of seven German federal states. It covers 41.5 million records of books, conference proceedings, periodicals, dissertations, microfilms and electronic resources.
 
-[GVK](https://gso.gbv.de) (GBV Union Catalogue)は，ドイツ七州の複合媒体文献データベースであり，4,150万を超える書籍・学会論文・定期刊行物・学位論文・マイクロフィルム・電子リソースを収録しています．
+To fetch entries from GVK, choose **Search → Web search**, and the search interface will appear in the side pane. Select **GVK (Gemeinsamer Verbundkatalog)** in the dropdown menu. To start a search, enter the words of your query, and press <kbd>Enter</kbd> or the **Fetch** button.
 
-GVKから項目を取得するには，**検索 → ウェブ検索** を選択してください．すると，サイドペインに検索インタフェースが現れますので，ドロップダウンメニューから，**GVK (Gemeinsamer Verbundkatalog)** を選択します．そこで，質問を入力し，**Enter** 鍵を押すか，**取得** ボタンを押して，検索を開始してください．
+The results are displayed in the [import inspection window](ImportInspectionDialog). In case an error occurs, it is shown in a popup.
 
-結果は，[読込検査ウィンドウ](ImportInspectionDialog)に表示されます．エラーが発生した場合には，ポップアップに表示されます．
+## Advanced search
 
-## 詳細検索
+You can simply enter words / names / years you want to search for, or you can specify search keys. Supported keys are:
 
-検索したい単語・名前・西暦をそのまま入力しても良いですし，検索鍵(キー)を指定することもできます．サポートされている鍵は以下の通りです．
+- all - all words. Not specifYing a search key results in an "all" search
+- tit - title words
+- per - authors, editors, etc.
+- thm - topics
+- slw - key words
+- txt - tables of content
+- num - numbers, e.g. ISBN
+- kon - names of conferences
+- ppn - Pica Production Numbers of the GVK
+- bkl - Basisklassifikation-numbers
+- erj - year of publication
 
--   all - 全ての単語．検索鍵を指定しない場合には，「all」を指定したのと同じことになります
--   tit - タイトルの単語
--   per - 著者・編者等
--   thm - トピック
--   slw - キーワード
--   txt - 目次
--   num - 番号，例えばISBN
--   kon - 学会名
--   ppn - GVKのPica Production Numbers
--   bkl - Basisklassifikationの番号
--   erj - 発行年
+### Notes
 
-### 註釈
+- queries can be combined with "and". The use of "and" is optional, though.
+- in many cases you can use the truncation sign "?"
+- spaces in person names are not supported yet. Please use the truncation sign ? after the first name for several given names. E.g. "per Maas,jan?"
 
--   問い合わせは「and」を使って繋げることができます．ただし，「and」の使用は，必須ではありません．
--   多くの場合，打ち切り記号「?」を使うことができます．
--   人名中の空白は，まだサポートされていません．ファーストネームの後に名が複数続く場合には，打ち切り記号?を使ってください．例：「per Maas,jan?」
+### Sample queries
 
-### 問い合わせ例
-
--   「marx kapital」
--   「per grodke and tit db2」
--   「per Maas,jan?」
+- "marx kapital"
+- "per grodke and tit db2"
+- "per Maas,jan?"

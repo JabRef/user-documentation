@@ -1,11 +1,13 @@
 ---
-title: CiteSeerXから項目を取得するには
+title: Fetching entries from CiteSeerX
+helpCategories:
+  - Fetching entries from the web
+  - '... using online bibliographic database'
 ---
+# Fetching entries from CiteSeerX
 
-# CiteSeerXから項目を取得するには
+[CiteSeerX](http://csxstatic.ist.psu.edu/about) is a public search engine for scientific and academic papers primarily with a focus on computer and information science. However, CiteSeerX has been expanding into other scholarly domains such as economics, physics and others ([Wikipedia](https://en.wikipedia.org/wiki/CiteSeer)).
 
-[CiteSeerX](http://csxstatic.ist.psu.edu/about)は，計算機科学および情報科学に主眼を置いた科学・学術論文のパブリック検索エンジンです．しかしながら，CiteSeerXは，経済学や物理学などの他の学術分野にも拡大してきています([Wikipedia](https://en.wikipedia.org/wiki/CiteSeer))．
+To fetch entries from CiteSeerX, choose **Search → Web search**, and the search interface will appear in the side pane. Select **CiteSeerX** in the dropdown menu. To start a search, enter the words of your query, and press <kbd>Enter</kbd> or the **Fetch** button.
 
-CiteSeerXから項目を取得するには、**検索 → ウェブ検索** を選択してください．すると，サイドペインに検索インタフェースが現れますので，ドロップダウンメニューから，**CiteSeerX** を選択します．そこで，質問を入力し，**Enter** を押すか，**取得** ボタンを押して，検索を開始してください．
-
-結果は，[読込検査ウィンドウ](ImportInspectionDialog)に表示されます．エラーが発生した場合には，ポップアップに表示されます．
+The results are displayed in the [import inspection window](ImportInspectionDialog). In case an error occurs, it is shown in a popup.

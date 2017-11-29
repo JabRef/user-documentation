@@ -1,11 +1,14 @@
 ---
-title: Récupération d'entrées en utilisant DiVA
+title: Creating entries from DiVA
+helpCategories:
+  - Fetching entries from the web
+  - '... using publication identifiers'
+since: 3.7
 ---
+# Creating entries from DiVA
 
-# Récupération d'entrées en utilisant DiVA
+[DiVA (Digitala Vetenskapliga Arkivet)](http://www.diva-portal.org/) is a database with publications from about [40](www.diva-portal.org/smash/aboutdiva.jsf) Swedish universities and research institutions.
 
-[DiVA (Digitala Vetenskapliga Arkivet)](http://www.diva-portal.org/) est une base de données de publications provenant d'environ [30 universités et établissements d'enseignement supérieur suédois](http://www.diva-portal.org/smash/aboutdiva.jsf).
+To use this feature, choose **BibTeX → New entry...**. In the lower part, there is the box "ID-based entry generator". In the field "ID type", "DiVA" can be selected (see screenshot below). Select the field "ID" and enter the DiVA here (e.g., `diva2:260746`) and press <kbd>Enter</kbd> to generate an entry based on the Id. You can also click on "Generate". The found entry is opened in an entry editor. In case an error occurs, a popup is shown.
 
-Pour utiliser cette fonction, choisissez **Recherche → recherche Web**, et l'interface de recherche s'affichera dans le panneau latéral. Sélectionnez **DiVA** dans le menu déroulant.
-
-Entrer l'identifiant DiVA, par exemple **diva2:260746**, dans le champ de recherche et presser sur **Entrer** ou sur le bouton **Recherche**. L'entrée sera récupérée et ajoutée à votre base actuellement active. En cas de survenue d'une erreur, elle s'affichera dans une fenêtre.
+![Screenshot of new entry dialog](./images/NewEntryChooseType-IDGeneratorHighlighted-Diva.png)

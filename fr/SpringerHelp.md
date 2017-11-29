@@ -1,4 +1,4 @@
 ---
-redirect:   /fr/Springer
-layout:     redirect
+redirect: /en/Springer
+layout: redirect
 ---

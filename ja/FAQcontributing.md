@@ -1,73 +1,62 @@
 ---
-title: 貢献方法
+title: Contributing
+helpCategories:
+  - FAQ
 ---
+# Contributing
 
-# 貢献方法
+## I am not a programmer
 
-## 私はプログラマーではありません
+### I would like to improve the help page. What are the steps?
 
-### JabRefの取扱説明書類を改善するには，どうすればいいでしょうか．
+Please follow our [CONTRIBUTING.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/CONTRIBUTING.md) file.
 
-[私たちの貢献上のガイドライン](https://github.com/JabRef/help.jabref.org/blob/gh-pages/CONTRIBUTING.md)の指示に従ってください．
+### I would like to help translating JabRef to another language. How do I get started?
 
-### JabRefを別の言語に翻訳するのを手伝いたいと思っています．どこから手をつけたらいいでしょうか．
+We encourage you to read about [translating JabRef](TranslatingGUI).
 
-[JabRefを翻訳する](TranslatingGUI)に目を通していただくことをお勧めします．
+### I want to keep Wikipedia pages up-to-date
 
-### Wikipediaページを最新にしておきたいのです．
+JabRef improves -- and Wikipedia pages should keep up!
 
-JabRefは改良されていきます −−− Wkpediaページも追随させなくてはなりません！
+Simply click on "Edit" (top right-hand tab).
 
-（右上タブの）「編集」をクリックするだけです．
+Currently existing pages are:
 
-下記のページが現在存在します：
+- Deutsch: <https://de.wikipedia.org/wiki/JabRef>
+- English: <https://en.wikipedia.org/wiki/JabRef>
+- Español: <https://es.wikipedia.org/wiki/JabRef>
+- Français: <https://fr.wikipedia.org/wiki/JabRef>
+- Italiano: <https://it.wikipedia.org/wiki/JabRef>
+- Русский: <https://ru.wikipedia.org/wiki/JabRef>
+- Svenska: <https://sv.wikipedia.org/wiki/JabRef>
+- Українська: <https://uk.wikipedia.org/wiki/JabRef>
+- 中文: <https://zh.wikipedia.org/wiki/JabRef>
 
-- Deutsch: https://de.wikipedia.org/wiki/JabRef
-- English: https://en.wikipedia.org/wiki/JabRef
-- Español: https://es.wikipedia.org/wiki/JabRef
-- Français: https://fr.wikipedia.org/wiki/JabRef
-- Русский: https://ru.wikipedia.org/wiki/JabRef
-- Svenska: https://sv.wikipedia.org/wiki/JabRef
-- Українська: https://uk.wikipedia.org/wiki/JabRef
-- 中文: https://zh.wikipedia.org/wiki/JabRef
+If there is no page for you own language, you can easily create one.
 
-あなたの母語のページがなければ，作成していただいて結構です．
+### I have some cool feature requests
 
+[Come discuss about it!](http://discourse.jabref.org/)
 
-### 素敵な機能追加リクエストがあります．
+### Can I make a donation? How?
 
-[議論をしに来てください！](http://discourse.jabref.org/)
+Donations keeps us going! You can use Paypal, Flattr, or bank transfers. Your institution/company can contribute too, through bank transfer for example. All details are provided at <https://donations.jabref.org>.
 
+Our team consists of volunteers. To provide better support, we are currently trying to get a funded developer on board. Please consider supporting this:
 
-### 寄付をしても良いですか．どのようにすれば良いでしょうか．
+[![Support](https://supporterhq.com/api/b/8rzilokn64agwryeus1y17b0r/JabRef)](https://supporterhq.com/support/8rzilokn64agwryeus1y17b0r/JabRef)
 
-寄付のおかげで，私たちは継続が可能となります！PaypalやFlattr，銀行送金が利用できます．
-ご所属の組織・企業名義でも，銀行送金等を通して，貢献いただくことが可能です．
-全詳細は <https://github.com/JabRef/jabref/wiki/Donations> にあります．
+## I am a programmer
 
-私たちのチームはボランティアで成り立っています．
-より良いサポートを提供するために，現在，運営委員会に寄付金で雇用された開発者を配属させようとしています．
-これに対してサポートを提供することを是非ご検討ください：
+### I want to learn about code quality
 
-[![サポート](https://supporterhq.com/api/b/8rzilokn64agwryeus1y17b0r/JabRef)](https://supporterhq.com/support/8rzilokn64agwryeus1y17b0r/JabRef)
+Please head to [codecov](https://codecov.io/github/JabRef/jabref) to see current code coverage and where to improve our tests. You can head to [codacy](https://www.codacy.com/app/simonharrer/jabref/dashboard) to learn about one analysis of JabRef's code quality.
 
+### I want to start with something easy
 
-## 私はプログラマーです
+We collect small issues at <https://github.com/JabRef/jabref/labels/beginner> and at <https://github.com/koppor/jabref/labels/beginner>. You can read up there to find something easy to start with. Then, check our [CONTRIBUTING.md](https://github.com/JabRef/jabref/blob/master/CONTRIBUTING.md) for detailed information and further links.
 
+### I want something with huge impact
 
-### コード品質について知りたいのです．
-
-[codecov](https://codecov.io/github/JabRef/jabref)を開いて，現在のコード・カバレッジと，テストの改善点をごらんください．
-JabRefのコード品質の分析の一つを見るには，[codacy](https://www.codacy.com/app/simonharrer/jabref/dashboard)を開いてください．
-
-
-### 簡単なものから手掛けたいのです．
-
-小さな問題点を<https://github.com/koppor/jabref/issues>に集めています．
-手掛けやすいものを見つけるには，これを読むと良いでしょう．
-その後，詳細な情報と関連リンクを[CONTRIBUTING.md](https://github.com/JabRef/jabref/blob/master/CONTRIBUTING.md)でチェックしてください．
-
-
-### 大きな影響を及ぼしうるものを手掛けたいのです．
-
-それならば，[issues intended for external contributions](https://github.com/JabRef/jabref/labels/asking-for-a-pull-request)を見るのが良いでしょう．
+Then, the [issues intended for external contributions](https://github.com/JabRef/jabref/labels/help-wanted) are the right place to look at.

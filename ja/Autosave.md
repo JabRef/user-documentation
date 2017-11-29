@@ -1,25 +1,31 @@
 ---
-title: 自動保存
+title: Autosave
+helpCategories:
+  - General
+since: 3.7
 ---
+# Autosave
 
-# 自動保存
+## Purpose
 
-## 目的
+The autosave feature helps to to save an opened database without manual intervention. Furthermore it synchronizes your local files which are associated with appropriate [shared SQL databases](SQLDatabase).
 
-自動保存機能は，お使いのコンピューターやJabRefがクラッシュした場合に，データが失われることを回避するのに役立ちます．
+## Activation
 
-## 設定
+![Screenshot of the autosave preferences](./images/AutoSave.png)
 
-![自動保存設定のスクリーンショット](./images/AutoSave.png)
+You can activate the autosave feature through **Options → Preferences**, and then by choosing **File** on the left panel. At the lower part of the window, a section is dedicated to **AutoSave**.
 
-自動保存機能は，**オプション → 設定** で出てくるウィンドウの左パネルで **ファイル** を選択することで，自動機能を有効にし，かつ設定することができます．ウィンドウ下部に，**自動保存** というセクションがあります．
+## Autosave for local databases
 
-まず，自動保存を有効にするか否かを選択することができます（前者推奨）．それから，２つの自動保存の間の遅延時間を選択することができます．最後に，JabRefが自動保存ファイルを使用しようとするときに，通知するように設定することができます（これによって何かがおかしくなったことを知ることができます）．
+If you are working on `.bib` files which are located on your file system, the feature will detect your changes automatically and save them without further intervention.
 
-## 機能
+## Autosave for shared databases
 
-自動保存が有効になっている場合には，JabRefは，最後に保存されてからお使いのデータベースが変更されたかどうかを，定期的に(間隔は設定可能)点検します．各データベースについて，JabRefはそのコピーを`.$[ファイル]$`という名称のファイルに保存します．ここで`[ファイル]`は該当するデータベースのファイル名です．自動保存ファイルは，bibファイルと同じディレクトリに作られます．
+Generally you are able to save a shared database after connecting to it. This feature enables a full synchronization of your local bib file with the [shared SQL database](SQLDatabase) which could simoultaneously be used by other collaborators.
 
-自動保存ファイルは，能動的にデータベースを保存したときやJabRefを正常に終了したときには削除されます．しかしながら，JabRefがクラッシュによって終了した場合には，自動保存ファイルは残されたままになります．この場合には，次にデータベースを開こうとした際に自動保存ファイルが検出され，データベースを自動保存ファイルから回復するかどうか尋ねられます．
+## Remarks
 
-自動保存は，既定では有効にされており，5分ごとに保存されます．望むならば，自動保存を使用する前に尋ねるオプションを無効にすることができます．この場合には，JabRefは，通知することなく静かにデータベースを回復します．
+By default this feature is disabled for local databases. It has to be kept apart from the [main backup functionality](Backup) as the backup is running continuously without users influence.
+
+By using the [gitignore.io](https://www.gitignore.io/) service, you can generate an appropriate `.gitignore` file by opening https://www.gitignore.io/api/jabref.

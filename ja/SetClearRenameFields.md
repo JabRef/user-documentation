@@ -1,11 +1,11 @@
 ---
-title: フィールドを設定/クリア/名称変更
+title: Set/clear/rename fields
+helpCategories:
+  - Fields
+stub: true
 ---
+# Set/clear/rename fields
 
-# フィールドを設定/クリア/名称変更
+This feature is available through **Edit → Set/clear/rename fields**.
 
-```
-註：この機能は，十分に説明されていません．このヘルプファイルの編集に貢献をお願いいたします．
-```
-
-この機能は，**編集→フィールドを設定/クリア/名称変更** で使用できます．
+![Screenshot of the Related Articles Tab](./images/SetClearRenameFields.png)

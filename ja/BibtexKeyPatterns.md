@@ -1,75 +1,101 @@
 ---
-title: BibTeX鍵(キー)生成方法の調整
-helpCategories: ["設定"]
+title: Customizing the BibTeX key generator
+helpCategories:
+  - Setup
 ---
+# Customizing the BibTeX key generator
 
-# BibTeX鍵(キー)生成方法の調整
+The pattern used in the auto generation of BibTeX labels can be set for each of the standard entry types in **Options → Preferences**, tab **BibTeX key generator**. Additionally, if you right click the tab of a database, the menu **BibTeX key patterns** allows to set specific key patterns for this database.
 
-JabRef設定の「BibTeX鍵の生成」タブでは，BibTeXラベルの自動生成に使用されるフィールドを設定することができます．パターンは，標準的な項目型それぞれに対して設定することができます．データベースのタブを右クリックして出てくるメニュー「BibTeX鍵パターン」を使えば，当該データベース用の特定の鍵パターンを指定することができます．
+## Key patterns
 
-## 鍵(キー)パターン
+The key pattern can contain any text you wish, in addition to field markers that indicate that a specific field of the entry should be inserted at that position of the key. A field marker generally consists of the field name enclosed in square braces, e.g. **\[volume\]**. If the field is undefined in an entry at the time of key generation, no text will be inserted by the field marker.
 
-パターンには，特定の項目フィールドを鍵(キー)内のその場所に入れることを示すフィールドマーカーの他，好きな文字列を含めることができます．フィールドマーカーは，**\[volume\]** のように，通常，フィールド名を角括弧で囲ったものです．鍵を生成するときに，項目内でフィールドが定義されていなければ，フィールドマーカーには何も挿入されません．
+### Default key pattern
 
-フィールド中の特定部分を抜き出す特殊フィールドマーカーがいくつか用意されています．これらを下記に列挙します．追加したい特殊フィールドマーカーがありましたら，ぜひお知らせください．
+If you have not defined a key pattern for a certain entry type, the **Default pattern** will be used. You can change the default pattern - its setting is above the list of entry types in the **BibTeX key generator** section of the **Preferences** dialog.
 
-特殊フィールドマーカー
+The default key pattern is \[auth\]\[year\], and this could produce keys like e.g. `Yared1998` If the key is not unique in the current database, it is made unique by adding one of the letters a-z until a unique key is found. Thus, the labels might look like:
 
--   **\[`auth`\]**: 第1著者の姓
--   **\[`authors`\]**: 全著者の姓
--   **\[`authorLast`\]**: 末尾著者の姓
--   **\[`authorsN`\]**: N人めの著者までの姓．それよりも多い著者がいる場合は，その後に"EtAl"を付けます．
--   **\[`authorsAlpha`\]**: BibTeXスタイル「alpha」に対応します．著者1名の時：姓の最初の3文字．著者2〜4名：姓の最初の文字を繋げたもの．著者5名以上：最初の著者3名の最初の文字を繋げ，最後に「+」を付けたもの．
--   **\[`authIniN`\]**: 各著者の姓の頭部最大N文字．
--   **\[`authorIni`\]**: 第1著者の姓の最初5文字と，残りの著者の姓の頭文字．
--   **\[`authN`\]**: 第1著者の姓の頭部N文字．
--   **\[`authN_M`\]**: M番目の著者の姓の頭部N文字．
--   **\[`auth.auth.ea`\]**: 最初の著者2名の姓と，3名以上著者がいる時には「.ea」を追加．
--   **\[`auth.etal`\]**: 第1著者の姓の後に，著者が2名の時は第2著者の姓，著者が3名以上の時は「.etal」．
--   **\[`authEtAl`\]**: 第1著者の姓の後に，著者が2名の時は第2著者の姓，著者が3名以上の時は「EtAl」．これは，`auth.etal`に近いですが，著者同士が「.」によって区切られないことと，著者が3名以上の時に「.etal」ではなく「Etal」が付け加えられるところが違います．
--   **\[`authshort`\]**: 著者1名の時はその姓，著者2名以上の時は，3名までの著者の姓の最初の文字．4名以上の著者がいる時には，その後に+文字．
--   **\[`authForeIni`\]**: 第1著者の名のイニシャル．
--   **\[`authorLastForeIni`\]**: 最後の著者の名のイニシャル．
+`Yared1998` `Yared1998a` `Yared1998b`
 
-**《註》**(編集書籍など)著者がいない場合には，上記の **`[auth...]`** マーカーはすべて，編者を(ある場合には)代わりに使用します．したがって，著者のいない書籍の編者は，ラベル生成用には著者として取り扱われます．この挙動を望まない，即ち著者がいない場合は何も出力しないマーカーが必要な場合には，上記のコードにおいて **`auth`** の代わりに **`pureauth`** を使用してください．例：**`[pureauth]`** や **`[pureauthors3]`** など．
+### Special field markers
 
--   **\[`edtr`\]**: 第1編者の姓
--   **\[`edtrIniN`\]**: 各編者の姓の頭部N文字以内
--   **\[`editors`\]**: 全編者の姓
--   **\[`editorLast`\]**: 最後の編者の姓
--   **\[`editorIni`\]**: 第1編者の姓の頭部5文字と，残りの編者の姓の頭文字
--   **\[`edtrN`\]**: 第1編者の頭部N文字
--   **\[`edtrN_M`\]**: 第M編者の頭部N文字
--   **\[`edtr.edtr.ea`\]**: 最初の2編者の姓と，3名以上の場合は「.ea」を追加．
--   **\[`edtrshort`\]**: 編者1名の時はその姓，編者2名以上の時は，3名までの編者の姓の最初の文字．4名以上の編者がいる時には，その後に+文字．
--   **\[`edtrForeIni`\]**: 第1編者の名のイニシャル．
--   **\[`editorLastForeIni`\]**: 最後の編者の名のイニシャル．
--   **\[`firstpage`\]**: 発行物の最初のページ番号(注意：bibtexは`7,41,73--97`あるいは`43+`という表記をするので，pagesフィールド中の最小のページ番号を返します)
--   **\[`keywordN`\]**: "keywords"フィールドのN番目のキーワード．キーワードがコンマかセミコロンで区切られていると仮定します．
--   **\[`lastpage`\]**: 発行物の最後のページ(`firstpage`の註を参照)
--   **\[`shorttitle`\]**: タイトルの最初の3単語
--   **\[`shortyear`\]**: 出版年の下2桁
--   **\[`veryshorttitle`\]**: タイトルの最初の単語．「the」「a」「an」を除く．
+Several special field markers are offered, which extract only a specific part of a field. Feel free to suggest new special field markers.
 
-フィールド名(もしくは上記の準フィールド名)には，1つ以上の修正辞を後ろに付けることができます．修正辞は記述順に適用されます．
+#### Author-related key patterns
 
--   **:abbr**: フィールド名や特殊フィールドマーカーで生成された文字列を短縮形にします．最初の文字と，その後は空白の次の文字のみを使います．例えば，**\[journal:abbr\]** は，ジャーナル名"Journal of Fish Biology"を"JoFB"と出力します．
--   **:lower**: フィールドマーカーが挿入した文字列を強制的に小文字にします．例えば，**\[auth:lower\]** は，第1著者の姓を小文字で出力します．
--   **:upper**: フィールドマーカーが挿入した文字列を強制的に大文字にします．例えば，**\[auth:upper\]** は，第1著者の姓を大文字で出力します．
--   **:(x)**: xには任意の文字列を入れてください．この修正辞の前のフィールドマーカーの値が空の時，括弧の間の文字列を挿入します．例えば，**\[volume:(unknown)\]** というマーカーは，項目の`volume`フィールドが設定されていれば，それを返し，設定されていなければ，**unknown** を返します．
+- **\[`auth`\]**: The last name of the first author
+- **\[`authors`\]**: The last name of all authors
+- **\[`authorLast`\]**: The last name of the last author
+- **\[`authorsN`\]**: The last name of up to N authors. If there are more authors, “EtAl” is appended.
+- **\[`authorsAlpha`\]**: Corresponds to the BibTeX style “alpha”. One author: First three letters of the last name. Two to four authors: First letters of last names concatenated. More than four authors: First letters of last names of first three authors concatenated. “+” at the end.
+- **\[`authIniN`\]**: The beginning of each author's last name, using no more than N characters.
+- **\[`authorIni`\]**: The first 5 characters of the first author's last name, and the last name initials of the remaining authors.
+- **\[`authN`\]**: The first N characters of the first author's last name
+- **\[`authN_M`\]**: The first N characters of the Mth author's last name
+- **\[`auth.auth.ea`\]**: The last name of the first two authors, and “.ea” if there are more than two.
+- **\[`auth.etal`\]**: The last name of the first author, and the last name of the second author if there are two authors or “.etal” if there are more than two.
+- **\[`authEtAl`\]**: The last name of the first author, and the last name of the second author if there are two authors or “EtAl” if there are more than two. This is similar to `auth.etal`. The difference is that the authors are not separated by “.” and in case of more than 2 authors “EtAl” instead of “.etal” is appended.
+- **\[`authshort`\]**: The last name if one author is given; the first character of up to three authors' last names if more than one author is given. A plus character is added, if there are more than three authors.
+- **\[`authForeIni`\]**: The forename initial of the first author.
+- **\[`authorLastForeIni`\]**: The forename initial of the last author.
 
-ある項目型に対して鍵パターンを定義していない場合には，**既定鍵パターン** が使われます．既定パターンは変更することができ，**設定** ダイアログの **鍵パターン** セクションの項目型一覧の上で設定します．
+**Note:** If there is no author (as in the case of an edited book), then all of the above **`[auth...]`** markers will use the editor(s) (if any) as a fallback. Thus, the editor(s) of a book with no author will be treated as the author(s) for label-generation purposes. If you do not want this behaviour, i.e. you require a marker which expands to nothing if there is no author, use **`pureauth`** instead of **`auth`** in the above codes. For example, **`[pureauth]`**, or **`[pureauthors3]`**.
 
-既定鍵パターンは\[auth\]\[year\]となっており，これは`Yared1998`のような鍵を生成します．現在のデータベース中で鍵が一意でない場合には，鍵が一意になるようにa-zのうち1文字を付け加えます．したがって，ラベルは以下のような形になります．
+#### Editor-related key patterns
 
-`Yared1998`
-`Yared1998a`
-`Yared1998b`
+- **\[`edtr`\]**: The last name of the first editor
+- **\[`edtrIniN`\]**: The beginning of each editor's last name, using no more than N characters
+- **\[`editors`\]**: The last name of all editors
+- **\[`editorLast`\]**: The last name of the last editor
+- **\[`editorIni`\]**: The first 5 characters of the first editor's last name, and the last name initials of the remaining editors.
+- **\[`edtrN`\]**: The first N characters of the first editor's last name
+- **\[`edtrN_M`\]**: The first N characters of the Mth editor's last name
+- **\[`edtr.edtr.ea`\]**: The last name of the first two editors, and “.ea” if there are more than two.
+- **\[`edtrshort`\]**: The last name if one editor is given; the first character of up to three editors' last names if more than one editor is given. A plus character is added, if there are more than three editors.
+- **\[`edtrForeIni`\]**: The forename initial of the first editor.
+- **\[`editorLastForeIni`\]**: The forename initial of the last editor.
 
-## 正規表現での置換
+#### Title-related key patterns
 
-鍵パターンを適用して鍵を生成した後，鍵生成機構に特定の正規表現を検索させ，それを文字列で置換することができます．正規表現文字列と置換文字列は，鍵パターン一覧の下にあるテキストフィールドに入力します．置換文字列が空の場合，正規表現に一致した文字列は，生成された鍵から削除されます．例えば，置換対象に`\p{Punct}`あるいは`[:/%]`を入れ，置換文字列を空にした場合，鍵から不必要な文字を取り除くことができます．これは，BibTeX鍵にしたがってPDFの名前を付ける時便利です．
+- **\[`shorttitle`\]**: The first 3 words of the title
+- **\[`veryshorttitle`\]**: The first word of the title, discounting ‘the’, ‘a’, ‘an’.
+- **\[`camel`\]**: Capitalize and concatenate all the words of the title. For example, `An awesome paper on JabRef` will become `AnAwesomePaperOnJabref`
+- **\[`title`\]**: Capitalize all the significant words of the title, and concatenate them. For example, `An awesome paper on JabRef` will become `AnAwesomePaperonJabref`
 
-## 鍵生成の設定
+#### Other key patterns
 
-鍵生成の挙動は，必要に応じて変更することができます．当該セクションは，**オプション → 設定** の **BibTeX鍵の生成** タブにあります．
+- **\[`firstpage`\]**: The number of the first page of the publication (Caution: this will return the lowest number found in the pages field, since BibTeX allows `7,41,73--97` or `43+`.)
+- **\[`pageprefix`\]**: The non-digit prefix of pages (like "L" for L7) or "" if no non-digit prefix exists (like "" for `7,41,73--97`) .
+- **\[`keywordN`\]**: Keyword number N from the “keywords” field, assuming keywords are separated by commas or semicolons.
+- **\[`lastpage`\]**: The number of the last page of the publication (See the remark on `firstpage`)
+- **\[`shortyear`\]**: The last 2 digits of the publication year
+
+## Modifiers
+
+A field name (or one of the above pseudo-field names) may optionally be followed by one or more modifiers. Modifiers are applied in the order they are specified.
+
+- **:abbr**: Abbreviates the text produced by the field name or spcial field marker. Only the first character and subsequent characters following white space will be included. For examples: 
+   - **\[journal:abbr\]** would from the journal name “Journal of Fish Biology” produce “JoFB”.
+   - **\[title:abbr\]** would from the title “An awesome paper on JabRef” produce “AAPoJ”.
+   - **\[camel:abbr\]** would from the title “An awesome paper on produce “AAPOJ”.
+- **:lower**: Forces the text inserted by the field marker to be in lowercase. For example, **\[auth:lower\]** expands the last name of the first author in lowercase.
+- **:upper**: Forces the text inserted by the field marker to be in uppercase. For example, **\[auth:upper\]** expands the last name of the first author in uppercase.
+- **:(x)**: Replace x by any string. The string between the parentheses will be inserted if the field marker preceding this modifier resolves to an empty value. For instance, the marker **\[volume:(unknown)\]** will return the entry's volume if set, and the string **unknown** if the entry's `volume` field is not set.
+
+## Regular expression replace
+
+After the key pattern has been applied to produce a key, you can choose to have the key generator search for occurrences of a specific regular expression, and replace it with a string. The regular expression and replacement string are entered in the text fields below the list of key patterns. If the replacement string is empty, matches of the regular expression will simply be removed from the generated key. For instance, `\p{Punct}` or `[:/%]` can be replaced by nothing to remove unwanted characters from the key. This may be useful when naming PDFs according to BibTeX keys.
+
+## How to configure
+
+To change the pattern to `[authors]:[camel]`, execute the following steps:
+
+1. Open the preferences ![Options Preferences](./images/OptionsPreferences.png)
+
+2. Navigate to "BibTeX key generator" ![BibTeX key generator preferences](./images/Preferences - BibTeX key generator.png)
+
+3. Change the default pattern to `[authors]:[camel]`. ![BibTeX key generator preferences - authors camel](./images/Preferences - BibTeX key generator - authors camel.png)
+
+4. Click "OK"

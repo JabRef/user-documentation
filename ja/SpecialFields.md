@@ -1,39 +1,40 @@
 ---
-title: 特殊フィールド
+title: Special Fields
 outdated: true
+helpCategories:
+  - Fields
 ---
+# Special Fields
 
-# 特殊フィールド
+Special fields offer the functionality
 
-特殊フィールドは以下の機能を提供します。
+- rate read papers
+- mark papers as relevant for the work
+- mark BibTeX entries as quality assured, and
+- prioritize unread papers.
 
--   読了論文の評価
--   論文を作業に関連があるものとして標識
--   BibTeX項目の品質が保証されているものとして標識
--   未読の論文に優先度をつける
+The main difference from the marked entry is that the rated entry is not floating by default and only highlight the number column. Thus, an entry may be both marked and rated.
 
-項目の標識付けと違う主な点は、既定値では、評価した項目は表上部に移動しないことと、評価列のみが着色されることです。したがって、項目には、標識付けと評価の両方を行うことができます。
+Each special field may be turned on and off in the settings.
 
-各特殊フィールドは、設定で入切することができます。
+## Types of Fields
 
-## フィールド型
+### Ranking
 
-### 評価
+The aim is to add a functionality to set a range of “positive” ratings. JabRef offers a rank from one to five stars to rate papers.
 
-これは「昇順の」評価を設定する機能です。JabRefでは、1つ星から5つ星までを使って論文を評価できます。
+### Relevance
 
-### 関連性
+An entry may be marked as relevant.
 
-項目を関連があるものとして標識できます。
+### Quality Assured
 
-### 品質保証済
+An entry may be marked as quality assured. The intention is to mark BibTeX entries, where a thorough checking of the field contents has been done.
 
-項目を品質保証済として標識できます。BibTeX項目のフィールドの内容について、徹底的なチェックがなされていることを標識するためのものです。
+### Priority
 
-### 優先度
+One may prioritize entries from prio3 (low) to prio1 (high). The main intention is to prioritize unread papers.
 
-項目の優先度をprio3 (低)からprio1 (高)まで付けることができます。未読論文の優先度を付けるためのものです。
+## Storage in the BibTeX Entry
 
-## BibTeX項目への記憶
-
-内部的には、特殊フィールドは、独立したBibTeXフィールドとして記憶されます。「特殊フィールドの値を独立したフィールドとしてBibTeXに書き込む」が有効になっている時、これらのフィールドは、データベースが保存される時にも書き込まれます。JabRefには、これらのフィールドをキーワードと同期する機能もあります。これは「キーワードと同期」を設定することで有効になります。この設定が有効になっていると、特殊フィールドを変更した分がキーワードフィールドに反映されます。逆に、キーワードを変更すると、特殊フィールドも変更されます。さらに、データベース読み込み時や新規項目の解析時に、特殊フィールドを設定するのにキーワードが用いられます。
+Internally, each special field is stored in a separate BibTeX field. If “Write values of special fields as separate fields to BibTeX” is active, these fields are also written when the database is saved. JabRef also offers synchronizing the fields with keywords. This is enabled by the setting “Synchronize with keywords”. If this setting is active, then each change in a special field is reflected in the keyword field. Vice versa, each change in a keyword also leads to a change in the special field. Additionally, when loading a the database or pasting a new entry, the keywords are used to set the special field values.

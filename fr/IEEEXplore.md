@@ -1,17 +1,21 @@
 ---
-title: Recherche IEEEXplore
+title: Fetching entries from IEEEXplore
+helpCategories:
+  - Fetching entries from the web
+  - '... using online bibliographic database'
 ---
+# Fetching entries from IEEEXplore
 
-# Recherche IEEEXplore
+[IEEEXplore](http://ieeexplore.ieee.org/Xplore/home.jsp)is a scholarly research database that indexes, abstracts, and provides full-text for articles and papers on computer science, electrical engineering and electronics. IEEEXplore comprises over 180 journals, over 1,400 conference proceedings, more than 3,800 technical standards, over 1,800 eBooks and over 400 educational courses ([Wikipedia](https://en.wikipedia.org/wiki/IEEE_Xplore))
 
-Pour utiliser cette fonction, choisissez **Recherche → Recherche Web**. L'interface de recherche apparaitra dans le panneau latéral. Sélectionnez **IEEEXplore** dans le menu déroulant.
+To fetch entries from IEEEXplore, choose **Search → Web search**, and the search interface will appear in the side pane. Select **IEEEXplore** in the dropdown menu. To start a search, enter the words of your query, and press <kbd>Enter</kbd> or the **Fetch** button.
 
-IEEEXplore permet l'accès à de la litterature technique en génie électrique, informatique et électronique. Pour lancer une recherche, entrez les mots de votre requête et appuyez sur **Entrée** ou sur le bouton **Rechercher**.
+By checking the **Include abstracts** checkbox, you may opt to download the abstracts along with the cite information for each entry. This will NOT cause more network queries.
 
-La recherche est effectuée en mode invité, ce qui signifie qu'au maximum 100 résultats vous seront retournés.
+The results are displayed in the [import inspection window](ImportInspectionDialog). In case an error occurs, it is shown in a popup.
 
-Vous pouvez choisir de télécharger les résumés avec les informations de citation pour chaque entrée en cochant la case **Inclure les résumés**. Cela ne créera PAS de requêtes réseau supplémentaires.
+## Notes
 
-L'option de téléchargement direct de citations BibTeX à partir de IEEEXplore ne fonctionne pas encore.
-
-Pour toute suggestion, envoyez s'il vous plaît un courriel à Oscar Gustafsson **ogib73@gmail.com** ou à Aaron Chen **nextAaron@gmail.com**.
+- The search is done in guest mode, which means that a maximum of 100 results will be returned.
+- The option to download BibTeX citations directly from IEEEXplore is not working yet.
+- Please email Oscar Gustafsson **ogib73@gmail.com** or Aaron Chen **nextAaron@gmail.com** for any suggestions.

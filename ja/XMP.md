@@ -1,35 +1,36 @@
 ---
-title: JabRefにおけるXMPメタデータ サポート
+title: XMP metadata support in JabRef
+helpCategories:
+  - Import/Export
 ---
+# XMP metadata support in JabRef
 
-# JabRefにおけるXMPメタデータ サポート
+XMP is a standard created by Adobe Systems for storing metadata (data about data) in files. An well known example for metadata are MP3 tags, which can be used to describe artist, album and song name of a MP3 file. Adding metadata to MP3 helps other people to identify the songs correctly independent of file-name and can provide means for software (MP3 players for instance) to sort and group songs.
 
-XMPは、ファイル中にメタデータ(データに関するデータ)を収録するために、Adobe Systemsによって作られた標準です。メタデータのよく知られた例としてはMP3タグがありますが、これはMP3ファイルのアーティストやアルバム、歌の名前を記述するのに用いられます。MP3にメタデータを書き加えると、他の人が、ファイル名とは独立に正しく楽曲を特定する助けとなる他、(MP3プレイヤーのような)ソフトウェアが、楽曲を整序したりグループ化したりするための手段を提供することになります。
+With XMP-support the JabRef team tries to bring the advantages of metadata to the world of reference managers. You can now choose to "Write XMP" metadata in the General Tab of JabRef, which will put all the BibTeX information into the PDF. If you then email this PDF to a colleague she can just drag the file into JabRef and all information that you entered will be available to her.
 
-XMPサポートによって、JabRef開発チームは、メタデータの利点を書誌情報管理の世界に持ち込もうとしました。JabRefタブ中の「XMPメタデータとして書き込む」ボタンを押すと、BibTeX情報をリンクされたPDFに書き込みます。このPDFを同僚に電子メールで送って、同僚がそのファイルをJabRefにドラッグすれば、あなたが入力した情報すべてが、この同僚にも利用可能になります。
+## Usage
 
-## 使用法
+To use the XMP-feature in JabRef you can do the following:
 
-JabRefでXMP機能を使うには、以下のようにしてください。
+- To **import a single annotated PDF-file** that contains XMP you can select "File → Import into... → XMP-annotated PDF" or drag the file into the main view.
+- To **write the bibliographic information to the associated PDF** do the following: Double click the entry in the main view, go to the "General" tab and click on "Write XMP".
+- If you want **to annotate all the PDFs in a given database** you can select "Tools → Write XMP for database"
+- To verify if it worked you can open the PDF in Adobe Acrobat and select "File → Document Properties → Additional Metadata → Advanced". In the tree to the right you should see an entry called "http://purl.org/net/bibteXMP". This works only with Adobe Acrobat, not with Adobe Reader.
+- If you don't have Adobe Acrobat, you can use `pdfinfo` instead in order to see the XMP metadata. `pdfinfo` is part of [Xpdf](http://www.foolabs.com/xpdf/) and [Popple](http://poppler.freedesktop.org).
 
--   XMPを含んでいる **注釈付きPDFファイルを読み込む** には、「ファイル→...に読み込む→XMP注釈付きPDF」を選択するか、そのファイルを基本ビューにドラッグしてください。
--   **関連したPDFに書誌情報を書き込む** には、基本ビューで項目をダブルクリックし、「General」タブ中の「XMPとして書き込む」ボタンを押してください。
--   **データベース中のすべてのPDFに注釈を付ける** 場合には、「ツール→XMPメタデータをPDFに書き出す」を選択してください。
--   うまく行ったかどうかを確認するには、PDFをAdobe Acrobatで開き、「ファイル→文書プロパティ→追加のMetadata→詳細」を選択してください。右側のツリーに「http://purl.org/net/bibteXMP」という項目があります。これは、Adobe Acrobatで動作しますが、Adobe Readerでは動作しません。
--   Adobe Acrobatがなければ、XMPメタデータを見るのに代わりに`pdfinfo`を使うことができます。`pdfinfo` は、[Xpdf](http://www.foolabs.com/xpdf)と[Poppler](http://poppler.freedesktop.org)の一部です。
+## BibTeXmp Fileformat
 
-## BibteXmpファイル形式
+XMP uses a subset of the Resource Description Framework (RDF) to store data. For JabRef a new metadata format is used which maps very closely to BibTeX. Basically all fields and values are turned into nodes of an XML document. Only authors and editors are stored as rdf:Seq-structures, so users of the data can skip the splitting on 'and's. All strings and crossrefs will be resolved in the data.
 
-XMPは、データを保管するのにResource Description Framework (RDF)のサブセットを使用します。JabRefでは、BibTeXに非常に近い形にマップする新しいメタデータ形式を使用しています。基本的にすべてのフィールドと値は、XML文書のノードに変換されます。authorsとeditorsのみがrdf:Seq構造として保管されるので、データのユーザーは「and」の分割作業をスキップすることができます。すべての文字列と相互参照は、データ中で解決されます。
+The following easy minimal schema is used:
 
-以下の簡単な最小限のスキーマを使用します。
+- The BibTeX-key is stored as `bibtexkey`.
+- The type of the BibTeX-entry is stored as `entrytype`.
+- `author` and `editor` are encoding as `rdf:Seq`s where the individual authors are represented as `rdf:li`s.
+- All other fields are saved using their field-name as is.
 
--   BibTeX鍵は`bibtexkey`として保管されます。
--   BibTeX鍵の型は`entrytype`として保管されます。
--   `author`と`editor`は、`rdf:Seq`としてエンコードされ、各著者は`rdf:li`として表されます。
--   他のフィールドは、すべてフィールド名そのものを使用して保存されます。
-
-下記はマッピングの例です。
+The following is an example of the mapping
 
     @INPROCEEDINGS{CroAnnHow05,
       author = {Crowston, K. and Annabi, H. and Howison, J. and Masango, C.},
@@ -40,8 +41,10 @@ XMPは、データを保管するのにResource Description Framework (RDF)の�
       timestamp = {2006.05.29},
       url = {http://james.howison.name/publications}
     }
+    
 
-これは以下のように変換されます。
+will be transformed into
+
     <rdf:Description xmlns:bibtex="http://jabref.sourceforge.net/bibteXMP/"
         bibtex:bibtexkey="CroAnnHow05"
         bibtex:year="2005"
@@ -60,17 +63,18 @@ XMPは、データを保管するのにResource Description Framework (RDF)の�
             </bibtex:author>
         <bibtex:entrytype>Inproceedings</bibtex:entrytype>
     </rdf:Description>
+    
 
-bibtexXMPを解析しようとする場合には、以下の点に注意してください。
+Beware of the following caveats if you trying to parse BibTeXMP:
 
--   RDFでは、属性-値の組はノードとして表すこともでき、その逆もできます。
+- In RDF attribute-value pairs can also be expressed as nodes and vice versa.
 
-## 関連リンク
+## Related Links
 
-XMPと注釈付きPDFに関するリンク:
+Some links about XMP and annotating PDFs
 
--   [James Howisonのブログ「Themp---MP3のように学術論文を管理する」](http://freelancepropaganda.com/themp/)
--   [XMPに関するXML.comの記事](http://www.xml.com/pub/a/2004/09/22/xmp)
--   Apache Software Foundationの[PDFBox](http://pdfbox.apache.org/)は、PDFとメタデータ ストリームにアクセスするのに使われるJavaライブラリです。
--   [PDF管理を論じているArsTechnica上の良いスレッド](http://arstechnica.com/civis/viewtopic.php?f=19&t=408429)
--   [Adobe XMPの仕様](http://www.adobe.com/content/dam/Adobe/en/devnet/xmp/pdfs/XMPSpecificationPart1.pdf)
+- [James Howison's blog "Themp\---Managing Academic Papers like MP3s"](http://freelancepropaganda.com/themp/)
+- [XML.com article about XMP](http://www.xml.com/pub/a/2004/09/22/xmp)
+- [PDFBox](http://pdfbox.apache.org/) by the Apache Software Foundation is the Jaba library used to access the PDFs and the metadata stream.
+- [Good thread on ArsTechnica discussing the management of PDFs.](http://arstechnica.com/civis/viewtopic.php?f=19&t=408429)
+- [Adobe XMP Specification](http://www.adobe.com/content/dam/Adobe/en/devnet/xmp/pdfs/XMPSpecificationPart1.pdf)

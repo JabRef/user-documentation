@@ -1,4 +1,4 @@
 ---
-redirect:   /ja/ADS
-layout:     redirect
+redirect: /en/ADS
+layout: redirect
 ---

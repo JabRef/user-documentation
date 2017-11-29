@@ -1,4 +1,4 @@
 ---
-redirect:   /ja/GoogleScholar
-layout:     redirect
+redirect: /en/GoogleScholar
+layout: redirect
 ---

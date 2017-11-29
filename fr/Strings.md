@@ -1,28 +1,32 @@
 ---
-title: Aide sur les chaînes
+title: Strings
+helpCategories:
+  - Fields
 ---
+# Strings
 
-# Aide sur les chaînes
-
-*BibTeX* permet d'avoir des chaînes constantes en utilisant `@String {key = value}`. JabRef est capable de les gérer en utilisant **BibTeX → Editer les chaînes**, ce qui ouvre l'[Editeur de chaînes](StringEditorHelp). Ces valeurs peuvent être utilisées dans des champs. Par exemple, vous pouvez avoir 
+*BibTeX* supports storing constant strings using `@String {key = value}`. JabRef supports managing them using **BibTeX → Edit strings**, which opens the [String Editor](StringEditor). These values can be used in fields. For example, you can have:
 
     @String { kopp = "Kopp, Oliver" }
     @String { kubovy = "Kubovy, Jan" }
     @String { et = " and " }
+    
 
-et ainsi, dans certaines entrées, par exemple : `@Misc{ author = kopp # et # kubovy }` ou `@Misc{ author = kopp # " and " # kubovy }`. Dans l'éditeur de champs de JabRef, l'auteur doit être inséré comme `#kopp# #et# #kubovy#` ou `#kopp# and #kubovy#`. JabRef améliore le concept de chaînes en associant un type à ces `@String`s. Le problème est de préserver le type d'une chaîne dans un fichier BibTeX. JabRef spécifie le type grâce à un préfixe :
+and then in some entry for example: `@Misc{ author = kopp # et # kubovy }` or `@Misc{ author = kopp # " and " # kubovy }`. In the JabRef field editor, the author has to be inserted as `#kopp# #et# #kubovy#` or `#kopp# and #kubovy#`.
 
--   `@String { aKopp = "Kopp, Oliver" }` est un `@String` avec le type author.
--   `@String { iMIT = "{Massachusetts Institute of Technology ({MIT})}" }` est un `@String` avec le type institution.
--   `@String { anct = "Anecdote" }` est un `@String` de type other.
--   `@String { lTOSCA = "Topology and Orchestration Specification for Cloud Applications" }` est un `@String` de type other.
+JabRef enhances the concept of Strings to add a type to those `@String`s. The issue is how to preserve such type of a string in a BibTeX file. JabRef adds the type though prefixes:
 
-Ensuite, les `@String`s de type author ne pourront être utilisées que dans les champs author ou editors. Des `@String`s de type institution ne pourront être utilisées que dans les champs institution et organization. Des `@String`s de type publisher ne pourront être utilisées que dans les champs publisher. Et enfin, des `@String`s de type other seront utilisables partout.
+- `@String { aKopp = "Kopp, Oliver" }` is a `@String` with the type author.
+- `@String { iMIT = "{Massachusetts Institute of Technology ({MIT})}" }` is a `@String` with the type of institution.
+- `@String { anct = "Anecdote" }` is a `@String` of type other.
+- `@String { lTOSCA = "Topology and Orchestration Specification for Cloud Applications" }` is a `@String` of type other.
 
-Il est parfois nécessaire d'avoir la même institution pour plusieurs types :
+Then `@String`s of type author should be used for author and editors fields only. `@String`s of type institution should be used for institution and organization fields only. `@String`s of type publisher should be used only for publisher fields. And finally `@String`s of type other can be used anywhere.
 
--   `@String { aMIT = "{Massachusetts Institute of Technology ({MIT})}" }` si l'institution doit apparaître comme author ou editor
--   `@String { iMIT = "{Massachusetts Institute of Technology ({MIT})}" }` si l'institution doit apparaître comme institution ou organization
--   `@String { pMIT = "{Massachusetts Institute of Technology ({MIT}) press}" }` si l'institution doit apparaître comme publisher.
+It can also happen that you will have the same institution for more types:
 
-Même si le dernier exemple peut apparaître contradictoire, l'intention était de supprimer les doublons et d'unifier les noms de personnes et d'institutions.
+- `@String { aMIT = "{Massachusetts Institute of Technology ({MIT})}" }` if the institution will appear as author or editor
+- `@String { iMIT = "{Massachusetts Institute of Technology ({MIT})}" }` if the institution will appear as institution or organization
+- `@String { pMIT = "{Massachusetts Institute of Technology ({MIT}) press}" }` if the institution will appear as publisher.
+
+Even if the last example may appear contradicting the intention was to remove duplicity and unify the names of persons and institutions.

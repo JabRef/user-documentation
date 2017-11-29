@@ -1,9 +1,9 @@
 ---
-title: 文字列の置換
-helpCategories: ["項目の検索・整序・剪定"]
+title: Replace string
+helpCategories:
+  - Finding, sorting and cleaning entries
 stub: true
 ---
+# Replace string
 
-# 文字列の置換
-
-この機能は，**検索→文字列の置換...** から利用できます．
+This feature is available through **Search → Replace string...**.

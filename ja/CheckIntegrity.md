@@ -1,11 +1,11 @@
 ---
-title: 整合性検査
-helpCategories: ["項目の検索・整序・剪定"]
+title: Check integrity
+helpCategories:
+  - Finding, sorting and cleaning entries
 stub: true
 ---
+# Check integrity
 
-# 整合性検査
+JabRef can check the integrity of a database.
 
-JabRefは，データベースの整合性を検査することができます．
-
-この機能は，**品質→整合性検査...** で有効にすることができます．
+This feature is available through **Quality → Check integrity...**.

@@ -1,109 +1,83 @@
 ---
-title: リンクされていないBibTeXデータを含むPDFをデータベースに追加するには
-helpCategories: ["項目の検索・整序・消去"]
+title: Add unlinked PDFs including BibTeX data into the database
+helpCategories:
+  - Finding, sorting and cleaning entries
 ---
+# Find unlinked files
 
-# リンクされていないファイルを検索
+This feature is available through **Quality → Find unlinked files...**.
 
-この機能は，**品質→リンクされていないファイルを検索...** で利用できます．
+The following description appeared first on [tex.stackexchange.com](http://tex.stackexchange.com/a/344310/9075).
 
-以下の説明は，[tex.stackexchange.com](http://tex.stackexchange.com/a/344310/9075)が初出です．
+## Preparation: Adjust the JabRef key generation pattern to fit your needs
 
-## 準備：JabRef鍵の生成パターンを必要に応じて調整
+JabRef offers a BibTeX key generation and offers different patterns described at <BibtexKeyPatterns>.
 
-JabRefは，BibTeX鍵の生成と[BibtexKeyPatterns](BibtexKeyPatterns)に説明されているような様々なパターンを提供しています．
+## Link the PDFs to your bib file
 
-## PDFをbibファイルにリンク
+1. Create or open a .bib file.
 
-1. .bibファイルを作成するか開く．
+2. Go to "Quality" -> "Find unlinked files". ![FindUnlinkedFiles - 01 - menu](./images/FindUnlinkedFiles - 01 - menu.png)
 
-1. 「品質」→「リンクされていないファイルを検索」を開く．
-![FindUnlinkedFiles - 01 - menu](../en/images/FindUnlinkedFiles - 01 - menu.png)
+3. The "Find unlinked files" dialog opens. ![FindUnlinkedFiles - 02 - initial dialog](./images/FindUnlinkedFiles - 02 - initial dialog.png)
 
-1. 「リンクされていないファイルを検索」ダイアログが開く．
-![FindUnlinkedFiles - 02 - initial dialog](../en/images/FindUnlinkedFiles - 02 - initial dialog.png)
+4. Choose a directory using the "Browse" button.
 
-1. 「一覧」ボタンを押して，ディレクトリを選択する．
+5. Click on "Scan directory".
 
-1. 「ディレクトリを走査」をクリックする．
+6. In "Select files", the files not yet contained in the database are shown. ![FindUnlinkedFiles - 03 - scan result](./images/FindUnlinkedFiles - 03 - scan result.png)
 
-1. 「ファイルを選択」に，データベースに取り込まれていないファイルが表示されます．
-![FindUnlinkedFiles - 03 - scan result](../en/images/FindUnlinkedFiles - 03 - scan result.png)
+7. To create entries for all files, click on "Apply".
 
-1. 全ファイルに項目を作成する場合は，「適用」をクリックします．
+8. For each file, an import dialog is shown  
+    ![FindUnlinkedFiles - 04 - metadata](./images/FindUnlinkedFiles - 04 - metadata.png)  
+    The dialog shows the XMP metadata stored in the PDF in the area "XMP-metadata". If this data fits your needs, select "Create entry based on XMP data". Typically, the XMP-metadata is not good enough. Choose "Create entry based on content".
 
-1. 各ファイルについて，下記にような読み込みダイアログが表示されます．<br/>
-  ![FindUnlinkedFiles - 04 - metadata](../en/images/FindUnlinkedFiles - 04 - metadata.png)<br/>
-  ダイアログには，PDFの「XMP-metadata」領域に保管されているXMPメタデータが表示されます．
-  このデータが必要に合致していれば，「XMPデータに基づいて項目を生成」を選択します．
-  通常，XMP-metadataは，十分な質を備えていません．
-  その場合は「内容に基づいて項目を生成」を選択してください．
+9. Click on "OK" to start the import
 
-1. 「OK」をクリックして，読み込みを始めてください．
+10. A dialog asking for the link is opened  
+    ![FindUnlinkedFiles - 05 - LinkToFile](./images/FindUnlinkedFiles - 05 - LinkToFile.png)  
+    You can choose "Leave file in its current directory" to keep the file where it is. Typically, this is that what one wants. In case you choose "Move file to file directory", you can also choose to rename the file to the generated BibTeX key.
 
-1. リンクを求める下記のようなダイアログが開きます．<br/>
-  ![FindUnlinkedFiles - 05 - LinkToFile](../en/images/FindUnlinkedFiles - 05 - LinkToFile.png)<br/>
-  ファイルが今ある場所に維持するには，「ファイルを現ディレクトリに残す」を選択できます．多くの場合，これが望まれる挙動です．
-  「ファイルをファイルディレクトリに移動」を選択した場合には，ファイル名を生成されたBibTeX鍵に変更することができます．
+11. Press OK to link the file to the BibTeX entry
 
-1. OKを押して，ファイルをBibTeX項目にリンクします．
+12. This happens for each file. After that, the "Find unlinked files" dialog is shown. Just click on "Close" to close it.
 
-1. これは，各ファイルに対して行われます．その後，「リンクされていないファイルを検索」ダイアログが表示されますので，「閉じる」をクリックして閉じます．
+13. The entry editor with the last imported entry is shown ![FindUnlinkedFiles - 08 - entry editor](./images/FindUnlinkedFiles - 08 - entry editor.png)
 
-1. 最後に読み込まれた項目が表示された状態の項目エディタが表示されます．
-  ![FindUnlinkedFiles - 08 - entry editor](../en/images/FindUnlinkedFiles - 08 - entry editor.png)
+14. You can now save the file and are finished.
 
-1. 以上でファイルを保存して終了することができます．
+15. Optional: Click on "General" to see the linked file ![FindUnlinkedFiles - 09 - entry editor - General](./images/FindUnlinkedFiles - 09 - entry editor - General.png)
 
-1. オプション：リンクされたファイルを見るには，「General」をクリックしてください．
-  ![FindUnlinkedFiles - 09 - entry editor - General](../en/images/FindUnlinkedFiles - 09 - entry editor - General.png)
+16. Optional: Click on "BibTeX source" to see the BibTeX source ![FindUnlinkedFiles - 10 - entry editor - BibTeX source](./images/FindUnlinkedFiles - 10 - entry editor - BibTeX source.png)
 
-1. オプション：BibTeXソースを見るには「BibTeXソース」をクリックしてください．
-  ![FindUnlinkedFiles - 10 - entry editor - BibTeX source](../en/images/FindUnlinkedFiles - 10 - entry editor - BibTeX source.png)
+17. Optional: You have to shrink it to see the entry in the entry table Enlarge the JabRef window and use the mouse at the upper border of the entry editor ![FindUnlinkedFiles - 11 - entry editor - shrunk](./images/FindUnlinkedFiles - 11 - entry editor - shrunk.png)
 
-1. オプション：項目表の項目を見るには，項目表を縮小する必要があります．JabRefウィンドウを大きくして，項目エディタの上の縁をマウスで動かしてください．
-  ![FindUnlinkedFiles - 11 - entry editor - shrunk](../en/images/FindUnlinkedFiles - 11 - entry editor - shrunk.png)
+18. Optional: Press <kbd>Esc</kbd> to show the entry preview ![FindUnlinkedFiles - 12 - entry preview](./images/FindUnlinkedFiles - 12 - entry preview.png)
 
-1. オプション：項目プレビューを表示するには，<kbd>Esc</kbd>を押してください．
-  ![FindUnlinkedFiles - 12 - entry preview](../en/images/FindUnlinkedFiles - 12 - entry preview.png)
+## Further information
 
+### PDFs for which it works
 
-## 詳しい情報
+The importer based on the content has been written for IEEE and [LNCS](https://github.com/latextemplates/LNCS) formatted papers. Other formats are not (yet) supported. In case a DOI is found on the first page, the DOI is used to generate the BibTeX information.
 
-### PDFに対する注力
+The next development step is to extract the title of the PDF, use the "Lookup DOI" and then the [Get BibTeX data from DOI](GetBibTeXDataFromDOI) functionality from JabRef to fetch the BibTeX data.
 
-中身に基づく読み込みプログラムは，IEEEおよび[LNCS](https://github.com/latextemplates/LNCS)書式の論文用に書かかれました．
-他の書式は（まだ）サポートされていません．
-最初のページにDOIが見つかった場合には，BibTeX情報を生成するのにDOIが用いられます．
+We are also [thinking about](https://github.com/koppor/jabref/issues/169) replacing the code completely by using another library. This is much effort and there is no timeline for that.
 
-次の開発段階としては，PDFのタイトルを抽出して「DOIの検索」を行い，さらに[DOIからBibTeXデータを取得するには](GetBibTeXDataFromDOI)に書かれているJabRefの機能を用いてBibTeXデータを取得できるようにすることです．
+### Better filenames
 
-それに加えて，別のライブラリを使用してコードを完全に置き換えることを[考えています](https://github.com/koppor/jabref/issues/169)．
-これは多くの労力を必要とし，これに向けてのタイムラインはまだ存在しません．
+JabRef also offers to change the filenames. You can adapt the pattern at Preferences -> Import ![Preferences - Import](./images/Preferences - Import.png)
 
+Select "Choose pattern" and choose "bibtexkey - title" ![Preferences - Import - Choose pattern](./images/Preferences - Import - Choose pattern.png) This results in the setting `\bibtexkey\begin{title} - \format[RemoveBrackets]{\title}\end{title}`.
 
-### 良いファイル名
-
-JabRefでは，ファイル名の変更も可能です．変更パターンを，設定→読み込みで調整することができます．
-![Preferences - Import](../en/images/Preferences - Import.png)
-
-「パターンを選択」を押して，「bibtexkey - title」を選択します．
-![Preferences - Import - Choose pattern](../en/images/Preferences - Import - Choose pattern.png)
-これは以下のような設定になります：`\bibtexkey\begin{title} - \format[RemoveBrackets]{\title}\end{title}`.
-
-こうすると，ファイル名は，bibtex鍵で始まった後にフルタイトルが続きます．
-上述のbibtex鍵にはすでにタイトルが含まれているので，実践的には`\bibtexkey`のみの方が良い選択肢かもしれません．
-
+This makes the filenames start with the bibtey key followed by the full title. In the concrete case, `\bibtexkey` only may be the better option as the described bibtey key already contains the title.
 
 ### Mr.DLib
 
-JabRefはかつて，BibTeXのフル項目やPDFを返す[Mr.DLib](http://mr-dlib.org/)をサポートしていましたが，
-使用しているライブラリの著作権の状況が不透明なため，このサービスは取り止められました．
-さらに，Mr.DLibは注力する点を変更し，推奨文献を提供するようになります．
-<https://help.jabref.org/en/EntryEditor#related-articles-tab>を参照してください．
+JabRef used to have support for [Mr.DLib](http://mr-dlib.org/), which returned back a full BibTeX entry or a PDF. Due to unclear copyright situation of a used library, this service was removed. Further, Mr.DLib changes its focus and will provide literature recommendations. See <https://help.jabref.org/en/EntryEditor#related-articles-tab>.
 
-
-### スタックオーバーフロー上の関連する質問
+### Related questions on stack overflow
 
 * [Extract titles from each page of a PDF?](http://stackoverflow.com/q/18071127/873282)
 * [Zotero: Extract references from PDF and create new library items from them](https://forums.zotero.org/discussion/16277/extract-references-from-pdf-and-create-new-library-items-from-them)

@@ -1,4 +1,4 @@
 ---
-redirect:   /fr/arXiv
-layout:     redirect
+redirect: /en/arXiv
+layout: redirect
 ---

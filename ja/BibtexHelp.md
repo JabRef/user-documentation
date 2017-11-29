@@ -1,4 +1,4 @@
 ---
-redirect:   /ja/Bibtex
-layout:     redirect
+redirect: /en/Bibtex
+layout: redirect
 ---

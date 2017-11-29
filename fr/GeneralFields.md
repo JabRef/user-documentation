@@ -1,15 +1,18 @@
 ---
-title: Personnalisation des champs généraux
+title: Customizing general fields
+helpCategories:
+  - Setup
 ---
+# Customizing general fields
 
-# Personnalisation des champs généraux
+You can add an arbitrary number of tabs to the entry editor. These will be present for all entry types. To customize these tabs, go to **Options → Set up general fields**.
 
-Vous pouvez ajouter un nombre arbitraire d'onglets dans l'éditeur d'entrées. Ceux-ci seront alors présents pour tous les types d'entrées. Pour personnaliser ces onglets, allez dans "Options → Configurer les champs généraux".
+You specify one tab on each line. The line should start with the name of the tab, followed by a colon (:), and the fields it should contain, separated by semicolons (;).
 
-Vous devez spécifier un onglet par ligne. La ligne doit commencer par le nom de l'onglet suivi par 2 points (:) puis par les champs séparés par un point-virgule (;), devant être contenus.
+For example:
 
-Exemple :
+    General:url;keywords;doi;pdf
+    Abstract:abstract;annote
+    
 
-`General:url;keyword;doi;pdf     Abstract:abstract;annote`
-
-produit un onglet appelé "General" contenant les champs url, keywords, doi et pdf et un onglet appelé "Abstract" contenant les champs abstract et annote.
+will give one tab named "General" containing the fields *url*, *keywords*, *doi* and *pdf*, and another tab named "Abstract" containing the fields *abstract* and *annote*.

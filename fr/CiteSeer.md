@@ -1,9 +1,13 @@
 ---
-title: Récupération d'entrées depuis CiteSeerX
+title: Fetching entries from CiteSeerX
+helpCategories:
+  - Fetching entries from the web
+  - '... using online bibliographic database'
 ---
+# Fetching entries from CiteSeerX
 
-# Récupération d'entrées depuis CiteSeerX
+[CiteSeerX](http://csxstatic.ist.psu.edu/about) is a public search engine for scientific and academic papers primarily with a focus on computer and information science. However, CiteSeerX has been expanding into other scholarly domains such as economics, physics and others ([Wikipedia](https://en.wikipedia.org/wiki/CiteSeer)).
 
-Pour utiliser cette fonction, choisissez **Recherche → Recherche Web**. L'interface de recherche apparaitra dans le panneau latéral. Sélectionnez **CiteSeerX** dans le menu déroulant.
+To fetch entries from CiteSeerX, choose **Search → Web search**, and the search interface will appear in the side pane. Select **CiteSeerX** in the dropdown menu. To start a search, enter the words of your query, and press <kbd>Enter</kbd> or the **Fetch** button.
 
-CiteSeerX est une bibliothèque numérique évolutive de littérature scientifique et un moteur de recherche se focalisant principalement sur la littérature des sciences de l'information et de l'informatique. CiteSeerx vise à améliorer la dissémination de la littérature scientifique et à fournir des améliorations dans la fonctionnalité, l'utilité, la disponibilité, le coût, la complétude, l'efficacité et l'intemporalité de l'accès aux connaissances scientifiques et savantes.
+The results are displayed in the [import inspection window](ImportInspectionDialog). In case an error occurs, it is shown in a popup.

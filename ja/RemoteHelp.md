@@ -1,4 +1,4 @@
 ---
-redirect:   /ja/Remote
-layout:     redirect
+redirect: /en/Remote
+layout: redirect
 ---

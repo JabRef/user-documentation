@@ -1,4 +1,4 @@
 ---
-redirect:   /fr/Remote
-layout:     redirect
+redirect: /en/Remote
+layout: redirect
 ---
