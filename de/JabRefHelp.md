@@ -1,4 +1,4 @@
 ---
-redirect:   /de/JabRef
-layout:     redirect
+redirect: /en/JabRef
+layout: redirect
 ---
