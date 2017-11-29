@@ -1,17 +1,20 @@
 ---
-title: Der String-Editor
+title: The string editor
+helpCategories:
+  - Setup
 ---
+# The string editor
 
-# Der String-Editor
+<Strings> can be edited by **BibTeX → Edit strings** or pressing a button in the toolbar.
 
-*Zugriff über das Menü **BibTeX → Strings bearbeiten** oder durch Klick auf die Schaltfläche **Strings bearbeiten***.
+*Strings* are the *BibTeX* equivalent to constants in a programming language. Each string is defined with a unique *name* and a *content*. Elsewhere in the database, the name can be used to represent the content.
 
-*Strings* sind das *BibTeX*-Äquivalent zu Konstanten in einer Programmiersprache. Jeder String wird durch einen eindeutigen *Namen* und einen *Inhalt* festgelegt. Der Name kann an anderer Stelle in der Datei benutzt werden, um den Inhalt wiederzugeben.
+For instance, if many entries are from a journal with an abbreviation that may be hard to remember, such as 'J. Theor. Biol.' (Journal of Theoretical Biology), a string named JTB could be defined to represent the journal's name. Instead of repeating the exact journal name in each entry, the characters '\#JTB\#' (without quotes) are put into the *journal* field of each, ensuring the journal name is written identically each time.
 
-Ein Beispiel: Wenn viele Einträge aus einer Zeitschrift stammen, deren Abkürzung schwer zu behalten ist, wie etwa 'J. Theor. Biol.' (Journal of Theroretical Biology), könnte ein String mit dem Namen 'JTB' angelegt werden, um den Namen der Zeitschrift zu repräsentieren. Statt nun in jedem Eintrag den exakten Namen der Zeitschrift einzutragen, genügt die Zeichenfolge `#JTB#` im Feld *journal*, und es ist sichergestellt, dass der Name jedesmal in identischer Schreibweise ausgegeben wird.
+A string reference can appear anywhere in a field, always by enclosing the string's name in a pair of '\#' characters. This syntax is specific for JabRef, and differs slightly from the *BibTeX* notation that is produced when you save your database. Strings can by default be used for all standard BibTeX fields, and in **Preferences → General → File** you can opt to enable strings for non-standard fields as well. In the latter case you can specify a set of fields that are excepted from string resolving, and here it is recommended to include the 'url' field and other fields that may need to contain the '\#' character and that may be processed by BibTeX/LaTeX.
 
-Der Verweis auf einen String kann an jeder Stelle eines Feldes erscheinen, wobei der Name des Strings immer von einem Paar '\#'-Zeichen eingeschlossen werden muss. Diese Syntax gilt nur für JabRef und weicht ein wenig von der *BibTeX*-Syntax ab, die erzeugt wird, wenn Sie Ihre Datei speichern. Strings können für alle Standard-BibTeX-Felder verwendet werden. Unter **Optionen → Einstellungen → Allgemein** können Sie im Bereich **Datei** festlegen, ob Strings auch in Nicht-Standard-Feldern benutzt werden dürfen. In diesem Fall können Sie Felder bestimmen, die von der Auflösung der Strings ausgenommen werden; hierbei wird empfohlen, das Feld 'url' und andere Felder anzugeben, die das Zeichen '\#' enthalten können und die von BibTeX/LaTeX abgearbeitet werden können.
+A string may in the same way be referred in the content of another string, provided the referred string is defined *before* the referring one.
 
-In derselben Weise kann man auch im Inhalt eines Strings auf einen anderen String verweisen, vorausgesetzt, dass der String, auf den verwiesen wird, bereits *vorher* definiert ist.
+While the order of strings in your BibTeX file is important in some cases, you do not have to worry about this when using JabRef. The strings will be displayed in alphabetical order in the string editor, and stored in the same order, except when a different ordering is required by BibTeX.
 
-Während die Reihenfolge der Strings in Ihrer BibTeX-Datei in einigen Fällen wichtig ist, brauchen Sie sich bei der Benutzung von JabRef darüber keine Gedanken zu machen. Die Strings werden in alphabetischer Reihenfolge im String-Editor aufgelistet und in derselben Reihenfolge gespeichert, außer wenn eine andere Reihenfolge von BibTeX verlangt wird.
+For a complete description of string syntax, see the [dedicated help](Strings).
