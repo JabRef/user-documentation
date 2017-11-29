@@ -1,4 +1,4 @@
 ---
-redirect:   /de/StringEditor
-layout:     redirect
+redirect: /en/StringEditor
+layout: redirect
 ---
