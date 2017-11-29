@@ -1,31 +1,31 @@
 ---
-title: 第3.6版以前のSQLデータベースから共有データベースへの移行
+title: Migration of pre-3.6 SQL databases into a shared SQL database
+helpCategories:
+  - Collaborative work
 ---
+# Migration of pre-3.6 SQL databases into a shared SQL database
 
-# 第3.6版以前のSQLデータベースから共有データベースへの移行
+## Context
 
-## 背景
+This situation occurs when you try to open an SQL database which was created with JabRef version older than 3.6.
 
-ここで取り扱う状況は，第3.6版よりも古いJabRefで作成したSQLデータベースを開こうとするときに起こります．
+With release of [JabRef 3.6](https://github.com/JabRef/jabref/releases/tag/v3.6) the SQL database structure has changed. So all SQL databases with an pre-3.6 structure are no longer supported.
 
-[JabRef 3.6](https://github.com/JabRef/jabref/releases/tag/v3.6)のリリース時に，SQLデータベースの構造が変更されたため，第3.6版以前の構造を持つデータベースは，全てサポートされなくなりました．
+![Screenshot of migration popup](./images/migrate-pre-3.6-db.png)
 
-![Screenshot of migration popup](../en/images/migrate-pre-3.6-db.png)
+## Migration
 
-## 移行
+To migrate your pre-3.6 SQL database into new shared SQL database you have to follow these steps:
 
-第3.6版以前のSQLデータベースから新しい共有データベースに移行するには，下記の手順に従ってください．
+- Download and install [JabRef 3.5](https://github.com/JabRef/jabref/releases/tag/v3.5)
+- Open JabRef and goto **File** -> **Import from external SQL database**
+- Enter required data and click on **Connect**
+- Choose the database which should be imported and press **Import**
+- Save the database locally (**File** -> **Save database**)
+- Turn back at least to [JabRef 3.6](https://github.com/JabRef/jabref/releases/tag/v3.6)
+- Goto: **File** -> **Open shared database**
+- Enter required data and click on **Connect**
+- Now goto **File** -> **Import into current database**
+- Choose the file you saved locally and import it
 
--	[JabRef 3.5](https://github.com/JabRef/jabref/releases/tag/v3.5)をダウンロードしてインストールします
--	JabRefを起動して，**ファイル** → **外部SQLデータベースから読み込む** を実行します
--	必要なデータを入力して，**接続** をクリックします
--	読み込むデータベースを選択し，**読み込む** を押します
--	データベースをローカルに保存します（**ファイル**→**データベースを保存**）
--	[JabRef 3.6](https://github.com/JabRef/jabref/releases/tag/v3.6)より新しい版に戻ります
--	**ファイル** → **共有データベースを開く** を選択します
--	必要なデータを入力して **接続** をクリックします
--	**ファイル** → **現在のデータベースに読み込む** を選択します
--	ローカルに保存したファイルを選択して，それを読み込みます
-
-爾後，内容が共有データベース上で使用できるようになりますので，ライブで作業ができるようになります．
-ライブ編集についての詳細な情報は，[SQLデータベース](SQLDatabase)にあります．
+After that the content is available as a shared SQL database and you can work live on it. [More information about the live editing](SQLDatabase).
