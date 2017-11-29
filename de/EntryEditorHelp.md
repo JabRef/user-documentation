@@ -1,4 +1,4 @@
 ---
-redirect:   /de/EntryEditor
-layout:     redirect
+redirect: /en/EntryEditor
+layout: redirect
 ---
