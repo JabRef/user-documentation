@@ -1,27 +1,28 @@
 ---
-title: Filtre d'exportation EndNote
+title: EndNote Export Filter
 outdated: true
+helpCategories:
+  - Import/Export
 ---
+# EndNote Export Filter
 
-# Filtre d'exportation EndNote
+## Export from JabRef
 
-## Exportation à partir de JabRef
+JabRef can export databases to EndNote-readable files. To use this feature, choose **File → Export**, choose the file type **Endnote (txt)** and then specify the name of the export file.
 
-JabRef peut exporter des bases de données dans des fichiers lisibles par EndNote. Pour utiliser cette fonction, choisissez **Fichier → Export**, choisissez le type de fichier **Endnote (\*.txt)** et spécifiez le nom du fichier d'exportation.
+## Import to EndNote
 
-## Importer dans EndNote
+The default EndNote Import filter does not handle multiple authors or editors properly. There are two options to work around this:
 
-Le fichier par défaut d'importation d'EndNote ne traite pas proprement les auteurs ou les éditeurs multiples. Il y a deux façons de contourner cela :
-
-1.  Utiliser le filtre interne et corriger ensuite le fichier. Pour ouvrir le fichier dans EndNote, créez une nouvelle base de données ou ouvrez une ancienne base de données dans EndNote. Ensuite, sélectionnez **Fichier → Importer**, cliquer sur **Choisir le filtre**, puis sélectionnez le fichier exporté et cliquez sur **Choisir**. Cliquez sur **Options d'importation** et sélectionnez **Importation EndNote**. Cliquez sur **Importer** pour démarrer l'importation. Après l'importation, sélectionnez **Edition→ Changer le texte**. Changez **N'importe quel champ** en **Author**. Entrez " and " à l'intérieur du champ de recherche (sans les guillemets). Entrez un retour chariot dans le champ Remplacer (option-return pour Mac OS X, ctrl-return pour Windows XP). Cliquez sur **Remplacer**. Répétez avec le champ **Secondary Author**. \[NdT: difficile à traduire sans avoir EndNote... oui\]
-2.  Installer le *filtre d'importation d'EndNote depuis JabRef* dans le *EndNote Extras*. Suivez les instructions dans la section *Utilisation avancée* ci-dessous. Pour ouvrir le fichier dans EndNote, créez une nouvelle base de données ou ouvrez une ancienne base de données dans EndNote. Ensuite, sélectionnez **Fichier → Importer**, cliquez sur **Choisir le filtre**, puis sélectionnez le fichier exporté et cliquez sur **Choisir**. Cliquez sur **Options d'importation** et sélectionnez **Filtre d'importation d'EndNote depuis JabRef** (s'il n'est pas présent, sélectionnez Autres filtres. S'il n'apparaît toujours pas, il n'a pas été installé correctement). Cliquer sur **Importer** pour démarrer l'importation.
+1. Use the built-in filter and fix the file later. To open up the file in EndNote, create a new database or open an old database in EndNote. Then select **File → Import**, click on **Choose File**, then highlight the exported file and click **Choose**. Click on **Import Options** and select **EndNote Import**. Click **Import** to start the import. After import, select **Edit→ Change Text**. Change **Any Field** to **Author**. Enter " and " into the search field (without quotes). enter a return character into the change field (<kbd>Option</kbd> + <kbd>Enter</kbd> on Mac OS X, <kbd>Ctrl</kbd> + <kbd>Enter</kbd> on Windows XP). Click **Change**. Repeat with the **Secondary Author** field.
+2. Install the *EndNote Import from JabRef filter* in the *EndNote Extras*. Follow the instructions in *Advanced Use* below. To open up the file in EndNote, create a new database or open an old database in EndNote. Then select **File → Import**, click on **Choose File**, then highlight the exported file and click **Choose**. Click on **Import Options** and select **EndNote Import from JabRef** (if it does not appear, select Other filters. If it still doesn't appear, it was not correctly installed.) Click **Import** to start the import.
 
 ## Notes
 
-Le filtre d'exportation EndNote fait correspondre les types d'entrées BibTeX avec les types de référence d'EndNote de la façon suivante :
+The EndNote Export filter maps BibTeX entrytypes to EndNote reference types as follows:
 
-    Type d'entrée BibTeX -> Type de référence d'EndNote
-    ---------------------------------------------------
+    BibTeX entrytype -> EndNote Reference Type
+    ------------------------------------------
     misc, other -> Generic
     unpublished -> Manuscript
     manual -> Computer Program
@@ -32,11 +33,12 @@ Le filtre d'exportation EndNote fait correspondre les types d'entrées BibTeX av
     inproceedings -> Conference Proceedings
     techreport -> Report
     mastersthesis, phdthesis -> Thesis
+    
 
-## Auteurs collectifs
+## Corporate Authors
 
-Par défaut, le filtre d'exportation suppose que le contenu des champs author ou editor qui sont dans des accolades sont des auteurs collectifs et remplace les accolades par une virgule. Cependant, cela signifie que les champs qui contiennent du code LaTeX entre accolades seront supposés être des auteurs collectifs et seront donc improprement formatés.
+By default, the export filter assumes that entries in the author or editor fields in brackets are corporate authors and replaces the brackets with a trailing comma. However, this means that entries that include LaTeX code in brackets will be assumed to be corporate authors and therefore will be improperly formatted.
 
-## Utilisation avancée : Suppléments EndNote
+## Advanced Use: EndNote Extras
 
-Pour une meilleure interopérabilité entre Endnote et JabRef, télécharger l'ensemble de filtres Endnote depuis la page de ressources du site de JabRef.
+For better interoperability between EndNote and JabRef, download the EndNote filter set from the Resources page of JabRef's web page.
