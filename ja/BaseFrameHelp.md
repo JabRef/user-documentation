@@ -1,4 +1,4 @@
 ---
-redirect:   /ja/BaseFrame
-layout:     redirect
+redirect: /en/BaseFrame
+layout: redirect
 ---
