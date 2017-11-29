@@ -1,9 +1,9 @@
 ---
-title: 予約語の管理
-helpCategories: ["設定"]
+title: Manage protected terms
+helpCategories:
+  - Setup
 stub: true
 ---
+# Manage protected terms
 
-# 予約語の管理
-
-この機能は，**オプション→予約語の管理** で使用できます．
+This feature is available through **Options → Manage protected terms**.
