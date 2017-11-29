@@ -1,7 +1,8 @@
 ---
-title: Configuration de l'aperçu des entrées
+title: Entry preview setup
+helpCategories:
+  - Setup
 ---
+# Entry preview setup
 
-# Configuration de l'aperçu des entrées
-
-L'aperçu des entrées est créé en utilisant le même mécanisme que pour les [filtres d'exportation personnalisés](CustomExports). En mode aperçu, une entrée est traitée en utilisant l'une des deux mises en page disponibles (vous pouvez basculer entre les deux mises en page en pressant F9) afin de produire du code HTML qui est affiché dans le panneau d'aperçu. Pour modifier l'apparence et le contenu de l'aperçu vous devez éditer les mises en page de l'aperçu en utilisant la syntaxe décrite dans le fichier d'aide portant sur les [filtres d'exportation personnalisés](CustomExports).
+The entry preview is created using the same mechanism as used by the [Custom export filter](CustomExports) facility. When previewed, an entry is processed using one of the two alternative layouts (you can switch between the two layouts by pressing <kbd>F9</kbd>) to produce HTML code which is displayed by the preview panel. To modify the appearance and contents of the preview you need to edit the preview layouts using the syntax described in the help file on [Custom export filters](CustomExports).
