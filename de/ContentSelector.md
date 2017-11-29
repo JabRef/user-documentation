@@ -1,13 +1,13 @@
 ---
-title: Wortauswahl verwalten
+title: Field content selector
+outdated: true
+helpCategories:
+  - Fields
 ---
+# Field content selector
 
-# Wortauswahl verwalten
+This feature allows you to store a selection of often-used words or phrases that you use often in your database. By default it is enabled for the fields *Journal*, *Author*, *Keywords* and *Publisher*, but you can also add selectors to other fields, in the upper part of the *Manage* dialog (menu **Options -→ Manage content selectors**).
 
-Diese Funktion ermöglicht es, eine Auswahl von oft benutzten Wörtern oder Phrasen zu speichern. In der Standardeinstellung ist sie für die Felder *Journal*, *Keywords* und *Publisher* aktiviert, aber Sie können die Funktion auch in anderen Feldern verwenden, indem Sie diese Felder im oberen Teil des Dialogs *Extras → Wortauswahl verwalten* hinzufügen.
+The word selection is database-specific, and is saved along with your references in the .bib file.
 
-Die Wortauswahl gilt nur für die jeweilige Datei und wird daher zusammen mit den Literaturangaben in der .bib-Datei gespeichert.
-
-Jedes Feld mit Wortauswahl erhält im Eintrags-Editor einen gesonderten Bereich mit einer Auswahlliste und der Schaltfläche *Verwalten*. Wenn Sie die Auswahlliste mit der Maus anklicken, erscheint eine Liste der für dieses Feld verfügbaren Wörter. Sobald Sie auf das gewünschte Wort klicken, wird es in das entsprechende Feld geschrieben.
-
-Um ein neues Wort hinzuzufügen, schreiben Sie es einfach in das Auswahlfeld und drücken ENTER. Im Dialog *Verwalten* können Sie hinzugefügte Wörter auch wieder löschen.
+To add a new word in the entry editor, you can simply click into the text box for the field for which you configured the selectors. A drop down menu will appear and you can select the keyword of your choice. This mechanism is based on the autocompletion functionality in JabRef. Therefore, you need to have autocompletion enabled in your preferences.
