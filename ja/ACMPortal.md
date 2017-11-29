@@ -1,17 +1,15 @@
 ---
-title: ACM Portalから項目を取得するには
+title: Fetching entries from ACM Portal
+helpCategories:
+  - Fetching entries from the web
+  - '... using online bibliographic database'
 ---
+# Fetching entries from ACM Portal
 
-# ACM Portalから項目を取得するには
+The [ACM Portal](https://dl.acm.org) includes two databases ([Wikipedia](https://en.wikipedia.org/wiki/Association_for_Computing_Machinery#Portal_and_Digital_Library)): - the **ACM Digital Library** that is a full text collection of every article published by the [Association for Computing Machinery](https://www.acm.org), including over 60 years of archives from articles, magazines and conference proceedings. - the **Guide to Computing Literature** that is a bibliographic collection from major publishers in computing with over one million entries.
 
-[ACM Portal](https://dl.acm.org)には二つのデータベースがあります([Wikipedia](https://en.wikipedia.org/wiki/Association_for_Computing_Machinery#Portal_and_Digital_Library)).
-- **ACMデジタルライブラリ** は、論文・雑誌・学会誌などの60年以上のアーカイブを含む、[Association for Computing Machinery](https://www.acm.org)から出版された論文すべての全文収録コレクションです．
-- **Guide to Computing Literature** は、コンピューティングに関わる主要な出版社からの文献コレクションで、100万以上の項目があります。
+To fetch entries from ACM, choose **Search → Web search**, and the search interface will appear in the side pane. Select **ACM portal** in the dropdown menu. You may choose which database to search and you may opt to download the abstracts along with the cite information for each entry, by checking the **Include abstracts** checkbox. To start a search, enter the words of your query, and press <kbd>Enter</kbd> or the **Fetch** button.
 
-JabRefは、ACM Portalデータベースから文献情報をダウンロードすることができます。この機能を使うには、**検索 → ウェブ検索** を選択してください。すると検索インタフェースが側面に表示されるようになります。ドロップダウンメニューから **ACM Portal** を選択してください。
-どのデータベースを検索するかを選択することができるほか、**概要を取り込む** というチェックボックスを有効にすれば、各項目の文献情報に加えて要約もダウンロードすることを選ぶことができます。
-検索を始めるには、問い合わせる単語を入力し、**Enter** 鍵を押すか **取得** ボタンを押してください。
+Frequent connections to ACM Portal may get your IP banned for hours. To avoid this, JabRef will for each search display a preview of the first page of entries returned by the server. You can then choose which entries to download.
 
-ACM Portalに頻繁に接続すると、お使いのIPアドレスが数時間アクセス不能になることがあります。これを回避するために、JabRefは、サーバーが返す項目の最初のページのプレビューを、検索毎に表示します。そこから、どの項目をダウンロードするかを選択してください。
-
-結果は，[読込検査ウィンドウ](ImportInspectionDialog)に表示されます．エラーが発生した場合には，ポップアップに表示されます．
+Then, the results are displayed in the [import inspection window](ImportInspectionDialog).
