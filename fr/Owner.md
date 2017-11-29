@@ -1,9 +1,12 @@
 ---
-title: Le champ 'owner' (propriétaire)
+title: The 'owner' field
+helpCategories:
+  - Fields
 ---
+# The 'owner' field
 
-# Le champ 'owner' (propriétaire)
+JabRef can optionally mark all new entries added or imported to a database with your username.
 
-JabRef peut éventuellement signer toutes les nouvelles entrées ajoutées ou importées dans une base de données avec votre nom. Vous pouvez activer ou désactiver cette fonction dans le menu **Options/ Préférences → Général**, et vous pouvez aussi changer le nom utilisé pour signer vos entrées. Le nom utilisé par défaut est votre nom d'utilisateur.
+You can disable or enable this feature by entering **Preferences → General**, and selecting/deselecting the line *'mark new entries with owner name'*. You can also change the name used to mark your entries. The default name used is your user name. Finally, if an entry with a field owner is pasted or imported, the field is updated with your owner name if *'Overwrite'* is checked.
 
-Ce nom sera ajouté dans un champ nommé 'owner', qui, par défaut, est visible dans l'onglet **Champs Généraux** de l'éditeur d'entrées.
+The owner name is added in a field called *'owner'*, which by default is visible in the **General fields** tab in the [entry editor](EntryEditor).
