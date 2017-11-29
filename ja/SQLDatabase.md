@@ -1,38 +1,35 @@
 ---
-title: 共有SQLデータベース
+title: Shared SQL Database
+helpCategories:
+  - Collaborative work
+since: 3.6
 ---
+# Shared SQL Database
 
-# 共有SQLデータベース
+JabRef is able to support collaborative work using a shared SQL database. This feature is available since JabRef 3.6. If you used to work with an older version of JabRef, please refer to <SQLDatabaseMigration> for information how to update your data.
 
-JabRefでは，共有SQLデータベースを用いることで，共同作業をサポートすることができます．
-この機能は，JabRef 3.6以降で利用できます．
-JabRefの旧版を利用していたことがあれば，データを更新する方法について，[第3.6版以前のSQLデータベースから共有データベースへの移行](SQLDatabaseMigration)をご覧ください．
+## Usage
 
-## 使用法
+To use this feature you have to connect to a remote database. To do so you have to open **File** in the menu bar and then click the **Connect to shared database** item. The **Connect to shared database** dialog will open and you will have to fill in the shared's database connection settings. Under the field **Database type** you can choose between PostgreSQL (at least version 9.1), MySQL, and Oracle depending on your shared database. Then, you have to fill out the remaining fields with the according information. If you like you can save your password by clicking the **Remember password?** checkbox.
 
-この機能を利用するためには，リモートのデータベースに接続する必要があります．そのためには，メニューバーから**ファイル**を開いて，**共有データベースを開く** をクリックします．**共有データベースを開く** ダイアログが開くので，そこに共有データベースへの接続設定を書き込みます．**データベース型** フィールドでは，ご利用の共有データベースに合わせて，PostgreSQL・MySQL・Oracleのいずれかを選択することができます．
-それから，残りのフィールドを対応する情報で埋めます．ご希望であれば，**パスワードを記憶しますか？** チェックボックスを有効にすることで，パスワードを保存することができます．
+![Screenshot of Connect to shared database dialog](./images/open-shared-database-dialog.png)
 
-![「共有データベースを開く」ダイアログのスクリーンショット](./images/open-shared-database-dialog.png)
+After connecting to your shared database, your main window should look like this:
 
-共有データベースに接続した後，主幹ウィンドウはこのようになります：
+![Screenshot of JabRef with an open shared database](./images/open-shared-databse-screenshot.png)
 
-![共有データベースを開いたJabRefのスクリーンショット](./images/open-shared-databse-screenshot.png)
+JabRef will automatically detect your changes and push them to the shared side. JabRef will also constantly check if there is a newer version available. If you experience connection issues, you can pull changes from your shared database via the icon in the icon bar. If a newer version is available, JabRef will try to automatically merge the new version and your local copy. If this fails, the **Update refused** dialog will show up. You will then have to manually merge using the **Update refused** dialog. The dialog helps you by pointing out the differences, you then will have to choose if you want to keep your local version or update to the shared version. Confirm your merge by clicking on **Merge entries**.
 
-JabRefは，あなたが変更を加えたのを自動的に検知して，共有側にプッシュし，同時に，新しいバージョンが共有側にあるかどうかを，つねにチェックします．接続に問題がある場合には，アイコンバーにあるアイコンから，共有データベースを持ってくる(pull)ことができます．
-新しいバージョンがある場合には，JabRefは，新しいバージョンとローカルにあるコピーを自動的に統合(merge)します．これに失敗すると，**更新拒否** というダイアログが表示されます．この場合，**更新拒否** ダイアログを使って，手動で統合を行う必要があります．このダイアログは，差異がどこにあるかを表示しますので，ローカル版を維持したいか，共有版に更新したいかを選択します．その後，**項目を統合** をクリックして，統合することを確認してください．
+![Screenshot of Update refused dialog](./images/update-refused-merge-dialog.png)
 
-![更新拒否ダイアログのスクリーンショット](./images/update-refused-merge-dialog.png)
+The **Update refused** dialog can also take a different form, if the BibEntry you currently work on has been deleted on the shared side. You can choose to keep the BibEntry in the database by clicking **Keep** or update to the shared side and click **Close**.
 
-**更新拒否** ダイアログは，作業中のBibEntryが共有側で削除された場合，違う形で表示されます．
-**維持** をクリックすれば，データベースのBibEntryを維持することができますし，そのまま **閉じる** をクリックすれば，共有側に合わせて削除することができます．
+![Screenshot of Update refused dialog due to a deleted entry](./images/update-refused-deleted-entry-dialog.png)
 
-![項目が削除された時の更新拒否ダイアログのスクリーンショット](./images/update-refused-deleted-entry-dialog.png)
+If you experience a problem with your connection to your shared database, the **Connection lost** dialog will show up. You can choose to **Reconnect**, **Work offline** or **Close database**. Most of the time simply reconnecting will fix this problem, if that's not the case you will have to choose between **Work offline** or **Close database**. Pick **Work offline** if you want to make sure your changes are saved. If you think there is nothing to save just pick **Close database**. If you choose to work offline, JabRef will convert the shared database to a local .bib database. Since you are no longer working online, but instead on a local database, you will have to import your work via copy and paste into the shared database. However before you import it into the shared database, make sure to check if changes happened during your offline time. Otherwise you might override someone else's work.
 
-共有データベースへの接続に問題が生じると，**「接続が失われました」** というダイアログが表示されます．そこで **再接続**・**オフラインで作業**・**データベースを閉じる** のいずれかを選択できます．ほとんどの場合，再接続をすることで問題は解決されますが，うまくいかない場合には，**オフラインで作業** か **データベースを閉じる** かを選択しなくてはなりません．自分の加えた変更点が確実に保存されるようにするには，**オフラインで作業** を選択してください．保存すべきものがないと思えば，**データベースを閉じる** を選んでください．オフラインで作業することを選んだ場合には，JabRefは，共有データベースを，ローカルの.bibデータベースに変換してくれます．すると，もうオンラインではなくローカルデータベースで作業することになりますので，作業した内容は，コピー＆ペーストで共有データベースにインポートしてやる必要があります．しかしながら，このように共有データベースにインポートを行う際には，自分がオフラインであった間に，変更が加えられたかどうかをチェックする必要があります．さもないと，インポートによって，誰かの作業を上書きしてしまう恐れがあります．
+![Screenshot of Connection lost dialog](./images/connection-lost-dialog.png)
 
-![「接続が失われました」ダイアログのスクリーンショット](./images/connection-lost-dialog.png)
+## Try it out
 
-## 試してみましょう
-
-<https://www.freemysqlhosting.net>を使えば，共有データベースのサポートを体験できます．
+You can test the shared SQL database support by using <https://www.freemysqlhosting.net> for MySQL and <https://www.elephantsql.com/> for PostgreSQL.

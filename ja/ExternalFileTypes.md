@@ -1,9 +1,9 @@
 ---
-title: 外部ファイル型の管理
-helpCategories: ["設定"]
+title: Manage external file types
+helpCategories:
+  - Setup
 stub: true
 ---
+# Manage external file types
 
-# 外部ファイル型の管理
-
-この機能は，**オプション→外部ファイル型の管理** で使用できます．
+This feature is available through **Options → Manage external file types**.

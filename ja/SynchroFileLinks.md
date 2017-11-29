@@ -1,9 +1,9 @@
 ---
-title: ファイルリンクの同期
-helpCategories: ["項目の検索・整序・剪定"]
+title: Synchronize file links
+helpCategories:
+  - Finding, sorting and cleaning entries
 stub: true
 ---
+# Synchronize file links
 
-# ファイルリンクの同期
-
-この機能は，**品質→ファイルリンクの同期...** から利用できます．
+This feature is available through **Quality → Synchronize file links...**.

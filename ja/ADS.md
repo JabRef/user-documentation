@@ -1,11 +1,16 @@
 ---
-title: ADSから項目を取得するには
+title: Fetching entries from SAO/NASA Astrophysics Data System
+helpCategories:
+  - Fetching entries from the web
+  - '... using online bibliographic database'
+since: 3.7
 ---
+# Fetching entries from SAO/NASA Astrophysics Data System
 
-# ADSから項目を取得するには
+[SAO/NASA Astrophysics Data System](http://www.adsabs.harvard.edu/) is an online database of over eight million astronomy and physics papers from both peer reviewed and non-peer reviewed sources. Abstracts are available free online for almost all articles, and full scanned articles are available in Graphics Interchange Format (GIF) and Portable Document Format (PDF) for older articles ([Wikipedia](https://en.wikipedia.org/wiki/Astrophysics_Data_System)).
 
-[ADS (The SAO/NASA Astrophysics Data System)](http://adswww.harvard.edu/)は，ピアレビューと非ピアレビューの両方のソースから得た，800万を超える天文学・物理学論文のデータベースです([Wikipedia](https://en.wikipedia.org/wiki/Astrophysics_Data_System))．
+To fetch entries from SAO/NASA Astrophysics Data System, choose **Search → Web search**, and the search interface will appear in the side pane. Select **SAO/NASA Astrophysics Data System** in the dropdown menu. To start a search, enter the words of your query, and press <kbd>Enter</kbd> or the **Fetch** button.
 
-ADSから項目を取得するには，**検索 → ウェブ検索** を選択してください．すると，サイドペインに検索インタフェースが現れますので，ドロップダウンメニューから，**ADS from ADS-DOI** を選択します．そこで，質問を入力し，**Enter** を押すか，**取得** ボタンを押して，検索を開始してください．
+Then, the results are displayed in the [import inspection window](ImportInspectionDialog). In case an error occurs, it is shown in a popup.
 
-結果は，[読込検査ウィンドウ](ImportInspectionDialog)に表示されます．エラーが発生した場合には，ポップアップに表示されます．
+*Apart from fetching entries by using a full search it is also possible to directly create a BibTeX entry using the* ***BibTeX → New Entry*** *dialog. More details can be found [here](ADStoBibTeX).*

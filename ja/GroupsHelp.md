@@ -1,4 +1,4 @@
 ---
-redirect:   /ja/Groups
-layout:     redirect
+redirect: /en/Groups
+layout: redirect
 ---

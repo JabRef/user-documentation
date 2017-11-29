@@ -1,47 +1,42 @@
 ---
-title: 項目の統合
-helpCategories: ["項目の検索・整序・剪定"]
+title: Merge entries
+helpCategories:
+  - Finding, sorting and cleaning entries
 ---
+# Merge entries
 
-# 項目の統合
+JabRef can help you merging entries of your database.
 
-JabRefは，データベース項目の統合を手助けすることができます．
+First, select the two entries to be merged. Then select the menu **Quality → Merge entries...**. The **Merge entries** window will pop-up.
 
-まず，統合する2つの項目を選択してください．それから **品質→項目の統合...** メニューを選択してください．
-すると，**項目の統合** ウィンドウが現れます．
+## Parallel display of the entries' fields
 
-## 項目フィールドの並列表示
+![Screenshot of the parallel display](./images/MergeEntries-ParallelDisplay.png)
 
-![並列表示のスクリーンショット](../en/images/MergeEntries-ParallelDisplay.png)
+The fields of the two entries are displayed side-by-side on the upper part of the window.
 
-2つの項目のフィールドが，ウィンドウ上部に左右に並べて表示されます．
+The differences between the two entries can be emphasized through the drop-down menu located at the upper right-hand corner of the window. Five ways of displaying the differences are offered:
 
-2つの項目の差異は，ウィンドウ右上隅にあるドロップダウンメニューを使って強調することができます．
-差異の表示には，以下の5つの方法があります．
+- **plain text**: as is, no emphasis
+- **show diff** - word: differences are shown in the right entry. Full words are struck out in red if they are removed from the left entry or underlined in blue if they are added to the right entry.
+- **show diff** - character: differences are shown in the right entry. Individual characters are struck out in red or underlined in blue as above.
+- **show symmetric diff** - word: differences are shown on both sides. Words are underlined and displayed in color.
+- **show symmetric diff** - character: differences are shown on both sides. Characters are underlined and displayed in color.
 
-- **平文**：そのまま，強調なし
-- **差異を表示** - 単語：差異は右側の項目に表示されます．左側の項目から単語が削除されている場合には，その単語全体に赤い取消線が引かれます．単語が右側の項目で追加されている場合には，青い下線が引かれます．
-- **差異を表示** - 文字：差異は右側の項目に表示されます．上記と同様ですが，文字ごとに赤線や青線が引かれます．
-- **差異を対照表示** - 単語：差異は両側に表示されます．単語ごとに色付きで下線表示されます．
-- **差異を対照表示** - 文字：差異は両側に表示されます．文字ごとに色付きで下線表示されます．
+In the central column, a radio button allows you to select which side to keep for each field: the **left side**, the **right side**, or **none**. By default, the left entry is kept, and any fields not present in the left entry are obtained from the right entry.
 
-列中央にラジオボタンがあるので，**左側**・**右側**・**なし** で，各フィールドにどちら側を採用するのかを選択することができます．
-既定では，左の項目が採用され，左側の項目に存在しないフィールドは，全て右側の項目から採用されます．
+## Merged entry: preview and source code
 
+![Screenshot of the preview and source code for the merged entry](./images/MergeEntries-PreviewAndCode.png)
 
-## 統合後の項目：プレビューとソースコード
+Based upon your selection, the merged entry is shown, both as a preview (on the left) and as source code (on the right).
 
-![統合後の項目のプレビューとソースコードのスクリーンショット](../en/images/MergeEntries-PreviewAndCode.png)
+If you right-click on the preview, you can **Print entry preview** or **Copy preview**.
 
-選択を反映した統合後の項目が，プレビュー（左側）とソースコード（右側）の形で表示されます．
+## Final merging
 
-プレビューを右クリックすると，**項目プレビューを印刷** したり， **プレビューをコピー** したりすることができます．
+![Screenshot of choosing to merge or not](./images/MergeEntries-Selecting.png)
 
-## 統合の決定
+Finally, after selecting which fields to keep, you can decide to **Merge entries**. Alternatively, you can press **Cancel**.
 
-![統合か否かの選択のスクリーンショット](../en/images/MergeEntries-Selecting.png)
-
-最後に，どちらのフィールドを採用するかを選択した後，**項目の統合** を押して決定することができます．決定しない場合には，**取消** を押すことができます．
-
-
-[重複の検出](FindDuplicates)も参照のこと．
+**See also:** [Find duplicates](FindDuplicates)

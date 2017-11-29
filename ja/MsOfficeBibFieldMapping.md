@@ -1,48 +1,44 @@
 ---
-title: MS Office文献XML形式
+title: MS Office Bibliography xml format
+helpCategories:
+  - Import/Export
 ---
+# Field Mapping between MS-Office and JabRef
 
-# MS-OfficeとJabRefの間のフィールド・マッピング
+## Introduction
 
-## はじめに
-JabRefは，読み込みと書き出し用にMS Office文献XML形式をサポートしています．
-XML形式のフィールド名の一部は，BibTeX/BibLaTeX形式のフィールド名と異なるので，両形式の間で直接マップすることができません．
-そこで，このヘルプファイルでは，フィールドマッピングの全覧を提供することにします．
+JabRef supports the MS Office Bibliography xml format for exporting and importing. Some field names in the xml format differ from the field names in the BibTeX/BibLaTeX format and can therefore be not directly mapped between the formats. Therefore this help file provides a list of all field mappings.
 
+## Entry Type Mappings
 
-## 項目型のマッピング
+| BibTeX/BibLaTeX entry type | XML entry type        |
+| -------------------------- | --------------------- |
+| book                       | Book                  |
+| inbook                     | BookSection           |
+| booklet                    | BookSection           |
+| incollection               | BookSection           |
+| article                    | JournalArticle        |
+| inproceedings              | ConferenceProceedings |
+| conference                 | ConferenceProceedings |
+| proceedings                | ConferenceProceedings |
+| collection                 | ConferenceProceedings |
+| techreport                 | Report                |
+| manual                     | Report                |
+| mastersthesis              | Report                |
+| phdthesis                  | Report                |
+| unpublished                | Report                |
+| patent                     | Patent                |
+| misc                       | Misc                  |
+| electronic                 | ElectronicSource      |
+| online                     | InternetSite          |
+| periodical                 | ArticleInAPeriodical  |
 
+## Field mappings
 
-|   BibTeX/BibLaTeX項目型    |        XML項目型       |
-|---------------------------|-----------------------|
-| book                      | Book                  |
-| inbook                    | BookSection           |
-| booklet                   | BookSection           |
-| incollection              | BookSection           |
-| article                   | JournalArticle        |
-| inproceedings             | ConferenceProceedings |
-| conference                | ConferenceProceedings |
-| proceedings               | ConferenceProceedings |
-| collection                | ConferenceProceedings |
-| techreport                | Report                |
-| manual                    | Report                |
-| mastersthesis             | Report                |
-| phdthesis                 | Report                |
-| unpublished               | Report                |
-| patent                    | Patent                |
-| misc                      | Misc                  |
-| electronic                | ElectronicSource      |
-| online                    | InternetSite          |
-| periodical                | ArticleInAPeriodical  |
+The field mapping for import and export is mostly the same, but there are some differences, as not all field exists in both formats. Addtionally, some fields have to be treated differently during import/export.
 
-
-
-## フィールド・マッピング
-読み込み用と書き出し用のフィールドマッピングは，ほぼ同じですが，両形式に全てのフィールドが存在するわけではないので，若干の違いがあります．
-加えて，読み込みないし書き出し中に，一部のフィールドは異なった取り扱いを必要とします．
-
-| BibTeX/BibLaTex | XMLフィールド   |
-|-----------------|---------------|
+| BibTeX/BibLaTeX | XML field     |
+| --------------- | ------------- |
 | bibtexkey       | Tag           |
 | title           | Title         |
 | year            | Year          |
@@ -62,16 +58,14 @@ XML形式のフィールド名の一部は，BibTeX/BibLaTeX形式のフィー�
 | pages           | Pages         |
 | authors         | Authors       |
 | editors         | Editors       |
+| volumes         | NumberVolumes |
 
+### BibTeX/BibLaTeX only fields
 
+The following fields are BibTeX/BibLaTex only fields, they have no representation in office xml. In the resulting xml file they are represented with the prefix `BIBTEX_`
 
-### BibTeX/BibLaTeX固有のフィールド
-下記のフィールドは，BibTeX/BibLaTeX固有のフィールドであり，公式XMLには，対応する表現がありません．
-生成されるXMLファイルでは，これらには，前置句`BIBTEX_`をつけて表現されます．
-
-
-| BibTeX/BibLaTeX固有フィールド |       XML表現        |
-|-----------------------------|---------------------|
+| BibTeX/BibLaTeX only fields | XML representation  |
+| --------------------------- | ------------------- |
 | series                      | BIBTEX_Series       |
 | abstract                    | BIBTEX_Abstract     |
 | keywords                    | BIBTEX_KeyWords     |
@@ -84,18 +78,19 @@ XML形式のフィールド名の一部は，BibTeX/BibLaTeX形式のフィー�
 | size                        | BIBTEX_Size         |
 | intype                      | BIBTEX_InType       |
 | paper                       | BIBTEX_Paper        |
-| &lt;BibTexEntryType&gt;     | BIBTEX_Entry        |
-| &lt;BibTexEntryType&gt;     | SourceType          |
+| <BibTexEntryType>           | BIBTEX_Entry        |
+| <BibTexEntryType>           | SourceType          |
 | key (not BibTeX-Key)        | BIBTEX_KEY          |
+| pubstate                    | BITEX_Pubstate      |
 
-XMLフィールド`SourceType`には，最初のテーブルの型に対応する項目型が収められ，元のBibTeX/BibLaTeXのentrytypeには，フィールド`BIBTEX_ENTRY`が収録されます．
+The xml field `SourceType` contains the associated entry type from the first table, while the original BibTeX/BibLaTex entrytype is preserved in the field `BIBTEX_ENTRY`.
 
-### MS-Bib固有のフィールド
-下記のフィールドは，XML固有のフィールドであり，BibTeX/BibLaTeXでの表現はありません．
-生成されるbibデータベースでは，これらは，前置句`msbib-`を付されて表現されます．
+### MS-Bib only fields
 
-|      BibTeX/BibLaTeX表現      | XMLフィールド                                         |
-|-------------------------------|-----------------------------------------------------|
+The following fields are XML-only fields, they have no BibTeX/BibLaTex representation: In the resulting bib database they are represented with the prefix `msbib-`.
+
+| BibTeX/BibLaTex represenation | XML field                                           |
+| ----------------------------- | --------------------------------------------------- |
 | msbib-numberofvolume          | NumberVolumes                                       |
 | msbib-periodical              | PeriodicalTitle                                     |
 | msbib-day                     | Day                                                 |
@@ -125,36 +120,35 @@ XMLフィールド`SourceType`には，最初のテーブルの型に対応す�
 | msbib-inventor                | inventors                                           |
 | msbib-counsel                 | counsels                                            |
 
+### Special Export treatment
 
-### 書き出し時の特殊な取扱い
-下記のフィールドは，書き出し時に下記のように取り扱われます．
+The following fields are treated as follows during epxort:
 
+| BibTeX/BibLaTeX represenation                                      | XML field                          |
+| ------------------------------------------------------------------ | ---------------------------------- |
+| booktitle                                                          | ConferenceName                     |
+| journal                                                            | JournalName                        |
+| journaltitle                                                       | JournalName                        |
+| month                                                              | Month                              |
+| date                                                               | year                               |
+| issue                                                              | issue                              |
+| isbn                                                               | StandardNumber                     |
+| issn                                                               | StandardNumber                     |
+| lccn                                                               | StandardNumber                     |
+| mrnumer                                                            | StandardNumber                     |
+| address                                                            | City, StateProvince, CountryRegion |
+| location                                                           | City, StateProvince, CountryRegion |
+| <EntryType is thesis>                                              | ThesisType                         |
+| <EntryType is patent> number                                       | PatentNumber                       |
+| number (entry is not patent)                                       | Number                             |
+| Authors/Editors (single author/editor is enclosed in curly braces) | Corporate                          |
 
-|      BibTeX/BibLaTeX表現      | XMLフィールド    |
-|-------------------------------|----------------|
-| booktitle                     | ConferenceName |
-| journal                       | JournalName    |
-| journaltitle                  | JournalName    |
-| month                         | Month          |
-| date                          | year           |
-| issue                         | number         |
-| isbn                          | StandardNumber |
-| issn                          | StandardNumber |
-| lccn                          | StandardNumber |
-| mrnumer                       | StandardNumber |
-| address                       | City, StateProvince, CountryRegion|
-| location                      | City, StateProvince, CountryRegion|
-| &lt;EntryTypeがthesis&gt;         | ThesisType     |
-| &lt;EntryTypeがpatent&gt; number | PatentNumber   |
-| number (項目がpatentではなくissueが存在しない) | Number |
+### Special Import treatment
 
+The following fields are treated as follows during import:
 
-### 読み込み時の特殊な取扱い
-下記のフィールドは，読み込み時に下記のように取り扱われます．
-
-
-|      BibTeX/BibLaTeX表現      | XMLフィールド    |
-|-------------------------------|----------------|
-| organization                  | ConferenceName |
-| journaltitle                  | Journal        |
-| location                      | City, StateProvince, CountryRegion|
+| BibTeX/BibLaTeX represenation | XML field                          |
+| ----------------------------- | ---------------------------------- |
+| organization                  | ConferenceName                     |
+| journaltitle                  | Journal                            |
+| location                      | City, StateProvince, CountryRegion |

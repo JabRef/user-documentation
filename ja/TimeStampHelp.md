@@ -1,4 +1,4 @@
 ---
-redirect:   /ja/TimeStamp
-layout:     redirect
+redirect: /en/TimeStamp
+layout: redirect
 ---

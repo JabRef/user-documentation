@@ -1,4 +1,4 @@
 ---
-redirect:   /fr/Preview
-layout:     redirect
+redirect: /en/Preview
+layout: redirect
 ---

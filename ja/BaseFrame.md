@@ -1,40 +1,41 @@
 ---
-title: JabRef 基本ウィンドウ
+title: JabRef's main window
+helpCategories:
+  - General
 ---
+# JabRef's main window
 
-# JabRef 基本ウィンドウ
+*Note:* most menu actions referred in the following have keyboard shortcuts, and many are available from the toolbar. The keyboard shortcuts are found in the pull-down menus.
 
-*《註》* 以下に言及されているメニューアクションのほとんどには，ショートカット鍵(キー)があり，多くはツールバーからも使用できます．ショートカット鍵は，プルダウンメニューに表示されます．
+This is the main window from where you work with your databases. Below the menubar and the toolbar is a tabbed pane containing a panel for each of your currently open databases. When you select one of these panels, a table appears, listing all the database's entries, as well as a configurable selection of their fields.
 
-これは基本ウィンドウであり，ここからあなたのデータベースを操作します．メニューバーとツールバーの下には，タブ付きのパネルがあり，各パネルが現在開いているデータベースの各々に対応しています．これらのパネルの一つを選択すると，表が表われて，データベース全項目のうち主要なフィールド(表示フィールドは設定可能)が表示されます．
+- You decide which fields are shown in the table by checking the fields you want to see in the **Preferences** dialog.
+- Double-click a line of the table to edit the entry content. You can navigate the table with the arrow keys.
+- The table is sorted according to a set of fields of your choosing. The default sort order can be set up in **Preferences → Entry table**, but to more quickly change the order, click the header of a column to set it as the primary sort criterion, or reverse the sorting if it is already set. Another click will deselect the column as sorting criterion. Hold down <kbd>Ctrl</kbd> and click a column to add, reverse or remove it as a sub-criterion after the primary column. You can add an arbitrary number of sub-criteria, but only three levels will be stored for the next time you start JabRef.
+- Adjust the width of each column by dragging the borders between their headers.
+- Color codes can be toggled in the **Preferences** dialog (select **Appearance** and activate option "Color codes for optional and required fields). They help you visualize the completeness of your database by coloring cells as follows: 
+    - A <span style="color: red">red</span> cell in the leftmost column denotes an incomplete entry.
+    - A <span style="color: #909000">yellow</span> cell in the leftmost column denotes an entry that doesn't define all required fields by itself, but that contains a cross-reference.
+    - A <span style="color: blue">blue</span> cell denotes a required field.
+    - A <span style="color: green">green</span> cell denotes an optional field.
+    - An uncolored cell denotes a field which is not used by the *BibTeX* program for this type of entry. The field can still be edited in JabRef.
 
--   表中どのフィールドを表示するかを選ぶには，見たいフィールドを **設定** ダイアログの中でチェックします．
--   項目の内容を編集するには，表中の行をダブルクリックしてください．表内部は矢印キーで移動することができます．
--   表は，あなたの選択したフィールド群を使って整序されます．既定の整序順は，**設定 → 項目表** で設定することができますが，もっと間便に順序を変えるには，適切な列のヘッダをクリックすれば，それが第一の整序基準に据えられるか，仮に既にそうなっている場合には整序順が反転されます．もう一度クリックすれば，そのコラムが整序基準から外されます．列を第二の整序基準に加えたり，その整序順を反転させたり，あるいは基準から外したりする場合には，**コントロール** キーを押しながら，列をクリックしてください．第二の整序基準は，いくつでも追加できますが，次回JabRefを起動したときに保存されているのは，第三レベルまでです．
--   各列の幅を調整するには，各列ヘッダ間の境界をドラッグしてください．
--   色コードは，**設定** ダイアログの中で入切することができます（**外観** を選択し，「必須フィールドと非必須フィールドのコードに着色」オプションを有効にします）．以下のようにセルを色づけすることによって，お使いのデータベースの完全性を維持するために視覚化することができます．
-    -   最左列の<span style="color: red">赤色</span>セルは，その項目が不完全であることを示します．
-    -   最左列の<span style="color: #909000">黄色</span>セルは，それ自身で全必須フィールドを定義しておらず，内部参照が使用されていることを示します．
-    -   <span style="color: blue">青色</span>セルは，必須フィールドを示します．
-    -   <span style="color: green">緑色</span>セルは，非必須フィールドを示します．
-    -   色づけされていないセルは，*BibTeX* プログラムが，この型の項目用にこのフィールドを使用していないことを示します．このフィールドは，JabRef中では編集することができます．
+## Adding a new entry
 
-## 項目を新しく追加するには
+There are several ways to add a new entry. The **New entry** menu action shows a dialog where you can choose the type of the entry from a list. To bypass this dialog, there are also separate menu actions for each entry type, and keyboard shortcuts for the most common types.
 
-項目を新しく追加するには，いくつかの方法があります．**新規項目** メニューを選ぶと，ダイアログが表示されて，一覧から項目型を選択することができます．このダイアログを飛ばすためには，各項目型に対応したメニューがあり，良く使用されるほとんどの型については捷径鍵もあります．
+When a new entry is added, by default an [entry editor](EntryEditor) for the entry will be opened. This behaviour can be toggled in the **Preferences** dialog.
 
-新しい項目が追加されると，既定ではその項目の[項目エディタ](EntryEditorHelp)が開きます．この挙動は，**設定** ダイアログの中で切り替えることができます．
+*Note:* We strongly recommend learning the shortcuts for the entry types you use most often, e.g. <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>A</kbd> for adding an *article* entry.
 
-*《註》* もっともよく使う項目型の捷径鍵を覚えておくことを，つよくお勧めします．たとえば，*article* 型項目を追加するのはCTRL-SHIFT-Aです．
+In the dialog, you can also create an entry based on Id. See <http://help.jabref.org/en/#using-publication-identifiers> for an overview on all available fetchers. For instance, when having an ISBN number, you can select "ISBN" als Id type and then fetch it. See <ISBNtoBibTeX> for details.
 
-## 項目の編集
+## Editing an entry
 
-既存の項目の[項目エディタ](EntryEditorHelp)を開くには，適切な行のどこでもいいのでダブルクリックするか，項目を選択してENTERキーを押してください．
+To open an [entry editor](EntryEditor) for an existing entry, simply double-click anywhere on the appropriate line will open the [entry editor](EntryEditor) (or select the entry and press <kbd>Enter</kbd>).
 
-## フィールド中で *BibTeX* 文字列を参照するには
+## Referencing a *BibTeX* string in a field
 
-JabRefでは，全フィールドの中身は，テキストエディタ中で書くのと同じようにそのまま書くことができますが，一つだけ例外があります．文字列を参照するには，
-  「\#jan\# 1997」
-のように，文字列名を\#で囲んでください．こうすると，文字列名「jan」の後に「 1997」が続いているものと解釈されます．
+In JabRef you write the contents of all fields the same way as you would in a text editor, with one exception: to reference a string, enclose the name of the string in a set of \# characters, e.g.:   '\#jan\# 1997', which will be interpreted as the string named 'jan' followed by ' 1997'.
 
-[文字列エディタ](StringEditorHelp)もご参照ください．
+See also: [string editor](StringEditor).

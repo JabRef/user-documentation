@@ -1,4 +1,4 @@
 ---
-redirect:   /ja/Medline
-layout:     redirect
+redirect: /en/Medline
+layout: redirect
 ---

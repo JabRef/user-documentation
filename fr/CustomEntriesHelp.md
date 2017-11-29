@@ -1,4 +1,4 @@
 ---
-redirect:   /fr/CustomEntries
-layout:     redirect
+redirect: /en/CustomEntries
+layout: redirect
 ---

@@ -1,4 +1,4 @@
 ---
-redirect:   /ja/CiteSeer
-layout:     redirect
+redirect: /en/CiteSeer
+layout: redirect
 ---

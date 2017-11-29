@@ -1,17 +1,18 @@
 ---
-title: 項目の標識付け
+title: Mark entries
+helpCategories:
+  - Finding, sorting and cleaning entries
 ---
+# Mark entries
 
-# 項目の標識付け
+You have the option of *marking* entries. Keyboard shortcuts are <kbd>Ctrl</kbd> + <kbd>M</kbd> and <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>M</kbd> to mark and unmark the selected entries, respectively, and you can also access these actions in the menu **Edit** or by right-clicking on the entry and selecting the relevant action.
 
-項目には，**標識**(マーク)を付けることができます。選択項目を標識付けする捷径鍵(ショートカット)はCTRL-M，外す捷径鍵はCTRL-SHIFT-Mです。これらはメニューからもアクセスすることができます。
+Marking is not the same as selecting entries. Marked entries behave differently from other entries in two ways. First, they are always displayed with a different background color in the entry table. Second, they will float to the top of your entry list, as long as your table is not sorted according to groups.
 
-標識付けは項目の選択とは違います。標識を付けた項目は，他の項目と2つの点で異なる働きをします。まず，項目表中でこれらの項目は，常に異なる背景色で表示されます。第二に，グループ順に整序されていたり，検索結果を上部に表示する設定をしていない限り，これらは項目一覧の最上位に表示されます。
+The color each marked entry is displayed in depends on the marking level of the entry, with the default colors ranging from yellow to red. There are menu choices for directly setting the marking to a specific level.
 
-項目が表示される標識色は，項目の標識階層に依存し，規定値では黄色から赤色になっています。メニュー中には，選択項目の標識階層を上げたり，直接指定した階層に標識する選択肢があります。
+Marking entries can be useful for instance if you need to do several searches without losing your first search results, or if you need to remember which articles or books to look more closely at.
 
-項目の標識付けは，例えば，最初の検索結果を消さないで，複数の検索を行う必要があるときや，後に詳細に検討する必要がある論文や書籍を覚えておかなくてはならない時などに便利です。
+In addition to manually marking entries, JabRef can optionally auto-mark the latest imported entries, and at the same time unmark the previous entries marked in this way. Such entries will be shown in a different color from manually marked entries - by default green. This feature is toggled under **Options → Preferences → General**: '*Mark entries imported into an existing database*' and '*Unmark all entries before importing new entries into an existing database*'.
 
-手動での標識付けに加えて，JabRefでは，自動的に直近の読み込み項目を標識付けし，同時に以前に同じ方法で標識を付けた項目を自動的に標識から外すことも可能です。これらの項目は，手動で標識を付けた色とは別の色 ―既定値では緑― で表示されます。この機能は，**オプション→設定→一般** の下にある「*既存データベースに読み込んだ項目を標識する*」と「*既存データベースに新規項目を読み込む前に全項目の標識を解除する*」で入切することができます。
-
-項目の標識は、項目を作成したり読み込んだりする際の[ownerフィールド](OwnerHelp)の入力に用いる、ユーザー名に関連付けられます(これは、既定値ではオペレーティング・システムのユーザー名と同じですが、**オプション→設定→一般** で変更することができます)。つまり、ユーザーごとに独立した標識を付けることができます。データベースを保存すると、標識も保存されます。
+Marking of entries will be associated with your username, the same name as is used to fill in the [owner field](Owner) of entries you create or import (this will by default match your user name in the operating system, but can be changed under **Options → Preferences → General**). Different users can mark entries independently. Saving the database will preserve the markings.

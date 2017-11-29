@@ -1,4 +1,4 @@
 ---
-redirect:   /fr/DiVAtoBibTeX
-layout:     redirect
+redirect: /en/DiVAtoBibTeX
+layout: redirect
 ---

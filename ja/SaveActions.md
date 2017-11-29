@@ -1,18 +1,13 @@
 ---
-title: 保存時動作
-helpCategories: ["項目の検索・整序・剪定"]
+title: Save actions
+helpCategories:
+  - Finding, sorting and cleaning entries
 stub: true
 ---
+# Save actions
 
-# 保存時動作
+Field formatting can be tidied up when saving the database. That ensures your entries to have consistent formatting. If you check **Enable save actions** in the [Database Properties](DatabaseProperties), the list of actions can be configured.
 
-データベース保存時に，フィールドの書き方を整える（剪定する）ことができます．
-これによって，項目の整合性のある書き方が維持されるようにできます．
-[データベース特性](DatabaseProperties)で **保存時動作を有効化** をチェックすると，動作リストを編集できるようになります．
+Each action is defined by: - an entry field (upon which the action will be applied). - the type of action to be carried out (such as *HTML to LaTeX*, which converts HTML code to LaTeX code, as described in the window).
 
-各動作は，
-- （動作が適用される）項目フィールド
-- 実行される動作の型（例えば *HTMLからLaTeXへ*．これは，ウィンドウ中に説明されているようにLaTeXコードをHTMLコードに変換します）
-によって，定義されます．
-
-データベースモードに依存して，「BibTeXに対する推奨」か「BibLaTeXに対する推奨」ボタンが表示されますが，これを押すと，各モード用に推奨される剪定が呼び出されます．
+Dependend on the database mode, "Recommended for BibTeX" or "Recommended for BibLaTeX". When pressing this button, the recommended cleanups for the respective mode is called.

@@ -1,4 +1,4 @@
 ---
-redirect:   /fr/SpecialFields
-layout:     redirect
+redirect: /en/SpecialFields
+layout: redirect
 ---

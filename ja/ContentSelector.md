@@ -1,12 +1,13 @@
 ---
-title: フィールド内容選択メニュー
+title: Field content selector
 outdated: true
+helpCategories:
+  - Fields
 ---
+# Field content selector
 
-# フィールド内容選択メニュー
+This feature allows you to store a selection of often-used words or phrases that you use often in your database. By default it is enabled for the fields *Journal*, *Author*, *Keywords* and *Publisher*, but you can also add selectors to other fields, in the upper part of the *Manage* dialog (menu **Options -→ Manage content selectors**).
 
-この機能は、使用しているデータベースでしばしば用いられる頻出語や頻出句を選んで保存することができるようにするものです。この機能は、既定では *Journal*・*Author*・*Keywords*・*Publisher* の各フィールドに対して有効になっていますが、*選択メニューを設定* ダイアログ(**ツール→内容選択メニューを管理** メニュー)の上部で、他のフィールドにも内容選択メニューを追加することができます。
+The word selection is database-specific, and is saved along with your references in the .bib file.
 
-設定した単語は、データベース毎に固有のものであり、文献データとともに.bibファイルに保存されます。
-
-単語を新しく付け加えるには、*選択メニューを設定* ダイアログのキーワード欄に書き込んでEnter鍵を押してください。削除ボタンを使えば、単語を削除することができます。
+To add a new word in the entry editor, you can simply click into the text box for the field for which you configured the selectors. A drop down menu will appear and you can select the keyword of your choice. This mechanism is based on the autocompletion functionality in JabRef. Therefore, you need to have autocompletion enabled in your preferences.

@@ -1,42 +1,44 @@
 ---
-title: EndNote書出フィルタ
+title: EndNote Export Filter
 outdated: true
+helpCategories:
+  - Import/Export
 ---
+# EndNote Export Filter
 
-# EndNote書出フィルタ
+## Export from JabRef
 
-## JabRefからの書き出し
+JabRef can export databases to EndNote-readable files. To use this feature, choose **File → Export**, choose the file type **Endnote (txt)** and then specify the name of the export file.
 
-JabRefは、EndoNoteが読込可能形式ファイルへ書き出すことができます。この機能を使うには、**ファイル→書き出す**を選択して、ファイル形式 **Endnote (\*.txt)** を選択し、書出ファイル名を指定してください。
+## Import to EndNote
 
-## EndNoteへの読み込み
+The default EndNote Import filter does not handle multiple authors or editors properly. There are two options to work around this:
 
-EndNoteの既定の読込フィルタは、複数の著者や編者を適切に取り扱うことができません。これを回避するには、以下の2つの方法があります。
+1. Use the built-in filter and fix the file later. To open up the file in EndNote, create a new database or open an old database in EndNote. Then select **File → Import**, click on **Choose File**, then highlight the exported file and click **Choose**. Click on **Import Options** and select **EndNote Import**. Click **Import** to start the import. After import, select **Edit→ Change Text**. Change **Any Field** to **Author**. Enter " and " into the search field (without quotes). enter a return character into the change field (<kbd>Option</kbd> + <kbd>Enter</kbd> on Mac OS X, <kbd>Ctrl</kbd> + <kbd>Enter</kbd> on Windows XP). Click **Change**. Repeat with the **Secondary Author** field.
+2. Install the *EndNote Import from JabRef filter* in the *EndNote Extras*. Follow the instructions in *Advanced Use* below. To open up the file in EndNote, create a new database or open an old database in EndNote. Then select **File → Import**, click on **Choose File**, then highlight the exported file and click **Choose**. Click on **Import Options** and select **EndNote Import from JabRef** (if it does not appear, select Other filters. If it still doesn't appear, it was not correctly installed.) Click **Import** to start the import.
 
-1.  組み込みフィルタを使用して、ファイルを後から修正します。ファイルをEndNoteで開くには、EndNoteで新規データベースを作成するか、既存のデータベースを開いてください。その後、**File → Import**を選んで **Choose File** をクリックし、書き出したファイルを選択してから **Choose** をクリックしてください。**Import Options** をクリックして、**EndNote Import** を選択します。**Import** をクリックすれば、読み込みが始まります。読み込み後、**Edit → Change Text** を選択し、**Any Field** を **Author** に変更します。" and "を検索フィールドに入力し(引用符なし)、変更フィールドにリターン文字を入力して(Mac OS Xではoption-return、Windows XPではctrl-return)、**Change** をクリックしてください。同じことを **Secondary Author** フィールドについても繰り返します。
-2.  *EndNote Extras* に *EndNote Import from JabRef filter* を導入します。下記の **進んだ使い方** の指示に従ってください。ファイルをEndNoteで開くには、EndNoteで新規データベースを作成するか、既存のデータベースを開いてください。その後、**File → Import**を選んで **Choose File** をクリックし、書き出したファイルを選択してから **Choose** をクリックしてください。**Import Options** をクリックして、**EndNote Import from JabRef** を選択します(もしこれが表示されていなければ Other filters を選択してください。それでも表示されていなければ、フィルタが正しく導入されていません)。**Import** をクリックすれば、読み込みが始まります。
+## Notes
 
-## 註記
+The EndNote Export filter maps BibTeX entrytypes to EndNote reference types as follows:
 
-EndNote書出フィルタは、BibTeX項目型を以下のように EndNote reference type に対応させます。
-
-    BibTeX項目型 → EndNote Reference Type
+    BibTeX entrytype -> EndNote Reference Type
     ------------------------------------------
-    misc, other → Generic
-    unpublished → Manuscript
-    manual → Computer Program
-    article → Journal Article
-    book → Book
-    booklet → Personal Communication
-    inbook,incollection → Book Section
-    inproceedings → Conference Proceedings
-    techreport → Report
-    mastersthesis, phdthesis → Thesis
+    misc, other -> Generic
+    unpublished -> Manuscript
+    manual -> Computer Program
+    article -> Journal Article
+    book -> Book
+    booklet -> Personal Communication
+    inbook,incollection -> Book Section
+    inproceedings -> Conference Proceedings
+    techreport -> Report
+    mastersthesis, phdthesis -> Thesis
+    
 
-## 共著者
+## Corporate Authors
 
-既定の書出フィルタは、authorフィールドやeditorフィールド中の角括弧に囲まれた項目は、共著者であるものと見なし、角括弧は後ろに付けたコンマに変換されます。しかし、これは角括弧に囲まれたLaTeXコードを含む項目も共著者と見なされることを意味し、このような場合には適切に整形されません。
+By default, the export filter assumes that entries in the author or editor fields in brackets are corporate authors and replaces the brackets with a trailing comma. However, this means that entries that include LaTeX code in brackets will be assumed to be corporate authors and therefore will be improperly formatted.
 
-## 進んだ使い方: EndNote Extras
+## Advanced Use: EndNote Extras
 
-EndNoteとJabRefの間の相互互換性を向上させるためには、JabRefウェブページにあるResourcesのページからEndNoteフィルタセットをダウンロードしてください。
+For better interoperability between EndNote and JabRef, download the EndNote filter set from the Resources page of JabRef's web page.

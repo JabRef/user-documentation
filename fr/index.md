@@ -1,137 +1,132 @@
 ---
-title: Contenu de l’aide
+title: Help contents
 ---
-
-# Contenu de l’aide
+# Help contents
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <strong>Vous ne trouvez pas de solutions à votre problème ? Vous avez encore des questions?</strong>
+    <strong>You can't find a solution to your problem? You still have questions?</strong>
   </div>
   <div class="panel-body">
-    <a class="btn btn-default" role="button" href="http://discourse.jabref.org">Demandez de l'aide sur le forum en ligne (en anglais)!</a>
+    <a class="btn btn-default" role="button" href="http://discourse.jabref.org">Use the online forum to get more support!</a>
   </div>
 </div>
 
-
 ## FAQ
-- [Contributing](/fr/FAQcontributing)
-- [General](/fr/FAQgeneral)
-- [JabRef and Linux](/fr/FAQlinux)
-- [JabRef and Mac OS X](/fr/FAQosx)
-- [JabRef and Windows](/fr/FAQwindows)
-- [Other](/fr/FAQother)
-- [Sharing](/fr/FAQsharing)
 
+- [Contributing](/en/FAQcontributing)
+- [General](/en/FAQgeneral)
+- [JabRef and Linux](/en/FAQlinux)
+- [JabRef and Mac OS X](/en/FAQosx)
+- [JabRef and Windows](/en/FAQwindows)
+- [Other](/en/FAQother)
+- [Sharing](/en/FAQsharing)
 
-## Général
-- [Accès à distance](/fr/Remote)
-- [Backup](/fr/Backup)
-- [Best Practices](/fr/BestPractices)
-- [Installation](/fr/Installation)
-- [JabRef](/fr/JabRef)
-- [L'éditeur d'entrées](/fr/EntryEditor)
-- [La fenêtre principale de JabRef](/fr/BaseFrame)
-- [Les options de la ligne de commande](/fr/CommandLine)
-- [Sauvegarde automatique](/fr/Autosave)
+## General
 
+- [Autosave](/en/Autosave)
+- [Backup](/en/Backup)
+- [Best Practices](/en/BestPractices)
+- [BibTeX entry editor](/en/EntryEditor)
+- [Command line use and options](/en/CommandLine)
+- [Installation](/en/Installation)
+- [JabRef](/en/JabRef)
+- [JabRef's main window](/en/BaseFrame)
+- [Remote operation](/en/Remote)
 
-## Champs
-- [A propos de *BibTeX*](/fr/Bibtex)
-- [Abréviations des journaux](/fr/JournalAbbreviations)
-- [Aide sur les chaînes](/fr/Strings)
-- [Champs spéciaux](/fr/SpecialFields)
-- [Horodatage des entrées](/fr/TimeStamp)
-- [Le champ 'owner' (propriétaire)](/fr/Owner)
-- [Les liens PDF/PS/URL/DOI dans JabRef](/fr/ExternalFiles)
-- [Liens de fichier dans JabRef](/fr/FileLinks)
-- [Links to other entries](/fr/EntryLinks)
-- [Set/clear/rename fields](/fr/SetClearRenameFields)
-- [Sélecteur de contenu de champ](/fr/ContentSelector)
+## Fields
 
+- [About *BibTeX*](/en/Bibtex)
+- [Entry time stamps](/en/TimeStamp)
+- [Field content selector](/en/ContentSelector)
+- [File links in JabRef](/en/FileLinks)
+- [Journal abbreviations](/en/JournalAbbreviations)
+- [Links to other entries](/en/EntryLinks)
+- [PDF/PS/URL/DOI links in JabRef](/en/ExternalFiles)
+- [Set/clear/rename fields](/en/SetClearRenameFields)
+- [Special Fields](/en/SpecialFields)
+- [Strings](/en/Strings)
+- [The 'owner' field](/en/Owner)
 
-## Recherche et tri des entrées
-- [Add unlinked PDFs including BibTeX data into the database](/fr/FindUnlinkedFiles)
-- [Check integrity](/fr/CheckIntegrity)
-- [Cleanup entries](/fr/CleanupEntries)
-- [Etiqueter les entrées](/fr/Marking)
-- [Find duplicates](/fr/FindDuplicates)
-- [Get BibTeX data from DOI](/fr/GetBibTeXDataFromDOI)
-- [Les groupes](/fr/Groups)
-- [Merge entries](/fr/MergeEntries)
-- [Recherche](/fr/Search)
-- [Replace string](/fr/ReplaceString)
-- [Save actions](/fr/SaveActions)
-- [Synchronize file links](/fr/SynchroFileLinks)
+## Finding, sorting and cleaning entries
 
+- [Add unlinked PDFs including BibTeX data into the database](/en/FindUnlinkedFiles)
+- [Check integrity](/en/CheckIntegrity)
+- [Cleanup entries](/en/CleanupEntries)
+- [Find duplicates](/en/FindDuplicates)
+- [Get BibTeX data from DOI](/en/GetBibTeXDataFromDOI)
+- [Groups](/en/Groups)
+- [Mark entries](/en/Marking)
+- [Merge entries](/en/MergeEntries)
+- [Replace string](/en/ReplaceString)
+- [Save actions](/en/SaveActions)
+- [Searching](/en/Search)
+- [Synchronize file links](/en/SynchroFileLinks)
 
-## Configuration
-- [Configuration de l'aperçu des entrées](/fr/Preview)
-- [Customize key bindings](/fr/CustomKeyBindings)
-- [L'éditeur de chaîne](/fr/StringEditor)
-- [Manage external file types](/fr/ExternalFileTypes)
-- [Manage protected terms](/fr/ProtectedTerms)
-- [Personnalisation des champs généraux](/fr/GeneralFields)
-- [Personnalisation du générateur de clefs BibTeX](/fr/BibtexKeyPatterns)
-- [Personnaliser les types d'entrées](/fr/CustomEntryTypes)
-- [Propriétés de la base de données.](/fr/DatabaseProperties)
+## Setup
 
+- [Customize key bindings](/en/CustomKeyBindings)
+- [Customizing entry types](/en/CustomEntryTypes)
+- [Customizing general fields](/en/GeneralFields)
+- [Customizing the BibTeX key generator](/en/BibtexKeyPatterns)
+- [Database properties window](/en/DatabaseProperties)
+- [Entry preview setup](/en/Preview)
+- [Manage external file types](/en/ExternalFileTypes)
+- [Manage protected terms](/en/ProtectedTerms)
+- [The string editor](/en/StringEditor)
 
-## Travail collaboratif
-- [Migration of pre-3.6 SQL databases into a shared SQL database](/fr/SQLDatabaseMigration)
-- [Shared SQL Database](/fr/SQLDatabase)
-- [Sharing a Bib(La)TeX Database](/fr/SharedBibFile)
+## Collaborative work
 
+- [Migration of pre-3.6 SQL databases into a shared SQL database](/en/SQLDatabaseMigration)
+- [Shared SQL Database](/en/SQLDatabase)
+- [Sharing a Bib(La)TeX Database](/en/SharedBibFile)
 
-## Importation/Exportation
-- [Comparison of the Medline (txt), Medline (XML), and RIS format](/fr/MedlineRIS)
-- [Exportation vers une base de données SQL externe](/fr/SQLExport)
-- [Fenêtre de vérification des importations](/fr/ImportInspectionDialog)
-- [Filtre d'exportation EndNote](/fr/EndNoteFilters)
-- [Filtres d'exportation personnalisés](/fr/CustomExports)
-- [Filtres d'importation personnalisés](/fr/CustomImports)
-- [Intégration dans OpenOffice/LibreOffice](/fr/OpenOfficeIntegration)
-- [MS Office Bibliography xml format](/fr/MsOfficeBibFieldMapping)
-- [New subdatabase based on AUX file](/fr/NewBasedOnAux)
-- [Support des metadonnées XMP dans JabRef](/fr/XMP)
+## Import/Export
 
+- [Comparison of the Medline (txt), Medline (XML), and RIS format](/en/MedlineRIS)
+- [Custom export filters](/en/CustomExports)
+- [Custom import filters](/en/CustomImports)
+- [EndNote Export Filter](/en/EndNoteFilters)
+- [Export to an External SQL Database](/en/SQLExport)
+- [Import inspection window](/en/ImportInspectionDialog)
+- [MS Office Bibliography xml format](/en/MsOfficeBibFieldMapping)
+- [New subdatabase based on AUX file](/en/NewBasedOnAux)
+- [OpenOffice/LibreOffice integration](/en/OpenOfficeIntegration)
+- [XMP metadata support in JabRef](/en/XMP)
 
-## Chercher les entrées à partir du web
+## Fetching entries from the web
 
+### ... using publication identifiers
 
-### ... en utilisant des identifiants de publication
-- [Creating entries from Medline](/fr/MedlinetoBibTeX)
-- [Creating entries from SAO/NASA Astrophysics Data System](/fr/ADStoBibTeX)
-- [Creating entries using the title](/fr/TitleToBibTeX)
-- [Récupération d'entrées en utilisant DiVA](/fr/DiVAtoBibTeX)
-- [Récupération d'entrées en utilisant l'identifiant d'objet numérique (DOI)](/fr/DOItoBibTeX)
-- [Récupération d'entrées à partir du numéro ISBN](/fr/ISBNtoBibTeX)
+- [Creating entries from DiVA](/en/DiVAtoBibTeX)
+- [Creating entries from Medline](/en/MedlinetoBibTeX)
+- [Creating entries from SAO/NASA Astrophysics Data System](/en/ADStoBibTeX)
+- [Creating entries using an ISBN number](/en/ISBNtoBibTeX)
+- [Creating entries using the Digital Object Identifier (DOI)](/en/DOItoBibTeX)
+- [Creating entries using the title](/en/TitleToBibTeX)
 
+### ... using online bibliographic database
 
-### ... en utilisant une base de données bibliographique en ligne
-- [Fetching entries from DBLP](/fr/DBLP)
-- [Fetching entries from DOAJ](/fr/DOAJ)
-- [Fetching entries from GVK](/fr/GVK)
-- [Fetching entries from MathSciNet](/fr/MathSciNet)
-- [Fetching entries from SAO/NASA Astrophysics Data System](/fr/ADS)
-- [Fetching entries from Springer](/fr/Springer)
-- [Fetching entries from arXiv](/fr/arXiv)
-- [Fetching entries from zbMATH](/fr/zbMATH)
-- [Recherche Google Scholar](/fr/GoogleScholar)
-- [Recherche IEEEXplore](/fr/IEEEXplore)
-- [Recherche INSPIRE](/fr/INSPIRE)
-- [Récupération d'entrées depuis CiteSeerX](/fr/CiteSeer)
-- [Récupération d'entrées depuis Medline](/fr/Medline)
-- [Récupération d'entrées depuis le portail *ACM*](/fr/ACMPortal)
+- [Fetching entries from ACM Portal](/en/ACMPortal)
+- [Fetching entries from CiteSeerX](/en/CiteSeer)
+- [Fetching entries from DBLP](/en/DBLP)
+- [Fetching entries from DOAJ](/en/DOAJ)
+- [Fetching entries from GVK](/en/GVK)
+- [Fetching entries from Google Scholar](/en/GoogleScholar)
+- [Fetching entries from IEEEXplore](/en/IEEEXplore)
+- [Fetching entries from INSPIRE-HEP](/en/INSPIRE)
+- [Fetching entries from MEDLINE](/en/Medline)
+- [Fetching entries from MathSciNet](/en/MathSciNet)
+- [Fetching entries from SAO/NASA Astrophysics Data System](/en/ADS)
+- [Fetching entries from Springer](/en/Springer)
+- [Fetching entries from arXiv](/en/arXiv)
+- [Fetching entries from zbMATH](/en/zbMATH)
 
+## Contributing
 
+- [Translating the JabRef Interface](/en/TranslatingGUI)
 
-## Contribuer
-- [Translating the JabRef Interface](/fr/TranslatingGUI)
+## Miscellaneous
 
-
-## Divers
-- [Historique des révisions (en anglais)](/fr/RevisionHistory)
-- [License](/fr/License)
-
-
+- [License](/en/License)
+- [Revision history](/en/RevisionHistory)

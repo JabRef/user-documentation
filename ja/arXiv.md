@@ -1,11 +1,13 @@
 ---
-title: arXivから項目を取得するには
+title: Fetching entries from arXiv
+helpCategories:
+  - Fetching entries from the web
+  - '... using online bibliographic database'
 ---
+# Fetching entries from arXiv
 
-# arXivから項目を取得するには
+[ArXiv](https://arxiv.org/) is a repository of scientific preprints in the fields of mathematics, physics, astronomy, computer science, quantitative biology, statistics, and quantitative finance ([Wikipedia](https://en.wikipedia.org/wiki/ArXiv)).
 
-[arXiv](https://arxiv.org/)は，数学・物理学・天文学・計算機科学・数理生物学・統計学・数理ファイナンス等の分野における学術的草稿のリポジトリです([Wikipedia](https://ja.wikipedia.org/wiki/ArXiv))．
+To fetch entries from arXiv, choose **Search → Web search**, and the search interface will appear in the side pane. Select **ArXiv.org** in the dropdown menu. Enter the words of your query, and press <kbd>Enter</kbd> or the **Fetch** button.
 
-arXivから項目を取得するには，**検索 → ウェブ検索** を選択してください．すると，サイドペインに検索インタフェースが現れますので，ドロップダウンメニューから，**ArXiv.org** を選択します．そこで，質問を入力し，**Enter** 鍵を押すか，**取得** ボタンを押して，検索を開始してください．
-
-結果は，[読込検査ウィンドウ](ImportInspectionDialog)に表示されます．エラーが発生した場合には，ポップアップに表示されます．
+The results are displayed in the [import inspection window](ImportInspectionDialog). In case an error occurs, it is shown in a popup.

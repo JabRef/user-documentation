@@ -1,14 +1,14 @@
 ---
-title: MathSciNetから項目を取得するには
-helpCategories: ["ウェブから項目を取得する", "... オンライン書誌データベースを使用して"]
+title: Fetching entries from MathSciNet
+helpCategories:
+  - Fetching entries from the web
+  - '... using online bibliographic database'
 since: 3.7
 ---
+# Fetching entries from MathSciNet
 
-# MathSciNetから項目を取得するには
+[MathSciNet](http://www.ams.org/mathscinet/) is a searchable online bibliographic database. It contains all of the contents of the journal Mathematical Reviews (MR) since 1940 along with an extensive author database, links to other MR entries, citations, full journal entries, and links to original articles. It contains almost 3 million items and over 1.7 million links to original articles ([Wikipedia](https://en.wikipedia.org/wiki/MathSciNet)).
 
-[MathSciNet](http://www.ams.org/mathscinet/)は，検索に対応したオンライン書誌データベースです．これには，学術誌Mathematical Reviews (MR)の1940年以降の全内容と，膨大な著者データベース，他のMR項目へのリンク，引用，収録全項目，元論文へのリンクが含まれています．
-これには，300万近い項目と，170万を超える元論文へのリンクが含まれています（[Wikipedia](https://en.wikipedia.org/wiki/MathSciNet)）．
+To fetch entries from MathSciNet, choose **Search → Web search**, and the search interface will appear in the side pane. Select **MathSciNet** in the dropdown menu. To start a search, enter the words of your query, and press <kbd>Enter</kbd> or the **Fetch** button.
 
-MathSciNetから項目を取得するには，**検索→→ウェブ検索** を選択すると，検索インタフェースが側面に現れるので，ドロップダウンメニューから **MathSciNet** を選択してください．検索を開始するには，問い合わせ語を入力して，<kbd>Enter</kbd>か **取得** ボタンを押してください．
-
-すると，検索結果が[読込検査ウィンドウ](ImportInspectionDialog)に表示されます．エラーが発生した場合には，ポップアップに表示されます．
+Then, the results are displayed in the [import inspection window](ImportInspectionDialog). In case an error occurs, it is shown in a popup.

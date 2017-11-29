@@ -1,7 +1,8 @@
 ---
-title: Historique des révisions (en anglais)
+title: Revision history
+helpCategories:
+  - Miscellaneous
 ---
-
-# Historique des révisions (en anglais)
+# Revision history
 
 Please refer to <https://github.com/JabRef/jabref/blob/master/CHANGELOG.md> for a complete history in English.

@@ -1,4 +1,4 @@
 ---
-redirect:   /fr/XMP
-layout:     redirect
+redirect: /en/XMP
+layout: redirect
 ---

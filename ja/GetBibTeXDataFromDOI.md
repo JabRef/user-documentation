@@ -1,52 +1,46 @@
 ---
-title: DOIからBibTeXデータを取得するには
-helpCategories: ["項目の検索・整序・剪定"]
+title: Get BibTeX data from DOI
+helpCategories:
+  - Finding, sorting and cleaning entries
 ---
+# Get BibTeX data from DOI
 
-# DOIからBibTeXデータを取得するには
+JabRef can help you complement your entries from their DOI.
 
-JabRefは，DOIを使用して項目の残りを埋める手助けすることができます．
+Open the [entry editor](EntryEditor), and in the General tab, click on the button **Get BibTeX data from DOI**. *Obviously, this feature is available only if your entry already has a DOI.*
 
-[項目エディタ](EntryEditor)を開き，Generalタブの中で **DOIからBibTeXデータを取得** ボタンをクリックします．
-*当然のことながら，この機能は，当該項目に既にDOIが入力済みの時のみ使用できます．*
+![Screenshot of general tab](./images/GetBibTeXDataFromDOI-Main.png)
 
-![Generalタブのスクリーンショット](../en/images/GetBibTeXDataFromDOI-Main.png)
+The **Merge entry with DOI information** window will pop-up.
 
+## Parallel display of the entry field and of the information gathered from the DOI
 
-**項目をDOI情報を統合** ウィンドウが開きます．
+![Screenshot of the parallel display](./images/GetBibTeXDataFromDOI-ParallelDisplay.png)
 
-## 項目フィールドとDOIから集めた情報の並列表示
+The fields of the original entry and of the information gathered from the DOI are displayed side-by-side on the upper part of the window.
 
-![並列表示のスクリーンショット](../en/images/GetBibTeXDataFromDOI-ParallelDisplay.png)
+The differences between the two sides can be emphasized through the drop-down menu located at the upper right-hand corner of the window. Five ways of displaying the differences are offered:
 
-元の項目のフィールドと，DOIから集めた情報のフィールドが，ウィンドウ上部に左右に並べて表示されます．
+- **plain text**: as is, no emphasis
+- **show diff** - word: differences are shown on the right side. Full words are struck out in red if they are removed from the original entry or underlined in blue if they are added to the information collected from the DOI.
+- **show diff** - character: differences are shown on the right side. Individual characters are struck out in red or underlined in blue as above.
+- **show symmetric diff** - word: differences are shown on both sides. Words are underlined and displayed in color.
+- **show symmetric diff** - character: differences are shown on both sides. Characters are underlined and displayed in color.
 
-両側の差異は，ウィンドウ右上隅にあるドロップダウンメニューを使って強調することができます．
-差異の表示には，以下の5つの方法があります．
+In the central column, a radio button allows you to select which side to keep for each field: the **left side**, the **right side**, or **none**. By default, the original entry (left) is kept, and any fields not present in the original entry are obtained from the information collected from the DOI.
 
-- **平文**：そのまま，強調なし
-- **差異を表示** - 単語：差異は右側に表示されます．元の項目から単語が削除されている場合には，その単語全体に赤い取消線が引かれます．単語がDOIから集めた情報で追加されている場合には，青い下線が引かれます．
-- **差異を表示** - 文字：差異は右側の項目に表示されます．上記と同様ですが，文字ごとに赤線や青線が引かれます．
-- **差異を対照表示** - 単語：差異は両側に表示されます．単語ごとに色付きで下線表示されます．
-- **差異を対照表示** - 文字：差異は両側に表示されます．文字ごとに色付きで下線表示されます．
+## Merged entry: preview and source code
 
-列中央にラジオボタンがあるので，**左側**・**右側**・**なし** で，各フィールドにどちら側を採用するのかを選択することができます．
-既定では，元の項目（左）が採用され，元の項目に存在しないフィールドは，全てDOIから集めた情報から採用されます．
+![Screenshot of the preview and source code for the merged entry](./images/GetBibTeXDataFromDOI-PreviewAndCode.png)
 
+Based upon your selection, the merged entry is shown, both as a preview (on the left) and as source code (on the right).
 
-## 統合後の項目：プレビューとソースコード
+If you right-click on the preview, you can **Print entry preview** or **Copy preview**.
 
-![統合後の項目のプレビューとソースコードのスクリーンショット](../en/images/GetBibTeXDataFromDOI-PreviewAndCode.png)
+## Final merging
 
-選択を反映した統合後の項目が，プレビュー（左側）とソースコード（右側）の形で表示されます．
+![Screenshot of choosing to replace the original entry or not](./images/GetBibTeXDataFromDOI-Selecting.png)
 
-プレビューを右クリックすると，**項目プレビューを印刷** したり， **プレビューをコピー** したりすることができます．
+Finally, after selecting which fields to keep, you can decide to **Replace the original entry**. Alternatively, you can press **Cancel**.
 
-## 統合の決定
-
-![統合か否かの選択のスクリーンショット](../en/images/GetBibTeXDataFromDOI-Selecting.png)
-
-最後に，どちらのフィールドを採用するかを選択した後，**項目の統合** を押して決定することができます．決定しない場合には，**取消** を押すことができます．
-
-
-[重複の検出](FindDuplicates)と[項目の統合](MergeEntries)も参照のこと．
+**See also:** [Find duplicates](FindDuplicates), [Merge entries](MergeEntries)

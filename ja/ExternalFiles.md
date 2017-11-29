@@ -1,55 +1,30 @@
 ---
-title: JabRef における PDF/PS/URL/DOI リンク
-outdated: true
+title: URL and DOI links in JabRef
+helpCategories:
+  - Fields
 ---
+# URL and DOI links in JabRef
 
-# JabRef における PDF/PS/URL/DOI リンク
+For linking attached files, see [File links in JabRef](FileLinks).
 
-**《註》** JabRef 2.3以降の版は，[改善された外部ファイルリンクシステム](FileLinks)を装備しています．
+JabRef lets you link documents on the web in the form of an URL or a DOI identifier.
 
-JabRefでは，ご使用のシステム上にあるPDFあるいはPSファイルを項目にリンクさせたり，URLもしくはDOI識別子の形で，ウェブ上にある文書をリンクさせたりすることができます．
+## Setting up external viewers
 
-## 外部ビューアの設定
+JabRef has to know which external viewers to use for web pages. These are by default set to values that probably make sense for your operating system, so there's a fair chance you don't have to change these values.
 
-JabRefは，PDFとPSおよびウェブページについて，どの外部ビューアを使用すればいいのか知っている必要があります．これらは，既定値としてお使いのOS上で妥当な値に設定されているため，これらの値は変更する必要がない可能性が高いでしょう．
+To change the external viewer settings, go to **Options → Preferences → External programs**.
 
-外部ビューア設定を変更するには，**オプション→設定→外部プログラム** を訪れてください．
+## Opening external links
 
-## 外部ファイルやリンクを開く
+There are several ways to open an external web page. In the entry editor, click on the icon "open" right of the text field to open the respective DOI or URL.
 
-外部ファイルやウェブページを開くには，いくつかの方法があります．項目エディタでは，ファイル名やDOIもしくはURLを含むテキストフィールドをダブルクリックします．項目表では，項目を選択して，メニューを選ぶか捷径鍵(ショートカットキー)を使うか右クリックメニューを使用するかして，ファイルやウェブページを開くことができます．さらに，PDF/PS/URL/DOIアイコンをクリックすることもできます．
+![Open DOI](images/EntryEditor-DOI-open.png)
 
-既定では，項目表には，外部ファイルやURLにリンクしている項目のために，2つのアイコン列があります．これらは，**設定→項目表** で表示しないようにすることができます．項目表の2列目は，PDFまたはPSファイルのアイコンを(両方が存在するときはPDFのみ)表示し，3列目はURLまたはDOIのアイコンを(両者が存在するときはURLのみ)表示します．これらのファイルやウェブページはアイコンをクリックすれば開くことができます．
+In the entry table you can select an entry and use the menu choice, keyboard shortcut or the right-click menu to open the file or web page. Finally, you can click on a URL or DOI icon.
 
-**《註》** 項目エディタ(の「汎用」パネル)にPSフィールドが表示されないときは，[汎用フィールドの項目型を調整](GeneralFields)しなくてはならないかもしれません．
+![Open DOI via popup](images/EntryTable-DOI-popup.png)
 
-## 基本PDFディレクトリと基本PSディレクトリ
+By default the entry table will contain a singly column containing an indicator whether there is a DOI or a URL linked. You can disable any of these in **Options → Preferences → Entry table columns**.
 
-JabRefでは，PDFファイルやPSファイルを項目に簡単にリンクさせることができます．これを利用するには，**オプション→設定→外部プログラム** で，基本PDFディレクトリと基本PSディレクトリを指定する必要があります．これらのディレクトリ以下に保管されているすべてのPDFファイルやPSファイルに対して，JabRefは相対パスで参照を行いますので，PDFやPSディレクトリを移動する必要があったり，複数のユーザーがネットワーク上の別の場所から同じデータベースを使用している場合には，便利です．
-
-加えて，PDFファイルやPSファイル名を，関連した項目のbibtexキー(プラス「.pdf」または「.ps」)と同じものにした場合，JabRefは，基本ディレクトリとそのサブディレクトリ内でそのPDFまたはPSを検出することができます．正しく命名されたPDFもしくはPSがそこに存在する場合，項目エディタ中のPDFフィールドとPSフィールドの横にある「自動」ボタンを押すことによって，この機能を使用することができます．PDFまたはPSが検出されれば，フィールドが直ちに設定されます．
-
-PDFファイルまたはPSファイルを上述のように命名すると，項目のPDFフィールドやPSフィールドを全く設定しなくても，このファイルを開くことができます．この欠点は，フィールドを埋める(手動であるいは「自動」ボタンを使って)まで，PDFアイコンやPSアイコンが表中に表示されないことです．
-
-## データベース毎のPDF/PSディレクトリ
-
-ユーザーは，データベースに固有のPDFディレクトリやPSディレクトリを設定することができます(**ファイル→データベース特性**)．これらのディレクトリは，基本ディレクトリよりも優先します．
-
-## <a href="" id="RegularExpressionSearch">自動リンクに正規表現検索を使うには</a>
-
-上記各節でJabRefの自動リンク機構を説明しました．お持ちのファイルの名称をbibtexキー+拡張子とした場合，JabRefは自動的にファイルを検出することができます．
-
-JabRef2.2以降，検索に正規表現を使うことによって，ファイル命名規則にさらに柔軟性を持たせることができるようになりました．ただしほとんどの場合，与えられた既定値を変更する必要があることはないでしょう．
-
-外部設定を開くと(**オプション→設定→外部プログラム**)「正規表現を使用」という選択肢があります．この選択肢を有効にすると，PDFディレクトリを検索するのに自前の正規表現を入力できるようになります．
-
-以下の文法が使用できます．
-
--   `*` - 直下のサブディレクトリをすべて検索する．カレントディレクトリと2階以上下のサブディレクトリは検索しません．
--   `**` - すべてのサブディレクトリとカレントディレクトリを再帰的に検索する．
--   `.`および`..` - カレントディレクトリと親ディレクトリ．
--   `[title]` - 角括弧に囲まれた表現は，すべて現在の項目の対応するフィールドで置換されます．
--   `[extension]` - これは，使用しているフィールドのファイル拡張子に置換されます
--   他のすべてのテキストは正規表現として解釈されます．ただし，バックスラッシュは，パス分離記号と区別するために，2つのバックスラッシュを続けて置く必要があることに注意してください．
-
-検索の既定値は，`**/.*[bibtexkey].*\\.[extension]`です．これは，この種のファイルのためのディレクトリ(たとえばPDFディレクトリ)のすべてのサブディレクトリを検索し，正しい拡張子を持ち，名称のどこかにBibtexキーを含んでいるファイルを探し出します．
+![Preferences for URL column](images/Preferences-EntryTablColumns-ShowUrlDoiColumn.png)
