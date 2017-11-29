@@ -1,21 +1,22 @@
 ---
-title: 外部SQLデータベースへの書き出し
+title: Export to an External SQL Database
+helpCategories:
+  - Import/Export
 ---
+# Export to an External SQL Database
 
-# 外部SQLデータベースへの書き出し
+**This help applies for older versions of JabRef. From JabRef 3.6 onwards, [collaborative working on a SQL database](SQLDatabase) is supported**
 
-**このヘルプは，JabRefの旧版を対象としています．JabRef 3.6版以降では，[SQLデータベース上での共同作業](SQLDatabase) がサポートされています．**
+JabRef is capable of exporting the contents of the BibTeX database, along with groups information, to an external MySQL or PostgreSQL database.
 
-JabRefは、BibTeXデータベースの内容を、グループ情報とともに、外部のMySQLやPostgreSQLデータベースに書き出すことができます。
+You just need to be sure you have an user/password with full privileges on a MySQL or PostgreSQL server.
 
-ただし、MySQL若しくはPostgreSQLサーバーの全権限を持つユーザー名とパスワードを持っていることが必要です。
+## Export
 
-## 書き出し
+1. Choose **File → Export to external SQL database**, or click the corresponding button on the toolbar.
+2. Select the database type from the drop down menu for *Server Type*.
+3. Enter the database connection information, and click **Connect**.
 
-1.  **ファイル→外部SQLデータベースに書き出す** を選択するか、ツールバーの対応するボタンを押してください。
-2.  **サーバー型** ドロップダウンメニューからデータベースの型を選択してください。
-3.  データベース接続情報を入力し、**接続** を押してください。
+JabRef will then connect to the specified database, create new tables, and populate those tables with entries and groups information. You will be able to export as many JabRef bib databases as you want without losing the previously explored data. The system recognize a database uniquely by its full path (directory structure + filename). In case you export the same JabRef database more than once, the data of that database will be update in the SQL database. Note that you will not be prompted for the connection information on subsequent exports. If you would like to export to a different database, you can change the connection information by choosing **File → Connect to external SQL database** (or by clicking the associated toolbar button), and then performing an export. Since version 2.8 tables are not dropped, and user is able to store more than one JabRef database into a single SQL database.
 
-すると、JabRefは指定されたデータベースに接続し、新規テーブルを作成し、それらのテーブルに項目とグループ情報を格納します。それ以前に書き出したデータを失うことなく、好きなだけ多くのJabRef書誌情報データベースを書き出すことができます。システムは、フルパス(ディレクトリ構造+ファイル名)を使ってデータベースを一意に識別します。同じJabRefデータベースを二度以上書き出すと、SQLデータベース内のそのデータベースのデータが更新されます。なお、続けて書き出す場合には、接続情報を入力するようには促されません。別のデータベースに書き出したい場合には、**ファイル→外部SQLデータベースに接続** を選択して(若しくは対応するツールバーボタンを押して)、書き出しを実行してください。第2.8版以降では、テーブルはドロップされませんので、二つ以上のJabRefデータベースを同一のSQLデータベースに保管することができます。
-
-SQLデータベースからデータベースを読み込む場合(**ファイル→外部SQLデータベースから読み込む**)には、読み込まれた各データベースを別々のタブに収録します。
+When importing a database from an SQL database (**File → Import from external SQL database**), JabRef will place each database found in a different tab.
