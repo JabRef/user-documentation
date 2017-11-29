@@ -1,39 +1,40 @@
 ---
-title: Personnaliser les types d'entrées
+title: Customizing entry types
+helpCategories:
+  - Setup
 ---
+# Customizing entry types
 
-# Personnaliser les types d'entrées
+To customize entry types, select the menu **BibTeX -→ Customize entry types**.
 
-Pour accéder à cette fonction, cliquez sur le menu **BibTeX -→ Personnaliser les types d'entrées**.
+When customizing an entry type, you both define how its entry editor should look, and what it takes for JabRef to consider an entry complete. You can both make changes to the existing entry types, and define new ones.
 
-Lors de la personnalisation d'un type d'entrée, vous définissez à la fois son apparence dans l'éditeur d'entrées et ce qui est nécessaire pour que JabRef considère une entrée comme complète. Vous pouvez aussi bien changer les types d'entrée existants qu'en définir de nouveaux.
+Note that no modifications you make in this dialog will be stored until you click **Apply** or **OK**. If you click **Cancel** or simply close the dialog, unapplied changes will be lost.
 
-Notez qu'aucune des modifications que vous effectuez dans cette fenêtre ne sera stockée tant que vous n'aurez pas cliqué sur **Apply** ou **OK**. Si vous cliquez sur **Cancel** ou si vous fermez simplement la fenêtre, les changements non-appliqués seront perdus.
+## Using the entry customization dialog
 
-## Utiliser la fenêtre de personnalisation des entrées
+The entry customization dialog is divided in three main panels. The leftmost panel is where you can select an entry type for modification, and add new ones. The middle panel is used for setting up the required fields of the selected entry type, and the right panel for setting up the optional fields.
 
-La fenêtre de personnalisation des entrées est divisée en 3 panneaux principaux. Le panneau de gauche vous permet de sélectionner l'entrée à modifier, et d'en ajouter de nouvelles. Le panneau central est utilisé pour paramétrer les champs requis du type d'entrée sélectionné. Le panneau de droite est utilisé pour paramétrer les champs optionnels du type d'entrée sélectionné.
+### Adding and removing entry types
 
-### Ajouter et supprimer des types d'entrées
+The currently available entry types are listed in the left panel. Whenever you select an entry type, the other panels will update to show what fields are required and optional for this entry type.
 
-Les types d'entrées actuellement disponibles sont listés dans le panneau de gauche. Lorsque vous sélectionnez un type d'entrée, les autres panneaux sont mis à jour afin d'afficher les champs requis et optionnels pour ce type d'entrée.
+To add a new entry type, you must enter a name for it in the text field below the type list, and click **Add**. The new entry type will be added to the list, and selected for modification.
 
-Pour ajouter un nouveau type d'entrées, vous devez entrer son nom dans le champ de texte situé sous la liste des types et cliquer sur **Ajouter** Le nouveau type d'entrées sera ajouté à la liste et sélectionné pour pouvoir être modifié.
+To remove a custom entry type, select it and click **Remove**. This operation will only be available for custom entry types that are not merely modifications of standard types. It is not possible to remove a standard entry type.
 
-Pour supprimer un type d'entrées personnalisé, sélectionnez-le et cliquez sur **Supprimer**. Cette opération n'est possible que pour les types d'entrées personnalisés qui ne sont pas de simples modifications des types standards. Il n'est pas possible de supprimer les types standards.
+To return a modified standard type to its default setup, select it and click **Default**. This operation will only be available for customized entry types that modify a standard type.
 
-Pour qu'un type standard modifié reprenne ses valeurs par défaut, sélectionnez-le et cliquez sur **Défaut**. Cette opération n'est possible que pour les types d'entrées personnalisés qui modifient un type standard.
+## Editing entry types
 
-## Editer les types d'entrées
+When an entry type is selected, the current required and optional fields will be listed in the center and right panels of the dialog. The process of editing the lists are identical for the required and optional fields.
 
-Quand un type d'entrées est sélectionné, ses champs requis et optionnels sont listés dans les panneaux du centre et de droite. La méthode d'édition des listes de champs est la même pour les champs requis et optionnels.
+To add a new field, edit the text field below the list, or select a field name from the dropdown menu, then click **Add**. The chosen field name will be added at the end of the list.
 
-Pour ajouter un nouveau champ, éditez le champ de texte situé sous la liste, ou sélectionnez un nom de champ à partir du menu déroulant, puis cliquez sur **Ajouter**. Le nom du champ sélectionné sera ajouté à la fin de la liste.
+To remove one or more fields, select them in the list, and click **Remove**.
 
-Pour supprimer un ou plusieurs champs, sélectionnez-les dans la liste et cliquez sur **Supprimer**.
+To change the order of the fields, choose one field name, and click the arrow buttons to move it up or down in the list.
 
-Pour changer l'ordre des champs, sélectionner le nom d'un champ et cliquer sur les boutons en forme de flèches pour le déplacer vers le haut ou vers le bas de la liste.
+### Either/or fields
 
-### Les champs et/ou
-
-Certains types d'entrées ont une condition et/ou dans leurs champs requis. Par exemple, une entrée *book* est complète quand au moins un des champs *author* ou *editor* est rempli. Pour indiquer une telle condition dans un type d'entrée personnalisé, vous devez ajouter un champ nommé par une série de champs alternatifs séparés par des slashs (/), comme par exemple *author/editor* pour indiquer la condition mentionnée ci-dessus pour l'entrée de type *book*.
+Certain entry types have an either-or condition in their required fields. For instance, a *book* entry is complete with either the *author* or the *editor* field, or both. To indicate such a condition in a custom entry type, you should add a field named as the set of alternative fields separated by slashes, for instance *author/editor* indicates the condition mentioned above for the *book* entry type.
