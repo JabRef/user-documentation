@@ -1,4 +1,4 @@
 ---
-redirect:   /de/DBLP
-layout:     redirect
+redirect: /en/DBLP
+layout: redirect
 ---
