@@ -1,119 +1,122 @@
 ---
-title: Les groupes
+title: Groups
+helpCategories:
+  - Finding, sorting and cleaning entries
 ---
+# Groups
 
-# Les groupes
+Groups allow to structure a BibTeX database in a tree-like way that is similar to organizing files on disk in directories and subdirectories. The two main differences are:
 
-Les groupes permettent de structurer une base de données BibTeX selon une arborescence rappelant l'organisation des fichiers sur un disque dur dans des répertoires et sous-répertoires. Les deux principales différences sont :
+- While a file is always located in exactly one directory, an entry may be contained in more than one group.
+- Groups may use certain criteria to dynamically define their content. New entries that match these criteria are automatically contained in these groups. This feature is not available in common file systems, but in several Email clients (e.g. Thunderbird and Opera).
 
--   Alors qu'un fichier est toujours localisé dans un seul répertoire, une entrée peut être incluse dans plus d'un groupe.
--   Les groupes peuvent utiliser certains critères pour définir dynamiquement leur contenu. Les nouvelles entrées qui correspondent à ces critères sont automatiquement incluses à ces groupes. Cette caractéristique n'est pas disponible dans les systèmes de fichiers habituels, mais est présente dans certains logiciels de messagerie électronique (tel que Thunderbird et Opera).
+Selecting a group shows the entries contained in that group. Selecting multiple groups shows the entries contained in any group (union) or those contained in all groups (intersection), depending on the current settings. All this is explained in detail below.
 
-Sélectionner un groupe montre les entrées contenues dans ce groupe. Sélectionner plusieurs groupes montre les entrées contenues dans au moins un des groupes (union) ou dans tous les groupes (intersection), selon le paramétrage en cours. Tout ceci est expliqué en détail ci-dessous.
-
-Les définitions de groupes sont spécifiques à chaque base de données ; Elles sont sauvées comme un bloc `@COMMENT` dans le fichier `.bib` et sont communes à tous les utilisateurs (des futures versions de JabRef pourrait supporter des groupes dépendants des utilisateurs).
+Group definitions are database-specific; they are saved as a `@COMMENT` block in the `.bib`-file and are shared among all users. (Future versions of JabRef might support user-dependent groups.)
 
 ## Interface
 
-L'interface des groupes se trouve dans le panneau latéral sur la gauche de l'écran. Il peut être affiché ou masqué en appuyant sur `CTRL-MAJ-G` ou sur le bouton des groupes dans la barre d'outils. L'interface a plusieurs boutons, mais la plupart des fonctions sont accessibles par un menu contextuel ("clic droit"). La fonction Glisser-Déplacer est aussi disponible.
+The groups interface is shown in the side pane on the left of the screen. It can be toggled on or off by pressing <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>G</kbd> or by the groups button in the toolbar. The interface has several buttons, but most functions are accessed via a context ("right-click") menu. Drag and Drop is also supported.
 
 <table>
+  
 <colgroup>
 <col width="100%" />
 </colgroup>
-<tbody>
 <tr class="odd">
-<td align="left"><h2 id="quelques-exemples-rapides">Quelques exemples rapides</h2>
-<p>Vous pourriez vouloir...</p>
-<h3 id="uniquement-créer-un-groupe-et-lui-assigner-quelques-entrées.">...uniquement créer un groupe et lui assigner quelques entrées.</h3>
-<p>Assurez-vous que l'interface des groupes est visible. Appuyez sur le bouton <strong>Nouveau Groupe</strong>, entrez un nom pour ce groupe puis appuyez sur OK en conservant les valeurs par défaut. Maintenant, sélectionnez les entrées qui doivent être assignées à ce groupe et utilisez un Glisser-Déplacer vers le groupe, ou l'option <strong>Ajouter au groupe</strong> du menu contextuel. Enfin, sélectionnez le groupe pour voir son contenu (qui doit correspondre aux entrées que vous venez de lui assigner).</p>
-<h3 id="utiliser-le-champ-keywords-pour-grouper-les-entrées">...utiliser le champ <code>keywords</code> pour grouper les entrées</h3>
-<p>Assurez-vous que l'interface des groupes est visible. Appuyez sur le bouton <strong>Nouveau Groupe</strong>, entrez un nom pour ce groupe et sélectionnez l'option qui groupe dynamiquement les entrées en cherchant un mot-clef dans un champ. Entrez le mot-clef à rechercher, puis cliquer sur OK. Enfin, sélectionnez le groupe pour voir son contenu (qui doit correspondre aux entrées dont le champ <code>keywords</code> contient le mot-clef que vous avez spécifié).</p>
-<h3 id="utiliser-une-expression-de-recherche-de-forme-libre-pour-définir-un-groupe">...utiliser une expression de recherche de forme libre pour définir un groupe</h3>
-<p>Assurez-vous que l'interface des groupes est visible. Appuyez sur le bouton <strong>Nouveau Groupe</strong>, entrez un nom pour ce groupe et sélectionnez l'option qui groupe dynamiquement les entrées en utilisant une expression de recherche de forme libre. Entrez <code>author=smith</code> comme expression de recherche (remplacez <code>smith</code> avec un nom d'auteur présent dans votre base et cliquez sur OK. Enfin, sélectionnez le groupe pour voir son contenu (qui doit correspondre aux entrées dont le champ <code>author</code> contient le nom que vous avez spécifié).</p>
-<h3 id="combiner-plusieurs-groupes">...combiner plusieurs groupes</h3>
-<p>Créez deux groupes différents (par exemple, tel que décrit ci-dessus). Cliquez sur le bouton <strong>Paramètres</strong> et assurez-vous que <strong>Union</strong> est sélectionné. Maintenant, sélectionnez les deux groupes. Vous devriez voir uniquement les entrées appartenant aux deux groupes (ce qui peut en faire aucune ou exactement les mêmes entrées que précédemment si les deux groupes contiennent les mêmes entrées).</p>
-<h3 id="identifier-les-groupes-se-chevauchant">...identifier les groupes se chevauchant</h3>
-<p>JabRef vous permet d'identifier facilement les groupes qui se chevauchent parmi les groupes actuellement sélectionnés (c-à-d ceux qui contiennent au moins une entrée qui est aussi contenu dans les groupes actuellement sélectionnés). Cliquez sur le bouton <strong>Paramètres</strong> et activé l'option pour montrer les groupes qui se chevauchent. Ensuite sélectionnez un groupe qui chevauche d'autres groupes. Les noms de ces groupes s'afficheront en rouge.</p></td>
-</tr>
-</tbody>
+    <td align="left">
+      <h2 id="some-quick-examples">
+        Some quick examples
+      </h2>
+<p>You might want to...</p>
+<h3 id="just-create-a-group-and-assign-some-entries-to-it">...just create a group and assign some entries to it</h3>
+<p>Ensure that the groups interface is visible. Press the <strong>New Group</strong> button, enter a name for the group, then press OK, leaving all values at their defaults. Now select the entries to be assigned to the group and use Drag and Drop to the group, or the option <strong>Add to group</strong> in the context menu. Finally select the group to see its content (which should be the entries you just assigned).</p>
+<h3 id="use-the-keywords-field-to-group-the-entries">...use the <code>keywords</code> field to group the entries</h3>
+<p>Ensure that the groups interface is visible. Press the <strong>New Group</strong> button, enter a name for the group, and select the option to dynamically group entries by searching a field for a keyword. Enter the keyword to search for, then click OK. Finally select the group to see its content (which should be all entries whose <code>keywords</code> field contains the keyword you specified).</p>
+<h3 id="use-a-free-form-search-expression-to-define-a-group">...use a free-form search expression to define a group</h3>
+<p>Ensure that the groups interface is visible. Press the <strong>New Group</strong> button, enter a name for the group, and select the option to dynamically group entries by a free-form search expression. Enter <code>author=smith</code> as a search expression (replace <code>smith</code> with a name that actually occurs in your database) and click <strong>OK</strong>. Finally select the group to see its content (which should be all entries whose <code>author</code> field contains the name you specified).</p>
+<h3 id="combine-multiple-groups">...combine multiple groups</h3>
+<p>Create two different groups (e.g. as described above). Click the <strong>Settings</strong> button and make sure that <strong>Union</strong> is selected. Now select both groups. You should see all entries contained in any of the two groups. Click <strong>Settings</strong> again and select <strong>Intersection</strong>. Now you should see only those entries contained in both groups (which might be none at all, or exactly the same entries as before in case both groups contain the same entries).</p>
+<h3 id="identify-overlapping-groups">...identify overlapping groups</h3>
+<p>JabRef allows you to easily identify groups that overlap with the currently selected groups (i.e. that contain at least one entry that is also contained in the currently selected groups). Click <strong>Settings</strong> and activate the option to highlight overlapping groups. Then select a group that overlaps with other groups. The other groups should be highlighted.</p>    </td>
+  </tr>
 </table>
 
-## Les types de groupes
+## Types of groups
 
-Dans JabRef, il y a quatre types de groupes différents :
+In JabRef there are four different types of groups:
 
-1.  Le groupe **Toutes les entrées**, qui -- comme son nom le suggère -- contient toutes les entrées, est toujours présent et ne peut pas être édité ou supprimé.
-2.  **Les groupes manuels** se comportent comme les répertoires d'un disque et contiennent uniquement les entrées que vous leur avez explicitement assignées.
-3.  **Les groupes dynamiques basés sur la recherche d'un mot-clef** contiennent des entrées pour lesquelles un champ BibTeX donné (par ex. `keywords`) contient un certain mot-clef (par ex. `électrique`). Cette méthode ne nécessite pas d'assignation manuelle des entrées, mais utilise les informations qui sont déjà présentes dans la base de données. Si toutes les entrées de votre base de données ont des mots-clefs pertinents dans leur champ `keywords`, utiliser ce type de groupe pourrait être votre meilleur choix.
-4.  **Les groupes dynamiques basés sur des expressions de recherche de forme libre** contiennent les entrées qui correspondent à l'expression de recherche spécifiée et suivant la même syntaxe que [l'interface de recherche](SearchHelp) dans le panneau latéral. Cette [syntaxe](SearchHelp#advanced) supportent les opérateurs logiques (`AND`, `OR`, `NOT`) et permet de spécifier un ou plusieurs champs BibTeX pour la recherche, autorisant des définitions de groupes plus flexibles que la recherche d'un mot-clef (par ex. `author=smith and         title=électrique`).
+1. The group **All Entries**, which -- as the name suggests -- contains all entries, is always present and cannot be edited or removed.
+2. **Static groups** behave like directories on disk and contain only those entries that you explicitly assign to them.
+3. **Dynamic groups based on keyword search** contain entries in which a certain BibTeX field (e.g. `keywords`) contains a certain keyword (e.g. `electrical`). This method does not require manual assignment of entries, but uses information that is already present in the database. If all entries in your database have suitable keywords in their `keywords` field, using this type of group might be the best choice.
+4. **Dynamic groups based on free-form search expressions** contain entries that match a specified search expression, using the same syntax as the [search panel](Search) on the side pane. This [syntax](Search#advanced) supports logical operators (`AND`, `OR`, `NOT`) and allows to specify one or more BibTeX fields to search, facilitating more flexible group definitions than a keyword search (e.g. `author=smith         and title=electrical`).
 
-Chaque groupe que vous créez fait partie de ces trois derniers types. La fenêtre d'édition des groupes, qui s'ouvre en double-cliquant sur un groupe, montre une description succincte (en français de tous les jours) de la définition du groupe sélectionné/édité.
+Every group that you create is of one of the last three types. The group editing dialog, which is invoked by double-clicking on a group, shows a short description of the selected/edited group in plain English.
 
-## La structure des groupes, créer et supprimer des groupes
+## Groups structure, creating and removing groups
 
-Comme pour les répertoires, les groupes sont structurés selon une arborescence, avec le groupe **Toutes les entrées** à la racine. En faisant un clic droit sur un groupe, vous pouvez ajoutez un nouveau groupe à l'arbre, soit au même niveau que le groupe sélectionné, soit comme un sous-groupe. Le bouton **Nouveau groupe** vous permet de créer un nouveau sous-groupe au groupe **Toutes les entrées**, quelque soit le(s) groupe(s) actuellement sélectionné(s). Le menu contextuel vous permet de supprimer des groupes et/ou des sous-groupes, de trier les sous-groupes par ordre alphabétique ou de déplacer des groupes au sein de l'arbre. Cette dernière fonction peut aussi être réalisées par Glisser-Déplacer, avec la limitation que le Glisser-Déplacer ne permet pas de changer l'ordre des sous-groupes d'un groupe.
+Just like directories, groups are structured like a tree, with the group **All Entries** at the root. By right-clicking on a group you can add a new group to the tree, either at the same level as the selected group or as a subgroup of it. The **New Group** button lets you create a new subgroup of the group **All Entries**, regardless of the currently selected group(s). The context menu also allows to remove groups and/or subgroups, to sort subgroups alphabetically, or to move groups to a different location in the tree. The latter can also be done by Drag and Drop, with the restriction that Drag and Drop does not support changing the order of a group's subgroups.
 
-Annuler et Répéter fonctionnent pour toutes les éditions.
+Undo and redo is supported for all edits.
 
-### Les groupes manuels
+### Static groups
 
-Les groupes manuels sont alimentés uniquement par l'assignation explicite des entrées. Après avoir créé un groupe manuel, vous sélectionnez les entrées à lui assigner et utilisez soit un Glisser-Déplacer soit le menu contextuel de la table des entrées. Il n'y a pas d'options à configurer.
+Static groups are populated only by explicit manual assignment of entries. After creating a static group you select the entries to be assigned to it, and use either Drag and Drop or the main table's context menu to perform the assignment. To remove entries from a static group, select them and use the main table's context menu. There are no options to be configured.
 
-Cette méthode de groupement nécessite que toutes les entrées aient une clef BibTeX unique. Dans le cas de clefs BibTeX manquantes ou dupliquées, l'assignation de ces entrées ne pourra pas être correctement rétablie lors de futures sessions.
+This method of grouping requires that all entries have a unique BibTeX key. In case of missing or duplicate BibTeX keys, the assignment of the affected entries cannot be correctly restored in future sessions.
 
-### Les groupes dynamiques
+### Dynamic groups
 
-Le contenu d'un groupe dynamique est défini par une condition logique. Uniquement les entrées qui remplissent cette condition sont contenues dans le groupe. Cette méthode utilise des informations stockées dans la base de données elle-même et s'actualise dynamiquement dés que la base de données est modifiée.
+The content of a dynamic group is defined by a logical condition. Only entries that meet this condition are contained in the group. This method uses the information stored in the database itself, and updates dynamically whenever the database changes.
 
-Deux types de conditions logiques peuvent être utilisées :
+Two types of conditions can be used:
 
-**Recherche d'un mot-clef dans un champ**  
-Cette méthode groupe les entrées dans lesquelles un champ BibTeX spécifié (par ex. `keywords`) contient le terme de recherche spécifié (par ex. `électrique`). Evidemment, pour que cela fonctionne, le champ doit être présent dans toutes les entrées et son contenu doit être pertinent. L'exemple ci-dessus regroupera toutes les entrées qui font références à électrique. Utiliser le champ `author` permet de grouper les entrées d'un auteur donné, etc. Le mot-clef à rechercher peut être du texte brut ou une expression régulière. Dans le premier cas, JabRef permet l'assignation(/la suppression) manuelle des entrées d'un groupe en modifiant(/supprimant) simplement le terme de recherche du contenu du champ de groupement. C'est pertinent uniquement pour le champ `keywords` ou pour les champs auto-définis mais, évidemment, pas pour les champs tels que `author` ou `year`.
+**Searching a field for a keyword**  
+This method groups entries in which a specified BibTeX field (e.g. `keywords`) contains a specified search term (e.g. `electrical`). Obviously, for this to work, the grouping field must be present in every entry, and its content must be accurate. The above example would group all entries referring to something electrical. Using the field `author` allows to group entries by a certain author, etc. The search can either be done as a plain-text or a regular expression search. In the former case, JabRef allows to manually assign/remove entries to/from the group by simply appending/removing the search term to/from the content of the grouping field. This makes sense only for the `keywords` field or for self-defined fields, but obviously not for fields like `author` or `year`.
 
-**Utiliser une expression de recherche de forme libre**  
-Ceci est similaire à ce qui est décrit ci-dessus mais, au lieu de rechercher dans un seul champ pour un unique terme de recherche, la [syntaxe des expressions de recherche](SearchHelp#advanced) peut être utilisées, autorisant l'emploi d'opérateurs logiques (`AND`, `OR`, `NOT`) et permettant les recherches sur plusieurs champs BibTeX. Par exemple, l'expression de recherche `keywords=régression         and not keywords=linéaire` groupe les entrées concernant la régression non-linéaire.
+**Using a free-form search expression**  
+This is similar to the above, but rather than search a single field for a single search term, the [search expression syntax](Search#advanced) can be used, which supports logical operators (`AND`, `OR`, `NOT`) and allows to search multiple BibTeX fields. For example, the search expression `keywords=regression and not         keywords=linear` groups entries concerned with non-linear regression.
 
-Dans le panneau des groupes, les groupes dynamiques sont par défaut affichés en *italique*. Cela peut être modifié dans les préférences (Options → Préférences → Groupes, case "Afficher les groupes dynamiques en italique").
+In the groups view, dynamic groups are shown in *italics* by default. This can be turned off in the preferences (Options → Preferences → Groups, box "Show dynamic groups in italics").
 
-### Contexte hiérarchique
+### Hierarchical context
 
-Par défaut, un groupe est **indépendant** de sa position dans l'arbre des groupes : lorsqu'il est sélectionné, uniquement son contenu est affiché. Cependant, particulièrement lors de l'utilisation de groupes dynamiques, il est souvent utile de définir un sous-groupe qui **raffine son sur-groupe**, c-à-d qu'en le sélectionnant les entrées contenues dans les deux groupes sont affichées. Par exemple, créez un sur-groupe contenant les entrées possédant le mot-clef `distribution` et un sous-groupe contenant les entrées possédant le mot-clef `gauss` raffinant ce sur-groupe. Sélectionner le sous-groupe affichera les entrées correspondant aux deux conditions, c-à-d celles qui concerneront les distributions gaussiennes. En ajoutant au sur-groupe original un autre sous-groupe recherchant le terme `laplace`, le groupement peut facilement être étendu. Dans un arbre de groupes, les groupes raffinants ont une icône spécial (cela peut être annulé dans les préférences).
+By default, a group is **independent** of its position in the groups tree: When selected, only the group's contents are shown. However, especially when using dynamic groups, it is often useful to define a subgroup that **refines its supergroup**, i.e., when selected, entries contained in both groups are displayed. For example, create a supergroup containing entries with the keyword `distribution` and a subgroup containing entries with the keyword `gauss` that refines this supergroup. Selecting the subgroup now displays entries that match both conditions, i.e. are concerned with Gaussian distributions. By adding another refining subgroup for `laplace` to the original supergroup, the grouping can easily be extended. In the groups tree, refining groups have a special icon (this can be turned off in the preferences).
 
-Le complément logique au groupe raffinant est un groupe qui **inclut ses sous-groupes**, c-à-d qu'en le sélectionnant, ce ne sont pas uniquement les propres entrées du groupe mais aussi les entrées de ses sous-groupes qui sont affichées. Dans l'arbre des groupes, ce type de groupe possède une icône spécial (cela peut-être annulé dans les préférences).
+The logical complement to a refining group is a group that **includes its subgroups**, i.e. when selected, not only the group's own entries, but also its subgroups' entries are shown. In the groups tree, this type of group has a special icon (this can be turned off in the preferences).
 
-## Afficher les entrées d'un groupe, combiner plusieurs groupes
+## Viewing a group's entries, combining multiple groups
 
-Sélectionner un groupe montre les entrées contenues dans ce groupe en les surlignant et, selon le paramétrage (accessible en cliquant sur le bouton **Paramètres**), les déplacent au sommet de la liste et/ou les sélectionnent. Ces options sont identiques à celles disponibles habituellement pour la recherche.
+Selecting a group shows the entries contained in that group by highlighting them and, depending on the settings (accessible by clicking the **Settings** button), moving them to the top of the list and/or selecting them. These options are identical to those available for the regular search.
 
-Quand plusieurs groupes sont sélectionnés, soit l'union soit l'intersection de leurs contenus est affiché en fonction de paramétrage choisi. Cela permet de combiner rapidement plusieurs conditions. Par exemple, si vous avez un groupe manuel `Extrêmement     Important` auquel vous assignez toutes les entrées extrêmement importantes, vous pouvez voir les entrées extrêmement importantes dans tout autre groupe en sélectionnant les deux groupes (cela nécessite d'avoir **Intersection** sélectionné dans les paramètres).
+When multiple groups are selected, either the union or the intersection of their content is shown, depending on the current settings. This allows to quickly combine multiple conditions, e.g. if you have a static group `Extremely     Important` to which you assign all extremely important entries, you can view the extremely important entries in any other group by selecting both groups (this requires to have **Intersection** selected in the settings).
 
-## Groupes et recherche
+## Groups and searching
 
-Lors de l'affichage de contenu d'un ou plusieurs groupes, une recherche peut être effectuée à l'intérieur de ce contenu en utilisant la technique de recherche habituelle.
+When viewing the contents of the selected group(s), a search can be performed within these contents using the regular search facility.
 
-## Surligner les groupes se chevauchant
+## Highlighting overlapping groups
 
-Le bouton **Paramètres** offre une option de surlignement des groupes se chevauchant. Si elle est activée, lors de la sélection d'un ou plusieurs groupes, tous les groupes contenant au moins une des entrées appartenant au(x) groupe(s) sélectionné(s) sont surlignés. Cela identifie rapidement les chevauchements entre les contenus des groupes. Vous pourriez, par exemple, créer un groupe `A lire` qui contient toutes les entrées que vous comptez lire. À présent, dès que vous sélectionnez n'importe quel groupe, le groupe `A     lire` sera surligné si le groupe sélectionné contient des entrées que vous comptez lire.
+The **Settings** button offers an option to highlight overlapping groups. If this is activated, upon selection of one or more groups, all groups that contain at least one of the entries contained in the currently selected group(s) are highlighted. This quickly identifies overlap between the groups' contents. You might, for example, create a group `To Read` that contains all entries which you plan to read. Now, whenever you select any group, the group `To Read` is highlighted if the selected group contains entries that you plan to read.
 
-## Nouvelles entrées assignées aux groupes sélectionnés
+## New entries assigned to selected groups
 
-Le bouton **Paramètres** offre aussi une option pour assigner automatiquement de nouvelles entrées aux groupes sélectionnés. Si elle est activée, lors de la sélection d'un ou plusieurs groupes, toutes les nouvelles entrées créées seront assignés aux groupes sélectionnés. Cela fonctionne à la fois pour des entrées créées à partir du bouton du menu et pour des entrées créées par collage à partir du presse-papier. Cette option peut aussi être activée/désactivée à partir du menu "Options &gt; Préférences &gt; Groupes".
+The **Settings** button offers also an option to automatically assign new entries to selected groups. If this is activated, upon selection of one or more groups, all the new entries created will be assigned to the selected groups. This work both for entries created from menu button or entries pasted from clipboard. This option can also be enabled/disabled from the menu "option > preferences > group".
 
-## Caractéristiques avancées
+## Advanced features
 
-Une fois que vous maîtriserez les concepts de groupe décrits ci-dessus, les caractéristiques avancées suivantes pourraient vous être utile.
+After mastering the grouping concepts described above, the following advanced features might come in handy.
 
-### Création automatique de groupes dynamiques
+### Automatically creating dynamic groups
 
-En cliquant sur le bouton **Créer automatiquement des groupes pour la base**, vous pouvez facilement créer une série de groupes pertinents pour votre base de données. Ce dispositif collectera tous les mots trouvés dans le champ que vous aurez spécifié et créera un groupe pour chaque mot. C'est utile si, par exemple, votre base contient des mots-clefs pertinents pour toutes les entrées. En gênerant automatiquement les groupes en se basant sur le champ `keywords`, vous devriez avoir une série de groupes sans effort.
+By clicking the **Automatically create groups for database** button, you can quickly create a set of groups appropriate for your database. This feature will gather all words found in a specific field of your choice, and create a group for each word. This is useful for instance if your database contains suitable keywords for all entries. By autogenerating groups based on the `keywords` field, you should have a basic set of groups at no cost.
 
-Vous pouvez aussi spécifier des caractères à ignorer, par exemple les virgules utilisées entre les mots-clefs. Ils seront traités comme des séparateurs de mots et non comme en faisant partie. Cette étape est importante pour que les mots-clefs composés tels que `distribution de Laplace` soient reconnus comme une unique entité sémantique (vous ne pouvez pas utiliser cette option pour supprimer des mots complets. Pour cela, supprimer manuellement les groupes non voulus à la suite de leur création automatique.
+You can also specify characters to ignore, for instance commas used between keywords. These will be treated as separators between words, and not part of them. This step is important for combined keywords such as `laplace     distribution` to be recognized as a single semantic unit. (You cannot use this option to remove complete words. Instead, delete the unwanted groups manually after they were created automatically.)
 
-### Rafraîchir l'affichage des groupes
+### Refreshing the groups view
 
-Le bouton **Rafraîchir** met à jour la table des entrées pour refléter la sélection actuelle des groupes. Habituellement, cela s'effectue automatiquement, mais, dans quelques occasions (par exemple après un Annuler/Répéter en rapport avec les groupes), un rafraîchissement manuel est nécessaire.
+The **Refresh** button updates the entry table to reflect the current groups selection. This is usually done automatically, but in rare occasions (e.g. after a group-related undo/redo) a manual refresh is required.
 
-### Combiner des groupes raffinants avec des groupes incluants
+### Mixing refining groups with including groups
 
-Si un groupe raffinant est le sous-groupe d'un groupe qui inclue ses sous-groupes -- les frères du groupe raffinant --, les frères sont ignorés quand le groupe raffinant est sélectionné.
+If a refining group is a subgroup of a group that includes its subgroups -- the refining group's siblings --, these siblings are ignored when the refining group is selected.

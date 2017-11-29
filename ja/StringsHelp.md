@@ -1,4 +1,4 @@
 ---
-redirect:   /ja/Strings
-layout:     redirect
+redirect: /en/Strings
+layout: redirect
 ---

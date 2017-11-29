@@ -1,12 +1,13 @@
 ---
-title: Sélecteur de contenu de champ
+title: Field content selector
 outdated: true
+helpCategories:
+  - Fields
 ---
+# Field content selector
 
-# Sélecteur de contenu de champ
+This feature allows you to store a selection of often-used words or phrases that you use often in your database. By default it is enabled for the fields *Journal*, *Author*, *Keywords* and *Publisher*, but you can also add selectors to other fields, in the upper part of the *Manage* dialog (menu **Options -→ Manage content selectors**).
 
-Cette opération vous permet d'enregistrer une sélection de mots et de phrases que vous utilisez souvent dans votre base de données. Par défaut, c'est possible avec les champs *Journal*, *Author*, *Keywords* et *Publisher* mais vous pouvez aussi ajouter des sélecteurs à d'autres champs, en utilisant la partie supérieure de la fenêtre *Gérer les sélecteurs* (menu **Outils -→ Gérer les sélecteurs de contenu**).
+The word selection is database-specific, and is saved along with your references in the .bib file.
 
-La sélection des mots est spécifique à la base de données et sauvegardée avec vos références dans le fichier .bib.
-
-Pour ajouter un nouveau mot, vous pouvez simplement l'écrire dans la boite de sélection des mots et appuyer sur la touche Enter. A partir de la fenêtre *Gérer les sélecteurs*, vous pouvez aussi supprimer les mots que vous avez ajoutés.
+To add a new word in the entry editor, you can simply click into the text box for the field for which you configured the selectors. A drop down menu will appear and you can select the keyword of your choice. This mechanism is based on the autocompletion functionality in JabRef. Therefore, you need to have autocompletion enabled in your preferences.

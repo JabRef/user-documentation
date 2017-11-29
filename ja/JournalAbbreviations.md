@@ -1,44 +1,53 @@
 ---
-title: 学術誌名の短縮形
+title: Journal abbreviations
+helpCategories:
+  - Fields
 ---
+# Journal abbreviations
 
-# 学術誌名の短縮形
+JabRef can automatically toggle journal names between abbreviated and unabbreviated form, as long as the names are contained in one of your journal lists.
 
-この機能は，**オプション→誌名短縮形を管理** で設定することができます．
+This feature can be configured under **Options → Manage journal abbreviations**.
 
-JabRefでは，学術誌名が誌名表に登録されていれば，短縮形と非短縮形を自動的に切り替えることができます．JabRefには，かなり多くの誌名短縮形が登録されていますが，それでも多くのユーザーにとって，不完全である可能性があります．短縮形は，ハードディスク上の外部テキストファイルとして置かれている複数の誌名表から追加することができます．
+JabRef includes a fairly extensive build-in list of journal abbreviations, but it it still likely to be incomplete for the purposes of many users. You can add abbreviations in the form of a personal list or external lists.
 
-## この機能を使うには
+## Using the feature
 
-誌名変換機能は，項目エディタ内か **ツール** メニューから使用することができます．項目エディタ内には，*journal* フィールド脇に *短縮形/非短縮形の切替* というラベルの付いたボタンがあります．これを押すと，現在の誌名が，以下の3つのモードの間で切り替わります．
+Journal name conversion can be accessed either from within the entry editor, or from the **Tools** menu. In the entry editor you will find a button labeled *Toggle abbreviation* by the *journal* field. Clicking this button will cause the current journal name to be switched to the next of three modes:
 
--   完全名 (例) "Aquacultural Engineering"
--   ISO式短縮形 (例) "Aquacult. Eng."
--   MEDLINE式短縮形 (例) "Aquacult Eng"
+- Full name, e.g. "Aquacultural Engineering"
+- ISO abbreviation, e.g. "Aquacult. Eng."
+- MEDLINE abbreviation, e.g. "Aquacult Eng"
 
-現在の誌名が誌名表にない場合には，フィールドは変更されません．
+If the current journal name is not found in your journal lists, the field will not be modified.
 
-多くの項目の誌名を一括して変換するには，好きな数だけ項目を選択してから，**ツール→学術誌名を短縮形に (ISO)**，**ツール→学術誌名を短縮形に (MEDLINE)**，または**ツール→学術誌名を非短縮形に**のいずれかを選択します．これら3つのアクションは，選択項目のうち，誌名表に掲載されているすべての誌名を，略語化したり解除したりします．
+To convert the journal names of many entries in bulk, you can select any number of entries, and choose **Tools → Abbreviate journal names (ISO)**, **Tools → Abbreviate journal names (MEDLINE)** or **Tools → Unabbreviate journal names**. These three actions will abbreviate and unabbreviate the journal names of all selected entries for which the journal name could be found in your journal lists.
 
-## 誌名表を準備する
+## Setting up additional journal lists
 
-誌名表は，JabRefからリンクした外部テキストファイルの形で，複数持つことができます．そのうち優先表は，JabRef内から編集することができます．
+In addition to the build-in journal list, you can have a personal list and external lists.
 
-### 誌名短縮表の自作
+Any entry in your personal journal list will override an entry with the same full journal name in one of the external lists. Similarly, the external lists are given precedence in the order they are listed.
 
-自作の誌名表は，**誌名短縮形の管理** ウィンドウの上部で取り扱うことができます．自作誌名表を作成するには，*新規ファイル* を選択して，手動でファイル名を入力するか *一覧* ボタンを使用してください．手始めとなるファイルが既にある場合には，*既存ファイル* を選択して，*一覧* ボタンからファイルを選択してください．画面の表が更新されて，選択した表の内容が表示されます．
+### Your personal journal abbreviations list
 
-この表と右側のツールボタンを用いて，学術誌項目を追加したり削除したり編集したりすることができます．それぞれの項目については，学術誌の完全な名称とISO式短縮形を指定しなくてはなりません(例えば"Aquacultural Engineering"と"Aquacult. Eng.")．項目を編集するには，表中の行をダブルクリックしてください．
+Your personal journal list is managed in the central part of the **Manage journal abbreviations** window. To start building your personal journal abbreviations list, choose *New file*, and enter a filename manually or using the *Browse* button. If you already have a file that you want to use as a starting point, use the *Browse* button on the line starting wiht *Existing file*. The table will update to show the contents of the list you have selected.
 
-ファイルが選択されていて，表に1項目以上が含まれていれば，*OK* をクリックすると，表の内容が選択したファイルに保存され，JabRefの誌名表が更新されます．
+The table and the tool buttons to the right allow you to add, remove and edit journal entries. For each entry you must provide the full journal name, and the ISO abbreviation (e.g. "Aquacultural Engineering" and "Aquacult. Eng."). To edit an entry, double-click its row in the table.
 
-### 外部誌名表
+Once you click *OK*, if you have selected a file, and the table contains at least one entry, the table contents will be stored to the selected file, and JabRef's list of journals will be updated.
 
-自作誌名表の他に，複数の外部の誌名表にリンクすることができます．これらのリンクは，**誌名短縮形の管理** ウィンドウの下部で設定することができます．外部誌名表は，自作誌名表と類似しています．唯一の違いは，JabRefには，外部誌名表を編集するインタフェースが備わっていないことです．
+### External journal lists
 
-必要に応じて外部誌名表を新たに追加するには，**＋** ボタンをクリックして，インタフェースにファイル行を追加してください．その上で，ウィンドウ下部のファイル行横にある *一覧* か *ダウンロード* ボタンを使用してください．
+You can link to a number of external lists. These links can be set up in the lower part of the **Manage journal abbreviations** window. External lists are similar to the personal list - the only difference is that JabRef does not provide an interface for editing the external lists.
 
--   *一覧* ボタンを使うと，コンピューター上の既存のファイルを選択することができます．
--   *ダウンロード* ボタンを使うと，URLを入力してインターネットから誌名表をダウンロードし，コンピューター上のローカルファイルとして保存して，JabRefから誌名表としてリンクすることができます．URLは，既定でJabRefのウェブページにある誌名表のアドレスになっています．この誌名表は完全ではありませんが，将来的に改善されていくでしょう．
+External lists can be found at [JabRef's repository abbreviation lists](http://abbrv.jabref.org/).
 
-自作誌名表にある項目は，外部誌名表のいずれかに存在する，同じ完全名の項目に優先します．同様に，外部誌名表間の優先順位は，ウィンドウに挙げられている順で優先されます．
+To add a new external list, if necessary, click the **+** button to add another slot to the interface. Then use either the *Browse* or *Download* button next to one of the slots in the lower part of the window:
+
+- The *Browse* button allows you to select an existing file on your computer.
+- The *Download* button allows you to download a list over the internet by entering an URL, store it to a local file on your computer, and link to it as a journal list from JabRef.
+
+#### Contributing a external journal list
+
+We want to expand both the build-in list and the selection of smaller lists, so if you have set up a representative list for your own subject area, we would appreciate it if you share your list via [github](https://github.com/JabRef/reference-abbreviations) or by dropping a note on [our forum](http://discourse.jabref.org/).

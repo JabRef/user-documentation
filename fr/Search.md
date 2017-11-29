@@ -1,50 +1,145 @@
 ---
-title: Recherche
-outdated: true
+title: Searching
+helpCategories:
+  - Finding, sorting and cleaning entries
+since: 3.7
 ---
+# Searching
 
-# Recherche
+The search bar is located between the icon bar and the database tabs.
 
-## Raccourcis clavier
+![Screenshot of the search bar](./images/Search-Bar.png)
 
-*CTRL-F* ouvre ou active l'interface de recherche. Appuyer sur *CTRL-F* plusieurs fois modifie le mode de recherche. En recherche incrémentale, *CTRL-F* affiche l'occurrence suivante de la chaîne à rechercher.
+To make the cursor jump to the search field, you can: - click in the search field. - select the menu **Search → Search**. - press <kbd>Ctrl</kbd> + <kbd>F</kbd>.
 
-*CTRL-MAJ-F* ouvre ou active l'interface de recherche, et sélectionne la recherche incrémentale. En recherche incrémentale, appuyer sur *CTRL-MAJ-F* affiche aussi l'occurrence suivante de la chaîne à rechercher.
+Additionally, <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd> also activates the global search setting.
 
-## Modes de recherche
+Searching includes two modes (normal and advanced), along with several settings.
 
-Il y a trois modes de recherche dans JabRef.
+## Search settings
 
-### Recherche incrémentale
+At the right of the search text field, several buttons allow for selecting some settings:
 
-En recherche incrémentale, le programme effectue une recherche chaque fois qu'une lettre est tapée. La ligne de statut vous informe du résultat de cette recherche. Entrer le raccourci clavier de la recherche affiche l'occurrence suivante de la chaîne à rechercher. Si aucune autre occurrence ne peut être trouvée, la ligne de statut vous en informe. Répéter alors la recherche fera redémarrer la recherche au début. L'ordre de recherche se fait toujours selon l'ordre de tri actuel de votre base de données. Pour quitter la recherche incrémentale, appuyez sur ESC ou cliquez sur "Vider".
+- New window
+  
+  - When pressed, the results are displayed in a dedicated window.
 
-### Recherche normale
+- Global search
+  
+  - activated: 
+    - the search query will be taken over when switching tabs
+    - the external search result window will show matches in all databases
+  - deactivated: 
+    - each tab will remember its search query
+    - the external search result window will only show matches in the current database
 
-Dans une recherche normale, le programme recherche dans votre base les occurrences de votre chaîne de recherche, après que vous ayez appuyé sur Entrée. Toutes les entrées qui ne correspondent pas sont masquées, ne laissant alors apparaître que les entrées correspondant aux critères (mode filtre), ou sont grisées (mode flottante). Pour ne plus afficher les résultats de la recherche, appuyer sur ESC ou cliquer sur "Vider".
+- Regular expressions - Whether or not the search query uses [regular expressions](Search#regex).
 
-### <a href="" id="advanced"></a> Recherche avancée
+- Case sensitivity
+  
+  - Whether or not the search query is case sensitive.
 
-Afin de rechercher uniquement des champs spécifiques et/ou d'inclure des opérateurs logiques dans l'expression à rechercher, une syntaxe particulière est disponible. Par exemple, pour rechercher les entrées dont l'auteur est "Miller", entrez (excepté en mode de recherche incrémentale) :
+- Display setting
+  
+  - *Filter* - Displays only entries which match the search query, non-matches are hidden
+  - *Float* - Matching entries are moved to the top, entries which do not match the search query are grayed-out
 
-author = miller
+## Search modes
 
-A la fois la spécification du champ et le terme à rechercher peuvent être des expressions régulières. Si un terme à rechercher contient des espaces, le mettre entre guillemets. Il ne faut *jamais* utiliser d'espace dans la spécification du champ ! Par exemple, pour rechercher les entrées à propos de traitement d'images, entrez :
+There are two search modes in JabRef.
 
-title|keywords = "traitement d'images"
+### Normal search
 
-Vous pouvez utiliser "and", "or", "not", et les parenthèses de la façon habituelle :
+In a normal search, the program searches your database for all occurrences of the words in your search string, once you entered it. Only entries containing all words will be considered matches. To search for sequences of words, enclose the sequences in double quotes. For instance, the query **progress "marine aquaculture"** will match entries containing both the word "progress" and the phrase "marine aquaculture". All entries that don't match are hidden, leaving for display the matching entries only (filter mode), or are grayed-out (float mode). To stop displaying the search results, just clear the search field again, press <kbd>Esc</kbd> or click on the "Clear" (`X`) button.
 
-(author = miller or title|keywords = "traitement d'images") and not author = brown
+### [](){#advanced}Advanced search
 
-En fait, le signe "=" signifie "contient". La recherche d'une correspondance exacte est possible en utilisant "matches" ou "==". Utilisez "!=" pour tester si le terme à rechercher n'est *pas* contenu dans le champ (un équivalent de "not ... contains ..."). Si vous spécifiez un type de champ dans l'expression à rechercher, la sélection des types de champs (requis, optionnels, généraux) apparaissant dans les paramètres de recherche n'est pas prise en compte. Pour chercher des entrées d'un certain type, un pseudo-champ nommé "entrytype" est disponible :
+#### Syntax
 
-entrytype = thesis
+In order to search specific fields only and/or include logical operators in the search expression, a special syntax is available in which these can be specified. E.g. to search for entries whose an author contains **miller**, enter:
 
-recherchera les entrées dont le type (tel qu'affiché dans la colonne "Entrytype") contient le mot "thesis" (et qui sera donc "phdthesis" ou "mastersthesis"). Le pseudo-champ "bibtexkey" permet de rechercher dans les clefs de citation, tel que :
+`author = miller`
 
-bibtexkey = miller2005
+Both the field specification and the search term support [regular expressions](Search#regex). If the search term contains spaces, enclose it in quotes. Do *not* use spaces in the field specification! E.g. to search for entries about image processing, type:
 
-## Paramètres de recherche
+`title|keywords = "image processing"`
 
-Le bouton *Paramètres* ouvre un menu qui permet de basculer en mode "sensible à la casse", d'utiliser des expressions régulières lors de la recherche, et de définir si les résultats de la recherche doivent être sélectionnés dans la table et si les mots recherchés doivent être surlignés lors de l'édition et de la prévisualisation.
+You can use `and`, `or`, `not`, and parentheses as intuitively expected:
+
+`(author = miller or title|keywords = "image processing") and not author = brown`
+
+The `=` sign is actually a shorthand for `contains`. Searching for an exact match is possible using `matches` or `==`. Using `!=` tests if the search term is *not* contained in the field (equivalent to `not ... contains ...`). The selection of field types to search (required, optional, all) is always overruled by the field specification in the search expression. If a field is not given, all fields are searched. For example, `video and year == 1932` will search for entries with any field containing `video` and the field `year` being exactly `1932`.
+
+#### Pseudo fields
+
+JabRef defines the following pseudo fields:
+
+|                  |                                      |                                                                                                                                                                                                                                                                   |
+| ---------------- | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Pseudo field** | **Purpose**                          | **Example**                                                                                                                                                                                                                                                       |
+| `anyfield`       | Search in any field                  | `anyfield contains fruit`: search for entries having one of its fields containing the word **fruit**. This is identical to just writing `apple`. It may be more useful as `anyfield matches apple`, where one field must be exactly `apple` for a match.          |
+| `anykeyword`     | Search among the keywords            | `anykeyword matches apple`: search for entries which has the word **apple** among its keywords. However, as this also matches `pineapple`, it may be more useful in searches of the type `anykeyword matches apple`, which will not match `apples` or `pineapple` |
+| `bibtexkey`      | Search for citation keys             | `bibtexkey == miller2005`: search for an entry whose BibTeX key is **miller2005**                                                                                                                                                                                 |
+| `entrytype`      | Search for entries of a certain type | `entrytype = thesis`: search entries whose type (as displayed in the `entrytype` column) contains the word **thesis** (which would be **phdthesis** and **mastersthesis**)                                                                                        |
+
+#### [](){#regex} Regular expressions
+
+##### Background
+
+Regular expressions (regex for short) define a language for specifying the text to be matched, for example when searching. JabRef uses regular expressions as defined in Java. For extensive information, please, look at the [documentation](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html) and at the [tutorial](https://docs.oracle.com/javase/tutorial/essential/regex/).
+
+##### Regular expressions and casing
+
+By default, regular expressions do not account for upper/lower casing. Hence, while the examples below are all in lower case, they match also upper- and mixed case strings.
+
+If casing is important to your search, activate the case-sensitive button.
+
+##### Searching for entries with an empty or missing field
+
+- `.` means any character
+- `+` means one or more times
+
+`author != .+`
+
+##### Searching for a given word
+
+- `\b` means word boundary
+- `\B` means not a word boundary
+
+`keywords = \buv\b` matches *uv* but not *lluvia* (it does match *uv-b* however)
+
+`author = \bblack\b` matches *black* but neither *blackwell* nor *blacker*
+
+`author == black` does not match *john black*, but `author = \bblack\b` does.
+
+`author = \bblack\B` matches *blackwell* and *blacker*, but not *black*.
+
+##### Searching with optional spelling
+
+- `?` means none or one copy of the preceeding character.
+- `{n,m}` means at least *n*, but not more than *m* copies of the preceding character.
+- `[ ]` defines a character class
+
+`title =neighbou?r` matches *neighbour* and *neighbor*, and also *neighbours* and *neighbors*, and *neighbouring* and *neighboring*, etc.
+
+`title = neighbou?rs?\b` matches *neighbour* and *neighbor*, and also *neighbours* and *neighbors*, but neither *neighbouring* nor *neighboring*.
+
+`author = s[aá]nchez` matches *sanchez* and *sánchez*.
+
+`abstract = model{1,2}ing` matches *modeling* and *modelling*.
+
+`abstract = modell?ing` also matches *modeling* and *modelling*.
+
+##### Searching for strings with a special character (`()[]{}\^-=$!|?*+.`)
+
+If a special character (i.e. `(` `)` `[` `]` `{` `}` `` `^` `-` `=` `$` `!` `|` `?` `*` `+` `.` ) is included in your search string, it has to be escaped with a backslash, such as `\}` for `}`.
+
+It means that to search for a string including a backslash, two consecutive backslaskes (`\`) have to be used: `abstract = xori{\\c{c}}o` matches *xoriço*.
+
+##### Searching for strings with double quotation marks (`"`)
+
+The character `"` has a special meaning: it is used to group words into phrases for exact matches. So, if you search for a string that includes a double quotation, the double quotation character has to be replaced with the hexadecimal character 22 in ASCII table `\x22`.
+
+Hence, to search for *{\"o}quist* as an author, you must input `author = \{\\\x22o\}quist`, with regular expressions enabled (Note: the *{*, ** and the *}* are escaped with a backslash; see above).
+
+Indeed, `\"` does not work as an escape for `"`. Hence, neither `author = {\"o}quist` with regular expression disabled, nor `author = \{\\\"O\}quist` with regular expression enabled, will find anything even if the name *{\"o}quist* exists in the database.

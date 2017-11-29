@@ -1,22 +1,21 @@
 ---
-title: IEEEXploreから項目を取得するには
+title: Fetching entries from IEEEXplore
+helpCategories:
+  - Fetching entries from the web
+  - '... using online bibliographic database'
 ---
+# Fetching entries from IEEEXplore
 
-# IEEEXploreから項目を取得するには
+[IEEEXplore](http://ieeexplore.ieee.org/Xplore/home.jsp)is a scholarly research database that indexes, abstracts, and provides full-text for articles and papers on computer science, electrical engineering and electronics. IEEEXplore comprises over 180 journals, over 1,400 conference proceedings, more than 3,800 technical standards, over 1,800 eBooks and over 400 educational courses ([Wikipedia](https://en.wikipedia.org/wiki/IEEE_Xplore))
 
-[IEEEXplore](http://ieeexplore.ieee.org/Xplore/home.jsp)は，計算機科学・電子工学・電気工学の分野における論文をインデックスし，概要とフルテキストを提供する学術研究データベースです．
-IEEEXploreは，180を超える学術誌，1,400を超える学会報，3,800以上の規格，1,800を超えるeBooks，400を超える教育コースから成ります
-([Wikipedia](https://en.wikipedia.org/wiki/IEEE_Xplore))．
+To fetch entries from IEEEXplore, choose **Search → Web search**, and the search interface will appear in the side pane. Select **IEEEXplore** in the dropdown menu. To start a search, enter the words of your query, and press <kbd>Enter</kbd> or the **Fetch** button.
 
-IEEEXploreから項目を取得するには，**検索 → ウェブ検索** を選択してください．すると，サイドペインに検索インタフェースが現れますので，ドロップダウンメニューから，**IEEEXplore** を選択します．そこで，質問を入力し，**Enter** 鍵を押すか，**取得** ボタンを押して，検索を開始してください．
+By checking the **Include abstracts** checkbox, you may opt to download the abstracts along with the cite information for each entry. This will NOT cause more network queries.
 
-チェックボックス **概要を取り込む** をチェックすると，各項目の引用情報とともに概要もダウンロードするよう選択できます．これは，ネットワークへの問い合わせを増加させるわけではありません．
+The results are displayed in the [import inspection window](ImportInspectionDialog). In case an error occurs, it is shown in a popup.
 
-結果は，[読込検査ウィンドウ](ImportInspectionDialog)に表示されます．エラーが発生した場合には，ポップアップに表示されます．
+## Notes
 
-##註釈##
-- 検索はゲストモードで為されますので、最大100個の結果が返されます．
-
-好みによって、**概要を取り込む** というチェックボックスを有効にすれば、各項目の文献情報に加えて要約もダウンロードすることを選ぶことができます．これはネットワークへの問い合わせを増やすことは **ありません**．
-- BibTeX引用をIEEEXploreから直接ダウンロードするオプションは、まだ動作しません．
-- 何かご提案がありましたら、Oscar Gustafsson (**ogib73@gmail.com**)かAaron Chen (**nextAaron@gmail.com**)までメールをお送りください．
+- The search is done in guest mode, which means that a maximum of 100 results will be returned.
+- The option to download BibTeX citations directly from IEEEXplore is not working yet.
+- Please email Oscar Gustafsson **ogib73@gmail.com** or Aaron Chen **nextAaron@gmail.com** for any suggestions.

@@ -1,52 +1,49 @@
 ---
-title: 重複の検出
-helpCategories: ["項目の検索・整序・剪定"]
+title: Find duplicates
+helpCategories:
+  - Finding, sorting and cleaning entries
 ---
+# Find duplicates
 
-# 重複の検出
+JabRef can look for duplicated entries inside a database.
 
-JabRefは，データベース中の重複項目を検出することができます．
+This feature is accessible directly through **Quality → Find duplicates**. It is also used when [importing new entries](ImportInspectionDialog) from a supported reference format or directly from the Internet.
 
-この機能には，**品質→重複を検索** によって，直接アクセスすることができます．これは，サポートされている文献ファイル形式や直接インターネットから[新規項目を読み込む](ImportInspectionDialog)時にも使用されます．
+Detection of potential duplicates is done by an edit distance algorithm. Extra weighting is put on the fields *author*, *editor*, *title* and *journal*.
 
-重複候補の検出には，編集距離アルゴリズムが用いられます．*author*・*editor*・*title*・*journal* の各フィールド上に追加の重みを加えます．
+## Parallel display of potential duplicates
 
-## 重複候補の比較表示
+![Screenshot of the parallel display](./images/FindDuplicatesWindow-ParallelDisplay.png)
 
-![並列表示のスクリーンショット](./images/FindDuplicatesWindow-ParallelDisplay.png)
+When two potential duplicates are found, their fields are displayed side-by-side.
 
-重複の可能性がある項目どうしが見つかると，それらのフィールドが並べて表示されます．
+The differences between the two entries can be emphasized through the drop-down menu located at the upper right-hand corner of the window. Five ways of displaying the differences are offered:
 
-ウィンドウの右上隅にあるドロップダウンメニューを使うと，２つの項目の相違点を強調表示することができます．
-相違点の表示には，以下の５つの方法があります．
+- **plain text**: as is, no emphasis
+- **show diff** - word: differences are shown in the right entry. Full words are struck out in red if they are removed from the left entry or underlined in blue if they are added to the right entry.
+- **show diff** - character: differences are shown in the right entry. Individual characters are struck out in red or underlined in blue as above.
+- **show symmetric diff** - word: differences are shown on both sides. Words are underlined and displayed in color.
+- **show symmetric diff** - character: differences are shown on both sides. Characters are underlined and displayed in color.
 
-- **平文**: 強調なしにそのまま
-- **差異を表示** - 単語：差異は右側の項目に表示されます．左側で削除されている分は，単語全体が赤字で取消線を引かれ，右側で追加されている分は青で下線が引かれます．
-- **差異を表示** - 文字：差異は右側の項目に表示されます．上記と同様ですが，各文字が赤字で取消線を引かれ，あるいは青字で下線が引かれます．
-- **差異を対象表示** - 単語：差異は両側に表示されます．単語を対象として下線が引かれ，着色されます．
-- **差異を対象表示** - 文字：差異は両側に表示されます．単語を対象として下線が引かれ，着色されます．
+In the central column, a radio button allows you to select which side to keep for each field: the **left side**, the **right side**, or **none**. By default, the left entry is kept and any fields not present in the left entry are obtained from the right entry.
 
-中央の段のラジオボタンでは，各フィールドのどちら側を維持するかを選択することができます．選択肢は，**左側**・**右側**・**なし** です．
-既定では，左側の項目が維持され，左側の項目に存在しない全てのフィールドが右側の項目から取得されます．
+## Merged entry: preview and source code
 
-## 統合された項目：プレビューとソースコード
+![Screenshot of the preview and source code for the merged entry](./images/FindDuplicatesWindow-PreviewAndCode.png)
 
-![統合された項目のプレビューとソースコードのスクリーンショット](./images/FindDuplicatesWindow-PreviewAndCode.png)
+Based upon your selection, the merged entry is shown, both as a preview (on the left) and as source code (on the right).
 
-あなたの選択を反映して，統合された項目が，プレビュー（左側）とソースコード（右側）の形で表示されます．
+If you right-click on the preview, you can **Print entry preview** or **Copy preview**.
 
-プレビューを右クリックすると，**項目プレビューを印刷** するか **プレビューをコピー** することができます．
+## Selecting which entry to keep
 
+![Screenshot of the buttons to choose which entry to keep](./images/FindDuplicatesWindow-Selecting.png)
 
-## どの項目を維持するかを選択する
+You are offered to:
 
-![どの項目を維持するか選択するためのボタンのスクリーンショット](./images/FindDuplicatesWindow-Selecting.png)
-
-以下の選択肢があります：
-
-- **完全に同一な重複を自動削除**．このボタンは，完全に同一な重複がある場合に表示されます．クリックすると，完全に同一な重複を削除します．
-- **左側を維持**．右側の項目を削除します．
-- **右側を維持**．左側の項目を削除します．
-- **両側を維持**．２つの項目が重複ではないものとして扱います．
-- **統合した項目のみを維持**．統合した項目を最良のものとみなし，古い項目は両方とも削除されます．
-- **取消**．重複の検索を直ちに停止します．
+- **Automatically remove exact duplicates**. This button shows up if there are exact duplicates. Clicking that leads to all exact duplicates to be removed.
+- **Keep left** entry. Removes the right entry.
+- **Keep right** entry. Removes the left entry.
+- **Keep both** entries, meaning that you consider the two entries are not duplicates.
+- **Keep merged entry only**, meaning that the merged entry is the best. Both previous entries are removed.
+- **Cancel**, which will end the duplicate finding.

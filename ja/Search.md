@@ -1,62 +1,145 @@
 ---
-title: 検索
+title: Searching
+helpCategories:
+  - Finding, sorting and cleaning entries
+since: 3.7
 ---
+# Searching
 
-# 検索
+The search bar is located between the icon bar and the database tabs.
 
-## キーボード・ショートカット
+![Screenshot of the search bar](./images/Search-Bar.png)
 
-- <kbd>CTRL</kbd> + <kbd>F</kbd> を押すと，検索操作面がフォーカスを得ます．
-- <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>F</bd> 現在の検索文字列で，大域検索を行います．
+To make the cursor jump to the search field, you can: - click in the search field. - select the menu **Search → Search**. - press <kbd>Ctrl</kbd> + <kbd>F</kbd>.
 
-## 検索モード
+Additionally, <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd> also activates the global search setting.
 
-JabRefには２つの検索モードがあります．
+Searching includes two modes (normal and advanced), along with several settings.
 
-### 通常検索
+## Search settings
 
-通常検索では，ENTERを押すと，入力した検索文字列に含まれる単語の該当箇所すべてが，データベースから検索されます．ここでは，すべての単語を含む項目のみが，一致項目と見なされます．連続した単語群を検索するには，その単語群を引用符""で括ってください．例えば，**progress "marine aquaculture"** という問い合わせは，"progress"という単語と"marine aquaculture"という句をともに含む項目に一致します．一致しない項目はすべて非表示となり，一致項目だけを残すか(フィルターモード)，一致しない項目を淡色表示します(フロートモード)．検索結果の表示を終了するには，<kbd>ESC</kbd>鍵を押すか「消去」(`X`)ボタンを押してください．
+At the right of the search text field, several buttons allow for selecting some settings:
 
-### <a href="" id="advanced"></a>詳細検索
+- New window
+  
+  - When pressed, the results are displayed in a dedicated window.
 
-特定のフィールドのみを検索したかったり，検索表現に論理演算子を含めたい場合には，これらを使用するための特別な文法があります．例えば，著者が **Miller** の項目を検索するには，
+- Global search
+  
+  - activated: 
+    - the search query will be taken over when switching tabs
+    - the external search result window will show matches in all databases
+  - deactivated: 
+    - each tab will remember its search query
+    - the external search result window will only show matches in the current database
+
+- Regular expressions - Whether or not the search query uses [regular expressions](Search#regex).
+
+- Case sensitivity
+  
+  - Whether or not the search query is case sensitive.
+
+- Display setting
+  
+  - *Filter* - Displays only entries which match the search query, non-matches are hidden
+  - *Float* - Matching entries are moved to the top, entries which do not match the search query are grayed-out
+
+## Search modes
+
+There are two search modes in JabRef.
+
+### Normal search
+
+In a normal search, the program searches your database for all occurrences of the words in your search string, once you entered it. Only entries containing all words will be considered matches. To search for sequences of words, enclose the sequences in double quotes. For instance, the query **progress "marine aquaculture"** will match entries containing both the word "progress" and the phrase "marine aquaculture". All entries that don't match are hidden, leaving for display the matching entries only (filter mode), or are grayed-out (float mode). To stop displaying the search results, just clear the search field again, press <kbd>Esc</kbd> or click on the "Clear" (`X`) button.
+
+### [](){#advanced}Advanced search
+
+#### Syntax
+
+In order to search specific fields only and/or include logical operators in the search expression, a special syntax is available in which these can be specified. E.g. to search for entries whose an author contains **miller**, enter:
 
 `author = miller`
 
-と入力してください．フィールドの指定方法と検索文字列の双方とも正規表現をサポートしています．検索文字列に空白が含まれる場合には，文字列を引用符で囲んでください．フィールドの指定に空白は *決して* 使わないでください！例えば，画像処理に関する項目を検索するには，
+Both the field specification and the search term support [regular expressions](Search#regex). If the search term contains spaces, enclose it in quotes. Do *not* use spaces in the field specification! E.g. to search for entries about image processing, type:
 
 `title|keywords = "image processing"`
 
-と入力してください．この中で，下記のように `and`・`or`・`not`および括弧を使用することができます．
+You can use `and`, `or`, `not`, and parentheses as intuitively expected:
 
 `(author = miller or title|keywords = "image processing") and not author = brown`
 
-`=` 記号は，実は `contains` の省略形です．完全一致検索は，`matches` あるいは `==` を使って行うことができます．`!=` を使うと，フィールドに含まれて *いない* 検索語を探します(`not ... contains ...`と等価)．検索対象のフィールド型の選択(必須/非必須/すべて)よりも，検索表現中のフィールド指定の方が常に優先されます．ある型の項目を検索するには，下記のように`entrytype`という準フィールドを使うことができます．
+The `=` sign is actually a shorthand for `contains`. Searching for an exact match is possible using `matches` or `==`. Using `!=` tests if the search term is *not* contained in the field (equivalent to `not ... contains ...`). The selection of field types to search (required, optional, all) is always overruled by the field specification in the search expression. If a field is not given, all fields are searched. For example, `video and year == 1932` will search for entries with any field containing `video` and the field `year` being exactly `1932`.
 
-`entrytype = thesis`
+#### Pseudo fields
 
-こうすると，(`Entrytype` 列に表示されている)型に **thesis** という単語を含む項目(つまり，**phdthesis** 及び **mastewrthesis**)を検索します．下記のように，別の準フィールド`bibtexkey`を使うと，引用鍵を検索することができます．
+JabRef defines the following pseudo fields:
 
-`bibtexkey = miller2005`
+|                  |                                      |                                                                                                                                                                                                                                                                   |
+| ---------------- | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Pseudo field** | **Purpose**                          | **Example**                                                                                                                                                                                                                                                       |
+| `anyfield`       | Search in any field                  | `anyfield contains fruit`: search for entries having one of its fields containing the word **fruit**. This is identical to just writing `apple`. It may be more useful as `anyfield matches apple`, where one field must be exactly `apple` for a match.          |
+| `anykeyword`     | Search among the keywords            | `anykeyword matches apple`: search for entries which has the word **apple** among its keywords. However, as this also matches `pineapple`, it may be more useful in searches of the type `anykeyword matches apple`, which will not match `apples` or `pineapple` |
+| `bibtexkey`      | Search for citation keys             | `bibtexkey == miller2005`: search for an entry whose BibTeX key is **miller2005**                                                                                                                                                                                 |
+| `entrytype`      | Search for entries of a certain type | `entrytype = thesis`: search entries whose type (as displayed in the `entrytype` column) contains the word **thesis** (which would be **phdthesis** and **mastersthesis**)                                                                                        |
 
-## 検索設定
+#### [](){#regex} Regular expressions
 
-検索文字列フィールドの横には，下記の各オプションを入切するためのチェックボックスが並んでいます．
+##### Background
 
-- 大文字・小文字を区別
-  - 検索問い合わせが大文字小文字を区別するか否か
+Regular expressions (regex for short) define a language for specifying the text to be matched, for example when searching. JabRef uses regular expressions as defined in Java. For extensive information, please, look at the [documentation](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html) and at the [tutorial](https://docs.oracle.com/javase/tutorial/essential/regex/).
 
-- 正規表現
-  - 検索問い合わせが正規表現によって記述されるか否か
+##### Regular expressions and casing
 
-- 表示設定
-  - フィルター - 検索問い合わせに一致する項目のみを表示
-  - フロート - 検索問い合わせに一致しない項目は淡色表示
+By default, regular expressions do not account for upper/lower casing. Hence, while the examples below are all in lower case, they match also upper- and mixed case strings.
 
-- 大域検索
-  - 有効な場合
-    - タブを切り替えた場合，検索問い合わせは引き継がれます
-    - 外部検索結果ウィンドウは，全てのデータベースにある一致項目を表示します
-  - 無効の場合
-    - 各タブは，それぞれの検索問い合わせを保持します
-    - 外部検索結果ウィンドウは，現行データベースにある一致項目のみ表示します
+If casing is important to your search, activate the case-sensitive button.
+
+##### Searching for entries with an empty or missing field
+
+- `.` means any character
+- `+` means one or more times
+
+`author != .+`
+
+##### Searching for a given word
+
+- `\b` means word boundary
+- `\B` means not a word boundary
+
+`keywords = \buv\b` matches *uv* but not *lluvia* (it does match *uv-b* however)
+
+`author = \bblack\b` matches *black* but neither *blackwell* nor *blacker*
+
+`author == black` does not match *john black*, but `author = \bblack\b` does.
+
+`author = \bblack\B` matches *blackwell* and *blacker*, but not *black*.
+
+##### Searching with optional spelling
+
+- `?` means none or one copy of the preceeding character.
+- `{n,m}` means at least *n*, but not more than *m* copies of the preceding character.
+- `[ ]` defines a character class
+
+`title =neighbou?r` matches *neighbour* and *neighbor*, and also *neighbours* and *neighbors*, and *neighbouring* and *neighboring*, etc.
+
+`title = neighbou?rs?\b` matches *neighbour* and *neighbor*, and also *neighbours* and *neighbors*, but neither *neighbouring* nor *neighboring*.
+
+`author = s[aá]nchez` matches *sanchez* and *sánchez*.
+
+`abstract = model{1,2}ing` matches *modeling* and *modelling*.
+
+`abstract = modell?ing` also matches *modeling* and *modelling*.
+
+##### Searching for strings with a special character (`()[]{}\^-=$!|?*+.`)
+
+If a special character (i.e. `(` `)` `[` `]` `{` `}` `` `^` `-` `=` `$` `!` `|` `?` `*` `+` `.` ) is included in your search string, it has to be escaped with a backslash, such as `\}` for `}`.
+
+It means that to search for a string including a backslash, two consecutive backslaskes (`\`) have to be used: `abstract = xori{\\c{c}}o` matches *xoriço*.
+
+##### Searching for strings with double quotation marks (`"`)
+
+The character `"` has a special meaning: it is used to group words into phrases for exact matches. So, if you search for a string that includes a double quotation, the double quotation character has to be replaced with the hexadecimal character 22 in ASCII table `\x22`.
+
+Hence, to search for *{\"o}quist* as an author, you must input `author = \{\\\x22o\}quist`, with regular expressions enabled (Note: the *{*, ** and the *}* are escaped with a backslash; see above).
+
+Indeed, `\"` does not work as an escape for `"`. Hence, neither `author = {\"o}quist` with regular expression disabled, nor `author = \{\\\"O\}quist` with regular expression enabled, will find anything even if the name *{\"o}quist* exists in the database.

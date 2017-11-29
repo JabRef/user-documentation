@@ -1,4 +1,4 @@
 ---
-redirect:   /fr/ACMPortal
-layout:     redirect
+redirect: /en/ACMPortal
+layout: redirect
 ---

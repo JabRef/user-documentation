@@ -1,19 +1,20 @@
 ---
-title: 文字列エディタ
+title: The string editor
+helpCategories:
+  - Setup
 ---
+# The string editor
 
-# 文字列エディタ
+<Strings> can be edited by **BibTeX → Edit strings** or pressing a button in the toolbar.
 
-[文字列](StringsHelp)は，**BibTeX → 文字列を編集** か，ツールバー中のボタンを押すことで，編集できるようになります．
+*Strings* are the *BibTeX* equivalent to constants in a programming language. Each string is defined with a unique *name* and a *content*. Elsewhere in the database, the name can be used to represent the content.
 
-*文字列* は、*BibTeX* においてプログラミング言語の定数と同じ役割を果たします。各文字列は、重複のない *名称* と *内容* とで定義されます。この名称は、データベースの他の場所で内容を表すものとして使用することができます。
+For instance, if many entries are from a journal with an abbreviation that may be hard to remember, such as 'J. Theor. Biol.' (Journal of Theoretical Biology), a string named JTB could be defined to represent the journal's name. Instead of repeating the exact journal name in each entry, the characters '\#JTB\#' (without quotes) are put into the *journal* field of each, ensuring the journal name is written identically each time.
 
-例えば、多くの項目が「J. Theor. Biol.」(Journal of Theroretical Biology)のように、短縮形を覚えるのが難しい学術誌からのものである場合、この学術誌の名称を表すものとしてJTBという文字列を定義することができます。各項目ごとに正確な学術誌名を繰り返す代わりに、それぞれの *journal* フィールドに「\#JTB\#」（除く括弧）という文字を入れれば、毎回正確に同じ学術誌名が書き込まれるようにすることができます。
+A string reference can appear anywhere in a field, always by enclosing the string's name in a pair of '\#' characters. This syntax is specific for JabRef, and differs slightly from the *BibTeX* notation that is produced when you save your database. Strings can by default be used for all standard BibTeX fields, and in **Preferences → General → File** you can opt to enable strings for non-standard fields as well. In the latter case you can specify a set of fields that are excepted from string resolving, and here it is recommended to include the 'url' field and other fields that may need to contain the '\#' character and that may be processed by BibTeX/LaTeX.
 
-文字列への参照はフィールド中どこでも使用することができ、文字列の名称を必ず「\#」文字の対で囲みます。この文法はJabRef特有のものであり、データベースを保存したときに生成される *BibTeX* のものとは若干異なります。文字列は、既定で標準BibTeXフィールドすべてで使用することができ、**設定→一般→ファイル** で非標準のフィールドでも文字列を有効にすることができます。後者の場合は、文字列解決から除外するフィールドを指定することができ、ここには「url」フィールドや、その他「\#」文字を入れる必要がありBibTeX/LaTeXで処理される可能性のあるフィールドを含めておくことをお勧めします。
+A string may in the same way be referred in the content of another string, provided the referred string is defined *before* the referring one.
 
-文字列は、参照される文字列が参照する文字列の *前に* 定義されている限り、他の文字列の内容を同じように参照することができます。
+While the order of strings in your BibTeX file is important in some cases, you do not have to worry about this when using JabRef. The strings will be displayed in alphabetical order in the string editor, and stored in the same order, except when a different ordering is required by BibTeX.
 
-BibTeXファイル中の文字列の順序は場合により重要ですが、JabRefを使用している場合には、その心配をする必要はありません。文字列エディタでは、文字列はアルファベット順に表示され、同じ順序で保存されますが、BibTeXが異なる順序を要求する場合には調整されます。
-
-文字列の文法について，詳しくは[文字列に関するヘルプ](StringsHelp)を参照してください．
+For a complete description of string syntax, see the [dedicated help](Strings).

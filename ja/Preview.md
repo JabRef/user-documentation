@@ -1,7 +1,8 @@
 ---
-title: 項目プレビューの設定
+title: Entry preview setup
+helpCategories:
+  - Setup
 ---
+# Entry preview setup
 
-# 項目プレビューの設定
-
-項目プレビューは，[ユーザー書出フィルタ](CustomExports)機能と同じ機構を使って生成されます．プレビューを行うと，項目は，2つのレイアウトのうち1つを使用して(2つのレイアウトはF9を押して切り替えられます)HTMLコードが生成され，プレビュー画面に表示されます．プレビューの外見と内容を修正するには，ヘルプファイル[ユーザー書出フィルタ](CustomExports)に記述のある文法を用いて，プレビューレイアウトを編集する必要があります．
+The entry preview is created using the same mechanism as used by the [Custom export filter](CustomExports) facility. When previewed, an entry is processed using one of the two alternative layouts (you can switch between the two layouts by pressing <kbd>F9</kbd>) to produce HTML code which is displayed by the preview panel. To modify the appearance and contents of the preview you need to edit the preview layouts using the syntax described in the help file on [Custom export filters](CustomExports).

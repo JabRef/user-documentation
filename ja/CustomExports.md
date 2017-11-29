@@ -1,312 +1,312 @@
 ---
-title: ユーザー書出フィルタ
+title: Custom export filters
+helpCategories:
+  - Import/Export
 ---
+# Custom export filters
 
-# ユーザー書出フィルタ
+JabRef allows you to define and use your own export filters, in the same way as the standard export filters are defined. An export filter is defined by one or more *layout files*, which with the help of a collection of built-in formatter routines specify the format of the exported files. Your layout files must be prepared in a text editor outside of JabRef.
 
-JabRefでは，標準書出フィルタが定義されているのと同様の方法で，自分自身の書出フィルタを定義して使用することができます．書出フィルタは，一つ以上の *レイアウトファイル* で定義されており，組込整形ルーチン群によって，書出ファイルの書式を決定します．レイアウトファイルは，JabRef外部で，テキストエディタを使用して準備する必要があります．
+The custom export format of JabRef is an alternative to the [Citation Style Language](http://citationstyles.org/), which is an XML-based format to describe bibliographic rendering.
 
-## ユーザー書出フィルタを追加する
+Existing public files are collected at <https://layouts.jabref.org>.
 
-書出フィルタが有効となる唯一の条件は，拡張子 **.layout** のファイルがあることだけです．ユーザー書出フィルタを新たに追加するには，ダイアログボックス **オプション→ユーザー書出の管理** を開き，**新規追加** を押します．新しいダイアログボックスが現れるので，書出フィルタの名称(これは，**ファイル→書出** メニューをJabRefウィンドウから選択した時に，ファイルダイアログのファイル型ドロップダウンメニューに選択肢として現れるものです)と **.layout** ファイルのパス，書出フィルタの優先ファイル拡張子(これは書出フィルタを使用する際，ファイルダイアログで提案される拡張子になります)を指定します．
+## Adding a custom export filter
 
-## 書出フィルタを作成する
+The only requirement for a valid export filter is the existence of a file with the extension **.layout**. To add a new custom export filter, open the dialog box **Options → Manage custom exports**, and click **Add new**. A new dialog box will appear, allowing you to specify a name for the export filter (which will appear as one of the choices in the File type dropdown menu of the file dialog when you use the **File → Export** menu choice in the JabRef window), the path to the **.layout** file, and the preferred file extension for the export filter (which will be the suggested extension in the file dialog when you use the export filter).
 
-書出フィルタの作り方の例を見るには，JabRefダウンロードページから標準書出フィルタのレイアウトファイルを含むパッケージを手に入れてください．
+## Creating the export filter
 
-### レイアウトファイル
+To see examples of how export filters are made, look for the package containing the layout files for the standard export filters on our download page.
 
-HTML書出フィルタを作成しようとしているものとしましょう．書出フィルタは，**.layout** ファイル——ここでは*html.layout*としましょう——が一つありさえすればよいのですが，*html.begin.layout* と *html.end.layout* という二つのファイルも作りたくなるでしょう．前者は出力のヘッダ部分を持ち，後者はフッタ部分です．JabRefは，書出フィルタが使用された際にこの二つのファイルを探し出し，検出されると，その内容が各項目の出力の前後に逐語的にコピーされます．
+Regarding tool support, there is the [Export-Filter Editor for Jabref](https://sourceforge.net/projects/efe/) to quickly create export filters.
 
-これらのファイルは，*html.layout* と同じディレクトリになくてはならず，それぞれ **.begin** と **.end** を名称に挿入しなくてはなりません．この書出フィルタの例では，これらのファイルは以下のようになります．
+### Layout files
 
-*html.begin.layout*:
-`<!DOCTYPE html><html> <body style="color:#275856; font-family: Arial, sans-serif;">`
+Let us assume that we are creating an HTML export filter. While the export filter only needs to consist of a single **.layout** file, which in this case could be called *html.layout*, you may also want to add two files called *html.begin.layout* and *html.end.layout*. The former contains the header part of the output, and the latter the footer part. JabRef will look for these two files whenever the export filter is used, and if found, either of these will be copied verbatim to the output before or after the individual entries are written.
 
-*html.end.layout*:
-`</body></html>`
+Note that these files must reside in the same directory as *html.layout*, and must be named by inserting **.begin** and **.end**, respectively. In our example export filter, these could look like the following:
 
-*html.layout* ファイルは，1項目のみを書き出す時の *既定の* ひな型となります．項目型毎に異なるひな型を用いたい場合には，項目依存の **.layout** ファイルを追加します．これらは，基本となるレイアウトファイルと同じディレクトリになくてはならず，基本レイアウト ファイル名に **.項目型** を挿入した名称を付けなくてはなりません．項目型名はすべて小文字です．ここの例では，book項目のひな型を作りたいとすると，そのファイルは *html.book.layout* となります．博士論文ならば，*html.phdthesis.layout* などとなるでしょう．これらのファイルは，一致する項目型のみに用いられるという点を除けば，既定レイアウトファイルと同じです．ただし，既定ファイルは，ほとんどの書出フィルタにおいて，たいていの項目型を網羅できるように，十分一般的な形で作ることが容易にできます．
+*html.begin.layout*: `<!DOCTYPE html><html> <body style="color:#275856; font-family: Arial, sans-serif;">`
 
-### レイアウトファイルの書式
+*html.end.layout*: `</body></html>`
 
-レイアウトファイルは，簡単なマークアップ形式を用いて作成されており，コマンドはバックスラッシュの後に続けることで認識されます．コマンドの一部と認識されないテキストはすべて，文字通り出力ファイルにコピーされます．
+The file *html.layout* provides the *default* template for exporting one single entry. If you want to use different templates for different entry types, you can do this by adding entry-specific **.layout** files. These must also reside in the same directory as the main layout file, and are named by inserting **.entrytype** into the name of the main layout file. The entry type name must be in all lowercase. In our example, we might want to add a template for book entries, and this would go into the file *html.book.layout*. For a PhD thesis we would add the file *html.phdthesis.layout*, and so on. These files are similar to the default layout file, except that they will only be used for entries of the matching type. Note that the default file can easily be made general enough to cover most entry types in most export filters.
 
-### フィールドコマンド
+### The layout file format
 
-`\author`・`\editor`・`\title`・`\year`のような，バックスラッシュに続く単語は，いずれも対応するフィールドを参照しているものと解釈され，直接出力にコピーされます．
+Layout files are created using a simple markup format where commands are identified by a preceding backslash. All text not identified as part of a command will be copied verbatim to the output file.
 
-### フィールド整形子(フォーマッタ)
+### Field commands
 
-往々にして，出力前にフィールド内容を事前処理する必要のあることがあります．これは，フィールド内容を操作するメソッドを一つだけ持ったjavaクラス *field formatter* を用いて行われます．
+An arbitrary word preceded by a backslash, e.g. `\author`, `\editor`, `\title` or `\year`, will be interpreted as a reference to the corresponding field, which will be copied directly to the output.
 
-フォーマッタは，`\format`コマンドを挿入した後にフォーマッタ名を角括弧で続け，フィールドコマンドを波括弧で続けることで使用することができます．例:
+### Field formatters
+
+Often there will be a need for some preprocessing of the field contents before output. This is done using a *field formatter* - a java class containing a single method that manipulates the contents of a field.
+
+A formatter is used by inserting the `\format` command followed by the formatter name in square braces, and the field command in curly braces, e.g.:
 
 `\format[ToLowerCase]{\author}`
 
-また，コンマで区切ることで複数のフォーマッタを指定することができます．これらは左から右にシーケンシャルに呼び出されます．例えば，
+You can also specify multiple formatters separated by commas. These will be called sequentially, from left to right, e.g.
 
 `\format[ToLowerCase,HTMLChars]{\author}`
 
-上記は，まずフォーマッタ **ToLowerCase** が呼び出され，それからその結果を整形するのに **HTMLChars** が呼び出されます．この方法で，好きな数のフォーマッタを列挙することができます．
+will cause the formatter **ToLowerCase** to be called first, and then **HTMLChars** will be called to format the result. You can list an arbitrary number of formatters in this way.
 
-波括弧で囲んだフォーマッタへの引数は，フィールドコマンドである必要はありません．代わりに通常のテキストを入れると，フィールド内容ではなく，そのテキストがフォーマッタに渡されます．これは，(後述するように)CurrentDateフォーマッタなど，いくつかのフォーマッタで有用です．
+The argument to the formatters, withing the curly braces, does not have to be a field command. Instead, you can insert normal text, which will then be passed to the formatters instead of the contents of any field. This can be useful for some fomatters, e.g. the CurrentDate formatter (described below).
 
-フォーマッタによっては，追加的な引数を取るものがあり，これはフォーマッタ名の直後に丸括弧に入れて与えます．引数は引用符で囲むことができ，これは引数に括弧文字が含まれる場合には必要です．例えば，`\format[Replace("\s,_")]{\journal}`は，**Replace** フォーマッタを引数 **\\s,\_** とともに呼び出します(これは，すべての空白をアンダースコアで置換した「journal」フィールドを返します)．
+Some formatters take an extra argument, given in parentheses immediately after the formatter name. The argument can be enclosed in quotes, which is necessary if it includes the parenthesis characters. For instance, `\format[Replace("\s,_")]{\journal}` calls the **Replace** formatter with the argument **\\s,\_** (which results in the "journal" field after replacing all whitespace by underscores).
 
-組込書出フォーマッタの一覧は，下記をご覧ください．
+See below for a list of built-in export formatters.
 
-### 条件付き出力
+### Conditional output
 
-静的出力の中には，特定のフィールドが設定されて初めて意味を持つものがあります．例えば，編集者名の後に`(Ed.)`という文字列を付けたいものとしましょう．これは，以下のテキストで実現できます．
+Some static output might only make sense if a specific field is set. For instance, say we want to follow the editor names with the text `(Ed.)`. This can be done with the following text:
 
 `\format[HTMLChars,AuthorFirstFirst]{\editor}     (Ed.)`
 
-しかしながら，もし`editor`フィールドが設定されていなければ——書き出す項目によっては，そもそもこのフィールドは意味を持たないかもしれません——，`(Ed.)`は宙ぶらりんで残されてしまいます．これは，下記のように，代わりに`\begin`および`\end`コマンドを使うと，回避できます．
+However, if the `editor` field has not been set - it might not even make sense for the entry being exported - the `(Ed.)` would be left hanging. This can be prevented by instead using the `\begin` and `\end` commands:
 
 `\begin{editor}     \format[HTMLChars,AuthorFirstFirst]{\editor} (Ed.)      \end{editor}`
 
-`\begin`および`\end`コマンドは，書き出す項目について，波括弧で参照されているフィールドが定義されている場合に限り，その間の文字列が出力されるようにするものです．
+The `\begin` and `\end` commands make sure the text in between is printed if and only if the field referred in the curly braces is defined for the entry being exported.
 
-条件付きブロックは，二つ以上のフィールドに依存させることもでき，簡単な二値条件が満たされた時のみ，内容が出力されます．二値演算子は下記の二つが用意されています．
+A conditional block can also be dependent on more than one field, and the content is only printed when simple boolean conditions are satisfied. Two boolean operator are provided:
 
--   AND演算子 : `&`, `&&`
--   OR演算子 : `|`, `||`
+- AND operator : `&`, `&&`
+- OR operator : `|`, `||`
 
-`year`と`month`の両方が設定されている時のみ文字列を出力したい場合には，下記のようなブロックを使用してください．
-`\begin{year&&month}Month: \format[HTMLChars]{\month}\end{year&&month}`
-これは`year`フィールドも定義されている時のみ，「Month:」と`month`フィールドの内容を出力します．
+To output text only if both `year` and `month` are set, use a block like the following: `\begin{year&&month}Month: \format[HTMLChars]{\month}\end{year&&month}` which will print "Month: " plus the contents of the `month` field, but only if also the `year` field is defined.
 
-**《註》** 様々な項目型でうまく動作するレイアウトファイルを作る上では，`\begin`コマンドと`\end`コマンドを使うことが鍵となります．
+**Note:** Use of the `\begin` and `\end` commands is a key to creating layout files that work well with a variety of entry types.
 
-### グループ化出力
+### Grouped output
 
-特定のフィールドに基づいて項目をグループ化したい場合，グループ化出力コマンドを使用してください．グループ化出力は，波括弧で参照されているフィールドの値が変化した時のみ，間の文字列が出力されるという点を除いては，条件付き出力に非常に類似したものです．
+If you wish to separate your entries into groups based on a certain field, use the grouped output commands. Grouped output is very similar to conditional output, except that the text in between is printed only if the field referred in the curly braces has changed value.
 
-例えば，キーワードでグループを作りたいとしましょう．ファイルを書き出す前に，項目をキーワードで整序して保管したことを確認してください．キーワードでグループ化するには，以下のコマンドを使用します．
+For example, let's assume I wish to group by keyword. Before exporting the file, make sure you have sorted your entries based on keyword. Now use the following commands to group by keyword:
 
 `\begingroup{keywords}New Category:     \format[HTMLChars]{\keywords}      \endgroup{keywords}`
 
-## 組込書出フォーマッタ
+## Built-in export formatters
 
-JabRefは，以下のフォーマッタを提供しています．
+JabRef provides the following set of formatters:
 
--   `Authors` : このフォーマッタは，authorおよびeditorフィールドの整形オプションを提供します．詳細な情報については後述部分をご覧ください．これは，JabRef2.7版以前に提供されていた多くの旧フォーマッタを置き換えるものです．
--   `CreateBibORDFAuthors` : Bibliographic Ontology (bibo)の要件を満たすようにauthorフィールドを整形します．
--   `CreateDocBookAuthors` : authorフィールドをDocBook様式で整形します．
--   `CreateDocBookEditors` : editorフィールドをDocBook様式で整形します．
--   `CurrentDate` : 現在の日付を出力します．引数を与えなければ，このフォーマッタは，現在の日付と時刻を「yyyy.MM.dd hh:mm:ss z」(日付と時刻とタイムゾーン)の書式で出力します．引数として，別の書式文字列を与えれば，日付の書式を変更することができます．例えば，`\format[CurrentDate]{yyyy.MM.dd}`は，2005.11.30のように日付のみを返します．
--   `Default` : これは一つだけ引数を取り，それを既定値とします．整形する文字列が空でなければ，それに変更を加えずに出力されます．もしそれが空ならば，既定値が出力されます．例えば，`\format[Default(unknown)]{\year}`は，項目のyearが設定されていればそれを出力し，yearが設定されていなければ，「unknown」を出力します．
--   `DateFormatter` : 日付を整形します．引数を与えなければ，日付はISO書式(yyyy-MM-dd)で与えられ，入力に際して期待される書式となります．引数には，`yyyy`・`MM`・`dd`が任意の組み合わせで取られます．例えば，`\format[DateFormatter(MM/yyyy)]{\date}`とすると，日付フィールドに2016-07-15が収められているとき，07/2016と出力します．
--   `DOIStrip` : DOI文字列から前置句を取り除きます．
--   `DOICheck` : DOIリンクの完全URLを提供します．
--   `EntryTypeFormatter` : 項目型のキャメルケース．例えば，「inbook」→「InBook」
--   `FileLink(ファイル型)` : 引数を与えなければ，このフォーマッタは，当該フィールドにエンコードされている最初の外部ファイルリンクを出力します．動作するためには，このフォーマッタに「file」フィールドの内容を与えなくてはいけません．
+- `Authors` : this formatter provides formatting options for the author and editor fields; for detailed information, see below. It deprecates a range of dedicated formatters provided in versions of JabRef prior to 2.7.
+- `CreateBibORDFAuthors` : formats authors for according to the requirements of the Bibliographic Ontology (bibo).
+- `CreateDocBookAuthors` : formats the author field in DocBook style.
+- `CreateDocBookEditors` : formats the editor field in DocBook style.
+- `CurrentDate` : outputs the current date. With no argument, this formatter outputs the current date and time in the format "yyyy.MM.dd hh:mm:ss z" (date, time and time zone). By giving a different format string as argument, the date format can be customized. For example `\format[CurrentDate]{yyyy.MM.dd}` will give the date only, e.g. 2005.11.30.
+- `DateFormatter` : formats a date. With no argument, the date is given in ISO-format (yyyy-MM-dd), which is also the expected format of the input. The argument may contain `yyyy`, `MM`, and `dd` in any combination. For example `\format[DateFormatter(MM/yyyy)]{\date}` will output 07/2016 if the date field contains 2016-07-15.
+- `Default` : takes a single argument, which serves as a default value. If the string to format is non-empty, it is output without changes. If it is empty, the default value is output. For instance, `\format[Default(unknown)]{\year}` will output the entry's year if set, and "unknown" if no year is set.
+- `DOIStrip` : strips any prefixes from the DOI string.
+- `DOICheck` : provides the full url for a DOI link.
+- `EntryTypeFormatter` : camel case of entry types, so "inbook" -> "InBook".
+- `FileLink(filetype)` : if no argument is given, this formatter outputs the first external file link encoded in the field. To work, the formatter must be supplied with the contents of the "file" field.
+    
+    This formatter takes the name of an external file type as an optional argument, specified in parentheses after the formatter name. For instance, `\format[FileLink(pdf)]{\file}` specifies `pdf` as an argument. When an argument is given, the formatter selects the first file link of the specified type. In the example, the path to the first PDF link will be output.
 
-    このフォーマッタは，外部ファイル型の名称を非必須引数としてとり，フォーマッタ名の後に丸括弧に入れて指定します．例えば，`\format[FileLink(pdf)]{\file}`は，`pdf`を引数として指定しています．引数が与えられると，フォーマッタは指定された型の最初のファイルリンクを選択します．この例では，最初のPDFリンクのパスが出力されます．
+- `FirstPage` : returns the first page from the "pages" field, if set. For instance, if the pages field is set to "345-360" or "345--360", this formatter will return "345".
 
--   `FirstPage` : 「pages」フィールドに設定があると，そこから最初のページを返します．例えば，pagesフィールドが「345-360」や「345--360」に設定されていると，このフォーマッタは「345」を返します．
--   `FormatChars` : このフォーマッタは，LaTeX文字列を同等のunicode文字列に変換し，他のLaTeXコマンドを処理しないで削除します．
--   `FormatPagesForHTML` : 「--」を「-」に置換します．
--   `FormatPagesForXML` : 「--」をXMLエヌダッシュに置換します．
--   `GetOpenOfficeType` : OpenOffice.org書誌情報システム(第1.x版および第2.x版)において，この項目の型を表す番号を返します．
--   `HTMLChars` : TeXの特殊文字(`{\"{a}}`や`{\sigma}`など)をHTML表記に置き換え，`\emph`・`\textit`・`\textbf`・`\texttt`・`\underline`・`\textsuperscript`・`\textsubscript`・`\sout`のLaTeXコマンドをHTMLでの等価のコマンドに書き換えます．
--   `HTMLParagraphs` : 二連続の改行(\\n \\nなど)を新しい段落の開始と解釈し，段落HTMLタグを正しく付与します．
--   `IfPlural` : 入力フィールドが2著者以上の著者リスト様に見える場合には第1引数を出力し，それ以外は第2引数を出力します．例えば，`\format[IfPlural(Eds.,Ed.)]{\editor}`は2名以上の編者がいる場合は「Eds.」を出力し，1名だけの場合は「Ed.」を出力します．
--   `JournalAbbreviator` : 与えられた入力文字列を，誌名短縮形リストにしたがって短縮形にします．入力に対して短縮形が見つからない場合(リスト中にないか既に短縮されている場合など)には，入力は修正されずに返されます．例えば，`\format[JournalAbbreviator]{\journal}`を使用すると，「Physical Review Letters」は「Phys. Rev. Lett.」となります．
--   `LastPage` : 「pages」フィールドに設定があると，そこから最後のページを返します．例えば，pagesフィールドが「345-360」や「345--360」に設定されていると，このフォーマッタは「360」を返します．
--   `NoSpaceBetweenAbbreviations` : 短縮されたファーストネームの間の空白を取り除くLayoutFormatterです．例えば，J. R. R. TolkienはJ.R.R. Tolkienとなります．
--   `NotFoundFormatter` : フォーマッタが見つからなかったことをシグナルするためのフォーマッタです．レイアウトが未定義の書式を使っている時に，品質低下を優美に表すために使うことができます．
--   `Number` : 現在の書出中で，現在の項目の(1から始まる)順番を出力します．このフォーマッタは，項目の連番リストを作るのに用いることができます．順番は，現在の整序順での現在の項目位置で決められ，このフォーマッタの呼び出し回数には依存しません．
--   `Ordinal`: 番号を序数に置き換えます．例えば，`1`は`1st`に置き換えられます．
--   `RemoveBrackets` : 波括弧「{」「}」をすべて取り除きます．
--   `RemoveBracketsAddComma` : 波括弧「{」「}」をすべて取り除き，閉じ括弧はコンマで置き換えられます．
--   `RemoveLatexCommands` : `\em`や`\textbf`のようなコマンドを取り除きます．`HTMLChars`や`XMLChars`と用いられる場合は，このフォーマッタは最後に呼び出されるべきです．
--   `RemoveTilde` : LaTeXで改行禁止空白として用いられるチルダを普通の空白で置き換えます．次節で論じる[NameFormatter](#NameFormatter)とともに用いると便利です．
--   `RemoveWhitespace` : すべての空白文字を取り除きます．
--   `Replace(正規表現,置換文字列)` : 正規表現置換を行います．このフォーマッタを使うには，二部からなる引数を与えなくてはなりません．各部はコンマで区切ります． コンマ文字自身を表すには， エスケープシークエンス\\,を用いてください．
-     
-    第一部は検索する正規表現です．コンマ文字はすべてバックスラッシュを付けなくてはならず，その結果，バックスラッシュ文字自身は，バックスラッシュ2つで表す必要があることに注意してください．Java正規表現についての説明は
-     http://java.sun.com/j2se/1.4.2/docs/api/java/util/regex/Pattern
-    にあります．
-     
-    第二部は一致した部分すべてを置き換える文字列です．
--   `RisAuthors` : まだ文書化されていません．
--   `RisKeywords` : まだ文書化されていません．
--   `RisMonth` : まだ文書化されていません．
--   `RTFChars` : TeXで用いられる特殊文字({\\^a}や{\\"{o}}など)をRTF表現に置き換え，LaTeXコマンド\\emph・\\textit・\\textbfをRTFの同等表現に置き換えます．
--   `ToLowerCase` : 全文字を小文字にします．
--   `ToUpperCase` : 全文字を大文字にします．
--   `WrapContent` : このフォーマッタは，入力値が空でない限り，入力値に前置句及び後置句を付して出力します．入力値が空の場合には，空の文字列が出力されます(この場合前置句及び後置句は出力されません)．このフォーマッタは，前置句と後置句をコンマで区切った引数を必須とします．いずれかにコンマ文字自身を入れたい場合には，エスケープシークエンス(\\,)を使用してください．
--   `WrapFileLinks` : 後述．
--   `XMLChars` : TeXで用いられる特殊文字({\\^a}や{\\"{o}}など)をXML表現に置き換えます．
+- `FormatChars` : This formatter converts LaTeX character sequences their equicalent unicode characters and removes other LaTeX commands without handling them.
+- `FormatPagesForHTML` : replaces "--" with "-".
+- `FormatPagesForXML` : replaces "--" with an XML en-dash.
+- `GetOpenOfficeType` : returns the number used by the OpenOffice.org bibliography system (versions 1.x and 2.x) to denote the type of this entry.
+- `HTMLChars` : replaces TeX-specific special characters (e.g. `{\"{a}}` or `{\sigma})` with their HTML representations, and translates LaTeX commands `\emph`, `\textit`, `\textbf`, `\texttt`, `\underline`, `\textsuperscript`, `\textsubscript`, `\sout` into HTML equivalents.
+- `HTMLParagraphs` : interprets two consecutive newlines (e.g. \\n \\n) as the beginning of a new paragraph and creates paragraph-html-tags accordingly.
+- `IfPlural` : outputs its first argument if the input field looks like an author list with two or more names, or its second argument otherwise. E.g. `\format[IfPlural(Eds.,Ed.)]{\editor}` will output "Eds." if there is more than one editor, and "Ed." if there is only one.
+- `JournalAbbreviator` : The given input text is abbreviated according to the journal abbreviation lists. If no abbreviation for input is found (e.g. not in list or already abbreviated), the input will be returned unmodified. For instance, when using `\format[JournalAbbreviator]{\journal}`, "Physical Review Letters" gets "Phys. Rev. Lett."
+- `LastPage` : returns the last page from the "pages" field, if set. For instance, if the pages field is set to "345-360" or "345--360", this formatter will return "360".
+- `NoSpaceBetweenAbbreviations` : LayoutFormatter that removes the space between abbreviated First names. Example: J. R. R. Tolkien becomes J.R.R. Tolkien.
+- `NotFoundFormatter` : Formatter used to signal that a formatter hasn't been found. This can be used for graceful degradation if a layout uses an undefined format.
+- `Number` : outputs the 1-based sequence number of the current entry in the current export. This formatter can be used to make a numbered list of entries. The sequence number depends on the current entry's place in the current sort order, not on the number of calls to this formatter.
+- `Ordinal` : replaces numbers with ordinals so `1` is replaced with `1st` etc.
+- `RemoveBrackets` : removes all curly brackets "{" or "}".
+- `RemoveBracketsAddComma` : removes all curly brackets "{" or "}". The closing curly bracket is replaced by a comma.
+- `RemoveLatexCommands` : removes LaTeX commands like `\em`, `\textbf`, etc. If used together with `HTMLChars` or `XMLChars`, this formatter should be called last.
+- `RemoveTilde` : replaces the tilde character used in LaTeX as a non-breakable space by a regular space. Useful in combination with the [NameFormatter](#NameFormatter) discussed in the next section.
+- `RemoveWhitespace` : removes all whitespace characters.
+- `Replace(regexp,replacewith)` : does a regular expression replacement. To use this formatter, a two-part argument must be given. The parts are separated by a comma. To indicate the comma character, use an escape sequence: \\,   The first part is the regular expression to search for. Remember that any commma character must be preceded by a backslash, and consequently a literal backslash must be written as a pair of backslashes. A description of Java regular expressions can be found at:  http://java.sun.com/j2se/1.4.2/docs/api/java/util/regex/Pattern   The second part is the text to replace all matches with.
+- `RisAuthors` : to be documented.
+- `RisKeywords` : to be documented.
+- `RisMonth` : to be documented.
+- `RTFChars` : replaces TeX-specific special characters (e.g. {\\^a} or {\\"{o}}) with their RTF representations, and translates LaTeX commands \\emph, \\textit, \\textbf into RTF equivalents.
+- `ToLowerCase` : turns all characters into lower case.
+- `ToUpperCase` : turns all characters into upper case.
+- `WrapContent` : This formatter outputs the input value after adding a prefix and a postfix, as long as the input value is non-empty. If the input value is empty, an empty string is output (the prefix and postfix are not output in this case). The formatter requires an argument containing the prefix and postix separated by a comma. To include the comma character in either, use an escape sequence (\\,).
+- `WrapFileLinks` : See below.
+- `XMLChars` : replaces TeX-specific special characters (e.g. {\\^a} or {\\"{o}}) with their XML representations.
 
-### `Authors`フォーマッタ
+### The `Authors` formatter
 
-様々な引用様式を可能にするために，`Authors`フォーマッタは，著者リストのレイアウトを自由に制御できるようになっています．このフォーマッタは，コンマ区切りのオプション列を取り，これによって既定値を上書きできます．現在，以下のオプション・値の組が利用できます．既定値は波括弧で表示されています．
+To accommodate for the numerous citation styles, the `Authors` formatter allows flexible control over the layout of the author list. The formatter takes a comma-separated list of options, by which the default values can be overridden. The following option/value pairs are currently available, where the default values are given in curly brackets.
 
 `AuthorSort = [ {FirstFirst} | LastFirst | LastFirstFirstFirst ]`  
-著者名が整形される順序を指定します．
+specifies the order in which the author names are formatted.
 
--   `FirstFirst` : 名の後に姓が来ます．
--   `LastFirst` : 著者の姓の後にコンマで区切って名が来ます．
--   `LastFirstFirstFirst` : 第一著者がLastFirstで，その他の著者はFirstFirstで整形されます．
+- `FirstFirst` : first names are followed by the surname.
+- `LastFirst` : the authors' surnames are followed by their first names, separated by a comma.
+- `LastFirstFirstFirst` : the first author is formatted as LastFirst, the subsequent authors as FirstFirst.
 
 `AuthorAbbr = [ FullName | LastName | {Initials} | InitialsNoSpace | FirstInitial | MiddleInitial ]`  
-著者名の短縮のしかたを指定します．
+specifies how the author names are abbreviated.
 
--   `FullName` : 著者名を完全形で表示します．名は短縮されません．
--   `LastName` : 姓のみを表示し，名は表示されません．
--   `Initials` : すべての名を短縮します．
--   `InitialsNospace` : イニシャルで表示し，イニシャル間の空白はすべて削除されます．
--   `FirstInitial` : 最初のイニシャルのみ表示されます．
--   `MiddleInitial` : 名は表示されますが，ミドルネームはすべて短縮されます．
+- `FullName` : shows full author names; first names are not abbreviated.
+- `LastName` : show only surnames, first names are removed.
+- `Initials` : all first names are abbreviated.
+- `InitialsNospace` : as Initials, with any spaces between initials removed.
+- `FirstInitial` : only first initial is shown.
+- `MiddleInitial` : first name is shown, but all middle names are abbreviated.
 
 `AuthorPunc = [ {FullPunc} | NoPunc | NoComma | NoPeriod ]`  
-`AuthorAbbr`を用いる際，著者リストでの句読点の付け方を指定します．
+specifies the punctuation used in the author list when `AuthorAbbr` is used
 
--   `FullPunc` : 句読点に変化は加えません．
--   `NoPunc` : 著者名からコンマとピリオドをすべて取り除きます．
--   `NoComma` : 著者名からコンマをすべて取り除きます．
--   `NoPeriod` : 著者名からピリオドをすべて取り除きます．
+- `FullPunc` : no changes are made to punctuation.
+- `NoPunc` : all full stops and commas are removed from the author name.
+- `NoComma` : all commas are removed from the author name.
+- `NoPeriod` : all full stops are removed from the author name.
 
-`AuthorSep = [ {Comma} | And | Colon | Semicolon | Sep=<文字列> ]`  
-著者の間の区切り文字を指定します．`Sep=<文字列>`オプションを用いれば，任意の区切り文字を使用することができます．`文字列`の前後には余白を適宜入れる必要があることに注意してください．
+`AuthorSep = [ {Comma} | And | Colon | Semicolon | Sep=<string> ]`  
+specifies the separator to be used between authors. Any separator can be specified, with the `Sep=<string>` option. Note that appropriate spaces need to be added around `string`.
 
-`AuthorLastSep = [ Comma | {And} | Colon | Semicolon | Amp | Oxford | LastSep=<文字列> ]`  
-著者リスト中の最後の区切り文字を指定します．`Sep=<文字列>`オプションを用いれば，任意の区切り文字を使用することができます．`文字列`の前後には余白を適宜入れる必要があることに注意してください．
+`AuthorLastSep = [ Comma | {And} | Colon | Semicolon | Amp | Oxford | LastSep=<string> ]`  
+specifies the last separator in the author list. Any separator can be specified, with the `LastSep=<string>` option. Note that appropriate spaces need to be added around `string`.
 
-`AuthorNumber = [ {inf} | <整数> ]`  
-出力する著者の数を指定します．著者数がここで指定した最大値を超えた場合，著者リストは，第一著者(あるいは`AuthorNumberEtAl`で指定した数の著者)の後に`EtAlString`を付けたものに置き換えられます．
+`AuthorNumber = [ {inf} | <integer> ]`  
+specifies the number of authors that are printed. If the number of authors exceeds the maximum specified, the authorlist is replaced by the first author (or any number specified by `AuthorNumberEtAl`), followed by `EtAlString`.
 
-`AuthorNumberEtAl = [ {1} | <整数> ]`  
-著者の全数が`AuthorNumber`を超えた場合，出力する著者数を指定します．この引数は，`AuthorNumber`が既に指定されている場合のみ，指定することができます．
+`AuthorNumberEtAl = [ {1} | <integer> ]`  
+specifies the number of authors that are printed if the total number of authors exceeds `AuthorNumber`. This argument can only be given after `AuthorNumber` has already been given.
 
-`EtAlString = [ { et al.} | EtAl=<文字列> ]`  
-複数の著者を置き換える文字列を指定します．`EtAl=<文字列>`を用いれば，任意の文字列を与えることができます．
+`EtAlString = [ { et al.} | EtAl=<string> ]`  
+specifies the string used to replace multiple authors. Any string can be given, using `EtAl=<string>`
 
-オプションを指定しなければ，既定値(上記において波括弧で表記されているもの)が用いられます．したがって，既定値と異なるレイアウトオプション以外は指定する必要がありません．オプションの定義順は(ほぼ)関係ありません．したがって，例えば
+If an option is unspecified, the default value (shown in curly brackets above) is used. Therefore, only layout options that differ from the defaults need to be specified. The order in which the options are defined is (mostly) irrelevant. So, for example,
 
 `\format[Authors(Initials,Oxford)]{\author}`
 
-は，
+is equivalent to
 
 `\format[Authors(Oxford,Initials)]{\author}`
 
-と等価です．このように，オプションを指定する順序は無関係です．一つ，曖昧さが残る可能性があるのは，`AuthorSep`と`AuthorLastSep`の両方を指定する場合です．この場合，最初に遭遇した適用可能な値が`AuthorSep`用と解釈され，二番目は`AuthorLastSep`に用いられます．既定値を変更する際には，曖昧さを避けるために両方する様にした方が良いでしょう．
+As mentioned, the order in which the options are specified is irrelevant. There is one possibility for ambiguity, and that is if both `AuthorSep` and `AuthorLastSep` are given. In that case, the first applicable value encountered would be for `AuthorSep`, and the second for `AuthorLastSep`. It is good practise to specify both when changing the default, to avoid ambiguity.
 
-#### 用例
+#### Examples
 
-著者名として「*Joe James Doe and Mary Jane and Bruce Bar and Arthur Kay*」が与えられた場合，`Authors`フォーマッタは，以下のような結果を返します．
+Given the following authors, *"Joe James Doe and Mary Jane and Bruce Bar and Arthur Kay"* ,the `Authors` formatter will give the following results:
 
-`Authors()`もしくはそれと同等な`Authors(FirstFirst,Initials,FullPunc,Comma,And,inf,EtAl= et al.)`の場合  
-    J. J. Doe, M. Jane, B. Bar and A. Kay
+`Authors()`, or equivalently, `Authors(FirstFirst,Initials,FullPunc,Comma,And,inf,EtAl= et al.)`  
+J. J. Doe, M. Jane, B. Bar and A. Kay
 
-`Authors(LastFirstFirstFirst,MiddleInitial,Semicolon)`の場合  
-    Doe, Joe J.; Mary Jane; Bruce Bar and Arthur Kay
+`Authors(LastFirstFirstFirst,MiddleInitial,Semicolon)`  
+Doe, Joe J.; Mary Jane; Bruce Bar and Arthur Kay
 
-`Authors(LastFirst,InitialsNoSpace,NoPunc,Oxford)`の場合  
-    Doe JJ, Jane M, Bar B, and Kay A
+`Authors(LastFirst,InitialsNoSpace,NoPunc,Oxford)`  
+Doe JJ, Jane M, Bar B, and Kay A
 
-`Authors(2,EtAl= and others)`の場合  
-    J. J. Doe and others
+`Authors(2,EtAl= and others)`  
+J. J. Doe and others
 
-通常使用される引用書式は，ほとんどこのフォーマッタで実現できるはずです．もっと詳細なオプションについては，後述の自作フォーマッタを使うことをご考慮ください．
+Most commonly available citation formats should be possible with this formatter. For even more advanced options, consider using the Custom Formatters detailed below.
 
-### `WrapFileLinks`フォーマッタ
+### The `WrapFileLinks` formatter
 
-このフォーマッタは，すべてのファイルリンクもしくは指定した型のすべてのファイルリンクに対して，第一引数で与えられた整形文字列を反復出力します．整形文字列には，文字列にファイルリンク情報を挿入するためのエスケープシークエンスを複数入れることができます．
+This formatter iterates over all file links, or all file links of a specified type, outputting a format string given as the first argument. The format string can contain a number of escape sequences indicating file link information to be inserted into the string.
 
-このフォーマッタは，非必須の第二引数としてファイル型名を指定することができます．これを指定した場合には，その型名に一致する(大文字小文字の区別無し)ファイル型に対してのみ反復を行います．空の引数を与えると，すべてのファイルリンクを対象とします．
+This formatter can take an optional second argument specifying the name of a file type. If specified, the iteration will only include those files with a file type matching the given name (case-insensitively). If specified as an empty argument, all file links will be included.
 
-第二引数の後には，さらに引数の対を追加することができ，挿入したリンク情報を出力文字列に埋め込む前に，リンク情報に対して行う正規表現置換を指定します．対になっていない引数は無視されます．ファイル型のフィルタをかけること無しに置換を指定するには，第二引数は空にしてください．
+After the second argument, pairs of additional arguments can be added in order to specify regular expression replacements to be done upon the inserted link information before insertion into the output string. A non-paired argument will be ignored. In order to specify replacements without filtering on file types, use an empty second argument.
 
-情報を埋め込むエスケープシークエンスは以下の通りです．
+The escape sequences for embedding information are as follows:
 
--   `\i` : 繰り返しインデックス(1から始まる)を挿入します．出力ファイルリストに連番を振る際に便利です．
--   `\p` : ファイルリンクのファイルパスを挿入します．
--   `\f` : ファイルリンク型の名称を挿入します．
--   `\x` : ファイル拡張子があれば，それを挿入します．
--   `\d` : ファイルリンクの説明があれば，それを挿入します．
+- `\i` : This inserts the iteration index (starting from 1), and can be useful if the output list of files should be enumerated.
+- `\p` : This inserts the file path of the file link.
+- `\f` : This inserts the name of the file link's type.
+- `\x` : This inserts the file's extension, if any.
+- `\d` : This inserts the file link's description, if any.
 
-例えば，「John's final report」という説明が入った「PDF」型のファイル「/home/john/report.pdf」へのファイルリンクが入った項目があるとしましょう．以下のような引数を持つWrapFileLinksフォーマッタを使うと，
+For instance, an entry could contain a file link to the file "/home/john/report.pdf" of the "PDF" type with description "John's final report". Using the WrapFileLinks formatter with the following argument:
 
 `\format[WrapFileLinks(\i. \d (\p))]{\file}`
 
-以下のような出力を得ます．
+would give the following output:
 
         1. John's final report (/home/john/report.pdf)
+    
 
-項目に二つめのファイルリンクとして，「An early "draft"」という説明のついた「テキスト」ファイル「/home/john/draft.txt」へのファイルリンクがあったとすると，出力は以下のようになります．
+If the entry contained a second file link to the file "/home/john/draft.txt" of the "Text file" type with description 'An early "draft"', the output would be as follows:
 
         1. John's final report (/home/john/report.pdf)
         2. An early "draft" (/home/john/draft.txt)
+    
 
-フォーマッタが第二引数を付けて呼ばれると，リストにはフィルタがかけられます．例えば，
+If the formatter was called with a second argument, the list would be filtered. For instance:
 
 `\format[WrapFileLinks(\i. \d (\p),,text file)]{\file}`
 
-は，以下のようにテキストファイルだけを表示します．
+would show only the text file:
 
         1. An early "draft" (/home/john/draft.txt)
+    
 
-この出力をXML様式出力の一部としたい場合には，ファイル説明の引用符は問題を引き起こし得ます．以下のように，さらに引数を二つ加えて，引用符をXML文字に変換すると，この問題を解決できます．
+If we wanted this output to be part of an XML styled output, the quotes in the file description could cause problems. Adding two additional arguments to translate the quotes into XML characters solves this:
 
 `\format[WrapFileLinks(\i. \d (\p),,text file,",&quot;)]{\file}`
 
-これは以下のような出力を得ます．
+would give the following output:
 
         1. An early "draft" (/home/john/draft.txt)
+    
 
-置換の対は，もっと付け加えることもできます．
+Additional pairs of replacements could be added.
 
-### 自作フォーマッタ
+### Custom formatters
 
-もし用意されたフォーマッタでは，あなたが実現したいことをできない場合には，`net.sf.jabref.export.layout.LayoutFormatter`インタフェースを実装することによって，自分自身のフォーマッタを追加することができます．自作のクラスを`net.sf.jabref.export.layout.format`パッケージに挿入すれば，標準フォーマッタと同様に，自作フォーマッタをそのクラス名のみで呼び出すことができます．このようにしない場合には，自作フォーマッタは，完全修飾名(パッケージ名を含む)で呼び出さなくてはなりません．いずれにしても，JabRef実行時には，フォーマッタはクラスパス上になくてはなりません．
+If none of the available formatters can do what you want to achieve, you can add your own by implementing the `net.sf.jabref.export.layout.LayoutFormatter` interface. If you insert your class into the `net.sf.jabref.export.layout.format` package, you can call the formatter by its class name only, like with the standard formatters. Otherwise, you must call the formatter by its fully qualified name (including package name). In any case, the formatter must be in your classpath when running JabRef.
 
-## 自作名前フォーマッタを使う
+## Using Custom Name Formatters
 
-JabRef第2.2版以降，BibTeXのstyファイルで用いられる文法を使って，自作の名前フォーマッタを定義することができます．これは究極の柔軟性をもたらしますが，他方，書くことは非常に面倒です．
+From JabRef 2.2, it is possible to define custom name formatters using the BibTeX-sty-file syntax. This allows ultimate flexibility, but is a cumbersome to write
 
-自作フォーマッタは，設定タブの「名前の整形」で以下の書式を使って定義することができるので，他のフォーマッタと同じように，それに付与した名称を呼び出して使用してください．
+You can define your own formatter in the preference tab "Name Formatter" using the following format and then use it with the name given to it as any other formatter
 
-`<場合1>@<範囲11>@<書式>@<範囲12>@<書式>@<範囲13>...@@       <場合2>@<範囲21>@... 等々`
+`<case1>@<range11>@<format>@<range12>@<format>@<range13>...@@       <case2>@<range21>@... and so on.`
 
-この書式は，著者リストを整形するために，まず著者が何人いるかによってタスクを場合分けします(著者が何人かによって，書式が異なる場合があるからです)．それぞれの場合は@@で区切られ，それぞれの場合について各著者をどう整形するかの指示を書き込みます．これらの指示は@で区切られます．
+This format first splits the task to format a list of author into cases depending on how many authors there are (this is since some formats differ depending on how many authors there are). Each individual case is separated by @@ and contains instructions on how to format each author in the case. These instructions are separated by a @.
 
-それぞれの場合は，整数(1, 2, 3など)か \* 文字(任意の数の著者に一致)で認識され，与えられた数以下の著者しかいない場合，以下の指示を適用するようにフォーマッタに命令します．
+Cases are identified using integers (1, 2, 3, etc.) or the character \* (matches any number of authors) and will tell the formatter to apply the following instructions if there are a number of less or equal of authors given.
 
-範囲は，与えられた著者リストから作られた，1から始まるインデックスを使用して，`<整数>..<整数>`の形か`<整数>`あるいは`*`文字で表されます．リストの最後から始まる順序を示すために，インデックスには負の値を用いることができ，-1は最後の著者を表します．
+Ranges are either `<integer>..<integer>`, `<integer>` or the character `*` using a 1 based index for indexing authors from the given list of authors. Integer indexes can be negative to denote them to start from the end of the list where -1 is the last author.
 
-例えば「Joe Doe and Mary Jane and Bruce Bar and Arthur Kay」という著者リストにを用いると，
+For instance with an authorlist of "Joe Doe and Mary Jane and Bruce Bar and Arthur Kay":
 
--   1..3は，Joe・Mary・Bruceに対して作用します．
--   4..4は，Arthurに対して作用します．
--   \*は，すべてに対して作用します．
--   2..-1は，Mary・Bruce・Arthurに対して作用します．
+- 1..3 will affect Joe, Mary and Bruce
+- 4..4 will affect Arthur
+- \* will affect all of them
+- 2..-1 will affect Mary, Bruce and Arthur
 
-`<書式>`部分の文字列は，以下のようにBibTeXフォーマッタの書式を用います．
+The `<format>`-strings use the BibTeX formatter format:
 
-v/f/l/jの4文字は，波括弧の中で用いられ，名前の「von」/名/姓/「jr」の部分を表します．v/f/l/jを単一文字で使うと，対応する名前部分の短縮形を表します．これらの文字や文字の組に遭遇すると，JabRefは，対応する名前部分をすべて(場合によって短縮形で)出力しますが，波括弧内の表現は，その名前部分が存在する時のみ出力されます．
+The four letters v, f, l, j indicate the name parts von, first, last, jr which are used within curly braces. A single letter v, f, l, j indicates that the name should be abbreviated. If one of these letters or letter pairs is encountered JabRef will output all the respective names (possibly abbreviated), but the whole expression in curly braces is only printed if the name part exists.
 
-例えば，書式が「{ll} {vv {von Part}} {ff}」で著者名が「Mary Kay and John von Neumann」ならば，JabRefは「Kay Mary」(姓名間に空白二つ)と「Neuman von von Part John」を出力します．
+For instance if the format is "{ll} {vv {von Part}} {ff}" and the names are "Mary Kay and John von Neumann", then JabRef will output "Kay Mary" (with two space between last and first) and "Neuman von von Part John".
 
-二つの例を示しますが，できればBibTeXの文書を参照されることをお勧めします．
+I give two examples but would rather point you to the BibTeX documentation.
 
-短い例: `"{ll}, {f.}"`は「`Joe Doe`」を「`Doe, J.`」と返します．
+Small example: `"{ll}, {f.}"` will turn `"Joe Doe"` into `"Doe, J."`
 
-長い例:
+Large example:
 
-> 以下の名前
->
-> 「`Joe Doe and Mary Jane and Bruce Bar and Arthur         Kay`」
->
-> を
->
-> 「`Doe, J., Jane, M., Bar, B. and Kay,         A.`」
->
-> と返すには，
->
+> To turn:
+> 
+> `"Joe Doe and Mary Jane and Bruce Bar and Arthur         Kay"`
+> 
+> into
+> 
+> `"Doe, J., Jane, M., Bar, B. and Kay,         A."`
+> 
+> you would use
+> 
 > `1@*@{ll}, {f}.@@2@1@{ll}, {f}.@2@ and {ll},         {f}.@@*@1..-3@{ll}, {f}., @-2@{ll}, {f}.@-1@ and {ll},         {f}.`
->
-> と指定します．

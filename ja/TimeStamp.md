@@ -1,30 +1,43 @@
 ---
-title: 項目の時間スタンプ
+title: Entry time stamps
+helpCategories:
+  - Fields
 ---
+# Entry time stamps
 
-# 項目の時間スタンプ
+JabRef can optionally set a field to contain the date an entry was added to the database.
 
-JabRefでは，項目がデータベースに追加された日を入れるフィールドを，オプションとして構成することができます．
+## Configuration
 
-この機能は，**設定→一般** に入って，*「新規項目に追加の日付を記載」* という行を選択もしくは非選択にすることで，有効にしたり無効にしたりできます．また，日付形式を変更することもできます（下記参照）．日付スタンプのついた項目を貼り付けたり読み込んだりした場合，もし *「上書き」* がチェックされていると，操作当日の日付でフィールドが上書きされます．既定では，日付は，[項目エディタ](EntryEditorHelp)の **汎用フィールド** タブに表示される *「timestamp」* というフィールドに記載されます．さらに，*「修正時にタイムスタンプを更新」* がチェックされていると，項目が変更された時に，タイムスタンプフィールドの値は更新されます．
+You can disable or enable this feature by entering **Options → Preferences → General**, and selecting/deselecting the line *'Mark new entries with addition date'*.
 
-JabRefでは、データベースに項目が加えられた日付を、フィールドに自動的に入れるようにすることができます。
+If an entry with a timestamp is pasted or imported, the field is updated with the current date if *'Overwrite'* is checked. The value of the timestamp field will be updated upon changes in the entry if *'Update timestamp on modification'* is checked.
 
-## 整形
+By default, the date is added in a field called *'timestamp'*, which is visible in the **General fields** tab in the [entry editor](EntryEditor). You can alter the name of this field. The *date format* can also be customized (see below).
 
-時間スタンプの整形は、日付の各部分の位置を示す指示文字を含む文字列を用いて指定します。
+## Usage
 
-以下は、使用できる指示文字の一部です(括弧中の部分は2005年9月14日水曜日午後5時45分の場合の表示例を示します)。
+The timestamp field can be edited in the **General fields** tab of the [entry editor](EntryEditor). If you do not see these fields, enable them at [General Fields](GeneralFields) or reset your preferences.
 
--   **yy**: 西暦 (05)
--   **yyyy**: 西暦 (2005)
--   **MM**: 月 (09)
--   **dd**: 日 (14)
--   **HH**: 時 (17)
--   **mm**: 分 (45)
+You can manually alter the value by typing in the date and time of your choice. Also, by clicking on the calendar icon located at the right end of the field, you can select the date you want in a calendar. Additionaly, by clicking on *Today*, the current date is added. By clicking on *None*, the field is emptied. A double-click on the field sets it to today's date.
 
-これらの指示子は区切り文字や空白とともに使用することができます。以下に例を挙げます。
+![Screenshot of the calendar](./images/TimeStamp-Calendar.png)
 
--   **yyyy/MM/dd** は **2005/09/14** となります。
--   **yy.MM.dd** は **05.09.14** となります。
--   **yyyy/MM/dd HH:mm** は **2005/09/14 17:45** となります。
+## Formatting
+
+The formatting of the time stamp is determined by a string containing designator words that indicate the position of the various parts of the date.
+
+These are some of the available designator letters (examples are given in parentheses for Wednesday 14th of September 2005 at 5.45 PM):
+
+- **yy**: year (05)
+- **yyyy**: year (2005)
+- **MM**: month (09)
+- **dd**: day in month (14)
+- **HH**: hour in day (17)
+- **mm**: minute in hour (45)
+
+These designators can be combined along with punctuation and whitespace. A couple of examples:
+
+- **yyyy.MM.dd** gives **2005.09.14**
+- **yy.MM.dd** gives **05.09.14**
+- **yyyy.MM.dd HH:mm** gives **2005.09.14 17:45**

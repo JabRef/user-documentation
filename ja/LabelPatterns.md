@@ -1,4 +1,4 @@
 ---
-redirect:   /ja/BibtexKeyPatterns
-layout:     redirect
+redirect: /en/BibtexKeyPatterns
+layout: redirect
 ---
