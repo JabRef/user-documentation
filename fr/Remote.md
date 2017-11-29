@@ -1,15 +1,16 @@
 ---
-title: Accès à distance
+title: Remote operation
+helpCategories:
+  - General
 ---
+# Remote operation
 
-# Accès à distance
+This feature can be toggled and configured under **Preferences → Advanced**.
 
-Cette fonction peut être activée et configurée dans **Préférences → Avancé**.
+*Note that activating this feature under Windows XP SP2 (and possibly other configurations) may prompt a message box stating that certain features of the program have been blocked by the Windows firewall. You can safely tell the firewall to keep blocking - the firewall will not interfere with remote operation of JabRef.*
 
-*Notez qu'activer cette fonction sous Windows XP SP2 (et probablement d'autres configurations) peut afficher une boîte de message disant que certaines fonctions du programme ont été bloquées par le pare-feu de Windows. Vous pouvez en toute sécurité dire au pare-feu de continuer à bloquer ; le pare-feu n'interférera pas avec l'accès à distance de JabRef.*
+If listening for remote operation is enabled, JabRef will at startup attempt to start listening to a specific port. This means that other applications can send information to JabRef through this port. JabRef will only accept local connections, to avoid the risk of interference from outside.
 
-Si l'accès à distance est activé, JabRef se mettra à écouter un port spécifique lors de son démarrage. Cela signifie que les autres applications peuvent envoyer des informations à JabRef à travers ce port. JabRef n'acceptera que des connexions locales, afin d'éviter le risque d'interférence à partir de l'extérieur.
+Binding to this port makes it possible for a second JabRef instance to discover that the first one is running. In this case, unless specifically instructed to run in stand-alone mode, the second JabRef instance will pass its command line options through the port to the first JabRef instance, and then immediately quit.
 
-La réservation du port permet à une seconde instance de JabRef de découvrir qu'une première instance tourne déjà. Dans ce cas, à moins qu'elle soit spécifiquement configurée pour tourner en mode autonome, la seconde instance de JabRef passera ses options de sa ligne de commande à la première instance en utilisant le port, puis se terminera immédiatement.
-
-La première instance de JabRef lira les options de la ligne de commande et effectuera les actions indiquées, tel que la lecture ou l'importation d'un fichier, ou la fusion d'un fichier avec la base de données actuellement affichée. Si un fichier est importé en utilisant l'option de ligne de commande `--importToOpen`, les entrées importées seront ajoutées à la base de données actuellement affichée. Si aucune base de données n'est ouverte, une nouvelle base sera créée.
+The first JabRef instance will read the command line options, and perform the indicated actions, such as reading or importing a file, or importing a file to the currently shown database. If a file is imported using the command-line option `--importToOpen`, the imported entries will be added to the currently shown database. If no database is open, a new one will be created.
