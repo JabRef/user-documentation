@@ -1,4 +1,4 @@
 ---
-redirect: /en/CustomEntryTypes
-layout: redirect
+redirect: ""
+layout: ""
 ---
