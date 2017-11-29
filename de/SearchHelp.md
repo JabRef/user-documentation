@@ -1,4 +1,4 @@
 ---
-redirect:   /de/Search
-layout:     redirect
+redirect: /en/Search
+layout: redirect
 ---
