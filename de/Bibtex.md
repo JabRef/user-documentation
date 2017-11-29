@@ -1,72 +1,104 @@
 ---
-title: Über *BibTeX*
+title: About *BibTeX*
+helpCategories:
+  - Fields
 ---
+# About *BibTeX*
 
-# Über *BibTeX*
+JabRef helps you work with your *BibTeX* databases, but there are still rules to keep in mind when editing your entries, to ensure that your database is treated properly by the *BibTeX* program.
 
-JabRef hilft Ihnen bei der Arbeit mit Ihren *BibTeX*-Dateien, aber es müssen dennoch Regeln beachtet werden, wenn Sie Ihre Einträge bearbeiten. Nur so kann sichergestellt werden, dass *BibTeX* Ihre Datei richtig verarbeiten kann.
+## JabRef's conventions
 
-## *BibTeX* Felder
+### Fields in the header of a bib file
 
-Es gibt viele unterschiedliche Felder in *BibTeX* und einige zusätzliche Felder, die Sie in JabRef einsetzen können.
+JabRef stores the encoding of the file and (in case a shared [SQL database](SQLDatabase) is used) the ID of the shared database in the header of the bib file.
 
-Grundsätzlich können Sie LaTeX-Befehle in Feldern, die Text beinhalten, einsetzen. *BibTeX* wird Ihr Literaturverzeichnis automatisch formatieren und je nach *BibTeX* style (Stildatei .bst) Großbuchstaben verkleinern. Um sicherzustellen, dass einzelne Buchstaben groß bleiben, müssen Sie sie in Klammern einschließen, wie im Wort {B}elgien. *(Anm. d. Übers.: Die meisten deutschen BibTeX-Stile behalten die Großbuchstaben ohnehin bei.)*
+#### Encoding
 
-Hinweise zu einigen Feldtypen:
+`% Encoding: <encoding>`: States the encoding of a BibTeX file. E.g., `% Encoding: UTF-8`
 
--   **Bibtexkey** Eine eindeutige Bezeichnung, um sich in LaTeX-Dokumenten auf den Eintrag beziehen zu können. Beachten Sie, dass der Bibtexkey genau mit dem Verweis im LaTeX-Dokument übereinstimmen muss (auch die Groß-/Kleinschreibung).
--   **address** Der Ort des *Verlags* oder einer anderen Institution.
--   **annote** Eine Anmerkung. Dieses Feld wird von den Standard-Bibliographiestilen nicht verwendet, kann aber bei einigen Stilen benutzt werden, um eine kommentierte Literaturliste zu erstellen.
--   **author** Dieses Feld sollte alle Autoren Ihres Eintrags enthalten. Die Namen werden durch das Wort `and` getrennt, auch wenn es mehr als zwei Autoren gibt. Jeder Name kann in zwei gleichwertigen Formen notiert werden:
-    -   Donald E. Knuth *oder* Knuth, Donald E.
-    -   Eddie van Halen *oder* van Halen, Eddie
+#### Shared Id
 
-    Die zweite Form sollte für Autoren mit zwei oder mehr Nachnamen benutzt werden, um zwischen dem mittleren und dem Nachnamen zu unterscheiden.
--   **booktitle** Der Titel eines Buches, aus dem ein Teil zitiert wird. Falls Sie ein Buch zitieren wollen, nehmen Sie für den Titel stattdessen das `title`-Feld.
--   **chapter** Eine Kapitelnummer (oder Abschnittsnummer oder was-auch-immer-Nummer).
--   **crossref** Der `key` eines Eintrags, auf den ein Querverweis gesetzt wird. Damit lassen sich beispielsweise die Daten eines Sammelbandes in einem Eintrag für einen Aufsatztitel wiederverwenden, ohne sie bei jedem Aufsatztitel explizit einzutragen. Die Funktionalität von `crossref` ist jedoch nicht in jedem Fall praktikabel.
--   **edition** Die Auflage eines Buch, z.B. ,,Zweite\`\`. Die Ordnungszahl sollte mit einem Großbuchstaben beginnen; sie wird von den Standardstilen gegebenenfalls in Kleinbuchstaben umgewandelt. Manche Stile verlangen hier eine Ziffer.
--   **editor** Dieses Feld ist analog zu dem *author*-Feld. Falls zusätzlich ein `author`-Feld angegeben wird, bezeichnet das `editor`-Feld den Herausgeber des Buches oder des Sammelbandes, in dem die referenzierte Literatur erschienen ist.
--   **howpublished** Die Art, wie ein Werk veröffentlicht wurde (meist außerhalb eines Verlags). Das erste Wort sollte mit einem Großbuchstaben beginnen.
--   **institution** Die fördernde Institutions eines technischen Reports.
--   **journal** Ein Zeitschriftenname. Mit Hilfe von "Strings" können Zeitschriftennamen abgekürzt werden. Zum Erstellen eines solchen Strings können Sie den [String-Editor](StringEditorHelp) benutzen oder die Funktionalität zur [Abkürzung von Zeitschriftentiteln](JournalAbbreviations) verwenden.
--   **key** Dieses Feld wird zur Sortierung, zur Erstellung von Labels (falls kein `author` vorhanden ist) und für Querverweise (`crossref`) verwendet. Verwechseln Sie dieses Feld nicht mit dem `Bibtexkey`, der für die `\cite`-Kommandos gebraucht wird und am Anfang jedes Eintrags erscheint (im BibTeX-Quelltext).
--   **month** Der Monat, in dem ein Werk veröffentlicht oder geschrieben wurde. Benutzen Sie am besten die englischen Abkürzungen (jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec).
--   **note** Zusätzliche Infromationen. Das erste Wort sollte mit einem Großbuchstaben beginnen.
--   **number**
-    Die Nummer einer Zeitschrift, eines technischen Reports oder eines Bandes innerhalb einer Reihe (`series`). Zeitschriften haben oft eine Band- und Heftzählung, der Band entspricht dem `volume`-, das Heft dem `number`-Eintrag.
--   **organization** Die Organisation, die einen Konferenzband fördert.
--   **pages** Die Seitenzahl(en) oder der Seitenzahlbereich, z.B. `42-111` oder `7,41,73-97` or `43+` (das `+` deutet auf folgende Seiten, die nicht einen einfachen Bereich umfassen). Ein einfacher Bindestrich (wie in `7-33`) wird in einen doppelten Bindestrich (`--`) verwandelt, der in TeX den bis-Strich anzeigt (also 7–33).
--   **publisher** Der Name des Verlags.
--   **school** Der Name einer Universität, an der eine Abschlussarbeit - z.B. eine Dissertation (`phdthesis`) oder Magisterarbeit (`mastersthesis`) - geschrieben wurde.
--   **series** Der Name einer Reihe, in der ein Buch erschienen ist. Falls die Bücher einer Reihe nummeriert sind, wird die entsprechende Nummer im Feld `number` angegeben.
--   **title** Der Titel des Werkes. Die Groß- und Kleinschreibung kann von den Bibliographiestilen und der benutzten Sprache abhängig sein (wobei sie mit deutschen Bibliographiestilen beibehalten wird). Worte, die auch bei Verwendung englischer Bibliographiestile groß geschrieben werden sollen, müssen in geschweifte Klammern eingefasst werden (z.B. `A {German} title`).
--   **type** Der Typ eines technischen Reports, z.B. \`\`Research Note''. Bei *jurabib* wird dieses Feld auch für den Typ einer Abschlussarbeit verwendet.
--   **volume** Der Band (Jahrgang) einer Zeitschrift oder der Band eines Buches in einem mehrbändigen Werk.
--   **year** Das Jahr der Veröffentlichung (oder bei einem unveröffentlichten Werk das Jahr, in dem es geschrieben wurde). Normalerweise sollte im `year`-Feld nur eine vierstellige Zahl stehen, z.B. `1984`. Die Standardstile können aber auch mit `year`-Einträgen umgehen, deren letzte vier Zeichen (ausgenommen Satzzeichen) Ziffern sind, beispielsweise `(um 1984)`. Dieses Feld wird für die meisten Eintragstypen benötigt.
+To enable [auto save](Autosave), JabRef adds `% DBID: <id>` to the header. This helps JabRef identifying the SQL database where the file belongs. E.g., `% DBID: 2mvhh73ge3hc5fosdsvuoa808t`.
 
-## Andere Felder
+## Standard *BibTeX* fields
 
-Bibliographie-Stile für BibTeX wurden von vielen Leuten entwickelt, und einige haben weitere Felder erstellt. Es folgt eine kleine Auswahl.
+There is a lot of different fields in *BibTeX*, and some additional fields that you can set in JabRef.
 
-Feldnamen, die mit einem Stern\* versehen sind, werden nicht direkt von JabRef unterstützt, können aber eingebunden werden (siehe [Eintragstypen anpassen](CustomEntriesHelp)).
+The following fields are recognized by the default bibliography styles:
 
--   **affiliation\*** Die Zugehörigkeit eines Autors.
--   **abstract** Die Zusammenfassung eines Werks.
--   **contents\*** Ein Inhaltsverzeichnis.
--   **copyright\*** Copyright-Informationen.
--   **doi** Der *Digital Object Identifier* ist eine permanente Kennung von Dokumenten.
--   **eid** Der EID (*Electronic identifier*) wird für elektronische Zeitschriften benutzt, die auch im Druck erscheinen. Mit dieser Nummer, die die Seitenzahlen ersetzt, lässt sich der Artikel in der gedruckten Ausgabe finden. Der EID wird manchmal auch *citation number* genannt.
--   **ISBN\*** Die Internationale Standardbuchnummer.
--   **ISSN\*** Die Internationale Standardseriennummer (für Zeitschriften).
--   **keywords** Stichworte, können in JabRef gut zum Gruppieren verwendet werden.
--   **language\*** Die Sprache des Werks.
--   **location\*** Der Ort, der mit einem Werk in Verbindung steht, z.B. die Stadt, in der eine Konferenz stattgefunden hat.
--   **LCCN\*** Die *Library of Congress Call Number*. Manchmal heißt das Feld auch `lib-congress`.
--   **mrnumber\*** Die *Mathematical Reviews*-Nummer.
--   **price\*** Der Preis.
--   **size\*** Die physische Größe eines Dokuments.
--   **url** Der *Uniform Resource Locator* (URL, "einheitlicher Quellenanzeiger"), der auf eine Webseite im Internet verweist.
--   **urldate** Das Datum, an dem eine Webseite zuletzt besucht wurde.
+- **bibtexkey** A unique string used to refer to the entry in LaTeX documents. Note that when referencing an entry from LaTeX, the key must match case-sensitively with the reference string.
+- **address** Usually the address of the `publisher` or other type of institution. For major publishing houses, you may omit the information entirely or give simply the city. For small publishers, on the other hand, you can help the reader by giving the complete address.
+- **annote** An annotation. It is not used by the standard bibliography styles, but may be used by others that produce an annotated bibliography.
+- **author** This field should contain the complete author list for your entry. The names are separated by the word *and*, even if there are more than two authors. Each name can be written in two equivalent forms: Donald E. Knuth *or* Knuth, Donald E. Eddie van Halen *or* van Halen, Eddie The second form should be used for authors with more than two names, to differentiate between middle names and last names.
+- **booktitle** Title of a book, part of which is being cited. For book entries, use the `title` field instead.
+- **chapter** A chapter (or section or whatever) number.
+- **crossref** The database key of the entry being cross referenced.
+- **edition** The edition of a book--for example, ``Second''. This should be an ordinal, and should have the first letter capitalized, as shown here; the standard styles convert to lower case when necessary.
+- **editor** This field is analogue to the *author* field. If there is also an `author` field, then the `editor` field gives the editor of the book or collection in which the reference appears.
+- **howpublished** How something strange has been published. The first word should be capitalized.
+- **institution** The sponsoring institution of a technical report.
+- **journal** The name of a journal or magazine. The name of a journal can be abbreviated using a "string". To define such string, use the [string editor](StringEditor).
+- **key** Used for alphabetizing, cross referencing, and creating a label when the ``author'' information is missing. This field should not be confused with the key that appears in the `\cite` command and at the beginning of the database entry.
+- **month** The month in which the work was published or, for an unpublished work, in which it was written. You should use the standard three-letter abbreviation of the English names (jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec).
+- **note** Any additional information that can help the reader. The first word should be capitalized.
+- **number** The number of a journal, magazine, technical report, or of a work in a series. An issue of a journal or magazine is usually identified by its volume and number; the organization that issues a technical report usually gives it a number; and sometimes books are given numbers in a named series.
+- **organization** The organization that sponsors a conference or that publishes a manual.
+- **pages** One or more page numbers or range of numbers, such as `42--111` or `7,41,73--97` or `43+` (which indicates `page 43 and following pages`). The standard styles convert a single dash (as in `7-33`) to the double dash used in TeX to denote number ranges (as in `7--3`).
+- **publisher** The publisher's name.
+- **school** The name of the academic institution where a thesis was written.
+- **series** The name of a series or set of books. When citing an entire book, the `title` field gives its title and an optional `series` field gives the name of a series or multi-volume set in which the book is published.
+- **title** The title of the work. The capitalization may depend on the bibliography style and on the language used. For words that have to be capitalized (such as a proper noun), enclose the word (or its first letter) in braces.
+- **type** The type of a technical report - for example, "Research Note".
+- **volume** The volume of a journal or multivolume book.
+- **year** The year of publication or, for an unpublished work, the year it was written. Generally it should consist of four numerals, such as `1984`, although the standard styles can handle any `year` whose last four nonpunctuation characters are numerals, such as "(about 1984)". This field is required for most entry types.
 
-\*) Nicht direkt von JabRef unterstützt.
+## Non-standard fields
+
+BibTeX is extremely popular, and many people have used it to store information in non-standard fields. The information in these non-standard fields may be ignored by BibTeX.
+
+Here is a list of some of the more common non-standard fields ("*" = not directly supported by JabRef):
+
+- **affiliation*** The authors affiliation.
+- **abstract** An abstract of the work.
+- **doi** The Digital Object Identifier, a permanent identifier given to documents.
+- **eid*** The Electronic identifier is for electronic journals that also appear in print. This number replaces the page number, and is used to find the article within the printed volume. Sometimes also called *citation number*.
+- **contents*** A table of contents
+- **copyright*** Copyright information.
+- **ISBN*** The International Standard Book Number.
+- **ISSN*** The International Standard Serial Number. Used to identify a journal.
+- **keywords** Key words used for searching or possibly for annotation.
+- **language*** The language the document is in.
+- **location*** A location associated with the entry, such as the city in which a conference took place.
+- **LCCN*** The Library of Congress Control Number. I've also seen this as `lib-congress`.
+- **mrnumber*** The number of Mathematical Reviews.
+- **price*** The price of the document.
+- **size*** The physical dimensions of a work.
+- **URL** The WWW Uniform Resource Locator that points to the item being referenced.
+
+## JabRef-specific fields
+
+To help in managing your bibliography, and extend the features of BibTeX, JabRef defines some specific fields:
+
+- [External files](ExternalFiles)
+- [General fields](GeneralFields)
+- <Owner>
+- [Quality and grading](SpecialFields)
+- [Time stamp](TimeStamp)
+
+## Define your own fields
+
+You can create new fields by [editing (or creating) entry types](CustomEntries).
+
+## Hints on fields
+
+- Generally, you can use LaTeX commands inside of fields containing text. *BibTeX* will automatically format your reference lists, and those fields that are included in the lists will be (de)capitalized according to your bibliography style. To ensure that certain characters remain capitalized, enclose them in braces, like in the word *{B}elgium*.
+- An institution name should be inside `{}` brackets. If the institution name also includes its abbreviation, this abbreviation should be also in `{}` brackets. For instance, `{The Attributed Graph Grammar System ({AGG})}`.
+
+## Further information resources
+
+- [Reference documentation about BibTeX](http://mirrors.ircam.fr/pub/CTAN/biblio/bibtex/base/btxdoc.pdf)
+- [BibTeX tips and FAQ](http://mirror.ibcp.fr/pub/CTAN/biblio/bibtex/contrib/doc/btxFAQ.pdf)
+- [Recommended BibTeX Format](http://sandilands.info/sgordon/node/488)
+- [BibTeX format according to Wikibook](https://en.wikibooks.org/wiki/LaTeX/Bibliography_Management#BibTeX)
+- [BibTeX format according to Wikipedia](https://en.wikipedia.org/wiki/BibTeX#Bibliographic_information_file)
