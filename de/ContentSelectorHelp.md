@@ -1,4 +1,4 @@
 ---
-redirect:   /de/ContentSelector
-layout:     redirect
+redirect: /en/ContentSelector
+layout: redirect
 ---
