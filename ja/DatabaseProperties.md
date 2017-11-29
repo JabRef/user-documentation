@@ -1,62 +1,57 @@
 ---
-title: データベース特性ウィンドウ
-helpCategories: ["設定"]
+title: Database properties window
+helpCategories:
+  - Setup
 ---
+# Database properties window
 
-# データベース特性ウィンドウ
+Each database can have specific properties that can be modified through **File → Database properties**) or by right clicking on the tab of the database and choosing "Database properties". These specific properties override the generic properties defined in **Options → Preferences**.
 
-各データベースには，固有の特性を持たせることができ，
-**ファイル → データベース特性** か，データベースタブを右クリックして「データベース特性」を選択することで修正することができます．これらの固有特性は，**オプション → 設定** で定義される一般特性を上書きします．
+![Screenshot for Database Properties](./images/DatabaseProperties.png)
 
-データベース特性ウィンドウでは，データベースに関連した設定を行うことができます．
+The database-specific properties are stored in the database itself. This way, when moving the database to another computer, these properties are preserved. In most of cases these are stored in the bib-file database using text blocks starting with *@Comment{jabref-meta:* .
 
-![データベース特性のスクリーンショット](../en/images/DatabaseProperties.png)
+## Database encoding
 
-データベース固有の特性は，データベース本体内に保管されます．そのため，データベースを他のコンピューターに移したとしても，これらの特性は保持されます．ほとんどの場合，これらは，*@Comment{jabref-meta:* で始まる文字列ブロックを使用して，bibファイルデータベースに保管されます．
+This setting determines which character encoding JabRef will use when writing this database to disk. Changing this setting will override the setting made in Preferences dialog for this database. JabRef specifies the encoding near the top of the bib file, in order to be able to use the correct encoding next time you open the file.
 
-## データベースのエンコーディング
+The dropdown menu allows to select one encoding. `UTF-8` is highly recommended.
 
-この設定は，データベースをディスクに書き込む際，JabRefがどの文字エンコーディングを使うべきかを指定します．この設定を変更すると，このデータベースに関しては，この設定が，「JabRefの設定」ダイアログで行った設定よりも優先して用いられます．JabRefはエンコーディングをbibファイルの冒頭部に書き込み，次回このファイルを開いたときに正しいエンコーディングで開くことができるようにします．
+## Override default file directories
 
-ドロップダウンメニューからエンコーディングを一つ選択できます．`UTF-8`が強く推奨されます．
+In your database, files (PDF, etc.) can be linked to an entry. The list of these files are stored in the *file* field of the entry. The location of these files has to be specified.
 
-## ファイルディレクトリ既定値の上書き
+For your database, you can define a **General file directory** and a **User-specific file directory**. These settings override the *main file directory* defined in the Preferences dialog.
 
-データベースでは，PDFなどのファイルを項目にリンクさせることができます．これらのファイルの目録は，項目の *file* フィールドに保管されます．これらのファイルの場所を指定しなくてはなりません．
+The **General file directory** is a common path for all the users of a shared database.  
+The **User-specific file directory** allows each user to have its own file directory for the database. If defined, it overrides the **General file directory**.
 
-データベースには，**一般ファイルディレクトリ** と **ユーザーファイルディレクトリ** を定義することができます．これらの設定は，設定ダイアログの *標準ファイルディレクトリ* を上書きします．
+JabRef stores the name of the current system alongside the **User-specific file directory**. This assumes that each user of the database has a different system name. For example, when using the computer *laptop*, the entry in the bib file is @Comment{jabref-meta: fileDirectory-jabref-laptop:\\somedir;}
 
-**一般ファイルディレクトリ** は，共有データベースの全ユーザーに共通のパスです．**ユーザーファイルディレクトリ** は，データベースの各ユーザーが持つことのできる専用のファイルディレクトリです．これが定義されていると，**一般ファイルディレクトリ** は上書きされます．
+Relative directories can be specified. This means that the location of the files will be interpreted relative to the location of the bib file. Simply setting a directory to "." (without quotes) means that the files should reside in the same directory as the bib file.
 
-JabRefは，**ユーザーファイルディレクトリ** とともに，使用中のシステム名を記憶します．これは，データベースの各ユーザーが別々のシステム名を使用していることを前提としています．例えば，*laptop* というコンピューターを使用しているとき，bibファイル中の項目は，@Comment{jabref-meta: fileDirectory-jabref-laptop:\\somedir;} のようになります．
+*Note: the legacy PDF/PS links (i.e. the *pdf* and *ps* fields, which were used in JabRef versions prior to 2.3), should in current versions be replaced by general file links.* This can be done using **Quality → Cleanup entries...** and enabling *Upgrade external PDF/PS links to use the 'file' field*.
 
-相対ディレクトリを指定することは可能です．この場合，ファイルの場所は，bibファイルのある場所からの相対パスとして解釈されます．ディレクトリを「.」に指定すると(除く括弧)，ファイルがbibファイルと同じディレクトリにあることを意味します．
+## Save sort order
 
-*《註》旧来のPDF/PSリンク(すなわち，JabRef第2.3版以前で用いられていた，*pdf* フィールドおよび *ps* フィールドは，現行版では，一般ファイルリンクに置き換えられなくてはなりません．* これは，**品質 → 項目を整頓...** で *外部PDF/PSリンクを「file」フィールドを用いるように更新* を有効にすることで為し得ます．
+When saving the database, the order of the entries will be preserved if **Save entries in their original order** is selected. Alternatively, by selecting **Save entries ordered as specified**, you can choose to sort the entries using three criteria. For each criterion, you can type-in the field to be used and select the order.
 
-## 整序順の保存
+*Note: Entries containing a `crossref` field will always be placed prior to the other entries. This is a necessary preliminary for BibTeX to be able to determine the correct referenced values. (See: [Tame the BeaST](http://ctan.org/pkg/tamethebeast), p. 26)*
 
-**項目をオリジナルの順序で保存** を有効にしておくと，データベースを保存する際，項目順は保持されます．一方，**項目を指定順に保存** を選択すると，3つの基準で項目を整序することができます．各基準については，使用するフィールドを入力して，並び順を選択することができます．
+## Database protection
 
-*《註》`crossref`フィールドを含む項目は，常に他の項目よりも前に置かれます．これは，BibTeXが正しい参照値を特定できるのに必要な要件です（[Tame the BeaST](http://ctan.org/pkg/tamethebeast)，p. 26を参照）*
+While you edit a shared database, another user may be editing it too. By default, saving the database will overwrite changes done by others (although a warning message about the changes will be displayed).
 
-## データベース保護
+To avoid discarding changes involuntarily, and hence to allow a smooth collaborative work, you can choose to *Refuse to save the database before external changes have been reviewed*. This setting lets you enforce reviewing of external changes before the database can be saved: users will only be able to save the database after any external changes have been reviewed and either merged or rejected.
 
-あなたが共有データベースを編集している間に，他のユーザーもそれを編集している可能性があります．既定では，データベースを保存すると，他のユーザーが行なった変更点を破棄してしまいます（変更が加えられている旨の警告メッセージは表示されます）．
+*Note:* this is not a security feature, merely a way to prevent users from overwriting other users' changes inadvertently. This feature does not protect your database against malicious users.
 
-加えた変更を望まぬうちに破棄してしまうことのないように，そうして円滑な共同作業ができるように，*データベースを保存する前に，外部から加えられた変更点の審査を強制する* を選択することができます．この設定を行うと，データベースを保存する前に，外部から加えられた変更を常に審査するように強制します．ユーザーは，外部から加えられた変更を審査し，マージまたはリジェクトした上でないと，データベースを保存することができません．
+## Save actions
 
-*《註》* 本機能は，セキュリティ機能を提供するものではなく，他のユーザーが加えた変更を意図せずに上書きしてしまうのを避ける機会を提供するだけです．本機能は，悪意を持ったユーザーからあなたのデータベースを守るわけではありません．
+Field formatting can be tidied up when saving the database. That ensures your entries to have consistent formatting. If you check **Enable save actions**, the list of actions can be configured.
 
-## 保存時動作
+For more information see <Save Actions>.
 
-データベースを保存する際，フィールドの書式を整えることができます．これによって，項目が整合性のある書式を維持するようにできます． **保存時動作を有効化** をチェックすると，動作のリストを設定できるようになります．
+## Shared SQL database
 
-詳細は[保存時動作](Save Actions)をご覧ください．
-
-## 共有SQLデータベース
-
-共有[SQLデータベース](http://help.jabref.org/en/SQLDatabase)特性の中には，*.bib* ファイルでは処理できないために，使用できないものがあります．下記の特性は使用できません：
-- データベースエンコーディング *（つねにUTF-8）*
-- 整序順の保存
-- データベース保護
+Note that some properties are not available for shared [SQL databases](SQLDatabase) as they are not handled like a *.bib* file. The following properties are not available: - Database encoding *(always UTF-8)* - Save sort order - Database protection
