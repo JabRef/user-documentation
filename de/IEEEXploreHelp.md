@@ -1,4 +1,4 @@
 ---
-redirect:   /de/IEEEXplore
-layout:     redirect
+redirect: /en/IEEEXplore
+layout: redirect
 ---
