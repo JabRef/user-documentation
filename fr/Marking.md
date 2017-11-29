@@ -1,19 +1,18 @@
 ---
-title: Etiqueter les entrées
+title: Mark entries
+helpCategories:
+  - Finding, sorting and cleaning entries
 ---
+# Mark entries
 
-# Etiqueter les entrées
+You have the option of *marking* entries. Keyboard shortcuts are <kbd>Ctrl</kbd> + <kbd>M</kbd> and <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>M</kbd> to mark and unmark the selected entries, respectively, and you can also access these actions in the menu **Edit** or by right-clicking on the entry and selecting the relevant action.
 
-Vous avez la possibilité d'*étiqueter* des entrées. Les raccourcis claviers sont CTRL-M et CTRL-MAJ-M pour, respectivement, étiqueter et désétiqueter les entrées sélectionnées. Vous pouvez aussi accéder à ces actions en utilisant le menu **Edition**.
+Marking is not the same as selecting entries. Marked entries behave differently from other entries in two ways. First, they are always displayed with a different background color in the entry table. Second, they will float to the top of your entry list, as long as your table is not sorted according to groups.
 
-Étiqueter des entrées n'est pas la même chose que les sélectionner. Les entrées étiquetées se comportent différemment des autres, et ce de deux façons. Premièrement, elles sont toujours affichées avec un fond de couleur différente dans le tableau des entrées. Deuxièmement, elles seront affichées en haut de la liste des entrées, et ce tant que votre table n'est pas triée selon des groupes ou par une recherche flottante.
+The color each marked entry is displayed in depends on the marking level of the entry, with the default colors ranging from yellow to red. There are menu choices for directly setting the marking to a specific level.
 
-Sauver votre base de données préservera l'étiquetage.
+Marking entries can be useful for instance if you need to do several searches without losing your first search results, or if you need to remember which articles or books to look more closely at.
 
-La couleur avec laquelle chaque entrée étiquetée est affichée dépend du niveau d'étiquetage de l'entrée. Les couleurs par défaut vont du jaune au rouge. Des menus permettent à la fois d'incrémenter le niveau d'étiquetage des entrées sélectionnées et de sélectionner directement le niveau d'étiquetage désiré.
+In addition to manually marking entries, JabRef can optionally auto-mark the latest imported entries, and at the same time unmark the previous entries marked in this way. Such entries will be shown in a different color from manually marked entries - by default green. This feature is toggled under **Options → Preferences → General**: '*Mark entries imported into an existing database*' and '*Unmark all entries before importing new entries into an existing database*'.
 
-Les entrées étiquetées vous seront utiles si, par exemple, vous avez besoin de faire plusieurs recherches sans perdre vos premiers résultats, ou si vous avez besoin de vous souvenir des articles ou des livres auxquels il faut que vous prêtiez attention.
-
-En plus de l'étiquetage manuel des entrées, JabRef peut éventuellement étiqueter automatiquement les dernières entrées importées et simultanément désétiqueter les entrées précédemment étiquetées de cette façon. Ces entrées seront affichées d'une couleur différente de celles étiquetées manuellement - par défaut en vert. Cette fonctionnalité est activé dans **Options → Préférences → Général**
-
-L'étiquetage des entrées sera associé à votre nom d'utilisateur, le même nom que vous utilisez pour remplir le champ "owner" des entrées que vous créez ou importez (cela correspondra par défaut à votre nom d'utilisateur dans votre système d'exploitation, mais peut-être modifié dans **Options → Préférences → Général**. Différents utilisateurs peuvent marquer des entrées indépendamment. L'enregistrement de la base de données conservera les étiquettes.
+Marking of entries will be associated with your username, the same name as is used to fill in the [owner field](Owner) of entries you create or import (this will by default match your user name in the operating system, but can be changed under **Options → Preferences → General**). Different users can mark entries independently. Saving the database will preserve the markings.
