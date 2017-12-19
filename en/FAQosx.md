@@ -5,6 +5,10 @@ helpCategories: ["FAQ"]
 
 # JabRef and Mac OS X
 
+#### Q: After downloading and unzipping, OS X shows “JabRef Installer.app” can’t be opened because it is from an unidentified developer.
+A: Currently this is necessary, since our code signing infrastructure is not operational.
+`Ctrl-click` to open the downloaded `.dmg` file in Finder to install JabRef.
+
 #### Q: After downloading and unzipping, OS X shows “the package was damaged and moved to trash”
 
 A: On Mac OS X Lion, it is possible to resolve it by temporarily changing the Gate Keeper security settings under “Security&Privacy” in the system preferences to “Anywhere”.
