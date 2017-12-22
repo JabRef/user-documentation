@@ -30,6 +30,7 @@ Thus, it especially describes installing [JavaFX].
   * [Fedora 23 and Oracle Java](#fedora-23-and-oracle-java)
   * [Fedora and OpenJDK](#fedora-and-openjdk)
   * [CentOS 6 or 7 and Oracle Java](#centos-6-or-7-and-oracle-java)
+  * [openSUSE](#opensuse)
   * [Windows and Oracle Java](#windows-and-oracle-java)
   * [Mac OS and Oracle Java](#mac-os-and-oracle-java)
 - [JabRef and OpenOffice/LibreOffice integration](#jabref-and-openofficelibreoffice-integration)
@@ -160,6 +161,12 @@ Install JavaFX (actually OpenJFX) by executing `sudo dnf install openjfx java-1.
 1. Download rpm-file from the [Java SE Development Kit 8 Downloads] site
 2. Install with `sudo yum localinstall jre-[Version]-linux-[BIT].rpm` include the most recent Java version for `[Version]` and `i586` or `x64` for `[BIT]` depending on your OS version
 
+### openSUSE
+
+The necessary Java packages can be installed via "1-click installs":
+
+1. [OpenJDK](https://software.opensuse.org/package/java-1_8_0-openjdk)
+2. [java-openjfx](https://software.opensuse.org/package/java-openjfx?search_term=openjfx)
 
 ### Windows and Oracle Java
 
