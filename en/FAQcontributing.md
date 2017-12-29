@@ -76,3 +76,7 @@ Then, check our [CONTRIBUTING.md](https://github.com/JabRef/jabref/blob/master/C
 ### I want something with huge impact
 
 Then, the [issues intended for external contributions](https://github.com/JabRef/jabref/labels/help-wanted) are the right place to look at.
+
+### I need help with the code
+
+You can talk to the core developers of JabRef in the [slack chat](https://jabref.slack.com/messages).
