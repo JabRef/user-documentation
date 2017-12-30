@@ -80,3 +80,5 @@ Then, the [issues intended for external contributions](https://github.com/JabRef
 ### I need help with the code
 
 You can talk to the core developers of JabRef in the [slack chat](https://jabref.slack.com/messages).
+Write [@koppor](https://github.com/koppor/) a short email with your preferred email address and he'll add you.
+We also have a Skype chat running. In case you want to join there, please also write a short mail to @koppor.
