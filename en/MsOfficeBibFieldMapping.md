@@ -63,6 +63,8 @@ Addtionally, some fields have to be treated differently during import/export.
 | pages           | Pages         |
 | authors         | Authors       |
 | editors         | Editors       |
+| translator      | Translator    |
+| bookauthor      | Bookauthor    |  
 | volumes         | NumberVolumes |
 
 
@@ -116,7 +118,6 @@ In the resulting bib database they are represented with the prefix `msbib-`.
 | msbib-casenumber              | CaseNumber                                          |
 | msbib-abbreviatedcasenumber   | AbbreviatedCaseNumber                               |
 | msbib-productioncompany       | ProductionCompany                                   |
-| msbib-translator              | translators                                         |
 | msbib-producername            | producerNames                                       |
 | msbib-composer                | composers                                           |
 | msbib-conductor               | conductors                                          |
@@ -140,7 +141,7 @@ The following fields are treated as follows during epxort:
 | journal                       | JournalName    |
 | journaltitle                  | JournalName    |
 | month                         | Month          |
-| date                          | year           |
+| date                          | year, month, day  (if date is in ISO 8601 form|
 | issue                         | issue          |
 | isbn                          | StandardNumber |
 | issn                          | StandardNumber |
