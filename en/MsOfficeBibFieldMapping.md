@@ -147,8 +147,10 @@ The following fields are treated as follows during epxort:
 | issn                          | StandardNumber |
 | lccn                          | StandardNumber |
 | mrnumer                       | StandardNumber |
-| address                       | City, StateProvince, CountryRegion|
-| location                      | City, StateProvince, CountryRegion|
+| address (if field contains at least a comma)                 | City|
+| address (if field does not containa comma)                  | City, StateProvince, CountryRegion|
+| location (if field contains at least a comma)                 | City|
+| location (if field does not containa comma)                  | City, StateProvince, CountryRegion|
 | &lt;EntryType is thesis&gt;         | ThesisType     |
 | &lt;EntryType is patent&gt; number | PatentNumber   |
 | number (entry is not patent) | Number
