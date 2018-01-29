@@ -43,11 +43,11 @@ title: Help contents
 - [File links in JabRef](/en/FileLinks)
 - [Journal abbreviations](/en/JournalAbbreviations)
 - [Links to other entries](/en/EntryLinks)
-- [PDF/PS/URL/DOI links in JabRef](/en/ExternalFiles)
 - [Set/clear/rename fields](/en/SetClearRenameFields)
 - [Special Fields](/en/SpecialFields)
 - [Strings](/en/Strings)
 - [The 'owner' field](/en/Owner)
+- [URL and DOI links in JabRef](/en/ExternalFiles)
 
 
 ## Finding, sorting and cleaning entries
@@ -88,9 +88,9 @@ title: Help contents
 - [Custom export filters](/en/CustomExports)
 - [Custom import filters](/en/CustomImports)
 - [EndNote Export Filter](/en/EndNoteFilters)
+- [Export and Import to/from Microsoft Word -- MS Office Bibliography XML format](/en/MsOfficeBibFieldMapping)
 - [Export to an External SQL Database](/en/SQLExport)
 - [Import inspection window](/en/ImportInspectionDialog)
-- [MS Office Bibliography xml format](/en/MsOfficeBibFieldMapping)
 - [New subdatabase based on AUX file](/en/NewBasedOnAux)
 - [OpenOffice/LibreOffice integration](/en/OpenOfficeIntegration)
 - [XMP metadata support in JabRef](/en/XMP)

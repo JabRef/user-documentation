@@ -85,13 +85,13 @@ title: Contenu de l’aide
 
 ## Importation/Exportation
 - [Comparison of the Medline (txt), Medline (XML), and RIS format](/fr/MedlineRIS)
+- [Export and Import to/from Microsoft Word -- MS Office Bibliography XML format](/fr/MsOfficeBibFieldMapping)
 - [Exportation vers une base de données SQL externe](/fr/SQLExport)
 - [Fenêtre de vérification des importations](/fr/ImportInspectionDialog)
 - [Filtre d'exportation EndNote](/fr/EndNoteFilters)
 - [Filtres d'exportation personnalisés](/fr/CustomExports)
 - [Filtres d'importation personnalisés](/fr/CustomImports)
 - [Intégration dans OpenOffice/LibreOffice](/fr/OpenOfficeIntegration)
-- [MS Office Bibliography xml format](/fr/MsOfficeBibFieldMapping)
 - [New subdatabase based on AUX file](/fr/NewBasedOnAux)
 - [Support des metadonnées XMP dans JabRef](/fr/XMP)
 

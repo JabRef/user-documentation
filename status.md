@@ -2,14 +2,14 @@
 title: Translation Status
 ---
 # Help pages status
-2017-09-04 07:05 – `655ea6f`
+2018-01-29 08:38 – `dfb0f0b`
 
 - Main language: `en`
 - Available languages: `de`, `fr`, `in`, `ja`
 
 | Language | translated | not translated | outdated |  % translated | % outdated |
 | -------- | ---------- | -------------- | -------- |  ------------ | ---------- |
-| en | 84 | 0 | 6 | 100 | 7 |
+| en | 84 | 0 | 4 | 100 | 4 |
 | de | 32 | 52 | 4 | 38 | 12 |
 | fr | 41 | 43 | 10 | 48 | 24 |
 | in | 21 | 63 | 2 | 25 | 9 |
@@ -23,8 +23,6 @@ title: Translation Status
 - [ContentSelector.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/ContentSelector.md)
 - [EndNoteFilters.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/EndNoteFilters.md)
 - [EntryEditor.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/EntryEditor.md)
-- [ExternalFiles.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/ExternalFiles.md)
-- [FileLinks.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/FileLinks.md)
 - [SpecialFields.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/SpecialFields.md)
 
 ### `de`

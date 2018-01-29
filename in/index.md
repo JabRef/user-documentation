@@ -41,13 +41,13 @@ title: Daftar Isi Bantuan
 - [Cap waktu entri](/in/TimeStamp)
 - [File links in JabRef](/in/FileLinks)
 - [Links to other entries](/in/EntryLinks)
-- [PDF/PS/URL/DOI links in JabRef](/in/ExternalFiles)
 - [Pengisian kata dalam bidang](/in/ContentSelector)
 - [Set/clear/rename fields](/in/SetClearRenameFields)
 - [Singkatan nama jurnal](/in/JournalAbbreviations)
 - [Special Fields](/in/SpecialFields)
 - [Strings](/in/Strings)
 - [Tentang *bibtex*](/in/Bibtex)
+- [URL and DOI links in JabRef](/in/ExternalFiles)
 
 
 ## Mencari dan mengurutkan entri
@@ -87,9 +87,9 @@ title: Daftar Isi Bantuan
 - [Comparison of the Medline (txt), Medline (XML), and RIS format](/in/MedlineRIS)
 - [Custom import filters](/in/CustomImports)
 - [EndNote Export Filter](/in/EndNoteFilters)
+- [Export and Import to/from Microsoft Word -- MS Office Bibliography XML format](/in/MsOfficeBibFieldMapping)
 - [Export to an External SQL Database](/in/SQLExport)
 - [Import inspection window](/in/ImportInspectionDialog)
-- [MS Office Bibliography xml format](/in/MsOfficeBibFieldMapping)
 - [New subdatabase based on AUX file](/in/NewBasedOnAux)
 - [OpenOffice/LibreOffice integration](/in/OpenOfficeIntegration)
 - [Penapis ekspor atursendiri](/in/CustomExports)

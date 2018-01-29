@@ -85,12 +85,12 @@ title: Hilfe - Inhalt
 
 ## Import/Export
 - [EndNote Exportfilter](/de/EndNoteFilters)
+- [Export and Import to/from Microsoft Word -- MS Office Bibliography XML format](/de/MsOfficeBibFieldMapping)
 - [Export to an External SQL Database](/de/SQLExport)
 - [Exportfilter anpassen](/de/CustomExports)
 - [Import-Kontrollfenster](/de/ImportInspectionDialog)
 - [Importfilter anpassen](/de/CustomImports)
 - [JabRef-Bibliographien in OpenOffice.org benutzen](/de/OpenOfficeIntegration)
-- [MS Office Bibliography xml format](/de/MsOfficeBibFieldMapping)
 - [Medline (txt) vs. Medline (XML) vs. RIS](/de/MedlineRIS)
 - [New subdatabase based on AUX file](/de/NewBasedOnAux)
 - [Unterstützung von XMP-Metadaten in JabRef](/de/XMP)

@@ -1,18 +1,49 @@
 ---
-title: MS Office Bibliography xml format
-helpCategories: ["Import/Export"]
+title: Export and Import to/from Microsoft Word -- MS Office Bibliography XML format
+helpCategories:
+  - Import/Export
 ---
+# MS Office and JabRef
 
-# Field Mapping between MS-Office and JabRef
+JabRef supports the MS Office Bibliography XML format for exporting and importing.
 
-## Introduction
-JabRef supports the MS Office Bibliography xml format for exporting and importing.
-Some field names in the xml format differ from the field names in the BibTeX/BibLaTeX format and can therefore be not directly mapped between the formats.
-Therefore this help file provides a list of all field mappings.
+<!-- toc -->
+
+- [Howto: Export to Microsoft Word](#howto-export-to-microsoft-word)
+- [Howto: Import to Microsoft Word](#howto-import-to-microsoft-word)
+- [Entry Type Mappings](#entry-type-mappings)
+- [Field mappings](#field-mappings)
+  * [BibTeX/BibLaTeX only fields](#bibtexbiblatex-only-fields)
+  * [MS-Bib only fields](#ms-bib-only-fields)
+  * [Special Export treatment](#special-export-treatment)
+  * [Special Import treatment](#special-import-treatment)
+
+<!-- tocstop -->
+
+## Howto: Export to Microsoft Word
+
+As you are using JabRef already, you can simply use the builtin export functionality for Office 2007 xml format, that is the format where Microsoft stores it bibliography information.
+
+ 1. Export (selected) entries in JabRef and choose Office 2007 xml format
+ 2. Open Word, click on the References Tab
+ 3. Click on Manage sources -> Browse -> Open the exported XML File (or better copy it directly to the location under browse)
+ 4. All entries are then available in the MS bibliography database
+
+The only problem in the export could be when you have a "company" as author.
+That is simply exported as author and not in the company field.
+
+More discussion at <https://tex.stackexchange.com/a/351452/9075>.
+
+
+## Howto: Import to Microsoft Word
+
+See <https://stackoverflow.com/a/4628718/873282>
 
 
 ## Entry Type Mappings
 
+Some field names in the XML format differ from the field names in the BibTeX/BibLaTeX format and can therefore be not directly mapped between the formats.
+Therefore this help file provides a list of all field mappings.
 
 | BibTeX/BibLaTeX entry type | XML entry type       |
 |---------------------------|-----------------------|
@@ -40,7 +71,7 @@ Therefore this help file provides a list of all field mappings.
 
 ## Field mappings
 The field mapping for import and export is mostly the same, but there are some differences, as not all field exists in both formats.
-Addtionally, some fields have to be treated differently during import/export.
+Additionally, some fields have to be treated differently during import/export.
 
 | BibTeX/BibLaTeX | XML field     |
 |-----------------|---------------|
