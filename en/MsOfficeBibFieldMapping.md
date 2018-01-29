@@ -10,7 +10,7 @@ JabRef supports the MS Office Bibliography XML format for exporting and importin
 <!-- toc -->
 
 - [Howto: Export to Microsoft Word](#howto-export-to-microsoft-word)
-- [Howto: Import to Microsoft Word](#howto-import-to-microsoft-word)
+- [Howto: Import from Microsoft Word](#howto-import-from-microsoft-word)
 - [Entry Type Mappings](#entry-type-mappings)
 - [Field mappings](#field-mappings)
   * [BibTeX/BibLaTeX only fields](#bibtexbiblatex-only-fields)
@@ -35,7 +35,7 @@ That is simply exported as author and not in the company field.
 More discussion at <https://tex.stackexchange.com/a/351452/9075>.
 
 
-## Howto: Import to Microsoft Word
+## Howto: Import from Microsoft Word
 
 See <https://stackoverflow.com/a/4628718/873282>
 
@@ -101,8 +101,8 @@ Additionally, some fields have to be treated differently during import/export.
 
 
 ### BibTeX/BibLaTeX only fields
-The following fields are BibTeX/BibLaTex only fields, they have no representation in office xml.
-In the resulting xml file they are represented with the prefix `BIBTEX_`
+The following fields are BibTeX/BibLaTex only fields, they have no representation in office XML.
+In the resulting XML file they are represented with the prefix `BIBTEX_`
 
 
 | BibTeX/BibLaTeX only fields | XML representation  |
@@ -125,7 +125,7 @@ In the resulting xml file they are represented with the prefix `BIBTEX_`
 | pubstate                    | BITEX_Pubstate      |
 
 
-The xml field `SourceType` contains the associated entry type from the first table, while the original BibTeX/BibLaTex entrytype is preserved in the field `BIBTEX_ENTRY`.
+The XML field `SourceType` contains the associated entry type from the first table, while the original BibTeX/BibLaTex entrytype is preserved in the field `BIBTEX_ENTRY`.
 
 ### MS-Bib only fields
 The following fields are XML-only fields, they have no BibTeX/BibLaTex representation:
@@ -163,10 +163,10 @@ In the resulting bib database they are represented with the prefix `msbib-`.
 
 
 ### Special Export treatment
-The following fields are treated as follows during epxort:
+The following fields are treated as follows during export:
 
 
-| BibTeX/BibLaTeX represenation | XML field      |
+| BibTeX/BibLaTeX representation | XML field      |
 |-------------------------------|----------------|
 | booktitle                     | ConferenceName |
 | journal                       | JournalName    |
@@ -192,7 +192,7 @@ The following fields are treated as follows during epxort:
 The following fields are treated as follows during import:
 
 
-| BibTeX/BibLaTeX represenation | XML field      |
+| BibTeX/BibLaTeX representation | XML field      |
 |-------------------------------|----------------|
 | organization                  | ConferenceName |
 | journaltitle                  | Journal        |
