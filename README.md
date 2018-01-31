@@ -9,10 +9,15 @@ See also our [guidelines and quick start guide on contributing](CONTRIBUTING.md)
 
 ## Installation of Jekyll to check the page locally
 
-Execute `gem install bundler`, `bundle install`, and `bundle exec jekyll serve --incremental` to serve this page locally at http://localhost:4000/.
-Source: https://help.github.com/articles/using-jekyll-with-pages/#installing-jekyll
-At windows, this works with [RubyInstaller](http://rubyinstaller.org/downloads) and the [Development Kit](https://github.com/oneclick/rubyinstaller/wiki/Development-Kit).
-[JRuby](http://jruby.org/) doesn't work as the [C extensions were dropped](http://stackoverflow.com/a/32135381/873282).
+Execute following steps:
+
+1. `gem install bundler`
+2. `bundle install`
+3. `bundle exec jekyll serve --incremental`
+
+Now, the page is served locally at <http://localhost:4000/>.
+
+Source: <https://help.github.com/articles/using-jekyll-with-pages/#installing-jekyll>.
 
 ## Script overview
 
@@ -47,3 +52,23 @@ For using `automate.py`:
 1. `choco install python2`
 2. Switch back to normal command prompt
 3. `c:\tools\python2\Scripts\pip install python-frontmatter`
+
+For using Jekyll:
+
+1. `choco install ruby --version 2.4.3.1`. `choco pin add -n ruby`. - install Ruby 2.4 as version 2.5 is currently not supported by Jekyll's gem bundle
+2. `refreshenv` - to have ridk in the path
+3. `ridk install` - to start installing Ruby Development Kit
+4. Choose option 3
+5. Now, `bundle install` should succeed.
+
+In case there are Jekyll plugins required, do these steps [[source](http://blog.cloud-mes.com/2014/08/19/how-to-install-gem-curb-in-windows/), linked from <https://github.com/benbalter/jekyll-remote-theme/issues/17#issuecomment-350818119>]:
+
+1. Download [curl-7.40.0-devel-mingw64.zip](https://curl.haxx.se/gknw.net/7.40.0/dist-w64/curl-7.40.0-devel-mingw64.zip)
+2. Extract `curl-7.40.0-devel-mingw64.zip` to `c:\temp\curl-7.40.0-devel-mingw64`
+3. Run `gem install curb --platform=ruby -- --with-curl-lib=C:/temp/curl-7.40.0-devel-mingw64/bin --with-curl-include=C:/temp/curl-7.40.0-devel-mingw64/include`
+4. Alternative to step 4: Copy `libcurl.dll` to `c:\tools\ruby24\bin` [[source](https://stackoverflow.com/a/47754520/873282)]
+
+Note: On windows, this works with [RubyInstaller](http://rubyinstaller.org/downloads), version 2.4.
+This installer is used when using chocolatey.
+The separate [Development Kit](https://github.com/oneclick/rubyinstaller/wiki/Development-Kit) installer is not required anymore.
+[JRuby](http://jruby.org/) doesn't work as the [C extensions were dropped](http://stackoverflow.com/a/32135381/873282).
