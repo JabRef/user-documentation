@@ -52,6 +52,8 @@ At the right of the search text field, several buttons allow for selecting some 
 
 There are two search modes in JabRef.
 
+![search](https://user-images.githubusercontent.com/1366654/35925980-5eabdefe-0c27-11e8-9a2a-c2abc2b3509b.gif)
+
 ### Normal search
 
 In a normal search, the program searches your database for all occurrences of the words in your search string, once you entered it.
