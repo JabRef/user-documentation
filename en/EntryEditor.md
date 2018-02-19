@@ -16,7 +16,10 @@ For information about how the fields should be filled out, see [BibTeX help](Bib
 
 ## The entry editor's panels
 
-The entry editor contains six panels: *Required fields*, *Optional fields*, *General*, *Abstract*, *Review* and *BibTeX source*, where *General*, *Abstract* and *Review* can be customized (see [Customizing general fields](GeneralFields) for details). Inside the three first panels,  <kbd>Tab</kbd> and <kbd>Shift</kbd> + <kbd>Tab</kbd> are used to switch focus between the text fields.
+The entry editor contains six panels: *Required fields*, *Optional fields*, *General*, *Abstract*, *Comments* and *BibTeX source*, where *General*, *Abstract* and *Comments* can be customized (see [Customizing general fields](GeneralFields) for details). Inside the three first panels,  <kbd>Tab</kbd> and <kbd>Shift</kbd> + <kbd>Tab</kbd> are used to switch focus between the text fields.
+
+Up to JabRef 4.1, the field was called "Review".
+The field name was changed to "Comments" as "Review" indicated some external reviews or some fundamental comments.
 
 Switch panels by clicking on the tabs, or navigate to the panel to the left or right using the following key combinations: <kbd>Ctrl</kbd> + <kbd>Tab</kbd> or <kbd>Ctrl</kbd> + <kbd> + </kbd> switch to the tab to the right, and <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Tab</kbd> or <kbd>Ctrl</kbd> + <kbd>-</kbd> switch to the tab to the left. You can also switch to the next or previous entry by pressing <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Down</kbd> or <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Up</kbd>, respectively, or by clicking the appropriate toolbar button.
 
