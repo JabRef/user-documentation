@@ -50,6 +50,7 @@ The word *true* prevents the file name from being interpreted as an argument to 
 - [Version: `-v`](#version--v)
 - [Debug mode: `--debug`](#debug-mode---debug)
 - [Display output in the console: `--console`](#display-output-in-the-console---console)
+- [Xmp Pdf Metadata: `-xmp`](#xmp-pdf-metadata--xmp)
 
 
 ### Help: `-h`
@@ -194,3 +195,14 @@ Show debug level messages.
 ### Display output in the console: `--console`
 
 Show info and error messages in the console. Only necessary if you use `JabRef.exe` instead of the `.jar` file.
+
+### Xmp Pdf Metadata: `-xmp`
+
+Console application with two options. The selection of the option is done within cmd. 
+There are no parameters needed to use this tool.
+
+Options:
+
+ (1) Reads xmp metadata from a pdf file (input filepath in cmd) and prints the metadata entries in bib format
+ 
+ (2) Writes bib entries in a bib file to the metadata section of a pdf file (input both filepaths in cmd)
