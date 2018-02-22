@@ -2,18 +2,18 @@
 title: Translation Status
 ---
 # Help pages status
-2018-01-29 08:38 – `dfb0f0b`
+2018-02-22 08:25 – `bdfe8ac`
 
 - Main language: `en`
 - Available languages: `de`, `fr`, `in`, `ja`
 
 | Language | translated | not translated | outdated |  % translated | % outdated |
 | -------- | ---------- | -------------- | -------- |  ------------ | ---------- |
-| en | 84 | 0 | 4 | 100 | 4 |
-| de | 32 | 52 | 4 | 38 | 12 |
-| fr | 41 | 43 | 10 | 48 | 24 |
-| in | 21 | 63 | 2 | 25 | 9 |
-| ja | 76 | 8 | 6 | 90 | 7 |
+| en | 85 | 0 | 4 | 100 | 4 |
+| de | 32 | 53 | 4 | 37 | 12 |
+| fr | 41 | 44 | 10 | 48 | 24 |
+| in | 21 | 64 | 2 | 24 | 9 |
+| ja | 76 | 9 | 6 | 89 | 7 |
 
 
 ## Outdated page(s):
@@ -102,6 +102,7 @@ title: Translation Status
 - [MergeEntries.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/de/MergeEntries.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/MergeEntries.md))
 - [MsOfficeBibFieldMapping.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/de/MsOfficeBibFieldMapping.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/MsOfficeBibFieldMapping.md))
 - [NewBasedOnAux.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/de/NewBasedOnAux.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/NewBasedOnAux.md))
+- [NewEntryFromPlainText.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/de/NewEntryFromPlainText.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/NewEntryFromPlainText.md))
 - [ProtectedTerms.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/de/ProtectedTerms.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/ProtectedTerms.md))
 - [ReplaceString.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/de/ReplaceString.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/ReplaceString.md))
 - [SaveActions.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/de/SaveActions.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/SaveActions.md))
@@ -151,6 +152,7 @@ title: Translation Status
 - [MergeEntries.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/fr/MergeEntries.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/MergeEntries.md))
 - [MsOfficeBibFieldMapping.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/fr/MsOfficeBibFieldMapping.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/MsOfficeBibFieldMapping.md))
 - [NewBasedOnAux.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/fr/NewBasedOnAux.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/NewBasedOnAux.md))
+- [NewEntryFromPlainText.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/fr/NewEntryFromPlainText.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/NewEntryFromPlainText.md))
 - [ProtectedTerms.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/fr/ProtectedTerms.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/ProtectedTerms.md))
 - [ReplaceString.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/fr/ReplaceString.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/ReplaceString.md))
 - [SaveActions.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/fr/SaveActions.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/SaveActions.md))
@@ -211,6 +213,7 @@ title: Translation Status
 - [MergeEntries.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/in/MergeEntries.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/MergeEntries.md))
 - [MsOfficeBibFieldMapping.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/in/MsOfficeBibFieldMapping.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/MsOfficeBibFieldMapping.md))
 - [NewBasedOnAux.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/in/NewBasedOnAux.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/NewBasedOnAux.md))
+- [NewEntryFromPlainText.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/in/NewEntryFromPlainText.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/NewEntryFromPlainText.md))
 - [OpenOfficeIntegration.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/in/OpenOfficeIntegration.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/OpenOfficeIntegration.md))
 - [ProtectedTerms.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/in/ProtectedTerms.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/ProtectedTerms.md))
 - [Remote.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/in/Remote.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/Remote.md))
@@ -239,4 +242,5 @@ title: Translation Status
 - [FAQsharing.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/FAQsharing.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/FAQsharing.md))
 - [FAQwindows.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/FAQwindows.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/FAQwindows.md))
 - [License.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/License.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/License.md))
+- [NewEntryFromPlainText.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/NewEntryFromPlainText.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/NewEntryFromPlainText.md))
 - [TranslatingGUI.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/TranslatingGUI.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/TranslatingGUI.md))

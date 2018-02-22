@@ -90,6 +90,7 @@ title: Daftar Isi Bantuan
 - [Export and Import to/from Microsoft Word -- MS Office Bibliography XML format](/in/MsOfficeBibFieldMapping)
 - [Export to an External SQL Database](/in/SQLExport)
 - [Import inspection window](/in/ImportInspectionDialog)
+- [New entry from plain text](/in/NewEntryFromPlainText)
 - [New subdatabase based on AUX file](/in/NewBasedOnAux)
 - [OpenOffice/LibreOffice integration](/in/OpenOfficeIntegration)
 - [Penapis ekspor atursendiri](/in/CustomExports)

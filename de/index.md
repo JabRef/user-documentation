@@ -92,6 +92,7 @@ title: Hilfe - Inhalt
 - [Importfilter anpassen](/de/CustomImports)
 - [JabRef-Bibliographien in OpenOffice.org benutzen](/de/OpenOfficeIntegration)
 - [Medline (txt) vs. Medline (XML) vs. RIS](/de/MedlineRIS)
+- [New entry from plain text](/de/NewEntryFromPlainText)
 - [New subdatabase based on AUX file](/de/NewBasedOnAux)
 - [Unterstützung von XMP-Metadaten in JabRef](/de/XMP)
 

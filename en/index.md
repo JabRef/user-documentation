@@ -91,6 +91,7 @@ title: Help contents
 - [Export and Import to/from Microsoft Word -- MS Office Bibliography XML format](/en/MsOfficeBibFieldMapping)
 - [Export to an External SQL Database](/en/SQLExport)
 - [Import inspection window](/en/ImportInspectionDialog)
+- [New entry from plain text](/en/NewEntryFromPlainText)
 - [New subdatabase based on AUX file](/en/NewBasedOnAux)
 - [OpenOffice/LibreOffice integration](/en/OpenOfficeIntegration)
 - [XMP metadata support in JabRef](/en/XMP)

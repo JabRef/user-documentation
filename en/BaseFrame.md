@@ -5,7 +5,9 @@ helpCategories: ["General"]
 
 # JabRef's main window
 
-*Note:* most menu actions referred in the following have keyboard shortcuts, and many are available from the toolbar. The keyboard shortcuts are found in the pull-down menus.
+> Most menu actions referred in the following have keyboard shortcuts, and many are available from the toolbar. The keyboard shortcuts are found in the pull-down menus.
+
+## Overview
 
 This is the main window from where you work with your databases. Below the menubar and the toolbar is a tabbed pane containing a panel for each of your currently open databases. When you select one of these panels, a table appears, listing all the database's entries, as well as a configurable selection of their fields.
 
@@ -28,10 +30,17 @@ When a new entry is added, by default an [entry editor](EntryEditor) for the ent
 
 *Note:* We strongly recommend learning the shortcuts for the entry types you use most often, e.g. <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>A</kbd> for adding an *article* entry.
 
+### Adding a new entry using an id
+
 In the dialog, you can also create an entry based on Id.
 See <http://help.jabref.org/en/#using-publication-identifiers> for an overview on all available fetchers.
-For instance, when having an ISBN number, you can select "ISBN" als Id type and then fetch it.
-See [ISBNtoBibTeX](ISBNtoBibTeX) for details.
+For instance, when having an ISBN number, you can select "ISBN" or "DOI" as Id type and then fetch it.
+See [ISBNtoBibTeX](ISBNtoBibTeX) and [DOItoBibTeX](DOItoBibTeX) for details.
+
+### Adding a new entry using the reference text
+
+Use the BibTeX → New entry from plain text... (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>N</kbd>).
+For more information see [New entry from plain text](NewEntryFromPlainText.md).
 
 ## Editing an entry
 

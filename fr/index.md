@@ -92,6 +92,7 @@ title: Contenu de l’aide
 - [Filtres d'exportation personnalisés](/fr/CustomExports)
 - [Filtres d'importation personnalisés](/fr/CustomImports)
 - [Intégration dans OpenOffice/LibreOffice](/fr/OpenOfficeIntegration)
+- [New entry from plain text](/fr/NewEntryFromPlainText)
 - [New subdatabase based on AUX file](/fr/NewBasedOnAux)
 - [Support des metadonnées XMP dans JabRef](/fr/XMP)
 

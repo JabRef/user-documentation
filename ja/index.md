@@ -89,6 +89,7 @@ title: ヘルプ目次
 - [JabRefにおけるXMPメタデータ サポート](/ja/XMP)
 - [MS Office文献XML形式](/ja/MsOfficeBibFieldMapping)
 - [Medline (txt)形式とMedline (XML)形式およびRIS形式の比較](/ja/MedlineRIS)
+- [New entry from plain text](/ja/NewEntryFromPlainText)
 - [OpenOffice.org / LibreOffice の統合](/ja/OpenOfficeIntegration)
 - [ユーザー書出フィルタ](/ja/CustomExports)
 - [ユーザー読込フィルタ](/ja/CustomImports)
