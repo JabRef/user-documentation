@@ -8,6 +8,7 @@ helpCategories: ["Import/Export"]
 > Entries can be created from a reference text.
 
 In case you have a reference string, JabRef offers the functionality to convert the text to BibTeX.
+JabRef thereby uses the service offered by [FreeCite](http://freecite.library.brown.edu/).
 
 Example:
 
