@@ -199,12 +199,21 @@ Show info and error messages in the console. Only necessary if you use `JabRef.e
 ### Xmp Pdf Metadata: `-xmp`
 
 [XMP](https://en.wikipedia.org/wiki/Extensible_Metadata_Platform)  is an ISO standard for the creation, processing and interchange of standardized and custom metadata for digital documents and data sets.
-The parameter `-xmp` changes the mode to XMP.
-
-Pass one or two file names.
-
+The parameter `-xmp` changes the mode to XMP without further parameters to start the functionality.
+    >java -jar JabRef-X.Y-dev-fat.jar -xmp
+Then, a read-evalute-print application is started and you have to insert a number to choose your option.
 Options:
-
+ (0) Exit the -xmp mode and terminate JabRef
  (1) One filename: Reads xmp metadata from a pdf file (input filepath in cmd) and prints the metadata entries in bib format
- 
- (2) Two filenames: Writes bib entries in a bib file to the metadata section of a pdf file (input both filepaths in cmd)
+ (2) Two filenames: Writes bib entries in a bib file to the metadata section of a pdf file (input both filepaths in cmd) 
+Example - Option 1:
+  INPUT: 
+    Insert your filename (.pdf): C:\documents\viterbi1967.pdf
+  OUTPUT: 
+    Bib entry
+Example - Option 2:
+  INPUT: 
+    Insert your filename (.bib): C:\documents\test.bib
+    Insert your filename (.pdf): C:\documents\empty.pdf
+  OUTPUT:
+    Metadata sucessfully written to Pdf.
