@@ -104,6 +104,7 @@ For instance, `{The Attributed Graph Grammar System ({AGG})}`.
 
 ## Further information resources
 - [Reference documentation about BibTeX](http://mirrors.ircam.fr/pub/CTAN/biblio/bibtex/base/btxdoc.pdf)
+- [Tame the BeaST - The B to X of BibTxX](http://texdoc.net/texmf-dist/doc/bibtex/tamethebeast/ttb_en.pdf) - long manual explaining the workings of BibTeX, the BibTeX format, and the available entry types with requried and optional fields.
 - [BibTeX tips and FAQ](http://mirror.ibcp.fr/pub/CTAN/biblio/bibtex/contrib/doc/btxFAQ.pdf)
 - [Recommended BibTeX Format](http://sandilands.info/sgordon/node/488)
 - [BibTeX format according to Wikibook](https://en.wikibooks.org/wiki/LaTeX/Bibliography_Management#BibTeX)
