@@ -79,4 +79,4 @@ Then, the [issues intended for external contributions](https://github.com/JabRef
 
 ### I need help with the code
 
-You can talk to the core developers of JabRef in the [gitter chat](hhttps://gitter.im/JabRef/jabref).
+You can talk to the core developers of JabRef in the [gitter chat](https://gitter.im/JabRef/jabref).
