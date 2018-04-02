@@ -35,10 +35,8 @@ At the right of the search text field, several buttons allow for selecting some 
     - each tab will remember its search query
     - the external search result window will only show matches in the current database
 
-
-
 - Regular expressions
-    - Whether or not the search query uses [regular expressions](Search#regex).
+    - Whether or not the search query uses [regular expressions](#regular-expressions).
 
 - Case sensitivity
   - Whether or not the search query is case sensitive.
@@ -71,7 +69,7 @@ In order to search specific fields only and/or include logical operators in the 
 
 `author = miller`
 
-Both the field specification and the search term support [regular expressions](Search#regex).
+Both the field specification and the search term support [regular expressions](#regular-expressions).
 If the search term contains spaces, enclose it in quotes.
 Do *not* use spaces in the field specification!
 E.g. to search for entries about image processing, type:
@@ -100,29 +98,29 @@ JabRef defines the following pseudo fields:
 |`bibtexkey` | Search for citation keys | `bibtexkey == miller2005`: search for an entry whose BibTeX key is **miller2005**|
 |`entrytype`| Search for entries of a certain type |  `entrytype = thesis`: search entries whose type (as displayed in the `entrytype` column) contains the word **thesis** (which would be **phdthesis** and **mastersthesis**)|
 
-#### <a href="" id="regex"></a> Regular expressions
+## Regular expressions
 
-##### Background
-
-Regular expressions (regex for short) define a language for specifying the text to be matched, for example when searching. JabRef uses regular expressions as defined in Java. For extensive information, please, look at the [documentation](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html)
+Regular expressions (regex for short) define a language for specifying the text to be matched, for example when searching. 
+JabRef uses regular expressions as defined in Java. For extensive information, please, look at the [documentation](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html)
 and at the [tutorial](https://docs.oracle.com/javase/tutorial/essential/regex/).
 
+They can be used in the normal search mode and the advanced search mode
 
-##### Regular expressions and casing
+### Regular expressions and casing
 
 By default, regular expressions do not account for upper/lower casing.
 Hence, while the examples below are all in lower case, they match also upper- and mixed case strings.
 
 If casing is important to your search, activate the case-sensitive button.
 
-##### Searching for entries with an empty or missing field
+### Searching for entries with an empty or missing field
 
 - `.` means any character
 - `+` means one or more times
 
 `author != .+`
 
-##### Searching for a given word
+### Searching for a given word
 
 - `\b` means word boundary
 - `\B` means not a word boundary
@@ -141,7 +139,7 @@ does.
 `author = \bblack\B`
 matches *blackwell* and *blacker*, but not *black*.
 
-##### Searching with optional spelling
+### Searching with optional spelling
 
 - `?` means none or one copy of the preceeding character.
 - `{n,m}` means at least *n*, but not more than *m* copies of the preceding character.
@@ -162,14 +160,14 @@ matches *modeling* and *modelling*.
 `abstract = modell?ing`
 also matches *modeling* and *modelling*.
 
-##### Searching for strings with a special character (`()[]{}\^-=$!|?*+.`)
+### Searching for strings with a special character (`()[]{}\^-=$!|?*+.`)
 
 If a special character (i.e. `(` `)` `[` `]` `{` `}` `\` `^` `-` `=` `$` `!` `|` `?` `*` `+` `.` ) is included in your search string, it has to be escaped with a backslash, such as `\}` for `}`.
 
 It means that to search for a string including a backslash, two consecutive backslaskes (`\\`) have to be used:
 `abstract = xori{\\c{c}}o` matches *xoriço*.
 
-##### Searching for strings with double quotation marks (`"`)
+### Searching for strings with double quotation marks (`"`)
 
 The character `"` has a special meaning: it is used to group words into phrases for exact matches.
 So, if you search for a string that includes a double quotation, the double quotation character has to be replaced with the hexadecimal character 22 in ASCII table `\x22`.
