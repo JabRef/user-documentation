@@ -50,7 +50,6 @@ The word *true* prevents the file name from being interpreted as an argument to 
 - [Version: `-v`](#version--v)
 - [Debug mode: `--debug`](#debug-mode---debug)
 - [Display output in the console: `--console`](#display-output-in-the-console---console)
-- [Xmp Pdf Metadata: `-xmp`](#xmp-pdf-metadata--xmp)
 
 
 ### Help: `-h`
@@ -103,6 +102,19 @@ A custom export filter can be used, and will be preferred if the export name mat
 If the GUI is not suppressed (using the `-n` option), any export operation will be performed before the JabRef window is opened, and the imported database will show up in the window.
 
 *Note:* The `-o` option can be specified only once, and for one file only.
+
+#### Xmp export option
+[XMP](https://en.wikipedia.org/wiki/Extensible_Metadata_Platform)  is an ISO standard for the creation, processing and interchange of standardized and custom metadata for digital documents and data sets.
+
+The first option is to export all entries, which are included in the `entries.bib` file to the specified `export.xmp` file. The second argument, separated by comma, is the type of exporter used by JabRef.
+```sh
+java -jar JabRef.jar -o path\export.xmp,xmp  path\entries.bib -n
+```
+
+The second option is to export every entry in the entries.bib in a single .xmp file. Therefore, the file name is replaced by the keyword `split` without a file ending! JabRef generates individual .xmp files at the `path` location. The file name is a combination of the identifier provided by JabRef and the cite key of the entry.
+```sh
+java -jar JabRef.jar -o path\split,xmp  path\entries.bib -n
+```
 
 
 ### Export matching entries: `-m [field]searchTerm,outputFile:file[,exportFormat]`
@@ -195,25 +207,3 @@ Show debug level messages.
 ### Display output in the console: `--console`
 
 Show info and error messages in the console. Only necessary if you use `JabRef.exe` instead of the `.jar` file.
-
-### Xmp Pdf Metadata: `-xmp`
-
-[XMP](https://en.wikipedia.org/wiki/Extensible_Metadata_Platform)  is an ISO standard for the creation, processing and interchange of standardized and custom metadata for digital documents and data sets.
-The parameter `-xmp` changes the mode to XMP without further parameters to start the functionality.
-    >java -jar JabRef-X.Y-dev-fat.jar -xmp
-Then, a read-evalute-print application is started and you have to insert a number to choose your option.
-Options:
- (0) Exit the -xmp mode and terminate JabRef
- (1) One filename: Reads xmp metadata from a pdf file (input filepath in cmd) and prints the metadata entries in bib format
- (2) Two filenames: Writes bib entries in a bib file to the metadata section of a pdf file (input both filepaths in cmd) 
-Example - Option 1:
-  INPUT: 
-    Insert your filename (.pdf): C:\documents\viterbi1967.pdf
-  OUTPUT: 
-    Bib entry
-Example - Option 2:
-  INPUT: 
-    Insert your filename (.bib): C:\documents\test.bib
-    Insert your filename (.pdf): C:\documents\empty.pdf
-  OUTPUT:
-    Metadata sucessfully written to Pdf.
