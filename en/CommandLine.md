@@ -103,6 +103,19 @@ If the GUI is not suppressed (using the `-n` option), any export operation will 
 
 *Note:* The `-o` option can be specified only once, and for one file only.
 
+#### Xmp export option
+[XMP](https://en.wikipedia.org/wiki/Extensible_Metadata_Platform)  is an ISO standard for the creation, processing and interchange of standardized and custom metadata for digital documents and data sets.
+
+The first option is to export all entries, which are included in the `entries.bib` file to the specified `export.xmp` file. The second argument, separated by comma, is the type of exporter used by JabRef.
+```sh
+java -jar JabRef.jar -o path\export.xmp,xmp  path\entries.bib -n
+```
+
+The second option is to export every entry in the entries.bib in a single .xmp file. Therefore, the file name is replaced by the keyword `split` without a file ending! JabRef generates individual .xmp files at the `path` location. The file name is a combination of the identifier provided by JabRef and the cite key of the entry.
+```sh
+java -jar JabRef.jar -o path\split,xmp  path\entries.bib -n
+```
+
 
 ### Export matching entries: `-m [field]searchTerm,outputFile:file[,exportFormat]`
 (or `--exportMatches [field]searchTerm,outputFile:file[,exportFormat]`)
