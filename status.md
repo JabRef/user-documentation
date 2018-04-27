@@ -2,18 +2,18 @@
 title: Translation Status
 ---
 # Help pages status
-2018-02-22 08:25 – `bdfe8ac`
+2018-04-27 08:18 – `8b01569`
 
 - Main language: `en`
 - Available languages: `de`, `fr`, `in`, `ja`
 
 | Language | translated | not translated | outdated |  % translated | % outdated |
 | -------- | ---------- | -------------- | -------- |  ------------ | ---------- |
-| en | 85 | 0 | 4 | 100 | 4 |
-| de | 32 | 53 | 4 | 37 | 12 |
-| fr | 41 | 44 | 10 | 48 | 24 |
-| in | 21 | 64 | 2 | 24 | 9 |
-| ja | 76 | 9 | 6 | 89 | 7 |
+| en | 86 | 0 | 4 | 100 | 4 |
+| de | 32 | 54 | 4 | 37 | 12 |
+| fr | 41 | 45 | 10 | 47 | 24 |
+| in | 21 | 65 | 2 | 24 | 9 |
+| ja | 76 | 10 | 6 | 88 | 7 |
 
 
 ## Outdated page(s):
@@ -105,6 +105,7 @@ title: Translation Status
 - [NewEntryFromPlainText.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/de/NewEntryFromPlainText.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/NewEntryFromPlainText.md))
 - [ProtectedTerms.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/de/ProtectedTerms.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/ProtectedTerms.md))
 - [ReplaceString.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/de/ReplaceString.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/ReplaceString.md))
+- [RFCtoBibTeX.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/de/RFCtoBibTeX.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/RFCtoBibTeX.md))
 - [SaveActions.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/de/SaveActions.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/SaveActions.md))
 - [SetClearRenameFields.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/de/SetClearRenameFields.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/SetClearRenameFields.md))
 - [SharedBibFile.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/de/SharedBibFile.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/SharedBibFile.md))
@@ -155,6 +156,7 @@ title: Translation Status
 - [NewEntryFromPlainText.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/fr/NewEntryFromPlainText.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/NewEntryFromPlainText.md))
 - [ProtectedTerms.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/fr/ProtectedTerms.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/ProtectedTerms.md))
 - [ReplaceString.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/fr/ReplaceString.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/ReplaceString.md))
+- [RFCtoBibTeX.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/fr/RFCtoBibTeX.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/RFCtoBibTeX.md))
 - [SaveActions.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/fr/SaveActions.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/SaveActions.md))
 - [SetClearRenameFields.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/fr/SetClearRenameFields.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/SetClearRenameFields.md))
 - [SharedBibFile.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/fr/SharedBibFile.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/SharedBibFile.md))
@@ -218,6 +220,7 @@ title: Translation Status
 - [ProtectedTerms.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/in/ProtectedTerms.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/ProtectedTerms.md))
 - [Remote.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/in/Remote.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/Remote.md))
 - [ReplaceString.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/in/ReplaceString.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/ReplaceString.md))
+- [RFCtoBibTeX.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/in/RFCtoBibTeX.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/RFCtoBibTeX.md))
 - [SaveActions.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/in/SaveActions.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/SaveActions.md))
 - [SetClearRenameFields.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/in/SetClearRenameFields.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/SetClearRenameFields.md))
 - [SharedBibFile.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/in/SharedBibFile.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/SharedBibFile.md))
@@ -243,4 +246,5 @@ title: Translation Status
 - [FAQwindows.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/FAQwindows.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/FAQwindows.md))
 - [License.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/License.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/License.md))
 - [NewEntryFromPlainText.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/NewEntryFromPlainText.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/NewEntryFromPlainText.md))
+- [RFCtoBibTeX.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/RFCtoBibTeX.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/RFCtoBibTeX.md))
 - [TranslatingGUI.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/TranslatingGUI.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/TranslatingGUI.md))

@@ -102,6 +102,7 @@ title: Contenu de l’aide
 
 ### ... en utilisant des identifiants de publication
 - [Creating entries from Medline](/fr/MedlinetoBibTeX)
+- [Creating entries from RFC](/fr/RFCtoBibTeX)
 - [Creating entries from SAO/NASA Astrophysics Data System](/fr/ADStoBibTeX)
 - [Creating entries using the title](/fr/TitleToBibTeX)
 - [Récupération d'entrées en utilisant DiVA](/fr/DiVAtoBibTeX)

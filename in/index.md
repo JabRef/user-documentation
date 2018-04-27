@@ -103,6 +103,7 @@ title: Daftar Isi Bantuan
 ### ... using publication identifiers
 - [Creating entries from DiVA](/in/DiVAtoBibTeX)
 - [Creating entries from Medline](/in/MedlinetoBibTeX)
+- [Creating entries from RFC](/in/RFCtoBibTeX)
 - [Creating entries from SAO/NASA Astrophysics Data System](/in/ADStoBibTeX)
 - [Creating entries using an ISBN number](/in/ISBNtoBibTeX)
 - [Creating entries using the Digital Object Identifier (DOI)](/in/DOItoBibTeX)

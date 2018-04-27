@@ -103,6 +103,7 @@ title: Hilfe - Inhalt
 ### ... über Veröffentlichungskennung
 - [Creating entries from DiVA](/de/DiVAtoBibTeX)
 - [Creating entries from Medline](/de/MedlinetoBibTeX)
+- [Creating entries from RFC](/de/RFCtoBibTeX)
 - [Creating entries from SAO/NASA Astrophysics Data System](/de/ADStoBibTeX)
 - [Creating entries using an ISBN number](/de/ISBNtoBibTeX)
 - [Creating entries using the Digital Object Identifier (DOI)](/de/DOItoBibTeX)
