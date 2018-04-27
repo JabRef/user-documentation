@@ -101,6 +101,7 @@ title: ヘルプ目次
 
 
 ### ... 刊行識別子を使用して
+- [Creating entries from RFC](/ja/RFCtoBibTeX)
 - [DiVAを使用して項目を作成するには](/ja/DiVAtoBibTeX)
 - [Digital Object Identifier (DOI)を使用して項目を作成するには](/ja/DOItoBibTeX)
 - [ISBN番号を使用して項目を取得するには](/ja/ISBNtoBibTeX)
