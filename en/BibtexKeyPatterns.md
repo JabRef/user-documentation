@@ -60,10 +60,13 @@ Several special field markers are offered, which extract only a specific part of
 
 #### Title-related key patterns
 
--   **\[`shorttitle`\]**: The first 3 words of the title
--   **\[`veryshorttitle`\]**: The first word of the title, discounting ‘the’, ‘a’, ‘an’.
+-   **\[`shorttitle`\]**: The first 3 words of the title, discounting any of the [function words](https://en.wikipedia.org/wiki/Function_word) below
+-   **\[`veryshorttitle`\]**: The first word of the title, discounting any of the [function words below](https://en.wikipedia.org/wiki/Function_word)
 -   **\[`camel`\]**: Capitalize and concatenate all the words of the title. For example, `An awesome paper on JabRef` will become `AnAwesomePaperOnJabref`
 -   **\[`title`\]**:  Capitalize all the significant words of the title, and concatenate them. For example, `An awesome paper on JabRef` will become `AnAwesomePaperonJabref`
+
+JabRef considers the following words to be function words: "a", "an", "the", "above", "about", "across", "against", "along", "among", "around", "at", "before", "behind", "below", "beneath", "beside", "between", "beyond", "by", "down", "during", "except", "for", "from", "in", "inside", "into", "like", "near", "of", "off", "on", "onto", "since", "to", "toward", "through", "under", "until", "up", "upon", "with", "within", "without", "and", "but", "for", "nor", "or", "so", "yet".
+
 
 #### Other key patterns
 
