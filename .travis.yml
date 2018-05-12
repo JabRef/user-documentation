@@ -1,14 +1,16 @@
-# we test at Ubuntu Trusty (Ubuntu 14.04 LTS)
-# see https://docs.travis-ci.com/user/trusty-ci-environment/
-sudo: required
-dist: trusty
-
 language: ruby
+
 rvm:
 - 2.4.1
+
+before_install:
+  - gem update --system
+  - gem --version
+
 # Assume bundler is being used, therefore
 # the `install` step will run `bundle install` by default.
-script: ./cibuild.sh
+script:
+  - ./cibuild.sh
 
 # branch whitelist, only for GitHub Pages
 branches:
