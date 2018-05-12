@@ -1,6 +1,7 @@
 ---
 title: Customizing the BibTeX key generator
 helpCategories: ["Setup"]
+since: 4.3
 ---
 
 # Customizing the BibTeX key generator
