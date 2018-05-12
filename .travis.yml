@@ -1,4 +1,9 @@
 language: ruby
+cache: bundler
+
+dist: trusty
+
+language: ruby
 
 rvm:
 - 2.4.1
