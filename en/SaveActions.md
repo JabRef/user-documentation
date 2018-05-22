@@ -29,6 +29,18 @@ $ find . -name "*.java" | xargs grep "Localization.lang" | sed "s/.*Localization
 
 ## Add enclosing braces
 Add braces encapsulating the complete field content.
+For instance
+
+    title = {Test with UPPERCASE word},
+    
+gets
+
+    title = {{Test with UPPERCASE word}},
+
+However, this procedure is not recommended.
+It is better to use the "Protect Terms" functionaly.
+See also https://tex.stackexchange.com/q/10772/9075.
+
 
 ## Clear
 Clears the field completely.
