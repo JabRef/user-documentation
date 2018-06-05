@@ -101,15 +101,15 @@ To change the pattern to `[authors]:[camel]`, execute the following steps:
 ![Options Preferences](./images/OptionsPreferences.png)
 
 1. Navigate to "General"
-![General preferences](./images/Preferences - General.png)
+![General preferences](./images/Preferences%20-%20General.png)
 
 1. Untick "Enforce legal characters in BibTeX keys". Note that this is only necessary if you wish to have colons be present in the generated key.
-![General preferences - unticked](./images/Preferences - General unticked.png)
+![General preferences - unticked](./images/Preferences%20-%20General%20unticked.png)
 
 1. Navigate to "BibTeX key generator"
-![BibTeX key generator preferences](./images/Preferences - BibTeX key generator.png)
+![BibTeX key generator preferences](./images/Preferences%20-%20BibTeX%20key%20generator.png)
 
 1. Change the default pattern to `[authors]:[camel]`.
-![BibTeX key generator preferences - authors camel](./images/Preferences - BibTeX key generator - authors camel.png)
+![BibTeX key generator preferences - authors camel](./images/Preferences%20-%20BibTeX%20key%20generator%20-%20authors%20camel.png)
 
 1. Click "OK"
