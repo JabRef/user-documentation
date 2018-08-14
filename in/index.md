@@ -105,6 +105,7 @@ title: Daftar Isi Bantuan
 - [Creating entries from Medline](/in/MedlinetoBibTeX)
 - [Creating entries from RFC](/in/RFCtoBibTeX)
 - [Creating entries from SAO/NASA Astrophysics Data System](/in/ADStoBibTeX)
+- [Creating entries using IACR eprint IDs](/in/IACRtoBibTex)
 - [Creating entries using an ISBN number](/in/ISBNtoBibTeX)
 - [Creating entries using the Digital Object Identifier (DOI)](/in/DOItoBibTeX)
 - [Creating entries using the title](/in/TitleToBibTeX)

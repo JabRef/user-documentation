@@ -104,6 +104,7 @@ title: Contenu de l’aide
 - [Creating entries from Medline](/fr/MedlinetoBibTeX)
 - [Creating entries from RFC](/fr/RFCtoBibTeX)
 - [Creating entries from SAO/NASA Astrophysics Data System](/fr/ADStoBibTeX)
+- [Creating entries using IACR eprint IDs](/fr/IACRtoBibTex)
 - [Creating entries using the title](/fr/TitleToBibTeX)
 - [Récupération d'entrées en utilisant DiVA](/fr/DiVAtoBibTeX)
 - [Récupération d'entrées en utilisant l'identifiant d'objet numérique (DOI)](/fr/DOItoBibTeX)
