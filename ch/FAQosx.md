@@ -1,5 +1,5 @@
 ---
-title：JabRef和Mac OS X.
+title: JabRef和Mac OS X.
 ---
 
 # JabRef和Mac OS X.

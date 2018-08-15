@@ -1,5 +1,5 @@
 ---
-title：BibTeX条目编辑器
+title: BibTeX条目编辑器
 outdated：true
 ---
 

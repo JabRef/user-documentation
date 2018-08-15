@@ -1,5 +1,5 @@
 ---
-title：JabRef和Windows
+title: JabRef和Windows
 ---
 
 # JabRef和Windows

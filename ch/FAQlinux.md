@@ -1,5 +1,5 @@
 ---
-title：JabRef和Linux
+title: JabRef和Linux
 ---
 
 # JabRef和Linux
