@@ -15,7 +15,7 @@ JabRef requires Java 8.
 Please follow the steps provided on our [installation page](Installation).
 JabRef does not yet run under Java 9. See <https://github.com/JabRef/jabref/issues/2594>
 
-You might see the error message `Error: Could not find or load main class net.sf.jabref.JabRefMain`.
+You might see the error message `Error: Could not find or load main class org.jabref.JabRefMain`.
 This means, you do not have [JavaFX](https://en.wikipedia.org/wiki/JavaFX) support activated in your Java runtime environment.
 This typically happens if you use [OpenJDK](http://openjdk.java.net/), where one needs to setup [OpenJFX](https://wiki.openjdk.java.net/display/OpenJFX/Main) seperately.
 
