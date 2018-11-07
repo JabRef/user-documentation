@@ -46,7 +46,7 @@ The other official support for JavaFX is [OpenJDK](http://openjdk.java.net/insta
 Unfortunately, the installation is not always straight forward.
 Therefore, we only recommend this if you know what you are doing.
 In case you want to use OpenJDK with OpenJFX in general you should follow this [instructions](https://wiki.openjdk.java.net/display/OpenJFX/Building+OpenJFX).
-For Ubuntu 16.04 LTS head to the section [Installation Commands](#ubuntu-openjdk-16-04).
+For Ubuntu 16.04 LTS and 18.04 LTS head to the section [Installation Commands](#installation-commands).
 
 
 ## Verify Java Installation
@@ -107,7 +107,7 @@ In the following, the installation is documented for Ubuntu, Debian, Fedora, Cen
 
 ### Ubuntu and Oracle Java
 
-This applies for both 32bit and 64bit and both Ubuntu 14.04 LTS and 16.04 LTS.
+This applies for both 32bit and 64bit and both Ubuntu 14.04 LTS, 16.04 LTS and 18.04 LTS.
 
 Install Oracle JDK with "personal packages archiv (ppa)" which includes an automated update function:
 
@@ -117,7 +117,7 @@ Install Oracle JDK with "personal packages archiv (ppa)" which includes an autom
 
 If you want to install JRE or install java without ppa you should follow these [instructions](https://help.ubuntu.com/community/Java).
 
-### Ubuntu 16.04 and OpenJDK
+### Ubuntu and OpenJDK
 
 Just install JavaFX by executing `sudo apt-get install openjfx`
 
