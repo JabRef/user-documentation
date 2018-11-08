@@ -154,7 +154,12 @@ Recent JabRef builds are available at <https://build.opensuse.org/package/show/h
 
 ### Fedora and OpenJDK
 
-Install JavaFX (actually OpenJFX) by executing `sudo dnf install openjfx java-1.8.0-openjdk-openjfx`
+1. Install OpenJDK: `sudo dnf install java-1.8.0-openjdk`
+2. Install JavaFX (actually OpenJFX): `sudo dnf install openjfx java-1.8.0-openjdk-openjfx`
+3. Download the JabRef-[version].jar from the [JabRef Website](http://www.jabref.org/).
+4. In the folder of the jar-file run `java -jar JabRef-[version].jar`
+
+*Warning*: To install JavaFX, it is not sufficient to just install the `openjfx` package.
 
 ### CentOS 6 or 7 and Oracle Java
 
