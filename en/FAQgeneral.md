@@ -115,7 +115,7 @@ If you simply enter “.” (a dot, without the quotes), the file directory will
 To place your files in a subdirectory called **subdir**, you can enter **“./subdir”** (without the quotes).
 Files will automatically be linked with relative paths if the files are placed in the default file directory or in a directory below it.
 
-#### Q: I want to export my bibliography entries into a simple text file so that I can import them into a spreadsheet easily. Is this possible?
+#### Q: I want to export my bibliography entries into a simple text file so that I can import them into a spreadsheet (LibreOffice, OpenOffice, Excel, etc.) easily. Is this possible?
 
 A: Yes. Use **File → Export**.
 Under “Filter:”, choose “OpenOffice/LibreOffice CSV (\*.csv)”.
