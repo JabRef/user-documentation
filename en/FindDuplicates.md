@@ -34,13 +34,6 @@ In the central column, a radio button allows you to select which side to keep fo
 the **left side**, the **right side**, or **none**.
 By default, the left entry is kept and any fields not present in the left entry are obtained from the right entry.
 
-## Merged entry: preview and source code
-
-![Screenshot of the preview and source code for the merged entry](./images/FindDuplicatesWindow-PreviewAndCode.png)
-
-Based upon your selection, the merged entry is shown, both as a preview (on the left) and as source code (on the right).
-
-If you right-click on the preview, you can **Print entry preview** or **Copy preview**.
 
 
 ## Selecting which entry to keep
