@@ -1,7 +1,7 @@
 ---
 title: Customizing the BibTeX key generator
 helpCategories: ["Setup"]
-since: 4.3
+since: 5.0
 ---
 
 # Customizing the BibTeX key generator
@@ -87,6 +87,9 @@ A field name (or one of the above pseudo-field names) may optionally be followed
     -  **\[camel:abbr\]** would from the title “An awesome paper on produce “AAPOJ”.
 -   **:lower**: Forces the text inserted by the field marker to be in lowercase. For example, **\[auth:lower\]** expands the last name of the first author in lowercase.
 -   **:upper**: Forces the text inserted by the field marker to be in uppercase. For example, **\[auth:upper\]** expands the last name of the first author in uppercase.
+-   **:capitalize**: Changes the first character of each word to uppercase, all other characters are converted to lowercase. For example, `an example title` will be converted to `An Example Title`
+-   **:titlecase**: Changes the first character of all normal words to uppercase, all function words (see above) are converted to lowercase. Example: `example title with An function Word` will be converted to `Example Title with an Function Word`
+-   **:sentencecase**: Changes the first character of the first word to uppercase, all remaining words are converted to lowercase. Example: `an Example Title` will be converted to `An example title`
 -   **:(x)**: The string between the parentheses will be inserted if the field marker preceding this modifier resolves to an empty value. The placeholder `x` may be any string. For instance, the marker **\[volume:(unknown)\]** will return the entry's volume if set, and the string **unknown** if the entry's `volume` field is not set.
 
 ## Regular expression replace
