@@ -160,8 +160,8 @@ Recent JabRef builds are available at <https://build.opensuse.org/package/show/h
 4. In the folder of the jar-file run `java -jar JabRef-[version].jar`
 
 *Warning*: To install JavaFX, it is not sufficient to just install the `openjfx` package.
-*Warning*: There is a bug in `openjfx` in Fedora 29 (https://bugzilla.redhat.com/show_bug.cgi?id=1644712).
-JabRef versions newer than 3.8.2 will not work with OpenJDK and Fedora 29 until this is fixed. See also [issue 4473](https://github.com/JabRef/jabref/issues/4473).
+*Warning*: There is a [bug](https://bugzilla.redhat.com/show_bug.cgi?id=1547378) in `openjfx` in Fedora 29.
+JabRef versions newer than 4.3.1 will not work with OpenJDK and Fedora 29 until this is fixed. See also [issue 4473](https://github.com/JabRef/jabref/issues/4473).
 
 ### CentOS 6 or 7 and Oracle Java
 
