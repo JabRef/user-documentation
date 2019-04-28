@@ -173,7 +173,7 @@ JabRef versions newer than 4.3.1 will not work with OpenJDK and Fedora 29 until 
 The necessary Java packages can be installed via "1-click installs":
 
 1. [OpenJDK](https://software.opensuse.org/package/java-1_8_0-openjdk)
-2. [java-openjfx](https://software.opensuse.org/package/java-openjfx?search_term=openjfx)
+2. [java-openjfx](https://software.opensuse.org/package/java-1_8_0-openjfx)
 
 ### Windows and Oracle Java
 
