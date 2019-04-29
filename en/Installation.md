@@ -31,6 +31,7 @@ Thus, it especially describes installing [JavaFX].
   * [Fedora and OpenJDK](#fedora-and-openjdk)
   * [CentOS 6 or 7 and Oracle Java](#centos-6-or-7-and-oracle-java)
   * [openSUSE](#opensuse)
+  * [Arch and Manjaro](#arch-and-manjaro)
   * [Windows and Oracle Java](#windows-and-oracle-java)
   * [Mac OS and Oracle Java](#mac-os-and-oracle-java)
 - [JabRef and OpenOffice/LibreOffice integration](#jabref-and-openofficelibreoffice-integration)
@@ -174,6 +175,16 @@ The necessary Java packages can be installed via "1-click installs":
 
 1. [OpenJDK](https://software.opensuse.org/package/java-1_8_0-openjdk)
 2. [java-openjfx](https://software.opensuse.org/package/java-1_8_0-openjfx)
+
+### Arch and Manjaro ###
+
+Two packages are available in the [Arch User Repository (AUR)](https://aur.archlinux.org/):
+
+1. [jabref](https://aur.archlinux.org/packages/jabref): The current release
+2. [jabref-latest](https://aur.archlinux.org/packages/jabref-latest/): The latest version from the [GitHub](https://github.com/JabRef/jabref) _master_ branch
+
+Both packages install precompiled jar files and add a command and a .desktop file to the OS.
+
 
 ### Windows and Oracle Java
 
