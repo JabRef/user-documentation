@@ -120,7 +120,14 @@ If you want to install JRE or install java without ppa you should follow these [
 
 ### Ubuntu and OpenJDK
 
-Just install JavaFX by executing `sudo apt-get install openjfx`
+Just install JavaFX by executing `sudo apt-get install openjfx`.
+
+For Ubuntu 18.04 and newer, `openjfx` [uses the Java version 11](https://github.com/JabRef/help.jabref.org/issues/204) which is currently not supported by JabRef. Hence, use an older version:
+1) If you accidently installed the new version, remove it with `sudo apt purge openjfx`.
+2) Install an older version with `sudo apt install openjfx=8u161-b12-1ubuntu2 libopenjfx-jni=8u161-b12-1ubuntu2 libopenjfx-java=8u161-b12-1ubuntu2`.
+3) To prevent the software updater from installing the newer not supported version, mark it to be not updated with `sudo apt-mark hold openjfx libopenjfx-jni libopenjfx-java`. 
+
+This also works for Linux Mint 19.1 Tessa which is based on Ubuntu 18.04.
 
 
 ### Debian Jessie 8 and Oracle Java
