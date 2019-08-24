@@ -31,6 +31,8 @@ By clicking the **Select style** button you can bring up a window that allows se
 
 To choose an external style file, you have two options. Either you can choose a style file directly, or you can set a style file directory. If you do the latter, you will see a list of styles from that directory (and subdirectories), and can choose one from that list.
 
+**CAUTION**: Please take care that your style file is saved using **UTF-8** for character encoding. If you use another character encoding (even other unicode encodings such as UTF-16 or UTF-32), JabRef will not be able to process your style file.
+
 Here is an example style file:
 
     NAME
