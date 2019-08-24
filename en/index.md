@@ -105,6 +105,7 @@ title: Help contents
 - [Creating entries from Medline](/en/MedlinetoBibTeX)
 - [Creating entries from RFC](/en/RFCtoBibTeX)
 - [Creating entries from SAO/NASA Astrophysics Data System](/en/ADStoBibTeX)
+- [Creating entries using IACR eprint IDs](/en/IACRtoBibTex)
 - [Creating entries using an ISBN number](/en/ISBNtoBibTeX)
 - [Creating entries using the Digital Object Identifier (DOI)](/en/DOItoBibTeX)
 - [Creating entries using the title](/en/TitleToBibTeX)
