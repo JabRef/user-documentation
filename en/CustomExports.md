@@ -75,14 +75,19 @@ However, if the `editor` field has not been set - it might not even make sense f
 
 The `\begin` and `\end` commands make sure the text in between is printed if and only if the field referred in the curly braces is defined for the entry being exported.
 
-A conditional block can also be dependent on more than one field, and the content is only printed when simple boolean conditions are satisfied. Two boolean operator are provided:
+A conditional block can also be dependent on more than one field, and the content is only printed when simple boolean conditions are satisfied. Three boolean operators are provided:
 
 -   AND operator : `&`, `&&`
 -   OR operator : `|`, `||`
+-   NOT operator : `!`
 
-To output text only if both `year` and `month` are set, use a block like the following:
-`\begin{year&&month}Month: \format[HTMLChars]{\month}\end{year&&month}`
+For example, to output text only if both `year` and `month` are set, use a block like the following:
+`\begin{year&&month}Month: \format[HTMLChars]{\month}\end{year&&month}`  
 which will print "Month: " plus the contents of the `month` field, but only if also the `year` field is defined.
+
+As an example for the usage of the NOT operator, consider the following:  
+`\begin{!year}\format[HTMLChars]{(no year)}\end{!year}`  
+Here, "no year" is printed as output text if no year field is defined. 
 
 **Note:** Use of the `\begin` and `\end` commands is a key to creating layout files that work well with a variety of entry types.
 
