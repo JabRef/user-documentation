@@ -61,7 +61,6 @@ title: ヘルプ目次
 - [検索](/ja/Search)
 - [重複の検出](/ja/FindDuplicates)
 - [項目の剪定](/ja/CleanupEntries)
-- [項目の標識付け](/ja/Marking)
 - [項目の統合](/ja/MergeEntries)
 
 
@@ -87,6 +86,7 @@ title: ヘルプ目次
 - [AUXファイルからの新規部分データベース](/ja/NewBasedOnAux)
 - [EndNote書出フィルタ](/ja/EndNoteFilters)
 - [JabRefにおけるXMPメタデータ サポート](/ja/XMP)
+- [LaTeX Citations Tab](/ja/latex-citations)
 - [MS Office文献XML形式](/ja/MsOfficeBibFieldMapping)
 - [Medline (txt)形式とMedline (XML)形式およびRIS形式の比較](/ja/MedlineRIS)
 - [New entry from plain text](/ja/NewEntryFromPlainText)

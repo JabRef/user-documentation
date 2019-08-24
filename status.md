@@ -2,19 +2,20 @@
 title: Translation Status
 ---
 # Help pages status
-2018-08-15 02:45 – `2f1c6f5`
+2019-08-24 17:53 – `48e9cbd`
 
 - Main language: `en`
-- Available languages: `ch`, `de`, `fr`, `in`, `ja`
+- Available languages: `ch`, `de`, `fr`, `in`, `ja`, `node_modules`
 
 | Language | translated | not translated | outdated |  % translated | % outdated |
 | -------- | ---------- | -------------- | -------- |  ------------ | ---------- |
 | en | 87 | 0 | 4 | 100 | 4 |
-| ch | 39 | 48 | 0 | 44 | 0 |
-| de | 32 | 55 | 4 | 36 | 12 |
-| fr | 41 | 46 | 10 | 47 | 24 |
-| in | 21 | 66 | 2 | 24 | 9 |
-| ja | 76 | 11 | 6 | 87 | 7 |
+| ch | 38 | 49 | 1 | 43 | 2 |
+| de | 31 | 56 | 4 | 35 | 12 |
+| fr | 40 | 47 | 10 | 45 | 25 |
+| in | 20 | 67 | 2 | 22 | 10 |
+| ja | 75 | 12 | 6 | 86 | 8 |
+| node_modules | 0 | 87 | 0 | 0 | 0 |
 
 
 ## Outdated page(s):
@@ -25,6 +26,10 @@ title: Translation Status
 - [EndNoteFilters.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/EndNoteFilters.md)
 - [EntryEditor.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/EntryEditor.md)
 - [SpecialFields.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/SpecialFields.md)
+
+### `ch`
+
+- [EntryEditor.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ch/EntryEditor.md)
 
 ### `de`
 
@@ -97,6 +102,7 @@ title: Translation Status
 - [ImportInspectionDialog.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ch/ImportInspectionDialog.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/ImportInspectionDialog.md))
 - [INSPIRE.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ch/INSPIRE.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/INSPIRE.md))
 - [ISBNtoBibTeX.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ch/ISBNtoBibTeX.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/ISBNtoBibTeX.md))
+- [latex-citations.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ch/latex-citations.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/latex-citations.md))
 - [NewBasedOnAux.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ch/NewBasedOnAux.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/NewBasedOnAux.md))
 - [NewEntryFromPlainText.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ch/NewEntryFromPlainText.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/NewEntryFromPlainText.md))
 - [OpenOfficeIntegration.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ch/OpenOfficeIntegration.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/OpenOfficeIntegration.md))
@@ -149,6 +155,7 @@ title: Translation Status
 - [IACRtoBibTex.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/de/IACRtoBibTex.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/IACRtoBibTex.md))
 - [Installation.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/de/Installation.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/Installation.md))
 - [ISBNtoBibTeX.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/de/ISBNtoBibTeX.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/ISBNtoBibTeX.md))
+- [latex-citations.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/de/latex-citations.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/latex-citations.md))
 - [License.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/de/License.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/License.md))
 - [MathSciNet.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/de/MathSciNet.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/MathSciNet.md))
 - [MedlinetoBibTeX.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/de/MedlinetoBibTeX.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/MedlinetoBibTeX.md))
@@ -200,6 +207,7 @@ title: Translation Status
 - [GVK.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/fr/GVK.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/GVK.md))
 - [IACRtoBibTex.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/fr/IACRtoBibTex.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/IACRtoBibTex.md))
 - [Installation.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/fr/Installation.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/Installation.md))
+- [latex-citations.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/fr/latex-citations.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/latex-citations.md))
 - [License.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/fr/License.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/License.md))
 - [MathSciNet.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/fr/MathSciNet.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/MathSciNet.md))
 - [MedlineRIS.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/fr/MedlineRIS.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/MedlineRIS.md))
@@ -263,6 +271,7 @@ title: Translation Status
 - [ImportInspectionDialog.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/in/ImportInspectionDialog.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/ImportInspectionDialog.md))
 - [Installation.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/in/Installation.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/Installation.md))
 - [ISBNtoBibTeX.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/in/ISBNtoBibTeX.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/ISBNtoBibTeX.md))
+- [latex-citations.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/in/latex-citations.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/latex-citations.md))
 - [License.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/in/License.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/License.md))
 - [MathSciNet.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/in/MathSciNet.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/MathSciNet.md))
 - [MedlineRIS.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/in/MedlineRIS.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/MedlineRIS.md))
@@ -300,6 +309,7 @@ title: Translation Status
 - [FAQsharing.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/FAQsharing.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/FAQsharing.md))
 - [FAQwindows.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/FAQwindows.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/FAQwindows.md))
 - [IACRtoBibTex.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/IACRtoBibTex.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/IACRtoBibTex.md))
+- [latex-citations.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/latex-citations.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/latex-citations.md))
 - [License.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/License.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/License.md))
 - [NewEntryFromPlainText.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/NewEntryFromPlainText.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/NewEntryFromPlainText.md))
 - [RFCtoBibTeX.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/ja/RFCtoBibTeX.md) ([en](https://github.com/JabRef/help.jabref.org/blob/gh-pages/en/RFCtoBibTeX.md))

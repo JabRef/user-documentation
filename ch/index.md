@@ -15,23 +15,23 @@ title: 帮助文档
 
 
 ## 常见问题
-- [Contributing](/ch/FAQcontributing)
-- [General](/ch/FAQgeneral)
-- [JabRef and Linux](/ch/FAQlinux)
-- [JabRef and Mac OS X](/ch/FAQosx)
-- [JabRef and Windows](/ch/FAQwindows)
-- [Other](/ch/FAQother)
-- [Sharing](/ch/FAQsharing)
+- [JabRef和Linux](/ch/FAQlinux)
+- [JabRef和Mac OS X.](/ch/FAQosx)
+- [JabRef和Windows](/ch/FAQwindows)
+- [其他](/ch/FAQother)
+- [分享](/ch/FAQsharing)
+- [常见问题](/ch/FAQgeneral)
+- [贡献](/ch/FAQcontributing)
 
 
 ## 通用
-- [BibTeX entry editor](/ch/EntryEditor)
-- [Command line use and options](/ch/CommandLine)
-- [Installation](/ch/Installation)
+- [BibTeX 条目编辑器](/ch/EntryEditor)
 - [JabRef](/ch/JabRef)
 - [JabRef 的主窗口](/ch/BaseFrame)
 - [Remote operation](/ch/Remote)
+- [命令行使用和选项](/ch/CommandLine)
 - [备份](/ch/Backup)
+- [安装](/ch/Installation)
 - [最佳实践](/ch/BestPractices)
 - [自动保存](/ch/Autosave)
 
@@ -62,7 +62,6 @@ title: 帮助文档
 - [Searching](/ch/Search)
 - [合并条目](/ch/MergeEntries)
 - [同步文件链接](/ch/SynchroFileLinks)
-- [标记条目](/ch/Marking)
 
 
 ## 设置
@@ -89,6 +88,7 @@ title: 帮助文档
 - [EndNote Export Filter](/ch/EndNoteFilters)
 - [Import inspection window](/ch/ImportInspectionDialog)
 - [JabRef中的XMP元数据支持](/ch/XMP)
+- [LaTeX Citations Tab](/ch/latex-citations)
 - [Medline (txt)、Medline (XML)和 RIS 格式的比较t](/ch/MedlineRIS)
 - [New entry from plain text](/ch/NewEntryFromPlainText)
 - [New subdatabase based on AUX file](/ch/NewBasedOnAux)
