@@ -1,6 +1,6 @@
 ---
-title: BibTeX条目编辑器
-outdated：true
+title: BibTeX 条目编辑器
+outdated: true
 ---
 
 # BibTeX条目编辑器
