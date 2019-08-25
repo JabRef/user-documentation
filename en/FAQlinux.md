@@ -5,30 +5,36 @@ helpCategories: ["FAQ"]
 
 # JabRef and Linux
 
-#### Is there any way to include JabRef in the start menu of Ubuntu?
+## Is there any way to include JabRef in the start menu of Ubuntu?
 
 Yes, there is. See <http://askubuntu.com/a/721387/196423> for details.
 
-#### JabRef does not start under Linux! What can I do?
+## JabRef does not start under Linux! What can I do?
 
-**JabRef requires Java 8.**
+### JabRef 5.x
+
+> JabRef 5.x requries Java 11
+
+### JabRef 4.x
+
+> JabRef requires Java 8
 
 Please follow the steps provided on our [installation page](Installation).
-JabRef does not yet run under Java 9 or new. See <https://github.com/JabRef/jabref/issues/2594>
+JabRef 4.x does not run under Java 9 or newer.
+See <https://github.com/JabRef/jabref/issues/2594>
 
 You might see the error message `Error: Could not find or load main class org.jabref.JabRefMain`.
 This means, you do not have [JavaFX](https://en.wikipedia.org/wiki/JavaFX) support activated in your Java runtime environment.
 This typically happens if you use [OpenJDK](http://openjdk.java.net/), where one needs to setup [OpenJFX](https://wiki.openjdk.java.net/display/OpenJFX/Main) seperately.
 
-#### I am on Debian/Ubuntu and clicking on the JabRef icon works, but I cannot start JabRef from the command line. What is wrong?
+## I am on Debian/Ubuntu and clicking on the JabRef icon works, but I cannot start JabRef from the command line. What is wrong?
 
 You have several Java Virtual Machines installed, and under the command line the wrong one is chosen.
 Have a look at the previous question that tells you how to change the virtual machine used.
 
 For Ubuntu you may also have a look at the [Ubuntu page on Java](https://help.ubuntu.com/community/Java).
 
-
-#### Does JabRef run under free Java (Classpath, Kaffee, GCJ, etc.)?
+## Does JabRef run under free Java (Classpath, Kaffee, GCJ, etc.)?
 
 As far as we know, JabRef is not yet running on these free JVMs, due of our dependencies.
 However, JabRef is reported to run nicely on the [IcedTea](http://fedoraproject.org/wiki/Features/IcedTea) runtime, which is based on the [OpenJDK](http://openjdk.java.net/) built with [GNU Classpath](http://www.gnu.org/software/classpath/) to fill in missing classes.
