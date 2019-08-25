@@ -19,7 +19,7 @@ Yes, there is. See <http://askubuntu.com/a/721387/196423> for details.
 
 > JabRef requires Java 8
 
-Please follow the steps provided on our [installation page](Installation).
+Please follow the steps provided on our [installation page](Installation.md).
 JabRef 4.x does not run under Java 9 or newer.
 See <https://github.com/JabRef/jabref/issues/2594>
 
