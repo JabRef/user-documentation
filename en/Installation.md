@@ -23,6 +23,7 @@ Thus, it especially describes installing [JavaFX].
 - [Installation Commands](#installation-commands)
     - [JabRef 5.x](#jabref-5x-1)
         - [Ubuntu](#ubuntu)
+        - [Gentoo](#gentoo)
     - [JabRef 4.x](#jabref-4x-1)
         - [Ubuntu and Oracle Java](#ubuntu-and-oracle-java)
         - [Ubuntu and OpenJDK](#ubuntu-and-openjdk)
@@ -118,6 +119,23 @@ In the following, the installation is documented for Ubuntu, Debian, Fedora, Cen
 2. Ensure that gtk3 is available: `sudo apt-get install gtkterm`
 
 Now, you should be able to execute `java -jar JabRef--master--latest.jar`
+
+#### Gentoo
+
+Gentoo provides AdoptOpenJDK 11 in its package `dev-java/openjdk-bin`; it is not available for 32-bit systems!  This guide assumes that you have a system with working GUI, it was not tested on a headless system.
+
+Be aware that this guide changes your default system JVM, which is currently not supported by Gentoo devs and may cause problems with other Java-related packages!
+
+1. Unmask the package if you do not have unmasked the `~amd64` as a system default: `echo ">=dev-java/openjdk-bin-11.0.4_p11 ~amd64" >> /etc/portage/package.accept_keywords`
+2. Unmask the `gentoo-vm` useflag in order to select Java 11 as a system VM (currently not supported by Gentoo devs): `echo "dev-java/openjdk-bin -gentoo-vm" >> /etc/portage/profile/package.use.mask`
+3. Add the `gentoo-vm` useflag before installing the package: `echo ">=dev-java/openjdk-bin-11.0.4_p11 gentoo-vm" >> /etc/portage/package/use`
+4. Install: `emerge -av dev-java/openjdk-bin:11`
+5. View the list of available JDKs: `java-config -L`
+6. Select AdoptOpenJDK 11: `java-config -S openjdk-bin-11`
+
+Now, you should be able to execute `java -jar JabRef--master--latest.jar`.
+
+If you do not want to change your system VM, skip step 6 and start JabRef by calling `/opt/openjdk-bin-11.x.y/bin/java -jar JabRef--master--latest.jar` with x and y being the version installed.
 
 ### JabRef 4.x
 
