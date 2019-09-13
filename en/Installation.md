@@ -22,8 +22,8 @@ Thus, it especially describes installing [JavaFX].
 - [Verify Java Installation](#verify-java-installation)
 - [Installation Commands](#installation-commands)
     - [JabRef 5.x](#jabref-5x-1)
-        - [Ubuntu](#ubuntu)
-        - [Gentoo](#gentoo)
+      - [Building From Source](#building-from-source)
+      - [Using Prebuilt Binaries](#using-prebuilt-binaries)
     - [JabRef 4.x](#jabref-4x-1)
         - [Ubuntu and Oracle Java](#ubuntu-and-oracle-java)
         - [Ubuntu and OpenJDK](#ubuntu-and-openjdk)
@@ -113,29 +113,50 @@ In the following, the installation is documented for Ubuntu, Debian, Fedora, Cen
 
 ### JabRef 5.x
 
-#### Ubuntu
+JabRef 5.x is shipped with a lightweight Java runtime environment that includes
+only the Java dependencies JabRef uses. There are two major ways of obtaining
+JabRef for your platform.
 
-1. Follow the steps at https://bell-sw.com/pages/liberica_install_guide-11.0.4/#apt-repository-deb-based-linux-distributions
-2. Ensure that gtk3 is available: `sudo apt-get install gtkterm`
+#### Building From Source
 
-Now, you should be able to execute `java -jar JabRef--master--latest.jar`
+This method is mainly for package maintainers and users who would like to build
+the latest snapshots of JabRef directly from the source.
 
-#### Gentoo
+To build JabRef from source, you first need to have a working Java Development
+Kit 11 (JDK 11) and Git installed on your system. After installing the two
+requirements, you open a terminal window (i.e., a command prompt) and type the
+following:
 
-Gentoo provides AdoptOpenJDK 11 in its package `dev-java/openjdk-bin`; it is not available for 32-bit systems!  This guide assumes that you have a system with working GUI, it was not tested on a headless system.
+```
+git clone https://github.com/JabRef/jabref
+cd jabref
+git submodule update --init
+./gradlew assemble
+./gradlew jlink
+```
 
-Be aware that this guide changes your default system JVM, which is currently not supported by Gentoo devs and may cause problems with other Java-related packages!
+In a nutshell, you clone the latest snapshot of JabRef into `jabref` directory,
+change directory to `jabref`, initialize and update all the submodules
+(dependencies) of JabRef, assemble them to be built via JDK 11, and finally
+build and link them together.
 
-1. Unmask the package if you do not have unmasked the `~amd64` as a system default: `echo ">=dev-java/openjdk-bin-11.0.4_p11 ~amd64" >> /etc/portage/package.accept_keywords`
-2. Unmask the `gentoo-vm` useflag in order to select Java 11 as a system VM (currently not supported by Gentoo devs): `echo "dev-java/openjdk-bin -gentoo-vm" >> /etc/portage/profile/package.use.mask`
-3. Add the `gentoo-vm` useflag before installing the package: `echo ">=dev-java/openjdk-bin-11.0.4_p11 gentoo-vm" >> /etc/portage/package/use`
-4. Install: `emerge -av dev-java/openjdk-bin:11`
-5. View the list of available JDKs: `java-config -L`
-6. Select AdoptOpenJDK 11: `java-config -S openjdk-bin-11`
+The output should be the `build/image` subdirectory that contains the JabRef
+binary with all of its Java dependencies. To start JabRef, you need to run
+`bin/JabRefMain` (in Linux and MacOS) or `bin/JabRefMain.bat` (in Windows) under
+`build/image` subdirectory.
 
-Now, you should be able to execute `java -jar JabRef--master--latest.jar`.
+#### Using Prebuilt Binaries
 
-If you do not want to change your system VM, skip step 6 and start JabRef by calling `/opt/openjdk-bin-11.x.y/bin/java -jar JabRef--master--latest.jar` with x and y being the version installed.
+This method is mainly for anyone who would like to download and run the latest
+snapshot of JabRef.
+
+To use the prebuilt binaries, simply visit http://builds.jabref.org/master/ and
+download the packaged binaries (e.g., `dmg` files for MacOS and `exe` files for
+Windows), run them and follow the instructions. We also provide generic archive
+files (e.g., `tar.gz` files for Linux and MacOS, and `zip` files for Windows)
+which can be downloaded and extracted. Inside the archive files you will find a
+`bin` subdirectory which contains the binary needed to run JabRef (i.e.,
+`JabRefMain` for Linux and MacOS, and `JabRefMain.bat` for Windows).
 
 ### JabRef 4.x
 
