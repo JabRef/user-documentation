@@ -112,9 +112,10 @@ In the following, the installation is documented for Ubuntu, Debian, Fedora, Cen
 ## Installation Commands
 
 ### JabRef 5.x
-JabRef 5.x is shipped with a lightweight Java runtime environment that
-includes only the Java dependencies JabRef uses. There are two major ways of
-obtaining JabRef for your platform.
+
+JabRef 5.x is shipped with a lightweight Java runtime environment that includes
+only the Java dependencies JabRef uses. There are two major ways of obtaining
+JabRef for your platform.
 
 #### Building From Source
 
@@ -139,8 +140,8 @@ change directory to `jabref`, initialize and update all the submodules
 (dependencies) of JabRef, assemble them to be built via JDK 11, and finally
 build and link them together.
 
-The output should be the `build/image` subdirectory that contains the JabRef binary
-with all of its Java dependencies. To start JabRef, you need to run
+The output should be the `build/image` subdirectory that contains the JabRef
+binary with all of its Java dependencies. To start JabRef, you need to run
 `bin/JabRefMain` (in Linux and MacOS) or `bin/JabRefMain.bat` (in Windows) under
 `build/image` subdirectory.
 
@@ -150,14 +151,12 @@ This method is mainly for anyone who would like to download and run the latest
 snapshot of JabRef.
 
 To use the prebuilt binaries, simply visit http://builds.jabref.org/master/ and
-download the packaged binaries (e.g., `dmg` files for MacOS, `deb` for
-Debian-based distributions, `rpm` for RedHat-based distributions and `exe` for
+download the packaged binaries (e.g., `dmg` files for MacOS and `exe` files for
 Windows), run them and follow the instructions. We also provide generic archive
 files (e.g., `tar.gz` files for Linux and MacOS, and `zip` files for Windows)
 which can be downloaded and extracted. Inside the archive files you will find a
 `bin` subdirectory which contains the binary needed to run JabRef (i.e.,
 `JabRefMain` for Linux and MacOS, and `JabRefMain.bat` for Windows).
-
 
 ### JabRef 4.x
 
