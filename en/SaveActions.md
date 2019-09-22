@@ -89,6 +89,9 @@ Removes all hyphenated line breaks in the field content.
 ## Remove line breaks
 Removes all line breaks in the field content.
 
+## Shorten DOI
+Shortens DOI to more human readable form.
+
 ## Unicode to LaTeX
 Converts Unicode characters to LaTeX encoding.
 
