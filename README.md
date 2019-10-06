@@ -1,4 +1,4 @@
-# JabRef Web-based Help [![Build Status](https://travis-ci.org/JabRef/help.jabref.org.svg?branch=master)](https://travis-ci.org/JabRef/help.jabref.org)
+# JabRef Web-based Help [![Build Status](https://travis-ci.org/JabRef/help.jabref.org.svg?branch=gh-pages)](https://travis-ci.org/JabRef/help.jabref.org)
 
 This repository serves the content of <https://help.jabref.org/>.
 
