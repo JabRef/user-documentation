@@ -84,7 +84,7 @@ Available import formats:
 
 Available export formats: MSBib, bibordf, bibtexml, din1505, docbook,
 endnote, harvard, html, iso690rtf, iso690txt, listrefs, misq, mods,
-mysql, ods, oocalc, oocsv, postgresql, ris, simplehtml, tablerefs,
+mariadb, ods, oocalc, oocsv, postgresql, ris, simplehtml, tablerefs,
 tablerefsabsbib
 
 Please report issues at https://github.com/JabRef/jabref/issues
