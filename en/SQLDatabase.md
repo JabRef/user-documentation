@@ -14,14 +14,14 @@ This feature is available since JabRef 3.6.
 To use this feature you have to connect to a remote database. 
 To do so you have to open **File** in the menu bar and then click the **Connect to shared database** item.
 The **Connect to shared database** dialog will open and you will have to fill in the shared's database connection settings.
-Under the field **Database type** you can choose between PostgreSQL (at least version 9.1), MySQL (at least 5.5, not recommended, because there is no live synchronization), and Oracle depending on your shared database.
+Under the field **Database type** you can choose between PostgreSQL (at least version 9.1), MariaDB (at least version 2.4.0), and Oracle depending on your shared database.
 Then, you have to fill out the remaining fields with the according information.
 If you like you can save your password by clicking the **Remember password?** checkbox.
 
 ### SSL configuration
 Since version 5.0 JabRef supports secure SSL connection to the database. For PostgreSQL make sure the server supports SSL and you have correctly setup the [certificates](https://www.postgresql.org/docs/current/static/ssl-tcp.html).
 Then [convert the client certificates](https://jdbc.postgresql.org/documentation/head/ssl-client.html) into a java readable format and import them into a (custom) keystore.
-For MySQL the procedure is similar. [Setting up MySQL with SSL](https://dev.mysql.com/doc/refman/8.0/en/using-encrypted-connections.html) and [converting the certificates](https://dev.mysql.com/doc/connector-j/8.0/en/connector-j-reference-using-ssl.html) for the java keystore. However, it has only been tested with PostgreSQL.
+This can also be done for MariaDB. [Setting up MariaDB with SSL](https://mariadb.com/kb/en/library/securing-connections-for-client-and-server/) and [converting the certificates](https://mariadb.com/kb/en/library/certificate-creation-with-openssl/) for the java keystore. However, it has only been tested with PostgreSQL.
 Once the certificates are imported into the keystore, specify the path to the keystore file in the connection dialog and the password for acessing the keystore.
 
 ![Screenshot of Connect to shared database dialog](./images/open-shared-database-dialog.png)
@@ -59,4 +59,4 @@ Otherwise you might override someone else's work.
 
 ## Try it out
 
-You can test the shared SQL database support by using <https://www.freemysqlhosting.net> for MySQL (not recommended) and <https://www.elephantsql.com/> for PostgreSQL (recommended).
+You can test the shared SQL database support by using <https://mariadb.com/kb/en/library/web-hosting-providers-offering-mariadb/> for MariaDB (not recommended) and <https://www.elephantsql.com/> for PostgreSQL (recommended).
