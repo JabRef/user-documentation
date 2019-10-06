@@ -26,6 +26,6 @@ By using the [gitignore.io](https://www.gitignore.io/) service, you can generate
 
 ## Offstage
 
-While opening a `.bib` file, _JabRef_ simoultaneously creates a `.sav` file which is used as a current buffer.
+While opening a `.bib` file, _JabRef_ simultaneously creates a `.sav` file which is used as a current buffer.
 If _JabRef_ gets closed normally the `.sav` file will be removed.
-Otherwise this file is going to be used for database restoration next time.
+Otherwise, this file is going to be used for database restoration next time.

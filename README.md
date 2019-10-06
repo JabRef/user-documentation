@@ -1,11 +1,11 @@
 # JabRef Web-based Help [![Build Status](https://travis-ci.org/JabRef/help.jabref.org.svg?branch=master)](https://travis-ci.org/JabRef/help.jabref.org)
 
-This repository is serves the content of <https://help.jabref.org/>.
+This repository serves the content of <https://help.jabref.org/>.
 
 Feel free to improve the page using the [issue tracker](https://github.com/JabRef/help.jabref.org/issues) or [pull requests](https://github.com/JabRef/help.jabref.org/pulls).  
 The help content is licensed under [CC-BY-4.0](LICENSE.md)
 
-See also our [guidelines and quick start guide on contributing](CONTRIBUTING.md).
+Also check our [guidelines and quick start contributing guide](CONTRIBUTING.md).
 
 ## Installation of Jekyll to check the page locally
 
@@ -61,7 +61,7 @@ For using Jekyll:
 4. Choose option 3
 5. Now, `bundle install` should succeed.
 
-In case there are Jekyll plugins required, do these steps [[source](http://blog.cloud-mes.com/2014/08/19/how-to-install-gem-curb-in-windows/), linked from <https://github.com/benbalter/jekyll-remote-theme/issues/17#issuecomment-350818119>]:
+In case Jekyll plugins are required, do these steps [[source](http://blog.cloud-mes.com/2014/08/19/how-to-install-gem-curb-in-windows/), linked from <https://github.com/benbalter/jekyll-remote-theme/issues/17#issuecomment-350818119>]:
 
 1. Download [curl-7.40.0-devel-mingw64.zip](https://curl.haxx.se/gknw.net/7.40.0/dist-w64/curl-7.40.0-devel-mingw64.zip)
 2. Extract `curl-7.40.0-devel-mingw64.zip` to `c:\temp\curl-7.40.0-devel-mingw64`

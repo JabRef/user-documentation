@@ -8,8 +8,8 @@ since: 3.7
 
 ## Purpose
 
-The autosave feature helps to to save an opened database without manual intervention.
-Furthermore it synchronizes your local files which are associated with appropriate [shared SQL databases](SQLDatabase).
+The autosave feature helps to save an opened database without manual intervention.
+Furthermore, it synchronizes your local files which are associated with appropriate [shared SQL databases](SQLDatabase).
 
 ## Activation
 
@@ -20,11 +20,11 @@ You can activate the autosave feature through **Options → Preferences**, and t
 
 ## Autosave for local databases
 
-If you are working on `.bib` files which are located on your file system, the feature will detect your changes automatically and save them without further intervention.
+If you are working on `.bib` files which are located on your file system, this feature will detect your changes automatically and save them without further intervention.
 
 ## Autosave for shared databases
 
-Generally you are able to save a shared database after connecting to it. This feature enables a full synchronization of your local bib file with the [shared SQL database](SQLDatabase) which could simoultaneously be used by other collaborators.
+Generally, you are able to save a shared database after connecting to it. This feature enables a full synchronization of your local bib file with the [shared SQL database](SQLDatabase) which could simultaneously be used by other collaborators.
 
 ## Remarks
 

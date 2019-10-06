@@ -16,4 +16,4 @@ To start a search, enter the words of your query, and press <kbd>Enter</kbd> or 
 Then, the results are displayed in the [import inspection window](ImportInspectionDialog).
 In case an error occurs, it is shown in a popup.
 
-*Apart from fetching entries by using a full search it is also possible to directly create a BibTeX entry using the* ***BibTeX → New Entry*** *dialog. More details can be found [here](ADStoBibTeX).*
+*Apart from fetching entries by using a full search, it is also possible to directly create a BibTeX entry using the* ***BibTeX → New Entry*** *dialog. More details can be found [here](ADStoBibTeX).*
