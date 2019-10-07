@@ -38,7 +38,7 @@ gets
     title = {{Test with UPPERCASE word}},
 
 However, this procedure is not recommended.
-It is better to use the "Protect Terms" functionally.
+It is better to use the "Protect Terms" functionality.
 See also https://tex.stackexchange.com/q/10772/9075.
 
 
