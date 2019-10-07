@@ -42,13 +42,13 @@ On Windows, if that does not help, execute `regedit` and delete the folder `HKEY
 A: Yes.
  - Go to **Options → Preferences → General**.
    - At "Default Encoding" select *UTF8*.
-   - At "Lanaguge" select required alternative UI language if required.
+   - At "Language" select required alternative UI language if required.
  - Go to **Options → Preferences → Appearance**.
    - Click "Set table font"
      - Set "Font family" as *dialog*.
 
 ### Note
-The *dialog* font may fail to show characters correctly if the language-specific Input Method Editor (IME) is not installed.  In this case a unicode font must be selected that contains the character ranges for the required lanaguge.  For example *simsun* for Chinese, *dotum* for Korean etc.  See <https://en.wikipedia.org/wiki/List_of_typefaces_included_with_Microsoft_Windows> for further language/font pairs for Windows.
+The *dialog* font may fail to show characters correctly if the language-specific Input Method Editor (IME) is not installed.  In this case a unicode font must be selected that contains the character ranges for the required language.  For example *simsun* for Chinese, *dotum* for Korean etc.  See <https://en.wikipedia.org/wiki/List_of_typefaces_included_with_Microsoft_Windows> for further language/font pairs for Windows.
 
 Further language-specific instructions are available at:
   - Traditional Chinese
@@ -79,7 +79,7 @@ Enter the DOI in the field and press **Fetch**.
 A search starts and the result is displayed in a new pop up window.
 One entry should appear.
 Just push “OK” to insert the entry into the database.
-For further informatio, please, consult the dedicated help file about the [DOI-to-BibTeX fetcher](DOItoBibTeX).
+For further information, please, consult the dedicated help file about the [DOI-to-BibTeX fetcher](DOItoBibTeX).
 
 #### Q: I have an ISBN. Is it possible to create an entry directly out of the ISBN?
 
@@ -88,7 +88,7 @@ A Web search box appears on the left side of JabRef.
 The name of a web search is selected (e.g. “ACM Portal”).
 Click on it and change it to “ISBN to BibTeX”.
 If a ISBN is not found, head to the [online service](http://manas.tungare.name/software/isbn-to-BibTeX/) by Manas Tungare.
-For further informatio, please, consult the dedicated help file about the [ISBN-to-BibTeX fetcher](ISBNtoBibTeX).
+For further information, please, consult the dedicated help file about the [ISBN-to-BibTeX fetcher](ISBNtoBibTeX).
 
 #### Q: I miss a field *translator*, *lastfollowedon*, ... How can I add such fields?
 

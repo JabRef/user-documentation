@@ -14,12 +14,12 @@ Each action is defined by:
 - an entry field (upon which the action will be applied).
 - the type of action to be carried out (such as *HTML to LaTeX*, which converts HTML code to LaTeX code, as described in the window).
 
-Dependend on the database mode, "Recommended for BibTeX" or "Recommended for BibLaTeX".
+Dependent on the database mode, "Recommended for BibTeX" or "Recommended for BibLaTeX".
 When pressing this button, the recommended cleanups for the respective mode is called.
 
 <!--
 
-The list of formatters and explanations can be quicly generated with following command
+The list of formatters and explanations can be quickly generated with following command
 
 /c/git-repositories/jabref/jabref/src/main/java/org/jabref/logic/formatter (master)
 $ find . -name "*.java" | xargs grep "Localization.lang" | sed "s/.*Localization.lang(\"\(.*\)\");/## \1/"
@@ -32,13 +32,13 @@ Add braces encapsulating the complete field content.
 For instance
 
     title = {Test with UPPERCASE word},
-    
+
 gets
 
     title = {{Test with UPPERCASE word}},
 
 However, this procedure is not recommended.
-It is better to use the "Protect Terms" functionaly.
+It is better to use the "Protect Terms" functionality.
 See also https://tex.stackexchange.com/q/10772/9075.
 
 

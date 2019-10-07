@@ -23,7 +23,7 @@ To use `cites` and `related`, follow these steps:
 3. Close the entry editor
 4. Open the entry editor
 5. Navigate to "Other fields"
-6. There, you now see "related" with the possiblities to (i) navigate to the entry, (ii) add new related entries, (iii) remove related entries.
+6. There, you now see "related" with the possibilities to (i) navigate to the entry, (ii) add new related entries, (iii) remove related entries.
 
 ## Notes
 

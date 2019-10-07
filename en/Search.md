@@ -100,7 +100,7 @@ JabRef defines the following pseudo fields:
 
 ## Regular expressions
 
-Regular expressions (regex for short) define a language for specifying the text to be matched, for example when searching. 
+Regular expressions (regex for short) define a language for specifying the text to be matched, for example when searching.
 JabRef uses regular expressions as defined in Java. For extensive information, please, look at the [documentation](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html)
 and at the [tutorial](https://docs.oracle.com/javase/tutorial/essential/regex/).
 
@@ -164,7 +164,7 @@ also matches *modeling* and *modelling*.
 
 If a special character (i.e. `(` `)` `[` `]` `{` `}` `\` `^` `-` `=` `$` `!` `|` `?` `*` `+` `.` ) is included in your search string, it has to be escaped with a backslash, such as `\}` for `}`.
 
-It means that to search for a string including a backslash, two consecutive backslaskes (`\\`) have to be used:
+It means that to search for a string including a backslash, two consecutive backslashes (`\\`) have to be used:
 `abstract = xori{\\c{c}}o` matches *xoriço*.
 
 ### Searching for strings with double quotation marks (`"`)

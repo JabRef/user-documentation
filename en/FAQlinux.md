@@ -13,7 +13,7 @@ Yes, there is. See <http://askubuntu.com/a/721387/196423> for details.
 
 ### JabRef 5.x
 
-> JabRef 5.x requries Java 11
+> JabRef 5.x requires Java 11
 
 ### JabRef 4.x
 
@@ -25,7 +25,7 @@ See <https://github.com/JabRef/jabref/issues/2594>
 
 You might see the error message `Error: Could not find or load main class org.jabref.JabRefMain`.
 This means, you do not have [JavaFX](https://en.wikipedia.org/wiki/JavaFX) support activated in your Java runtime environment.
-This typically happens if you use [OpenJDK](http://openjdk.java.net/), where one needs to setup [OpenJFX](https://wiki.openjdk.java.net/display/OpenJFX/Main) seperately.
+This typically happens if you use [OpenJDK](http://openjdk.java.net/), where one needs to setup [OpenJFX](https://wiki.openjdk.java.net/display/OpenJFX/Main) separately.
 
 ## I am on Debian/Ubuntu and clicking on the JabRef icon works, but I cannot start JabRef from the command line. What is wrong?
 

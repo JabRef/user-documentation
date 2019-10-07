@@ -11,7 +11,7 @@ This feature is available since JabRef 3.6.
 
 ## Usage
 
-To use this feature you have to connect to a remote database. 
+To use this feature you have to connect to a remote database.
 To do so you have to open **File** in the menu bar and then click the **Connect to shared database** item.
 The **Connect to shared database** dialog will open and you will have to fill in the shared's database connection settings.
 Under the field **Database type** you can choose between PostgreSQL (at least version 9.1), MySQL (at least 5.5, not recommended, because there is no live synchronization), and Oracle depending on your shared database.
@@ -22,7 +22,7 @@ If you like you can save your password by clicking the **Remember password?** ch
 Since version 5.0 JabRef supports secure SSL connection to the database. For PostgreSQL make sure the server supports SSL and you have correctly setup the [certificates](https://www.postgresql.org/docs/current/static/ssl-tcp.html).
 Then [convert the client certificates](https://jdbc.postgresql.org/documentation/head/ssl-client.html) into a java readable format and import them into a (custom) keystore.
 For MySQL the procedure is similar. [Setting up MySQL with SSL](https://dev.mysql.com/doc/refman/8.0/en/using-encrypted-connections.html) and [converting the certificates](https://dev.mysql.com/doc/connector-j/8.0/en/connector-j-reference-using-ssl.html) for the java keystore. However, it has only been tested with PostgreSQL.
-Once the certificates are imported into the keystore, specify the path to the keystore file in the connection dialog and the password for acessing the keystore.
+Once the certificates are imported into the keystore, specify the path to the keystore file in the connection dialog and the password for accessing the keystore.
 
 ![Screenshot of Connect to shared database dialog](./images/open-shared-database-dialog.png)
 
@@ -38,7 +38,7 @@ If this fails, the **Update refused** dialog will show up. You will then have to
 The dialog helps you by pointing out the differences, you then will have to choose if you want to keep your local version or update to the shared version.
 Confirm your merge by clicking on **Merge entries**.
 
-![Screenshot of Update refused dialog](./images/update-refused-merge-dialog.png) 
+![Screenshot of Update refused dialog](./images/update-refused-merge-dialog.png)
 
 The **Update refused** dialog can also take a different form, if the BibEntry you currently work on has been deleted on the shared side.
 You can choose to keep the BibEntry in the database by clicking **Keep** or update to the shared side and click **Close**.
@@ -55,7 +55,7 @@ Since you are no longer working online, but instead on a local database, you wil
 However before you import it into the shared database, make sure to check if changes happened during your offline time.
 Otherwise you might override someone else's work.
 
-![Screenshot of Connection lost dialog](./images/connection-lost-dialog.png) 
+![Screenshot of Connection lost dialog](./images/connection-lost-dialog.png)
 
 ## Try it out
 

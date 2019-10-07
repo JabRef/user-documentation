@@ -81,7 +81,7 @@ If you have a file within or below one of your file directories with an extensio
 
 The rules for which file names can be autolinked to a BibTeX key can be set up in **Preferences → File → External file links → Use regular expression search**.
 
-![Preferences for extenral file links](images/Preferences-File-ExternalFileLinks.png)
+![Preferences for external file links](images/Preferences-File-ExternalFileLinks.png)
 
 If you want to download a file and link to it from a BibTeX entry, you can do this by clicking the **Download** button in the entry editor.
 
