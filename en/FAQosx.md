@@ -37,7 +37,7 @@ A: The problem occurs because you do not have Java 8 installed, and the automati
 
 #### Q: Jabref slow/hangs on MacOS Sierra
 
-A: This is a problem some users experience in JabRef 4.0 or later on MacOS Sierra. It seems this is a bug in the networking part of Java on MacOS. You can try to add localhost explicitely to `/etc/hosts` as described [here](https://dzone.com/articles/macos-sierra-problems-with-javanetinetaddress-getl).
+A: This is a problem some users experience in JabRef 4.0 or later on MacOS Sierra. It seems this is a bug in the networking part of Java on MacOS. You can try to add localhost explicitly to `/etc/hosts` as described [here](https://dzone.com/articles/macos-sierra-problems-with-javanetinetaddress-getl).
 
 #### Q: Some characters are not displayed in the main table (math characters or some upper-cased letter).
 

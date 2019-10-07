@@ -21,7 +21,7 @@ The *date format* can also be customized (see below).
 The timestamp field can be edited in the **General fields** tab of the [entry editor](EntryEditor).
 If you do not see these fields, enable them at [General Fields](GeneralFields) or reset your preferences.
 
-You can manually alter the value by typing in the date and time of your choice. Also, by clicking on the calendar icon located at the right end of the field, you can select the date you want in a calendar. Additionaly, by clicking on *Today*, the current date is added. By clicking on *None*, the field is emptied. A double-click on the field sets it to today's date.
+You can manually alter the value by typing in the date and time of your choice. Also, by clicking on the calendar icon located at the right end of the field, you can select the date you want in a calendar. Additionally, by clicking on *Today*, the current date is added. By clicking on *None*, the field is emptied. A double-click on the field sets it to today's date.
 
 ![Screenshot of the calendar](./images/TimeStamp-Calendar.png)
 
