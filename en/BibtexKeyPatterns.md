@@ -79,12 +79,16 @@ JabRef considers the following words to be [function words](https://en.wikipedia
 
 ## Modifiers
 
-A field name (or one of the above pseudo-field names) may optionally be followed by one or more modifiers. Modifiers are applied in the order they are specified.
+A field name (or one of the above pseudo-field names) may optionally be followed by one or more modifiers.  
 
--   **:abbr**: Abbreviates the text produced by the field name or spcial field marker. Only the first character and subsequent characters following white space will be included. For examples:
+The modifiers can be divided into the categories _converters_ (such as for converting from HTML to LaTeX), _case changers_ (such as for conversion to lower case), and _others_. [Click here](https://github.com/JabRef/jabref/blob/7895ae07443612c63fee950ddee88650fecb4d91/src/main/java/org/jabref/logic/formatter/Formatters.java#L35-L64) for a comprehensive list of available modifiers.
+
+Generally, modifiers are applied in the order they are specified. In the following, we present a list of the most common modifiers alongside a short explanation:
+
+-   **:abbr**: Abbreviates the text produced by the field name or special field marker. Only the first character and subsequent characters following white space will be included. For example:
     -  **\[journal:abbr\]** would from the journal name “Journal of Fish Biology” produce “JoFB”.
     -  **\[title:abbr\]** would from the title “An awesome paper on JabRef” produce “AAPoJ”.
-    -  **\[camel:abbr\]** would from the title “An awesome paper on produce “AAPOJ”.
+    -  **\[camel:abbr\]** would from the title “An awesome paper on JabRef” produce “AAPOJ”.
 -   **:lower**: Forces the text inserted by the field marker to be in lowercase. For example, **\[auth:lower\]** expands the last name of the first author in lowercase.
 -   **:upper**: Forces the text inserted by the field marker to be in uppercase. For example, **\[auth:upper\]** expands the last name of the first author in uppercase.
 -   **:capitalize**: Changes the first character of each word to uppercase, all other characters are converted to lowercase. For example, `an example title` will be converted to `An Example Title`
