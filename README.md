@@ -1,4 +1,6 @@
-# JabRef Web-based Help [![Build Status](https://travis-ci.org/JabRef/help.jabref.org.svg?branch=gh-pages)](https://travis-ci.org/JabRef/help.jabref.org)
+# JabRef Web-based Help 
+[![Build Status](https://travis-ci.org/JabRef/help.jabref.org.svg?branch=gh-pages)](https://travis-ci.org/JabRef/help.jabref.org)
+[![GitHub license](https://img.shields.io/github/license/JabRef/help.jabref.org)](https://github.com/JabRef/help.jabref.org/blob/gh-pages/LICENSE.md)
 
 This repository serves the content of <https://help.jabref.org/>.
 
