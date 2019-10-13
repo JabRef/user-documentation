@@ -3,3 +3,6 @@ root: ./
 structure:
   readme: ./en/README.md
   summary: ./en/SUMMARY.md
+
+redirects:
+  fr/Remote: ./fr/Remote.md
