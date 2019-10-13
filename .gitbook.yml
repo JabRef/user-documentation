@@ -6,3 +6,4 @@ structure:
 
 redirects:
   fr/Remote: ./fr/Remote.md
+  en/test: ./en/README.md
