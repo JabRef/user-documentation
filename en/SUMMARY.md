@@ -4,7 +4,7 @@
 
 ## FAQ
 
-* [Contributing](../faq/contributing.md)
+* [Contributing](./FAQcontributing.md)
 * [General](../faq/general.md)
 * [JabRef and Linux](../faq/jabref-and-linux.md)
 * [JabRef and Mac OS X](../faq/jabref-and-mac-os-x.md)
