@@ -1,2 +1,0 @@
-# JabRef and Linux
-

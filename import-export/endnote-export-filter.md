@@ -1,2 +1,0 @@
-# EndNote Export Filter
-

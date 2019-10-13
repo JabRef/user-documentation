@@ -1,2 +1,0 @@
-# Creating entries from DiVA
-

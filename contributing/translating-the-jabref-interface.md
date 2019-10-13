@@ -1,2 +1,0 @@
-# Translating the JabRef Interface
-

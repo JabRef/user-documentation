@@ -1,2 +1,0 @@
-# File links in JabRef
-

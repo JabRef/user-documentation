@@ -1,2 +1,0 @@
-# Manage external file types
-

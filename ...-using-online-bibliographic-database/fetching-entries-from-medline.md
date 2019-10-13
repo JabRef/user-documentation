@@ -1,2 +1,0 @@
-# Fetching entries from MEDLINE
-

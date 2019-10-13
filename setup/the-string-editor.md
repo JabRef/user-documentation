@@ -1,2 +1,0 @@
-# The string editor
-
