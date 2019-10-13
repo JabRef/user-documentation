@@ -2,7 +2,7 @@
 
 ## FAQ
 * [Contributing](./FAQcontributing.md)
-* [General](./en/FAQgeneral.md)
+* [General](./FAQgeneral.md)
 * [JabRef and Linux](./FAQlinux.md)
 * [JabRef and Mac OS X](./FAQosx.md)
 * [JabRef and Windows](./FAQwindows.md)
