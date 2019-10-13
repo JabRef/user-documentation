@@ -1,0 +1,2 @@
+# Database properties window
+

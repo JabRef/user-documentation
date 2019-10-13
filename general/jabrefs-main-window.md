@@ -1,0 +1,2 @@
+# JabRef's main window
+

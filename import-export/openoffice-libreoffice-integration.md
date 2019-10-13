@@ -1,0 +1,2 @@
+# OpenOffice/LibreOffice integration
+
