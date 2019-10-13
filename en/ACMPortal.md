@@ -1,8 +1,3 @@
----
-title: Fetching entries from ACM Portal
-helpCategories: ["Fetching entries from the web", "... using online bibliographic database"]
----
-
 # Fetching entries from ACM Portal
 
 The [ACM Portal](https://dl.acm.org) includes two databases  ([Wikipedia](https://en.wikipedia.org/wiki/Association_for_Computing_Machinery#Portal_and_Digital_Library)):
