@@ -5,11 +5,11 @@ This repository serves the content of <https://help.jabref.org/>.
 Feel free to improve the page using the [issue tracker](https://github.com/JabRef/help.jabref.org/issues) or [pull requests](https://github.com/JabRef/help.jabref.org/pulls).  
 The help content is licensed under [CC-BY-4.0](LICENSE.md)
 
-Also check our [guidelines and quick start contributing guide](CONTRIBUTING.md).
+Also, check our [guidelines and quick start contributing guide](CONTRIBUTING.md).
 
 ## Installation of Jekyll to check the page locally
 
-Execute following steps:
+Execute the following steps:
 
 1. `gem install bundler`
 2. `bundle install`
@@ -68,7 +68,7 @@ In case Jekyll plugins are required, do these steps [[source](http://blog.cloud-
 3. Run `gem install curb --platform=ruby -- --with-curl-lib=C:/temp/curl-7.40.0-devel-mingw64/bin --with-curl-include=C:/temp/curl-7.40.0-devel-mingw64/include`
 4. Alternative to step 4: Copy `libcurl.dll` to `c:\tools\ruby24\bin` [[source](https://stackoverflow.com/a/47754520/873282)]
 
-Note: On windows, this works with [RubyInstaller](http://rubyinstaller.org/downloads), version 2.4.
+Note: On Windows, this works with [RubyInstaller](http://rubyinstaller.org/downloads), version 2.4.
 This installer is used when using chocolatey.
 The separate [Development Kit](https://github.com/oneclick/rubyinstaller/wiki/Development-Kit) installer is not required anymore.
 [JRuby](http://jruby.org/) doesn't work as the [C extensions were dropped](http://stackoverflow.com/a/32135381/873282).
