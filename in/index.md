@@ -6,29 +6,29 @@ title: Daftar Isi Bantuan
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <strong>You can't find a solution to your problem? You still have questions?</strong>
+    <strong>Kamu tidak menemukan solusi ketika ada masalah ? atau kamu masih mempunyai pertanyaan ?</strong>
   </div>
   <div class="panel-body">
-    <a class="btn btn-default" role="button" href="http://discourse.jabref.org">Use the online forum to get more support!</a>
+    <a class="btn btn-default" role="button" href="http://discourse.jabref.org">Gunakan forum online untuk mendapatkan beberapa bantuan!</a>
   </div>
 </div>
 
 
 ## FAQ
-- [Contributing](/in/FAQcontributing)
-- [General](/in/FAQgeneral)
+- [Kontribusi](/in/FAQcontributing)
+- [Umum](/in/FAQgeneral)
 - [JabRef and Linux](/in/FAQlinux)
 - [JabRef and Mac OS X](/in/FAQosx)
 - [JabRef and Windows](/in/FAQwindows)
-- [Other](/in/FAQother)
-- [Sharing](/in/FAQsharing)
+- [Lainnya](/in/FAQother)
+- [Berbagi](/in/FAQsharing)
 
 
 ## Umum
 - [Backup](/in/Backup)
 - [Best Practices](/in/BestPractices)
 - [Command line use and options](/in/CommandLine)
-- [Installation](/in/Installation)
+- [Instalisasi](/in/Installation)
 - [JabRef](/in/JabRef)
 - [Jendela utama JabRef](/in/BaseFrame)
 - [Menyimpan otomatis](/in/Autosave)
@@ -40,7 +40,7 @@ title: Daftar Isi Bantuan
 - [Bidang 'pemilik'](/in/Owner)
 - [Cap waktu entri](/in/TimeStamp)
 - [File links in JabRef](/in/FileLinks)
-- [Links to other entries](/in/EntryLinks)
+- [Links menuju Entry lain](/in/EntryLinks)
 - [Pengisian kata dalam bidang](/in/ContentSelector)
 - [Set/clear/rename fields](/in/SetClearRenameFields)
 - [Singkatan nama jurnal](/in/JournalAbbreviations)
@@ -51,16 +51,16 @@ title: Daftar Isi Bantuan
 
 
 ## Mencari dan mengurutkan entri
-- [Add unlinked PDFs including BibTeX data into the database](/in/FindUnlinkedFiles)
-- [Check integrity](/in/CheckIntegrity)
-- [Cleanup entries](/in/CleanupEntries)
-- [Find duplicates](/in/FindDuplicates)
-- [Get BibTeX data from DOI](/in/GetBibTeXDataFromDOI)
+- [Menambahkan unlinked PDFs termasuk BibTeX data ke database](/in/FindUnlinkedFiles)
+- [Cek integritas](/in/CheckIntegrity)
+- [Membersihkan entries](/in/CleanupEntries)
+- [Mencari duplicates](/in/FindDuplicates)
+- [Mengambil BibTeX data dari DOI](/in/GetBibTeXDataFromDOI)
 - [Groups](/in/Groups)
-- [Merge entries](/in/MergeEntries)
+- [Menggabungkan entries](/in/MergeEntries)
 - [Pencarian](/in/Search)
 - [Replace string](/in/ReplaceString)
-- [Save actions](/in/SaveActions)
+- [Menyimpan Aksi](/in/SaveActions)
 - [Synchronize file links](/in/SynchroFileLinks)
 
 
@@ -97,21 +97,21 @@ title: Daftar Isi Bantuan
 - [XMP metadata support in JabRef](/in/XMP)
 
 
-## Fetching entries from the web
+## Mengambil Entires dari web
 
 
-### ... using publication identifiers
-- [Creating entries from DiVA](/in/DiVAtoBibTeX)
-- [Creating entries from Medline](/in/MedlinetoBibTeX)
-- [Creating entries from RFC](/in/RFCtoBibTeX)
-- [Creating entries from SAO/NASA Astrophysics Data System](/in/ADStoBibTeX)
-- [Creating entries using IACR eprint IDs](/in/IACRtoBibTex)
-- [Creating entries using an ISBN number](/in/ISBNtoBibTeX)
-- [Creating entries using the Digital Object Identifier (DOI)](/in/DOItoBibTeX)
-- [Creating entries using the title](/in/TitleToBibTeX)
+### ... Menggunakan publikasi pengidentifikasi
+- [Membuat entries dari DiVA](/in/DiVAtoBibTeX)
+- [Membuat entries dari Medline](/in/MedlinetoBibTeX)
+- [Membuat entries dari RFC](/in/RFCtoBibTeX)
+- [Membuat entries dari SAO/NASA Astrophysics Data System](/in/ADStoBibTeX)
+- [Membuat entries menggunakan IACR eprint IDs](/in/IACRtoBibTex)
+- [Membuat entries menggubakan ISBN number](/in/ISBNtoBibTeX)
+- [Membuat entries menggunakan Digital Object Identifier (DOI)](/in/DOItoBibTeX)
+- [Membuat entries menggunakan title](/in/TitleToBibTeX)
 
 
-### ... using online bibliographic database
+### ... Menggunakan online bibliographic database
 - [Fetching entries from DBLP](/in/DBLP)
 - [Fetching entries from DOAJ](/in/DOAJ)
 - [Fetching entries from GVK](/in/GVK)
