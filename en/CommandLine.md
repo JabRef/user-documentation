@@ -36,8 +36,9 @@ The word *true* prevents the file name from being interpreted as an argument to 
 
 - [Help: `-h`](#help--h)
 - [No-GUI mode: `-n`](#no-gui-mode--n)
-- [Import file: `-i filename[,import format]`](import-file--i-filenameimport-format)
+- [Import file: `-i filename[,import format]`](#import-file--i-filenameimport-format)
 - [Export file: `-o filename[,export format]`](#export-file--o-filenameexport-format)
+- [Import BibTeX: `-importBibtex`](#import-bibtex--importbibtex)
 - [Export matching entries: `-m [field]searchTerm,outputFile:file[,exportFormat]`](#export-matching-entries--m-fieldsearchtermoutputfilefileexportformat)
 - [Fetch entries from Web: `-f=FetcherName:QueryString`](#fetch-entries-from-web--ffetchernamequerystring)
 - [Subdatabase from .aux file: `-a infile[.aux],outfile[.bib] base-BibTeX-file`](#subdatabase-from-aux-file--a-infileauxoutfilebib-base-bibtex-file)
@@ -115,6 +116,17 @@ The second option is to export every entry in the entries.bib in a single .xmp f
 ```sh
 java -jar JabRef.jar -o path\split,xmp  path\entries.bib -n
 ```
+
+
+### Import BibTeX: `-importBibtex`
+
+Import or load code directly from the BibTeX file.
+
+This only works for BibTeX files, and does not support files of other import formats.
+
+If the GUI is not suppressed (using the `-n` option), any imported or loaded BibTeX file will show up in the main window.
+
+*Note:* The `-importBibtex` option can be specified only once, and for one file only.
 
 
 ### Export matching entries: `-m [field]searchTerm,outputFile:file[,exportFormat]`
