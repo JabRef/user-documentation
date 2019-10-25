@@ -43,6 +43,28 @@ With autocompletion, JabRef records all words that appear in each of the chosen 
 
 *Note:* the words considered for suggestion are only the ones appearing in the same field in entries of the same database as the one you are editing. There are many ways to realise this kind of feature, and if you feel it should have been implemented differently, we'd like to hear your suggestions!
 
+## Drag and drop behavior settings
+
+The entry editor allows for file(s) to be dragged and dropped directly into the entry editor window. There are three different types of behaviors that govern how the files are handled, and the user can set which behavior they would like the entry editor to use in the **Entry editor** tab of the **Preferences** dialog. These behaviors are the following: copy, link, move.
+
+If the copy option is selected as the drag and drop behavior, the entry editor will create a copy of the file in the current directory. While this option is selected, the keyboard shortcuts needed to move, copy or link files are the following: 
+
+- Move: <kbd>Ctrl</kbd> + Drag (Windows) or <kbd>Option</kbd> + Drag (MacOS/Linux)
+- Copy: <kbd>Shift</kbd> + Drag (Windows) or <kbd>Command</kbd> + Drag (MacOS/Linux) or no key + Drag
+- Link: <kbd>Alt</kbd> + Drag (Windows) or <kbd>Command</kbd> + <kbd>Option</kbd> + Drag (MacOS/Linux)
+
+If the link option is selected as the drag and drop behavior, the entry editor will create a link of the file. This creates a shortcut to the file and will not copy the file to the current directory. While this option is selected, the keyboard shortcuts needed to move, copy or link files are the following: 
+
+- Move: <kbd>Alt</kbd> + Drag (Windows) or <kbd>Command</kbd> + <kbd>Option</kbd> + Drag (MacOS/Linux)
+- Copy: <kbd>Ctrl</kbd> + Drag (Windows) or <kbd>Option</kbd> + Drag (MacOS/Linux)
+- Link: <kbd>Shift</kbd> + Drag (Windows) or <kbd>Command</kbd> + Drag (MacOS/Linux) or no key + Drag
+
+If the move option (shown as **Copy, rename and link file**) is selected as the drag and drop behavior, the entry editor will move the file to the current directory by copying the file to the current location, renaming the copy, and linking it to the original file. While this option is selected, the keyboard shortcuts needed to move, copy or link files are the following: 
+
+- Move: <kbd>Shift</kbd> + Drag (Windows) or <kbd>Command</kbd> + Drag (MacOS/Linux) or no key + Drag
+- Copy: <kbd>Ctrl</kbd> + Drag (Windows) or <kbd>Option</kbd> + Drag (MacOS/Linux)
+- Link: <kbd>Alt</kbd> + Drag (Windows) or <kbd>Command</kbd> + <kbd>Option</kbd> + Drag (MacOS/Linux)
+
 ## Copy *BibTeX* key including citation command.
 
 Pressing <kbd>Ctrl</kbd> + <kbd>K</kbd> or the 'key' button causes the *BibTeX* key for your entry including the surrounding to be copied to the clipboard.
