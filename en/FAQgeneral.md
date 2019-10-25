@@ -81,9 +81,11 @@ One entry should appear.
 Just push “OK” to insert the entry into the database.
 For further information, please, consult the dedicated help file about the [DOI-to-BibTeX fetcher](DOItoBibTeX).
 
-#### Q: I have a valid DOI that is found by the web browser but not by JabRef. Why can't JabRef find my DOI through web search?
+#### Q: Why can't JabRef find any DOI?
 
-A: Your DOI is most likely not listed in the [CrossRef database](https://search.crossref.org/), which is the service that JabRef uses to search for DOIs.
+A: There are several reasons why JabRef cannot find your DOI. 
+One reason could be that your DOI is not listed in the [CrossRef database](https://search.crossref.org/) if you are using the CrossRef fetcher.
+Another reason could be that the search result for your DOI on [DOI.org](https://dx.doi.org) returns invalid BibTeX which is unable to be read by JabRef.
 
 #### Q: I have an ISBN. Is it possible to create an entry directly out of the ISBN?
 
