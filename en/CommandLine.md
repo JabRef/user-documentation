@@ -120,16 +120,14 @@ java -jar JabRef.jar -o path\split,xmp  path\entries.bib -n
 
 ### Import BibTeX: `-importBibtex`
 
-Import or load code directly from the BibTeX file.
-
-This only works for BibTeX files, and does not support files of other import formats.
+Import or load code directly from the BibTeX file. This only works for BibTeX files, and does not support files of other import formats. If it detects this command line option, the JabRef CLI will take in its following argument as a BibTeX string that represents the BibTeX article file being read in for import (usually a filename). JabRef then passes on this information to a helper function that will parse the BibTex string into entries and return the resulting BibTex entries to the JabRef CLI.
 
 If the GUI is not suppressed (using the `-n` option), any imported or loaded BibTeX file will show up in the main window.
 
 *Note:* The `-importBibtex` option can be specified only once, and for one file only.
 
-
 ### Export matching entries: `-m [field]searchTerm,outputFile:file[,exportFormat]`
+
 (or `--exportMatches [field]searchTerm,outputFile:file[,exportFormat]`)
 
 Save to a new file all the database entries matching the given search term.
