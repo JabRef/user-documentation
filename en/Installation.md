@@ -44,7 +44,7 @@ Thus, it especially describes installing [JavaFX].
 
 ### JabRef 5.x
 
-> JabRef 5.x requires JRE 11
+JabRef 5.x is distributed with a bundled Java Runtime Enviornment. There is no need for any Java installation anymore.
 
 ### JabRef 4.x
 
