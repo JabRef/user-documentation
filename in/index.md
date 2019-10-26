@@ -6,7 +6,7 @@ title: Daftar Isi Bantuan
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <strong>Kamu tidak menemukan solusi ketika ada masalah ? atau kamu masih mempunyai pertanyaan ?</strong>
+    <strong>You can't find a solution to your problem? You still have questions?</strong>
   </div>
   <div class="panel-body">
     <a class="btn btn-default" role="button" href="http://discourse.jabref.org">Gunakan forum online untuk mendapatkan beberapa bantuan!</a>
@@ -28,7 +28,7 @@ title: Daftar Isi Bantuan
 - [Backup](/in/Backup)
 - [Best Practices](/in/BestPractices)
 - [Command line use and options](/in/CommandLine)
-- [Instalisasi](/in/Installation)
+- [Installation](/in/Installation)
 - [JabRef](/in/JabRef)
 - [Jendela utama JabRef](/in/BaseFrame)
 - [Menyimpan otomatis](/in/Autosave)
@@ -97,7 +97,7 @@ title: Daftar Isi Bantuan
 - [XMP metadata support in JabRef](/in/XMP)
 
 
-## Mengambil Entires dari web
+## Fetching entries from the web
 
 
 ### ... Menggunakan publikasi pengidentifikasi
