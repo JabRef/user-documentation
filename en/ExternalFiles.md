@@ -3,7 +3,7 @@ title: URL and DOI links in JabRef
 helpCategories: ["Fields"]
 ---
 
-## URL and DOI links in JabRef
+# URL and DOI links in JabRef
 
 For linking attached files, see [File links in JabRef](FileLinks).
 
