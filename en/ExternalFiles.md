@@ -3,7 +3,7 @@ title: URL and DOI links in JabRef
 helpCategories: ["Fields"]
 ---
 
-# URL and DOI links in JabRef
+## URL and DOI links in JabRef
 
 For linking attached files, see [File links in JabRef](FileLinks).
 
@@ -15,6 +15,13 @@ JabRef has to know which external viewers to use for web pages.
 These are by default set to values that probably make sense for your operating system, so there's a fair chance you don't have to change these values.
 
 To change the external viewer settings, go to **Options → Preferences → External programs**.
+
+## Pushing to external viewer application
+
+JabRef allows you to push any entries in your main window to an external viewer through the push-to-external application feature. You would need to first select the entries in your entry table that you would like to export before using the feature. Once you have done so, go to the tools submenu and click on the push-to-external application button to the right of the **Toggle groups interface** button. By default the external viewer used to push exports is TeXstudio.
+
+JabRef also allows you to change the external viewer application you would like to push your exports to. To do so, click on the down arrow next to the push-to-external application button. This will cause a dropdown menu to appear, from which you are able to select from a list of the external viewers you have configured. Once you have made
+your selection, the push-to-external application button icon will change to match that of the selected external viewer application.
 
 ## Opening external links
 
