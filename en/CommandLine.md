@@ -3,7 +3,7 @@ title: Command line use and options
 helpCategories: ["General"]
 ---
 
-## Command line use and options
+# Command line use and options
 
 ## Purpose and functioning
 
