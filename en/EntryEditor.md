@@ -35,6 +35,15 @@ When the contents of a field is changed, JabRef checks if the new contents are a
 
 If the contents are not accepted, the field will turn red, indicating an error. In this case the change will not be stored.
 
+## Handling of string constants
+
+BibTeX supports string constants.
+One can define in the bibliography.
+JabRef offers editing of these strings via the [String Editor](StringEditor.md).
+
+For instance, if you see `#jan#` in the `month` field, the "real" BibTeX entry looks like `month = jan`.
+For more details, see [Strings](Strings.md).
+
 ## Word/name autocompletion
 
 The entry editor offers autocompletion of words. In the Preferences dialog you can enable or disable autocompletion, and choose for which fields autocompletion is active.
