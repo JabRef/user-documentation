@@ -29,3 +29,5 @@ It can also happen that you will have the same institution for more types:
 -   `@String { pMIT = "{Massachusetts Institute of Technology ({MIT}) press}" }` if the institution will appear as publisher.
 
 Even if the last example may appear contradicting the intention was to remove duplicity and unify the names of persons and institutions.
+
+See <https://tex.stackexchange.com/questions/303467/bibliography-contents-journal-names-not-abbreviated-even-with-ieeeabrv/303489#303489> for a MWE for string constants.
