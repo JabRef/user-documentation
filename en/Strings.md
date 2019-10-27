@@ -11,9 +11,12 @@ helpCategories: ["Fields"]
     @String { kubovy = "Kubovy, Jan" }
     @String { et = " and " }
 
-and then in some entry for example: `@Misc{ author = kopp # et # kubovy }` or `@Misc{ author = kopp # " and " # kubovy }`. In the JabRef field editor, the author has to be inserted as `#kopp# #et# #kubovy#` or `#kopp# and #kubovy#`.
+and then in some entry for example: `@Misc{m1, author = kopp # et # kubovy }` or `@Misc{m2, author = kopp # " and " # kubovy }`.
+In the JabRef field editor, the author has to be inserted as `#kopp# #et# #kubovy#` or `#kopp# and #kubovy#`.
 
-JabRef enhances the concept of Strings to add a type to those `@String`s. The issue is how to preserve such type of a string in a BibTeX file. JabRef adds the type though prefixes:
+JabRef enhances the concept of Strings to add a type to those `@String`s.
+The issue is how to preserve such type of a string in a BibTeX file.
+JabRef adds the type though prefixes:
 
 -   `@String { aKopp = "Kopp, Oliver" }` is a `@String` with the type author.
 -   `@String { iMIT = "{Massachusetts Institute of Technology ({MIT})}" }` is a `@String` with the type of institution.
