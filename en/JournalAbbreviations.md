@@ -12,7 +12,7 @@ This feature can be configured under **Options → Manage journal abbreviations*
 
 JabRef includes a fairly extensive build-in list of journal abbreviations, but it still likely to be incomplete for the purposes of many users. You can add abbreviations in the form of a personal list or external lists.
 
-![JournalAbbreviations](https://user-images.githubusercontent.com/12954316/68082164-993c1580-fe19-11e9-8c44-632e13198687.png)
+![General view](./images/JournalAbbreviations.png)
 
 ## Using the feature
 
@@ -45,7 +45,7 @@ Once you click *Save changes*, if you have selected a file, and the table contai
 
 You can link to a number of external lists. These links can be set up on top of the **Manage journal abbreviations** window. External lists are similar to the personal list. The *Open existing list* button allows you to select an existing file on your computer.
 
-![JournalAbbreviations-ExternalList](https://user-images.githubusercontent.com/12954316/68082165-9a6d4280-fe19-11e9-8972-32b2ab5fcb9d.png)
+![External list](./images/JournalAbbreviations-ExternalList.png)
 
 External lists can be found at [JabRef's repository abbreviation lists](http://abbrv.jabref.org).
 
