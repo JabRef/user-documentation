@@ -10,7 +10,7 @@ helpCategories:
 
 ### I would like to improve the help page. What are the steps?
 
-Please follow our [CONTRIBUTING.md](https://github.com/JabRef/help.jabref.org/blob/gh-pages/CONTRIBUTING.md) file.
+Please use the edit pencil in the upper right corner.
 
 ### I would like to help translating JabRef to another language. How do I get started?
 
