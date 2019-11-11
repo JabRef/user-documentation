@@ -29,5 +29,5 @@ To migrate your pre-3.6 SQL database into new shared SQL database you have to fo
 * Now goto **File** -&gt; **Import into current database**
 * Choose the file you saved locally and import it
 
-After that the content is available as a shared SQL database and you can work live on it. [More information about the live editing](SQLDatabase.md).
+After that the content is available as a shared SQL database and you can work live on it. [More information about the live editing](sqldatabase.md).
 

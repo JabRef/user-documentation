@@ -8,7 +8,7 @@ helpCategories:
 
 JabRef can look for duplicated entries inside a database.
 
-This feature is accessible directly through **Quality → Find duplicates**. It is also used when [importing new entries](../import-export/ImportInspectionDialog.md) from a supported reference format or directly from the Internet.
+This feature is accessible directly through **Quality → Find duplicates**. It is also used when [importing new entries](../import-export/importinspectiondialog.md) from a supported reference format or directly from the Internet.
 
 Detection of potential duplicates is done by an edit distance algorithm. Extra weighting is put on the fields _author_, _editor_, _title_ and _journal_.
 

@@ -41,7 +41,7 @@ JabRef offers a BibTeX key generation and offers different patterns described at
 
 The importer based on the content has been written for IEEE and [LNCS](https://github.com/latextemplates/LNCS) formatted papers. Other formats are not \(yet\) supported. In case a DOI is found on the first page, the DOI is used to generate the BibTeX information.
 
-The next development step is to extract the title of the PDF, use the "Lookup DOI" and then the [Get BibTeX data from DOI](GetBibTeXDataFromDOI.md) functionality from JabRef to fetch the BibTeX data.
+The next development step is to extract the title of the PDF, use the "Lookup DOI" and then the [Get BibTeX data from DOI](getbibtexdatafromdoi.md) functionality from JabRef to fetch the BibTeX data.
 
 We are also [thinking about](https://github.com/koppor/jabref/issues/169) replacing the code completely by using another library. This is much effort and there is no timeline for that.
 

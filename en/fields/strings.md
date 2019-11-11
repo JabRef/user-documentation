@@ -6,7 +6,7 @@ helpCategories:
 
 # Strings
 
-_BibTeX_ supports storing constant strings using `@String {key = value}`. JabRef supports managing them using **BibTeX → Edit strings**, which opens the [String Editor](../setup/StringEditor.md). These values can be used in fields. For example, you can have:
+_BibTeX_ supports storing constant strings using `@String {key = value}`. JabRef supports managing them using **BibTeX → Edit strings**, which opens the [String Editor](../setup/stringeditor.md). These values can be used in fields. For example, you can have:
 
 ```text
 @String { kopp = "Kopp, Oliver" }

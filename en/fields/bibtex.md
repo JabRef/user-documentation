@@ -91,11 +91,11 @@ Here is a list of some of the more common non-standard fields \("\*" = not direc
 
 To help in managing your bibliography, and extend the features of BibTeX, JabRef defines some specific fields:
 
-* [External files](ExternalFiles.md)
+* [External files](externalfiles.md)
 * [General fields](../setup/generalfields.md)
-* [Owner](Owner.md)
-* [Quality and grading](SpecialFields.md)
-* [Time stamp](TimeStamp.md)
+* [Owner](owner.md)
+* [Quality and grading](specialfields.md)
+* [Time stamp](timestamp.md)
 
 ## Define your own fields
 

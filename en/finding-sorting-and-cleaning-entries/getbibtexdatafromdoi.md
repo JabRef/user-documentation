@@ -55,5 +55,5 @@ If you right-click on the preview, you can **Print entry preview** or **Copy pre
 
 Finally, after selecting which fields to keep, you can decide to **Replace the original entry**. Alternatively, you can press **Cancel**.
 
-**See also:** [Find duplicates](FindDuplicates.md), [Merge entries](MergeEntries.md)
+**See also:** [Find duplicates](findduplicates.md), [Merge entries](mergeentries.md)
 

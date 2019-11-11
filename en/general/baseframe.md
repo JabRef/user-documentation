@@ -27,7 +27,7 @@ This is the main window from where you work with your databases. Below the menub
 
 There are several ways to add a new entry. The **New entry** menu action shows a dialog where you can choose the type of the entry from a list. To bypass this dialog, there are also separate menu actions for each entry type, and keyboard shortcuts for the most common types.
 
-When a new entry is added, by default an [entry editor](EntryEditor.md) for the entry will be opened. This behaviour can be toggled in the **Preferences** dialog.
+When a new entry is added, by default an [entry editor](entryeditor.md) for the entry will be opened. This behaviour can be toggled in the **Preferences** dialog.
 
 _Note:_ We strongly recommend learning the shortcuts for the entry types you use most often, e.g. Ctrl + Shift + A for adding an _article_ entry.
 
@@ -41,7 +41,7 @@ Use the BibTeX → New entry from plain text... \(Ctrl+Shift+N\). For more infor
 
 ## Editing an entry
 
-To open an [entry editor](EntryEditor.md) for an existing entry, simply double-click anywhere on the appropriate line will open the [entry editor](EntryEditor.md) \(or select the entry and press Enter\).
+To open an [entry editor](entryeditor.md) for an existing entry, simply double-click anywhere on the appropriate line will open the [entry editor](entryeditor.md) \(or select the entry and press Enter\).
 
 ## Referencing a _BibTeX_ string in a field
 
