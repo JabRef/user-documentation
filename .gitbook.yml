@@ -2,8 +2,3 @@ root: ./en/
 
 structure:
   readme: ./en/README.md
-
-redirects:
-  fr/Remote: ./fr/Remote.md
-  fr/test: http://help.jabref.org/fr/Remote
-  en/test: ./en/README.md
