@@ -47,11 +47,11 @@ A: Yes. Go to **Options → Preferences → Advanced → “Remote operation”*
 
 ### Q: I have a DOI. Is it possible to create an entry directly out of the DOI?
 
-A: Yes. Go to **Search → Web Search** to enable the Web search. A Web search box appears on the left side of JabRef. The name of a web search is selected \(e.g. “ACM Portal”\). Click on it and change it to “DOI to BibTeX”. Enter the DOI in the field and press **Fetch**. A search starts and the result is displayed in a new pop up window. One entry should appear. Just push “OK” to insert the entry into the database. For further information, please, consult the dedicated help file about the [DOI-to-BibTeX fetcher](../...-using-publication-identifiers/doitobibtex.md).
+A: Yes. Go to **Search → Web Search** to enable the Web search. A Web search box appears on the left side of JabRef. The name of a web search is selected \(e.g. “ACM Portal”\). Click on it and change it to “DOI to BibTeX”. Enter the DOI in the field and press **Fetch**. A search starts and the result is displayed in a new pop up window. One entry should appear. Just push “OK” to insert the entry into the database. For further information, please, consult the dedicated help file about the [DOI-to-BibTeX fetcher](../import-using-publication-identifiers/doitobibtex.md).
 
 ### Q: I have an ISBN. Is it possible to create an entry directly out of the ISBN?
 
-A: Yes. Go to **Search → Web Search** to enable the Web search. A Web search box appears on the left side of JabRef. The name of a web search is selected \(e.g. “ACM Portal”\). Click on it and change it to “ISBN to BibTeX”. If a ISBN is not found, head to the [online service](https://manas.tungare.name/software/isbn-to-bibtex) by Manas Tungare. For further information, please, consult the dedicated help file about the [ISBN-to-BibTeX fetcher](../...-using-publication-identifiers/isbntobibtex.md).
+A: Yes. Go to **Search → Web Search** to enable the Web search. A Web search box appears on the left side of JabRef. The name of a web search is selected \(e.g. “ACM Portal”\). Click on it and change it to “ISBN to BibTeX”. If a ISBN is not found, head to the [online service](https://manas.tungare.name/software/isbn-to-bibtex) by Manas Tungare. For further information, please, consult the dedicated help file about the [ISBN-to-BibTeX fetcher](../import-using-publication-identifiers/isbntobibtex.md).
 
 ### Q: I miss a field _translator_, _lastfollowedon_, ... How can I add such fields?
 
@@ -117,7 +117,7 @@ A: In **File → Database properties**, you will find a section named "Save acti
 
 A: Google scholar is blocking "automated" crawls which generate too much traffic in a short time. JabRef already uses a two-step approach \(with the prefetched list before crawling the actual BibTeX data\) to circumvent this. However, after too much crawls JabRef is being blocked.
 
-To solve this issue, see the section _Traffic limitations_ in the [Google Scholar help](../...-using-online-bibliographic-database/googlescholar.md).
+To solve this issue, see the section _Traffic limitations_ in the [Google Scholar help](../import-using-online-bibliographic-database/googlescholar.md).
 
 ### Q: JabRef does not push to vim, although I have configured the right path and server name. What is going on?
 

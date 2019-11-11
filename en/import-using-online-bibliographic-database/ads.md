@@ -15,4 +15,4 @@ To fetch entries from SAO/NASA Astrophysics Data System, choose **Search → Web
 Then, the results are displayed in the [import inspection window](../import-export/). In case an error occurs, it is shown in a popup.
 
 Apart from fetching entries by using a full search, it is also possible to directly create a BibTeX entry using the **BibTeX → New Entry** dialog.
-More details are described at [ADS-to-BibTeX](../...-using-publication-identifiers/).
+More details are described at [ADS-to-BibTeX](../import-using-publication-identifiers/adstobibtex.md).

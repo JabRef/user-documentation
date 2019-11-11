@@ -33,7 +33,7 @@ _Note:_ We strongly recommend learning the shortcuts for the entry types you use
 
 ### Adding a new entry using an id
 
-In the dialog, you can also create an entry based on Id. See [http://help.jabref.org/en/\#using-publication-identifiers](http://help.jabref.org/en/#using-publication-identifiers) for an overview on all available fetchers. For instance, when having an ISBN number, you can select "ISBN" or "DOI" as Id type and then fetch it. See [ISBNtoBibTeX](../...-using-publication-identifiers/isbntobibtex.md) and [DOItoBibTeX](../...-using-publication-identifiers/doitobibtex.md) for details.
+In the dialog, you can also create an entry based on Id. See [http://help.jabref.org/en/\#using-publication-identifiers](http://help.jabref.org/en/#using-publication-identifiers) for an overview on all available fetchers. For instance, when having an ISBN number, you can select "ISBN" or "DOI" as Id type and then fetch it. See [ISBNtoBibTeX](../import-using-publication-identifiers/isbntobibtex.md) and [DOItoBibTeX](../import-using-publication-identifiers/doitobibtex.md) for details.
 
 ### Adding a new entry using the reference text
 

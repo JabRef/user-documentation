@@ -44,4 +44,4 @@ However, it is still possible to import hundreds or even thousands of entries fr
 The downloaded file can then be imported using JabRefs "File" → "Import into current/new database" feature. Note: depending on the number the import might require some - or quite a lot of time. It was tried in 2016 with an exported XML file of 130MB an over 11000 found entries, which required more than 10 minutes of import.
 
 Apart from fetching entries by using a full search it is also possible to directly create a BibTeX entry using the **BibTeX → New Entry** dialog.
-More details are described at [Medline-to-BibTeX](../...-using-publication-identifiers/).
+More details are described at [Medline-to-BibTeX](../import-using-publication-identifiers/medlinetobibtex.md).
