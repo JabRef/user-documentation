@@ -8,7 +8,7 @@ helpCategories:
 
 JabRef can help you complement your entries from their DOI.
 
-Open the [entry editor](https://github.com/JabRef/help.jabref.org/tree/1f58696d9081b60bf60823090c7594d67d7f5295/en/EntryEditor/README.md), and in the General tab, click on the button **Get BibTeX data from DOI**. _Obviously, this feature is available only if your entry already has a DOI._
+Open the [entry editor](../general/entryeditor.md), and in the General tab, click on the button **Get BibTeX data from DOI**. _Obviously, this feature is available only if your entry already has a DOI._
 
 ![Screenshot of general tab](../../.gitbook/assets/getbibtexdatafromdoi-main.png)
 
@@ -55,5 +55,5 @@ If you right-click on the preview, you can **Print entry preview** or **Copy pre
 
 Finally, after selecting which fields to keep, you can decide to **Replace the original entry**. Alternatively, you can press **Cancel**.
 
-**See also:** [Find duplicates](https://github.com/JabRef/help.jabref.org/tree/1f58696d9081b60bf60823090c7594d67d7f5295/en/FindDuplicates/README.md), [Merge entries](https://github.com/JabRef/help.jabref.org/tree/1f58696d9081b60bf60823090c7594d67d7f5295/en/MergeEntries/README.md)
+**See also:** [Find duplicates](FindDuplicates.md), [Merge entries](MergeEntries.md)
 

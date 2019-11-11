@@ -7,7 +7,7 @@ stub: true
 
 # Save actions
 
-Field formatting can be tidied up when saving the database. That ensures your entries to have consistent formatting. If you check **Enable save actions** in the [Database Properties](https://github.com/JabRef/help.jabref.org/tree/1f58696d9081b60bf60823090c7594d67d7f5295/en/DatabaseProperties/README.md), the list of actions can be configured.
+Field formatting can be tidied up when saving the database. That ensures your entries to have consistent formatting. If you check **Enable save actions** in the [Database Properties](../setup/databaseproperties.md), the list of actions can be configured.
 
 Each action is defined by:
 

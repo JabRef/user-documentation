@@ -11,13 +11,13 @@ _Opened from main window by double-clicking anywhere on the line of the entry, o
 
 In this panel you can specify all relevant information on a single entry. The entry editor checks the type of your entry, and lists all the fields that are required, and the ones that are optional, for referring the entry with _BibTeX_. In addition, there are several fields termed _General fields_, that are common to all entry types.
 
-You can fully customize which fields should be regarded as required and optional for each type of entry, and which fields appear in the General fields tabs. See [Customizing entry types](https://github.com/JabRef/help.jabref.org/tree/1f58696d9081b60bf60823090c7594d67d7f5295/en/CustomEntries/README.md) for more information about this.
+You can fully customize which fields should be regarded as required and optional for each type of entry, and which fields appear in the General fields tabs. See [Customizing entry types](../setup/customentrytypes.md) for more information about this.
 
-For information about how the fields should be filled out, see [BibTeX help](https://github.com/JabRef/help.jabref.org/tree/1f58696d9081b60bf60823090c7594d67d7f5295/en/Bibtex/README.md).
+For information about how the fields should be filled out, see [BibTeX help](../fields/bibtex.md).
 
 ## The entry editor's panels
 
-The entry editor contains six panels: _Required fields_, _Optional fields_, _General_, _Abstract_, _Comments_ and _BibTeX source_, where _General_, _Abstract_ and _Comments_ can be customized \(see [Customizing general fields](https://github.com/JabRef/help.jabref.org/tree/1f58696d9081b60bf60823090c7594d67d7f5295/en/GeneralFields/README.md) for details\). Inside the three first panels, Tab and Shift + Tab are used to switch focus between the text fields.
+The entry editor contains six panels: _Required fields_, _Optional fields_, _General_, _Abstract_, _Comments_ and _BibTeX source_, where _General_, _Abstract_ and _Comments_ can be customized \(see [Customizing general fields](../setup/generalfields.md) for details\). Inside the three first panels, Tab and Shift + Tab are used to switch focus between the text fields.
 
 Up to JabRef 4.1, the field was called "Review". The field name was changed to "Comments" as "Review" indicated some external reviews or some fundamental comments.
 
@@ -55,7 +55,7 @@ Pressing Ctrl + Shift + K causes the _BibTeX_ key for your entry to be copied to
 
 Press Ctrl + G or the 'gen key' button \(the magic wand\) to autogenerate a _BibTeX_ key for your entry based on the contents of its required fields.
 
-For more information on how JabRef generates _BibTeX_ keys, see [Customizing the BibTex key generator](https://github.com/JabRef/help.jabref.org/tree/1f58696d9081b60bf60823090c7594d67d7f5295/en/LabelPatterns/README.md).
+For more information on how JabRef generates _BibTeX_ keys, see [Customizing the BibTex key generator](../setup/bibtexkeypatterns.md).
 
 ## Related Articles Tab
 

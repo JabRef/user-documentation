@@ -6,7 +6,7 @@ helpCategories:
 
 # File links in JabRef
 
-JabRef lets you link up your entries with files of any type stored on your system. Thereby, it uses the field `file`, which contains a list of linked files. Each entry can have an arbitrary number of file links, and each linked file can be opened quickly from JabRef. The fields `url` and `doi` are used as links to documents on the web in the form of an URL or a DOI identifier respectively. See [External Files](https://github.com/JabRef/help.jabref.org/tree/1f58696d9081b60bf60823090c7594d67d7f5295/en/ExternalFiles/README.md) for an explanation.
+JabRef lets you link up your entries with files of any type stored on your system. Thereby, it uses the field `file`, which contains a list of linked files. Each entry can have an arbitrary number of file links, and each linked file can be opened quickly from JabRef. The fields `url` and `doi` are used as links to documents on the web in the form of an URL or a DOI identifier respectively. See [External Files](ExternalFiles.md) for an explanation.
 
 In BibTeX terms, the file links are stored as text in the field `file`. From within JabRef, however, they appear as an editable list of links accessed from the entry editor along with other BibTeX fields.
 
@@ -21,7 +21,7 @@ In BibTeX terms, the file links are stored as text in the field `file`. From wit
 
 ## Adding external links to an entry
 
-If the "file" field is included in [General fields](https://github.com/JabRef/help.jabref.org/tree/1f58696d9081b60bf60823090c7594d67d7f5295/en/GeneralFields/README.md), you can edit the list of external links for an entry in the [Entry editor](https://github.com/JabRef/help.jabref.org/tree/1f58696d9081b60bf60823090c7594d67d7f5295/en/EntryEditor/README.md). The editor includes buttons for inserting, editing and removing links, as well as buttons for reordering the list of links.
+If the "file" field is included in [General fields](../setup/generalfields.md), you can edit the list of external links for an entry in the [Entry editor](../general/entryeditor.md). The editor includes buttons for inserting, editing and removing links, as well as buttons for reordering the list of links.
 
 ![list of linked files](../../.gitbook/assets/entryeditor-linkedfiles.png)
 
@@ -89,7 +89,7 @@ The default for searches is `**/.*[bibtexkey].*\\.[extension]`. As you can see t
 
 ## Opening external files
 
-There are several ways to open an external file or web page. In the entry table, you can click on the PDF icon to open the PDF. In case there are multiple PDFs linked, always the first one is opened. You can also right click on the line of the entry in the entry table and select "Open file". There is also a keyboard shorcut for this: In the default setting, this is F4, but [it can also be customized](https://github.com/JabRef/help.jabref.org/tree/1f58696d9081b60bf60823090c7594d67d7f5295/en/CustomKeyBindings/README.md).
+There are several ways to open an external file or web page. In the entry table, you can click on the PDF icon to open the PDF. In case there are multiple PDFs linked, always the first one is opened. You can also right click on the line of the entry in the entry table and select "Open file". There is also a keyboard shorcut for this: In the default setting, this is F4, but [it can also be customized](../setup/customkeybindings.md).
 
 To access any of an entry's links, click on the icon with the right mouse button \(or Ctrl + Click on Mac OS X\) to bring up a menu showing all links.
 
@@ -102,4 +102,3 @@ For each file link, a file type must be chosen, to determine what icon should be
 A file type is specified by its name, a graphical icon, a file extension and an application to view the files. On Windows, the name of the application can be omitted in order to use Window's default viewer instead.
 
 ![Manage external file types](../../.gitbook/assets/manageexternalfiletypes.png)
-

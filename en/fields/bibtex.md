@@ -12,7 +12,7 @@ JabRef helps you work with your _BibTeX_ databases, but there are still rules to
 
 ### Fields in the header of a bib file
 
-JabRef stores the encoding of the file and \(in case a shared [SQL database](https://github.com/JabRef/help.jabref.org/tree/1f58696d9081b60bf60823090c7594d67d7f5295/en/SQLDatabase/README.md) is used\) the ID of the shared database in the header of the bib file.
+JabRef stores the encoding of the file and \(in case a shared [SQL database](../collaborative-work/sqldatabase.md) is used\) the ID of the shared database in the header of the bib file.
 
 #### Encoding
 
@@ -20,7 +20,7 @@ JabRef stores the encoding of the file and \(in case a shared [SQL database](htt
 
 #### Shared Id
 
-To enable [auto save](https://github.com/JabRef/help.jabref.org/tree/1f58696d9081b60bf60823090c7594d67d7f5295/en/Autosave/README.md), JabRef adds `% DBID: <id>` to the header. This helps JabRef identifying the SQL database where the file belongs. E.g., `% DBID: 2mvhh73ge3hc5fosdsvuoa808t`.
+To enable [auto save](../general/autosave.md), JabRef adds `% DBID: <id>` to the header. This helps JabRef identifying the SQL database where the file belongs. E.g., `% DBID: 2mvhh73ge3hc5fosdsvuoa808t`.
 
 ## Standard _BibTeX_ fields
 
@@ -46,7 +46,7 @@ The following fields are recognized by the default bibliography styles:
 * **editor** This field is analogue to the _author_ field. If there is also an `author` field, then the `editor` field gives the editor of the book or collection in which the reference appears.
 * **howpublished** How something strange has been published. The first word should be capitalized.
 * **institution** The sponsoring institution of a technical report.
-* **journal** The name of a journal or magazine. The name of a journal can be abbreviated using a "string". To define such string, use the [string editor](https://github.com/JabRef/help.jabref.org/tree/1f58696d9081b60bf60823090c7594d67d7f5295/en/StringEditor/README.md).
+* **journal** The name of a journal or magazine. The name of a journal can be abbreviated using a "string". To define such string, use the [string editor](../setup/stringeditor.md).
 * **key** Used for alphabetizing, cross referencing, and creating a label when the \`\`author'' information is missing. This field should not be confused with the key that appears in the `\cite` command and at the beginning of the database entry.
 * **month** The month in which the work was published or, for an unpublished work, in which it was written. You should use the standard three-letter abbreviation of the English names \(jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec\).
 * **note** Any additional information that can help the reader. The first word should be capitalized.
@@ -91,15 +91,15 @@ Here is a list of some of the more common non-standard fields \("\*" = not direc
 
 To help in managing your bibliography, and extend the features of BibTeX, JabRef defines some specific fields:
 
-* [External files](https://github.com/JabRef/help.jabref.org/tree/1f58696d9081b60bf60823090c7594d67d7f5295/en/ExternalFiles/README.md)
-* [General fields](https://github.com/JabRef/help.jabref.org/tree/1f58696d9081b60bf60823090c7594d67d7f5295/en/GeneralFields/README.md)
-* [Owner](https://github.com/JabRef/help.jabref.org/tree/1f58696d9081b60bf60823090c7594d67d7f5295/en/Owner/README.md)
-* [Quality and grading](https://github.com/JabRef/help.jabref.org/tree/1f58696d9081b60bf60823090c7594d67d7f5295/en/SpecialFields/README.md)
-* [Time stamp](https://github.com/JabRef/help.jabref.org/tree/1f58696d9081b60bf60823090c7594d67d7f5295/en/TimeStamp/README.md)
+* [External files](ExternalFiles.md)
+* [General fields](../setup/generalfields.md)
+* [Owner](Owner.md)
+* [Quality and grading](SpecialFields.md)
+* [Time stamp](TimeStamp.md)
 
 ## Define your own fields
 
-You can create new fields by [editing \(or creating\) entry types](https://github.com/JabRef/help.jabref.org/tree/1f58696d9081b60bf60823090c7594d67d7f5295/en/CustomEntries/README.md).
+You can create new fields by [editing \(or creating\) entry types](../setup/customentrytypes.md).
 
 ## Hints on fields
 
@@ -115,7 +115,6 @@ You can create new fields by [editing \(or creating\) entry types](https://githu
 * [Reference documentation about BibTeX](http://mirrors.ircam.fr/pub/CTAN/biblio/bibtex/base/btxdoc.pdf)
 * [Tame the BeaST - The B to X of BibTxX](http://texdoc.net/texmf-dist/doc/bibtex/tamethebeast/ttb_en.pdf) - long manual explaining the workings of BibTeX, the BibTeX format, and the available entry types with required and optional fields.
 * [BibTeX tips and FAQ](http://mirror.ibcp.fr/pub/CTAN/biblio/bibtex/contrib/doc/btxFAQ.pdf)
-* [Recommended BibTeX Format](http://sandilands.info/sgordon/node/488)
 * [BibTeX format according to Wikibook](https://en.wikibooks.org/wiki/LaTeX/Bibliography_Management#BibTeX)
 * [BibTeX format according to Wikipedia](https://en.wikipedia.org/wiki/BibTeX#Bibliographic_information_file)
 

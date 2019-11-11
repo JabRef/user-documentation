@@ -6,7 +6,7 @@ helpCategories:
 
 # Sharing a Bib\(La\)TeX Database
 
-JabRef allows to share both Bib\(La\)TeX database and [SQL database](https://github.com/JabRef/help.jabref.org/tree/1f58696d9081b60bf60823090c7594d67d7f5295/en/SQLDatabase/README.md).
+JabRef allows to share both Bib\(La\)TeX database and [SQL database](SQLDatabase.md).
 
 When sharing a Bib\(La\)TeX database, JabRef automatically recognizes a change in the `bib` file on disk and notifies the user of it. This works well on network drives.
 

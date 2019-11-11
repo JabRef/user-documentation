@@ -40,5 +40,5 @@ If you right-click on the preview, you can **Print entry preview** or **Copy pre
 
 Finally, after selecting which fields to keep, you can decide to **Merge entries**. Alternatively, you can press **Cancel**.
 
-**See also:** [Find duplicates](https://github.com/JabRef/help.jabref.org/tree/1f58696d9081b60bf60823090c7594d67d7f5295/en/FindDuplicates/README.md)
+**See also:** [Find duplicates](FindDuplicates.md)
 

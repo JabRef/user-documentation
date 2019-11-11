@@ -37,12 +37,6 @@ A: Yes.
 
 The _dialog_ font may fail to show characters correctly if the language-specific Input Method Editor \(IME\) is not installed. In this case a unicode font must be selected that contains the character ranges for the required language. For example _simsun_ for Chinese, _dotum_ for Korean etc. See [https://en.wikipedia.org/wiki/List\_of\_typefaces\_included\_with\_Microsoft\_Windows](https://en.wikipedia.org/wiki/List_of_typefaces_included_with_Microsoft_Windows) for further language/font pairs for Windows.
 
-Further language-specific instructions are available at:
-
-* Traditional Chinese
-  * [http://yenlung.km.nccu.edu.tw/xms/read\_attach.php?id=61](http://yenlung.km.nccu.edu.tw/xms/read_attach.php?id=61)
-  * [https://web.archive.org/web/20111027034912/http://yenlung.math.nccu.edu.tw/~yenlung/notes/latex\_in\_Windows.pdf](https://web.archive.org/web/20111027034912/http://yenlung.math.nccu.edu.tw/~yenlung/notes/latex_in_Windows.pdf)
-
 ### Q: When I have an instance of Jabref running and double click another BibTeX file it is opened in a new JabRef instance. Is it possible to open it in a new tab in the first instance?
 
 A: Yes. Go to **Options → Preferences → Advanced → Remote operation**. Put a checkmark to “Listen for remote operation on port:”. This option allows new instances of JabRef to detect the instance already running, and pass files to that instead of opening a new window. Note: This is the default [since JabRef 3.0](https://github.com/JabRef/jabref/blob/master/CHANGELOG.md#30---2015-11-29).
@@ -53,11 +47,11 @@ A: Yes. Go to **Options → Preferences → Advanced → “Remote operation”*
 
 ### Q: I have a DOI. Is it possible to create an entry directly out of the DOI?
 
-A: Yes. Go to **Search → Web Search** to enable the Web search. A Web search box appears on the left side of JabRef. The name of a web search is selected \(e.g. “ACM Portal”\). Click on it and change it to “DOI to BibTeX”. Enter the DOI in the field and press **Fetch**. A search starts and the result is displayed in a new pop up window. One entry should appear. Just push “OK” to insert the entry into the database. For further information, please, consult the dedicated help file about the [DOI-to-BibTeX fetcher](https://github.com/JabRef/help.jabref.org/tree/5e5d4b6f0c354e2a3759c9219df815ab6c64477b/en/DOItoBibTeX/README.md).
+A: Yes. Go to **Search → Web Search** to enable the Web search. A Web search box appears on the left side of JabRef. The name of a web search is selected \(e.g. “ACM Portal”\). Click on it and change it to “DOI to BibTeX”. Enter the DOI in the field and press **Fetch**. A search starts and the result is displayed in a new pop up window. One entry should appear. Just push “OK” to insert the entry into the database. For further information, please, consult the dedicated help file about the [DOI-to-BibTeX fetcher](../...-using-publication-identifiers/doitobibtex.md).
 
 ### Q: I have an ISBN. Is it possible to create an entry directly out of the ISBN?
 
-A: Yes. Go to **Search → Web Search** to enable the Web search. A Web search box appears on the left side of JabRef. The name of a web search is selected \(e.g. “ACM Portal”\). Click on it and change it to “ISBN to BibTeX”. If a ISBN is not found, head to the [online service](http://manas.tungare.name/software/isbn-to-BibTeX/) by Manas Tungare. For further information, please, consult the dedicated help file about the [ISBN-to-BibTeX fetcher](https://github.com/JabRef/help.jabref.org/tree/5e5d4b6f0c354e2a3759c9219df815ab6c64477b/en/ISBNtoBibTeX/README.md).
+A: Yes. Go to **Search → Web Search** to enable the Web search. A Web search box appears on the left side of JabRef. The name of a web search is selected \(e.g. “ACM Portal”\). Click on it and change it to “ISBN to BibTeX”. If a ISBN is not found, head to the [online service](https://manas.tungare.name/software/isbn-to-BibTeX/) by Manas Tungare. For further information, please, consult the dedicated help file about the [ISBN-to-BibTeX fetcher](../...-using-publication-identifiers/isbntobibtex.md).
 
 ### Q: I miss a field _translator_, _lastfollowedon_, ... How can I add such fields?
 
@@ -69,7 +63,7 @@ A: Open **Options → Preferences**. In the “File” panel, you will find an o
 
 ### Q: Is it possible to append entries from a BibTeX file, e.g. from my web browser, to the currently opened database?
 
-A: Yes, you can use the parameter `--importToOpen bibfile` of the [command line](https://github.com/JabRef/help.jabref.org/tree/5e5d4b6f0c354e2a3759c9219df815ab6c64477b/en/CommandLine/README.md).
+A: Yes, you can use the parameter `--importToOpen bibfile` of the [command line](../general/commandline.md).
 
 ### Q: I want to link external files with paths relative to my .bib file, so I can easily move my database along with its files to another directory. Is this possible?
 
@@ -123,7 +117,7 @@ A: In **File → Database properties**, you will find a section named "Save acti
 
 A: Google scholar is blocking "automated" crawls which generate too much traffic in a short time. JabRef already uses a two-step approach \(with the prefetched list before crawling the actual BibTeX data\) to circumvent this. However, after too much crawls JabRef is being blocked.
 
-To solve this issue, see the section _Traffic limitations_ in the [Google Scholar help](https://github.com/JabRef/help.jabref.org/tree/5e5d4b6f0c354e2a3759c9219df815ab6c64477b/en/GoogleScholar/README.md).
+To solve this issue, see the section _Traffic limitations_ in the [Google Scholar help](../...-using-online-bibliographic-database/googlescholar.md).
 
 ### Q: JabRef does not push to vim, although I have configured the right path and server name. What is going on?
 
@@ -132,4 +126,3 @@ A: You have to start vim with the option `--servername` \(such as `vim --servern
 ### Q: Is JabRef free for private and corporate use?
 
 A: Yes it is. JabRef is distributed under the MIT License, which [allows the following usage](https://tldrlegal.com/license/mit-license).
-

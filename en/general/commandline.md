@@ -28,22 +28,22 @@ will correctly load the file `original.bib`, export it in docbook format to `fil
 
 ## Options
 
-* [Help: `-h`](commandline.md#help--h)
-* [No-GUI mode: `-n`](commandline.md#no-gui-mode--n)
-* [Import file: `-i filename[,import format]`](https://github.com/JabRef/help.jabref.org/tree/1f58696d9081b60bf60823090c7594d67d7f5295/en/import-file--i-filenameimport-format/README.md)
-* [Export file: `-o filename[,export format]`](commandline.md#export-file--o-filenameexport-format)
-* [Export matching entries: `-m [field]searchTerm,outputFile:file[,exportFormat]`](commandline.md#export-matching-entries--m-fieldsearchtermoutputfilefileexportformat)
-* [Fetch entries from Web: `-f=FetcherName:QueryString`](commandline.md#fetch-entries-from-web--ffetchernamequerystring)
-* [Subdatabase from .aux file: `-a infile[.aux],outfile[.bib] base-BibTeX-file`](commandline.md#subdatabase-from-aux-file--a-infileauxoutfilebib-base-bibtex-file)
-* [Set file links: `-asfl`](commandline.md#set-file-links--asfl)
-* [Regenerate keys: `-g`](commandline.md#regenerate-keys--g)
-* [Export preferences: `-x filename`](commandline.md#export-preferences--x-filename)
-* [Import preferences: `-p filename`](commandline.md#import-preferences--p-filename)
-* [Reset preferences: `-d key`](commandline.md#reset-preferences--d-key)
-* [No files at startup: `-b`](commandline.md#no-files-at-startup--b)
-* [Version: `-v`](commandline.md#version--v)
-* [Debug mode: `--debug`](commandline.md#debug-mode---debug)
-* [Display output in the console: `--console`](commandline.md#display-output-in-the-console---console)
+* [Help: `-h`](#help--h)
+* [No-GUI mode: `-n`](#no-gui-mode--n)
+* [Import file: `-i filename[,import format]`](#import-file--i-filenameimport-format/README.md)
+* [Export file: `-o filename[,export format]`](#export-file--o-filenameexport-format)
+* [Export matching entries: `-m [field]searchTerm,outputFile:file[,exportFormat]`](#export-matching-entries--m-fieldsearchtermoutputfilefileexportformat)
+* [Fetch entries from Web: `-f=FetcherName:QueryString`](#fetch-entries-from-web--ffetchernamequerystring)
+* [Subdatabase from .aux file: `-a infile[.aux],outfile[.bib] base-BibTeX-file`](#subdatabase-from-aux-file--a-infileauxoutfilebib-base-bibtex-file)
+* [Set file links: `-asfl`](#set-file-links--asfl)
+* [Regenerate keys: `-g`](#regenerate-keys--g)
+* [Export preferences: `-x filename`](#export-preferences--x-filename)
+* [Import preferences: `-p filename`](#import-preferences--p-filename)
+* [Reset preferences: `-d key`](#reset-preferences--d-key)
+* [No files at startup: `-b`](#no-files-at-startup--b)
+* [Version: `-v`](#version--v)
+* [Debug mode: `--debug`](#debug-mode---debug)
+* [Display output in the console: `--console`](#display-output-in-the-console---console)
 
 ### Help: `-h`
 
@@ -115,7 +115,7 @@ Save to a new file all the database entries matching the given search term.
 
 If the filename is followed by a comma and an export format, the given export filter will be used. Otherwise, the default format _html-table_ \(with _Abstract_ and _BibTeX_, provided by _tablerefsabsbib_\) is used.
 
-Information about to the search function is given in ['advanced search' documentation](https://github.com/JabRef/help.jabref.org/tree/1f58696d9081b60bf60823090c7594d67d7f5295/en/Search/README.md).
+Information about to the search function is given in ['advanced search' documentation](../finding-sorting-and-cleaning-entries/search.md).
 
 _Note:_ In addition it is also possible to search for entries within a time frame such as `Year=1989-2005` \(instead of only searching for entries of a certain year as in `Year=2005`\).
 

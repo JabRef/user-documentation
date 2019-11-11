@@ -14,7 +14,7 @@ Please use the edit pencil in the upper right corner.
 
 ### I would like to help translating JabRef to another language. How do I get started?
 
-We encourage you to read about [translating JabRef](https://github.com/JabRef/help.jabref.org/tree/1f58696d9081b60bf60823090c7594d67d7f5295/en/TranslatingGUI/README.md).
+We encourage you to read about [translating JabRef](../contributing/translatinggui.md).
 
 ### I want to keep Wikipedia pages up-to-date
 
@@ -44,9 +44,7 @@ If there is no page for you own language, you can easily create one.
 
 Donations keeps us going! You can use Paypal, Flattr, or bank transfers. Your institution/company can contribute too, through bank transfer for example. All details are provided at [https://donations.jabref.org](https://donations.jabref.org).
 
-Our team consists of volunteers. To provide better support, we are currently trying to get a funded developer on board. Please consider supporting this:
-
-[![Support](https://supporterhq.com/api/b/8rzilokn64agwryeus1y17b0r/JabRef)](https://supporterhq.com/support/8rzilokn64agwryeus1y17b0r/JabRef)
+Our team consists of volunteers. To provide better support, we are currently trying to get a funded developer on board. Please consider donating money!
 
 ## I am a programmer
 

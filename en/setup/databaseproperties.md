@@ -51,11 +51,11 @@ _Note:_ this is not a security feature, merely a way to prevent users from overw
 
 Field formatting can be tidied up when saving the database. That ensures your entries to have consistent formatting. If you check **Enable save actions**, the list of actions can be configured.
 
-For more information see [Save Actions](https://github.com/JabRef/help.jabref.org/tree/1f58696d9081b60bf60823090c7594d67d7f5295/en/Save%20Actions/README.md).
+For more information see [Save Actions](../finding-sorting-and-cleaning-entries/saveactions.md).
 
 ## Shared SQL database
 
-Note that some properties are not available for shared [SQL databases](https://github.com/JabRef/help.jabref.org/tree/1f58696d9081b60bf60823090c7594d67d7f5295/en/SQLDatabase/README.md) as they are not handled like a _.bib_ file. The following properties are not available:
+Note that some properties are not available for shared [SQL databases](../collaborative-work/sqldatabase.md) as they are not handled like a `.bib` file. The following properties are not available:
 
 * Database encoding _\(always UTF-8\)_
 * Save sort order

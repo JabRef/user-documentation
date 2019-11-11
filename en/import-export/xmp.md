@@ -33,7 +33,7 @@ The following easy minimal schema is used:
 
 The following is an example of the mapping
 
-```text
+```bibtex
 @INPROCEEDINGS{CroAnnHow05,
   author = {Crowston, K. and Annabi, H. and Howison, J. and Masango, C.},
   title = {Effective work practices for floss development: A model and propositions},
@@ -47,7 +47,7 @@ The following is an example of the mapping
 
 will be transformed into
 
-```text
+```xml
 <rdf:Description xmlns:bibtex="http://jabref.sourceforge.net/bibteXMP/"
     bibtex:bibtexkey="CroAnnHow05"
     bibtex:year="2005"
@@ -76,9 +76,6 @@ Beware of the following caveats if you trying to parse BibTeXMP:
 
 Some links about XMP and annotating PDFs
 
-* [James Howison's blog "Themp---Managing Academic Papers like MP3s"](http://freelancepropaganda.com/themp/)
-* [XML.com article about XMP](http://www.xml.com/pub/a/2004/09/22/xmp)
-* [PDFBox](http://pdfbox.apache.org/) by the Apache Software Foundation is the Jaba library used to access the PDFs and the metadata stream.
+* [Wikipedia Article](https://en.wikipedia.org/wiki/Extensible_Metadata_Platform)
+* [James Howison's blog "Themp---Managing Academic Papers like MP3s"](https://web.archive.org/web/20110424121251/http://freelancepropaganda.com/themp/)
 * [Good thread on ArsTechnica discussing the management of PDFs.](http://arstechnica.com/civis/viewtopic.php?f=19&t=408429)
-* [Adobe XMP Specification](http://www.adobe.com/content/dam/Adobe/en/devnet/xmp/pdfs/XMPSpecificationPart1.pdf)
-

@@ -27,13 +27,13 @@ This is the main window from where you work with your databases. Below the menub
 
 There are several ways to add a new entry. The **New entry** menu action shows a dialog where you can choose the type of the entry from a list. To bypass this dialog, there are also separate menu actions for each entry type, and keyboard shortcuts for the most common types.
 
-When a new entry is added, by default an [entry editor](https://github.com/JabRef/help.jabref.org/tree/1f58696d9081b60bf60823090c7594d67d7f5295/en/EntryEditor/README.md) for the entry will be opened. This behaviour can be toggled in the **Preferences** dialog.
+When a new entry is added, by default an [entry editor](EntryEditor.md) for the entry will be opened. This behaviour can be toggled in the **Preferences** dialog.
 
 _Note:_ We strongly recommend learning the shortcuts for the entry types you use most often, e.g. Ctrl + Shift + A for adding an _article_ entry.
 
 ### Adding a new entry using an id
 
-In the dialog, you can also create an entry based on Id. See [http://help.jabref.org/en/\#using-publication-identifiers](http://help.jabref.org/en/#using-publication-identifiers) for an overview on all available fetchers. For instance, when having an ISBN number, you can select "ISBN" or "DOI" as Id type and then fetch it. See [ISBNtoBibTeX](https://github.com/JabRef/help.jabref.org/tree/1f58696d9081b60bf60823090c7594d67d7f5295/en/ISBNtoBibTeX/README.md) and [DOItoBibTeX](https://github.com/JabRef/help.jabref.org/tree/1f58696d9081b60bf60823090c7594d67d7f5295/en/DOItoBibTeX/README.md) for details.
+In the dialog, you can also create an entry based on Id. See [http://help.jabref.org/en/\#using-publication-identifiers](http://help.jabref.org/en/#using-publication-identifiers) for an overview on all available fetchers. For instance, when having an ISBN number, you can select "ISBN" or "DOI" as Id type and then fetch it. See [ISBNtoBibTeX](../...-using-publication-identifiers/isbntobibtex.md) and [DOItoBibTeX](../...-using-publication-identifiers/doitobibtex.md) for details.
 
 ### Adding a new entry using the reference text
 
@@ -41,11 +41,10 @@ Use the BibTeX → New entry from plain text... \(Ctrl+Shift+N\). For more infor
 
 ## Editing an entry
 
-To open an [entry editor](https://github.com/JabRef/help.jabref.org/tree/1f58696d9081b60bf60823090c7594d67d7f5295/en/EntryEditor/README.md) for an existing entry, simply double-click anywhere on the appropriate line will open the [entry editor](https://github.com/JabRef/help.jabref.org/tree/1f58696d9081b60bf60823090c7594d67d7f5295/en/EntryEditor/README.md) \(or select the entry and press Enter\).
+To open an [entry editor](EntryEditor.md) for an existing entry, simply double-click anywhere on the appropriate line will open the [entry editor](EntryEditor.md) \(or select the entry and press Enter\).
 
 ## Referencing a _BibTeX_ string in a field
 
 In JabRef you write the contents of all fields the same way as you would in a text editor, with one exception: to reference a string, enclose the name of the string in a set of \# characters, e.g.: '\#jan\# 1997', which will be interpreted as the string named 'jan' followed by ' 1997'.
 
-See also: [string editor](https://github.com/JabRef/help.jabref.org/tree/1f58696d9081b60bf60823090c7594d67d7f5295/en/StringEditor/README.md).
-
+See also: [string editor](../setup/stringeditor.md).

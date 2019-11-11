@@ -6,7 +6,7 @@ helpCategories:
 
 # URL and DOI links in JabRef
 
-For linking attached files, see [File links in JabRef](https://github.com/JabRef/help.jabref.org/tree/1f58696d9081b60bf60823090c7594d67d7f5295/en/FileLinks/README.md).
+For linking attached files, see [File links in JabRef](FileLinks.md).
 
 JabRef lets you link documents on the web in the form of an URL or a DOI identifier.
 

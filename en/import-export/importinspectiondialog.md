@@ -10,7 +10,7 @@ helpCategories:
 
 ### Purpose
 
-When you import new entries from a supported reference format, or fetch entries directly from the Internet, the inspection window allows you to select the entries you want to keep, to [avoid adding duplicated entries](https://github.com/JabRef/help.jabref.org/tree/1f58696d9081b60bf60823090c7594d67d7f5295/en/FindDuplicates/README.md), and to perform some simple operations like generating BibTeX keys for the entries, or adding them to [groups](https://github.com/JabRef/help.jabref.org/tree/1f58696d9081b60bf60823090c7594d67d7f5295/en/Groups/README.md). If you are importing into an existing database, it is often easier to perform these operations before they are mixed in between the entries of your database.
+When you import new entries from a supported reference format, or fetch entries directly from the Internet, the inspection window allows you to select the entries you want to keep, to [avoid adding duplicated entries](../finding-sorting-and-cleaning-entries/findduplicates.md), and to perform some simple operations like generating BibTeX keys for the entries, or adding them to [groups](../finding-sorting-and-cleaning-entries/groups.md). If you are importing into an existing database, it is often easier to perform these operations before they are mixed in between the entries of your database.
 
 ## The inspection window
 
@@ -35,7 +35,7 @@ A right click on an entry displays a drop-down menu which allows you to:
 
 ### Duplicated entries
 
-Potential duplicates are pointed out by an icon in the second column. A click on this icon allows you to [check the similarities](https://github.com/JabRef/help.jabref.org/tree/1f58696d9081b60bf60823090c7594d67d7f5295/en/FindDuplicates/README.md). A button on the left panel allows you to **Deselect all duplicates** \(without inspection\).
+Potential duplicates are pointed out by an icon in the second column. A click on this icon allows you to [check the similarities](../finding-sorting-and-cleaning-entries/findduplicates.md). A button on the left panel allows you to **Deselect all duplicates** \(without inspection\).
 
 ### BibTeX key generation
 
