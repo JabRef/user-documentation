@@ -51,7 +51,7 @@ A: Yes. Go to **Search → Web Search** to enable the Web search. A Web search b
 
 ### Q: I have an ISBN. Is it possible to create an entry directly out of the ISBN?
 
-A: Yes. Go to **Search → Web Search** to enable the Web search. A Web search box appears on the left side of JabRef. The name of a web search is selected \(e.g. “ACM Portal”\). Click on it and change it to “ISBN to BibTeX”. If a ISBN is not found, head to the [online service](https://manas.tungare.name/software/isbn-to-BibTeX/) by Manas Tungare. For further information, please, consult the dedicated help file about the [ISBN-to-BibTeX fetcher](../...-using-publication-identifiers/isbntobibtex.md).
+A: Yes. Go to **Search → Web Search** to enable the Web search. A Web search box appears on the left side of JabRef. The name of a web search is selected \(e.g. “ACM Portal”\). Click on it and change it to “ISBN to BibTeX”. If a ISBN is not found, head to the [online service](https://manas.tungare.name/software/isbn-to-bibtex) by Manas Tungare. For further information, please, consult the dedicated help file about the [ISBN-to-BibTeX fetcher](../...-using-publication-identifiers/isbntobibtex.md).
 
 ### Q: I miss a field _translator_, _lastfollowedon_, ... How can I add such fields?
 
