@@ -1,8 +1,3 @@
----
-title: Cleanup entries
-stub: true
----
-
 # Cleanup entries
 
 JabRef can cleanup the entries of a database.

@@ -1,8 +1,3 @@
----
-title: Save actions
-stub: true
----
-
 # Save actions
 
 Field formatting can be tidied up when saving the database. That ensures your entries to have consistent formatting. If you check **Enable save actions** in the [Database Properties](../setup/databaseproperties.md), the list of actions can be configured.

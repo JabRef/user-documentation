@@ -1,8 +1,3 @@
----
-title: Customize key bindings
-stub: true
----
-
 # Customize key bindings
 
 This feature is available through **Options → Customize key bindings**.
