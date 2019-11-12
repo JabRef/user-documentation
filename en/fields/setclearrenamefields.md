@@ -1,7 +1,5 @@
 ---
 title: Set/clear/rename fields
-helpCategories:
-  - Fields
 stub: true
 ---
 

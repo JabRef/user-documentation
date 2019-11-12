@@ -1,7 +1,5 @@
 ---
 title: Groups
-helpCategories:
-  - 'Finding, sorting and cleaning entries'
 ---
 
 # Groups

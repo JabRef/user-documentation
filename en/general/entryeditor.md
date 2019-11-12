@@ -1,8 +1,6 @@
 ---
 title: BibTeX entry editor
 outdated: true
-helpCategories:
-  - General
 ---
 
 # BibTeX entry editor

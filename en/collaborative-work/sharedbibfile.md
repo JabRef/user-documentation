@@ -1,7 +1,5 @@
 ---
 title: Sharing a Bib(La)TeX Database
-helpCategories:
-  - Collaborative work
 ---
 
 # Sharing a Bib\(La\)TeX Database

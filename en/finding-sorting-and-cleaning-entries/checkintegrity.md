@@ -1,7 +1,5 @@
 ---
 title: Check integrity
-helpCategories:
-  - 'Finding, sorting and cleaning entries'
 stub: true
 ---
 

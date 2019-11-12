@@ -1,7 +1,5 @@
 ---
 title: Cleanup entries
-helpCategories:
-  - 'Finding, sorting and cleaning entries'
 stub: true
 ---
 

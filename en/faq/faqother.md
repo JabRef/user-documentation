@@ -1,7 +1,5 @@
 ---
 title: Other
-helpCategories:
-  - FAQ
 ---
 
 # Other

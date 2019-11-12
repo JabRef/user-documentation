@@ -1,8 +1,5 @@
 ---
 title: Fetching entries from MathSciNet
-helpCategories:
-  - Fetching entries from the web
-  - ... using online bibliographic database
 since: 3.7
 ---
 

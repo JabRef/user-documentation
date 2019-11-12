@@ -1,7 +1,5 @@
 ---
 title: Creating entries from Medline
-helpCategories:
-  - Fetching entries from the web
   - ... using publication identifiers
 since: 3.7
 ---

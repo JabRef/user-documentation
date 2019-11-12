@@ -1,7 +1,5 @@
 ---
 title: File links in JabRef
-helpCategories:
-  - Fields
 ---
 
 # File links in JabRef

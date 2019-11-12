@@ -1,8 +1,5 @@
 ---
 title: Fetching entries from SAO/NASA Astrophysics Data System
-helpCategories:
-  - Fetching entries from the web
-  - ... using online bibliographic database
 since: 3.7
 ---
 

@@ -1,7 +1,5 @@
 ---
 title: LaTeX Citations Tab
-helpCategories:
-  - Import/Export
 ---
 
 # LaTeX Citations Tab

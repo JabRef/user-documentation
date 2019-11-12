@@ -1,7 +1,5 @@
 ---
 title: Journal abbreviations
-helpCategories:
-  - Fields
 since: 5.0
 ---
 

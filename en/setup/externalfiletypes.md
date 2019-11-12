@@ -1,7 +1,5 @@
 ---
 title: Manage external file types
-helpCategories:
-  - Setup
 stub: true
 ---
 

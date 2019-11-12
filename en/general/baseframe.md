@@ -1,7 +1,5 @@
 ---
 title: JabRef's main window
-helpCategories:
-  - General
 ---
 
 # JabRef's main window

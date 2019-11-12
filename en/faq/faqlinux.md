@@ -1,7 +1,5 @@
 ---
 title: JabRef and Linux
-helpCategories:
-  - FAQ
 ---
 
 # JabRef and Linux

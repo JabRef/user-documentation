@@ -1,7 +1,5 @@
 ---
 title: Translating the JabRef Interface
-helpCategories:
-  - Contributing
 ---
 
 # Translating the JabRef Interface

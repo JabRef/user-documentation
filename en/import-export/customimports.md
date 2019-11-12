@@ -1,7 +1,5 @@
 ---
 title: Custom import filters
-helpCategories:
-  - Import/Export
 ---
 
 # Custom import filters

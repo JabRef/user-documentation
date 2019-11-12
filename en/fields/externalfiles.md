@@ -1,7 +1,5 @@
 ---
 title: URL and DOI links in JabRef
-helpCategories:
-  - Fields
 ---
 
 # URL and DOI links in JabRef

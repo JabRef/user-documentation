@@ -1,7 +1,5 @@
 ---
 title: Export and Import to/from Microsoft Word -- MS Office Bibliography XML format
-helpCategories:
-  - Import/Export
 ---
 
 # Export and Import to/from Microsoft Word -- MS Office Bibliography XML format

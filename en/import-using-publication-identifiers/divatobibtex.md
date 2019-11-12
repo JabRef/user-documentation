@@ -1,7 +1,5 @@
 ---
 title: Creating entries from DiVA
-helpCategories:
-  - Fetching entries from the web
   - ... using publication identifiers
 since: 3.7
 ---

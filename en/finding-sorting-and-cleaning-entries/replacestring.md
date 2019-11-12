@@ -1,7 +1,5 @@
 ---
 title: Replace string
-helpCategories:
-  - 'Finding, sorting and cleaning entries'
 stub: true
 ---
 

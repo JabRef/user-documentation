@@ -1,7 +1,5 @@
 ---
 title: License
-helpCategories:
-  - Miscellaneous
 ---
 
 # License

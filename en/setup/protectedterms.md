@@ -1,7 +1,5 @@
 ---
 title: Manage protected terms
-helpCategories:
-  - Setup
 stub: true
 ---
 

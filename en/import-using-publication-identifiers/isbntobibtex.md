@@ -1,7 +1,5 @@
 ---
 title: Creating entries using an ISBN number
-helpCategories:
-  - Fetching entries from the web
   - ... using publication identifiers
 since: 3.8
 ---

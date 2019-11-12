@@ -1,7 +1,5 @@
 ---
 title: Get BibTeX data from DOI
-helpCategories:
-  - 'Finding, sorting and cleaning entries'
 ---
 
 # Get BibTeX data from DOI

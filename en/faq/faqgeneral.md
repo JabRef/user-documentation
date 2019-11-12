@@ -1,7 +1,5 @@
 ---
 title: General
-helpCategories:
-  - FAQ
 ---
 
 # General

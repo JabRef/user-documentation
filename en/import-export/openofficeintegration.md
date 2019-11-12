@@ -1,7 +1,5 @@
 ---
 title: OpenOffice/LibreOffice integration
-helpCategories:
-  - Import/Export
 ---
 
 # OpenOffice/LibreOffice integration

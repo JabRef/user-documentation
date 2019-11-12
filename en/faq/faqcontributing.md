@@ -1,7 +1,5 @@
 ---
 title: Contributing
-helpCategories:
-  - FAQ
 ---
 
 # Contributing

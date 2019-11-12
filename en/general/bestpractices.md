@@ -1,7 +1,5 @@
 ---
 title: Best Practices
-helpCategories:
-  - General
 ---
 
 # Best Practices

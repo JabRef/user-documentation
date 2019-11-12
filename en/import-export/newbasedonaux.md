@@ -1,7 +1,5 @@
 ---
 title: New subdatabase based on AUX file
-helpCategories:
-  - Import/Export
 stub: true
 ---
 

@@ -1,7 +1,5 @@
 ---
 title: JabRef and Windows
-helpCategories:
-  - FAQ
 ---
 
 # JabRef and Windows

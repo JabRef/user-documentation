@@ -1,7 +1,5 @@
 ---
 title: Command line use and options
-helpCategories:
-  - General
 ---
 
 # Command line use and options

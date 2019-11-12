@@ -1,7 +1,5 @@
 ---
 title: Remote operation
-helpCategories:
-  - General
 ---
 
 # Remote operation

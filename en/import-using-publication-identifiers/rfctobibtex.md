@@ -1,7 +1,5 @@
 ---
 title: Creating entries from RFC
-helpCategories:
-  - Fetching entries from the web
   - ... using publication identifiers
 since: 4.3
 ---

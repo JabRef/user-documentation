@@ -1,7 +1,5 @@
 ---
 title: New entry from plain text
-helpCategories:
-  - Import/Export
 outdated: true
 ---
 

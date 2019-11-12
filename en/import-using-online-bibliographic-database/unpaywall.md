@@ -1,6 +1,5 @@
 ---
 title: Fetching entries from Unpaywall
-helpCategories: ["Fetching entries from the web", "... using online bibliographic database"]
 ---
 
 # Fetching entries from Unpaywall

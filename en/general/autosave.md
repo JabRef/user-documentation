@@ -1,7 +1,5 @@
 ---
 title: Autosave
-helpCategories:
-  - General
 since: 3.7
 ---
 

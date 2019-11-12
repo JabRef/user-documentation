@@ -1,7 +1,5 @@
 ---
 title: Links to other entries
-helpCategories:
-  - Fields
 since: 3.5
 ---
 

@@ -1,7 +1,5 @@
 ---
 title: Add unlinked PDFs including BibTeX data into the database
-helpCategories:
-  - 'Finding, sorting and cleaning entries'
 ---
 
 # Add unlinked PDFs including BibTeX data into the database

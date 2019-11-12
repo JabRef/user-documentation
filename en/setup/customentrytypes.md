@@ -1,7 +1,5 @@
 ---
 title: Customizing entry types
-helpCategories:
-  - Setup
 ---
 
 # Customizing entry types

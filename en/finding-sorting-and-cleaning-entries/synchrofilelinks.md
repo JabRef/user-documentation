@@ -1,7 +1,5 @@
 ---
 title: Synchronize file links
-helpCategories:
-  - 'Finding, sorting and cleaning entries'
 stub: true
 ---
 

@@ -1,7 +1,5 @@
 ---
 title: About *BibTeX*
-helpCategories:
-  - Fields
 ---
 
 # About BibTeX

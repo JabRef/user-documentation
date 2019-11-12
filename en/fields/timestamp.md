@@ -1,7 +1,5 @@
 ---
 title: Entry time stamps
-helpCategories:
-  - Fields
 ---
 
 # Entry time stamps

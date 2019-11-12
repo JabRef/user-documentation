@@ -1,7 +1,5 @@
 ---
 title: Creating entries using the title
-helpCategories:
-  - Fetching entries from the web
   - ... using publication identifiers
 since: 3.8.1
 ---

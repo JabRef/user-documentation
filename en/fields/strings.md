@@ -1,7 +1,5 @@
 ---
 title: Strings
-helpCategories:
-  - Fields
 ---
 
 # Strings

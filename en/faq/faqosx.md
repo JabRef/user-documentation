@@ -1,7 +1,5 @@
 ---
 title: JabRef and Mac OS X
-helpCategories:
-  - FAQ
 ---
 
 # JabRef and Mac OS X

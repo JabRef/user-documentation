@@ -1,7 +1,5 @@
 ---
 title: Customize key bindings
-helpCategories:
-  - Setup
 stub: true
 ---
 

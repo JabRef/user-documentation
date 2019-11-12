@@ -1,8 +1,5 @@
 ---
 title: Fetching entries from CiteSeerX
-helpCategories:
-  - Fetching entries from the web
-  - ... using online bibliographic database
 ---
 
 # Fetching entries from CiteSeerX

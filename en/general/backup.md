@@ -1,7 +1,5 @@
 ---
 title: Backup
-helpCategories:
-  - General
 since: 3.7
 ---
 

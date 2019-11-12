@@ -1,7 +1,5 @@
 ---
 title: Creating entries using IACR eprint IDs
-helpCategories:
-  - Fetching entries from the web
   - ... using publication identifiers
 since: 4.1
 ---

@@ -1,7 +1,5 @@
 ---
 title: Sharing
-helpCategories:
-  - FAQ
 ---
 
 # Sharing

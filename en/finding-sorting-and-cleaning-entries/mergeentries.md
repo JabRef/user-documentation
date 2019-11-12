@@ -1,7 +1,5 @@
 ---
 title: Merge entries
-helpCategories:
-  - 'Finding, sorting and cleaning entries'
 ---
 
 # Merge entries
