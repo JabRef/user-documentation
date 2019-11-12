@@ -1,8 +1,10 @@
 ---
 title: Creating entries using the title
   - ... using publication identifiers
-since: 3.8.1
 ---
+{% hint style="info" %}
+Since: 3.8.1
+{% endhint %}
 
 # Creating entries using the title
 

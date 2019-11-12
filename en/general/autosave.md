@@ -1,7 +1,9 @@
 ---
 title: Autosave
-since: 3.7
 ---
+{% hint style="info" %}
+Since: 3.7
+{% endhint %}
 
 # Autosave
 

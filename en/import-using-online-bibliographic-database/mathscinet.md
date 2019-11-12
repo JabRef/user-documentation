@@ -1,7 +1,9 @@
 ---
 title: Fetching entries from MathSciNet
-since: 3.7
 ---
+{% hint style="info" %}
+Since: 3.7
+{% endhint %}
 
 # Fetching entries from MathSciNet
 

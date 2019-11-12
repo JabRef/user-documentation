@@ -1,7 +1,9 @@
 ---
 title: Customizing the BibTeX key generator
-since: 5
 ---
+{% hint style="info" %}
+Since: 5
+{% endhint %}
 
 # Customizing the BibTeX key generator
 

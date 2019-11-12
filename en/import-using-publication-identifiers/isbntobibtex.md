@@ -1,8 +1,10 @@
 ---
 title: Creating entries using an ISBN number
   - ... using publication identifiers
-since: 3.8
 ---
+{% hint style="info" %}
+Since: 3.8
+{% endhint %}
 
 # Creating entries using an ISBN number
 

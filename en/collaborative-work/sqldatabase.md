@@ -1,7 +1,9 @@
 ---
 title: Shared SQL Database
-since: 3.6
 ---
+{% hint style="info" %}
+Since: 3.6
+{% endhint %}
 
 # Shared SQL Database
 

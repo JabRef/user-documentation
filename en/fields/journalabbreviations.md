@@ -1,7 +1,9 @@
 ---
 title: Journal abbreviations
-since: 5.0
 ---
+{% hint style="info" %}
+Since: 5.0
+{% endhint %}
 
 # Journal abbreviations
 

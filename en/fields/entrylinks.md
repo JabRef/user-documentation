@@ -1,7 +1,9 @@
 ---
 title: Links to other entries
-since: 3.5
 ---
+{% hint style="info" %}
+Since: 3.5
+{% endhint %}
 
 # Links to other entries
 
