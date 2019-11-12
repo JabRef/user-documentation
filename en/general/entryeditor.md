@@ -1,7 +1,9 @@
 ---
 title: BibTeX entry editor
-outdated: true
 ---
+{% hint style="warning" %}
+This information is outdated. Pleae help to improve it.
+{% endhint %}
 
 # BibTeX entry editor
 

@@ -1,7 +1,9 @@
 ---
 title: EndNote Export Filter
-outdated: true
 ---
+{% hint style="warning" %}
+This information is outdated. Pleae help to improve it.
+{% endhint %}
 
 # EndNote Export Filter
 
