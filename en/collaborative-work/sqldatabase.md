@@ -1,9 +1,8 @@
+# Shared SQL Database
+
 {% hint style="info" %}
 Since: 3.6
 {% endhint %}
-
-# Shared SQL Database
-
 JabRef is able to support collaborative work using a shared SQL database. This feature is available since JabRef 3.6.
 
 ## Usage

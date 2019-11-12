@@ -1,9 +1,8 @@
+# Searching
+
 {% hint style="info" %}
 Since: 3.7
 {% endhint %}
-
-# Searching
-
 The search bar is located between the icon bar and the database tabs.
 
 ![Screenshot of the search bar](../../.gitbook/assets/search-bar.png)

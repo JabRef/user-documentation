@@ -1,10 +1,10 @@
+# BibTeX entry editor
+
 {% hint style="warning" %}
 This information is outdated. Pleae help to improve it.
 {% endhint %}
 
-# BibTeX entry editor
-
-_Opened from main window by double-clicking anywhere on the line of the entry, or selecting the entry and pressing Enter or Ctrl + D. The panel is closed by pressing Esc._
+Opened from main window by double-clicking anywhere on the line of the entry, or selecting the entry and pressing Enter or Ctrl + D. The panel is closed by pressing Esc._
 
 In this panel you can specify all relevant information on a single entry. The entry editor checks the type of your entry, and lists all the fields that are required, and the ones that are optional, for referring the entry with _BibTeX_. In addition, there are several fields termed _General fields_, that are common to all entry types.
 

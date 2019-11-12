@@ -1,9 +1,8 @@
+# Links to other entries
+
 {% hint style="info" %}
 Since: 3.5
 {% endhint %}
-
-# Links to other entries
-
 JabRef supports following fields to jump to other entries.
 
 Following fields are supported:

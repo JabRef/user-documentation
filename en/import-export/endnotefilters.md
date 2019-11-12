@@ -1,8 +1,8 @@
-{% hint style="warning" %}
-This information is outdated. Pleae help to improve it.
-{% endhint %}
-
 # EndNote Export Filter
+
+{% hint style="warning" %}
+This information is outdated. Please help to improve it.
+{% endhint %}
 
 ## Export from JabRef
 

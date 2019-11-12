@@ -1,8 +1,8 @@
-{% hint style="warning" %}
-This information is outdated. Pleae help to improve it.
-{% endhint %}
-
 # New entry from plain text
+
+{% hint style="warning" %}
+This information is outdated. Please help to improve it.
+{% endhint %}
 
 > Entries can be created from a reference text.
 
