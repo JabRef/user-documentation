@@ -1,6 +1,5 @@
 ---
 title: Creating entries from RFC
-  - ... using publication identifiers
 ---
 {% hint style="info" %}
 Since: 4.3

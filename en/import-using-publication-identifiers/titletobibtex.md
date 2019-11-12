@@ -1,6 +1,5 @@
 ---
 title: Creating entries using the title
-  - ... using publication identifiers
 ---
 {% hint style="info" %}
 Since: 3.8.1

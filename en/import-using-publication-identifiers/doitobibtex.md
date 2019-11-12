@@ -1,6 +1,5 @@
 ---
 title: Creating entries using the Digital Object Identifier (DOI)
-  - ... using publication identifiers
 ---
 {% hint style="info" %}
 Since: 3.7

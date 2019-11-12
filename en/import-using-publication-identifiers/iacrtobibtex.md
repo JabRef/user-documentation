@@ -1,6 +1,5 @@
 ---
 title: Creating entries using IACR eprint IDs
-  - ... using publication identifiers
 ---
 {% hint style="info" %}
 Since: 4.1

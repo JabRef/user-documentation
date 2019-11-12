@@ -1,6 +1,5 @@
 ---
 title: Creating entries from SAO/NASA Astrophysics Data System
-  - ... using publication identifiers
 ---
 {% hint style="info" %}
 Since: 3.7
