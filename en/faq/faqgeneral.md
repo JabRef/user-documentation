@@ -49,6 +49,12 @@ A: Yes. Go to **Options → Preferences → Advanced → “Remote operation”*
 
 A: Yes. Go to **Search → Web Search** to enable the Web search. A Web search box appears on the left side of JabRef. The name of a web search is selected \(e.g. “ACM Portal”\). Click on it and change it to “DOI to BibTeX”. Enter the DOI in the field and press **Fetch**. A search starts and the result is displayed in a new pop up window. One entry should appear. Just push “OK” to insert the entry into the database. For further information, please, consult the dedicated help file about the [DOI-to-BibTeX fetcher](../import-using-publication-identifiers/doitobibtex.md).
 
+### Q: Why can't JabRef find any DOI?
+
+A: There are several reasons why JabRef cannot find your DOI.
+One reason could be that your DOI is not listed in the [CrossRef database](https://search.crossref.org/) if you are using the CrossRef fetcher.
+Another reason could be that the search result for your DOI on [DOI.org](https://dx.doi.org) returns invalid BibTeX which is unable to be read by JabRef.
+
 ### Q: I have an ISBN. Is it possible to create an entry directly out of the ISBN?
 
 A: Yes. Go to **Search → Web Search** to enable the Web search. A Web search box appears on the left side of JabRef. The name of a web search is selected \(e.g. “ACM Portal”\). Click on it and change it to “ISBN to BibTeX”. If a ISBN is not found, head to the [online service](https://manas.tungare.name/software/isbn-to-bibtex) by Manas Tungare. For further information, please, consult the dedicated help file about the [ISBN-to-BibTeX fetcher](../import-using-publication-identifiers/isbntobibtex.md).

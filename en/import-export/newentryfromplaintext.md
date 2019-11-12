@@ -2,6 +2,7 @@
 title: New entry from plain text
 helpCategories:
   - Import/Export
+outdated: true
 ---
 
 # New entry from plain text

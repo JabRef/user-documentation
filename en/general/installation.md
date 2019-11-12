@@ -40,7 +40,7 @@ The installation steps are written having the [JavaFX development branch](https:
 
 ### JabRef 5.x
 
-> JabRef 5.x requires JRE 11
+JabRef 5.x is distributed with a bundled Java Runtime Enviornment. There is no need for any Java installation anymore.
 
 ### JabRef 4.x
 

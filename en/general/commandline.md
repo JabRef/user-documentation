@@ -32,7 +32,8 @@ will correctly load the file `original.bib`, export it in docbook format to `fil
 * [No-GUI mode: `-n`](#no-gui-mode--n)
 * [Import file: `-i filename[,import format]`](#import-file--i-filenameimport-format/README.md)
 * [Export file: `-o filename[,export format]`](#export-file--o-filenameexport-format)
-* [Export matching entries: `-m [field]searchTerm,outputFile:file[,exportFormat]`](#export-matching-entries--m-fieldsearchtermoutputfilefileexportformat)
+* [Import BibTeX: `-importBibtex`](#import-bibtex--importbibtex)
+- [Export matching entries: `-m [field]searchTerm,outputFile:file[,exportFormat]`](#export-matching-entries--m-fieldsearchtermoutputfilefileexportformat)
 * [Fetch entries from Web: `-f=FetcherName:QueryString`](#fetch-entries-from-web--ffetchernamequerystring)
 * [Subdatabase from .aux file: `-a infile[.aux],outfile[.bib] base-BibTeX-file`](#subdatabase-from-aux-file--a-infileauxoutfilebib-base-bibtex-file)
 * [Set file links: `-asfl`](#set-file-links--asfl)
@@ -44,7 +45,6 @@ will correctly load the file `original.bib`, export it in docbook format to `fil
 * [Version: `-v`](#version--v)
 * [Debug mode: `--debug`](#debug-mode---debug)
 * [Display output in the console: `--console`](#display-output-in-the-console---console)
-
 ### Help: `-h`
 
 \(or `--help`\)
@@ -106,6 +106,14 @@ The second option is to export every entry in the entries.bib in a single .xmp f
 ```bash
 java -jar JabRef.jar -o path\split,xmp  path\entries.bib -n
 ```
+
+### Import BibTeX: `-importBibtex`
+
+Import or load code directly from the BibTeX file. This only works for BibTeX files, and does not support files of other import formats. If it detects this command line option, the JabRef CLI will take in its following argument as a BibTeX string that represents the BibTeX article file being read in for import (usually a filename). JabRef then passes on this information to a helper function that will parse the BibTex string into entries and return the resulting BibTex entries to the JabRef CLI.
+
+If the GUI is not suppressed (using the `-n` option), any imported or loaded BibTeX file will show up in the main window.
+
+*Note:* The `-importBibtex` option can be specified only once, and for one file only.
 
 ### Export matching entries: `-m [field]searchTerm,outputFile:file[,exportFormat]`
 
@@ -171,7 +179,9 @@ Reset preferences \(key1, key2,..., or `all`\).
 
 ### No files at startup: `-b`
 
-\(or `--blank`\) Do not open any files at startup
+(or `--blank`)
+
+Do not open any files at startup
 
 ### Version: `-v`
 
