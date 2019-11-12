@@ -1,4 +1,4 @@
-# JabRef Bibliography Management.
+# JabRef Bibliography Management
 
 Stay on top of your literature: JabRef helps you to collect and organize sources, find the paper you need and discover the latest research. 
 
