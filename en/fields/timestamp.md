@@ -1,6 +1,3 @@
----
-title: Entry time stamps
----
 
 # Entry time stamps
 

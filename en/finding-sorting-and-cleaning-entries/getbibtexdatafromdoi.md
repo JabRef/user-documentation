@@ -1,6 +1,3 @@
----
-title: Get BibTeX data from DOI
----
 
 # Get BibTeX data from DOI
 

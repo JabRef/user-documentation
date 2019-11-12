@@ -1,6 +1,3 @@
----
-title: Fetching entries from Unpaywall
----
 
 # Fetching entries from Unpaywall
 

@@ -1,6 +1,3 @@
----
-title: Merge entries
----
 
 # Merge entries
 

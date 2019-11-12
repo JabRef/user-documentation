@@ -1,6 +1,3 @@
----
-title: Export to an External SQL Database
----
 
 # Export to an External SQL Database
 

@@ -1,6 +1,3 @@
----
-title: The 'owner' field
----
 
 # The 'owner' field
 

@@ -1,6 +1,3 @@
----
-title: Fetching entries from MathSciNet
----
 {% hint style="info" %}
 Since: 3.7
 {% endhint %}

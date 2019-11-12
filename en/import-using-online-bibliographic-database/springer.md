@@ -1,6 +1,3 @@
----
-title: Fetching entries from Springer
----
 
 # Fetching entries from Springer
 

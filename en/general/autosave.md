@@ -1,6 +1,3 @@
----
-title: Autosave
----
 {% hint style="info" %}
 Since: 3.7
 {% endhint %}

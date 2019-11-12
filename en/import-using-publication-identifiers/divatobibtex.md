@@ -1,6 +1,3 @@
----
-title: Creating entries from DiVA
----
 {% hint style="info" %}
 Since: 3.7
 {% endhint %}

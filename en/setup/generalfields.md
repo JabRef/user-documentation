@@ -1,6 +1,3 @@
----
-title: Customizing general fields
----
 
 # Customizing general fields
 

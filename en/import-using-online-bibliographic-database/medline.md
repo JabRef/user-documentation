@@ -1,6 +1,3 @@
----
-title: Fetching entries from MEDLINE
----
 
 # Fetching entries from MEDLINE
 

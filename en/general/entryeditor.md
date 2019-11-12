@@ -1,6 +1,3 @@
----
-title: BibTeX entry editor
----
 {% hint style="warning" %}
 This information is outdated. Pleae help to improve it.
 {% endhint %}

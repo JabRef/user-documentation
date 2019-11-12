@@ -1,6 +1,3 @@
----
-title: Fetching entries from GVK
----
 
 # Fetching entries from GVK
 

@@ -1,6 +1,3 @@
----
-title: Customizing entry types
----
 
 # Customizing entry types
 

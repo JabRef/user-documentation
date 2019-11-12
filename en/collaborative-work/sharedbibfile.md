@@ -1,6 +1,3 @@
----
-title: Sharing a Bib(La)TeX Database
----
 
 # Sharing a Bib\(La\)TeX Database
 

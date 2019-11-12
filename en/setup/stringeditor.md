@@ -1,6 +1,3 @@
----
-title: The string editor
----
 
 # The string editor
 

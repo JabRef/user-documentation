@@ -1,6 +1,3 @@
----
-title: Creating entries using the title
----
 {% hint style="info" %}
 Since: 3.8.1
 {% endhint %}

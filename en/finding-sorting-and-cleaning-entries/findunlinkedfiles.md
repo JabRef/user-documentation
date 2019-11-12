@@ -1,6 +1,3 @@
----
-title: Add unlinked PDFs including BibTeX data into the database
----
 
 # Add unlinked PDFs including BibTeX data into the database
 

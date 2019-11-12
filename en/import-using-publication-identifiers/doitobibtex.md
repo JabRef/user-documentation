@@ -1,6 +1,3 @@
----
-title: Creating entries using the Digital Object Identifier (DOI)
----
 {% hint style="info" %}
 Since: 3.7
 {% endhint %}

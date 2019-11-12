@@ -1,6 +1,3 @@
----
-title: Creating entries from RFC
----
 {% hint style="info" %}
 Since: 4.3
 {% endhint %}

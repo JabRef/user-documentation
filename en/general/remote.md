@@ -1,6 +1,3 @@
----
-title: Remote operation
----
 
 # Remote operation
 

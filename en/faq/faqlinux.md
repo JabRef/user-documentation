@@ -1,6 +1,3 @@
----
-title: JabRef and Linux
----
 
 # JabRef and Linux
 

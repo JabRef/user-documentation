@@ -1,6 +1,3 @@
----
-title: JabRef and Windows
----
 
 # JabRef and Windows
 

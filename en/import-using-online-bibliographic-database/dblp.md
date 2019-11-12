@@ -1,6 +1,3 @@
----
-title: Fetching entries from DBLP
----
 
 # Fetching entries from DBLP
 

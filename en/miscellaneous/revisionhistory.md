@@ -1,6 +1,3 @@
----
-title: Revision history
----
 
 # Revision history
 

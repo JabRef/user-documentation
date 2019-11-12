@@ -1,6 +1,3 @@
----
-title: Custom export filters
----
 
 # Custom export filters
 

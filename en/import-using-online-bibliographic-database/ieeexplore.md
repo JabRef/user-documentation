@@ -1,6 +1,3 @@
----
-title: Fetching entries from IEEEXplore
----
 
 # Fetching entries from IEEEXplore
 

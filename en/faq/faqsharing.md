@@ -1,6 +1,3 @@
----
-title: Sharing
----
 
 # Sharing
 

@@ -1,6 +1,3 @@
----
-title: Custom import filters
----
 
 # Custom import filters
 

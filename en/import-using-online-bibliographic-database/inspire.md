@@ -1,6 +1,3 @@
----
-title: Fetching entries from INSPIRE-HEP
----
 
 # Fetching entries from INSPIRE-HEP
 

@@ -1,6 +1,3 @@
----
-title: Command line use and options
----
 
 # Command line use and options
 

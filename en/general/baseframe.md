@@ -1,6 +1,3 @@
----
-title: JabRef's main window
----
 
 # JabRef's main window
 

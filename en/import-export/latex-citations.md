@@ -1,6 +1,3 @@
----
-title: LaTeX Citations Tab
----
 
 # LaTeX Citations Tab
 

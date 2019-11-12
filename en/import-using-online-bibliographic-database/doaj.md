@@ -1,6 +1,3 @@
----
-title: Fetching entries from DOAJ
----
 
 # Fetching entries from DOAJ
 

@@ -1,6 +1,3 @@
----
-title: Journal abbreviations
----
 {% hint style="info" %}
 Since: 5.0
 {% endhint %}

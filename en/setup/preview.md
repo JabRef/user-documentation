@@ -1,6 +1,3 @@
----
-title: Entry preview setup
----
 
 # Entry preview setup
 

@@ -1,6 +1,3 @@
----
-title: Database properties window
----
 
 # Database properties window
 

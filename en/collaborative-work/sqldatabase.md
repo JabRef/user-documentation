@@ -1,6 +1,3 @@
----
-title: Shared SQL Database
----
 {% hint style="info" %}
 Since: 3.6
 {% endhint %}

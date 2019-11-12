@@ -1,6 +1,3 @@
----
-title: OpenOffice/LibreOffice integration
----
 
 # OpenOffice/LibreOffice integration
 

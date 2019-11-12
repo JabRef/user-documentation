@@ -1,6 +1,3 @@
----
-title: Fetching entries from Google Scholar
----
 
 # Fetching entries from Google Scholar
 

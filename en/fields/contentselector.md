@@ -1,6 +1,3 @@
----
-title: Field content selector
----
 {% hint style="warning" %}
 This information is outdated. Pleae help to improve it.
 {% endhint %}

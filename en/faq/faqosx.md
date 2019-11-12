@@ -1,6 +1,3 @@
----
-title: JabRef and Mac OS X
----
 
 # JabRef and Mac OS X
 

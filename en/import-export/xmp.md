@@ -1,6 +1,3 @@
----
-title: XMP metadata support in JabRef
----
 
 # XMP metadata support in JabRef
 

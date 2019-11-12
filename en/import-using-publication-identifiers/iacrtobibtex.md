@@ -1,6 +1,3 @@
----
-title: Creating entries using IACR eprint IDs
----
 {% hint style="info" %}
 Since: 4.1
 {% endhint %}

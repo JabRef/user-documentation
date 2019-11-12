@@ -1,6 +1,3 @@
----
-title: Links to other entries
----
 {% hint style="info" %}
 Since: 3.5
 {% endhint %}

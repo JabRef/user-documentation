@@ -1,6 +1,3 @@
----
-title: Customizing the BibTeX key generator
----
 {% hint style="info" %}
 Since: 5
 {% endhint %}

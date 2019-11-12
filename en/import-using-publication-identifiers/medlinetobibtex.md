@@ -1,6 +1,3 @@
----
-title: Creating entries from Medline
----
 {% hint style="info" %}
 Since: 3.7
 {% endhint %}

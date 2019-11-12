@@ -1,6 +1,3 @@
----
-title: New entry from plain text
----
 {% hint style="warning" %}
 This information is outdated. Pleae help to improve it.
 {% endhint %}

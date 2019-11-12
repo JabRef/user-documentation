@@ -1,6 +1,3 @@
----
-title: Creating entries using an ISBN number
----
 {% hint style="info" %}
 Since: 3.8
 {% endhint %}

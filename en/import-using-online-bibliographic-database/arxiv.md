@@ -1,6 +1,3 @@
----
-title: Fetching entries from arXiv
----
 
 # Fetching entries from arXiv
 

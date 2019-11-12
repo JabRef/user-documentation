@@ -1,6 +1,3 @@
----
-title: URL and DOI links in JabRef
----
 
 # URL and DOI links in JabRef
 

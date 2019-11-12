@@ -1,6 +1,3 @@
----
-title: Fetching entries from CiteSeerX
----
 
 # Fetching entries from CiteSeerX
 

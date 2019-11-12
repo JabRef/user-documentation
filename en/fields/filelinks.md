@@ -1,6 +1,3 @@
----
-title: File links in JabRef
----
 
 # File links in JabRef
 
