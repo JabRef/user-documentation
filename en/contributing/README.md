@@ -21,10 +21,7 @@ The easiest way to fix small errors or to add additional information is to edit 
 
 ### Start editing
 
-At the bottom of each help page you can find a link "Edit Page":
-
-![Click on Edit Page](../../.gitbook/assets/screenshot-edit-link.png)
-
+At the top of each help page you can find the GitHub icon.
 Just click here to show the source of the page.
 
 This leads you to GitHub:
