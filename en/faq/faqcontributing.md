@@ -1,4 +1,3 @@
-
 # Contributing
 
 ## I am not a programmer
