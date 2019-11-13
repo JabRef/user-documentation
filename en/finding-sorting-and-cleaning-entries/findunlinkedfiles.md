@@ -50,7 +50,7 @@ This makes the filenames start with the bibtey key followed by the full title. I
 
 ### Mr.DLib
 
-JabRef used to have support for [Mr.DLib](http://mr-dlib.org/), which returned back a full BibTeX entry or a PDF. Due to unclear copyright situation of a used library, this service was removed. Further, Mr.DLib changes its focus and will provide literature recommendations. See [https://help.jabref.org/en/EntryEditor\#related-articles-tab](https://help.jabref.org/en/EntryEditor#related-articles-tab).
+JabRef used to have support for [Mr.DLib](http://mr-dlib.org/), which returned back a full BibTeX entry or a PDF. Due to unclear copyright situation of a used library, this service was removed. Further, Mr.DLib changes its focus and will provide literature recommendations. See [the realted articles tab](../general/entryeditor.md#related-articles-tab).
 
 ### Related questions on stack overflow
 

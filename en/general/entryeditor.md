@@ -10,7 +10,7 @@ In this panel you can specify all relevant information on a single entry. The en
 
 You can fully customize which fields should be regarded as required and optional for each type of entry, and which fields appear in the General fields tabs. See [Customizing entry types](../setup/customentrytypes.md) for more information about this.
 
-For information about how the fields should be filled out, see [BibTeX help](../fields/bibtex.md).
+For information about how the fields should be filled out, see [BibTeX help](../fields/README.md).
 
 ## The entry editor's panels
 
@@ -36,10 +36,10 @@ If the contents are not accepted, the field will turn red, indicating an error. 
 
 BibTeX supports string constants.
 One can define in the bibliography.
-JabRef offers editing of these strings via the [String Editor](StringEditor.md).
+JabRef offers editing of these strings via the [String Editor](../setup/stringeditor.md).
 
 For instance, if you see `#jan#` in the `month` field, the "real" BibTeX entry looks like `month = jan`.
-For more details, see [Strings](Strings.md).
+For more details, see [Strings](../fields/strings.md).
 
 ## Word/name autocompletion
 

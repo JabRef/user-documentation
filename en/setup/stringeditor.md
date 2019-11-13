@@ -1,7 +1,7 @@
 
 # The string editor
 
-[Strings](strings.md) can be edited by **BibTeX → Edit strings** or pressing a button in the toolbar.
+[Strings](../fields/strings.md) can be edited by **BibTeX → Edit strings** or pressing a button in the toolbar.
 
 _Strings_ are the _BibTeX_ equivalent to constants in a programming language. Each string is defined with a unique _name_ and a _content_. Elsewhere in the database, the name can be used to represent the content.
 
@@ -13,5 +13,4 @@ A string may in the same way be referred in the content of another string, provi
 
 While the order of strings in your BibTeX file is important in some cases, you do not have to worry about this when using JabRef. The strings will be displayed in alphabetical order in the string editor, and stored in the same order, except when a different ordering is required by BibTeX.
 
-For a complete description of string syntax, see the [dedicated help](strings.md).
-
+For a complete description of string syntax, see the [dedicated help](../fields/strings.md).

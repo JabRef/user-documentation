@@ -103,7 +103,7 @@ The JabRef software is under the [MIT License](https://github.com/JabRef/jabref/
 
 ### The license of JabRef help
 
-The help of JabRef is under the [Creative Commons 4.0 Attribution 4.0 International License](https://github.com/JabRef/help.jabref.org/blob/gh-pages/LICENSE.md). In short, you can make a commercial use of it, distribute it, modify it and rename it. You must give credit, include copyright, and state changes. And you cannot sublicense it.
+The help of JabRef is under the [Creative Commons 4.0 Attribution 4.0 International License](https://github.com/JabRef/help.jabref.org/blob/master/LICENSE.md). In short, you can make a commercial use of it, distribute it, modify it and rename it. You must give credit, include copyright, and state changes. And you cannot sublicense it.
 
   [BibTeX]: https://www.ctan.org/pkg/bibtex
   [Biblatex]: https://www.ctan.org/pkg/biblatex

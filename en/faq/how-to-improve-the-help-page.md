@@ -1,13 +1,6 @@
-# Contributing
+# How to Improve the Help Page
 
-> Ways of contributing
-
-See the [FAQ](../faqcontributing.md) for different possibilities of contributing.
-For translating the user interface, see [translating the UI](./translatinggui.md).
-
-You want to contribute to <https://docs.jabref.org>? Great!
-
-Here is a quick start guide.
+Here is a quick start guide of how to improve the help page.
 
 ## Prerequisite
 
