@@ -3,6 +3,7 @@
 {% hint style="info" %}
 Since: 3.7
 {% endhint %}
+
 ## Purpose
 
 This module is always running in the background while you are working on a _BibTeX database_. It makes a _backup copy_ and keeps that up-to-date on every user interaction. For instance, when you change a field the new value would get saved into the backup copy.

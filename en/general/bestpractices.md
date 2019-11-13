@@ -1,4 +1,3 @@
-
 # Best Practices
 
 ## Helpful groups

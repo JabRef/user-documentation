@@ -1,4 +1,3 @@
-
 # Command line use and options
 
 ## Purpose and functioning

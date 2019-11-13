@@ -1,5 +1,4 @@
-
-# About BibTeX
+# About BibTeX and its fields
 
 JabRef helps you work with your _BibTeX_ databases, but there are still rules to keep in mind when editing your entries, to ensure that your database is treated properly by the _BibTeX_ program.
 
@@ -112,4 +111,3 @@ You can create new fields by [editing \(or creating\) entry types](../setup/cust
 * [BibTeX tips and FAQ](http://mirror.ibcp.fr/pub/CTAN/biblio/bibtex/contrib/doc/btxFAQ.pdf)
 * [BibTeX format according to Wikibook](https://en.wikibooks.org/wiki/LaTeX/Bibliography_Management#BibTeX)
 * [BibTeX format according to Wikipedia](https://en.wikipedia.org/wiki/BibTeX#Bibliographic_information_file)
-

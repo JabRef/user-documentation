@@ -1,4 +1,3 @@
-
 # Installation
 
 This page describes how to install Java, which is required for JabRef. JabRef itself can be either installed using the installer or just running the jar file. You get these files from [https://www.jabref.org/\#downloads](https://www.jabref.org/#downloads).
@@ -234,4 +233,3 @@ Random freezes have also been reported on several Linux distributions. It seems 
 ## JabRef and OpenOffice/LibreOffice integration
 
 The connection from JabRef to Libre Office requires some office related `jar`-archives to be present. The Windows installer for OpenOffice/LibreOffice automatically installs the required libraries. For Linux you have to install the package `libreoffice-java-common`.
-

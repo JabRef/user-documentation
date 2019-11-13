@@ -3,6 +3,7 @@
 {% hint style="info" %}
 Since: 3.7
 {% endhint %}
+
 ## Purpose
 
 The autosave feature helps to save an opened database without manual intervention. Furthermore, it synchronizes your local files which are associated with appropriate [shared SQL databases](../collaborative-work/sqldatabase.md).
