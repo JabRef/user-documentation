@@ -1,9 +1,4 @@
 ---
-title: Replace string
-helpCategories: ["Finding, sorting and cleaning entries"]
-stub: true
+redirect:   https://docs.jabref.org/?q=Replace%20String
+layout:     redirect
 ---
-
-# Replace string
-
-This feature is available through **Search → Replace string...**.

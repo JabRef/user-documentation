@@ -1,9 +1,4 @@
 ---
-title: 外部ファイル型の管理
-helpCategories: ["設定"]
-stub: true
+redirect:   /en/ExternalFileTypes
+layout:     redirect
 ---
-
-# 外部ファイル型の管理
-
-この機能は，**オプション→外部ファイル型の管理** で使用できます．

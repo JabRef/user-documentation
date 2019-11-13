@@ -1,9 +1,4 @@
 ---
-title: Manage external file types
-helpCategories: ["Setup"]
-stub: true
+redirect:   https://docs.jabref.org/?q=External%20File%20Types
+layout:     redirect
 ---
-
-# Manage external file types
-
-This feature is available through **Options → Manage external file types**.

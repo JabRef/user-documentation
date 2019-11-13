@@ -1,11 +1,4 @@
 ---
-title: Check integrity
-helpCategories: ["Finding, sorting and cleaning entries"]
-stub: true
+redirect:   https://docs.jabref.org/?q=Check%20Integrity
+layout:     redirect
 ---
-
-# Check integrity
-
-JabRef can check the integrity of a database.
-
-This feature is available through **Quality → Check integrity...**.

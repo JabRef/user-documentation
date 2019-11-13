@@ -1,7 +1,4 @@
 ---
-title: Historique des révisions (en anglais)
+redirect:   /en/RevisionHistory
+layout:     redirect
 ---
-
-# Historique des révisions (en anglais)
-
-Please refer to <https://github.com/JabRef/jabref/blob/master/CHANGELOG.md> for a complete history in English.

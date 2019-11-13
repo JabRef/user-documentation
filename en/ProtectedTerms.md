@@ -1,9 +1,4 @@
 ---
-title: Manage protected terms
-helpCategories: ["Setup"]
-stub: true
+redirect:   https://docs.jabref.org/?q=Protected%20Terms
+layout:     redirect
 ---
-
-# Manage protected terms
-
-This feature is available through **Options → Manage protected terms**.

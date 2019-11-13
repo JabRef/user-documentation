@@ -1,19 +1,14 @@
-{% include include-before-link.html %}
-
-{% assign step = page.path | split: '/' %}
-{% assign lang = step[0] %}
-
-{% comment %}
-Path is something like en/index.md, en/BibTexHelp.md, or index.md (which resides at the root of the page).
-These cases are handled here in that order.
-{% endcomment %}
-
-{% if step[1] == 'index.md' %}
-  {% include link-to-main-{{lang}}.html %}
-{% elsif step[1] %}
-  {% include link-to-toc-{{lang}}.html %}
-{% else %}
-  <a href="https://www.jabref.org">Back to www.jabref.org</a>
-{% endif %}
-
-{% include include-after-link.html %}
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="refresh" content="1;url=https://docs.jabref.org"/>
+    <link rel="canonical" href="https://docs.jabref.org"/>
+    <script type="text/javascript">
+        window.location.href = "{{ page.redirect }}"
+    </script>
+    <title>Page Redirection</title>
+</head>
+<body>
+If you are not redirected automatically, follow <a href='https://docs.jabref.org'>this link</a>.
+</body>
+</html>

@@ -1,11 +1,4 @@
 ---
-title: Set/clear/rename fields
-helpCategories: ["Fields"]
-stub: true
+redirect:   https://docs.jabref.org/?q=Set%20Clear%20Rename%20Fields
+layout:     redirect
 ---
-
-# Set/clear/rename fields
-
-This feature is available through **Edit → Set/clear/rename fields**.
-
-![Screenshot of the Related Articles Tab](./images/SetClearRenameFields.png)

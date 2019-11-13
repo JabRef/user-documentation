@@ -1,9 +1,4 @@
 ---
-title: Synchronize file links
-helpCategories: ["Finding, sorting and cleaning entries"]
-stub: true
+redirect:   https://docs.jabref.org/?q=Synchro%20File%20Links
+layout:     redirect
 ---
-
-# Synchronize file links
-
-This feature is available through **Quality → Synchronize file links...**.
