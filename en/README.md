@@ -9,7 +9,7 @@ JabRef supports you in every step of your research work.
 
 #### Collect
 
-- [Search](import-using-online-bibliographic-database/) across many online scientific catalogues like [CiteSeer/import-using-online-bibliographic-database/citeseer.md], CrossRef, Google Scholar, IEEEXplore, INSPIRE-HEP, Medline PubMed, MathSciNet, Springer, arXiv, and zbMATH
+- [Search](import-using-online-bibliographic-database) across many online scientific catalogues like [CiteSeer](import-using-online-bibliographic-database/citeseer.md), CrossRef, Google Scholar, IEEEXplore, INSPIRE-HEP, Medline PubMed, MathSciNet, Springer, arXiv, and zbMATH
 - Import options for over 15 reference formats
 - Easily retrieve and link full-text articles
 - Fetch complete bibliographic information based on ISBN, DOI, PubMed-ID and arXiv-ID
