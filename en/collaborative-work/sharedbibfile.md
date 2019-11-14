@@ -1,4 +1,3 @@
-
 # Sharing a Bib\(La\)TeX Database
 
 JabRef allows to share both Bib\(La\)TeX database and [SQL database](sqldatabase.md).

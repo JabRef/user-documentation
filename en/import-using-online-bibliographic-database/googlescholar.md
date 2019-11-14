@@ -1,4 +1,3 @@
-
 # Fetching entries from Google Scholar
 
 ## Description of  Google Scholar

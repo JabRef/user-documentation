@@ -1,4 +1,3 @@
-
 # Merge entries
 
 JabRef can help you merging entries of your database.

@@ -1,4 +1,3 @@
-
 # Groups
 
 Groups allow to structure a BibTeX database in a tree-like way that is similar to organizing files on disk in directories and subdirectories. The two main differences are:
@@ -82,10 +81,10 @@ The content of a dynamic group is defined by a logical condition. Only entries t
 
 Two types of conditions can be used:
 
-**Searching a field for a keyword**  
+**Searching a field for a keyword**
 This method groups entries in which a specified BibTeX field \(e.g. `keywords`\) contains a specified search term \(e.g. `electrical`\). Obviously, for this to work, the grouping field must be present in every entry, and its content must be accurate. The above example would group all entries referring to something electrical. Using the field `author` allows to group entries by a certain author, etc. The search can either be done as a plain-text or a regular expression search. In the former case, JabRef allows to manually assign/remove entries to/from the group by simply appending/removing the search term to/from the content of the grouping field. This makes sense only for the `keywords` field or for self-defined fields, but obviously not for fields like `author` or `year`.
 
-**Using a free-form search expression**  
+**Using a free-form search expression**
 This is similar to the above, but rather than search a single field for a single search term, the [search expression syntax](search.md#advanced) can be used, which supports logical operators \(`AND`, `OR`, `NOT`\) and allows to search multiple BibTeX fields. For example, the search expression `keywords=regression and not keywords=linear` groups entries concerned with non-linear regression.
 
 In the groups view, dynamic groups are shown in _italics_ by default. This can be turned off in the preferences \(Options → Preferences → Groups, box "Show dynamic groups in italics"\).

@@ -1,4 +1,3 @@
-
 # General
 
 ### Q: My plugins stopped working. What should I do?

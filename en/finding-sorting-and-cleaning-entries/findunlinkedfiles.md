@@ -1,4 +1,3 @@
-
 # Add unlinked PDFs including BibTeX data into the database
 
 This feature is available through **Quality → Find unlinked files...**.

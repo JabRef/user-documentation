@@ -1,4 +1,3 @@
-
 # Customizing entry types
 
 To customize entry types, select the menu **BibTeX -→ Customize entry types**.

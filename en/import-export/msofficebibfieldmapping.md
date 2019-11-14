@@ -1,4 +1,3 @@
-
 # Export and Import to/from Microsoft Word -- MS Office Bibliography XML format
 
 JabRef supports the MS Office Bibliography XML format for exporting and importing.

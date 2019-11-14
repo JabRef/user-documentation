@@ -1,4 +1,3 @@
-
 # JabRef and Windows
 
 ## Q: I have issues with my high resolution display. What can I do?

@@ -1,4 +1,3 @@
-
 # Import inspection window
 
 ## Import inspection window

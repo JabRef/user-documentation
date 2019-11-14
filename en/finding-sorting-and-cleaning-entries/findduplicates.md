@@ -1,4 +1,3 @@
-
 # Find duplicates
 
 JabRef can look for duplicated entries inside a database.

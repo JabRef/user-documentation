@@ -1,4 +1,3 @@
-
 # LaTeX Citations Tab
 
 This tool allows you to search for citations in LaTeX files.

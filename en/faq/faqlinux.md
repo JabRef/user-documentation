@@ -1,4 +1,3 @@
-
 # JabRef and Linux
 
 ## Is there any way to include JabRef in the start menu of Ubuntu?

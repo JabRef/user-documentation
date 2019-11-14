@@ -1,4 +1,3 @@
-
 # Fetching entries from DOAJ
 
 [DOAJ \(Directory of Open Access Journals\)](http://doaj.org/) is a database covering more than 10000 open access journals covering all areas of science, technology, medicine, social science and humanities \([Wikipedia](https://en.wikipedia.org/wiki/Directory_of_Open_Access_Journals)\).

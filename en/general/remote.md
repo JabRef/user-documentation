@@ -1,4 +1,3 @@
-
 # Remote operation
 
 This feature can be toggled and configured under **Preferences → Advanced**.

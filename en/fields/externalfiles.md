@@ -1,4 +1,3 @@
-
 # URL and DOI links in JabRef
 
 For linking attached files, see [File links in JabRef](filelinks.md).

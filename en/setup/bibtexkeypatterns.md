@@ -3,6 +3,7 @@
 {% hint style="info" %}
 Since: 5
 {% endhint %}
+
 The pattern used in the auto generation of BibTeX labels can be set for each of the standard entry types in **Options → Preferences**, tab **BibTeX key generator**. Additionally, if you right click the tab of a database, the menu **BibTeX key patterns** allows to set specific key patterns for this database.
 
 ## Key patterns

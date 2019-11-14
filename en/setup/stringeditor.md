@@ -1,4 +1,3 @@
-
 # The string editor
 
 [Strings](../fields/strings.md) can be edited by **BibTeX → Edit strings** or pressing a button in the toolbar.

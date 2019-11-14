@@ -1,4 +1,3 @@
-
 # Fetching entries from INSPIRE-HEP
 
 [INSPIRE-HEP](https://inspirehep.net/?ln=en) is an open access digital library for the field of high energy physics \([Wikipedia](https://en.wikipedia.org/wiki/INSPIRE-HEP)\).

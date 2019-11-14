@@ -1,4 +1,3 @@
-
 # Other
 
 ## Q: My question is not answered here. What can I do?

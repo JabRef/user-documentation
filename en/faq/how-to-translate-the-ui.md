@@ -1,4 +1,3 @@
-
 # Translating the JabRef Interface
 
 ## Introduction

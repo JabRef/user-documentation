@@ -1,4 +1,3 @@
-
 # The 'owner' field
 
 JabRef can optionally mark all new entries added or imported to a database with your username.

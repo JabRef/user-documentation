@@ -1,4 +1,3 @@
-
 # Database properties window
 
 Each database can have specific properties that can be modified through **File → Database properties**\) or by right clicking on the tab of the database and choosing "Database properties". These specific properties override the generic properties defined in **Options → Preferences**.
@@ -19,7 +18,7 @@ In your database, files \(PDF, etc.\) can be linked to an entry. The list of the
 
 For your database, you can define a **General file directory** and a **User-specific file directory**. These settings override the _main file directory_ defined in the Preferences dialog.
 
-The **General file directory** is a common path for all the users of a shared database.  
+The **General file directory** is a common path for all the users of a shared database.
 The **User-specific file directory** allows each user to have its own file directory for the database. If defined, it overrides the **General file directory**.
 
 JabRef stores the name of the current system alongside the **User-specific file directory**. This assumes that each user of the database has a different system name. For example, when using the computer _laptop_, the entry in the bib file is @Comment{jabref-meta: fileDirectory-jabref-laptop:\somedir;}

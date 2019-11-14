@@ -1,4 +1,3 @@
-
 # OpenOffice/LibreOffice integration
 
 ## Introduction

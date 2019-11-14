@@ -1,4 +1,3 @@
-
 # Sharing
 
 ## Q: How does JabRef support me in sharing my Bib\(La\)TeX libraries?

@@ -1,4 +1,3 @@
-
 # Get BibTeX data from DOI
 
 JabRef can help you complement your entries from their DOI.

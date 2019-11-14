@@ -1,4 +1,3 @@
-
 # JabRef and Mac OS X
 
 ## Q: After downloading and unzipping, OS X shows “JabRef Installer.app” can’t be opened because it is from an unidentified developer.
