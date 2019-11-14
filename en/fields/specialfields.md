@@ -1,7 +1,7 @@
 # Special Fields
 
 {% hint style="warning" %}
-This information is outdated. Pleae help to improve it.
+This information is outdated. Please help to improve it.
 {% endhint %}
 
 Special fields offer the functionality

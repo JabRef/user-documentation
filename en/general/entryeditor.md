@@ -1,7 +1,7 @@
 # BibTeX entry editor
 
 {% hint style="warning" %}
-This information is outdated. Pleae help to improve it.
+This information is outdated. Please help to improve it.
 {% endhint %}
 
 Opened from main window by double-clicking anywhere on the line of the entry, or selecting the entry and pressing Enter or Ctrl + D. The panel is closed by pressing Esc._
