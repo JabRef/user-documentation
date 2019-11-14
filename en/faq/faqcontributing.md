@@ -8,7 +8,7 @@ Please use the edit pencil in the upper right corner.
 
 ### I would like to help translating JabRef to another language. How do I get started?
 
-We encourage you to read about [translating the JabRef user interface](./how-to-translate-the-ui.md).
+We encourage you to read about [translating the JabRef user interface](how-to-translate-the-ui.md).
 
 ### I want to keep Wikipedia pages up-to-date
 

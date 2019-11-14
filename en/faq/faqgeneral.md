@@ -45,9 +45,7 @@ A: Yes. Go to **Search → Web Search** to enable the Web search. A Web search b
 
 ### Q: Why can't JabRef find any DOI?
 
-A: There are several reasons why JabRef cannot find your DOI.
-One reason could be that your DOI is not listed in the [CrossRef database](https://search.crossref.org/) if you are using the CrossRef fetcher.
-Another reason could be that the search result for your DOI on [DOI.org](https://dx.doi.org) returns invalid BibTeX which is unable to be read by JabRef.
+A: There are several reasons why JabRef cannot find your DOI. One reason could be that your DOI is not listed in the [CrossRef database](https://search.crossref.org/) if you are using the CrossRef fetcher. Another reason could be that the search result for your DOI on [DOI.org](https://dx.doi.org) returns invalid BibTeX which is unable to be read by JabRef.
 
 ### Q: I have an ISBN. Is it possible to create an entry directly out of the ISBN?
 
@@ -126,3 +124,4 @@ A: You have to start vim with the option `--servername` \(such as `vim --servern
 ### Q: Is JabRef free for private and corporate use?
 
 A: Yes it is. JabRef is distributed under the MIT License, which [allows the following usage](https://tldrlegal.com/license/mit-license).
+

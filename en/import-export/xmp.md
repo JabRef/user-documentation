@@ -27,7 +27,7 @@ The following easy minimal schema is used:
 
 The following is an example of the mapping
 
-```bibtex
+```text
 @INPROCEEDINGS{CroAnnHow05,
   author = {Crowston, K. and Annabi, H. and Howison, J. and Masango, C.},
   title = {Effective work practices for floss development: A model and propositions},
@@ -41,7 +41,7 @@ The following is an example of the mapping
 
 will be transformed into
 
-```xml
+```markup
 <rdf:Description xmlns:bibtex="http://jabref.sourceforge.net/bibteXMP/"
     bibtex:bibtexkey="CroAnnHow05"
     bibtex:year="2005"
@@ -73,3 +73,4 @@ Some links about XMP and annotating PDFs
 * [Wikipedia Article](https://en.wikipedia.org/wiki/Extensible_Metadata_Platform)
 * [James Howison's blog "Themp---Managing Academic Papers like MP3s"](https://web.archive.org/web/20110424121251/http://freelancepropaganda.com/themp/)
 * [Good thread on ArsTechnica discussing the management of PDFs.](http://arstechnica.com/civis/viewtopic.php?f=19&t=408429)
+

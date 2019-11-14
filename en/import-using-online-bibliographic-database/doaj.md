@@ -4,7 +4,7 @@
 
 To fetch entries from DOAJ, choose **Search → Web search**, and the search interface will appear in the side pane. Select **DOAJ** in the dropdown menu. To start a search, enter the words of your query, and press Enter or the **Fetch** button.
 
-The results are displayed in the [import inspection window](../import-export/). In case an error occurs, it is shown in a popup.
+The results are displayed in the [import inspection window](https://github.com/JabRef/help.jabref.org/tree/2cba6dd8d27886a5c20e321d98dab92592709fba/en/import-export/README.md). In case an error occurs, it is shown in a popup.
 
 It is possible to limit the search by adding a field name to the search, as **field:text**. The supported fields area:
 

@@ -10,7 +10,7 @@ This module is always running in the background while you are working on a _BibT
 
 Assumed that _JabRef_ crashes while you are working on a _BibTeX database_. When you try again to open the file _JabRef_ crashed with you will get the following dialog:
 
-![Screenshot of the backup dialog](../../.gitbook/assets/backup_found.png)
+![Screenshot of the backup dialog](../.gitbook/assets/backup_found.png)
 
 Now you have the possibility to restore your changes which would normally get lost.
 

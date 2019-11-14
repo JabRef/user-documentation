@@ -11,3 +11,4 @@ In addition, we have [many open issues dealing with collaboration](https://githu
 ## Q: How to do collaborative work on a library?
 
 A: You can either choose to [use an SQL database](../collaborative-work/sharedbibfile.md) or to [share a bib file](../collaborative-work/sharedbibfile.md).
+

@@ -3,6 +3,7 @@
 {% hint style="info" %}
 Since: 3.5
 {% endhint %}
+
 JabRef supports following fields to jump to other entries.
 
 Following fields are supported:

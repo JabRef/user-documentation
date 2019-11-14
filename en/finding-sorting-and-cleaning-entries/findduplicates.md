@@ -8,7 +8,7 @@ Detection of potential duplicates is done by an edit distance algorithm. Extra w
 
 ## Parallel display of potential duplicates
 
-![Screenshot of the parallel display](../../.gitbook/assets/findduplicateswindow-paralleldisplay.png)
+![Screenshot of the parallel display](../.gitbook/assets/findduplicateswindow-paralleldisplay.png)
 
 When two potential duplicates are found, their fields are displayed side-by-side.
 
@@ -24,7 +24,7 @@ In the central column, a radio button allows you to select which side to keep fo
 
 ## Selecting which entry to keep
 
-![Screenshot of the buttons to choose which entry to keep](../../.gitbook/assets/findduplicateswindow-selecting.png)
+![Screenshot of the buttons to choose which entry to keep](../.gitbook/assets/findduplicateswindow-selecting.png)
 
 You are offered to:
 

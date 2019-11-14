@@ -6,7 +6,7 @@ First, select the two entries to be merged. Then select the menu **Quality → M
 
 ## Parallel display of the entries' fields
 
-![Screenshot of the parallel display](../../.gitbook/assets/mergeentries-paralleldisplay.png)
+![Screenshot of the parallel display](../.gitbook/assets/mergeentries-paralleldisplay.png)
 
 The fields of the two entries are displayed side-by-side on the upper part of the window.
 
@@ -22,7 +22,7 @@ In the central column, a radio button allows you to select which side to keep fo
 
 ## Merged entry: preview and source code
 
-![Screenshot of the preview and source code for the merged entry](../../.gitbook/assets/mergeentries-previewandcode.png)
+![Screenshot of the preview and source code for the merged entry](../.gitbook/assets/mergeentries-previewandcode.png)
 
 Based upon your selection, the merged entry is shown, both as a preview \(on the left\) and as source code \(on the right\).
 
@@ -30,7 +30,7 @@ If you right-click on the preview, you can **Print entry preview** or **Copy pre
 
 ## Final merging
 
-![Screenshot of choosing to merge or not](../../.gitbook/assets/mergeentries-selecting.png)
+![Screenshot of choosing to merge or not](../.gitbook/assets/mergeentries-selecting.png)
 
 Finally, after selecting which fields to keep, you can decide to **Merge entries**. Alternatively, you can press **Cancel**.
 

@@ -3,26 +3,27 @@
 {% hint style="info" %}
 Since: 5.0
 {% endhint %}
+
 JabRef can automatically toggle journal names between abbreviated and unabbreviated form, as long as the names are contained in one of your journal lists.
 
 This feature can be configured under **Options → Manage journal abbreviations**.
 
 JabRef includes a fairly extensive build-in list of journal abbreviations, but it is still likely to be incomplete for the purposes of many users. You can add abbreviations in the form of a personal list or external lists.
 
-![General view](./images/JournalAbbreviations.png)
+![General view](https://github.com/JabRef/help.jabref.org/tree/88126187de2f857e2e77836271d7e62f1c5748af/en/fields/images/JournalAbbreviations.png)
 
 ## Using the feature
 
 Journal name conversion can be accessed either from within the entry editor, or from the **Tools** menu. In the entry editor you will find a button labeled _Toggle abbreviation_ by the _journal_ field. Clicking this button will cause the current journal name to be switched to the next of four modes:
 
-*   Full name, e.g. "Aquacultural Engineering"
-*   Default abbreviation, e.g. "Aquacult. Eng."
-*   Medline abbreviation, e.g. "Aquacult Eng"
-*   Shortest unique abbreviation, e.g. "AQEND6"
+* Full name, e.g. "Aquacultural Engineering"
+* Default abbreviation, e.g. "Aquacult. Eng."
+* Medline abbreviation, e.g. "Aquacult Eng"
+* Shortest unique abbreviation, e.g. "AQEND6"
 
 If the current journal name is not found in your journal lists, the field will not be modified.
 
-To convert the journal names of many entries in bulk, you can select any number of entries, and choose **Tools → Abbreviate journal names \(DEFAULT\)**, **Tools → Abbreviate journal names \(MEDLINE\)**, **Tools → Abbreviate journal names → SHORTEST UNIQUE**,  or **Tools → Unabbreviate journal names**. These three actions will abbreviate and unabbreviate the journal names of all selected entries for which the journal name could be found in your journal lists.
+To convert the journal names of many entries in bulk, you can select any number of entries, and choose **Tools → Abbreviate journal names \(DEFAULT\)**, **Tools → Abbreviate journal names \(MEDLINE\)**, **Tools → Abbreviate journal names → SHORTEST UNIQUE**, or **Tools → Unabbreviate journal names**. These three actions will abbreviate and unabbreviate the journal names of all selected entries for which the journal name could be found in your journal lists.
 
 ## Setting up additional journal lists
 
@@ -32,7 +33,7 @@ Any entry in your personal journal list will override an entry with the same ful
 
 ### Your personal journal abbreviations list
 
-Your personal journal list is managed on top of the **Manage journal abbreviations** window. To start building your personal journal abbreviations list, choose *Add new list*, and enter a filename. If you already have a file that you want to use as a starting point, use the *Open existing list* button. The table will update to show the contents of the list you have selected.
+Your personal journal list is managed on top of the **Manage journal abbreviations** window. To start building your personal journal abbreviations list, choose _Add new list_, and enter a filename. If you already have a file that you want to use as a starting point, use the _Open existing list_ button. The table will update to show the contents of the list you have selected.
 
 The table and the tool buttons in the upper right allow you to add, remove and edit journal entries. For each entry you must provide the full journal name, and the default abbreviation \(e.g. "Aquacultural Engineering" and "Aquacult. Eng."\). The last field, which contains the shortest unique abbreviation, is optional. Therefore, you can actually safely omit it. To edit an entry, double-click its row in the table.
 
@@ -40,17 +41,21 @@ Once you click _Save changes_, if you have selected a file, and the table contai
 
 ### External journal lists
 
-You can link to a number of external lists. These links can be set up on top of the **Manage journal abbreviations** window. External lists are similar to the personal list. The *Open existing list* button allows you to select an existing file on your computer.
+You can link to a number of external lists. These links can be set up on top of the **Manage journal abbreviations** window. External lists are similar to the personal list. The _Open existing list_ button allows you to select an existing file on your computer.
 
-![External list](./images/JournalAbbreviations-ExternalList.png)
+![External list](https://github.com/JabRef/help.jabref.org/tree/88126187de2f857e2e77836271d7e62f1c5748af/en/fields/images/JournalAbbreviations-ExternalList.png)
 
-External lists can be found at [JabRef's repository abbreviation lists](http://abbrv.jabref.org). These data files are in CSV format (using semicolons as separators):
+External lists can be found at [JabRef's repository abbreviation lists](http://abbrv.jabref.org). These data files are in CSV format \(using semicolons as separators\):
 
-    <full name>;<abbreviation>[;<shortest unique abbreviation>[;<frequency>]]
+```text
+<full name>;<abbreviation>[;<shortest unique abbreviation>[;<frequency>]]
+```
 
-The two last fields are optional, and you can omit them. JabRef supports the third field, which contains the shortest unique abbreviation. The last field is not currently used; its intention is gives frequency (e.g., `M` for monthly). For instance:
+The two last fields are optional, and you can omit them. JabRef supports the third field, which contains the shortest unique abbreviation. The last field is not currently used; its intention is gives frequency \(e.g., `M` for monthly\). For instance:
 
-    Accounts of Chemical Research;Acc. Chem. Res.;ACHRE4;M
+```text
+Accounts of Chemical Research;Acc. Chem. Res.;ACHRE4;M
+```
 
 #### Contributing an external journal list
 

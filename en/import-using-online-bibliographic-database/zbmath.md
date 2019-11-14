@@ -3,9 +3,10 @@
 {% hint style="info" %}
 Since: 3.7
 {% endhint %}
+
 [zbMATH](https://www.zbmath.org/) is a reviewing service providing reviews and abstracts for articles in pure and applied mathematics \([Wikipedia](https://en.wikipedia.org/wiki/Zentralblatt_MATH)\).
 
 To fetch entries from zbMATH, choose **Search → Web search**, and the search interface will appear in the side pane. Select **zbMATH** in the dropdown menu. To start a search, enter the words of your query, and press Enter or the **Fetch** button.
 
-Then, the results are displayed in the [import inspection window](../import-export/). In case an error occurs, it is shown in a popup.
+Then, the results are displayed in the [import inspection window](https://github.com/JabRef/help.jabref.org/tree/88126187de2f857e2e77836271d7e62f1c5748af/en/import-export/README.md). In case an error occurs, it is shown in a popup.
 

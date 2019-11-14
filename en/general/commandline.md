@@ -22,24 +22,25 @@ will correctly load the file `original.bib`, export it in docbook format to `fil
 
 ## Options
 
-* [Help: `-h`](#help--h)
-* [No-GUI mode: `-n`](#no-gui-mode--n)
-* [Import file: `-i filename[,import format]`](#import-file--i-filenameimport-format/README.md)
-* [Export file: `-o filename[,export format]`](#export-file--o-filenameexport-format)
-* [Import BibTeX: `-importBibtex`](#import-bibtex--importbibtex)
-- [Export matching entries: `-m [field]searchTerm,outputFile:file[,exportFormat]`](#export-matching-entries--m-fieldsearchtermoutputfilefileexportformat)
-* [Fetch entries from Web: `-f=FetcherName:QueryString`](#fetch-entries-from-web--ffetchernamequerystring)
-* [Subdatabase from .aux file: `-a infile[.aux],outfile[.bib] base-BibTeX-file`](#subdatabase-from-aux-file--a-infileauxoutfilebib-base-bibtex-file)
-* [Set file links: `-asfl`](#set-file-links--asfl)
-* [Regenerate keys: `-g`](#regenerate-keys--g)
-* [Export preferences: `-x filename`](#export-preferences--x-filename)
-* [Import preferences: `-p filename`](#import-preferences--p-filename)
-* [Reset preferences: `-d key`](#reset-preferences--d-key)
-* [No files at startup: `-b`](#no-files-at-startup--b)
-* [Version: `-v`](#version--v)
-* [Debug mode: `--debug`](#debug-mode---debug)
-* [Display output in the console: `--console`](#display-output-in-the-console---console)
-### Help: `-h`
+* [Help: `-h`](commandline.md#help--h)
+* [No-GUI mode: `-n`](commandline.md#no-gui-mode--n)
+* [Import file: `-i filename[,import format]`](commandline.md#import-file--i-filenameimport-format/README.md)
+* [Export file: `-o filename[,export format]`](commandline.md#export-file--o-filenameexport-format)
+* [Import BibTeX: `-importBibtex`](commandline.md#import-bibtex--importbibtex)
+* [Export matching entries: `-m [field]searchTerm,outputFile:file[,exportFormat]`](commandline.md#export-matching-entries--m-fieldsearchtermoutputfilefileexportformat)
+* [Fetch entries from Web: `-f=FetcherName:QueryString`](commandline.md#fetch-entries-from-web--ffetchernamequerystring)
+* [Subdatabase from .aux file: `-a infile[.aux],outfile[.bib] base-BibTeX-file`](commandline.md#subdatabase-from-aux-file--a-infileauxoutfilebib-base-bibtex-file)
+* [Set file links: `-asfl`](commandline.md#set-file-links--asfl)
+* [Regenerate keys: `-g`](commandline.md#regenerate-keys--g)
+* [Export preferences: `-x filename`](commandline.md#export-preferences--x-filename)
+* [Import preferences: `-p filename`](commandline.md#import-preferences--p-filename)
+* [Reset preferences: `-d key`](commandline.md#reset-preferences--d-key)
+* [No files at startup: `-b`](commandline.md#no-files-at-startup--b)
+* [Version: `-v`](commandline.md#version--v)
+* [Debug mode: `--debug`](commandline.md#debug-mode---debug)
+* [Display output in the console: `--console`](commandline.md#display-output-in-the-console---console)
+
+  **Help: `-h`**
 
 \(or `--help`\)
 
@@ -103,11 +104,11 @@ java -jar JabRef.jar -o path\split,xmp  path\entries.bib -n
 
 ### Import BibTeX: `-importBibtex`
 
-Import or load code directly from the BibTeX file. This only works for BibTeX files, and does not support files of other import formats. If it detects this command line option, the JabRef CLI will take in its following argument as a BibTeX string that represents the BibTeX article file being read in for import (usually a filename). JabRef then passes on this information to a helper function that will parse the BibTex string into entries and return the resulting BibTex entries to the JabRef CLI.
+Import or load code directly from the BibTeX file. This only works for BibTeX files, and does not support files of other import formats. If it detects this command line option, the JabRef CLI will take in its following argument as a BibTeX string that represents the BibTeX article file being read in for import \(usually a filename\). JabRef then passes on this information to a helper function that will parse the BibTex string into entries and return the resulting BibTex entries to the JabRef CLI.
 
-If the GUI is not suppressed (using the `-n` option), any imported or loaded BibTeX file will show up in the main window.
+If the GUI is not suppressed \(using the `-n` option\), any imported or loaded BibTeX file will show up in the main window.
 
-*Note:* The `-importBibtex` option can be specified only once, and for one file only.
+_Note:_ The `-importBibtex` option can be specified only once, and for one file only.
 
 ### Export matching entries: `-m [field]searchTerm,outputFile:file[,exportFormat]`
 
@@ -173,7 +174,7 @@ Reset preferences \(key1, key2,..., or `all`\).
 
 ### No files at startup: `-b`
 
-(or `--blank`)
+\(or `--blank`\)
 
 Do not open any files at startup
 

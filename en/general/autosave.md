@@ -10,7 +10,7 @@ The autosave feature helps to save an opened database without manual interventio
 
 ## Activation
 
-![Screenshot of the autosave preferences](../../.gitbook/assets/autosave.png)
+![Screenshot of the autosave preferences](../.gitbook/assets/autosave.png)
 
 You can activate the autosave feature through **Options → Preferences**, and then by choosing **File** on the left panel. At the lower part of the window, a section is dedicated to **AutoSave**.
 
@@ -27,3 +27,4 @@ Generally, you are able to save a shared database after connecting to it. This f
 By default this feature is disabled for local databases. It has to be kept apart from the [main backup functionality](backup.md) as the backup is running continuously without users influence.
 
 By using the [gitignore.io](https://www.gitignore.io/) service, you can generate an appropriate `.gitignore` file by opening [https://www.gitignore.io/api/jabref](https://www.gitignore.io/api/jabref).
+
