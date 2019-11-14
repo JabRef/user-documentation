@@ -58,6 +58,8 @@ That's it! We'll review your changes and publish them at [docs.jabref.org](https
 
 To edit more than one file at a time, to add screenshots, and for other more advanced changes we recommend to checkout this repository locally and to create a PR of your changes using the standard git and GitHub workflow.
 
+In case you add a file, please add it to `SUMMARY.md`.
+
 ### Tables
 
 The best way to enter tables is to use this [Table generator](http://www.tablesgenerator.com/markdown_tables) for Markdown.

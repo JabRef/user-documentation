@@ -1,0 +1,132 @@
+# [JabRef Bibliography Management](./README.md)
+
+## [General information on JabRef](general/README.md)
+
+* [Entry Editor](general/entryeditor.md)
+* [Best Practices](general/bestpractices.md)
+* [Autosave](general/autosave.md)
+* [Backup](general/backup.md)
+* [Command line use and options](general/commandline.md)
+* [Remote operation](general/remote.md)
+* [Installation](general/installation.md)
+
+## About BibTeX and its fields
+
+* [Overview](fields/README.md)
+* [Field content selector](fields/contentselector.md)
+* [Links to other entries](fields/entrylinks.md)
+* [URL and DOI links in JabRef](fields/externalfiles.md)
+* [File links in JabRef](fields/filelinks.md)
+* [Journal abbreviations](fields/journalabbreviations.md)
+* [The 'owner' field](fields/owner.md)
+* [Set/clear/rename fields](fields/setclearrenamefields.md)
+* [Special Fields](fields/specialfields.md)
+* [Strings](fields/strings.md)
+* [Time stamps on Entries](fields/timestamp.md)
+
+## Finding, Sorting, and Cleaning Entries
+
+* [Overview](finding-sorting-and-cleaning-entries/README.md)
+* [Add unlinked PDFs including BibTeX data into the database](finding-sorting-and-cleaning-entries/findunlinkedfiles.md)
+* [Check integrity](finding-sorting-and-cleaning-entries/checkintegrity.md)
+* [Cleanup entries](finding-sorting-and-cleaning-entries/cleanupentries.md)
+* [Find duplicates](finding-sorting-and-cleaning-entries/findduplicates.md)
+* [Get BibTeX data from DOI](finding-sorting-and-cleaning-entries/getbibtexdatafromdoi.md)
+* [Groups](finding-sorting-and-cleaning-entries/groups.md)
+* [Merge entries](finding-sorting-and-cleaning-entries/mergeentries.md)
+* [Replace string](finding-sorting-and-cleaning-entries/replacestring.md)
+* [Save actions](finding-sorting-and-cleaning-entries/saveactions.md)
+* [Searching](finding-sorting-and-cleaning-entries/search.md)
+* [Synchronize file links](finding-sorting-and-cleaning-entries/synchrofilelinks.md)
+
+## Import and Export
+
+* [Overview](import-export/README.md)
+* Import
+  * [Custom import filters](import-export/customimports.md)
+  * [Import from Microsoft Word -- MS Office Bibliography XML format](import-export/msofficebibfieldmapping.md)
+  * [Import inspection window](import-export/importinspectiondialog.md)
+  * [New subdatabase based on AUX file](import-export/newbasedonaux.md)
+  * [New entry from plain text](import-export/newentryfromplaintext.md)
+* Export
+  * [Custom export filters](import-export/customexports.md)
+  * [EndNote Export Filter](import-export/endnotefilters.md)
+  * [Export to an External SQL Database](import-export/sqlexport.md)
+  * [Export to Microsoft Word -- MS Office Bibliography XML format](import-export/msofficebibfieldmapping.md)
+* Other integrations
+  * [LaTeX Citations Tab](import-export/latex-citations.md)
+  * [OpenOffice/LibreOffice integration](import-export/openofficeintegration.md)
+  * [Pushing to external editor application](import-export/pushtoapplications.md)
+  * [XMP metadata support in JabRef](import-export/xmp.md)
+* Knowledge
+  * [Comparison of the Medline \(txt\), Medline \(XML\), and RIS format](import-export/medlineris.md)
+
+### Import and Export using Online Services
+
+* [Overview](import-using-online-bibliographic-database/README.md)
+* [ACM Portal](import-using-online-bibliographic-database/acmportal.md)
+* [arXiv](import-using-online-bibliographic-database/arxiv.md)
+* [CiteSeerX](import-using-online-bibliographic-database/citeseer.md)
+* [DBLP](import-using-online-bibliographic-database/dblp.md)
+* [DOAJ](import-using-online-bibliographic-database/doaj.md)
+* [Google Scholar](import-using-online-bibliographic-database/googlescholar.md)
+* [GVK](import-using-online-bibliographic-database/gvk.md)
+* [IEEEXplore](import-using-online-bibliographic-database/ieeexplore.md)
+* [INSPIRE-HEP](import-using-online-bibliographic-database/inspire.md)
+* [MathSciNet](import-using-online-bibliographic-database/mathscinet.md)
+* [MEDLINE](import-using-online-bibliographic-database/medline.md)
+* [SAO/NASA Astrophysics Data System](import-using-online-bibliographic-database/ads.md)
+* [Springer](import-using-online-bibliographic-database/springer.md)
+* [Unpaywall](import-using-online-bibliographic-database/unpaywall.md)
+* [zbMATH](import-using-online-bibliographic-database/zbmath.md)
+
+### Import and Export using Publication Identifiers
+
+* [Overview](import-using-publication-identifiers/README.md)
+* [DiVA](import-using-publication-identifiers/divatobibtex.md)
+* [DOI -- Digital Object Identifier](import-using-publication-identifiers/doitobibtex.md)
+* [IACR eprint IDs](import-using-publication-identifiers/iacrtobibtex.md)
+* [ISBN number](import-using-publication-identifiers/isbntobibtex.md)
+* [Medline](import-using-publication-identifiers/medlinetobibtex.md)
+* [RFC document](import-using-publication-identifiers/rfctobibtex.md)
+* [SAO/NASA Astrophysics Data System](import-using-publication-identifiers/adstobibtex.md)
+* [Title of the paper](import-using-publication-identifiers/titletobibtex.md)
+
+## Collaborative Work
+
+* [Overview](collaborative-work/README.md)
+* [Sharing a Bib\(La\)TeX Database](collaborative-work/sharedbibfile.md)
+* [Shared SQL Database](collaborative-work/sqldatabase.md)
+* [Migration of pre-3.6 SQL databases into a shared SQL database](collaborative-work/sqldatabasemigration.md)
+
+## Configuration of JabRef
+
+* [Overview](setup/README.md)
+* [Customize the BibTeX key generator](setup/bibtexkeypatterns.md)
+* [Customize entry types](setup/customentrytypes.md)
+* [Customize general fields](setup/generalfields.md)
+* [Customize key bindings](setup/customkeybindings.md)
+* [Database properties window](setup/databaseproperties.md)
+* [Entry preview setup](setup/preview.md)
+* [Manage external file types](setup/externalfiletypes.md)
+* [Manage protected terms](setup/protectedterms.md)
+* [The string editor](setup/stringeditor.md)
+
+## Frequently Asked Questions
+
+* [Overview](faq/README.md)
+* [General FAQs](faq/faqgeneral.md)
+* [Contributing](faq/faqcontributing.md)
+* [Sharing](faq/faqsharing.md)
+
+### How Tos
+
+* [How to Improve the Help Page](faq/how-to-improve-the-help-page.md)
+* [How to translate the JabRef User Interface](faq/how-to-translate-the-ui.md)
+
+### FAQs on Operating Systems
+
+* [Linux](faq/faqlinux.md)
+* [Mac OS X](faq/faqosx.md)
+* [Windows](faq/faqwindows.md)
+
