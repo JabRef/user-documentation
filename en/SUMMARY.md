@@ -97,6 +97,7 @@
   * [Contributing](faq/faqcontributing.md)
   * [Sharing](faq/faqsharing.md)
   * How Tos
+    * [How to expand first names of a BibTeX entry](faq/how-to-expand-firstnames.md)
     * [How to Improve the Help Page](faq/how-to-improve-the-help-page.md)
     * [How to translate the JabRef User Interface](faq/how-to-translate-the-ui.md)
   * FAQs on Operating Systems
