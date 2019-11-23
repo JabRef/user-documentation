@@ -1,4 +1,4 @@
 ---
-redirect:   https://docs.jabref.org/?q=Autosave
+redirect:   https://docs.jabref.org/general/autosave
 layout:     redirect
 ---

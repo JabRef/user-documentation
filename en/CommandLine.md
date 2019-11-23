@@ -1,4 +1,4 @@
 ---
-redirect:   https://docs.jabref.org/?q=Command%20Line
+redirect:   https://docs.jabref.org/general/commandline
 layout:     redirect
 ---

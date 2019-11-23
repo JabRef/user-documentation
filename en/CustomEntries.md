@@ -1,4 +1,4 @@
 ---
-redirect:   https://docs.jabref.org/?q=Custom%20Entries
+redirect:   https://docs.jabref.org/setup/customentrytypes
 layout:     redirect
 ---

@@ -1,4 +1,4 @@
 ---
-redirect:   https://docs.jabref.org/?q=FAQcontributing
+redirect:   https://contribute.jabref.org
 layout:     redirect
 ---

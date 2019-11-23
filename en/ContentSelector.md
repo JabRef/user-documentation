@@ -1,4 +1,4 @@
 ---
-redirect:   https://docs.jabref.org/?q=Content%20Selector
+redirect:   https://docs.jabref.org/fields/contentselector
 layout:     redirect
 ---

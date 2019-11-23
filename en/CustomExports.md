@@ -1,4 +1,4 @@
 ---
-redirect:   https://docs.jabref.org/?q=Custom%20Exports
+redirect:   https://docs.jabref.org/import-export/export/customexports
 layout:     redirect
 ---

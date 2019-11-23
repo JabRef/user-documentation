@@ -1,4 +1,4 @@
 ---
-redirect:   https://docs.jabref.org/?q=Best%20Practices
+redirect:   https://docs.jabref.org/general/bestpractices
 layout:     redirect
 ---

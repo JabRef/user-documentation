@@ -1,4 +1,4 @@
 ---
-redirect:   https://docs.jabref.org/?q=Check%20Integrity
+redirect:   https://docs.jabref.org/finding-sorting-and-cleaning-entries/checkintegrity
 layout:     redirect
 ---

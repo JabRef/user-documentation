@@ -1,4 +1,4 @@
 ---
-redirect:   https://docs.jabref.org/?q=Cleanup%20Entries
+redirect:   https://docs.jabref.org/finding-sorting-and-cleaning-entries/cleanupentries
 layout:     redirect
 ---
