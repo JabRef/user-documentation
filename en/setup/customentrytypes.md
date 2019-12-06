@@ -1,5 +1,9 @@
 # Customizing entry types
 
+{% hint style="warning" %}
+Currently not available in 5.0. See <https://github.com/JabRef/jabref/issues/4719> for details.
+{% endhint %}
+
 To customize entry types, select the menu **BibTeX → Customize entry types**.
 
 When customizing an entry type, you both define how its entry editor should look, and what it takes for JabRef to consider an entry complete. You can both make changes to the existing entry types, and define new ones.
