@@ -10,7 +10,7 @@ To fetch entries from Google Scholar, choose **Search → Web search**, and the 
 
 ## Traffic limitations
 
-Google scholar can block "automated" crawls which generate too much traffic in a short time. Normally, the results are displayed in the [import inspection window](https://github.com/JabRef/help.jabref.org/tree/2cba6dd8d27886a5c20e321d98dab92592709fba/en/import-export/README.md). In case an error occurs, it is shown in a popup.
+Google scholar can block "automated" crawls which generate too much traffic in a short time. Normally, the results are displayed in the [import inspection window](../en/import-export/README.md). In case an error occurs, it is shown in a popup.
 
 However, after too much crawls JabRef --- or more precisely: your IP address --- could be blocked. To unblock your IP, doing a Google scholar search in your browser might help. You will be asked to show that you are not a robot \(a CAPTCHA challenge\). If no CAPTCHA appears, or JabRef is still blocked after performing a search in the browser, you can also change your IP address manually or wait for some hours to get unblocked again.
 

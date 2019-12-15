@@ -10,7 +10,7 @@ This feature can be configured under **Options → Manage journal abbreviations*
 
 JabRef includes a fairly extensive build-in list of journal abbreviations, but it is still likely to be incomplete for the purposes of many users. You can add abbreviations in the form of a personal list or external lists.
 
-![General view](https://github.com/JabRef/help.jabref.org/tree/88126187de2f857e2e77836271d7e62f1c5748af/en/fields/images/JournalAbbreviations.png)
+![General view](../.gitbook/assets/JournalAbbreviations.png)
 
 ## Using the feature
 
@@ -43,7 +43,7 @@ Once you click _Save changes_, if you have selected a file, and the table contai
 
 You can link to a number of external lists. These links can be set up on top of the **Manage journal abbreviations** window. External lists are similar to the personal list. The _Open existing list_ button allows you to select an existing file on your computer.
 
-![External list](https://github.com/JabRef/help.jabref.org/tree/88126187de2f857e2e77836271d7e62f1c5748af/en/fields/images/JournalAbbreviations-ExternalList.png)
+![External list](../.gitbook/assets/JournalAbbreviations-ExternalList.png)
 
 External lists can be found at [JabRef's repository abbreviation lists](http://abbrv.jabref.org). These data files are in CSV format \(using semicolons as separators\):
 
@@ -59,5 +59,4 @@ Accounts of Chemical Research;Acc. Chem. Res.;ACHRE4;M
 
 #### Contributing an external journal list
 
-We want to expand both the build-in list and the selection of smaller lists, so if you have set up a representative list for your own subject area, we would appreciate it if you share your list via [GitHub](http://github.com/JabRef/abbrv.jabref.org) or by dropping a note on [our forum](http://discourse.jabref.org/).
-
+We want to expand both the build-in list and the selection of smaller lists, so if you have set up a representative list for your own subject area, we would appreciate it if you share your list via [GitHub](https://github.com/JabRef/abbrv.jabref.org) or by dropping a note on [our forum](https://discourse.jabref.org/).

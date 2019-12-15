@@ -8,7 +8,7 @@ JabRef is a cross-platform application that works on Windows, Linux and Mac OS X
 
 ### Collect
 
-* [Search](../import-using-online-bibliographic-database/) across many online scientific catalogues like [CiteSeer](../import-using-online-bibliographic-database/citeseer.md), CrossRef, Google Scholar, IEEEXplore, INSPIRE-HEP, Medline PubMed, MathSciNet, Springer, arXiv, and zbMATH
+* [Search](./import-using-online-bibliographic-database/) across many online scientific catalogues like [CiteSeer](./import-using-online-bibliographic-database/citeseer.md), CrossRef, Google Scholar, IEEEXplore, INSPIRE-HEP, Medline PubMed, MathSciNet, Springer, arXiv, and zbMATH
 * Import options for over 15 reference formats
 * Easily retrieve and link full-text articles
 * Fetch complete bibliographic information based on ISBN, DOI, PubMed-ID and arXiv-ID
@@ -30,7 +30,7 @@ JabRef is a cross-platform application that works on Windows, Linux and Mac OS X
 ### Cite
 
 * Native [BibTeX](https://www.ctan.org/pkg/bibtex) and [Biblatex](https://www.ctan.org/pkg/biblatex) support
-* [Cite-as-you-write functionality](../import-export/pushtoapplications.md) for external applications such as Emacs, Kile, LyX, Texmaker, TeXstudio, Vim and WinEdt.
+* [Cite-as-you-write functionality](./import-export/pushtoapplications.md) for external applications such as Emacs, Kile, LyX, Texmaker, TeXstudio, Vim and WinEdt.
 * Format references in one of the many thousand built-in citation styles or create your style
 * Support for Word and LibreOffice/OpenOffice for inserting and formatting citations
 
@@ -38,11 +38,11 @@ JabRef is a cross-platform application that works on Windows, Linux and Mac OS X
 
 * Many built-in export options or create your export format
 * Library is saved as a simple text file and thus it is easy to share with others via Dropbox and is version-control friendly
-* Work in a team: sync the contents of your library [via a SQL database](../collaborative-work/sqldatabase.md)
+* Work in a team: sync the contents of your library [via a SQL database](./collaborative-work/sqldatabase.md)
 
 ## The data format of JabRef is BibTeX
 
-JabRef is is a program for working with BibTeX databases. JabRef program uses no separate internal file format, but directly works with BibTeX. That means, your BibTeX file is kept as is when opening in JabRef and saving again: You normally load and save your databases directly in the BibTeX .bib format. In addition, you can also [import and export bibliography libraries](../import-export/) in a number of other formats into JabRef.
+JabRef is is a program for working with BibTeX databases. JabRef program uses no separate internal file format, but directly works with BibTeX. That means, your BibTeX file is kept as is when opening in JabRef and saving again: You normally load and save your databases directly in the BibTeX .bib format. In addition, you can also [import and export bibliography libraries](./import-export/) in a number of other formats into JabRef.
 
 ## JabRef's main window
 
@@ -65,25 +65,25 @@ This is the main window from where you work with your databases. Below the menub
 
 There are several ways to add a new entry. The **New entry** menu action shows a dialog where you can choose the type of the entry from a list. To bypass this dialog, there are also separate menu actions for each entry type, and keyboard shortcuts for the most common types.
 
-When a new entry is added, by default an [entry editor](../general/entryeditor.md) for the entry will be opened. This behaviour can be toggled in the **Preferences** dialog.
+When a new entry is added, by default an [entry editor](./general/entryeditor.md) for the entry will be opened. This behaviour can be toggled in the **Preferences** dialog.
 
 _Note:_ We strongly recommend learning the shortcuts for the entry types you use most often, e.g. Ctrl + Shift + A for adding an _article_ entry.
 
 #### Adding a new entry using an id
 
-In the dialog, you can also create an entry based on Id. See [import using publication identifiers](../import-using-publication-identifiers/) for an overview on all available fetchers. For instance, when having an ISBN number, you can select "ISBN" or "DOI" as Id type and then fetch it. See [ISBNtoBibTeX](../import-using-publication-identifiers/isbntobibtex.md) and [DOItoBibTeX](../import-using-publication-identifiers/doitobibtex.md) for details.
+In the dialog, you can also create an entry based on Id. See [import using publication identifiers](./import-using-publication-identifiers/) for an overview on all available fetchers. For instance, when having an ISBN number, you can select "ISBN" or "DOI" as Id type and then fetch it. See [ISBNtoBibTeX](./import-using-publication-identifiers/isbntobibtex.md) and [DOItoBibTeX](./import-using-publication-identifiers/doitobibtex.md) for details.
 
 #### Adding a new entry using the reference text
 
-Use the BibTeX → New entry from plain text... \(Ctrl+Shift+N\). For more information see [New entry from plain text](../import-export/newentryfromplaintext.md).
+Use the BibTeX → New entry from plain text... \(Ctrl+Shift+N\). For more information see [New entry from plain text](./import-export/newentryfromplaintext.md).
 
 ### Editing an entry
 
-To open an [entry editor](../general/entryeditor.md) for an existing entry, simply double-click anywhere on the appropriate line will open the entry editor \(or select the entry and press Enter\).
+To open an [entry editor](./general/entryeditor.md) for an existing entry, simply double-click anywhere on the appropriate line will open the entry editor \(or select the entry and press Enter\).
 
 ### Referencing a BibTeX string in a field
 
-In JabRef you write the contents of all fields the same way as you would in a text editor, with one exception: to reference a string, enclose the name of the string in a set of \# characters, e.g.: '\#jan\# 1997', which will be interpreted as the string named `jan` followed by `1997`. For more information, see [string editor](../setup/stringeditor.md).
+In JabRef you write the contents of all fields the same way as you would in a text editor, with one exception: to reference a string, enclose the name of the string in a set of \# characters, e.g.: '\#jan\# 1997', which will be interpreted as the string named `jan` followed by `1997`. For more information, see [string editor](./setup/stringeditor.md).
 
 ## Revision history
 
@@ -97,5 +97,5 @@ The JabRef software is under the [MIT License](https://github.com/JabRef/jabref/
 
 ### The license of JabRef help
 
-The help of JabRef is under the [Creative Commons 4.0 Attribution 4.0 International License](https://github.com/JabRef/help.jabref.org/blob/master/LICENSE.md). In short, you can make a commercial use of it, distribute it, modify it and rename it. You must give credit, include copyright, and state changes. And you cannot sublicense it.
+The help of JabRef is under the [Creative Commons 4.0 Attribution 4.0 International License](https://github.com/JabRef/user-documentation/blob/master/LICENSE.md). In short, you can make a commercial use of it, distribute it, modify it and rename it. You must give credit, include copyright, and state changes. And you cannot sublicense it.
 

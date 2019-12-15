@@ -12,5 +12,5 @@ To fetch entries from ACM, choose **Search → Web search**, and the search inte
 
 Frequent connections to ACM Portal may get your IP banned for hours. To avoid this, JabRef will display a preview \(for each search\) of the first page of entries returned by the server. You can then choose which entries to download.
 
-Then, the results are displayed in the [import inspection window](https://github.com/JabRef/help.jabref.org/tree/7365b78750a7047d39daacd38a7afff8ccaa888d/en/import-export/README.md).
+Then, the results are displayed in the [import inspection window](../import-export/README.md).
 
