@@ -1,6 +1,5 @@
 # Table of contents
 
-
 * [JabRef Bibliography Management](README.md)
 * [General information about JabRef](general/README.md)
   * [Entry Editor](general/entryeditor.md)
@@ -59,23 +58,23 @@
   * [Groups](finding-sorting-and-cleaning-entries/groups.md)
   * [Replace string](finding-sorting-and-cleaning-entries/replacestring.md)
 * [Import and Export](import-export/README.md)
-  * Import
+  * [Import](import-export/import/README.md)
     * [Custom import filters](import-export/customimports.md)
     * [Import from Microsoft Word -- MS Office Bibliography XML format](import-export/msofficebibfieldmapping.md)
     * [Import inspection window](import-export/importinspectiondialog.md)
     * [New subdatabase based on AUX file](import-export/newbasedonaux.md)
     * [New entry from plain text](import-export/newentryfromplaintext.md)
-  * Export
+  * [Export](import-export/export/README.md)
     * [Custom export filters](import-export/customexports.md)
     * [EndNote Export Filter](import-export/endnotefilters.md)
     * [Export to an External SQL Database](import-export/sqlexport.md)
     * [Export to Microsoft Word -- MS Office Bibliography XML format](import-export/msofficebibfieldmapping.md)
-  * Other integrations
+  * [Other integrations](import-export/other-integrations/README.md)
     * [LaTeX Citations Tab](import-export/latex-citations.md)
     * [OpenOffice/LibreOffice integration](import-export/openofficeintegration.md)
     * [Pushing to external editor application](import-export/pushtoapplications.md)
     * [XMP metadata support in JabRef](import-export/xmp.md)
-  * Knowledge
+  * [Knowledge](import-export/knowledge/README.md)
     * [Comparison of the Medline \(txt\), Medline \(XML\), and RIS format](import-export/medlineris.md)
 * [Collaborative Work](collaborative-work/README.md)
   * [Sharing a Bib\(La\)TeX Database](collaborative-work/sharedbibfile.md)
@@ -96,11 +95,12 @@
   * [General FAQs](faq/faqgeneral.md)
   * [Contributing](faq/faqcontributing.md)
   * [Sharing](faq/faqsharing.md)
-  * How Tos
+  * [How Tos](faq/how-tos/README.md)
     * [How to expand first names of a BibTeX entry](faq/how-to-expand-firstnames.md)
     * [How to Improve the Help Page](faq/how-to-improve-the-help-page.md)
     * [How to translate the JabRef User Interface](faq/how-to-translate-the-ui.md)
-  * FAQs on Operating Systems
+  * [FAQs on Operating Systems](faq/faqs-on-operating-systems/README.md)
     * [Linux](faq/faqlinux.md)
     * [Mac OS X](faq/faqosx.md)
     * [Windows](faq/faqwindows.md)
+
