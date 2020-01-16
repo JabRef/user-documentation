@@ -49,7 +49,12 @@ Please head to [codecov](https://codecov.io/github/JabRef/jabref) to see current
 
 ### I want to start with something easy
 
-We collect small issues at [https://github.com/JabRef/jabref/labels/good%20first%20issue](https://github.com/JabRef/jabref/labels/good%20first%20issue) and at [https://github.com/koppor/jabref/labels/good%20first%20issue](https://github.com/koppor/jabref/labels/good%20first%20issue). You can read up there to find something easy to start with. Then, check our [CONTRIBUTING.md](https://github.com/JabRef/jabref/blob/master/CONTRIBUTING.md) for detailed information and further links.
+We collect small issues at [https://github.com/JabRef/jabref/labels/good%20first%20issue](https://github.com/JabRef/jabref/labels/good%20first%20issue).
+In case you do not find something suitable, you are invited to get in touch with us.
+Comment at the issue, check the [the forum](https://discourse.jabref.org/) or join our [chatting channel](https://gitter.im/JabRef/jabref).
+For the brave, we also collect issues at [https://github.com/koppor/jabref/labels/good%20first%20issue](https://github.com/koppor/jabref/labels/good%20first%20issue). 
+
+After finding somewthing, please check our [CONTRIBUTING.md](https://github.com/JabRef/jabref/blob/master/CONTRIBUTING.md) for detailed information and further links.
 
 ### I want something with huge impact
 
