@@ -1,17 +1,21 @@
 # Contributing [![Discourse](https://img.shields.io/badge/discourse-online-green.svg)](https://discourse.jabref.org/c/features/6) [![Join the chat at https://gitter.im/JabRef/jabref](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/JabRef/jabref?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+We are really happy that you are interested in contributing to JabRef.
+Please take your time to look around here.
+We especially invite you to look into our [community members page](https://discourse.jabref.org/t/community-members/1868?u=koppor) where members introduce themselves.
+
 ## I am not a programmer
 
-### I would like to improve the help page. What are the steps?
+### I would like to improve the help page. What are the steps? [![Join the chat at https://gitter.im/JabRef/jabref](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/JabRef/jabref?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Please use the "Edit on GitHub" link at the upper right corner.
 Then, follow [GitHub's guide to edit files in other user's repository](https://help.github.com/en/github/managing-files-in-a-repository/editing-files-in-another-users-repository).
 
-### I would like to help translating JabRef to another language. How do I get started?
+### I would like to help translating JabRef to another language. How do I get started? [![Join the chat at https://gitter.im/JabRef/jabref](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/JabRef/jabref?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 We encourage you to read about [translating the JabRef user interface](how-to-translate-the-ui.md).
 
-### I want to keep Wikipedia pages up-to-date
+### I want to keep Wikipedia pages up-to-date [![Join the chat at https://gitter.im/JabRef/jabref](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/JabRef/jabref?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 JabRef improves -- and Wikipedia pages should keep up!
 
@@ -31,7 +35,7 @@ Currently existing pages are:
 
 If there is no page for you own language, you can easily create one.
 
-### I have some cool feature requests
+### I have some cool feature requests [![Discourse](https://img.shields.io/badge/discourse-online-green.svg)](https://discourse.jabref.org/c/features/6)
 
 [Come discuss about it!](http://discourse.jabref.org/)
 
