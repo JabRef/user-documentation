@@ -4,7 +4,8 @@
 
 ### I would like to improve the help page. What are the steps?
 
-Please use the edit pencil in the upper right corner.
+Please use the "Edit on GitHub" link at the upper right corner.
+Then, follow [GitHub's guide to edit files in other user's repository](https://help.github.com/en/github/managing-files-in-a-repository/editing-files-in-another-users-repository).
 
 ### I would like to help translating JabRef to another language. How do I get started?
 
