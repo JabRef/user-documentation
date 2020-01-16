@@ -53,7 +53,7 @@ We collect small issues at [https://github.com/JabRef/jabref/labels/good%20first
 
 ### I want something with huge impact
 
-Then, the [issues intended for external contributions](https://github.com/JabRef/jabref/labels/help-wanted) are the right place to look at.
+Look at the discussions in our forum at <https://discourse.jabref.org/c/features/6>. Find an interesting topic, discuss it and start contributing.
 
 ### I need help with the code
 
