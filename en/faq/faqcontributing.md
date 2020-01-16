@@ -1,4 +1,4 @@
-# Contributing
+# Contributing [![Discourse](https://img.shields.io/badge/discourse-online-green.svg)](https://discourse.jabref.org/c/features/6) [![Join the chat at https://gitter.im/JabRef/jabref](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/JabRef/jabref?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ## I am not a programmer
 
@@ -43,11 +43,11 @@ Our team consists of volunteers. To provide better support, we are currently try
 
 ## I am a programmer
 
-### I want to learn about code quality
+### I want to learn about code quality [![Join the chat at https://gitter.im/JabRef/jabref](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/JabRef/jabref?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Please head to [codecov](https://codecov.io/github/JabRef/jabref) to see current code coverage and where to improve our tests. You can head to [codacy](https://www.codacy.com/app/simonharrer/jabref/dashboard) to learn about one analysis of JabRef's code quality.
 
-### I want to start with something easy
+### I want to start with something easy [![Join the chat at https://gitter.im/JabRef/jabref](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/JabRef/jabref?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 We collect small issues at [https://github.com/JabRef/jabref/labels/good%20first%20issue](https://github.com/JabRef/jabref/labels/good%20first%20issue).
 In case you do not find something suitable, you are invited to get in touch with us.
@@ -56,11 +56,11 @@ For the brave, we also collect issues at [https://github.com/koppor/jabref/label
 
 After finding somewthing, please check our [CONTRIBUTING.md](https://github.com/JabRef/jabref/blob/master/CONTRIBUTING.md) for detailed information and further links.
 
-### I want something with huge impact
+### I want something with huge impact [![Discourse](https://img.shields.io/badge/discourse-online-green.svg)](https://discourse.jabref.org/c/features/6)
 
 Look at the discussions in our forum at <https://discourse.jabref.org/c/features/6>. Find an interesting topic, discuss it and start contributing.
 
-### I need help with the code
+### I need help with the code [![Join the chat at https://gitter.im/JabRef/jabref](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/JabRef/jabref?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 You can talk to the core developers of JabRef in the [gitter chat](https://gitter.im/JabRef/jabref).
 
