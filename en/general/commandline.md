@@ -1,8 +1,7 @@
-# Command line use and options
+# Command line use and options - the CLI of JabRef
 
-## Purpose and functioning
-
-Although JabRef is primarily a GUI based application, it offers several command line options that may be useful, and can even perform file conversion operations without opening the graphical interface.
+Although JabRef is primarily a GUI based application, it offers several command line options that may be useful.
+JabRef can even perform file conversion operations without opening the graphical interface.
 
 ## Basics
 
@@ -40,7 +39,7 @@ will correctly load the file `original.bib`, export it in docbook format to `fil
 * [Debug mode: `--debug`](commandline.md#debug-mode---debug)
 * [Display output in the console: `--console`](commandline.md#display-output-in-the-console---console)
 
-  **Help: `-h`**
+### Help: `-h`
 
 \(or `--help`\)
 
