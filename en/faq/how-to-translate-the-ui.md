@@ -46,8 +46,15 @@ The character encoding should be **UTF-8**. Please avoid Unicode escaping such a
 
 ## Testing the translation
 
+To test your translation you must be able to compile the source tree after making your additions. This requires you to install the [Java Development Kit](http://www.oracle.com/technetwork/java/javase/downloads/index.html). Ensure that you use the most recent version.
+
+Crowdin allows for downloading the current translation file:
+
+![Screenshot of Crowdin download dialog](../.gitbook/assets/crowdin-download-translation.png)
+
+Place the downloaded file in the path `src/main/resources/l10n`.
+Then, execute `gradlew run` in the root directory and JabRef should start.
+
+For testing a crowdin-contributed translation without having to compile JabRef, one has to wait until the translation is incorporated into the current source code of JabRef.
+
 For a new language to be available within JabRef, a corresponding line must be added in the Java class GUIGlobals \(found in the directory `/src/main/java/org/jabref/logic/l10n/Languages.java` in the JabRef source code tree\). The line is inserted in the `static {}` section where the map `LANGUAGES` is populated. The code must of course be recompiled after this modification.
-
-To test your translation you must be able to compile the source tree after making your additions. This requires you to install the [Java Development Kit](http://www.oracle.com/technetwork/java/javase/downloads/index.html). Execute `gradlew run` in the root directory and JabRef should start.
-
-For testing a crowdin-contributed translation, one has to wait until the translation is incorporated into the current source code of JabRef.
