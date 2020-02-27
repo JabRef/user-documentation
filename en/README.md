@@ -40,9 +40,9 @@ JabRef is a cross-platform application that works on Windows, Linux and Mac OS X
 * Library is saved as a simple text file and thus it is easy to share with others via Dropbox and is version-control friendly
 * Work in a team: sync the contents of your library [via a SQL database](./collaborative-work/sqldatabase.md)
 
-## The data format of JabRef is BibTeX
+## The data format of JabRef is Bib(La)TeX
 
-JabRef is is a program for working with BibTeX databases. JabRef program uses no separate internal file format, but directly works with BibTeX. That means, your BibTeX file is kept as is when opening in JabRef and saving again: You normally load and save your databases directly in the BibTeX .bib format. In addition, you can also [import and export bibliography libraries](./import-export/) in a number of other formats into JabRef.
+JabRef is is a program for working with BibTeX and biblatex databases. JabRef program uses no separate internal file format, but directly works with BibTeX and Biblatex. That means, your Bib(La)TeX file is kept as is when opening in JabRef and saving again: You normally load and save your databases directly in the Bib(La)TeX .bib format. In addition, you can also [import and export bibliography libraries](./import-export/) in a number of other formats into JabRef.
 
 ## JabRef's main window
 
