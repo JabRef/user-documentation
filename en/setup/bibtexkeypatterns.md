@@ -110,4 +110,9 @@ To change the pattern to `[authors]:[camel]`, execute the following steps:
    ![BibTeX key generator preferences](../.gitbook/assets/preferences-bibtex-key-generator.png)
 5. Change the default pattern to `[authors]:[camel]`.  
    ![BibTeX key generator preferences - authors camel](../.gitbook/assets/preferences-bibtex-key-generator-authors-camel.png)
-6. Click "OK"
+6. Press "OK" 
+
+Or, if you are using JabRef 5:
+6. Press "enter"  
+    (forgetting to do this is a leading cause of puzzlement)
+7. Click "Save"
