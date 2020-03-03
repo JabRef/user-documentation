@@ -121,19 +121,18 @@ JabRef 5.x is shipped with a lightweight Java runtime environment that includes 
 
 #### Building From Source
 
-This method is mainly for package maintainers and users who would like to build the latest snapshots of JabRef directly from the source.
+This method is mainly for package maintainers and users who would like to build the latest snapshots of JabRef directly from the source. If you want to setup JabRef for development, follow the instructions for [Setting up a workspace](https://devdocs.jabref.org/guidelines-for-setting-up-a-local-workspace)
 
-To build JabRef from source, you first need to have a working Java Development Kit 11 \(JDK 11\) and Git installed on your system. After installing the two requirements, you open a terminal window \(i.e., a command prompt\) and type the following:
+To build JabRef from source, you first need to have a working Java Development Kit 13 \(JDK 13\) and Git installed on your system. After installing the two requirements, you open a terminal window \(i.e., a command prompt\) and type the following:
 
 ```text
 git clone https://github.com/JabRef/jabref
 cd jabref
-git submodule update --init
 ./gradlew assemble
 ./gradlew jlink
 ```
 
-In a nutshell, you clone the latest snapshot of JabRef into `jabref` directory, change directory to `jabref`, initialize and update all the submodules \(dependencies\) of JabRef, assemble them to be built via JDK 11, and finally build and link them together.
+In a nutshell, you clone the latest snapshot of JabRef into `jabref` directory, change directory to `jabref`, initialize and update all the submodules \(dependencies\) of JabRef, assemble them to be built via JDK 13, and finally build and link them together.
 
 The output should be the `build/image` subdirectory that contains the JabRef binary with all of its Java dependencies. To start JabRef, you need to run `bin/JabRefMain` \(in Linux and MacOS\) or `bin/JabRefMain.bat` \(in Windows\) under `build/image` subdirectory.
 
