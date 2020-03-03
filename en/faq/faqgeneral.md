@@ -24,7 +24,7 @@ A: We are collecting all publications we hear about at [https://github.com/JabRe
 
 ### Q: Does JabRef support non-English languages or UTF8 in general?
 
-A: Yes. In **Options → Preferences → General** set "Default Encoding" to _UTF8_ and if select an alternative user interface language in "Language" if required.
+A: Yes. In **Options → Preferences → General** set "Default Encoding" to _UTF8_ and select an alternative user interface language in "Language" if required.
 
 ### Q: If I double click a BibTeX file in the file browser, JabRef always opens a new window. Can JabRef open the libraries in the same window just in a different tab?
 
