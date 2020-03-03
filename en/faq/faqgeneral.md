@@ -46,13 +46,13 @@ A: To add this _translator_ field to all entry types, you can use **Options → 
 
 A: Open **Options → Preferences**. In the “File” panel, you will find an option called “Do not wrap the following fields when saving”. This option contains a semicolon-separated list of field names. Any field you add to this list will always be stored without introduction of line breaks.
 
-### Q: Is it possible to append entries from a BibTeX file, e.g. from my web browser, to the currently opened database?
+### Q: Is it possible to append entries from a BibTeX file, e.g. from my web browser, to the currently opened library?
 
 A: Yes, you can use the parameter `--importToOpen bibfile` of the [command line](../general/commandline.md).
 
-### Q: How do I link external files with paths relative to my .bib file, so I can move my database along with its files to another directory?
+### Q: How do I link external files with paths relative to my .bib file, so I can move my library along with its files to another directory?
 
-A: You need to override the default file directory for this specific database. In **File → Library properties** you can override the **Default file directory** setting. There, you can either enter the path in **General file directory** \(for it to be valid for all users of the file\) or in **User-specific file directory** \(for it to be valid for you only\). If you simply enter “.” \(a dot, without the quotes\), the file directory will be the same as the .bib file directory. To place your files in a subdirectory called **subdir**, you can enter **“./subdir”** \(without the quotes\). Files will automatically be linked with relative paths if the files are placed in the default file directory or in a directory below it.
+A: You need to override the default file directory for this specific library. In **File → Library properties** you can override the **Default file directory** setting. There, you can either enter the path in **General file directory** \(for it to be valid for all users of the file\) or in **User-specific file directory** \(for it to be valid for you only\). If you simply enter “.” \(a dot, without the quotes\), the file directory will be the same as the .bib file directory. To place your files in a subdirectory called **subdir**, you can enter **“./subdir”** \(without the quotes\). Files will automatically be linked with relative paths if the files are placed in the default file directory or in a directory below it.
 
 ### Q: Can I use a bib-file specific PDF directory?
 
@@ -88,7 +88,7 @@ A: Your JabRef library is already a file in Bib\(La\)TeX format. To export a spe
 
 ### Q: How do I export a subset corresponding to my LaTeX file?
 
-A: Upon compilation, LaTeX generates a file with the extension ".aux". This files contains the keys of the cited references \(among other things\). Using this AUX file, JabRef can extract the relevant entries. Choose the menu **Tools → New subdatabase based on AUX file**. Select the reference database \(among the opened ones\) and specify the AUX file.
+A: Upon compilation, LaTeX generates a file with the extension ".aux". This files contains the keys of the cited references \(among other things\). Using this AUX file, JabRef can extract the relevant entries. Choose the menu **Tools → New sublibrary based on AUX file**. Select the reference library \(among the opened ones\) and specify the AUX file.
 
 ### Q: When I modify my library, I would like that JabRef performs entry cleaning automatically. How to do this?
 
