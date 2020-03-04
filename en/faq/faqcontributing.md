@@ -50,7 +50,7 @@ Our team consists of volunteers. To provide better support, we are currently try
 
 ### I want to learn about code quality [![Join the chat at https://gitter.im/JabRef/jabref](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/JabRef/jabref?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-Please head to [codecov](https://codecov.io/github/JabRef/jabref) to see current code coverage and where to improve our tests. You can head to [codacy](https://www.codacy.com/app/simonharrer/jabref/dashboard) to learn about one analysis of JabRef's code quality.
+Please head to <https://devdocs.jabref.org/code-quality> to learn about our current efforts to measure and improve code quality.
 
 ### I want to start with something easy [![Join the chat at https://gitter.im/JabRef/jabref](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/JabRef/jabref?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -59,7 +59,7 @@ In case you do not find something suitable, you are invited to get in touch with
 Comment at the issue, check the [the forum](https://discourse.jabref.org/) or join our [chatting channel](https://gitter.im/JabRef/jabref).
 For the brave, we also collect issues at [https://github.com/koppor/jabref/labels/good%20first%20issue](https://github.com/koppor/jabref/labels/good%20first%20issue). 
 
-After finding somewthing, please check our [CONTRIBUTING.md](https://github.com/JabRef/jabref/blob/master/CONTRIBUTING.md) for detailed information and further links.
+After finding something, please check our [CONTRIBUTING.md](https://github.com/JabRef/jabref/blob/master/CONTRIBUTING.md) for detailed information and further links.
 
 ### I want something with huge impact [![Discourse](https://img.shields.io/badge/discourse-online-green.svg)](https://discourse.jabref.org/c/features/6)
 
