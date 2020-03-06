@@ -67,13 +67,34 @@ Just like directories, groups are structured like a tree, with the group **All E
 
 Undo and redo is supported for all edits.
 
-### Static groups
+### Group name
+Defines the name of the group, as displayed in the group panel.
+
+### Description of the group
+A description of the group, to help you remember what it is about. Hovering the mouse over the group name displays this description.
+
+### Icon and Color
+An icon can be displayed in front of the group name.
+Choose your favorite icon among the ones available at https://materialdesignicons.com/, and enter its name of the field *Icon*.
+The color of the icon can be set in to the field *Color*.
+
+### Hierarchical context
+Defines which entries are displayed when this group is selected:
+- *independant*. Displays only this group's entries.
+- *intersection*. Displays entries contained in both this group and its supergroup.
+- *union*. Displays entries contained in this group or its subgroups.
+
+### Type of group
+
+*Remark: outdated: The new interface (JabRef 5.0) displays a list of 5 choices under "Collect by".*
+
+#### Static groups
 
 Static groups are populated only by explicit manual assignment of entries. After creating a static group you select the entries to be assigned to it, and use either Drag and Drop or the main table's context menu to perform the assignment. To remove entries from a static group, select them and use the main table's context menu. There are no options to be configured.
 
 This method of grouping requires that all entries have a unique BibTeX key. In case of missing or duplicate BibTeX keys, the assignment of the affected entries cannot be correctly restored in future sessions.
 
-### Dynamic groups
+#### Dynamic groups
 
 The content of a dynamic group is defined by a logical condition. Only entries that meet this condition are contained in the group. This method uses the information stored in the database itself, and updates dynamically whenever the database changes.
 
@@ -87,7 +108,7 @@ This is similar to the above, but rather than search a single field for a single
 
 In the groups view, dynamic groups are shown in _italics_ by default. This can be turned off in the preferences \(Options → Preferences → Groups, box "Show dynamic groups in italics"\).
 
-### Hierarchical context
+#### Hierarchical context
 
 By default, a group is **independent** of its position in the groups tree: When selected, only the group's contents are shown. However, especially when using dynamic groups, it is often useful to define a subgroup that **refines its supergroup**, i.e., when selected, entries contained in both groups are displayed. For example, create a supergroup containing entries with the keyword `distribution` and a subgroup containing entries with the keyword `gauss` that refines this supergroup. Selecting the subgroup now displays entries that match both conditions, i.e. are concerned with Gaussian distributions. Note that items that only belong to the subgroup `gauss` will not be shown, i.e. for an item to be displayed when selecting `gauss` it is necessary to be assigned to both the subgroup `gauss` and the supergroup `distribution`. By adding another refining subgroup for `laplace` to the original supergroup, the grouping can easily be extended. In the groups tree, refining groups have a special icon \(this can be turned off in the preferences\).
 
