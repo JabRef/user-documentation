@@ -9,7 +9,7 @@ Selecting a group shows the entries contained in that group. Selecting multiple 
 
 Group definitions are database-specific; they are saved as a `@COMMENT` block in the `.bib`-file and are shared among all users. \(Future versions of JabRef might support user-dependent groups.\)
 
-## Gropus Interface
+## Groups Interface
 
 The groups interface is shown in the side pane on the left of the screen. It can be toggled on or off by pressing Ctrl + Shift + G or by the groups button in the toolbar. The interface has several buttons, but most functions are accessed via a context \("right-click"\) menu. Drag and Drop is also supported.
 
