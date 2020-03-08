@@ -9,55 +9,58 @@ Selecting a group shows the entries contained in that group. Selecting multiple 
 
 Group definitions are database-specific; they are saved as a `@COMMENT` block in the `.bib`-file and are shared among all users. \(Future versions of JabRef might support user-dependent groups.\)
 
-## Interface
+## Gropus Interface
 
 The groups interface is shown in the side pane on the left of the screen. It can be toggled on or off by pressing Ctrl + Shift + G or by the groups button in the toolbar. The interface has several buttons, but most functions are accessed via a context \("right-click"\) menu. Drag and Drop is also supported.
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">
-        <p>You might want to...</p>
-        <p>Ensure that the groups interface is visible. Press the <b>New Group</b> button,
-          enter a name for the group, then press OK, leaving all values at their
-          defaults. Now select the entries to be assigned to the group and use Drag
-          and Drop to the group, or the option <b>Add to group</b> in the context menu.
-          Finally select the group to see its content (which should be the entries
-          you just assigned).</p>
-        <p>Ensure that the groups interface is visible. Press the <b>New Group</b> button,
-          enter a name for the group, and select the option to dynamically group
-          entries by searching a field for a keyword. Enter the keyword to search
-          for, then click OK. Finally select the group to see its content (which
-          should be all entries whose <code>keywords</code> field contains the keyword
-          you specified).</p>
-        <p>Ensure that the groups interface is visible. Press the <b>New Group</b> button,
-          enter a name for the group, and select the option to dynamically group
-          entries by a free-form search expression. Enter <code>author=smith</code> as
-          a search expression (replace <code>smith</code> with a name that actually
-          occurs in your database) and click <b>OK</b>. Finally select the group to
-          see its content (which should be all entries whose <code>author</code> field
-          contains the name you specified).</p>
-        <p>Create two different groups (e.g. as described above). Click the <b>Settings</b> button
-          and make sure that <b>Union</b> is selected. Now select both groups. You
-          should see all entries contained in any of the two groups. Click <b>Settings</b> again
-          and select <b>Intersection</b>. Now you should see only those entries contained
-          in both groups (which might be none at all, or exactly the same entries
-          as before in case both groups contain the same entries).</p>
-        <p>JabRef allows you to easily identify groups that overlap with the currently
-          selected groups (i.e. that contain at least one entry that is also contained
-          in the currently selected groups). Click <b>Settings</b> and activate the
-          option to highlight overlapping groups. Then select a group that overlaps
-          with other groups. The other groups should be highlighted.</p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>In JabRef there are four different types of groups:
+<!-- You might want to ensure that the groups interface is visible. -->
+
+To manually assign entries to a group, press the **New Group** button,
+enter a name for the group, then press OK, leaving all values at their
+defaults. Now select the entries to be assigned to the group and use Drag
+and Drop to the group, or the option **Add to group** in the context menu.
+Finally select the group to see its content (which should be the entries
+you just assigned).
+
+In case you want automatically fill the groups content based on keywords, do the following:
+Press the **New Group** button,
+enter a name for the group, and select the option to dynamically group
+entries by searching a field for a keyword. Enter the keyword to search
+for, then click **OK**. Finally select the group to see its content (which
+should be all entries whose `keywords` field contains the keyword
+you specified).
+
+In case a group should be filled with entries containing defined search strings, do the following:
+Press the **New Group** button,
+enter a name for the group, and select the option to dynamically group
+entries by a free-form search expression. Enter `author=smith` as
+a search expression (replace `smith` with a name that actually
+occurs in your database) and click **OK**. Finally select the group to
+see its content (which should be all entries whose `author` field
+contains the name you specified).
+
+You can also intersact or unition groups:
+Create two different groups (e.g. as described above). Click the **Settings** button
+and make sure that **Union** is selected. Now select both groups. You
+should see all entries contained in any of the two groups. Click **Settings** again
+and select **Intersection**. Now you should see only those entries contained
+in both groups (which might be none at all, or exactly the same entries
+as before in case both groups contain the same entries).
+
+JabRef allows you to easily identify groups that overlap with the currently
+selected groups (i.e. that contain at least one entry that is also contained
+in the currently selected groups). Click **Settings** and activate the
+option to highlight overlapping groups. Then select a group that overlaps
+with other groups. The other groups should be highlighted.
+
+## Types of groups
+
+In JabRef there are four different types of groups:
 
 1. The group **All Entries**, which -- as the name suggests -- contains all entries, is always present and cannot be edited or removed.
 2. **Static groups** behave like directories on disk and contain only those entries that you explicitly assign to them.
 3. **Dynamic groups based on keyword search** contain entries in which a certain BibTeX field \(e.g. `keywords`\) contains a certain keyword \(e.g. `electrical`\). This method does not require manual assignment of entries, but uses information that is already present in the database. If all entries in your database have suitable keywords in their `keywords` field, using this type of group might be the best choice.
-4. **Dynamic groups based on free-form search expressions** contain entries that match a specified search expression, using the same syntax as the [search panel](search.md) on the side pane. This [syntax](search.md#advanced) supports logical operators \(`AND`, `OR`, `NOT`\) and allows to specify one or more BibTeX fields to search, facilitating more flexible group definitions than a keyword search \(e.g. `author=smith         and title=electrical`\).
+4. **Dynamic groups based on free-form search expressions** contain entries that match a specified search expression, using the same syntax as the [search panel](search.md) on the side pane. This [syntax](search.md#advanced) supports logical operators \(`AND`, `OR`, `NOT`\) and allows to specify one or more BibTeX fields to search, facilitating more flexible group definitions than a keyword search \(e.g. `author=smith and title=electrical`\).
 
 Every group that you create is of one of the last three types. The group editing dialog, which is invoked by double-clicking on a group, shows a short description of the selected/edited group in plain English.
 
@@ -68,21 +71,20 @@ Just like directories, groups are structured like a tree, with the group **All E
 Undo and redo is supported for all edits.
 
 ### Group name
+
 Defines the name of the group, as displayed in the group panel.
 
 ### Description of the group
+
 A description of the group, to help you remember what it is about. Hovering the mouse over the group name displays this description.
 
-### Icon and Color
-An icon can be displayed in front of the group name.
-Choose your favorite icon among the ones available at https://materialdesignicons.com/, and enter its name of the field *Icon*.
-The color of the icon can be set in to the field *Color*.
+### Icon and color
 
-### Hierarchical context
-Defines which entries are displayed when this group is selected:
-- *independant*. Displays only this group's entries.
-- *intersection*. Displays entries contained in both this group and its supergroup.
-- *union*. Displays entries contained in this group or its subgroups.
+An icon can be displayed in front of the group name.
+Choose your favorite icon among the ones available at <https://materialdesignicons.com/>, and enter its name of the field *Icon*.
+The color of the icon can be set in to the field **Color**.
+
+![groups having colors](../.gitbook/assets/groups-colors.png)
 
 ### Type of group
 
@@ -113,6 +115,12 @@ In the groups view, dynamic groups are shown in _italics_ by default. This can b
 By default, a group is **independent** of its position in the groups tree: When selected, only the group's contents are shown. However, especially when using dynamic groups, it is often useful to define a subgroup that **refines its supergroup**, i.e., when selected, entries contained in both groups are displayed. For example, create a supergroup containing entries with the keyword `distribution` and a subgroup containing entries with the keyword `gauss` that refines this supergroup. Selecting the subgroup now displays entries that match both conditions, i.e. are concerned with Gaussian distributions. Note that items that only belong to the subgroup `gauss` will not be shown, i.e. for an item to be displayed when selecting `gauss` it is necessary to be assigned to both the subgroup `gauss` and the supergroup `distribution`. By adding another refining subgroup for `laplace` to the original supergroup, the grouping can easily be extended. In the groups tree, refining groups have a special icon \(this can be turned off in the preferences\).
 
 The logical complement to a refining group is a group that **includes its subgroups**, i.e. when selected, not only the group's own entries, but also its subgroups' entries are shown. In the groups tree, this type of group has a special icon \(this can be turned off in the preferences\).
+
+In other words, this defines which entries are displayed when this group is selected:
+
+* **independant**. Displays only this group's entries.
+* **intersection**. Displays entries contained in both this group and its supergroup.
+* **union**. Displays entries contained in this group or its subgroups.
 
 ## Viewing a group's entries, combining multiple groups
 
@@ -149,4 +157,3 @@ The **Refresh** button updates the entry table to reflect the current groups sel
 ### Mixing refining groups with including groups
 
 If a refining group is a subgroup of a group that includes its subgroups -- the refining group's siblings --, these siblings are ignored when the refining group is selected.
-
