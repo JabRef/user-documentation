@@ -1,12 +1,9 @@
 # New entry from plain text
 
-{% hint style="warning" %}
-This information is outdated. Please help to improve it.
-{% endhint %}
-
 > Entries can be created from a reference text.
 
-In case you have a reference string, JabRef offers the functionality to convert the text to BibTeX. JabRef thereby uses the service offered by [FreeCite](http://freecite.library.brown.edu/).
+In case you have a reference string, JabRef offers the functionality to convert the text to BibTeX.
+Thereby, JabRef uses the technology offered by [Grobid](https://github.com/kermitt2/grobid).
 
 Example:
 
@@ -14,7 +11,31 @@ Example:
 O. Kopp, A. Armbruster, und O. Zimmermann, "Markdown Architectural Decision Records: Format and Tool Support", in 10th ZEUS Workshop, 2018.
 ```
 
-1. Click BibTeX and select ""New entry from plain text..." Alternatively, you can press Ctrl+Shift+N.
+1. Click Library and select "New entry from plain text..." Alternatively, you can press Ctrl+Shift+N.
+
+    ![New entry from plain text](../.gitbook/assets/new-entry-from-plain-text-step-1.png)
+
+2. The "Plain Reference Parser" window opens
+
+   ![Plain Reference Parser](../.gitbook/assets/new-entry-from-plain-text-step-2.png)
+
+3. Paste the reference text:
+
+   ![Paste](../.gitbook/assets/new-entry-from-plain-text-step-3.png)
+
+4. Click "Add to current library"
+
+5. The result is selected in the entry table:
+
+   ![Result of Grobid Parsing](../.gitbook/assets/new-entry-from-plain-text-step-4.png)
+
+## JabRef 4.x
+
+JabRef thereby used the service offered by [FreeCite](http://freecite.library.brown.edu/).
+This servce was shut down in 2019.
+The following explanations are only for historical interest.
+
+1. Click BibTeX and select "New entry from plain text..." Alternatively, you can press Ctrl+Shift+N.
 
    ![Select entry type](../.gitbook/assets/step1.png)
 
@@ -50,4 +71,3 @@ After step 4 from above, you can manually assign the types to each text.
 ![manual](../.gitbook/assets/manual.png)
 
 After you finished, you can press "Accept".
-
