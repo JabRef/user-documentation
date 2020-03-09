@@ -28,3 +28,7 @@ For Ubuntu you may also have a look at the [Ubuntu page on Java](https://help.ub
 
 As far as we know, JabRef is not yet running on these free JVMs, due of our dependencies. However, JabRef is reported to run nicely on the [IcedTea](http://fedoraproject.org/wiki/Features/IcedTea) runtime, which is based on the [OpenJDK](http://openjdk.java.net/) built with [GNU Classpath](http://www.gnu.org/software/classpath/) to fill in missing classes. Some issues have been encountered with the look and feel \(see issues [\#393](https://github.com/JabRef/jabref/issues/393) and [\#2003](https://github.com/JabRef/jabref/issues/2003)\). Please let us know if newer versions give different results. If you have an idea or the expertise to make JabRef work under Classpath, let us know.
 
+## Everything looks too big or too small. How can I change it to to a more reasonable size?
+In the background, JabRef uses [JavaFX](https://en.wikipedia.org/wiki/JavaFX). Applications using JavaFX can be scaled via```java -Dglass.gtk.uiScale=1.5 -jar <application>.jar ```. If you have installed JabRef via a package manager, you probably don't have a .jar file but a binary file. In this case, you need to find your _JabRef.cfg_ in your installation folder (possibly located at /opt/JabRef/lib/app/JabRef.cfg) and add in the section _[JavaOptions]_ the line 
+```-Dglass.gtk.uiScale=1.5```. Then, restart JabRef. Try finding a value that is suitable for you. On high resolution displays, values around 1.5 seem to be reasonable. 
+
