@@ -8,7 +8,7 @@ Yes, there is. See [http://askubuntu.com/a/721387/196423](http://askubuntu.com/a
 
 ### JabRef 5.x
 
-> JabRef 5.x requires Java 11
+> JabRef 5.x requires Java 13 (It is included in the native builds)
 
 ### JabRef 4.x
 
