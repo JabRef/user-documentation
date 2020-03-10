@@ -10,7 +10,7 @@ A new tab was added to the entry editor. It allows to search for citations to th
 
 See the image below to see how it works:
 
-![&apos;LaTeX Citations&apos; tab](https://user-images.githubusercontent.com/12954316/62509787-d68a0a80-b80c-11e9-84f5-f894f965dc9e.gif)
+![LaTeX Citations tab](../.gitbook/assets/latex-citations.gif)
 
 ## Key Features
 
