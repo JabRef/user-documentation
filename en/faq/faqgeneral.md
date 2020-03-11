@@ -109,3 +109,7 @@ A: In JabRef 3.0 plugin support was removed, because the development team cannot
 ### Q: Where did the RenameFile plugin go? How do I rename files automatically after importing entries?
 
 A: JabRef does no longer support plugins \(since version 3.0\). Automatic file renaming is now part of the **Quality → Cleanup entries** feature. There you can rename attached files based on the BibTeX key. You can change the format \(pattern\) under **Options → Preferences → Import**, by altering the pattern under "Default PDF file link action".
+
+### Q: How to test a development version without uninstalling the released version?
+
+A: Download the portable version (file JabRef-X.Y.portable_windows.zip, JabRef-X.Y.portable_macos.tar.gz, or JabRef-X.Y.portable_linux.tar.gz), uncompress it, and run the executable.
