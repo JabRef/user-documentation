@@ -1,4 +1,4 @@
-# Searching
+# Searching within the library
 
 {% hint style="info" %}
 Since: 3.7

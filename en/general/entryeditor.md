@@ -1,4 +1,4 @@
-# BibTeX entry editor
+# Entry Editor
 
 {% hint style="warning" %}
 This information is outdated. Please help to improve it.
