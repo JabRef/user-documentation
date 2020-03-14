@@ -1,8 +1,7 @@
 ---
 description: >-
-  Browser extension for users of the bibliographic reference manager JabRef. It
-  automatically identifies and extracts bibliographic information on websites
-  and sends them to JabRef with one click.
+  The official browser extension automatically identifies and extracts
+  bibliographic information on websites and sends them to JabRef with one click.
 ---
 
 # JabRef Browser Extension
