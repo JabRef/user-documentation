@@ -4,13 +4,20 @@ Although JabRef is primarily a GUI based application, it offers several command 
 
 ## Basics
 
-```bash
-java -jar JabRef.jar [OPTIONS] [BIBTEX_FILE]
+{% hint style="info" %}
+This description applies since JabRef 5.0, because JabRef comes with a pre-bundled Java-Runtime Environment
+{% endhint %}
+
+Locate `JabRef.exe` (Windows) or `JabRef` (Linux, Mac OS).
+In the partable versions, this is `JabRef-5.0-portable_windows\JabRef\JabRef.exe` and `JabRef-5.0-portable_linux\JabRef\binJabRef`.
+
+The following documentation is for Windows, but works equally well on Linux and Mac OS:
+
+```terminal
+C:\portable-apps\JabRef-5.0-portable_windows\JabRef\JabRef.exe -console [OPTIONS] [BIBTEX_FILE]
 ```
 
-_Note:_ you may have to replace `JabRef.jar` by the actual name of the `.jar` file \(you can find the file in your installation folder\)
-
-On Windows, you can also directly use the executable, that is, `JabRef.exe [OPTIONS] [BIBTEX_FILE]`. In this case, no output is written to the console unless you specify the `-console` option.
+You have to specify `-console` to ensure that output is written to the console.
 
 You can always specify one or more BibTeX files to load by simply listing their filenames. Take care to specify all options before your list of file names. Ensure that the first file name is not misunderstood as being an argument for an option; this simply means that if a boolean option like `-n` or `-l` immediately precedes a file name, add the word `true` as an argument. For instance, the command line:
 
