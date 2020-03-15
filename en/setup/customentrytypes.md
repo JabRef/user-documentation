@@ -1,7 +1,7 @@
-# Customizing entry types
+# Customize entry types
 
 {% hint style="warning" %}
-Currently not available in 5.0. See <https://github.com/JabRef/jabref/issues/4719> for details.
+Currently not available in 5.0. See [https://github.com/JabRef/jabref/issues/4719](https://github.com/JabRef/jabref/issues/4719) for details.
 {% endhint %}
 
 To customize entry types, select the menu **BibTeX → Customize entry types**.

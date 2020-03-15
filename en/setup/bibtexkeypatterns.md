@@ -1,4 +1,4 @@
-# Customizing the BibTeX key generator
+# Customize the BibTeX key generator
 
 {% hint style="info" %}
 Some of the key patterns shown below were added at JabRef 5.0
@@ -101,18 +101,27 @@ After the key pattern has been applied to produce a key, you can choose to have 
 To change the pattern to `[authors]:[camel]`, execute the following steps:
 
 1. Open the preferences  
+
    ![Options Preferences](../.gitbook/assets/optionspreferences.png)
+
 2. Navigate to "General"  
+
    ![General preferences](../.gitbook/assets/preferences-general.png)
+
 3. Untick "Enforce legal characters in BibTeX keys". Note that this is only necessary if you wish to have colons be present in the generated key.  
-   ![General preferences - unticked](../.gitbook/assets/preferences-general-unticked.png)
+
+   ![General preferences - unticked](../.gitbook/assets/preferences-general-unticked%20%281%29.png)
+
 4. Navigate to "BibTeX key generator"  
+
    ![BibTeX key generator preferences](../.gitbook/assets/preferences-bibtex-key-generator.png)
+
 5. Change the default pattern to `[authors]:[camel]`.  
-   ![BibTeX key generator preferences - authors camel](../.gitbook/assets/preferences-bibtex-key-generator-authors-camel.png)
+
+   ![BibTeX key generator preferences - authors camel](../.gitbook/assets/preferences-bibtex-key-generator-authors-camel%20%281%29.png)
+
 6. Press "OK" 
 
-Or, if you are using JabRef 5:
-6. Press "enter"  
-    (forgetting to do this is a leading cause of puzzlement)
-7. Click "Save"
+Or, if you are using JabRef 5: 6. Press "enter"  
+\(forgetting to do this is a leading cause of puzzlement\) 7. Click "Save"
+
