@@ -72,7 +72,7 @@ A: In **Options → Manage external file types** you can add arbitrary types.
 
 ## Q: Is there a portable version of JabRef?
 
-A: JabRef offers a portable version of the application as a zipped file without an installer. Be sure to activate "Load and Save preferences from/to jabref.xml on start-up \(memory stick mode\)" in **Options → Preferences → General**.
+A: JabRef offers a portable version of the application as a compressed file (.zip or .tar.gz) without an installer. Be sure to activate "Load and Save preferences from/to jabref.xml on start-up \(memory stick mode\)" in **Options → Preferences → General**.
 
 ## Q: When an organization is provided as author, my BibTeX style doesn't recognize it. For instance, “European Commission” is converted to “Commission, E.”.
 
