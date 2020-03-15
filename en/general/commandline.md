@@ -8,22 +8,26 @@ Although JabRef is primarily a GUI based application, it offers several command 
 This description applies since JabRef 5.0, because JabRef comes with a pre-bundled Java-Runtime Environment
 {% endhint %}
 
-Locate `JabRef.exe` (Windows) or `JabRef` (Linux, Mac OS).
-In the partable versions, this is `JabRef-5.0-portable_windows\JabRef\JabRef.exe` and `JabRef-5.0-portable_linux\JabRef\binJabRef`.
+Locate `JabRef.bat` (Windows) or `JabRef` (Linux, Mac OS).
+In the partable versions, this is `JabRef-5.0-portable_windows\JabRef\runtime\bin\JabRef.bat` and `JabRef-5.0-portable_linux\JabRef\lib\runtime\bin\JabRef`.
+
+**Do not use `JabRef\JabRef.exe` or `bin/JabRef`**
 
 The following documentation is for Windows, but works equally well on Linux and Mac OS:
 
 ```terminal
-C:\portable-apps\JabRef-5.0-portable_windows\JabRef\JabRef.exe -console [OPTIONS] [BIBTEX_FILE]
+C:\portable-apps\JabRef-5.0-portable_windows\JabRef\runtime\bin\JabRef.bat[OPTIONS] [BIBTEX_FILE]
 ```
 
-You have to specify `-console` to ensure that output is written to the console.
+In some cases, you have to specify `--console` to ensure that output is written to the console.
 
-You can always specify one or more BibTeX files to load by simply listing their filenames. Take care to specify all options before your list of file names. Ensure that the first file name is not misunderstood as being an argument for an option; this simply means that if a boolean option like `-n` or `-l` immediately precedes a file name, add the word `true` as an argument. For instance, the command line:
+You can always specify one or more BibTeX files to load by simply listing their filenames. Take care to specify all options before your list of file names. Ensure that the first file name is not misunderstood as being an argument for an option; this simply means that if a boolean option like `-n` or `-l` immediately precedes a file name, add the word `true` as an argument. For instance, the command line will correctly load the file `original.bib`, export it in [docbook format](https://docbook.org/whatis) to `filetoexport.xml`, and suppress the GUI_
 
-`java -jar JabRef.jar -o filetoexport.xml,docbook -n true original.bib`
+```terminal
+C:\portable-apps\JabRef-5.0-portable_windows\JabRef\runtime\bin\JabRef.bat -o filetoexport.xml,docbook5 -n true original.bib
+```
 
-will correctly load the file `original.bib`, export it in docbook format to `filetoexport.xml`, and suppress the GUI. The word _true_ prevents the file name from being interpreted as an argument to the `-n` option.
+ The word _true_ prevents the file name from being interpreted as an argument to the `-n` option.
 
 ## Options
 
@@ -97,14 +101,14 @@ _Note:_ The `-o` option can be specified only once, and for one file only.
 
 The first option is to export all entries, which are included in the `entries.bib` file to the specified `export.xmp` file. The second argument, separated by comma, is the type of exporter used by JabRef.
 
-```bash
-java -jar JabRef.jar -o path\export.xmp,xmp  path\entries.bib -n
+```terminal
+JabRef.bat -o path\export.xmp,xmp  path\entries.bib -n
 ```
 
 The second option is to export every entry in the entries.bib in a single .xmp file. Therefore, the file name is replaced by the keyword `split` without a file ending! JabRef generates individual .xmp files at the `path` location. The file name is a combination of the identifier provided by JabRef and the cite key of the entry.
 
-```bash
-java -jar JabRef.jar -o path\split,xmp  path\entries.bib -n
+```terminal
+JabRef.bat -o path\split,xmp  path\entries.bib -n
 ```
 
 ### Import BibTeX: `-importBibtex`
@@ -195,5 +199,4 @@ Show debug level messages.
 
 ### Display output in the console: `--console`
 
-Show info and error messages in the console. Only necessary if you use `JabRef.exe` instead of the `.jar` file.
-
+Show info and error messages in the console.
