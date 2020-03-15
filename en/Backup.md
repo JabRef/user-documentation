@@ -1,4 +1,4 @@
 ---
-redirect:   https://docs.jabref.org/general/backup
+redirect:   https://docs.jabref.org/?q=Backup
 layout:     redirect
 ---

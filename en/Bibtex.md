@@ -1,4 +1,4 @@
 ---
-redirect:   https://docs.jabref.org/fields
+redirect:   https://docs.jabref.org/?q=Bibtex
 layout:     redirect
 ---
