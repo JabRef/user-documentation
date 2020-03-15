@@ -110,3 +110,6 @@ A: In JabRef 3.0 plugin support was removed, because the development team cannot
 
 A: JabRef does no longer support plugins \(since version 3.0\). Automatic file renaming is now part of the **Quality → Cleanup entries** feature. There you can rename attached files based on the BibTeX key. You can change the format \(pattern\) under **Options → Preferences → Import**, by altering the pattern under "Default PDF file link action".
 
+### Q: In the preferences, I want to change the option XYZ. How to find it?
+
+A: Enter XYZ in the search field located at the upper left-hand corner of the preference window.
