@@ -13,45 +13,15 @@ Group definitions are database-specific; they are saved as a `@COMMENT` block in
 
 The groups interface is shown in the side pane on the left of the screen. It can be toggled on or off by pressing Ctrl + Shift + G or by the groups button in the toolbar. The interface has several buttons, but most functions are accessed via a context \("right-click"\) menu. Drag and Drop is also supported.
 
-<!-- You might want to ensure that the groups interface is visible. -->
+To manually assign entries to a group, press the **New Group** button, enter a name for the group, then press OK, leaving all values at their defaults. Now select the entries to be assigned to the group and use Drag and Drop to the group, or the option **Add to group** in the context menu. Finally select the group to see its content \(which should be the entries you just assigned\).
 
-To manually assign entries to a group, press the **New Group** button,
-enter a name for the group, then press OK, leaving all values at their
-defaults. Now select the entries to be assigned to the group and use Drag
-and Drop to the group, or the option **Add to group** in the context menu.
-Finally select the group to see its content (which should be the entries
-you just assigned).
+In case you want automatically fill the groups content based on keywords, do the following: Press the **New Group** button, enter a name for the group, and select the option to dynamically group entries by searching a field for a keyword. Enter the keyword to search for, then click **OK**. Finally select the group to see its content \(which should be all entries whose `keywords` field contains the keyword you specified\).
 
-In case you want automatically fill the groups content based on keywords, do the following:
-Press the **New Group** button,
-enter a name for the group, and select the option to dynamically group
-entries by searching a field for a keyword. Enter the keyword to search
-for, then click **OK**. Finally select the group to see its content (which
-should be all entries whose `keywords` field contains the keyword
-you specified).
+In case a group should be filled with entries containing defined search strings, do the following: Press the **New Group** button, enter a name for the group, and select the option to dynamically group entries by a free-form search expression. Enter `author=smith` as a search expression \(replace `smith` with a name that actually occurs in your database\) and click **OK**. Finally select the group to see its content \(which should be all entries whose `author` field contains the name you specified\).
 
-In case a group should be filled with entries containing defined search strings, do the following:
-Press the **New Group** button,
-enter a name for the group, and select the option to dynamically group
-entries by a free-form search expression. Enter `author=smith` as
-a search expression (replace `smith` with a name that actually
-occurs in your database) and click **OK**. Finally select the group to
-see its content (which should be all entries whose `author` field
-contains the name you specified).
+You can also intersact or unition groups: Create two different groups \(e.g. as described above\). Click the **Settings** button and make sure that **Union** is selected. Now select both groups. You should see all entries contained in any of the two groups. Click **Settings** again and select **Intersection**. Now you should see only those entries contained in both groups \(which might be none at all, or exactly the same entries as before in case both groups contain the same entries\).
 
-You can also intersact or unition groups:
-Create two different groups (e.g. as described above). Click the **Settings** button
-and make sure that **Union** is selected. Now select both groups. You
-should see all entries contained in any of the two groups. Click **Settings** again
-and select **Intersection**. Now you should see only those entries contained
-in both groups (which might be none at all, or exactly the same entries
-as before in case both groups contain the same entries).
-
-JabRef allows you to easily identify groups that overlap with the currently
-selected groups (i.e. that contain at least one entry that is also contained
-in the currently selected groups). Click **Settings** and activate the
-option to highlight overlapping groups. Then select a group that overlaps
-with other groups. The other groups should be highlighted.
+JabRef allows you to easily identify groups that overlap with the currently selected groups \(i.e. that contain at least one entry that is also contained in the currently selected groups\). Click **Settings** and activate the option to highlight overlapping groups. Then select a group that overlaps with other groups. The other groups should be highlighted.
 
 ## Types of groups
 
@@ -80,15 +50,13 @@ A description of the group, to help you remember what it is about. Hovering the 
 
 ### Icon and color
 
-An icon can be displayed in front of the group name.
-Choose your favorite icon among the ones available at <https://materialdesignicons.com/>, and enter its name of the field *Icon*.
-The color of the icon can be set in to the field **Color**.
+An icon can be displayed in front of the group name. Choose your favorite icon among the ones available at [https://materialdesignicons.com/](https://materialdesignicons.com/), and enter its name of the field _Icon_. The color of the icon can be set in to the field **Color**.
 
 ![groups having colors](../.gitbook/assets/groups-colors.png)
 
 ### Type of group
 
-*Remark: outdated: The new interface (JabRef 5.0) displays a list of 5 choices under "Collect by".*
+_Remark: outdated: The new interface \(JabRef 5.0\) displays a list of 5 choices under "Collect by"._
 
 #### Static groups
 
@@ -157,3 +125,4 @@ The **Refresh** button updates the entry table to reflect the current groups sel
 ### Mixing refining groups with including groups
 
 If a refining group is a subgroup of a group that includes its subgroups -- the refining group's siblings --, these siblings are ignored when the refining group is selected.
+

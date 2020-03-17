@@ -1,13 +1,10 @@
 # Installation
 
-This page describes how to install Java, which is required separetely for JabRef 4.x and below.
-From JabRef 5.0 onwards, the runtime environment is bundled with the installer.
+This page describes how to install Java, which is required separetely for JabRef 4.x and below. From JabRef 5.0 onwards, the runtime environment is bundled with the installer.
 
-JabRef itself can be either installed using the installer or just running the jar file.
-You get these files from [https://www.jabref.org/\#downloads](https://www.jabref.org/#downloads).
+JabRef itself can be either installed using the installer or just running the jar file. You get these files from [https://www.jabref.org/\#downloads](https://www.jabref.org/#downloads).
 
-On Windows, the installer automatically downloads the OracleJDK \(i.e. Java\).
-You can also install it manually as described here.
+On Windows, the installer automatically downloads the OracleJDK \(i.e. Java\). You can also install it manually as described here.
 
 The installation steps are written having the [JavaFX development branch](https://builds.jabref.org/javafx/) in mind. Thus, it especially describes installing [JavaFX](https://en.wikipedia.org/wiki/JavaFX).
 
@@ -39,19 +36,19 @@ The installation steps are written having the [JavaFX development branch](https:
 
 ### Official Download Mirrors
 
-- http://www.fosshub.com/JabRef.html
-- https://github.com/JabRef/jabref/releases
-  - Download statistics: http://www.somsubhra.com/github-release-stats/?username=JabRef&repository=jabref
-- http://www.macupdate.com/app/mac/19869/jabref
-- http://www.heise.de/download/jabref.html
+* [http://www.fosshub.com/JabRef.html](http://www.fosshub.com/JabRef.html)
+* [https://github.com/JabRef/jabref/releases](https://github.com/JabRef/jabref/releases)
+  * Download statistics: [http://www.somsubhra.com/github-release-stats/?username=JabRef&repository=jabref](http://www.somsubhra.com/github-release-stats/?username=JabRef&repository=jabref)
+* [http://www.macupdate.com/app/mac/19869/jabref](http://www.macupdate.com/app/mac/19869/jabref)
+* [http://www.heise.de/download/jabref.html](http://www.heise.de/download/jabref.html)
 
 ## Other mirrors NOT updated/maintained by JabRef team
 
-- http://www.computerbild.de/download/JabRef-11693358.html
-- http://filehippo.com/de/download_jabref/
-- http://www.netzwelt.de/download/12279-jabref.html
-- http://filehippo.com/de/download_jabref/
-- https://sourceforge.net/projects/jabref/files/ - contains historical releases only
+* [http://www.computerbild.de/download/JabRef-11693358.html](http://www.computerbild.de/download/JabRef-11693358.html)
+* [http://filehippo.com/de/download\_jabref/](http://filehippo.com/de/download_jabref/)
+* [http://www.netzwelt.de/download/12279-jabref.html](http://www.netzwelt.de/download/12279-jabref.html)
+* [http://filehippo.com/de/download\_jabref/](http://filehippo.com/de/download_jabref/)
+* [https://sourceforge.net/projects/jabref/files/](https://sourceforge.net/projects/jabref/files/) - contains historical releases only
 
 ## Supported JDKs and JREs
 

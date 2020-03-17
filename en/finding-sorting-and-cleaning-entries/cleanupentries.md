@@ -1,8 +1,6 @@
 # Cleanup entries
 
-JabRef can cleanup the entries of a database.
-
-To carry a cleanup of the entries, go to **Quality → Cleanup entries...**.
+JabRef can cleanup the entries of a database. To do a cleanup of the entries, go to **Quality → Cleanup entries**.
 
 ![Screenshot for Cleanup Entries](../.gitbook/assets/cleanupentries.png)
 
