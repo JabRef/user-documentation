@@ -1,38 +1,34 @@
 # Customize entry types
 
-{% hint style="warning" %}
-Currently not available in 5.0. See [https://github.com/JabRef/jabref/issues/4719](https://github.com/JabRef/jabref/issues/4719) for details.
-{% endhint %}
-
-To customize entry types, select the menu **BibTeX → Customize entry types**.
+To customize entry types, select the menu **Options → Customize entry types**.
 
 When customizing an entry type, you both define how its entry editor should look, and what it takes for JabRef to consider an entry complete. You can both make changes to the existing entry types, and define new ones.
 
-Note that no modifications you make in this dialog will be stored until you click **Apply** or **OK**. If you click **Cancel** or simply close the dialog, unapplied changes will be lost.
+Note that no modifications you make in this dialog will be stored until you click **Apply**. If you click **Cancel** or simply close the dialog, unapplied changes will be lost.
 
 ## Using the entry customization dialog
 
-The entry customization dialog is divided in three main panels. The leftmost panel is where you can select an entry type for modification, and add new ones. The middle panel is used for setting up the required fields of the selected entry type, and the right panel for setting up the optional fields.
+![Screenshot of the entry customization dialog ](../.gitbook/assets/jabrefcustomentrytypes.png)
+
+The entry customization dialog is divided into two areas. On the left side all entry types \(including any custom types\) are listed. If you select a type from the left side, the right area shows all fields for the selected entry.
 
 ### Adding and removing entry types
 
-The currently available entry types are listed in the left panel. Whenever you select an entry type, the other panels will update to show what fields are required and optional for this entry type.
+The currently available entry types are listed in the left panel. 
 
 To add a new entry type, you must enter a name for it in the text field below the type list, and click **Add**. The new entry type will be added to the list, and selected for modification.
 
-To remove a custom entry type, select it and click **Remove**. This operation will only be available for custom entry types that are not merely modifications of standard types. It is not possible to remove a standard entry type.
-
-To return a modified standard type to its default setup, select it and click **Default**. This operation will only be available for customized entry types that modify a standard type.
+To remove a custom entry type, select it and click the trash icon. This operation will only be available for custom entry types that are not merely modifications of standard types. It is not possible to remove a standard entry type. While it's possible to remove them in the dialog, they will be readded on reopening the dialog.
 
 ## Editing entry types
 
-When an entry type is selected, the current required and optional fields will be listed in the center and right panels of the dialog. The process of editing the lists are identical for the required and optional fields.
+When an entry type is selected, the current required and optional fields are listed on the right. A radio button indicates and allows to change the field's type from required to optional and vice versa.
 
 To add a new field, edit the text field below the list, or select a field name from the dropdown menu, then click **Add**. The chosen field name will be added at the end of the list.
 
-To remove one or more fields, select them in the list, and click **Remove**.
+To remove a field select it in the list and click the trash icon to remove it.
 
-To change the order of the fields, choose one field name, and click the arrow buttons to move it up or down in the list.
+To change the order of the fields you can use drag and drop. 
 
 ### Either/or fields
 

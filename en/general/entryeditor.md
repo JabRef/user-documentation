@@ -28,8 +28,7 @@ The _BibTeX source_ panel shows how the entry will appear when the database is s
 
 ## Field consistency checking
 
-When the contents of a field is changed, JabRef checks if the new contents are acceptable. For field types that are used by _BibTeX_, the contents are checked with respect to the use of the '\#' character. The hash symbol is _only_ to be used in pairs \(except in escaped form, '\\#'\), wrapping the name of a _BibTeX_ string that is referenced. Note that JabRef does not check if the referenced string actually exists \(this is not trivial, since the _BibTeX_ style you use can define an arbitrary set of strings unknown to JabRef\).
-<!-- code location: org.jabref.logic.bibtex.FieldWriter#formatAndResolveStrings -->
+When the contents of a field is changed, JabRef checks if the new contents are acceptable. For field types that are used by _BibTeX_, the contents are checked with respect to the use of the '\#' character. The hash symbol is _only_ to be used in pairs \(except in escaped form, '\\#'\), wrapping the name of a _BibTeX_ string that is referenced. Note that JabRef does not check if the referenced string actually exists \(this is not trivial, since the _BibTeX_ style you use can define an arbitrary set of strings unknown to JabRef\). 
 
 If the contents are not accepted, the field will turn red, indicating an error. In this case the change will not be stored.
 

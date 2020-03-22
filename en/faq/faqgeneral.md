@@ -112,8 +112,7 @@ A: JabRef does no longer support plugins \(since version 3.0\). Automatic file r
 
 ## Q: How to test a development version without uninstalling the released version?
 
-A: Download the portable version (file `JabRef-X.Y.portable_windows.zip`, `JabRef-X.Y.portable_macos.tar.gz`, or `JabRef-X.Y.portable_linux.tar.gz`) from <https://builds.jabref.org/master/>, uncompress it, and run the executable.
-We recomment a folder such as `~/home/JabRef` or `c:\portable-apps\JabRef` to ensure that the portable version does not conflict with the latest release version installed from <https://downloads.jabref.org>.
+A: Download the portable version \(file `JabRef-X.Y.portable_windows.zip`, `JabRef-X.Y.portable_macos.tar.gz`, or `JabRef-X.Y.portable_linux.tar.gz`\) from [https://builds.jabref.org/master/](https://builds.jabref.org/master/), uncompress it, and run the executable. We recomment a folder such as `~/home/JabRef` or `c:\portable-apps\JabRef` to ensure that the portable version does not conflict with the latest release version installed from [https://downloads.jabref.org](https://downloads.jabref.org).
 
 In case you want to development version open when double clicking a `.bib` file, install the development version and uncompress the protable version of the latest release to a folder.
 
