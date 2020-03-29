@@ -1,46 +1,28 @@
 # Installation
 
-This page describes how to install Java, which is required separetely for JabRef 4.x and below. From JabRef 5.0 onwards, the runtime environment is bundled with the installer.
-
-JabRef itself can be either installed using the installer or just running the jar file. You get these files from [https://www.jabref.org/\#downloads](https://www.jabref.org/#downloads).
+JabRef itself can be either installed using the installer or just running the portable version.
+You get these files from [http://downloads.jabref.org/](http://downloads.jabref.org/).
 
 On Windows, the installer automatically downloads the OracleJDK \(i.e. Java\). You can also install it manually as described here.
 
-The installation steps are written having the [JavaFX development branch](https://builds.jabref.org/javafx/) in mind. Thus, it especially describes installing [JavaFX](https://en.wikipedia.org/wiki/JavaFX).
-
-* [Supported JDKs and JREs](installation.md#supported-jdks-and-jres)
-  * [JabRef 5.x](installation.md#jabref-5x)
-  * [JabRef 4.x](installation.md#jabref-4x)
-* [Verify Java Installation](installation.md#verify-java-installation)
 * [Installation Commands](installation.md#installation-commands)
   * [JabRef 5.x](installation.md#jabref-5x-1)
-    * [Building From Source](installation.md#building-from-source)
-    * [Using Prebuilt Binaries](installation.md#using-prebuilt-binaries)
   * [JabRef 4.x](installation.md#jabref-4x-1)
-    * [Ubuntu and Oracle Java](installation.md#ubuntu-and-oracle-java)
-    * [Ubuntu and OpenJDK](installation.md#ubuntu-and-openjdk)
-    * [Debian Jessie 8 and Oracle Java](installation.md#debian-jessie-8-and-oracle-java)
-      * [Using the ppa](installation.md#using-the-ppa)
-      * [Directly from Oracle](installation.md#directly-from-oracle)
-    * [Fedora 23 and Oracle Java](installation.md#fedora-23-and-oracle-java)
-    * [Fedora and OpenJDK](installation.md#fedora-and-openjdk)
-    * [CentOS 6 or 7 and Oracle Java](installation.md#centos-6-or-7-and-oracle-java)
-    * [openSUSE](installation.md#opensuse)
-    * [Arch and Manjaro](installation.md#arch-and-manjaro)
-    * [Windows and Oracle Java](installation.md#windows-and-oracle-java)
-    * [Mac OS and Oracle Java](installation.md#mac-os-and-oracle-java)
-* [Freezes when running JabRef](installation.md#freezes-when-running-jabref)
-* [JabRef and OpenOffice/LibreOffice integration](installation.md#jabref-and-openofficelibreoffice-integration)
+* [Troubleshooting](#troubleshooting)
+  * [Freezes when running JabRef](installation.md#freezes-when-running-jabref)
+  * [JabRef and OpenOffice/LibreOffice integration](installation.md#jabref-and-openofficelibreoffice-integration)
 
 ## Places do download JabRef
 
 ### Official Download Mirrors
 
+* [http://downloads.jabref.org/](http://downloads.jabref.org/) - redirects to the preferred place to download JabRef
 * [http://www.fosshub.com/JabRef.html](http://www.fosshub.com/JabRef.html)
 * [https://github.com/JabRef/jabref/releases](https://github.com/JabRef/jabref/releases)
   * Download statistics: [http://www.somsubhra.com/github-release-stats/?username=JabRef&repository=jabref](http://www.somsubhra.com/github-release-stats/?username=JabRef&repository=jabref)
 * [http://www.macupdate.com/app/mac/19869/jabref](http://www.macupdate.com/app/mac/19869/jabref)
 * [http://www.heise.de/download/jabref.html](http://www.heise.de/download/jabref.html)
+* Development snapshots: [https://builds.jabref.org/master/](https://builds.jabref.org/master/)
 
 ## Other mirrors NOT updated/maintained by JabRef team
 
@@ -50,11 +32,38 @@ The installation steps are written having the [JavaFX development branch](https:
 * [http://filehippo.com/de/download\_jabref/](http://filehippo.com/de/download_jabref/)
 * [https://sourceforge.net/projects/jabref/files/](https://sourceforge.net/projects/jabref/files/) - contains historical releases only
 
-## Supported JDKs and JREs
+## Installation Commands
 
 ### JabRef 5.x
 
-JabRef 5.x is distributed with a bundled Java Runtime Enviornment. There is no need for any Java installation anymore.
+JabRef 5.x is shipped with a lightweight Java runtime environment that includes only the Java dependencies JabRef uses. There are two major ways of obtaining JabRef for your platform.
+
+#### Using Prebuilt Binaries
+
+For stable versions, head to <https://downloads.jabref.org>, choose the installer and run it.
+On Windows, you can use the [chocolatey package manager](https://chocolatey.org/) and execute `choco install jabref` to get the latest version.
+On Ubuntu, you can use `snap install jabref` to get the latest stable version.
+
+In case, you want to take advantage of the [latest features](https://github.com/JabRef/jabref/blob/master/CHANGELOG.md#unreleased), you can use pre-built binaries crafted from the latest development branch.
+
+To use the prebuilt binaries, visit [http://builds.jabref.org/master/](http://builds.jabref.org/master/) and download the packaged binaries \(e.g., `dmg` files for MacOS and `exe` files for Windows\), run them and follow the instructions. We also provide generic archive files \(e.g., `tar.gz` files for Linux and MacOS, and `zip` files for Windows\) which can be downloaded and extracted. Inside the archive files you will find a `bin` subdirectory which contains the binary needed to run JabRef \(i.e., `JabRefMain` for Linux and MacOS, and `JabRefMain.bat` for Windows\).
+
+#### Building From Source
+
+This method is mainly for package maintainers and users who would like to build the latest snapshots of JabRef directly from the source. If you want to setup JabRef for development, follow the instructions for [Setting up a workspace](https://devdocs.jabref.org/guidelines-for-setting-up-a-local-workspace)
+
+To build JabRef from source, you first need to have a working Java Development Kit 13 \(JDK 13\) and Git installed on your system. After installing the two requirements, you open a terminal window \(i.e., a command prompt\) and type the following:
+
+```text
+git clone --depth=10 https://github.com/JabRef/jabref
+cd jabref
+./gradlew assemble
+./gradlew jlink
+```
+
+In a nutshell, you clone the latest snapshot of JabRef into `jabref` directory, change directory to `jabref`, initialize and update all the submodules \(dependencies\) of JabRef, assemble them to be built via JDK 13, and finally build and link them together.
+
+The output should be the `build/image` subdirectory that contains the JabRef binary with all of its Java dependencies. To start JabRef, you need to run `bin/JabRefMain` \(in Linux and MacOS\) or `bin/JabRefMain.bat` \(in Windows\) under `build/image` subdirectory.
 
 ### JabRef 4.x
 
@@ -62,7 +71,7 @@ JabRef 5.x is distributed with a bundled Java Runtime Enviornment. There is no n
 
 JavaFX is not included in every Java runtime environment or development kit. Therefore, we highly recommend to use [Oracle Java 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html). JavaFX is included since Java 1.8.0\_60. The other official support for JavaFX is [OpenJDK](http://openjdk.java.net/install/index.html) with the external library [OpenJFX](https://packages.ubuntu.com/xenial/java/openjfx-source). Unfortunately, the installation is not always straight forward. Therefore, we only recommend this if you know what you are doing. In case you want to use OpenJDK with OpenJFX in general you should follow this [instructions](https://wiki.openjdk.java.net/display/OpenJFX/Building+OpenJFX). For Ubuntu 16.04 LTS and 18.04 LTS head to the section [Installation Commands](installation.md#installation-commands).
 
-## Verify Java Installation
+#### Verify Java Installation
 
 In case you already have a Java version installed - or you closely followed the steps below, you can check your Java version by typing the following command into your command line interface:
 
@@ -109,37 +118,6 @@ OpenJDK 64-Bit Server VM (build 25.x, mixed mode)
 ```
 
 If this does not report to be a product from Oracle \(for instance tells you that it is a GCJ VM\) even if you have installed the Oracle JVM then you need to change your setup. In the following, the installation is documented for Ubuntu, Debian, Fedora, CentOS, Windows, and MacOSX.
-
-## Installation Commands
-
-### JabRef 5.x
-
-JabRef 5.x is shipped with a lightweight Java runtime environment that includes only the Java dependencies JabRef uses. There are two major ways of obtaining JabRef for your platform.
-
-#### Building From Source
-
-This method is mainly for package maintainers and users who would like to build the latest snapshots of JabRef directly from the source. If you want to setup JabRef for development, follow the instructions for [Setting up a workspace](https://devdocs.jabref.org/guidelines-for-setting-up-a-local-workspace)
-
-To build JabRef from source, you first need to have a working Java Development Kit 13 \(JDK 13\) and Git installed on your system. After installing the two requirements, you open a terminal window \(i.e., a command prompt\) and type the following:
-
-```text
-git clone https://github.com/JabRef/jabref
-cd jabref
-./gradlew assemble
-./gradlew jlink
-```
-
-In a nutshell, you clone the latest snapshot of JabRef into `jabref` directory, change directory to `jabref`, initialize and update all the submodules \(dependencies\) of JabRef, assemble them to be built via JDK 13, and finally build and link them together.
-
-The output should be the `build/image` subdirectory that contains the JabRef binary with all of its Java dependencies. To start JabRef, you need to run `bin/JabRefMain` \(in Linux and MacOS\) or `bin/JabRefMain.bat` \(in Windows\) under `build/image` subdirectory.
-
-#### Using Prebuilt Binaries
-
-This method is mainly for anyone who would like to download and run the latest snapshot of JabRef.
-
-To use the prebuilt binaries, simply visit [http://builds.jabref.org/master/](http://builds.jabref.org/master/) and download the packaged binaries \(e.g., `dmg` files for MacOS and `exe` files for Windows\), run them and follow the instructions. We also provide generic archive files \(e.g., `tar.gz` files for Linux and MacOS, and `zip` files for Windows\) which can be downloaded and extracted. Inside the archive files you will find a `bin` subdirectory which contains the binary needed to run JabRef \(i.e., `JabRefMain` for Linux and MacOS, and `JabRefMain.bat` for Windows\).
-
-### JabRef 4.x
 
 #### Ubuntu and Oracle Java
 
@@ -243,13 +221,17 @@ The "old" way:
 1. Download dmg-file from the [Java SE Development Kit 8 Downloads](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) site
 2. Run installation wizzard
 
-## Freezes when running JabRef
+## Troubleshooting
+
+See the [FAQs](https://docs.jabref.org/faq/faqgeneral).
+
+### Freezes when running JabRef
 
 Some users with macOS Sierra have reported freezes when using JabRef. Apparently, [adding a host mapping for 127.0.0.1](https://dzone.com/articles/macos-sierra-problems-with-javanetinetaddress-getl) seems to solve these issues.
 
 Random freezes have also been reported on several Linux distributions. It seems that the `GTKLookAndFeel` is causing these problems and selecting a different look and feel class under `Options -> Appearance -> Look and Feel` solves the problem.
 
-## JabRef and OpenOffice/LibreOffice integration
+### JabRef and OpenOffice/LibreOffice integration
 
 The connection from JabRef to Libre Office requires some office related `jar`-archives to be present. The Windows installer for OpenOffice/LibreOffice automatically installs the required libraries. For Linux you have to install the package `libreoffice-java-common`.
 
