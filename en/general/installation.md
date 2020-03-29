@@ -24,7 +24,7 @@ On Windows, the installer automatically downloads the OracleJDK \(i.e. Java\). Y
 * [http://www.heise.de/download/jabref.html](http://www.heise.de/download/jabref.html)
 * Development snapshots: [https://builds.jabref.org/master/](https://builds.jabref.org/master/)
 
-## Other mirrors NOT updated/maintained by JabRef team
+### Other mirrors NOT updated/maintained by JabRef team
 
 * [http://www.computerbild.de/download/JabRef-11693358.html](http://www.computerbild.de/download/JabRef-11693358.html)
 * [http://filehippo.com/de/download\_jabref/](http://filehippo.com/de/download_jabref/)
@@ -234,4 +234,3 @@ Random freezes have also been reported on several Linux distributions. It seems 
 ### JabRef and OpenOffice/LibreOffice integration
 
 The connection from JabRef to Libre Office requires some office related `jar`-archives to be present. The Windows installer for OpenOffice/LibreOffice automatically installs the required libraries. For Linux you have to install the package `libreoffice-java-common`.
-
