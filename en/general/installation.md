@@ -41,8 +41,8 @@ JabRef 5.x is shipped with a lightweight Java runtime environment that includes 
 #### Using Prebuilt Binaries
 
 For stable versions, head to <https://downloads.jabref.org>, choose the installer and run it.
-On Windows, you can use the [chocolatey package manager](https://chocolatey.org/) and execute `choco install jabref` to get the latest version.
-On Ubuntu, you can use `snap install jabref` to get the latest stable version.
+On **Windows**, you can use the [chocolatey package manager](https://chocolatey.org/) and execute `choco install jabref` to get the latest version.
+On **Ubuntu**, you can use `snap install jabref` to get the latest stable version.
 
 In case, you want to take advantage of the [latest features](https://github.com/JabRef/jabref/blob/master/CHANGELOG.md#unreleased), you can use pre-built binaries crafted from the latest development branch.
 
