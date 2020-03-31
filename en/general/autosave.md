@@ -1,30 +1,31 @@
-# Autosave
+# Autosave and Backup - `.bib.sav` and `.bib.bak`
 
 {% hint style="info" %}
-Since: 3.7
+Autosave and backup feature is available sind JabRef 3.7.
+
+To reduce the amount of configuration options, the possibility to disable them was removed in JabRef 5.1.
 {% endhint %}
 
-## Purpose
-
-The autosave feature helps to save an opened database without manual intervention. Furthermore, it synchronizes your local files which are associated with appropriate [shared SQL databases](../collaborative-work/sqldatabase.md).
-
-## Activation
-
-![Screenshot of the autosave preferences](../.gitbook/assets/autosave.png)
-
-You can activate the autosave feature through **Options → Preferences**, and then by choosing **File** on the left panel. At the lower part of the window, a section is dedicated to **AutoSave**.
-
-## Autosave for local databases
-
-If you are working on `.bib` files which are located on your file system, this feature will detect your changes automatically and save them without further intervention.
-
-## Autosave for shared databases
-
-Generally, you are able to save a shared database after connecting to it. This feature enables a full synchronization of your local bib file with the [shared SQL database](../collaborative-work/sqldatabase.md) which could simultaneously be used by other collaborators.
-
-## Remarks
-
-By default this feature is disabled for local databases. It has to be kept apart from the [main backup functionality](backup.md) as the backup is running continuously without users influence.
+JabRef generates `.sav` and `.bak` files while working.
+`.sav` is the autosave feature: Each 15 seconds, the current state of the library is saved.
+`.bak` preserves the last state of the library after saving.
+Thus, one can go back one save command in the history.
 
 By using the [gitignore.io](https://www.gitignore.io/) service, you can generate an appropriate `.gitignore` file by opening [https://www.gitignore.io/api/jabref](https://www.gitignore.io/api/jabref).
 
+## `.sav` - autosave files
+
+This functionality runs in the background while you are working on a _BibTeX database_. It makes a _backup copy_ and keeps that up-to-date on every user interaction. For instance, when you change a field the new value would get saved into the backup copy.
+Assuming that _JabRef_ crashes while you are working on a _BibTeX database_. When you try again to open the file _JabRef_ crashed with you will get the following dialog:
+
+![Screenshot of the backup dialog](../.gitbook/assets/backup_found.png)
+
+Now you have the possibility to restore your changes which would normally get lost.
+
+When _JabRef_ gets closed normally the `.sav` file will be removed. Otherwise, this file is going to be used for database restoration next time.
+
+## `.bak` - backup files
+
+`.bak` preserves the last state of the library after saving.
+Thus, one can go back one save command in the history.
+For more advanced history, we recommend to use [git as version control system](https://git-scm.com/book).
