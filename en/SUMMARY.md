@@ -5,7 +5,7 @@
   * [Entry Editor](general/entryeditor.md)
   * [Best Practices](general/bestpractices.md)
   * [Command line use and options](general/commandline.md)
-  * [Autosave and Backup - `.bib.sav` and `.bib.bak`](general/autosave.md)
+  * [Automatic Backup (`.sav` and `.bak`) and Autosave](general/autosave.md)
   * [Remote operation](general/remote.md)
   * [Installation](general/installation.md)
 * [About BibTeX and its fields](fields/README.md)
