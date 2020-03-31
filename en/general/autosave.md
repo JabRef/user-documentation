@@ -36,4 +36,4 @@ For more advanced history, we recommend to use [git as version control system](h
 
 This feature needs to be activated in the preferences:
 
-[Screenshot of the autosave preferences](../.gitbook/assets/autosave.png)
+![Screenshot of the autosave preferences](../.gitbook/assets/autosave.png)
