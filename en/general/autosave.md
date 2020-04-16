@@ -1,7 +1,7 @@
 # Automatic Backup (`.sav` and `.bak`) and Autosave
 
 {% hint style="info" %}
-The autosave and backup features is available sind JabRef 3.7.
+The autosave and backup features is available since JabRef 3.7.
 
 To reduce the amount of configuration options, the possibility to disable the creation of `.bak` files was removed in JabRef 5.1.
 {% endhint %}
