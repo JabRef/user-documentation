@@ -9,7 +9,7 @@ Existing public files are collected at [https://layouts.jabref.org](https://layo
 ## Adding a custom export filter
 
 The only requirement for a valid export filter is the existence of a file with the extension **.layout**. To add a new custom export filter, open the dialog box **Options → Manage custom exports**, and click **Add new**. A new dialog box will appear, allowing you to specify a name for the export filter \(which will appear as one of the choices in the File type dropdown menu of the file dialog when you use the **File → Export** menu choice in the JabRef window\), the path to the **.layout** file, and the preferred file extension for the export filter \(which will be the suggested extension in the file dialog when you use the export filter\).
-Note that if you intend to use the custom export filter also for "Copy...->Export to Clipbaord" in the maintable, the extension must be one of the following: "txt", "rtf", "rdf", "xml", "html", "htm", "csv" or "ris"
+Note that if you intend to use the custom export filter also for "Copy...->Export to Clipboard" in the maintable, the extension must be one of the following: `txt`, `rtf`, `rdf`, `xml`, `html`, `htm`, `csv`, or `ris`.
 
 ## Creating the export filter
 
@@ -312,4 +312,3 @@ Large example:
 > you would use
 >
 > `1@*@{ll}, {f}.@@2@1@{ll}, {f}.@2@ and {ll}, {f}.@@*@1..-3@{ll}, {f}., @-2@{ll}, {f}.@-1@ and {ll}, {f}.`
-
