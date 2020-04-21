@@ -49,11 +49,20 @@ Normally, you simply install the extension from the browser store and are ready 
 
 #### Linux
 
-1. Download and install the Debian package of [JabRef 5.0](https://www.jabref.org/#downloads).
+##### Deb, RPM or Portable
+1. Download and install the Debian package of [JabRef 5.0](https://www.jabref.org/#downloads)
 2. Install the JabRef browser extension: [Firefox](https://addons.mozilla.org/en-US/firefox/addon/jabfox?src=external-github),  [Chrome](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh), [Vivaldi](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh)
 3. Download [org.jabref.jabref.json](https://raw.githubusercontent.com/JabRef/jabref/master/buildres/linux/native-messaging-host/firefox/org.jabref.jabref.json) and put it into 
    * `/usr/lib/mozilla/native-messaging-hosts/org.jabref.jabref.json` to install with admin rights for all users
    * `~/.mozilla/native-messaging-hosts/org.jabref.jabref.json` to install without admin rights for the current user
+
+##### Snap
+1. Install the snap package of [JabRef 5.0](https://snapcraft.io/jabref)
+2. Install the JabRef browser extension: [Firefox](https://addons.mozilla.org/en-US/firefox/addon/jabfox?src=external-github),  [Chrome](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh), [Vivaldi](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh)
+3. Connect the appropriate plug for the selected browser:
+    * Firefox: `snap connect jabref:hostfs-mozilla-native-messaging-jabref`
+    * Chrome: `snap connect jabref:etc-opt-chrome-native-messaging-jabref`
+    * Chromium: `snap connect jabref:etc-chromium-native-messaging-jabref`
 
 #### Mac OS
 
