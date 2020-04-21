@@ -13,7 +13,7 @@ JabRef is a cross-platform application that works on Windows, Linux and Mac OS X
 * Easily retrieve and link full-text articles
 * Fetch complete bibliographic information based on ISBN, DOI, PubMed-ID and arXiv-ID
 * Extract metadata from PDFs
-* [JabFox Firefox Add-on](https://addons.mozilla.org/en-US/firefox/addon/jabfox/) lets you import new references directly from the browser with one click
+* Import new references directly from the browser with one click using the [official browser extension](import-export/import/jabref-browser-extension.md) for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/jabref/?src=external-github),  [Chrome](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh), [Edge](https://microsoftedge.microsoft.com/addons/detail/pgkajmkfgbehiomipedjhoddkejohfna) and [Vivaldi](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh)
 
 ### Organize
 
