@@ -69,7 +69,7 @@ The output should be the `build/image` subdirectory that contains the JabRef bin
 
 > JabRef 4.x requires JRE 8 \(and does not run at JRE 9 onwoards\)
 
-JavaFX is not included in every Java runtime environment or development kit. Therefore, we highly recommend to use [Oracle Java 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html). JavaFX is included since Java 1.8.0\_60. The other official support for JavaFX is [OpenJDK](http://openjdk.java.net/install/index.html) with the external library [OpenJFX](https://packages.ubuntu.com/xenial/java/openjfx-source). Unfortunately, the installation is not always straight forward. Therefore, we only recommend this if you know what you are doing. In case you want to use OpenJDK with OpenJFX in general you should follow this [instructions](https://wiki.openjdk.java.net/display/OpenJFX/Building+OpenJFX). For Ubuntu 16.04 LTS and 18.04 LTS head to the section [Installation Commands](installation.md#installation-commands).
+JavaFX is not included in every Java runtime environment or development kit. Therefore, we highly recommend to use [Oracle Java 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html). JavaFX is included since Java 1.8.0\_60. The other official support for JavaFX is [OpenJDK](http://openjdk.java.net/install/index.html) with the external library [OpenJFX](https://packages.ubuntu.com/xenial/java/openjfx-source). Unfortunately, the installation is not always straight forward. Therefore, we only recommend this if you know what you are doing. In case you want to use OpenJDK with OpenJFX in general you should follow this [instructions](https://wiki.openjdk.java.net/display/OpenJFX/Building+OpenJFX). For Ubuntu 16.04 LTS, 18.04 LTS and 20.04 LTS head to the section [Installation Commands](installation.md#installation-commands).
 
 #### Verify Java Installation
 
@@ -121,21 +121,31 @@ If this does not report to be a product from Oracle \(for instance tells you tha
 
 #### Ubuntu and Oracle Java
 
-This applies for both 32bit and 64bit and both Ubuntu 14.04 LTS, 16.04 LTS and 18.04 LTS.
+This applies for both 32bit and 64bit and both Ubuntu 14.04 LTS, 16.04 LTS, 18.04 LTS and 20.04 LTS.
 
-Install Oracle JDK with "personal packages archiv \(ppa\)" which includes an automated update function:
+Install Oracle JDK:
 
-1. Add repository: `sudo add-apt-repository ppa:webupd8team/java`
-2. Update package list: `sudo apt-get update`
-3. Install: `sudo apt-get install oracle-java8-installer`
+1. Download the Linux files (e.g. Linux_X64) from https://java.com/en/download/linux_manual.jsp
+2. Unpack the archive
+ > Note: You can already start JabRef now. Just enter into terminal: "/home/USER/Downloads/jre-8u251-linux-x64/jre1.8.0_251/bin/java -jar /home/USER/Downloads/JabRef-4.3.1.jar" (The path has to match your folder structure)
+3. Register your JRE system-wide 
+4. Move the java folder to your preferred location (e.g. /usr/java). The folder structure should look like "/usr/java/jre1.80_251/bin"
+5. Edit "bashrc" with: `sudo gedit ~/.bashrc`
+6. Insert the following lines and save the file (adjust JAVA_HOME if neccessary):
 
-If you want to install JRE or install java without ppa you should follow these [instructions](https://help.ubuntu.com/community/Java).
+  `export JAVA_HOME=/usr/java/jre1.80_251`
+  `export PATH=${PATH}:${JAVA_HOME}/bin`
+7. Log out and in to your system
+8. Verify your java version (see above): `java -version`
+9. Start JabRef with: `java -jar Path/to/JabRef.jar`
+
+Have a look for further [instructions](https://help.ubuntu.com/community/Java).
 
 #### Ubuntu and OpenJDK
 
 Just install JavaFX by executing `sudo apt-get install openjfx`.
 
-For Ubuntu 18.04 and newer, `openjfx` [uses the Java version 11](https://github.com/JabRef/help.jabref.org/issues/204) which is currently not supported by JabRef. Hence, use an older version:
+For Ubuntu 18.04 and newer, `openjfx` [uses the Java version 11](https://github.com/JabRef/help.jabref.org/issues/204) which is currently not supported by JabRef. Hence, use an older version (does not work with Ubuntu 20.04 anymore):
 
 1. If you accidently installed the new version, remove it with `sudo apt purge openjfx`.
 2. Install an older version with `sudo apt install openjfx=8u161-b12-1ubuntu2 libopenjfx-jni=8u161-b12-1ubuntu2 libopenjfx-java=8u161-b12-1ubuntu2`.
