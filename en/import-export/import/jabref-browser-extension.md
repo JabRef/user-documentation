@@ -30,7 +30,7 @@ Normally, you simply install the extension from the browser store and are ready 
    * [jabref-chrome.json](https://raw.githubusercontent.com/JabRef/jabref/master/buildres/windows/jabref-chrome.json)
    * [JabRef.bat](https://raw.githubusercontent.com/JabRef/jabref/master/buildres/windows/JabRefHost.bat)
    * [JabRef.ps1](https://raw.githubusercontent.com/JabRef/jabref/master/buildres/windows/JabRefHost.ps1)
-5. Make sure that the correct file name of the JabRef `.jar` file is specified in `JabRef.ps1` under `$jabRefJarFileName`.
+5. Make sure that the correct file name of the `JabRef.bat` file is specified in `JabRefHost.ps1` under `$jabRefExe`.
 6. Run the following command from the console \(with the correct path to the `jabref.json` file\):
 
    For Firefox support:
@@ -42,7 +42,7 @@ Normally, you simply install the extension from the browser store and are ready 
    For Chrome/Opera support
 
    ```text
-   REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Google\Chrome\NativeMessagingHosts\org.jabref.jabref" /ve /d "C:\path\to\jabref.json" /f
+   REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Google\Chrome\NativeMessagingHosts\org.jabref.jabref" /ve /d "C:\path\to\jabref-chrome.json" /f
    ```
 
    You may need to change the root `HKEY_LOCAL_MACHINE` to `HKEY_CURRENT_USER` if you don't have admin rights. 
