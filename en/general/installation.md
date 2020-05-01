@@ -1,14 +1,13 @@
 # Installation
 
-JabRef itself can be either installed using the installer or just running the portable version.
-You get these files from [http://downloads.jabref.org/](http://downloads.jabref.org/).
+JabRef itself can be either installed using the installer or just running the portable version. You get these files from [http://downloads.jabref.org/](http://downloads.jabref.org/).
 
 On Windows, the installer automatically downloads the OracleJDK \(i.e. Java\). You can also install it manually as described here.
 
 * [Installation Commands](installation.md#installation-commands)
   * [JabRef 5.x](installation.md#jabref-5x-1)
   * [JabRef 4.x](installation.md#jabref-4x-1)
-* [Troubleshooting](#troubleshooting)
+* [Troubleshooting](installation.md#troubleshooting)
   * [Freezes when running JabRef](installation.md#freezes-when-running-jabref)
   * [JabRef and OpenOffice/LibreOffice integration](installation.md#jabref-and-openofficelibreoffice-integration)
 
@@ -40,9 +39,7 @@ JabRef 5.x is shipped with a lightweight Java runtime environment that includes 
 
 #### Using Prebuilt Binaries
 
-For stable versions, head to <https://downloads.jabref.org>, choose the installer and run it.
-On **Windows**, you can use the [chocolatey package manager](https://chocolatey.org/) and execute `choco install jabref` to get the latest version.
-On **Ubuntu**, you can use `snap install jabref` to get the latest stable version [from snapcraft](https://snapcraft.io/jabref).
+For stable versions, head to [https://downloads.jabref.org](https://downloads.jabref.org), choose the installer and run it. On **Windows**, you can use the [chocolatey package manager](https://chocolatey.org/) and execute `choco install jabref` to get the latest version. On **Ubuntu**, you can use `snap install jabref` to get the latest stable version [from snapcraft](https://snapcraft.io/jabref).
 
 In case, you want to take advantage of the [latest features](https://github.com/JabRef/jabref/blob/master/CHANGELOG.md#unreleased), you can use pre-built binaries crafted from the latest development branch.
 
@@ -125,18 +122,20 @@ This applies for both 32bit and 64bit and both Ubuntu 14.04 LTS, 16.04 LTS, 18.0
 
 Install Oracle JDK:
 
-1. Download the Linux files (e.g. Linux_X64) from https://java.com/en/download/linux_manual.jsp
+1. Download the Linux files \(e.g. Linux\_X64\) from [https://java.com/en/download/linux\_manual.jsp](https://java.com/en/download/linux_manual.jsp)
 2. Unpack the archive
- > Note: You can already start JabRef now. Just enter into terminal: "/home/USER/Downloads/jre-8u251-linux-x64/jre1.8.0_251/bin/java -jar /home/USER/Downloads/JabRef-4.3.1.jar" (The path has to match your folder structure)
-3. Register your JRE system-wide 
-4. Move the java folder to your preferred location (e.g. /usr/java). The folder structure should look like "/usr/java/jre1.80_251/bin"
-5. Edit "bashrc" with: `sudo gedit ~/.bashrc`
-6. Insert the following lines and save the file (adjust JAVA_HOME if neccessary):
 
-  `export JAVA_HOME=/usr/java/jre1.80_251`
-  `export PATH=${PATH}:${JAVA_HOME}/bin`
+   > Note: You can already start JabRef now. Just enter into terminal: "/home/USER/Downloads/jre-8u251-linux-x64/jre1.8.0\_251/bin/java -jar /home/USER/Downloads/JabRef-4.3.1.jar" \(The path has to match your folder structure\)
+
+3. Register your JRE system-wide 
+4. Move the java folder to your preferred location \(e.g. /usr/java\). The folder structure should look like "/usr/java/jre1.80\_251/bin"
+5. Edit "bashrc" with: `sudo gedit ~/.bashrc`
+6. Insert the following lines and save the file \(adjust JAVA\_HOME if neccessary\):
+
+   `export JAVA_HOME=/usr/java/jre1.80_251` `export PATH=${PATH}:${JAVA_HOME}/bin`
+
 7. Log out and in to your system
-8. Verify your java version (see above): `java -version`
+8. Verify your java version \(see above\): `java -version`
 9. Start JabRef with: `java -jar Path/to/JabRef.jar`
 
 Have a look for further [instructions](https://help.ubuntu.com/community/Java).
@@ -145,7 +144,7 @@ Have a look for further [instructions](https://help.ubuntu.com/community/Java).
 
 Just install JavaFX by executing `sudo apt-get install openjfx`.
 
-For Ubuntu 18.04 and newer, `openjfx` [uses the Java version 11](https://github.com/JabRef/help.jabref.org/issues/204) which is currently not supported by JabRef. Hence, use an older version (does not work with Ubuntu 20.04 anymore):
+For Ubuntu 18.04 and newer, `openjfx` [uses the Java version 11](https://github.com/JabRef/help.jabref.org/issues/204) which is currently not supported by JabRef. Hence, use an older version \(does not work with Ubuntu 20.04 anymore\):
 
 1. If you accidently installed the new version, remove it with `sudo apt purge openjfx`.
 2. Install an older version with `sudo apt install openjfx=8u161-b12-1ubuntu2 libopenjfx-jni=8u161-b12-1ubuntu2 libopenjfx-java=8u161-b12-1ubuntu2`.
@@ -244,3 +243,4 @@ Random freezes have also been reported on several Linux distributions. It seems 
 ### JabRef and OpenOffice/LibreOffice integration
 
 The connection from JabRef to Libre Office requires some office related `jar`-archives to be present. The Windows installer for OpenOffice/LibreOffice automatically installs the required libraries. For Linux you have to install the package `libreoffice-java-common`.
+
