@@ -49,7 +49,7 @@ For more information see [Save Actions](../finding-sorting-and-cleaning-entries/
 
 ## Shared SQL database
 
-Note that some properties are not available for shared [SQL databases](../collaborative-work/sqldatabase.md) as they are not handled like a `.bib` file. The following properties are not available:
+Note that some properties are not available for shared [SQL databases](../collaborative-work/sqldatabase/) as they are not handled like a `.bib` file. The following properties are not available:
 
 * Database encoding _\(always UTF-8\)_
 * Save sort order

@@ -1,8 +1,8 @@
-# Get BibTeX data from DOI
+# Complete information using online databases
 
 JabRef can help you complement your entries from their DOI.
 
-Open the [entry editor](../general/entryeditor.md), and in the General tab, click on the button **Get BibTeX data from DOI**. _Obviously, this feature is available only if your entry already has a DOI._
+Open the [entry editor](../advanced/entryeditor/), and in the General tab, click on the button **Get BibTeX data from DOI**. _Obviously, this feature is available only if your entry already has a DOI._
 
 ![Screenshot of general tab](../.gitbook/assets/getbibtexdatafromdoi-main.png)
 

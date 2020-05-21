@@ -48,7 +48,7 @@ A: Open **Options → Preferences**. In the “File” panel, you will find an o
 
 ## Q: Is it possible to append entries from a BibTeX file, e.g. from my web browser, to the currently opened library?
 
-A: Yes, you can use the parameter `--importToOpen bibfile` of the [command line](../general/commandline.md).
+A: Yes, you can use the parameter `--importToOpen bibfile` of the [command line](../advanced/commandline.md).
 
 ## Q: How do I link external files with paths relative to my .bib file, so I can move my library along with its files to another directory?
 
@@ -96,7 +96,7 @@ A: In **File → Library properties**, you will find a section named "Save actio
 
 ## Q: Search on Google scholar does not work anymore. Why?
 
-A: Google scholar is blocking "automated" crawls which generate too much traffic in a short time. JabRef already uses a two-step approach \(with the prefetched list before crawling the actual BibTeX data\) to circumvent this. However, after too much crawls JabRef is being blocked. To solve this issue, see the section _Traffic limitations_ in the [Google Scholar help](../finding-sorting-and-cleaning-entries/import-using-online-bibliographic-database/googlescholar.md).
+A: Google scholar is blocking "automated" crawls which generate too much traffic in a short time. JabRef already uses a two-step approach \(with the prefetched list before crawling the actual BibTeX data\) to circumvent this. However, after too much crawls JabRef is being blocked. To solve this issue, see the section _Traffic limitations_ in the [Google Scholar help](../collect/import-using-online-bibliographic-database/googlescholar.md).
 
 ## Q: JabRef does not push to vim, although I have configured the right path and server name. What is going on?
 

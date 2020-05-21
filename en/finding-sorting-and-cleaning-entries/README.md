@@ -1,4 +1,4 @@
-# Finding, Sorting, and Cleaning Entries
+# Organize
 
 How to find, sort, and clean entries
 

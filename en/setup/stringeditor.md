@@ -1,5 +1,7 @@
 # The string editor
 
+In JabRef you write the contents of all fields the same way as you would in a text editor, with one exception: to reference a string, enclose the name of the string in a set of \# characters, e.g.: '\#jan\# 1997', which will be interpreted as the string named `jan` followed by `1997`.
+
 [Strings](../fields/strings.md) can be edited by **BibTeX → Edit strings** or pressing a button in the toolbar.
 
 _Strings_ are the _BibTeX_ equivalent to constants in a programming language. Each string is defined with a unique _name_ and a _content_. Elsewhere in the database, the name can be used to represent the content.

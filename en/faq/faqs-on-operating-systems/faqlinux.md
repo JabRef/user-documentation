@@ -14,7 +14,7 @@ Yes, there is. See [http://askubuntu.com/a/721387/196423](http://askubuntu.com/a
 
 > JabRef requires Java 8
 
-Please follow the steps provided on our [installation page](../../general/installation.md). JabRef 4.x does not run under Java 9 or newer. See [https://github.com/JabRef/jabref/issues/2594](https://github.com/JabRef/jabref/issues/2594)
+Please follow the steps provided on our [installation page](../../installation.md). JabRef 4.x does not run under Java 9 or newer. See [https://github.com/JabRef/jabref/issues/2594](https://github.com/JabRef/jabref/issues/2594)
 
 You might see the error message `Error: Could not find or load main class org.jabref.JabRefMain`. This means, you do not have [JavaFX](https://en.wikipedia.org/wiki/JavaFX) support activated in your Java runtime environment. This typically happens if you use [OpenJDK](http://openjdk.java.net/), where one needs to setup [OpenJFX](https://wiki.openjdk.java.net/display/OpenJFX/Main) separately.
 

@@ -8,11 +8,11 @@ You can disable or enable this feature by entering **Options → Preferences →
 
 If an entry with a timestamp is pasted or imported, the field is updated with the current date if _'Overwrite'_ is checked. The value of the timestamp field will be updated upon changes in the entry if _'Update timestamp on modification'_ is checked.
 
-By default, the date is added in a field called _'timestamp'_, which is visible in the **General fields** tab in the [entry editor](../general/entryeditor.md). You can alter the name of this field. The _date format_ can also be customized \(see below\).
+By default, the date is added in a field called _'timestamp'_, which is visible in the **General fields** tab in the [entry editor](../advanced/entryeditor/). You can alter the name of this field. The _date format_ can also be customized \(see below\).
 
 ## Usage
 
-The timestamp field can be edited in the **General fields** tab of the [entry editor](../general/entryeditor.md). If you do not see these fields, enable them at [General Fields](../setup/generalfields.md) or reset your preferences.
+The timestamp field can be edited in the **General fields** tab of the [entry editor](../advanced/entryeditor/). If you do not see these fields, enable them at [General Fields](../setup/generalfields.md) or reset your preferences.
 
 You can manually alter the value by typing in the date and time of your choice. Also, by clicking on the calendar icon located at the right end of the field, you can select the date you want in a calendar.
 
