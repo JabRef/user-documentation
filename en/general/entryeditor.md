@@ -28,7 +28,7 @@ The _BibTeX source_ panel shows how the entry will appear when the database is s
 
 ## Field consistency checking
 
-When the contents of a field is changed, JabRef checks if the new contents are acceptable. For field types that are used by _BibTeX_, the contents are checked with respect to the use of the '\#' character. The hash symbol is _only_ to be used in pairs \(except in escaped form, '\\#'\), wrapping the name of a _BibTeX_ string that is referenced. Note that JabRef does not check if the referenced string actually exists \(this is not trivial, since the _BibTeX_ style you use can define an arbitrary set of strings unknown to JabRef\). 
+When the contents of a field is changed, JabRef checks if the new contents are acceptable. For field types that are used by _BibTeX_, the contents are checked with respect to the use of the '\#' character. The hash symbol is _only_ to be used in pairs \(except in escaped form, '\\#'\), wrapping the name of a _BibTeX_ string that is referenced. Note that JabRef does not check if the referenced string actually exists \(this is not trivial, since the _BibTeX_ style you use can define an arbitrary set of strings unknown to JabRef\).
 
 If the contents are not accepted, the field will turn red, indicating an error. In this case the change will not be stored.
 
@@ -48,11 +48,7 @@ _Note:_ the words considered for suggestion are only the ones appearing in the s
 
 ## Drag and drop behavior settings
 
-The entry editor allows for file\(s\) to be dragged and dropped directly into the entry editor window.
-JabRef follows the defalult behaviour of your operating system and uses [Modifier keys](https://www.computerhope.com/jargon/m/modifkey.htm) to distinguish the drag and drop options.
-**Copy** means the entry editor will create a copy of the file in the current directory. The keyboard shortcuts needed to move, copy or link files are the following:
-**Move** means, the entry will move the file to the defined file directory, and rename the file according to the filename and file directory patterns.
-**Link** means the entry editor will create a link to the file. This creates a shortcut to the file and will not copy the file to the current directory. 
+The entry editor allows for file\(s\) to be dragged and dropped directly into the entry editor window. JabRef follows the defalult behaviour of your operating system and uses [Modifier keys](https://www.computerhope.com/jargon/m/modifkey.htm) to distinguish the drag and drop options. **Copy** means the entry editor will create a copy of the file in the current directory. The keyboard shortcuts needed to move, copy or link files are the following: **Move** means, the entry will move the file to the defined file directory, and rename the file according to the filename and file directory patterns. **Link** means the entry editor will create a link to the file. This creates a shortcut to the file and will not copy the file to the current directory.
 
 * Move: Ctrl + Drag \(Windows\) or Option + Drag \(MacOS/Linux\)
 * Copy: Shift + Drag \(Windows\) or Command + Drag \(MacOS/Linux\) or no key + Drag
@@ -78,5 +74,5 @@ By selecting this Tab, we are sending the title of the selected paper to Mr. DLi
 
 Mr. DLib is a service that calculates recommendations for you based on this title. After a short loading time the recommendations are listed in the Related Articles Tab. For detailed information see [Mr. DLibs help page](http://mr-dlib.org/information-for-users/information-about-mr-dlib-for-jabref-users/#). The following image shows the Related Articles Tab with recommendations to the selected item.
 
-![Screenshot of the Related Articles Tab](../.gitbook/assets/sceenshot_related_articles_en.PNG)
+![Screenshot of the Related Articles Tab](../.gitbook/assets/sceenshot_related_articles_en%20%281%29.PNG)
 

@@ -102,4 +102,5 @@
     * [Linux](faq/faqs-on-operating-systems/faqlinux.md)
     * [Mac OS X](faq/faqs-on-operating-systems/faqosx.md)
     * [Windows](faq/faqs-on-operating-systems/faqwindows.md)
+  * [Resources](faq/resources.md)
 

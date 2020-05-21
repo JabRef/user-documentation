@@ -2,7 +2,7 @@
 
 _BibTeX_ supports storing constant strings using `@String {key = value}`. JabRef supports managing them using **BibTeX → Edit strings**, which opens the [String Editor](../setup/stringeditor.md). These values can be used in fields. For example, you can have:
 
-```bibtex
+```text
 @String { kopp = "Kopp, Oliver" }
 @String { kubovy = "Kubovy, Jan" }
 @String { et = " and " }
@@ -10,7 +10,7 @@ _BibTeX_ supports storing constant strings using `@String {key = value}`. JabRef
 
 and then in some entry for example
 
-```bibtex
+```text
 @Misc{m1,
   author = kopp # et # kubovy,
 }
@@ -18,7 +18,7 @@ and then in some entry for example
 
 or
 
-```bibtex
+```text
 @Misc{m2,
   author = kopp # " and " # kubovy,
 }
@@ -67,18 +67,18 @@ Even if the last example may appear contradicting the intention was to remove du
 
 ## More examples
 
-* `\@String{aKahle    = "Kahle, Brewster "}` -> author
-* `\@String{aStallman = "Stallman, Richard"}` -> author
-* `\@String{iMIT      = "{Massachusetts Institute of Technology ({MIT})}" }` -> institution
-* `\@String{pMIT      = "{Massachusetts Institute of Technology ({MIT}) press}" }` -> publisher
-* `\@String{anct      = "Anecdote" }` -> other
-* `\@String{eg        = "for example" }` -> other
-* `\@String{et        = " and " }` -> other
-* `\@String{lBigMac   = "Big Mac" }` -> other
+* `\@String{aKahle    = "Kahle, Brewster "}` -&gt; author
+* `\@String{aStallman = "Stallman, Richard"}` -&gt; author
+* `\@String{iMIT      = "{Massachusetts Institute of Technology ({MIT})}" }` -&gt; institution
+* `\@String{pMIT      = "{Massachusetts Institute of Technology ({MIT}) press}" }` -&gt; publisher
+* `\@String{anct      = "Anecdote" }` -&gt; other
+* `\@String{eg        = "for example" }` -&gt; other
+* `\@String{et        = " and " }` -&gt; other
+* `\@String{lBigMac   = "Big Mac" }` -&gt; other
 
 Usage:
 
-```bibtex
+```text
 \@Misc {
   title       = "The GNU Project"
   author      = aStallman # et # aKahle

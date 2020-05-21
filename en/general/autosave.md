@@ -16,7 +16,7 @@ In addition to `.bak` and to `.sav`, JabRef offers **automatic saving of the lib
 
 In case the `.bib` file should automatically be saved on each change, you can direct JabRef to do so. This feature needs to be activated in the preferences:
 
-![Screenshot of the autosave preferences](../.gitbook/assets/autosave.png)
+![Screenshot of the autosave preferences](../.gitbook/assets/autosave%20%281%29.png)
 
 ## Automatic backup of current library edits
 
