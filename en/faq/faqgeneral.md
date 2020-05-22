@@ -70,10 +70,6 @@ A: Select the entries. Right click. Choose “Manage keywords”. There you can 
 
 A: In **Options → Manage external file types** you can add arbitrary types.
 
-## Q: Is there a portable version of JabRef?
-
-A: JabRef offers a portable version of the application as a compressed file \(.zip or .tar.gz\) without an installer. Be sure to activate "Load and Save preferences from/to jabref.xml on start-up \(memory stick mode\)" in **Options → Preferences → General**.
-
 ## Q: When an organization is provided as author, my BibTeX style doesn't recognize it. For instance, “European Commission” is converted to “Commission, E.”.
 
 A: Use curly braces to tell BibTeX to keep your author field as is: `{European Commission}`. In BibLaTeX, you can use `label = {EC}` to have `EC05` as label for a publication of the European Commission in the year 2005.
@@ -109,12 +105,6 @@ A: In JabRef 3.0 plugin support was removed, because the development team cannot
 ## Q: Where did the RenameFile plugin go? How do I rename files automatically after importing entries?
 
 A: JabRef does no longer support plugins \(since version 3.0\). Automatic file renaming is now part of the **Quality → Cleanup entries** feature. There you can rename attached files based on the BibTeX key. You can change the format \(pattern\) under **Options → Preferences → Import**, by altering the pattern under "Default PDF file link action".
-
-## Q: How to test a development version without uninstalling the released version?
-
-A: Download the portable version \(file `JabRef-X.Y.portable_windows.zip`, `JabRef-X.Y.portable_macos.tar.gz`, or `JabRef-X.Y.portable_linux.tar.gz`\) from [https://builds.jabref.org/master/](https://builds.jabref.org/master/), uncompress it, and run the executable. We recomment a folder such as `~/home/JabRef` or `c:\portable-apps\JabRef` to ensure that the portable version does not conflict with the latest release version installed from [https://downloads.jabref.org](https://downloads.jabref.org).
-
-In case you want to development version open when double clicking a `.bib` file, install the development version and uncompress the portable version of the latest release to a folder.
 
 ## Q: In the preferences, I want to change the option XYZ. How to find it?
 

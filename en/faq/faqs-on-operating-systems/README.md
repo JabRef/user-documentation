@@ -1,2 +1,0 @@
-# FAQs on Operating Systems
-
