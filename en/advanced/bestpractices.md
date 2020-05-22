@@ -19,5 +19,5 @@ Use `Quality -> Integrity Check` often to ensure that the quality of your databa
 
 Specify your save actions \(can be set in the database properties\). This ensures that your BibTeX file will look more consistent.
 
-See [Save Actions](../finding-sorting-and-cleaning-entries/saveactions.md) for more information.
+See [Save Actions](saveactions.md) for more information.
 

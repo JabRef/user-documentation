@@ -45,7 +45,7 @@ _Note:_ this is not a security feature, merely a way to prevent users from overw
 
 Field formatting can be tidied up when saving the database. That ensures your entries to have consistent formatting. If you check **Enable save actions**, the list of actions can be configured.
 
-For more information see [Save Actions](../finding-sorting-and-cleaning-entries/saveactions.md).
+For more information see [Save Actions](../advanced/saveactions.md).
 
 ## Shared SQL database
 

@@ -26,7 +26,7 @@ Use the Search icon at the top left of this page to find what you're looking for
 * [Complete and fix bibliographic data](finding-sorting-and-cleaning-entries/getbibtexdatafromdoi.md) by comparing with curated online catalogues such as Google Scholar, Springer or MathSciNet
 * Customizable citation key generator
 * Customize and add new metadata fields or reference types
-* [Fix common mistakes](finding-sorting-and-cleaning-entries/cleanupentries.md), automatically [upon save](finding-sorting-and-cleaning-entries/saveactions.md) if you wish.
+* [Fix common mistakes](finding-sorting-and-cleaning-entries/cleanupentries.md), automatically [upon save](advanced/saveactions.md) if you wish.
 * [Find and merge duplicates](finding-sorting-and-cleaning-entries/findduplicates.md)
 * [Attach related documents](finding-sorting-and-cleaning-entries/filelinks.md): 20 different kinds of documents supported out of the box, completely customizable and extendable
 * Automatically rename and move associated documents according to customizable rules
