@@ -1,12 +1,8 @@
-# INSPIRE-HEP
+# INSPIRE
 
 [INSPIRE-HEP](https://inspirehep.net/?ln=en) is an open access digital library for the field of high energy physics \([Wikipedia](https://en.wikipedia.org/wiki/INSPIRE-HEP)\).
 
-To fetch entries from INSPIRE-HEP, choose **Search → Web search**, and the search interface will appear in the side pane. Select **INSPIRE** in the dropdown menu. To start a search, enter the words of your query, and press Enter or the **Fetch** button.
-
-The results are displayed in the [import inspection window](). In case an error occurs, it is shown in a popup.
-
-## Query syntax
+#### Query syntax
 
 The INSPIRE-HEP search function merely passes your search queries onto the INSPIRE-HEP web search, so you should build your queries in the same way, except omitting the _find_ or _fin_ command. This help page will only give a brief introduction to the search queries. More extensive help on searching INSPIRE-HEP can be found on the page [http://inspirehep.net/info/hep/search-tips](http://inspirehep.net/info/hep/search-tips) .
 
