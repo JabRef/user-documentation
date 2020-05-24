@@ -33,7 +33,7 @@ There are also scripts for working in an automated way on BibTeX files:
 
 ### Linux
 
-* [KBibTeX](http://home.gna.org/kbibtex/)
+* [KBibTeX](https://userbase.kde.org/KBibTeX)
 * [Pybliographer](http://pybliographer.org/), a GNOME application
 * [Referencer](https://launchpad.net/referencer), a GNOME application
 
