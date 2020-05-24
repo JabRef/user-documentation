@@ -133,7 +133,7 @@ It means that to search for a string including a backslash, two consecutive back
 
 The character `"` has a special meaning: it is used to group words into phrases for exact matches. So, if you search for a string that includes a double quotation, the double quotation character has to be replaced with the hexadecimal character 22 in ASCII table `\x22`.
 
-Hence, to search for _{\"o}quist_ as an author, you must input `author = \{\\\x22o\}quist`, with regular expressions enabled \(Note: the _{_, _\_ and the _}_ are escaped with a backslash; see above\).
+Hence, to search for `{\"o}quist` as an author, you must input `author = \{\\\x22o\}quist`, with regular expressions enabled \(Note: the `{`, `_` and the `}` are escaped with a backslash; see above\).
 
-Indeed, `\"` does not work as an escape for `"`. Hence, neither `author = {\"o}quist` with regular expression disabled, nor `author = \{\\\"O\}quist` with regular expression enabled, will find anything even if the name _{\"o}quist_ exists in the database.
+Indeed, `\"` does not work as an escape for `"`. Hence, neither `author = {\"o}quist` with regular expression disabled, nor `author = \{\\\"O\}quist` with regular expression enabled, will find anything even if the name `{\"o}quist` exists in the database.
 
