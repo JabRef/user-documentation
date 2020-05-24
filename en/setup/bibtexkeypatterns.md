@@ -73,7 +73,7 @@ JabRef considers the following words to be [function words](https://en.wikipedia
 * **\[`lastpage`\]**: The number of the last page of the publication \(See the remark on `firstpage`\)
 * **\[`shortyear`\]**: The last 2 digits of the publication year
 
-## Modifiers
+## Modifiers 
 
 A field name \(or one of the above pseudo-field names\) may optionally be followed by one or more modifiers.
 
@@ -91,11 +91,12 @@ Generally, modifiers are applied in the order they are specified. In the followi
 * **:titlecase**: Changes the first character of all normal words to uppercase, all function words \(see above\) are converted to lowercase. Example: `example title with An function Word` will be converted to `Example Title with an Function Word`
 * **:truncateN**: Truncates the string after the N:th character and trims any trailing whitespaces. For example, **\[fulltitle:truncate3\]** will be convert `A Title` to `A T`.
 * **:sentencecase**: Changes the first character of the first word to uppercase, all remaining words are converted to lowercase. Example: `an Example Title` will be converted to `An example title`
+* **:regex("pattern", "replacement")**: Applies regular expression pattern matching and replacement. For example, with the pattern **[auth.etal:regex("\\.etal","EtAl"):regex("\\.","And")]**, the first regex replaces ".etal" with "EtAl". The second regex() replaces the "." between sources with two authors with "And".
 * **:\(x\)**: The string between the parentheses will be inserted if the field marker preceding this modifier resolves to an empty value. The placeholder `x` may be any string. For instance, the marker **\[volume:\(unknown\)\]** will return the entry's volume if set, and the string **unknown** if the entry's `volume` field is not set.
 
-## Regular expression replace
-
-After the key pattern has been applied to produce a key, you can choose to have the key generator search for occurrences of a specific regular expression, and replace it with a string. The regular expression and replacement string are entered in the text fields below the list of key patterns. If the replacement string is empty, matches of the regular expression will simply be removed from the generated key. For instance, `\p{Punct}` or `[:/%]` can be replaced by nothing to remove unwanted characters from the key. This may be useful when naming PDFs according to BibTeX keys.
+## Replace (regular expression)
+In addition to using regular expression replacement as [modifiers](#modifiers) of the field markers within [key patterns](#key-patterns). regular expression matching and replacement can be done after the key patterns have been applied.
+In this second case, the regular expression and replacement string are entered in the separate text fields above the [key patterns](#key-patterns) section. Unlike with the  the use of `:regexp()` within the key If the replacement string is empty, matches of the regular expression will simply be removed from the generated key. For instance, `\p{Punct}` or `[:/%]` can be replaced by nothing to remove unwanted characters from the key. This may be useful when naming PDFs according to BibTeX keys.
 
 ## How to configure
 
