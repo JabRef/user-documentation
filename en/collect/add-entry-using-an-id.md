@@ -10,7 +10,7 @@ To use this feature, choose **Library → New entry.** In the lower part, there 
 
 The following databases are supported:
 
-* ISBN. First, [eBook.de's](https://www.ebook.de/) API is used to fetch bibliographic information based on the ISBN. If no entry is found, the JabRef tries [OttoBib](https://www.ottobib.com/) to get data.
+* ISBN. First, [eBook.de's](https://www.ebook.de/de/) API is used to fetch bibliographic information based on the ISBN. If no entry is found, the JabRef tries [OttoBib](https://www.ottobib.com/) to get data.
 * DOI. JabRef uses [http://dx.doi.org/](http://dx.doi.org/) \(provided by [http://crossref.org/](http://crossref.org/)\) to convert the given DOI to a new entry.
 * [Medline](https://www.nlm.nih.gov/pubs/factsheets/medline.html) is a bibliographic database of life sciences and biomedical information. It includes bibliographic information for articles from academic journals covering medicine, nursing, pharmacy, dentistry, veterinary medicine, and health care. Medline also covers much of the literature in biology and biochemistry, as well as fields such as molecular evolution \([Wikipedia](https://en.wikipedia.org/wiki/MEDLINE)\).
 * [SAO/NASA Astrophysics Data System](http://www.adsabs.harvard.edu/) is an online database of over eight million astronomy and physics papers from both peer reviewed and non-peer reviewed sources. Abstracts are available free online for almost all articles, and full scanned articles are available in Graphics Interchange Format \(GIF\) and Portable Document Format \(PDF\) for older articles \([Wikipedia](https://en.wikipedia.org/wiki/Astrophysics_Data_System)\).
