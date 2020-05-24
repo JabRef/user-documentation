@@ -1,8 +1,6 @@
 # Import inspection window
 
-## Import inspection window
-
-### Purpose
+## Purpose
 
 When you import new entries from a supported reference format, or fetch entries directly from the Internet, the inspection window allows you to select the entries you want to keep, to [avoid adding duplicated entries](../../finding-sorting-and-cleaning-entries/findduplicates.md), and to perform some simple operations like generating BibTeX keys for the entries, or adding them to [groups](../../finding-sorting-and-cleaning-entries/groups.md). If you are importing into an existing database, it is often easier to perform these operations before they are mixed in between the entries of your database.
 

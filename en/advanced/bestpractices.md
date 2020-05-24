@@ -13,7 +13,7 @@ Sort your entries with the `bibtexkey` on save \(can be set in the database prop
 
 ## Use Integrity Check often
 
-Use `Quality -> Integrity Check` often to ensure that the quality of your database does not degrade. See [Check Integrity ](../finding-sorting-and-cleaning-entries/checkintegrity.md)for more information.
+Use `Quality -> Integrity Check` often to ensure that the quality of your database does not degrade. See [Check Integrity](../finding-sorting-and-cleaning-entries/checkintegrity.md)for more information.
 
 ## Enable save actions
 

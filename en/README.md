@@ -6,7 +6,7 @@ To get started, please follow the installation instructions and familiarize your
 
 {% page-ref page="getting-started.md" %}
 
-Use the Search icon at the top left of this page to find what you're looking for. To learn more about JabRef's features, please follow the links below. 
+Use the Search icon at the top left of this page to find what you're looking for. To learn more about JabRef's features, please follow the links below.
 
 ### [Collect](collect/)
 
@@ -21,7 +21,7 @@ Use the Search icon at the top left of this page to find what you're looking for
 ### [Organize](finding-sorting-and-cleaning-entries/)
 
 * [Edit the bibliographic information](finding-sorting-and-cleaning-entries/edit-entry.md) using a convienent user interface
-* [Group ](finding-sorting-and-cleaning-entries/groups.md)your research into hierarchical collections and organize research items based on keywords/tags, search terms or your manual assignments
+* [Group](finding-sorting-and-cleaning-entries/groups.md) your research into hierarchical collections and organize research items based on keywords/tags, search terms or your manual assignments
 * [Advanced search and filter features](finding-sorting-and-cleaning-entries/search.md)
 * [Complete and fix bibliographic data](finding-sorting-and-cleaning-entries/getbibtexdatafromdoi.md) by comparing with curated online catalogues such as Google Scholar, Springer or MathSciNet
 * Customizable citation key generator
@@ -45,7 +45,7 @@ Use the Search icon at the top left of this page to find what you're looking for
 * Library is saved as a simple text file and thus it is easy to [share with others](collaborative-work/sharedbibfile.md) e.g. via Dropbox and is version-control friendly
 * Work in a team: sync the contents of your library [via a SQL database](collaborative-work/sqldatabase/)
 
-JabRef is [highly customizable](setup/) and adapts to you, not the other way around. 
+JabRef is [highly customizable](setup/) and adapts to you, not the other way around.
 
 If you want to dive even deeper, have a look at the [advanced information](advanced/) about JabRef.
 

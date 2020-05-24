@@ -38,8 +38,6 @@ Homepage: [https://github.com/JabRef/EndNode-JabRef-filters](https://github.com/
 
 #### Export-Filter Editor
 
-_by Felix Wilke_
-
 Using this tool you can easily create a custom export filter for JabRef to build you own bibliography style. Styles files are available at [https://layouts.jabref.org](https://layouts.jabref.org) and for LibreOffice at [https://jstyles.jabref.org](https://jstyles.jabref.org). The tool itself supports:
 
 * HTML Export Filter
@@ -53,31 +51,19 @@ Using this tool you can easily create a custom export filter for JabRef to build
 
 #### BibSync
 
-_by Daniel Mendler_
-
-BibSync is a tool to synchronize your paper database with a BibTeX file which might be most useful for Physicists and Mathematicians since it supports synchronization with DOI and arXiv.
-
-Homepage: [https://github.com/minad/bibsync](https://github.com/minad/bibsync)
+[BibSync](https://github.com/minad/bibsync) is a tool to synchronize your paper database with a BibTeX file which might be most useful for Physicists and Mathematicians since it supports synchronization with DOI and arXiv.
 
 #### Bibtex4word
 
-_by Mike Brookes_
-
-Bibtex4Word is an add-in for Microsoft Word that allows the citation of references and the insertion of a bibliography into your document using your choice of formatting style. It is lightweight, transparent and does not mess up your documents.
-
-Homepage: [http://www.ee.ic.ac.uk/hp/staff/dmb/perl/index.html](http://www.ee.ic.ac.uk/hp/staff/dmb/perl/index.html)
+[Bibtex4Word](http://www.ee.ic.ac.uk/hp/staff/dmb/perl/index.html) is an add-in for Microsoft Word that allows the citation of references and the insertion of a bibliography into your document using your choice of formatting style. It is lightweight, transparent and does not mess up your documents.
 
 #### Library
-
-_by Christian Gogolin_
 
 Library is an [Open Source](https://github.com/cgogolin/library) Android application to view BibTeX files in order to open \(and annotate\) linked PDFs. It also supports opening DOIs as well as sharing entries. Furthermore it is possible to filter entries and sort them by date, journal, author and title. There are no editing capabilites though.
 
 Library is available from [F-Droid](https://f-droid.org/app/com.cgogolin.library) and [Google Play](https://play.google.com/store/apps/details?id=com.cgogolin.library).
 
 #### Eratosthenes Reference Manager
-
-_by Matthew Matlock_
 
 Eratosthenes Reference Manager is a BibTeX-based bibliography manager for Android. It [integrates with JabRef](https://bitbucket.org/mkmatlock/eratosthenes/wiki/Home#!using-eratosthenes-with-jabref), supporting top-level groups and attached files/external links.
 
@@ -87,11 +73,7 @@ Unfortunately, this application is not available anymore from Google Play and mu
 
 #### Feinerleiser
 
-_by Niklas Alt_
-
-Feinerleiser is a tool for improving the JabRef-LibreOffice integration when writing for the humanities. This tool can be run to finalize a document, providing citation features that are not supported by JabRef itself.
-
-Homepage: [http://www.sourceforge.net/projects/feinerleiser/](http://www.sourceforge.net/projects/feinerleiser/)
+[Feinerleiser](http://www.sourceforge.net/projects/feinerleiser/) is a tool for improving the JabRef-LibreOffice integration when writing for the humanities. This tool can be run to finalize a document, providing citation features that are not supported by JabRef itself.
 
 #### gitignore.io
 
@@ -101,8 +83,6 @@ This site offers to generate `.gitignore` files using common patterns for applic
 * .gitignore for JabRef and friends: [https://www.gitignore.io/api/jabref%2Clatex%2Cwindows%2Clinux%2Cmacos](https://www.gitignore.io/api/jabref%2Clatex%2Cwindows%2Clinux%2Cmacos)
 
 #### WinEdt's JabRef launcher
-
-_by Karl Koeller_
 
 This WinEdt's package allows to launch the JabRef program from within WinEdt.
 

@@ -1,7 +1,5 @@
 # Sharing a Bib\(La\)TeX Database
 
-
-
 When sharing a Bib\(La\)TeX database, JabRef automatically recognizes a change in the `bib` file on disk and notifies the user of it. This works well on network drives.
 
 _Note:_ the use of a version control system \(SVN, git, etc.\) is recommended as this will allow for reverting changes.

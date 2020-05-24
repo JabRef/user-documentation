@@ -29,7 +29,7 @@ If you use `crossref`, JabRef will move these entries first in the bibliography 
 
 Please note that BibLaTeX treats crossref differently than BibTeX.
 
-## Unsupported fields:
+## Unsupported fields
 
 * `citedBy` - this is the opposite of `cites`. Use `cites` instead.
 * `relations` - this would introduce a complicated field similar to our save actions. A simple key/value is enough

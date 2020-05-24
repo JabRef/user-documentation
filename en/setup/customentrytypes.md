@@ -14,7 +14,7 @@ The entry customization dialog is divided into two areas. On the left side all e
 
 ### Adding and removing entry types
 
-The currently available entry types are listed in the left panel. 
+The currently available entry types are listed in the left panel.
 
 To add a new entry type, you must enter a name for it in the text field below the type list, and click **Add**. The new entry type will be added to the list, and selected for modification.
 
@@ -28,7 +28,7 @@ To add a new field, edit the text field below the list, or select a field name f
 
 To remove a field select it in the list and click the trash icon to remove it.
 
-To change the order of the fields you can use drag and drop. 
+To change the order of the fields you can use drag and drop.
 
 ### Either/or fields
 

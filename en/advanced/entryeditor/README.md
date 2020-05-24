@@ -54,7 +54,7 @@ The entry editor allows for file\(s\) to be dragged and dropped directly into th
 * Copy: Shift + Drag \(Windows\) or Command + Drag \(MacOS/Linux\) or no key + Drag
 * Link: Alt + Drag \(Windows\) or Command + Option + Drag \(MacOS/Linux\)
 
-## Copy _BibTeX_ key including citation command.
+## Copy _BibTeX_ key including citation command
 
 Pressing Ctrl + K or the 'key' button causes the _BibTeX_ key for your entry including the surrounding to be copied to the clipboard.
 

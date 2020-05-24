@@ -1,10 +1,10 @@
 # Installation
 
-JabRef can be either installed \(the preferred way\) or be used as a portable application. 
+JabRef can be either installed \(the preferred way\) or be used as a portable application.
 
 ## Installation instructions
 
-To get the latest version, head to [downloads.jabref.org](https://downloads.jabref.org), download the installer for your system \(e.g., `dmg` files for MacOS and `msi` files for Windows\), run them and follow the on-screen instructions. 
+To get the latest version, head to [downloads.jabref.org](https://downloads.jabref.org), download the installer for your system \(e.g., `dmg` files for MacOS and `msi` files for Windows\), run them and follow the on-screen instructions.
 
 Alternatively, on **Windows**, you can use the [chocolatey package manager](https://chocolatey.org/) and execute `choco install jabref` to get the latest version. On **Ubuntu**, you can use `snap install jabref` to get the latest stable version [from snapcraft](https://snapcraft.io/jabref).
 
@@ -20,14 +20,15 @@ Be sure to activate "Load and Save preferences from/to jabref.xml on start-up \(
 
 #### Development version
 
-In case, you want to take advantage of the [latest features](https://github.com/JabRef/jabref/blob/master/CHANGELOG.md#unreleased), you can use pre-built binaries crafted from the latest development branch. To use the prebuilt binaries, visit[ builds.jabref.org/master](http://builds.jabref.org/master/) and download the packaged binaries \(e.g., `dmg` files for MacOS and `exe` files for Windows\), run them and follow the instructions. 
+In case, you want to take advantage of the [latest features](https://github.com/JabRef/jabref/blob/master/CHANGELOG.md#unreleased), you can use pre-built binaries crafted from the latest development branch. To use the prebuilt binaries, visit[ builds.jabref.org/master](http://builds.jabref.org/master/) and download the packaged binaries \(e.g., `dmg` files for MacOS and `exe` files for Windows\), run them and follow the instructions.
 
-If you want to try the development version in parallel with the stable version, we recommend to download the portable version \(e.g. `JabRef-X.Y.portable_windows.zip`, `JabRef-X.Y.portable_macos.tar.gz`, or `JabRef-X.Y.portable_linux.tar.gz`\) from [builds.jabref.org/master](https://builds.jabref.org/master/) to ensure that both versions do not conflict. 
+If you want to try the development version in parallel with the stable version, we recommend to download the portable version \(e.g. `JabRef-X.Y.portable_windows.zip`, `JabRef-X.Y.portable_macos.tar.gz`, or `JabRef-X.Y.portable_linux.tar.gz`\) from [builds.jabref.org/master](https://builds.jabref.org/master/) to ensure that both versions do not conflict.
 
 ## Troubleshooting
 
 {% tabs %}
 {% tab title="Windows" %}
+
 ### Issues with high resolution displays
 
 You have to change the "compatibility settings" for JabRef to "Disable scaling for high DPI settings". Further information is available at [https://www.microsoft.com/surface/en-us/support/apps-and-windows-store/app-display-issues?os=windows-10](https://www.microsoft.com/surface/en-us/support/apps-and-windows-store/app-display-issues?os=windows-10).
@@ -48,6 +49,7 @@ Use [AutoHotkey](http://www.autohotkey.com/) and [JabRef.ahk](https://github.com
 {% endtab %}
 
 {% tab title="Linux" %}
+
 ### OpenOffice/LibreOffice integration
 
 The connection from JabRef to Libre Office requires some office related `jar`-archives to be present. For this, you have to install the package `libreoffice-java-common`.
@@ -68,7 +70,7 @@ In the background, JabRef uses [JavaFX](https://en.wikipedia.org/wiki/JavaFX). A
 {% tab title="macOS" %}
 ### “JabRef Installer.app” can’t be opened because it is from an unidentified developer.
 
-Currently, JabRef is not signed with Apple which triggers this warning. Nonetheless, JabRef is secure to use and will not install any malware. To override the warning, use Ctrl + Click on the JabRef icon instead, then choose "open". This gives the same warning but the possibility to override it so that you can install. See the [official Apple documentation](https://support.apple.com/guide/mac-help/open-a-mac-app-from-an-unidentified-developer-mh40616/mac) for more information. 
+Currently, JabRef is not signed with Apple which triggers this warning. Nonetheless, JabRef is secure to use and will not install any malware. To override the warning, use Ctrl + Click on the JabRef icon instead, then choose "open". This gives the same warning but the possibility to override it so that you can install. See the [official Apple documentation](https://support.apple.com/guide/mac-help/open-a-mac-app-from-an-unidentified-developer-mh40616/mac) for more information.
 
 ### JabRef is slow/hangs sometimes
 

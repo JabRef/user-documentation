@@ -1,5 +1,4 @@
 ---
-title: Pushing to external editor application
 helpCategories:
   - Import/Export
 ---
@@ -8,10 +7,10 @@ helpCategories:
 
 JabRef allows you to push any entries in your main window to an external editor through the push-to-external application feature. You would need to first select the entries in your entry table that you would like to export before using the feature. Once you have done so, go to the tools submenu and click on the push-to-external application button to the left of the **Generate BibTeX keys** button. By default the external editor used to push exports is TeXStudio.
 
-On MacOS:  
+On MacOS:
 ![Push to External MacOS](../.gitbook/assets/push-external-button-macos.png)
 
-On Windows:  
+On Windows:
 ![Push to External Windows](../.gitbook/assets/push-external-button-windows.png)
 
 JabRef also allows you to change the external editor application you would like to push your exports to. To do so, first go to **Options → Preferences → External programs**. Under the **Push applications** section click on the **Application to push entries to** field. This will cause a dropdown menu to appear, from which you are then able to select from a list of all the external editors you have configured.
