@@ -107,6 +107,12 @@ You can create new fields by [editing \(or creating\) entry types](../setup/cust
 
   For instance, `{The Attributed Graph Grammar System ({AGG})}`.
 
+## Set/clear/rename fields
+
+This feature is available through **Edit → Set/clear/rename fields**.
+
+![Screenshot of the Related Articles Tab](../.gitbook/assets/setclearrenamefields.png)
+
 ## Further information resources
 
 * [Reference documentation about BibTeX](http://mirrors.ircam.fr/pub/CTAN/biblio/bibtex/base/btxdoc.pdf)

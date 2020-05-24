@@ -3,7 +3,9 @@
 We are really happy that you are interested in contributing to JabRef. Please take your time to look around here. We especially invite you to look into our [community members page](https://discourse.jabref.org/t/community-members/1868?u=koppor) where members introduce themselves.
 
 {% tabs %}
+
 {% tab title="I am not a programmer" %}
+
 ### I would like to improve the help page. What are the steps? [![Join the chat at https://gitter.im/JabRef/jabref](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/JabRef/jabref?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Please use the "Edit on GitHub" link at the upper right corner. Then, follow [GitHub's guide to edit files in other user's repository](https://help.github.com/en/github/managing-files-in-a-repository/editing-files-in-another-users-repository).
@@ -45,6 +47,7 @@ Our team consists of volunteers. To provide better support, we are currently try
 {% endtab %}
 
 {% tab title="I am a programmer" %}
+
 ### I want to start with something easy [![Join the chat at https://gitter.im/JabRef/jabref](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/JabRef/jabref?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 We collect small issues at [https://github.com/JabRef/jabref/labels/good%20first%20issue](https://github.com/JabRef/jabref/labels/good%20first%20issue). In case you do not find something suitable, you are invited to get in touch with us. Comment at the issue, check the [the forum](https://discourse.jabref.org/) or join our [chatting channel](https://gitter.im/JabRef/jabref). For the brave, we also collect issues at [https://github.com/koppor/jabref/labels/good%20first%20issue](https://github.com/koppor/jabref/labels/good%20first%20issue).
@@ -62,6 +65,8 @@ You can talk to the core developers of JabRef in the [gitter chat](https://gitte
 ### I want to learn about code quality [![Join the chat at https://gitter.im/JabRef/jabref](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/JabRef/jabref?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Please head to [https://devdocs.jabref.org/code-quality](https://devdocs.jabref.org/code-quality) to learn about our current efforts to measure and improve code quality.
+
 {% endtab %}
+
 {% endtabs %}
 

@@ -70,7 +70,7 @@ A: Select the entries. Right click. Choose “Manage keywords”. There you can 
 
 A: In **Options → Manage external file types** you can add arbitrary types.
 
-## Q: When an organization is provided as author, my BibTeX style doesn't recognize it. For instance, “European Commission” is converted to “Commission, E.”.
+## Q: When an organization is provided as author, my BibTeX style doesn't recognize it. For instance, why is “European Commission” converted to “Commission, E.”.?
 
 A: Use curly braces to tell BibTeX to keep your author field as is: `{European Commission}`. In BibLaTeX, you can use `label = {EC}` to have `EC05` as label for a publication of the European Commission in the year 2005.
 
@@ -110,3 +110,10 @@ A: JabRef does no longer support plugins \(since version 3.0\). Automatic file r
 
 A: Enter XYZ in the search field located at the upper left-hand corner of the preference window.
 
+## Q: My question is not answered here. What can I do?
+
+A: After consulting [JabRef's help](https://docs.jabref.org) and checking whether your question has been [regarded as issue](https://github.com/JabRef/jabref/issues?utf8=%E2%9C%93&q=is%3Aissue+), please head over to the [Forum](https://discourse.jabref.org/).
+
+## Q: There is a mistake in this FAQ, a dead link or I have written a better/new explanation for a question! What can I do?
+
+A: See [How to improve the help page](faqcontributing/how-to-improve-the-help-page).
