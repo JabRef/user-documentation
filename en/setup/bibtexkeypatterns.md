@@ -96,7 +96,7 @@ Generally, modifiers are applied in the order they are specified. In the followi
 
 ## Replace (regular expression)
 In addition to using regular expression replacement as [modifiers](#modifiers) of the field markers within [key patterns](#key-patterns). regular expression matching and replacement can be done after the key patterns have been applied.
-In this second case, the regular expression and replacement string are entered in the separate text fields above the [key patterns](#key-patterns) section. Unlike with the  the use of `:regexp()` within the key If the replacement string is empty, matches of the regular expression will simply be removed from the generated key. For instance, `\p{Punct}` or `[:/%]` can be replaced by nothing to remove unwanted characters from the key. This may be useful when naming PDFs according to BibTeX keys.
+In this second case, the regular expression and replacement string are entered in the separate text fields above the [key patterns](#key-patterns) section. Unlike with the use of `:regexp()` within the key If the replacement string is empty, matches of the regular expression will simply be removed from the generated key. For instance, `\p{Punct}` or `[:/%]` can be replaced by nothing to remove unwanted characters from the key. This may be useful when naming PDFs according to BibTeX keys.
 
 ## How to configure
 
@@ -126,4 +126,3 @@ To change the pattern to `[authors]:[camel]`, execute the following steps:
 
 Or, if you are using JabRef 5: 6. Press "enter"  
 \(forgetting to do this is a leading cause of puzzlement\) 7. Click "Save"
-
