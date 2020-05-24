@@ -25,7 +25,6 @@ Some of them are not listed at the lists above.
   * Friendly fork of JabRef. Source: <https://github.com/Docear>
   * <https://github.com/stlanger/Docear> seems to be another fork
 * [ebib](https://github.com/joostkremers/ebib), plugin für EMACS
-* [org-bibref](https://gitorious.org/org-bibref), plugin for EMACS
 * [sixpack](http://sourceforge.net/projects/sixpack/) - development discontinued
 
 There are also scripts for working in an automated way on BibTeX files:
