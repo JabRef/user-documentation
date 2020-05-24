@@ -53,7 +53,7 @@ A dialog box will appear, prompting you to enter the URL. The file will be downl
 
 JabRef uses all directories set at [Directories for files](filelinks.md#directories-for-files) to search for the files. JabRef starts in the user-specific file directory, then the general file directory and finally the main file directory to handle files.
 
-### [Using Regular Expression Search for Auto-Linking](filelinks.md) <a id="RegularExpressionSearch"></a>
+### Using Regular Expression Search for Auto-Linking
 
 It is possible to have greater flexibility in the naming scheme by using regular expression for the search. In most cases it should not be necessary though to adapt the given default.
 

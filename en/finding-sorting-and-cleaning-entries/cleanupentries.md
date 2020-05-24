@@ -8,5 +8,3 @@ In the lower part, you can choose "Run field formatter", where you can choose di
 
 {% page-ref page="checkintegrity.md" %}
 
-
-

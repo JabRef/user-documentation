@@ -20,7 +20,7 @@ Be sure to activate "Load and Save preferences from/to jabref.xml on start-up \(
 
 #### Development version
 
-In case, you want to take advantage of the [latest features](https://github.com/JabRef/jabref/blob/master/CHANGELOG.md#unreleased), you can use pre-built binaries crafted from the latest development branch. To use the prebuilt binaries, visit[ builds.jabref.org/master](http://builds.jabref.org/master/) and download the packaged binaries \(e.g., `dmg` files for MacOS and `exe` files for Windows\), run them and follow the instructions.
+In case, you want to take advantage of the [latest features](https://github.com/JabRef/jabref/blob/master/CHANGELOG.md#unreleased), you can use pre-built binaries crafted from the latest development branch. To use the prebuilt binaries, visit [builds.jabref.org/master](https://builds.jabref.org/master/) and download the packaged binaries \(e.g., `dmg` files for MacOS and `exe` files for Windows\), run them and follow the instructions.
 
 If you want to try the development version in parallel with the stable version, we recommend to download the portable version \(e.g. `JabRef-X.Y.portable_windows.zip`, `JabRef-X.Y.portable_macos.tar.gz`, or `JabRef-X.Y.portable_linux.tar.gz`\) from [builds.jabref.org/master](https://builds.jabref.org/master/) to ensure that both versions do not conflict.
 
@@ -68,7 +68,8 @@ In the background, JabRef uses [JavaFX](https://en.wikipedia.org/wiki/JavaFX). A
 {% endtab %}
 
 {% tab title="macOS" %}
-### “JabRef Installer.app” can’t be opened because it is from an unidentified developer.
+
+### “JabRef Installer.app” can’t be opened because it is from an unidentified developer
 
 Currently, JabRef is not signed with Apple which triggers this warning. Nonetheless, JabRef is secure to use and will not install any malware. To override the warning, use Ctrl + Click on the JabRef icon instead, then choose "open". This gives the same warning but the possibility to override it so that you can install. See the [official Apple documentation](https://support.apple.com/guide/mac-help/open-a-mac-app-from-an-unidentified-developer-mh40616/mac) for more information.
 
@@ -80,7 +81,7 @@ Some users with macOS Sierra have reported freezes when using JabRef. It seems t
 
 On Mac OS X Lion, it is possible to resolve it by temporarily changing the Gate Keeper security settings under “Security&Privacy” in the system preferences to “Anywhere”. After that you can open the JabRef app. When you have opened it once, you can change the security settings back and you'll still be able to open the app.
 
-### Some characters are not displayed in the main table \(math characters or some upper-cased letter\).
+### Some characters are not displayed in the main table \(math characters or some upper-cased letter\)
 
 This might be a problem related to the font you are using. You can download some other font that supports mathematical alphanumeric symbols, for example, FreeSerif or Cambria Math. A list of fonts supporting Math Unicode blocks is available at [http://www.fileformat.info/info/unicode/block/mathematical\_alphanumeric\_symbols/fontsupport.htm](http://www.fileformat.info/info/unicode/block/mathematical_alphanumeric_symbols/fontsupport.htm).
 {% endtab %}

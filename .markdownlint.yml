@@ -12,3 +12,7 @@ MD013: false
 # The FAQs state questions - we allow them
 MD026:
   punctuation: ".,;:!"
+
+MD033:
+  # we have <a> tags with ids
+  allowed_elements: ['a']

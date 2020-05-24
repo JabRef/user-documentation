@@ -1,7 +1,7 @@
 # Getting started
 
 {% hint style="info" %}
-Coming soon! 
+Coming soon!
 {% endhint %}
 
 Desktop interface \(basic description of the user interface elements and what they do\)

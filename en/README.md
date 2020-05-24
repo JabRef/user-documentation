@@ -37,7 +37,7 @@ Use the Search icon at the top left of this page to find what you're looking for
 * Native [BibTeX and Biblatex support](cite/bibtex-and-biblatex.md)
 * [Cite-as-you-write functionality](cite/pushtoapplications.md) for external applications such as Emacs, Kile, LyX, Texmaker, TeXstudio, Vim and WinEdt.
 * Format references in one of the many thousand built-in citation styles or create your style
-* Support for [Word ](cite/export-to-microsoft-word.md)and [LibreOffice/OpenOffice](cite/openofficeintegration.md) for inserting and formatting citations
+* Support for [Word](cite/export-to-microsoft-word.md) and [LibreOffice/OpenOffice](cite/openofficeintegration.md) for inserting and formatting citations
 
 ### [Share](collaborative-work/)
 
