@@ -10,7 +10,7 @@ Use <https://github.com/koppor/gitbook-summary-generator>.
 
 ## How to find broken links
 
-1. Install https://github.com/tcort/markdown-link-check
+1. Install [markdown-link-check](https://github.com/tcort/markdown-link-check): `npm install -g markdown-link check`
 2. `find . -name \*.md -exec markdown-link-check -qq {} \; > bad-links.txt`
 
 ## How to find Markdown errors
