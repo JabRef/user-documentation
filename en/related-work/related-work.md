@@ -25,7 +25,6 @@ Some of them are not listed at the lists above.
   * Friendly fork of JabRef. Source: <https://github.com/Docear>
   * <https://github.com/stlanger/Docear> seems to be another fork
 * [ebib](https://github.com/joostkremers/ebib), plugin für EMACS
-* [org-bibref](https://gitorious.org/org-bibref), plugin for EMACS
 * [sixpack](http://sourceforge.net/projects/sixpack/) - development discontinued
 
 There are also scripts for working in an automated way on BibTeX files:
@@ -34,7 +33,7 @@ There are also scripts for working in an automated way on BibTeX files:
 
 ### Linux
 
-* [KBibTeX](http://home.gna.org/kbibtex/)
+* [KBibTeX](https://userbase.kde.org/KBibTeX)
 * [Pybliographer](http://pybliographer.org/), a GNOME application
 * [Referencer](https://launchpad.net/referencer), a GNOME application
 
@@ -54,7 +53,7 @@ There are also scripts for working in an automated way on BibTeX files:
 * [EndNote](http://endnote.com/product-details/basic)
 * [Zotero](https://www.zotero.org/)
   * Recommended plugin: [Zotero: Better Bib(La)TeX (BBT)](https://github.com/ZotPlus/zotero-better-bibtex)
-  * Integration with JabRef: [JabFox Firefox Addon](https://github.com/JabRef/JabFox)
+  * Integration with JabRef: [JabFox Firefox Addon](https://addons.mozilla.org/en-US/firefox/addon/jabref/?src=external-github)
 * [ReadCube](https://www.readcube.com/)
   * Seems quite good to deal with pdf files
 

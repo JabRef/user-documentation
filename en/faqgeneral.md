@@ -116,4 +116,4 @@ A: After consulting [JabRef's help](https://docs.jabref.org) and checking whethe
 
 ## Q: There is a mistake in this FAQ, a dead link or I have written a better/new explanation for a question! What can I do?
 
-A: See [How to improve the help page](faqcontributing/how-to-improve-the-help-page).
+A: See [How to improve the help page](faqcontributing/how-to-improve-the-help-page.md).

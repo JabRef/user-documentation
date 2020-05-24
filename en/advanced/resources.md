@@ -69,7 +69,7 @@ Eratosthenes Reference Manager is a BibTeX-based bibliography manager for Androi
 
 Available for Android 4.0 and up.
 
-Unfortunately, this application is not available anymore from Google Play and must be [build on your own from source](https://bitbucket.org/mkmatlock/eratosthenes/src/default/).
+Unfortunately, this application is not available anymore from Google Play and must be [build on your own from source](https://bitbucket.org/mkmatlock/eratosthenes/).
 
 #### Feinerleiser
 
