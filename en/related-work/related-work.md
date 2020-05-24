@@ -54,7 +54,7 @@ There are also scripts for working in an automated way on BibTeX files:
 * [EndNote](http://endnote.com/product-details/basic)
 * [Zotero](https://www.zotero.org/)
   * Recommended plugin: [Zotero: Better Bib(La)TeX (BBT)](https://github.com/ZotPlus/zotero-better-bibtex)
-  * Integration with JabRef: [JabFox Firefox Addon](https://github.com/JabRef/JabFox)
+  * Integration with JabRef: [JabFox Firefox Addon](https://addons.mozilla.org/en-US/firefox/addon/jabref/?src=external-github)
 * [ReadCube](https://www.readcube.com/)
   * Seems quite good to deal with pdf files
 
