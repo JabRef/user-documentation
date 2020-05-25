@@ -9,6 +9,7 @@ The pattern used in the auto generation of BibTeX labels can be set for each of 
 ## Key patterns
 
 The key pattern can contain any text you wish, in addition to field markers that indicate that a specific field of the entry should be inserted at that position of the key. A field marker generally consists of the field name enclosed in square braces, e.g. **\[volume\]**. If the field is undefined in an entry at the time of key generation, no text will be inserted by the field marker.
+**Note:** if you are using JabRef 5, in order for your changes to be retained, you must hit "enter" on your keyboard before clicking on the "Save" button.
 
 ### Default key pattern
 
@@ -73,7 +74,7 @@ JabRef considers the following words to be [function words](https://en.wikipedia
 * **\[`lastpage`\]**: The number of the last page of the publication \(See the remark on `firstpage`\)
 * **\[`shortyear`\]**: The last 2 digits of the publication year
 
-## Modifiers 
+## Modifiers
 
 A field name \(or one of the above pseudo-field names\) may optionally be followed by one or more modifiers.
 
@@ -95,6 +96,7 @@ Generally, modifiers are applied in the order they are specified. In the followi
 * **:\(x\)**: The string between the parentheses will be inserted if the field marker preceding this modifier resolves to an empty value. The placeholder `x` may be any string. For instance, the marker **\[volume:\(unknown\)\]** will return the entry's volume if set, and the string **unknown** if the entry's `volume` field is not set.
 
 ## Replace (regular expression)
+
 In addition to using regular expression replacement as [modifiers](#modifiers) of the field markers within [key patterns](#key-patterns). regular expression matching and replacement can be done after the key patterns have been applied.
 In this second case, the regular expression and replacement string are entered in the separate text fields above the [key patterns](#key-patterns) section. Unlike with the use of `:regexp()` within the key If the replacement string is empty, matches of the regular expression will simply be removed from the generated key. For instance, `\p{Punct}` or `[:/%]` can be replaced by nothing to remove unwanted characters from the key. This may be useful when naming PDFs according to BibTeX keys. Further documentation on regular expressions in Java can be found [here.](https://docs.oracle.com/javase/9/docs/api/java/util/regex/Pattern.html)
 
@@ -122,7 +124,7 @@ To change the pattern to `[authors]:[camel]`, execute the following steps:
 
    ![BibTeX key generator preferences - authors camel](../.gitbook/assets/preferences-bibtex-key-generator-authors-camel%20%281%29%20%281%29.png)
 
-6. Press "OK"
+6. If you are using JabRef version < 5, then Press "OK"; else Press "enter"
+\(forgetting to do this is a leading cause of puzzlement\) 
 
-Or, if you are using JabRef 5: 6. Press "enter"  
-\(forgetting to do this is a leading cause of puzzlement\) 7. Click "Save"
+7. Click "Save"
