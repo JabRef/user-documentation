@@ -9,7 +9,7 @@ The pattern used in the auto generation of BibTeX labels can be set for each of 
 ## Key patterns
 
 The key pattern can contain any text you wish, in addition to field markers that indicate that a specific field of the entry should be inserted at that position of the key. A field marker generally consists of the field name enclosed in square braces, e.g. **\[volume\]**. If the field is undefined in an entry at the time of key generation, no text will be inserted by the field marker.
-**Note:** if you are using JabRef 5, in order for your changes to be retained, you must hit "enter" on your keyboard before clicking on the "Save" button.
+**Note:** In order for your changes to be retained, you must hit "enter" on your keyboard before clicking on the "Save" button.
 
 ### Default key pattern
 
@@ -124,7 +124,6 @@ To change the pattern to `[authors]:[camel]`, execute the following steps:
 
    ![BibTeX key generator preferences - authors camel](../.gitbook/assets/preferences-bibtex-key-generator-authors-camel%20%281%29%20%281%29.png)
 
-6. If you are using JabRef version < 5, then Press "OK"; else Press "enter"
-\(forgetting to do this is a leading cause of puzzlement\) 
+6. Press "enter" \(forgetting to do this is a leading cause of puzzlement\) unless you are using version < 5, then Press "OK".
 
 7. Click "Save"
