@@ -1,4 +1,4 @@
-# JabRef Bibliography Management
+# User Documentation
 
 To get started, please follow the installation instructions and familiarize yourself with the basics of JabRef.
 
@@ -8,7 +8,7 @@ To get started, please follow the installation instructions and familiarize your
 
 Use the Search icon at the top left of this page to find what you're looking for. To learn more about JabRef's features, please follow the links below.
 
-### [Collect](collect/)
+## [Collect](collect/)
 
 * Add new entries [manually](collect/add-entry-manually.md) or the based on the [reference text](collect/newentryfromplaintext.md)
 * [Search](collect/import-using-online-bibliographic-database/) across many online scientific catalogues like CiteSeer, CrossRef, Google Scholar, IEEEXplore, INSPIRE-HEP, Medline PubMed, MathSciNet, Springer, arXiv, and zbMATH
@@ -18,7 +18,7 @@ Use the Search icon at the top left of this page to find what you're looking for
 * [Extract metadata from PDFs](collect/findunlinkedfiles.md)
 * Import new references directly from the browser with one click using the [official browser extension](collect/jabref-browser-extension.md) for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/jabref/?src=external-github),  [Chrome](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh), [Edge](https://microsoftedge.microsoft.com/addons/detail/pgkajmkfgbehiomipedjhoddkejohfna) and [Vivaldi](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh)
 
-### [Organize](finding-sorting-and-cleaning-entries/)
+## [Organize](finding-sorting-and-cleaning-entries/)
 
 * [Edit the bibliographic information](finding-sorting-and-cleaning-entries/edit-entry.md) using a convienent user interface
 * [Group](finding-sorting-and-cleaning-entries/groups.md) your research into hierarchical collections and organize research items based on keywords/tags, search terms or your manual assignments
@@ -32,14 +32,14 @@ Use the Search icon at the top left of this page to find what you're looking for
 * Automatically rename and move associated documents according to customizable rules
 * Keep track of what you read: ranking, priority, printed, quality-assured
 
-### [Cite](cite/)
+## [Cite](cite/)
 
 * Native [BibTeX and Biblatex support](cite/bibtex-and-biblatex.md)
 * [Cite-as-you-write functionality](cite/pushtoapplications.md) for external applications such as Emacs, Kile, LyX, Texmaker, TeXstudio, Vim and WinEdt.
 * Format references in one of the many thousand built-in citation styles or create your style
 * Support for [Word](cite/export-to-microsoft-word.md) and [LibreOffice/OpenOffice](cite/openofficeintegration.md) for inserting and formatting citations
 
-### [Share](collaborative-work/)
+## [Share](collaborative-work/)
 
 * [Many built-in export options](collaborative-work/export/) or [create a custom export format](collaborative-work/export/customexports.md)
 * Library is saved as a simple text file and thus it is easy to [share with others](collaborative-work/sharedbibfile.md) e.g. via Dropbox and is version-control friendly

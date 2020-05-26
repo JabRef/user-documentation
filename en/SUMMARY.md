@@ -1,6 +1,6 @@
 # Table of contents
 
-* [JabRef Bibliography Management](README.md)
+* [User Documentation](README.md)
 * [Installation](installation.md)
 * [Getting started](getting-started.md)
 * [Collect](collect/README.md)

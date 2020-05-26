@@ -28,7 +28,6 @@ If you want to try the development version in parallel with the stable version, 
 
 {% tabs %}
 {% tab title="Windows" %}
-
 ### Issues with high resolution displays
 
 You have to change the "compatibility settings" for JabRef to "Disable scaling for high DPI settings". Further information is available at [https://www.microsoft.com/surface/en-us/support/apps-and-windows-store/app-display-issues?os=windows-10](https://www.microsoft.com/surface/en-us/support/apps-and-windows-store/app-display-issues?os=windows-10).
@@ -49,7 +48,6 @@ Use [AutoHotkey](http://www.autohotkey.com/) and [JabRef.ahk](https://github.com
 {% endtab %}
 
 {% tab title="Linux" %}
-
 ### OpenOffice/LibreOffice integration
 
 The connection from JabRef to Libre Office requires some office related `jar`-archives to be present. For this, you have to install the package `libreoffice-java-common`.
@@ -68,7 +66,6 @@ In the background, JabRef uses [JavaFX](https://en.wikipedia.org/wiki/JavaFX). A
 {% endtab %}
 
 {% tab title="macOS" %}
-
 ### “JabRef Installer.app” can’t be opened because it is from an unidentified developer
 
 Currently, JabRef is not signed with Apple which triggers this warning. Nonetheless, JabRef is secure to use and will not install any malware. To override the warning, use Ctrl + Click on the JabRef icon instead, then choose "open". This gives the same warning but the possibility to override it so that you can install. See the [official Apple documentation](https://support.apple.com/guide/mac-help/open-a-mac-app-from-an-unidentified-developer-mh40616/mac) for more information.
