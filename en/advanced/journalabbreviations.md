@@ -14,7 +14,7 @@ JabRef includes a fairly extensive build-in list of journal abbreviations. This 
 
 ## Using the feature
 
-Journal name conversion can be accessed either from within the entry editor, or from the **Tools** menu. In the entry editor you will find a button labeled _Toggle abbreviation_ by the _journal_ field. Clicking this button will cause the current journal name to be switched to the next of four modes:
+Journal name conversion can be accessed either from within the entry editor, or from the **Quality** menu. In the entry editor you will find a button labeled _Toggle abbreviation_ by the _journal_ field. Clicking this button will cause the current journal name to be switched to the next of four modes:
 
 * Full name, e.g. "Aquacultural Engineering"
 * Default abbreviation, e.g. "Aquacult. Eng."
@@ -23,7 +23,7 @@ Journal name conversion can be accessed either from within the entry editor, or 
 
 If the current journal name is not found in your journal lists, the field will not be modified.
 
-To convert the journal names of many entries in bulk, you can select any number of entries, and choose **Tools → Abbreviate journal names \(DEFAULT\)**, **Tools → Abbreviate journal names \(MEDLINE\)**, **Tools → Abbreviate journal names → SHORTEST UNIQUE**, or **Tools → Unabbreviate journal names**. These three actions will abbreviate and unabbreviate the journal names of all selected entries for which the journal name could be found in your journal lists.
+To convert the journal names of many entries in bulk, you can select any number of entries, and choose **Quality → Abbreviate journal names → DEFAULT**, **Quality → Abbreviate journal names → MEDLINE**, **Quality → Abbreviate journal names → SHORTEST UNIQUE**, or **Quality → Unabbreviate journal names**. These three actions will abbreviate and unabbreviate the journal names of all selected entries for which the journal name could be found in your journal lists.
 
 ## Setting up additional journal lists
 
