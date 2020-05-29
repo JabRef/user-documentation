@@ -144,7 +144,7 @@ This feature is available through **Edit → Set/clear/rename fields**.
 
 ### BibLaTex standard
 
-* [http://ftp.fau.de/ctan/macros/latex/contrib/biblatex/doc/biblatex.pdf](http://ftp.fau.de/ctan/macros/latex/contrib/biblatex/doc/biblatex.pdf)
+* BibLaTeX package documentation: <http://texdoc.net/pkg/biblatex>
 * [https://github.com/plk/biblatex](https://github.com/plk/biblatex)
 
 ### BibTeX parser

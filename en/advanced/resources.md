@@ -61,7 +61,7 @@ Using this tool you can easily create a custom export filter for JabRef to build
 
 Library is an [Open Source](https://github.com/cgogolin/library) Android application to view BibTeX files in order to open \(and annotate\) linked PDFs. It also supports opening DOIs as well as sharing entries. Furthermore it is possible to filter entries and sort them by date, journal, author and title. There are no editing capabilites though.
 
-Library is available from [F-Droid](https://f-droid.org/app/com.cgogolin.library) and [Google Play](https://play.google.com/store/apps/details?id=com.cgogolin.library).
+Library is available from [F-Droid](https://f-droid.org/packages/com.cgogolin.library/) and [Google Play](https://play.google.com/store/apps/details?id=com.cgogolin.library).
 
 ### Eratosthenes Reference Manager
 
