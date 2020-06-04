@@ -8,8 +8,7 @@ The pattern used in the auto generation of BibTeX labels can be set for each of 
 
 ## Key patterns
 
-The key pattern can contain any text you wish, in addition to field markers that indicate that a specific field of the entry should be inserted at that position of the key. A field marker generally consists of the field name enclosed in square braces, e.g. **\[volume\]**. If the field is undefined in an entry at the time of key generation, no text will be inserted by the field marker.
-**Note:** In order for your changes to be retained, you must hit "enter" on your keyboard before clicking on the "Save" button.
+The key pattern can contain any text you wish, in addition to field markers that indicate that a specific field of the entry should be inserted at that position of the key. A field marker generally consists of the field name enclosed in square braces, e.g. **\[volume\]**. If the field is undefined in an entry at the time of key generation, no text will be inserted by the field marker. **Note:** In order for your changes to be retained, you must hit "enter" on your keyboard before clicking on the "Save" button.
 
 ### Default key pattern
 
@@ -92,13 +91,12 @@ Generally, modifiers are applied in the order they are specified. In the followi
 * **:titlecase**: Changes the first character of all normal words to uppercase, all function words \(see above\) are converted to lowercase. Example: `example title with An function Word` will be converted to `Example Title with an Function Word`
 * **:truncateN**: Truncates the string after the N:th character and trims any trailing whitespaces. For example, **\[fulltitle:truncate3\]** will be convert `A Title` to `A T`.
 * **:sentencecase**: Changes the first character of the first word to uppercase, all remaining words are converted to lowercase. Example: `an Example Title` will be converted to `An example title`
-* **:regex("pattern", "replacement")**: Applies regular expression pattern matching and replacement. For example, with the pattern **[auth.etal:regex("\\.etal","EtAl"):regex("\\.","And")]**, the first regex replaces ".etal" with "EtAl". The second regex() replaces the "." between sources with two authors with "And".
+* **:regex\("pattern", "replacement"\)**: Applies regular expression pattern matching and replacement. For example, with the pattern **\[auth.etal:regex\("\.etal","EtAl"\):regex\("\.","And"\)\]**, the first regex replaces ".etal" with "EtAl". The second regex\(\) replaces the "." between sources with two authors with "And".
 * **:\(x\)**: The string between the parentheses will be inserted if the field marker preceding this modifier resolves to an empty value. The placeholder `x` may be any string. For instance, the marker **\[volume:\(unknown\)\]** will return the entry's volume if set, and the string **unknown** if the entry's `volume` field is not set.
 
-## Replace (regular expression)
+## Replace \(regular expression\)
 
-In addition to using regular expression replacement as [modifiers](#modifiers) of the field markers within [key patterns](#key-patterns) regular expression matching and replacement can be done after the key patterns have been applied.
-In this case, the regular expression and replacement string are entered in the separate text fields above the [key patterns](#key-patterns) section. Contrary to the behavior of `:regexp()`, if the replacement string is empty, then matches of the regular expression will simply be removed from the generated key. For instance, `\p{Punct}` or `[:/%]` can be replaced by nothing to remove unwanted characters from the key. This may be useful when naming PDFs according to BibTeX keys. Further documentation on regular expressions in Java can be found [here.](https://docs.oracle.com/javase/9/docs/api/java/util/regex/Pattern.html)
+In addition to using regular expression replacement as [modifiers](bibtexkeypatterns.md#modifiers) of the field markers within [key patterns](bibtexkeypatterns.md#key-patterns) regular expression matching and replacement can be done after the key patterns have been applied. In this case, the regular expression and replacement string are entered in the separate text fields above the [key patterns](bibtexkeypatterns.md#key-patterns) section. Contrary to the behavior of `:regexp()`, if the replacement string is empty, then matches of the regular expression will simply be removed from the generated key. For instance, `\p{Punct}` or `[:/%]` can be replaced by nothing to remove unwanted characters from the key. This may be useful when naming PDFs according to BibTeX keys. Further documentation on regular expressions in Java can be found [here.](https://docs.oracle.com/javase/9/docs/api/java/util/regex/Pattern.html)
 
 ## How to configure
 
@@ -106,24 +104,24 @@ To change the pattern to `[authors]:[camel]`, execute the following steps:
 
 1. Open the preferences
 
-   ![Options Preferences](../.gitbook/assets/optionspreferences%20%281%29%20%281%29.png)
+   ![Options Preferences](../.gitbook/assets/optionspreferences%20%281%29%20%281%29%20%281%29.png)
 
 2. Navigate to "General"
 
-   ![General preferences](../.gitbook/assets/preferences-general%20%281%29%20%281%29.png)
+   ![General preferences](../.gitbook/assets/preferences-general%20%281%29%20%281%29%20%281%29.png)
 
 3. Untick "Enforce legal characters in BibTeX keys". Note that this is only necessary if you wish to have colons be present in the generated key.
 
-   ![General preferences - unticked](../.gitbook/assets/preferences-general-unticked%20%281%29%20%281%29.png)
+   ![General preferences - unticked](../.gitbook/assets/preferences-general-unticked%20%281%29%20%281%29%20%281%29.png)
 
 4. Navigate to "BibTeX key generator"
 
-   ![BibTeX key generator preferences](../.gitbook/assets/preferences-bibtex-key-generator%20%281%29%20%281%29.png)
+   ![BibTeX key generator preferences](../.gitbook/assets/preferences-bibtex-key-generator%20%281%29%20%281%29%20%281%29.png)
 
 5. Change the default pattern to `[authors]:[camel]`.
 
-   ![BibTeX key generator preferences - authors camel](../.gitbook/assets/preferences-bibtex-key-generator-authors-camel%20%281%29%20%281%29.png)
+   ![BibTeX key generator preferences - authors camel](../.gitbook/assets/preferences-bibtex-key-generator-authors-camel%20%281%29%20%281%29%20%281%29.png)
 
-6. Press "enter" \(forgetting to do this is a leading cause of puzzlement\) unless you are using version < 5, then Press "OK".
-
+6. Press "enter" \(forgetting to do this is a leading cause of puzzlement\) unless you are using version &lt; 5, then Press "OK".
 7. Click "Save"
+

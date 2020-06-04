@@ -111,7 +111,7 @@ You can create new fields by [editing \(or creating\) entry types](../setup/cust
 
 This feature is available through **Edit → Set/clear/rename fields**.
 
-![Screenshot of the Related Articles Tab](../.gitbook/assets/setclearrenamefields%20%281%29.png)
+![Screenshot of the Related Articles Tab](../.gitbook/assets/setclearrenamefields%20%281%29%20%281%29.png)
 
 ## Further information resources
 
@@ -144,7 +144,7 @@ This feature is available through **Edit → Set/clear/rename fields**.
 
 ### BibLaTex standard
 
-* BibLaTeX package documentation: <http://texdoc.net/pkg/biblatex>
+* BibLaTeX package documentation: [http://texdoc.net/pkg/biblatex](http://texdoc.net/pkg/biblatex)
 * [https://github.com/plk/biblatex](https://github.com/plk/biblatex)
 
 ### BibTeX parser

@@ -27,7 +27,6 @@
   * [Browser Extension](collect/jabref-browser-extension.md)
   * [Import](collect/import/README.md)
     * [Custom import filters](collect/import/customimports.md)
-    * [Import from Microsoft Word -- MS Office Bibliography XML format](collect/import/msofficebibfieldmapping.md)
     * [Import inspection window](collect/import/importinspectiondialog.md)
 * [Organize](finding-sorting-and-cleaning-entries/README.md)
   * [Edit entry](finding-sorting-and-cleaning-entries/edit-entry.md)
