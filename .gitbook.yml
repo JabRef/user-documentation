@@ -41,3 +41,4 @@ redirects:
   finding-sorting-and-cleaning-entries/findduplicatesallora: ./finding-sorting-and-cleaning-entries/findduplicates.md
   EntryEditor: ./advanced/entryeditor/README.md
   fields/setclearrenamefields: ./advanced/fields.md  
+  import-using-publication-identifiers/divatobibtex: ./collect/add-entry-using-an-id.md
