@@ -20,7 +20,6 @@ redirects:
   import-export/export: ./collaborative-work/export/README.md
   import-export/export/customexports: ./collaborative-work/export/customexports.md
   import-export/export/msofficebibfieldmapping: ./advanced/knowledge/msofficebibfieldmapping.md
-  import-export/export/customexports: ./collaborative-work/export/customexports.md
   import-export/export/endnotefilters: ./advanced/knowledge/endnotefilters.md
   import-export/export/sqlexport: ./collaborative-work/sqldatabase/README.md
   import-export/other-integrations/openofficeintegration: ./cite/openofficeintegration.md
@@ -38,8 +37,7 @@ redirects:
   contributing/translatinggui: ./faqcontributing/how-to-translate-the-ui.md
   finding-sorting-and-cleaning-entries/import-using-publication-identifiers/isbntobibtex: ./collect/add-entry-using-an-id.md
   finding-sorting-and-cleaning-entries/import-using-publication-identifiers/doitobibtex: ./collect/add-entry-using-an-id.md
-  EntryEditor: ./advanced/entryeditor/README.md
-  fields/setclearrenamefields: ./advanced/fields.md
-  finding-sorting-and-cleaning-entries/findduplicatesallora: ./finding-sorting-and-cleaning-entries/findduplicates.md
   finding-sorting-and-cleaning-entries/import-using-publication-identifiers/iacrtobibtex: ./collect/add-entry-using-an-id.md
-  
+  finding-sorting-and-cleaning-entries/findduplicatesallora: ./finding-sorting-and-cleaning-entries/findduplicates.md
+  EntryEditor: ./advanced/entryeditor/README.md
+  fields/setclearrenamefields: ./advanced/fields.md  
