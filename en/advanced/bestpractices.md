@@ -9,7 +9,7 @@ See [Groups](../finding-sorting-and-cleaning-entries/groups.md) for more informa
 
 ## Sort order
 
-Sort your entries with the `bibtexkey` on save \(can be set in the database properties\). This makes finding an entry easier in a large file.
+Sort your entries by the citation key on save \(can be set in the database properties\). This makes finding an entry easier in a large file.
 
 ## Use Integrity Check often
 

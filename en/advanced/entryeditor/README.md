@@ -48,25 +48,25 @@ _Note:_ the words considered for suggestion are only the ones appearing in the s
 
 ## Drag and drop behavior settings
 
-The entry editor allows for file\(s\) to be dragged and dropped directly into the entry editor window. JabRef follows the defalult behaviour of your operating system and uses [Modifier keys](https://www.computerhope.com/jargon/m/modifkey.htm) to distinguish the drag and drop options. **Copy** means the entry editor will create a copy of the file in the current directory. The keyboard shortcuts needed to move, copy or link files are the following: **Move** means, the entry will move the file to the defined file directory, and rename the file according to the filename and file directory patterns. **Link** means the entry editor will create a link to the file. This creates a shortcut to the file and will not copy the file to the current directory.
+The entry editor allows for file\(s\) to be dragged and dropped directly into the entry editor window. JabRef follows the default behavior of your operating system and uses [Modifier keys](https://www.computerhope.com/jargon/m/modifkey.htm) to distinguish the drag and drop options. **Copy** means the entry editor will create a copy of the file in the current directory. The keyboard shortcuts needed to move, copy or link files are the following: **Move** means, the entry will move the file to the defined file directory, and rename the file according to the filename and file directory patterns. **Link** means the entry editor will create a link to the file. This creates a shortcut to the file and will not copy the file to the current directory.
 
 * Move: Ctrl + Drag \(Windows\) or Option + Drag \(MacOS/Linux\)
 * Copy: Shift + Drag \(Windows\) or Command + Drag \(MacOS/Linux\) or no key + Drag
 * Link: Alt + Drag \(Windows\) or Command + Option + Drag \(MacOS/Linux\)
 
-## Copy _BibTeX_ key including citation command
+## Copy citation key including citation command
 
-Pressing Ctrl + K or the 'key' button causes the _BibTeX_ key for your entry including the surrounding to be copied to the clipboard.
+Pressing Ctrl + K or the 'key' button causes the citation key for your entry including the surrounding to be copied to the clipboard.
 
-## Copy _BibTeX_ key
+## Copy citation key
 
-Pressing Ctrl + Shift + K causes the _BibTeX_ key for your entry to be copied to the clipboard.
+Pressing Ctrl + Shift + K causes the citation key for your entry to be copied to the clipboard.
 
-## Autogenerate _BibTeX_ key
+## Autogenerate citation key
 
-Press Ctrl + G or the 'gen key' button \(the magic wand\) to autogenerate a _BibTeX_ key for your entry based on the contents of its required fields.
+Press Ctrl + G or the 'gen key' button \(the magic wand\) to autogenerate a citation key for your entry based on the contents of its required fields.
 
-For more information on how JabRef generates _BibTeX_ keys, see [Customizing the BibTex key generator](../../setup/bibtexkeypatterns.md).
+For more information on how JabRef generates citation keys, see [Customizing the citation key generator](../../setup/bibtexkeypatterns.md).
 
 ## Related Articles Tab
 

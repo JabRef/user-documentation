@@ -16,7 +16,7 @@ After the connection has been established, you can insert citations by selecting
 
 Two different types of citations can be inserted - either a citation in parenthesis, "\(Author 2007\)", or an in-text citation, "Author \(2007\)". This distinction is only meaningful if author-year citations are used instead of numbered citations, but the distinction will be preserved if you switch between the two styles.
 
-If you modify entries in JabRef after inserting their citations into OpenOffice, you will need to synchronize the bibliography. The **Sync OO bibliography** button will update all entries of the bibliography, provided their BibTeX keys have not been altered \(JabRef encodes the BibTeX key into the reference name for each citation to keep track of which BibTeX key the original JabRef entry has\).
+If you modify entries in JabRef after inserting their citations into OpenOffice, you will need to synchronize the bibliography. The **Sync OO bibliography** button will update all entries of the bibliography, provided their citation keys have not been altered \(JabRef encodes the citation key into the reference name for each citation to keep track of which citation key the original JabRef entry has\).
 
 ## The style file
 
@@ -146,7 +146,7 @@ If numbered entries are used, the `BracketBefore` and `BracketAfter` properties 
 
 If numbered entries are not used, author-year citations will be created based on the citation properties. A parenthesis citation is composed as follows: `[BracketBefore][Author][YearSeparator][Year][BracketAfter]` where \[Author\] is the result of looking up the field or fields given in the `AuthorField` property, and formatting a list of authors. The list can contain up to `MaxAuthors` names - if more are present, the list will be composed as the first author plus the text specified in the property `EtAlString`. If the property `MaxAuthorsFirst` is given, it overrides `MaxAuthors` the first time each citation appears in the text.
 
-If several, slash-separated, fields are given in the `AuthorField` property, they will be looked up successively if the first field is empty for the given BibTeX entry. In the example above, the "author" field will be used, but if empty, the "editor" field will be used as a backup.
+If several, slash-separated, fields are given in the `AuthorField` property, they will be looked up successively if the first field is empty for the given entry. In the example above, the "author" field will be used, but if empty, the "editor" field will be used as a backup.
 
 The names in the author list will be separated by the text given by the `AuthorSeparator` property, except for the last two names, which will be separated by the text given by `AuthorLastSeparator`. If the property `AuthorLastSeparatorInText` is given, it overrides the former for citations of the in-text type. This makes it possible to get citations like `(Olsen & Jensen, 2008)` and `Olsen and Jensen (2008)` for the same style.
 
@@ -162,9 +162,9 @@ Author-year citations referring more than one entry will by default be sorted ch
 
 ### Reference list layout
 
-The **LAYOUT** section describes how the bibliography entry for each entry type in JabRef should appear. Each line should start with either the name of a BibTeX entry type, or the word `default`, followed by a '='. The `default` layout will be used for all entry types for which an explicit layout hasn't been given.
+The **LAYOUT** section describes how the bibliography entry for each entry type in JabRef should appear. Each line should start with either the name of an entry type, or the word `default`, followed by a '='. The `default` layout will be used for all entry types for which an explicit layout hasn't been given.
 
-The remainder of each line defines the layout, with normal text and spaces appearing literally in the bibliography entry. Information from the BibTeX entry is inserted by adding `\field` markers with the appropriate field name \(e.g. `\author` for inserting the author names\). Formatting information for the field can be included here, following JabRef's standard export layout syntax. Refer to [JabRef's documentation on custom export filters](../collaborative-work/export/customexports.md) for more information about which formatters are available and tooling hints.
+The remainder of each line defines the layout, with normal text and spaces appearing literally in the bibliography entry. Information from the entry is inserted by adding `\field` markers with the appropriate field name \(e.g. `\author` for inserting the author names\). Formatting information for the field can be included here, following JabRef's standard export layout syntax. Refer to [JabRef's documentation on custom export filters](../collaborative-work/export/customexports.md) for more information about which formatters are available and tooling hints.
 
 If author-year citations are used, you have to explicitly specify the position of the "uniquefier" letter that is added to distinguish similar-looking citations. This is done by including a marker for the virtual field `uniq`, typically right after the year \(as shown in the example style file\). The `uniq` field is automatically set correctly for each entry before its reference text is laid out.
 

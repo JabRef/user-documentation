@@ -1,16 +1,12 @@
 # Links to other entries
 
-{% hint style="info" %}
-Since: 3.5
-{% endhint %}
-
 JabRef supports following fields to jump to other entries.
 
 Following fields are supported:
 
-* `cites`  - comma separated list of BibTeX keys which are cited by this entry
+* `cites`  - comma separated list of citation keys which are cited by this entry
 * `crossref` - single entry which is cross referenced.
-* `related` - comma separated list of BibTeX keys which are in some kind related to this entry. The type of **all** relations can be specified by a single `relatedtype` \(see [https://github.com/plk/biblatex/issues/475\#issuecomment-246931180](https://github.com/plk/biblatex/issues/475#issuecomment-246931180)\). Note: Biblatex prints this information if `related` is active at the biblatex package.
+* `related` - comma separated list of citation keys which are in some kind related to this entry. The type of **all** relations can be specified by a single `relatedtype` \(see [https://github.com/plk/biblatex/issues/475\#issuecomment-246931180](https://github.com/plk/biblatex/issues/475#issuecomment-246931180)\). Note: Biblatex prints this information if `related` is active at the biblatex package.
 
 To use the `crossref` field, navigate to the general tab and insert the Crossref at the top.
 

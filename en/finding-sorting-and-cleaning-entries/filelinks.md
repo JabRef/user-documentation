@@ -37,19 +37,19 @@ Relative file directories obviously only work in the library properties fo a bib
 
 ## Auto linking files
 
-If you have a file within or below one of your file directories with an extension matching one of the defined external file types, and a name containing a BibTeX entry's BibTeX key, the file can be autolinked by clicking on the **Auto** button in the entry editor.
+If you have a file within or below one of your file directories with an extension matching one of the defined external file types, and a name containing an entry's citation key, the file can be autolinked by clicking on the **Auto** button in the entry editor.
 
 ![auto link file](../.gitbook/assets/entryeditor-autolinkfile%20%281%29%20%281%29.png)
 
-The rules for which file names can be autolinked to a BibTeX key can be set up in **Preferences → File → External file links → Use regular expression search**.
+The rules for which file names can be autolinked to a citation key can be set up in **Preferences → File → External file links → Use regular expression search**.
 
 ![Preferences for external file links](../.gitbook/assets/preferences-file-externalfilelinks%20%281%29%20%281%29.png)
 
-If you want to download a file and link to it from a BibTeX entry, you can do this by clicking the **Download** button in the entry editor.
+If you want to download a file and link to it from an entry, you can do this by clicking the **Download** button in the entry editor.
 
 ![Download from URL](../.gitbook/assets/entryeditor-general-downloadfilefromurl%20%281%29%20%281%29.png)
 
-A dialog box will appear, prompting you to enter the URL. The file will be downloaded to your main file directory, named based on the entry's BibTeX key, and finally linked from the entry.
+A dialog box will appear, prompting you to enter the URL. The file will be downloaded to your main file directory, named based on the entry's citation key, and finally linked from the entry.
 
 JabRef uses all directories set at [Directories for files](filelinks.md#directories-for-files) to search for the files. JabRef starts in the user-specific file directory, then the general file directory and finally the main file directory to handle files.
 
@@ -70,7 +70,7 @@ The following syntax is understood:
 * `[extension]` - Is replaced by the file-extension of the field you are using.
 * All other text is interpreted as a regular expression. But caution: You need to escape backslashes by putting two backslashes after each other to not confuse them with the path-separator.
 
-The default for searches is `**/.*[bibtexkey].*\\.[extension]`. As you can see this will search in all subdirectories of the extension-based directory \(for instance in the PDF directory\) for any file that has the correct extension and contains the BibTeX-key somewhere.
+The default for searches is `**/.*[bibtexkey].*\\.[extension]`. As you can see this will search in all subdirectories of the extension-based directory \(for instance in the PDF directory\) for any file that has the correct extension and contains the citation key somewhere.
 
 ## Opening external files
 

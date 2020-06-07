@@ -102,10 +102,6 @@ A: You have to start vim with the option `--servername` \(such as `vim --servern
 
 A: In JabRef 3.0 plugin support was removed, because the development team cannot keep up plugin support any more. Nevertheless, plugins can be integrated in JabRef. See [issue \#152](https://github.com/JabRef/jabref/issues/152) for the current status and discussion. Please contact the author of the respective plugin and ask him to port his plugin into JabRef's code.
 
-## Q: Where did the RenameFile plugin go? How do I rename files automatically after importing entries?
-
-A: JabRef does no longer support plugins \(since version 3.0\). Automatic file renaming is now part of the **Quality → Cleanup entries** feature. There you can rename attached files based on the BibTeX key. You can change the format \(pattern\) under **Options → Preferences → Import**, by altering the pattern under "Default PDF file link action".
-
 ## Q: In the preferences, I want to change the option XYZ. How to find it?
 
 A: Enter XYZ in the search field located at the upper left-hand corner of the preference window.

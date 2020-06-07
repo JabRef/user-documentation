@@ -1,10 +1,6 @@
-# Customize the BibTeX key generator
+# Customize the citation key generator
 
-{% hint style="info" %}
-Some of the key patterns shown below were added at JabRef 5.0
-{% endhint %}
-
-The pattern used in the auto generation of BibTeX labels can be set for each of the standard entry types in **Options → Preferences**, tab **BibTeX key generator**. Additionally, if you right click the tab of a database, the menu **BibTeX key patterns** allows to set specific key patterns for this database.
+The pattern used in the auto generation of citation labels can be set for each of the standard entry types in **Options → Preferences**, tab **Citation key generator**.
 
 ## Key patterns
 
@@ -12,7 +8,7 @@ The key pattern can contain any text you wish, in addition to field markers that
 
 ### Default key pattern
 
-If you have not defined a key pattern for a certain entry type, the **Default pattern** will be used. You can change the default pattern - its setting is above the list of entry types in the **BibTeX key generator** section of the **Preferences** dialog.
+If you have not defined a key pattern for a certain entry type, the **Default pattern** will be used. You can change the default pattern - its setting is above the list of entry types in the **Citation key generator** section of the **Preferences** dialog.
 
 The default key pattern is \[auth\]\[year\], and this could produce keys like e.g. `Yared1998` If the key is not unique in the current database, it is made unique by adding one of the letters a-z until a unique key is found. Thus, the labels might look like:
 
@@ -40,7 +36,7 @@ Several special field markers are offered, which extract only a specific part of
 * **\[`authForeIni`\]**: The forename initial of the first author.
 * **\[`authorLastForeIni`\]**: The forename initial of the last author.
 
-**Note:** If there is no author \(as in the case of an edited book\), then all of the above **`[auth...]`** markers will use the editor\(s\) \(if any\) as a fallback. Thus, the editor\(s\) of a book with no author will be treated as the author\(s\) for label-generation purposes. If you do not want this behaviour, i.e. you require a marker which expands to nothing if there is no author, use **`pureauth`** instead of **`auth`** in the above codes. For example, **`[pureauth]`**, or **`[pureauthors3]`**.
+**Note:** If there is no author \(as in the case of an edited book\), then all of the above **`[auth...]`** markers will use the editor\(s\) \(if any\) as a fallback. Thus, the editor\(s\) of a book with no author will be treated as the author\(s\) for label-generation purposes. If you do not want this behavior, i.e. you require a marker which expands to nothing if there is no author, use **`pureauth`** instead of **`auth`** in the above codes. For example, **`[pureauth]`**, or **`[pureauthors3]`**.
 
 #### Editor-related key patterns
 
@@ -67,7 +63,7 @@ JabRef considers the following words to be [function words](https://en.wikipedia
 
 #### Other key patterns
 
-* **\[`firstpage`\]**: The number of the first page of the publication \(Caution: this will return the lowest number found in the pages field, since BibTeX allows `7,41,73--97` or `43+`.\)
+* **\[`firstpage`\]**: The number of the first page of the publication \(Caution: this will return the lowest number found in the pages field, i.e. for `7,41,73--97` it will return `7`.\)
 * **\[`pageprefix`\]**: The non-digit prefix of pages \(like "L" for L7\) or "" if no non-digit prefix exists \(like "" for `7,41,73--97`\) .
 * **\[`keywordN`\]**: Keyword number N from the “keywords” field, assuming keywords are separated by commas or semicolons.
 * **\[`lastpage`\]**: The number of the last page of the publication \(See the remark on `firstpage`\)
@@ -96,7 +92,7 @@ Generally, modifiers are applied in the order they are specified. In the followi
 
 ## Replace \(regular expression\)
 
-In addition to using regular expression replacement as [modifiers](bibtexkeypatterns.md#modifiers) of the field markers within [key patterns](bibtexkeypatterns.md#key-patterns) regular expression matching and replacement can be done after the key patterns have been applied. In this case, the regular expression and replacement string are entered in the separate text fields above the [key patterns](bibtexkeypatterns.md#key-patterns) section. Contrary to the behavior of `:regexp()`, if the replacement string is empty, then matches of the regular expression will simply be removed from the generated key. For instance, `\p{Punct}` or `[:/%]` can be replaced by nothing to remove unwanted characters from the key. This may be useful when naming PDFs according to BibTeX keys. Further documentation on regular expressions in Java can be found [here.](https://docs.oracle.com/javase/9/docs/api/java/util/regex/Pattern.html)
+In addition to using regular expression replacement as [modifiers](bibtexkeypatterns.md#modifiers) of the field markers within [key patterns](bibtexkeypatterns.md#key-patterns) regular expression matching and replacement can be done after the key patterns have been applied. In this case, the regular expression and replacement string are entered in the separate text fields above the [key patterns](bibtexkeypatterns.md#key-patterns) section. Contrary to the behavior of `:regexp()`, if the replacement string is empty, then matches of the regular expression will simply be removed from the generated key. For instance, `\p{Punct}` or `[:/%]` can be replaced by nothing to remove unwanted characters from the key. This may be useful when naming PDFs according to the citation keys. Further documentation on regular expressions in Java can be found [here.](https://docs.oracle.com/javase/9/docs/api/java/util/regex/Pattern.html)
 
 ## How to configure
 
@@ -110,11 +106,11 @@ To change the pattern to `[authors]:[camel]`, execute the following steps:
 
    ![General preferences](../.gitbook/assets/preferences-general%20%281%29%20%281%29%20%281%29.png)
 
-3. Untick "Enforce legal characters in BibTeX keys". Note that this is only necessary if you wish to have colons be present in the generated key.
+3. Untick "Enforce legal characters in citation keys". Note that this is only necessary if you wish to have colons be present in the generated key.
 
    ![General preferences - unticked](../.gitbook/assets/preferences-general-unticked%20%281%29%20%281%29%20%281%29.png)
 
-4. Navigate to "BibTeX key generator"
+4. Navigate to "Citation key generator"
 
    ![BibTeX key generator preferences](../.gitbook/assets/preferences-bibtex-key-generator%20%281%29%20%281%29%20%281%29.png)
 
@@ -122,6 +118,6 @@ To change the pattern to `[authors]:[camel]`, execute the following steps:
 
    ![BibTeX key generator preferences - authors camel](../.gitbook/assets/preferences-bibtex-key-generator-authors-camel%20%281%29%20%281%29%20%281%29.png)
 
-6. Press "enter" \(forgetting to do this is a leading cause of puzzlement\) unless you are using version &lt; 5, then Press "OK".
+6. Press "Enter" \(forgetting to do this is a leading cause of puzzlement\), then Press "OK".
 7. Click "Save"
 

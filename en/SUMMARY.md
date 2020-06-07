@@ -50,7 +50,7 @@
   * [Shared SQL Database](collaborative-work/sqldatabase/README.md)
     * [Migration of pre-3.6 SQL databases into a shared SQL database](collaborative-work/sqldatabase/sqldatabasemigration.md)
 * [Configuration](setup/README.md)
-  * [Customize the BibTeX key generator](setup/bibtexkeypatterns.md)
+  * [Customize the citation key generator](setup/bibtexkeypatterns.md)
   * [Customize entry types](setup/customentrytypes.md)
   * [Customize general fields](setup/generalfields.md)
   * [Customize key bindings](setup/customkeybindings.md)

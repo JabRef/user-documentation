@@ -2,7 +2,7 @@
 
 ## Purpose
 
-When you import new entries from a supported reference format, or fetch entries directly from the Internet, the inspection window allows you to select the entries you want to keep, to [avoid adding duplicated entries](../../finding-sorting-and-cleaning-entries/findduplicates.md), and to perform some simple operations like generating BibTeX keys for the entries, or adding them to [groups](../../finding-sorting-and-cleaning-entries/groups.md). If you are importing into an existing database, it is often easier to perform these operations before they are mixed in between the entries of your database.
+When you import new entries from a supported reference format, or fetch entries directly from the Internet, the inspection window allows you to select the entries you want to keep, to [avoid adding duplicated entries](../../finding-sorting-and-cleaning-entries/findduplicates.md), and to perform some simple operations like generating citation keys for the entries, or adding them to [groups](../../finding-sorting-and-cleaning-entries/groups.md). If you are importing into an existing database, it is often easier to perform these operations before they are mixed in between the entries of your database.
 
 ## The inspection window
 
@@ -29,7 +29,7 @@ A right click on an entry displays a drop-down menu which allows you to:
 
 Potential duplicates are pointed out by an icon in the second column. A click on this icon allows you to [check the similarities](../../finding-sorting-and-cleaning-entries/findduplicates.md). A button on the left panel allows you to **Deselect all duplicates** \(without inspection\).
 
-### BibTeX key generation
+### Citation key generation
 
 On the left panel, if the box **Generate keys** is checked, keys will be automatically generated on import. You can also choose to generate the keys now by clicking on the button **Generate now**.
 
