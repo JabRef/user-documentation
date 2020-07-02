@@ -26,6 +26,7 @@ redirects:
   import-export/other-integrations/xmp: ./advanced/xmp.md
   import-export/other-integrations/pushtoapplications: ./cite/pushtoapplications.md
   import-export/other-integrations/latex-citations: ./advanced/entryeditor/latex-citations.md
+  import-export/sqlexport: ./collaborative-work/sqldatabase
   import-export/knowledge/medlineris: ./advanced/knowledge/medlineris.md
   faq: ./faqgeneral.md
   faq/faqgeneral: ./faqgeneral.md
@@ -44,3 +45,6 @@ redirects:
   import-using-publication-identifiers/divatobibtex: ./collect/add-entry-using-an-id.md
   import-using-publication-identifiers/iacrtobibtex: ./collect/add-entry-using-an-id.md
   import-using-publication-identifiers/rfctobibtex: ./collect/add-entry-using-an-id.md
+  import-using-publication-identifiers/doitobibtex: ./collect/add-entry-using-an-id.md
+  import-using-publication-identifiers/isbntobibtex: ./collect/add-entry-using-an-id.md
+  import-using-publication-identifiers/titletobibtex: ./collect/add-entry-using-an-id.md
