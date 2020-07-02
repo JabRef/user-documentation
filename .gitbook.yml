@@ -42,3 +42,5 @@ redirects:
   EntryEditor: ./advanced/entryeditor/README.md
   fields/setclearrenamefields: ./advanced/fields.md  
   import-using-publication-identifiers/divatobibtex: ./collect/add-entry-using-an-id.md
+  import-using-publication-identifiers/iacrtobibtex: ./collect/add-entry-using-an-id.md
+  import-using-publication-identifiers/rfctobibtex: ./collect/add-entry-using-an-id.md
