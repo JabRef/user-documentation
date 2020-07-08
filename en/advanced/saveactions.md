@@ -146,3 +146,14 @@ Changes all letters to upper case.
 
 Shortens lists of persons if there are more than 2 persons to \"et al.\".
 
+## Remove digits
+
+Removes all digits from the field content.
+
+## Remove redundant spaces
+
+Replaces consecutive spaces with a single space in the field content.
+
+## Replace tabs by space
+
+Replace tabs by space in the field content.
