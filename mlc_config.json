@@ -6,10 +6,10 @@
         {
             "pattern": "^http://purl\\.org/net/bibteXMP"
         },
-        {.
+        {
             "pattern": "^https://.*\\.jabref\\.org"
         },
-        {.
+        {
             "pattern": "\\.tex\\.ac\\.uk/"
         },
         {
