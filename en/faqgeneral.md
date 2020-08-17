@@ -116,7 +116,5 @@ A: See [How to improve the help page](faqcontributing/how-to-improve-the-help-pa
 
 ## Q: "Unable to monitor file changes. Please close files and processes and restart. You may encounter errors if you continue with this session."
 
-A: This error message has been observed on systems that use [inotify](https://www.man7.org/linux/man-pages//man7/inotify.7.html).
-System calls to `inotify_init` and `inotify_add_watch` set `errno` to `EMFILE` when `inotify` has reached its limit. The most
-common reason is that `inotify` is running too many instances. To solve this problem, contact you system administrator and request
-that they increase the limits defined in `/proc/sys/fs/inotify/max_user_*` files.
+A: This error message has been observed on systems that use [inotify](https://www.man7.org/linux/man-pages//man7/inotify.7.html). System calls to `inotify_init` and `inotify_add_watch` set `errno` to `EMFILE` when `inotify` has reached its limit. The most common reason is that `inotify` is running too many instances. To solve this problem, contact you system administrator and request that they increase the limits defined in `/proc/sys/fs/inotify/max_user_*` files.
+
