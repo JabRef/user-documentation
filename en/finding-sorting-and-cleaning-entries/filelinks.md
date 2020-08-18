@@ -8,7 +8,7 @@ In BibTeX terms, the file links are stored as text in the field `file`. From wit
 
 If the "file" field is included in [General fields](../setup/generalfields.md), you can edit the list of external links for an entry in the [Entry editor](../advanced/entryeditor/). The editor includes buttons for inserting, editing and removing links, as well as buttons for reordering the list of links.
 
-![list of linked files](../.gitbook/assets/entryeditor-linkedfiles%20%281%29%20%281%29.png)
+![list of linked files](../.gitbook/assets/entryeditor-linkedfiles.png)
 
 ## Directories for files
 
@@ -16,12 +16,12 @@ JabRef offers following directory settings:
 
 1. Options → Preferences → File → External file links → Main file directory
 
-   ![Main file directory](../.gitbook/assets/preferences-file-mainfiledirectory%20%281%29%20%281%29.png)
+   ![Main file directory](../.gitbook/assets/preferences-file-mainfiledirectory.png)
 
 2. File → Library properties → General file directory.
 3. File → Library properties → User-specific file directory
 
-   ![Override default file directories](../.gitbook/assets/libraryproperties-overridedefaultfiledirectories%20%281%29%20%281%29.png)
+   ![Override default file directories](../.gitbook/assets/libraryproperties-overridedefaultfiledirectories.png)
 
 One of these settings is required. Mostly the "Main file directory" is enough.
 
@@ -39,15 +39,15 @@ Relative file directories obviously only work in the library properties fo a bib
 
 If you have a file within or below one of your file directories with an extension matching one of the defined external file types, and a name containing an entry's citation key, the file can be autolinked by clicking on the **Auto** button in the entry editor.
 
-![auto link file](../.gitbook/assets/entryeditor-autolinkfile%20%281%29%20%281%29.png)
+![auto link file](../.gitbook/assets/entryeditor-autolinkfile.png)
 
 The rules for which file names can be autolinked to a citation key can be set up in **Preferences → File → External file links → Use regular expression search**.
 
-![Preferences for external file links](../.gitbook/assets/preferences-file-externalfilelinks%20%281%29%20%281%29.png)
+![Preferences for external file links](../.gitbook/assets/preferences-file-externalfilelinks.png)
 
 If you want to download a file and link to it from an entry, you can do this by clicking the **Download** button in the entry editor.
 
-![Download from URL](../.gitbook/assets/entryeditor-general-downloadfilefromurl%20%281%29%20%281%29.png)
+![Download from URL](../.gitbook/assets/entryeditor-general-downloadfilefromurl.png)
 
 A dialog box will appear, prompting you to enter the URL. The file will be downloaded to your main file directory, named based on the entry's citation key, and finally linked from the entry.
 
@@ -59,7 +59,7 @@ It is possible to have greater flexibility in the naming scheme by using regular
 
 If you open the external preferences \(Options → Preferences → File\) you will find an option called "Use regular expression search". Checking this option will allow you to enter your own regular expression for search in the PDF directories.
 
-![Use regular expression search](../.gitbook/assets/preferences-file-useregularexpressionsearch%20%281%29%20%281%29.png)
+![Use regular expression search](../.gitbook/assets/preferences-file-useregularexpressionsearch.png)
 
 The following syntax is understood:
 
@@ -86,5 +86,5 @@ For each file link, a file type must be chosen, to determine what icon should be
 
 A file type is specified by its name, a graphical icon, a file extension and an application to view the files. On Windows, the name of the application can be omitted in order to use Window's default viewer instead.
 
-![Manage external file types](../.gitbook/assets/manageexternalfiletypes%20%281%29%20%281%29.png)
+![Manage external file types](../.gitbook/assets/manageexternalfiletypes.png)
 

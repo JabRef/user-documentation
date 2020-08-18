@@ -10,7 +10,7 @@ Entries are first shown in the inspection window. Note that, if this takes too l
 
 Once the entries displayed in the inspection window, none of them have been added to one of your databases yet.
 
-![Screenshot of the inspection window](../../.gitbook/assets/inspectionwindow%20%281%29.png)
+![Screenshot of the inspection window](../../.gitbook/assets/inspectionwindow.png)
 
 By default, all the entries are selected for importation, as shown by the checked boxes in the _Keep_ column. You can select/unselect an entry by clicking on these check boxes. On the left panel, buttons allow you to **Select all** the entries for importation, or to **Deselect all** the entries.
 

@@ -6,7 +6,7 @@ description: Create an entry based on an ID such as DOI or ISBN.
 
 To use this feature, choose **Library → New entry.** In the lower part, there is the box "ID-based entry generator". In the field "ID type", you can select the desired identifier, e.g. "ISBN". Then enter the identifier in the textbox below and press Enter to generate an entry based on the given ID \(you can also click on "Generate"\). The entry is added to your library and opened in the entry editor. In case an error occurs, a popup is shown.
 
-![Screenshot of new entry dialog](../.gitbook/assets/newentrychoosetype-idgeneratorhighlighted-isbn%20%281%29%20%281%29%20%281%29.png)
+![Screenshot of new entry dialog](../.gitbook/assets/newentrychoosetype-idgeneratorhighlighted-isbn.png)
 
 The following databases are supported:
 
