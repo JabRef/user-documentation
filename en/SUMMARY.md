@@ -39,7 +39,7 @@
   * [Find duplicates](finding-sorting-and-cleaning-entries/findduplicates.md)
   * [Merge entries](finding-sorting-and-cleaning-entries/mergeentries.md)
 * [Cite](cite/README.md)
-  * [BibTex and BibLaTex](cite/bibtex-and-biblatex.md)
+  * [BibTeX and BibLaTeX](cite/bibtex-and-biblatex.md)
   * [Pushing to external editor application](cite/pushtoapplications.md)
   * [Export to Microsoft Word](cite/export-to-microsoft-word.md)
   * [OpenOffice/LibreOffice integration](cite/openofficeintegration.md)
