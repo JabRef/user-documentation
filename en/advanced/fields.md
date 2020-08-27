@@ -111,7 +111,7 @@ You can create new fields by [editing \(or creating\) entry types](../setup/cust
 
 This feature is available through **Edit → Set/clear/rename fields**.
 
-![Screenshot of the Related Articles Tab](../.gitbook/assets/setclearrenamefields%20%281%29%20%281%29.png)
+![Screenshot of the Related Articles Tab](../.gitbook/assets/setclearrenamefields.png)
 
 ## Further information resources
 
@@ -128,7 +128,7 @@ This feature is available through **Edit → Set/clear/rename fields**.
 * [http://www.math.uiuc.edu/K-theory/aux/K-theory.bib](http://www.math.uiuc.edu/K-theory/aux/K-theory.bib) \(large file &gt; 6000 publications\)
 * [http://mirrors.ircam.fr/pub/CTAN/biblio/bibtex/contrib/test/test.bib](http://mirrors.ircam.fr/pub/CTAN/biblio/bibtex/contrib/test/test.bib)
 
-### BibLatex files
+### BibLaTeX files
 
 * [http://mirrors.ctan.org/macros/latex/contrib/biblatex/bibtex/bib/biblatex/biblatex-examples.bib](http://mirrors.ctan.org/macros/latex/contrib/biblatex/bibtex/bib/biblatex/biblatex-examples.bib)
 * [http://distrib-coffee.ipsl.jussieu.fr/pub/mirrors/ctan/macros/latex/contrib/biblatex/bibtex/bib/biblatex/biblatex-examples.bib](http://distrib-coffee.ipsl.jussieu.fr/pub/mirrors/ctan/macros/latex/contrib/biblatex/bibtex/bib/biblatex/biblatex-examples.bib)
@@ -137,12 +137,12 @@ This feature is available through **Edit → Set/clear/rename fields**.
 
 * [https://github.com/JabRef/jabref/tree/master/src/test/resources/testbib](https://github.com/JabRef/jabref/tree/master/src/test/resources/testbib)
 
-### Good references for the BibTex "standard"
+### Good references for the BibTeX "standard"
 
 * [http://texdoc.net/pkg/btxdoc](http://texdoc.net/pkg/btxdoc)
 * [http://maverick.inria.fr/~Xavier.Decoret/resources/xdkbibtex/bibtex\_summary.html](http://maverick.inria.fr/~Xavier.Decoret/resources/xdkbibtex/bibtex_summary.html)
 
-### BibLaTex standard
+### BibLaTeX standard
 
 * BibLaTeX package documentation: [http://texdoc.net/pkg/biblatex](http://texdoc.net/pkg/biblatex)
 * [https://github.com/plk/biblatex](https://github.com/plk/biblatex)
