@@ -87,7 +87,7 @@ Generally, modifiers are applied in the order they are specified. In the followi
 * **:titlecase**: Changes the first character of all normal words to uppercase, all function words \(see above\) are converted to lowercase. Example: `example title with An function Word` will be converted to `Example Title with an Function Word`
 * **:truncateN**: Truncates the string after the N:th character and trims any trailing whitespaces. For example, **\[fulltitle:truncate3\]** will be convert `A Title` to `A T`.
 * **:sentencecase**: Changes the first character of the first word to uppercase, all remaining words are converted to lowercase. Example: `an Example Title` will be converted to `An example title`
-* **:regex\("pattern", "replacement"\)**: Applies regular expression pattern matching and replacement. For example, with the pattern **\[auth.etal:regex\("\.etal","EtAl"\):regex\("\.","And"\)\]**, the first regex replaces ".etal" with "EtAl". The second regex\(\) replaces the "." between sources with two authors with "And".
+* **:regex\("pattern", "replacement"\)**: Applies regular expression pattern matching and replacement. For example, with the pattern **\[auth.etal:regex\(".etal","EtAl"\):regex\(".","And"\)\]**, the first regex replaces ".etal" with "EtAl". The second regex\(\) replaces the "." between sources with two authors with "And".
 * **:\(x\)**: The string between the parentheses will be inserted if the field marker preceding this modifier resolves to an empty value. The placeholder `x` may be any string. For instance, the marker **\[volume:\(unknown\)\]** will return the entry's volume if set, and the string **unknown** if the entry's `volume` field is not set.
 
 ## Replace \(regular expression\)
@@ -100,23 +100,23 @@ To change the pattern to `[authors]:[camel]`, execute the following steps:
 
 1. Open the preferences
 
-   ![Options Preferences](../.gitbook/assets/optionspreferences.png)
+   ![Options Preferences](../.gitbook/assets/optionspreferences%20%282%29.png)
 
 2. Navigate to "General"
 
-   ![General preferences](../.gitbook/assets/preferences-general.png)
+   ![General preferences](../.gitbook/assets/preferences-general%20%282%29.png)
 
 3. Untick "Enforce legal characters in citation keys". Note that this is only necessary if you wish to have colons be present in the generated key.
 
-   ![General preferences - unticked](../.gitbook/assets/preferences-general-unticked.png)
+   ![General preferences - unticked](../.gitbook/assets/preferences-general-unticked%20%282%29.png)
 
 4. Navigate to "Citation key generator"
 
-   ![BibTeX key generator preferences](../.gitbook/assets/preferences-bibtex-key-generator.png)
+   ![BibTeX key generator preferences](../.gitbook/assets/preferences-bibtex-key-generator%20%282%29.png)
 
 5. Change the default pattern to `[authors]:[camel]`.
 
-   ![BibTeX key generator preferences - authors camel](../.gitbook/assets/preferences-bibtex-key-generator-authors-camel.png)
+   ![BibTeX key generator preferences - authors camel](../.gitbook/assets/preferences-bibtex-key-generator-authors-camel%20%282%29.png)
 
 6. Press "Enter" \(forgetting to do this is a leading cause of puzzlement\), then Press "OK".
 7. Click "Save"
