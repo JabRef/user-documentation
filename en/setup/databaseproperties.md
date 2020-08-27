@@ -37,7 +37,7 @@ _Note: Entries containing a `crossref` field will always be placed prior to the 
 
 While you edit a shared database, another user may be editing it too. By default, saving the library will overwrite changes done by others \(although a warning message about the changes will be displayed\).
 
-To avoid discarding changes involuntarily, and hence to allow a smooth collaborative work, you can choose to _Refuse to save the library before external changes have been reviewed_. This setting lets you enforce reviewing of external changes before the library can be saved: users will only be able to save the libraryafter any external changes have been reviewed and either merged or rejected.
+To avoid discarding changes involuntarily, and hence to allow a smooth collaborative work, you can choose to _Refuse to save the library before external changes have been reviewed_. This setting lets you enforce reviewing of external changes before the library can be saved: users will only be able to save the library after any external changes have been reviewed and either merged or rejected.
 
 _Note:_ this is not a security feature, merely a way to prevent users from overwriting other users' changes inadvertently. This feature does not protect your library against malicious users.
 
