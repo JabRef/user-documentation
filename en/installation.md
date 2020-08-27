@@ -14,7 +14,11 @@ Alternatively, on **Windows**, you can use the [chocolatey package manager](http
 
 The portable version of JabRef is designed to be run from a USB stick \(or similar\) with no installation.
 
-Download it from [downloads.jabref.org](https://downloads.jabref.org). These are generic archive files \(e.g., `tar.gz` files for Linux and MacOS, and `zip` files for Windows\) which need to be extracted. Inside the archive files you will find a `bin` subdirectory which contains the binary needed to run JabRef \(i.e., `JabRefMain` for Linux and MacOS, and `JabRefMain.bat` for Windows\).
+Download it from [downloads.jabref.org](https://downloads.jabref.org). These are generic archive files \(e.g., `tar.gz` files for Linux and MacOS, and `zip` files for Windows\) which need to be extracted. Inside the archive files you will find the file needed to run JabRef:
+
+- for Windows, this is the file `runtime\bin\JabRef.bat`.
+- for Linux, this is the file `bin\JabRef`.
+- for Mac, this is the file `JabRef.app/Contents/MacOS/Jabref`.
 
 Be sure to activate "Load and Save preferences from/to jabref.xml on start-up \(memory stick mode\)" in Options → Preferences → General.
 
