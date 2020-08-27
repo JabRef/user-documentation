@@ -18,7 +18,7 @@ Download it from [downloads.jabref.org](https://downloads.jabref.org). These are
 
 - for Windows, this is the file `runtime\bin\JabRef.bat`.
 - for Linux, this is the file `bin\JabRef`.
-- for Mac, this is the file `JabRef.app/Contents/MacOS/Jabref`.
+- for Mac, this is the file `JabRef.app`.
 
 Be sure to activate "Load and Save preferences from/to jabref.xml on start-up \(memory stick mode\)" in Options → Preferences → General.
 
