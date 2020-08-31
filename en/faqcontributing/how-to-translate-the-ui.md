@@ -12,8 +12,10 @@ We use the service of [Crowdin](https://translate.jabref.org/) to keep our trans
 
 - visit [https://translate.jabref.org/](https://translate.jabref.org/) to get started
 - select your preferred language, login, and click on *JabRef_en.properties*
+![Screenshot of Crowdin select file page](../.gitbook/assets/crowdin-select-file.png)
 - choose the string you want to translate in the left panel (strings to be translated are listed first)
-- enter the translation in the central panel (suggestions are given at the bottom)
+and enter the translation in the central panel (suggestions are given at the bottom)
+![Screenshot of Crowdin translation page](../.gitbook/assets/crowdin-translate.png)
 
 ## Translating JabRef into a new language
 
