@@ -18,8 +18,7 @@ JabRef improves -- and Wikipedia pages should keep up!
 
 For changes affecting all languages, update the [wikidata entry of JabRef](https://www.wikidata.org/wiki/Q1676802).
 
-For changes in a specific language, go to the related page, and simply click on "Edit" \(top right-hand tab\).
-Currently existing pages are:
+For changes in a specific language, go to the related page, and simply click on "Edit" \(top right-hand tab\). Currently existing pages are:
 
 * Deutsch: [https://de.wikipedia.org/wiki/JabRef](https://de.wikipedia.org/wiki/JabRef)
 * English: [https://en.wikipedia.org/wiki/JabRef](https://en.wikipedia.org/wiki/JabRef)
