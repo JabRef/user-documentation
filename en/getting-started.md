@@ -1,6 +1,6 @@
 # Getting started
 
-## First start of JabRef
+## Main Window of JabRef
 
 Upon the first start of JabRef the main user interface is showing up the main elements are:
 
@@ -10,13 +10,7 @@ Upon the first start of JabRef the main user interface is showing up the main el
 
 ![Screenshot of main window](.gitbook/assets/getting-started-main-screen.png)
 
-{% hint style="info" %}
-Telemetry dialog?
-{% endhint %}
-
-## Quick start
-
-### Creation of a new library
+## Creation of a new library
 
 A "library" is the main file that saves all the information about your collection of references. The storage format of the file is text-based in the Bibtex standard.
 
@@ -30,9 +24,9 @@ To create a new library, just select the "New library" menu item in the "File" m
 
 The main screen is now showing an empty "entry table" we will now start to fill with some entries.
 
-### Adding of a new entry manually
+## Adding of a new entry manually
 
-To add a new entry select the menu bar entry "Library" -> "New entry", click on the icon **TODO**, or just hit CTRL-N.
+To add a new entry select the menu bar entry "Library" -> "New entry", click on the icon in the icon bar, or just hit CTRL-N.
 
 This opens a dialog where you can select the type of reference you want to store. By default all entry types defined by the Bibtex format are available:
 
@@ -58,7 +52,7 @@ After entering some information, you can see on the right side of the entry edit
 
 ![Added information for new entry](.gitbook/assets/getting-started-filled-entry-editor.png)
 
-### Enhancing the information
+## Enhancing the information
 
 After creating the basic information the addition of all other bibliographical details is often cumbersome and error-prone. To ease this task, JabRef allows for an automatic completion of the bibliographic information by looking up the data in public databases.
 To use this feature just click on the "Update with bibliographic information from the web" button in the editor:
@@ -73,7 +67,7 @@ If additional information is found you will be asked in a dialog which informati
 
 ![Merging the existing and the web information](.gitbook/assets/getting-started-merge-entries.png)
 
-### Adding a full text document
+## Adding a full text document
 
 Usually you also want to attach a reference to the full-text of a reference. For this, you can use the "file" field in the "General" tab.
 Here you can either attach a file manually, search for an already existing local file matching the bibtexkey pattern, or trying to automatically download a matching full text from the web.
@@ -84,23 +78,23 @@ In order to use the automated feature, it is necessary to set-up a file director
 ![Setting up the main file directory](.gitbook/assets/getting-started-preferences.png)
 {% endhint %}
 
-To test the automatic download of full texts you can click on the "Get fulltext" icon next to the file field, or choose "Lookup" -> "Search full text documents online" from the menu. As soon as a full-text is found, the file will be stored in the local file directory and linked to the entry:
+To test the automatic download of full texts you can click on the "Get full-text" icon next to the file field, or choose "Lookup" -> "Search full text documents online" from the menu. As soon as a full-text is found, the file will be stored in the local file directory and linked to the entry:
 
-![Finding a fulltext document online](.gitbook/assets/getting-started-entry-editor-full-text.png)
+![Finding a full-text document online](.gitbook/assets/getting-started-entry-editor-full-text.png)
 
 To open the downloaded full text you can click on "file" icon before the file name - or use the same icon in the entry table:
-![Opening the fulltext](.gitbook/assets/getting-started-open-fulltext.png)
+![Opening the full-text](.gitbook/assets/getting-started-open-fulltext.png)
 
-### Finding more references in the web
+## Finding more references in the web
 
 If you want to search for other references, it is also possible to directly trigger a search in many of the most common bibliographic databases. To start a search just us the "Web Search" feature of JabRef:
-First select one of the exisiting data sources, enter a search term and click on "search":
+First select one of the existing data sources, enter a search term and click on "search":
 
 The search results will be shown in an window where you can select all the search hits to be added to your library.
 
-![Opening the fulltext](.gitbook/assets/getting-started-import-from-web.png)
+![Web Search: Trigger and result window](.gitbook/assets/getting-started-import-from-web.png)
 
-### Organize your library
+## Organize your library
 
 {% hint style="info" %}
 Still to be added.
