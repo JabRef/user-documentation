@@ -1,3 +1,7 @@
+---
+How to find, sort, and clean entries
+---
+
 # Organize
 
 JabRef is designed to facilitate your workflow.
