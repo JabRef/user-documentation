@@ -56,12 +56,14 @@ The default key pattern is `[auth][year]`, which means that Author information i
 
 After entering some information, you can see on the right side of the entry editor a preview of the bibliographic data:
 
-**SCREENSHOT: getting-started-filled-entry-editor.png**
+![Added information for new entry](.gitbook/assets/getting-started-filled-entry-editor.png)
 
 ### Enhancing the information
 
 After creating the basic information the addition of all other bibliographical details is often cumbersome and error-prone. To ease this task, JabRef allows for an automatic completion of the bibliographic information by looking up the data in public databases.
 To use this feature just click on the "Update with bibliographic information from the web" button in the editor:
+
+![Update information from web](.gitbook/assets/getting-started-entry-editor-update-from-web.png)
 
 {% hint style="info" %}
 The found information is most accurate if an identifier like a "DOI" or "ISBN" is maintained. If you already know such an unique identifier, this can also be already the starting point to create a new entry without manual entering any information by using the "create from ID" feature in the Create entry dialog. For more information see: [Collect](https://docs.jabref.org/collect) > ["Add entry using an ID"](https://docs.jabref.org/collect/add-entry-using-an-id)
@@ -69,7 +71,7 @@ The found information is most accurate if an identifier like a "DOI" or "ISBN" i
 
 If additional information is found you will be asked in a dialog which information should be taken over:
 
-**SCREENSHOT**
+![Merging the existing and the web information](.gitbook/assets/getting-started-merge-entries.png)
 
 ### Adding a full text document
 
@@ -79,18 +81,27 @@ Here you can either attach a file manually, search for an already existing local
 {% hint style="info" %}
 In order to use the automated feature, it is necessary to set-up a file directory first. To do so, please go to "Options" > "Preferences", go to "File" section and select there an existing folder as the "Main file directory":
 
-**SCREENSHOT**
+![Setting up the main file directory](.gitbook/assets/getting-started-preferences.png)
 {% endhint %}
 
 To test the automatic download of full texts you can click on the "Get fulltext" icon next to the file field, or choose "Lookup" -> "Search full text documents online" from the menu. As soon as a full-text is found, the file will be stored in the local file directory and linked to the entry:
 
-**SCREENSHOT**
+![Finding a fulltext document online](.gitbook/assets/getting-started-entry-editor-full-text.png)
+
+To open the downloaded full text you can click on "file" icon before the file name - or use the same icon in the entry table:
+![Opening the fulltext](.gitbook/assets/getting-started-open-fulltext.png)
 
 ### Finding more references in the web
 
 If you want to search for other references, it is also possible to directly trigger a search in many of the most common bibliographic databases. To start a search just us the "Web Search" feature of JabRef:
 First select one of the exisiting data sources, enter a search term and click on "search":
 
-The search results will be shown in an window where you can select all the search hits to be added to your library:
+The search results will be shown in an window where you can select all the search hits to be added to your library.
+
+![Opening the fulltext](.gitbook/assets/getting-started-import-from-web.png)
 
 ### Organize your library
+
+{% hint style="info" %}
+Still to be added.
+{% endhint %}
