@@ -2,8 +2,6 @@
 How to find, sort, and clean entries
 ---
 
-# Organize
-
 JabRef is designed to facilitate your workflow.
 
 You can select a subset of entries using the [search bar](search.md).
