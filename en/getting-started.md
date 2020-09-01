@@ -8,7 +8,7 @@ Upon the first start of JabRef the main user interface is showing up the main el
 - Icon bar (shortcuts for most frequently used features)
 - Side bar (for groups and web search)
 
-![Screenshot of main window](../.gitbook/assets/getting-started-main-screen.png)
+![Screenshot of main window](.gitbook/assets/getting-started-main-screen.png)
 
 {% hint style="info" %}
 Telemetry dialog?
@@ -26,7 +26,7 @@ Advantages of the text-based format: Dedicated for the usage with LaTeX; "human 
 
 To create a new library, just select the "New library" menu item in the "File" menu:
 
-![Creating a new library](../.gitbook/assets/getting-started-new-library.png)
+![Creating a new library](.gitbook/assets/getting-started-new-library.png)
 
 The main screen is now showing an empty "entry table" we will now start to fill with some entries.
 
@@ -36,13 +36,13 @@ To add a new entry select the menu bar entry "Library" -> "New entry", click on 
 
 This opens a dialog where you can select the type of reference you want to store. By default all entry types defined by the Bibtex format are available:
 
-![Screenshot of "new entry" dialog](../.gitbook/assets/getting-started-new-entry.png)
+![Screenshot of "new entry" dialog](.gitbook/assets/getting-started-new-entry.png)
 
 For our running example we will select "Article". 
 
 After clicking on the "Article" button, the dialog closes and the so called "Entry Editor" is opened for the newly created entry:
 
-![Main window now showing the entry editor](../.gitbook/assets/getting-started-entry-editor.png)
+![Main window now showing the entry editor](.gitbook/assets/getting-started-entry-editor.png)
 
 The most important information about the references to be added can now be entered in the "Required Fields" tab. 
 "Author", "Title", "Journal", and "Year" should be self-explanatory - however, a "bibtexkey", might not be familiar to you if you have not worked with Bibtex so far. 
