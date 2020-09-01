@@ -46,22 +46,42 @@ Basically, the idea of the "bibtexkey" is to have an unique identifier for each 
 The bibtexkey usually follows a global pattern and can be easily created automatically by clicking on the "generate" button next to the field.
 
 {% hint style="info" %}
-The default key pattern is **TODO**, which means that **TODO**. However, key pattern is customizable to your needs. See **TODO** for more details.
+The default key pattern is `[auth][year]`, which means that Author information is followed by the year of the publication, resulting in the example in `Turing1950`. However, the key pattern is customizable to your needs. See [Configuration](https://docs.jabref.org/setup) > ["Customize the citation key generator"](https://docs.jabref.org/setup/bibtexkeypatterns) for more details.
 {% endhint %}
 
+After entering some information, you can see on the right side of the entry editor a preview of the bibliographic data:
+
+**SCREENSHOT**
 
 ### Enhancing the information
 After creating the basic information the addition of all other bibliographical details is often cumbersome and error-prone. To ease this task, JabRef allows for an automatic completion of the bibliographic information by looking up the data in public databases.
-To use this feature just click on the **TODO**  button in the editor:
+To use this feature just click on the "Update with bibliographic information from the web" button in the editor:
 
 {% hint style="info" %}
-The found information is most accurate if an identifier like a "DOI" or "ISBN" is maintained. If you already know such an unique identifier, this can also be already the starting point to create a new entry without manual entering any information by using the "create from ID" feature in the Create entry dialog. For more information see: **TODO** 
+The found information is most accurate if an identifier like a "DOI" or "ISBN" is maintained. If you already know such an unique identifier, this can also be already the starting point to create a new entry without manual entering any information by using the "create from ID" feature in the Create entry dialog. For more information see: [Collect](https://docs.jabref.org/collect) > ["Add entry using an ID"](https://docs.jabref.org/collect/add-entry-using-an-id)
 {% endhint %}
 
+If additional information is found you will be asked in a dialog which information should be taken over:
+
+**SCREENSHOT**
+
 ### Adding a full text document
+Usually you also want to attach a reference to the full-text of a reference. For this, you can use the "file" field in the "General" tab. 
+Here you can either attach a file manually, search for an already existing local file matching the bibtexkey pattern, or trying to automatically download a matching full text from the web.
+
+{% hint style="info" %}
+In order to use the automated feature, it is necessary to set-up a file directory first. To do so, please go to "Options" > "Preferences", go to "File" section and select there an existing folder as the "Main file directory":
+
+**SCREENSHOT**
+{% endhint %}
+
+To test the automatic download of full texts you can click on the "Get fulltext" icon next to the file field, or choose "Lookup" -> "Search full text documents online" from the menu. As soon as a full-text is found, the file will be stored in the local file directory and linked to the entry:
+
+**SCREENSHOT**
 
 ### Finding more references in the web
 If you want to search for other references, it is also possible to directly trigger a search in many of the most common bibliographic databases. To start a search just us the "Web Search" feature of JabRef:
+First select one of the exisiting data sources, enter a search term and click on "search":
 
 The search results will be shown in an window where you can select all the search hits to be added to your library:
 
