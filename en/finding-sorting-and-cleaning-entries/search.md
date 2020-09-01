@@ -2,7 +2,7 @@
 
 The search bar is located between the icon bar and the database tabs.
 
-![Screenshot of the search bar](../.gitbook/assets/Search-bar-v5.2.png)
+![Screenshot of the search bar](https://github.com/JabRef/user-documentation/tree/880743157200cd04b3d1c0071f3a1ba8ac26010a/en/.gitbook/assets/Search-bar-v5.2.png)
 
 To make the cursor jump to the search field, you can:
 

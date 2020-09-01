@@ -10,12 +10,16 @@ If the JabRef interface already exists in your language, you can help improve it
 
 We use the service of [Crowdin](https://translate.jabref.org/) to keep our translations updated. It is a service directly running in the browser and one can quickly join and start translating.
 
-- visit [https://translate.jabref.org/](https://translate.jabref.org/) to get started
-- select your preferred language, login, and click on *JabRef_en.properties*
-![Screenshot of Crowdin select file page](../.gitbook/assets/crowdin-select-file.png)
-- choose the string you want to translate in the left panel (strings to be translated are listed first)
-and enter the translation in the central panel (suggestions are given at the bottom)
-![Screenshot of Crowdin translation page](../.gitbook/assets/crowdin-translate.png)
+* visit [https://translate.jabref.org/](https://translate.jabref.org/) to get started
+* select your preferred language, login, and click on _JabRef\_en.properties_
+
+  ![Screenshot of Crowdin select file page](../.gitbook/assets/crowdin-select-file%20%281%29.png)
+
+* choose the string you want to translate in the left panel \(strings to be translated are listed first\)
+
+  and enter the translation in the central panel \(suggestions are given at the bottom\)
+
+  ![Screenshot of Crowdin translation page](../.gitbook/assets/crowdin-translate%20%281%29.png)
 
 ## Translating JabRef into a new language
 
@@ -29,7 +33,7 @@ To test directly your translation, you must be able to compile the source tree a
 
 Crowdin allows for downloading the current translation file:
 
-![Screenshot of Crowdin download dialog](../.gitbook/assets/crowdin-download-translation.png)
+![Screenshot of Crowdin download dialog](../.gitbook/assets/crowdin-download-translation%20%281%29.png)
 
 Place the downloaded file in the path `src/main/resources/l10n`. Then, execute `gradlew run` in the root directory and JabRef should start.
 
@@ -38,9 +42,11 @@ For a new language to be available within JabRef, a corresponding line must be a
 ## Localization in JabRef code
 
 ### File location
+
 For each language, there is the file `JabRef_xx.properties` \(`xx` denotes the country code for the language\). It contains all translations in a key/value format. In the JabRef source code tree, the property files reside in the [/src/main/resources/l10n](https://github.com/JabRef/jabref/blob/master/src/main/resources/l10n/) directory.
 
 ### File format
+
 Each entry is first given in English, then in the other language, with the two parts separated by an '=' character. For instance, a line can look like this in a German translation file:
 
 ```text
@@ -64,3 +70,4 @@ Error\ writing\ XMP\ to\ file\:_%0=Fehler beim Schreiben von XMP in die Datei: %
 ```
 
 The character encoding should be **UTF-8**. Please avoid Unicode escaping such as `\u2302`.
+

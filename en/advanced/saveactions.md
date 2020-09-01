@@ -148,15 +148,13 @@ Shortens lists of persons if there are more than 2 persons to \"et al.\".
 
 ## Remove digits
 
-Removes all digits from the field content.
-For example, `Stefan Kolb 0001` becomes `Stefan Kolb`.
+Removes all digits from the field content. For example, `Stefan Kolb 0001` becomes `Stefan Kolb`.
 
 ## Remove redundant spaces
 
-Replaces consecutive spaces with a single space in the field content.
-For example, `Stefan␣␣Kolb` becomes `Stefan␣Kolb`.
+Replaces consecutive spaces with a single space in the field content. For example, `Stefan␣␣Kolb` becomes `Stefan␣Kolb`.
 
 ## Replace tabs by space
 
-Replace tabs by space in the field content.
-For example, `Stefan\tKolb` becomes `Stefan Kolb`.
+Replace tabs by space in the field content. For example, `Stefan\tKolb` becomes `Stefan Kolb`.
+
