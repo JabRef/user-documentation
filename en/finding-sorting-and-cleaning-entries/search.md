@@ -2,52 +2,33 @@
 
 The search bar is located between the icon bar and the database tabs.
 
-![Screenshot of the search bar](../.gitbook/assets/search-bar%20%282%29.png)
+![Screenshot of the search bar](../.gitbook/assets/Search-bar-v5.2.png)
 
 To make the cursor jump to the search field, you can:
 
 * click in the search field.
-* select the menu **Search → Search**.
 * press Ctrl + F.
-
-Additionally, Ctrl + Shift + F also activates the global search setting.
-
-Searching includes two modes \(normal and advanced\), along with several settings.
 
 ## Search settings
 
-At the right of the search text field, several buttons allow for selecting some settings:
+At the right of the search text field, 2 buttons allow for selecting some settings:
 
-* New window
-  * When pressed, the results are displayed in a dedicated window.
-* Global search
-  * activated:
-    * the search query will be taken over when switching tabs
-    * the external search result window will show matches in all databases
-  * deactivated:
-    * each tab will remember its search query
-    * the external search result window will only show matches in the current database
 * Regular expressions
   * Whether or not the search query uses [regular expressions](search.md#regular-expressions).
 * Case sensitivity
   * Whether or not the search query is case sensitive.
-* Display setting
-  * _Filter_ - Displays only entries which match the search query, non-matches are hidden
-  * _Float_ -  Matching entries are moved to the top, entries which do not match the search query are grayed-out
 
-## Search modes
+## Simple search
 
-There are two search modes in JabRef.
+In a normal search, the program searches your database for all occurrences of the words in your search string, once you entered it. Only entries containing all words will be considered matches. To search for sequences of words, enclose the sequences in double quotes. For instance, the query **progress "marine aquaculture"** will match entries containing both the word "progress" and the phrase "marine aquaculture".
 
-![search](https://user-images.githubusercontent.com/1366654/35925980-5eabdefe-0c27-11e8-9a2a-c2abc2b3509b.gif)
+All entries that do not match are hidden, leaving for display the matching entries only.
 
-### Normal search
+To stop displaying the search results, just clear the search field, press Esc or click on the "Clear" \(`X`\) button.
 
-In a normal search, the program searches your database for all occurrences of the words in your search string, once you entered it. Only entries containing all words will be considered matches. To search for sequences of words, enclose the sequences in double quotes. For instance, the query **progress "marine aquaculture"** will match entries containing both the word "progress" and the phrase "marine aquaculture". All entries that don't match are hidden, leaving for display the matching entries only \(filter mode\), or are grayed-out \(float mode\). To stop displaying the search results, just clear the search field again, press Esc or click on the "Clear" \(`X`\) button.
+## Search using regular expressions <a id="advanced"></a>
 
-### Advanced search <a id="advanced"></a>
-
-#### Syntax
+### Syntax
 
 In order to search specific fields only and/or include logical operators in the search expression, a special syntax is available in which these can be specified. E.g. to search for entries whose an author contains **miller**, enter:
 
@@ -63,7 +44,7 @@ You can use `and`, `or`, `not`, and parentheses as intuitively expected:
 
 The `=` sign is actually a shorthand for `contains`. Searching for an exact match is possible using `matches` or `==`. Using `!=` tests if the search term is _not_ contained in the field \(equivalent to `not ... contains ...`\). The selection of field types to search \(required, optional, all\) is always overruled by the field specification in the search expression. If a field is not given, all fields are searched. For example, `video and year == 1932` will search for entries with any field containing `video` and the field `year` being exactly `1932`.
 
-#### Pseudo fields
+### Pseudo fields
 
 JabRef defines the following pseudo fields:
 
