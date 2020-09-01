@@ -38,14 +38,14 @@ This opens a dialog where you can select the type of reference you want to store
 
 ![Screenshot of "new entry" dialog](.gitbook/assets/getting-started-new-entry.png)
 
-For our running example we will select "Article". 
+For our running example we will select "Article".
 
 After clicking on the "Article" button, the dialog closes and the so called "Entry Editor" is opened for the newly created entry:
 
 ![Main window now showing the entry editor](.gitbook/assets/getting-started-entry-editor.png)
 
-The most important information about the references to be added can now be entered in the "Required Fields" tab. 
-"Author", "Title", "Journal", and "Year" should be self-explanatory - however, a "bibtexkey", might not be familiar to you if you have not worked with Bibtex so far. 
+The most important information about the references to be added can now be entered in the "Required Fields" tab.
+"Author", "Title", "Journal", and "Year" should be self-explanatory - however, a "bibtexkey", might not be familiar to you if you have not worked with Bibtex so far.
 Basically, the idea of the "bibtexkey" is to have an unique identifier for each entry, which allows for referencing within a document you might be creating using the stored information in your library. Moreover, also within JabRef this "key" is used for example for cross-references to other related entries or to determine file names for full-text references.
 
 The bibtexkey usually follows a global pattern and can be easily created automatically by clicking on the "generate" button next to the field.
@@ -75,7 +75,7 @@ If additional information is found you will be asked in a dialog which informati
 
 ### Adding a full text document
 
-Usually you also want to attach a reference to the full-text of a reference. For this, you can use the "file" field in the "General" tab. 
+Usually you also want to attach a reference to the full-text of a reference. For this, you can use the "file" field in the "General" tab.
 Here you can either attach a file manually, search for an already existing local file matching the bibtexkey pattern, or trying to automatically download a matching full text from the web.
 
 {% hint style="info" %}
