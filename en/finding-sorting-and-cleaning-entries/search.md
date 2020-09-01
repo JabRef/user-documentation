@@ -1,6 +1,6 @@
 # Searching within the library
 
-The search bar is located between the icon bar and the database tabs.
+The search bar is located in the icon bar.
 
 ![Screenshot of the search bar](../.gitbook/assets/search-bar-v5.2.png)
 
