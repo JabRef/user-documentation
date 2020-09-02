@@ -50,7 +50,7 @@ We are also [thinking about](https://github.com/koppor/jabref/issues/169) replac
 
 JabRef also offers to change the filenames. You can adapt the pattern at **Options → Preferences → Linked files**.
 
-![Preferences - Linked files](../.gitbook/assets/preferences-linkedfiles.png)
+![Preferences - Linked files](../.gitbook/assets/preferences-linkedfiles-5.2.png)
 
 In the section _Linked file name conventions_, you can select the _Filename format pattern_: `[bibtexkey] - [title]` or `[bibtexkey]`.
 Selecting `[bibtexkey] - [title]` results in the setting `\bibtexkey\begin{title} - \format[RemoveBrackets]{\title}\end{title}`.
