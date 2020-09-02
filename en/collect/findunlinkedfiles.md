@@ -8,29 +8,29 @@ In case you want to import many PDFs \(and some of the files are already linked 
 
 1. Go to **Lookup → Search for unlinked local files**.
 
-   ![FindUnlinkedFiles - Menu](../.gitbook/assets/findunlinkedfiles-menu-5.2.png)
+   ![FindUnlinkedFiles - Menu](../.gitbook/assets/findunlinkedfiles-menu-5.2%20%281%29.png)
 
 2. The "Find unlinked files" dialog opens.
 
-   ![FindUnlinkedFiles - Initial dialog](../.gitbook/assets/findunlinkedfiles-window-5.2.png)
+   ![FindUnlinkedFiles - Initial dialog](../.gitbook/assets/findunlinkedfiles-window-5.2%20%281%29.png)
 
 3. Choose a directory using the "Browse" button.
 4. Click on "Scan directory".
 5. The files not yet contained in the database are shown.
 
-   ![FindUnlinkedFiles - Found files](../.gitbook/assets/findunlinkedfiles-foundfiles-5.2.png)
+   ![FindUnlinkedFiles - Found files](../.gitbook/assets/findunlinkedfiles-foundfiles-5.2%20%281%29.png)
 
 6. To create entries for all files, click on "Import".
 7. For each file, an import dialog is shown.
 
-   ![FindUnlinkedFiles - 04 - metadata](../.gitbook/assets/findunlinkedfiles-04-metadata%20%281%29.png)
+   ![FindUnlinkedFiles - 04 - metadata](../.gitbook/assets/findunlinkedfiles-04-metadata%20%281%29%20%281%29.png)
 
    The dialog shows the XMP metadata stored in the PDF in the area "XMP-metadata". If this data fits your needs, select "Create entry based on XMP data". Typically, the XMP-metadata is not good enough. Choose "Create entry based on content".
 
 8. Click on "OK" to start the import.
 9. A dialog asking for the link opens.
 
-   ![FindUnlinkedFiles - 05 - LinkToFile](../.gitbook/assets/findunlinkedfiles-05-linktofile%20%281%29.png)
+   ![FindUnlinkedFiles - 05 - LinkToFile](../.gitbook/assets/findunlinkedfiles-05-linktofile%20%281%29%20%281%29.png)
 
    You can choose "Leave file in its current directory" to keep the file where it is. Typically, this is that what one wants. In case you choose "Move file to file directory", you can also choose to rename the file to the generated citation key.
 
@@ -38,12 +38,12 @@ In case you want to import many PDFs \(and some of the files are already linked 
 11. This happens for each file. After that, the "Find unlinked files" dialog is shown. Just click on "Close" to close it.
 12. The entry editor with the last imported entry is shown.
 
-    ![FindUnlinkedFiles - 08 - entry editor](../.gitbook/assets/findunlinkedfiles-08-entry-editor%20%281%29.png)
+    ![FindUnlinkedFiles - 08 - entry editor](../.gitbook/assets/findunlinkedfiles-08-entry-editor%20%281%29%20%281%29.png)
 
 13. You can now save the file. You are done.
 14. Optional: Click on "General" to see the field of the linked file.
 
-    ![FindUnlinkedFiles - 09 - entry editor - General](../.gitbook/assets/findunlinkedfiles-09-entry-editor-general%20%281%29.png)
+    ![FindUnlinkedFiles - 09 - entry editor - General](../.gitbook/assets/findunlinkedfiles-09-entry-editor-general%20%281%29%20%281%29.png)
 
 ## Further information
 
@@ -57,9 +57,9 @@ We are also [thinking about](https://github.com/koppor/jabref/issues/169) replac
 
 ### Better filenames
 
-JabRef also offers to change the filenames. You can adapt the pattern at **Options → Preferences → Linked files** ![Preferences - Import](../.gitbook/assets/preferences-import%20%281%29.png)
+JabRef also offers to change the filenames. You can adapt the pattern at **Options → Preferences → Linked files** ![Preferences - Import](../.gitbook/assets/preferences-import%20%281%29%20%281%29.png)
 
-In the section _Linked file name conventions_, you can select the _Filename format pattern_: `[bibtexkey] - [title]` or `[bibtexkey]`. ![Preferences - Import - Choose pattern](../.gitbook/assets/preferences-import-choose-pattern%20%281%29.png). Selecting `[bibtexkey] - [title]` results in the setting `\bibtexkey\begin{title} - \format[RemoveBrackets]{\title}\end{title}`.
+In the section _Linked file name conventions_, you can select the _Filename format pattern_: `[bibtexkey] - [title]` or `[bibtexkey]`. ![Preferences - Import - Choose pattern](../.gitbook/assets/preferences-import-choose-pattern%20%281%29%20%281%29.png). Selecting `[bibtexkey] - [title]` results in the setting `\bibtexkey\begin{title} - \format[RemoveBrackets]{\title}\end{title}`.
 
 This makes the filenames start with the citation key followed by the full title. In the concrete case, `\bibtexkey` only may be the better option as the described citation key already contains the title.
 
