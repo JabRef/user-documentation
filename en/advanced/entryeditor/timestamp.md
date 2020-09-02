@@ -1,4 +1,4 @@
-# Time stamped fileds
+# Timestamp field
 
 JabRef can optionally set a field to contain the date an entry was added to the database.
 
