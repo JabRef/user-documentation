@@ -15,7 +15,10 @@ Upon the first start of JabRef the main user interface is showing up the main el
 A "library" is the main file that saves all the information about your collection of references. The storage format of the file is text-based in the Bibtex standard.
 
 {% hint style="info" %}
-Advantages of the text-based format: Dedicated for the usage with LaTeX; "human readable" - quick edit can be made with every text editor; allows for easy tracking of changes using standard version control protocols like Git
+The usage of a text-based file format has some advantages: 
+- The file is "human readable" and editable with every text editor
+- the text format allows for an easy tracking of changes with every common version control protocol (e.g., git)
+- and finally: the format is dedicated for the usage with LaTeX; so you do not need to convert it to any other format but you can just directly link to your JabRef library
 {% endhint %}
 
 To create a new library, just select the "New library" menu item in the "File" menu:
@@ -40,9 +43,9 @@ After clicking on the "Article" button, the dialog closes and the so called "Ent
 
 The most important information about the references to be added can now be entered in the "Required Fields" tab.
 "Author", "Title", "Journal", and "Year" should be self-explanatory - however, a "bibtexkey", might not be familiar to you if you have not worked with Bibtex so far.
-Basically, the idea of the "bibtexkey" is to have an unique identifier for each entry, which allows for referencing within a document you might be creating using the stored information in your library. Moreover, also within JabRef this "key" is used for example for cross-references to other related entries or to determine file names for full-text references.
+Basically, the idea of the "bibtexkey" is to have an unique identifier for each entry, which allows for referencing within a document you might be creating using the stored information in your library. Moreover, also within JabRef this "key" (also called `citationkey`) is used for example for cross-references to other related entries or to determine file names for full-text references.
 
-The bibtexkey usually follows a global pattern and can be easily created automatically by clicking on the "generate" button next to the field.
+The key usually follows a global pattern and can be easily created automatically by clicking on the "generate" button next to the field.
 
 {% hint style="info" %}
 The default key pattern is `[auth][year]`, which means that Author information is followed by the year of the publication, resulting in the example in `Turing1950`. However, the key pattern is customizable to your needs. See [Configuration](https://docs.jabref.org/setup) > ["Customize the citation key generator"](https://docs.jabref.org/setup/bibtexkeypatterns) for more details.
