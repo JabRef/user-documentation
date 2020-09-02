@@ -20,8 +20,8 @@ XMP uses a subset of the Resource Description Framework \(RDF\) to store data. F
 
 The following easy minimal schema is used:
 
-* The BibTeX-key is stored as `bibtexkey`.
-* The type of the BibTeX-entry is stored as `entrytype`.
+* The citation key is stored as `bibtexkey`.
+* The type of the BibTeX entry is stored as `entrytype`.
 * `author` and `editor` are encoding as `rdf:Seq`s where the individual authors are represented as `rdf:li`s.
 * All other fields are saved using their field-name as is.
 
