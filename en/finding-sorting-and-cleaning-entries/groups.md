@@ -62,7 +62,7 @@ _Remark: outdated: The new interface \(JabRef 5.0\) displays a list of 5 choices
 
 Static groups are populated only by explicit manual assignment of entries. After creating a static group you select the entries to be assigned to it, and use either Drag and Drop or the main table's context menu to perform the assignment. To remove entries from a static group, select them and use the main table's context menu. There are no options to be configured.
 
-This method of grouping requires that all entries have a unique BibTeX key. In case of missing or duplicate BibTeX keys, the assignment of the affected entries cannot be correctly restored in future sessions.
+This method of grouping requires that all entries have a unique citation key. In case of missing or duplicate citation keys, the assignment of the affected entries cannot be correctly restored in future sessions.
 
 #### Dynamic groups
 
