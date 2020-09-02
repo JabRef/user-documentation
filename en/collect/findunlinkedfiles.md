@@ -1,10 +1,17 @@
+---
+description: JabRef can create entries from PDF files.
+---
+
 # Add entry using PDFs
 
-The simplest way to create a new entry based an a PDF file is to drag & drop the file onto the main table \(between two existing entries\). JabRef will then analyze the PDF and create a new entry.
+## For one PDF file
 
-In case you want to import many PDFs \(and some of the files are already linked to existing entries\), **Lookup → Search for unlinked local files** is your friend and the process is described below in detail.
+The simplest way to create a new entry based on a PDF file is to drag & drop the file onto the table of entries \(between two existing entries\). JabRef will then analyze the PDF and create a new entry.
 
-## Mass-link PDFs
+## For several PDF files
+
+In case you have numerous PDF files and want to convert them into new entries, JabRef can search automatically for the PDF files, let you select the relevant ones, and convert them into new entries.
+
 
 1. Go to **Lookup → Search for unlinked local files**.
 
@@ -26,7 +33,7 @@ In case you want to import many PDFs \(and some of the files are already linked 
   The windows closes, and the entry table now contains the newly-imported entries.
 
 {% hint style="danger" %}
-The imported entries may need some editing because all the information gathered from the PDF may not be accurate (see below "PDFs for which it works").
+The imported entries may need some editing because all the information gathered from the PDF files may not be accurate (see below "PDFs for which it works").
 {% endhint %}
 
 ## Further information
@@ -41,9 +48,9 @@ We are also [thinking about](https://github.com/koppor/jabref/issues/169) replac
 
 ### Better filenames
 
-JabRef also offers to change the filenames. You can adapt the pattern at **Options → Preferences → Linked files** !
+JabRef also offers to change the filenames. You can adapt the pattern at **Options → Preferences → Linked files**.
 
-[Preferences - Linked files](../.gitbook/assets/preferences-linkedfiles.png)
+![Preferences - Linked files](../.gitbook/assets/preferences-linkedfiles.png)
 
 In the section _Linked file name conventions_, you can select the _Filename format pattern_: `[bibtexkey] - [title]` or `[bibtexkey]`.
 Selecting `[bibtexkey] - [title]` results in the setting `\bibtexkey\begin{title} - \format[RemoveBrackets]{\title}\end{title}`.
