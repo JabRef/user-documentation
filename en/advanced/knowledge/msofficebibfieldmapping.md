@@ -81,7 +81,7 @@ The following fields are BibTeX/BibLaTex only fields, they have no representatio
 | paper | BIBTEX\_Paper |
 | &lt;BibTexEntryType&gt; | BIBTEX\_Entry |
 | &lt;BibTexEntryType&gt; | SourceType |
-| key \(not BibTeX-Key\) | BIBTEX\_KEY |
+| key \(not bibtexkey\) | BIBTEX\_KEY |
 | pubstate | BITEX\_Pubstate |
 
 The XML field `SourceType` contains the associated entry type from the first table, while the original BibTeX/BibLaTex entrytype is preserved in the field `BIBTEX_ENTRY`.
