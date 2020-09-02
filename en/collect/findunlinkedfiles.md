@@ -8,17 +8,17 @@ In case you want to import many PDFs \(and some of the files are already linked 
 
 1. Go to **Lookup → Search for unlinked local files**.
 
-   ![FindUnlinkedFiles - 01 - menu](../.gitbook/assets/findunlinkedfiles-01-menu%20%281%29.png)
+   ![FindUnlinkedFiles - Menu](../.gitbook/assets/findunlinkedfiles-menu-5.2.png)
 
 2. The "Find unlinked files" dialog opens.
 
-   ![FindUnlinkedFiles - 02 - initial dialog](../.gitbook/assets/findunlinkedfiles-02-initial-dialog%20%281%29.png)
+   ![FindUnlinkedFiles - Initial dialog](../.gitbook/assets/findunlinkedfiles-window-5.2.png)
 
 3. Choose a directory using the "Browse" button.
 4. Click on "Scan directory".
 5. The files not yet contained in the database are shown.
 
-   ![FindUnlinkedFiles - 03 - scan result](../.gitbook/assets/findunlinkedfiles-03-scan-result%20%281%29.png)
+   ![FindUnlinkedFiles - Found files](../.gitbook/assets/findunlinkedfiles-foundfiles-5.2.png)
 
 6. To create entries for all files, click on "Import".
 7. For each file, an import dialog is shown.
