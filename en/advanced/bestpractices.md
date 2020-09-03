@@ -17,7 +17,7 @@ See [Groups](../finding-sorting-and-cleaning-entries/groups.md).
 
 See [Library properties window](../setup/databaseproperties.md).
 
-## Use Integrity Check often
+## Use integrity check often
 
 Use **Quality -&gt; Check integrity** often to ensure that the quality of your database does not degrade.
 
