@@ -4,9 +4,7 @@ description: Tidy up automatically your database each time you save it.
 
 # Save actions
 
-Field formats can be tidied up when saving the database. That ensures your entries to have consistent formatting. In **Library → Library properties**, check **Enable save actions**. You can now select the actions to be carried out using the drop-down menus.
-
-Each action is defined by:
+Field formats can be tidied up when saving the database. That ensures your entries to have consistent formatting. In **Library → Library properties**, check **Enable save actions**. You can now select the actions to be carried out using the 2 drop-down menus located under the table. Each action is defined by:
 
 * an entry field \(upon which the action will be applied\).
 * the type of action to be carried out \(such as _HTML to LaTeX_, which converts HTML code to LaTeX code, as described in the window\).
