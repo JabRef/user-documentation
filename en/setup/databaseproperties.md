@@ -1,6 +1,6 @@
 # Library properties window
 
-Each library can have specific properties that can be modified through **Library→ LIbrary properties**\) or by right clicking on the tab of the library and choosing "LIbrary properties". These specific properties override the generic properties defined in **Options → Preferences**.
+Each library can have specific properties that can be modified through **Library→ LIbrary properties** or by right clicking on the tab of the library and choosing `Library properties`. These specific properties override the generic properties defined in **Options → Preferences**.
 
 ![](../.gitbook/assets/libraryproperties.png)
 
