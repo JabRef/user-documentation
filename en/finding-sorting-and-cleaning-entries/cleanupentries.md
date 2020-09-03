@@ -12,3 +12,4 @@ In the lower part, you can choose `Enable field formatter`. Then you can select 
 
 {% page-ref page="checkintegrity.md" %}
 
+{% page-ref page="../advanced/saveactions.md" %}
