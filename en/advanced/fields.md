@@ -91,7 +91,7 @@ To help in managing your bibliography, and extend the features of BibTeX, JabRef
 * [External files](externalfiles.md)
 * [General fields](../setup/generalfields.md)
 * [Owner](entryeditor/owner.md)
-* [Quality and grading](specialfields.md)
+* [Quality and grading](../finding-sorting-and-cleaning-entries/specialfields.md)
 * [Time stamp](entryeditor/timestamp.md)
 
 ## Define your own fields
