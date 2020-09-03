@@ -8,7 +8,7 @@ JabRef can cleanup the entries of a database. To do a cleanup of the entries, go
 
 ![The Cleanup entries dialog](../.gitbook/assets/cleanupdialog%20%281%29.png)
 
-In the lower part, you can choose `Enable field formatter`. Then you can select different [formating actions](../advanced/saveactions.md) using 2 the drop-down menus located under the table. 
+In the lower part, you can choose `Enable field formatters`. Then you can select from the  using 2 the drop-down menus located under the table. 
 
 * an entry field \(upon which the action will be applied\).
 * the type of action to be carried out \(such as HTML to LaTeX, which converts HTML code to LaTeX code, as described in the window\).​
