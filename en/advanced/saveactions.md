@@ -1,13 +1,17 @@
+---
+description: Tidy up automatically your database each time you save it.
+---
+
 # Save actions
 
-Field formatting can be tidied up when saving the database. That ensures your entries to have consistent formatting. If you check **Enable save actions** in the [Database Properties](../setup/databaseproperties.md), the list of actions can be configured.
+Field formats can be tidied up when saving the database. That ensures your entries to have consistent formatting. In **Library → Library properties**, check **Enable save actions**. You can now select the actions to be carried out using the drop-down menus.
 
 Each action is defined by:
 
 * an entry field \(upon which the action will be applied\).
 * the type of action to be carried out \(such as _HTML to LaTeX_, which converts HTML code to LaTeX code, as described in the window\).
 
-Dependent on the database mode, "Recommended for BibTeX" or "Recommended for BibLaTeX". When pressing this button, the recommended cleanups for the respective mode is called.
+A click on the "circular arrow" icon enables a set of recommanded formatting actions \(the set of actions will depend on your database type: BibTeX or biblatex\).​
 
 ## Add enclosing braces
 
