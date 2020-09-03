@@ -14,11 +14,11 @@ The status of each special field can be displayed in the table of entries as ded
 
 Like for any other field, the special field columns can be turned on and off individually in **Options → Preferences → Entry Table.**
 
-
+You can se the value of a special field by:
 
 * clicking in the column. 
 * a right-click on an entry.
-* in the menu **Edit.**
+* the menu **Edit.**
 
 ## Types of Fields
 
