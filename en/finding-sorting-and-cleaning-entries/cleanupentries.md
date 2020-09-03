@@ -11,11 +11,11 @@ JabRef can cleanup the entries of a database. To do a cleanup of the entries, go
 under the table`Enable field formatters`. Then, under the table, you can select using 2 drop-down menus: 
 
 * an entry field \(upon which the action will be applied\).
-* the type of action to be carried out \(such as HTML to LaTeX, which converts HTML code to LaTeX code, as described in the window\).​ See the [list of formatting actions](../advanced/saveactions.md).
+* the type of action to be carried out \(such as HTML to LaTeX, which converts HTML code to LaTeX code, as described in the window\).​ See the [list of formatting actions](saveactions.md).
 
 A click on the "circular arrow" icon enables a set of recommended formatting actions \(the set of actions will depend on your database type: BibTeX or biblatex\).
 
 {% page-ref page="checkintegrity.md" %}
 
-{% page-ref page="../advanced/saveactions.md" %}
+{% page-ref page="saveactions.md" %}
 
