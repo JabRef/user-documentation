@@ -1,39 +1,64 @@
-# Special Fields
+---
+description: Qualify your entries with tags that make sense to your work.
+---
 
-{% hint style="warning" %}
-This information is outdated. Please help to improve it.
-{% endhint %}
+# Mark and grade your entries
 
-Special fields offer the functionality
+A set of 6 special fields allows you to tag your entries in order to rate read papers, indicate their relevance to your the work, indicate that their quality has been assured, etc.
 
-* rate read papers
-* mark papers as relevant for the work
-* mark BibTeX entries as quality assured, and
-* prioritize unread papers.
+This feature has to be activated in **Options → Preferences → Entry Table** by checking the item `Enable special fields`.
 
-The main difference from the marked entry is that the rated entry is not floating by default and only highlight the number column. Thus, an entry may be both marked and rated.
+The status of each special field can be displayed in the table of entries as dedicated columns.
 
-Each special field may be turned on and off in the settings.
+![Six special fields can be displayed in the table of entries](../.gitbook/assets/specialfields-6columns-5.2.png)
+
+Like for any other field, the special field columns can be turned on and off individually in **Options → Preferences → Entry Table.**
+
+
+
+* clicking in the column. 
+* a right-click on an entry.
+* in the menu **Edit.**
 
 ## Types of Fields
 
-### Ranking
-
-The aim is to add a functionality to set a range of “positive” ratings. JabRef offers a rank from one to five stars to rate papers.
-
 ### Relevance
 
-An entry may be marked as relevant.
+An entry can be marked as relevant: a black-and-white star is displayed \(in the first column of the image below\).
 
-### Quality Assured
+![](../.gitbook/assets/specialfields-6columns-5.2.png)
 
-An entry may be marked as quality assured. The intention is to mark BibTeX entries, where a thorough checking of the field contents has been done.
+### Read status
+
+The read status can be set to "No" \(no symbol in the column\), to "Skimmed" \(an orange eye\) or to "read" \(a green eye\).
+
+### Ranking
+
+JabRef offers a rank from one to five yellow stars to rate your papers. By default, no rank is given.
+
+### Quality assured
+
+An entry may be marked as quality assured \(fourth column in the image below\). For example, you can mark the entries for which a thorough check of the field contents has been done.
+
+![](../.gitbook/assets/specialfields-6columns-5.2.png)
 
 ### Priority
 
-One may prioritize entries from prio3 \(low\) to prio1 \(high\). The main intention is to prioritize unread papers.
+You can set the priority of an entry from low \(red flag\) to high \(green flag\). For example, you can use it to prioritize unread papers.
 
-## Storage in the BibTeX Entry
+### Printed
 
-Internally, each special field is stored in a separate BibTeX field. If “Write values of special fields as separate fields to BibTeX” is active, these fields are also written when the database is saved. JabRef also offers synchronizing the fields with keywords. This is enabled by the setting “Synchronize with keywords”. If this setting is active, then each change in a special field is reflected in the keyword field. Vice versa, each change in a keyword also leads to a change in the special field. Additionally, when loading a the database or pasting a new entry, the keywords are used to set the special field values.
+This field allows to state is the paper has been printed or not \(sixth column in the image above\).
+
+## Storage in the library
+
+The way the special fields are stored in the libraries can be set in **Options → Preferences → Entry Table**.​
+
+By enabling _Write values of special fields as separated fields,_ each special field is stored in a separate field of the entry.
+
+If the item S_ynchronize with keywords_ is enabled, the values of the special fields are stored twice: in a separated field and as a keyword. Each change in a special field is reflected in the keyword field, and, vice versa, each change in a keyword leads to a change in the special field. Additionally, when loading a database or pasting a new entry, the keywords are used to set the special field values.
+
+
+
+ 
 
