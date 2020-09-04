@@ -13,7 +13,7 @@ description: How JabRef can make your life easier
 
 ## Sort order
 
- To make finding an entry easier in a large file, sort your entries by the citation key on save. This can be set in **Library → Library properties**.
+To make finding an entry easier in a large file, sort your entries by the citation key on save. This can be set in **Library → Library properties**.
 
 {% page-ref page="../setup/databaseproperties.md" %}
 
@@ -25,7 +25,7 @@ Use **Quality -&gt; Check integrity** often to ensure that the quality of your d
 
 ## Enable save actions
 
-To ensure that your BibTeX file look consistent,  specify your save actions in  **Library → Library properties**.
+To ensure that your library stays consistent, specify your save actions in  **Library → Library properties**.
 
 {% page-ref page="saveactions.md" %}
 
