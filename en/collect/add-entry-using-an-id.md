@@ -4,16 +4,18 @@ description: Create an entry based on an ID such as DOI or ISBN.
 
 # Add entry using an ID
 
+## From an ID to an entry
+
 Simply paste the DOI into the table of entry, and JabRef will create the new corresponding entry.
 
-For other identifiers, choose **Library → New entry.** In the lower part, there is the box "ID-based entry generator". In the field "ID type", you can select the desired identifier, e.g. "ISBN" \(it works also for DOI\). Then enter the identifier in the textbox below and press Enter to generate an entry based on the given ID \(you can also click on "Generate"\). The entry is added to your library and opened in the entry editor. In case an error occurs, a popup is shown.
+For other identifiers, choose **Library → New entry.** In the lower part of the window, there are two boxes : "ID type" and "ID". In the field "ID type", you can select the desired identifier, e.g. "ISBN" \(it works also for DOI\). Then enter the identifier in the textbox below and press Enter. That will generate an entry based on the given ID \(you can also click on "Generate"\). The entry is added to your library and opened in the entry editor. In case an error occurs, a popup is shown.
 
 ![](../.gitbook/assets/entrytype-dialog.png)
 
-> _NOTE:_ The content in the dialog depends on the selected bib database mode
+> _NOTE:_ The content in the dialog depends on the database mode
 
 {% hint style="info" %}
-Sometimes the new entry contains a `url` field. This field usually points to the URL of the book at the respective online book store. In case you buy the book using the link, the service provider \(e.g. ebook.de\) receive a commission to fund the service.
+Sometimes the new entry contains a `url` field. This field usually points to the URL of the book at the respective online book store. In case you buy the book using this link, the service provider \(e.g. ebook.de\) receive a commission to fund the service.
 {% endhint %}
 
 ## Supported databases
@@ -56,5 +58,5 @@ The [International Association for Cryptologic Research](https://www.iacr.org/) 
 
 ### **RFC**
 
-[IETF \(Internet Engineering Task Force\)](https://datatracker.ietf.org/) Datatracker is a database that "contains data about the documents, working groups, meetings, agendas, minutes, presentations, and more, of the IETF." RFC number \(Request for Comments number\) is an ID type specific to the IETF database.
+[IETF \(Internet Engineering Task Force\)](https://datatracker.ietf.org/) Datatracker is a database that "contains data about the documents, working groups, meetings, agendas, minutes, presentations, and more, of the IETF." The RFC number \(Request for Comments number\) is an ID type specific to the IETF database.
 
