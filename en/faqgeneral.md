@@ -5,16 +5,14 @@
 A: You are not obliged to cite JabRef, but we would greatly appreciate it if you do.
 
 ```text
-JabRef Development Team (2020). JabRef - An open-sourced, cross-platform citation and reference management software. Version 5.1. [https://www.jabref.org]
+JabRef Development Team (2020). JabRef - An open-source, cross-platform citation and reference management software. Version 5.1. [https://www.jabref.org]
 ```
 
 ```text
 @Software{JabRef2020,
   author    = {{JabRef Development Team}},
-  title     = {JabRef --- An open-sourced, cross-platform citation and reference management software},
+  title     = {JabRef --- An open-source, cross-platform citation and reference management software},
   year      = {2020},
-  owner     = {fdarboux},
-  timestamp = {2020-09-01},
   url       = {https://www.jabref.org/},
 }
 ```
