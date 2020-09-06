@@ -8,11 +8,14 @@ A: You are not obliged to cite JabRef, but we would greatly appreciate it if you
 JabRef Development Team (2020). JabRef - An open-source, cross-platform citation and reference management software. Version 5.1. [https://www.jabref.org]
 ```
 
+If you are using biblatex, you can use the entry type software, for bibtex use `@misc`
+
 ```text
 @Software{JabRef2020,
   author    = {{JabRef Development Team}},
   title     = {JabRef --- An open-source, cross-platform citation and reference management software},
   year      = {2020},
+  version   = {5.1},
   url       = {https://www.jabref.org/},
 }
 ```
