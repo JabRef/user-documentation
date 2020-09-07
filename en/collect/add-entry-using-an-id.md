@@ -10,7 +10,7 @@ Simply paste the DOI into the table of entry, and JabRef will create the new cor
 
 For other identifiers, choose **Library → New entry**, or click on the `New entry` button, or use the keyboard shortcut `CTRL + N`. In the lower part of the window, there are two boxes : "ID type" and "ID". In the field "ID type", you can select the desired identifier, e.g. "ISBN" \(it works also for DOI\). Then enter the identifier in the textbox below and press Enter. That will generate an entry based on the given ID \(you can also click on "Generate"\). The entry is added to your library and opened in the entry editor. In case an error occurs, a popup is shown.
 
-![](../.gitbook/assets/entrytype-dialog.png)
+![](../.gitbook/assets/entrytype-dialog%20%281%29.png)
 
 > _NOTE:_ The content in the dialog depends on the database mode.
 
@@ -28,7 +28,7 @@ ID search is carried out using the [ArXiv identifier](https://arxiv.org/help/arx
 
 ### Crossref
 
-(Crossref)[https://en.wikipedia.org/wiki/Crossref] is an official Digital Object Identifier (DOI) Registration Agency of the International DOI Foundation. 
+\(Crossref\)\[[https://en.wikipedia.org/wiki/Crossref](https://en.wikipedia.org/wiki/Crossref)\] is an official Digital Object Identifier \(DOI\) Registration Agency of the International DOI Foundation.
 
 ID search is carried out using the DOI.
 
@@ -42,7 +42,7 @@ ID search is carried out using the [International Standard Book Number](https://
 
 [DiVA \(Digitala Vetenskapliga Arkivet\)](https://info.diva-portal.org/about-diva/) is a database with publications from about [40](https://www.diva-portal.org/smash/aboutdiva.jsf) Swedish universities and research institutions.
 
-ID search is carried out using the DiVA id (diva2).
+ID search is carried out using the DiVA id \(diva2\).
 
 ### DOI
 
@@ -51,7 +51,7 @@ JabRef uses [http://dx.doi.org/](http://dx.doi.org/) \(provided by [http://cross
 ID search is carried out using the DOI.
 
 {% hint style="warning" %}
-If JabRef cannot find the reference of your DOI using this ID type, please, try the same DOI with the ID type "mEDRA". The ID type mEDRA also look for the reference corresponding to a DOI, but using another registration agency.
+If JabRef cannot find the reference of your DOI using this ID type, please, try the same DOI with the ID type "mEDRA". The ID type mEDRA looks for the reference corresponding to a DOI too, but using another registration agency.
 {% endhint %}
 
 ### IACR eprints
@@ -62,9 +62,9 @@ ID search is carried out using the Cryptology ePrint ID.
 
 ### Library of congress
 
-The Library of Congress is the research library that officially serves the United States Congress and is the *de facto* national library of the United States ([wikipedia](https://en.wikipedia.org/wiki/Library_of_Congress)).
+The Library of Congress is the research library that officially serves the United States Congress and is the _de facto_ national library of the United States \([wikipedia](https://en.wikipedia.org/wiki/Library_of_Congress)\).
 
-ID search is carried out using the [Library of Congress Control Number](https://en.wikipedia.org/wiki/Library_of_Congress_Control_Number) (LCCN).
+ID search is carried out using the [Library of Congress Control Number](https://en.wikipedia.org/wiki/Library_of_Congress_Control_Number) \(LCCN\).
 
 ### MathSciNet
 
@@ -76,11 +76,11 @@ ID search is carried out using the MR number.
 
 [Medline/Pubmed](https://www.nlm.nih.gov/bsd/medline.html) is a bibliographic database of life sciences and biomedical information. It includes bibliographic information for articles from academic journals covering medicine, nursing, pharmacy, dentistry, veterinary medicine, and health care. Medline also covers much of the literature in biology and biochemistry, as well as fields such as molecular evolution \([Wikipedia](https://en.wikipedia.org/wiki/MEDLINE)\).
 
-ID search is carried out using the [PubMed Unique Identifier](https://www.nlm.nih.gov/bsd/mms/medlineelements.html#pmid) (PMID).
+ID search is carried out using the [PubMed Unique Identifier](https://www.nlm.nih.gov/bsd/mms/medlineelements.html#pmid) \(PMID\).
 
 ### mEDRA
 
-[mEDRA](https://www.medra.org/) is the multilingual European Registration Agency of DOI, the standard persistent identifier for any form of intellectual property on a digital network. 
+[mEDRA](https://www.medra.org/) is the multilingual European Registration Agency of DOI, the standard persistent identifier for any form of intellectual property on a digital network.
 
 ID search is carried out using the DOI.
 
@@ -92,15 +92,13 @@ ID search is carried out using the [ADS Bibcode](http://adsabs.github.io/help/ac
 
 ### Title
 
-Based on the title of your publication, JabRef call Crossref, which return the corresonding DOI. Then JabRef fetches the reference based on this DOI.
+Based on the title of your publication, JabRef call Crossref, which return the corresponding DOI. Then JabRef fetches the reference based on this DOI.
 
 To return a reference, the publication needs to have a DOI.
 
 ### **RFC**
 
-[IETF \(Internet Engineering Task Force\)](https://datatracker.ietf.org/) Datatracker is a database that "contains data about the documents, working groups, meetings, agendas, minutes, presentations, and more, of the IETF." 
+[IETF \(Internet Engineering Task Force\)](https://datatracker.ietf.org/) Datatracker is a database that "contains data about the documents, working groups, meetings, agendas, minutes, presentations, and more, of the IETF."
 
-ID search is carried out using the \(Request for Comments number\) (RFC) of the IETF database.
-
-
+ID search is carried out using the \(Request for Comments number\) \(RFC\) of the IETF database.
 
