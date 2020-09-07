@@ -50,6 +50,10 @@ JabRef uses [http://dx.doi.org/](http://dx.doi.org/) \(provided by [http://cross
 
 ID search is carried out using the DOI.
 
+{% hint style="warning" %}
+If JabRef cannot find the reference of your DOI using this ID type, please, try the same DOI with the ID type "mEDRA". The ID type mEDRA also look for the reference corresponding to a DOI, but using another registration agency.
+{% endhint %}
+
 ### IACR eprints
 
 The [International Association for Cryptologic Research](https://www.iacr.org/) maintains an eprint archive to which anyone can submit papers and technical reports. These eprints are given IDs based on the year of submission, e.g. the 10th submission in 2018 gets the ID "2018/10". To get the ID, you may want to use their web search form at [https://eprint.iacr.org/search.html](https://eprint.iacr.org/search.html).
@@ -76,7 +80,7 @@ ID search is carried out using the [PubMed Unique Identifier](https://www.nlm.ni
 
 ### mEDRA
 
-(mEDRA)[https://www.medra.org/] is the multilingual European Registration Agency of DOI, the standard persistent identifier for any form of intellectual property on a digital network. 
+[mEDRA](https://www.medra.org/) is the multilingual European Registration Agency of DOI, the standard persistent identifier for any form of intellectual property on a digital network. 
 
 ID search is carried out using the DOI.
 
@@ -87,6 +91,10 @@ ID search is carried out using the DOI.
 ID search is carried out using the [ADS Bibcode](http://adsabs.github.io/help/actions/bibcode).
 
 ### Title
+
+Based on the title of your publication, JabRef call Crossref, which return the corresonding DOI. Then JabRef fetches the reference based on this DOI.
+
+To return a reference, the publication needs to have a DOI.
 
 ### **RFC**
 
