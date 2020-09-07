@@ -1,5 +1,5 @@
 ---
-description: The data format of JabRef is BibLaTeX
+description: The data format of JabRef is Bib(La)TeX
 ---
 
 # BibTeX and BibLaTeX
