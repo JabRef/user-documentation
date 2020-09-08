@@ -8,7 +8,7 @@ Although JabRef is primarily a GUI based application, it offers several command 
 This description applies since JabRef 5.0, because JabRef comes with a pre-bundled Java-Runtime Environment
 {% endhint %}
 
-Locate `JabRef.bat` \(Windows\) or `JabRef` \(Linux, Mac OS\). In the partable versions, this is `JabRef-5.0-portable_windows\JabRef\runtime\bin\JabRef.bat` and `JabRef-5.0-portable_linux\JabRef\lib\runtime\bin\JabRef`.
+Locate `JabRef.bat` \(Windows\) or `JabRef` \(Linux, Mac OS\). In the portable versions, this is `JabRef-5.0-portable_windows\JabRef\runtime\bin\JabRef.bat` and `JabRef-5.0-portable_linux\JabRef\lib\runtime\bin\JabRef`.
 
 **Do not use `JabRef\JabRef.exe` or `bin/JabRef`**
 
