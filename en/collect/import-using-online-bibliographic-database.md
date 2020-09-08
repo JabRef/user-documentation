@@ -36,7 +36,11 @@ The [Collection of Computer Science Bibliographies](https://liinwww.ira.uka.de/b
 
 > You may use Lucene syntax, available fields are: ti \(title\), au \(author\), yr \(publications year\). In short: the default operator is 'OR', use '+' and '–' operators to specify \('+'\) required and \('–'\) forbidden words. Wildcards: '?' – single letter, and '\*' – part of the word \(at the end of a word\), '~' – specified at the end of a word makes approximate match \(allows typos, but takes many seconds to process\)
 
-## Crossref
+### Crossref
+
+{% hint style="info" %}
+To be detailled.
+{% endhint %}
 
 ### DBLP
 
@@ -150,6 +154,10 @@ There are two ways of specifying which entries to download:
 [SAO/NASA Astrophysics Data System](http://www.adsabs.harvard.edu/) is an online database of over eight million astronomy and physics papers from both peer reviewed and non-peer reviewed sources. Abstracts are available free online for almost all articles, and full scanned articles are available in Graphics Interchange Format \(GIF\) and Portable Document Format \(PDF\) for older articles \([Wikipedia](https://en.wikipedia.org/wiki/Astrophysics_Data_System)\).
 
 ### SearchAll
+
+{% hint style="info" %}
+To be detailled.
+{% endhint %}
 
 ### Springer
 
