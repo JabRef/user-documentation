@@ -16,6 +16,32 @@ Once your database starts to be large, some tidy-up may be needed. JabRef can [c
 
 Hence, your database is always clean and up-to-date.
 
+{% page-ref page="edit-entry.md" %}
+
+{% page-ref page="groups.md" %}
+
+{% page-ref page="specialfields.md" %}
+
+{% page-ref page="search.md" %}
+
+{% page-ref page="getbibtexdatafromdoi.md" %}
+
+{% page-ref page="filelinks.md" %}
+
+{% page-ref page="bestpractices.md" %}
+
+{% page-ref page="cleanupentries.md" %}
+
+{% page-ref page="checkintegrity.md" %}
+
+{% page-ref page="findduplicates.md" %}
+
+{% page-ref page="mergeentries.md" %}
+
+{% page-ref page="saveactions.md" %}
+
+
+
 {% hint style="info" %}
 The following still needs to be described:
 
