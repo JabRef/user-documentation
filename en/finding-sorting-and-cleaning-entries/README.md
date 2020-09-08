@@ -1,3 +1,7 @@
+---
+description: Organizing your database with JabRef
+---
+
 # Organize
 
 ## How to find, sort, and clean entries
