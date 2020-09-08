@@ -20,22 +20,22 @@ Use the Search icon at the top left of this page to find what you're looking for
 
 ## [Organize](finding-sorting-and-cleaning-entries/)
 
-* [Edit the bibliographic information](finding-sorting-and-cleaning-entries/edit-entry.md) using a convienent user interface
+* [Edit the bibliographic information](finding-sorting-and-cleaning-entries/edit-entry.md) using a convenient user interface
 * [Group](finding-sorting-and-cleaning-entries/groups.md) your research into hierarchical collections and organize research items based on keywords/tags, search terms or your manual assignments
 * [Advanced search and filter features](finding-sorting-and-cleaning-entries/search.md)
 * [Complete and fix bibliographic data](finding-sorting-and-cleaning-entries/getbibtexdatafromdoi.md) by comparing with curated online catalogues such as Google Scholar, Springer or MathSciNet
-* Customizable citation key generator
+* [Customizable citation key generator](setup/bibtexkeypatterns.md)
 * Customize and add new metadata fields or reference types
-* [Fix common mistakes](finding-sorting-and-cleaning-entries/cleanupentries.md), automatically [upon save](finding-sorting-and-cleaning-entries/saveactions.md) if you wish.
+* [Fix common mistakes](finding-sorting-and-cleaning-entries/cleanupentries.md), automatically [upon save](finding-sorting-and-cleaning-entries/saveactions.md) if you wish
 * [Find and merge duplicates](finding-sorting-and-cleaning-entries/findduplicates.md)
 * [Attach related documents](finding-sorting-and-cleaning-entries/filelinks.md): 20 different kinds of documents supported out of the box, completely customizable and extendable
 * Automatically rename and move associated documents according to customizable rules
-* Keep track of what you read: ranking, priority, printed, quality-assured
+* [Keep track of what you read](finding-sorting-and-cleaning-entries/specialfields.md): relevancy, ranking, priority, printed, quality-assured, read status
 
 ## [Cite](cite/)
 
 * Native [BibTeX and Biblatex support](cite/bibtex-and-biblatex.md)
-* [Cite-as-you-write functionality](cite/pushtoapplications.md) for external applications such as Emacs, Kile, LyX, Texmaker, TeXstudio, Vim and WinEdt.
+* [Cite-as-you-write functionality](cite/pushtoapplications.md) for external applications such as Emacs, Kile, LyX, Texmaker, TeXstudio, Vim and WinEdt
 * Format references in one of the many thousand built-in citation styles or create your style
 * Support for [Word](cite/export-to-microsoft-word.md) and [LibreOffice/OpenOffice](cite/openofficeintegration.md) for inserting and formatting citations
 
