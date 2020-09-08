@@ -56,7 +56,7 @@ The following fields are recognized by the default bibliography styles:
 * **publisher** The publisher's name.
 * **school** The name of the academic institution where a thesis was written.
 * **series** The name of a series or set of books. When citing an entire book, the `title` field gives its title and an optional `series` field gives the name of a series or multi-volume set in which the book is published.
-* **title** The title of the work. The capitalization may depend on the bibliography style and on the language used. For words that have to be capitalized \(such as a proper noun\), enclose the word \(or its first letter\) in braces.
+* **title** The title of the work. The capitalization may depend on the bibliography style and on the language used. For words that have to be capitalized \(such as a proper noun\), enclose the word in braces.
 * **type** The type of a technical report - for example, "Research Note".
 * **volume** The volume of a journal or multivolume book.
 * **year** The year of publication or, for an unpublished work, the year it was written. Generally it should consist of four numerals, such as `1984`, although the standard styles can handle any `year` whose last four nonpunctuation characters are numerals, such as "\(about 1984\)". This field is required for most entry types.
@@ -100,7 +100,7 @@ You can create new fields by [editing \(or creating\) entry types](../setup/cust
 
 ## Hints on fields
 
-* Generally, you can use LaTeX commands inside of fields containing text. _BibTeX_ will automatically format your reference lists, and those fields that are included in the lists will be \(de\)capitalized according to your bibliography style. To ensure that certain characters remain capitalized, enclose them in braces, like in the word _{B}elgium_.
+* Generally, you can use LaTeX commands inside of fields containing text. _BibTeX_ will automatically format your reference lists, and those fields that are included in the lists will be \(de\)capitalized according to your bibliography style. To ensure that certain characters remain capitalized, enclose the respective word in braces, like in the word _{Belgium}_.
 * An institution name should be inside `{}` brackets.
 
   If the institution name also includes its abbreviation, this abbreviation should be also in `{}` brackets.
