@@ -1,7 +1,7 @@
 # Export
 
 {% hint style="info" %}
-Default export format to be detailed here.
+Default export formats to be detailed here.
 {% endhint %}
 
 

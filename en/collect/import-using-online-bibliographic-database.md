@@ -39,7 +39,7 @@ The [Collection of Computer Science Bibliographies](https://liinwww.ira.uka.de/b
 ### Crossref
 
 {% hint style="info" %}
-To be detailled.
+To be detailed.
 {% endhint %}
 
 ### DBLP
@@ -156,7 +156,7 @@ There are two ways of specifying which entries to download:
 ### SearchAll
 
 {% hint style="info" %}
-To be detailled.
+To be detailed.
 {% endhint %}
 
 ### Springer

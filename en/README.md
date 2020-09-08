@@ -11,7 +11,7 @@ Use the Search icon at the top left of this page to find what you're looking for
 ## [Collect](collect/)
 
 * Add new entries [manually](collect/add-entry-manually.md) or the based on the [reference text](collect/newentryfromplaintext.md)
-* [Search](collect/import-using-online-bibliographic-database.md) across many online scientific catalogues like CiteSeer, CrossRef, Google Scholar, IEEEXplore, INSPIRE-HEP, Medline PubMed, MathSciNet, Springer, arXiv, and zbMATH
+* [Search](collect/import-using-online-bibliographic-database.md) across many online scientific catalogues like CiteSeer, CrossRef, Google Scholar, IEEEXplore, INSPIRE, Medline/PubMed, MathSciNet, Springer, arXiv, and zbMATH
 * [Import options](collect/import/) for over 15 reference formats
 * Easily retrieve and link full-text articles
 * [Fetch complete bibliographic information based on identifiers](collect/add-entry-using-an-id.md) such as ISBN, DOI, PubMed-ID and arXiv-ID
