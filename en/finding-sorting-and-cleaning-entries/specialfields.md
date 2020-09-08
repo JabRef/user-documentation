@@ -4,7 +4,7 @@ description: Qualify your entries with tags that make sense to your work.
 
 # Mark and grade
 
-A set of 6 special fields allows you to tag your entries in order to rate read papers, indicate their relevance to your the work, indicate that their quality has been assured, etc.
+A set of 6 special fields allows you to tag your entries in order to rate read papers, indicate their relevance to your work, indicate that their quality has been assured, etc.
 
 This feature has to be activated in **Options → Preferences → Entry Table** by checking the item `Enable special fields`.
 
