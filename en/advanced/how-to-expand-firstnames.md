@@ -30,7 +30,7 @@ Now, one wants to have the full first names. In case, there is a DOI available, 
 
    ![Screenshot of Merge Entries Dialog](../.gitbook/assets/expand-firstnames-step-3.png)
 
-4. Now the first names are expaned:
+4. Now the first names are expanded:
 
    ![Screenshot of Result](../.gitbook/assets/expand-firstnames-step-4.png)
 

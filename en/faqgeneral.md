@@ -48,11 +48,11 @@ A: In **Options → Preferences → Advanced → “Remote operation”** put a 
 
 ## Q: I have an DOI/ISBN/ePrint/etc. Is it possible to create an entry directly out of this identifier?
 
-A: In **Library → New entry** you can select the type of the identifier in the field "ID type" and enter the identifier in "ID". A click on "Generate" should create the correct entry. If this does not work, try a web search.
+A: Paste the DOI in the table of entries, and JabRef will create the corresponding entry. Additionaly, in **Library → New entry** you can select the type of the identifier in the field "ID type" and enter the identifier in "ID". A click on "Generate" should create the correct entry. If this does not work, try a web search.
 
 ## Q: Why can't JabRef find any DOI/ISBN/ePrint/etc.?
 
-A: There are several reasons why JabRef cannot find your identifier online. \(E.g. one reason could be that your DOI is not listed in the [CrossRef database](https://search.crossref.org/) if you are using the CrossRef fetcher. Another reason could be that the search result for your DOI on [DOI.org](https://dx.doi.org) returns invalid BibTeX which is unable to be read by JabRef.\) Try a web search instead.
+A: There are several reasons why JabRef cannot find your identifier online \(e.g. one reason could be that your DOI is not listed in the [CrossRef database](https://search.crossref.org/) if you are using the CrossRef fetcher. Another reason could be that the search result for your DOI on [DOI.org](https://dx.doi.org) returns invalid BibTeX which is unable to be read by JabRef.\) Try a web search instead.
 
 ## Q: I miss a field _translator_, _lastfollowedon_, etc. How can I add such fields?
 
@@ -96,7 +96,7 @@ A: Take a look at “Bibliographies and citations” at the [UK List of TeX Freq
 
 ## Q: How do I export a subset to of my library to BibTeX \(or BibLaTeX\) format?
 
-A: Your JabRef library is already a file in Bib\(La\)TeX format. To export a specific subset of your library select the entries to be exported and then choose **File → Export → Save Selected as plain BibTeX...**.
+A: Your JabRef library is already a file in Bib\(La\)TeX format. To export a specific subset of your library select the entries to be exported and then choose **File → Export → Save selected as plain BibTeX...**.
 
 ## Q: How do I export a subset corresponding to my LaTeX file?
 
@@ -104,11 +104,11 @@ A: Upon compilation, LaTeX generates a file with the extension ".aux". This file
 
 ## Q: When I modify my library, I would like that JabRef performs entry cleaning automatically. How to do this?
 
-A: In **File → Library properties**, you will find a section named "Save actions". After enabling this feature, you can choose which actions should be performed for each field upon saving. That should help you keep your library tidy.
+A: In **File → Library properties**, you will find a section named "Save actions". After enabling this feature, you can choose which actions should be performed for each field upon saving. That should help you keep your library tidy. 
 
 ## Q: Search on Google scholar does not work anymore. Why?
 
-A: Google scholar is blocking "automated" crawls which generate too much traffic in a short time. JabRef already uses a two-step approach \(with the prefetched list before crawling the actual BibTeX data\) to circumvent this. However, after too much crawls JabRef is being blocked. To solve this issue, see the section _Traffic limitations_ in the [Google Scholar help]().
+A: Google scholar is blocking "automated" crawls which generate too much traffic in a short time. JabRef already uses a two-step approach \(with the prefetched list before crawling the actual BibTeX data\) to circumvent this. However, after too much crawls JabRef is being blocked. To solve this issue, see the section [_Traffic limitations_](collect/import-using-online-bibliographic-database.md#traffic-limitations) in the Google Scholar database.
 
 ## Q: JabRef does not push to vim, although I have configured the right path and server name. What is going on?
 
