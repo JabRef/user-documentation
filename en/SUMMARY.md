@@ -87,6 +87,7 @@
     * [EndNote Export Filter](advanced/knowledge/endnotefilters.md)
     * [Comparison of the Medline \(txt\), Medline \(XML\), and RIS format](advanced/knowledge/medlineris.md)
 * [Frequently Asked Questions](faqgeneral.md)
+* [Discussion Forum](https://discourse.jabref.org/)
 * [Contribute to JabRef](faqcontributing/README.md)
   * [How to Improve the Help Page](faqcontributing/how-to-improve-the-help-page.md)
   * [How to translate the JabRef User Interface](faqcontributing/how-to-translate-the-ui.md)

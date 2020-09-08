@@ -10,7 +10,7 @@ This feature has to be activated in **Options → Preferences → Entry Table** 
 
 The status of each special field can be displayed in the table of entries as dedicated columns.
 
-![Six special fields can be displayed in the table of entries](../.gitbook/assets/specialfields-6columns-5.2.png)
+![Six special fields can be displayed in the table of entries](../.gitbook/assets/specialfields-6columns-5.2%20%281%29.png)
 
 Like for any other field, the special field columns can be turned on and off individually in **Options → Preferences → Entry Table.**
 
@@ -26,7 +26,7 @@ You can se the value of a special field by:
 
 An entry can be marked as relevant: a black-and-white star is displayed \(in the first column of the image below\).
 
-![](../.gitbook/assets/specialfields-6columns-5.2.png)
+![](../.gitbook/assets/specialfields-6columns-5.2%20%283%29.png)
 
 ### Read status
 
@@ -40,7 +40,7 @@ JabRef offers a rank from one to five yellow stars to rate your papers. By defau
 
 An entry may be marked as quality assured \(fourth column in the image below\). For example, you can mark the entries for which a thorough check of the field contents has been done.
 
-![](../.gitbook/assets/specialfields-6columns-5.2.png)
+![](../.gitbook/assets/specialfields-6columns-5.2%20%282%29.png)
 
 ### Priority
 
@@ -58,8 +58,4 @@ The way the special fields are stored in the libraries can be set in **Options �
 
 * With _Write values of special fields as separated fields_ \(default configuration since version 5.2\)_,_ each special field is stored in a separate field of the entry.
 * With _Synchronize with keywords_ enabled, the values of the special fields are stored twice: in a separated field and as a keyword. Each change in a special field is reflected in the keyword field, and, vice versa, each change in a keyword leads to a change in the special field. Additionally, when loading a database or pasting a new entry, the keywords are used to set the special field values.
-
-
-
- 
 
