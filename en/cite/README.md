@@ -1,5 +1,5 @@
 ---
-description: Include your citations in your documents.
+description: Include citations of your references to your documents.
 ---
 
 # Cite
