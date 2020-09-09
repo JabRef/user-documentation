@@ -25,6 +25,7 @@ Use the Search icon at the top left of this page to find what you're looking for
 * [Advanced search and filter features](finding-sorting-and-cleaning-entries/search.md)
 * [Complete and fix bibliographic data](finding-sorting-and-cleaning-entries/getbibtexdatafromdoi.md) by comparing with curated online catalogues such as Google Scholar, Springer or MathSciNet
 * [Customizable citation key generator](setup/bibtexkeypatterns.md)
+* [Manage field names and their content](finding-sorting-and-cleaning-entries/managing-field-names-and-their-content.md)
 * Customize and add new metadata fields or reference types
 * [Fix common mistakes](finding-sorting-and-cleaning-entries/cleanupentries.md), automatically [upon save](finding-sorting-and-cleaning-entries/saveactions.md) if you wish
 * [Find and merge duplicates](finding-sorting-and-cleaning-entries/findduplicates.md)
