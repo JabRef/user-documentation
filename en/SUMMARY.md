@@ -20,6 +20,7 @@
   * [Searching within the library](finding-sorting-and-cleaning-entries/search.md)
   * [Complete information using online databases](finding-sorting-and-cleaning-entries/getbibtexdatafromdoi.md)
   * [Manage associated files](finding-sorting-and-cleaning-entries/filelinks.md)
+  * [Manage field names and their content](finding-sorting-and-cleaning-entries/managing-field-names-and-their-content.md)
   * [Best practices](finding-sorting-and-cleaning-entries/bestpractices.md)
   * [Cleanup entries](finding-sorting-and-cleaning-entries/cleanupentries.md)
   * [Check integrity](finding-sorting-and-cleaning-entries/checkintegrity.md)

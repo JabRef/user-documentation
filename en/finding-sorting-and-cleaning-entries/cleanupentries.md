@@ -15,7 +15,13 @@ under the table`Enable field formatters`. Then, under the table, you can select 
 
 A click on the "circular arrow" icon enables a set of recommended formatting actions \(the set of actions will depend on your database type: BibTeX or biblatex\).
 
+### See also
+
 {% page-ref page="checkintegrity.md" %}
 
 {% page-ref page="saveactions.md" %}
+
+{% page-ref page="managing-field-names-and-their-content.md" %}
+
+
 

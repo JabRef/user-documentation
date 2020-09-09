@@ -13,13 +13,13 @@ description: How JabRef can make your life easier
 
 ## Sort order
 
-To make finding an entry easier in a large file, sort your entries by the citation key on save. This can be set in **Library → Library properties**.
+**Library → Library properties**.
 
 {% page-ref page="../setup/databaseproperties.md" %}
 
 ## Use integrity check often
 
-Use **Quality -&gt; Check integrity** often to ensure that the quality of your database does not degrade.
+Use **Quality** → **Check integrity** often to ensure that the quality of your database does not degrade.
 
 {% page-ref page="checkintegrity.md" %}
 
