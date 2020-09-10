@@ -4,7 +4,13 @@
 This information is outdated. Please help to improve it \([how to edit a help page](../../faqcontributing/how-to-improve-the-help-page.md#editing-help-pages-directly-in-the-browser)\)​.
 {% endhint %}
 
-Opened from main window by double-clicking anywhere on the line of the entry, or selecting the entry and pressing Enter or Ctrl + D. The panel is closed by pressing Esc.
+The entry editor opens from main window (table of entries). To open it for a specific entry, you can either:
+* double-click on the entry in the table of entries
+* select the entry and press `Enter`
+* select the entry and go to the menu **View → Open entry editor**
+* select the entry and press `CTRL + E`
+
+Then you can modify the content of the entry (see below). When done, click on the top left-hand corner of the entry editor or press **ESC** to close the entry editor and go back to the table of entries.
 
 In this panel you can specify all relevant information on a single entry. The entry editor checks the type of your entry, and lists all the fields that are required, and the ones that are optional, for referring the entry with _BibTeX_. In addition, there are several fields termed _General fields_, that are common to all entry types.
 
