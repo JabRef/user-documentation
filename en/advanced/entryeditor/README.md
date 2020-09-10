@@ -4,13 +4,14 @@
 This information is outdated. Please help to improve it \([how to edit a help page](../../faqcontributing/how-to-improve-the-help-page.md#editing-help-pages-directly-in-the-browser)\)​.
 {% endhint %}
 
-The entry editor opens from main window (table of entries). To open it for a specific entry, you can either:
+The entry editor opens from [main window](../main-window.md) \(table of entries\). To open it for a specific entry, you can either:
+
 * double-click on the entry in the table of entries
 * select the entry and press `Enter`
 * select the entry and go to the menu **View → Open entry editor**
 * select the entry and press `CTRL + E`
 
-Then you can modify the content of the entry (see below). When done, click on the top left-hand corner of the entry editor or press **ESC** to close the entry editor and go back to the table of entries.
+Then you can modify the content of the entry \(see below\). When done, click on the top left-hand corner of the entry editor or press **ESC** to close the entry editor and go back to the table of entries.
 
 In this panel you can specify all relevant information on a single entry. The entry editor checks the type of your entry, and lists all the fields that are required, and the ones that are optional, for referring the entry with _BibTeX_. In addition, there are several fields termed _General fields_, that are common to all entry types.
 
@@ -80,5 +81,5 @@ By selecting this Tab, we are sending the title of the selected paper to Mr. DLi
 
 Mr. DLib is a service that calculates recommendations for you based on this title. After a short loading time the recommendations are listed in the Related Articles Tab. For detailed information see [Mr. DLibs help page](http://mr-dlib.org/information-for-users/information-about-mr-dlib-for-jabref-users/#). The following image shows the Related Articles Tab with recommendations to the selected item.
 
-![Screenshot of the Related Articles Tab](../../.gitbook/assets/sceenshot_related_articles_en%20%282%29.PNG)
+![Screenshot of the Related Articles Tab](../../.gitbook/assets/sceenshot_related_articles_en%20%282%29%20%281%29.PNG)
 
