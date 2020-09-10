@@ -14,7 +14,7 @@
     * [Custom import filters](collect/import/customimports.md)
     * [Import inspection window](collect/import/importinspectiondialog.md)
 * [Organize](finding-sorting-and-cleaning-entries/README.md)
-  * [Edit entry](finding-sorting-and-cleaning-entries/edit-entry.md)
+  * [Edit an entry](finding-sorting-and-cleaning-entries/edit-entry.md)
   * [Groups](finding-sorting-and-cleaning-entries/groups.md)
   * [Mark and grade](finding-sorting-and-cleaning-entries/specialfields.md)
   * [Searching within the library](finding-sorting-and-cleaning-entries/search.md)
