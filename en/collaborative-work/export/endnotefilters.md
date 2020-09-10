@@ -1,7 +1,7 @@
 # EndNote Export Filter
 
 {% hint style="warning" %}
-This information is outdated. Please help to improve it.
+This information is outdated. Please help to improve it \([how to edit a help page](../../faqcontributing/how-to-improve-the-help-page.md#editing-help-pages-directly-in-the-browser)\)​
 {% endhint %}
 
 ## Export from JabRef

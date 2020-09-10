@@ -1,7 +1,7 @@
 # Entry Editor
 
 {% hint style="warning" %}
-This information is outdated. Please help to improve it.
+This information is outdated. Please help to improve it \([how to edit a help page](../../faqcontributing/how-to-improve-the-help-page.md#editing-help-pages-directly-in-the-browser)\)​.
 {% endhint %}
 
 Opened from main window by double-clicking anywhere on the line of the entry, or selecting the entry and pressing Enter or Ctrl + D. The panel is closed by pressing Esc.
