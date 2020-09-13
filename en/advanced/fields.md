@@ -115,9 +115,9 @@ This feature is available through **Edit → Set/clear/rename fields**.
 
 ## Further information resources
 
-* [Reference documentation about BibTeX](http://mirrors.ircam.fr/pub/CTAN/biblio/bibtex/base/btxdoc.pdf)
+* [Reference documentation about BibTeX](https://ctan.net/biblio/bibtex/contrib/doc/btxdoc.pdf)
 * [Tame the BeaST - The B to X of BibTxX](http://texdoc.net/texmf-dist/doc/bibtex/tamethebeast/ttb_en.pdf) - long manual explaining the workings of BibTeX, the BibTeX format, and the available entry types with required and optional fields.
-* [BibTeX tips and FAQ](http://mirror.ibcp.fr/pub/CTAN/biblio/bibtex/contrib/doc/btxFAQ.pdf)
+* [BibTeX tips and FAQ](http://mirrors.ctan.org/biblio/bibtex/contrib/doc/btxFAQ.pdf)
 * [BibTeX format according to Wikibook](https://en.wikibooks.org/wiki/LaTeX/Bibliography_Management#BibTeX)
 * [BibTeX format according to Wikipedia](https://en.wikipedia.org/wiki/BibTeX#Bibliographic_information_file)
 
@@ -140,7 +140,7 @@ This feature is available through **Edit → Set/clear/rename fields**.
 ### Good references for the BibTeX "standard"
 
 * [http://texdoc.net/pkg/btxdoc](http://texdoc.net/pkg/btxdoc)
-* [http://maverick.inria.fr/~Xavier.Decoret/resources/xdkbibtex/bibtex\_summary.html](http://maverick.inria.fr/~Xavier.Decoret/resources/xdkbibtex/bibtex_summary.html)
+* [http://maverick.inria.fr/~Xavier.Decoret/resources/xdkbibtex/bibtex\_summary.html](https://maverick.inria.fr/~Xavier.Decoret/resources/xdkbibtex/bibtex_summary.html)
 
 ### BibLaTeX standard
 
