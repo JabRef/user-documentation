@@ -39,7 +39,7 @@ redirects:
   finding-sorting-and-cleaning-entries/import-using-publication-identifiers/isbntobibtex: ./collect/add-entry-using-an-id.md
   finding-sorting-and-cleaning-entries/import-using-publication-identifiers/doitobibtex: ./collect/add-entry-using-an-id.md
   finding-sorting-and-cleaning-entries/import-using-publication-identifiers/iacrtobibtex: ./collect/add-entry-using-an-id.md
-  finding-sorting-and-cleaning-entries/import-using-online-bibliographic-database/inspire: ./collect/import-using-online-bibliographic-database.md#inspire
+  finding-sorting-and-cleaning-entries/import-using-online-bibliographic-database/inspire: ./collect/import-using-online-bibliographic-database.md
   finding-sorting-and-cleaning-entries/findduplicatesallora: ./finding-sorting-and-cleaning-entries/findduplicates.md
   EntryEditor: ./advanced/entryeditor/README.md
   fields/setclearrenamefields: ./advanced/fields.md  
