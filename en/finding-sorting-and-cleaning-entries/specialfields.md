@@ -16,7 +16,7 @@ Like for any other field, the special field columns can be turned on and off ind
 
 You can se the value of a special field by:
 
-* clicking in the column. 
+* clicking in the column.
 * a right-click on an entry.
 * the menu **Edit.**
 

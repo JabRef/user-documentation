@@ -104,7 +104,7 @@ A: Upon compilation, LaTeX generates a file with the extension ".aux". This file
 
 ## Q: When I modify my library, I would like that JabRef performs entry cleaning automatically. How to do this?
 
-A: In **File → Library properties**, you will find a section named "Save actions". After enabling this feature, you can choose which actions should be performed for each field upon saving. That should help you keep your library tidy. 
+A: In **File → Library properties**, you will find a section named "Save actions". After enabling this feature, you can choose which actions should be performed for each field upon saving. That should help you keep your library tidy.
 
 ## Q: Search on Google scholar does not work anymore. Why?
 
