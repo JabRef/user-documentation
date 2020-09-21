@@ -73,7 +73,7 @@ Pressing Ctrl + Shift + K causes the citation key for your entry to be copied to
 
 Press Ctrl + G or the 'gen key' button \(the magic wand\) to autogenerate a citation key for your entry based on the contents of its required fields.
 
-For more information on how JabRef generates citation keys, see [Customizing the citation key generator](../../setup/bibtexkeypatterns.md).
+For more information on how JabRef generates citation keys, see [Customizing the citation key generator](../../setup/citationkeypatterns.md).
 
 ## Related Articles Tab
 

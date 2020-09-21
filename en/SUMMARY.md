@@ -40,7 +40,7 @@
     * [Custom export filters](collaborative-work/export/customexports.md)
     * [EndNote Export Filter](collaborative-work/export/endnotefilters.md)
 * [Configuration](setup/README.md)
-  * [Customize the citation key generator](setup/bibtexkeypatterns.md)
+  * [Customize the citation key generator](setup/citationkeypatterns.md)
   * [Customize entry types](setup/customentrytypes.md)
   * [Customize general fields](setup/generalfields.md)
   * [Customize key bindings](setup/customkeybindings.md)

@@ -47,7 +47,7 @@ The most important information about the references to be added can now be enter
 The key usually follows a global pattern and can be easily created automatically by clicking on the "generate" button next to the field.
 
 {% hint style="info" %}
-The default key pattern is `[auth][year]`, which means that Author information is followed by the year of the publication, resulting in the example in `Turing1950`. However, the key pattern is customizable to your needs. See [Configuration](https://docs.jabref.org/setup) &gt; ["Customize the citation key generator"](https://docs.jabref.org/setup/bibtexkeypatterns) for more details.
+The default key pattern is `[auth][year]`, which means that Author information is followed by the year of the publication, resulting in the example in `Turing1950`. However, the key pattern is customizable to your needs. See [Configuration](https://docs.jabref.org/setup) &gt; ["Customize the citation key generator"](https://docs.jabref.org/setup/citationkeypatterns) for more details.
 {% endhint %}
 
 After entering some information, you can see on the right side of the entry editor a preview of the bibliographic data:
