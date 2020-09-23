@@ -18,7 +18,7 @@ The currently available entry types are listed in the left panel.
 
 To add a new entry type, you must enter a name for it in the text field below the type list, and click **Add**. The new entry type will be added to the list, and selected for modification.
 
-To remove a custom entry type, select it and click the trash icon. This operation will only be available for custom entry types that are not merely modifications of standard types. It is not possible to remove a standard entry type. While it's possible to remove them in the dialog, they will be readded on reopening the dialog.
+To remove a custom entry type, select it and click the trash icon. This operation is only available for custom entry types that are not merely modifications of standard types. It is not possible to remove a standard entry type.
 
 ## Editing entry types
 
@@ -33,4 +33,3 @@ To change the order of the fields you can use drag and drop.
 ### Either/or fields
 
 Certain entry types have an either-or condition in their required fields. For instance, a _book_ entry is complete with either the _author_ or the _editor_ field, or both. To indicate such a condition in a custom entry type, you should add a field named as the set of alternative fields separated by slashes, for instance _author/editor_ indicates the condition mentioned above for the _book_ entry type.
-
