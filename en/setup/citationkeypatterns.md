@@ -76,11 +76,11 @@ In addition to the special field markers, most BibTeX, BibLaTeX, and JabRef fiel
 * **`[author]`** `Ada Lovelace and Charles Babbage` becomes `AdaLovelaceandCharlesBabbage`
 * **`[date]`** `2020-09-25`
 * **`[day]`** `02` becomes `2`
-* **`[groups]`** The group or groups in JabRef. Subgroup `AppleTrees` and group `Trees` becomes `AppleTreesTrees`
+* **`[groups]`** The groups or sgroups in JabRef. Subgroup `AppleTrees` and group `Trees` becomes `AppleTreesTrees`
 * **`[month]`** `03` becomes `March` 
 * **`[year]`** `2020`
 
-**Note:** More fields can be found in the source-code but their use can lead to unexpected result and is in general discouraged. E.g., **`[abstract]`** can produce inconveniently long keys.
+**Note:** More fields can be found in the source-code, but their use can lead to unexpected results and is, in general, discouraged. E.g., **`[abstract]`** can produce inconveniently long keys.
 
 ## Modifiers
 
