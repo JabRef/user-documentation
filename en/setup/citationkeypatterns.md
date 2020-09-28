@@ -64,7 +64,7 @@ JabRef considers the following words to be [function words](https://en.wikipedia
 #### Other key patterns
 
 * **`[firstpage]`**: The number of the first page of the publication \(Caution: this will return the lowest number found in the pages field, i.e. for `7,41,73--97` it will return `7`.\)
-* **`[pageprefix]`**: The non-digit prefix of pages \(like "L" for L7\) or "" if no non-digit prefix exists \(like "" for `7,41,73--97`\) 
+* **`[pageprefix]`**: The non-digit prefix of pages \(like "L" for L7\) or "" if no non-digit prefix exists \(like "" for `7,41,73--97`\)
 * **`[keywordN]`**: Keyword number N from the “keywords” field, assuming keywords are separated by commas or semicolons
 * **`[lastpage]`**: The number of the last page of the publication \(See the remark on `firstpage`\)
 * **`[shortyear]`**: The last 2 digits of the publication year
@@ -77,7 +77,7 @@ In addition to the special field markers, most BibTeX, biblatex, and JabRef fiel
 * **`[date]`** `2020-09-25`
 * **`[day]`** `02` becomes `2`
 * **`[groups]`** The groups or sgroups in JabRef. Subgroup `AppleTrees` and group `Trees` becomes `AppleTreesTrees`
-* **`[month]`** `03` becomes `March` 
+* **`[month]`** `03` becomes `March`
 * **`[year]`** `2020`
 
 **Note:** More fields can be found in the source-code, but their use can lead to unexpected results and is, in general, discouraged. E.g., **`[abstract]`** can produce inconveniently long keys.
