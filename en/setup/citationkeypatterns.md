@@ -38,7 +38,7 @@ Several special field markers are offered, which extract only a specific part of
 
 **Note:** If there is no author \(as in the case of an edited book\), then all of the above **`[auth...]`** markers will use the editor\(s\) \(if any\) as a fallback. Thus, the editor\(s\) of a book with no author will be treated as the author\(s\) for label-generation purposes. If you do not want this behavior, i.e. you require a marker which expands to nothing if there is no author, use **`pureauth`** instead of **`auth`** in the above codes. For example, **`[pureauth]`**, or **`[pureauthors3]`**.
 
-#### Editor-related key patterns
+#### Editor-related field markers
 
 * **`[edtr]`**: The last name of the first editor
 * **`[edtrIniN]`**: The beginning of each editor's last name, using at most N characters
@@ -52,7 +52,7 @@ Several special field markers are offered, which extract only a specific part of
 * **`[edtrForeIni]`**: The forename initial of the first editor
 * **`[editorLastForeIni]`**: The forename initial of the last editor
 
-#### Title-related key patterns
+#### Title-related field markers
 
 * **`[shorttitle]`**: The first 3 words of the title, ignoring any function words \(see below\). For example, `An awesome paper on JabRef` becomes `AwesomePaperJabref`
 * **`[veryshorttitle]`**: The first word of the title, ignoring any function words \(see below\). For example, `An awesome paper on JabRef` becomes `Awesome`
@@ -61,7 +61,7 @@ Several special field markers are offered, which extract only a specific part of
 
 JabRef considers the following words to be [function words](https://en.wikipedia.org/wiki/Function_word): "a", "an", "the", "above", "about", "across", "against", "along", "among", "around", "at", "before", "behind", "below", "beneath", "beside", "between", "beyond", "by", "down", "during", "except", "for", "from", "in", "inside", "into", "like", "near", "of", "off", "on", "onto", "since", "to", "toward", "through", "under", "until", "up", "upon", "with", "within", "without", "and", "but", "for", "nor", "or", "so", "yet".
 
-#### Other key patterns
+#### Other field markers
 
 * **`[firstpage]`**: The number of the first page of the publication \(Caution: this will return the lowest number found in the pages field, i.e. for `7,41,73--97` it will return `7`.\)
 * **`[pageprefix]`**: The non-digit prefix of pages \(like "L" for L7\) or "" if no non-digit prefix exists \(like "" for `7,41,73--97`\)
