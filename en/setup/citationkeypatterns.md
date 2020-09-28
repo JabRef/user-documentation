@@ -71,7 +71,7 @@ JabRef considers the following words to be [function words](https://en.wikipedia
 
 #### BibTeX fields
 
-In addition to the special field markers, most BibTeX, BibLaTeX, and JabRef field names can be used directly. If you regularly use a field marker not on this list, you are encouraged to add it.
+In addition to the special field markers, most BibTeX, biblatex, and JabRef field names can be used directly. If you regularly use a field marker not on this list, you are encouraged to add it.
 
 * **`[author]`** `Ada Lovelace and Charles Babbage` becomes `AdaLovelaceandCharlesBabbage`
 * **`[date]`** `2020-09-25`
