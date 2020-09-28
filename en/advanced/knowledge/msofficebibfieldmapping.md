@@ -130,7 +130,7 @@ The following fields are treated as follows during export:
 | journal | JournalName |
 | journaltitle | JournalName |
 | month | Month |
-| date | year, month, day  \(if date is in ISO 8601 form |
+| date | year, month, day  \(if date is in ISO 8601 form\) |
 | issue | issue |
 | isbn | StandardNumber |
 | issn | StandardNumber |

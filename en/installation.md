@@ -70,16 +70,13 @@ In the background, JabRef uses [JavaFX](https://en.wikipedia.org/wiki/JavaFX). A
 {% endtab %}
 
 {% tab title="macOS" %}
-
 ### JabRef is slow/hangs sometimes
 
 Some users with macOS Sierra have reported freezes when using JabRef. It seems this is a bug in the networking part of Java on macOS. [Adding a host mapping for 127.0.0.1](https://dzone.com/articles/macos-sierra-problems-with-javanetinetaddress-getl) seems to solve these issues.
 
 ### Some characters are not displayed in the main table \(math characters or some upper-cased letter\)
 
-This is one the one hand a font problem and seond a lognstanding [Java(fx) bug](https://bugs.openjdk.java.net/browse/JDK-8176835)
-This might be a problem related to the font you are using. You can download some other font that supports mathematical alphanumeric symbols, for example, FreeSerif or Cambria Math. A list of fonts supporting Math Unicode blocks is available at [http://www.fileformat.info/info/unicode/block/mathematical\_alphanumeric\_symbols/fontsupport.htm](http://www.fileformat.info/info/unicode/block/mathematical_alphanumeric_symbols/fontsupport.htm).
-
+This is one the one hand a font problem and seond a lognstanding [Java\(fx\) bug](https://bugs.openjdk.java.net/browse/JDK-8176835) This might be a problem related to the font you are using. You can download some other font that supports mathematical alphanumeric symbols, for example, FreeSerif or Cambria Math. A list of fonts supporting Math Unicode blocks is available at [http://www.fileformat.info/info/unicode/block/mathematical\_alphanumeric\_symbols/fontsupport.htm](http://www.fileformat.info/info/unicode/block/mathematical_alphanumeric_symbols/fontsupport.htm).
 {% endtab %}
 {% endtabs %}
 
