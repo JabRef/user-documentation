@@ -80,7 +80,7 @@ In addition to the special field markers, most BibTeX, biblatex, and JabRef fiel
 * **`[month]`** `03` becomes `March`
 * **`[year]`** `2020`
 
-**Note:** More fields can be found in the source-code, but their use can lead to unexpected results and is, in general, discouraged. E.g., **`[abstract]`** can produce inconveniently long keys.
+**Note:** More default fields can be found in the source code of [InternalField](https://github.com/JabRef/jabref/blob/694a8760377b5517958bc3974bc63b5d8a14a35d/src/main/java/org/jabref/model/entry/field/InternalField.java), [StandardField](https://github.com/JabRef/jabref/blob/694a8760377b5517958bc3974bc63b5d8a14a35d/src/main/java/org/jabref/model/entry/field/StandardField.java), [SpecialField](https://github.com/JabRef/jabref/blob/694a8760377b5517958bc3974bc63b5d8a14a35d/src/main/java/org/jabref/model/entry/field/SpecialField.java), and [IEEEField](https://github.com/JabRef/jabref/blob/694a8760377b5517958bc3974bc63b5d8a14a35d/src/main/java/org/jabref/model/entry/field/IEEEField.java), but their use can lead to unexpected results and is, in general, discouraged. E.g., **`[abstract]`** can produce inconveniently long keys.
 
 ## Modifiers
 
