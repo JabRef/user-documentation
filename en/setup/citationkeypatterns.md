@@ -74,7 +74,7 @@ JabRef considers the following words to be [function words](https://en.wikipedia
 * **`[lastpage]`**: The number of the last page of the publication \(See the remark on `firstpage`\)
 * **`[shortyear]`**: The last 2 digits of the publication year
 
-#### BibTeX fields
+#### Bibentry fields
 
 In addition to the special field markers, most BibTeX, biblatex, and JabRef field names can be used directly. If you regularly use a field name not on this list, you are encouraged to add it.
 
