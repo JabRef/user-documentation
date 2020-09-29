@@ -21,33 +21,34 @@ Several special field markers are offered, which extract only a specific part of
 #### Author-related field markers
 
 * **`[auth]`**: The last name of the first author
-* **`[authors]`**: The last name of all authors
-* **`[authorLast]`**: The last name of the last author
-* **`[authorsN]`**: The last name of up to `N` authors. If there are more authors, `EtAl` is appended
-* **`[authorsAlpha]`**: Corresponds to the BibTeX style “alpha”. One author: First three letters of the last name. Two to four authors: First letters of last names concatenated. More than four authors: First letters of last names of first three authors concatenated. `+` at the end
-* **`[authIniN]`**: The beginning of each author's last name, using at most `N` characters
-* **`[authorIni]`**: The first 5 characters of the first author's last name, and the last name initials of the remaining authors
-* **`[authN]`**: The first `N` characters of the first author's last name
-* **`[authN_M]`**: The first `N` characters of the Mth author's last name
-* **`[auth.auth.ea]`**: The last name of the first two authors, and `.ea` if there are more than two
-* **`[auth.etal]`**: The last name of the first author, and the last name of the second author if there are two authors or `.etal` if there are more than two
 * **`[authEtAl]`**: The last name of the first author, and the last name of the second author if there are two authors or `EtAl` if there are more than two. This is similar to `auth.etal`. The difference is that the authors are not separated by `.` and in case of more than 2 authors `EtAl` instead of `.etal` is appended
-* **`[authshort]`**: The last name if one author is given; the first character of up to three authors' last names if more than one author is given. A plus character is added, if there are more than three authors
+* **`[authFirstFull]`**: Get the `von` part and last name of the first author.
 * **`[authForeIni]`**: The forename initial of the first author
+* **`[authIniN]`**: The beginning of each author's last name, using at most `N` characters
+* **`[authN]`**: The first `N` characters of the first author's last name
+* **`[authN_M]`**: The first `N` characters of the `Mth author's last name
+* **`[authorIni]`**: The first 5 characters of the first author's last name, and the last name initial of the remaining authors
+* **`[authorLast]`**: The last name of the last author
 * **`[authorLastForeIni]`**: The forename initial of the last author
+* **`[authors]`**: The last name of all authors
+* **`[authorsAlpha]`**: Corresponds to the BibTeX style “alpha”. One author: First three letters of the last name. Two to four authors: First letters of last names concatenated. More than four authors: First letters of last names of first three authors concatenated. `+` at the end
+* **`[authorsN]`**: The last name of up to `N` authors. If there are more authors, `EtAl` is appended
+* **`[authshort]`**: The last name if one author is given; the first character of up to three authors' last names if more than one author is given. A plus character is added, if there are more than three authors
+* **`[auth.auth.ea]`**: The last name of the first two authors, separated by `.`. If there are more than two authors, adds `.ea`
+* **`[auth.etal]`**: The last name of the first author, and the last name of the second author if there are two authors or `.etal` if there are more than two
 
 **Note:** If there is no author \(as in the case of an edited book\), then all of the above **`[auth...]`** markers will use the editor\(s\) \(if any\) as a fallback. Thus, the editor\(s\) of a book with no author will be treated as the author\(s\) for label-generation purposes. If you do not want this behavior, i.e. you require a marker which expands to nothing if there is no author, use **`pureauth`** instead of **`auth`** in the above codes. For example, **`[pureauth]`**, or **`[pureauthors3]`**.
 
 #### Editor-related field markers
 
 * **`[edtr]`**: The last name of the first editor
-* **`[edtrIniN]`**: The beginning of each editor's last name, using at most N characters
+* **`[edtrIniN]`**: The beginning of each editor's last name, using at most `N` characters
 * **`[editors]`**: The last name of all editors
 * **`[editorLast]`**: The last name of the last editor
 * **`[editorIni]`**: The first 5 characters of the first editor's last name, and the last name initials of the remaining editors
 * **`[edtrN]`**: The first `N` characters of the first editor's last name
 * **`[edtrN_M]`**: The first `N` characters of the `M`th editor's last name
-* **`[edtr.edtr.ea]`**: The last name of the first two editors, and `.ea` if there are more than two
+* **`[edtr.edtr.ea]`**: The last name of the first two editors, separated by `.`. If there are more than two editors, adds `.ea`
 * **`[edtrshort]`**: The last name if one editor is given; the first character of up to three editors' last names if more than one editor is given. A plus character is added, if there are more than three editors
 * **`[edtrForeIni]`**: The forename initial of the first editor
 * **`[editorLastForeIni]`**: The forename initial of the last editor
@@ -55,17 +56,21 @@ Several special field markers are offered, which extract only a specific part of
 #### Title-related field markers
 
 * **`[shorttitle]`**: The first 3 words of the title, ignoring any function words \(see below\). For example, `An awesome paper on JabRef` becomes `AwesomePaperJabref`
+* **`[shorttitleINI]`**:
 * **`[veryshorttitle]`**: The first word of the title, ignoring any function words \(see below\). For example, `An awesome paper on JabRef` becomes `Awesome`
 * **`[camel]`**: Capitalize and concatenate all the words of the title. For example, `An awesome paper on JabRef` becomes `AnAwesomePaperOnJabref`
 * **`[title]`**: Capitalize all the significant words of the title, and concatenate them. For example, `An awesome paper on JabRef` becomes `AnAwesomePaperonJabref`
+* **`[fulltitle]`**: The title with unchanged capitalization.
 
 JabRef considers the following words to be [function words](https://en.wikipedia.org/wiki/Function_word): "a", "an", "the", "above", "about", "across", "against", "along", "among", "around", "at", "before", "behind", "below", "beneath", "beside", "between", "beyond", "by", "down", "during", "except", "for", "from", "in", "inside", "into", "like", "near", "of", "off", "on", "onto", "since", "to", "toward", "through", "under", "until", "up", "upon", "with", "within", "without", "and", "but", "for", "nor", "or", "so", "yet".
 
 #### Other field markers
 
+* **`[entrytype]`**: The type of the entry, e.g., `Article`, `InProceedings`, etc
 * **`[firstpage]`**: The number of the first page of the publication \(Caution: this will return the lowest number found in the pages field, i.e. for `7,41,73--97` it will return `7`.\)
 * **`[pageprefix]`**: The non-digit prefix of pages \(like `L` for `L7`\) or "" if no non-digit prefix exists \(like "" for `7,41,73--97`\)
 * **`[keywordN]`**: Keyword number `N` from the “keywords” field, assuming keywords are separated by commas or semicolons
+* **`[keywordsN]`**: Up to `N` keywords from the "keywords" field.
 * **`[lastpage]`**: The number of the last page of the publication \(See the remark on `firstpage`\)
 * **`[shortyear]`**: The last 2 digits of the publication year
 
