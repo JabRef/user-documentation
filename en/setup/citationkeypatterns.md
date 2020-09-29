@@ -106,7 +106,7 @@ Generally, modifiers are applied in the order they are specified. In the followi
     * **`[auth:upper]`** expands the last name of the first author in uppercase
 * **`:capitalize`**: Changes the first character of each word to uppercase, all other characters are converted to lowercase. For example, `an example title` will be converted to `An Example Title`
 * **`:titlecase`**: Changes the first character of all normal words to uppercase, all function words \(see above\) are converted to lowercase. Example: `example title with An function Word` will be converted to `Example Title with an Function Word`
-* **`:truncateN`**: Truncates the string after the N:th character and trims any trailing whitespaces. For example, **`[fulltitle:truncate3]`** will be convert `A Title` to `A T`.
+* **`:truncateN`**: Truncates the string after the N:th character and trims any trailing whitespaces. For example, **`[fulltitle:truncate3]`** will convert `A Title` to `A T`.
 * **`:sentencecase`**: Changes the first character of the first word to uppercase, all remaining words are converted to lowercase. Example: `an Example Title` will be converted to `An example title`
 * **`:regex("pattern", "replacement")`**: Applies regular expression pattern matching and replacement. For example,
   * **`[auth.etal:regex("\\.etal","EtAl"):regex("\\.","And")]`**, the first `regex()` replaces `.etal` with `EtAl`. The second `regex()` replaces the `.` between entries with two authors with `And
