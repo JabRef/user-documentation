@@ -1,6 +1,6 @@
 # Manage associated files
 
-JabRef lets you link up your entries with files of any type stored on your system. Thereby, it uses the field `file`, which contains a list of linked files. Each entry can have an arbitrary number of file links, and each linked file can be opened quickly from JabRef. The fields `url` and `doi` are used as links to documents on the web in the form of an URL or a DOI identifier respectively. See [External Files](../advanced/externalfiles.md) for an explanation.
+JabRef lets you link up your entries with files of any type stored on your system. Thereby, it uses the field `file`, which contains a list of linked files. Each entry can have an arbitrary number of file links, and each linked file can be opened quickly from JabRef. The fields `url` and `doi` are used as links to documents on the web in the form of an URL or a DOI identifier, respectively \(see [URL and DOI in JabRef](../advanced/externalfiles.md)\).
 
 In BibTeX terms, the file links are stored as text in the field `file`. From within JabRef, however, they appear as an editable list of links accessed from the entry editor along with other BibTeX fields.
 
@@ -22,7 +22,7 @@ JabRef offers the following directory settings:
 
 One of these settings is required. Mostly the "Main file directory" is enough.
 
-JabRef uses these 3 directories to search for the files. JabRef starts in the user-specific file directory, then the general file directory, and, finally, the main file directory​
+JabRef uses these 3 directories to search for the files: JabRef starts in the user-specific file directory, then the general file directory, and, finally, the main file directory​
 
 JabRef enables setting a directory per database. When sharing a library across multiple persons, each user might have a different directory. Either each user can the set his directory in the "Main file directory". In case the group also shares papers and thus there are two directories \(the private one and a group-shared one\), one can set a directory within the library \(the "General file directory"\). In case a user has a different location of the shared folder \(e.g., different paths on Linux and Windows\), he can use the "User-specific file directory". This settings is persisted in the `bib` file in a way that it does not overwrite the setting of another user. For this, JabRef uses the username of the currently logged in user \(`-<loginname>` is used as suffix in the `jabref-meta` field\). So, both `mary` and `aileen` can set a different user-specific file directory.
 
@@ -36,9 +36,7 @@ Relative file directories obviously only work in the library properties fo a bib
 
 ## Auto linking files
 
-If you have a file within or below one of your file directories with an extension matching one of the defined external file types, and a name starting with \(or matching\) an entry's citation key, the file can be autolinked by clicking on the **Auto** button in the entry editor.
-
-![auto link file](../.gitbook/assets/entryeditor-autolinkfile%20%282%29.png)
+If you have a file within or below one of your file directories with an extension matching one of the defined external file types, and a name starting with \(or matching\) an entry's citation key, the file can be autolinked. JabRef will detect the file and display a "suitcase" icon in the entry editor, next to the filename. Click on the "suitcase" icon to link this file to the entry.
 
 The rules for which file names can be autolinked to a citation key can be set up in **Options →** **Preferences → Linked files**, section _Autolink files_.
 
