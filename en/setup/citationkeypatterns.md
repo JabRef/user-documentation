@@ -22,7 +22,7 @@ Several special field markers are offered, which extract only a specific part of
 
 * **`[auth]`**: The last name of the first author
 * **`[authEtAl]`**: The last name of the first author, and the last name of the second author if there are two authors or `EtAl` if there are more than two. This is similar to `auth.etal`. The difference is that the authors are not separated by `.` and in case of more than 2 authors `EtAl` instead of `.etal` is appended
-* **`[authFirstFull]`**: Get the `von` part and last name of the first author.
+* **`[authFirstFull]`**: Get the `von` part and last name of the first author
 * **`[authForeIni]`**: The forename initial of the first author
 * **`[authIniN]`**: The beginning of each author's last name, using at most `N` characters
 * **`[authN]`**: The first `N` characters of the first author's last name
