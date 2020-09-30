@@ -31,7 +31,10 @@ Several special field markers are offered, which extract only a specific part of
 * **`[authorLast]`**: The last name of the last author
 * **`[authorLastForeIni]`**: The forename initial of the last author
 * **`[authors]`**: The last name of all authors
-* **`[authorsAlpha]`**: Corresponds to the BibTeX style “alpha”. One author: First three letters of the last name. Two to four authors: First letters of last names concatenated. More than four authors: First letters of last names of first three authors concatenated. `+` at the end
+* **`[authorsAlpha]`**: Corresponds to the BibTeX style “alpha”,
+    * One author: First three letters of the last name
+    * Two to four authors: First letters of last names concatenated
+    * More than four authors: First letters of last names of first three authors concatenated with `+` at the end
 * **`[authorsN]`**: The last name of up to `N` authors. If there are more authors, `EtAl` is appended
 * **`[authshort]`**: The last name if one author is given; the first character of up to three authors' last names if more than one author is given. A plus character is added, if there are more than three authors
 * **`[auth.auth.ea]`**: The last name of the first two authors, separated by `.`. If there are more than two authors, adds `.ea`
@@ -70,7 +73,7 @@ JabRef considers the following words to be [function words](https://en.wikipedia
 * **`[firstpage]`**: The number of the first page of the publication \(Caution: this will return the lowest number found in the pages field, i.e. for `7,41,73--97` it will return `7`.\)
 * **`[pageprefix]`**: The non-digit prefix of pages \(like `L` for `L7`\) or "" if no non-digit prefix exists \(like "" for `7,41,73--97`\)
 * **`[keywordN]`**: Keyword number `N` from the “keywords” field, assuming keywords are separated by commas or semicolons
-* **`[keywordsN]`**: Up to `N` keywords from the "keywords" field.
+* **`[keywordsN]`**: Up to `N` keywords from the "keywords" field
 * **`[lastpage]`**: The number of the last page of the publication \(See the remark on `firstpage`\)
 * **`[shortyear]`**: The last 2 digits of the publication year
 
