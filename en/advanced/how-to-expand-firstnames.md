@@ -1,6 +1,6 @@
-# How to expand first names of a BibTeX entry
+# How to expand first names of a Bib\(la\)TeX entry
 
-Sometimes, one has a BibTeX entry with abbreviated short names:
+Sometimes, one has a Bib\(la\)TeX entry with abbreviated short names:
 
 ```text
 @Article{Eshuis_2015,

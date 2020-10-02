@@ -2,7 +2,7 @@
 
 XMP is a standard created by Adobe Systems for storing metadata \(data about data\) in files. An well known example for metadata are MP3 tags, which can be used to describe artist, album and song name of a MP3 file. Adding metadata to MP3 helps other people to identify the songs correctly independent of file-name and can provide means for software \(MP3 players for instance\) to sort and group songs.
 
-With XMP-support the JabRef team tries to bring the advantages of metadata to the world of reference managers. You can now choose to "Write XMP" metadata in the General Tab of JabRef, which will put all the BibTeX information into the PDF. If you then email this PDF to a colleague she can just drag the file into JabRef and all information that you entered will be available to her.
+With XMP-support the JabRef team tries to bring the advantages of metadata to the world of reference managers. You can now choose to "Write XMP" metadata in the General Tab of JabRef, which will put all the Bib\(la\)TeX information into the PDF. If you then email this PDF to a colleague she can just drag the file into JabRef and all information that you entered will be available to her.
 
 ## Usage
 
@@ -20,7 +20,7 @@ XMP uses a subset of the Resource Description Framework \(RDF\) to store data. F
 
 The following easy minimal schema is used:
 
-* The citation key is stored as `bibtexkey`.
+* The citation key is stored as `citationkey`.
 * The type of the BibTeX entry is stored as `entrytype`.
 * `author` and `editor` are encoding as `rdf:Seq`s where the individual authors are represented as `rdf:li`s.
 * All other fields are saved using their field-name as is.

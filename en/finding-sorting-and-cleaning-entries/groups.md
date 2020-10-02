@@ -1,6 +1,6 @@
 # Groups
 
-Groups allow to structure a BibTeX database in a tree-like way that is similar to organizing files on disk in directories and subdirectories. The two main differences are:
+**independent**Groups allow to structure a bibliographic database in a tree-like way that is similar to organizing files on disk in directories and subdirectories. The two main differences are:
 
 * While a file is always located in exactly one directory, an entry may be contained in more than one group.
 * Groups may use certain criteria to dynamically define their content. New entries that match these criteria are automatically contained in these groups. This feature is not available in common file systems, but in several Email clients \(e.g. Thunderbird and Opera\).
@@ -86,7 +86,7 @@ The logical complement to a refining group is a group that **includes its subgro
 
 In other words, this defines which entries are displayed when this group is selected:
 
-* **independant**. Displays only this group's entries.
+* . Displays only this group's entries.
 * **intersection**. Displays entries contained in both this group and its supergroup.
 * **union**. Displays entries contained in this group or its subgroups.
 

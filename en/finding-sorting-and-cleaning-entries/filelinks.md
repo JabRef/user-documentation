@@ -2,7 +2,7 @@
 
 JabRef lets you link up your entries with files of any type stored on your system. Thereby, it uses the field `file`, which contains a list of linked files. Each entry can have an arbitrary number of file links, and each linked file can be opened quickly from JabRef. The fields `url` and `doi` are used as links to documents on the web in the form of an URL or a DOI identifier, respectively \(see [URL and DOI in JabRef](../advanced/externalfiles.md)\).
 
-In BibTeX terms, the file links are stored as text in the field `file`. From within JabRef, however, they appear as an editable list of links accessed from the entry editor along with other BibTeX fields.
+In Bib\(la\)TeX terms, the file links are stored as text in the field `file`. From within JabRef, however, they appear as an editable list of links accessed from the entry editor along with other BibTeX fields.
 
 ## Adding external links to an entry
 
@@ -65,7 +65,7 @@ The following syntax is understood:
 * `[extension]` - Is replaced by the file-extension of the field you are using.
 * All other text is interpreted as a regular expression. But caution: You need to escape backslashes by putting two backslashes after each other to not confuse them with the path-separator.
 
-The default for searches is `**/.*[bibtexkey].*\\.[extension]`. As you can see this will search in all subdirectories of the extension-based directory \(for instance in the PDF directory\) for any file that has the correct extension and contains the citation key somewhere.
+The default for searches is `**/.*[citationkey].*\\.[extension]`. As you can see this will search in all subdirectories of the extension-based directory \(for instance in the PDF directory\) for any file that has the correct extension and contains the citation key somewhere.
 
 ## Opening external files
 

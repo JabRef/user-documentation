@@ -12,7 +12,7 @@ Upon the first start of JabRef the main user interface is showing up the main el
 
 ## Creation of a new library
 
-A "library" is the main file that saves all the information about your collection of references. The storage format of the file is text-based in the Bibtex standard.
+A "library" is the main file that saves all the information about your collection of references. The storage format of the file is text-based in the BibTeX standard \(by default\).
 
 {% hint style="info" %}
 The usage of a text-based file format has some advantages:
@@ -32,7 +32,7 @@ The main screen is now showing an empty "entry table" we will now start to fill 
 
 To add a new entry select the menu bar entry "Library" -&gt; "New entry", click on the icon in the icon bar, or just hit CTRL-N.
 
-This opens a dialog where you can select the type of reference you want to store. By default all entry types defined by the Bibtex format are available:
+This opens a dialog where you can select the type of reference you want to store. By default all entry types defined by the BibTeX format are available:
 
 ![Screenshot of &quot;new entry&quot; dialog](.gitbook/assets/getting-started-new-entry%20%281%29%20%281%29.png)
 
@@ -42,7 +42,7 @@ After clicking on the "Article" button, the dialog closes and the so called "Ent
 
 ![Main window now showing the entry editor](.gitbook/assets/getting-started-entry-editor%20%281%29%20%281%29.png)
 
-The most important information about the references to be added can now be entered in the "Required Fields" tab. "Author", "Title", "Journal", and "Year" should be self-explanatory - however, a "citationkey", might not be familiar to you. Basically, the idea of the "citationkey" \(formerly called "bibtexkey"\) is coming from working with Bibtex, where it is necessary to have an unique identifier for each entry. This allows for referencing within a document you might be creating using the stored information in your library. Moreover, also within JabRef this "key" is used for example for cross-references to other related entries or to determine file names for full-text references.
+The most important information about the references to be added can now be entered in the "Required Fields" tab. "Author", "Title", "Journal", and "Year" should be self-explanatory - however, a "citationkey", might not be familiar to you. Basically, the idea of the "citationkey" is coming from working with BibTeX, where it is necessary to have an unique identifier for each entry. This allows for referencing within a document you might be creating using the stored information in your library. Moreover, also within JabRef this "key" is used for example for cross-references to other related entries or to determine file names for full-text references.
 
 The key usually follows a global pattern and can be easily created automatically by clicking on the "generate" button next to the field.
 
@@ -74,7 +74,7 @@ If additional information is found you will be asked in a dialog which informati
 
 ## Adding a full text document
 
-Usually, you also want to attach a reference to the full-text of a reference. For this, you can use the "file" field in the "General" tab. Here you can either attach a file manually, search for an already existing local file matching the bibtexkey pattern, or trying to automatically download a matching full text from the web.
+Usually, you also want to attach a reference to the full-text of a reference. For this, you can use the "file" field in the "General" tab. Here you can either attach a file manually, search for an already existing local file matching the citationkey pattern, or trying to automatically download a matching full text from the web.
 
 {% hint style="info" %}
 In order to use the automated feature, it is necessary to set-up a file directory first. To do so, please go to "Options" &gt; "Preferences", go to "File" section and select there an existing folder as the "Main file directory":

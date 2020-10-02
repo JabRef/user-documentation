@@ -66,11 +66,11 @@ Normalizes the en dashes.
 
 ### Normalize month
 
-Normalize month to BibTeX standard abbreviation.
+Normalize month to Bib\(la\)TeX standard abbreviation.
 
 ### Normalize names of persons
 
-Normalizes lists of persons to the BibTeX standard. This separates authors by "and"s with first names after last name separated by a comma; first names are not abbreviated.
+Normalizes lists of persons to the Bib\(la\)TeX standard. This separates authors by "and"s with first names after last name separated by a comma; first names are not abbreviated.
 
 * "John Smith" ⇒ "Smith, John"
 * "John Smith and Black Brown, Peter" ⇒ "Smith, John and Black Brown, Peter"
@@ -78,7 +78,7 @@ Normalizes lists of persons to the BibTeX standard. This separates authors by "a
 
 ### Normalize page numbers
 
-Normalize pages to BibTeX standard. Format page numbers, separated either by commas or double-hyphens. Converts the range number format to page\_number--page\_number. Removes unwanted literals except letters, numbers and -+ signs. Keeps the existing String if the resulting field does not match the expected Regex.
+Normalize pages to Bib\(la\)TeX standard. Format page numbers, separated either by commas or double-hyphens. Converts the range number format to page\_number--page\_number. Removes unwanted literals except letters, numbers and -+ signs. Keeps the existing String if the resulting field does not match the expected Regex.
 
 ```text
 1-2 ⇒ 1--2
