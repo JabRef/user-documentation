@@ -104,6 +104,8 @@ If casing is important to your search, activate the case-sensitive button.
 
 `abstract = modell?ing` also matches _modeling_ and _modelling_.
 
+`year == 200[5-9]|201[0-1]​`201\[0-1\] specifies the range of years 2005 to 2011 \(`200[5-9]` specifies years 2005 to 2009.`|` means "or". `201[0-1]` specifies years 2010 to 2011\).
+
 ### Searching for strings with a special character \(`()[]{}\^-=$!|?*+.`\)
 
 If a special character \(i.e. `(` `)` `[` `]` `{` `}` `\` `^` `-` `=` `$` `!` `|` `?` `*` `+` `.` \) is included in your search string, it has to be escaped with a backslash, such as `\}` for `}`.
