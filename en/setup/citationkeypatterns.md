@@ -125,23 +125,19 @@ To change the pattern to `[authors]:[camel]`, execute the following steps:
 
 1. Open the preferences
 
-   ![Options Preferences](../.gitbook/assets/optionspreferences%20%282%29.png)
+   ![Options Preferences](../.gitbook/assets/optionspreferences%20%283%29.png)
 
-2. Navigate to "General"
+2. Navigate to "Citation key generator"
 
-   ![General preferences](../.gitbook/assets/preferences-general%20%282%29.png)
+   ![Citation key generator preferences](../.gitbook/assets/preferences-citation-key-generator.png)
 
-3. Untick "Enforce legal characters in citation keys". Note that this is only necessary if you wish to have colons be present in the generated key.
+3. **This step is only necessary if you wish to have colons in the generated key.** In "Remove the following characters", delete the colon
 
-   ![General preferences - unticked](../.gitbook/assets/preferences-general-unticked%20%282%29.png)
+   ![Citation key generator - remove characters](../.gitbook/assets/preferences-citation-key-generator-remove-characters.png)
 
-4. Navigate to "Citation key generator"
+5. Change the default pattern to `[authors]:[camel]`
 
-   ![BibTeX key generator preferences](../.gitbook/assets/preferences-bibtex-key-generator%20%282%29.png)
+   ![Citation key generator preferences - authors camel](../.gitbook/assets/preferences-citation-key-generator-authors-camel.png)
 
-5. Change the default pattern to `[authors]:[camel]`.
-
-   ![BibTeX key generator preferences - authors camel](../.gitbook/assets/preferences-bibtex-key-generator-authors-camel%20%282%29.png)
-
-6. Press "Enter" \(forgetting to do this is a leading cause of puzzlement\), then Press "OK".
+6. Press "Enter" \(forgetting to do this is a leading cause of puzzlement\)
 7. Click "Save"
