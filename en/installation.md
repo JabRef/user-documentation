@@ -65,6 +65,14 @@ The integration with TeX editors is fine if JabRef is a deb/rpm, and the editor 
 
 Depending on your use case and needed integrations it is advisable to choose the proper packages. Watch this page for new developments on the interactions with external programs.
 
+|                       | Snap | Flatpak | deb/rpm            | tar                |
+|-----------------------|------|---------|--------------------|--------------------|
+| Libreoffice (system)  | :x:  | :x:     | :heavy_check_mark: | :heavy_check_mark: |
+| Libreoffice (snap)    | :x:  | :x:     | :x:                | :x:                |
+| Libreoffice (flatpak) | :x:  | :x:     | :x:                | :x:                |
+| LaTex editor (system) | :x:  | :x:     | :heavy_check_mark: | :heavy_check_mark: |
+| LaTeX editor (snap)   | :x:  | :x:     | :heavy_check_mark: | :heavy_check_mark: |
+
 ### Include JabRef in the start menu of Ubuntu
 
 See [http://askubuntu.com/a/721387/196423](http://askubuntu.com/a/721387/196423) for details.
