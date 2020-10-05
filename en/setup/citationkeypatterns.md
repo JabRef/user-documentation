@@ -125,7 +125,7 @@ To change the pattern to `[authors]:[camel]`, execute the following steps:
 
 1. Open the preferences
 
-   ![Options Preferences](../.gitbook/assets/optionspreferences%20%283%29.png)
+   ![Options Preferences](../.gitbook/assets/optionspreferences.png)
 
 2. Navigate to "Citation key generator"
 
