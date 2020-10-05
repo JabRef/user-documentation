@@ -158,9 +158,9 @@ Automatically set file links.
 
 ### Regenerate keys: `-g`
 
-\(or `--generateBibtexKeys`\)
+\(or `--generateCitationKeys`\)
 
-Regenerate all keys for the entries of a BibTeX file.
+Regenerate all keys for the entries of a Bib\(la\)TeX file.
 
 ### Export preferences: `-x filename`
 

@@ -22,7 +22,7 @@ There is a lot of different fields in _BibTeX_, and some additional fields that 
 
 The following fields are recognized by the default bibliography styles:
 
-* **bibtexkey** A unique string used to refer to the entry in LaTeX documents. Note that when referencing an entry from LaTeX, the key must match case-sensitively with the reference string. Some characters should not be used in bibtexkey as they are not compatible or not recommended:
+* **citationkey** A unique string used to refer to the entry in LaTeX documents. Note that when referencing an entry from LaTeX, the key must match case-sensitively with the reference string. Some characters should not be used in citationkey as they are not compatible or not recommended:
 
   `{ } ( ) , \ " - # ~ ^ : '`
 
