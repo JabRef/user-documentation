@@ -20,7 +20,7 @@ If you modify entries in JabRef after inserting their citations into OpenOffice,
 
 ## The style file
 
-To customize the citation style you need to select a style file, or use one of the default styles. The style defines the format of citations and the format of the bibliography. You can use standard JabRef export formatters to process entry fields before they are sent to OpenOffice. Through the style file, the intention is to give as much flexibility in citation styles as possible. You can switch style files at any time, and use the **Update** button to refresh your bibliography to follow the new style.
+To customize the citation style you need to select a style file, or use one of the default styles. The style defines the format of citations and the format of the bibliography. You can use standard JabRef export formatters to process fields before they are sent to OpenOffice. Through the style file, the intention is to give as much flexibility in citation styles as possible. You can switch style files at any time, and use the **Update** button to refresh your bibliography to follow the new style.
 
 By clicking the **Select style** button you can bring up a window that allows selection of either the default style or an external style file. If you want to create a new style based on the default, you can click the **View** button to bring up the default style contents, which can be copied into a text editor and modified.
 
@@ -118,7 +118,7 @@ The following table gives a brief description of all the available citation prop
 |  |  |  |  |
 | :--- | :--- | :--- | :--- |
 | **Property** | **Type** | **Default value** | **Description** |
-| AuthorField | string | `author/editor` | Bib\(la\)TeX field containing author names. Can specify fallback field, e.g. `author/editor` |
+| AuthorField | string | `author/editor` | Field containing author names. Can specify fallback field, e.g. `author/editor` |
 | AuthorLastSeparator | string | `&` | Text inserted between the two last author names. |
 | AuthorLastSeparatorInText | string |  | If specified, this property overrides `AuthorLastSeparator` for in-text citations such as `Smith & Jones (2001)`. |
 | AuthorSeparator | string | `,` | Text inserted between author names except the last two. |
@@ -139,7 +139,7 @@ The following table gives a brief description of all the available citation prop
 | MultiCiteChronological | boolean | `true` | If `true`, multiple entries in the same citation are sorted chronologically, otherwise they are sorted alphabetically. |
 | PageInfoSeparator | string | `;` | For citations with extra information, e.g. page numbers, this string is inserted between the year \(for author-year citations\) or the citation number \(for numbered citations\) and the extra information. E.g. the text between `2001` and `p. 301` in `[Smith 2001; p. 301]`. |
 | UniquefierSeparator | string | `,` | Text inserted between letters used to differentiate citations with similar authors and year. E.g. the text between `a` and `b` in `[Smith 2001a, b]`. |
-| YearField | string | `year` | The Bib\(la\)TeX field to get publication year from. |
+| YearField | string | `year` | The field to get publication year from. |
 | YearSeparator | string | Single Space | Text inserted between author names and year in parenthesis citations such as `[Smith 2001]`. |
 
 If numbered entries are used, the `BracketBefore` and `BracketAfter` properties are the most important - they define which characters the citation number is wrapped in. The citation is composed as follows: `[BracketBefore][Number][BracketAfter]` where \[Number\] is the number of the citation, determined according to the ordering of the bibliography and/or the position of the citation in the text. If a citation refers to several entries, these will be separated by the string given in the property `CitationSeparator` \(for instance, if `CitationSeparator`=;, the citation could look like `[2;4;6]`\). If two or more of the entries have a series of consecutive numbers, the numbers can be grouped \(for instance `[2-4]` for 2, 3 and 4 or `[2;5-7]` for 2, 5, 6 and 7\). The property `GroupedNumbersSeparator` \(default `-`\) determines which string separates the first and last of the grouped numbers. The integer property `MinimumGroupingCount` \(default 3\) determines what number of consecutive numbers is required before entries are grouped. If `MinimumGroupingCount`=3, the numbers 2 and 3 will not be grouped, while 2, 3, 4 will be. If `MinimumGroupingCount`=0, no grouping will be done regardless of the number of consecutive numbers.
