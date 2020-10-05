@@ -141,3 +141,4 @@ To change the pattern to `[authors]:[camel]`, execute the following steps:
 
 6. Press "Enter" \(forgetting to do this is a leading cause of puzzlement\)
 7. Click "Save"
+

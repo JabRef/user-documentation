@@ -1,6 +1,6 @@
 # Groups
 
-Groups allow to structure a BibTeX database in a tree-like way that is similar to organizing files on disk in directories and subdirectories. The two main differences are:
+Groups allow to structure a bibliographic database in a tree-like way that is similar to organizing files on disk in directories and subdirectories. The two main differences are:
 
 * While a file is always located in exactly one directory, an entry may be contained in more than one group.
 * Groups may use certain criteria to dynamically define their content. New entries that match these criteria are automatically contained in these groups. This feature is not available in common file systems, but in several Email clients \(e.g. Thunderbird and Opera\).
@@ -29,8 +29,8 @@ In JabRef there are four different types of groups:
 
 1. The group **All Entries**, which -- as the name suggests -- contains all entries, is always present and cannot be edited or removed.
 2. **Static groups** behave like directories on disk and contain only those entries that you explicitly assign to them.
-3. **Dynamic groups based on keyword search** contain entries in which a certain BibTeX field \(e.g. `keywords`\) contains a certain keyword \(e.g. `electrical`\). This method does not require manual assignment of entries, but uses information that is already present in the database. If all entries in your database have suitable keywords in their `keywords` field, using this type of group might be the best choice.
-4. **Dynamic groups based on free-form search expressions** contain entries that match a specified search expression, using the same syntax as the [search panel](search.md) on the side pane. This [syntax](search.md#advanced) supports logical operators \(`AND`, `OR`, `NOT`\) and allows to specify one or more BibTeX fields to search, facilitating more flexible group definitions than a keyword search \(e.g. `author=smith and title=electrical`\).
+3. **Dynamic groups based on keyword search** contain entries in which a certain field \(e.g. `keywords`\) contains a certain keyword \(e.g. `electrical`\). This method does not require manual assignment of entries, but uses information that is already present in the database. If all entries in your database have suitable keywords in their `keywords` field, using this type of group might be the best choice.
+4. **Dynamic groups based on free-form search expressions** contain entries that match a specified search expression, using the same syntax as the [search panel](search.md) on the side pane. This [syntax](search.md#advanced) supports logical operators \(`AND`, `OR`, `NOT`\) and allows to specify one or more fields to search, facilitating more flexible group definitions than a keyword search \(e.g. `author=smith and title=electrical`\).
 
 Every group that you create is of one of the last three types. The group editing dialog, which is invoked by double-clicking on a group, shows a short description of the selected/edited group in plain English.
 
@@ -71,10 +71,10 @@ The content of a dynamic group is defined by a logical condition. Only entries t
 Two types of conditions can be used:
 
 **Searching a field for a keyword**  
-This method groups entries in which a specified BibTeX field \(e.g. `keywords`\) contains a specified search term \(e.g. `electrical`\). Obviously, for this to work, the grouping field must be present in every entry, and its content must be accurate. The above example would group all entries referring to something electrical. Using the field `author` allows to group entries by a certain author, etc. The search can either be done as a plain-text or a regular expression search. In the former case, JabRef allows to manually assign/remove entries to/from the group by simply appending/removing the search term to/from the content of the grouping field. This makes sense only for the `keywords` field or for self-defined fields, but obviously not for fields like `author` or `year`.
+This method groups entries in which a specified field \(e.g. `keywords`\) contains a specified search term \(e.g. `electrical`\). Obviously, for this to work, the grouping field must be present in every entry, and its content must be accurate. The above example would group all entries referring to something electrical. Using the field `author` allows to group entries by a certain author, etc. The search can either be done as a plain-text or a regular expression search. In the former case, JabRef allows to manually assign/remove entries to/from the group by simply appending/removing the search term to/from the content of the grouping field. This makes sense only for the `keywords` field or for self-defined fields, but obviously not for fields like `author` or `year`.
 
 **Using a free-form search expression**  
-This is similar to the above, but rather than search a single field for a single search term, the [search expression syntax](search.md#advanced) can be used, which supports logical operators \(`AND`, `OR`, `NOT`\) and allows to search multiple BibTeX fields. For example, the search expression `keywords=regression and not keywords=linear` groups entries concerned with non-linear regression.
+This is similar to the above, but rather than search a single field for a single search term, the [search expression syntax](search.md#advanced) can be used, which supports logical operators \(`AND`, `OR`, `NOT`\) and allows to search multiple fields. For example, the search expression `keywords=regression and not keywords=linear` groups entries concerned with non-linear regression.
 
 In the groups view, dynamic groups are shown in _italics_ by default. This can be turned off in the preferences \(Options → Preferences → Groups, box "Show dynamic groups in italics"\).
 
@@ -86,7 +86,7 @@ The logical complement to a refining group is a group that **includes its subgro
 
 In other words, this defines which entries are displayed when this group is selected:
 
-* **independant**. Displays only this group's entries.
+* . Displays only this group's entries.
 * **intersection**. Displays entries contained in both this group and its supergroup.
 * **union**. Displays entries contained in this group or its subgroups.
 

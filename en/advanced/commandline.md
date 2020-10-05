@@ -20,7 +20,7 @@ C:\portable-apps\JabRef-5.0-portable_windows\JabRef\runtime\bin\JabRef.bat[OPTIO
 
 In some cases, you have to specify `--console` to ensure that output is written to the console.
 
-You can always specify one or more BibTeX files to load by simply listing their filenames. Take care to specify all options before your list of file names. Ensure that the first file name is not misunderstood as being an argument for an option; this simply means that if a boolean option like `-n` or `-l` immediately precedes a file name, add the word `true` as an argument. For instance, the command line will correctly load the file `original.bib`, export it in [docbook format](https://docbook.org/whatis) to `filetoexport.xml`, and suppress the GUI\_
+You can always specify one or more Bib\(la\)TeX files to load by simply listing their filenames. Take care to specify all options before your list of file names. Ensure that the first file name is not misunderstood as being an argument for an option; this simply means that if a boolean option like `-n` or `-l` immediately precedes a file name, add the word `true` as an argument. For instance, the command line will correctly load the file `original.bib`, export it in [docbook format](https://docbook.org/whatis) to `filetoexport.xml`, and suppress the GUI\_
 
 ```text
 C:\portable-apps\JabRef-5.0-portable_windows\JabRef\runtime\bin\JabRef.bat -o filetoexport.xml,docbook5 -n true original.bib
@@ -158,9 +158,9 @@ Automatically set file links.
 
 ### Regenerate keys: `-g`
 
-\(or `--generateBibtexKeys`\)
+\(or `--generateCitationKeys`\)
 
-Regenerate all keys for the entries of a BibTeX file.
+Regenerate all keys for the entries of a Bib\(la\)TeX file.
 
 ### Export preferences: `-x filename`
 

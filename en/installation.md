@@ -70,21 +70,13 @@ In the background, JabRef uses [JavaFX](https://en.wikipedia.org/wiki/JavaFX). A
 {% endtab %}
 
 {% tab title="macOS" %}
-### “JabRef Installer.app” can’t be opened because it is from an unidentified developer
-
-Currently, JabRef is not signed with Apple which triggers this warning. Nonetheless, JabRef is secure to use and will not install any malware. To override the warning, use Ctrl + Click on the JabRef icon instead, then choose "open". This gives the same warning but the possibility to override it so that you can install. See the [official Apple documentation](https://support.apple.com/guide/mac-help/open-a-mac-app-from-an-unidentified-developer-mh40616/mac) for more information.
-
 ### JabRef is slow/hangs sometimes
 
 Some users with macOS Sierra have reported freezes when using JabRef. It seems this is a bug in the networking part of Java on macOS. [Adding a host mapping for 127.0.0.1](https://dzone.com/articles/macos-sierra-problems-with-javanetinetaddress-getl) seems to solve these issues.
 
-### “The package was damaged and moved to trash”
-
-On Mac OS X Lion, it is possible to resolve it by temporarily changing the Gate Keeper security settings under “Security&Privacy” in the system preferences to “Anywhere”. After that you can open the JabRef app. When you have opened it once, you can change the security settings back and you'll still be able to open the app.
-
 ### Some characters are not displayed in the main table \(math characters or some upper-cased letter\)
 
-This might be a problem related to the font you are using. You can download some other font that supports mathematical alphanumeric symbols, for example, FreeSerif or Cambria Math. A list of fonts supporting Math Unicode blocks is available at [http://www.fileformat.info/info/unicode/block/mathematical\_alphanumeric\_symbols/fontsupport.htm](http://www.fileformat.info/info/unicode/block/mathematical_alphanumeric_symbols/fontsupport.htm).
+This is one the one hand a font problem and seond a lognstanding [Java\(fx\) bug](https://bugs.openjdk.java.net/browse/JDK-8176835) This might be a problem related to the font you are using. You can download some other font that supports mathematical alphanumeric symbols, for example, FreeSerif or Cambria Math. A list of fonts supporting Math Unicode blocks is available at [http://www.fileformat.info/info/unicode/block/mathematical\_alphanumeric\_symbols/fontsupport.htm](http://www.fileformat.info/info/unicode/block/mathematical_alphanumeric_symbols/fontsupport.htm).
 {% endtab %}
 {% endtabs %}
 

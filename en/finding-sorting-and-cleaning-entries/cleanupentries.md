@@ -6,7 +6,7 @@ description: Tidy up your library
 
 JabRef can cleanup the entries of a database. To do a cleanup of the entries, go to **Quality → Cleanup entries**. Then select the actions to be carried out.
 
-![The Cleanup entries dialog](../.gitbook/assets/cleanupdialog%20%281%29.png)
+![The Cleanup entries dialog](../.gitbook/assets/cleanupdialog%20%281%29%20%281%29.png)
 
 under the table`Enable field formatters`. Then, under the table, you can select using 2 drop-down menus:
 
@@ -15,13 +15,11 @@ under the table`Enable field formatters`. Then, under the table, you can select 
 
 A click on the "circular arrow" icon enables a set of recommended formatting actions \(the set of actions will depend on your database type: BibTeX or biblatex\).
 
-### See also
+## See also
 
 {% page-ref page="checkintegrity.md" %}
 
 {% page-ref page="saveactions.md" %}
 
 {% page-ref page="managing-field-names-and-their-content.md" %}
-
-
 

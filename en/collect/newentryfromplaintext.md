@@ -2,7 +2,7 @@
 
 > Entries can be created from a reference text.
 
-In case you have a reference string, JabRef offers the functionality to convert the text to BibTeX. For this, JabRef uses the technology offered by [Grobid](https://github.com/kermitt2/grobid).
+In case you have a reference string, JabRef offers the functionality to convert the text to BibTeX \(or biblatex\). For this, JabRef uses the technology offered by [Grobid](https://github.com/kermitt2/grobid).
 
 Example:
 

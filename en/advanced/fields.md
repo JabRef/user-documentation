@@ -22,7 +22,7 @@ There is a lot of different fields in _BibTeX_, and some additional fields that 
 
 The following fields are recognized by the default bibliography styles:
 
-* **bibtexkey** A unique string used to refer to the entry in LaTeX documents. Note that when referencing an entry from LaTeX, the key must match case-sensitively with the reference string. Some characters should not be used in bibtexkey as they are not compatible or not recommended:
+* **citationkey** A unique string used to refer to the entry in LaTeX documents. Note that when referencing an entry from LaTeX, the key must match case-sensitively with the reference string. Some characters should not be used in citationkey as they are not compatible or not recommended:
 
   `{ } ( ) , \ " - # ~ ^ : '`
 
@@ -111,12 +111,12 @@ You can create new fields by [editing \(or creating\) entry types](../setup/cust
 
 This feature is available through **Edit → Set/clear/rename fields**.
 
-![Screenshot of the Related Articles Tab](../.gitbook/assets/setclearrenamefields%20%282%29%20%281%29.png)
+![Screenshot of the Related Articles Tab](../.gitbook/assets/setclearrenamefields%20%282%29%20%281%29%20%281%29.png)
 
 ## Further information resources
 
 * [Reference documentation about BibTeX](https://ctan.net/biblio/bibtex/contrib/doc/btxdoc.pdf)
-* [Tame the BeaST - The B to X of BibTxX](http://texdoc.net/texmf-dist/doc/bibtex/tamethebeast/ttb_en.pdf) - long manual explaining the workings of BibTeX, the BibTeX format, and the available entry types with required and optional fields.
+* [Tame the BeaST - The B to X of BibTeX](http://texdoc.net/texmf-dist/doc/bibtex/tamethebeast/ttb_en.pdf) - long manual explaining the workings of BibTeX, the BibTeX format, and the available entry types with required and optional fields.
 * [BibTeX tips and FAQ](http://mirrors.ctan.org/biblio/bibtex/contrib/doc/btxFAQ.pdf)
 * [BibTeX format according to Wikibook](https://en.wikibooks.org/wiki/LaTeX/Bibliography_Management#BibTeX)
 * [BibTeX format according to Wikipedia](https://en.wikipedia.org/wiki/BibTeX#Bibliographic_information_file)
@@ -128,12 +128,12 @@ This feature is available through **Edit → Set/clear/rename fields**.
 * [http://www.math.uiuc.edu/K-theory/aux/K-theory.bib](http://www.math.uiuc.edu/K-theory/aux/K-theory.bib) \(large file &gt; 6000 publications\)
 * [http://mirrors.ircam.fr/pub/CTAN/biblio/bibtex/contrib/test/test.bib](http://mirrors.ircam.fr/pub/CTAN/biblio/bibtex/contrib/test/test.bib)
 
-### BibLaTeX files
+### biblatex files
 
 * [http://mirrors.ctan.org/macros/latex/contrib/biblatex/bibtex/bib/biblatex/biblatex-examples.bib](http://mirrors.ctan.org/macros/latex/contrib/biblatex/bibtex/bib/biblatex/biblatex-examples.bib)
 * [http://distrib-coffee.ipsl.jussieu.fr/pub/mirrors/ctan/macros/latex/contrib/biblatex/bibtex/bib/biblatex/biblatex-examples.bib](http://distrib-coffee.ipsl.jussieu.fr/pub/mirrors/ctan/macros/latex/contrib/biblatex/bibtex/bib/biblatex/biblatex-examples.bib)
 
-### Bib\(La\)TeX files in the JabRef repository
+### Bib\(la\)TeX files in the JabRef repository
 
 * [https://github.com/JabRef/jabref/tree/master/src/test/resources/testbib](https://github.com/JabRef/jabref/tree/master/src/test/resources/testbib)
 
@@ -142,9 +142,9 @@ This feature is available through **Edit → Set/clear/rename fields**.
 * [http://texdoc.net/pkg/btxdoc](http://texdoc.net/pkg/btxdoc)
 * [http://maverick.inria.fr/~Xavier.Decoret/resources/xdkbibtex/bibtex\_summary.html](https://maverick.inria.fr/~Xavier.Decoret/resources/xdkbibtex/bibtex_summary.html)
 
-### BibLaTeX standard
+### biblatex standard
 
-* BibLaTeX package documentation: [http://texdoc.net/pkg/biblatex](http://texdoc.net/pkg/biblatex)
+* biblatex package documentation: [http://texdoc.net/pkg/biblatex](http://texdoc.net/pkg/biblatex)
 * [https://github.com/plk/biblatex](https://github.com/plk/biblatex)
 
 ### BibTeX parser

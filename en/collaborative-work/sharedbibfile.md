@@ -1,10 +1,10 @@
-# Sharing a Bib\(La\)TeX Database
+# Sharing a Bib\(la\)TeX Database
 
-When sharing a Bib\(La\)TeX database, JabRef automatically recognizes a change in the `bib` file on disk and notifies the user of it. This works well on network drives.
+When sharing a Bib\(la\)TeX database, JabRef automatically recognizes a change in the `bib` file on disk and notifies the user of it. This works well on network drives.
 
 _Note:_ the use of a version control system \(SVN, git, etc.\) is recommended as this will allow for reverting changes.
 
-To make the sharing of a Bib\(La\)TeX database easier, it is recommended to set specific database properties. In the menu **File -&gt; database properties**:
+To make the sharing of a Bib\(la\)TeX database easier, it is recommended to set specific database properties. In the menu **File -&gt; database properties**:
 
 * Select `UTF-8` as encoding.
 * Define a `General file directory`, which will be used to store shared PDF \(and other\) files.

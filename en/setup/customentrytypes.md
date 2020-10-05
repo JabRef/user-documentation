@@ -8,7 +8,7 @@ Note that no modifications you make in this dialog will be stored until you clic
 
 ## Using the entry customization dialog
 
-![Screenshot of the entry customization dialog ](../.gitbook/assets/jabrefcustomentrytypes%20%282%29.png)
+![Screenshot of the entry customization dialog ](../.gitbook/assets/jabrefcustomentrytypes%20%282%29%20%281%29.png)
 
 The entry customization dialog is divided into two areas. On the left side all entry types \(including any custom types\) are listed. If you select a type from the left side, the right area shows all fields for the selected entry.
 
@@ -18,7 +18,7 @@ The currently available entry types are listed in the left panel.
 
 To add a new entry type, you must enter a name for it in the text field below the type list, and click **Add**. The new entry type will be added to the list, and selected for modification.
 
-To remove a custom entry type, select it and click the trash icon. This operation will only be available for custom entry types that are not merely modifications of standard types. It is not possible to remove a standard entry type. While it's possible to remove them in the dialog, they will be readded on reopening the dialog.
+To remove a custom entry type, select it and click the trash icon. This operation is only available for custom entry types that are not merely modifications of standard types. It is not possible to remove a standard entry type.
 
 ## Editing entry types
 
