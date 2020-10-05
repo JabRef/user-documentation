@@ -21,7 +21,7 @@ To use `cites` and `related`, follow these steps:
 
 ## Notes
 
-If you use `crossref`, JabRef will move these entries first in the bibliography as otherwise bibtex cannot use the information of the cross-referenced fields. See also [http://tex.stackexchange.com/a/148978/9075](http://tex.stackexchange.com/a/148978/9075).
+If you use `crossref`, JabRef will move these entries first in the bibliography as otherwise BibTeX cannot use the information of the cross-referenced fields. See also [http://tex.stackexchange.com/a/148978/9075](http://tex.stackexchange.com/a/148978/9075).
 
 Please note that biblatex treats `crossref` differently than BibTeX.
 

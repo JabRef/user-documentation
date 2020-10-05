@@ -21,13 +21,13 @@ For information about how the fields should be filled out, see [BibTeX help](../
 
 ## The entry editor's panels
 
-The entry editor contains six panels: _Required fields_, _Optional fields_, _General_, _Abstract_, _Comments_ and _BibTeX source_, where _General_, _Abstract_ and _Comments_ can be customized \(see [Customizing general fields](../../setup/generalfields.md) for details\). Inside the three first panels, Tab and Shift + Tab are used to switch focus between the text fields.
+The entry editor contains six panels: _Required fields_, _Optional fields_, _General_, _Abstract_, _Comments_ and _Bib\(la\)TeX source_, where _General_, _Abstract_ and _Comments_ can be customized \(see [Customizing general fields](../../setup/generalfields.md) for details\). Inside the three first panels, Tab and Shift + Tab are used to switch focus between the text fields.
 
 Up to JabRef 4.1, the field was called "Review". The field name was changed to "Comments" as "Review" indicated some external reviews or some fundamental comments.
 
 Switch panels by clicking on the tabs, or navigate to the panel to the left or right using the following key combinations: Ctrl + Tab or Ctrl + + switch to the tab to the right, and Ctrl + Shift + Tab or Ctrl + - switch to the tab to the left. You can also switch to the next or previous entry by pressing Ctrl + Shift + Down or Ctrl + Shift + Up, respectively, or by clicking the appropriate toolbar button.
 
-The _BibTeX source_ panel shows how the entry will appear when the database is saved in _BibTeX_ format. If you wish, you can edit the _BibTeX_ source directly in this panel. When you move to a different panel, press Ctrl + S or close the entry editor, JabRef will try to parse the contents of the source panel. If there are problems, you will be notified, and given the option to edit your entry further, or to revert to the former contents. If **Show source by default** is checked in the **General options** tab of the **Preferences** dialog, the source panel will be the one shown each time you open the entry editor. If you prefer editing the source rather than using the other four panels, you should check this option.
+_BibTeX source_ _source_ in case of a biblatex library\)  shows how th entry will appear when the\(database is saved in _BibTeX_  format. If you wish, you can edit the _BibTeX_ source directly in this panel. When you move to a different panel, press Ctrl + S or close the entry editor, JabRef will try to parse the contents of the source panel. If there are problems, you will be notified, and given the option to edit your entry further, or to revert to the former contents. If **Show source by default** is checked in the **General options** tab of the **Preferences** dialog, the source panel will be the one shown each time you open the entry editor. If you prefer editing the source rather than using the other four panels, you should check this option.
 
 **Tip:** If your database contains fields unknown to JabRef, these will be visible in the source panel.
 
