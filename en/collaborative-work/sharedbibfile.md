@@ -8,6 +8,7 @@ To make the sharing of a Bib\(la\)TeX database easier, it is recommended to set 
 
 * Select `UTF-8` as encoding.
 * Define a `General file directory`, which will be used to store shared PDF \(and other\) files.
-* Define a sort order \(`year`, `author`, `title` is recommended\).`Refuse to save the database before external changes have been reviewed`.
+* Check  `Refuse to save the database before external changes have been reviewed`.
+* Define a sort order \(`year`, `author`, `title` is recommended\)..
 * Check `Enable save actions`, and defines these actions, to help enforcing a consistent format for the entries.
 

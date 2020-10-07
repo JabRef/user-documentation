@@ -1,6 +1,6 @@
 # Remote operation
 
-This feature can be toggled and configured under **Preferences → Advanced**.
+This feature can be toggled and configured under **Preferences → Network**.
 
 _Note that activating this feature under Windows XP SP2 \(and possibly other configurations\) may prompt a message box stating that certain features of the program have been blocked by the Windows firewall. You can safely tell the firewall to keep blocking - the firewall will not interfere with remote operation of JabRef._
 
