@@ -56,9 +56,11 @@ An icon can be displayed in front of the group name. Choose your favorite icon a
 
 ### Type of group
 
-_Remark: outdated: The new interface \(JabRef 5.0\) displays a list of 5 choices under "Collect by"._
+{% hint style="warning" %}
+Outdated: The new interface \(JabRef 5.0\) displays a list of 5 choices under "Collect by".
+{% endhint %}
 
-#### Static groups
+#### _Static_ groups
 
 Static groups are populated only by explicit manual assignment of entries. After creating a static group you select the entries to be assigned to it, and use either Drag and Drop or the main table's context menu to perform the assignment. To remove entries from a static group, select them and use the main table's context menu. There are no options to be configured.
 
