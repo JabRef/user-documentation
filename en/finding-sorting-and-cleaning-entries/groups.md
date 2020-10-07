@@ -25,6 +25,8 @@ JabRef allows you to easily identify groups that overlap with the currently sele
 
 ## Types of groups
 
+
+
 In JabRef there are four different types of groups:
 
 1. The group **All Entries**, which -- as the name suggests -- contains all entries, is always present and cannot be edited or removed.
@@ -57,7 +59,7 @@ An icon can be displayed in front of the group name. Choose your favorite icon a
 ### Type of group
 
 {% hint style="warning" %}
-Outdated: The new interface \(JabRef 5.0\) displays a list of 5 choices under "Collect by".
+Outdated: The new interface \(JabRef 5.0\) displays a list of 5 choices under "Collect by"
 {% endhint %}
 
 #### _Static_ groups
