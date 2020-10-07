@@ -77,9 +77,7 @@ If additional information is found you will be asked in a dialog which informati
 Usually, you also want to attach a reference to the full-text of a reference. For this, you can use the "file" field in the "General" tab. Here you can either attach a file manually, search for an already existing local file matching the citationkey pattern, or trying to automatically download a matching full text from the web.
 
 {% hint style="info" %}
-In order to use the automated feature, it is necessary to set-up a file directory first. To do so, please go to "Options" &gt; "Preferences", go to "File" section and select there an existing folder as the "Main file directory":
-
-![Setting up the main file directory](.gitbook/assets/getting-started-preferences%20%281%29%20%281%29.png)
+In order to use the automated feature, it is necessary to set-up a file directory first. To do so, please go to "Options" &gt; "Preferences", go to "Linked files" section, and select there an existing folder as the "Main file directory":
 {% endhint %}
 
 To test the automatic download of full texts you can click on the "Get full-text" icon next to the file field, or choose "Lookup" -&gt; "Search full text documents online" from the menu. As soon as a full-text is found, the file will be stored in the local file directory and linked to the entry:
