@@ -2,7 +2,7 @@
 
 JabRef can help you complement your entries from their DOI or ISBN.
 
-In the entry table, right-click on the entry to complement, and select the menu **Get bibliographic data from DOI/ISBN/...** \(_obviously, this feature is disabled if your entry does not have a DOI/ISBN._\). Alternatively, you can open the [entry editor](../advanced/entryeditor/), and in the General tab, click on the button **Get bibliographic data from DOI**.
+In the entry table, right-click on the entry to complement, and select the menu **Get bibliographic data from DOI/ISBN/...** \(_obviously, this feature is disabled if your entry does not have a DOI/ISBN._\). Alternatively, you can open the [entry editor](../advanced/entryeditor/), and in the General tab, click on the button  **bibliographic data from DOI**.
 
 ![Screenshot of general tab](../.gitbook/assets/getbibtexdatafromdoi-main%20%281%29.png)
 
