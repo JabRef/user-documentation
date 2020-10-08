@@ -51,5 +51,5 @@ JabRef also offers to change the filenames. You can adapt the pattern at **Optio
 
 ![Preferences - Linked files](../.gitbook/assets/preferences-linkedfiles-5.2%20%281%29.png)
 
-In the section _Linked file name conventions_, you can select the _Filename format pattern_: `[citationkey] - [title]` or `[citationkey]`. Selecting `[citationkey] - [title]` results in the setting `\citationkey\begin{title} - \format[RemoveBrackets]{\title}\end{title}`. This makes the filenames start with the citation key followed by the full title. In the concrete case, `\citationkey` only may be the better option as the described citation key already contains the title.
+In the section _Linked file name conventions_, you can select the _Filename format pattern_: `[citationkey] - [title]` or `[citationkey]`. Selecting `[citationkey] - [title]` results in the setting `\citationkey\begin{title} - \format[RemoveBrackets]{\title}\end{title}`. This makes the filenames start with the citation key followed by the full title. In the concrete case, `\citationkey` only may be a better option as the described citation key already contains the title.
 

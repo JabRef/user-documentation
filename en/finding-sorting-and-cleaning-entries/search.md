@@ -90,7 +90,7 @@ If casing is important to your search, activate the case-sensitive button.
 
 ### Searching with optional spelling
 
-* `?` means none or one copy of the preceeding character.
+* `?` means none or one copy of the preceding character.
 * `{n,m}` means at least _n_, but not more than _m_ copies of the preceding character.
 * `[ ]` defines a character class
 

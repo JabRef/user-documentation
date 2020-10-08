@@ -26,7 +26,7 @@ Now, one wants to have the full first names. In case, there is a DOI available, 
 
    ![Screenshot of get BibTeX data from DOI](../.gitbook/assets/expand-firstnames-step-2.png)
 
-3. A popup appears. Select which data you want to merge into the eixting entry
+3. A popup appears. Select which data you want to merge into the existing entry
 
    ![Screenshot of Merge Entries Dialog](../.gitbook/assets/expand-firstnames-step-3.png)
 

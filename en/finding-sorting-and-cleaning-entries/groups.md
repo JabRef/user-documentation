@@ -80,7 +80,7 @@ This method groups entries in which a specified field \(e.g. `keywords`\) contai
 **Using a free-form search expression**  
 This is similar to the above, but rather than search a single field for a single search term, the [search expression syntax](search.md#advanced) can be used, which supports logical operators \(`AND`, `OR`, `NOT`\) and allows to search multiple fields. For example, the search expression `keywords=regression and not keywords=linear` groups entries concerned with non-linear regression.
 
-In the groups view, dynamic groups are shown in _italics_ by default. This can be turned off in the preferences \(Options → Preferences → Groups, box "Show dynamic groups in italics"\).
+In the groups view, dynamic groups are shown in _italics_.
 
 #### Hierarchical context
 
