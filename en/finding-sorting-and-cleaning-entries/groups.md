@@ -130,7 +130,7 @@ This method does not require manual assignment of entries, but uses information 
 Like **Searching for a keyword**, but for several keywords in several fields.
 
 - **Specified keywords**.
-**%%%Help needed: Please, add short description here %%%**
+This feature will gather all words found in a specific field of your choice, and create a group for each word.
 
 - **Cited entries**.
 The group contains the entries cited in a LaTeX document, based on its *.aux* file.
