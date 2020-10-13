@@ -33,6 +33,7 @@ For this you need to use a different type of groups **%%%Add a anchor to the sec
 When you have numerous groups, the one of interest can be displayed by typing its name in the ''Filter groups'' field located near the top of the group pane.
 
 ### Display union or intersection of groups
+
 Selecting one group shows the entries contained in that group (accounting for hierarchical settings **%%%Add a anchor to the section Hierarchical context%%%**).
 
 When selecting several groups, you can intersect or unionize them: *Union* displays all the entries of the selected groups while *Intersection* displays all the entries shared among the selected groups.
