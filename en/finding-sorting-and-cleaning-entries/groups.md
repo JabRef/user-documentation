@@ -55,8 +55,6 @@ The **+** button (near the top of the pane) lets you create a new subgroup of th
 The context menu also allows removing groups and/or subgroups, and to sort subgroups alphabetically.
 Moving groups to a different location in the tree can be done by drag-and-drop.
 
-Undo and redo is supported for all edits. **%%%Help needed: Not true in 5.2. Should this be considered as a bug or a feature?%%%**
-
 ## Group dialog window
 
 The properties of a group can be defined in the 'Edit group' dialog window (the same window is displayed when creating a new group).
@@ -108,7 +106,7 @@ By adding another intersection group for *laplace* to the supergroup *distributi
 
 The union of a group and its subgroups is the logical complement of the intersection: when defined as *union*, selecting the group displays *both* the group's own entries and its subgroups' entries.
 
-**%%%Help needed: Add an example of a sensible use here. %%%**
+You can create a group for your references about music, and then subgroups about the music styles (classic, jazz, rock, etc.). By setting the group "Music" as *union*, when you subsequently add references to a subgroup, they will automatically appear in group "Music" as well (without additional action).
 
 ### Mixing refining groups with including groups
 
@@ -147,9 +145,7 @@ After creating an explicit-selection group, you select the entries to be assigne
 
 To remove entries from an explicit-selection group, select them and use the context menu **Remove selected entries from this group** of the group interface.
 
-**%%%Help needed: Relevant? True for this entry type only? %%%**
-
-Note: this method of grouping requires that all entries have a unique citation key.
+**%%%Infobox%%%** this method of grouping requires that all entries have a unique citation key.
 In case of missing or duplicate citation keys, the assignment of the affected entries cannot be correctly restored in future sessions.
 
 #### Searching for a keyword in a field
@@ -164,11 +160,8 @@ The search can either be done as a plain-text or a regular-expression search (ch
 
 Obviously, this will work only for entries including the specified grouping field, and the quality of the grouping will depend on the content accuracy.
 
-**%%%Help needed: True in 5.2? I do not understand the paragraph... So, if true in 5.2 and unclear to you please reword %%%**
-In the former case, JabRef allows to manually assign/remove entries to/from the group by simply appending/removing the search term to/from the content of the grouping field.
-This makes sense only for the `keywords` field or for self-defined fields, but obviously not for fields like `author` or `year`.
-
-The content of the group is updated dynamically whenever the database changes.
+The content of the group is updated dynamically whenever the database changes: JabRef allows to manually assign/remove entries to/from the group by simply appending/removing the search term to/from the content of the grouping field. For example, if you add the keyword `A` to an entry, this entry will be added to the dedicated group automatically.
+This makes sense only for the `keywords` field or for self-defined fields, but obviously not for fields like `author` or `year`. 
 
 #### Using a free-form search expression 
 
@@ -183,12 +176,9 @@ The content of the group is updated dynamically whenever the database changes.
 
 #### Specified keywords
 
-**%%%Help needed: I do not understand this feature. Please, step in %%%**
-
-**%%%Help needed: The following might be relevant %%%**
-By clicking the **Automatically create groups for database** button, you can quickly create a set of groups appropriate for your database.
+With the group type "Specified keywords", you can quickly create a set of groups appropriate for your database.
 This feature will gather all words found in a specific field of your choice, and create a group for each word.
-This is useful for instance if your database contains suitable keywords for all entries. By auto-generating groups based on the `keywords` field, you should have a basic set of groups at no cost.
+This is useful for instance if your database contains suitable keywords for all entries. By auto-generating groups based on the `keywords` field, you should have a basic set of groups at no cost. If you have an entry with "keywords = {A, B}", then this group type creates subgroups "A" and "B" both containing the entry.
 
 You can also specify characters to ignore, for instance commas used between keywords.
 These will be treated as separators between words, and not part of them.
