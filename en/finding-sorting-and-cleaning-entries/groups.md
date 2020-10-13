@@ -10,7 +10,7 @@ Selecting a group shows the entries contained in that group.
 Selecting multiple groups shows the entries contained in any group (union) or those contained in all groups (intersection), depending on the current settings.
 All this is explained in detail below.
 
-Note that group definitions are database-specific. 
+Note that group definitions are database-specific.
 
 ## Groups interface and first steps
 
@@ -122,7 +122,7 @@ JabRef has five types of groups:
 The group contains entries that were assigned manually.
 It behaves like a directory on disk, and contain only those entries that you explicitly assigned to it.
 
-- **Searching for a keyword**. 
+- **Searching for a keyword**.
 The group contain entries in which a certain field (e.g. `author`) contains a certain keyword (e.g. `Smith`).
 This method does not require manual assignment of entries, but uses information that is already present in the database.
 
@@ -161,9 +161,9 @@ The search can either be done as a plain-text or a regular-expression search (ch
 Obviously, this will work only for entries including the specified grouping field, and the quality of the grouping will depend on the content accuracy.
 
 The content of the group is updated dynamically whenever the database changes: JabRef allows to manually assign/remove entries to/from the group by simply appending/removing the search term to/from the content of the grouping field. For example, if you add the keyword `A` to an entry, this entry will be added to the dedicated group automatically.
-This makes sense only for the `keywords` field or for self-defined fields, but obviously not for fields like `author` or `year`. 
+This makes sense only for the `keywords` field or for self-defined fields, but obviously not for fields like `author` or `year`.
 
-#### Using a free-form search expression 
+#### Using a free-form search expression
 
 This is similar to the above, but rather than search for a single search term on a single field, a [search expression syntax](search.md#advanced) can be used.
 It supports logical operators (`AND`, `OR`, `NOT`) and allows searching multiple fields.
@@ -182,7 +182,7 @@ This is useful for instance if your database contains suitable keywords for all 
 
 You can also specify characters to ignore, for instance commas used between keywords.
 These will be treated as separators between words, and not part of them.
-This step is important for combined keywords such as `laplace distribution` to be recognized as a single semantic unit. 
+This step is important for combined keywords such as `laplace distribution` to be recognized as a single semantic unit.
 (You cannot use this option to remove complete words. Instead, delete the unwanted groups manually after they were created automatically.)
 
 **%%% screenshot here: grab of the group type %%%**
