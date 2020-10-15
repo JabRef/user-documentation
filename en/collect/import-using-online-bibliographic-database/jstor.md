@@ -5,7 +5,4 @@
 It is possible to limit the search by adding a field name to the search, as field:text. The supported fields area:
 
     title: The title of the article
-    doi: The DOI of the article
-    issn: The ISSN of the journal
-    publisher: The publisher of the journal
-    abstract: The abstract of the article
+    author: a author of the article
