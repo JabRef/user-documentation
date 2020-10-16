@@ -127,6 +127,17 @@ The following list shows some of the field indicators that can be used:
 * _a smith or a jones_: search for references with either author "smith" or author "jones"
 * _a smith and not t processor_: search for author "smith" and omit references with "processor" in the title
 
+### Jstor
+
+[Jstor](https://jstor.org) is an online databse with access to more than 12 million journal articles, books and sources in 75 disciplines. [About](https://about.jstor.org/)
+
+It is possible to limit the search by adding a field name to the search, as field:"text". The supported fields area:
+
+* ti: The title of the article
+* au: a author of the article
+* pt: publication title
+
+
 ### MathSciNet
 
 [MathSciNet](http://www.ams.org/mathscinet/) is a searchable online bibliographic database. It contains all of the contents of the journal Mathematical Reviews \(MR\) since 1940 along with an extensive author database, links to other MR entries, citations, full journal entries, and links to original articles. It contains almost 3 million items and over 1.7 million links to original articles \([Wikipedia](https://en.wikipedia.org/wiki/MathSciNet)\).
