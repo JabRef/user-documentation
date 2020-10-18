@@ -20,7 +20,5 @@ In the entry table you can select an entry and use the menu choice, keyboard sho
 
 ![Open DOI via popup](../.gitbook/assets/entrytable-doi-popup.png)
 
-By default the entry table will contain a singly column containing an indicator whether there is a DOI or a URL linked. You can disable any of these in **Options → Preferences → Entry table columns**.
-
-![Preferences for URL column](../.gitbook/assets/preferences-entrytablcolumns-showurldoicolumn.png)
+By default the entry table will contain a singly column containing an indicator whether there is a DOI or a URL linked. You can remove the "Link identifiers" column in **Options → Preferences → Entry table**.
 

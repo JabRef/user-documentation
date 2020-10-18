@@ -90,7 +90,7 @@ If casing is important to your search, activate the case-sensitive button.
 
 ### Searching with optional spelling
 
-* `?` means none or one copy of the preceeding character.
+* `?` means none or one copy of the preceding character.
 * `{n,m}` means at least _n_, but not more than _m_ copies of the preceding character.
 * `[ ]` defines a character class
 
@@ -104,7 +104,7 @@ If casing is important to your search, activate the case-sensitive button.
 
 `abstract = modell?ing` also matches _modeling_ and _modelling_.
 
-`year == 200[5-9]|201[0-1]​`201\[0-1\] specifies the range of years 2005 to 2011 \(`200[5-9]` specifies years 2005 to 2009.`|` means "or". `201[0-1]` specifies years 2010 to 2011\).
+`year == 200[5-9]|201[0-1]​`specifies the range of years 2005-2011 \(`200[5-9]` specifies years 2005-2009;`|` means "or"; `201[0-1]` specifies years 2010-2011\).
 
 ### Searching for strings with a special character \(`()[]{}\^-=$!|?*+.`\)
 

@@ -27,7 +27,7 @@ Up to JabRef 4.1, the field was called "Review". The field name was changed to "
 
 Switch panels by clicking on the tabs, or navigate to the panel to the left or right using the following key combinations: Ctrl + Tab or Ctrl + + switch to the tab to the right, and Ctrl + Shift + Tab or Ctrl + - switch to the tab to the left. You can also switch to the next or previous entry by pressing Ctrl + Shift + Down or Ctrl + Shift + Up, respectively, or by clicking the appropriate toolbar button.
 
-_BibTeX source_ \(termed _biblatex_ _source_ in case of a biblatex library\)  shows how th entry will appear when the database is saved in _BibTeX_ \(or _biblatex_\) format. If you wish, you can edit the source directly in this panel. When you move to a different panel, press Ctrl + S or close the entry editor, JabRef will try to parse the contents of the source panel. If there are problems, you will be notified, and given the option to edit your entry further, or to revert to the former contents. If **Show source by default** is checked in the **General options** tab of the **Preferences** dialog, the source panel will be the one shown each time you open the entry editor. If you prefer editing the source rather than using the other four panels, you should check this option.
+_BibTeX source_ \(termed _biblatex_ _source_ in case of a biblatex library\)  shows how th entry will appear when the database is saved in _BibTeX_ \(or _biblatex_\) format. If you wish, you can edit the source directly in this panel. When you move to a different panel, press Ctrl + S or close the entry editor, JabRef will try to parse the contents of the source panel. If there are problems, you will be notified, and given the option to edit your entry further, or to revert to the former contents.
 
 **Tip:** If your database contains fields unknown to JabRef, these will be visible in the source panel.
 
@@ -47,7 +47,7 @@ For instance, if you see `#jan#` in the `month` field, the "real" BibTeX entry l
 
 ## Word/name autocompletion
 
-The entry editor offers autocompletion of words. In the Preferences dialog you can enable or disable autocompletion, and choose for which fields autocompletion is active.
+The entry editor offers autocompletion of words. In the **Options → Preferences → Entry editor**, you can enable or disable autocompletion, and choose for which fields autocompletion is active.
 
 With autocompletion, JabRef records all words that appear in each of the chosen fields throughout your database. Whenever you write the beginning of one of these words, it will be suggested visually. To ignore the suggestion, simply write on. To accept the suggestion, either press Enter or use your arrow keys or other keys to remove the selection box around the suggested characters.
 

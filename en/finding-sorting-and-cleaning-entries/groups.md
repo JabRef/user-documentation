@@ -25,6 +25,8 @@ JabRef allows you to easily identify groups that overlap with the currently sele
 
 ## Types of groups
 
+
+
 In JabRef there are four different types of groups:
 
 1. The group **All Entries**, which -- as the name suggests -- contains all entries, is always present and cannot be edited or removed.
@@ -56,9 +58,11 @@ An icon can be displayed in front of the group name. Choose your favorite icon a
 
 ### Type of group
 
-_Remark: outdated: The new interface \(JabRef 5.0\) displays a list of 5 choices under "Collect by"._
+{% hint style="warning" %}
+Outdated: The new interface \(JabRef 5.0\) displays a list of 5 choices under "Collect by"
+{% endhint %}
 
-#### Static groups
+#### _Static_ groups
 
 Static groups are populated only by explicit manual assignment of entries. After creating a static group you select the entries to be assigned to it, and use either Drag and Drop or the main table's context menu to perform the assignment. To remove entries from a static group, select them and use the main table's context menu. There are no options to be configured.
 
@@ -76,7 +80,7 @@ This method groups entries in which a specified field \(e.g. `keywords`\) contai
 **Using a free-form search expression**  
 This is similar to the above, but rather than search a single field for a single search term, the [search expression syntax](search.md#advanced) can be used, which supports logical operators \(`AND`, `OR`, `NOT`\) and allows to search multiple fields. For example, the search expression `keywords=regression and not keywords=linear` groups entries concerned with non-linear regression.
 
-In the groups view, dynamic groups are shown in _italics_ by default. This can be turned off in the preferences \(Options → Preferences → Groups, box "Show dynamic groups in italics"\).
+In the groups view, dynamic groups are shown in _italics_.
 
 #### Hierarchical context
 
