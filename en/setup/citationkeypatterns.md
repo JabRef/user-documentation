@@ -1,18 +1,10 @@
 # Customize the citation key generator
 
-The pattern used in the auto generation of citation labels can be set for each of the standard entry types in **Options → Preferences**, tab **Citation key generator**.
+The pattern used in the auto generation of citation labels can be set for each of the standard entry types in **Options → Preferences**, tab **Citation key generator**. A detailed description can be found in the [default citation key pattern section](#default-citation-key-pattern).
 
 ## Citation key patterns
 
 The key pattern can contain any text you wish, in addition to field markers that indicate that a specific field of the entry should be inserted at that position of the key. A field marker generally consists of the field name enclosed in square braces, e.g. **`[volume]`**. If the field is undefined in an entry at the time of key generation, no text will be inserted by the field marker. **Note:** In order for your changes to be retained, you must hit "enter" on your keyboard before clicking on the "Save" button.
-
-### Default citation key pattern
-
-If you have not defined a key pattern for a certain entry type, the **Default pattern** will be used. You can change the default pattern - its setting is above the list of entry types in the **Citation key generator** section of the **Preferences** dialog.
-
-The default key pattern is **`[auth][year]`**, and this could produce keys like e.g. `Yared1998` If the key is not unique in the current database, it is made unique by adding one of the letters a-z until a unique key is found. Thus, the labels might look like:
-
-`Yared1998` `Yared1998a` `Yared1998b`
 
 ### Special field markers
 
@@ -119,9 +111,17 @@ Generally, modifiers are applied in the order they are specified. In the followi
 
 In addition to using regular expression replacement as [modifiers](citationkeypatterns.md#modifiers) of the field markers within [citation key patterns](citationkeypatterns.md#citation-key-patterns) regular expression matching and replacement can be done after the key patterns have been applied. In this case, the regular expression and replacement string are entered in the separate text fields above the [citation key patterns](citationkeypatterns.md#citation-key-patterns) section. Contrary to the behavior of `:regexp()`, if the replacement string is empty, then matches of the regular expression will simply be removed from the generated key. For instance, `\p{Punct}` or `[:/%]` can be replaced by nothing to remove unwanted characters from the key. This may be useful when naming PDFs according to the citation keys. Further documentation on regular expressions in Java can be found [in the Java documentation](https://docs.oracle.com/javase/9/docs/api/java/util/regex/Pattern.html).
 
-## How to configure
+## Default citation key pattern
 
-To change the pattern to `[authors]:[camel]`, execute the following steps:
+If you have not defined a key pattern for a certain entry type, the **Default pattern** will be used. You can change the default pattern - its setting is above the list of entry types in the **Citation key generator** section of the **Preferences** dialog.
+
+The default key pattern is **`[auth][year]`**, and this could produce keys like e.g. `Yared1998` If the key is not unique in the current database, it is made unique by adding one of the letters a-z until a unique key is found. Thus, the labels might look like:
+
+`Yared1998` `Yared1998a` `Yared1998b`
+
+### Changing the default citation key pattern
+
+To change the citation key pattern to `[authors][camel]` for all libraries without individual settings, execute the following steps:
 
 1. Open the preferences
 
@@ -131,11 +131,7 @@ To change the pattern to `[authors]:[camel]`, execute the following steps:
 
    ![Citation key generator preferences](../.gitbook/assets/preferences-citation-key-generator.png)
 
-3. **This step is only necessary if you wish to have colons in the generated key.** In "Remove the following characters", delete the colon
-
-   ![Citation key generator - remove characters](../.gitbook/assets/preferences-citation-key-generator-remove-characters.png)
-
-5. Change the default pattern to `[authors]:[camel]`
+3. Change the default pattern to `[authors][camel]`
 
    ![Citation key generator preferences - authors camel](../.gitbook/assets/preferences-citation-key-generator-authors-camel.png)
 
