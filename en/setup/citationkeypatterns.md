@@ -109,7 +109,15 @@ Generally, modifiers are applied in the order they are specified. In the followi
 
 ## Replace \(regular expression\)
 
-In addition to using regular expression replacement as [modifiers](citationkeypatterns.md#modifiers) of the field markers within [citation key patterns](citationkeypatterns.md#citation-key-patterns) regular expression matching and replacement can be done after the key patterns have been applied. In this case, the regular expression and replacement string are entered in the separate text fields above the [citation key patterns](citationkeypatterns.md#citation-key-patterns) section. Contrary to the behavior of `:regexp()`, if the replacement string is empty, then matches of the regular expression will simply be removed from the generated key. For instance, `\p{Punct}` or `[:/%]` can be replaced by nothing to remove unwanted characters from the key. This may be useful when naming PDFs according to the citation keys. Further documentation on regular expressions in Java can be found [in the Java documentation](https://docs.oracle.com/javase/9/docs/api/java/util/regex/Pattern.html).
+In addition to using regular expression replacement as [modifiers](citationkeypatterns.md#modifiers) of the field markers within [citation key patterns](citationkeypatterns.md#citation-key-patterns) regular expression matching and replacement can be done after the key patterns have been applied. In this case, the regular expression and replacement string are entered in the separate text fields above the [citation key patterns](citationkeypatterns.md#citation-key-patterns) section. If the replacement string is empty, then matches of the regular expression will be removed from the generated key, e.g., `(?<=.{12}+).+` with an empty replacement string will cut the length of all citation keys to 12. Documentation on regular expressions in Java can be found [in the Java documentation](https://docs.oracle.com/javase/9/docs/api/java/util/regex/Pattern.html).
+
+## Removing unwanted characters
+
+The citation key generator preferences contain an option for removing unwanted characters. Add or remove characters to the right of "Remove the following characters:" to control which characters are included in the citation keys.
+
+   ![Citation key generator preferences - unwanted characters](../.gitbook/assets/preferences-citation-key-generator-remove-characters.png)
+
+Removing `-` from this list will allow it to be used while generating citation keys.
 
 ## Default citation key pattern
 
