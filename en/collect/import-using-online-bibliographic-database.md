@@ -133,9 +133,9 @@ The following list shows some of the field indicators that can be used:
 
 It is possible to limit the search by adding a field name to the search, such as `field:"text"`. The supported fields are:
 
-* ti: The title of the article
-* au: a author of the article
-* pt: publication title
+* `ti`: The title of the article
+* `au`: a author of the article
+* `pt`: publication title
 
 
 ### MathSciNet
