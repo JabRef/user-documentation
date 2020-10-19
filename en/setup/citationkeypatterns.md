@@ -153,8 +153,8 @@ To change the citation key pattern to `[authors][camel]` for all libraries witho
 
    ![Citation key generator preferences - authors camel](../.gitbook/assets/preferences-citation-key-generator-authors-camel.png)
 
-6. Press "Enter" \(forgetting to do this is a leading cause of puzzlement\)
-7. Click "Save"
+4. Press "Enter" \(forgetting to do this is a leading cause of puzzlement\)
+5. Click "Save"
 
 ### Changing the citation key pattern for one library
 
@@ -168,7 +168,7 @@ To change the citation key patterns for a single library to `[auth][shortyear]`,
 
     ![Library Citation key patterns](../.gitbook/assets/library-citation-key-patterns.png)
 
-2. Set the pattern for the desired entry types, and press the apply button.
+3. Set the pattern for the desired entry types, and press the apply button.
 
     ![Citation key patterns](../.gitbook/assets/citation-key-patterns.png)
 
