@@ -87,8 +87,6 @@ The [customize entry types section](https://docs.jabref.org/setup/customentrytyp
 
 A field name \(or one of the above pseudo-field names\) may optionally be followed by one or more modifiers.
 
-The modifiers can be divided into the categories _converters_ \(such as for converting from HTML to LaTeX\), _case changers_ \(such as for conversion to lower case\), and _others_. [Click here](https://github.com/JabRef/jabref/blob/7895ae07443612c63fee950ddee88650fecb4d91/src/main/java/org/jabref/logic/formatter/Formatters.java#L35-L64) for a comprehensive list of available modifiers.
-
 Generally, modifiers are applied in the order they are specified. In the following, we present a list of the most common modifiers alongside a short explanation:
 
 * **`:abbr`**: Abbreviates the text produced by the field name or special field marker. Only the first character and subsequent characters following white space will be included. For example:
@@ -106,6 +104,10 @@ Generally, modifiers are applied in the order they are specified. In the followi
 * **`:regex("pattern", "replacement")`**: Applies regular expression pattern matching and replacement. For example,
   * **`[auth.etal:regex("\\.etal","EtAl"):regex("\\.","And")]`**, the first `regex()` replaces `.etal` with `EtAl`. The second `regex()` replaces the `.` between entries with two authors with `And
 * **`:(x)`**: The string between the parentheses will be inserted if the field marker preceding this modifier resolves to an empty value. The placeholder `x` may be any string. For instance, the marker **`[volume:(unknown)]`** will return the entry's volume if set, and the string **unknown** if the entry's `volume` field is not set
+
+### Formatters
+
+Formatters are primarily used as [save actions](../finding-sorting-and-cleaning-entries/saveactions.md), but their key value can be used as a modifier. All available actions can be found in the [list of save actions](../finding-sorting-and-cleaning-entries/saveactions.md#List-of-actions).
 
 ## Replace \(regular expression\)
 
