@@ -129,7 +129,7 @@ The following list shows some of the field indicators that can be used:
 
 ### Jstor
 
-[Jstor](https://jstor.org) is an online databse with access to more than 12 million journal articles, books and sources in 75 disciplines. [About](https://about.jstor.org/)
+[Jstor](https://jstor.org) is an online database with access to more than 12 million journal articles, books and sources in 75 disciplines. [About](https://about.jstor.org/)
 
 It is possible to limit the search by adding a field name to the search, such as `field:"text"`. The supported fields are:
 
