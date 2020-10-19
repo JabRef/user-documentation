@@ -71,17 +71,17 @@ JabRef considers the following words to be [function words](https://en.wikipedia
 
 #### Bibentry fields
 
-In addition to the special field markers, most BibTeX, biblatex, and JabRef field names can be used directly. If you regularly use a field name not on this list, you are encouraged to add it.
+In addition to the special field markers, most BibTeX, biblatex, and JabRef field names can be accessed by their capitalized name directly. If you regularly use a field name not on this list, you are encouraged to add it.
 
-* **`[author]`**: `Ada Lovelace and Charles Babbage` becomes `AdaLovelaceandCharlesBabbage`
-* **`[date]`**: `2020-09-25`
-* **`[day]`**: `02` becomes `2`
-* **`[groups]`**: The groups or subgroups in JabRef. Subgroup `AppleTrees` and group `Trees` becomes `AppleTreesTrees`
-* **`[month]`**: `03` becomes `March`
-* **`[year]`**: `2020`
+* **`[AUTHOR]`**: `Ada Lovelace and Charles Babbage` becomes `AdaLovelaceandCharlesBabbage`
+* **`[DATE]`**: `2020-09-25`
+* **`[DAY]`**: `02` becomes `2`
+* **`[GROUPS]`**: The groups or subgroups in JabRef. Subgroup `AppleTrees` and group `Trees` becomes `AppleTreesTrees`
+* **`[MONTH]`**: `03` becomes `March`
+* **`[YEAR]`**: `2020`
 
 **Note:** You can use any field present in the entry. However, multi-line fields like comment or abstract can produce unexpected results, and their use is discouraged.
-The [customize entry types section](https://docs.jabref.org/setup/customentrytypes) contains more information about fields and their customization.
+The [customize entry types section](customentrytypes.md) contains more information about fields and their customization.
 
 ## Modifiers
 
