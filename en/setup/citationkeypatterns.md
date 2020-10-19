@@ -135,6 +135,8 @@ The default key pattern is **`[auth][year]`**, and this could produce keys like 
 
 `Yared1998` `Yared1998a` `Yared1998b`
 
+**Note:** In order for your changes to be retained, you must hit "enter" on your keyboard before clicking on the "Save" button.
+
 ### Changing the default citation key pattern
 
 To change the citation key pattern to `[authors][camel]` for all libraries without individual settings, execute the following steps:
