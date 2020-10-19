@@ -105,7 +105,7 @@ Generally, modifiers are applied in the order they are specified. In the followi
 * **`:sentencecase`**: Changes the first character of the first word to uppercase, all remaining words are converted to lowercase. Example: `an Example Title` will be converted to `An example title`
 * **`:regex("pattern", "replacement")`**: Applies regular expression pattern matching and replacement. For example,
   * **`[auth.etal:regex("\\.etal","EtAl"):regex("\\.","And")]`**, the first `regex()` replaces `.etal` with `EtAl`. The second `regex()` replaces the `.` between entries with two authors with `And
-* **`:(x)`**: The string between the parentheses will be inserted if the field marker preceding this modifier resolves to an empty value. The placeholder `x` may be any string. For instance, the marker **`[volume:(unknown)]`** will return the entry's volume if set, and the string **unknown** if the entry's `volume` field is not set
+* **`:(x)`**: The string between the parentheses will be inserted if the field marker preceding this modifier resolves to an empty value. The placeholder `x` may be any string. For instance, the marker **`[VOLUME:(unknown)]`** will return the entry's volume if set, and the string **unknown** if the entry's `VOLUME` field is not set
 
 ### Formatters
 
