@@ -131,7 +131,7 @@ The following list shows some of the field indicators that can be used:
 
 [Jstor](https://jstor.org) is an online databse with access to more than 12 million journal articles, books and sources in 75 disciplines. [About](https://about.jstor.org/)
 
-It is possible to limit the search by adding a field name to the search, as field:"text". The supported fields area:
+It is possible to limit the search by adding a field name to the search, such as `field:"text"`. The supported fields are:
 
 * ti: The title of the article
 * au: a author of the article
@@ -177,4 +177,3 @@ To be detailed.
 ### zbMATH
 
 [zbMATH](https://www.zbmath.org/) is a reviewing service providing reviews and abstracts for articles in pure and applied mathematics \([Wikipedia](https://en.wikipedia.org/wiki/Zentralblatt_MATH)\).
-
