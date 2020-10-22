@@ -1,10 +1,10 @@
 # Customize the citation key generator
 
-The pattern used in the auto generation of citation labels can be set for each of the standard entry types in **Options → Preferences**, tab **Citation key generator**. A detailed description can be found in the [default citation key pattern section](#default-citation-key-pattern).
+The pattern used in the auto generation of citation labels can be set for each of the standard entry types in **Options → Preferences**, tab **Citation key generator**. A detailed description can be found in the [default citation key pattern section](citationkeypatterns.md#default-citation-key-pattern).
 
 ## Citation key patterns
 
-The key pattern can contain any text you wish, in addition to field markers that indicate that a specific field of the entry should be inserted at that position of the key. A field marker generally consists of the field name enclosed in square braces, e.g., **`[title]`**. If the field is undefined in an entry at the time of key generation, no text will be inserted by the field marker. A field enclosed in square braces can be further changed by appending one or more of the [available modifiers](#modifiers) separated by `:`, e.g., **`[title:abbr]`**.
+The key pattern can contain any text you wish, in addition to field markers that indicate that a specific field of the entry should be inserted at that position of the key. A field marker generally consists of the field name enclosed in square braces, e.g., **`[title]`**. If the field is undefined in an entry at the time of key generation, no text will be inserted by the field marker. A field enclosed in square braces can be further changed by appending one or more of the [available modifiers](citationkeypatterns.md#modifiers) separated by `:`, e.g., **`[title:abbr]`**.
 
 For an entry with the title `An awesome paper on JabRef`, the citation key pattern `Title[title:abbr]` will provide the key `TitleAAPoJ`.
 
@@ -20,15 +20,15 @@ Several special field markers are offered, which extract only a specific part of
 * **`[authForeIni]`**: The forename initial of the first author
 * **`[authIniN]`**: The beginning of each author's last name, using at most `N` characters
 * **`[authN]`**: The first `N` characters of the first author's last name
-* **`[authN_M]`**: The first `N` characters of the `Mth author's last name
+* **`[authN_M]`**: The first `N` characters of the \`Mth author's last name
 * **`[authorIni]`**: The first 5 characters of the first author's last name, and the last name initial of the remaining authors
 * **`[authorLast]`**: The last name of the last author
 * **`[authorLastForeIni]`**: The forename initial of the last author
 * **`[authors]`**: The last name of all authors
 * **`[authorsAlpha]`**: Corresponds to the BibTeX style “alpha”,
-    * One author: First three letters of the last name
-    * Two to four authors: First letters of last names concatenated
-    * More than four authors: First letters of last names of first three authors concatenated with `+` at the end
+  * One author: First three letters of the last name
+  * Two to four authors: First letters of last names concatenated
+  * More than four authors: First letters of last names of first three authors concatenated with `+` at the end
 * **`[authorsN]`**: The last name of up to `N` authors. If there are more authors, `EtAl` is appended
 * **`[authshort]`**: The last name if one author is given; the first character of up to three authors' last names if more than one author is given. A plus character is added, if there are more than three authors
 * **`[auth.auth.ea]`**: The last name of the first two authors, separated by `.`. If there are more than two authors, adds `.ea`
@@ -82,8 +82,7 @@ In addition to the special field markers, most BibTeX, biblatex, and JabRef fiel
 * **`[MONTH]`**: `03` becomes `March`
 * **`[YEAR]`**: `2020`
 
-**Note:** You can use any field present in the entry. However, multi-line fields like comment or abstract can produce unexpected results, and their use is discouraged.
-The [customize entry types section](customentrytypes.md) contains more information about fields and their customization.
+**Note:** You can use any field present in the entry. However, multi-line fields like comment or abstract can produce unexpected results, and their use is discouraged. The [customize entry types section](customentrytypes.md) contains more information about fields and their customization.
 
 ## Modifiers
 
@@ -96,15 +95,15 @@ Generally, modifiers are applied in the order they are specified. In the followi
   * **`[title:abbr]`** would from the title `An awesome paper on JabRef` produce `AAPoJ`
   * **`[camel:abbr]`** would from the title `An awesome paper on JabRef` produce `AAPOJ`
 * **`:lower`**: Forces the text inserted by the field marker to be in lowercase.
-    * **`[auth:lower]`** expands the last name of the first author in lowercase
+  * **`[auth:lower]`** expands the last name of the first author in lowercase
 * **`:upper`**: Forces the text inserted by the field marker to be in uppercase.
-    * **`[auth:upper]`** expands the last name of the first author in uppercase
+  * **`[auth:upper]`** expands the last name of the first author in uppercase
 * **`:capitalize`**: Changes the first character of each word to uppercase, all other characters are converted to lowercase. For example, `an example title` will be converted to `An Example Title`
 * **`:titlecase`**: Changes the first character of all normal words to uppercase, all function words \(see above\) are converted to lowercase. Example: `example title with An function Word` will be converted to `Example Title with an Function Word`
 * **`:truncateN`**: Truncates the string after the N:th character and trims any trailing whitespaces. For example, **`[fulltitle:truncate3]`** will convert `A Title` to `A T`.
 * **`:sentencecase`**: Changes the first character of the first word to uppercase, all remaining words are converted to lowercase. Example: `an Example Title` will be converted to `An example title`
 * **`:regex("pattern", "replacement")`**: Applies regular expression pattern matching and replacement. For example,
-  * **`[auth.etal:regex("\\.etal","EtAl"):regex("\\.","And")]`**, the first `regex()` replaces `.etal` with `EtAl`. The second `regex()` replaces the `.` between entries with two authors with `And
+  * **`[auth.etal:regex("\\.etal","EtAl"):regex("\\.","And")]`**, the first `regex()` replaces `.etal` with `EtAl`. The second `regex()` replaces the `.` between entries with two authors with \`And
 * **`:(x)`**: The string between the parentheses will be inserted if the field marker preceding this modifier resolves to an empty value. The placeholder `x` may be any string. For instance, the marker **`[VOLUME:(unknown)]`** will return the entry's volume if set, and the string **unknown** if the entry's `VOLUME` field is not set
 
 ### Formatters
@@ -115,15 +114,15 @@ Formatters are primarily used as [save actions](../finding-sorting-and-cleaning-
 
 In addition to using regular expression replacement as [modifiers](citationkeypatterns.md#modifiers) of the field markers within [citation key patterns](citationkeypatterns.md#citation-key-patterns) regular expression matching and replacement can be done after the key patterns have been applied. In this case, the regular expression and replacement string are entered in the separate text fields above the [citation key patterns](citationkeypatterns.md#citation-key-patterns) section. If the replacement string is empty, then matches of the regular expression will be removed from the generated key. Documentation on regular expressions in Java can be found [in the Java documentation](https://docs.oracle.com/javase/9/docs/api/java/util/regex/Pattern.html).
 
-   ![Citation key generator preferences - regex replacement](../.gitbook/assets/preferences-citation-key-generator-regex-replacement.png)
+![Citation key generator preferences - regex replacement](../.gitbook/assets/preferences-citation-key-generator-regex-replacement.png)
 
- The regex `(?<=.{12}+).+` with an empty replacement string will cut the length of all citation keys to 12.
+The regex `(?<=.{12}+).+` with an empty replacement string will cut the length of all citation keys to 12.
 
 ## Removing unwanted characters
 
 The citation key generator preferences contain an option for removing unwanted characters. Add or remove characters to the right of "Remove the following characters:" to control which characters are included in the citation keys.
 
-   ![Citation key generator preferences - unwanted characters](../.gitbook/assets/preferences-citation-key-generator-remove-characters.png)
+![Citation key generator preferences - unwanted characters](../.gitbook/assets/preferences-citation-key-generator-remove-characters.png)
 
 Removing `-` from this list will allow it to be used while generating citation keys.
 
@@ -143,7 +142,7 @@ To change the citation key pattern to `[authors][camel]` for all libraries witho
 
 1. Open the preferences
 
-   ![Options Preferences](../.gitbook/assets/optionspreferences.png)
+   ![Options Preferences](../.gitbook/assets/optionspreferences%20%283%29.png)
 
 2. Navigate to "Citation key generator"
 
@@ -162,13 +161,13 @@ To change the citation key patterns for a single library to `[auth][shortyear]`,
 
 1. Make sure the library is open and selected in the JabRef main window
 
-    ![Main screen selected library](../.gitbook/assets/main-screen-selected-library.png)
+   ![Main screen selected library](../.gitbook/assets/main-screen-selected-library.png)
 
 2. From the "Library" menu, open the "Citation key pattern" setting
 
-    ![Library Citation key patterns](../.gitbook/assets/library-citation-key-patterns.png)
+   ![Library Citation key patterns](../.gitbook/assets/library-citation-key-patterns.png)
 
 3. Set the pattern for the desired entry types, and press the apply button.
 
-    ![Citation key patterns](../.gitbook/assets/citation-key-patterns.png)
+   ![Citation key patterns](../.gitbook/assets/citation-key-patterns.png)
 

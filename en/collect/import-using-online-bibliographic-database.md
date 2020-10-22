@@ -12,8 +12,6 @@ Apart from fetching entries by using a full search it is also possible to direct
 
 ## Mass downloading of articles
 
-
-
 However, it is still possible to import hundreds or even thousands of entries from these databases. The process depends a bit on the specifics of each database, but in general works as follows: Search the database in your browser, export the result in one of the supported file formats and then [import the file into JabRef](import/).
 
 ## Using a Proxy Server
@@ -137,7 +135,6 @@ It is possible to limit the search by adding a field name to the search, such as
 * `au`: a author of the article
 * `pt`: publication title
 
-
 ### MathSciNet
 
 [MathSciNet](http://www.ams.org/mathscinet/) is a searchable online bibliographic database. It contains all of the contents of the journal Mathematical Reviews \(MR\) since 1940 along with an extensive author database, links to other MR entries, citations, full journal entries, and links to original articles. It contains almost 3 million items and over 1.7 million links to original articles \([Wikipedia](https://en.wikipedia.org/wiki/MathSciNet)\).
@@ -177,3 +174,4 @@ To be detailed.
 ### zbMATH
 
 [zbMATH](https://www.zbmath.org/) is a reviewing service providing reviews and abstracts for articles in pure and applied mathematics \([Wikipedia](https://en.wikipedia.org/wiki/Zentralblatt_MATH)\).
+

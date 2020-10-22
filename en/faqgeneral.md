@@ -84,11 +84,11 @@ A: Select the entries. Right click. Choose “Manage keywords”. There you can 
 
 ## Q: When linking a file, I cannot set the correct type. How do I add new types?
 
-A: In **Options → Manage external file types** you can add arbitrary types.
+In **Options →  Preferences**, tab **External programs**, button "Manage external file types,  you can add arbitrary types.
 
 ## Q: When an organization is provided as author, my BibTeX style doesn't recognize it. For instance, why is “European Commission” converted to “Commission, E.”.?
 
-A: Use curly braces to tell BibTeX to keep your author field as is: `{European Commission}`. In BibLaTeX, you can use `label = {EC}` to have `EC05` as label for a publication of the European Commission in the year 2005.
+A: Use curly braces to tell BibTeX to keep your author field as is: `{European Commission}`. In biblatex, you can use `label = {EC}` to have `EC05` as label for a publication of the European Commission in the year 2005.
 
 ## Q: Is there a FAQ on BibTeX?
 
@@ -104,7 +104,7 @@ A: Upon compilation, LaTeX generates a file with the extension ".aux". This file
 
 ## Q: When I modify my library, I would like that JabRef performs entry cleaning automatically. How to do this?
 
-A: In **File → Library properties**, you will find a section named "Save actions". After enabling this feature, you can choose which actions should be performed for each field upon saving. That should help you keep your library tidy.
+A: In **Library → Library properties**, you will find a section named "Save actions". After enabling this feature, you can choose which actions should be performed for each field upon saving. That should help you keep your library tidy.
 
 ## Q: Search on Google scholar does not work anymore. Why?
 

@@ -16,7 +16,7 @@ After the connection has been established, you can insert citations by selecting
 
 Two different types of citations can be inserted - either a citation in parenthesis, "\(Author 2007\)", or an in-text citation, "Author \(2007\)". This distinction is only meaningful if author-year citations are used instead of numbered citations, but the distinction will be preserved if you switch between the two styles.
 
-If you modify entries in JabRef after inserting their citations into OpenOffice, you will need to synchronize the bibliography. By default, **Automatically sync bibliography when inserting citations** is enabled. This can be disabled by clicking the **Settings** button and unchecking **Automatically sync bibliography when inserting citations**.  The **Sync OO bibliography** button will update all entries of the bibliography, provided their citation keys have not been altered \(JabRef encodes the citation key into the reference name for each citation to keep track of which citation key the original JabRef entry has\).
+If you modify entries in JabRef after inserting their citations into OpenOffice, you will need to synchronize the bibliography. By default, **Automatically sync bibliography when inserting citations** is enabled. This can be disabled by clicking the **Settings** button and unchecking **Automatically sync bibliography when inserting citations**. The **Sync OO bibliography** button will update all entries of the bibliography, provided their citation keys have not been altered \(JabRef encodes the citation key into the reference name for each citation to keep track of which citation key the original JabRef entry has\).
 
 ## The style file
 
