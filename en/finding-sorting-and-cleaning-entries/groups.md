@@ -235,7 +235,7 @@ When selecting multiple groups, you can choose to:
 - display only entries belonging to all selected groups (intersection)
 - display all entries belonging to one or more of the selected groups (union). This is the default option.
 
-### Automatically assign new entry go selected grouping
+### Automatically assign new entry to selected grouping
 
 The checkbox "Automatically assign new entry go selected grouping" make it possible to automatically assign new entries to selected groups.
 If checked (default), upon selection of one or more groups, all the new entries created will be assigned to the selected groups.
