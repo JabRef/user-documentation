@@ -108,7 +108,7 @@ Generally, modifiers are applied in the order they are specified. In the followi
 
 ### Formatters
 
-Formatters are primarily used as [save actions](../finding-sorting-and-cleaning-entries/saveactions.md), but their key value can be used as a modifier. All available actions can be found in the [list of save actions](../finding-sorting-and-cleaning-entries/saveactions.md#List-of-actions).
+Formatters are primarily used as [save actions](../finding-sorting-and-cleaning-entries/saveactions.md), but their key value can be used as a modifier. All available actions can be found in the [list of save actions](../finding-sorting-and-cleaning-entries/saveactions.md#save-actions-as-modifiers).
 
 ## Replace \(regular expression\)
 

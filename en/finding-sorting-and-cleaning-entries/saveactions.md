@@ -162,3 +162,38 @@ Replaces consecutive spaces with a single space in the field content. For exampl
 
 Replace tabs by space in the field content. For example, `Stefan\tKolb` becomes `Stefan Kolb`.
 
+## Save actions as modifiers
+
+Most of the [field formatters listed above](#list-of-actions) can also be used as modifiers in [citation key patterns](../setup/citationkeypatterns.md) using their key.
+The table below shows their key and if they can be used as modifiers.
+
+Save action | Key | Modifier
+--- | --- | ---
+[Add enclosing braces](#add-enclosing-braces) | `add_braces` | Yes
+[Clear](#clear) | `clear` | Yes
+[Escape underscores](#escape-underscores) | `escapeUnderscores` | Yes
+[HTML to LaTeX](#html-to-latex) | `html_to_latex` | Yes
+[HTML to Unicode](#html-to-unicode) | `html_to_unicode` | Yes
+[LaTeX cleanup](#latex-cleanup) | `latex_cleanup` | Yes
+[Normalize date](#normalize-date) | `normalize_date` | Yes
+[Normalize en dashes](#normalize-en-dashes) | `normalize_en_dashes` | No
+[Normalize month](#normalize-month) | `normalize_month` | Yes
+[Normalize names of persons](#normalize-names-of-persons) | `normalize_names` | Yes
+[Normalize page numbers](#normalize-page-numbers) | `normalize_page_numbers` | Yes
+[Ordinals to LaTeX superscript](#ordinals-to-latex-superscript) | `ordinals_to_superscript` | Yes
+[Remove enclosing braces](#remove-enclosing-braces) | `remove_braces` | Yes
+[Remove hyphenated line breaks](#remove-hyphenated-line-breaks) | `remove_hyphenated_newlines` | No
+[Remove line breaks](#remove-line-breaks) | `remove_newlines` | No
+[Shorten DOI](#shorten-doi) | `short_doi` | Yes
+[Unicode to LaTeX](#unicode-to-latex) | `unicode_to_latex` | Yes
+[Units to LaTeX](#units-to-latex) | `units_to_latex` | Yes
+[Capitalize](#capitalize) | `capitalize` | Yes
+[Lower case](#lower-case) | `lower_case` | Yes
+[Protect terms](#protect-terms) | `protect_terms` | No
+[Sentence case](#sentence-case) | `sentence_case` | Yes
+[Title case](#title-case) | `title_case` | Yes
+[Upper case](#upper-case) | `upper_case` | Yes
+[Minify list of person names](#minify-list-of-person-names) | `minify_name_list` | Yes
+[Remove digits](#remove-digits) | `remove_digits` | No
+[Remove redundant spaces](#remove-redundant-spaces) | `remove_redundant_spaces` | No
+[Replace tabs by space](#replace-tabs-by-space) | `remove_tabs` | No
