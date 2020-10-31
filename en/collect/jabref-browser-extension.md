@@ -39,10 +39,16 @@ Most JabRef installations include the necessary files, so test the extension bef
    REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Mozilla\NativeMessagingHosts\org.jabref.jabref" /ve /d "C:\path\to\jabref.json" /f
    ```
 
-   For Chrome/Opera/Brave/Vivaldi and other chromium based browser support
+   For Chrome/Opera/Brave/Vivaldi and other chromium based browser support:
 
    ```text
    REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Google\Chrome\NativeMessagingHosts\org.jabref.jabref" /ve /d "C:\path\to\jabref-chrome.json" /f
+   ```
+
+   For Edge support:
+
+   ```text
+   REG ADD "HKEY_LOCAL_MACHINE\Software\Microsoft\Edge\NativeMessagingHosts\org.jabref.jabref" /ve /t REG_SZ /d "C:\path\to\jabref.json" /f
    ```
 
    You may need to change the root `HKEY_LOCAL_MACHINE` to `HKEY_CURRENT_USER` if you don't have admin rights.
