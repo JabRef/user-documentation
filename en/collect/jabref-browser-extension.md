@@ -26,7 +26,7 @@ Most JabRef installations include the necessary files, so test the extension bef
 2. Install the JabRef browser extension: [Firefox](https://addons.mozilla.org/en-US/firefox/addon/jabref/?src=external-github), [Chrome](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh), [Vivaldi](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh)
 3. On Windows 7, please [upgrade Powershell](https://www.microsoft.com/en-us/download/details.aspx?id=54616).
 4. Download the following files and copy them to the same directory as `JabRef.exe`
-   * [jabref.json](https://raw.githubusercontent.com/JabRef/jabref/master/buildres/windows/jabref.json)
+   * [jabref-firefox.json](https://raw.githubusercontent.com/JabRef/jabref/master/buildres/windows/jabref-firefox.json)
    * [jabref-chrome.json](https://raw.githubusercontent.com/JabRef/jabref/master/buildres/windows/jabref-chrome.json)
    * [JabRef.bat](https://raw.githubusercontent.com/JabRef/jabref/master/buildres/windows/JabRefHost.bat)
    * [JabRef.ps1](https://raw.githubusercontent.com/JabRef/jabref/master/buildres/windows/JabRefHost.ps1)
@@ -36,7 +36,7 @@ Most JabRef installations include the necessary files, so test the extension bef
    For Firefox support:
 
    ```text
-   REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Mozilla\NativeMessagingHosts\org.jabref.jabref" /ve /d "C:\path\to\jabref.json" /f
+   REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Mozilla\NativeMessagingHosts\org.jabref.jabref" /ve /d "C:\path\to\jabref-firefox.json" /f
    ```
 
    For Chrome/Opera/Brave/Vivaldi and other chromium based browser support:
