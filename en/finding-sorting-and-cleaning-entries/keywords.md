@@ -15,7 +15,7 @@ It can be redefined in the preferences (Options -> Preferences -> Groups).
 Tip: If some entries have a keyword separator differing from the prescribed one, you can use menu Edit -> Find and replace. For example, you may want to replace semi-columns (;) by commas (s). Select the radio button "Limit to Fields" and type in "keywords" as the relevant field.
 
 
-Additionally, the [special field](spielfields.md) values (relevance, priority, etc.) can be added to the keywords field automatically.
+Additionally, the [special field](specialfields.md) values (relevance, priority, etc.) can be added to the keywords field automatically.
 This will allow you to group, sort, and search your library based on the special field values.
 See in Options -> Preferences -> Entry table the item Special fields and select "Synchronize with keywords".
 
