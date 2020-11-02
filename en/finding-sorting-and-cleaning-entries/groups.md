@@ -18,7 +18,7 @@ The group interface is shown in the side pane on the left of the screen.
 It can be toggled on or off by pressing 'Alt + 3' or by the menu **View --> Groups interface**.
 The interface has several buttons, but most functions are accessed via a context menu (i.e. a right-click). Drag-and-drop is also supported.
 
-**%%% screenshot here: whole group interface %%%**
+%%% screenshot here: whole group interface %%%
 
 ### Creating a group and adding entries to it
 
@@ -38,7 +38,7 @@ Selecting one group shows the entries contained in that group (accounting for hi
 
 When selecting several groups, you can intersect or unionize them: *Union* displays all the entries of the selected groups while *Intersection* displays all the entries shared among the selected groups.
 
-**%%% screenshot here: group interface with focus on union/intersection button  %%%**
+%%% screenshot here: group interface with focus on union/intersection button  %%%
 
 For example, if you have a group for the author 'Smith' and another one for the author 'Doe', selecting the groups displays the entries that they co-authored if 'Intersection' is selected.
 If 'Union' is selected, the entries that at least one of them authored are displayed.
@@ -61,7 +61,7 @@ Moving groups to a different location in the tree can be done by drag-and-drop.
 The properties of a group can be defined in the 'Edit group' dialog window (the same window is displayed when creating a new group).
 To modify the group properties, right-click on the group name in the group panel and select **Edit group** in the context menu.
 
-**%%% screenshot here: whole group dialog window %%%**
+%%% screenshot here: whole group dialog window %%%
 
 ### Name
 
@@ -78,7 +78,7 @@ An icon can be displayed in front of the group name.
 Choose your favorite icon among the ones available at [https://materialdesignicons.com/](https://materialdesignicons.com/), and enter its name of the field _Icon_.
 The color of the icon can be set in to the field _Color_.
 
-**%%% screenshot here: part of group pane showing icon and color %%%**
+%%% screenshot here: part of group pane showing icon and color %%%
 
 ### Hierachical context
 
@@ -111,7 +111,7 @@ You can create a group for your references about music, and then subgroups about
 
 ### Mixing refining groups with including groups
 
-**%%%Help needed: Still true? If so, please, translate it using the current vocabulary?%%%**
+%%%Help needed: Still true? If so, please, translate it using the current vocabulary?%%%
 
 If a refining group is a subgroup of a group that includes its subgroups -- the refining group's siblings --, these siblings are ignored when the refining group is selected.
 
@@ -140,21 +140,23 @@ The group contains the entries cited in a LaTeX document, based on its *.aux* fi
 
 Groups based on explicit selection are populated only by manual assignment of entries.
 
-**%%% screenshot here: grab of the group type %%%**
+%%% screenshot here: grab of the group type %%%
 
 After creating an explicit-selection group, you select the entries to be assigned to it, and use either drag-and-drop or the context menu **Add selected entries to this group** of the group interface.
 
 To remove entries from an explicit-selection group, select them and use the context menu **Remove selected entries from this group** of the group interface.
 
-**%%%Infobox%%%** this method of grouping requires that all entries have a unique citation key.
+{% hint style="info" %}
+This method of grouping requires that all entries have a unique citation key.
 In case of missing or duplicate citation keys, the assignment of the affected entries cannot be correctly restored in future sessions.
+{% endhint %}
 
 #### Searching for a keyword in a field
 
 This method groups entries in which a specified *field* (e.g. *author*) contains a specified *keyword* (e.g. *Smith*).
 The mentioned example will group all entries referring to the author *Smith*.
 
-**%%% screenshot here: grab of the group type %%%**
+%%% screenshot here: grab of the group type %%%
 
 The search can be case-sensitive or not (checkbox 'Case sensitive').
 The search can either be done as a plain-text or a regular-expression search (checkbox 'Regular expression').
@@ -169,7 +171,7 @@ This makes sense only for the `keywords` field or for self-defined fields, but o
 This is similar to the above, but rather than search for a single search term on a single field, a [search expression syntax](search.md#advanced) can be used.
 It supports logical operators (`AND`, `OR`, `NOT`) and allows searching multiple fields.
 
-**%%% screenshot here: grab of the group type %%%**
+%%% screenshot here: grab of the group type %%%
 
 For example, the search expression `keywords=regression and not keywords=linear` groups entries concerned with non-linear regression.
 
@@ -186,7 +188,7 @@ These will be treated as separators between words, and not part of them.
 This step is important for combined keywords such as `laplace distribution` to be recognized as a single semantic unit.
 (You cannot use this option to remove complete words. Instead, delete the unwanted groups manually after they were created automatically.)
 
-**%%% screenshot here: grab of the group type %%%**
+%%% screenshot here: grab of the group type %%%
 
 The content of the group is updated dynamically whenever the database changes.
 
@@ -195,10 +197,10 @@ The content of the group is updated dynamically whenever the database changes.
 The group contains the entries cited in a LaTeX document, based on its '.aux' file.
 The .aux file has to be specified.
 
-**%%% screenshot here: grab of the group type %%%**
+%%% screenshot here: grab of the group type %%%
 
-**%%%Help needed: True? When updated exactly? %%%**
-The content of the group is updated dynamically whenever the .aux file changes.
+%%%Help needed: True? When updated exactly? %%%
+The content of the group is updated dynamically whenever the `.aux` file changes.
 
 ## Group color bars in the entry table
 
@@ -206,27 +208,27 @@ To see easily to which groups an entry belongs to, the entry table has a column 
 For each entry, a set of color bars is displayed.
 The number of bars and their colors depend on the groups to which the entry belongs to.
 
-**%%% screenshot here: entry table with group column %%%**
+%%% screenshot here: entry table with group column %%%
 
 By hovering the mouse on this column, you can see the list of groups to which an entry belongs to.
 
-**%%% screenshot here: entry table with group column and list of groups in hovering message%%%**
+%%% screenshot here: entry table with group column and list of groups in hovering message%%%
 
 The "groups" column is displayed by default.
 To remove the "groups" column, go to **Options --> Preferences**, tab **Entry table**, and click on the bin icon next to the item "Groups".
 To add the "groups" column, select the "Groups" item in the drop-down menu, and click on the **+** button located to the right of the drop-down menu.
 
-**%%% screenshot here: Preferences with groups item %%%**
+%%% screenshot here: Preferences with groups item %%%
 
 ## Groups and searching
 
-When viewing the contents of selected group(s), a search can be performed within these contents using the regular search facility **%%%Insert link to help page%%%**.
+When viewing the contents of selected group(s), a search can be performed within these contents using the regular search facility %%%Insert link to help page%%%.
 
 ## Preferences about groups
 
 General preferences for groups can be accessed using **Options --> Preferences**, tab **Groups**.
 
-**%%% screenshot here: whole group preferences %%%**
+%%% screenshot here: whole group preferences %%%
 
 ### View
 
