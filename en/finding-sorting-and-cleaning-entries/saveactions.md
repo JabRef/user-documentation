@@ -21,9 +21,21 @@ Clears the field completely.
 
 Escape underscores
 
+### Escape ampersands
+
+Escapes ampersands.
+
+* `Text & with &ampersands` ⇒ `Text \& with \&ampersands`
+
 ### HTML to LaTeX
 
 Converts HTML code to LaTeX code.
+
+### Cleanup URL link
+
+Cleanup URL links.
+
+* `http%3A%2F%2Fwikipedia.org` ⇒ `http://wikipedia.org`
 
 ### HTML to Unicode
 
@@ -85,6 +97,12 @@ Shortens DOI to more human readable form using [http://shortdoi.org](http://shor
 
 Converts Unicode characters to LaTeX encoding.
 
+### LaTeX to Unicode
+
+Converts LaTeX to Unicode characters if possible.
+
+* `$\acute{\omega}$` ⇒ `ώ`
+
 ### Units to LaTeX
 
 Converts units to LaTeX formatting. This includes:
@@ -119,14 +137,15 @@ Shortens lists of persons if there are more than 2 persons to \"et al.\".
 
 ## Save actions as modifiers
 
-Most of the [field formatters listed above](#list-of-actions) can also be used as modifiers in [citation key patterns](../setup/citationkeypatterns.md) using their key.
-The table below shows their key and if they can be used as modifiers.
+The [field formatters listed above](#list-of-actions) can also be used as modifiers in [citation key patterns](../setup/citationkeypatterns.md) using their keys listed below.
 
 Save action | Key
---- | --- | ---
+--- | ---
 [Clear](#clear) | `clear`
 [Escape underscores](#escape-underscores) | `escapeUnderscores`
+[Escape ampersands](#escape-ampersands) | `escapeAmpersands`
 [HTML to LaTeX](#html-to-latex) | `html_to_latex`
+[Cleanup URL link](#cleanup-url-link) | `cleanup_url`
 [HTML to Unicode](#html-to-unicode) | `html_to_unicode`
 [LaTeX cleanup](#latex-cleanup) | `latex_cleanup`
 [Normalize date](#normalize-date) | `normalize_date`
@@ -137,6 +156,7 @@ Save action | Key
 [Remove enclosing braces](#remove-enclosing-braces) | `remove_braces`
 [Shorten DOI](#shorten-doi) | `short_doi`
 [Unicode to LaTeX](#unicode-to-latex) | `unicode_to_latex`
+[Latex to Unicode](#latex-to-unicode) | `latex_to_unicode`
 [Units to LaTeX](#units-to-latex) | `units_to_latex`
 [Capitalize](#capitalize) | `capitalize`
 [Lower case](#lower-case) | `lower_case`
