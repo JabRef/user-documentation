@@ -26,7 +26,7 @@ Most JabRef installations include the necessary files, so test the extension bef
 2. Install the JabRef browser extension: [Firefox](https://addons.mozilla.org/en-US/firefox/addon/jabref/?src=external-github), [Chrome](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh), [Vivaldi](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh)
 3. On Windows 7, please [upgrade Powershell](https://www.microsoft.com/en-us/download/details.aspx?id=54616).
 4. Download the following files and copy them to the same directory as `JabRef.exe`
-   * [jabref.json](https://raw.githubusercontent.com/JabRef/jabref/master/buildres/windows/jabref.json)
+   * [jabref-firefox.json](https://raw.githubusercontent.com/JabRef/jabref/master/buildres/windows/jabref-firefox.json)
    * [jabref-chrome.json](https://raw.githubusercontent.com/JabRef/jabref/master/buildres/windows/jabref-chrome.json)
    * [JabRef.bat](https://raw.githubusercontent.com/JabRef/jabref/master/buildres/windows/JabRefHost.bat)
    * [JabRef.ps1](https://raw.githubusercontent.com/JabRef/jabref/master/buildres/windows/JabRefHost.ps1)
@@ -36,7 +36,7 @@ Most JabRef installations include the necessary files, so test the extension bef
    For Firefox support:
 
    ```text
-   REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Mozilla\NativeMessagingHosts\org.jabref.jabref" /ve /d "C:\path\to\jabref.json" /f
+   REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Mozilla\NativeMessagingHosts\org.jabref.jabref" /ve /d "C:\path\to\jabref-firefox.json" /f
    ```
 
    For Chrome/Opera/Brave/Vivaldi and other chromium based browser support:
@@ -75,6 +75,10 @@ Most JabRef installations include the necessary files, so test the extension bef
    * `/etc/chromium/native-messaging-hosts/org.jabref.jabref.json` to install with admin rights for all users
    * `~/.config/chromium/NativeMessagingHosts/org.jabref.jabref.json` to install without admin rights for the current user
 
+     3.d Edge: Download [org.jabref.jabref.json](https://raw.githubusercontent.com/JabRef/jabref/master/buildres/linux/native-messaging-host/chromium/org.jabref.jabref.json) and put it into
+   * `/etc/opt/edge/native-messaging-hosts/org.jabref.jabref.json` to install with admin rights for all users
+   * `~/.config/microsoft-edge/NativeMessagingHosts/org.jabref.jabref.json` to install without admin rights for the current user
+
 #### Snap
 
 1. Install the snap package of [JabRef 5.0](https://snapcraft.io/jabref)
@@ -83,6 +87,7 @@ Most JabRef installations include the necessary files, so test the extension bef
    * Firefox: `snap connect jabref:hostfs-mozilla-native-messaging-jabref`
    * Chrome: `snap connect jabref:etc-opt-chrome-native-messaging-jabref`
    * Chromium: `snap connect jabref:etc-chromium-native-messaging-jabref`
+   * Edge: `snap connect jabref:etc-opt-edge-native-messaging-jabref`
 
 ### Mac OS
 
@@ -98,6 +103,15 @@ Most JabRef installations include the necessary files, so test the extension bef
 
    * `/Library/Application Support/Google/Chrome/NativeMessagingHosts/org.jabref.jabref.json` to install with admin rights for all users
    * `~/Library/Application Support/Google/Chrome/NativeMessagingHosts/org.jabref.jabref.json` to install without admin rights for the current user
+
+    3.c Edge: If it's not auto-installed for you, download [org.jabref.jabref.json](https://raw.githubusercontent.com/JabRef/jabref/master/buildres/mac/native-messaging-host/chromium/org.jabref.jabref.json) and put it into
+
+   * `/Library/Microsoft/Edge/NativeMessagingHosts/org.jabref.jabref.json` to install with admin rights for all users
+   * `~/Library/Application Support/Microsoft Edge {Channel_Name}/NativeMessagingHosts/org.jabref.jabref.json` to install without admin rights for the current user
+
+        The {Channel_Name} in Microsoft Edge {Channel_Name} must be one of the following values: Canary, Dev, Beta.
+
+        When using the Stable release/channel, {Channel_Name} is not required.
 
 ## Usage
 
