@@ -28,7 +28,8 @@
 
 {% page-ref page="resources.md" %}
 
+{% page-ref page="customthemes.md" %}
+
 {% page-ref page="license.md" %}
 
 {% page-ref page="knowledge/" %}
-
