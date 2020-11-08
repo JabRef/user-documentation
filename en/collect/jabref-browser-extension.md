@@ -124,9 +124,9 @@ You might want to configure JabRef so that new entries are always imported in an
 
 ### In case you have Adblock Plus extension and Jabref extension doesn't work
 
-1) Go to https://zotero.org .
+1) Go to [zotero.org](https://zotero.org) .
 2) Deactivate adblock plus extension for the whole domain (zotero.org) by clicking on the Adblock plus extension button and sliding corresponding slider to allow adds on the whole domain.
 3) Close and reopen the browser in order to reload all the extension and their settings.
-4) Verify the functioning of the Jabref extension by visiting a page you know it's working to extract its bibliographic data and pressing the extension button or Alt + Shift + J.
+4) Verify the functioning of the Jabref extension by visiting a page you know it's working to extract its bibliographic data (for example, [the arXiv](http://arxiv.org/list/gr-qc/pastweek?skip=0&show=5)\) by pressing the extension button or Alt + Shift + J.
 
 In case you encounter problems in this procedure refer to issue #241 on GitHub for further help.
