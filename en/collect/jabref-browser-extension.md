@@ -119,3 +119,14 @@ After the installation, you should be able to import bibliographic references in
 
 You might want to configure JabRef so that new entries are always imported in an already opened instance of JabRef. For this, activate "Listen to remote operation on port" under the "Network" tab of the JabRef Preferences.
 
+
+## Troubleshooting
+
+### In case you have Adblock Plus extension and Jabref extension doesn't work
+
+1) Go to https://zotero.org .
+2) Deactivate adblock plus extension for the whole domain (zotero.org) by clicking on the Adblock plus extension button and sliding corresponding slider to allow adds on the whole domain.
+3) Close and reopen the browser in order to reload all the extension and their settings.
+4) Verify the functioning of the Jabref extension by visiting a page you know it's working to extract its bibliographic data and pressing the extension button or Alt + Shift + J.
+
+In case you encounter problems in this procedure refer to issue #241 on GitHub for further help.
