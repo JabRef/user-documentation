@@ -19,7 +19,7 @@ Group definitions are database-specific.​
 
 The group interface is shown in the side pane on the left of the screen. It can be toggled on or off by pressing `Alt + 3` or by the menu **View → Groups interface**. The interface has several buttons, but most functions are accessed via a context menu \(i.e. a right-click\). Drag-and-drop is also supported.
 
-%%% screenshot here: whole group interface %%%
+![The main group interface](../.gitbook/assets/groups-interfacewhole-jabref5.2.png)
 
 ### Creating a group and adding entries to it
 
@@ -35,7 +35,7 @@ Selecting one group shows the entries contained in that group \(accounting for [
 
 When selecting several groups, you can intersect or unionize them: _Union_ displays all the entries of the selected groups while _Intersection_ displays all the entries shared among the selected groups.
 
-%%% screenshot here: group interface with focus on union/intersection button %%%
+![Button for toggling union/intersection](../.gitbook/assets/groups-unionbutton-jabref5.2.png)
 
 For example, if you have a group for the author 'Smith' and another one for the author 'Doe', selecting the groups displays the entries that they co-authored if 'Intersection' is selected. If 'Union' is selected, the entries that at least one of them authored are displayed.
 
@@ -49,7 +49,7 @@ Just like directories, groups are structured like a tree, with the group _All En
 
 The properties of a group can be defined in the 'Edit group' dialog window \(the same window is displayed when creating a new group\). To modify the group properties, right-click on the group name in the group panel and select **Edit group** in the context menu.
 
-%%% screenshot here: whole group dialog window %%%
+![Edit group window](../.gitbook/assets/groups-groupwindow-jabref5.2.png)
 
 ### Name
 
@@ -63,7 +63,7 @@ A description of the group, to help you remember what it is about. This descript
 
 An icon can be displayed in front of the group name. Choose your favorite icon among the ones available at [https://materialdesignicons.com/](https://materialdesignicons.com/), and enter its name of the field _Icon_. The color of the icon can be set in to the field _Color_.
 
-%%% screenshot here: part of group pane showing icon and color %%%
+![](../.gitbook/assets/groups-groupwindow-iconcolorhierarchy-jabref5.2.png)
 
 ### Hierarchical context
 
@@ -107,7 +107,7 @@ JabRef has five types of groups:
 
 Groups based on explicit selection are populated only by manual assignment of entries.
 
-%%% screenshot here: grab of the group type %%%
+![Fields for collecting by using an explicit selection](../.gitbook/assets/groups-groupwindow-typeexplicit-jabref5.2.png)
 
 After creating an explicit-selection group, you select the entries to be assigned to it, and use either drag-and-drop or the context menu **Add selected entries to this group** of the group interface.
 
@@ -121,7 +121,7 @@ This method of grouping requires that all entries have a unique citation key. In
 
 This method groups entries in which a specified _field_ \(e.g. _author_\) contains a specified _keyword_ \(e.g. _Smith_\). The mentioned example will group all entries referring to the author _Smith_.
 
-%%% screenshot here: grab of the group type %%%
+![Fields for  collecting by searching for a keyword](../.gitbook/assets/groups-groupwindow-typekeyboard-jabref5.2.png)
 
 The search can be case-sensitive or not \(checkbox 'Case sensitive'\). The search can either be done as a plain-text or a regular-expression search \(checkbox 'Regular expression'\).
 
@@ -133,7 +133,7 @@ The content of the group is updated dynamically whenever the database changes: J
 
 This is similar to the above, but rather than search for a single search term on a single field, a [search expression syntax](search.md#advanced) can be used. It supports logical operators \(`AND`, `OR`, `NOT`\) and allows searching multiple fields.
 
-%%% screenshot here: grab of the group type %%%
+![Fields for collecting by a free-form search expression ](../.gitbook/assets/groups-groupwindow-typefreeexpression-jabref5.2.png)
 
 For example, the search expression `keywords=regression and not keywords=linear` groups entries concerned with non-linear regression.
 
@@ -145,7 +145,7 @@ With the group type "Specified keywords", you can quickly create a set of groups
 
 You can also specify characters to ignore, for instance commas used between keywords. These will be treated as separators between words, and not part of them. This step is important for combined keywords such as `laplace distribution` to be recognized as a single semantic unit. \(You cannot use this option to remove complete words. Instead, delete the unwanted groups manually after they were created automatically.\)
 
-%%% screenshot here: grab of the group type %%%
+![Fields for collecting by specified keywords](../.gitbook/assets/groups-groupwindow-typespecifiedkeywords-jabref5.2.png)
 
 The content of the group is updated dynamically whenever the database changes.
 
@@ -153,7 +153,7 @@ The content of the group is updated dynamically whenever the database changes.
 
 The group contains the entries cited in a LaTeX document, based on its '.aux' file. The .aux file has to be specified.
 
-%%% screenshot here: grab of the group type %%%
+![Fields for collecting by cited entries](../.gitbook/assets/groups-groupwindow-typecited-jabref5.2.png)
 
 The content of the group is updated dynamically whenever the `.aux` file changes.
 
@@ -161,15 +161,13 @@ The content of the group is updated dynamically whenever the `.aux` file changes
 
 To see easily to which groups an entry belongs to, the entry table has a column dedicated to groups. For each entry, a set of color bars is displayed. The number of bars and their colors depend on the groups to which the entry belongs to.
 
-%%% screenshot here: entry table with group column %%%
+![](../.gitbook/assets/groups-groupcolorlabel-jabref5.2%20%281%29.png)
 
 By hovering the mouse on this column, you can see the list of groups to which an entry belongs to.
 
-%%% screenshot here: entry table with group column and list of groups in hovering message%%%
-
 The "groups" column is displayed by default. To remove the "groups" column, go to **Options → Preferences**, tab **Entry table**, and click on the bin icon next to the item "Groups". To add the "groups" column, select the "Groups" item in the drop-down menu, and click on the **+** button located to the right of the drop-down menu.
 
-%%% screenshot here: Preferences with groups item %%%
+![Preferences for tab Groups](../.gitbook/assets/groups-preferences-jabref5.2.png)
 
 ## Groups and searching
 
@@ -179,7 +177,7 @@ When viewing the contents of selected group\(s\), a search can be performed with
 
 General preferences for groups can be accessed using **Options → Preferences**, tab **Groups**.
 
-%%% screenshot here: whole group preferences %%%
+![Preferences for tab Groups](../.gitbook/assets/groups-preferences-jabref5.2.png)
 
 ### View
 
@@ -204,5 +202,5 @@ The character separating two keywords can be set in this field. The default keyw
 
 ## Groups in the library file
 
-Groups are saved as a `@COMMENT` block in the `.bib`-file and are shared among all users. \(Future versions of JabRef might support user-dependent groups.\)
+Groups are saved as a `@COMMENT` block in the `.bib`-file and are shared among all users \(future versions of JabRef might support user-dependent groups\).
 
