@@ -20,6 +20,8 @@ Hence, your database is always clean and up-to-date.
 
 {% page-ref page="groups.md" %}
 
+{% page-ref page="keywords.md" %}
+
 {% page-ref page="specialfields.md" %}
 
 {% page-ref page="search.md" %}
