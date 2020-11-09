@@ -58,20 +58,19 @@ The connection from JabRef to Libre Office requires some office related `jar`-ar
 
 ### External program integration in Snap and Flatpak packages
 
-The snap and flatpak packages cannot interact directly with external programs (i.e. programs not contained in the package sandbox).
-What this means is that for now there is no possible connection between JabRef and Libreoffice if either one is a snap/flatpak.
+The snap and flatpak packages cannot interact directly with external programs \(i.e. programs not contained in the package sandbox\). What this means is that for now there is no possible connection between JabRef and Libreoffice if either one is a snap/flatpak.
 
-The integration with TeX editors is fine if JabRef is a deb/rpm, and the editor is a snap/deb/rpm (not a flatpak).
+The integration with TeX editors is fine if JabRef is a deb/rpm, and the editor is a snap/deb/rpm \(not a flatpak\).
 
 Depending on your use case and needed integrations it is advisable to choose the proper packages. Watch this page for new developments on the interactions with external programs.
 
-|                       | Snap | Flatpak | deb/rpm            | tar                |
-|-----------------------|------|---------|--------------------|--------------------|
-| Libreoffice (system)  | :x:  | :x:     | :heavy_check_mark: | :heavy_check_mark: |
-| Libreoffice (snap)    | :x:  | :x:     | :x:                | :x:                |
-| Libreoffice (flatpak) | :x:  | :x:     | :x:                | :x:                |
-| LaTex editor (system) | :x:  | :x:     | :heavy_check_mark: | :heavy_check_mark: |
-| LaTeX editor (snap)   | :x:  | :x:     | :heavy_check_mark: | :heavy_check_mark: |
+|  | Snap | Flatpak | deb/rpm | tar |
+| :--- | :--- | :--- | :--- | :--- |
+| Libreoffice \(system\) | :x: | :x: | :heavy\_check\_mark: | :heavy\_check\_mark: |
+| Libreoffice \(snap\) | :x: | :x: | :x: | :x: |
+| Libreoffice \(flatpak\) | :x: | :x: | :x: | :x: |
+| LaTex editor \(system\) | :x: | :x: | :heavy\_check\_mark: | :heavy\_check\_mark: |
+| LaTeX editor \(snap\) | :x: | :x: | :heavy\_check\_mark: | :heavy\_check\_mark: |
 
 ### Include JabRef in the start menu of Ubuntu
 

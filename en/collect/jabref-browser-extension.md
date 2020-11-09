@@ -76,6 +76,7 @@ Most JabRef installations include the necessary files, so test the extension bef
    * `~/.config/chromium/NativeMessagingHosts/org.jabref.jabref.json` to install without admin rights for the current user
 
      3.d Edge: Download [org.jabref.jabref.json](https://raw.githubusercontent.com/JabRef/jabref/master/buildres/linux/native-messaging-host/chromium/org.jabref.jabref.json) and put it into
+
    * `/etc/opt/edge/native-messaging-hosts/org.jabref.jabref.json` to install with admin rights for all users
    * `~/.config/microsoft-edge/NativeMessagingHosts/org.jabref.jabref.json` to install without admin rights for the current user
 
@@ -104,14 +105,14 @@ Most JabRef installations include the necessary files, so test the extension bef
    * `/Library/Application Support/Google/Chrome/NativeMessagingHosts/org.jabref.jabref.json` to install with admin rights for all users
    * `~/Library/Application Support/Google/Chrome/NativeMessagingHosts/org.jabref.jabref.json` to install without admin rights for the current user
 
-    3.c Edge: If it's not auto-installed for you, download [org.jabref.jabref.json](https://raw.githubusercontent.com/JabRef/jabref/master/buildres/mac/native-messaging-host/chromium/org.jabref.jabref.json) and put it into
+     3.c Edge: If it's not auto-installed for you, download [org.jabref.jabref.json](https://raw.githubusercontent.com/JabRef/jabref/master/buildres/mac/native-messaging-host/chromium/org.jabref.jabref.json) and put it into
 
    * `/Library/Microsoft/Edge/NativeMessagingHosts/org.jabref.jabref.json` to install with admin rights for all users
    * `~/Library/Application Support/Microsoft Edge {Channel_Name}/NativeMessagingHosts/org.jabref.jabref.json` to install without admin rights for the current user
 
-        The {Channel_Name} in Microsoft Edge {Channel_Name} must be one of the following values: Canary, Dev, Beta.
+     The {Channel\_Name} in Microsoft Edge {Channel\_Name} must be one of the following values: Canary, Dev, Beta.
 
-        When using the Stable release/channel, {Channel_Name} is not required.
+     When using the Stable release/channel, {Channel\_Name} is not required.
 
 ## Usage
 
@@ -119,14 +120,11 @@ After the installation, you should be able to import bibliographic references in
 
 You might want to configure JabRef so that new entries are always imported in an already opened instance of JabRef. For this, activate "Listen to remote operation on port" under the "Network" tab of the JabRef Preferences.
 
-
 ## Troubleshooting
 
 ### In case you have Adblock Plus extension and Jabref extension doesn't work
 
-1) Go to [zotero.org](https://zotero.org) .
-2) Deactivate adblock plus extension for the whole domain (zotero.org) by clicking on the Adblock plus extension button and sliding corresponding slider to allow adds on the whole domain.
-3) Close and reopen the browser in order to reload all the extension and their settings.
-4) Verify the functioning of the Jabref extension by visiting a page you know it's working to extract its bibliographic data (for example, [the arXiv](http://arxiv.org/list/gr-qc/pastweek?skip=0&show=5)\) by pressing the extension button or Alt + Shift + J.
+1\) Go to [zotero.org](https://zotero.org) . 2\) Deactivate adblock plus extension for the whole domain \(zotero.org\) by clicking on the Adblock plus extension button and sliding corresponding slider to allow adds on the whole domain. 3\) Close and reopen the browser in order to reload all the extension and their settings. 4\) Verify the functioning of the Jabref extension by visiting a page you know it's working to extract its bibliographic data \(for example, [the arXiv](http://arxiv.org/list/gr-qc/pastweek?skip=0&show=5)\) by pressing the extension button or Alt + Shift + J.
 
-In case you encounter problems in this procedure refer to issue #241 on GitHub for further help.
+In case you encounter problems in this procedure refer to issue \#241 on GitHub for further help.
+
