@@ -4,7 +4,7 @@ description: Structure your bibliography to your needs
 
 # Groups
 
-Groups allow to structure a bibliographic database in a tree-like way that is similar to organizing files on disk in directories and subdirectories. The two main differences are:
+Groups allow to structure a bibliographic database in a tree-like way that is similar to organizing files on disk in directories and sub-directories. The two main differences are:
 
 * While a file is always located in exactly one directory, an entry may be contained in more than one group.
 * Groups may use certain criteria to dynamically define their content. New entries that match these criteria are automatically added to these groups. This feature is not available in common file systems, but in several Email clients \(e.g. Thunderbird and Opera\).
@@ -25,13 +25,13 @@ The group interface is shown in the side pane on the left of the screen. It can 
 
 To create a group and manually assign entries to it, press the **+** button, enter a name for the group, then press \(leaving all values at their defaults\). Now select the entries to be assigned to the group, and drag-and-drop them to the group \(or use **Add to group** in the context menu of the group interface\). Finally, select the group to see its content. Only the entries you just assigned to the group should be displayed in the entry table.
 
-You can also automatically fill a group based on keywords. For this you need to use a different type of groups **%%%Add a anchor to the section Types of groups%%%**.
+You can also automatically fill a group based on keywords. For this you need to use a different [type of groups](groups.md#types-of-groups).
 
 When you have numerous groups, the one of interest can be displayed by typing its name in the ''Filter groups'' field located near the top of the group pane.
 
 ### Display union or intersection of groups
 
-Selecting one group shows the entries contained in that group \(accounting for hierarchical settings **%%%Add a anchor to the section Hierarchical context%%%**\).
+Selecting one group shows the entries contained in that group \(accounting for [hierarchical settings](groups.md#hierarchical-context)\).
 
 When selecting several groups, you can intersect or unionize them: _Union_ displays all the entries of the selected groups while _Intersection_ displays all the entries shared among the selected groups.
 
@@ -173,11 +173,11 @@ The "groups" column is displayed by default. To remove the "groups" column, go t
 
 ## Groups and searching
 
-When viewing the contents of selected group\(s\), a search can be performed within these contents using the regular search facility %%%Insert link to help page%%%.
+When viewing the contents of selected group\(s\), a search can be performed within these contents using the [regular search facility](search.md#regular-expressions).
 
 ## Preferences about groups
 
-General preferences for groups can be accessed using **Options  Preferences**, tab **Groups**.
+General preferences for groups can be accessed using **Options → Preferences**, tab **Groups**.
 
 %%% screenshot here: whole group preferences %%%
 
