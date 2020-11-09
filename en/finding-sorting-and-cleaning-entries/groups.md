@@ -12,12 +12,12 @@ Groups allow to structure a bibliographic database in a tree-like way that is si
 Selecting a group shows the entries contained in that group. Selecting multiple groups shows the entries contained in any group \(union\) or those contained in all groups \(intersection\), depending on the current settings. All this is explained in detail below.
 
 {% hint style="info" %}
-
+Group definitions are database-specific.​
 {% endhint %}
 
 ## Groups interface and first steps
 
-The group interface is shown in the side pane on the left of the screen. It can be toggled on or off by pressing 'Alt + 3' or by the menu **View --&gt; Groups interface**. The interface has several buttons, but most functions are accessed via a context menu \(i.e. a right-click\). Drag-and-drop is also supported.
+The group interface is shown in the side pane on the left of the screen. It can be toggled on or off by pressing `Alt + 3` or by the menu **View → Groups interface**. The interface has several buttons, but most functions are accessed via a context menu \(i.e. a right-click\). Drag-and-drop is also supported.
 
 %%% screenshot here: whole group interface %%%
 
@@ -65,7 +65,7 @@ An icon can be displayed in front of the group name. Choose your favorite icon a
 
 %%% screenshot here: part of group pane showing icon and color %%%
 
-### Hierachical context
+### Hierarchical context
 
 The displayed entries depend on the hierarchical context of the group. When a group is selected, the displayed entries can be:
 
@@ -90,8 +90,6 @@ The union of a group and its subgroups is the logical complement of the intersec
 You can create a group for your references about music, and then subgroups about the music styles \(classic, jazz, rock, etc.\). By setting the group "Music" as _union_, when you subsequently add references to a subgroup, they will automatically appear in group "Music" as well \(without additional action\).
 
 ### Mixing refining groups with including groups
-
-%%%Help needed: Still true? If so, please, translate it using the current vocabulary?%%%
 
 If a refining group is a subgroup of a group that includes its subgroups -- the refining group's siblings --, these siblings are ignored when the refining group is selected.
 
@@ -157,7 +155,7 @@ The group contains the entries cited in a LaTeX document, based on its '.aux' fi
 
 %%% screenshot here: grab of the group type %%%
 
-%%%Help needed: True? When updated exactly? %%% The content of the group is updated dynamically whenever the `.aux` file changes.
+The content of the group is updated dynamically whenever the `.aux` file changes.
 
 ## Group color bars in the entry table
 
@@ -169,7 +167,7 @@ By hovering the mouse on this column, you can see the list of groups to which an
 
 %%% screenshot here: entry table with group column and list of groups in hovering message%%%
 
-The "groups" column is displayed by default. To remove the "groups" column, go to **Options --&gt; Preferences**, tab **Entry table**, and click on the bin icon next to the item "Groups". To add the "groups" column, select the "Groups" item in the drop-down menu, and click on the **+** button located to the right of the drop-down menu.
+The "groups" column is displayed by default. To remove the "groups" column, go to **Options → Preferences**, tab **Entry table**, and click on the bin icon next to the item "Groups". To add the "groups" column, select the "Groups" item in the drop-down menu, and click on the **+** button located to the right of the drop-down menu.
 
 %%% screenshot here: Preferences with groups item %%%
 
@@ -179,7 +177,7 @@ When viewing the contents of selected group\(s\), a search can be performed with
 
 ## Preferences about groups
 
-General preferences for groups can be accessed using **Options --&gt; Preferences**, tab **Groups**.
+General preferences for groups can be accessed using **Options  Preferences**, tab **Groups**.
 
 %%% screenshot here: whole group preferences %%%
 
