@@ -66,11 +66,11 @@ Depending on your use case and needed integrations it is advisable to choose the
 
 |  | Snap | Flatpak | deb/rpm | tar |
 | :--- | :--- | :--- | :--- | :--- |
-| Libreoffice \(system\) | :x: | :x: | :heavy\_check\_mark: | :heavy\_check\_mark: |
-| Libreoffice \(snap\) | :x: | :x: | :x: | :x: |
-| Libreoffice \(flatpak\) | :x: | :x: | :x: | :x: |
-| LaTex editor \(system\) | :x: | :x: | :heavy\_check\_mark: | :heavy\_check\_mark: |
-| LaTeX editor \(snap\) | :x: | :x: | :heavy\_check\_mark: | :heavy\_check\_mark: |
+| Libreoffice \(system\) | ❌ | ❌ | ✅ | ✅ |
+| Libreoffice \(snap\) | ❌ | ❌ | ❌ | ❌ |
+| Libreoffice \(flatpak\) | ❌ | ❌ | ❌ | ❌ |
+| LaTex editor \(system\) | ❌ | ❌ | ✅ | ✅ |
+| LaTeX editor \(snap\) | ❌ | ❌ | ✅ | ✅ |
 
 ### Include JabRef in the start menu of Ubuntu
 
