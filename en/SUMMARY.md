@@ -16,6 +16,7 @@
 * [Organize](finding-sorting-and-cleaning-entries/README.md)
   * [Edit an entry](finding-sorting-and-cleaning-entries/edit-entry.md)
   * [Groups](finding-sorting-and-cleaning-entries/groups.md)
+  * [Keywords](finding-sorting-and-cleaning-entries/keywords.md)
   * [Mark and grade](finding-sorting-and-cleaning-entries/specialfields.md)
   * [Searching within the library](finding-sorting-and-cleaning-entries/search.md)
   * [Complete information using online databases](finding-sorting-and-cleaning-entries/getbibtexdatafromdoi.md)
