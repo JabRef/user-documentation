@@ -2,13 +2,10 @@
 
 JabRef can fetch automatically additional information about your entries. It can even get the publication file!​
 
-To find identifiers \(arxiv, DOI\), select the entries and go to the menu **Lookup → search document identifier online**.
+* _To find identifiers \(arxiv, DOI\)_, select the entries and go to the menu **Lookup → search document identifier online**.​
+* _To find the document_ related to an entry, select the entry and to the menu **Lookup → search full text documents online**.​
+* _To complete bibliographic information_ based on DOI or ISBN, continue reading the section below. 
 
-To find the document related to an entry, select the entrie and to the menu **Lookup → search full text documents online**.
-
-To complete information based on DOI or ISBN, continue reading this page. 
-
-* 
 ## Completing information based on DOI or ISBN
 
 JabRef can help you complement your entries from their DOI or ISBN.
