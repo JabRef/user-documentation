@@ -1,5 +1,16 @@
 # Complete information using online databases
 
+JabRef can fetch automatically additional information about your entries. It can even get the publication file!​
+
+To find identifiers \(arxiv, DOI\), select the entries and go to the menu **Lookup → search document identifier online**.
+
+To find the document related to an entry, select the entrie and to the menu **Lookup → search full text documents online**.
+
+To complete information based on DOI or ISBN, continue reading this page. 
+
+* 
+## Completing information based on DOI or ISBN
+
 JabRef can help you complement your entries from their DOI or ISBN.
 
 In the entry table, right-click on the entry to complement, and select the menu **Get bibliographic data from DOI/ISBN/...** \(_obviously, this feature is disabled if your entry does not have a DOI/ISBN._\). Alternatively, you can open the [entry editor](../advanced/entryeditor/), and in the General tab, click on the button  **bibliographic data from DOI**.
@@ -8,7 +19,7 @@ In the entry table, right-click on the entry to complement, and select the menu 
 
 The **Merge entry with DOI information** window will pop-up.
 
-## Parallel display of the entry field and of the information gathered from the DOI
+### Parallel display of the entry field and of the information gathered from the DOI
 
 ![Screenshot of the parallel display](../.gitbook/assets/getbibtexdatafromdoi-paralleldisplay%20%281%29.png)
 
@@ -35,7 +46,7 @@ The differences between the two sides can be emphasized through the drop-down me
 
 In the central column, a radio button allows you to select which side to keep for each field: the **left side**, the **right side**, or **none**. By default, the original entry \(left\) is kept, and any fields not present in the original entry are obtained from the information collected from the DOI.
 
-## Merged entry: preview and source code
+### Merged entry: preview and source code
 
 ![Screenshot of the preview and source code for the merged entry](../.gitbook/assets/getbibtexdatafromdoi-previewandcode%20%281%29.png)
 
@@ -43,7 +54,7 @@ Based upon your selection, the merged entry is shown, both as a preview \(on the
 
 If you right-click on the preview, you can **Print entry preview** or **Copy preview**.
 
-## Final merging
+### Final merging
 
 ![Screenshot of choosing to replace the original entry or not](../.gitbook/assets/getbibtexdatafromdoi-selecting%20%281%29.png)
 
