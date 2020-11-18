@@ -57,7 +57,7 @@ Then select the `study.bib` file in the file explorer dialogue that is located i
 After that the automated search is executed and any new studies are commited and pushed to the configured git repository.
 The local repository now contains the retrieved studies sorted by the respective query and digital library that retrieved it.
 
-![Repository structure](../../.gitbook/assets/select-study-definition.png)
+![Repository structure](../../.gitbook/assets/repository-structure.png)
 
 The `result.bib` located in the query folder contains the merged results from all fetcher for the respective query.
 The `studyResult.bib` contains the merged results for all queries.
