@@ -1,7 +1,3 @@
----
-description: Conducting automated cross-library search
----
-
 # Conducting automated cross-library search
 
 ## Providing a study file for automated search
