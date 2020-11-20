@@ -24,17 +24,15 @@ JabRef can help you refactor your reference list by automatically abbreviating o
 
 Although JabRef comes with a build-in list of journals, additional lists are available at [https://abbrv.jabref.org](https://abbrv.jabref.org).
 
-## Export filters
+## Export filters and style files for LibreOffice
 
-JabRef allows you to create custom export filters. This functionality and the installation procedure are described in the help file on [Custom export filters](https://docs.jabref.org/import-export/export/customexports). Some users have created export filters that can be useful to many others.
+JabRef allows you to create custom export filters and style files for LibreOffice. This functionality and the installation procedure are described in the help file on [Custom export filters](https://docs.jabref.org/import-export/export/customexports). Some users have created export filters that can be useful to many others.
 
-They are collected at [https://layouts.jabref.org](https://layouts.jabref.org).
-
-Styles files are available at [https://layouts.jabref.org](https://layouts.jabref.org) and for LibreOffice at [https://jstyles.jabref.org](https://jstyles.jabref.org). 
+Export filters are collected at [https://layouts.jabref.org](https://layouts.jabref.org). Style files for LibreOffice are available at [https://jstyles.jabref.org](https://jstyles.jabref.org). 
 
 ### Endnote export filter set
 
-This improves author recognition and adds support for more fileds to EndNote.
+This improves author recognition and adds support for more fields to EndNote.
 
 Homepage: [https://github.com/JabRef/EndNode-JabRef-filters](https://github.com/JabRef/EndNode-JabRef-filters)
 
