@@ -14,7 +14,7 @@ The only requirement for a valid export filter is the existence of a file with t
 
 To see examples of how export filters are made, look for the package containing the layout files for the standard export filters on our download page.
 
-Regarding tool support, there is the [Export-Filter Editor for Jabref](https://sourceforge.net/projects/efe/) to quickly create export filters.
+Regarding tool support, there is the [Export-Filter Editor for Jabref](https://github.com/teertinker/Export-Filter-Editor) to quickly create export filters.
 
 ### Layout files
 
