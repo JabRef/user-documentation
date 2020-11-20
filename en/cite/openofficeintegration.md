@@ -96,6 +96,8 @@ default=\format[AuthorLastFirst,AuthorAbbreviator,AuthorAndsReplacer]{\author}
 
 \(Note that the layout for each entry type must be constrained to a single line in the style file - above, the lines are broken up to improve readability.\)
 
+Regarding tool support, there is the [Export-Filter-Editor](https://github.com/teertinker/Export-Filter-Editor)  for Jabref to quickly create a style file.
+
 ### Global properties
 
 The **PROPERTIES** section describes global properties for the bibliography. The following table describes the available properties:
@@ -175,9 +177,11 @@ If you are using numbered citations, the number for each entry will be automatic
 ## Known issues
 
 * Make sure to save your Writer document in OpenDocument format \(odt\). Saving to Word format will lose your reference marks.
+  * Otherwise try to use the external tool [JabRef LibreOffice Converter](https://github.com/teertinker/JabRef_LibreOffice_Converter). This LibreOffice extension converts the reference marks to code that can be saved.
 * There is currently no support for footnote based citations.
 * The cursor may be poorly positioned after inserting a citation.
 * Copy-pasting the example style file directly from this page can give an unparseable file. To avoid this, instead download the example file from the link in the download section.
 * Make sure that `libreoffice-java-common` is installed on Linux for LibreOffice 5, otherwise important libraries are missing.
+* The snap version of LibreOffice and JabRef may cause connection issues. Try to use the \*deb versions instead.
 * Open Office 4 will only work running under a 32-bit Java JRE/JDK on Windows because there is no 64-bit version of OpenOffice yet.
 
