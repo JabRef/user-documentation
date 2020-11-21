@@ -38,7 +38,7 @@ Homepage: [https://github.com/JabRef/EndNode-JabRef-filters](https://github.com/
 
 ### Export-Filter Editor
 
-Using this tool you can easily create a custom export filter for JabRef to build you own bibliography style. The tool itself supports:
+Using this tool you can easily create a custom export filter for JabRef to build your own bibliography style. The tool itself supports:
 
 * HTML Export Filter
 * RTF Export Filter
@@ -93,4 +93,3 @@ This WinEdt's package allows to launch the JabRef program from within WinEdt.
 A LibreOffice extension that converts JabRef references to plain text code and vice versa so that you can use your references with MS Office and other software.
 
 [Description and download of the extension](https://github.com/teertinker/JabRef_LibreOffice_Converter)
-
