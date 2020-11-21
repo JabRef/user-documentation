@@ -24,28 +24,28 @@ JabRef can help you refactor your reference list by automatically abbreviating o
 
 Although JabRef comes with a build-in list of journals, additional lists are available at [https://abbrv.jabref.org](https://abbrv.jabref.org).
 
-## Export filters
+## Export filters and style files for LibreOffice
 
-JabRef allows you to create custom export filters. This functionality and the installation procedure are described in the help file on [Custom export filters](https://docs.jabref.org/import-export/export/customexports). Some users have created export filters that can be useful to many others.
+JabRef allows you to create custom export filters and style files for LibreOffice. This functionality and the installation procedure are described in the help file on [Custom export filters](https://docs.jabref.org/import-export/export/customexports). Some users have created export filters that can be useful to many others.
 
-They are collected at [https://layouts.jabref.org](https://layouts.jabref.org).
+Export filters are collected at [https://layouts.jabref.org](https://layouts.jabref.org). Style files for LibreOffice are available at [https://jstyles.jabref.org](https://jstyles.jabref.org).
 
 ### Endnote export filter set
 
-This improves author recognition and adds support for more fileds to EndNote.
+This improves author recognition and adds support for more fields to EndNote.
 
 Homepage: [https://github.com/JabRef/EndNode-JabRef-filters](https://github.com/JabRef/EndNode-JabRef-filters)
 
 ### Export-Filter Editor
 
-Using this tool you can easily create a custom export filter for JabRef to build you own bibliography style. Styles files are available at [https://layouts.jabref.org](https://layouts.jabref.org) and for LibreOffice at [https://jstyles.jabref.org](https://jstyles.jabref.org). The tool itself supports:
+Using this tool you can easily create a custom export filter for JabRef to build your own bibliography style. The tool itself supports:
 
 * HTML Export Filter
 * RTF Export Filter
 * OpenOffice/ LibreOffice Style File
 * Saving the filter for later refinements
 
-[Download the Export-Filter Editor](https://sourceforge.net/projects/efe/?source=dlp)
+[Download the Export-Filter Editor](https://github.com/teertinker/Export-Filter-Editor)
 
 ## Additional tools
 
@@ -88,3 +88,8 @@ This WinEdt's package allows to launch the JabRef program from within WinEdt.
 
 [Download the WinEdt's JabRef launcher](http://www.winedt.org/config/menus/JabRef.html)
 
+### JabRef LibreOffice Converter
+
+A LibreOffice extension that converts JabRef references to plain text code and vice versa so that you can use your references with MS Office and other software.
+
+[Description and download of the extension](https://github.com/teertinker/JabRef_LibreOffice_Converter)
