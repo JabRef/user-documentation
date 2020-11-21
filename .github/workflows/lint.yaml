@@ -11,3 +11,6 @@ jobs:
         with:
           args: 'en/'
           config: '.markdownlint.yml'
+      - name: Add GithHub checker
+        uses: xt0rted/markdownlint-problem-matcher@v1
+        
