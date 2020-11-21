@@ -28,7 +28,7 @@ Although JabRef comes with a build-in list of journals, additional lists are ava
 
 JabRef allows you to create custom export filters and style files for LibreOffice. This functionality and the installation procedure are described in the help file on [Custom export filters](https://docs.jabref.org/import-export/export/customexports). Some users have created export filters that can be useful to many others.
 
-Export filters are collected at [https://layouts.jabref.org](https://layouts.jabref.org). Style files for LibreOffice are available at [https://jstyles.jabref.org](https://jstyles.jabref.org). 
+Export filters are collected at [https://layouts.jabref.org](https://layouts.jabref.org). Style files for LibreOffice are available at [https://jstyles.jabref.org](https://jstyles.jabref.org).
 
 ### Endnote export filter set
 
