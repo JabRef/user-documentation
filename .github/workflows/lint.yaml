@@ -3,6 +3,8 @@ on: [push, pull_request]
 jobs:
   lint:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v2
@@ -13,4 +15,3 @@ jobs:
           config: '.markdownlint.yml'
       - name: Add GithHub checker
         uses: xt0rted/markdownlint-problem-matcher@v1
-        
