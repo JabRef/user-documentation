@@ -93,3 +93,4 @@ This WinEdt's package allows to launch the JabRef program from within WinEdt.
 A LibreOffice extension that converts JabRef references to plain text code and vice versa so that you can use your references with MS Office and other software.
 
 [Description and download of the extension](https://github.com/teertinker/JabRef_LibreOffice_Converter)
+

@@ -8,11 +8,9 @@ With XMP-support the JabRef team tries to bring the advantages of metadata to th
 
 To use the XMP-feature in JabRef you can do the following:
 
-* To **import a single annotated PDF-file** that contains XMP you can select "File → Import into... → XMP-annotated PDF" or drag the file into the main view.
-* To **write the bibliographic information to the associated PDF** do the following: Double click the entry in the main view, go to the "General" tab and click on "Write XMP".
-* If you want **to annotate all the PDFs in a given database** you can select "Tools → Write XMP for database"
-* To verify if it worked you can open the PDF in Adobe Acrobat and select "File → Document Properties → Additional Metadata → Advanced". In the tree to the right you should see an entry called "[http://purl.org/net/bibteXMP](http://purl.org/net/bibteXMP)". This works only with Adobe Acrobat, not with Adobe Reader.
-* If you don't have Adobe Acrobat, you can use `pdfinfo` instead in order to see the XMP metadata. `pdfinfo` is part of [Xpdf](http://www.foolabs.com/xpdf/) and [Popple](http://poppler.freedesktop.org).
+* _To import a single annotated PDF-file_ _that contains XMP_, select **File → Import into...** and then choose the filter "XMP-annotated PDF", or drag the file into the main view.
+* * _To annotate all the PDFs in a given database,_ select **Tools → Write XMP metadata to PDFs**.
+* To verify if it worked you can open the PDF in Adobe Acrobat and select **File → Document Properties → Additional Metadata → Advanced**. In the tree to the right you should see an entry called "[http://purl.org/net/bibteXMP](http://purl.org/net/bibteXMP)". Note: this works only with Adobe Acrobat, _not with Adobe Reader_. If you do not have Adobe Acrobat, you can use `pdfinfo` instead in order to see the XMP metadata. `pdfinfo` is part of [Xpdf tools](http://www.foolabs.com/xpdf/)  and [Poppler](http://poppler.freedesktop.org).
 
 ## BibTeXmp Fileformat
 
@@ -92,7 +90,7 @@ Beware of the following caveats if you trying to parse BibTeXMP:
 
 Some links about XMP and annotating PDFs
 
-* [Wikipedia Article](https://en.wikipedia.org/wiki/Extensible_Metadata_Platform)
+* [Wikipedia article on XMP](https://en.wikipedia.org/wiki/Extensible_Metadata_Platform)
 * [James Howison's blog "Themp---Managing Academic Papers like MP3s"](https://web.archive.org/web/20110424121251/http://freelancepropaganda.com/themp/)
 * [Good thread on ArsTechnica discussing the management of PDFs.](http://arstechnica.com/civis/viewtopic.php?f=19&t=408429)
 
