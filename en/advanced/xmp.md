@@ -9,7 +9,7 @@ With XMP-support the JabRef team tries to bring the advantages of metadata to th
 To use the XMP-feature in JabRef you can do the following:
 
 * _To import a single annotated PDF-file_ _that contains XMP_, select **File → Import into...** and then choose the filter "XMP-annotated PDF", or drag the file into the main view.
-* * _To annotate all the PDFs in a given database,_ select **Tools → Write XMP metadata to PDFs**.
+* _To annotate all the PDFs in a given database,_ select **Tools → Write XMP metadata to PDFs**.
 * To verify if it worked you can open the PDF in Adobe Acrobat and select **File → Document Properties → Additional Metadata → Advanced**. In the tree to the right you should see an entry called "[http://purl.org/net/bibteXMP](http://purl.org/net/bibteXMP)". Note: this works only with Adobe Acrobat, _not with Adobe Reader_. If you do not have Adobe Acrobat, you can use `pdfinfo` instead in order to see the XMP metadata. `pdfinfo` is part of [Xpdf tools](http://www.foolabs.com/xpdf/)  and [Poppler](http://poppler.freedesktop.org).
 
 ## BibTeXmp Fileformat
