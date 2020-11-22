@@ -1,8 +1,12 @@
+---
+description: Bib(la)TeX information into the PDF metadata
+---
+
 # XMP metadata support in JabRef
 
 XMP is a standard created by Adobe Systems for storing metadata \(data about data\) in files. An well known example for metadata are MP3 tags, which can be used to describe artist, album and song name of a MP3 file. Adding metadata to MP3 helps other people to identify the songs correctly independent of file-name and can provide means for software \(MP3 players for instance\) to sort and group songs.
 
-With XMP-support the JabRef team tries to bring the advantages of metadata to the world of reference managers. You can now choose to "Write XMP" metadata in the General Tab of JabRef, which will put all the Bib\(la\)TeX information into the PDF. If you then email this PDF to a colleague she can just drag the file into JabRef and all information that you entered will be available to her.
+With XMP-support the JabRef team tries to bring the advantages of metadata to the world of reference managers. You can now choose to "Write XMP metadata to PDFs" in the Tools menu of JabRef, which will put all the Bib\(la\)TeX information into the PDFs. If you then email a PDF to a colleague she can just drag the file into JabRef and all information that you entered will be available to her.
 
 ## Usage
 
@@ -10,7 +14,7 @@ To use the XMP-feature in JabRef you can do the following:
 
 * _To import a single annotated PDF-file_ _that contains XMP_, select **File → Import into...** and then choose the filter "XMP-annotated PDF", or drag the file into the main view.
 * _To annotate all the PDFs in a given database,_ select **Tools → Write XMP metadata to PDFs**.
-* To verify if it worked you can open the PDF in Adobe Acrobat and select **File → Document Properties → Additional Metadata → Advanced**. In the tree to the right you should see an entry called "[http://purl.org/net/bibteXMP](http://purl.org/net/bibteXMP)". Note: this works only with Adobe Acrobat, _not with Adobe Reader_. If you do not have Adobe Acrobat, you can use `pdfinfo` instead in order to see the XMP metadata. `pdfinfo` is part of [Xpdf tools](http://www.foolabs.com/xpdf/)  and [Poppler](http://poppler.freedesktop.org).
+* _To verify if it worked,_ you can open the PDF in Adobe Acrobat and select **File → Document Properties → Additional Metadata → Advanced**. In the tree to the right you should see an entry called "[http://purl.org/net/bibteXMP](http://purl.org/net/bibteXMP)". Note: this works only with Adobe Acrobat, _not with Adobe Reader_. If you do not have Adobe Acrobat, you can use `pdfinfo` instead in order to see the XMP metadata. `pdfinfo` is part of [Xpdf tools](http://www.foolabs.com/xpdf/)  and [Poppler](http://poppler.freedesktop.org).
 
 ## BibTeXmp Fileformat
 
