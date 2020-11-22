@@ -42,24 +42,46 @@ The following is an example of the mapping
 will be transformed into
 
 ```markup
-<rdf:Description xmlns:bibtex="http://jabref.sourceforge.net/bibteXMP/"
-    bibtex:bibtexkey="CroAnnHow05"
-    bibtex:year="2005"
-    bibtex:title="Effective work practices for floss development: A model and propositions"
-    bibtex:owner="oezbek"
-    bibtex:url="http://james.howison.name/publications"
-    bibtex:booktitle="Hawaii International Conference On System Sciences (HICSS)"
-    bibtex:timestamp="2006.05.29">
-        <bibtex:author>
-            <rdf:Seq>
-                <rdf:li>K. Crowston</rdf:li>
-                <rdf:li>H. Annabi</rdf:li>
-                <rdf:li>J. Howison</rdf:li>
-                <rdf:li>C. Masango</rdf:li>
-            </rdf:Seq>
-        </bibtex:author>
-    <bibtex:entrytype>Inproceedings</bibtex:entrytype>
-</rdf:Description>
+<?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?><x:xmpmeta xmlns:x="adobe:ns:meta/">
+  <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <rdf:Description xmlns:dc="http://purl.org/dc/elements/1.1/" rdf:about="">
+      <dc:creator>
+        <rdf:Seq>
+          <rdf:li>K. Crowston</rdf:li>
+          <rdf:li>H. Annabi</rdf:li>
+          <rdf:li>J. Howison</rdf:li>
+          <rdf:li>C. Masango</rdf:li>
+        </rdf:Seq>
+      </dc:creator>
+      <dc:relation>
+        <rdf:Bag>
+          <rdf:li>bibtex/booktitle/Hawaii International Conference On System Sciences (HICSS)</rdf:li>
+          <rdf:li>bibtex/citationkey/CroAnnHow05</rdf:li>
+          <rdf:li>bibtex/file/:CroAnnHow05.pdf:PDF</rdf:li>
+          <rdf:li>bibtex/owner/fdarboux</rdf:li>
+          <rdf:li>bibtex/timestamp/2020-11-22</rdf:li>
+          <rdf:li>bibtex/url/http://james.howison.name/publications</rdf:li>
+        </rdf:Bag>
+      </dc:relation>
+      <dc:title>
+        <rdf:Alt>
+          <rdf:li xml:lang="x-default">Effective work practices for floss development: A model and propositions</rdf:li>
+        </rdf:Alt>
+      </dc:title>
+      <dc:date>
+        <rdf:Seq>
+          <rdf:li>2005</rdf:li>
+        </rdf:Seq>
+      </dc:date>
+      <dc:format>application/pdf</dc:format>
+      <dc:type>
+        <rdf:Bag>
+          <rdf:li>InProceedings</rdf:li>
+        </rdf:Bag>
+      </dc:type>
+    </rdf:Description>
+  </rdf:RDF>
+</x:xmpmeta><?xpacket end="w"?>
 ```
 
 Beware of the following caveats if you trying to parse BibTeXMP:
