@@ -44,15 +44,15 @@ A: Yes. In **Options → Preferences → General** set "Default Encoding" to _UT
 
 ## Q: If I double click a BibTeX file in the file browser, JabRef always opens a new window. Can JabRef open the libraries in the same window just in a different tab?
 
-A: In **Options → Preferences → Advanced → “Remote operation”** put a checkmark to “Listen for remote operation on port”. This option allows new instances of JabRef to detect the instance already running, and pass files to that instead of opening a new window. \(Default option since [JabRef 3.0](https://github.com/JabRef/jabref/blob/master/CHANGELOG.md#30---2015-11-29)\).
+A: In **Options → Preferences → Network**, in the “Remote operation” section, put a checkmark to “Listen for remote operation on port”. This option allows new instances of JabRef to detect the instance already running, and pass files to that instead of opening a new window. \(Default option since [JabRef 3.0](https://github.com/JabRef/jabref/blob/master/CHANGELOG.md#30---2015-11-29)\).
 
 ## Q: I have an DOI/ISBN/ePrint/etc. Is it possible to create an entry directly out of this identifier?
 
-A: Paste the DOI in the table of entries, and JabRef will create the corresponding entry. Additionaly, in **Library → New entry** you can select the type of the identifier in the field "ID type" and enter the identifier in "ID". A click on "Generate" should create the correct entry. If this does not work, try a web search.
+A: Paste the DOI in the table of entries, and JabRef will create the corresponding entry. Additionally, in **Library → New entry** you can select the type of the identifier in the field "ID type" and enter the identifier in "ID". A click on "Generate" should create the correct entry. If this does not work, try a web search.
 
 ## Q: Why can't JabRef find any DOI/ISBN/ePrint/etc.?
 
-A: There are several reasons why JabRef cannot find your identifier online \(e.g. one reason could be that your DOI is not listed in the [CrossRef database](https://search.crossref.org/) if you are using the CrossRef fetcher. Another reason could be that the search result for your DOI on [DOI.org](https://dx.doi.org) returns invalid BibTeX which is unable to be read by JabRef.\) Try a web search instead.
+A: There are several reasons why JabRef cannot find your identifier online. For example, your DOI is not listed in the [CrossRef database](https://search.crossref.org/) if you are using the CrossRef fetcher. Another reason could be that the search result for your DOI on [DOI.org](https://dx.doi.org) returns invalid BibTeX which is unable to be read by JabRef. Try a web search instead.
 
 ## Q: I miss a field _translator_, _lastfollowedon_, etc. How can I add such fields?
 
@@ -68,23 +68,23 @@ A: Yes, you can use the parameter `--importToOpen bibfile` of the [command line]
 
 ## Q: How do I link external files with paths relative to my .bib file, so I can move my library along with its files to another directory?
 
-A: You need to override the default file directory for this specific library. In **File → Library properties** you can override the **Default file directory** setting. There, you can either enter the path in **General file directory** \(for it to be valid for all users of the file\) or in **User-specific file directory** \(for it to be valid for you only\). If you simply enter “.” \(a dot, without the quotes\), the file directory will be the same as the .bib file directory. To place your files in a subdirectory called **subdir**, you can enter **“./subdir”** \(without the quotes\). Files will automatically be linked with relative paths if the files are placed in the default file directory or in a directory below it.
+A: You need to override the default file directory for this specific library. In  **Library → Library properties** you can override the **Default file directory** setting. There, you can either enter the path in **General file directory** \(for it to be valid for all users of the file\) or in **User-specific file directory** \(for it to be valid for you only\). If you simply enter “.” \(a dot, without the quotes\), the file directory will be the same as the .bib file directory. To place your files in a subdirectory called **subdir**, you can enter **“./subdir”** \(without the quotes\). Files will automatically be linked with relative paths if the files are placed in the default file directory or in a directory below it.
 
 ## Q: Can I use a bib-file specific PDF directory?
 
-A: In **File → Library properties** you can choose a library specific directory in the field “General file directory”. If you want to set a directory only for you \(so that other users should use the default directory\), use the field “User-specific file directory”.
+A: In **Library → Library properties** you can choose a library specific directory in the field “General file directory”. If you want to set a directory only for you \(so that other users should use the default directory\), use the field “User-specific file directory”.
 
 ## Q: How do I export my bibliography entries into a simple text file, so I can import them into a spreadsheet \(in LibreOffice, OpenOffice, MS Office, etc.\)?
 
-A: Use **File → Export**. As “Filter” choose “OpenOffice/LibreOffice CSV \(\*.csv\)”.
+A: Use **File → Export**. As “Filter” choose “OpenOffice/LibreOffice CSV”.
 
 ## Q: How do I add and remove keywords of multiple entries?
 
-A: Select the entries. Right click. Choose “Manage keywords”. There you can manage keywords appearing in all selected entries or in any selected entry. New keywords are added to all selected entries.
+A: Select the entries and go to **Library → Manage keywords**. There you can manage keywords appearing in all selected entries or in any selected entry. New keywords are added to all selected entries.
 
 ## Q: When linking a file, I cannot set the correct type. How do I add new types?
 
-In **Options →  Preferences**, tab **External programs**, button "Manage external file types,  you can add arbitrary types.
+In **Options →  Preferences**, tab **External programs**, button "Manage external file types",  you can add arbitrary types.
 
 ## Q: When an organization is provided as author, my BibTeX style doesn't recognize it. For instance, why is “European Commission” converted to “Commission, E.”.?
 
@@ -94,13 +94,13 @@ A: Use curly braces to tell BibTeX to keep your author field as is: `{European C
 
 A: Take a look at “Bibliographies and citations” at the [UK List of TeX Frequently Asked Questions on the Web](http://www.tex.ac.uk/). For German readers, there is the [dante e.V. FAQ](http://projekte.dante.de/DanteFAQ/LiteraturVerzeichnis).
 
-## Q: How do I export a subset to of my library to BibTeX \(or BibLaTeX\) format?
+## Q: How do I export a subset of my library to BibTeX \(or biblatex\) format?
 
-A: Your JabRef library is already a file in Bib\(La\)TeX format. To export a specific subset of your library select the entries to be exported and then choose **File → Export → Save selected as plain BibTeX...**.
+A: Your JabRef library is already a file in Bib\(la\)TeX format. To export a specific subset of your library, select the entries to be exported and then choose **File → Export → Save selected as plain BibTeX...**.
 
 ## Q: How do I export a subset corresponding to my LaTeX file?
 
-A: Upon compilation, LaTeX generates a file with the extension ".aux". This files contains the keys of the cited references \(among other things\). Using this AUX file, JabRef can extract the relevant entries. Choose the menu **Tools → New sublibrary based on AUX file**. Select the reference library \(among the opened ones\) and specify the AUX file.
+A: Upon compilation, LaTeX generates a file with the extension ".aux". This files contains the keys of the cited references \(among other things\). Using this AUX file, JabRef can extract the relevant entries. Choose the menu **Tools → New sublibrary based on AUX file...** , then select the AUX file.
 
 ## Q: When I modify my library, I would like that JabRef performs entry cleaning automatically. How to do this?
 
