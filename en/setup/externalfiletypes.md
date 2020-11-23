@@ -1,10 +1,9 @@
 # Manage external file types
 
-This feature is available through **Options → Preferences**, tab **External programs**, button "Manage external file types"​.
+In general, there is no need to change the settings of external file types. So, this setting is for advanced users.
 
-{% hint style="warning" %}
-This help page should describe the menu Options -&gt; Preferences, tab External programs, button "Manage external file types".
+For each file link, a file type must be chosen, to determine what icon should be used and what application should be called to open the file. The list of file types can be viewed and edited by choosing **Options → Preferences**, tab **External programs**, button "Manage external file types".
 
-Please, populate this page. Visit our page about [how to edit a help page](../faqcontributing/how-to-improve-the-help-page.md#editing-help-pages-directly-in-the-browser).​​
-{% endhint %}
+A file type is specified by its name, a graphical icon, a file extension and an application to view the files. On Windows, the name of the application can be omitted in order to use Window's default viewer instead.
 
+![Manage external file types](../.gitbook/assets/manageexternalfiletypes%20%282%29.png)
