@@ -98,6 +98,26 @@ A: Take a look at “Bibliographies and citations” at the [UK List of TeX Freq
 
 A: Your JabRef library is already a file in Bib\(la\)TeX format. To export a specific subset of your library, select the entries to be exported and then choose **File → Export → Save selected as plain BibTeX...**.
 
+## Q: I have the Bib\(la\)TeX code of a reference. How to add it to my library as a new entry?
+
+A: Paste the Bib\(la\)Tex code of a reference into the table of entries, and JabRef will create the new corresponding entry.
+
+## Q: I have the PDF of a publication. How to make it a new entry of my library?
+
+A: Drag & drop a PDF onto the table of entries \(between two existing entries\). JabRef will analyze the PDF and create a new entry. More details about [Adding entries from PDFs.](collect/findunlinkedfiles.md)
+
+## Q: I am looking at a publication in my web browser. How to make it a new entry of my library?
+
+A: Use [JabRef Browser extension](collect/jabref-browser-extension.md): with one click, JabRef browser extension identifies and extracts bibliographic information on websites and sends them to JabRef.
+
+## Q: I am missing the DOI of some of my publications. Can JabRef help?
+
+A: JabRef can fetch the DOI for you: select the entries and go to **Lookup → Search document identifier online → DOI**.
+
+## Q: I am missing the PDF of some of my publications. Can JabRef help?​
+
+A: JabRef can fetch the PDFs for you: select the entries and to to **Lookup → Search full text documents online**.​
+
 ## Q: How do I export a subset corresponding to my LaTeX file?
 
 A: Upon compilation, LaTeX generates a file with the extension ".aux". This files contains the keys of the cited references \(among other things\). Using this AUX file, JabRef can extract the relevant entries. Choose the menu **Tools → New sublibrary based on AUX file...** , then select the AUX file.
