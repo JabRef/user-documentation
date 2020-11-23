@@ -75,11 +75,7 @@ To access any of an entry's links, click on the icon with the right mouse button
 
 ## Setting up external file types
 
-In general, there is no need to change the settings of external file types. So, this setting is for advanced users.
+In general, there is no need to change the settings of external file types. So, this setting is for advanced users. See [Manage external file types](../setup/externalfiletypes.md).
 
-For each file link, a file type must be chosen, to determine what icon should be used and what application should be called to open the file. The list of file types can be viewed and edited by choosing **Options → Preferences**, tab **External programs**, button "Manage external file types".
 
-A file type is specified by its name, a graphical icon, a file extension and an application to view the files. On Windows, the name of the application can be omitted in order to use Window's default viewer instead.
-
-![Manage external file types](../.gitbook/assets/manageexternalfiletypes%20%282%29.png)
 
