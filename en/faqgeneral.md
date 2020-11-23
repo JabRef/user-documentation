@@ -48,15 +48,15 @@ A: In **Options → Preferences → Network**, in the “Remote operation” sec
 
 ## Q: I have an DOI/ISBN/ePrint/etc. Is it possible to create an entry directly out of this identifier?
 
-A: Paste the DOI in the table of entries, and JabRef will create the corresponding entry. Additionally, in **Library → New entry** you can select the type of the identifier in the field "ID type" and enter the identifier in "ID". A click on "Generate" should create the correct entry. If this does not work, try a web search.
+A: Paste the DOI in the table of entries, and JabRef will create the corresponding entry. Additionally, in **Library → New entry** you can select the type of the identifier in the field "ID type" and enter the identifier in "ID". A click on "Generate" should create the correct entry. If this does not work, try a web search. For more details, see [Add entry using an ID](collect/add-entry-using-an-id.md).
 
 ## Q: Why can't JabRef find any DOI/ISBN/ePrint/etc.?
 
-A: There are several reasons why JabRef cannot find your identifier online. For example, your DOI is not listed in the [CrossRef database](https://search.crossref.org/) if you are using the CrossRef fetcher. Another reason could be that the search result for your DOI on [DOI.org](https://dx.doi.org) returns invalid BibTeX which is unable to be read by JabRef. Try a web search instead.
+A: There are several reasons why JabRef cannot find your identifier online. For example, your DOI is not listed in the [CrossRef database](https://search.crossref.org/) if you are using the CrossRef fetcher. Another reason could be that the search result for your DOI on [DOI.org](https://dx.doi.org) returns invalid BibTeX which is unable to be read by JabRef. Try a [web search](collect/import-using-online-bibliographic-database.md) instead.
 
 ## Q: I miss a field _translator_, _lastfollowedon_, etc. How can I add such fields?
 
-A: To add this _translator_ field to all entry types, you can use **Options → Set up general fields** and add a _translator_ field under one of JabRef's general field tabs. To add this _translator_ field to a specific entry type, edit the specific entry type\(s\) \(**Options → Customize entry types**\) and add a _translator_ field under required fields or optional fields, as you like.
+A: To add this _translator_ field to all entry types, you can use **Options → Set up general fields** and add a _translator_ field under one of JabRef's general field tabs \(see [Customize general field](setup/generalfields.md)s\). To add this _translator_ field to a specific entry type, edit the specific entry type\(s\) \(**Options → Customize entry types**\) and add a _translator_ field under required fields or optional fields, as you like \(see [Customize entry types](setup/customentrytypes.md)\).
 
 ## Q: How do I prevent JabRef from introducing line breaks in certain fields \(such as “title”\) when saving the .bib file?
 
@@ -68,11 +68,11 @@ A: Yes, you can use the parameter `--importToOpen bibfile` of the [command line]
 
 ## Q: How do I link external files with paths relative to my .bib file, so I can move my library along with its files to another directory?
 
-A: You need to override the default file directory for this specific library. In  **Library → Library properties** you can override the **Default file directory** setting. There, you can either enter the path in **General file directory** \(for it to be valid for all users of the file\) or in **User-specific file directory** \(for it to be valid for you only\). If you simply enter “.” \(a dot, without the quotes\), the file directory will be the same as the .bib file directory. To place your files in a subdirectory called **subdir**, you can enter **“./subdir”** \(without the quotes\). Files will automatically be linked with relative paths if the files are placed in the default file directory or in a directory below it.
+A: You need to override the default file directory for this specific library. In  **Library → Library properties** you can override the **Default file directory** setting. There, you can either enter the path in **General file directory** \(for it to be valid for all users of the file\) or in **User-specific file directory** \(for it to be valid for you only\). If you simply enter “.” \(a dot, without the quotes\), the file directory will be the same as the .bib file directory. To place your files in a subdirectory called **subdir**, you can enter **“./subdir”** \(without the quotes\). Files will automatically be linked with relative paths if the files are placed in the default file directory or in a directory below it. More details in the [help page about the library properties](setup/databaseproperties.md).
 
 ## Q: Can I use a bib-file specific PDF directory?
 
-A: In **Library → Library properties** you can choose a library specific directory in the field “General file directory”. If you want to set a directory only for you \(so that other users should use the default directory\), use the field “User-specific file directory”.
+A: In **Library → Library properties** you can choose a library specific directory in the field “General file directory”. If you want to set a directory only for you \(so that other users should use the default directory\), use the field “User-specific file directory”. 
 
 ## Q: How do I export my bibliography entries into a simple text file, so I can import them into a spreadsheet \(in LibreOffice, OpenOffice, MS Office, etc.\)?
 
@@ -80,11 +80,11 @@ A: Use **File → Export**. As “Filter” choose “OpenOffice/LibreOffice CSV
 
 ## Q: How do I add and remove keywords of multiple entries?
 
-A: Select the entries and go to **Library → Manage keywords**. There you can manage keywords appearing in all selected entries or in any selected entry. New keywords are added to all selected entries.
+A: Select the entries and go to **Library → Manage keywords**. There you can manage keywords appearing in all selected entries or in any selected entry. New keywords are added to all selected entries. More details about [keywords in JabRef](finding-sorting-and-cleaning-entries/keywords.md).
 
 ## Q: When linking a file, I cannot set the correct type. How do I add new types?
 
-In **Options →  Preferences**, tab **External programs**, button "Manage external file types",  you can add arbitrary types.
+In **Options →  Preferences**, tab **External programs**, button "Manage external file types",  you can add arbitrary types. See the [dedicated page about external file types](setup/externalfiletypes.md).
 
 ## Q: When an organization is provided as author, my BibTeX style doesn't recognize it. For instance, why is “European Commission” converted to “Commission, E.”.?
 
@@ -104,7 +104,7 @@ A: Upon compilation, LaTeX generates a file with the extension ".aux". This file
 
 ## Q: When I modify my library, I would like that JabRef performs entry cleaning automatically. How to do this?
 
-A: In **Library → Library properties**, you will find a section named "Save actions". After enabling this feature, you can choose which actions should be performed for each field upon saving. That should help you keep your library tidy.
+A: In **Library → Library properties**, you will find a section named "Save actions". After enabling this feature, you can choose which actions should be performed for each field upon saving. That should help you keep your library tidy. More details about [cleaning up of entries](finding-sorting-and-cleaning-entries/cleanupentries.md), [save actions](finding-sorting-and-cleaning-entries/saveactions.md) and [check integrity](finding-sorting-and-cleaning-entries/checkintegrity.md).
 
 ## Q: Search on Google scholar does not work anymore. Why?
 
