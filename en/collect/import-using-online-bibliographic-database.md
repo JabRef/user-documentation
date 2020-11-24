@@ -129,6 +129,10 @@ The following list shows some of the field indicators that can be used:
 
 [Jstor](https://jstor.org) is an online database with access to more than 12 million journal articles, books and sources in 75 disciplines. [About](https://about.jstor.org/)
 
+To fetch entries from Jstor the corresponding fetcher has to be selected from the drop-down menu over the WebSearchBar by scrolling downwards:
+
+![Select JSTOR Fetcher from dropdown menu](../.gitbook/assets/select-jstor-fetcher.png)
+
 It is possible to limit the search by adding a field name to the search, such as `field:"text"`. The supported fields are:
 
 * `ti`: The title of the article
