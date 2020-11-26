@@ -4,13 +4,13 @@ JabRef can fetch automatically additional information about your entries. It can
 
 * _To find identifiers \(arxiv, DOI\)_, select the entries and go to the menu **Lookup → search document identifier online**.​
 * _To find the document_ related to an entry, select the entry and to the menu **Lookup → search full text documents online**.​
-* _To complete bibliographic information_ based on DOI or ISBN, continue reading the section below. 
+* _To complete bibliographic information_ based on DOI or ISBN, continue reading the section below.
 
 ## Completing information based on DOI or ISBN
 
 JabRef can help you complement your entries from their DOI or ISBN.
 
-In the entry table, right-click on the entry to complement, and select the menu **Get bibliographic data from DOI/ISBN/...** \(_obviously, this feature is disabled if your entry does not have a DOI/ISBN._\).   
+In the entry table, right-click on the entry to complement, and select the menu **Get bibliographic data from DOI/ISBN/...** \(_obviously, this feature is disabled if your entry does not have a DOI/ISBN._\).
 Alternatively, you can open the [entry editor](../advanced/entryeditor/), and in the General tab, click on the button  **Get bibliographic data from DOI:**
 
 ![](../.gitbook/assets/getdoi-entryeditor-jabref5.2.png)

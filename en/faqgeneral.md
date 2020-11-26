@@ -72,7 +72,7 @@ A: You need to override the default file directory for this specific library. In
 
 ## Q: Can I use a bib-file specific PDF directory?
 
-A: In **Library → Library properties** you can choose a library specific directory in the field “General file directory”. If you want to set a directory only for you \(so that other users should use the default directory\), use the field “User-specific file directory”. 
+A: In **Library → Library properties** you can choose a library specific directory in the field “General file directory”. If you want to set a directory only for you \(so that other users should use the default directory\), use the field “User-specific file directory”.
 
 ## Q: How do I export my bibliography entries into a simple text file, so I can import them into a spreadsheet \(in LibreOffice, OpenOffice, MS Office, etc.\)?
 
@@ -86,7 +86,7 @@ A: Select the entries and go to **Library → Manage keywords**. There you can m
 
 In **Options →  Preferences**, tab **External programs**, button "Manage external file types",  you can add arbitrary types. See the [dedicated page about external file types](setup/externalfiletypes.md).
 
-## Q: When an organization is provided as author, my BibTeX style doesn't recognize it. For instance, why is “European Commission” converted to “Commission, E.”.?
+## Q: When an organization is provided as author, my BibTeX style doesn't recognize it. For instance, why is “European Commission” converted to “Commission, E.”?
 
 A: Use curly braces to tell BibTeX to keep your author field as is: `{European Commission}`. In biblatex, you can use `label = {EC}` to have `EC05` as label for a publication of the European Commission in the year 2005.
 
