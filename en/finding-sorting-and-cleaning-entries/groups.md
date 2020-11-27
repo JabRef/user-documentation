@@ -4,7 +4,7 @@ description: Structure your bibliography to your needs
 
 # Groups
 
-Groups allow to structure a bibliographic database in a tree-like way that is similar to organizing files on disk in directories and sub-directories. The two main differences are:
+Groups allow structuring of bibliographic libraries in a tree-like way that is similar to organizing files on disk in directories and sub-directories. The two main differences are:
 
 * While a file is always located in exactly one directory, an entry may be contained in more than one group.
 * Groups may use certain criteria to dynamically define their content. New entries that match these criteria are automatically added to these groups. This feature is not available in common file systems, but in several Email clients \(e.g. Thunderbird and Opera\).
@@ -25,7 +25,7 @@ The group interface is shown in the side pane on the left of the screen. It can 
 
 To create a group and manually assign entries to it, press the **+** button, enter a name for the group, then press \(leaving all values at their defaults\). Now select the entries to be assigned to the group, and drag-and-drop them to the group \(or use **Add to group** in the context menu of the group interface\). Finally, select the group to see its content. Only the entries you just assigned to the group should be displayed in the entry table.
 
-You can also automatically fill a group based on keywords. For this you need to use a different [type of groups](groups.md#types-of-groups).
+You can also automatically fill a group based on keywords. For this, you need to use a different [type of groups](groups.md#types-of-groups).
 
 When you have numerous groups, the one of interest can be displayed by typing its name in the ''Filter groups'' field located near the top of the group pane.
 
@@ -61,7 +61,7 @@ A description of the group, to help you remember what it is about. This descript
 
 ### Icon and color
 
-An icon can be displayed in front of the group name. Choose your favorite icon among the ones available at [https://materialdesignicons.com/](https://materialdesignicons.com/), and enter its name of the field _Icon_. The color of the icon can be set in to the field _Color_.
+An icon can be displayed in front of the group name. Choose your favorite icon among the ones available at [https://materialdesignicons.com/](https://materialdesignicons.com/), and enter its name of the field _Icon_. The color of the icon can be set in the field _Color_.
 
 ![](../.gitbook/assets/groups-groupwindow-iconcolorhierarchy-jabref5.2.png)
 
@@ -75,7 +75,7 @@ The displayed entries depend on the hierarchical context of the group. When a gr
 
 #### Independent group
 
-By default, a group is **independent** of its position in the groups tree: When selected, the table of entries shows only the group's content \(all of its entries\).
+By default, a group is **independent** of its position in the group's tree: When selected, the table of entries shows only the group's content \(all of its entries\).
 
 #### Intersection between a group and its supergroup
 
@@ -97,9 +97,9 @@ If a refining group is a subgroup of a group that includes its subgroups -- the 
 
 JabRef has five types of groups:
 
-* **Explicit selection**. The group contains entries that were assigned manually. It behaves like a directory on disk, and contain only those entries that you explicitly assigned to it.
-* **Searching for a keyword**. The group contain entries in which a certain field \(e.g. `author`\) contains a certain keyword \(e.g. `Smith`\). This method does not require manual assignment of entries, but uses information that is already present in the database.
-* **Free search expression**. Like **Searching for a keyword**, but for several keywords in several fields.
+* **Explicit selection**. The group contains entries that were assigned manually. It behaves like a directory on disk, and contains only those entries that you explicitly assigned to it.
+* **Searching for a keyword**. The group contain entries in which a certain field \(e.g. `author`\) contains a certain keyword \(e.g. `Smith`\). This method does not require manual assignment of entries but uses information that is already present in the database.
+* **Free search expression**. Similar to **Searching for a keyword**, but for several keywords in several fields.
 * **Specified keywords**. This feature will gather all words found in a specific field of your choice, and create a group for each word.
 * **Cited entries**. The group contains the entries cited in a LaTeX document, based on its _.aux_ file.
 
@@ -109,7 +109,7 @@ Groups based on explicit selection are populated only by manual assignment of en
 
 ![Fields for collecting by using an explicit selection](../.gitbook/assets/groups-groupwindow-typeexplicit-jabref5.2.png)
 
-After creating an explicit-selection group, you select the entries to be assigned to it, and use either drag-and-drop or the context menu **Add selected entries to this group** of the group interface.
+After creating an explicit-selection group, you select the entries to be assigned to it and use either drag-and-drop or the context menu **Add selected entries to this group** of the group interface.
 
 To remove entries from an explicit-selection group, select them and use the context menu **Remove selected entries from this group** of the group interface.
 
@@ -143,7 +143,7 @@ The content of the group is updated dynamically whenever the database changes.
 
 With the group type "Specified keywords", you can quickly create a set of groups appropriate for your database. This feature will gather all words found in a specific field of your choice, and create a group for each word. This is useful for instance if your database contains suitable keywords for all entries. By auto-generating groups based on the `keywords` field, you should have a basic set of groups at no cost. If you have an entry with "keywords = {A, B}", then this group type creates subgroups "A" and "B" both containing the entry.
 
-You can also specify characters to ignore, for instance commas used between keywords. These will be treated as separators between words, and not part of them. This step is important for combined keywords such as `laplace distribution` to be recognized as a single semantic unit. \(You cannot use this option to remove complete words. Instead, delete the unwanted groups manually after they were created automatically.\)
+You can also specify characters to ignore, for instance, commas used between keywords. These will be treated as separators between words, and not part of them. This step is important for combined keywords such as `laplace distribution` to be recognized as a single semantic unit. \(You cannot use this option to remove complete words. Instead, delete the unwanted groups manually after they were created automatically.\)
 
 ![Fields for collecting by specified keywords](../.gitbook/assets/groups-groupwindow-typespecifiedkeywords-jabref5.2.png)
 
@@ -188,11 +188,11 @@ When selecting multiple groups, you can choose to:
 
 ### Automatically assign new entry to selected grouping
 
-The checkbox "Automatically assign new entry go selected grouping" make it possible to automatically assign new entries to selected groups. If checked \(default\), upon selection of one or more groups, all the new entries created will be assigned to the selected groups. This work both for entries created from menu button or entries pasted from clipboard. If unchecked, new entries are not assigned to groups automatically.
+The checkbox "Automatically assign new entry go selected grouping" makes it possible to automatically assign new entries to selected groups. If checked \(default\), upon selection of one or more groups, all the new entries created will be assigned to the selected groups. This works both for entries created from the menu button or entries pasted from the clipboard. If unchecked, new entries are not assigned to groups automatically.
 
 ### Display count of items in group
 
-If checked \(default\), he number of entries in each group is displayed in the group name, at the right of the group pane.
+If checked \(default\), the number of entries in each group is displayed in the group name, at the right of the group pane.
 
 Be careful, this can slow down JabRef when a library has numerous groups.
 

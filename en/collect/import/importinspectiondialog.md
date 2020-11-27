@@ -2,7 +2,7 @@
 
 ## Purpose
 
-When you import new entries from a supported reference format, or fetch entries directly from the Internet, the inspection window allows you to select the entries you want to keep, to [avoid adding duplicated entries](../../finding-sorting-and-cleaning-entries/findduplicates.md), and to perform some simple operations like generating citation keys for the entries, or adding them to [groups](../../finding-sorting-and-cleaning-entries/groups.md). If you are importing into an existing database, it is often easier to perform these operations before they are mixed in between the entries of your database.
+When you import new entries from a supported reference format or fetch entries directly from the Internet, the inspection window allows you to select the entries you want to keep, to [avoid adding duplicated entries](../../finding-sorting-and-cleaning-entries/findduplicates.md), and to perform some simple operations like generating citation keys for the entries or adding them to [groups](../../finding-sorting-and-cleaning-entries/groups.md). If you are importing into an existing database, it is often easier to perform these operations before they are mixed in between the entries of your database.
 
 ## The inspection window
 
@@ -12,11 +12,11 @@ Once the entries displayed in the inspection window, none of them have been adde
 
 ![Screenshot of the inspection window](../../.gitbook/assets/inspectionwindow%20%282%29.png)
 
-By default, all the entries are selected for importation, as shown by the checked boxes in the _Keep_ column. You can select/unselect an entry by clicking on these check boxes. On the left panel, buttons allow you to **Select all** the entries for importation, or to **Deselect all** the entries.
+By default, all the entries are selected for importation, as shown by the checked boxes in the _Keep_ column. You can select/unselect an entry by clicking on these checkboxes. On the left panel, buttons allow you to **Select all** the entries for importation, or to **Deselect all** the entries.
 
-A left click on an entry \(out of the check box and icons\) let you choose it. It displays an preview of the entry below the entry table. As usual, you can choose several entries by using the Shift or the Ctrl keys. Then, pushing the button **Delete** on the left panel will remove the chosen entries from the table.
+A left-click on an entry \(out of the check box and icons\) let you choose it. It displays a preview of the entry below the entry table. As usual, you can choose several entries by using the Shift or the Ctrl keys. Then, pushing the button **Delete** on the left panel will remove the chosen entries from the table.
 
-A right click on an entry displays a drop-down menu which allows you to:
+A right-click on an entry displays a drop-down menu which allows you to:
 
 * delete the entry
 * add the entry to a group

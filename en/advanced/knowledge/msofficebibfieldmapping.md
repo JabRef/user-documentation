@@ -10,7 +10,7 @@ See [https://stackoverflow.com/a/4628718/873282](https://stackoverflow.com/a/462
 
 Some field names in the XML format differ from the field names in the BibTeX/BibLaTeX format and can therefore be not directly mapped between the formats. Therefore this help file provides a list of all field mappings.
 
-| BibTeX/BibLaTeX entry type | XML entry type |
+| BibTeX/biblatex entry type | XML entry type |
 | :--- | :--- |
 | book | Book |
 | inbook | BookSection |
@@ -63,9 +63,9 @@ The field mapping for import and export is mostly the same, but there are some d
 
 ### BibTeX/BibLaTeX only fields
 
-The following fields are BibTeX/BibLaTex only fields, they have no representation in office XML. In the resulting XML file they are represented with the prefix `BIBTEX_`
+The following fields are BibTeX/biblatex only fields, they have no representation in office XML. In the resulting XML file, they are represented with the prefix `BIBTEX_`
 
-| BibTeX/BibLaTeX only fields | XML representation |
+| BibTeX/biblatex only fields | XML representation |
 | :--- | :--- |
 | series | BIBTEX\_Series |
 | abstract | BIBTEX\_Abstract |
@@ -88,7 +88,7 @@ The XML field `SourceType` contains the associated entry type from the first tab
 
 ### MS-Bib only fields
 
-The following fields are XML-only fields, they have no BibTeX/BibLaTex representation: In the resulting bib database they are represented with the prefix `msbib-`.
+The following fields are XML-only fields, they have no BibTeX/biblatex representation: In the resulting bib database they are represented with the prefix `msbib-`.
 
 | BibTeX/BibLaTex represenation | XML field |
 | :--- | :--- |
@@ -124,7 +124,7 @@ The following fields are XML-only fields, they have no BibTeX/BibLaTex represent
 
 The following fields are treated as follows during export:
 
-| BibTeX/BibLaTeX representation | XML field |
+| BibTeX/biblatex representation | XML field |
 | :--- | :--- |
 | booktitle | ConferenceName |
 | journal | JournalName |
@@ -149,7 +149,7 @@ The following fields are treated as follows during export:
 
 The following fields are treated as follows during import:
 
-| BibTeX/BibLaTeX representation | XML field |
+| BibTeX/biblatex representation | XML field |
 | :--- | :--- |
 | organization | ConferenceName |
 | journaltitle | Journal |

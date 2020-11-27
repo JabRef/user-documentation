@@ -12,7 +12,7 @@ The fields of the two entries are displayed side-by-side on the upper part of th
 
 The differences between the two entries can be emphasized through the drop-down menu located at the upper left-hand corner of the window. Five ways of displaying the differences are offered:
 
-* **plain text**: as is, no emphasis
+* **plain text**: as-is, no emphasis
 * **show diff** - word: differences are shown in the right entry. Full words are struck out in red if they are removed from the left entry or underlined in blue if they are added to the right entry.
 * **show diff** - character: differences are shown in the right entry. Individual characters are struck out in red or underlined in blue as above.
 * **show symmetric diff** - word: differences are shown on both sides. Words are underlined and displayed in color.

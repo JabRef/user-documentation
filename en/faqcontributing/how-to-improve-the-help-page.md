@@ -4,7 +4,7 @@ Here is a quick start guide on how to improve help pages in the [Jabref User Doc
 
 ## Prerequisite
 
-The Jabref help pages are hosted at [GitBook](https://www.gitbook.com/) with an integration to GitHub, which provides version control based on [git](https://git-scm.com/). In order to edit or create a JabRef help page, you need a GitHub account. You can sign up [here](https://github.com/join) for free. If you already have an account, please make sure that you are signed in.
+The Jabref help pages are hosted at [GitBook](https://www.gitbook.com/) with integration to GitHub, which provides version control based on [git](https://git-scm.com/). In order to edit or create a JabRef help page, you need a GitHub account. You can sign up [here](https://github.com/join) for free. If you already have an account, please make sure that you are signed in.
 
 ## Editing Help Pages directly in the browser
 
@@ -34,13 +34,13 @@ In order to review your changes, click on the "Preview changes" tab:
 
 ### 3. Saving the changes
 
-To save the changes, create a so called "Commit" by scrolling down and pressing the "Propose File Change" button:
+To save the changes, create a so-called "Commit" by scrolling down and pressing the "Propose File Change" button:
 
 ![Save changes](../.gitbook/assets/screenshot-edit-commit%20%281%29.png)
 
 _Please note: The message you provide here will be visible in the history of the help page, so please consider your change and provide a meaningful description of your changes._
 
-As a last step, submit the changes you have made back to the JabRef team:
+As the last step, submit the changes you have made back to the JabRef team:
 
 ![Create Pull Request](../.gitbook/assets/screenshot-edit-pullrequest%20%281%29.png)
 

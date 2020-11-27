@@ -6,7 +6,7 @@ We are really happy that you are interested in contributing to JabRef. Please ta
 {% tab title="I am not a programmer" %}
 ## I would like to improve the help page. What are the steps? [![Join the chat at https://gitter.im/JabRef/jabref](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/JabRef/jabref?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-Please use the "Edit on GitHub" link at the upper right corner. Then, follow [GitHub's guide to edit files in other user's repository](https://help.github.com/en/github/managing-files-in-a-repository/editing-files-in-another-users-repository).
+Please use the "Edit on GitHub" link in the upper right corner. Then, follow [GitHub's guide to edit files in other user's repository](https://help.github.com/en/github/managing-files-in-a-repository/editing-files-in-another-users-repository).
 
 ## I would like to help translating JabRef to another language. How do I get started? [![Join the chat at https://gitter.im/JabRef/jabref](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/JabRef/jabref?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -18,7 +18,7 @@ JabRef improves -- and Wikipedia pages should keep up!
 
 For changes affecting all languages, update the [wikidata entry of JabRef](https://www.wikidata.org/wiki/Q1676802).
 
-For changes in a specific language, go to the related page, and simply click on "Edit" \(top right-hand tab\). Currently existing pages are:
+For changes in a specific language, go to the related page, and simply click on "Edit" \(top right-hand tab\). Currently, existing pages are:
 
 * Deutsch: [https://de.wikipedia.org/wiki/JabRef](https://de.wikipedia.org/wiki/JabRef)
 * English: [https://en.wikipedia.org/wiki/JabRef](https://en.wikipedia.org/wiki/JabRef)
@@ -31,15 +31,15 @@ For changes in a specific language, go to the related page, and simply click on 
 * Українська: [https://uk.wikipedia.org/wiki/JabRef](https://uk.wikipedia.org/wiki/JabRef)
 * 中文: [https://zh.wikipedia.org/wiki/JabRef](https://zh.wikipedia.org/wiki/JabRef)
 
-If there is no page for you own language, you can easily create one.
+If there is no page for your own language, you can easily create one.
 
 ## I have some cool feature requests [![Discourse](https://img.shields.io/badge/discourse-online-green.svg)](https://discourse.jabref.org/c/features/6)
 
-[Come discuss about it!](http://discourse.jabref.org/)
+[Come discuss it!](http://discourse.jabref.org/)
 
 ## Can I make a donation? How?
 
-Donations keeps us going! You can use Paypal, Flattr, or bank transfers. Your institution/company can contribute too, through bank transfer for example. All details are provided at [https://donations.jabref.org](https://donations.jabref.org).
+Donations keep us going! You can use Paypal, Flattr, or bank transfers. Your institution/company can contribute too, through bank transfer for example. All details are provided at [https://donations.jabref.org](https://donations.jabref.org).
 
 Our team consists of volunteers. To provide better support, we are currently trying to get a funded developer on board. Please consider donating money!
 {% endtab %}

@@ -22,7 +22,7 @@ The fields of the original entry and of the information gathered from the DOI ar
 
 The differences between the two sides can be emphasized through the drop-down menu located at the upper left-hand corner of the window. Five ways of displaying the differences are offered:
 
-* **plain text**: as is, no emphasis
+* **plain text**: as-is, no emphasis
 * **show diff** - word: differences are shown on the right side.
 
   Full words are struck out in red if they are removed from the original entry or underlined in blue if they are added to the information collected from the DOI.

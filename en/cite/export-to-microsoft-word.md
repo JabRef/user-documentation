@@ -1,15 +1,15 @@
 # Export to Microsoft Word
 
- for a video explaining the usage. You can use the builtin export functionality for Office 2007 xml format,  which is the format in which Microsoft stores it bibliography information.
+ for a video explaining the usage. You can use the built-in export functionality for Office 2007 XML format,  which is the format in which Microsoft stores its bibliography information.
 
-1. Export \(selected\) entries in JabRef and choose Office 2007 xml format
+1. Export \(selected\) entries in JabRef and choose Office 2007 XML format
 2. Open Word, click on the References Tab
 3. Click on Manage sources -&gt; Browse -&gt; Open the exported XML File \(or better copy it directly to the location under browse\)
 4. All entries are then available in the MS bibliography database
 
 More discussion at [https://tex.stackexchange.com/a/351452/9075](https://tex.stackexchange.com/a/351452/9075). See [https://www.youtube.com/watch?v=2PpLZTol9\_o](https://www.youtube.com/watch?v=2PpLZTol9_o)
 
-For a detailed list of the fields which are exported in the Office 2007 xml format see the following page.
+For a detailed list of the fields which are exported in the Office 2007 XML format see the following page.
 
 {% page-ref page="../advanced/knowledge/msofficebibfieldmapping.md" %}
 

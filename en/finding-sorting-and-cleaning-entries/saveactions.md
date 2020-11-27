@@ -9,7 +9,7 @@ Field formats can be tidied up when saving the database. That ensures your entri
 * an entry field \(upon which the action will be applied\).
 * the type of action to be carried out \(such as _HTML to LaTeX_, which converts HTML code to LaTeX code, as described in the window\).
 
-A click on the "circular arrow" icon enables a set of recommended formatting actions \(the set of actions will depend on your database type: BibTeX or biblatex\).​
+A click on the "circular arrow" icon enables a set of recommended formatting actions \(the set of actions will depend on your database type: BibTeX or BibLaTeX\).​
 
 ## List of actions
 
@@ -68,7 +68,7 @@ Normalizes lists of persons to the Bib\(la\)TeX standard. This separates authors
 
 ### Normalize page numbers
 
-Normalize pages to Bib\(la\)TeX standard. Format page numbers, separated either by commas or double-hyphens. Converts the range number format to page\_number--page\_number. Removes unwanted literals except letters, numbers and -+ signs. Keeps the existing String if the resulting field does not match the expected Regex.
+Normalize pages to Bib\(la\)TeX standard. Format page numbers, separated either by commas or double-hyphens. Converts the range number format to page\_number--page\_number. Removes unwanted literals except for letters, numbers, and -+ signs. Keeps the existing String if the resulting field does not match the expected Regex.
 
 ```text
 1-2 ⇒ 1--2
@@ -90,7 +90,7 @@ Removes braces encapsulating the complete field content.
 
 ### Shorten DOI
 
-Shortens DOI to more human readable form using [http://shortdoi.org](http://shortdoi.org) .
+Shortens DOI to more human-readable form using [http://shortdoi.org](http://shortdoi.org).
 
 ### Unicode to LaTeX
 

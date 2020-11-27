@@ -10,7 +10,7 @@ description: >-
 
 JabRef has an official browser extension. It automatically identifies and extracts bibliographic information on websites and sends them to JabRef with one click.
 
-When you find an interesting article through Google Scholar, the arXiv or journal websites, this browser extension allows you to add those references to JabRef. Even links to accompanying PDFs are sent to JabRef, where those documents can easily be downloaded, renamed and placed in the correct folder. [A wide range of publisher sites, library catalogs and databases are supported](https://www.zotero.org/support/translators).
+When you find an interesting article through Google Scholar, the arXiv or journal websites, this browser extension allows you to add those references to JabRef. Even links to accompanying PDFs are sent to JabRef, where those documents can easily be downloaded, renamed, and placed in the correct folder. [A wide range of publisher sites, library catalogs, and databases are supported](https://www.zotero.org/support/translators).
 
 ## Installation and Configuration
 
@@ -41,7 +41,7 @@ Most JabRef installations include the necessary files, so test the extension bef
    REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Mozilla\NativeMessagingHosts\org.jabref.jabref" /ve /d "C:\path\to\jabref-firefox.json" /f
    ```
 
-   For Chrome/Opera/Brave/Vivaldi and other chromium based browser support:
+   For Chrome/Opera/Brave/Vivaldi and other chromium-based browser support:
 
    ```text
    REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Google\Chrome\NativeMessagingHosts\org.jabref.jabref" /ve /d "C:\path\to\jabref-chrome.json" /f
@@ -126,7 +126,7 @@ You might want to configure JabRef so that new entries are always imported in an
 
 ### In case you have Adblock Plus extension and Jabref extension doesn't work
 
-1\) Go to [zotero.org](https://zotero.org) . 2\) Deactivate adblock plus extension for the whole domain \(zotero.org\) by clicking on the Adblock plus extension button and sliding corresponding slider to allow adds on the whole domain. 3\) Close and reopen the browser in order to reload all the extension and their settings. 4\) Verify the functioning of the Jabref extension by visiting a page you know it's working to extract its bibliographic data \(for example, [the arXiv](http://arxiv.org/list/gr-qc/pastweek?skip=0&show=5)\) by pressing the extension button or Alt + Shift + J.
+1\) Go to [zotero.org](https://zotero.org). 2\) Deactivate AdBlock plus extension for the whole domain \(zotero.org\) by clicking on the Adblock plus extension button and sliding the corresponding slider to allow adds on the whole domain. 3\) Close and reopen the browser in order to reload all the extension and their settings. 4\) Verify the functioning of the Jabref extension by visiting a page you know is working to extract its bibliographic data \(for example, [the arXiv](http://arxiv.org/list/gr-qc/pastweek?skip=0&show=5)\) by pressing the extension button or Alt + Shift + J.
 
 In case you encounter problems in this procedure refer to issue \#241 on GitHub for further help.
 
