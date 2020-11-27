@@ -6,7 +6,7 @@ description: Using online databases to search for references
 
 JabRef is not intended to be a tool for mass download of citations. The purpose of the Web search is to easily gather a few entries directly from within JabRef. If you use the search functionality to extensively you might get blocked \(for some time\). To fetch entries from an online database, choose **View → Web search**, and the search interface will appear in the side pane. Select the database you want to search \(e.g. arXiv\) in the dropdown menu. Note that it might be necessary to scroll downwards to find certain fetchers. An example for this is provided in the image below. Then enter the words of your query, and press Enter, or the **Search** button. The results are displayed in the [import inspection dialog](import/importinspectiondialog.md).
 
-![Select a fetcher by scrolling the dropdown menu](https://github.com/JabRef/user-documentation/tree/e80f3b9861f673aa8a4047289e98b8a2b9e30cba/en/.gitbook/assets/select-fetcher-in-menu.png)
+![](../.gitbook/assets/select-fetcher-in-menu.png)
 
 Some databases support advanced search queries. These are described on the detail page of the database.
 
