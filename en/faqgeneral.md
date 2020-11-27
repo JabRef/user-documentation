@@ -68,7 +68,7 @@ A: Yes, you can use the parameter `--importToOpen bibfile` of the [command line]
 
 ## Q: How do I link external files with paths relative to my .bib file, so I can move my library along with its files to another directory?
 
-A: You need to override the default file directory for this specific library. In  **Library → Library properties** you can override the **Default file directory** setting. There, you can either enter the path in **General file directory** \(for it to be valid for all users of the file\) or in **User-specific file directory** \(for it to be valid for you only\). If you simply enter “.” \(a dot, without the quotes\), the file directory will be the same as the .bib file directory. To place your files in a subdirectory called **subdir**, you can enter **“./subdir”** \(without the quotes\). Files will automatically be linked with relative paths if the files are placed in the default file directory or in a directory below it. More details in the [help page about the library properties](setup/databaseproperties.md).
+A: You need to override the default file directory for this specific library. In **Library → Library properties** you can override the **Default file directory** setting. There, you can either enter the path in **General file directory** \(for it to be valid for all users of the file\) or in **User-specific file directory** \(for it to be valid for you only\). If you simply enter “.” \(a dot, without the quotes\), the file directory will be the same as the .bib file directory. To place your files in a subdirectory called **subdir**, you can enter **“./subdir”** \(without the quotes\). Files will automatically be linked with relative paths if the files are placed in the default file directory or in a directory below it. More details in the [help page about the library properties](setup/databaseproperties.md).
 
 ## Q: Can I use a bib-file specific PDF directory?
 
@@ -84,7 +84,7 @@ A: Select the entries and go to **Library → Manage keywords**. There you can m
 
 ## Q: When linking a file, I cannot set the correct type. How do I add new types?
 
-In **Options →  Preferences**, tab **External programs**, button "Manage external file types",  you can add arbitrary types. See the [dedicated page about external file types](setup/externalfiletypes.md).
+In **Options → Preferences**, tab **External programs**, button "Manage external file types", you can add arbitrary types. See the [dedicated page about external file types](setup/externalfiletypes.md).
 
 ## Q: When an organization is provided as author, my BibTeX style doesn't recognize it. For instance, why is “European Commission” converted to “Commission, E.”?
 
