@@ -60,6 +60,12 @@ The [International Association for Cryptologic Research](https://www.iacr.org/) 
 
 ID search is carried out using the Cryptology ePrint ID.
 
+### JSTOR
+
+Jstor is a digital library of academic content in many disciplines.
+ID search is carried out using either the [stable url](https://support.jstor.org/hc/en-us/articles/115004872507-Citation-Management-Permanently-Linking-to-Content-on-JSTOR) or a DOI.
+
+
 ### Library of congress
 
 The Library of Congress is the research library that officially serves the United States Congress and is the _de facto_ national library of the United States \([wikipedia](https://en.wikipedia.org/wiki/Library_of_Congress)\).
