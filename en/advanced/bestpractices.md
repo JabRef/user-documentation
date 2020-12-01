@@ -27,5 +27,5 @@ See [Check Integrity](../finding-sorting-and-cleaning-entries/checkintegrity.md)
 
 To ensure that your BibTeX file look consistent,  specify your save actions in  **Library → Library properties**.
 
-See [Save Actions](saveactions.md).
+See [Save Actions](../finding-sorting-and-cleaning-entries/saveactions.md).
 

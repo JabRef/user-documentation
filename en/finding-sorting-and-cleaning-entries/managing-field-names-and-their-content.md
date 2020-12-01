@@ -14,7 +14,7 @@ This dialog window is displayed:
 
 ![](../.gitbook/assets/managefieldnamecontent-v5.2.png)
 
-Set the field name \(by typing it in or using the drop-down menu\), and select the action to be carried out. Additionally, a checkbox allows to overwrite the existing field values.
+Set the field name \(by typing it in or using the drop-down menu\), and select the action to be carried out. Additionally, a checkbox allows overwriting the existing field values.
 
 The actions are:
 
@@ -24,6 +24,8 @@ The actions are:
 * _Clear fields_. This removes the field from the entries. For example, set the "Field name"  to "comments". If "Overwrite existing field values" is checked, all the fields "comments" \(and their content\) are removed. If it is not checked, only the empty fields "comments" are removed.
 
 {% hint style="info" %}
-External resource: [A concrete example about using this feature to prune a library.​](http://tex.my/pruning-bib-files-with-jabref/)
+External resource: [A concrete example of using this feature to prune a library.​](http://tex.my/pruning-bib-files-with-jabref/)
 {% endhint %}
+
+
 

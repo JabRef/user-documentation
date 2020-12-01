@@ -3,11 +3,12 @@ root: ./en/
 structure:
   readme: ./README.md
   summary: ./SUMMARY.md
-  
+
 redirects:
   cn: ./README.md
   en: ./README.md
   de: ./README.md
+  advanced/saveactions: ./finding-sorting-and-cleaning-entries/saveactions.md
   contributing/translatinggui: ./faqcontributing/how-to-translate-the-ui.md
   download: ./installation.md
   EntryEditor: ./advanced/entryeditor/README.md
@@ -18,7 +19,7 @@ redirects:
   faq/faqs-on-operating-systems/faqwindows: ./installation.md
   faq/faqosx: ./installation.md
   faq/faqs-on-operating-systems/faqosx: ./installation.md
-  fields/setclearrenamefields: ./advanced/fields.md  
+  fields/setclearrenamefields: ./advanced/fields.md
   finding-sorting-and-cleaning-entries/import-using-publication-identifiers/isbntobibtex: ./collect/add-entry-using-an-id.md
   finding-sorting-and-cleaning-entries/import-using-publication-identifiers/doitobibtex: ./collect/add-entry-using-an-id.md
   finding-sorting-and-cleaning-entries/import-using-publication-identifiers/iacrtobibtex: ./collect/add-entry-using-an-id.md
@@ -43,6 +44,8 @@ redirects:
   import-export/sqlexport: ./collaborative-work/sqldatabase/README.md
   import-export/knowledge/medlineris: ./advanced/knowledge/medlineris.md
   import-using-online-bibliographic-database/ieeexplore: ./collect/import-using-online-bibliographic-database.md
+  import-using-online-bibliographic-database/acmportal: ./collect/import-using-online-bibliographic-database.md
+  import-using-online-bibliographic-database/medline: ./collect/import-using-online-bibliographic-database.md
   import-using-publication-identifiers/divatobibtex: ./collect/add-entry-using-an-id.md
   import-using-publication-identifiers/iacrtobibtex: ./collect/add-entry-using-an-id.md
   import-using-publication-identifiers/rfctobibtex: ./collect/add-entry-using-an-id.md

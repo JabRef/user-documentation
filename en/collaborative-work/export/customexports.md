@@ -14,7 +14,7 @@ The only requirement for a valid export filter is the existence of a file with t
 
 To see examples of how export filters are made, look for the package containing the layout files for the standard export filters on our download page.
 
-Regarding tool support, there is the [Export-Filter Editor for Jabref](https://sourceforge.net/projects/efe/) to quickly create export filters.
+Regarding tool support, there is the [Export-Filter Editor for Jabref](https://github.com/teertinker/Export-Filter-Editor) to quickly create export filters.
 
 ### Layout files
 
@@ -138,6 +138,7 @@ JabRef provides the following set of formatters:
 * `RisKeywords` : to be documented.
 * `RisMonth` : to be documented.
 * `RTFChars` : replaces TeX-specific special characters \(e.g. {\^a} or {\"{o}}\) with their RTF representations, and translates LaTeX commands \emph, \textit, \textbf into RTF equivalents.
+* `ShortMonth` : formats the month field to use 3 letter BibTeX strings \(`jan`, `feb`, `mar`, `apr`, ...\).
 * `ToLowerCase` : turns all characters into lower case.
 * `ToUpperCase` : turns all characters into upper case.
 * `WrapContent` : This formatter outputs the input value after adding a prefix and a postfix, as long as the input value is non-empty. If the input value is empty, an empty string is output \(the prefix and postfix are not output in this case\). The formatter requires an argument containing the prefix and postix separated by a comma. To include the comma character in either, use an escape sequence \(\,\).

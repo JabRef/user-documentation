@@ -20,6 +20,8 @@ Hence, your database is always clean and up-to-date.
 
 {% page-ref page="groups.md" %}
 
+{% page-ref page="keywords.md" %}
+
 {% page-ref page="specialfields.md" %}
 
 {% page-ref page="search.md" %}
@@ -41,13 +43,4 @@ Hence, your database is always clean and up-to-date.
 {% page-ref page="mergeentries.md" %}
 
 {% page-ref page="saveactions.md" %}
-
-
-
-{% hint style="info" %}
-The following still needs to be described:
-
-* add keywords
-* mark entries as read + relevance + rank + quality + priority + printed
-{% endhint %}
 

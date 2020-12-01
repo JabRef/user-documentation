@@ -4,15 +4,15 @@ description: Using online databases to search for references
 
 # Searching externally using Online Services
 
-JabRef is not intended to be a tool for mass download of citations. The purpose of the Web search is to easily gather a few entries directly from within JabRef. If you use the search functionality to extensively you might get blocked \(for some time\).To fetch entries from an online database, choose **View → Web search**, and the search interface will appear in the side pane. Select the database you want to search \(e.g. arXiv\) in the dropdown menu. Enter the words of your query, and press Enter or the **Search** button. The results are displayed in the [import inspection dialog](import/importinspectiondialog.md).
+JabRef is not intended to be a tool for mass download of citations. The purpose of the Web search is to easily gather a few entries directly from within JabRef. If you use the search functionality to extensively you might get blocked \(for some time\). To fetch entries from an online database, choose **View → Web search**, and the search interface will appear in the side pane. Select the database you want to search \(e.g. arXiv\) in the dropdown menu. Note that it might be necessary to scroll downwards to find certain fetchers. An example for this is provided in the image below. Then enter the words of your query, and press Enter, or the **Search** button. The results are displayed in the [import inspection dialog](import/importinspectiondialog.md).
 
-Some of the databases support advanced search queries. These are described on the detail page of the database.
+![](../.gitbook/assets/select-fetcher-in-menu.png)
 
-Apart from fetching entries by using a full search it is also possible to directly [create an entry using a unique identifier](add-entry-using-an-id.md).
+Some databases support advanced search queries. These are described on the detail page of the database.
+
+Apart from fetching entries by using a full search, it is also possible to directly [create an entry using a unique identifier](add-entry-using-an-id.md).
 
 ## Mass downloading of articles
-
-
 
 However, it is still possible to import hundreds or even thousands of entries from these databases. The process depends a bit on the specifics of each database, but in general works as follows: Search the database in your browser, export the result in one of the supported file formats and then [import the file into JabRef](import/).
 
@@ -28,7 +28,7 @@ If you need to use an HTTP proxy server, you can configure JabRef to use a proxy
 
 ### CiteSeerX
 
-[CiteSeerX](http://csxstatic.ist.psu.edu/home) is a public search engine for scientific and academic papers primarily with a focus on computer and information science. However, CiteSeerX has been expanding into other scholarly domains such as economics, physics and others \([Wikipedia](https://en.wikipedia.org/wiki/CiteSeer)\).
+[CiteSeerX](http://csxstatic.ist.psu.edu/home) is a public search engine for scientific and academic papers primarily with a focus on computer and information science. However, CiteSeerX has been expanding into other scholarly domains such as economics, physics, and others \([Wikipedia](https://en.wikipedia.org/wiki/CiteSeer)\).
 
 ### Collection of Computer Science Bibliographies
 
@@ -48,9 +48,9 @@ To be detailed.
 
 ### DOAJ
 
-[DOAJ \(Directory of Open Access Journals\)](http://doaj.org/) is a database covering more than 10000 open access journals covering all areas of science, technology, medicine, social science and humanities \([Wikipedia](https://en.wikipedia.org/wiki/Directory_of_Open_Access_Journals)\).
+[DOAJ \(Directory of Open Access Journals\)](http://doaj.org/) is a database covering more than 10000 open access journals covering all areas of science, technology, medicine, social science, and humanities \([Wikipedia](https://en.wikipedia.org/wiki/Directory_of_Open_Access_Journals)\).
 
-It is possible to limit the search by adding a field name to the search, as **field:text**. The supported fields area:
+It is possible to limit the search by adding a field name to the search, as **field:text**. The supported fields are:
 
 * title: The title of the article
 * doi: The DOI of the article
@@ -60,17 +60,17 @@ It is possible to limit the search by adding a field name to the search, as **fi
 
 ### GVK
 
-[GVK](https://gso.gbv.de), the GBV Union Catalogue, is a multimaterial bibliographic database of seven German federal states. It covers 41.5 million records of books, conference proceedings, periodicals, dissertations, microfilms and electronic resources.
+[GVK](https://gso.gbv.de), the GBV Union Catalogue, is a multimaterial bibliographic database of seven German federal states. It covers 41.5 million records of books, conference proceedings, periodicals, dissertations, microfilms, and electronic resources.
 
 #### Advanced search
 
-You can simply enter words / names / years you want to search for, or you can specify search keys. Supported keys are:
+You can simply enter words/names/years you want to search for, or you can specify search keys. Supported keys are:
 
-* all - all words. Not specifYing a search key results in an "all" search
+* all - all words. Not specifying a search key results in an "all" search
 * tit - title words
 * per - authors, editors, etc.
 * thm - topics
-* slw - key words
+* slw - keywords
 * txt - tables of content
 * num - numbers, e.g. ISBN
 * kon - names of conferences
@@ -81,7 +81,7 @@ You can simply enter words / names / years you want to search for, or you can sp
 #### Notes
 
 * queries can be combined with "and". The use of "and" is optional, though.
-* in many cases you can use the truncation sign "?"
+* in many cases, you can use the truncation sign "?"
 * spaces in person names are not supported yet. Please use the truncation sign ? after the first name for several given names. E.g. "per Maas,jan?"
 
 #### Sample queries
@@ -96,7 +96,7 @@ You can simply enter words / names / years you want to search for, or you can sp
 
 #### Traffic limitations
 
-Google scholar can block "automated" crawls which generate too much traffic in a short time. To unblock your IP, doing a Google scholar search in your browser might help. You will be asked to show that you are not a robot \(a CAPTCHA challenge\). If no CAPTCHA appears, or JabRef is still blocked after performing a search in the browser, you can also change your IP address manually or wait for some hours to get unblocked again.
+Google Scholar can block "automated" crawls that generate too much traffic in a short time. To unblock your IP, doing a Google scholar search in your browser might help. You will be asked to show that you are not a robot \(a CAPTCHA challenge\). If no CAPTCHA appears, or JabRef is still blocked after performing a search in the browser, you can also change your IP address manually or wait for some hours to get unblocked again.
 
 Thus, the Google Scholar fetcher is not the best way to obtain lots of entries at the same time. The [JabRef browser extension](jabref-browser-extension.md) might be an alternative to download the bibliographic data directly from the browser.
 
@@ -106,13 +106,13 @@ Thus, the Google Scholar fetcher is not the best way to obtain lots of entries a
 
 ### INSPIRE
 
-[INSPIRE-HEP](https://inspirehep.net/?ln=en) is an open access digital library for the field of high energy physics \([Wikipedia](https://en.wikipedia.org/wiki/INSPIRE-HEP)\).
+[INSPIRE-HEP](https://inspirehep.net/?ln=en) is an open-access digital library for the field of high energy physics \([Wikipedia](https://en.wikipedia.org/wiki/INSPIRE-HEP)\).
 
 #### Query syntax
 
 The INSPIRE-HEP search function merely passes your search queries onto the INSPIRE-HEP web search, so you should build your queries in the same way, except omitting the _find_ or _fin_ command. This help page will only give a brief introduction to the search queries. More extensive help on searching INSPIRE-HEP can be found on the page [http://inspirehep.net/info/hep/search-tips](http://inspirehep.net/info/hep/search-tips) .
 
-Your query can be composed of several parts, combined using _and_ and _or_ as logical operators. Each part is composed of a letter or word indicating the type of field to search, followed by a space and the text to search for.
+Your query can be composed of several parts, combined using `and` and `or` as logical operators. Each part is composed of a letter or word indicating the type of field to search, followed by a space and the text to search for.
 
 The following list shows some of the field indicators that can be used:
 
@@ -127,6 +127,16 @@ The following list shows some of the field indicators that can be used:
 * _a smith or a jones_: search for references with either author "smith" or author "jones"
 * _a smith and not t processor_: search for author "smith" and omit references with "processor" in the title
 
+### Jstor
+
+[Jstor](https://jstor.org) is an online database with access to more than 12 million journal articles, books, and sources in 75 disciplines. [About](https://about.jstor.org/)
+
+It is possible to limit the search by adding a field name to the search, such as `field:"text"`. The supported fields are:
+
+* `ti`: The title of the article
+* `au`: an author of the article
+* `pt`: publication title
+
 ### MathSciNet
 
 [MathSciNet](http://www.ams.org/mathscinet/) is a searchable online bibliographic database. It contains all of the contents of the journal Mathematical Reviews \(MR\) since 1940 along with an extensive author database, links to other MR entries, citations, full journal entries, and links to original articles. It contains almost 3 million items and over 1.7 million links to original articles \([Wikipedia](https://en.wikipedia.org/wiki/MathSciNet)\).
@@ -138,7 +148,7 @@ The following list shows some of the field indicators that can be used:
 There are two ways of specifying which entries to download:
 
 1. Enter one or more MEDLINE IDs \(separated by comma/semicolon\) in the text field.
-2. Enter a set of names and/or words to search for. You can use the operators _and_ and _or_ and parentheses to refine your search expression. See [OVID operators](https://resourcecenter.ovid.com/site/help/documentation/ospa/en/Content/syntax.htm) for full description.
+2. Enter a set of names and/or words to search for. You can use the operators `and` and `or` and parentheses to refine your search expression. See [OVID operators](https://resourcecenter.ovid.com/site/help/documentation/ospa/en/Content/syntax.htm) for full description.
 
 #### Examples
 
@@ -151,7 +161,7 @@ There are two ways of specifying which entries to download:
 
 ### SAO/NASA Astrophysics Data System
 
-[SAO/NASA Astrophysics Data System](http://www.adsabs.harvard.edu/) is an online database of over eight million astronomy and physics papers from both peer reviewed and non-peer reviewed sources. Abstracts are available free online for almost all articles, and full scanned articles are available in Graphics Interchange Format \(GIF\) and Portable Document Format \(PDF\) for older articles \([Wikipedia](https://en.wikipedia.org/wiki/Astrophysics_Data_System)\).
+[SAO/NASA Astrophysics Data System](http://www.adsabs.harvard.edu/) is an online database of over eight million astronomy and physics papers from both peer-reviewed and non-peer-reviewed sources. Abstracts are available free online for almost all articles, and full scanned articles are available in Graphics Interchange Format \(GIF\) and Portable Document Format \(PDF\) for older articles \([Wikipedia](https://en.wikipedia.org/wiki/Astrophysics_Data_System)\).
 
 ### SearchAll
 
@@ -161,7 +171,7 @@ To be detailed.
 
 ### Springer
 
-[Springer](https://www.springer.com/) \(aka Springer Science+Business Media\) is a global publishing company that publishes books, e-books and peer-reviewed journals in science, technical and medical publishing. Springer also hosts a number of scientific databases, including SpringerLink, Springer Protocols, and SpringerImages \([Wikipedia](https://en.wikipedia.org/wiki/Springer_Science%2BBusiness_Media)\).
+[Springer](https://www.springer.com/) \(aka Springer Science+Business Media\) is a global publishing company that publishes books, e-books, and peer-reviewed journals in science, technical and medical publishing. Springer also hosts a number of scientific databases, including SpringerLink, Springer Protocols, and SpringerImages \([Wikipedia](https://en.wikipedia.org/wiki/Springer_Science%2BBusiness_Media)\).
 
 ### zbMATH
 

@@ -12,9 +12,9 @@ The status of each special field can be displayed in the table of entries as ded
 
 ![Six special fields can be displayed in the table of entries](../.gitbook/assets/specialfields-6columns-5.2%20%281%29%20%281%29.png)
 
-Like for any other field, the special field columns can be turned on and off individually in **Options → Preferences → Entry Table.**
+Like any other field, the special field columns can be turned on and off individually in **Options → Preferences → Entry Table.**
 
-You can se the value of a special field by:
+You can see the value of a special field by:
 
 * clicking in the column.
 * a right-click on an entry.
@@ -30,7 +30,7 @@ An entry can be marked as relevant: a black-and-white star is displayed \(in the
 
 ### Read status
 
-The read status can be set to "No" \(no symbol in the column\), to "Skimmed" \(an orange eye\) or to "read" \(a green eye\).
+The read status can be set to "No" \(no symbol in the column\), to "Skimmed" \(an orange eye\), or to "read" \(a green eye\).
 
 ### Ranking
 

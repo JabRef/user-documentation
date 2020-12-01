@@ -29,7 +29,7 @@ In case you have numerous PDF files and want to convert them into new entries, J
 6. Select the entries you are interested in. Note: the button `Export selected files` allows you to export the list of the selected files \(a text file containing on each line one filename with its path\)
 7. Click on `Import`.
 
-   The windows closes, and the entry table now contains the newly-imported entries.
+   The windows close and the entry table now contains the newly-imported entries.
 
 {% hint style="danger" %}
 The imported entries may need some editing because all the information gathered from the PDF files may not be accurate \(see below "PDFs for which it works"\).
@@ -51,5 +51,5 @@ JabRef also offers to change the filenames. You can adapt the pattern at **Optio
 
 ![Preferences - Linked files](../.gitbook/assets/preferences-linkedfiles-5.2%20%281%29.png)
 
-In the section _Linked file name conventions_, you can select the _Filename format pattern_: `[citationkey] - [title]` or `[citationkey]`. Selecting `[citationkey] - [title]` results in the setting `\citationkey\begin{title} - \format[RemoveBrackets]{\title}\end{title}`. This makes the filenames start with the citation key followed by the full title. In the concrete case, `\citationkey` only may be a better option as the described citation key already contains the title.
+In the section _Linked file name conventions_, you can select the _Filename format pattern_: `[citationkey] - [title]` or `[citationkey]`. Selecting `[citationkey] - [title]` results in the setting `\citationkey\begin{title} - \format[RemoveBrackets]{\title}\end{title}`. This makes the filenames start with the citation key followed by the full title. In the concrete case, `\citationkey` only maybe a better option as the described citation key already contains the title.
 

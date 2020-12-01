@@ -9,25 +9,9 @@ Field formats can be tidied up when saving the database. That ensures your entri
 * an entry field \(upon which the action will be applied\).
 * the type of action to be carried out \(such as _HTML to LaTeX_, which converts HTML code to LaTeX code, as described in the window\).
 
-A click on the "circular arrow" icon enables a set of recommended formatting actions \(the set of actions will depend on your database type: BibTeX or biblatex\).​
+A click on the "circular arrow" icon enables a set of recommended formatting actions \(the set of actions will depend on your database type: BibTeX or BibLaTeX\).​
 
 ## List of actions
-
-### Add enclosing braces
-
-Add braces encapsulating the complete field content. For instance
-
-```text
-title = {Test with UPPERCASE word},
-```
-
-gets
-
-```text
-title = {{Test with UPPERCASE word}},
-```
-
-However, this procedure is not recommended. It is better to use the "Protect Terms" functionality. See also [https://tex.stackexchange.com/q/10772/9075](https://tex.stackexchange.com/q/10772/9075).
 
 ### Clear
 
@@ -37,9 +21,21 @@ Clears the field completely.
 
 Escape underscores
 
+### Escape ampersands
+
+Escapes ampersands.
+
+* `Text & with &ampersands` ⇒ `Text \& with \&ampersands`
+
 ### HTML to LaTeX
 
 Converts HTML code to LaTeX code.
+
+### Cleanup URL link
+
+Cleanup URL links.
+
+* `http%3A%2F%2Fwikipedia.org` ⇒ `http://wikipedia.org`
 
 ### HTML to Unicode
 
@@ -58,12 +54,6 @@ Normalizes the date to ISO date format. Format date string to yyyy-mm-dd or yyyy
 * "yyyy-MM-dd" \(covers 2009-1-15\)
 * "d.M.uuuu" \(covers 15.1.2015\)
 
-### Normalize en dashes
-
-Normalizes the en dashes.
-
-* Replace “`-`” with “`--`”.
-
 ### Normalize month
 
 Normalize month to Bib\(la\)TeX standard abbreviation.
@@ -78,7 +68,7 @@ Normalizes lists of persons to the Bib\(la\)TeX standard. This separates authors
 
 ### Normalize page numbers
 
-Normalize pages to Bib\(la\)TeX standard. Format page numbers, separated either by commas or double-hyphens. Converts the range number format to page\_number--page\_number. Removes unwanted literals except letters, numbers and -+ signs. Keeps the existing String if the resulting field does not match the expected Regex.
+Normalize pages to Bib\(la\)TeX standard. Format page numbers, separated either by commas or double-hyphens. Converts the range number format to page\_number--page\_number. Removes unwanted literals except for letters, numbers, and -+ signs. Keeps the existing String if the resulting field does not match the expected Regex.
 
 ```text
 1-2 ⇒ 1--2
@@ -98,21 +88,19 @@ Converts ordinals to LaTeX superscripts, e.g. 1st, 2nd or 3rd. Will replace ordi
 
 Removes braces encapsulating the complete field content.
 
-### Remove hyphenated line breaks
-
-Removes all hyphenated line breaks in the field content.
-
-### Remove line breaks
-
-Removes all line breaks in the field content.
-
 ### Shorten DOI
 
-Shortens DOI to more human readable form using [http://shortdoi.org](http://shortdoi.org) .
+Shortens DOI to more human-readable form using [http://shortdoi.org](http://shortdoi.org).
 
 ### Unicode to LaTeX
 
 Converts Unicode characters to LaTeX encoding.
+
+### LaTeX to Unicode
+
+Converts LaTeX to Unicode characters if possible.
+
+* `$\acute{\omega}$` ⇒ `ώ`
 
 ### Units to LaTeX
 
@@ -130,10 +118,6 @@ Changes the first letter of all words to capital case and the remaining letters 
 
 Changes all letters to lower case.
 
-### Protect terms
-
-Adds `{}` brackets around acronyms, month names and countries to preserve their case.
-
 ### Sentence case
 
 Capitalize the first word, changes other words to lower case.
@@ -150,15 +134,33 @@ Changes all letters to upper case.
 
 Shortens lists of persons if there are more than 2 persons to \"et al.\".
 
-### Remove digits
+## Save actions as modifiers
 
-Removes all digits from the field content. For example, `Stefan Kolb 0001` becomes `Stefan Kolb`.
+The [field formatters listed above](saveactions.md#list-of-actions) can also be used as modifiers in [citation key patterns](../setup/citationkeypatterns.md) using their keys listed below.
 
-### Remove redundant spaces
-
-Replaces consecutive spaces with a single space in the field content. For example, `Stefan␣␣Kolb` becomes `Stefan␣Kolb`.
-
-### Replace tabs by space
-
-Replace tabs by space in the field content. For example, `Stefan\tKolb` becomes `Stefan Kolb`.
+| Save action | Key |
+| :--- | :--- |
+| [Clear](saveactions.md#clear) | `clear` |
+| [Escape underscores](saveactions.md#escape-underscores) | `escapeUnderscores` |
+| [Escape ampersands](saveactions.md#escape-ampersands) | `escapeAmpersands` |
+| [HTML to LaTeX](saveactions.md#html-to-latex) | `html_to_latex` |
+| [Cleanup URL link](saveactions.md#cleanup-url-link) | `cleanup_url` |
+| [HTML to Unicode](saveactions.md#html-to-unicode) | `html_to_unicode` |
+| [LaTeX cleanup](saveactions.md#latex-cleanup) | `latex_cleanup` |
+| [Normalize date](saveactions.md#normalize-date) | `normalize_date` |
+| [Normalize month](saveactions.md#normalize-month) | `normalize_month` |
+| [Normalize names of persons](saveactions.md#normalize-names-of-persons) | `normalize_names` |
+| [Normalize page numbers](saveactions.md#normalize-page-numbers) | `normalize_page_numbers` |
+| [Ordinals to LaTeX superscript](saveactions.md#ordinals-to-latex-superscript) | `ordinals_to_superscript` |
+| [Remove enclosing braces](saveactions.md#remove-enclosing-braces) | `remove_braces` |
+| [Shorten DOI](saveactions.md#shorten-doi) | `short_doi` |
+| [Unicode to LaTeX](saveactions.md#unicode-to-latex) | `unicode_to_latex` |
+| [Latex to Unicode](saveactions.md#latex-to-unicode) | `latex_to_unicode` |
+| [Units to LaTeX](saveactions.md#units-to-latex) | `units_to_latex` |
+| [Capitalize](saveactions.md#capitalize) | `capitalize` |
+| [Lower case](saveactions.md#lower-case) | `lower_case` |
+| [Sentence case](saveactions.md#sentence-case) | `sentence_case` |
+| [Title case](saveactions.md#title-case) | `title_case` |
+| [Upper case](saveactions.md#upper-case) | `upper_case` |
+| [Minify list of person names](saveactions.md#minify-list-of-person-names) | `minify_name_list` |
 

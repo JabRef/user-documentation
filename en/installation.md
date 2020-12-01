@@ -56,6 +56,22 @@ Use [AutoHotkey](http://www.autohotkey.com/) and [JabRef.ahk](https://github.com
 
 The connection from JabRef to Libre Office requires some office related `jar`-archives to be present. For this, you have to install the package `libreoffice-java-common`.
 
+### External program integration in Snap and Flatpak packages
+
+The snap and flatpak packages cannot interact directly with external programs \(i.e. programs not contained in the package sandbox\). What this means is that for now there is no possible connection between JabRef and Libreoffice if either one is a snap/flatpak.
+
+The integration with TeX editors is fine if JabRef is a deb/rpm, and the editor is a snap/deb/rpm \(not a flatpak\).
+
+Depending on your use case and needed integrations it is advisable to choose the proper packages. Watch this page for new developments on the interactions with external programs.
+
+|  | Snap | Flatpak | deb/rpm | tar |
+| :--- | :--- | :--- | :--- | :--- |
+| Libreoffice \(system\) | ❌ | ❌ | ✅ | ✅ |
+| Libreoffice \(snap\) | ❌ | ❌ | ❌ | ❌ |
+| Libreoffice \(flatpak\) | ❌ | ❌ | ❌ | ❌ |
+| LaTex editor \(system\) | ❌ | ❌ | ✅ | ✅ |
+| LaTeX editor \(snap\) | ❌ | ❌ | ✅ | ✅ |
+
 ### Include JabRef in the start menu of Ubuntu
 
 See [http://askubuntu.com/a/721387/196423](http://askubuntu.com/a/721387/196423) for details.

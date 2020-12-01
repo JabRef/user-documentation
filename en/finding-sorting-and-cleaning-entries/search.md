@@ -6,8 +6,8 @@ The search bar is located in the icon bar.
 
 To make the cursor jump to the search field, you can:
 
-* click in the search field.
-* press Ctrl + F.
+* Click in the search field.
+* Press Ctrl + F.
 
 ## Search settings
 
@@ -20,7 +20,7 @@ At the right of the search text field, 2 buttons allow for selecting some settin
 
 ## Simple search
 
-In a normal search, the program searches your database for all occurrences of the words in your search string, once you entered it. Only entries containing all words will be considered matches. To search for sequences of words, enclose the sequences in double quotes. For instance, the query **progress "marine aquaculture"** will match entries containing both the word "progress" and the phrase "marine aquaculture".
+In a normal search, the program searches your database for all occurrences of the words in your search string, once you entered it. Only entries containing all words will be considered matches. To search for sequences of words, enclose the sequences in double-quotes. For instance, the query **progress "marine aquaculture"** will match entries containing both the word "progress" and the phrase "marine aquaculture".
 
 All entries that do not match are hidden, leaving for display the matching entries only.
 
@@ -52,7 +52,7 @@ JabRef defines the following pseudo fields:
 | :--- | :--- | :--- |
 | **Pseudo field** | **Purpose** | **Example** |
 | `anyfield` | Search in any field | `anyfield contains fruit`: search for entries having one of its fields containing the word **fruit**. This is identical to just writing `apple`. It may be more useful as `anyfield matches apple`, where one field must be exactly `apple` for a match. |
-| `anykeyword` | Search among the keywords | `anykeyword matches apple`: search for entries which has the word **apple** among its keywords. However, as this also matches `pineapple`, it may be more useful in searches of the type `anykeyword matches apple`, which will not match `apples` or `pineapple` |
+| `anykeyword` | Search among the keywords | `anykeyword matches apple`: search for entries which have the word **apple** among its keywords. However, as this also matches `pineapple`, it may be more useful in searches of the type `anykeyword matches apple`, which will not match `apples` or `pineapple` |
 | `key` | Search for citation keys | `citationkey == miller2005`: search for an entry whose citation key is **miller2005** |
 | `entrytype` | Search for entries of a certain type | `entrytype = thesis`: search entries whose type \(as displayed in the `entrytype` column\) contains the word **thesis** \(which would be **phdthesis** and **mastersthesis**\) |
 

@@ -8,15 +8,21 @@ Throughout this help document, whenever the name _OpenOffice_ is used, it can be
 
 ## Using the OpenOffice/LibreOffice interface
 
-To communicate with OpenOffice, JabRef must first connect to a running OpenOffice instance. You need to start OpenOffice and enter your document before connecting from JabRef. JabRef needs to know the location of your OpenOffice executable \(**soffice.exe** on Windows, and **soffice** on other platforms\), and the directory where several OpenOffice jar files reside. If you connect by clicking the **Connect** button, JabRef will try to automatically determine these locations. If this does not work, you need to connect using the **Manual connect** button, which will open a window asking you for the needed locations.
+To communicate with OpenOffice, JabRef must first connect to a running OpenOffice instance. You need to start OpenOffice and enter your document before connecting from JabRef.
+
+![](../.gitbook/assets/ConnectToLibreOffice.gif)
+
+JabRef needs to know the location of your OpenOffice executable \(**soffice.exe** on Windows, and **soffice** on other platforms\), and the directory where several OpenOffice jar files reside. If you connect by clicking the **Connect** button, JabRef will try to automatically determine these locations. If this does not work, you need to connect using the **Manual connect** button, which will open a window asking you for the needed locations.
 
 After the connection has been established, you can insert citations by selecting one or more entries in JabRef and using the **Push to OpenOffice** button in the dropdown menu of JabRef's toolbar, or by using the appropriate button in the OpenOffice panel in the side pane. This will insert citations for the selected entries at the current cursor position in the OpenOffice document, and update the bibliography to contain the full reference.
+
+![](../.gitbook/assets/CiteLibreOffice.gif)
 
 **Note:** JabRef does not use OpenOffice's built-in bibliography system, because of the limitations of that system. A document containing citations inserted from JabRef will not generally be compatible with other reference managers such as Bibus and Zotero.
 
 Two different types of citations can be inserted - either a citation in parenthesis, "\(Author 2007\)", or an in-text citation, "Author \(2007\)". This distinction is only meaningful if author-year citations are used instead of numbered citations, but the distinction will be preserved if you switch between the two styles.
 
-If you modify entries in JabRef after inserting their citations into OpenOffice, you will need to synchronize the bibliography. The **Sync OO bibliography** button will update all entries of the bibliography, provided their citation keys have not been altered \(JabRef encodes the citation key into the reference name for each citation to keep track of which citation key the original JabRef entry has\).
+If you modify entries in JabRef after inserting their citations into OpenOffice, you will need to synchronize the bibliography. By default, **Automatically sync bibliography when inserting citations** is enabled. This can be disabled by clicking the **Settings** button and unchecking **Automatically sync bibliography when inserting citations**. The **Sync OO bibliography** button will update all entries of the bibliography, provided their citation keys have not been altered \(JabRef encodes the citation key into the reference name for each citation to keep track of which citation key the original JabRef entry has\).
 
 ## The style file
 
@@ -95,6 +101,8 @@ default=\format[AuthorLastFirst,AuthorAbbreviator,AuthorAndsReplacer]{\author}
 ```
 
 \(Note that the layout for each entry type must be constrained to a single line in the style file - above, the lines are broken up to improve readability.\)
+
+Regarding tool support, there is the [Export-Filter-Editor](https://github.com/teertinker/Export-Filter-Editor) for Jabref to quickly create a style file.
 
 ### Global properties
 
@@ -175,9 +183,11 @@ If you are using numbered citations, the number for each entry will be automatic
 ## Known issues
 
 * Make sure to save your Writer document in OpenDocument format \(odt\). Saving to Word format will lose your reference marks.
+  * Otherwise try to use the external tool [JabRef LibreOffice Converter](https://github.com/teertinker/JabRef_LibreOffice_Converter). This LibreOffice extension converts the reference marks to code that can be saved.
 * There is currently no support for footnote based citations.
 * The cursor may be poorly positioned after inserting a citation.
 * Copy-pasting the example style file directly from this page can give an unparseable file. To avoid this, instead download the example file from the link in the download section.
 * Make sure that `libreoffice-java-common` is installed on Linux for LibreOffice 5, otherwise important libraries are missing.
+* The snap version of LibreOffice and JabRef may cause connection issues. Try to use the \*deb versions instead.
 * Open Office 4 will only work running under a 32-bit Java JRE/JDK on Windows because there is no 64-bit version of OpenOffice yet.
 
