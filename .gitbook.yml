@@ -46,6 +46,7 @@ redirects:
   import-using-online-bibliographic-database/ieeexplore: ./collect/import-using-online-bibliographic-database.md
   import-using-online-bibliographic-database/acmportal: ./collect/import-using-online-bibliographic-database.md
   import-using-online-bibliographic-database/medline: ./collect/import-using-online-bibliographic-database.md
+  import-using-online-bibliographic-database/ads: ./collect/import-using-online-bibliographic-database.md
   import-using-publication-identifiers/divatobibtex: ./collect/add-entry-using-an-id.md
   import-using-publication-identifiers/iacrtobibtex: ./collect/add-entry-using-an-id.md
   import-using-publication-identifiers/rfctobibtex: ./collect/add-entry-using-an-id.md
