@@ -175,5 +175,34 @@ To be detailed.
 
 ### zbMATH
 
-[zbMATH](https://www.zbmath.org/) is a reviewing service providing reviews and abstracts for articles in pure and applied mathematics \([Wikipedia](https://en.wikipedia.org/wiki/Zentralblatt_MATH)\).
+[zbMATH](https://www.zbmath.org/) is an abstracting and reviewing service in pure and applied mathematics. Its database contains about 4 million bibliographic entries with reviews or abstracts currently drawn from about 3,000 journals and book series, and 180,000 books. The coverage starts in the 18th century and is complete from 1868 to the present by the integration of the "Jahrbuch über die Fortschritte der Mathematik" database \([about](https://zbmath.org/about/)\).
 
+#### Structured Search
+
+You can use the same query syntax as in the one-line search at zbmath.org. This means that your query can be composed of several terms, combined by the logical operators `&` (and) and `|` (or). Queries are case-insensitive. Further operators that can be used are `!` for logical negation, `*` for a right wildcard, `“ “` for exact phrase matches, and parentheses `( )` to group terms. Optionally, it is possible to add a field name in the form field:text to limit the search results. The supported fields are:
+
+* **any**: anywhere (default)
+* **au**: author, editor
+* **ti**: title
+* **so**: source
+*	**py**: publication year
+*	**cc**: MSC code
+*	**dt**: document type (possible values are **j** for journal articles, **b** for books, **a** for book articles)
+*	**an**: the zbl id of the document
+*	**ai**: internal author identifier
+*	**la**: language either as a string or as [ISO 639-1](https://en.wikipedia.org/wiki/ISO_639-1) language code
+*	**ab**: search for term in reviews or abstracts
+*	**rv**: reviewer
+
+#### Examples 
+
+* [Graph Theory](https://zbmath.org/?q=Graph+Theory): Search the terms *Graph* and *Theory* in **any** field.
+* [Funct\*](https://zbmath.org/?q=Funct*): Search terms starting with *funct* (e.g. functions, functorial, etc.) in **any** field.
+*	[ti: “Graph Theory”](https://zbmath.org/?q=ti%3A+%E2%80%9CGraph+Theory%E2%80%9D): Searches for the exact term *Graph Theory* in the **title** field.
+*	[au: Berge & ti: “Graph Theory”](https://zbmath.org/?q=au%3A+Berge+%26+ti%3A+%E2%80%9CGraph+Theory%E2%80%9D): Searches for term *Berge* in the **author** and *Graph Theory* in the **title** field. The **and-operator &** is default and can be omitted.
+*	[dt: b au: Hilbert](https://zbmath.org/?q=dt%3A+b+au%3A+Hilbert): The document type is set to *books*; alternatively: **j** for journal articles, **a** for book articles.
+*	[Chebyshev | Tschebyscheff](https://zbmath.org/?q=Chebyshev+%7C+Tschebyscheff): The **or-operator |** allows to search for *Chebyshev* or *Tschebyscheff*
+*	[ti: “Graph Theory” py: 2010-2020](https://zbmath.org/?q=ti%3A+%E2%80%9CGraph+Theory%E2%80%9D+py%3A+2010-2020): Search for documents whose **title** containing the phrase *Graph Theory* having **publication year** in range *2010-2020*.
+*	[so: Combinatorica cc: 05C65](https://zbmath.org/?q=so%3A+Combinatorica+cc%3A+05C65): Search for documents published in **source** *Combinatorica* with **Mathematics Subject Classification code (cc)** in *05C65*.
+*	[cc: (05C|90C) py: 2020](https://zbmath.org/?q=cc%3A+%2805C%7C90C%29+py%3A+2020): Search for documents with **MSC code** in *05C* or *90C* published in **year** *2020*
+*	[la: es | pt](https://zbmath.org/?q=la%3A+es+%7C+pt): Search for documents in **languages** *Spanish* or *Portuguese*
