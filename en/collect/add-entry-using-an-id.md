@@ -64,7 +64,7 @@ ID search is carried out using the Cryptology ePrint ID.
 
 [Jstor](https://jstor.org) is an online database with access to more than 12 million journal articles, books, and sources in 75 disciplines. \([About](https://about.jstor.org))
 
-ID search is carried out using either the [stable url](https://support.jstor.org/hc/en-us/articles/115004872507-Citation-Management-Permanently-Linking-to-Content-on-JSTOR) or a DOI.
+ID search is carried out using either the [stable jstor url](https://support.jstor.org/hc/en-us/articles/115004872507-Citation-Management-Permanently-Linking-to-Content-on-JSTOR) or the DOI.
 
 
 ### Library of congress
