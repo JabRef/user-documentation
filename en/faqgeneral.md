@@ -156,5 +156,4 @@ A: This error message has been observed on systems that use [inotify](https://ww
 
 ## Q: "I'm using JabRef with Linux (Gnome desktop version) and each time I want to see a pdf document in JabRef, the document viewer Evince is opened. I would prefer to open it with Okular."
 
-A: JabRef opens the pdf document with the application Gnome has set by default: Evince. If you want JabRef to open another application (Okular or other), in your file explorer, right-click on whatever pdf file > properties > Open With > choose your application > Set as default at the bottom right corner. From now on, both when you double-click a pdf file in your file explorer or when you ask JabRef to open it via its document viewer, your chosen application will be used. 
-
+A: JabRef opens the pdf document with the application Gnome has set by default: Evince. If you want JabRef to open another application (Okular or other), in your file explorer, right-click on whatever pdf file > properties > Open With > choose your application > Set as default at the bottom right corner. From now on, both when you double-click a pdf file in your file explorer or when you ask JabRef to open it via its document viewer, your chosen application will be used.
