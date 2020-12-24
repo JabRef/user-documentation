@@ -65,6 +65,7 @@
   * [Automatic Backup \(.sav and .bak\) and Autosave](advanced/autosave.md)
   * [XMP metadata support in JabRef](advanced/xmp.md)
   * [Remote operation](advanced/remote.md)
+  * [Custom themes](advanced/custom-themes.md)
   * [Journal abbreviations](advanced/journalabbreviations.md)
   * [New subdatabase based on AUX file](advanced/newbasedonaux.md)
   * [How to expand first names of an entry](advanced/how-to-expand-firstnames.md)
