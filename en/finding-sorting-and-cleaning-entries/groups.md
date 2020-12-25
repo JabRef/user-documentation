@@ -52,7 +52,7 @@ A description of the group, to help you remember what it is about. Hovering the 
 
 An icon can be displayed in front of the group name. Choose your favorite icon among the ones available at [https://materialdesignicons.com/](https://materialdesignicons.com/), and enter its name of the field _Icon_. The color of the icon can be set in to the field **Color**.
 
-![groups having colors](../.gitbook/assets/groups-colors%20%281%29%20%281%29.png)
+![groups having colors](../.gitbook/assets/groups-colors%20%281%29%20%281%29%20%281%29.png)
 
 ### Type of group
 

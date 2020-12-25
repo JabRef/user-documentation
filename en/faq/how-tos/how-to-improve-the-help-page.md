@@ -18,7 +18,7 @@ At the top of each help page you can find the GitHub icon. Just click here to sh
 
 This leads you to GitHub:
 
-![Click on the pencil icon](../../.gitbook/assets/screenshot-edit-pencil%20%281%29%20%281%29.png)
+![Click on the pencil icon](../../.gitbook/assets/screenshot-edit-pencil%20%281%29%20%281%29%20%281%29.png)
 
 To actually edit the page click on the pencil icon which is highlighted above.
 
@@ -34,7 +34,7 @@ You can find an introduction to markdown [here](https://daringfireball.net/proje
 
 In order to check your changes hit the "Preview Changes" tab:
 
-![Edit view at GitHub](../../.gitbook/assets/screenshot-edit-preview%20%281%29%20%281%29.png)
+![Edit view at GitHub](../../.gitbook/assets/screenshot-edit-preview%20%281%29%20%281%29%20%281%29.png)
 
 ### Saving the changes
 

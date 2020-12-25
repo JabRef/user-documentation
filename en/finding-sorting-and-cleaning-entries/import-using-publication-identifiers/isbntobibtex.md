@@ -8,5 +8,5 @@ To use this feature, choose **BibTeX → New entry...**. In the lower part, ther
 
 Some fetched entries contain a `url` field. This field points to the URL of the book at the respective online book store. In case you buy the book using the link, the service provider \(ebook.de\) receive a commission to fund the service.
 
-![Screenshot of new entry dialog](../../.gitbook/assets/newentrychoosetype-idgeneratorhighlighted-isbn%20%282%29%20%282%29.png)
+![Screenshot of new entry dialog](../../.gitbook/assets/newentrychoosetype-idgeneratorhighlighted-isbn%20%282%29%20%284%29%20%282%29.png)
 

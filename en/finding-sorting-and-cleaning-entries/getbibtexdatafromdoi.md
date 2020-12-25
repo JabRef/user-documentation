@@ -45,7 +45,7 @@ If you right-click on the preview, you can **Print entry preview** or **Copy pre
 
 ## Final merging
 
-![Screenshot of choosing to replace the original entry or not](../.gitbook/assets/getbibtexdatafromdoi-selecting%20%281%29.png)
+![Screenshot of choosing to replace the original entry or not](../.gitbook/assets/getbibtexdatafromdoi-selecting%20%281%29%20%281%29.png)
 
 Finally, after selecting which fields to keep, you can decide to **Replace the original entry**. Alternatively, you can press **Cancel**.
 
