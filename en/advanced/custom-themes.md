@@ -20,7 +20,9 @@ Since `JabRef 5.2` it is possible to use custom themes. In `Preferences > Appear
 
 **Light Theme** ![Light Theme](../.gitbook/assets/theme-light.png)
 
-**Dark Theme** ![Dark Theme](../.gitbook/assets/theme-dark.png)
+**Dark Theme:**  ![](../.gitbook/assets/theme-dark.png)
 
-**Custom Theme**   ![Custom Theme](../.gitbook/assets/theme-custom.png)  
-\(based on the Dark Theme\)
+**Custom Theme \(**based on the Dark Theme\)  ![](../.gitbook/assets/theme-custom.png) 
+
+{% file src="../.gitbook/assets/dark-custom.css" caption="Dark-Custom.css" %}
+
