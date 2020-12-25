@@ -18,10 +18,10 @@ Since `JabRef 5.2` it is possible to use custom themes. In `Preferences > Appear
 
 ## Examples
 
-**Light Theme** ![Light Theme](https://github.com/JabRef/user-documentation/tree/0b31b3e17cc330b13e7d140c0d075ca6e649a25d/en/.gitbook/assets/theme-light.png)
+**Light Theme** ![Light Theme](../.gitbook/assets/theme-light.png)
 
-**Dark Theme** ![Dark Theme](https://github.com/JabRef/user-documentation/tree/0b31b3e17cc330b13e7d140c0d075ca6e649a25d/en/.gitbook/assets/theme-dark.png)
+**Dark Theme** ![Dark Theme](../.gitbook/assets/theme-dark.png)
 
-**Custom Theme** ![Custom Theme](https://github.com/JabRef/user-documentation/tree/0b31b3e17cc330b13e7d140c0d075ca6e649a25d/en/.gitbook/assets/theme-custom.png)  
+**Custom Theme** ![Custom Theme](../.gitbook/assets/theme-custom.png)  
 \(based on the Dark Theme\)
 
