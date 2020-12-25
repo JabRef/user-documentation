@@ -1,6 +1,6 @@
 # Custom themes
 
-### General
+## General
 
 Since `JabRef 5.2` it is possible to use custom themes. In `Preferences > Appearance > Visual theme` the themes in general can be changed. Themes are just [CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics) files defining the look of the UI.
 
@@ -8,7 +8,7 @@ Since `JabRef 5.2` it is possible to use custom themes. In `Preferences > Appear
 * **Dark Theme**: There is an alternative dark theme \([`Dark.css`](https://github.com/JabRef/jabref/blob/master/src/main/java/org/jabref/gui/Dark.css)\) which is based on `Base.css` and just overwrites the colors.
 * **Custom Theme**: In `Preferences > Appearance > Visual theme > Custom theme` there can be set a custom theme by simply selecting a custom CSS \(based on `Base.css` or `Dark.css`\), for instance [`dark-custom.css`](https://github.com/JabRef/user-documentation/blob/master/en/.gitbook/assets/dark-custom.css).
 
-### Selection of Useful CSS selectors
+## Selection of Useful CSS selectors
 
 | UI element | CSS selector |
 | :--- | :--- |
@@ -16,13 +16,12 @@ Since `JabRef 5.2` it is possible to use custom themes. In `Preferences > Appear
 | `{} biblatex source` tab | `.code-area` |
 | text in `{} biblatex source` tab | `.code-area .text` |
 
-### Examples
+## Examples
 
-**Light Theme** ![Light Theme](../.gitbook/assets/theme-light.png)
+**Light Theme** ![Light Theme](https://github.com/JabRef/user-documentation/tree/0b31b3e17cc330b13e7d140c0d075ca6e649a25d/en/.gitbook/assets/theme-light.png)
 
-**Dark Theme:**  ![](../.gitbook/assets/theme-dark.png)
+**Dark Theme** ![Dark Theme](https://github.com/JabRef/user-documentation/tree/0b31b3e17cc330b13e7d140c0d075ca6e649a25d/en/.gitbook/assets/theme-dark.png)
 
-**Custom Theme \(**based on the Dark Theme\)  ![](../.gitbook/assets/theme-custom.png) 
-
-{% file src="../.gitbook/assets/dark-custom.css" caption="Dark-Custom.css" %}
+**Custom Theme** ![Custom Theme](https://github.com/JabRef/user-documentation/tree/0b31b3e17cc330b13e7d140c0d075ca6e649a25d/en/.gitbook/assets/theme-custom.png)  
+\(based on the Dark Theme\)
 

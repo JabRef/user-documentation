@@ -16,7 +16,7 @@ At the top of each help page, you can find the GitHub icon with "Edit on GitHub"
 
 This leads you to the GitHub page associated with the help page:
 
-![Click on the pencil icon](../.gitbook/assets/screenshot-edit-pencil%20%281%29.png)
+![Click on the pencil icon](../.gitbook/assets/screenshot-edit-pencil%20%281%29%20%281%29.png)
 
 To actually edit the page, click on the pencil icon, as highlighted above.
 
@@ -30,7 +30,7 @@ Most text can be simply added/edited in this field as plain text. However, you c
 
 In order to review your changes, click on the "Preview changes" tab:
 
-![Edit view at GitHub](../.gitbook/assets/screenshot-edit-preview%20%281%29.png)
+![Edit view at GitHub](../.gitbook/assets/screenshot-edit-preview%20%281%29%20%281%29.png)
 
 ### 3. Saving the changes
 

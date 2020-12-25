@@ -4,7 +4,7 @@ To add a new entry, select **Library → New entry...**, press `CTRL + N​` or 
 
 Then, from the dialog window, click on the type of the entry you want.
 
-![Screenshot of new entry dialog](../.gitbook/assets/entrytype-dialog%20%282%29%20%281%29.png)
+![Screenshot of new entry dialog](../.gitbook/assets/entrytype-dialog%20%282%29%20%283%29%20%281%29.png)
 
 Finally, the [entry editor](../advanced/entryeditor/) opens and let you fill in the various fields.
 
