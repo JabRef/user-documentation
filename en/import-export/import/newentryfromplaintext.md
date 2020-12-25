@@ -33,11 +33,11 @@ JabRef thereby used the service offered by [FreeCite](http://freecite.library.br
 
 1. Click BibTeX and select "New entry from plain text..." Alternatively, you can press Ctrl+Shift+N.
 
-   ![Select entry type](../../.gitbook/assets/step1%20%281%29.png)
+   ![Select entry type](../../.gitbook/assets/step1.png)
 
 2. Select an entry type. Select "InProceedings", this works in the most cases
 
-   ![entry type selection](../../.gitbook/assets/step2%20%281%29.png)
+   ![entry type selection](../../.gitbook/assets/step2.png)
 
 3. The "Plain text import" window opens
 
@@ -53,7 +53,7 @@ JabRef thereby used the service offered by [FreeCite](http://freecite.library.br
 
 6. The entry editor opens with the parsed result:
 
-   ![parsed result](../../.gitbook/assets/step6%20%281%29.png)
+   ![parsed result](../../.gitbook/assets/step6%20%281%29%20%281%29.png)
 
    Do your corrections there.
 

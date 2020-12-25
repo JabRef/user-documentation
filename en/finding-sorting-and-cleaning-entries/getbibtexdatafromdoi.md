@@ -4,13 +4,13 @@ JabRef can help you complement your entries from their DOI.
 
 Open the [entry editor](../general/entryeditor.md), and in the General tab, click on the button **Get BibTeX data from DOI**. _Obviously, this feature is available only if your entry already has a DOI._
 
-![Screenshot of general tab](../.gitbook/assets/getbibtexdatafromdoi-main.png)
+![Screenshot of general tab](../.gitbook/assets/getbibtexdatafromdoi-main%20%281%29.png)
 
 The **Merge entry with DOI information** window will pop-up.
 
 ## Parallel display of the entry field and of the information gathered from the DOI
 
-![Screenshot of the parallel display](../.gitbook/assets/getbibtexdatafromdoi-paralleldisplay.png)
+![Screenshot of the parallel display](../.gitbook/assets/getbibtexdatafromdoi-paralleldisplay%20%281%29.png)
 
 The fields of the original entry and of the information gathered from the DOI are displayed side-by-side on the upper part of the window.
 
@@ -45,7 +45,7 @@ If you right-click on the preview, you can **Print entry preview** or **Copy pre
 
 ## Final merging
 
-![Screenshot of choosing to replace the original entry or not](../.gitbook/assets/getbibtexdatafromdoi-selecting.png)
+![Screenshot of choosing to replace the original entry or not](../.gitbook/assets/getbibtexdatafromdoi-selecting%20%281%29.png)
 
 Finally, after selecting which fields to keep, you can decide to **Replace the original entry**. Alternatively, you can press **Cancel**.
 
