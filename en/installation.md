@@ -69,8 +69,10 @@ Depending on your use case and needed integrations it is advisable to choose the
 | Libreoffice \(system\) | ❌ | ❌ | ✅ | ✅ |
 | Libreoffice \(snap\) | ❌ | ❌ | ❌ | ❌ |
 | Libreoffice \(flatpak\) | ❌ | ❌ | ❌ | ❌ |
-| LaTex editor \(system\) | ❌ | ❌ | ✅ | ✅ |
-| LaTeX editor \(snap\) | ❌ | ❌ | ✅ | ✅ |
+| TexShow | ❌ | ✅ | ✅ | ✅ |
+| TexMaker | ❌ | ✅ | ✅ | ✅ |
+| LyX | ❌ | ✅ | ✅ | ✅ |
+| VIm/EMacs | ❌ | ❌ | ✅ | ✅ |
 
 ### Include JabRef in the start menu of Ubuntu
 
