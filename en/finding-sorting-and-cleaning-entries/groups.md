@@ -101,6 +101,7 @@ JabRef has five types of groups:
 * **Searching for a keyword**. The group contain entries in which a certain field \(e.g. `author`\) contains a certain keyword \(e.g. `Smith`\). This method does not require manual assignment of entries but uses information that is already present in the database.
 * **Free search expression**. Similar to **Searching for a keyword**, but for several keywords in several fields.
 * **Specified keywords**. This feature will gather all words found in a specific field of your choice, and create a group for each word.
+  * **Authors' last names**. Groups can be generated for each author's last name.
 * **Cited entries**. The group contains the entries cited in a LaTeX document, based on its _.aux_ file.
 
 #### Explicit selection
