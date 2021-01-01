@@ -154,3 +154,6 @@ A: See [How to improve the help page](faqcontributing/how-to-improve-the-help-pa
 
 A: This error message has been observed on systems that use [inotify](https://www.man7.org/linux/man-pages//man7/inotify.7.html). System calls to `inotify_init` and `inotify_add_watch` set `errno` to `EMFILE` when `inotify` has reached its limit. The most common reason is that `inotify` is running too many instances. To solve this problem, contact your system administrator and request that they increase the limits defined in `/proc/sys/fs/inotify/max_user_*` files.
 
+## Q: "I'm using JabRef with Linux (Gnome desktop version) and each time I want to see a pdf document in JabRef, the document viewer Evince is opened. I would prefer to open it with Okular."
+
+A: JabRef opens the pdf document with the application Gnome has set by default: Evince. If you want JabRef to open another application (Okular or other), in your file explorer, right-click on whatever pdf file > properties > Open With > choose your application > Set as default at the bottom right corner. From now on, both when you double-click a pdf file in your file explorer or when you ask JabRef to open it via its document viewer, your chosen application will be used.
