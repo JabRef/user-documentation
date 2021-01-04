@@ -6,7 +6,7 @@ Since `JabRef 5.2` it is possible to use custom themes. In `Preferences > Appear
 
 * **Light Theme**: The default theme is the light theme \([`Base.css`](https://github.com/JabRef/jabref/blob/master/src/main/java/org/jabref/gui/Base.css)\).
 * **Dark Theme**: There is an alternative dark theme \([`Dark.css`](https://github.com/JabRef/jabref/blob/master/src/main/java/org/jabref/gui/Dark.css)\) which is based on `Base.css` and just overwrites the colors.
-* **Custom Theme**: In `Preferences > Appearance > Visual theme > Custom theme` there can be set a custom theme by simply selecting a custom CSS \(based on `Base.css` or `Dark.css`\), for instance 
+* **Custom Theme**: In `Preferences > Appearance > Visual theme > Custom theme` there can be set a custom theme by simply selecting a custom CSS \(based on `Base.css` or `Dark.css`\), for instance:
 
 {% file src="../.gitbook/assets/dark-custom \(1\).css" %}
 
@@ -24,6 +24,6 @@ Since `JabRef 5.2` it is possible to use custom themes. In `Preferences > Appear
 
 **Dark Theme** ![Dark Theme](../.gitbook/assets/theme-dark.png)
 
-**Custom Theme** ![Custom Theme](../.gitbook/assets/theme-custom.png)  
+**Custom Theme** ![Custom Theme](../.gitbook/assets/theme-custom.png)
 \(based on the Dark Theme\)
 
