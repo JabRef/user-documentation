@@ -193,16 +193,21 @@ You can use the same query syntax as in the one-line search at zbmath.org. This 
 * **la**: language either as a string or as [ISO 639-1](https://en.wikipedia.org/wiki/ISO_639-1) language code
 * **ab**: search for term in reviews or abstracts
 * **rv**: reviewer
+* **sw**: software
+* **en**: external identifier
+* **br**: biographical reference
 
-#### Examples 
+#### Examples
 
-* [Graph Theory](https://zbmath.org/?q=Graph+Theory): Search the terms *Graph* and *Theory* in **any** field.
-* [Funct\*](https://zbmath.org/?q=Funct*): Search terms starting with *funct* (e.g. functions, functorial, etc.) in **any** field.
-* [ti: “Graph Theory”](https://zbmath.org/?q=ti%3A+%E2%80%9CGraph+Theory%E2%80%9D): Searches for the exact term *Graph Theory* in the **title** field.
-* [au: Berge & ti: “Graph Theory”](https://zbmath.org/?q=au%3A+Berge+%26+ti%3A+%E2%80%9CGraph+Theory%E2%80%9D): Searches for term *Berge* in the **author** and *Graph Theory* in the **title** field. The **and-operator &** is default and can be omitted.
-* [dt: b au: Hilbert](https://zbmath.org/?q=dt%3A+b+au%3A+Hilbert): The document type is set to *books*; alternatively: **j** for journal articles, **a** for book articles.
-* [Chebyshev | Tschebyscheff](https://zbmath.org/?q=Chebyshev+%7C+Tschebyscheff): The **or-operator |** allows to search for *Chebyshev* or *Tschebyscheff*
-* [ti: “Graph Theory” py: 2010-2020](https://zbmath.org/?q=ti%3A+%E2%80%9CGraph+Theory%E2%80%9D+py%3A+2010-2020): Search for documents whose **title** containing the phrase *Graph Theory* having **publication year** in range *2010-2020*.
-* [so: Combinatorica cc: 05C65](https://zbmath.org/?q=so%3A+Combinatorica+cc%3A+05C65): Search for documents published in **source** *Combinatorica* with **Mathematics Subject Classification code (cc)** in *05C65*.
-* [cc: (05C|90C) py: 2020](https://zbmath.org/?q=cc%3A+%2805C%7C90C%29+py%3A+2020): Search for documents with **MSC code** in *05C* or *90C* published in **year** *2020*
-* [la: es | pt](https://zbmath.org/?q=la%3A+es+%7C+pt): Search for documents in **languages** *Spanish* or *Portuguese*
+* [algebra*](https://zbmath.org/?q=algebra*): Searches for publications containing a term starting with algebra (e.g. algebra, algebras, algebraic, etc.) in **any** field.
+* [ti: “Graph Theory”](https://zbmath.org/?q=ti%3A+%E2%80%9CGraph+Theory%E2%80%9D): Searches for publications with the exact phrase *Graph Theory* in their **title** field.
+* [an: 0492.90056](https://zbmath.org/?q=an%3A0492.90056): Searches for the document with zbl number *0492.90056*.
+* [au: Berge & ti: “Graph Theory”](https://zbmath.org/?q=au%3A+Berge+%26+ti%3A+%E2%80%9CGraph+Theory%E2%80%9D): Searches for entries written by *Berge* with *Graph Theory* in their **title** field. The **and-operator &** is default and can be omitted.
+* [dt: b au: Berge (https://zbmath.org/?q=dt%3A+b+au%3A+Berge): Searches for all books written by Berge.
+* [ti: “Graph Theory” py: 2010-2020](https://zbmath.org/?q=ti%3A+%E2%80%9CGraph+Theory%E2%80%9D+py%3A+2010-2020): Searches for documents containing the exact phrase *Graph Theory* in their **title** that are published between *2010* and *2020*.
+* [so: Combinatorica](https://zbmath.org/?q=so%3A+Combinatorica): Searches for documents published in the journal *Combinatorica*.
+* [cc: (05C|90C)](https://zbmath.org/?q=cc%3A+%2805C%7C90C%29): Searches for documents with **MSC code** in *05C* or *90C*.
+* [la: es | pt](https://zbmath.org/?q=la%3A+es+%7C+pt): Searches for documents written in *Spanish* or *Portuguese*.
+* [sw: python](https://zbmath.org/?q=sw%3Apython): Searches for publications using the **software** *python*.
+* [en: arXiv*](https://zbmath.org/?q=en%3AarXiv): Searches for entries with a link to an *arXiv* preprint.
+* [br: Claude Berge](https://zbmath.org/?q=br%3AClaude+Berge): Searches for publications with biographical information on *Claude Berge*.
