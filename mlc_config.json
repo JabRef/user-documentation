@@ -16,6 +16,12 @@
             "pattern": "\\.tex\\.ac\\.uk/"
         },
         {
+          "pattern": "gitignore\\.io"
+        },
+        {
+          "pattern": "en\\.wikipedia\\.org"
+        },
+        {
             "pattern": "^https://web.archive.org/"
         }
     ]

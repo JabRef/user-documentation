@@ -14,17 +14,17 @@ In case you have numerous PDF files and want to convert them into new entries, J
 
 1. Go to **Lookup → Search for unlinked local files** \(or press `SHIFT + F7`\)
 
-   ![FindUnlinkedFiles - Menu](../.gitbook/assets/findunlinkedfiles-menu-5.2%20%282%29.png)
+   ![FindUnlinkedFiles - Menu](../.gitbook/assets/findunlinkedfiles-menu-5.2%20%282%29%20%282%29%20%282%29.png)
 
 2. The _Find unlinked files_ dialog opens.
 
-   ![FindUnlinkedFiles - Initial dialog](../.gitbook/assets/findunlinkedfiles-window-5.2%20%282%29.png)
+   ![FindUnlinkedFiles - Initial dialog](../.gitbook/assets/findunlinkedfiles-window-5.2%20%282%29%20%282%29%20%282%29.png)
 
 3. Choose a directory using the `Browse` button.
 4. Click on `Scan directory`.
 5. The files not yet contained in the database are shown.
 
-   ![FindUnlinkedFiles - Found files](../.gitbook/assets/findunlinkedfiles-foundfiles-5.2%20%282%29.png)
+   ![FindUnlinkedFiles - Found files](../.gitbook/assets/findunlinkedfiles-foundfiles-5.2%20%282%29%20%282%29%20%281%29.png)
 
 6. Select the entries you are interested in. Note: the button `Export selected files` allows you to export the list of the selected files \(a text file containing on each line one filename with its path\)
 7. Click on `Import`.
@@ -49,7 +49,7 @@ We are also [thinking about](https://github.com/koppor/jabref/issues/169) replac
 
 JabRef also offers to change the filenames. You can adapt the pattern at **Options → Preferences → Linked files**.
 
-![Preferences - Linked files](../.gitbook/assets/preferences-linkedfiles-5.2%20%281%29.png)
+![Preferences - Linked files](../.gitbook/assets/preferences-linkedfiles-5.2.png)
 
 In the section _Linked file name conventions_, you can select the _Filename format pattern_: `[citationkey] - [title]` or `[citationkey]`. Selecting `[citationkey] - [title]` results in the setting `\citationkey\begin{title} - \format[RemoveBrackets]{\title}\end{title}`. This makes the filenames start with the citation key followed by the full title. In the concrete case, `\citationkey` only maybe a better option as the described citation key already contains the title.
 
