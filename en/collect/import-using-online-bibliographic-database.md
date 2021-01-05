@@ -203,7 +203,7 @@ You can use the same query syntax as in the one-line search at zbmath.org. This 
 * [ti: “Graph Theory”](https://zbmath.org/?q=ti%3A+%E2%80%9CGraph+Theory%E2%80%9D): Searches for publications with the exact phrase *Graph Theory* in their **title** field.
 * [an: 0492.90056](https://zbmath.org/?q=an%3A0492.90056): Searches for the document with zbl number *0492.90056*.
 * [au: Berge & ti: “Graph Theory”](https://zbmath.org/?q=au%3A+Berge+%26+ti%3A+%E2%80%9CGraph+Theory%E2%80%9D): Searches for entries written by *Berge* with *Graph Theory* in their **title** field. The **and-operator &** is default and can be omitted.
-* [dt: b au: Berge (https://zbmath.org/?q=dt%3A+b+au%3A+Berge): Searches for all books written by Berge.
+* [dt: b au: Berge](https://zbmath.org/?q=dt%3A+b+au%3A+Berge): Searches for all books written by Berge.
 * [ti: “Graph Theory” py: 2010-2020](https://zbmath.org/?q=ti%3A+%E2%80%9CGraph+Theory%E2%80%9D+py%3A+2010-2020): Searches for documents containing the exact phrase *Graph Theory* in their **title** that are published between *2010* and *2020*.
 * [so: Combinatorica](https://zbmath.org/?q=so%3A+Combinatorica): Searches for documents published in the journal *Combinatorica*.
 * [cc: (05C|90C)](https://zbmath.org/?q=cc%3A+%2805C%7C90C%29): Searches for documents with **MSC code** in *05C* or *90C*.
