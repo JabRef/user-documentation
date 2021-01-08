@@ -8,7 +8,7 @@ Note that no modifications you make in this dialog will be stored until you clic
 
 ## Using the entry customization dialog
 
-![Screenshot of the entry customization dialog ](../.gitbook/assets/jabrefcustomentrytypes%20%282%29%20%281%29%20%283%29.png)
+![Screenshot of the entry customization dialog ](../.gitbook/assets/jabrefcustomentrytypes%20%282%29%20%281%29%20%283%29%20%283%29.png)
 
 The entry customization dialog is divided into two areas. On the left side all entry types \(including any custom types\) are listed. If you select a type from the left side, the right area shows all fields for the selected entry.
 

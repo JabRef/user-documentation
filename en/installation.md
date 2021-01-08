@@ -114,3 +114,4 @@ cd jabref
 In a nutshell, you clone the latest snapshot of JabRef into `jabref` directory, change directory to `jabref`, initialize and update all the submodules \(dependencies\) of JabRef, assemble them to be built via JDK 13, and finally build and link them together.
 
 The output should be the `build/image` subdirectory that contains the JabRef binary with all of its Java dependencies. To start JabRef, you need to run `bin/JabRefMain` \(in Linux and MacOS\) or `bin/JabRefMain.bat` \(in Windows\) under `build/image` subdirectory.
+

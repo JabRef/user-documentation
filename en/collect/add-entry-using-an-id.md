@@ -10,7 +10,7 @@ Simply paste the DOI into the table of entry, and JabRef will create the new cor
 
 For other identifiers, choose **Library → New entry**, or click on the `New entry` button, or use the keyboard shortcut `CTRL + N`. In the lower part of the window, there are two boxes : "ID type" and "ID". In the field "ID type", you can select the desired identifier, e.g. "ISBN" \(it works also for DOI\). Then enter the identifier in the textbox below and press Enter. That will generate an entry based on the given ID \(you can also click on "Generate"\). The entry is added to your library and opened in the entry editor. In case an error occurs, a popup is shown.
 
-![](../.gitbook/assets/entrytype-dialog%20%282%29%20%283%29%20%282%29.png)
+![](../.gitbook/assets/entrytype-dialog%20%282%29%20%283%29%20%283%29%20%282%29.png)
 
 > _NOTE:_ The content in the dialog depends on the database mode.
 

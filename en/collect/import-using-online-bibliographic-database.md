@@ -104,6 +104,8 @@ Thus, the Google Scholar fetcher is not the best way to obtain lots of entries a
 
 [IEEEXplore](https://ieeexplore.ieee.org/) is a scholarly research database that indexes, abstracts, and provides full-text for articles and papers on computer science, electrical engineering and electronics. IEEEXplore comprises over 180 journals, over 1,400 conference proceedings, more than 3,800 technical standards, over 1,800 eBooks and over 400 educational courses \([Wikipedia](https://en.wikipedia.org/wiki/IEEE_Xplore)\)
 
+Details on the supported fields is available at [https://developer.ieee.org/docs/read/Metadata\_API\_details](https://developer.ieee.org/docs/read/Metadata_API_details). JabRef passes the constructed query as `querytext`. For instance, `thesaurus_terms` can be used to search for IEEE-specific keywords on publications.
+
 ### INSPIRE
 
 [INSPIRE-HEP](https://inspirehep.net/?ln=en) is an open-access digital library for the field of high energy physics \([Wikipedia](https://en.wikipedia.org/wiki/INSPIRE-HEP)\).

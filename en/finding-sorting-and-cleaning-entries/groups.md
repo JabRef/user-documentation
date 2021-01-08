@@ -122,7 +122,7 @@ This method of grouping requires that all entries have a unique citation key. In
 
 This method groups entries in which a specified _field_ \(e.g. _author_\) contains a specified _keyword_ \(e.g. _Smith_\). The mentioned example will group all entries referring to the author _Smith_.
 
-![Fields for  collecting by searching for a keyword](../.gitbook/assets/groups-groupwindow-typekeyboard-jabref5.2.png)
+![Fields for collecting by searching for a keyword](../.gitbook/assets/groups-groupwindow-typekeyboard-jabref5.2.png)
 
 The search can be case-sensitive or not \(checkbox 'Case sensitive'\). The search can either be done as a plain-text or a regular-expression search \(checkbox 'Regular expression'\).
 
