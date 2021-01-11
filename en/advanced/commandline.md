@@ -15,7 +15,7 @@ Locate `JabRef.bat` \(Windows\) or `JabRef` \(Linux, Mac OS\). In the portable v
 The following documentation is for Windows, but works equally well on Linux and Mac OS:
 
 ```text
-C:\portable-apps\JabRef-5.0-portable_windows\JabRef\runtime\bin\JabRef.bat[OPTIONS] [BIBTEX_FILE]
+C:\portable-apps\JabRef-5.0-portable_windows\JabRef\runtime\bin\JabRef.bat [OPTIONS] [BIBTEX_FILE]
 ```
 
 In some cases, you have to specify `--console` to ensure that output is written to the console.
