@@ -61,7 +61,7 @@ The following syntax is understood:
 * `*` - Search in all immediate subdirectories excluding the current and any deeper subdirectories.
 * `**` - Search in all subdirectories recursively AND the current directory.
 * `.` and `..` - The current directory and the parent directory.
-* `[title]` - All expressions in square brackets are replaced by the corresponding field in the current entry
+* `[title]` - All expressions in square brackets are replaced by their corresponding [citation key pattern](../setup/citationkeypatterns#citation-key-patterns).
 * `[extension]` - Is replaced by the file-extension of the field you are using.
 * All other text is interpreted as a regular expression. But caution: You need to escape backslashes by putting two backslashes after each other to not confuse them with the path-separator.
 
