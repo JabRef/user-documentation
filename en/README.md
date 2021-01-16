@@ -51,6 +51,6 @@ JabRef is [highly customizable](setup/) and adapts to you, not the other way aro
 If you want to dive even deeper, have a look at the [advanced information](advanced/) about JabRef.
 
 {% hint style="success" %}
-JabRef is developed and maintained by a multidisciplinary [core team](https://github.com/JabRef/jabref/blob/master/DEVELOPERS) of PhD students, postdocs, and researchers in industry who work on JabRef in their freetime. Without the support of numerous volunteers, none of this would have been possible. [We welcome anyone who would like to contribute to be part of an active user and developer community!](faqcontributing/)
+JabRef is developed and maintained by a multidisciplinary [core team](https://github.com/JabRef/jabref/blob/master/MAINTAINERS) of PhD students, postdocs, and researchers in industry who work on JabRef in their freetime. Without the support of numerous volunteers, none of this would have been possible. [We welcome anyone who would like to contribute to be part of an active user and developer community!](faqcontributing/)
 {% endhint %}
 
