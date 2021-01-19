@@ -4,9 +4,9 @@ The pattern used in the auto generation of citation labels can be set for each o
 
 ## Citation key patterns
 
-The key pattern can contain any text you wish, in addition to field markers that indicate that a specific field of the entry should be inserted at that position of the key. A field marker generally consists of the field name enclosed in square braces, e.g., **`[title]`**. If the field is undefined in an entry at the time of key generation, no text will be inserted by the field marker. A field enclosed in square braces can be further changed by appending one or more of the [available modifiers](citationkeypatterns.md#modifiers) separated by `:`, e.g., **`[title:abbr]`**.
+The key pattern can contain any text you wish, in addition to field markers that indicate that a specific field of the entry should be inserted at that position of the key. A field marker generally consists of the field name \(in upper case letters\) enclosed in square braces, e.g., **`[TITLE]`**. If the field is undefined in an entry at the time of key generation, no text will be inserted by the field marker. A field enclosed in square braces can be further changed by appending one or more of the [available modifiers](citationkeypatterns.md#modifiers) separated by `:`, e.g., **`[TITLE:abbr]`**.
 
-For an entry with the title `An awesome paper on JabRef`, the citation key pattern `Title[title:abbr]` will provide the key `TitleAAPoJ`.
+For an entry with the title `An awesome paper on JabRef`, the citation key pattern `demo[TITLE:abbr]` will provide the key `demoAAPoJ`.
 
 ### Special field markers
 
@@ -75,7 +75,7 @@ JabRef considers the following words to be [function words](https://en.wikipedia
 
 #### Bibentry fields
 
-In addition to the special field markers, most BibTeX, biblatex, and JabRef field names can be accessed by their capitalized name directly. If you regularly use a field name not on this list, you are encouraged to add it.
+In addition to the special field markers, most BibTeX, biblatex, and JabRef field names can be accessed by their **capitalized name** directly. If you regularly use a field name not on this list, you are encouraged to add it.
 
 * **`[AUTHOR]`**: `Ada Lovelace and Charles Babbage` becomes `AdaLovelaceandCharlesBabbage`
 * **`[DATE]`**: `2020-09-25`
@@ -86,7 +86,7 @@ In addition to the special field markers, most BibTeX, biblatex, and JabRef fiel
 
 **Note:** You can use any field present in the entry. However, multi-line fields like comment or abstract can produce unexpected results, and their use is discouraged. The [customize entry types section](customentrytypes.md) contains more information about fields and their customization.
 
-## Modifiers
+### Modifiers
 
 A field name \(or one of the above pseudo-field names\) may optionally be followed by one or more modifiers.
 
@@ -116,7 +116,7 @@ Formatters are primarily used as [save actions](../finding-sorting-and-cleaning-
 
 In addition to using regular expression replacement as [modifiers](citationkeypatterns.md#modifiers) of the field markers within [citation key patterns](citationkeypatterns.md#citation-key-patterns) regular expression matching and replacement can be done after the key patterns have been applied. In this case, the regular expression and replacement string are entered in the separate text fields above the [citation key patterns](citationkeypatterns.md#citation-key-patterns) section. If the replacement string is empty, then matches of the regular expression will be removed from the generated key. Documentation on regular expressions in Java can be found [in the Java documentation](https://docs.oracle.com/javase/9/docs/api/java/util/regex/Pattern.html).
 
-![Citation key generator preferences - regex replacement](../.gitbook/assets/preferences-citation-key-generator-regex-replacement%20%282%29%20%282%29%20%282%29.png)
+![Citation key generator preferences - regex replacement](../.gitbook/assets/preferences-citation-key-generator-regex-replacement%20%282%29%20%282%29%20%282%29%20%282%29.png)
 
 The regex `(?<=.{12}+).+` with an empty replacement string will cut the length of all citation keys to 12.
 
@@ -144,7 +144,7 @@ To change the citation key pattern to `[authors][camel]` for all libraries witho
 
 1. Open the preferences
 
-   ![Options Preferences](../.gitbook/assets/optionspreferences%20%283%29%20%282%29%20%282%29.png)
+   ![Options Preferences](../.gitbook/assets/optionspreferences%20%283%29%20%282%29%20%282%29%20%282%29.png)
 
 2. Navigate to "Citation key generator"
 
@@ -152,7 +152,7 @@ To change the citation key pattern to `[authors][camel]` for all libraries witho
 
 3. Change the default pattern to `[authors][camel]`
 
-   ![Citation key generator preferences - authors camel](../.gitbook/assets/preferences-citation-key-generator-authors-camel%20%282%29%20%282%29%20%281%29.png)
+   ![Citation key generator preferences - authors camel](../.gitbook/assets/preferences-citation-key-generator-authors-camel%20%282%29%20%282%29%20%282%29%20%281%29.png)
 
 4. Press "Enter" \(forgetting to do this is a leading cause of puzzlement\)
 5. Click "Save"

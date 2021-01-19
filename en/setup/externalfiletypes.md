@@ -8,5 +8,5 @@ For each file link, a file type must be chosen, to determine what icon should be
 
 A file type is specified by its name, a graphical icon, a file extension and an application to view the files. On Windows, the name of the application can be omitted in order to use Window's default viewer instead.
 
-![Manage external file types](../.gitbook/assets/manageexternalfiletypes%20%282%29%20%281%29%20%284%29%20%284%29%20%284%29.png)
+![Manage external file types](../.gitbook/assets/manageexternalfiletypes%20%282%29%20%281%29%20%284%29%20%284%29%20%284%29%20%284%29.png)
 
