@@ -117,7 +117,7 @@ Most JabRef installations include the necessary files, so test the extension bef
      When using the Stable release/channel, {Channel\_Name} is not required.
 
 3. Check that the Python script works. In Terminal run `/Applications/JabRef.app/Contents/Resources/jabrefHost.py`. If there are no errors the script is working properly. Stop the script by pressing `Ctrl + D`.
-     
+
 
 ## Usage
 
