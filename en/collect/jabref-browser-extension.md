@@ -35,19 +35,19 @@ Most JabRef installations include the necessary files, so test the extension bef
 5. Make sure that the correct file name of the `JabRef.bat` file is specified in `JabRefHost.ps1` under `$jabRefExe`.
 6. Run the following command from the console \(with the correct path to the `jabref.json` file\):
 
-   For Firefox support:
+    a. For Firefox support:
 
    ```text
    REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Mozilla\NativeMessagingHosts\org.jabref.jabref" /ve /d "C:\path\to\jabref-firefox.json" /f
    ```
 
-   For Chrome/Opera/Brave/Vivaldi and other chromium-based browser support:
+    b. For Chrome/Opera/Brave/Vivaldi and other chromium-based browser support:
 
    ```text
    REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Google\Chrome\NativeMessagingHosts\org.jabref.jabref" /ve /d "C:\path\to\jabref-chrome.json" /f
    ```
 
-   For Edge support:
+    c. For Edge support:
 
    ```text
    REG ADD "HKEY_LOCAL_MACHINE\Software\Microsoft\Edge\NativeMessagingHosts\org.jabref.jabref" /ve /t REG_SZ /d "C:\path\to\jabref.json" /f
@@ -62,22 +62,22 @@ Most JabRef installations include the necessary files, so test the extension bef
 1. Download and install the Debian package of [JabRef 5.0](https://www.jabref.org/#downloads)
 2. Install the JabRef browser extension: [Firefox](https://addons.mozilla.org/en-US/firefox/addon/jabref/?src=external-github), [Chrome](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh), [Vivaldi](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh)
 
-   3.a Firefox: Download [org.jabref.jabref.json](https://raw.githubusercontent.com/JabRef/jabref/master/buildres/linux/native-messaging-host/firefox/org.jabref.jabref.json) and put it into
+    a. Firefox: Download [org.jabref.jabref.json](https://raw.githubusercontent.com/JabRef/jabref/master/buildres/linux/native-messaging-host/firefox/org.jabref.jabref.json) and put it into
 
    * `/usr/lib/mozilla/native-messaging-hosts/org.jabref.jabref.json` to install with admin rights for all users
    * `~/.mozilla/native-messaging-hosts/org.jabref.jabref.json` to install without admin rights for the current user
 
-     3.b Chrome: Download [org.jabref.jabref.json](https://raw.githubusercontent.com/JabRef/jabref/master/buildres/linux/native-messaging-host/chromium/org.jabref.jabref.json) and put it into
+    b. Chrome: Download [org.jabref.jabref.json](https://raw.githubusercontent.com/JabRef/jabref/master/buildres/linux/native-messaging-host/chromium/org.jabref.jabref.json) and put it into
 
    * `/etc/opt/chrome/native-messaging-hosts/org.jabref.jabref.json` to install with admin rights for all users
    * `~/.config/google-chrome/NativeMessagingHosts/org.jabref.jabref.json` to install without admin rights for the current user
 
-     3.c Chromium: Download [org.jabref.jabref.json](https://raw.githubusercontent.com/JabRef/jabref/master/buildres/linux/native-messaging-host/chromium/org.jabref.jabref.json) and put it into
+    c. Chromium: Download [org.jabref.jabref.json](https://raw.githubusercontent.com/JabRef/jabref/master/buildres/linux/native-messaging-host/chromium/org.jabref.jabref.json) and put it into
 
    * `/etc/chromium/native-messaging-hosts/org.jabref.jabref.json` to install with admin rights for all users
    * `~/.config/chromium/NativeMessagingHosts/org.jabref.jabref.json` to install without admin rights for the current user
 
-     3.d Edge: Download [org.jabref.jabref.json](https://raw.githubusercontent.com/JabRef/jabref/master/buildres/linux/native-messaging-host/chromium/org.jabref.jabref.json) and put it into
+    d. Edge: Download [org.jabref.jabref.json](https://raw.githubusercontent.com/JabRef/jabref/master/buildres/linux/native-messaging-host/chromium/org.jabref.jabref.json) and put it into
 
    * `/etc/opt/edge/native-messaging-hosts/org.jabref.jabref.json` to install with admin rights for all users
    * `~/.config/microsoft-edge/NativeMessagingHosts/org.jabref.jabref.json` to install without admin rights for the current user
@@ -97,17 +97,17 @@ Most JabRef installations include the necessary files, so test the extension bef
 1. Download and install the DMG package of [JabRef 5.0](https://www.jabref.org/#downloads).
 2. Install the JabRef browser extension: [Firefox](https://addons.mozilla.org/en-US/firefox/addon/jabref/?src=external-github), [Chrome](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh), [Vivaldi](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh)
 
-   3.a Firefox: If it's not auto-installed for you, download [org.jabref.jabref.json](https://raw.githubusercontent.com/JabRef/jabref/master/buildres/mac/native-messaging-host/firefox/org.jabref.jabref.json) and put it into
+    a. Firefox: If it's not auto-installed for you, download [org.jabref.jabref.json](https://raw.githubusercontent.com/JabRef/jabref/master/buildres/mac/native-messaging-host/firefox/org.jabref.jabref.json) and put it into
 
    * `/Library/Application Support/Mozilla/NativeMessagingHosts/org.jabref.jabref.json` to install with admin rights for all users
    * `~/Library/Application Support/Mozilla/NativeMessagingHosts/org.jabref.jabref.json` to install without admin rights for the current user
 
-     3.b Chrome based: If it's not auto-installed for you, download [org.jabref.jabref.json](https://raw.githubusercontent.com/JabRef/jabref/master/buildres/mac/native-messaging-host/chromium/org.jabref.jabref.json) and put it into
+    b. Chrome based: If it's not auto-installed for you, download [org.jabref.jabref.json](https://raw.githubusercontent.com/JabRef/jabref/master/buildres/mac/native-messaging-host/chromium/org.jabref.jabref.json) and put it into
 
    * `/Library/Application Support/Google/Chrome/NativeMessagingHosts/org.jabref.jabref.json` to install with admin rights for all users
    * `~/Library/Application Support/Google/Chrome/NativeMessagingHosts/org.jabref.jabref.json` to install without admin rights for the current user
 
-     3.c Edge: If it's not auto-installed for you, download [org.jabref.jabref.json](https://raw.githubusercontent.com/JabRef/jabref/master/buildres/mac/native-messaging-host/chromium/org.jabref.jabref.json) and put it into
+    c. Edge: If it's not auto-installed for you, download [org.jabref.jabref.json](https://raw.githubusercontent.com/JabRef/jabref/master/buildres/mac/native-messaging-host/chromium/org.jabref.jabref.json) and put it into
 
    * `/Library/Microsoft/Edge/NativeMessagingHosts/org.jabref.jabref.json` to install with admin rights for all users
    * `~/Library/Application Support/Microsoft Edge {Channel_Name}/NativeMessagingHosts/org.jabref.jabref.json` to install without admin rights for the current user
@@ -115,6 +115,9 @@ Most JabRef installations include the necessary files, so test the extension bef
      The {Channel\_Name} in Microsoft Edge {Channel\_Name} must be one of the following values: Canary, Dev, Beta.
 
      When using the Stable release/channel, {Channel\_Name} is not required.
+
+3. Check that the Python script works. In Terminal run `/Applications/JabRef.app/Contents/Resources/jabrefHost.py`. If there are no errors the script is working properly. Stop the script by pressing `Ctrl + D`.
+
 
 ## Usage
 
@@ -129,4 +132,8 @@ You might want to configure JabRef so that new entries are always imported in an
 1\) Go to [zotero.org](https://zotero.org). 2\) Deactivate AdBlock plus extension for the whole domain \(zotero.org\) by clicking on the Adblock plus extension button and sliding the corresponding slider to allow adds on the whole domain. 3\) Close and reopen the browser in order to reload all the extension and their settings. 4\) Verify the functioning of the Jabref extension by visiting a page you know is working to extract its bibliographic data \(for example, [the arXiv](http://arxiv.org/list/gr-qc/pastweek?skip=0&show=5)\) by pressing the extension button or Alt + Shift + J.
 
 In case you encounter problems in this procedure refer to issue \#241 on GitHub for further help.
+
+### In case script jabrefHost.py doesn't work
+
+Error message `bad interpreter: /usr/bin/python3: no such file or directory` means that python3 is not installed at the expected location. Run `which python3` to see if python3 is installed elsewhere. Then copy that path at the first line of jabrefHost.py maintaining `#!` prefix.
 
