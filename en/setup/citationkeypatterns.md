@@ -6,7 +6,7 @@ The pattern used in the auto generation of citation labels can be set for each o
 
 The key pattern can contain any text you wish, in addition to field markers that indicate that a specific field of the entry should be inserted at that position of the key. A field marker generally consists of the field name \(in upper case letters\) enclosed in square braces, e.g., **`[TITLE]`**. If the field is undefined in an entry at the time of key generation, no text will be inserted by the field marker. A field enclosed in square braces can be further changed by appending one or more of the [available modifiers](citationkeypatterns.md#modifiers) separated by `:`, e.g., **`[TITLE:abbr]`**.
 
-For an entry with the title `An awesome paper on JabRef`, the citation key pattern `demo[TITLE:abbr]` will provide the key `demoAAPoJ`.
+For an entry with the title `An awesome paper on JabRef`, the citation key pattern `demo[TITLE:abbr]` will provide the key `demoAapoJ`.
 
 ### Special field markers
 
