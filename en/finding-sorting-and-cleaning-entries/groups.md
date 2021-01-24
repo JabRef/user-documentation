@@ -9,7 +9,7 @@ Groups allow structuring of bibliographic libraries in a tree-like way that is s
 * While a file is always located in exactly one directory, an entry may be contained in more than one group.
 * Groups may use certain criteria to dynamically define their content. New entries that match these criteria are automatically added to these groups. This feature is not available in common file systems, but in several Email clients \(e.g. Thunderbird and Opera\).
 
-Selecting a group shows the entries contained in that group. Selecting multiple groups shows the entries contained in any group \(union\) or those contained in all groups \(intersection\), depending on the current settings. All this is explained in detail below.
+Selecting a group shows the entries contained in that group. Selecting multiple groups shows the entries contained in any group \(union\) or those entries common in any selected groups \(intersection\), depending on the current settings. All this is explained in detail below.
 
 {% hint style="info" %}
 Group definitions are database-specific.​
@@ -88,6 +88,10 @@ This is especially relevant for groups based on keywords or search expression, w
 The union of a group and its subgroups is the logical complement of the intersection: when defined as _union_, selecting the group displays _both_ the group's own entries and its subgroups' entries.
 
 You can create a group for your references about music, and then subgroups about the music styles \(classic, jazz, rock, etc.\). By setting the group "Music" as _union_, when you subsequently add references to a subgroup, they will automatically appear in group "Music" as well \(without additional action\).
+
+### Nesting (sub)groups
+
+You can populate your Group pane by configuring JabRef to use the bibtex source's `keywords = {...},` by clicking the `+` icon and followwing the [previous instructions](groups.md#specified-keywords). You can nest subgroups by using the right chevron `>` ([see here](https://github.com/JabRef/jabref/pull/2703/files#diff-e8f986c28ee8a35397cde5cb1352d4662f62be7085cd7d8856db279f1205245dR17)). You achieve this by editing the `keywords = {...},` bibtex field in the entry source by placing `>` between any two keywords where the left-hand keyword is the parent group and the right-hand keyword will be its sub-group. The library entry will be placed there. Note: when you select `+` to do this, the first delimiter must be the right chevron, and the second must be whichever field separator you have configured (by default a comma `,`).
 
 ### Mixing refining groups with including groups
 
