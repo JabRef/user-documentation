@@ -23,6 +23,18 @@ If you need to use an HTTP proxy server, you can configure JabRef to use a proxy
 
 ## Supported databases
 
+### ACM Portal
+
+Currently disabled, because ACM changed their API. See <https://github.com/JabRef/jabref/issues/5804> for details.
+
+The [ACM Portal](https://dl.acm.org) includes two databases \([Wikipedia](https://en.wikipedia.org/wiki/Association_for_Computing_Machinery#Portal_and_Digital_Library)\):
+
+* the **ACM Digital Library** is a text collection of every article published by the [Association for Computing Machinery](https://www.acm.org), including over 60 years of archives
+
+  from articles, magazines and conference proceedings.
+
+* the **Guide to Computing Literature** that is a bibliographic collection from major publishers in computing with over one million entries.
+
 ### arXiv
 
 [ArXiv](https://arxiv.org/) is a repository of scientific preprints in the fields of mathematics, physics, astronomy, computer science, quantitative biology, statistics, and quantitative finance \([Wikipedia](https://en.wikipedia.org/wiki/ArXiv)\).
@@ -33,17 +45,17 @@ If you need to use an HTTP proxy server, you can configure JabRef to use a proxy
 [CiteSeerX](http://csxstatic.ist.psu.edu/home) is a public search engine for scientific and academic papers primarily with a focus on computer and information science. However, CiteSeerX has been expanding into other scholarly domains such as economics, physics and others \([Wikipedia](https://en.wikipedia.org/wiki/CiteSeer)\).
 
 
-### Collection of Computer Science Bibliographies
+### Collection of Computer Science Bibliographies (CCSB)
 
 The [Collection of Computer Science Bibliographies](https://liinwww.ira.uka.de/bibliography/) is a public search
 engine for bibliographies of scientific literature in computer science.
 
->You may use Lucene syntax, available fields are: ti (title), au (author), yr (publications year).
->In short: the default operator is 'OR', use '+' and '–' operators to specify ('+') required and ('–') forbidden words.
->Wildcards: '?' – single letter, and '*' – part of the word (at the end of a word), '~' – specified at the end of a
->word makes approximate match (allows typos, but takes many seconds to process)
+> You may use Lucene syntax, available fields are: ti (title), au (author), yr (publications year).
+> In short: the default operator is 'OR', use '+' and '–' operators to specify ('+') required and ('–') forbidden words.
+> Wildcards: '?' – single letter, and '*' – part of the word (at the end of a word), '~' – specified at the end of a
+> word makes approximate match (allows typos, but takes many seconds to process)
 
-## Crossref
+### Crossref
 
 
 ### DBLP
@@ -63,6 +75,17 @@ It is possible to limit the search by adding a field name to the search, as **fi
 * publisher: The publisher of the journal
 * abstract: The abstract of the article
 
+### Google Scholar
+
+(Currently not working, because Google changed their API)
+
+[Google Scholar](https://scholar.google.com/) is a freely accessible database that indexes the full text or metadata of scholarly literature across an array of publishing formats and disciplines. Google Scholar index includes most peer-reviewed online academic journals and books, conference papers, theses and dissertations, preprints, abstracts, technical reports, and other scholarly literature, including court opinions and patents \([Wikipedia](https://en.wikipedia.org/wiki/Google_Scholar)\).
+
+#### Traffic limitations
+
+Google scholar can block "automated" crawls which generate too much traffic in a short time. To unblock your IP, doing a Google scholar search in your browser might help. You will be asked to show that you are not a robot \(a CAPTCHA challenge\). If no CAPTCHA appears, or JabRef is still blocked after performing a search in the browser, you can also change your IP address manually or wait for some hours to get unblocked again.
+
+Thus, the Google Scholar fetcher is not the best way to obtain lots of entries at the same time. The [JabRef browser extension](../jabref-browser-extension.md) might be an alternative to download the bibliographic data directly from the browser.
 
 ### GVK
 
@@ -96,22 +119,9 @@ You can simply enter words / names / years you want to search for, or you can sp
 * "per grodke and tit db2"
 * "per Maas,jan?"
 
-
-### Google Scholar
-
-[Google Scholar](https://scholar.google.com/) is a freely accessible database that indexes the full text or metadata of scholarly literature across an array of publishing formats and disciplines. Google Scholar index includes most peer-reviewed online academic journals and books, conference papers, theses and dissertations, preprints, abstracts, technical reports, and other scholarly literature, including court opinions and patents \([Wikipedia](https://en.wikipedia.org/wiki/Google_Scholar)\).
-
-#### Traffic limitations
-
-Google scholar can block "automated" crawls which generate too much traffic in a short time. To unblock your IP, doing a Google scholar search in your browser might help. You will be asked to show that you are not a robot \(a CAPTCHA challenge\). If no CAPTCHA appears, or JabRef is still blocked after performing a search in the browser, you can also change your IP address manually or wait for some hours to get unblocked again.
-
-Thus, the Google Scholar fetcher is not the best way to obtain lots of entries at the same time. The [JabRef browser extension](../jabref-browser-extension.md) might be an alternative to download the bibliographic data directly from the browser.
-
-
 ### IEEEXplore
 
 [IEEEXplore](http://ieeexplore.ieee.org/Xplore/home.jsp) is a scholarly research database that indexes, abstracts, and provides full-text for articles and papers on computer science, electrical engineering and electronics. IEEEXplore comprises over 180 journals, over 1,400 conference proceedings, more than 3,800 technical standards, over 1,800 eBooks and over 400 educational courses \([Wikipedia](https://en.wikipedia.org/wiki/IEEE_Xplore)\)
-
 
 ### INSPIRE
 
@@ -136,11 +146,9 @@ The following list shows some of the field indicators that can be used:
 * _a smith or a jones_: search for references with either author "smith" or author "jones"
 * _a smith and not t processor_: search for author "smith" and omit references with "processor" in the title
 
-
 ### MathSciNet
 
 [MathSciNet](http://www.ams.org/mathscinet/) is a searchable online bibliographic database. It contains all of the contents of the journal Mathematical Reviews \(MR\) since 1940 along with an extensive author database, links to other MR entries, citations, full journal entries, and links to original articles. It contains almost 3 million items and over 1.7 million links to original articles \([Wikipedia](https://en.wikipedia.org/wiki/MathSciNet)\).
-
 
 ### Medline/PubMed
 
@@ -153,13 +161,12 @@ There are two ways of specifying which entries to download:
 
 #### Examples
 
-   * `May \[au\] AND Anderson \[au\]`
-   * `Anderson RM \[au\] HIV \[ti\]`
-   * `Valleron \[au\] 1988:2000\[dp\] HIV \[ti\]`
-   * `Valleron \[au\] AND 1987:2000\[dp\] AND (AIDS \[ti\] OR HIV\[ti\])`
-   * `Anderson \[au\] AND Nature \[ta\]`
-   * `Population \[ta\]`
-
+* `May \[au\] AND Anderson \[au\]`
+* `Anderson RM \[au\] HIV \[ti\]`
+* `Valleron \[au\] 1988:2000\[dp\] HIV \[ti\]`
+* `Valleron \[au\] AND 1987:2000\[dp\] AND (AIDS \[ti\] OR HIV\[ti\])`
+* `Anderson \[au\] AND Nature \[ta\]`
+* `Population \[ta\]`
 
 ### SAO/NASA Astrophysics Data System
 
@@ -167,11 +174,19 @@ There are two ways of specifying which entries to download:
 
 ### SearchAll
 
-
 ### Springer
 
 [Springer](https://www.springer.com/) \(aka Springer Science+Business Media\) is a global publishing company that publishes books, e-books and peer-reviewed journals in science, technical and medical publishing. Springer also hosts a number of scientific databases, including SpringerLink, Springer Protocols, and SpringerImages \([Wikipedia](https://en.wikipedia.org/wiki/Springer_Science%2BBusiness_Media)\).
 
+### Unpaywall
+
+[Unpaywall](https://unpaywall.org) is an open database with over 20 million free scholarly articles harvested from over 50,000 journals and open-access repositories around the globe. Sources for these articles include repositories run by renowned universities, governments, and scholarly societies. Unpaywall is integrated into thousands of existing search engines, library platforms, and information products, making articles easy to find, track, and use for your scholarly communication needs.
+
+The Unpaywall database has a very simple structure: it has one record for each article with a Crossref DOI. It harvests from many sources to find Open Access content, and then matches this content to these DOIs using content fingerprints. So for any given DOI, we know about any OA versions that exist anywhere.
+
+To fetch entries from Unpaywall indirectly through Crossref, choose **Search → Web search**, and the search interface will appear in the side pane. Select **Crossref** in the dropdown menu. To start a search, enter the words of your query, and press Enter or the **Fetch** button.
+
+The results are displayed in the [import inspection window](../import/importinspectiondialog.md). In case an error occurs, it is shown in a popup.
 
 ### zbMATH
 
