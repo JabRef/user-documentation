@@ -20,6 +20,30 @@ However, it is still possible to import hundreds or even thousands of entries fr
 
 If you need to use an HTTP proxy server, you can configure JabRef to use a proxy using the "Network" preferences \(**Options → Preferences → Network**\).
 
+## Search Syntax
+
+The search syntax is adapted from [Apache Lucene](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html).
+JabRef takes the Lucene syntax and transforms it to the syntax required by the supported databases.
+
+JabRef supports following fields:
+
+* `author`
+* `title`
+* `journal`
+* `year`
+* `year-range`
+* `doi`
+
+Lucene supports `AND` and `OR`.
+The default operator is `OR`, use `+` and `-` operators to specify required (`+`) and (`–`) forbidden words.
+Wildcards: `?`: single letter, `*`: part of the word (at the end of a word), `~`: specified at the end of a
+word makes approximate match (allows typos, but takes many seconds to process)
+
+An example query looks like follows:
+
+```lucence
+author:"Frank Leymann" AND title:production
+```
 
 ## Supported databases
 
@@ -39,29 +63,20 @@ The [ACM Portal](https://dl.acm.org) includes two databases \([Wikipedia](https:
 
 [ArXiv](https://arxiv.org/) is a repository of scientific preprints in the fields of mathematics, physics, astronomy, computer science, quantitative biology, statistics, and quantitative finance \([Wikipedia](https://en.wikipedia.org/wiki/ArXiv)\).
 
-
 ### CiteSeerX
 
 [CiteSeerX](http://csxstatic.ist.psu.edu/home) is a public search engine for scientific and academic papers primarily with a focus on computer and information science. However, CiteSeerX has been expanding into other scholarly domains such as economics, physics and others \([Wikipedia](https://en.wikipedia.org/wiki/CiteSeer)\).
-
 
 ### Collection of Computer Science Bibliographies (CCSB)
 
 The [Collection of Computer Science Bibliographies](https://liinwww.ira.uka.de/bibliography/) is a public search
 engine for bibliographies of scientific literature in computer science.
 
-> You may use Lucene syntax, available fields are: ti (title), au (author), yr (publications year).
-> In short: the default operator is 'OR', use '+' and '–' operators to specify ('+') required and ('–') forbidden words.
-> Wildcards: '?' – single letter, and '*' – part of the word (at the end of a word), '~' – specified at the end of a
-> word makes approximate match (allows typos, but takes many seconds to process)
-
 ### Crossref
-
 
 ### DBLP
 
 [DBLP](http://dblp.uni-trier.de/db/) is a computer science bibliography website listing more than 3.1 million journal articles, conference papers, and other publications on computer science \([Wikipedia](https://en.wikipedia.org/wiki/DBLP)\).
-
 
 ### DOAJ
 
@@ -69,11 +84,11 @@ engine for bibliographies of scientific literature in computer science.
 
 It is possible to limit the search by adding a field name to the search, as **field:text**. The supported fields area:
 
-* title: The title of the article
-* doi: The DOI of the article
-* issn: The ISSN of the journal
-* publisher: The publisher of the journal
-* abstract: The abstract of the article
+* `title`: The title of the article
+* `doi`: The DOI of the article
+* `issn`: The ISSN of the journal
+* `publisher`: The publisher of the journal
+* `abstract`: The abstract of the article
 
 ### Google Scholar
 
@@ -95,9 +110,9 @@ Thus, the Google Scholar fetcher is not the best way to obtain lots of entries a
 
 You can simply enter words / names / years you want to search for, or you can specify search keys. Supported keys are:
 
-* all - all words. Not specifYing a search key results in an "all" search
-* tit - title words
-* per - authors, editors, etc.
+* all: all words. Not specifYing a search key results in an "all" search
+* tit: title words
+* per authors, editors, etc.
 * thm - topics
 * slw - key words
 * txt - tables of content
