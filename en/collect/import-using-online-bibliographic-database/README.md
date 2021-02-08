@@ -72,7 +72,13 @@ The [ACM Portal](https://dl.acm.org) includes two databases \([Wikipedia](https:
 The [Collection of Computer Science Bibliographies](https://liinwww.ira.uka.de/bibliography/) is a public search
 engine for bibliographies of scientific literature in computer science.
 
-### Crossref
+### Crossref / Unpaywalll
+
+[Unpaywall](https://unpaywall.org) is an open database with over 20 million free scholarly articles harvested from over 50,000 journals and open-access repositories around the globe. Sources for these articles include repositories run by renowned universities, governments, and scholarly societies. Unpaywall is integrated into thousands of existing search engines, library platforms, and information products, making articles easy to find, track, and use for your scholarly communication needs.
+
+The Unpaywall database has a very simple structure: it has one record for each article with a Crossref DOI. It harvests from many sources to find Open Access content, and then matches this content to these DOIs using content fingerprints. So for any given DOI, we know about any OA versions that exist anywhere.
+
+To fetch entries from Unpaywall indirectly through Crossref, choose **Search → Web search**, and the search interface will appear in the side pane. Select **Crossref** in the dropdown menu. To start a search, enter the words of your query, and press <kbd>Enter</kbd> or the **Fetch** button.
 
 ### DBLP
 
@@ -84,11 +90,13 @@ engine for bibliographies of scientific literature in computer science.
 
 It is possible to limit the search by adding a field name to the search, as **field:text**. The supported fields area:
 
-* `title`: The title of the article
-* `doi`: The DOI of the article
-* `issn`: The ISSN of the journal
-* `publisher`: The publisher of the journal
-* `abstract`: The abstract of the article
+| key | description |
+| -- | -- |
+| `title` | The title of the article |
+| `doi` | The DOI of the article |
+| `issn` | The ISSN of the journal |
+| `publisher` | The publisher of the journal |
+| `abstract` | The abstract of the article |
 
 ### Google Scholar
 
@@ -108,31 +116,39 @@ Thus, the Google Scholar fetcher is not the best way to obtain lots of entries a
 
 #### Advanced search
 
-You can simply enter words / names / years you want to search for, or you can specify search keys. Supported keys are:
+You can simply enter words / names / years you want to search for, or you can specify search fields.
 
-* all: all words. Not specifYing a search key results in an "all" search
-* tit: title words
-* per authors, editors, etc.
-* thm - topics
-* slw - key words
-* txt - tables of content
-* num - numbers, e.g. ISBN
-* kon - names of conferences
-* ppn - Pica Production Numbers of the GVK
-* bkl - Basisklassifikation-numbers
-* erj - year of publication
+Supported fields are:
+
+| field | description |
+| -- | -- |
+| `all` | all words. Not specifYing a search key results in an "all" search |
+| `title` | title words (converted to GVK's `tit` field) |
+| `author` | Searches author, editors, etc. (converted to GVK's `per` field) |
+| `journal` | The journal (converted to GVK's `zti` field) |
+| `year` | The year of publication (converted to GVK's `erj` field) |
+| `thm` | topics |
+| `slw` | key words |
+| `txt` | tables of content |
+| `num` | numbers, e.g. ISBN |
+| `kon` | names of conferences |
+| `ppn` | Pica Production Numbers of the GVK |
+| `bkl` | Basisklassifikation-numbers |
+
+Year ranges are not supported. In case a year range is provided, it is ignored.
+Otherwise, GVK returns no results.
 
 #### Notes
 
-* queries can be combined with "and". The use of "and" is optional, though.
-* in many cases you can use the truncation sign "?"
-* spaces in person names are not supported yet. Please use the truncation sign ? after the first name for several given names. E.g. "per Maas,jan?"
+* queries can be combined with `and`. The use of `and` is optional, though.
+* in many cases you can use the truncation sign `?`
+* spaces in person names are not supported yet. Please use the truncation sign `?` after the first name for several given names. E.g. `per Maas,jan?`
 
 #### Sample queries
 
-* "marx kapital"
-* "per grodke and tit db2"
-* "per Maas,jan?"
+* `marx kapital`
+* `author:grodke and title:db2`
+* `author:"Maas,jan?"`
 
 ### IEEEXplore
 
@@ -144,22 +160,26 @@ You can simply enter words / names / years you want to search for, or you can sp
 
 #### Query syntax
 
-The INSPIRE-HEP search function merely passes your search queries onto the INSPIRE-HEP web search, so you should build your queries in the same way, except omitting the _find_ or _fin_ command. This help page will only give a brief introduction to the search queries. More extensive help on searching INSPIRE-HEP can be found on the page [http://inspirehep.net/info/hep/search-tips](http://inspirehep.net/info/hep/search-tips) .
-
-Your query can be composed of several parts, combined using _and_ and _or_ as logical operators. Each part is composed of a letter or word indicating the type of field to search, followed by a space and the text to search for.
+The INSPIRE-HEP search function merely passes your search queries onto the INSPIRE-HEP web search, so you should build your queries in the same way.
+INSPIRE supports the fielded search too.
+See <http://old.inspirehep.net/help/search-guide> for advanced help.
 
 The following list shows some of the field indicators that can be used:
 
-* _a_ or _author_: search author names
-* _t_ or _title_: search in title
-* _j_: journal. Here either the common abbreviation or the 5 letter CODEN abbreviation for a journal can be used. Volume and page can also be included, separated by commas. For instance, _j Phys. Rev.,D54,1_ looks in the journal Phys. Rev., volume D54, page 1.
-* _k_: search in keywords
+| field | description |
+| -- | -- |
+| `author` | search author names |
+| `title` | search in title |
+| `journal` | Here either the common abbreviation or the 5 letter CODEN abbreviation for a journal can be used. Volume and page can also be included, separated by commas. For instance, _j Phys. Rev.,D54,1_ looks in the journal Phys. Rev., volume D54, page 1. |
+| `collection` | The collecion |
+| `fulltext` | Search in the fulltext |
+| `k` | search in keywords |
 
 #### Example queries
 
-* _a smith and a jones_: search for references with authors "smith" and "jones"
-* _a smith or a jones_: search for references with either author "smith" or author "jones"
-* _a smith and not t processor_: search for author "smith" and omit references with "processor" in the title
+* `author:smith and author:jones`: search for references with authors "smith" and "jones"
+* `author:smith or author:jones`: search for references with either author "smith" or author "jones"
+* `author:smith and not title:processor`: search for author "smith" and omit references with "processor" in the title
 
 ### MathSciNet
 
@@ -169,10 +189,7 @@ The following list shows some of the field indicators that can be used:
 
 [MEDLINE](https://www.nlm.nih.gov/bsd/pmresources.html) is a bibliographic database of life sciences and biomedical information. It includes bibliographic information for articles from academic journals covering medicine, nursing, pharmacy, dentistry, veterinary medicine, and health care. MEDLINE also covers much of the literature in biology and biochemistry, as well as fields such as molecular evolution \([Wikipedia](https://en.wikipedia.org/wiki/MEDLINE)\).
 
-There are two ways of specifying which entries to download:
-
-1. Enter one or more MEDLINE IDs \(separated by comma/semicolon\) in the text field.
-2. Enter a set of names and/or words to search for. You can use the operators _and_ and _or_ and parentheses to refine your search expression. See [OVID operators](https://resourcecenter.ovid.com/site/help/documentation/ospa/en/Content/syntax.htm) for full description.
+Enter a set of names and/or words to search for. You can use the operators _and_ and _or_ and parentheses to refine your search expression. See [OVID operators](https://resourcecenter.ovid.com/site/help/documentation/ospa/en/Content/syntax.htm) for full description.
 
 #### Examples
 
@@ -192,16 +209,6 @@ There are two ways of specifying which entries to download:
 ### Springer
 
 [Springer](https://www.springer.com/) \(aka Springer Science+Business Media\) is a global publishing company that publishes books, e-books and peer-reviewed journals in science, technical and medical publishing. Springer also hosts a number of scientific databases, including SpringerLink, Springer Protocols, and SpringerImages \([Wikipedia](https://en.wikipedia.org/wiki/Springer_Science%2BBusiness_Media)\).
-
-### Unpaywall
-
-[Unpaywall](https://unpaywall.org) is an open database with over 20 million free scholarly articles harvested from over 50,000 journals and open-access repositories around the globe. Sources for these articles include repositories run by renowned universities, governments, and scholarly societies. Unpaywall is integrated into thousands of existing search engines, library platforms, and information products, making articles easy to find, track, and use for your scholarly communication needs.
-
-The Unpaywall database has a very simple structure: it has one record for each article with a Crossref DOI. It harvests from many sources to find Open Access content, and then matches this content to these DOIs using content fingerprints. So for any given DOI, we know about any OA versions that exist anywhere.
-
-To fetch entries from Unpaywall indirectly through Crossref, choose **Search → Web search**, and the search interface will appear in the side pane. Select **Crossref** in the dropdown menu. To start a search, enter the words of your query, and press Enter or the **Fetch** button.
-
-The results are displayed in the [import inspection window](../import/importinspectiondialog.md). In case an error occurs, it is shown in a popup.
 
 ### zbMATH
 
