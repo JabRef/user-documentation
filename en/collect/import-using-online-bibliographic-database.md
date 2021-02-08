@@ -240,35 +240,42 @@ To be detailed.
 
 #### Structured Search
 
-You can use the same query syntax as in the one-line search at zbmath.org. This means that your query can be composed of several terms, combined by the logical operators `&` (and) and `|` (or). Queries are case-insensitive. Further operators that can be used are `!` for logical negation, `*` for a right wildcard, `“ “` for exact phrase matches, and parentheses `( )` to group terms. Optionally, it is possible to add a field name in the form field:text to limit the search results. The supported fields are:
+You cannot use the same query syntax as in the one-line search at zbmath.org;
+you have to stick with the Apache Lucence syntax.
+ This means that your query can be composed of several terms, combined by the logical operators ` AND ` and ` OR `.
+ Queries are case-insensitive. Further operators that can be used are ` NOT` for logical negation,
+ `*` for a right wildcard, `" "` for exact phrase matches, and parentheses `( )` to group terms.
+ Optionally, it is possible to add a field name in the form field:text to limit the search results. The supported fields are:
 
-* **any**: anywhere (default)
-* **au**: author, editor
-* **ti**: title
-* **so**: source
-* **py**: publication year
-* **cc**: MSC code
-* **dt**: document type (possible values are **j** for journal articles, **b** for books, **a** for book articles)
-* **an**: the zbl id of the document
-* **ai**: internal author identifier
-* **la**: language either as a string or as [ISO 639-1](https://en.wikipedia.org/wiki/ISO_639-1) language code
-* **ab**: search for term in reviews or abstracts
-* **rv**: reviewer
-* **sw**: software
-* **en**: external identifier
-* **br**: biographical reference
+| field | description |
+| -- | -- |
+| `author` | Author, editor - sent in the `au` field |
+| `title` | Author, editor - sent in the `ti` field |
+| `journal` | Journal - sent in the `so` field |
+| `year` | Year - sent in the `py` field |
+| `yearrange` | Year range - sent in the `py` field |
+| `cc` | MSC code |
+| `dt` | document type (possible values are `j` for journal articles, `b` for books, `a` for book articles) |
+| `an` | the zbl id of the document |
+| `ai` | internal author identifier |
+| `la` | language either as a string or as [ISO 639-1](https://en.wikipedia.org/wiki/ISO_639-1) language code |
+| `ab` | search for term in reviews or abstracts |
+| `rv` | reviewer |
+| `sw` | software |
+| `en` | external identifier |
+| `br` | biographical reference |
 
 #### Examples
 
-* [algebra*](https://zbmath.org/?q=algebra*): Searches for publications containing a term starting with algebra (e.g. algebra, algebras, algebraic, etc.) in **any** field.
-* [ti: “Graph Theory”](https://zbmath.org/?q=ti%3A+%E2%80%9CGraph+Theory%E2%80%9D): Searches for publications with the exact phrase *Graph Theory* in their **title** field.
-* [an: 0492.90056](https://zbmath.org/?q=an%3A0492.90056): Searches for the document with zbl number *0492.90056*.
-* [au: Berge & ti: “Graph Theory”](https://zbmath.org/?q=au%3A+Berge+%26+ti%3A+%E2%80%9CGraph+Theory%E2%80%9D): Searches for entries written by *Berge* with *Graph Theory* in their **title** field. The **and-operator &** is default and can be omitted.
-* [dt: b au: Berge](https://zbmath.org/?q=dt%3A+b+au%3A+Berge): Searches for all books written by Berge.
-* [ti: “Graph Theory” py: 2010-2020](https://zbmath.org/?q=ti%3A+%E2%80%9CGraph+Theory%E2%80%9D+py%3A+2010-2020): Searches for documents containing the exact phrase *Graph Theory* in their **title** that are published between *2010* and *2020*.
-* [so: Combinatorica](https://zbmath.org/?q=so%3A+Combinatorica): Searches for documents published in the journal *Combinatorica*.
-* [cc: (05C|90C)](https://zbmath.org/?q=cc%3A+%2805C%7C90C%29): Searches for documents with **MSC code** in *05C* or *90C*.
-* [la: es | pt](https://zbmath.org/?q=la%3A+es+%7C+pt): Searches for documents written in *Spanish* or *Portuguese*.
-* [sw: python](https://zbmath.org/?q=sw%3Apython): Searches for publications using the **software** *python*.
-* [en: arXiv*](https://zbmath.org/?q=en%3AarXiv): Searches for entries with a link to an *arXiv* preprint.
-* [br: Claude Berge](https://zbmath.org/?q=br%3AClaude+Berge): Searches for publications with biographical information on *Claude Berge*.
+* [`algebra*](https://zbmath.org/?q=algebra*): Searches for publications containing a term starting with algebra (e.g. algebra, algebras, algebraic, etc.) in any field.
+* [`title:"Graph Theory"`](https://zbmath.org/?q=ti%3A+%E2%80%9CGraph+Theory%E2%80%9D): Searches for publications with the exact phrase *Graph Theory* in their `title` field.
+* [`an:0492.90056`](https://zbmath.org/?q=an%3A0492.90056): Searches for the document with zbl number *0492.90056*.
+* [`author:Berge and title:"Graph Theory"`](https://zbmath.org/?q=au%3A+Berge+%26+ti%3A+%E2%80%9CGraph+Theory%E2%80%9D): Searches for entries written by *Berge* with `Graph Theory` in their **title** field. The **and-operator &** is default and can be omitted.
+* [`dt:b author:Berge`](https://zbmath.org/?q=dt%3A+b+au%3A+Berge): Searches for all books written by Berge.
+* [`title:"Graph Theory" yearrange:2010-2020`](https://zbmath.org/?q=ti%3A+%E2%80%9CGraph+Theory%E2%80%9D+py%3A+2010-2020): Searches for documents containing the exact phrase `Graph Theory` in their **title** that are published between *2010* and *2020*.
+* [`so:Combinatorica`](https://zbmath.org/?q=so%3A+Combinatorica): Searches for documents published in the journal `Combinatorica`.
+* [`cc:"(05C|90C)"`](https://zbmath.org/?q=cc%3A+%2805C%7C90C%29): Searches for documents with **MSC code** in `05C` or `90C`.
+* [`la:"es | pt"`](https://zbmath.org/?q=la%3A+es+%7C+pt): Searches for documents written in Spanish or Portuguese.
+* [`sw:python`](https://zbmath.org/?q=sw%3Apython): Searches for publications using the **software** `python`.
+* [`en:arXiv`](https://zbmath.org/?q=en%3AarXiv): Searches for entries with a link to an `arXiv` preprint.
+* [`br:"Claude Berge"`](https://zbmath.org/?q=br%3AClaude+Berge): Searches for publications with biographical information on `Claude Berge`.
