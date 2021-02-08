@@ -24,28 +24,32 @@ If you need to use an HTTP proxy server, you can configure JabRef to use a proxy
 
 ## Search Syntax
 
-The search syntax is adapted from [Apache Lucene](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html).
+JabRef searches the databases by using the specified keywords.
+One can use quotes (`"`) to keep words togehter: An example is `"process mining"`.
+It is also possible to restrict the search to dedicated fields:
+
+Thereby, JabRef supports following fields:
+
+| field | meaning |
+| -- | -- |
+| `author` | The author of the work |
+| `title` | The title of the work |
+| `journal` | The title of the journal of the work |
+| `year` | The year in which the work was published |
+| `year-range` | The year range (e.g., `1999-2001`) the work was published |
+| `doi` | The document object identifier of the work |
+
+One can usually combine different searches using the Boolean operators `AND` and `OR`.
+Thereby, the default operator is `OR`.
+
+Examples:
+
+* `author:smith and author:jones`: search for references with authors "smith" and "jones"
+* `author:smith or author:jones`: search for references with either author "smith" or author "jones"
+* `author:smith and not title:processor`: search for author "smith" and omit references with "processor" in the title
+
+Technial note: The search syntax is adapted from [Apache Lucene](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html).
 JabRef takes the Lucene syntax and transforms it to the syntax required by the supported databases.
-
-JabRef supports following fields:
-
-* `author`
-* `title`
-* `journal`
-* `year`
-* `year-range`
-* `doi`
-
-Lucene supports `AND` and `OR`.
-The default operator is `OR`, use `+` and `-` operators to specify required (`+`) and (`–`) forbidden words.
-Wildcards: `?`: single letter, `*`: part of the word (at the end of a word), `~`: specified at the end of a
-word makes approximate match (allows typos, but takes many seconds to process)
-
-An example query looks like follows:
-
-```lucence
-author:"Frank Leymann" AND title:production
-```
 
 ## Supported databases
 
@@ -55,10 +59,7 @@ Currently disabled, because ACM changed their API. See <https://github.com/JabRe
 
 The [ACM Portal](https://dl.acm.org) includes two databases \([Wikipedia](https://en.wikipedia.org/wiki/Association_for_Computing_Machinery#Portal_and_Digital_Library)\):
 
-* the **ACM Digital Library** is a text collection of every article published by the [Association for Computing Machinery](https://www.acm.org), including over 60 years of archives
-
-  from articles, magazines and conference proceedings.
-
+* the **ACM Digital Library** is a text collection of every article published by the [Association for Computing Machinery](https://www.acm.org), including over 60 years of archives  from articles, magazines and conference proceedings.
 * the **Guide to Computing Literature** that is a bibliographic collection from major publishers in computing with over one million entries.
 
 ### arXiv
@@ -177,13 +178,6 @@ The following list shows some of the field indicators that can be used:
 | `fulltext` | Search in the fulltext |
 | `k` | search in keywords |
 
-#### Example queries
-
-* `author:smith and author:jones`: search for references with authors "smith" and "jones"
-* `author:smith or author:jones`: search for references with either author "smith" or author "jones"
-* `author:smith and not title:processor`: search for author "smith" and omit references with "processor" in the title
-
-
 ### Jstor
 
 [Jstor](https://jstor.org) is an online database with access to more than 12 million journal articles, books, and sources in 75 disciplines. [About](https://about.jstor.org/)
@@ -270,7 +264,7 @@ you have to stick with the Apache Lucence syntax.
 * [`algebra*](https://zbmath.org/?q=algebra*): Searches for publications containing a term starting with algebra (e.g. algebra, algebras, algebraic, etc.) in any field.
 * [`title:"Graph Theory"`](https://zbmath.org/?q=ti%3A+%E2%80%9CGraph+Theory%E2%80%9D): Searches for publications with the exact phrase *Graph Theory* in their `title` field.
 * [`an:0492.90056`](https://zbmath.org/?q=an%3A0492.90056): Searches for the document with zbl number *0492.90056*.
-* [`author:Berge and title:"Graph Theory"`](https://zbmath.org/?q=au%3A+Berge+%26+ti%3A+%E2%80%9CGraph+Theory%E2%80%9D): Searches for entries written by *Berge* with `Graph Theory` in their **title** field. The **and-operator &** is default and can be omitted.
+* [`author:Berge and title:"Graph Theory"`](https://zbmath.org/?q=au%3A+Berge+%26+ti%3A+%E2%80%9CGraph+Theory%E2%80%9D): Searches for entries written by *Berge* with `Graph Theory` in their **title** field.
 * [`dt:b author:Berge`](https://zbmath.org/?q=dt%3A+b+au%3A+Berge): Searches for all books written by Berge.
 * [`title:"Graph Theory" yearrange:2010-2020`](https://zbmath.org/?q=ti%3A+%E2%80%9CGraph+Theory%E2%80%9D+py%3A+2010-2020): Searches for documents containing the exact phrase `Graph Theory` in their **title** that are published between *2010* and *2020*.
 * [`so:Combinatorica`](https://zbmath.org/?q=so%3A+Combinatorica): Searches for documents published in the journal `Combinatorica`.
