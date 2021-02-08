@@ -203,6 +203,9 @@ It is possible to limit the search by adding a field name to the search, such as
 
 [MEDLINE](https://www.nlm.nih.gov/bsd/pmresources.html) is a bibliographic database of life sciences and biomedical information. It includes bibliographic information for articles from academic journals covering medicine, nursing, pharmacy, dentistry, veterinary medicine, and health care. MEDLINE also covers much of the literature in biology and biochemistry, as well as fields such as molecular evolution \([Wikipedia](https://en.wikipedia.org/wiki/MEDLINE)\).
 
+The Medline syntax is completely different form the Lucene syntax.
+One cannot use fielded search there.
+
 There are two ways of specifying which entries to download:
 
 1. Enter one or more MEDLINE IDs \(separated by comma/semicolon\) in the text field.
