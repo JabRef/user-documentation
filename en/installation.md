@@ -85,6 +85,14 @@ You have several Java Virtual Machines installed, and under the command line the
 ### Everything looks too big or too small. How can I change it to to a more reasonable size?
 
 In the background, JabRef uses [JavaFX](https://en.wikipedia.org/wiki/JavaFX). Applications using JavaFX can be scaled via `java -Dglass.gtk.uiScale=1.5 -jar <application>.jar`. If you have installed JabRef via a package manager, you probably don't have a `.jar` file but a binary file. In this case, you need to find your `JabRef.cfg` in your installation folder \(possibly located at `/opt/JabRef/lib/app/JabRef.cfg`\) and add in the section `[JavaOptions]` the line `-Dglass.gtk.uiScale=1.5`. Then, restart JabRef. Try finding a value that is suitable for you. On high resolution displays, values around `1.5` seem to be reasonable.
+
+### Non-latin characters are not showing up properly
+
+You might need to install an additional font for JabRef to display characters correctly.
+
+| System | Language | Font |
+| :--- | :--- | :--- |
+| ArchLinux | Japanese | [otf-ipafont](https://archlinux.org/packages/?name=otf-ipafont) |
 {% endtab %}
 
 {% tab title="macOS" %}
