@@ -136,7 +136,7 @@ A: You have to start vim with the option `--servername` \(such as `vim --servern
 
 ## Q: My plugins stopped working. Why?
 
-A: In JabRef 3.0 plugin support was removed because the development team cannot keep up plugin support anymore. Nevertheless, plugins can be integrated in JabRef. See [issue \#152](https://github.com/JabRef/jabref/issues/152) for the current status and discussion. Please contact the author of the respective plugin and ask him to port his plugin into JabRef's code.
+A: In JabRef 3.0 plugin support was removed because the development team cannot keep up plugin support anymore. Nevertheless, plugins can be integrated in JabRef. See [issue \#152](https://github.com/JabRef/jabref/issues/152) for the current status and discussion. Please contact the author of the respective plugin and ask them to port their plugin into JabRef's code.
 
 ## Q: In the preferences, I want to change the option XYZ. How to find it?
 
