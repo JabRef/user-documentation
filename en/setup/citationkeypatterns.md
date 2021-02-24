@@ -144,7 +144,7 @@ To change the citation key pattern to `[authors][camel]` for all libraries witho
 
 1. Open the preferences
 
-   ![Options Preferences](../.gitbook/assets/optionspreferences%20%283%29%20%282%29%20%282%29%20%282%29.png)
+   ![Options Preferences](../.gitbook/assets/optionspreferences%20%283%29%20%282%29%20%282%29%20%282%29%20%281%29%20%282%29.png)
 
 2. Navigate to "Citation key generator"
 

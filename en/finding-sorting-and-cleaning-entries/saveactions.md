@@ -11,7 +11,7 @@ Field formats can be tidied up when saving the database. That ensures your entri
 
 A click on the "circular arrow" icon enables a set of recommended formatting actions \(the set of actions will depend on your database type: BibTeX or BibLaTeX\).​
 
-## List of actions
+## List of formatting actions
 
 ### Clear
 
@@ -43,7 +43,14 @@ Converts HTML code to Unicode.
 
 ### LaTeX cleanup
 
-Cleans up LaTeX code.
+Cleans up LaTeX code:
+
+* Escape percent character \(e.g.`50% ⇒ 50\%)`
+* Remove redundant `$`, `{`, and `}` \(but not if the `}` is part of  a command argument​\)
+* Move numbers, `+`, `-`, `/`, and brackets into equations
+* Move numbers followed by a space left of `$` inside the equation \(e.g. `0.35 $\mu$m`\)
+* Replace all `@@` with `$`
+* Replace multiple spaces with a single space
 
 ### Normalize date
 
