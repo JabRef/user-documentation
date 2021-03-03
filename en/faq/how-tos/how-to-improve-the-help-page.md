@@ -18,7 +18,7 @@ At the top of each help page you can find the GitHub icon. Just click here to sh
 
 This leads you to GitHub:
 
-![Click on the pencil icon](../../.gitbook/assets/screenshot-edit-pencil%20%281%29%20%281%29%20%281%29.png)
+![Click on the pencil icon](../../.gitbook/assets/screenshot-edit-pencil%20%281%29%20%281%29%20%281%29%20%281%29%20%281%29%20%281%29.png)
 
 To actually edit the page click on the pencil icon which is highlighted above.
 

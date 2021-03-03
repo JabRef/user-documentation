@@ -53,7 +53,7 @@ JabRef thereby used the service offered by [FreeCite](http://freecite.library.br
 
 6. The entry editor opens with the parsed result:
 
-   ![parsed result](../../.gitbook/assets/step6%20%281%29%20%281%29%20%281%29.png)
+   ![parsed result](../../.gitbook/assets/step6%20%281%29%20%281%29%20%281%29%20%281%29%20%281%29.png)
 
    Do your corrections there.
 
