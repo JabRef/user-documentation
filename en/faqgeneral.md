@@ -56,7 +56,7 @@ A: There are several reasons why JabRef cannot find your identifier online. For 
 
 ## Q: I miss a field _translator_, _lastfollowedon_, etc. How can I add such fields?
 
-A: To add this _translator_ field to all entry types, you can use **Options → Set up general fields** and add a _translator_ field under one of JabRef's general field tabs \(see [Customize general field](setup/generalfields.md)s\). To add this _translator_ field to a specific entry type, edit the specific entry type\(s\) \(**Options → Customize entry types**\) and add a _translator_ field under required fields or optional fields, as you like \(see [Customize entry types](setup/customentrytypes.md)\).
+A: To add this _translator_ field to all entry types, you can use **Options → Preferences → Custom editor tabs** and add a _translator_ field under one of JabRef's general field tabs \(see [Customize general field](setup/generalfields.md)s\). To add this _translator_ field to a specific entry type, edit the specific entry type\(s\) \(**Options → Customize entry types**\) and add a _translator_ field under required fields or optional fields, as you like \(see [Customize entry types](setup/customentrytypes.md)\).
 
 ## Q: How do I prevent JabRef from introducing line breaks in certain fields \(such as “title”\) when saving the .bib file?
 
