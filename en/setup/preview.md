@@ -10,7 +10,7 @@ You can display the entry preview as a separate tab \(see screenshot above\) by 
 
 ## Layouts/Styles
 
-The entry preview displays either the **Customized Preview Style** or a certain **Citation Style**. You can select the styles that should be available for display in `Options > Preferences > Entry preview > Current Preview`. In `Available` you find all styles selectable for display, in `Selected` all styles already selected for display:
+The entry preview displays either the **Customized Preview Style** or a certain **Citation Style**. You can select the styles that should be available for display in **Options → Preferences → Entry preview**. In `Available` you find all styles selectable for display, in `Selected` all styles already selected for display:
 
 ![Entry Preview Settings](../.gitbook/assets/entryeditor-preview-settings.png)
 
