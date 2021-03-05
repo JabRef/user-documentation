@@ -2,9 +2,13 @@
 
 To add a new entry, select **Library → New entry...**, press `CTRL + N​` or click on the dedicated icon of the toolbar.
 
-Then, from the dialog window, click on the type of the entry you want.
+A dialog window is displayed. By default, 5 common types of entries are displayed:
 
-![Screenshot of new entry dialog](../.gitbook/assets/entrytype-dialog%20%282%29%20%283%29%20%283%29%20%283%29%20%283%29%20%281%29.png)
+![Window for selecting default entry types. Note: the actual content of the dialog depends on the database mode \(BibTeX or biblatex\).](../.gitbook/assets/jabref-5.3-selectentrytype.png)
+
+For other types of entries, click on `Others.` That expands the window and displays the other entry types available:
+
+![Window with all available entry types. Note: the actual content of the dialog depends on the database mode \(BibTeX or biblatex\).](../.gitbook/assets/jabref-5.3-selectentrytype-expanded.png)
 
 Finally, the [entry editor](../advanced/entryeditor/) opens and let you fill in the various fields.
 
