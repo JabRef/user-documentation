@@ -47,7 +47,7 @@ There are also scripts for working in an automated way on BibTeX files:
 
 ## Non-BibTeX-based
 
-* [Bibus](http://bibus-biblio.sourceforge.net/)
+* [Bibus Bibliographic Software](https://sourceforge.net/projects/bibus-biblio/)
   * Also offers integration with MS Word and LibreOffice.org
 * [calibre](http://calibre-ebook.com/) for eBooks, [Source Code](https://github.com/kovidgoyal/calibre)
 * [EndNote](http://endnote.com/product-details/basic)
