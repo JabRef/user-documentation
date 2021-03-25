@@ -8,7 +8,7 @@ In BibTeX/biblatex terms, the file links are stored as text in the field `file`.
 
 If the "file" field is included in [General fields](../setup/generalfields.md), you can edit the list of external links for an entry in the [Entry editor](../advanced/entryeditor/). The editor includes buttons for inserting, editing and removing links, as well as buttons for reordering the list of links.
 
-![list of linked files](../.gitbook/assets/entryeditor-linkedfiles%20%282%29%20%283%29%20%283%29%20%283%29%20%283%29%20%282%29.png)
+![list of linked files](../.gitbook/assets/entryeditor-linkedfiles%20%282%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%282%29.png)
 
 ## Directories for files
 
@@ -36,7 +36,7 @@ Relative file directories obviously only work in the library properties fo a bib
 
 ## Auto linking files
 
-If you have a file within or below one of your file directories with an extension matching one of the defined external file types, and a name starting with \(or matching\) an entry's citation key, the file can be auto-linked. JabRef will detect the file and display a "suitcase" icon in the entry editor, next to the filename. Click on the "suitcase" icon to link this file to the entry.
+If you have a file within or below one of your file directories with an extension matching one of the defined external file types, and a name starting with \(or matching\) an entry's citation key, the file can be auto-linked. JabRef will detect the file and display a "link-add" icon in the entry editor, at the left to the filename. Click on the "link-add" icon to link this file to the entry.
 
 The rules for which file names can be auto-linked to a citation key can be set up in **Options →** **Preferences → Linked files**, section _Autolink files_.
 
@@ -44,7 +44,7 @@ The rules for which file names can be auto-linked to a citation key can be set u
 
 For an entry, if you want to download a file and link it to the entry, you can do this by clicking the **Download** button in the entry editor.
 
-![Download from URL](../.gitbook/assets/entryeditor-general-downloadfilefromurl%20%282%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29.png)
+![Download from URL](../.gitbook/assets/entryeditor-general-downloadfilefromurl%20%282%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29.png)
 
 A dialog box will appear, prompting you to enter the URL. The file will be downloaded to your main file directory, named based on the entry's citation key, and finally linked from the entry.
 

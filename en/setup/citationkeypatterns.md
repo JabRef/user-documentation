@@ -116,7 +116,7 @@ Formatters are primarily used as [save actions](../finding-sorting-and-cleaning-
 
 In addition to using regular expression replacement as [modifiers](citationkeypatterns.md#modifiers) of the field markers within [citation key patterns](citationkeypatterns.md#citation-key-patterns) regular expression matching and replacement can be done after the key patterns have been applied. In this case, the regular expression and replacement string are entered in the separate text fields above the [citation key patterns](citationkeypatterns.md#citation-key-patterns) section. If the replacement string is empty, then matches of the regular expression will be removed from the generated key. Documentation on regular expressions in Java can be found [in the Java documentation](https://docs.oracle.com/javase/9/docs/api/java/util/regex/Pattern.html).
 
-![Citation key generator preferences - regex replacement](../.gitbook/assets/preferences-citation-key-generator-regex-replacement%20%282%29%20%282%29%20%282%29%20%282%29.png)
+![Citation key generator preferences - regex replacement](../.gitbook/assets/preferences-citation-key-generator-regex-replacement%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29.png)
 
 The regex `(?<=.{12}+).+` with an empty replacement string will cut the length of all citation keys to 12.
 
