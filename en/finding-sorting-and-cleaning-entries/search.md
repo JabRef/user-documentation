@@ -73,7 +73,7 @@ If casing is important to your search, activate the case-sensitive button.
 * `.` means any character
 * `+` means one or more times
 
-`author != .+`
+`author != .+` returns entries with empty or no author field.
 
 ### Searching for a given word
 
@@ -105,6 +105,10 @@ If casing is important to your search, activate the case-sensitive button.
 `abstract = modell?ing` also matches _modeling_ and _modelling_.
 
 `year == 200[5-9]|201[0-1]​`specifies the range of years 2005-2011 \(`200[5-9]` specifies years 2005-2009;`|` means "or"; `201[0-1]` specifies years 2010-2011\).
+
+`author = (John|Doe)`matches entries written by either John or Doe.
+
+`author = (John|Doe).+(John|Doe)`matches entries written by both John or Doe.
 
 ### Searching for strings with a special character \(`()[]{}\^-=$!|?*+.`\)
 
