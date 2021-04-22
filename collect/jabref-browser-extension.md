@@ -102,12 +102,17 @@ Most JabRef installations include the necessary files, so test the extension bef
    * `/Library/Application Support/Mozilla/NativeMessagingHosts/org.jabref.jabref.json` to install with admin rights for all users
    * `~/Library/Application Support/Mozilla/NativeMessagingHosts/org.jabref.jabref.json` to install without admin rights for the current user
 
-     b. Chrome based: If it's not auto-installed for you, download [org.jabref.jabref.json](https://raw.githubusercontent.com/JabRef/jabref/master/buildres/mac/native-messaging-host/chromium/org.jabref.jabref.json) and put it into
+   b. Chrome: If it's not auto-installed for you, download [org.jabref.jabref.json](https://raw.githubusercontent.com/JabRef/jabref/master/buildres/mac/native-messaging-host/chromium/org.jabref.jabref.json) and put it into
 
-   * `/Library/Application Support/Google/Chrome/NativeMessagingHosts/org.jabref.jabref.json` to install with admin rights for all users
+   * `/Library/Google/Chrome/NativeMessagingHosts/org.jabref.jabref.json` to install with admin rights for all users
    * `~/Library/Application Support/Google/Chrome/NativeMessagingHosts/org.jabref.jabref.json` to install without admin rights for the current user
 
-     c. Edge: If it's not auto-installed for you, download [org.jabref.jabref.json](https://raw.githubusercontent.com/JabRef/jabref/master/buildres/mac/native-messaging-host/chromium/org.jabref.jabref.json) and put it into
+   c. Chromium based: If it's not auto-installed for you, download [org.jabref.jabref.json](https://raw.githubusercontent.com/JabRef/jabref/master/buildres/mac/native-messaging-host/chromium/org.jabref.jabref.json) and put it into
+
+   * `/Library/Application Support/Chromium/NativeMessagingHosts/org.jabref.jabref.json` to install with admin rights for all users
+   * `~/Library/Application Support/Chromium/NativeMessagingHosts/org.jabref.jabref.json` to install without admin rights for the current user
+
+   d. Edge: If it's not auto-installed for you, download [org.jabref.jabref.json](https://raw.githubusercontent.com/JabRef/jabref/master/buildres/mac/native-messaging-host/chromium/org.jabref.jabref.json) and put it into
 
    * `/Library/Microsoft/Edge/NativeMessagingHosts/org.jabref.jabref.json` to install with admin rights for all users
    * `~/Library/Application Support/Microsoft Edge {Channel_Name}/NativeMessagingHosts/org.jabref.jabref.json` to install without admin rights for the current user
