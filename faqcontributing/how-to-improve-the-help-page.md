@@ -30,7 +30,7 @@ Most text can be simply added/edited in this field as plain text. However, you c
 
 In order to review your changes, click on the "Preview changes" tab:
 
-![Edit view at GitHub](../.gitbook/assets/screenshot-edit-preview%20%281%29%20%281%29.png)
+![Edit view at GitHub](../.gitbook/assets/screenshot-edit-preview%20%281%29%20%281%29%20%281%29.png)
 
 ### 3. Saving the changes
 
@@ -42,7 +42,7 @@ _Please note: The message you provide here will be visible in the history of the
 
 As the last step, submit the changes you have made back to the JabRef team:
 
-![Create Pull Request](../.gitbook/assets/screenshot-edit-pullrequest%20%281%29.png)
+![Create Pull Request](../.gitbook/assets/screenshot-edit-pullrequest%20%281%29%20%281%29.png)
 
 Just press the "Create Pull Request" button, and confirm the creation of the request on the next page.
 

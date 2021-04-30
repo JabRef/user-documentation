@@ -34,7 +34,7 @@
   * [Export to Microsoft Word](cite/export-to-microsoft-word.md)
   * [OpenOffice/LibreOffice integration](cite/openofficeintegration.md)
 * [Share](collaborative-work/README.md)
-  * [Sharing a Bib\(la\)TeX Database](collaborative-work/sharedbibfile.md)
+  * [Sharing a Bib\(la\)TeX Library](collaborative-work/sharedbibfile.md)
   * [Shared SQL Database](collaborative-work/sqldatabase/README.md)
     * [Migration of pre-3.6 SQL databases into a shared SQL database](collaborative-work/sqldatabase/sqldatabasemigration.md)
   * [Export](collaborative-work/export/README.md)
