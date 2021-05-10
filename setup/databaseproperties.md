@@ -35,31 +35,25 @@ Relative directories can be specified. This means that the location of the files
 
 _Note: the legacy PDF/PS links \(i.e. the_ pdf _and_ ps _fields, which were used in JabRef versions prior to 2.3\), should in current versions be replaced by general file links._ This can be done using **Quality → Cleanup entries...** and enabling _Upgrade external PDF/PS links to use the 'file' field_.
 
+## Library protection​
+
+While you edit a shared library, another user may be editing it too. By default, saving the library will overwrite changes done by others \(although a warning message about the changes will be displayed\).​
+
+To avoid discarding changes involuntarily, and hence to allow a smooth collaborative work, you can choose to refuse to save the library before external changes have been reviewed. This setting lets you enforce reviewing of external changes before the library can be saved: users will only be able to save the library after any external changes have been reviewed and either merged or rejected.
+
+{% hint style="warning" %}
+Note: this is not a security feature, merely a way to prevent users from overwriting other users' changes inadvertently. This feature does not protect your library against malicious users.​
+{% endhint %}
+
 ## Save sort order
 
 When saving the library, the order of the entries will be preserved if **Save entries in their original order** is selected. Alternatively, by selecting **Save entries ordered as specified**, you can choose to sort the entries using three criteria. For each criterion, you can type-in the field to be used and select the order.
 
 _Note: Entries containing a `crossref` field will always be placed prior to the other entries. This is a necessary preliminary for BibTeX to be able to determine the correct referenced values. \(See:_ [_Tame the BeaST_](http://ctan.org/pkg/tamethebeast)_, p. 26\)_
 
-## Library protection
-
-While you edit a shared library, another user may be editing it too. By default, saving the library will overwrite changes done by others \(although a warning message about the changes will be displayed\).
-
-To avoid discarding changes involuntarily, and hence to allow a smooth collaborative work, you can choose to _Refuse to save the library before external changes have been reviewed_. This setting lets you enforce reviewing of external changes before the library can be saved: users will only be able to save the library after any external changes have been reviewed and either merged or rejected.
-
-_Note:_ this is not a security feature, merely a way to prevent users from overwriting other users' changes inadvertently. This feature does not protect your library against malicious users.
-
 ## Save actions
 
 Field formatting can be tidied up when saving the library. That ensures your entries to have consistent formatting. If you check **Enable save actions**, the list of actions can be configured.
 
 For more information see [Save Actions](../finding-sorting-and-cleaning-entries/saveactions.md).
-
-## Shared SQL database
-
-Note that some properties are not available for shared [SQL databases](../collaborative-work/sqldatabase/) as they are not handled like a `.bib` file. The following properties are not available:
-
-* Database encoding _\(always UTF-8\)_
-* Save sort order
-* Database protection
 
