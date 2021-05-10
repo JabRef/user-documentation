@@ -45,7 +45,7 @@
   * [Customize entry types](setup/customentrytypes.md)
   * [Customize general fields](setup/generalfields.md)
   * [Customize key bindings](setup/customkeybindings.md)
-  * [Library properties window](setup/databaseproperties.md)
+  * [Library properties](setup/databaseproperties.md)
   * [Entry preview setup](setup/preview.md)
   * [Manage external file types](setup/externalfiletypes.md)
   * [Manage protected terms](setup/protectedterms.md)
