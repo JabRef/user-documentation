@@ -1,6 +1,6 @@
 # Library properties
 
-Each library can have specific properties that can be modified through **Library→ Library properties** or by right clicking on the tab of the library and choosing `Library properties`. These specific properties override the generic properties defined in **Options → Preferences → Linked files**.
+Each library can have specific properties that can be modified through **Library→ Library properties** or by right clicking on the tab of the library and choosing `Library properties`. These specific properties override the generic properties defined in **Options → Preferences**.
 
 ![](../.gitbook/assets/libraryproperties.png)
 
@@ -10,7 +10,7 @@ The library-specific properties are stored in the database itself. This way, whe
 
 This setting determines which character encoding JabRef will use when writing this library to disk. Changing this setting will override the setting made in Preferences dialog for this database. JabRef specifies the encoding near the top of the bib file, in order to be able to use the correct encoding next time you open the file.
 
-The dropdown menu allows to select one encoding. `UTF-8` is highly recommended.
+The drop-down menu allows to select one encoding. `UTF-8` is highly recommended.
 
 ## Override default file directories
 
