@@ -1,20 +1,16 @@
-# Library properties
+# Library properties window
 
-Each library can have specific properties that can be modified through **Library→ Library properties** or by right clicking on the tab of the library and choosing `Library properties`. These specific properties override the generic properties defined in **Options → Preferences**.
+Each library can have specific properties that can be modified through **Library→ Library properties** or by right clicking on the tab of the library and choosing `Library properties`. These specific properties override the generic properties defined in **Options → Preferences → Linked files**.
 
 ![](../.gitbook/assets/libraryproperties.png)
 
 The library-specific properties are stored in the database itself. This way, when moving the database to another computer, these properties are preserved. In most of cases these are stored in the bib-file database using text blocks starting with _@Comment{jabref-meta:_ .
 
-{% hint style="warning" %}
-    atabase protection​
-{% endhint %}
-
 ## Library encoding
 
 This setting determines which character encoding JabRef will use when writing this library to disk. Changing this setting will override the setting made in Preferences dialog for this database. JabRef specifies the encoding near the top of the bib file, in order to be able to use the correct encoding next time you open the file.
 
-The drop-down menu allows to select one encoding. `UTF-8` is highly recommended.
+The dropdown menu allows to select one encoding. `UTF-8` is highly recommended.
 
 ## Override default file directories
 
@@ -51,7 +47,7 @@ Field formatting can be tidied up when saving the library. That ensures your ent
 
 For more information see [Save Actions](../finding-sorting-and-cleaning-entries/saveactions.md).
 
-Shared SQL database
+## Shared SQL database
 
 Note that some properties are not available for shared [SQL databases](../collaborative-work/sqldatabase/) as they are not handled like a `.bib` file. The following properties are not available:
 
