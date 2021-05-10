@@ -1,4 +1,4 @@
-# Library properties
+# Library properties window
 
 Each library can have specific properties that can be modified through **Library→ Library properties** or by right clicking on the tab of the library and choosing `Library properties`. These specific properties override the generic properties defined in **Options → Preferences**.
 
@@ -29,6 +29,14 @@ _Note: the legacy PDF/PS links \(i.e. the_ pdf _and_ ps _fields, which were used
 
  this is not a security feature, merely a way to prevent users from overwriting other users' changes inadvertently. This feature does not protect your library against malicious users.
 
+## Save sort order
+
+When saving the library, the order of the entries will be preserved if **Save entries in their original order** is selected. Alternatively, by selecting **Save entries ordered as specified**, you can choose to sort the entries using three criteria. For each criterion, you can type-in the field to be used and select the order.
+
+_Note: Entries containing a `crossref` field will always be placed prior to the other entries. This is a necessary preliminary for BibTeX to be able to determine the correct referenced values. \(See:_ [_Tame the BeaST_](http://ctan.org/pkg/tamethebeast)_, p. 26\)_
+
+\_\_
+
 ## Library protection
 
 While you edit a shared library, another user may be editing it too. By default, saving the library will overwrite changes done by others \(although a warning message about the changes will be displayed\).
@@ -40,8 +48,6 @@ _Note:_
 Field formatting can be tidied up when saving the library. That ensures your entries to have consistent formatting. If you check **Enable save actions**, the list of actions can be configured.
 
 For more information see [Save Actions](../finding-sorting-and-cleaning-entries/saveactions.md).
-
-
 
 ## Shared SQL database
 
