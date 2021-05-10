@@ -1,4 +1,4 @@
-# Library properties window
+# Library properties
 
 Each library can have specific properties that can be modified through **Library→ Library properties** or by right clicking on the tab of the library and choosing `Library properties`. These specific properties override the generic properties defined in **Options → Preferences → Linked files**.
 
