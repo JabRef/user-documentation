@@ -35,6 +35,8 @@ When saving the library, the order of the entries will be preserved if **Save en
 
 _Note: Entries containing a `crossref` field will always be placed prior to the other entries. This is a necessary preliminary for BibTeX to be able to determine the correct referenced values. \(See:_ [_Tame the BeaST_](http://ctan.org/pkg/tamethebeast)_, p. 26\)_
 
+\_\_
+
 ## Library protection
 
 While you edit a shared library, another user may be editing it too. By default, saving the library will overwrite changes done by others \(although a warning message about the changes will be displayed\).
