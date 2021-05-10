@@ -20,7 +20,7 @@ At the right of the search text field, 2 buttons allow for selecting some settin
 
 ## Simple search
 
-In a normal search, the program searches your database for all occurrences of the words in your search string, once you entered it. Only entries containing all words will be considered matches. To search for sequences of words, enclose the sequences in double-quotes. For instance, the query **progress "marine aquaculture"** will match entries containing both the word "progress" and the phrase "marine aquaculture".
+In a normal search, the program searches your library for all occurrences of the words in your search string, once you entered it. Only entries containing all words will be considered matches. To search for sequences of words, enclose the sequences in double-quotes. For instance, the query **progress "marine aquaculture"** will match entries containing both the word "progress" and the phrase "marine aquaculture".
 
 All entries that do not match are hidden, leaving for display the matching entries only.
 
@@ -122,5 +122,5 @@ The character `"` has a special meaning: it is used to group words into phrases 
 
 Hence, to search for `{\"o}quist` as an author, you must input `author = \{\\\x22o\}quist`, with regular expressions enabled \(Note: the `{`, `_` and the `}` are escaped with a backslash; see above\).
 
-Indeed, `\"` does not work as an escape for `"`. Hence, neither `author = {\"o}quist` with regular expression disabled, nor `author = \{\\\"O\}quist` with regular expression enabled, will find anything even if the name `{\"o}quist` exists in the database.
+Indeed, `\"` does not work as an escape for `"`. Hence, neither `author = {\"o}quist` with regular expression disabled, nor `author = \{\\\"O\}quist` with regular expression enabled, will find anything even if the name `{\"o}quist` exists in the library.
 

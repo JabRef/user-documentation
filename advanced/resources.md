@@ -51,7 +51,7 @@ Using this tool you can easily create a custom export filter for JabRef to build
 
 ### BibSync
 
-[BibSync](https://github.com/minad/bibsync) is a tool to synchronize your paper database with a BibTeX file which might be most useful for Physicists and Mathematicians since it supports synchronization with DOI and arXiv.
+[BibSync](https://github.com/minad/bibsync) is a tool to synchronize your paper library with a BibTeX file which might be most useful for Physicists and Mathematicians since it supports synchronization with DOI and arXiv.
 
 ### Bibtex4word
 

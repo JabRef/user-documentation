@@ -4,7 +4,7 @@ description: Tidy up your library
 
 # Cleanup entries
 
-JabRef can cleanup the entries of a database. To do a cleanup of the entries, go to **Quality → Cleanup entries**. Then select the actions to be carried out.
+JabRef can cleanup the entries of a library. To do a cleanup of the entries, go to **Quality → Cleanup entries**. Then select the actions to be carried out.
 
 ![The Cleanup entries dialog](../.gitbook/assets/cleanupdialog%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29.png)
 
