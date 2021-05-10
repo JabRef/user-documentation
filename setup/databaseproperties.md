@@ -1,6 +1,6 @@
 # Library properties window
 
-Each library can have specific properties that can be modified through **Library→ Library properties** or by right clicking on the tab of the library and choosing `Library properties`. These specific properties override the generic properties defined in **Options → Preferences → Linked files**.
+Each library can have specific properties that can be modified through **Library→ Library properties** or by right clicking on the tab of the library and choosing `Library properties`. These specific properties override the generic properties defined in **Options → Preferences**.
 
 ![](../.gitbook/assets/libraryproperties.png)
 
@@ -27,6 +27,8 @@ Relative directories can be specified. This means that the location of the files
 
 _Note: the legacy PDF/PS links \(i.e. the_ pdf _and_ ps _fields, which were used in JabRef versions prior to 2.3\), should in current versions be replaced by general file links._ This can be done using **Quality → Cleanup entries...** and enabling _Upgrade external PDF/PS links to use the 'file' field_.
 
+ this is not a security feature, merely a way to prevent users from overwriting other users' changes inadvertently. This feature does not protect your library against malicious users.
+
 ## Save sort order
 
 When saving the library, the order of the entries will be preserved if **Save entries in their original order** is selected. Alternatively, by selecting **Save entries ordered as specified**, you can choose to sort the entries using three criteria. For each criterion, you can type-in the field to be used and select the order.
@@ -39,9 +41,7 @@ While you edit a shared library, another user may be editing it too. By default,
 
 To avoid discarding changes involuntarily, and hence to allow a smooth collaborative work, you can choose to _Refuse to save the library before external changes have been reviewed_. This setting lets you enforce reviewing of external changes before the library can be saved: users will only be able to save the library after any external changes have been reviewed and either merged or rejected.
 
-_Note:_ this is not a security feature, merely a way to prevent users from overwriting other users' changes inadvertently. This feature does not protect your library against malicious users.
-
-## Save actions
+_Note:_
 
 Field formatting can be tidied up when saving the library. That ensures your entries to have consistent formatting. If you check **Enable save actions**, the list of actions can be configured.
 
