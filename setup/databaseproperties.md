@@ -14,11 +14,19 @@ The following properties are not available:
 - Save sort order. 
 {% endhint %}
 
-## Library encoding
+## General
 
-This setting determines which character encoding JabRef will use when writing this library to disk. Changing this setting will override the setting made in Preferences dialog for this database. JabRef specifies the encoding near the top of the bib file, in order to be able to use the correct encoding next time you open the file.
+### Library encoding
 
-The drop-down menu allows to select one encoding. `UTF-8` is highly recommended.
+This setting determines which character encoding JabRef will use when writing this library to disk. Changing this setting will override the setting made in Preferences dialog for this database. JabRef specifies the encoding near the top of the bib file, in order to be able to use the correct encoding next time you open the file. The drop-down menu allows to select one encoding. 
+
+{% hint style="info" %}
+UTF-8 is highly recommended
+{% endhint %}
+
+### Library mode
+
+You can select if your library follow the [BibTeX or the biblatex format](../cite/bibtex-and-biblatex.md).
 
 ## Override default file directories
 
@@ -42,14 +50,18 @@ While you edit a shared library, another user may be editing it too. By default,
 To avoid discarding changes involuntarily, and hence to allow a smooth collaborative work, you can choose to refuse to save the library before external changes have been reviewed. This setting lets you enforce reviewing of external changes before the library can be saved: users will only be able to save the library after any external changes have been reviewed and either merged or rejected.
 
 {% hint style="warning" %}
-Note: this is not a security feature, merely a way to prevent users from overwriting other users' changes inadvertently. This feature does not protect your library against malicious users.​
+This is not a security feature, merely a way to prevent users from overwriting other users' changes inadvertently. This feature does not protect your library against malicious users.​
 {% endhint %}
 
 ## Save sort order
 
 When saving the library, the order of the entries will be preserved if **Save entries in their original order** is selected. Alternatively, by selecting **Save entries ordered as specified**, you can choose to sort the entries using three criteria. For each criterion, you can type-in the field to be used and select the order.
 
-_Note: Entries containing a `crossref` field will always be placed prior to the other entries. This is a necessary preliminary for BibTeX to be able to determine the correct referenced values. \(See:_ [_Tame the BeaST_](http://ctan.org/pkg/tamethebeast)_, p. 26\)_
+{% hint style="info" %}
+
+{% endhint %}
+
+_tries containing a `crossref` field will always be placed prior to the other entries. This is a necessary preliminary for BibTeX to be able to determine the correct referenced values. \(See:_ [_Tame the BeaST_](http://ctan.org/pkg/tamethebeast)_, p. 26\)_
 
 ## Save actions
 
