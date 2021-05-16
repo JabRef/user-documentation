@@ -37,11 +37,11 @@ JabRef thereby used the service offered by [FreeCite](http://freecite.library.br
 
 2. Select an entry type. Select "InProceedings", this works in the most cases
 
-   ![entry type selection](../../.gitbook/assets/step2.png)
+   ![entry type selection](../../.gitbook/assets/step2%20%281%29.png)
 
 3. The "Plain text import" window opens
 
-   ![plain text import](../../.gitbook/assets/step3%20%281%29.png)
+   ![plain text import](../../.gitbook/assets/step3%20%281%29%20%281%29.png)
 
 4. Paste the entry using the middle button "paste"
 
