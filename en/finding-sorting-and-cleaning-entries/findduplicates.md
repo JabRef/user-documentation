@@ -2,17 +2,19 @@
 
 JabRef can look for duplicated entries inside a database.
 
-This feature is accessible directly through **Quality → Find duplicates**. It is also used when [importing new entries](../collect/import/importinspectiondialog.md) from a supported reference format or directly from the Internet.
+This feature is accessible directly through **Quality → Find duplicates**. It is also used when [importing new entries](../import-export/import/importinspectiondialog.md) from a supported reference format or directly from the Internet.
 
-Detection of potential duplicates is done by an edit distance algorithm. Extra weighting is put on the fields _author_, _editor_, _title._ and _journal_.
+Detection of potential duplicates is done by an edit distance algorithm. Extra weighting is put on the fields _author_, _editor_, _title_ and _journal_.
 
-
+## Parallel display of potential duplicates
 
 ![Screenshot of the parallel display](../.gitbook/assets/findduplicateswindow-paralleldisplay.png)
 
+When two potential duplicates are found, their fields are displayed side-by-side.
+
 The differences between the two entries can be emphasized through the drop-down menu located at the upper right-hand corner of the window. Five ways of displaying the differences are offered:
 
-* **plain text**: as-is, no emphasis
+* **plain text**: as is, no emphasis
 * **show diff** - word: differences are shown in the right entry. Full words are struck out in red if they are removed from the left entry or underlined in blue if they are added to the right entry.
 * **show diff** - character: differences are shown in the right entry. Individual characters are struck out in red or underlined in blue as above.
 * **show symmetric diff** - word: differences are shown on both sides. Words are underlined and displayed in color.

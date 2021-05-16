@@ -1,56 +1,101 @@
-# User Documentation
+# JabRef Bibliography Management
 
-To get started, please follow the installation instructions and familiarize yourself with the basics of JabRef.
+Stay on top of your literature: JabRef helps you to collect and organize sources, find the paper you need and discover the latest research.
 
-{% page-ref page="installation.md" %}
+## Features
 
-{% page-ref page="getting-started.md" %}
+JabRef is a cross-platform application that works on Windows, Linux and Mac OS X. It is available free of charge and is actively developed. JabRef supports you in every step of your research work.
 
-Use the Search icon at the top left of this page to find what you're looking for. To learn more about JabRef's features, please follow the links below.
+### Collect
 
-## [Collect](collect/)
-
-* Add new entries [manually](collect/add-entry-manually.md) or the based on the [reference text](collect/newentryfromplaintext.md)
-* [Search](collect/import-using-online-bibliographic-database.md) across many online scientific catalogues like CiteSeer, CrossRef, Google Scholar, IEEEXplore, INSPIRE, Medline/PubMed, MathSciNet, Springer, arXiv, and zbMATH
-* [Import options](collect/import/) for over 15 reference formats
+* [Search](finding-sorting-and-cleaning-entries/import-using-online-bibliographic-database/) across many online scientific catalogues like [CiteSeer](finding-sorting-and-cleaning-entries/import-using-online-bibliographic-database/citeseer.md), CrossRef, Google Scholar, IEEEXplore, INSPIRE-HEP, Medline PubMed, MathSciNet, Springer, arXiv, and zbMATH
+* Import options for over 15 reference formats
 * Easily retrieve and link full-text articles
-* [Fetch complete bibliographic information based on identifiers](collect/add-entry-using-an-id.md) such as ISBN, DOI, PubMed-ID and arXiv-ID
-* [Extract metadata from PDFs](collect/findunlinkedfiles.md)
-* Import new references directly from the browser with one click using the [official browser extension](collect/jabref-browser-extension.md) for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/jabref/?src=external-github),  [Chrome](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh), [Edge](https://microsoftedge.microsoft.com/addons/detail/pgkajmkfgbehiomipedjhoddkejohfna) and [Vivaldi](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh)
+* Fetch complete bibliographic information based on ISBN, DOI, PubMed-ID and arXiv-ID
+* Extract metadata from PDFs
+* Import new references directly from the browser with one click using the [official browser extension](import-export/import/jabref-browser-extension.md) for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/jabref/?src=external-github),  [Chrome](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh), [Edge](https://microsoftedge.microsoft.com/addons/detail/pgkajmkfgbehiomipedjhoddkejohfna) and [Vivaldi](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh)
 
-## [Organize](finding-sorting-and-cleaning-entries/)
+### Organize
 
-* [Edit the bibliographic information](finding-sorting-and-cleaning-entries/edit-entry.md) using a convenient user interface
-* [Group](finding-sorting-and-cleaning-entries/groups.md) your research into hierarchical collections and organize research items based on keywords/tags, search terms or your manual assignments
-* [Advanced search and filter features](finding-sorting-and-cleaning-entries/search.md)
-* [Complete and fix bibliographic data](finding-sorting-and-cleaning-entries/getbibtexdatafromdoi.md) by comparing with curated online catalogues such as Google Scholar, Springer or MathSciNet
-* [Customizable citation key generator](setup/citationkeypatterns.md)
-* [Manage field names and their content](finding-sorting-and-cleaning-entries/managing-field-names-and-their-content.md)
+* Group your research into hierarchical collections and organize research items based on keywords/tags, search terms or your manual assignments
+* Advanced search and filter features
+* Complete and fix bibliographic data by comparing with curated online catalogues such as Google Scholar, Springer or MathSciNet
+* Customizable citation key generator
 * Customize and add new metadata fields or reference types
-* [Fix common mistakes](finding-sorting-and-cleaning-entries/cleanupentries.md), automatically [upon save](finding-sorting-and-cleaning-entries/saveactions.md) if you wish
-* [Find and merge duplicates](finding-sorting-and-cleaning-entries/findduplicates.md)
-* [Attach related documents](finding-sorting-and-cleaning-entries/filelinks.md): 20 different kinds of documents supported out of the box, completely customizable and extendable
+* Find and merge duplicates
+* Attach related documents: 20 different kinds of documents supported out of the box, completely customizable and extendable
 * Automatically rename and move associated documents according to customizable rules
-* [Keep track of what you read](finding-sorting-and-cleaning-entries/specialfields.md): relevancy, ranking, priority, printed, quality-assured, read status
+* Keep track of what you read: ranking, priority, printed, quality-assured
 
-## [Cite](cite/)
+### Cite
 
-* Native [BibTeX and biblatex support](cite/bibtex-and-biblatex.md)
-* [Cite-as-you-write functionality](cite/pushtoapplications.md) for external applications such as Emacs, Kile, LyX, Texmaker, TeXstudio, Vim and WinEdt
+* Native [BibTeX](https://www.ctan.org/pkg/bibtex) and [Biblatex](https://www.ctan.org/pkg/biblatex) support
+* [Cite-as-you-write functionality](import-export/other-integrations/pushtoapplications.md) for external applications such as Emacs, Kile, LyX, Texmaker, TeXstudio, Vim and WinEdt.
 * Format references in one of the many thousand built-in citation styles or create your style
-* Support for [Word](cite/export-to-microsoft-word.md) and [LibreOffice/OpenOffice](cite/openofficeintegration.md) for inserting and formatting citations
+* Support for Word and LibreOffice/OpenOffice for inserting and formatting citations
 
-## [Share](collaborative-work/)
+### Share
 
-* [Many built-in export options](collaborative-work/export/) or [create a custom export format](collaborative-work/export/customexports.md)
-* Library is saved as a simple text file and thus it is easy to [share with others](collaborative-work/sharedbibfile.md) e.g. via Dropbox and is version-control friendly
-* Work in a team: sync the contents of your library [via a SQL database](collaborative-work/sqldatabase/)
+* Many built-in export options or create your export format
+* Library is saved as a simple text file and thus it is easy to share with others via Dropbox and is version-control friendly
+* Work in a team: sync the contents of your library [via a SQL database](collaborative-work/sqldatabase.md)
 
-JabRef is [highly customizable](setup/) and adapts to you, not the other way around.
+## The data format of JabRef is Bib\(La\)TeX
 
-If you want to dive even deeper, have a look at the [advanced information](advanced/) about JabRef.
+JabRef is is a program for working with BibTeX and biblatex databases. JabRef program uses no separate internal file format, but directly works with BibTeX and Biblatex. That means, your Bib\(La\)TeX file is kept as is when opening in JabRef and saving again: You normally load and save your databases directly in the Bib\(La\)TeX .bib format. In addition, you can also [import and export bibliography libraries](import-export/) in a number of other formats into JabRef.
 
-{% hint style="success" %}
-JabRef is developed and maintained by a multidisciplinary [core team](https://github.com/JabRef/jabref/blob/master/MAINTAINERS) of PhD students, postdocs, and researchers in industry who work on JabRef in their freetime. Without the support of numerous volunteers, none of this would have been possible. [We welcome anyone who would like to contribute to be part of an active user and developer community!](faqcontributing/)
-{% endhint %}
+## JabRef's main window
+
+> Most menu actions referred in the following have keyboard shortcuts, and many are available from the toolbar. The keyboard shortcuts are found in the pull-down menus.
+
+This is the main window from where you work with your databases. Below the menubar and the toolbar is a tabbed pane containing a panel for each of your currently open databases. When you select one of these panels, a table appears, listing all the database's entries, as well as a configurable selection of their fields.
+
+* You decide which fields are shown in the table by checking the fields you want to see in the **Preferences** dialog.
+* Double-click a line of the table to edit the entry content. You can navigate the table with the arrow keys.
+* The table is sorted according to a set of fields of your choosing. The default sort order can be set up in **Preferences → Entry table**, but to more quickly change the order, click the header of a column to set it as the primary sort criterion, or reverse the sorting if it is already set. Another click will deselect the column as sorting criterion. Hold down Ctrl and click a column to add, reverse or remove it as a sub-criterion after the primary column. You can add an arbitrary number of sub-criteria, but only three levels will be stored for the next time you start JabRef.
+* Adjust the width of each column by dragging the borders between their headers.
+* Color codes can be toggled in the **Preferences** dialog \(select **Appearance** and activate option "Color codes for optional and required fields\). They help you visualize the completeness of your database by coloring cells as follows:
+  * A red cell in the leftmost column denotes an incomplete entry.
+  * A yellow cell in the leftmost column denotes an entry that doesn't define all required fields by itself, but that contains a cross-reference.
+  * A blue cell denotes a required field.
+  * A green cell denotes an optional field.
+  * An uncolored cell denotes a field which is not used by the BibTeX program for this type of entry. The field can still be edited in JabRef.
+
+### Adding a new entry
+
+There are several ways to add a new entry. The **New entry** menu action shows a dialog where you can choose the type of the entry from a list. To bypass this dialog, there are also separate menu actions for each entry type, and keyboard shortcuts for the most common types.
+
+When a new entry is added, by default an [entry editor](general/entryeditor.md) for the entry will be opened. This behaviour can be toggled in the **Preferences** dialog.
+
+_Note:_ We strongly recommend learning the shortcuts for the entry types you use most often, e.g. Ctrl + Shift + A for adding an _article_ entry.
+
+#### Adding a new entry using an id
+
+In the dialog, you can also create an entry based on Id. See [import using publication identifiers](finding-sorting-and-cleaning-entries/import-using-publication-identifiers/) for an overview on all available fetchers. For instance, when having an ISBN number, you can select "ISBN" or "DOI" as Id type and then fetch it. See [ISBNtoBibTeX](finding-sorting-and-cleaning-entries/import-using-publication-identifiers/isbntobibtex.md) and [DOItoBibTeX](finding-sorting-and-cleaning-entries/import-using-publication-identifiers/doitobibtex.md) for details.
+
+#### Adding a new entry using the reference text
+
+Use the BibTeX → New entry from plain text... \(Ctrl+Shift+N\). For more information see [New entry from plain text](import-export/import/newentryfromplaintext.md).
+
+### Editing an entry
+
+To open an [entry editor](general/entryeditor.md) for an existing entry, simply double-click anywhere on the appropriate line will open the entry editor \(or select the entry and press Enter\).
+
+### Referencing a BibTeX string in a field
+
+In JabRef you write the contents of all fields the same way as you would in a text editor, with one exception: to reference a string, enclose the name of the string in a set of \# characters, e.g.: '\#jan\# 1997', which will be interpreted as the string named `jan` followed by `1997`. For more information, see [string editor](setup/stringeditor.md).
+
+## Revision history
+
+Please refer to [https://github.com/JabRef/jabref/blob/master/CHANGELOG.md](https://github.com/JabRef/jabref/blob/master/CHANGELOG.md) for a complete history in English.
+
+## License
+
+### The license of the JabRef software
+
+The JabRef software is under the [MIT License](https://github.com/JabRef/jabref/blob/master/LICENSE.md). In short, JabRef is free of use, even commercially. You can do whatever you want with it as long as you include the original copyright and license notice in any copy of the software/source.
+
+### The license of JabRef help
+
+The help of JabRef is under the [Creative Commons 4.0 Attribution 4.0 International License](https://github.com/JabRef/user-documentation/blob/master/LICENSE.md). In short, you can make a commercial use of it, distribute it, modify it and rename it. You must give credit, include copyright, and state changes. And you cannot sublicense it.
 

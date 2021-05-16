@@ -1,34 +1,57 @@
 # Searching within the library
 
-The search bar is located in the icon bar.
+{% hint style="info" %}
+Since: 3.7
+{% endhint %}
 
-![Screenshot of the search bar](../.gitbook/assets/search-bar-v5.2%20%282%29%20%281%29%20%281%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%281%29.png)
+The search bar is located between the icon bar and the database tabs.
+
+![Screenshot of the search bar](../.gitbook/assets/search-bar%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29.png)
 
 To make the cursor jump to the search field, you can:
 
-* Click in the search field.
-* Press Ctrl + F.
+* click in the search field.
+* select the menu **Search → Search**.
+* press Ctrl + F.
+
+Additionally, Ctrl + Shift + F also activates the global search setting.
+
+Searching includes two modes \(normal and advanced\), along with several settings.
 
 ## Search settings
 
-At the right of the search text field, 2 buttons allow for selecting some settings:
+At the right of the search text field, several buttons allow for selecting some settings:
 
+* New window
+  * When pressed, the results are displayed in a dedicated window.
+* Global search
+  * activated:
+    * the search query will be taken over when switching tabs
+    * the external search result window will show matches in all databases
+  * deactivated:
+    * each tab will remember its search query
+    * the external search result window will only show matches in the current database
 * Regular expressions
   * Whether or not the search query uses [regular expressions](search.md#regular-expressions).
 * Case sensitivity
   * Whether or not the search query is case sensitive.
+* Display setting
+  * _Filter_ - Displays only entries which match the search query, non-matches are hidden
+  * _Float_ -  Matching entries are moved to the top, entries which do not match the search query are grayed-out
 
-## Simple search
+## Search modes
 
-In a normal search, the program searches your library for all occurrences of the words in your search string, once you entered it. Only entries containing all words will be considered matches. To search for sequences of words, enclose the sequences in double-quotes. For instance, the query **progress "marine aquaculture"** will match entries containing both the word "progress" and the phrase "marine aquaculture".
+There are two search modes in JabRef.
 
-All entries that do not match are hidden, leaving for display the matching entries only.
+![search](https://user-images.githubusercontent.com/1366654/35925980-5eabdefe-0c27-11e8-9a2a-c2abc2b3509b.gif)
 
-To stop displaying the search results, just clear the search field, press Esc or click on the "Clear" \(`X`\) button.
+### Normal search
 
-## Search using regular expressions <a id="advanced"></a>
+In a normal search, the program searches your database for all occurrences of the words in your search string, once you entered it. Only entries containing all words will be considered matches. To search for sequences of words, enclose the sequences in double quotes. For instance, the query **progress "marine aquaculture"** will match entries containing both the word "progress" and the phrase "marine aquaculture". All entries that don't match are hidden, leaving for display the matching entries only \(filter mode\), or are grayed-out \(float mode\). To stop displaying the search results, just clear the search field again, press Esc or click on the "Clear" \(`X`\) button.
 
-### Syntax
+### Advanced search <a id="advanced"></a>
+
+#### Syntax
 
 In order to search specific fields only and/or include logical operators in the search expression, a special syntax is available in which these can be specified. E.g. to search for entries whose an author contains **miller**, enter:
 
@@ -44,7 +67,7 @@ You can use `and`, `or`, `not`, and parentheses as intuitively expected:
 
 The `=` sign is actually a shorthand for `contains`. Searching for an exact match is possible using `matches` or `==`. Using `!=` tests if the search term is _not_ contained in the field \(equivalent to `not ... contains ...`\). The selection of field types to search \(required, optional, all\) is always overruled by the field specification in the search expression. If a field is not given, all fields are searched. For example, `video and year == 1932` will search for entries with any field containing `video` and the field `year` being exactly `1932`.
 
-### Pseudo fields
+#### Pseudo fields
 
 JabRef defines the following pseudo fields:
 
@@ -52,8 +75,8 @@ JabRef defines the following pseudo fields:
 | :--- | :--- | :--- |
 | **Pseudo field** | **Purpose** | **Example** |
 | `anyfield` | Search in any field | `anyfield contains fruit`: search for entries having one of its fields containing the word **fruit**. This is identical to just writing `apple`. It may be more useful as `anyfield matches apple`, where one field must be exactly `apple` for a match. |
-| `anykeyword` | Search among the keywords | `anykeyword matches apple`: search for entries which have the word **apple** among its keywords. However, as this also matches `pineapple`, it may be more useful in searches of the type `anykeyword matches apple`, which will not match `apples` or `pineapple` |
-| `key` | Search for citation keys | `citationkey == miller2005`: search for an entry whose citation key is **miller2005** |
+| `anykeyword` | Search among the keywords | `anykeyword matches apple`: search for entries which has the word **apple** among its keywords. However, as this also matches `pineapple`, it may be more useful in searches of the type `anykeyword matches apple`, which will not match `apples` or `pineapple` |
+| `bibtexkey` | Search for citation keys | `bibtexkey == miller2005`: search for an entry whose BibTeX key is **miller2005** |
 | `entrytype` | Search for entries of a certain type | `entrytype = thesis`: search entries whose type \(as displayed in the `entrytype` column\) contains the word **thesis** \(which would be **phdthesis** and **mastersthesis**\) |
 
 ## Regular expressions
@@ -73,7 +96,7 @@ If casing is important to your search, activate the case-sensitive button.
 * `.` means any character
 * `+` means one or more times
 
-`author != .+` returns entries with empty or no author field.
+`author != .+`
 
 ### Searching for a given word
 
@@ -90,7 +113,7 @@ If casing is important to your search, activate the case-sensitive button.
 
 ### Searching with optional spelling
 
-* `?` means none or one copy of the preceding character.
+* `?` means none or one copy of the preceeding character.
 * `{n,m}` means at least _n_, but not more than _m_ copies of the preceding character.
 * `[ ]` defines a character class
 
@@ -104,12 +127,6 @@ If casing is important to your search, activate the case-sensitive button.
 
 `abstract = modell?ing` also matches _modeling_ and _modelling_.
 
-`year == 200[5-9]|201[0-1]​`specifies the range of years 2005-2011 \(`200[5-9]` specifies years 2005-2009;`|` means "or"; `201[0-1]` specifies years 2010-2011\).
-
-`author = (John|Doe)`matches entries written by either John or Doe.
-
-`author = (John|Doe).+(John|Doe)`matches entries written by both John or Doe.
-
 ### Searching for strings with a special character \(`()[]{}\^-=$!|?*+.`\)
 
 If a special character \(i.e. `(` `)` `[` `]` `{` `}` `\` `^` `-` `=` `$` `!` `|` `?` `*` `+` `.` \) is included in your search string, it has to be escaped with a backslash, such as `\}` for `}`.
@@ -120,7 +137,7 @@ It means that to search for a string including a backslash, two consecutive back
 
 The character `"` has a special meaning: it is used to group words into phrases for exact matches. So, if you search for a string that includes a double quotation, the double quotation character has to be replaced with the hexadecimal character 22 in ASCII table `\x22`.
 
-Hence, to search for `{\"o}quist` as an author, you must input `author = \{\\\x22o\}quist`, with regular expressions enabled \(Note: the `{`, `_` and the `}` are escaped with a backslash; see above\).
+Hence, to search for _{\"o}quist_ as an author, you must input `author = \{\\\x22o\}quist`, with regular expressions enabled \(Note: the _{_, _\_ and the _}_ are escaped with a backslash; see above\).
 
-Indeed, `\"` does not work as an escape for `"`. Hence, neither `author = {\"o}quist` with regular expression disabled, nor `author = \{\\\"O\}quist` with regular expression enabled, will find anything even if the name `{\"o}quist` exists in the library.
+Indeed, `\"` does not work as an escape for `"`. Hence, neither `author = {\"o}quist` with regular expression disabled, nor `author = \{\\\"O\}quist` with regular expression enabled, will find anything even if the name _{\"o}quist_ exists in the database.
 
