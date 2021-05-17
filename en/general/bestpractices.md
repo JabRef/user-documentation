@@ -9,15 +9,15 @@ See [Groups](../finding-sorting-and-cleaning-entries/groups.md) for more informa
 
 ## Sort order
 
-Sort your entries with the `bibtexkey` on save \(can be set in the database properties\). This makes finding an entry easier in a large file.
+Sort your entries with the `bibtexkey` on save \(can be set in the library properties\). This makes finding an entry easier in a large file.
 
-## Use Integrity Check often
+## Use Check Integrity often
 
-Use `Quality -> Integrity Check` often to ensure that the quality of your database does not degrade. See [Check Integrity ](../finding-sorting-and-cleaning-entries/checkintegrity.md)for more information.
+Use `Quality -> Check integrity` often to ensure that the quality of your library does not degrade. See [Check Integrity ](../finding-sorting-and-cleaning-entries/checkintegrity.md)for more information.
 
 ## Enable save actions
 
-Specify your save actions \(can be set in the database properties\). This ensures that your BibTeX file will look more consistent.
+Specify your save actions \(can be set in the library properties\). This ensures that your Bib\(La\)TeX file will look more consistent.
 
 See [Save Actions](../finding-sorting-and-cleaning-entries/saveactions.md) for more information.
 
