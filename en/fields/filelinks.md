@@ -23,12 +23,12 @@ If the "file" field is included in [General fields](../setup/generalfields.md), 
 
 JabRef offers following directory settings:
 
-1. Options → Preferences → File → External file links → Main file directory
+1. **Options → Preferences → File → External file links → Main file directory**
 
    ![Main file directory](../.gitbook/assets/preferences-file-mainfiledirectory%20%282%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%282%29.png)
 
-2. Library → Library properties → General file directory.
-3. Library → Library properties → User-specific file directory
+2. **Library → Library properties → General file directory**.
+3. **Library → Library properties → User-specific file directory**
 
    ![Override default file directories](../.gitbook/assets/libraryproperties-overridedefaultfiledirectories%20%282%29%20%283%29%20%282%29%20%283%29%20%283%29%20%282%29.png)
 
