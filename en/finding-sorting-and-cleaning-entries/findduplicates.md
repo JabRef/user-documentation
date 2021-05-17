@@ -1,6 +1,6 @@
 # Find duplicates
 
-JabRef can look for duplicated entries inside a database.
+JabRef can look for duplicated entries inside a library.
 
 This feature is accessible directly through **Quality → Find duplicates**. It is also used when [importing new entries](../import-export/import/importinspectiondialog.md) from a supported reference format or directly from the Internet.
 
