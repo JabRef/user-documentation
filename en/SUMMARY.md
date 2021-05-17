@@ -46,7 +46,7 @@
     * [RFC document](finding-sorting-and-cleaning-entries/import-using-publication-identifiers/rfctobibtex.md)
     * [SAO/NASA Astrophysics Data System](finding-sorting-and-cleaning-entries/import-using-publication-identifiers/adstobibtex.md)
     * [Title of the paper](finding-sorting-and-cleaning-entries/import-using-publication-identifiers/titletobibtex.md)
-  * [Add unlinked PDFs including BibTeX data into the database](finding-sorting-and-cleaning-entries/findunlinkedfiles.md)
+  * [Add unlinked PDFs including BibTeX data into the library](finding-sorting-and-cleaning-entries/findunlinkedfiles.md)
   * [Synchronize file links](finding-sorting-and-cleaning-entries/synchrofilelinks.md)
   * [Cleanup entries](finding-sorting-and-cleaning-entries/cleanupentries.md)
   * [Save actions](finding-sorting-and-cleaning-entries/saveactions.md)

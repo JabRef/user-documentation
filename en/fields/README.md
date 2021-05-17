@@ -1,6 +1,6 @@
 # About BibTeX and its fields
 
-JabRef helps you work with your _BibTeX_ databases, but there are still rules to keep in mind when editing your entries, to ensure that your database is treated properly by the _BibTeX_ program.
+JabRef helps you work with your _BibTeX_ libraries, but there are still rules to keep in mind when editing your entries, to ensure that your database is treated properly by the _BibTeX_ program.
 
 ## JabRef's conventions
 

@@ -1,6 +1,10 @@
-# Add unlinked PDFs including BibTeX data into the database
+# Add unlinked PDFs including BibTeX data into the library
 
-This feature is available through **Quality → Find unlinked files...**.
+This feature is available through **Lookup -&gt; Search for unlinked local files**.
+
+{% hint style="warning" %}
+This page is partly outdated. Please, help.
+{% endhint %}
 
 The following description appeared first on [tex.stackexchange.com](http://tex.stackexchange.com/a/344310/9075).
 
@@ -8,14 +12,14 @@ The following description appeared first on [tex.stackexchange.com](http://tex.s
 
 JabRef offers a BibTeX key generation and offers different patterns described at [BibtexKeyPatterns](../setup/citationkeypatterns.md).
 
-## Link the PDFs to your bib file
+## Link the PDFs to your bib library
 
-1. Create or open a .bib file.
-2. Go to "Quality" -&gt; "Find unlinked files". ![FindUnlinkedFiles - 01 - menu](../.gitbook/assets/findunlinkedfiles-01-menu%20%281%29.png)
-3. The "Find unlinked files" dialog opens. ![FindUnlinkedFiles - 02 - initial dialog](../.gitbook/assets/findunlinkedfiles-02-initial-dialog%20%281%29%20%281%29%20%281%29.png)
-4. Choose a directory using the "Browse" button.
-5. Click on "Scan directory".
-6. In "Select files", the files not yet contained in the database are shown. ![FindUnlinkedFiles - 03 - scan result](../.gitbook/assets/findunlinkedfiles-03-scan-result%20%281%29%20%281%29.png)
+1. Create or open a .bib librarry.
+2. Go to **Lookup -&gt; Search for unlinked local files**.
+3. The "Search for unlinked local files" dialog opens. ![FindUnlinkedFiles - 02 - initial dialog](../.gitbook/assets/findunlinkedfiles-02-initial-dialog%20%281%29%20%281%29%20%281%29.png)
+4. Choose a start directory using the "Browse" button.
+5. Click on "Search".
+6. In "Select files", the files not yet contained in the library are shown. ![FindUnlinkedFiles - 03 - scan result](../.gitbook/assets/findunlinkedfiles-03-scan-result%20%281%29%20%281%29.png)
 7. To create entries for all files, click on "Apply".
 8. For each file, an import dialog is shown  ![FindUnlinkedFiles - 04 - metadata](../.gitbook/assets/findunlinkedfiles-04-metadata%20%282%29%20%282%29%20%282%29%20%282%29%20%281%29.png)  The dialog shows the XMP metadata stored in the PDF in the area "XMP-metadata". If this data fits your needs, select "Create entry based on XMP data". Typically, the XMP-metadata is not good enough. Choose "Create entry based on content".
 9. Click on "OK" to start the import

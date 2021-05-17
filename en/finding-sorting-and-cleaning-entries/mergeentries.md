@@ -1,8 +1,8 @@
 # Merge entries
 
-JabRef can help you merging entries of your database.
+JabRef can help you merging entries of your library.
 
-First, select the two entries to be merged. Then select the menu **Quality → Merge entries...**. The **Merge entries** window will pop-up.
+First, select the two entries to be merged. Then select the menu **Quality → Merge entries**. The **Merge entries** window will pop-up.
 
 ## Parallel display of the entries' fields
 
