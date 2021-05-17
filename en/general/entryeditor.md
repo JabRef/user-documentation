@@ -80,7 +80,7 @@ Pressing Ctrl + Shift + K causes the _BibTeX_ key for your entry to be copied to
 
 Press Ctrl + G or the 'gen key' button \(the magic wand\) to autogenerate a _BibTeX_ key for your entry based on the contents of its required fields.
 
-For more information on how JabRef generates _BibTeX_ keys, see [Customizing the BibTex key generator](../setup/bibtexkeypatterns.md).
+For more information on how JabRef generates _BibTeX_ keys, see [Customizing the BibTex key generator](../setup/citationkeypatterns.md).
 
 ## Related Articles Tab
 
@@ -88,5 +88,5 @@ By selecting this Tab, we are sending the title of the selected paper to Mr. DLi
 
 Mr. DLib is a service that calculates recommendations for you based on this title. After a short loading time the recommendations are listed in the Related Articles Tab. For detailed information see [Mr. DLibs help page](http://mr-dlib.org/information-for-users/information-about-mr-dlib-for-jabref-users/#). The following image shows the Related Articles Tab with recommendations to the selected item.
 
-![Screenshot of the Related Articles Tab](../.gitbook/assets/sceenshot_related_articles_en%20%282%29%20%281%29%20%281%29%20%285%29%20%285%29%20%285%29%20%285%29%20%285%29%20%285%29%20%283%29.PNG)
+![Screenshot of the Related Articles Tab](../.gitbook/assets/sceenshot_related_articles_en%20%282%29%20%281%29%20%281%29%20%285%29%20%285%29%20%285%29%20%285%29%20%285%29%20%285%29%20%283%29%20%283%29.PNG)
 

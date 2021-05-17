@@ -34,7 +34,7 @@ You can find an introduction to markdown [here](https://daringfireball.net/proje
 
 In order to check your changes hit the "Preview Changes" tab:
 
-![Edit view at GitHub](../../.gitbook/assets/screenshot-edit-preview%20%281%29%20%281%29%20%281%29%20%281%29.png)
+![Edit view at GitHub](../../.gitbook/assets/screenshot-edit-preview%20%281%29%20%281%29%20%281%29%20%281%29%20%281%29.png)
 
 ### Saving the changes
 
