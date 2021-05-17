@@ -27,8 +27,8 @@ JabRef offers following directory settings:
 
    ![Main file directory](../.gitbook/assets/preferences-file-mainfiledirectory%20%282%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%282%29.png)
 
-2. File → Library properties → General file directory.
-3. File → Library properties → User-specific file directory
+2. Library → Library properties → General file directory.
+3. Library → Library properties → User-specific file directory
 
    ![Override default file directories](../.gitbook/assets/libraryproperties-overridedefaultfiledirectories%20%282%29%20%283%29%20%282%29%20%283%29%20%283%29%20%282%29.png)
 
@@ -83,7 +83,7 @@ The default for searches is `**/.*[bibtexkey].*\\.[extension]`. As you can see t
 
 ## Opening external files
 
-There are several ways to open an external file or web page. In the entry table, you can click on the PDF icon to open the PDF. In case there are multiple PDFs linked, always the first one is opened. You can also right click on the line of the entry in the entry table and select "Open file". There is also a keyboard shorcut for this: In the default setting, this is F4, but [it can also be customized](../setup/customkeybindings.md).
+There are several ways to open an external file or web page. In the entry table, you can click on the PDF icon to open the PDF. In case there are multiple PDFs linked, always the first one is opened. You can also right click on the line of the entry in the entry table and select "Open file". There is also a keyboard shortcut for this: In the default setting, this is F4, but [it can also be customized](../setup/customkeybindings.md).
 
 To access any of an entry's links, click on the icon with the right mouse button \(or Ctrl + Click on Mac OS X\) to bring up a menu showing all links.
 
@@ -91,7 +91,7 @@ To access any of an entry's links, click on the icon with the right mouse button
 
 In general, there is no need to change the settings of external file types. So, this setting is for advanced users.
 
-For each file link, a file type must be chosen, to determine what icon should be used and what application should be called to open the file. The list of file types can be viewed and edited by choosing **Options → Manage external file types**, or by clicking the **Manage external file types** button in the **External programs** tab of the Preferences dialog.
+For each file link, a file type must be chosen, to determine what icon should be used and what application should be called to open the file. The list of file types can be viewed and edited by clicking the **Manage external file types** button in the **External programs** tab of the Preferences dialog.
 
 A file type is specified by its name, a graphical icon, a file extension and an application to view the files. On Windows, the name of the application can be omitted in order to use Window's default viewer instead.
 
