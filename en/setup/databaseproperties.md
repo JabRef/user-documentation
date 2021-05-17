@@ -6,11 +6,17 @@ Each library can have specific properties that can be modified through **Library
 
 The library-specific properties are stored in the library itself. This way, when moving the library to another computer, these properties are preserved. In most of cases these are stored in the bib-file library using text blocks starting with _@Comment{jabref-meta:_ .
 
-## Library encoding
+## General
+
+### Library encoding
 
 This setting determines which character encoding JabRef will use when writing this library to disk. Changing this setting will override the setting made in Preferences dialog for this library. JabRef specifies the encoding near the top of the bib file, in order to be able to use the correct encoding next time you open the file.
 
 The drop-down menu allows to select one encoding. `UTF-8` is highly recommended.
+
+### Library mode
+
+You can choose either _BibTeX_ or _biblatex_, depending on the kind of library format you want.
 
 ## Override default file directories
 
@@ -25,13 +31,7 @@ JabRef stores the name of the current system alongside the **User-specific file 
 
 Relative directories can be specified. This means that the location of the files will be interpreted relative to the location of the bib file. Simply setting a directory to "." \(without quotes\) means that the files should reside in the same directory as the bib file.
 
-_Note: the legacy PDF/PS links \(i.e. the_ pdf _and_ ps _fields, which were used in JabRef versions prior to 2.3\), should in current versions be replaced by general file links._ This can be done using **Quality → Cleanup entries...** and enabling _Upgrade external PDF/PS links to use the 'file' field_.
-
-## Save sort order
-
-When saving the library, the order of the entries will be preserved if **Save entries in their original order** is selected. Alternatively, by selecting **Save entries ordered as specified**, you can choose to sort the entries using three criteria. For each criterion, you can type-in the field to be used and select the order.
-
-_Note: Entries containing a `crossref` field will always be placed prior to the other entries. This is a necessary preliminary for BibTeX to be able to determine the correct referenced values. \(See:_ [_Tame the BeaST_](http://ctan.org/pkg/tamethebeast)_, p. 26\)_
+_Note: the legacy PDF/PS links \(i.e. the_ pdf _and_ ps _fields, which were used in JabRef versions prior to 2.3\), should in current versions be replaced by general file links._ This can be done using **Quality → Cleanup entries** and enabling _Upgrade external PDF/PS links to use the 'file' field_.
 
 ## Library protection
 
@@ -40,6 +40,12 @@ While you edit a shared library, another user may be editing it too. By default,
 To avoid discarding changes involuntarily, and hence to allow a smooth collaborative work, you can choose to _Refuse to save the library before external changes have been reviewed_. This setting lets you enforce reviewing of external changes before the library can be saved: users will only be able to save the library after any external changes have been reviewed and either merged or rejected.
 
 _Note:_ this is not a security feature, merely a way to prevent users from overwriting other users' changes inadvertently. This feature does not protect your library against malicious users.
+
+## Save sort order
+
+When saving the library, the order of the entries will be preserved if **Save entries in their original order** is selected. Alternatively, by selecting **Save entries ordered as specified**, you can choose to sort the entries using three criteria. For each criterion, you can type-in the field to be used and select the order.
+
+_Note: Entries containing a `crossref` field will always be placed prior to the other entries. This is a necessary preliminary for BibTeX to be able to determine the correct referenced values. \(See:_ [_Tame the BeaST_](http://ctan.org/pkg/tamethebeast)_, p. 26\)_
 
 ## Save actions
 
