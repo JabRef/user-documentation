@@ -52,11 +52,11 @@ A: Yes, you can use the parameter `--importToOpen bibfile` of the [command line]
 
 ## Q: How do I link external files with paths relative to my .bib file, so I can move my library along with its files to another directory?
 
-A: You need to override the default file directory for this specific library. In **File → Library properties** you can override the **Default file directory** setting. There, you can either enter the path in **General file directory** \(for it to be valid for all users of the file\) or in **User-specific file directory** \(for it to be valid for you only\). If you simply enter “.” \(a dot, without the quotes\), the file directory will be the same as the .bib file directory. To place your files in a subdirectory called **subdir**, you can enter **“./subdir”** \(without the quotes\). Files will automatically be linked with relative paths if the files are placed in the default file directory or in a directory below it.
+A: You need to override the default file directory for this specific library. In **Library → Library properties** you can override the **Default file directory** setting. There, you can either enter the path in **General file directory** \(for it to be valid for all users of the file\) or in **User-specific file directory** \(for it to be valid for you only\). If you simply enter “.” \(a dot, without the quotes\), the file directory will be the same as the .bib file directory. To place your files in a subdirectory called **subdir**, you can enter **“./subdir”** \(without the quotes\). Files will automatically be linked with relative paths if the files are placed in the default file directory or in a directory below it.
 
 ## Q: Can I use a bib-file specific PDF directory?
 
-A: In **File → Library properties** you can choose a library specific directory in the field “General file directory”. If you want to set a directory only for you \(so that other users should use the default directory\), use the field “User-specific file directory”.
+A: In **Library → Library properties** you can choose a library specific directory in the field “General file directory”. If you want to set a directory only for you \(so that other users should use the default directory\), use the field “User-specific file directory”.
 
 ## Q: How do I export my bibliography entries into a simple text file, so I can import them into a spreadsheet \(in LibreOffice, OpenOffice, MS Office, etc.\)?
 
@@ -92,7 +92,7 @@ A: Upon compilation, LaTeX generates a file with the extension ".aux". This file
 
 ## Q: When I modify my library, I would like that JabRef performs entry cleaning automatically. How to do this?
 
-A: In **File → Library properties**, you will find a section named "Save actions". After enabling this feature, you can choose which actions should be performed for each field upon saving. That should help you keep your library tidy.
+A: In **Library → Library properties**, you will find a section named "Save actions". After enabling this feature, you can choose which actions should be performed for each field upon saving. That should help you keep your library tidy.
 
 ## Q: Search on Google scholar does not work anymore. Why?
 
