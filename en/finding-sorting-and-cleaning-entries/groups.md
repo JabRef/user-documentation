@@ -1,13 +1,13 @@
 # Groups
 
-Groups allow to structure a BibTeX database in a tree-like way that is similar to organizing files on disk in directories and subdirectories. The two main differences are:
+Groups allow to structure a BibTeX library in a tree-like way that is similar to organizing files on disk in directories and sub-directories. The two main differences are:
 
 * While a file is always located in exactly one directory, an entry may be contained in more than one group.
 * Groups may use certain criteria to dynamically define their content. New entries that match these criteria are automatically contained in these groups. This feature is not available in common file systems, but in several Email clients \(e.g. Thunderbird and Opera\).
 
 Selecting a group shows the entries contained in that group. Selecting multiple groups shows the entries contained in any group \(union\) or those contained in all groups \(intersection\), depending on the current settings. All this is explained in detail below.
 
-Group definitions are database-specific; they are saved as a `@COMMENT` block in the `.bib`-file and are shared among all users. \(Future versions of JabRef might support user-dependent groups.\)
+Group definitions are library-specific; they are saved as a `@COMMENT` block in the `.bib`-file and are shared among all users. \(Future versions of JabRef might support user-dependent groups.\)
 
 ## Groups Interface
 
@@ -17,7 +17,7 @@ To manually assign entries to a group, press the **New Group** button, enter a n
 
 In case you want automatically fill the groups content based on keywords, do the following: Press the **New Group** button, enter a name for the group, and select the option to dynamically group entries by searching a field for a keyword. Enter the keyword to search for, then click **OK**. Finally select the group to see its content \(which should be all entries whose `keywords` field contains the keyword you specified\).
 
-In case a group should be filled with entries containing defined search strings, do the following: Press the **New Group** button, enter a name for the group, and select the option to dynamically group entries by a free-form search expression. Enter `author=smith` as a search expression \(replace `smith` with a name that actually occurs in your database\) and click **OK**. Finally select the group to see its content \(which should be all entries whose `author` field contains the name you specified\).
+In case a group should be filled with entries containing defined search strings, do the following: Press the **New Group** button, enter a name for the group, and select the option to dynamically group entries by a free-form search expression. Enter `author=smith` as a search expression \(replace `smith` with a name that actually occurs in your library\) and click **OK**. Finally select the group to see its content \(which should be all entries whose `author` field contains the name you specified\).
 
 You can also intersact or unition groups: Create two different groups \(e.g. as described above\). Click the **Settings** button and make sure that **Union** is selected. Now select both groups. You should see all entries contained in any of the two groups. Click **Settings** again and select **Intersection**. Now you should see only those entries contained in both groups \(which might be none at all, or exactly the same entries as before in case both groups contain the same entries\).
 
@@ -29,7 +29,7 @@ In JabRef there are four different types of groups:
 
 1. The group **All Entries**, which -- as the name suggests -- contains all entries, is always present and cannot be edited or removed.
 2. **Static groups** behave like directories on disk and contain only those entries that you explicitly assign to them.
-3. **Dynamic groups based on keyword search** contain entries in which a certain BibTeX field \(e.g. `keywords`\) contains a certain keyword \(e.g. `electrical`\). This method does not require manual assignment of entries, but uses information that is already present in the database. If all entries in your database have suitable keywords in their `keywords` field, using this type of group might be the best choice.
+3. **Dynamic groups based on keyword search** contain entries in which a certain BibTeX field \(e.g. `keywords`\) contains a certain keyword \(e.g. `electrical`\). This method does not require manual assignment of entries, but uses information that is already present in the library. If all entries in your library have suitable keywords in their `keywords` field, using this type of group might be the best choice.
 4. **Dynamic groups based on free-form search expressions** contain entries that match a specified search expression, using the same syntax as the [search panel](search.md) on the side pane. This [syntax](search.md#advanced) supports logical operators \(`AND`, `OR`, `NOT`\) and allows to specify one or more BibTeX fields to search, facilitating more flexible group definitions than a keyword search \(e.g. `author=smith and title=electrical`\).
 
 Every group that you create is of one of the last three types. The group editing dialog, which is invoked by double-clicking on a group, shows a short description of the selected/edited group in plain English.
@@ -66,7 +66,7 @@ This method of grouping requires that all entries have a unique BibTeX key. In c
 
 #### Dynamic groups
 
-The content of a dynamic group is defined by a logical condition. Only entries that meet this condition are contained in the group. This method uses the information stored in the database itself, and updates dynamically whenever the database changes.
+The content of a dynamic group is defined by a logical condition. Only entries that meet this condition are contained in the group. This method uses the information stored in the library itself, and updates dynamically whenever the library changes.
 
 Two types of conditions can be used:
 
@@ -114,7 +114,7 @@ After mastering the grouping concepts described above, the following advanced fe
 
 ### Automatically creating dynamic groups
 
-By clicking the **Automatically create groups for database** button, you can quickly create a set of groups appropriate for your database. This feature will gather all words found in a specific field of your choice, and create a group for each word. This is useful for instance if your database contains suitable keywords for all entries. By autogenerating groups based on the `keywords` field, you should have a basic set of groups at no cost.
+By clicking the **Automatically create groups for library** button, you can quickly create a set of groups appropriate for your library. This feature will gather all words found in a specific field of your choice, and create a group for each word. This is useful for instance if your library contains suitable keywords for all entries. By autogenerating groups based on the `keywords` field, you should have a basic set of groups at no cost.
 
 You can also specify characters to ignore, for instance commas used between keywords. These will be treated as separators between words, and not part of them. This step is important for combined keywords such as `laplace distribution` to be recognized as a single semantic unit. \(You cannot use this option to remove complete words. Instead, delete the unwanted groups manually after they were created automatically.\)
 
