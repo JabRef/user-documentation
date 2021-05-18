@@ -8,7 +8,7 @@ In the user interface, a tab was added to the entry editor, the aesthetics have 
 
 ## Overview
 
-A new tab was added to the entry editor. It allows to search for citations to the active entry in the LaTeX file directory. It can be configured in the _Library properties_ dialog.
+A new tab was added to the entry editor. It allows to search for citations to the active entry in the LaTeX file directory. It can be activated in **Options -&gt; Preferences**, tab **Entry editor**.
 
 See the image below to see how it works:
 
@@ -16,7 +16,7 @@ See the image below to see how it works:
 
 ## Key Features
 
-### The new tab
+### The LaTeX citations tab
 
 * A _LaTeX Citations_ tab has been added to the entry editor.
 * This tab can be disabled in the _Entry editor_ preferences.
