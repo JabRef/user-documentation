@@ -26,7 +26,7 @@ You can see the value of a special field by:
 
 An entry can be marked as relevant: a black-and-white star is displayed \(in the first column of the image below\).
 
-![](../.gitbook/assets/specialfields-6columns-5.2%20%283%29%20%286%29%20%286%29%20%286%29%20%286%29%20%284%29%20%286%29%20%283%29.png)
+![](../.gitbook/assets/specialfields-6columns-5.2%20%283%29%20%286%29%20%286%29%20%286%29%20%286%29%20%284%29%20%286%29%20%286%29%20%283%29.png)
 
 ### Read status
 
@@ -40,7 +40,7 @@ JabRef offers a rank from one to five yellow stars to rate your papers. By defau
 
 An entry may be marked as quality assured \(fourth column in the image below\). For example, you can mark the entries for which a thorough check of the field contents has been done.
 
-![](../.gitbook/assets/specialfields-6columns-5.2%20%283%29%20%286%29%20%286%29%20%286%29%20%286%29%20%284%29%20%286%29.png)
+![](../.gitbook/assets/specialfields-6columns-5.2%20%283%29%20%286%29%20%286%29%20%286%29%20%286%29%20%284%29%20%286%29%20%286%29%20%285%29.png)
 
 ### Priority
 

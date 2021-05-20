@@ -24,13 +24,13 @@ To actually edit the page, click on the pencil icon, as highlighted above.
 
 The window to edit the page at GitHub looks like this:
 
-![Edit view at GitHub](../.gitbook/assets/screenshot-edit-page%20%281%29%20%281%29.png)
+![Edit view at GitHub](../.gitbook/assets/screenshot-edit-page%20%281%29%20%282%29.png)
 
 Most text can be simply added/edited in this field as plain text. However, you can style your contribution by using [markdown](https://daringfireball.net/projects/markdown/). Markdown is a rather easy way to format text without the need for complex markup, such as with HTML. You can find an introduction to markdown [here](https://daringfireball.net/projects/markdown/) or [here](https://guides.github.com/features/mastering-markdown/).
 
 In order to review your changes, click on the "Preview changes" tab:
 
-![Edit view at GitHub](../.gitbook/assets/screenshot-edit-preview%20%281%29%20%281%29%20%281%29.png)
+![Edit view at GitHub](../.gitbook/assets/screenshot-edit-preview%20%281%29%20%281%29%20%281%29%20%281%29%20%282%29.png)
 
 ### 3. Saving the changes
 

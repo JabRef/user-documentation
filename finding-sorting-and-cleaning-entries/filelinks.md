@@ -77,5 +77,3 @@ To access any of an entry's links, click on the icon with the right mouse button
 
 In general, there is no need to change the settings of external file types. So, this setting is for advanced users. See [Manage external file types](../setup/externalfiletypes.md).
 
-
-

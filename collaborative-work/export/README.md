@@ -18,5 +18,3 @@ See also:
 
 {% page-ref page="../../collect/import/customimports.md" %}
 
-
-

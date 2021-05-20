@@ -24,7 +24,7 @@ The usage of a text-based file format has some advantages:
 
 To create a new library, just select the "New library" menu item in the "File" menu:
 
-![Creating a new library](.gitbook/assets/getting-started-new-library%20%281%29%20%281%29%20%282%29%20%282%29%20%282%29%20%282%29%20%281%29%20%282%29%20%281%29.png)
+![Creating a new library](.gitbook/assets/getting-started-new-library%20%281%29%20%281%29%20%282%29%20%282%29%20%282%29%20%282%29%20%281%29%20%282%29%20%282%29%20%281%29.png)
 
 The main screen is now showing an empty "entry table" we will now start to fill with some entries.
 
@@ -40,7 +40,7 @@ For our running example we will select "Article".
 
 After clicking on the "Article" button, the dialog closes and the so called "Entry Editor" is opened for the newly created entry:
 
-![Main window now showing the entry editor](.gitbook/assets/getting-started-entry-editor%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29.png)
+![Main window now showing the entry editor](.gitbook/assets/getting-started-entry-editor%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%283%29.png)
 
 The most important information about the references to be added can now be entered in the "Required Fields" tab. "Author", "Title", "Journal", and "Year" should be self-explanatory - however, a "citationkey", might not be familiar to you. Basically, the idea of the "citationkey" is coming from working with BibTeX, where it is necessary to have an unique identifier for each entry. This allows for referencing within a document you might be creating using the stored information in your library. Moreover, also within JabRef this "key" is used for example for cross-references to other related entries or to determine file names for full-text references.
 
@@ -52,7 +52,7 @@ The default key pattern is `[auth][year]`, which means that Author information i
 
 After entering some information, you can see on the right side of the entry editor a preview of the bibliographic data:
 
-![Added information for new entry](.gitbook/assets/getting-started-filled-entry-editor%20%281%29%20%281%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%281%29.png)
+![Added information for new entry](.gitbook/assets/getting-started-filled-entry-editor%20%281%29%20%281%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29.png)
 
 There are further possibilities to add entries to your library which are described in the section "Collect" of this documentation:
 
@@ -62,7 +62,7 @@ There are further possibilities to add entries to your library which are describ
 
 After creating the basic information the addition of all other bibliographical details is often cumbersome and error-prone. To ease this task, JabRef allows for an automatic completion of the bibliographic information by looking up the data in public databases. To use this feature just click on the "Update with bibliographic information from the web" button in the editor:
 
-![Update information from web](.gitbook/assets/getting-started-entry-editor-update-from-web%20%281%29%20%281%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29.png)
+![Update information from web](.gitbook/assets/getting-started-entry-editor-update-from-web%20%281%29%20%281%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%281%29.png)
 
 {% hint style="info" %}
 The found information is most accurate if an identifier like a "DOI" or "ISBN" is maintained. If you already know such an unique identifier, this can also be already the starting point to create a new entry without manual entering any information by using the "create from ID" feature in the Create entry dialog. For more information see: [Collect](https://docs.jabref.org/collect) &gt; ["Add entry using an ID"](https://docs.jabref.org/collect/add-entry-using-an-id)
@@ -70,7 +70,7 @@ The found information is most accurate if an identifier like a "DOI" or "ISBN" i
 
 If additional information is found you will be asked in a dialog which information should be taken over:
 
-![Merging the existing and the web information](.gitbook/assets/getting-started-merge-entries%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%281%29.png)
+![Merging the existing and the web information](.gitbook/assets/getting-started-merge-entries%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29.png)
 
 ## Adding a full text document
 
@@ -82,9 +82,9 @@ In order to use the automated feature, it is necessary to set-up a file director
 
 To test the automatic download of full texts you can click on the "Get full-text" icon next to the file field, or choose "Lookup" -&gt; "Search full text documents online" from the menu. As soon as a full-text is found, the file will be stored in the local file directory and linked to the entry:
 
-![Finding a full-text document online](.gitbook/assets/getting-started-entry-editor-full-text%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29.png)
+![Finding a full-text document online](.gitbook/assets/getting-started-entry-editor-full-text%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29.png)
 
-To open the downloaded full text you can click on the "file" icon before the file name - or use the same icon in the entry table: ![Opening the full-text](.gitbook/assets/getting-started-open-fulltext%20%281%29%20%281%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%281%29.png)
+To open the downloaded full text you can click on the "file" icon before the file name - or use the same icon in the entry table: ![Opening the full-text](.gitbook/assets/getting-started-open-fulltext%20%281%29%20%281%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29.png)
 
 ## Finding more references in the web
 

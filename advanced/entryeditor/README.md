@@ -27,7 +27,7 @@ Up to JabRef 4.1, the field was called "Review". The field name was changed to "
 
 Switch panels by clicking on the tabs, or navigate to the panel to the left or right using the following key combinations: Ctrl + Tab or Ctrl + + switch to the tab to the right, and Ctrl + Shift + Tab or Ctrl + - switch to the tab to the left. You can also switch to the next or previous entry by pressing Ctrl + Shift + Down or Ctrl + Shift + Up, respectively, or by clicking the appropriate toolbar button.
 
-_BibTeX source_ \(termed _biblatex_ _source_ in case of a biblatex library\)  shows how th entry will appear when the database is saved in _BibTeX_ \(or _biblatex_\) format. If you wish, you can edit the source directly in this panel. When you move to a different panel, press Ctrl + S or close the entry editor, JabRef will try to parse the contents of the source panel. If there are problems, you will be notified, and given the option to edit your entry further, or to revert to the former contents.
+_BibTeX source_ \(termed _biblatex_ _source_ in case of a biblatex library\) shows how th entry will appear when the database is saved in _BibTeX_ \(or _biblatex_\) format. If you wish, you can edit the source directly in this panel. When you move to a different panel, press Ctrl + S or close the entry editor, JabRef will try to parse the contents of the source panel. If there are problems, you will be notified, and given the option to edit your entry further, or to revert to the former contents.
 
 **Tip:** If your database contains fields unknown to JabRef, these will be visible in the source panel.
 
@@ -81,5 +81,5 @@ By selecting this Tab, we are sending the title of the selected paper to Mr. DLi
 
 Mr. DLib is a service that calculates recommendations for you based on this title. After a short loading time the recommendations are listed in the Related Articles Tab. For detailed information see [Mr. DLibs help page](http://mr-dlib.org/information-for-users/information-about-mr-dlib-for-jabref-users/#). The following image shows the Related Articles Tab with recommendations to the selected item.
 
-![Screenshot of the Related Articles Tab](../../.gitbook/assets/sceenshot_related_articles_en%20%282%29%20%281%29%20%281%29%20%285%29%20%285%29%20%285%29%20%285%29%20%285%29%20%285%29%20%284%29.PNG)
+![Screenshot of the Related Articles Tab](../../.gitbook/assets/sceenshot_related_articles_en%20%282%29%20%281%29%20%281%29%20%285%29%20%285%29%20%285%29%20%285%29%20%285%29%20%285%29%20%285%29%20%282%29.PNG)
 

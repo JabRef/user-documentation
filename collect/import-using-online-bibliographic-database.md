@@ -4,11 +4,9 @@ description: Using online databases to search for references
 
 # Searching externally using Online Services
 
-To fetch entries from an online database, choose **View → Web search**, and the search interface will appear in the side pane. Select the database you want to search \(e.g. arXiv\) in the dropdown menu. Enter the words of your query, and press Enter or the **Search** button. The results are displayed in the [import inspection dialog](../import/importinspectiondialog.md).
-JabRef is not intended to be a tool for mass download of citations. The purpose of the Web search is to easily gather a few entries directly from within JabRef. If you use the search functionality to extensively you might get blocked \(for some time\). To fetch entries from an online database, choose **View → Web search**, and the search interface will appear in the side pane. Select the database you want to search \(e.g. arXiv\) in the dropdown menu. Note that it might be necessary to scroll downwards to find certain fetchers. An example for this is provided in the image below. Then enter the words of your query, and press Enter, or the **Search** button. The results are displayed in the [import inspection dialog](import/importinspectiondialog.md).
+To fetch entries from an online database, choose **View → Web search**, and the search interface will appear in the side pane. Select the database you want to search \(e.g. arXiv\) in the dropdown menu. Enter the words of your query, and press Enter or the **Search** button. The results are displayed in the [import inspection dialog](https://github.com/JabRef/user-documentation/tree/5c226b3c3ec3c0cc336ee37363ac4a936120b202/import/importinspectiondialog.md). JabRef is not intended to be a tool for mass download of citations. The purpose of the Web search is to easily gather a few entries directly from within JabRef. If you use the search functionality to extensively you might get blocked \(for some time\). To fetch entries from an online database, choose **View → Web search**, and the search interface will appear in the side pane. Select the database you want to search \(e.g. arXiv\) in the dropdown menu. Note that it might be necessary to scroll downwards to find certain fetchers. An example for this is provided in the image below. Then enter the words of your query, and press Enter, or the **Search** button. The results are displayed in the [import inspection dialog](import/importinspectiondialog.md).
 
-Some of the databases support advanced search queries. These are described on the detail page of the database.
-![](../.gitbook/assets/select-fetcher-in-menu.png)
+Some of the databases support advanced search queries. These are described on the detail page of the database. ![](../.gitbook/assets/select-fetcher-in-menu.png)
 
 Some databases support advanced search queries. These are described on the detail page of the database.
 
@@ -24,23 +22,22 @@ If you need to use an HTTP proxy server, you can configure JabRef to use a proxy
 
 ## Search Syntax
 
-JabRef searches the databases by using the specified keywords.
-One can use quotes (`"`) to keep words togehter: An example is `"process mining"`.
-It is also possible to restrict the search to dedicated fields:
+Sinve v[5.2](https://github.com/JabRef/jabref/blob/main/CHANGELOG.md#52--2020-12-24):
+
+JabRef searches the databases by using the specified keywords. One can use quotes \(`"`\) to keep words togehter: An example is `"process mining"`. It is also possible to restrict the search to dedicated fields:
 
 Thereby, JabRef supports following fields:
 
 | field | meaning |
-| -- | -- |
+| :--- | :--- |
 | `author` | The author of the work |
 | `title` | The title of the work |
 | `journal` | The title of the journal of the work |
 | `year` | The year in which the work was published |
-| `year-range` | The year range (e.g., `1999-2001`) the work was published |
+| `year-range` | The year range \(e.g., `1999-2001`\) the work was published |
 | `doi` | The document object identifier of the work |
 
-One can usually combine different searches using the Boolean operators `AND` and `OR`.
-Thereby, the default operator is `OR`.
+One can usually combine different searches using the Boolean operators `AND` and `OR`. Thereby, the default operator is `OR`.
 
 Examples:
 
@@ -48,14 +45,13 @@ Examples:
 * `author:smith or author:jones`: search for references with either author "smith" or author "jones"
 * `author:smith and not title:processor`: search for author "smith" and omit references with "processor" in the title
 
-Technial note: The search syntax is adapted from [Apache Lucene](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html).
-JabRef takes the Lucene syntax and transforms it to the syntax required by the supported databases.
+Technial note: The search syntax is adapted from [Apache Lucene](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html). JabRef takes the Lucene syntax and transforms it to the syntax required by the supported databases.
 
 ## Supported databases
 
 ### ACM Portal
 
-Currently disabled, because ACM changed their API. See <https://github.com/JabRef/jabref/issues/5804> for details.
+Disabled in JabRef 5.2, because ACM changed their API. Will become available in JabRef 5.3.
 
 The [ACM Portal](https://dl.acm.org) includes two databases \([Wikipedia](https://en.wikipedia.org/wiki/Association_for_Computing_Machinery#Portal_and_Digital_Library)\):
 
@@ -70,10 +66,9 @@ The [ACM Portal](https://dl.acm.org) includes two databases \([Wikipedia](https:
 
 [CiteSeerX](http://csxstatic.ist.psu.edu/home) is a public search engine for scientific and academic papers primarily with a focus on computer and information science. However, CiteSeerX has been expanding into other scholarly domains such as economics, physics and others \([Wikipedia](https://en.wikipedia.org/wiki/CiteSeer)\).
 
-### Collection of Computer Science Bibliographies (CCSB)
+### Collection of Computer Science Bibliographies \(CCSB\)
 
-The [Collection of Computer Science Bibliographies](https://liinwww.ira.uka.de/bibliography/) is a public search
-engine for bibliographies of scientific literature in computer science.
+The [Collection of Computer Science Bibliographies](https://liinwww.ira.uka.de/bibliography/) is a public search engine for bibliographies of scientific literature in computer science.
 
 ### Crossref / Unpaywalll
 
@@ -81,7 +76,7 @@ engine for bibliographies of scientific literature in computer science.
 
 The Unpaywall database has a very simple structure: it has one record for each article with a Crossref DOI. It harvests from many sources to find Open Access content, and then matches this content to these DOIs using content fingerprints. So for any given DOI, we know about any OA versions that exist anywhere.
 
-To fetch entries from Unpaywall indirectly through Crossref, choose **Search → Web search**, and the search interface will appear in the side pane. Select **Crossref** in the dropdown menu. To start a search, enter the words of your query, and press <kbd>Enter</kbd> or the **Fetch** button.
+To fetch entries from Unpaywall indirectly through Crossref, choose **Search → Web search**, and the search interface will appear in the side pane. Select **Crossref** in the dropdown menu. To start a search, enter the words of your query, and press Enter or the **Fetch** button.
 
 ### DBLP
 
@@ -94,7 +89,7 @@ To fetch entries from Unpaywall indirectly through Crossref, choose **Search →
 It is possible to limit the search by adding a field name to the search, as **field:text**. The supported fields area:
 
 | key | description |
-| -- | -- |
+| :--- | :--- |
 | `title` | The title of the article |
 | `doi` | The DOI of the article |
 | `issn` | The ISSN of the journal |
@@ -103,7 +98,7 @@ It is possible to limit the search by adding a field name to the search, as **fi
 
 ### Google Scholar
 
-(Currently not working, because Google changed their API)
+\(Currently not working, because Google changed their API\)
 
 [Google Scholar](https://scholar.google.com/) is a freely accessible database that indexes the full text or metadata of scholarly literature across an array of publishing formats and disciplines. Google Scholar index includes most peer-reviewed online academic journals and books, conference papers, theses and dissertations, preprints, abstracts, technical reports, and other scholarly literature, including court opinions and patents \([Wikipedia](https://en.wikipedia.org/wiki/Google_Scholar)\).
 
@@ -111,7 +106,7 @@ It is possible to limit the search by adding a field name to the search, as **fi
 
 Google scholar can block "automated" crawls which generate too much traffic in a short time. To unblock your IP, doing a Google scholar search in your browser might help. You will be asked to show that you are not a robot \(a CAPTCHA challenge\). If no CAPTCHA appears, or JabRef is still blocked after performing a search in the browser, you can also change your IP address manually or wait for some hours to get unblocked again.
 
-Thus, the Google Scholar fetcher is not the best way to obtain lots of entries at the same time. The [JabRef browser extension](../jabref-browser-extension.md) might be an alternative to download the bibliographic data directly from the browser.
+Thus, the Google Scholar fetcher is not the best way to obtain lots of entries at the same time. The [JabRef browser extension](https://github.com/JabRef/user-documentation/tree/5c226b3c3ec3c0cc336ee37363ac4a936120b202/jabref-browser-extension.md) might be an alternative to download the bibliographic data directly from the browser.
 
 ### GVK
 
@@ -124,12 +119,12 @@ You can simply enter words / names / years you want to search for, or you can sp
 Supported fields are:
 
 | field | description |
-| -- | -- |
+| :--- | :--- |
 | `all` | all words. Not specifYing a search key results in an "all" search |
-| `title` | title words (converted to GVK's `tit` field) |
-| `author` | Searches author, editors, etc. (converted to GVK's `per` field) |
-| `journal` | The journal (converted to GVK's `zti` field) |
-| `year` | The year of publication (converted to GVK's `erj` field) |
+| `title` | title words \(converted to GVK's `tit` field\) |
+| `author` | Searches author, editors, etc. \(converted to GVK's `per` field\) |
+| `journal` | The journal \(converted to GVK's `zti` field\) |
+| `year` | The year of publication \(converted to GVK's `erj` field\) |
 | `thm` | topics |
 | `slw` | key words |
 | `txt` | tables of content |
@@ -138,8 +133,7 @@ Supported fields are:
 | `ppn` | Pica Production Numbers of the GVK |
 | `bkl` | Basisklassifikation-numbers |
 
-Year ranges are not supported. In case a year range is provided, it is ignored.
-Otherwise, GVK returns no results.
+Year ranges are not supported. In case a year range is provided, it is ignored. Otherwise, GVK returns no results.
 
 #### Notes
 
@@ -163,14 +157,12 @@ Otherwise, GVK returns no results.
 
 #### Query syntax
 
-The INSPIRE-HEP search function merely passes your search queries onto the INSPIRE-HEP web search, so you should build your queries in the same way.
-INSPIRE supports the fielded search too.
-See <http://old.inspirehep.net/help/search-guide> for advanced help.
+The INSPIRE-HEP search function merely passes your search queries onto the INSPIRE-HEP web search, so you should build your queries in the same way. INSPIRE supports the fielded search too. See [http://old.inspirehep.net/help/search-guide](http://old.inspirehep.net/help/search-guide) for advanced help.
 
 The following list shows some of the field indicators that can be used:
 
 | field | description |
-| -- | -- |
+| :--- | :--- |
 | `author` | search author names |
 | `title` | search in title |
 | `journal` | Here either the common abbreviation or the 5 letter CODEN abbreviation for a journal can be used. Volume and page can also be included, separated by commas. For instance, _j Phys. Rev.,D54,1_ looks in the journal Phys. Rev., volume D54, page 1. |
@@ -186,7 +178,7 @@ It is possible to limit the search by adding a field name to the search, such as
 
 * `title`: The title of the article
 * `author`: an author of the article
-* `journal`: journal title (sent as `pt` to Jstor)
+* `journal`: journal title \(sent as `pt` to Jstor\)
 * `pt`: publication title
 
 ### MathSciNet
@@ -197,8 +189,7 @@ It is possible to limit the search by adding a field name to the search, such as
 
 [MEDLINE](https://www.nlm.nih.gov/bsd/pmresources.html) is a bibliographic database of life sciences and biomedical information. It includes bibliographic information for articles from academic journals covering medicine, nursing, pharmacy, dentistry, veterinary medicine, and health care. MEDLINE also covers much of the literature in biology and biochemistry, as well as fields such as molecular evolution \([Wikipedia](https://en.wikipedia.org/wiki/MEDLINE)\).
 
-The Medline syntax is completely different form the Lucene syntax.
-One cannot use fielded search there.
+The Medline syntax is completely different form the Lucene syntax. One cannot use fielded search there.
 
 There are two ways of specifying which entries to download:
 
@@ -234,22 +225,17 @@ To be detailed.
 
 #### Structured Search
 
-You cannot use the same query syntax as in the one-line search at zbmath.org;
-you have to stick with the Apache Lucence syntax.
- This means that your query can be composed of several terms, combined by the logical operators ` AND ` and ` OR `.
- Queries are case-insensitive. Further operators that can be used are ` NOT` for logical negation,
- `*` for a right wildcard, `" "` for exact phrase matches, and parentheses `( )` to group terms.
- Optionally, it is possible to add a field name in the form field:text to limit the search results. The supported fields are:
+You cannot use the same query syntax as in the one-line search at zbmath.org; you have to stick with the Apache Lucence syntax. This means that your query can be composed of several terms, combined by the logical operators `AND` and `OR`. Queries are case-insensitive. Further operators that can be used are `NOT` for logical negation, `*` for a right wildcard, `" "` for exact phrase matches, and parentheses `( )` to group terms. Optionally, it is possible to add a field name in the form field:text to limit the search results. The supported fields are:
 
 | field | description |
-| -- | -- |
+| :--- | :--- |
 | `author` | Author, editor - sent in the `au` field |
 | `title` | Author, editor - sent in the `ti` field |
 | `journal` | Journal - sent in the `so` field |
 | `year` | Year - sent in the `py` field |
 | `yearrange` | Year range - sent in the `py` field |
 | `cc` | MSC code |
-| `dt` | document type (possible values are `j` for journal articles, `b` for books, `a` for book articles) |
+| `dt` | document type \(possible values are `j` for journal articles, `b` for books, `a` for book articles\) |
 | `an` | the zbl id of the document |
 | `ai` | internal author identifier |
 | `la` | language either as a string or as [ISO 639-1](https://en.wikipedia.org/wiki/ISO_639-1) language code |
@@ -261,15 +247,16 @@ you have to stick with the Apache Lucence syntax.
 
 #### Examples
 
-* [`algebra*](https://zbmath.org/?q=algebra*): Searches for publications containing a term starting with algebra (e.g. algebra, algebras, algebraic, etc.) in any field.
-* [`title:"Graph Theory"`](https://zbmath.org/?q=ti%3A+%E2%80%9CGraph+Theory%E2%80%9D): Searches for publications with the exact phrase *Graph Theory* in their `title` field.
-* [`an:0492.90056`](https://zbmath.org/?q=an%3A0492.90056): Searches for the document with zbl number *0492.90056*.
-* [`author:Berge and title:"Graph Theory"`](https://zbmath.org/?q=au%3A+Berge+%26+ti%3A+%E2%80%9CGraph+Theory%E2%80%9D): Searches for entries written by *Berge* with `Graph Theory` in their **title** field.
+* \`\`[`algebra*`](https://zbmath.org/?q=algebra*): Searches for publications containing a term starting with algebra \(e.g. algebra, algebras, algebraic, etc.\) in any field.
+* [`title:"Graph Theory"`](https://zbmath.org/?q=ti%3A+%E2%80%9CGraph+Theory%E2%80%9D): Searches for publications with the exact phrase _Graph Theory_ in their `title` field.
+* [`an:0492.90056`](https://zbmath.org/?q=an%3A0492.90056): Searches for the document with zbl number _0492.90056_.
+* [`author:Berge and title:"Graph Theory"`](https://zbmath.org/?q=au%3A+Berge+%26+ti%3A+%E2%80%9CGraph+Theory%E2%80%9D): Searches for entries written by _Berge_ with `Graph Theory` in their **title** field.
 * [`dt:b author:Berge`](https://zbmath.org/?q=dt%3A+b+au%3A+Berge): Searches for all books written by Berge.
-* [`title:"Graph Theory" yearrange:2010-2020`](https://zbmath.org/?q=ti%3A+%E2%80%9CGraph+Theory%E2%80%9D+py%3A+2010-2020): Searches for documents containing the exact phrase `Graph Theory` in their **title** that are published between *2010* and *2020*.
+* [`title:"Graph Theory" yearrange:2010-2020`](https://zbmath.org/?q=ti%3A+%E2%80%9CGraph+Theory%E2%80%9D+py%3A+2010-2020): Searches for documents containing the exact phrase `Graph Theory` in their **title** that are published between _2010_ and _2020_.
 * [`so:Combinatorica`](https://zbmath.org/?q=so%3A+Combinatorica): Searches for documents published in the journal `Combinatorica`.
 * [`cc:"(05C|90C)"`](https://zbmath.org/?q=cc%3A+%2805C%7C90C%29): Searches for documents with **MSC code** in `05C` or `90C`.
 * [`la:"es | pt"`](https://zbmath.org/?q=la%3A+es+%7C+pt): Searches for documents written in Spanish or Portuguese.
 * [`sw:python`](https://zbmath.org/?q=sw%3Apython): Searches for publications using the **software** `python`.
 * [`en:arXiv`](https://zbmath.org/?q=en%3AarXiv): Searches for entries with a link to an `arXiv` preprint.
 * [`br:"Claude Berge"`](https://zbmath.org/?q=br%3AClaude+Berge): Searches for publications with biographical information on `Claude Berge`.
+

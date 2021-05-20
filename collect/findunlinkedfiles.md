@@ -24,7 +24,7 @@ In case you have numerous PDF files and want to convert them into new entries, J
 4. Click on `Scan directory`.
 5. The files not yet contained in the database are shown.
 
-   ![FindUnlinkedFiles - Found files](../.gitbook/assets/findunlinkedfiles-foundfiles-5.2%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%281%29.png)
+   ![FindUnlinkedFiles - Found files](../.gitbook/assets/findunlinkedfiles-foundfiles-5.2%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29.png)
 
 6. Select the entries you are interested in. Note: the button `Export selected files` allows you to export the list of the selected files \(a text file containing on each line one filename with its path\)
 7. Click on `Import`.

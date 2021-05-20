@@ -1,6 +1,6 @@
 # Export to Microsoft Word
 
- for a video explaining the usage. You can use the built-in export functionality for Office 2007 XML format,  which is the format in which Microsoft stores its bibliography information.
+for a video explaining the usage. You can use the built-in export functionality for Office 2007 XML format, which is the format in which Microsoft stores its bibliography information.
 
 1. Export \(selected\) entries in JabRef and choose Office 2007 XML format
 2. Open Word, click on the References Tab

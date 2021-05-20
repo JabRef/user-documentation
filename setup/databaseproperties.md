@@ -8,17 +8,18 @@ The library-specific properties are stored in the database itself. This way, whe
 
 {% hint style="warning" %}
 **For shared SQL databases**, some properties are not available as they are not handled like a .bib file.  
-The following properties are not available:  
-- Database encoding \(always UTF-8\).  
-- Library protection.  
-- Save sort order. 
+The following properties are not available:
+
+* Database encoding \(always UTF-8\).  
+* Library protection.  
+* Save sort order. 
 {% endhint %}
 
 ## General
 
 ### Library encoding
 
-This setting determines which character encoding JabRef will use when writing this library to disk. Changing this setting will override the setting made in Preferences dialog for this database. JabRef specifies the encoding near the top of the bib file, in order to be able to use the correct encoding next time you open the file. The drop-down menu allows to select one encoding. 
+This setting determines which character encoding JabRef will use when writing this library to disk. Changing this setting will override the setting made in Preferences dialog for this database. JabRef specifies the encoding near the top of the bib file, in order to be able to use the correct encoding next time you open the file. The drop-down menu allows to select one encoding.
 
 {% hint style="info" %}
 UTF-8 is highly recommended

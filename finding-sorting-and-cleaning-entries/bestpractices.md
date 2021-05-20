@@ -25,7 +25,7 @@ Use **Quality** → **Check integrity** often to ensure that the quality of your
 
 ## Enable save actions
 
-To ensure that your library stays consistent, specify your save actions in  **Library → Library properties**.
+To ensure that your library stays consistent, specify your save actions in **Library → Library properties**.
 
 {% page-ref page="saveactions.md" %}
 

@@ -4,7 +4,7 @@ description: Modify easily the field names and the field contents
 
 # Manage field names and their content
 
-After selecting a set of entries, go to  **Edit → Manage field names and content**, to set, append, rename and clear a field.
+After selecting a set of entries, go to **Edit → Manage field names and content**, to set, append, rename and clear a field.
 
 {% hint style="info" %}
 ​To select all the entries of the current library, press`CTRL + A`.
@@ -26,6 +26,4 @@ The actions are:
 {% hint style="info" %}
 External resource: [A concrete example of using this feature to prune a library.​](http://tex.my/pruning-bib-files-with-jabref/)
 {% endhint %}
-
-
 
