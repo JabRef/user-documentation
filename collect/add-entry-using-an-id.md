@@ -100,3 +100,9 @@ To return a reference, the publication needs to have a DOI.
 
 ID search is carried out using the \(Request for Comments number\) \(RFC\) of the IETF database.
 
+### zbMATH Open
+
+[zbMATH Open](https://zbmath.org/) is an abstracting and reviewing service in pure and applied mathematics. Its database contains about 4 million bibliographic entries with reviews or abstracts currently drawn from about 3,000 journals and book series, and 180,000 books. The coverage starts in the 18th century and is complete from 1868 to the present by the integration of the "Jahrbuch über die Fortschritte der Mathematik" database \([about](https://zbmath.org/about/)\).
+
+ID search is carried out using the Zbl number.
+
