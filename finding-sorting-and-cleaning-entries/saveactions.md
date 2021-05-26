@@ -1,15 +1,15 @@
 ---
-description: Tidy up automatically your database each time you save it.
+description: Tidy up automatically your library each time you save it.
 ---
 
 # Save actions
 
-Field formats can be tidied up when saving the database. That ensures your entries to have consistent formatting. In **Library → Library properties**, check **Enable save actions**. You can now select the actions to be carried out using the 2 drop-down menus located under the table. Each action is defined by:
+Field formats can be tidied up when saving the library. That ensures your entries to have consistent formatting. In **Library → Library properties**, check **Enable save actions**. You can now select the actions to be carried out using the 2 drop-down menus located under the table. Each action is defined by:
 
 * an entry field \(upon which the action will be applied\).
 * the type of action to be carried out \(such as _HTML to LaTeX_, which converts HTML code to LaTeX code, as described in the window\).
 
-A click on the "circular arrow" icon enables a set of recommended formatting actions \(the set of actions will depend on your database type: BibTeX or BibLaTeX\).​
+A click on the "circular arrow" icon enables a set of recommended formatting actions \(the set of actions will depend on your library type: BibTeX or BibLaTeX\).​
 
 ## List of formatting actions
 
