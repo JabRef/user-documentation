@@ -2,7 +2,7 @@
 
 JabRef can help you merging entries of your library.
 
-First, select the two entries to be merged. Then select the menu **Quality → Merge entries...**. Alternatively, select the right-click menu **Merge entries**.
+First, select the two entries to be merged. Then select the menu **Quality → Merge entries**. Alternatively, select the right-click menu **Merge entries**.
 
 The **Merge entries** window will pop-up:
 
