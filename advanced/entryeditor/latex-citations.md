@@ -8,7 +8,7 @@ In the user interface, a tab was added to the entry editor, the aesthetics have 
 
 ## Overview
 
-A new tab was added to the entry editor. It allows to search for citations to the active entry in the LaTeX file directory. It can be configured in the _Library properties_ dialog.
+A new tab was added to the entry editor. It allows to search for citations to the active entry in the LaTeX file directory. It can be configured in the [_Library properties_ dialog](../../setup/databaseproperties.md).
 
 See the image below to see how it works:
 
