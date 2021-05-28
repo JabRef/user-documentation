@@ -28,7 +28,11 @@ To stop displaying the search results, just clear the search field, press Esc or
 
 ## Search using regular expressions <a id="advanced"></a>
 
-### Syntax
+{% hint style="warning" %}
+Make sure that the button "regular expressions" is activated
+{% endhint %}
+
+### General syntax
 
 In order to search specific fields only and/or include logical operators in the search expression, a special syntax is available in which these can be specified. E.g. to search for entries whose an author contains **miller**, enter:
 
@@ -56,26 +60,24 @@ JabRef defines the following pseudo fields:
 | `key` | Search for citation keys | `citationkey == miller2005`: search for an entry whose citation key is **miller2005** |
 | `entrytype` | Search for entries of a certain type | `entrytype = thesis`: search entries whose type \(as displayed in the `entrytype` column\) contains the word **thesis** \(which would be **phdthesis** and **mastersthesis**\) |
 
-## Regular expressions
+### Advanced use of regular expressions
 
-Regular expressions \(regex for short\) define a language for specifying the text to be matched, for example when searching. JabRef uses regular expressions as defined in Java. For extensive information, please, look at the [documentation](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html) and at the [tutorial](https://docs.oracle.com/javase/tutorial/essential/regex/).
+Regular expressions \(regex for short\) define a language for specifying the text to be matched, for example when searching. JabRef uses regular expressions as defined in Java. For extensive information, please, look at the [Java documentation](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html) and at the [Java tutorial](https://docs.oracle.com/javase/tutorial/essential/regex/).
 
-They can be used in the normal search mode and the advanced search mode
-
-### Regular expressions and casing
+#### Regular expressions and casing
 
 By default, regular expressions do not account for upper/lower casing. Hence, while the examples below are all in lower case, they match also upper- and mixed case strings.
 
 If casing is important to your search, activate the case-sensitive button.
 
-### Searching for entries with an empty or missing field
+#### Searching for entries with an empty or missing field
 
 * `.` means any character
 * `+` means one or more times
 
 `author != .+` returns entries with empty or no author field.
 
-### Searching for a given word
+#### Searching for a given word
 
 * `\b` means word boundary
 * `\B` means not a word boundary
@@ -88,7 +90,7 @@ If casing is important to your search, activate the case-sensitive button.
 
 `author = \bblack\B` matches _blackwell_ and _blacker_, but not _black_.
 
-### Searching with optional spelling
+#### Searching with optional spelling
 
 * `?` means none or one copy of the preceding character.
 * `{n,m}` means at least _n_, but not more than _m_ copies of the preceding character.
@@ -110,13 +112,13 @@ If casing is important to your search, activate the case-sensitive button.
 
 `author = (John|Doe).+(John|Doe)`matches entries written by both John or Doe.
 
-### Searching for strings with a special character \(`()[]{}\^-=$!|?*+.`\)
+#### Searching for strings with a special character \(`()[]{}\^-=$!|?*+.`\)
 
 If a special character \(i.e. `(` `)` `[` `]` `{` `}` `\` `^` `-` `=` `$` `!` `|` `?` `*` `+` `.` \) is included in your search string, it has to be escaped with a backslash, such as `\}` for `}`.
 
 It means that to search for a string including a backslash, two consecutive backslashes \(`\\`\) have to be used: `abstract = xori{\\c{c}}o` matches _xoriço_.
 
-### Searching for strings with double quotation marks \(`"`\)
+#### Searching for strings with double quotation marks \(`"`\)
 
 The character `"` has a special meaning: it is used to group words into phrases for exact matches. So, if you search for a string that includes a double quotation, the double quotation character has to be replaced with the hexadecimal character 22 in ASCII table `\x22`.
 
