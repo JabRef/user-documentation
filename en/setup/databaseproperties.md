@@ -1,4 +1,4 @@
-# Library properties
+# Library properties window
 
 Each library can have specific properties that can be modified through **Library→ Library properties**. These specific properties override the generic properties defined in **Options → Preferences**.
 
@@ -27,7 +27,7 @@ UTF-8 is highly recommended
 
 ### Library mode
 
-You can select if your library follow the [BibTeX or the biblatex format](../cite/bibtex-and-biblatex.md).
+You can select if your library follow the [BibTeX or the biblatex format]().
 
 ## Override default file directories
 

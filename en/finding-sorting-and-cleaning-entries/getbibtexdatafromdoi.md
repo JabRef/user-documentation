@@ -1,4 +1,4 @@
-# Complete information using online databases
+# Get BibTeX data from DOI
 
 JabRef can fetch automatically additional information about your entries. It can even get the publication file!​
 
@@ -10,7 +10,7 @@ JabRef can fetch automatically additional information about your entries. It can
 
 JabRef can help you complement your entries from their DOI or ISBN.
 
-In the entry table, right-click on the entry to complement, and select the menu **Get bibliographic data from DOI/ISBN/...** \(_obviously, this feature is disabled if your entry does not have a DOI/ISBN._\). Alternatively, you can open the [entry editor](../advanced/entryeditor/), and in the General tab, click on the button **Get bibliographic data from DOI:**
+In the entry table, right-click on the entry to complement, and select the menu **Get bibliographic data from DOI/ISBN/...** \(_obviously, this feature is disabled if your entry does not have a DOI/ISBN._\). Alternatively, you can open the [entry editor](), and in the General tab, click on the button **Get bibliographic data from DOI:**
 
 ![](../.gitbook/assets/getdoi-entryeditor-jabref5.2.png)
 

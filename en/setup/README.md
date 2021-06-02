@@ -1,4 +1,4 @@
-# Configuration
+# Configuration of JabRef
 
 JabRef is highly customizable, allowing users to get the behaviour they expect.
 

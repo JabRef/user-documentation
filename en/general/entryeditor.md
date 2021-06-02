@@ -28,7 +28,7 @@ The _BibTeX source_ panel shows how the entry will appear when the database is s
 
 ## Field consistency checking
 
-When the contents of a field is changed, JabRef checks if the new contents are acceptable. For field types that are used by _BibTeX_, the contents are checked with respect to the use of the '\#' character. The hash symbol is _only_ to be used in pairs \(except in escaped form, '\\#'\), wrapping the name of a _BibTeX_ string that is referenced. Note that JabRef does not check if the referenced string actually exists \(this is not trivial, since the _BibTeX_ style you use can define an arbitrary set of strings unknown to JabRef\). 
+When the contents of a field is changed, JabRef checks if the new contents are acceptable. For field types that are used by _BibTeX_, the contents are checked with respect to the use of the '\#' character. The hash symbol is _only_ to be used in pairs \(except in escaped form, '\\#'\), wrapping the name of a _BibTeX_ string that is referenced. Note that JabRef does not check if the referenced string actually exists \(this is not trivial, since the _BibTeX_ style you use can define an arbitrary set of strings unknown to JabRef\).
 
 If the contents are not accepted, the field will turn red, indicating an error. In this case the change will not be stored.
 
@@ -88,5 +88,5 @@ By selecting this Tab, we are sending the title of the selected paper to Mr. DLi
 
 Mr. DLib is a service that calculates recommendations for you based on this title. After a short loading time the recommendations are listed in the Related Articles Tab. For detailed information see [Mr. DLibs help page](http://mr-dlib.org/information-for-users/information-about-mr-dlib-for-jabref-users/#). The following image shows the Related Articles Tab with recommendations to the selected item.
 
-![Screenshot of the Related Articles Tab](../.gitbook/assets/sceenshot_related_articles_en.png)
+![Screenshot of the Related Articles Tab](../.gitbook/assets/sceenshot_related_articles_en%20%282%29%20%281%29%20%281%29%20%285%29%20%285%29%20%285%29%20%285%29%20%285%29%20%285%29%20%283%29%20%283%29.PNG)
 

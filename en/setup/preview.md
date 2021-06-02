@@ -18,9 +18,9 @@ You can switch between all selected styles \(customized preview and citation sty
 
 ## Display Mechanism
 
-The layout is automatically created using the same mechanism as used by the [Custom export filter](../collaborative-work/export/customexports.md) facility. When previewed, an entry is processed using one of the selected layouts/styles to produce HTML code which is displayed by the preview panel.
+The layout is automatically created using the same mechanism as used by the [Custom export filter]() facility. When previewed, an entry is processed using one of the selected layouts/styles to produce HTML code which is displayed by the preview panel.
 
 ## Modification of the Customized Preview Style
 
-To customize the appearance and contents of the customize entry preview you need to edit/modify the customized preview style in the entry preview settings \(see screenshot above\) using the custom export filter syntax described in the [Documentation](../collaborative-work/export/customexports.md).
+To customize the appearance and contents of the customize entry preview you need to edit/modify the customized preview style in the entry preview settings \(see screenshot above\) using the custom export filter syntax described in the [Documentation]().
 

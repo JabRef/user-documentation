@@ -127,7 +127,7 @@ Install Oracle JDK:
 
    > Note: You can already start JabRef now. Just enter into terminal: "/home/USER/Downloads/jre-8u251-linux-x64/jre1.8.0\_251/bin/java -jar /home/USER/Downloads/JabRef-4.3.1.jar" \(The path has to match your folder structure\)
 
-3. Register your JRE system-wide 
+3. Register your JRE system-wide
 4. Move the java folder to your preferred location \(e.g. /usr/java\). The folder structure should look like "/usr/java/jre1.80\_251/bin"
 5. Edit "bashrc" with: `sudo gedit ~/.bashrc`
 6. Insert the following lines and save the file \(adjust JAVA\_HOME if neccessary\):

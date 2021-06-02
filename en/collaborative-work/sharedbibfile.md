@@ -1,4 +1,4 @@
-# Sharing a Bib\(la\)TeX Library
+# Sharing a Bib\(La\)TeX library
 
 When sharing a Bib\(La\)TeX library, JabRef automatically recognizes a change in the `bib` file on disk and notifies the user of it. This works well on network drives.
 

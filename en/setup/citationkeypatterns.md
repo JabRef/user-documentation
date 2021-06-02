@@ -1,4 +1,4 @@
-# Customize the citation key generator
+# Customize the BibTeX key generator
 
 The pattern used in the auto generation of citation labels can be set for each of the standard entry types in **Options → Preferences**, tab **Citation key generator**. A detailed description can be found in the [default citation key pattern section](citationkeypatterns.md#default-citation-key-pattern).
 
