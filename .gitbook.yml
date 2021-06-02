@@ -1,0 +1,57 @@
+root: ./en/
+
+structure:
+  readme: ./README.md
+  summary: ./SUMMARY.md
+
+redirects:
+  cn: ./README.md
+  en: ./README.md
+  de: ./README.md
+  advanced/saveactions: ./finding-sorting-and-cleaning-entries/saveactions.md
+  contributing/translatinggui: ./faqcontributing/how-to-translate-the-ui.md
+  download: ./installation.md
+  EntryEditor: ./advanced/entryeditor/README.md
+  faq: ./faqgeneral.md
+  faq/faqgeneral: ./faqgeneral.md
+  faq/faqsharing: ./collaborative-work/README.md
+  faq/faqwindows: ./installation.md
+  faq/faqs-on-operating-systems/faqwindows: ./installation.md
+  faq/faqosx: ./installation.md
+  faq/faqs-on-operating-systems/faqosx: ./installation.md
+  fields/setclearrenamefields: ./advanced/fields.md
+  finding-sorting-and-cleaning-entries/import-using-publication-identifiers/isbntobibtex: ./collect/add-entry-using-an-id.md
+  finding-sorting-and-cleaning-entries/import-using-publication-identifiers/doitobibtex: ./collect/add-entry-using-an-id.md
+  finding-sorting-and-cleaning-entries/import-using-publication-identifiers/iacrtobibtex: ./collect/add-entry-using-an-id.md
+  finding-sorting-and-cleaning-entries/import-using-online-bibliographic-database/inspire: ./collect/import-using-online-bibliographic-database.md
+  finding-sorting-and-cleaning-entries/findduplicatesallora: ./finding-sorting-and-cleaning-entries/findduplicates.md
+  import-export/import: ./collect/import/README.md
+  import-export/import/customimports: ./collect/import/customimports.md
+  import-export/import-using-publication-identifiers/titletobibtex: ./collect/README.md
+  import-export/import/newbasedonaux: ./advanced/newbasedonaux.md
+  import-export/import/msofficebibfieldmapping: ./advanced/knowledge/msofficebibfieldmapping.md
+  import-export/import/jabref-browser-extension: ./collect/jabref-browser-extension.md
+  import-export/import/newentryfromplaintext: ./collect/newentryfromplaintext.md
+  import-export/export: ./collaborative-work/export/README.md
+  import-export/export/customexports: ./collaborative-work/export/customexports.md
+  import-export/export/msofficebibfieldmapping: ./advanced/knowledge/msofficebibfieldmapping.md
+  import-export/export/endnotefilters: ./advanced/knowledge/endnotefilters.md
+  import-export/export/sqlexport: ./collaborative-work/sqldatabase/README.md
+  import-export/other-integrations/openofficeintegration: ./cite/openofficeintegration.md
+  import-export/other-integrations/xmp: ./advanced/xmp.md
+  import-export/other-integrations/pushtoapplications: ./cite/pushtoapplications.md
+  import-export/other-integrations/latex-citations: ./advanced/entryeditor/latex-citations.md
+  import-export/sqlexport: ./collaborative-work/sqldatabase/README.md
+  import-export/knowledge/medlineris: ./advanced/knowledge/medlineris.md
+  import-using-online-bibliographic-database/ieeexplore: ./collect/import-using-online-bibliographic-database.md
+  import-using-online-bibliographic-database/acmportal: ./collect/import-using-online-bibliographic-database.md
+  import-using-online-bibliographic-database/medline: ./collect/import-using-online-bibliographic-database.md
+  import-using-online-bibliographic-database/ads: ./collect/import-using-online-bibliographic-database.md
+  import-using-publication-identifiers/divatobibtex: ./collect/add-entry-using-an-id.md
+  import-using-publication-identifiers/iacrtobibtex: ./collect/add-entry-using-an-id.md
+  import-using-publication-identifiers/rfctobibtex: ./collect/add-entry-using-an-id.md
+  import-using-publication-identifiers/doitobibtex: ./collect/add-entry-using-an-id.md
+  import-using-publication-identifiers/isbntobibtex: ./collect/add-entry-using-an-id.md
+  import-using-publication-identifiers/titletobibtex: ./collect/add-entry-using-an-id.md
+  resources: ./advanced/resources.md
+  setup/bibtexkeypatterns: ./setup/citationkeypatterns.md

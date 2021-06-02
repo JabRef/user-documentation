@@ -1,0 +1,2 @@
+# General information about JabRef
+
