@@ -1,6 +1,6 @@
 # Collaborative Work
 
-JabRef allows to share both [Bib\(La\)TeX library](sharedbibfile.md) and [SQL database](sqldatabase.md). You can also [export your library to a variety of formats]().
+JabRef allows to share both [Bib\(La\)TeX library](sharedbibfile.md) and [SQL database](sqldatabase.md). You can also [export your library to a variety of formats](../import-export/export/).
 
 {% page-ref page="sharedbibfile.md" %}
 
