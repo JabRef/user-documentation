@@ -26,3 +26,12 @@ docker run --rm \
     avtodev/markdown-lint:v1 \
     /tmp/check/en
 ```
+
+## How to rename files
+
+Sometimes, GitBook renames all attached images. It appends ` (1)` to each filename.
+
+With some command line magic, this can be solved:
+
+1. Create a script renaming all images: `fd -e png -x bash -c "echo '{}' | sed 's/\([^(]*\)\(.*\).png/mv \"\\1\\2.png\" \"\\1.png\"/' | sed 's/ \.png/.png/'" | sort > fix-filenames.sh`. Execute in `en/.gitbook`. Otherwise, `fd` does not find any file.
+2. Create a script doing the renaming in all `.md` files: `fd -e md -x bash -c "echo sed -i '\"s/assets\/\([^%]*\)\(.*\).png/assets\/\\1.png/\"' {}" > fix-mds.sh`.
