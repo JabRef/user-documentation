@@ -1,4 +1,4 @@
-# Customize the BibTeX key generator
+# Customize the citation key generator
 
 The pattern used in the auto generation of citation labels can be set for each of the standard entry types in **Options → Preferences**, tab **Citation key generator**. A detailed description can be found in the [default citation key pattern section](citationkeypatterns.md#default-citation-key-pattern).
 
@@ -116,7 +116,7 @@ Formatters are primarily used as [save actions](../finding-sorting-and-cleaning-
 
 In addition to using regular expression replacement as [modifiers](citationkeypatterns.md#modifiers) of the field markers within [citation key patterns](citationkeypatterns.md#citation-key-patterns) regular expression matching and replacement can be done after the key patterns have been applied. In this case, the regular expression and replacement string are entered in the separate text fields above the [citation key patterns](citationkeypatterns.md#citation-key-patterns) section. If the replacement string is empty, then matches of the regular expression will be removed from the generated key. Documentation on regular expressions in Java can be found [in the Java documentation](https://docs.oracle.com/javase/9/docs/api/java/util/regex/Pattern.html).
 
-![Citation key generator preferences - regex replacement](../.gitbook/assets/preferences-citation-key-generator-regex-replacement.png)
+![Citation key generator preferences - regex replacement](../.gitbook/assets/preferences-citation-key-generator-regex-replacement%20%283%29.png)
 
 The regex `(?<=.{12}+).+` with an empty replacement string will cut the length of all citation keys to 12.
 
@@ -124,7 +124,7 @@ The regex `(?<=.{12}+).+` with an empty replacement string will cut the length o
 
 The citation key generator preferences contain an option for removing unwanted characters. Add or remove characters to the right of "Remove the following characters:" to control which characters are included in the citation keys.
 
-![Citation key generator preferences - unwanted characters](../.gitbook/assets/preferences-citation-key-generator-remove-characters.png)
+![Citation key generator preferences - unwanted characters](../.gitbook/assets/preferences-citation-key-generator-remove-characters%20%282%29.png)
 
 Removing `-` from this list will allow it to be used while generating citation keys.
 
@@ -144,15 +144,15 @@ To change the citation key pattern to `[authors][camel]` for all libraries witho
 
 1. Open the preferences
 
-   ![Options Preferences](../.gitbook/assets/optionspreferences.png)
+   ![Options Preferences](../.gitbook/assets/optionspreferences%20%284%29.png)
 
 2. Navigate to "Citation key generator"
 
-   ![Citation key generator preferences](../.gitbook/assets/preferences-citation-key-generator.png)
+   ![Citation key generator preferences](../.gitbook/assets/preferences-citation-key-generator%20%281%29.png)
 
 3. Change the default pattern to `[authors][camel]`
 
-   ![Citation key generator preferences - authors camel](../.gitbook/assets/preferences-citation-key-generator-authors-camel.png)
+   ![Citation key generator preferences - authors camel](../.gitbook/assets/preferences-citation-key-generator-authors-camel%20%284%29.png)
 
 4. Press "Enter" \(forgetting to do this is a leading cause of puzzlement\)
 5. Click "Save"
@@ -163,13 +163,13 @@ To change the citation key patterns for a single library to `[auth][shortyear]`,
 
 1. Make sure the library is open and selected in the JabRef main window
 
-   ![Main screen selected library](../.gitbook/assets/main-screen-selected-library.png)
+   ![Main screen selected library](../.gitbook/assets/main-screen-selected-library%20%282%29.png)
 
 2. From the "Library" menu, open the "Citation key pattern" setting
 
-   ![Library Citation key patterns](../.gitbook/assets/library-citation-key-patterns.png)
+   ![Library Citation key patterns](../.gitbook/assets/library-citation-key-patterns%20%281%29.png)
 
 3. Set the pattern for the desired entry types, and press the apply button.
 
-   ![Citation key patterns](../.gitbook/assets/citation-key-patterns.png)
+   ![Citation key patterns](../.gitbook/assets/citation-key-patterns%20%283%29.png)
 

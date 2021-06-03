@@ -1,4 +1,4 @@
-# JabRef Bibliography Management
+# User Documentation
 
 Stay on top of your literature: JabRef helps you to collect and organize sources, find the paper you need and discover the latest research.
 
@@ -8,12 +8,12 @@ JabRef is a cross-platform application that works on Windows, Linux and Mac OS X
 
 ### Collect
 
-* [Search](finding-sorting-and-cleaning-entries/import-using-online-bibliographic-database/) across many online scientific catalogues like [CiteSeer](finding-sorting-and-cleaning-entries/import-using-online-bibliographic-database/citeseer.md), CrossRef, Google Scholar, IEEEXplore, INSPIRE-HEP, Medline PubMed, MathSciNet, Springer, arXiv, and zbMATH
+* [Search]() across many online scientific catalogues like [CiteSeer](), CrossRef, Google Scholar, IEEEXplore, INSPIRE-HEP, Medline PubMed, MathSciNet, Springer, arXiv, and zbMATH
 * Import options for over 15 reference formats
 * Easily retrieve and link full-text articles
 * Fetch complete bibliographic information based on ISBN, DOI, PubMed-ID and arXiv-ID
 * Extract metadata from PDFs
-* Import new references directly from the browser with one click using the [official browser extension](import-export/import/jabref-browser-extension.md) for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/jabref/?src=external-github),  [Chrome](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh), [Edge](https://microsoftedge.microsoft.com/addons/detail/pgkajmkfgbehiomipedjhoddkejohfna) and [Vivaldi](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh)
+* Import new references directly from the browser with one click using the [official browser extension]() for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/jabref/?src=external-github),  [Chrome](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh), [Edge](https://microsoftedge.microsoft.com/addons/detail/pgkajmkfgbehiomipedjhoddkejohfna) and [Vivaldi](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh)
 
 ### Organize
 
@@ -30,7 +30,7 @@ JabRef is a cross-platform application that works on Windows, Linux and Mac OS X
 ### Cite
 
 * Native [BibTeX](https://www.ctan.org/pkg/bibtex) and [Biblatex](https://www.ctan.org/pkg/biblatex) support
-* [Cite-as-you-write functionality](import-export/other-integrations/pushtoapplications.md) for external applications such as Emacs, Kile, LyX, Texmaker, TeXstudio, Vim and WinEdt.
+* [Cite-as-you-write functionality]() for external applications such as Emacs, Kile, LyX, Texmaker, TeXstudio, Vim and WinEdt.
 * Format references in one of the many thousand built-in citation styles or create your style
 * Support for Word and LibreOffice/OpenOffice for inserting and formatting citations
 
@@ -38,11 +38,11 @@ JabRef is a cross-platform application that works on Windows, Linux and Mac OS X
 
 * Many built-in export options or create your export format
 * Library is saved as a simple text file and thus it is easy to share with others via Dropbox and is version-control friendly
-* Work in a team: sync the contents of your library [via a SQL database](collaborative-work/sqldatabase.md)
+* Work in a team: sync the contents of your library [via a SQL database](collaborative-work/sqldatabase/)
 
 ## The data format of JabRef is Bib\(La\)TeX
 
-JabRef is is a program for working with BibTeX and biblatex databases. JabRef program uses no separate internal file format, but directly works with BibTeX and Biblatex. That means, your Bib\(La\)TeX file is kept as is when opening in JabRef and saving again: You normally load and save your databases directly in the Bib\(La\)TeX .bib format. In addition, you can also [import and export bibliography libraries](import-export/) in a number of other formats into JabRef.
+JabRef is is a program for working with BibTeX and biblatex databases. JabRef program uses no separate internal file format, but directly works with BibTeX and Biblatex. That means, your Bib\(La\)TeX file is kept as is when opening in JabRef and saving again: You normally load and save your databases directly in the Bib\(La\)TeX .bib format. In addition, you can also [import and export bibliography libraries]() in a number of other formats into JabRef.
 
 ## JabRef's main window
 
@@ -65,21 +65,21 @@ This is the main window from where you work with your databases. Below the menub
 
 There are several ways to add a new entry. The **New entry** menu action shows a dialog where you can choose the type of the entry from a list. To bypass this dialog, there are also separate menu actions for each entry type, and keyboard shortcuts for the most common types.
 
-When a new entry is added, by default an [entry editor](general/entryeditor.md) for the entry will be opened. This behaviour can be toggled in the **Preferences** dialog.
+When a new entry is added, by default an [entry editor]() for the entry will be opened. This behaviour can be toggled in the **Preferences** dialog.
 
 _Note:_ We strongly recommend learning the shortcuts for the entry types you use most often, e.g. Ctrl + Shift + A for adding an _article_ entry.
 
 #### Adding a new entry using an id
 
-In the dialog, you can also create an entry based on Id. See [import using publication identifiers](finding-sorting-and-cleaning-entries/import-using-publication-identifiers/) for an overview on all available fetchers. For instance, when having an ISBN number, you can select "ISBN" or "DOI" as Id type and then fetch it. See [ISBNtoBibTeX](finding-sorting-and-cleaning-entries/import-using-publication-identifiers/isbntobibtex.md) and [DOItoBibTeX](finding-sorting-and-cleaning-entries/import-using-publication-identifiers/doitobibtex.md) for details.
+In the dialog, you can also create an entry based on Id. See [import using publication identifiers]() for an overview on all available fetchers. For instance, when having an ISBN number, you can select "ISBN" or "DOI" as Id type and then fetch it. See [ISBNtoBibTeX]() and [DOItoBibTeX]() for details.
 
 #### Adding a new entry using the reference text
 
-Use the BibTeX → New entry from plain text... \(Ctrl+Shift+N\). For more information see [New entry from plain text](import-export/import/newentryfromplaintext.md).
+Use the BibTeX → New entry from plain text... \(Ctrl+Shift+N\). For more information see [New entry from plain text]().
 
 ### Editing an entry
 
-To open an [entry editor](general/entryeditor.md) for an existing entry, simply double-click anywhere on the appropriate line will open the entry editor \(or select the entry and press Enter\).
+To open an [entry editor]() for an existing entry, simply double-click anywhere on the appropriate line will open the entry editor \(or select the entry and press Enter\).
 
 ### Referencing a BibTeX string in a field
 
