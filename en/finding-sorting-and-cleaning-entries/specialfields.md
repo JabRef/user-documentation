@@ -4,7 +4,7 @@ description: Qualify your entries with tags that make sense to your work.
 
 # Mark and grade
 
-A set of 6 special fields allows you to tag your entries in order to rate read papers, indicate their relevance to your work, indicate that their quality has been assured, etc.
+A set of 6 special fields allows you to tag your entries in order to rate read papers, indicate their relevance to your work, indicate that their quality has been assured, etc. Internally, each special field is stored in a separate BibTeX field.
 
 This feature has to be activated in **Options → Preferences → Entry Table** by checking the item `Enable special fields`.
 
@@ -52,10 +52,13 @@ This field allows to state is the paper has been printed or not \(sixth column i
 
 ## Configuration of the storage mode in the library
 
+{% hint style="info" %}
+Pre JabRef 5.2
+
 The way the special fields are stored in the libraries can be set in **Options → Preferences → Entry Table**.​
 
 2 modes of storage are available:
 
 * With _Write values of special fields as separated fields_ \(default configuration since version 5.2\)_,_ each special field is stored in a separate field of the entry.
 * With _Synchronize with keywords_ enabled, the values of the special fields are stored twice: in a separated field and as a keyword. Each change in a special field is reflected in the keyword field, and, vice versa, each change in a keyword leads to a change in the special field. Additionally, when loading a database or pasting a new entry, the keywords are used to set the special field values.
-
+{% endhint %}

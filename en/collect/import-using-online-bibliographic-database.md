@@ -4,11 +4,9 @@ description: Using online databases to search for references
 
 # Searching externally using Online Services
 
-To fetch entries from an online database, choose **View → Web search**, and the search interface will appear in the side pane. Select the database you want to search \(e.g. arXiv\) in the dropdown menu. Enter the words of your query, and press Enter or the **Search** button. The results are displayed in the [import inspection dialog](https://github.com/JabRef/user-documentation/tree/5c226b3c3ec3c0cc336ee37363ac4a936120b202/import/importinspectiondialog.md). JabRef is not intended to be a tool for mass download of citations. The purpose of the Web search is to easily gather a few entries directly from within JabRef. If you use the search functionality to extensively you might get blocked \(for some time\). To fetch entries from an online database, choose **View → Web search**, and the search interface will appear in the side pane. Select the database you want to search \(e.g. arXiv\) in the dropdown menu. Note that it might be necessary to scroll downwards to find certain fetchers. An example for this is provided in the image below. Then enter the words of your query, and press Enter, or the **Search** button. The results are displayed in the [import inspection dialog](import/importinspectiondialog.md).
+JabRef is not intended to be a tool for mass download of citations. The purpose of the Web search is to easily gather a few entries directly from within JabRef. If you use the search functionality to extensively you might get blocked \(for some time\). To fetch entries from an online database, choose **View → Web search**, and the search interface will appear in the side pane. Select the database you want to search \(e.g., arXiv\) in the dropdown menu. Note that it might be necessary to scroll downwards to find certain fetchers. An example for this is provided in the image below. You may opt to download the abstracts along with the cite information for each entry, by checking the **Include abstracts** checkbox.Then enter the words of your query, and press Enter, or the **Search** button. The results are displayed in the [import inspection dialog](import/importinspectiondialog.md). Some online services support advanced search queries. These are described below at the respective fetcher.
 
-Some of the databases support advanced search queries. These are described on the detail page of the database. ![](../.gitbook/assets/select-fetcher-in-menu.png)
-
-Some databases support advanced search queries. These are described on the detail page of the database.
+![](../.gitbook/assets/select-fetcher-in-menu.png)
 
 Apart from fetching entries by using a full search, it is also possible to directly [create an entry using a unique identifier](add-entry-using-an-id.md).
 
@@ -64,7 +62,7 @@ The [ACM Portal](https://dl.acm.org) includes two databases \([Wikipedia](https:
 
 ### CiteSeerX
 
-[CiteSeerX](http://csxstatic.ist.psu.edu/home) is a public search engine for scientific and academic papers primarily with a focus on computer and information science. However, CiteSeerX has been expanding into other scholarly domains such as economics, physics and others \([Wikipedia](https://en.wikipedia.org/wiki/CiteSeer)\).
+[CiteSeerX](http://csxstatic.ist.psu.edu/home) is a public search engine for scientific and academic papers primarily with a focus on computer and information science. However, CiteSeerX has been expanding into other scholarly domains such as economics, physics, and others \([Wikipedia](https://en.wikipedia.org/wiki/CiteSeer)\).
 
 ### Collection of Computer Science Bibliographies \(CCSB\)
 
@@ -84,9 +82,9 @@ To fetch entries from Unpaywall indirectly through Crossref, choose **Search →
 
 ### DOAJ
 
-[DOAJ \(Directory of Open Access Journals\)](http://doaj.org/) is a database covering more than 10000 open access journals covering all areas of science, technology, medicine, social science and humanities \([Wikipedia](https://en.wikipedia.org/wiki/Directory_of_Open_Access_Journals)\).
+[DOAJ \(Directory of Open Access Journals\)](http://doaj.org/) is a database covering more than 10000 open access journals covering all areas of science, technology, medicine, social science, and humanities \([Wikipedia](https://en.wikipedia.org/wiki/Directory_of_Open_Access_Journals)\).
 
-It is possible to limit the search by adding a field name to the search, as **field:text**. The supported fields area:
+It is possible to limit the search by adding a field name to the search, as **field:text**. The supported fields are:
 
 | key | description |
 | :--- | :--- |
@@ -174,7 +172,7 @@ The following list shows some of the field indicators that can be used:
 
 [Jstor](https://jstor.org) is an online database with access to more than 12 million journal articles, books, and sources in 75 disciplines. [About](https://about.jstor.org/)
 
-It is possible to limit the search by adding a field name to the search, such as `field:"text"`.
+It is possible to limit the search by adding a field name to the search, such as `field:"text"`. The supported fields are:
 
 * `title`: The title of the article
 * `author`: an author of the article

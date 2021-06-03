@@ -33,7 +33,7 @@ Potential duplicates are pointed out by an icon in the second column. A click on
 
 On the left panel, if the box **Generate keys** is checked, keys will be automatically generated on import. You can also choose to generate the keys now by clicking on the button **Generate now**.
 
-### Importation into the database
+### Import into the database
 
 Once you are done with the entry selection, you can add these entries to your database by clicking on **OK** at the bottom of the window. Alternatively, you can **Cancel** the import.
 

@@ -8,7 +8,7 @@ description: >-
 
 > [Firefox](https://addons.mozilla.org/en-US/firefox/addon/jabref/?src=external-github) - [Chrome](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh) - [Edge](https://microsoftedge.microsoft.com/addons/detail/pgkajmkfgbehiomipedjhoddkejohfna) - [Vivaldi](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh)
 
-JabRef has an official browser extension. It automatically identifies and extracts bibliographic information on websites and sends them to JabRef with one click.
+JabRef offers an official browser extension. It automatically identifies and extracts bibliographic information on websites and sends them to JabRef with one click.
 
 When you find an interesting article through Google Scholar, the arXiv or journal websites, this browser extension allows you to add those references to JabRef. Even links to accompanying PDFs are sent to JabRef, where those documents can easily be downloaded, renamed, and placed in the correct folder. [A wide range of publisher sites, library catalogs, and databases are supported](https://www.zotero.org/support/translators).
 

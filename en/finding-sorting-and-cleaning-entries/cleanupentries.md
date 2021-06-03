@@ -21,3 +21,5 @@ A click on the "circular arrow" icon enables a set of recommended formatting act
 
 {% page-ref page="saveactions.md" %}
 
+{% page-ref page="managing-field-names-and-their-content.md" %}
+

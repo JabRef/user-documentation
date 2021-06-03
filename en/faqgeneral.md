@@ -158,3 +158,14 @@ A: This error message has been observed on systems that use [inotify](https://ww
 
 A: JabRef opens the pdf document with the application Gnome has set by default: Evince. If you want JabRef to open another application \(Okular or other\), in your file explorer, right-click on whatever pdf file &gt; properties &gt; Open With &gt; choose your application &gt; Set as default at the bottom right corner. From now on, both when you double-click a pdf file in your file explorer or when you ask JabRef to open it via its document viewer, your chosen application will be used.
 
+## Q: How does JabRef support me in sharing my Bib\(La\)TeX libraries?
+
+A: JabRef automatically recognizes a change in the `bib` file on disk and notifies the user of it. This is cool for network drives.
+
+If you use version control, a few advices are given for a smoother [sharing of a bib file](collaborative-work/sharedbibfile.md).
+
+In addition, we have [many open issues dealing with collaboration](https://github.com/JabRef/jabref/wiki/FeatureRequests-Sorted#allow-me-to-work-with-others-please).
+
+## Q: How to do collaborative work on a library?
+
+A: You can either choose to [use an SQL database](collaborative-work/sqldatabase/) or to [share a bib file](collaborative-work/sharedbibfile.md).

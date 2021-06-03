@@ -17,7 +17,7 @@ The portable version of JabRef is designed to be run from a USB stick \(or simil
 Download it from [downloads.jabref.org](https://downloads.jabref.org). These are generic archive files \(e.g., `tar.gz` files for Linux and MacOS, and `zip` files for Windows\) which need to be extracted. Inside the archive files you will find the file needed to run JabRef:
 
 * for Windows `JabRef.exe`.
-* for Linux `bin\JabRef`.
+* for Linux `bin/JabRef`.
 * for Mac, this is the file `JabRef.app`.
 
 Be sure to activate "Load and Save preferences from/to jabref.xml on start-up \(memory stick mode\)" in Options → Preferences → General.

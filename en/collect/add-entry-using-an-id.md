@@ -13,7 +13,7 @@ For other identifiers, choose **Library → New entry**, or click on the `New en
 ![Window for selecting an entry type or the ID of an entry. Note: the actual content of the dialog depends on the database mode \(BibTeX or biblatex\). ](../.gitbook/assets/jabref-5.3-selectentrytype.png)
 
 {% hint style="info" %}
-Sometimes the new entry contains a`url`field. This field usually points to the URL of the book at the respective online book store. In case you buy the book using this link, the service provider \(e.g. ebook.de\) receive a commission to fund the service.
+Sometimes the new entry contains a `url` field. This field usually points to the URL of the book at the respective online book store. In case you buy the book using this link, the service provider \(e.g., [ebook.de](https://www.ebook.de)\) receive a commission to fund the service.
 {% endhint %}
 
 ## Supported databases
@@ -36,17 +36,23 @@ First, [eBook.de's](https://www.ebook.de/de/) API is used to fetch bibliographic
 
 ID search is carried out using the [International Standard Book Number](https://en.wikipedia.org/wiki/International_Standard_Book_Number).
 
+![Screenshot of new entry dialog](../.gitbook/assets/newentrychoosetype-idgeneratorhighlighted-isbn.png)
+
 ### DiVA
 
 [DiVA \(Digitala Vetenskapliga Arkivet\)](https://info.diva-portal.org/about-diva/) is a database with publications from about [40](https://www.diva-portal.org/smash/aboutdiva.jsf) Swedish universities and research institutions.
 
 ID search is carried out using the DiVA id \(diva2\).
 
+![Screenshot of new entry dialog](../.gitbook/assets/newentrychoosetype-idgeneratorhighlighted-diva.png)
+
 ### DOI
 
 JabRef uses [http://dx.doi.org/](http://dx.doi.org/) \(provided by [http://crossref.org/](http://crossref.org/)\) to convert the given DOI to a new entry.
 
 ID search is carried out using the DOI.
+
+![Screenshot of new entry dialog](../.gitbook/assets/newentrychoosetype-idgeneratorhighlighted.png)
 
 {% hint style="warning" %}
 If JabRef cannot find the reference of your DOI using this ID type, please, try the same DOI with the ID type "mEDRA". The ID type mEDRA looks for the reference corresponding to a DOI too, but using another registration agency.
@@ -76,6 +82,8 @@ ID search is carried out using the MR number.
 
 ID search is carried out using the [PubMed Unique Identifier](https://www.nlm.nih.gov/bsd/mms/medlineelements.html#pmid) \(PMID\).
 
+[Screenshot of new entry dialog](../.gitbook/assets/newentrychoosetype-idgeneratorhighlighted-medline.png)
+
 ### mEDRA
 
 [mEDRA](https://www.medra.org/) is the multilingual European Registration Agency of DOI, the standard persistent identifier for any form of intellectual property on a digital network.
@@ -88,17 +96,21 @@ ID search is carried out using the DOI.
 
 ID search is carried out using the [ADS Bibcode](http://adsabs.github.io/help/actions/bibcode).
 
+![Screenshot of new entry dialog](../.gitbook/assets/newentrychoosetype-idgeneratorhighlighted-ads.png)
+
 ### Title
 
 Based on the title of your publication, JabRef call Crossref, which return the corresponding DOI. Then JabRef fetches the reference based on this DOI.
 
 To return a reference, the publication needs to have a DOI.
 
-### **RFC**
+### RFC
 
 [IETF \(Internet Engineering Task Force\)](https://datatracker.ietf.org/) Datatracker is a database that "contains data about the documents, working groups, meetings, agendas, minutes, presentations, and more, of the IETF."
 
 ID search is carried out using the \(Request for Comments number\) \(RFC\) of the IETF database.
+
+![Screenshot of new entry dialog](../.gitbook/assets/newentrychoosetype-idgeneratorhighlighted-rfc.png)
 
 ### zbMATH Open
 

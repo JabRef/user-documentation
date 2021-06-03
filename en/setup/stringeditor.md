@@ -2,7 +2,7 @@
 
 In JabRef you write the contents of all fields the same way as you would in a text editor, with one exception: to reference a string, enclose the name of the string in a set of \# characters, e.g.: '\#jan\# 1997', which will be interpreted as the string named `jan` followed by `1997`.
 
-[Strings]() can be edited by **Library → Edit string constants** or pressing a button in the toolbar.
+[Strings](../advanced/strings.md) can be edited by **Library → Edit string constants** or pressing a button in the toolbar.
 
 _Strings_ are the _BibTeX_ equivalent to constants in a programming language. Each string is defined with a unique _name_ and a _content_. Elsewhere in the database, the name can be used to represent the content.
 
@@ -14,5 +14,5 @@ A string may in the same way be referred in the content of another string, provi
 
 While the order of strings in your BibTeX file is important in some cases, you do not have to worry about this when using JabRef. The strings will be displayed in alphabetical order in the string editor, and stored in the same order, except when a different ordering is required by BibTeX.
 
-For a complete description of string syntax, see the [dedicated help]().
+For a complete description of string syntax, see the [dedicated help](../advanced/strings.md).
 
