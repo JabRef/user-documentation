@@ -81,5 +81,5 @@ By selecting this Tab, we are sending the title of the selected paper to Mr. DLi
 
 Mr. DLib is a service that calculates recommendations for you based on this title. After a short loading time the recommendations are listed in the Related Articles Tab. For detailed information see [Mr. DLibs help page](http://mr-dlib.org/information-for-users/information-about-mr-dlib-for-jabref-users/#). The following image shows the Related Articles Tab with recommendations to the selected item.
 
-![Screenshot of the Related Articles Tab](https://github.com/JabRef/user-documentation/tree/1d08c64e28d8c4115216b82bd781f291de7c0b4a/en/.gitbook/assets/sceenshot_related_articles_en.png)
+![Screenshot of the Related Articles Tab](../../.gitbook/assets/sceenshot_related_articles_en.png)
 
