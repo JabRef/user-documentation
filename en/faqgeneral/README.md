@@ -48,15 +48,15 @@ A: In **Options → Preferences → Network**, in the “Remote operation” sec
 
 ## Q: I have a DOI/ISBN/ePrint/etc. Is it possible to create an entry directly out of this identifier?
 
-A: Paste the DOI in the table of entries, and JabRef will create the corresponding entry. Additionally, in **Library → New entry** you can select the type of the identifier in the field "ID type" and enter the identifier in "ID". A click on "Generate" should create the correct entry. If this does not work, try a web search. For more details, see [Add entry using an ID](collect/add-entry-using-an-id.md).
+A: Paste the DOI in the table of entries, and JabRef will create the corresponding entry. Additionally, in **Library → New entry** you can select the type of the identifier in the field "ID type" and enter the identifier in "ID". A click on "Generate" should create the correct entry. If this does not work, try a web search. For more details, see [Add entry using an ID](../collect/add-entry-using-an-id.md).
 
 ## Q: Why can't JabRef find any DOI/ISBN/ePrint/etc.?
 
-A: There are several reasons why JabRef cannot find your identifier online. For example, your DOI is not listed in the [CrossRef database](https://search.crossref.org/) if you are using the CrossRef fetcher. Another reason could be that the search result for your DOI on [DOI.org](https://dx.doi.org) returns invalid BibTeX which is unable to be read by JabRef. Try a [web search](collect/import-using-online-bibliographic-database.md) instead.
+A: There are several reasons why JabRef cannot find your identifier online. For example, your DOI is not listed in the [CrossRef database](https://search.crossref.org/) if you are using the CrossRef fetcher. Another reason could be that the search result for your DOI on [DOI.org](https://dx.doi.org) returns invalid BibTeX which is unable to be read by JabRef. Try a [web search](../collect/import-using-online-bibliographic-database.md) instead.
 
 ## Q: I miss a field _translator_, _lastfollowedon_, etc. How can I add such fields?
 
-A: To add this _translator_ field to all entry types, you can use **Options → Preferences → Custom editor tabs** and add a _translator_ field under one of JabRef's general field tabs \(see [Customize general field](setup/generalfields.md)s\). To add this _translator_ field to a specific entry type, edit the specific entry type\(s\) \(**Options → Customize entry types**\) and add a _translator_ field under required fields or optional fields, as you like \(see [Customize entry types](setup/customentrytypes.md)\).
+A: To add this _translator_ field to all entry types, you can use **Options → Preferences → Custom editor tabs** and add a _translator_ field under one of JabRef's general field tabs \(see [Customize general field](../setup/generalfields.md)s\). To add this _translator_ field to a specific entry type, edit the specific entry type\(s\) \(**Options → Customize entry types**\) and add a _translator_ field under required fields or optional fields, as you like \(see [Customize entry types](../setup/customentrytypes.md)\).
 
 ## Q: How do I prevent JabRef from introducing line breaks in certain fields \(such as “title”\) when saving the .bib file?
 
@@ -64,11 +64,11 @@ A: Open **Options → Preferences**. In the “File” panel, you will find an o
 
 ## Q: Is it possible to append entries from a BibTeX file, e.g. from my web browser to the currently opened library?
 
-A: Yes, you can use the parameter `--importToOpen bibfile` of the [command line](advanced/commandline.md).
+A: Yes, you can use the parameter `--importToOpen bibfile` of the [command line](../advanced/commandline.md).
 
 ## Q: How do I link external files with paths relative to my .bib file, so I can move my library along with its files to another directory?
 
-A: You need to override the default file directory for this specific library. In **Library → Library properties** you can override the **Default file directory** setting. There, you can either enter the path in **General file directory** \(for it to be valid for all users of the file\) or in **User-specific file directory** \(for it to be valid for you only\). If you simply enter “.” \(a dot, without the quotes\), the file directory will be the same as the .bib file directory. To place your files in a subdirectory called **subdir**, you can enter **“./subdir”** \(without the quotes\). Files will automatically be linked with relative paths if the files are placed in the default file directory or in a directory below it. More details on the [help page about the library properties](setup/databaseproperties.md).
+A: You need to override the default file directory for this specific library. In **Library → Library properties** you can override the **Default file directory** setting. There, you can either enter the path in **General file directory** \(for it to be valid for all users of the file\) or in **User-specific file directory** \(for it to be valid for you only\). If you simply enter “.” \(a dot, without the quotes\), the file directory will be the same as the .bib file directory. To place your files in a subdirectory called **subdir**, you can enter **“./subdir”** \(without the quotes\). Files will automatically be linked with relative paths if the files are placed in the default file directory or in a directory below it. More details on the [help page about the library properties](../setup/databaseproperties.md).
 
 ## Q: Can I use a bib-file specific PDF directory?
 
@@ -80,11 +80,11 @@ A: Use **File → Export**. As “Filter” choose “OpenOffice/LibreOffice CSV
 
 ## Q: How do I add and remove keywords of multiple entries?
 
-A: Select the entries and go to **Library → Manage keywords**. There you can manage keywords appearing in all selected entries or in any selected entry. New keywords are added to all selected entries. More details about [keywords in JabRef](finding-sorting-and-cleaning-entries/keywords.md).
+A: Select the entries and go to **Library → Manage keywords**. There you can manage keywords appearing in all selected entries or in any selected entry. New keywords are added to all selected entries. More details about [keywords in JabRef](../finding-sorting-and-cleaning-entries/keywords.md).
 
 ## Q: When linking a file, I cannot set the correct type. How do I add new types?
 
-In **Options → Preferences**, tab **External programs**, button "Manage external file types", you can add arbitrary types. See the [dedicated page about external file types](setup/externalfiletypes.md).
+In **Options → Preferences**, tab **External programs**, button "Manage external file types", you can add arbitrary types. See the [dedicated page about external file types](../setup/externalfiletypes.md).
 
 ## Q: When an organization is provided as author, my BibTeX style doesn't recognize it. For instance, why is “European Commission” converted to “Commission, E.”?
 
@@ -104,11 +104,11 @@ A: Paste the Bib\(la\)Tex code of a reference into the table of entries, and Jab
 
 ## Q: I have the PDF of a publication. How to make it a new entry of my library?
 
-A: Drag & drop a PDF onto the table of entries \(between two existing entries\). JabRef will analyze the PDF and create a new entry. More details about [Adding entries from PDFs.](collect/findunlinkedfiles.md)
+A: Drag & drop a PDF onto the table of entries \(between two existing entries\). JabRef will analyze the PDF and create a new entry. More details about [Adding entries from PDFs.](../collect/findunlinkedfiles.md)
 
 ## Q: I am looking at a publication in my web browser. How to make it a new entry of my library?
 
-A: Use [JabRef Browser extension](collect/jabref-browser-extension.md): with one click, JabRef browser extension identifies and extracts bibliographic information on websites and sends them to JabRef.
+A: Use [JabRef Browser extension](../collect/jabref-browser-extension.md): with one click, JabRef browser extension identifies and extracts bibliographic information on websites and sends them to JabRef.
 
 ## Q: I am missing the DOI of some of my publications. Can JabRef help?
 
@@ -124,11 +124,11 @@ A: Upon compilation, LaTeX generates a file with the extension ".aux". This file
 
 ## Q: When I modify my library, I would like that JabRef performs entry cleaning automatically. How to do this?
 
-A: In **Library → Library properties**, you will find a section named "Save actions". After enabling this feature, you can choose which actions should be performed for each field upon saving. That should help you keep your library tidy. More details about [cleaning up entries](finding-sorting-and-cleaning-entries/cleanupentries.md), [save actions](finding-sorting-and-cleaning-entries/saveactions.md), and [check integrity](finding-sorting-and-cleaning-entries/checkintegrity.md).
+A: In **Library → Library properties**, you will find a section named "Save actions". After enabling this feature, you can choose which actions should be performed for each field upon saving. That should help you keep your library tidy. More details about [cleaning up entries](../finding-sorting-and-cleaning-entries/cleanupentries.md), [save actions](../finding-sorting-and-cleaning-entries/saveactions.md), and [check integrity](../finding-sorting-and-cleaning-entries/checkintegrity.md).
 
 ## Q: Search on Google scholar does not work anymore. Why?
 
-A: Google scholar is blocking "automated" crawls which generate too much traffic in a short time. JabRef already uses a two-step approach \(with the prefetched list before crawling the actual BibTeX data\) to circumvent this. However, after too many crawls JabRef is being blocked. To solve this issue, see the section [_Traffic limitations_](collect/import-using-online-bibliographic-database.md#traffic-limitations) in the Google Scholar database.
+A: Google scholar is blocking "automated" crawls which generate too much traffic in a short time. JabRef already uses a two-step approach \(with the prefetched list before crawling the actual BibTeX data\) to circumvent this. However, after too many crawls JabRef is being blocked. To solve this issue, see the section [_Traffic limitations_](../collect/import-using-online-bibliographic-database.md#traffic-limitations) in the Google Scholar database.
 
 ## Q: JabRef does not push to vim, although I have configured the right path and server name. What is going on?
 
@@ -148,7 +148,7 @@ A: After consulting [JabRef's help](https://docs.jabref.org) and checking whethe
 
 ## Q: There is a mistake in this FAQ, a dead link, or I have written a better/new explanation for a question! What can I do?
 
-A: See [How to improve the help page](faqcontributing/how-to-improve-the-help-page.md).
+A: See [How to improve the help page](../faqcontributing/how-to-improve-the-help-page.md).
 
 ## Q: "Unable to monitor file changes. Please close files and processes and restart. You may encounter errors if you continue with this session."
 
@@ -162,10 +162,11 @@ A: JabRef opens the pdf document with the application Gnome has set by default: 
 
 A: JabRef automatically recognizes a change in the `bib` file on disk and notifies the user of it. This is cool for network drives.
 
-If you use version control, a few advices are given for a smoother [sharing of a bib file](collaborative-work/sharedbibfile.md).
+If you use version control, a few advices are given for a smoother [sharing of a bib file](../collaborative-work/sharedbibfile.md).
 
 In addition, we have [many open issues dealing with collaboration](https://github.com/JabRef/jabref/wiki/FeatureRequests-Sorted#allow-me-to-work-with-others-please).
 
 ## Q: How to do collaborative work on a library?
 
-A: You can either choose to [use an SQL database](collaborative-work/sqldatabase/) or to [share a bib file](collaborative-work/sharedbibfile.md).
+A: You can either choose to [use an SQL database](../collaborative-work/sqldatabase/) or to [share a bib file](../collaborative-work/sharedbibfile.md).
+

@@ -10,8 +10,6 @@ Please, populate this page. Visit our page about [how to edit a help page](../..
 
 {% page-ref page="customexports.md" %}
 
-{% page-ref page="../../advanced/knowledge/endnotefilters.md" %}
-
 See also:
 
 {% page-ref page="../../collect/import/" %}

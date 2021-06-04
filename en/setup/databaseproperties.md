@@ -1,4 +1,4 @@
-# Library properties window
+# Library properties
 
 Each library can have specific properties that can be modified through **Library→ Library properties**. These specific properties override the generic properties defined in **Options → Preferences**.
 

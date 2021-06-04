@@ -12,7 +12,7 @@ JabRef helps you work with your _BibTeX_ libraries, but there are still rules to
 
 ### Fields in the header of a bib file
 
-JabRef stores the encoding of the file and \(in case a shared [SQL database](../collaborative-work/sqldatabase.md) is used\) the ID of the shared database in the header of the bib file.
+JabRef stores the encoding of the file and \(in case a shared [SQL database](https://github.com/JabRef/user-documentation/tree/2e47d73a4cfef323b7122d3e1653444a7ec121f1/en/collaborative-work/sqldatabase.md) is used\) the ID of the shared database in the header of the bib file.
 
 #### Encoding
 
@@ -20,7 +20,7 @@ JabRef stores the encoding of the file and \(in case a shared [SQL database](../
 
 #### Shared Id
 
-To enable [auto save](../general/autosave.md), JabRef adds `% DBID: <id>` to the header. This helps JabRef identifying the SQL database where the file belongs. E.g., `% DBID: 2mvhh73ge3hc5fosdsvuoa808t`.
+To enable [auto save](https://github.com/JabRef/user-documentation/tree/2e47d73a4cfef323b7122d3e1653444a7ec121f1/en/general/autosave.md), JabRef adds `% DBID: <id>` to the header. This helps JabRef identifying the SQL database where the file belongs. E.g., `% DBID: 2mvhh73ge3hc5fosdsvuoa808t`.
 
 ## Standard _BibTeX_ fields
 
@@ -96,9 +96,9 @@ To help in managing your bibliography, and extend the features of BibTeX, JabRef
 
 * [External files](externalfiles.md)
 * [General fields](../setup/generalfields.md)
-* [Owner](owner.md)
-* [Quality and grading](specialfields.md)
-* [Time stamp](timestamp.md)
+* [Owner](https://github.com/JabRef/user-documentation/tree/2e47d73a4cfef323b7122d3e1653444a7ec121f1/en/advanced/owner.md)
+* [Quality and grading](https://github.com/JabRef/user-documentation/tree/2e47d73a4cfef323b7122d3e1653444a7ec121f1/en/advanced/specialfields.md)
+* [Time stamp](https://github.com/JabRef/user-documentation/tree/2e47d73a4cfef323b7122d3e1653444a7ec121f1/en/advanced/timestamp.md)
 
 Moreover, there are "speciel fields" described in [Mark and grade](../finding-sorting-and-cleaning-entries/specialfields.md).
 

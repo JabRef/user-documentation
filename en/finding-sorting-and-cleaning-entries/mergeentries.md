@@ -6,7 +6,7 @@ First, select the two entries to be merged. Then select the menu **Quality → M
 
 The **Merge entries** window will pop-up:
 
-![](../.gitbook/assets/getdoi-mergeentrieswithdoiinformation-jabref5.2.png)
+![](../.gitbook/assets/getdoi-mergeentrieswithdoiinformation-jabref5.2%20%281%29.png)
 
 The fields of the two entries are displayed side-by-side on the upper part of the window.
 
