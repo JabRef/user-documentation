@@ -48,7 +48,7 @@ To test your translation you must be able to compile the source tree after makin
 
 Crowdin allows for downloading the current translation file:
 
-![Screenshot of Crowdin download dialog](../../.gitbook/assets/crowdin-download-translation%20%281%29%20%281%29.png)
+![Screenshot of Crowdin download dialog](../../.gitbook/assets/crowdin-download-translation%20%281%29%20%283%29.png)
 
 Place the downloaded file in the path `src/main/resources/l10n`. Then, execute `gradlew run` in the root directory and JabRef should start.
 
