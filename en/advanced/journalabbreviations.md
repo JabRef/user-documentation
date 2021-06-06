@@ -6,7 +6,7 @@ Since: 5.0
 
 JabRef can automatically toggle journal names between abbreviated and unabbreviated form, as long as the names are contained in one of your journal lists.
 
-This feature can be configured under **Options → Manage journal abbreviations**.
+This feature can be configured under **Options → Preferences → Manage journal abbreviations**.
 
 JabRef includes a fairly extensive build-in list of journal abbreviations. This list is a merge of all lists available at [abbrv.jabref.org](https://abbrv.jabref.org). However, this might still be be incomplete \(or outdated\) for the purposes of some users. Thus, JabRef allows to add abbreviations in the form of a personal list or external lists.
 
