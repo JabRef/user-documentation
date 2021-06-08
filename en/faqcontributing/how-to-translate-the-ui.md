@@ -13,7 +13,7 @@ We use the service of [Crowdin](https://translate.jabref.org/) to keep our trans
 * visit [https://translate.jabref.org/](https://translate.jabref.org/) to get started
 * select your preferred language, login, and click on _JabRef\_en.properties_
 
-  ![Screenshot of Crowdin select file page](../.gitbook/assets/crowdin-select-file%20%281%29.png)
+  ![Screenshot of Crowdin select file page](../.gitbook/assets/crowdin-select-file%20%281%29%20%282%29.png)
 
 * choose the string you want to translate in the left panel \(strings to be translated are listed first\)
 
@@ -33,7 +33,7 @@ To test directly your translation, you must be able to compile the source tree a
 
 Crowdin allows for downloading the current translation file:
 
-![Screenshot of Crowdin download dialog](../.gitbook/assets/crowdin-download-translation%20%281%29%20%282%29.png)
+![Screenshot of Crowdin download dialog](../.gitbook/assets/crowdin-download-translation%20%281%29%20%283%29%20%282%29.png)
 
 Place the downloaded file in the path `src/main/resources/l10n`. Then, execute `gradlew run` in the root directory and JabRef should start.
 

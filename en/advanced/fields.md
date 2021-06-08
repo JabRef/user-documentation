@@ -4,15 +4,15 @@ description: The data format of JabRef is Bib(La)TeX
 
 # About BibTeX and its fields
 
-JabRef is is a program for working with BibTeX and biblatex databases. JabRef program uses no separate internal file format but directly works with BibTeX and biblatex. That means, your BibTeX/biblatex file is kept as is when opening in JabRef and saving again: You normally load and save your databases directly in the BibTeX/biblatex`.bib` format. In addition, you can also [import](../collect/) and export bibliography libraries in a number of other formats into JabRef.
+JabRef is is a program for working with BibTeX and biblatex databases. JabRef program uses no separate internal file format but directly works with BibTeX and biblatex. That means, your BibTeX/biblatex file is kept as is when opening in JabRef and saving again: You normally load and save your libraries directly in the BibTeX/biblatex`.bib` format. In addition, you can also [import](../collect/) and export bibliography libraries in a number of other formats into JabRef.
 
-JabRef helps you work with your _BibTeX_ libraries, but there are still rules to keep in mind when editing your entries, to ensure that your database is treated properly by the _BibTeX_ program.
+JabRef helps you work with your _BibTeX_ libraries, but there are still rules to keep in mind when editing your entries, to ensure that your library is treated properly by the _BibTeX_ program.
 
 ## JabRef's conventions
 
 ### Fields in the header of a bib file
 
-JabRef stores the encoding of the file and \(in case a shared [SQL database](../collaborative-work/sqldatabase/) is used\) the ID of the shared database in the header of the bib file.
+JabRef stores the encoding of the file and \(in case a shared [SQL database](../collaborative-work/sqldatabase/) is used\) the ID of the shared library in the header of the bib file.
 
 #### Encoding
 
@@ -44,13 +44,13 @@ The following fields are recognized by the default bibliography styles:
 
 * **booktitle** Title of a book, part of which is being cited. For book entries, use the `title` field instead.
 * **chapter** A chapter \(or section or whatever\) number.
-* **crossref** The database key of the entry being cross referenced.
+* **crossref** The library key of the entry being cross referenced.
 * **edition** The edition of a book--for example, \`\`Second''. This should be an ordinal, and should have the first letter capitalized, as shown here; the standard styles convert to lower case when necessary.
 * **editor** This field is analogue to the _author_ field. If there is also an `author` field, then the `editor` field gives the editor of the book or collection in which the reference appears.
 * **howpublished** How something strange has been published. The first word should be capitalized.
 * **institution** The sponsoring institution of a technical report.
 * **journal** The name of a journal or magazine. The name of a journal can be abbreviated using a "string". To define such string, use the [string editor](../setup/stringeditor.md).
-* **key** Used for alphabetizing, cross referencing, and creating a label when the \`\`author'' information is missing. This field should not be confused with the key that appears in the `\cite` command and at the beginning of the database entry.
+* **key** Used for alphabetizing, cross referencing, and creating a label when the \`\`author'' information is missing. This field should not be confused with the key that appears in the `\cite` command and at the beginning of the library entry.
 * **month** The month in which the work was published or, for an unpublished work, in which it was written. You should use the standard three-letter abbreviation of the English names \(jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec\).
 * **note** Any additional information that can help the reader. The first word should be capitalized.
 * **number**
