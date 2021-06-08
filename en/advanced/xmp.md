@@ -4,9 +4,9 @@ description: Bib(la)TeX information into the PDF metadata
 
 # XMP metadata support in JabRef
 
-XMP is a standard created by Adobe Systems for storing metadata \(data about data\) in files. An well known example for metadata are MP3 tags, which can be used to describe artist, album and song name of a MP3 file. Adding metadata to MP3 helps other people to identify the songs correctly independent of file-name and can provide means for software \(MP3 players for instance\) to sort and group songs.
+XMP is a standard created by Adobe Systems for storing metadata \(data about data\) in files. A well known example for metadata are MP3 tags, which can be used to describe artist, album and song name of a MP3 file. Adding metadata to MP3 helps other people to identify the songs correctly independent of file-name and can provide means for software \(MP3 players for instance\) to sort and group songs.
 
-With XMP-support the JabRef team tries to bring the advantages of metadata to the world of reference managers. You can now choose to "Write XMP metadata to PDFs" in the Tools menu of JabRef, which will put all the Bib\(la\)TeX information into the PDFs. If you then email a PDF to a colleague she can just drag the file into JabRef and all information that you entered will be available to her.
+With XMP support the JabRef team tries to bring the advantages of metadata to the world of reference managers. You can now choose to "Write XMP metadata to PDFs" in the Tools menu of JabRef, which will put all the Bib\(la\)TeX information into the PDFs. If you then email a PDF to a colleague, they can just drag the file into JabRef and all information that you entered will be available to them.
 
 ## Usage
 
@@ -16,9 +16,9 @@ To use the XMP-feature in JabRef you can do the following:
 * _To annotate all the PDFs in a given database,_ select **Tools → Write XMP metadata to PDFs**.
 * _To verify if it worked,_ you can open the PDF in Adobe Acrobat and select **File → Document Properties → Additional Metadata → Advanced**. In the tree to the right you should see an entry called "[http://purl.org/net/bibteXMP](http://purl.org/net/bibteXMP)". Note: this works only with Adobe Acrobat, _not with Adobe Reader_. If you do not have Adobe Acrobat, you can use `pdfinfo` instead in order to see the XMP metadata. `pdfinfo` is part of [Xpdf tools](http://www.foolabs.com/xpdf/)  and [Poppler](http://poppler.freedesktop.org).
 
-## BibTeXmp Fileformat
+## BibTeXMP Fileformat
 
-XMP uses a subset of the Resource Description Framework \(RDF\) to store data. For JabRef a new metadata format is used which maps very closely to BibTeX. Basically all fields and values are turned into nodes of an XML document. Only authors and editors are stored as rdf:Seq-structures, so users of the data can skip the splitting on 'and's. All strings and crossrefs will be resolved in the data.
+JabRef builds on [Dublin Core](https://en.wikipedia.org/wiki/Dublin_Core) to encode bibliographic information. That information us embedded in the PDF using the XMP format. Dublin Core itself i\) builds on RDF and ii\) can be extended with own information. In case BibTeX data cannot be stored using native Dublin Core fields, new fields are used. Basically, all fields and values are turned into nodes of an XML document. Only authors and editors are stored as `rdf:Seq`-structures, so users of the data can skip the splitting on `and`s. All strings and crossrefs will be resolved in the data.
 
 The following easy minimal schema is used:
 
@@ -86,7 +86,7 @@ will be transformed into
 </x:xmpmeta><?xpacket end="w"?>
 ```
 
-Beware of the following caveats if you trying to parse BibTeXMP:
+Be aware of the following caveats if you are trying to parse BibTeXMP:
 
 * In RDF attribute-value pairs can also be expressed as nodes and vice versa.
 
