@@ -18,7 +18,7 @@ At the top of each help page you can find the GitHub icon. Just click here to sh
 
 This leads you to GitHub:
 
-![Click on the pencil icon](../../.gitbook/assets/screenshot-edit-pencil%20%281%29%20%281%29%20%281%29%20%281%29%20%281%29%20%281%29%20%282%29.png)
+![Click on the pencil icon](../../.gitbook/assets/screenshot-edit-pencil%20%281%29%20%281%29%20%281%29%20%281%29%20%281%29%20%281%29%20%282%29%20%283%29.png)
 
 To actually edit the page click on the pencil icon which is highlighted above.
 
@@ -26,7 +26,7 @@ To actually edit the page click on the pencil icon which is highlighted above.
 
 The window to edit the page at GitHub looks like this:
 
-![Edit view at GitHub](../../.gitbook/assets/screenshot-edit-page%20%281%29.png)
+![Edit view at GitHub](../../.gitbook/assets/screenshot-edit-page%20%281%29%20%283%29.png)
 
 Most text can be simply added in this field as plain text. However, you can style your contribution by using [markdown](https://daringfireball.net/projects/markdown/). Markdown is a rather easy way to format text without the need for complex markup as for example in HTML.
 
@@ -34,19 +34,19 @@ You can find an introduction to markdown [here](https://daringfireball.net/proje
 
 In order to check your changes hit the "Preview Changes" tab:
 
-![Edit view at GitHub](../../.gitbook/assets/screenshot-edit-preview%20%281%29%20%281%29%20%281%29%20%281%29%20%282%29.png)
+![Edit view at GitHub](../../.gitbook/assets/screenshot-edit-preview%20%281%29%20%281%29%20%281%29%20%281%29%20%283%29%20%282%29.png)
 
 ### Saving the changes
 
 To save the changes you have to create a so called "Commit" by scrolling down and hitting the button "Propose File Change":
 
-![Save changes](../../.gitbook/assets/screenshot-edit-commit%20%281%29%20%281%29.png)
+![Save changes](../../.gitbook/assets/screenshot-edit-commit%20%281%29%20%282%29%20%281%29.png)
 
 _Please note: The message you provide here will be visible in the history of the help page, so please think a second to provide a meaningful description of your changes._
 
 As a last step you have to submit the changes you have made back to us:
 
-![Create Pull Request](../../.gitbook/assets/screenshot-edit-pullrequest%20%281%29.png)
+![Create Pull Request](../../.gitbook/assets/screenshot-edit-pullrequest%20%281%29%20%283%29.png)
 
 Just hit the button "Create Pull Request" and confirm the creation on the next page which is opened by hitting "Create Pull Request".
 
