@@ -19,7 +19,7 @@ description: How JabRef can make your life easier
 
 ## Use integrity check often
 
-Use **Quality** → **Check integrity** often to ensure that the quality of your database does not degrade.
+Use **Quality** → **Check integrity** often to ensure that the quality of your library does not degrade.
 
 {% page-ref page="checkintegrity.md" %}
 
