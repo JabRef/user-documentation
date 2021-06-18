@@ -144,6 +144,7 @@ The following fields are treated as follows during export:
 | &lt;EntryType is patent&gt; number | PatentNumber |
 | number \(entry is not patent\) | Number |
 | Authors/Editors \(single author/editor is enclosed in curly braces\) | Corporate |
+| author \(if entry type is patent\) | Inventor |
 
 ### Special Import treatment
 
