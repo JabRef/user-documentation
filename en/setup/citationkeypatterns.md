@@ -26,9 +26,9 @@ Several special field markers are offered, which extract only a specific part of
 * **`[authorLastForeIni]`**: The forename initial of the last author
 * **`[authors]`**: The last name of all authors
 * **`[authorsAlpha]`**: Corresponds to the BibTeX style “alpha”,
-  * One author: First three letters of the last name
-  * Two to four authors: First letters of last names concatenated
-  * More than four authors: First letters of last names of first three authors concatenated with `+` at the end
+  * One author: The first three letters of the last name
+  * Two to four authors: The first letter of the last name of each author
+  * More than four authors: The first letter of the first three authors' last name. A `+` is added at the end if it is not in the [list of unwanted characters](citationkeypatterns.md#removing-unwanted-characters).
 * **`[authorsN]`**: The last name of up to `N` authors. If there are more authors, `EtAl` is appended
 * **`[authshort]`**: The last name if one author is given; the first character of up to three authors' last names if more than one author is given. A plus character is added, if there are more than three authors
 * **`[auth.auth.ea]`**: The last name of the first two authors, separated by `.`. If there are more than two authors, adds `.ea`
