@@ -36,6 +36,7 @@ The word _true_ prevents the file name from being interpreted as an argument to 
 * [Export file: `-o filename[,export format]`](commandline.md#export-file--o-filenameexport-format)
 * [Import BibTeX: `-importBibtex`](commandline.md#import-bibtex--importbibtex)
 * [Export matching entries: `-m [field]searchTerm,outputFile:file[,exportFormat]`](commandline.md#export-matching-entries--m-fieldsearchtermoutputfilefileexportformat)
+* [Write BibTexEntry as XMP metadata to PDF: `-w CITEKEY1[,CITEKEY2][,CITEKEYn] | PDF1[,PDF2][,PDFn] | all`](commandline.md#write-bibtexentry-as-xmp-metadata-to-pdf--w-citekey1citekey2citekeyn--pdf1pdf2pdfn--all)
 * [Fetch entries from Web: `-f=FetcherName:QueryString`](commandline.md#fetch-entries-from-web--ffetchernamequerystring)
 * [Subdatabase from .aux file: `-a infile[.aux],outfile[.bib] base-BibTeX-file`](commandline.md#subdatabase-from-aux-file--a-infileauxoutfilebib-base-bibtex-file)
 * [Set file links: `-asfl`](commandline.md#set-file-links--asfl)
@@ -131,6 +132,17 @@ Information about to the search function is given in ['advanced search' document
 _Note:_ In addition it is also possible to search for entries within a time frame such as `Year=1989-2005` \(instead of only searching for entries of a certain year as in `Year=2005`\).
 
 _Note:_ Search terms containing blanks need to be bracketed by quotation marks, as in `(author=bock or title|keywords="computer methods")and not(author=sager)`
+
+### Write BibTexEntry as XMP metadata to PDF: `-w CITEKEY1[,CITEKEY2][,CITEKEYn] | PDF1[,PDF2][,PDFn] | all`
+
+\(or `-writeXMPtoPdf -w CITEKEY1[,CITEKEY2][,CITEKEYn] | PDF1[,PDF2][,PDFn] |
+all`\)
+
+Exports information stored in the database as XMP Metadata to linked files.
+The entries can be selected by citekey.
+Individual pdf's can be selectec by the path to the pdf (either as given in the
+database or as an absolute or relative path to the pdf file itself).
+The keyword `all` may be specified to write XMP information on all pdfs in the database.
 
 ### Fetch entries from Web: `-f=FetcherName:QueryString`
 
