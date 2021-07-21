@@ -20,7 +20,7 @@ If you need to use an HTTP proxy server, you can configure JabRef to use a proxy
 
 ## Search Syntax
 
-Sinve v[5.2](https://github.com/JabRef/jabref/blob/main/CHANGELOG.md#52--2020-12-24):
+Sinve version [5.2](https://github.com/JabRef/jabref/blob/main/CHANGELOG.md#52--2020-12-24):
 
 JabRef searches the databases by using the specified keywords. One can use quotes \(`"`\) to keep words togehter: An example is `"process mining"`. It is also possible to restrict the search to dedicated fields:
 
@@ -155,7 +155,7 @@ Year ranges are not supported. In case a year range is provided, it is ignored. 
 
 #### Query syntax
 
-The INSPIRE-HEP search function merely passes your search queries onto the INSPIRE-HEP web search, so you should build your queries in the same way. INSPIRE supports the fielded search too. See [http://old.inspirehep.net/help/search-guide](http://old.inspirehep.net/help/search-guide) for advanced help.
+The INSPIRE-HEP search function merely passes your search queries onto the INSPIRE-HEP web search, so you should build your queries in the same way. INSPIRE supports the fielded search too. See [https://inspirehep.net/help/knowledge-base/inspire-paper-search/](https://inspirehep.net/help/knowledge-base/inspire-paper-search/) for advanced help.
 
 The following list shows some of the field indicators that can be used:
 
