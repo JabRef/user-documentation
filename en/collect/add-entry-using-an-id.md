@@ -106,7 +106,8 @@ To return a reference, the publication needs to have a DOI.
 
 ### RFC
 
-[IETF \(Internet Engineering Task Force\)](https://datatracker.ietf.org/) Datatracker is a database that "contains data about the documents, working groups, meetings, agendas, minutes, presentations, and more, of the IETF."
+IETF \(Internet Engineering Task Force\) Datatracker is a database that "contains data about the documents, working groups, meetings, agendas, minutes, presentations, and more, of the IETF."
+It used to be available at `https://datatracker.ietf.org/` (currently down).
 
 ID search is carried out using the \(Request for Comments number\) \(RFC\) of the IETF database.
 
