@@ -10,9 +10,9 @@ The library-specific properties are stored in the database itself. This way, whe
 **For shared SQL databases**, some properties are not available as they are not handled like a .bib file.  
 The following properties are not available:
 
-* Database encoding \(always UTF-8\).  
-* Library protection.  
-* Save sort order. 
+* Database encoding \(always UTF-8\)
+* Library protection
+* Save sort order
 {% endhint %}
 
 ## General

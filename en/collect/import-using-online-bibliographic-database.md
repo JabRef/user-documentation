@@ -37,7 +37,7 @@ Thereby, JabRef supports following fields:
 
 One can usually combine different searches using the Boolean operators `AND` and `OR`. Thereby, the default operator is `OR`.
 
-Examples:
+### Examples
 
 * `author:smith and author:jones`: search for references with authors "smith" and "jones"
 * `author:smith or author:jones`: search for references with either author "smith" or author "jones"
@@ -258,3 +258,4 @@ You cannot use the same query syntax as in the one-line search at zbmath.org; yo
 * [`en:arXiv`](https://zbmath.org/?q=en%3AarXiv): Searches for entries with a link to an `arXiv` preprint.
 * [`br:"Claude Berge"`](https://zbmath.org/?q=br%3AClaude+Berge): Searches for publications with biographical information on `Claude Berge`.
 
+<!-- markdownlint-disable-file MD024 -->
