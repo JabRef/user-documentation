@@ -82,7 +82,7 @@ ID search is carried out using the MR number.
 
 ID search is carried out using the [PubMed Unique Identifier](https://www.nlm.nih.gov/bsd/mms/medlineelements.html#pmid) \(PMID\).
 
-[Screenshot of new entry dialog](https://github.com/JabRef/user-documentation/tree/2e47d73a4cfef323b7122d3e1653444a7ec121f1/en/.gitbook/assets/newentrychoosetype-idgeneratorhighlighted-medline.png)
+[Screenshot of new entry dialog](../.gitbook/assets/newentrychoosetype-idgeneratorhighlighted-medline.png)
 
 ### mEDRA
 
@@ -106,7 +106,8 @@ To return a reference, the publication needs to have a DOI.
 
 ### RFC
 
-[IETF \(Internet Engineering Task Force\)](https://datatracker.ietf.org/) Datatracker is a database that "contains data about the documents, working groups, meetings, agendas, minutes, presentations, and more, of the IETF."
+IETF \(Internet Engineering Task Force\) Datatracker is a database that "contains data about the documents, working groups, meetings, agendas, minutes, presentations, and more, of the IETF."
+It used to be available at `https://datatracker.ietf.org/` (currently down).
 
 ID search is carried out using the \(Request for Comments number\) \(RFC\) of the IETF database.
 

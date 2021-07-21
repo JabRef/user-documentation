@@ -28,8 +28,6 @@
   * [Find duplicates](finding-sorting-and-cleaning-entries/findduplicates.md)
   * [Merge entries](finding-sorting-and-cleaning-entries/mergeentries.md)
   * [Save actions](finding-sorting-and-cleaning-entries/saveactions.md)
-  * [Add unlinked PDFs including BibTeX data into the library](finding-sorting-and-cleaning-entries/findunlinkedfiles/README.md)
-    * [Untitled](finding-sorting-and-cleaning-entries/findunlinkedfiles/untitled.md)
 * [Cite](cite/README.md)
   * [BibTeX and biblatex](cite/bibtex-and-biblatex.md)
   * [Pushing to external editor application](cite/pushtoapplications.md)

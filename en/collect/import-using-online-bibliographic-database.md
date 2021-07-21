@@ -20,7 +20,7 @@ If you need to use an HTTP proxy server, you can configure JabRef to use a proxy
 
 ## Search Syntax
 
-Sinve v[5.2](https://github.com/JabRef/jabref/blob/main/CHANGELOG.md#52--2020-12-24):
+Sinve version [5.2](https://github.com/JabRef/jabref/blob/main/CHANGELOG.md#52--2020-12-24):
 
 JabRef searches the databases by using the specified keywords. One can use quotes \(`"`\) to keep words togehter: An example is `"process mining"`. It is also possible to restrict the search to dedicated fields:
 
@@ -37,7 +37,7 @@ Thereby, JabRef supports following fields:
 
 One can usually combine different searches using the Boolean operators `AND` and `OR`. Thereby, the default operator is `OR`.
 
-Examples:
+### Examples
 
 * `author:smith and author:jones`: search for references with authors "smith" and "jones"
 * `author:smith or author:jones`: search for references with either author "smith" or author "jones"
@@ -104,7 +104,7 @@ It is possible to limit the search by adding a field name to the search, as **fi
 
 Google scholar can block "automated" crawls which generate too much traffic in a short time. To unblock your IP, doing a Google scholar search in your browser might help. You will be asked to show that you are not a robot \(a CAPTCHA challenge\). If no CAPTCHA appears, or JabRef is still blocked after performing a search in the browser, you can also change your IP address manually or wait for some hours to get unblocked again.
 
-Thus, the Google Scholar fetcher is not the best way to obtain lots of entries at the same time. The [JabRef browser extension](https://github.com/JabRef/user-documentation/tree/5c226b3c3ec3c0cc336ee37363ac4a936120b202/jabref-browser-extension.md) might be an alternative to download the bibliographic data directly from the browser.
+Thus, the Google Scholar fetcher is not the best way to obtain lots of entries at the same time. The [JabRef browser extension](./jabref-browser-extension.md) might be an alternative to download the bibliographic data directly from the browser.
 
 ### GVK
 
@@ -155,7 +155,7 @@ Year ranges are not supported. In case a year range is provided, it is ignored. 
 
 #### Query syntax
 
-The INSPIRE-HEP search function merely passes your search queries onto the INSPIRE-HEP web search, so you should build your queries in the same way. INSPIRE supports the fielded search too. See [http://old.inspirehep.net/help/search-guide](http://old.inspirehep.net/help/search-guide) for advanced help.
+The INSPIRE-HEP search function merely passes your search queries onto the INSPIRE-HEP web search, so you should build your queries in the same way. INSPIRE supports the fielded search too. See [https://inspirehep.net/help/knowledge-base/inspire-paper-search/](https://inspirehep.net/help/knowledge-base/inspire-paper-search/) for advanced help.
 
 The following list shows some of the field indicators that can be used:
 
@@ -258,3 +258,4 @@ You cannot use the same query syntax as in the one-line search at zbmath.org; yo
 * [`en:arXiv`](https://zbmath.org/?q=en%3AarXiv): Searches for entries with a link to an `arXiv` preprint.
 * [`br:"Claude Berge"`](https://zbmath.org/?q=br%3AClaude+Berge): Searches for publications with biographical information on `Claude Berge`.
 
+<!-- markdownlint-disable-file MD024 -->
