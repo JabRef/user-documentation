@@ -18,7 +18,7 @@ The following description appeared first on [tex.stackexchange.com](http://tex.s
 
 ## Preparation: Adjust the JabRef key generation pattern to fit your needs
 
-JabRef offers a BibTeX key generation and offers different patterns described at [BibtexKeyPatterns](../../setup/citationkeypatterns.md).
+JabRef offers a BibTeX key generation and offers different patterns described at [BibtexKeyPatterns](../setup/citationkeypatterns.md).
 
 ## Link the PDFs to your bib library
 
@@ -27,7 +27,7 @@ In case you have numerous PDF files and want to convert them into new entries, J
 1. Create or open a `.bib` library.
 1. Go to **Lookup -&gt; Search for unlinked local files**. \(or press `SHIFT + F7`\)
 
-   ![FindUnlinkedFiles - Menu](../../.gitbook/assets/bildschirmfoto-2021-07-05-um-19.19.09.png)\
+   ![FindUnlinkedFiles - Menu](../.gitbook/assets/bildschirmfoto-2021-07-05-um-19.19.09.png)\
    ![FindUnlinkedFiles - Menu](../.gitbook/assets/findunlinkedfiles-menu-5.2%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%283%29.png)
 
 1. The "Search for unlinked local files" dialog opens.
@@ -45,12 +45,12 @@ In case you have numerous PDF files and want to convert them into new entries, J
 
    The windows close and the entry table now contains the newly-imported entries.
 
-1. The entry editor with the last imported entry is shown ![FindUnlinkedFiles - 08 - entry editor](../../.gitbook/assets/findunlinkedfiles-08-entry-editor%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29.png)
+1. The entry editor with the last imported entry is shown ![FindUnlinkedFiles - 08 - entry editor](../.gitbook/assets/findunlinkedfiles-08-entry-editor%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29.png)
 1. You can now save the file and are finished.
-1. Optional: Click on "General" to see the linked file ![FindUnlinkedFiles - 09 - entry editor - General](../../.gitbook/assets/findunlinkedfiles-09-entry-editor-general%20%281%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29.png)
-1. Optional: Click on "BibTeX source" to see the BibTeX source ![FindUnlinkedFiles - 10 - entry editor - BibTeX source](../../.gitbook/assets/findunlinkedfiles-10-entry-editor-bibtex-source.png)
-1. Optional: You have to shrink it to see the entry in the entry table, enlarge the JabRef window and use the mouse at the upper border of the entry editor ![FindUnlinkedFiles - 11 - entry editor - shrunk](../../.gitbook/assets/findunlinkedfiles-11-entry-editor-shrunk.png)
-1. Optional: Press Esc to show the entry preview ![FindUnlinkedFiles - 12 - entry preview](../../.gitbook/assets/findunlinkedfiles-12-entry-preview.png)
+1. Optional: Click on "General" to see the linked file ![FindUnlinkedFiles - 09 - entry editor - General](../.gitbook/assets/findunlinkedfiles-09-entry-editor-general%20%281%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29.png)
+1. Optional: Click on "BibTeX source" to see the BibTeX source ![FindUnlinkedFiles - 10 - entry editor - BibTeX source](../.gitbook/assets/findunlinkedfiles-10-entry-editor-bibtex-source.png)
+1. Optional: You have to shrink it to see the entry in the entry table, enlarge the JabRef window and use the mouse at the upper border of the entry editor ![FindUnlinkedFiles - 11 - entry editor - shrunk](../.gitbook/assets/findunlinkedfiles-11-entry-editor-shrunk.png)
+1. Optional: Press Esc to show the entry preview ![FindUnlinkedFiles - 12 - entry preview](../.gitbook/assets/findunlinkedfiles-12-entry-preview.png)
 
 {% hint style="danger" %}
 The imported entries may need some editing because all the information gathered from the PDF files may not be accurate \(see below "PDFs for which it works"\).
@@ -68,15 +68,15 @@ We are also [thinking about](https://github.com/koppor/jabref/issues/169) replac
 
 ### Better filenames
 
-JabRef also offers to change the filenames. You can adapt the pattern at Preferences -&gt; Import ![Preferences - Import](../../.gitbook/assets/preferences-import%20%281%29%20%281%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29.png)
+JabRef also offers to change the filenames. You can adapt the pattern at Preferences -&gt; Import ![Preferences - Import](../.gitbook/assets/preferences-import%20%281%29%20%281%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29.png)
 
-Select "Choose pattern" and choose "bibtexkey - title" ![Preferences - Import - Choose pattern](../../.gitbook/assets/preferences-import-choose-pattern%20%281%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29.png) This results in the setting `\bibtexkey\begin{title} - \format[RemoveBrackets]{\title}\end{title}`.
+Select "Choose pattern" and choose "bibtexkey - title" ![Preferences - Import - Choose pattern](../.gitbook/assets/preferences-import-choose-pattern%20%281%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29.png) This results in the setting `\bibtexkey\begin{title} - \format[RemoveBrackets]{\title}\end{title}`.
 
 This makes the filenames start with the bibtey key followed by the full title. In the concrete case, `\bibtexkey` only may be the better option as the described bibtey key already contains the title.
 
 ### Mr.DLib
 
-JabRef used to have support for [Mr.DLib](http://mr-dlib.org/), which returned back a full BibTeX entry or a PDF. Due to unclear copyright situation of a used library, this service was removed. Further, Mr.DLib changes its focus and will provide literature recommendations. See [the realted articles tab](../../advanced/entryeditor/README.md#related-articles-tab).
+JabRef used to have support for [Mr.DLib](http://mr-dlib.org/), which returned back a full BibTeX entry or a PDF. Due to unclear copyright situation of a used library, this service was removed. Further, Mr.DLib changes its focus and will provide literature recommendations. See [the realted articles tab](../advanced/entryeditor/README.md#related-articles-tab).
 
 ### Related questions on stack overflow
 
