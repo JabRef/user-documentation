@@ -82,7 +82,7 @@ ID search is carried out using the MR number.
 
 ID search is carried out using the [PubMed Unique Identifier](https://www.nlm.nih.gov/bsd/mms/medlineelements.html#pmid) \(PMID\).
 
-[Screenshot of new entry dialog](https://github.com/JabRef/user-documentation/tree/2e47d73a4cfef323b7122d3e1653444a7ec121f1/en/.gitbook/assets/newentrychoosetype-idgeneratorhighlighted-medline.png)
+[Screenshot of new entry dialog](../.gitbook/assets/newentrychoosetype-idgeneratorhighlighted-medline.png)
 
 ### mEDRA
 

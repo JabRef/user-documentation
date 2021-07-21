@@ -104,7 +104,7 @@ It is possible to limit the search by adding a field name to the search, as **fi
 
 Google scholar can block "automated" crawls which generate too much traffic in a short time. To unblock your IP, doing a Google scholar search in your browser might help. You will be asked to show that you are not a robot \(a CAPTCHA challenge\). If no CAPTCHA appears, or JabRef is still blocked after performing a search in the browser, you can also change your IP address manually or wait for some hours to get unblocked again.
 
-Thus, the Google Scholar fetcher is not the best way to obtain lots of entries at the same time. The [JabRef browser extension](https://github.com/JabRef/user-documentation/tree/5c226b3c3ec3c0cc336ee37363ac4a936120b202/jabref-browser-extension.md) might be an alternative to download the bibliographic data directly from the browser.
+Thus, the Google Scholar fetcher is not the best way to obtain lots of entries at the same time. The [JabRef browser extension](./jabref-browser-extension.md) might be an alternative to download the bibliographic data directly from the browser.
 
 ### GVK
 
