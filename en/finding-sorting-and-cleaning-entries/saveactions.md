@@ -117,6 +117,12 @@ Converts units to LaTeX formatting. This includes:
 * Replace hyphen with non-break hyphen
 * Replace space with a hard space
 
+### Unprotect terms
+
+Remove protective braces from words.
+
+* `{In} {CDMA}` ⇒ `In CDMA`
+
 ### Capitalize
 
 Changes the first letter of all words to capital case and the remaining letters to lower case.
@@ -164,6 +170,7 @@ The [field formatters listed above](saveactions.md#list-of-actions) can also be 
 | [Unicode to LaTeX](saveactions.md#unicode-to-latex) | `unicode_to_latex` |
 | [Latex to Unicode](saveactions.md#latex-to-unicode) | `latex_to_unicode` |
 | [Units to LaTeX](saveactions.md#units-to-latex) | `units_to_latex` |
+| [Unprotect terms](saveactions.md#unprotect-terms) | `unprotect_terms` |
 | [Capitalize](saveactions.md#capitalize) | `capitalize` |
 | [Lower case](saveactions.md#lower-case) | `lower_case` |
 | [Sentence case](saveactions.md#sentence-case) | `sentence_case` |
