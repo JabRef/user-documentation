@@ -104,7 +104,7 @@ It is possible to limit the search by adding a field name to the search, as **fi
 
 Google scholar can block "automated" crawls which generate too much traffic in a short time. To unblock your IP, doing a Google scholar search in your browser might help. You will be asked to show that you are not a robot \(a CAPTCHA challenge\). If no CAPTCHA appears, or JabRef is still blocked after performing a search in the browser, you can also change your IP address manually or wait for some hours to get unblocked again.
 
-Thus, the Google Scholar fetcher is not the best way to obtain lots of entries at the same time. The [JabRef browser extension](./jabref-browser-extension.md) might be an alternative to download the bibliographic data directly from the browser.
+Thus, the Google Scholar fetcher is not the best way to obtain lots of entries at the same time. The [JabRef browser extension](jabref-browser-extension.md) might be an alternative to download the bibliographic data directly from the browser.
 
 ### GVK
 
@@ -258,4 +258,3 @@ You cannot use the same query syntax as in the one-line search at zbmath.org; yo
 * [`en:arXiv`](https://zbmath.org/?q=en%3AarXiv): Searches for entries with a link to an `arXiv` preprint.
 * [`br:"Claude Berge"`](https://zbmath.org/?q=br%3AClaude+Berge): Searches for publications with biographical information on `Claude Berge`.
 
-<!-- markdownlint-disable-file MD024 -->

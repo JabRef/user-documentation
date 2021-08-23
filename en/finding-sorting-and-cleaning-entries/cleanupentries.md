@@ -6,7 +6,7 @@ description: Tidy up your library
 
 JabRef can cleanup the entries of a library. To do a cleanup of the entries, go to **Quality → Cleanup entries**. Then select the actions to be carried out.
 
-![The Cleanup entries dialog](../.gitbook/assets/cleanupdialog%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%283%29.png)
+![The Cleanup entries dialog](../.gitbook/assets/cleanupdialog%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%283%29%20%283%29.png)
 
 under the table`Enable field formatters`. Then, under the table, you can select using 2 drop-down menus:
 

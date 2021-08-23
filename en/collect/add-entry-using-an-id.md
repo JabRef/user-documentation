@@ -14,7 +14,9 @@ For other identifiers, choose **Library → New entry**, or click on the `New en
 Sometimes the new entry contains a `url` field. This field usually points to the URL of the book at the respective online book store. In case you buy the book using this link, the service provider \(e.g., [ebook.de](https://www.ebook.de)\) receive a commission to fund the service.
 {% endhint %}
 
-{% hint style="info" %} You can also add an entry by simply pasting its BibTex or its DOI from your clipboard to the maintable. {% endhint %}
+{% hint style="info" %}
+You can also add an entry by simply pasting its BibTex or its DOI from your clipboard to the maintable.
+{% endhint %}
 
 ## Supported databases
 
@@ -36,7 +38,7 @@ First, [eBook.de's](https://www.ebook.de/de/) API is used to fetch bibliographic
 
 ID search is carried out using the [International Standard Book Number](https://en.wikipedia.org/wiki/International_Standard_Book_Number).
 
-![Screenshot of new entry dialog](../.gitbook/assets/newentrychoosetype-idgeneratorhighlighted-isbn%20%282%29%20%284%29%20%284%29%20%283%29%20%281%29%20%284%29%20%284%29%20%284%29.png)
+![Screenshot of new entry dialog](../.gitbook/assets/newentrychoosetype-idgeneratorhighlighted-isbn%20%282%29%20%284%29%20%284%29%20%283%29%20%281%29%20%284%29%20%284%29%20%284%29%20%284%29.png)
 
 ### DiVA
 
@@ -82,7 +84,7 @@ ID search is carried out using the MR number.
 
 ID search is carried out using the [PubMed Unique Identifier](https://www.nlm.nih.gov/bsd/mms/medlineelements.html#pmid) \(PMID\).
 
-[Screenshot of new entry dialog](../.gitbook/assets/newentrychoosetype-idgeneratorhighlighted-medline.png)
+[Screenshot of new entry dialog](https://github.com/JabRef/user-documentation/tree/4fe3bfdabd1204001f27cb7b138818d58c0ea1d0/en/.gitbook/assets/newentrychoosetype-idgeneratorhighlighted-medline.png)
 
 ### mEDRA
 
@@ -106,8 +108,7 @@ To return a reference, the publication needs to have a DOI.
 
 ### RFC
 
-IETF \(Internet Engineering Task Force\) Datatracker is a database that "contains data about the documents, working groups, meetings, agendas, minutes, presentations, and more, of the IETF."
-It used to be available at `https://datatracker.ietf.org/` (currently down).
+IETF \(Internet Engineering Task Force\) Datatracker is a database that "contains data about the documents, working groups, meetings, agendas, minutes, presentations, and more, of the IETF." It used to be available at `https://datatracker.ietf.org/` \(currently down\).
 
 ID search is carried out using the \(Request for Comments number\) \(RFC\) of the IETF database.
 
