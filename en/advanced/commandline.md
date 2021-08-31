@@ -137,7 +137,7 @@ _Note:_ Search terms containing blanks need to be bracketed by quotation marks, 
 
 \(or `-writeMetadatatoPdf -w CITEKEY1[,CITEKEY2][,CITEKEYn] | PDF1[,PDF2][,PDFn] | all`\)
 
-Exports information stored in the database as Metadata to linked files. The metadata is stored as XMP metadata and as an embedded bib file. The entries can be selected by citekey. Individual pdf's can be selectec by the path to the pdf \(either as given in the database or as an absolute or relative path to the pdf file itself\). The keyword `all` may be specified to write metadata on all pdfs in the database.
+Exports information stored in the database as Metadata to linked files. The metadata is stored as XMP metadata and as an embedded bib file. The entries can be selected by citekey. Individual pdfs can be selectec by the path to the pdf \(either as given in the database or as an absolute or relative path to the pdf file itself\). The keyword `all` may be specified to write metadata on all pdfs in the database.
 
 ### Write BibTexEntry as XMP metadata to PDF: `-writeXMPtoPdf CITEKEY1[,CITEKEY2][,CITEKEYn] | PDF1[,PDF2][,PDFn] | all`
 
