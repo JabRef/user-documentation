@@ -102,7 +102,7 @@ To change the pattern to `[authors]:[camel]`, execute the following steps:
 
 1. Open the preferences  
 
-   ![Options Preferences](../.gitbook/assets/optionspreferences%20%282%29%20%281%29%20%285%29%20%285%29%20%285%29%20%285%29%20%282%29.png)
+   ![Options Preferences](../.gitbook/assets/optionspreferences%20%282%29%20%281%29%20%285%29%20%285%29%20%285%29%20%285%29%20%285%29%20%285%29%20%282%29.png)
 
 2. Navigate to "General"  
 
@@ -114,11 +114,11 @@ To change the pattern to `[authors]:[camel]`, execute the following steps:
 
 4. Navigate to "BibTeX key generator"  
 
-   ![BibTeX key generator preferences](../.gitbook/assets/preferences-bibtex-key-generator%20%282%29%20%284%29%20%285%29%20%285%29%20%285%29%20%281%29.png)
+   ![BibTeX key generator preferences](../.gitbook/assets/preferences-bibtex-key-generator%20%282%29%20%284%29%20%285%29%20%285%29%20%285%29%20%285%29%20%285%29%20%281%29.png)
 
 5. Change the default pattern to `[authors]:[camel]`.  
 
-   ![BibTeX key generator preferences - authors camel](../.gitbook/assets/preferences-bibtex-key-generator-authors-camel%20%282%29%20%285%29%20%284%29%20%281%29%20%285%29%20%285%29%20%285%29%20%283%29.png)
+   ![BibTeX key generator preferences - authors camel](../.gitbook/assets/preferences-bibtex-key-generator-authors-camel%20%282%29%20%285%29%20%284%29%20%281%29%20%285%29%20%285%29%20%285%29%20%285%29%20%285%29%20%283%29.png)
 
 6. Press "OK" 
 
