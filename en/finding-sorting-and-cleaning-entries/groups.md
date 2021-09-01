@@ -61,7 +61,7 @@ A description of the group, to help you remember what it is about. This descript
 
 ### Icon and color
 
-An icon can be displayed in front of the group name. Choose your favorite icon among the ones available at [https://materialdesignicons.com/](https://materialdesignicons.com/), and enter its name of the field _Icon_ \(replacing any hyphens \(`-`\) with underscores \(`_`\)). The color of the icon can be set in the field _Color_.
+An icon can be displayed in front of the group name. Choose your favorite icon among the ones available at [https://materialdesignicons.com/](https://materialdesignicons.com/), and enter its name of the field _Icon_ \(replacing any hyphens \(`-`\) with underscores \(`_`\)\). The color of the icon can be set in the field _Color_.
 
 ![](../.gitbook/assets/groups-groupwindow-iconcolorhierarchy-jabref5.2.png)
 

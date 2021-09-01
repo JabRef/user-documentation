@@ -1,6 +1,6 @@
 # Manage associated files
 
-JabRef lets you link up your entries with files of any type stored on your system. Thereby, it uses the field `file`, which contains a list of linked files. Each entry can have an arbitrary number of file links, and each linked file can be opened quickly from JabRef. The fields `url` and `doi` are used as links to documents on the web in the form of an URL or a DOI identifier, respectively \(see [URL and DOI in JabRef](../advanced/externalfiles.md)\).
+JabRef lets you link up your entries with files of any type stored on your system. Thereby, it uses the field `file`, which contains a list of linked files. Each entry can have an arbitrary number of file links, and each linked file can be opened quickly from JabRef. The fields `url` and `doi` are used as links to documents on the web in the form of a URL or a DOI identifier, respectively \(see [URL and DOI in JabRef](../advanced/externalfiles.md)\).
 
 In BibTeX/biblatex terms, the file links are stored as text in the field `file`. From within JabRef, however, they appear as an editable list of links accessed from the entry editor along with other fields.
 
@@ -8,7 +8,7 @@ In BibTeX/biblatex terms, the file links are stored as text in the field `file`.
 
 If the "file" field is included in [General fields](../setup/generalfields.md), you can edit the list of external links for an entry in the [Entry editor](../advanced/entryeditor/). The editor includes buttons for inserting, editing and removing links, as well as buttons for reordering the list of links.
 
-![list of linked files](../.gitbook/assets/entryeditor-linkedfiles%20%282%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%286%29%20%286%29%20%286%29.png)
+![](../.gitbook/assets/jabref-entryeditor-files.png)
 
 ## Directories for files
 
@@ -18,21 +18,21 @@ JabRef offers the following directory settings:
 
    ![Main file directory](../.gitbook/assets/preferences-linkedfiles-5.2%20%281%29%20%281%29.png)
 
-2. **Library → Library properties**, items _General file directory,_ and _User-specific file directory_.![Override default file directories](../.gitbook/assets/libraryproperties-overridedefaultfiledirectories%20%282%29%20%283%29%20%282%29%20%283%29%20%283%29%20%286%29%20%286%29%20%283%29.png)
+2. **Library → Library properties**, items _General file directory,_ and _User-specific file directory_.![Override default file directories](../.gitbook/assets/jabref-lib-properties.png)
 
 One of these settings is required. Mostly the "Main file directory" is enough.
 
 JabRef uses these 3 directories to search for the files: JabRef starts in the user-specific file directory, then the general file directory, and, finally, the main file directory​
 
-JabRef enables setting a directory per database. When sharing a library across multiple persons, each user might have a different directory. Either each user can set his directory in the "Main file directory". In case the group also shares papers and thus there are two directories \(the private one and a group-shared one\), one can set a directory within the library \(the "General file directory"\). In case a user has a different location of the shared folder \(e.g., different paths on Linux and Windows\), he can use the "User-specific file directory". This setting is persisted in the `bib` file in a way that it does not overwrite the setting of another user. For this, JabRef uses the username of the currently logged in user \(`-<loginname>` is used as a suffix in the `jabref-meta` field\). So, both `mary` and `aileen` can set a different user-specific file directory.
+JabRef enables setting a directory per database. When sharing a library across multiple persons, each user might have a different directory. Either, each user can set his directory in the "Main file directory". In case the group also shares papers and thus there are two directories \(the private one and a group-shared one\), one can set a directory within the library \(the "General file directory"\). In case a user has a different location of the shared folder \(e.g., different paths on Linux and Windows\), he can use the "User-specific file directory". This setting is persisted in the `bib` file in a way that it does not overwrite the setting of another user. For this, JabRef uses the username of the currently logged-in user \(`-<loginname>` is used as a suffix in the `jabref-meta` field\). So, both `mary` and `aileen` can set a different user-specific file directory.
 
-If JabRef saves an attached file and my loginname matches the name stored in the `bib` file, it chooses that directory. If no match is found, it uses the "General file directory" of the bib file. If that is not found, it uses the one configured at Options → Preferences → Linked files.
+If JabRef saves an attached file and my login name matches the name stored in the `bib` file, it chooses that directory. If no match is found, it uses the "General file directory" of the bib file. If that is not found, it uses the one configured at Options → Preferences → Linked files.
 
 In some settings, the bib file is stored in **the same directory** as the PDF files. Then, one ignores all the above directories and enable "Search and store files relative to library file location". In this case, JabRef starts searching for PDF files in the directory of the `bib` file. It is also possible to achieve this result by setting `.` as "General file directory" in the library properties.
 
-![Search and store files relative to library file location](../.gitbook/assets/preferences-file-searchandstoreforfilesrelativetolibraryfilelocation%20%281%29%20%281%29%20%281%29%20%281%29%20%284%29%20%284%29%20%284%29.png).
+![Search and store files relative to library file location](../.gitbook/assets/preferences-file-searchandstoreforfilesrelativetolibraryfilelocation%20%281%29%20%281%29%20%281%29%20%281%29%20%284%29%20%284%29%20%284%29%20%284%29.png).
 
-Relative file directories obviously only work in the library properties fo a bib file, e.g. `a.bib` Library → Library properties → General file directory → `papers`. Assume to have two bib files: `a.bib` and `b.bib` located in different directories: `a.bib` located at `C:\a.bib` and `b.bib` located at `X:\b.bib`. When I click on the `+` icon in the general Tab of file `a.bib`, the popup is opened in the directory `C:\papers` \(assuming `C:\papers` exists\).
+Relative file directories obviously only work in the library properties for a bib file, e.g. `a.bib` Library → Library properties → General file directory → `papers`. Assume to have two bib files: `a.bib` and `b.bib` located in different directories: `a.bib` located at `C:\a.bib` and `b.bib` located at `X:\b.bib`. When I click on the `+` icon in the general Tab of file `a.bib`, the popup is opened in the directory `C:\papers` \(assuming `C:\papers` exists\).
 
 ## Auto linking files
 
@@ -44,7 +44,7 @@ The rules for which file names can be auto-linked to a citation key can be set u
 
 For an entry, if you want to download a file and link it to the entry, you can do this by clicking the **Download** button in the entry editor.
 
-![Download from URL](../.gitbook/assets/entryeditor-general-downloadfilefromurl%20%282%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%284%29%20%284%29%20%281%29.png)
+![Download from URL](../.gitbook/assets/entryeditor-general-downloadfilefromurl%20%282%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%284%29%20%284%29%20%284%29%20%281%29.png)
 
 A dialog box will appear, prompting you to enter the URL. The file will be downloaded to your main file directory, named based on the entry's citation key, and finally linked from the entry.
 

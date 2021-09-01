@@ -27,7 +27,7 @@ In case you have numerous PDF files and want to convert them into new entries, J
 1. Create or open a `.bib` library.
 2. Go to **Lookup -&gt; Search for unlinked local files**. \(or press `SHIFT + F7`\)
 
-   ![FindUnlinkedFiles - Menu](../.gitbook/assets/bildschirmfoto-2021-07-05-um-19.19.09.png) ![FindUnlinkedFiles - Menu](../.gitbook/assets/findunlinkedfiles-menu-5.2%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%283%29%20%283%29%20%283%29.png)
+   ![FindUnlinkedFiles - Menu](../.gitbook/assets/bildschirmfoto-2021-07-05-um-19.19.09.png) ![FindUnlinkedFiles - Menu](../.gitbook/assets/findunlinkedfiles-menu-5.2%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%283%29%20%283%29%20%284%29%20%283%29.png)
 
 3. The "Search for unlinked local files" dialog opens.
 
@@ -44,9 +44,9 @@ In case you have numerous PDF files and want to convert them into new entries, J
 
    The windows close and the entry table now contains the newly-imported entries.
 
-9. The entry editor with the last imported entry is shown ![FindUnlinkedFiles - 08 - entry editor](../.gitbook/assets/findunlinkedfiles-08-entry-editor%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29.png)
+9. The entry editor with the last imported entry is shown ![FindUnlinkedFiles - 08 - entry editor](../.gitbook/assets/findunlinkedfiles-08-entry-editor%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%283%29.png)
 10. You can now save the file and are finished.
-11. Optional: Click on "General" to see the linked file ![FindUnlinkedFiles - 09 - entry editor - General](../.gitbook/assets/findunlinkedfiles-09-entry-editor-general%20%281%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29.png)
+11. Optional: Click on "General" to see the linked file ![FindUnlinkedFiles - 09 - entry editor - General](../.gitbook/assets/findunlinkedfiles-09-entry-editor-general%20%281%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%283%29.png)
 12. Optional: Click on "BibTeX source" to see the BibTeX source ![FindUnlinkedFiles - 10 - entry editor - BibTeX source](../.gitbook/assets/findunlinkedfiles-10-entry-editor-bibtex-source.png)
 13. Optional: You have to shrink it to see the entry in the entry table, enlarge the JabRef window and use the mouse at the upper border of the entry editor ![FindUnlinkedFiles - 11 - entry editor - shrunk](../.gitbook/assets/findunlinkedfiles-11-entry-editor-shrunk.png)
 14. Optional: Press Esc to show the entry preview ![FindUnlinkedFiles - 12 - entry preview](../.gitbook/assets/findunlinkedfiles-12-entry-preview.png)
@@ -67,9 +67,9 @@ We are also [thinking about](https://github.com/koppor/jabref/issues/169) replac
 
 ### Better filenames
 
-JabRef also offers to change the filenames. You can adapt the pattern at Preferences -&gt; Import ![Preferences - Import](../.gitbook/assets/preferences-import%20%281%29%20%281%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%281%29.png)
+JabRef also offers to change the filenames. You can adapt the pattern at Preferences -&gt; Import ![Preferences - Import](../.gitbook/assets/preferences-import%20%281%29%20%281%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%283%29%20%281%29.png)
 
-Select "Choose pattern" and choose "bibtexkey - title" ![Preferences - Import - Choose pattern](../.gitbook/assets/preferences-import-choose-pattern%20%281%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%283%29.png) This results in the setting `\bibtexkey\begin{title} - \format[RemoveBrackets]{\title}\end{title}`.
+Select "Choose pattern" and choose "bibtexkey - title" ![Preferences - Import - Choose pattern](../.gitbook/assets/preferences-import-choose-pattern%20%281%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%283%29%20%283%29.png) This results in the setting `\bibtexkey\begin{title} - \format[RemoveBrackets]{\title}\end{title}`.
 
 This makes the filenames start with the bibtey key followed by the full title. In the concrete case, `\bibtexkey` only may be the better option as the described bibtey key already contains the title.
 
