@@ -67,6 +67,12 @@ The following fields are recognized by the default bibliography styles:
 * **volume** The volume of a journal or multivolume book.
 * **year** The year of publication or, for an unpublished work, the year it was written. Generally it should consist of four numerals, such as `1984`, although the standard styles can handle any `year` whose last four nonpunctuation characters are numerals, such as "\(about 1984\)". This field is required for most entry types.
 
+## BibLaTeX fields
+
+BibLaTeX defines more fields. It gets especially interesting in the context of date handling. See the [BibLaTeX manual](https://ftp.rrzn.uni-hannover.de/pub/mirror/tex-archive/macros/latex/contrib/biblatex/doc/biblatex.pdf) for detais.
+
+* **date** The date of the publication. Can also include date ranges \(e.g., `2014-04-07/2014-04-10`\). 
+
 ## Non-standard fields
 
 BibTeX is extremely popular, and many people have used it to store information in non-standard fields. The information in these non-standard fields may be ignored by BibTeX.
