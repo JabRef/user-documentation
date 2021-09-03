@@ -1,7 +1,7 @@
 # Getting started
 
 {% hint style="info" %}
-In French/En français: [Découvrir JabRef ](https://app.gitbook.com/@jabref/s/jabref/~/drafts/-Mif989FcWHBK34sNBxx/getting-started)\(external document, courtesy of INRAE\)
+In French/En français: [Découvrir JabRef ](https://github.com/JabRef/user-documentation/raw/main/en/.gitbook/assets/infodoc-jabref-2020-09-09-1.pdf)\(external document, courtesy of INRAE\)
 {% endhint %}
 
 ## Main Window of JabRef
