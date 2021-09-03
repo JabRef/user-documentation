@@ -1,5 +1,9 @@
 # Getting started
 
+{% hint style="info" %}
+In French/En français: [Découvrir JabRef ](https://app.gitbook.com/@jabref/s/jabref/~/drafts/-Mif989FcWHBK34sNBxx/getting-started)\(external document, courtesy of INRAE\)
+{% endhint %}
+
 ## Main Window of JabRef
 
 Upon the first start of JabRef the main user interface is showing up the main elements are:
