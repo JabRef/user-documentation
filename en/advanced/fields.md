@@ -71,7 +71,7 @@ The following fields are recognized by the default bibliography styles:
 
 BibLaTeX defines more fields. It gets especially interesting in the context of date handling. See the [BibLaTeX manual](https://ftp.rrzn.uni-hannover.de/pub/mirror/tex-archive/macros/latex/contrib/biblatex/doc/biblatex.pdf) for detais.
 
-* **date** The date of the publication. Can also include date ranges \(e.g., `2014-04-07/2014-04-10`\). 
+* **date** The date of the publication. Can also include date ranges \(e.g., `2014-04-07/2014-04-10`\).
 
 ## Non-standard fields
 
