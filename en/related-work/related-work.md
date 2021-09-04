@@ -67,8 +67,8 @@ There are also scripts for working in an automated way on BibTeX files:
 * [Mendeley](https://www.mendeley.com/)
 * [Papers](http://www.papersapp.com/)
 * [Papyres](http://dl.acm.org/citation.cfm?id=1510120)
-* [PUMA](http://www.academic-puma.de/)
-  * Source: <https://bitbucket.org/bibsonomy/puma>
+* [PUMA](https://de.wikipedia.org/wiki/PUMA_(Akademisches_Publikationsmanagement))
+  * Source code: <https://bitbucket.org/bibsonomy/puma>
 * [refbase](http://refbase.sourceforge.net)
 * [RefDB](http://refdb.sourceforge.net/)
 * [RefWorks](https://www.refworks.com/)
