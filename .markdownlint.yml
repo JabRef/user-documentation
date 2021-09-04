@@ -16,6 +16,9 @@ MD022:
   lines_above: 0
   lines_below: 1
 
+# We may have duplicate headings (e.g., #### Examples in en/collect/import-using-online-bibliographic-database.md)
+MD024: false
+
 # The FAQs state questions - we allow them
 MD026:
   punctuation: ".,;:!"
