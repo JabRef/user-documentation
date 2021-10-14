@@ -129,7 +129,7 @@ You can create new fields by [editing \(or creating\) entry types](../setup/cust
 
 ### BibTeX files
 
-* [https://github.com/lvilnis/BibtexParser/tree/main/inputs](https://github.com/lvilnis/BibtexParser/tree/main/inputs)
+* [https://github.com/lvilnis/BibtexParser/tree/master/inputs](https://github.com/lvilnis/BibtexParser/tree/master/inputs)
 * [https://github.com/environmentalinformatics-marburg/jabref](https://github.com/environmentalinformatics-marburg/jabref)
 * [http://www.math.uiuc.edu/K-theory/aux/K-theory.bib](http://www.math.uiuc.edu/K-theory/aux/K-theory.bib) \(large file &gt; 6000 publications\)
 * [http://mirrors.ircam.fr/pub/CTAN/biblio/bibtex/contrib/test/test.bib](http://mirrors.ircam.fr/pub/CTAN/biblio/bibtex/contrib/test/test.bib)
