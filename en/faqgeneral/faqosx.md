@@ -50,7 +50,7 @@ If you see an error or if you have a different version, you need to install the 
 
 After the installation is finished, you should see the correct version in the Terminal. You probably have to close and re-open the Terminal to apply the changes. If you still see the wrong version, most likely a newer version than `1.8.0_161`, then your system uses the newer version per default, although the correct `1.8.0_161` version is installed.
 
-Assuming you have a working Java installation, you can run JabRef directly from command line. Head over to the [JabRef development builds download](https://builds.jabref.org/master/) and download `JabRef--master--latest.jar`. The downloads are usually stored in your home directory under `Downloads`. In the terminal, you have to **c**hange **d**irectoy to this folder by typing
+Assuming you have a working Java installation, you can run JabRef directly from command line. Head over to the [JabRef development builds download](https://builds.jabref.org/main/) and download `JabRef--master--latest.jar`. The downloads are usually stored in your home directory under `Downloads`. In the terminal, you have to **c**hange **d**irectoy to this folder by typing
 
 ```text
 cd ~/Downloads

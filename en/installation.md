@@ -24,9 +24,9 @@ Be sure to activate "Load and Save preferences from/to jabref.xml on start-up \(
 
 #### Development version
 
-In case, you want to take advantage of the [latest features](https://github.com/JabRef/jabref/blob/master/CHANGELOG.md#unreleased), you can use pre-built binaries crafted from the latest development branch. To use the prebuilt binaries, visit [builds.jabref.org/master](https://builds.jabref.org/master/) and download the packaged binaries \(e.g., `dmg` files for MacOS and `exe` files for Windows\), run them and follow the instructions.
+In case, you want to take advantage of the [latest features](https://github.com/JabRef/jabref/blob/main/CHANGELOG.md#unreleased), you can use pre-built binaries crafted from the latest development branch. To use the prebuilt binaries, visit [builds.jabref.org/master](https://builds.jabref.org/main/) and download the packaged binaries \(e.g., `dmg` files for MacOS and `exe` files for Windows\), run them and follow the instructions.
 
-If you want to try the development version in parallel with the stable version, we recommend to download the portable version \(e.g. `JabRef-X.Y.portable_windows.zip`, `JabRef-X.Y.portable_macos.tar.gz`, or `JabRef-X.Y.portable_linux.tar.gz`\) from [builds.jabref.org/master](https://builds.jabref.org/master/) to ensure that both versions do not conflict.
+If you want to try the development version in parallel with the stable version, we recommend to download the portable version \(e.g. `JabRef-X.Y.portable_windows.zip`, `JabRef-X.Y.portable_macos.tar.gz`, or `JabRef-X.Y.portable_linux.tar.gz`\) from [builds.jabref.org/master](https://builds.jabref.org/main/) to ensure that both versions do not conflict.
 
 ## Troubleshooting
 
@@ -48,7 +48,7 @@ start regedit and create the following key: `HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432
 
 ### How can I start or focus JabRef with hotkey ⊞+J \(Win+J\)?
 
-Use [AutoHotkey](http://www.autohotkey.com/) and [JabRef.ahk](https://github.com/koppor/autohotkey-scripts/blob/master/JabRef.ahk) provided at [koppor's autohotkey scripts](https://github.com/koppor/autohotkey-scripts).
+Use [AutoHotkey](http://www.autohotkey.com/) and [JabRef.ahk](https://github.com/koppor/autohotkey-scripts/blob/main/JabRef.ahk) provided at [koppor's autohotkey scripts](https://github.com/koppor/autohotkey-scripts).
 {% endtab %}
 
 {% tab title="Linux" %}

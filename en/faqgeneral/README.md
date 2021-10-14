@@ -44,7 +44,7 @@ A: Yes. In **Options → Preferences → General**, set "Default Encoding" to _U
 
 ## Q: If I double click a BibTeX file in the file browser, JabRef always opens a new window. Can JabRef open the libraries in the same window just in a different tab?
 
-A: In **Options → Preferences → Network**, in the “Remote operation” section, put a checkmark to “Listen for remote operation on port”. This option allows new instances of JabRef to detect the instance already running, and pass files to that instead of opening a new window. \(Default option since [JabRef 3.0](https://github.com/JabRef/jabref/blob/master/CHANGELOG.md#30---2015-11-29)\).
+A: In **Options → Preferences → Network**, in the “Remote operation” section, put a checkmark to “Listen for remote operation on port”. This option allows new instances of JabRef to detect the instance already running, and pass files to that instead of opening a new window. \(Default option since [JabRef 3.0](https://github.com/JabRef/jabref/blob/main/CHANGELOG.md#30---2015-11-29)\).
 
 ## Q: I have a DOI/ISBN/ePrint/etc. Is it possible to create an entry directly out of this identifier?
 

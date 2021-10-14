@@ -27,7 +27,7 @@ Crowdin offers to quickly add a new language. Please contact us so that we add a
 
 ## Testing the translation
 
-You may decide to wait for [a new test version of JabRef to be published](https://builds.jabref.org/master/).
+You may decide to wait for [a new test version of JabRef to be published](https://builds.jabref.org/main/).
 
 To test directly your translation, you must be able to compile the source tree after making your additions. This requires you to install the [Java Development Kit](http://www.oracle.com/technetwork/java/javase/downloads/index.html). Ensure that you use the most recent version.
 
@@ -43,7 +43,7 @@ For a new language to be available within JabRef, a corresponding line must be a
 
 ### File location
 
-For each language, there is the file `JabRef_xx.properties` \(`xx` denotes the country code for the language\). It contains all translations in a key/value format. In the JabRef source code tree, the property files reside in the [/src/main/resources/l10n](https://github.com/JabRef/jabref/blob/master/src/main/resources/l10n/) directory.
+For each language, there is the file `JabRef_xx.properties` \(`xx` denotes the country code for the language\). It contains all translations in a key/value format. In the JabRef source code tree, the property files reside in the [/src/main/resources/l10n](https://github.com/JabRef/jabref/blob/main/src/main/resources/l10n/) directory.
 
 ### File format
 

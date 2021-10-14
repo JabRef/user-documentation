@@ -49,7 +49,7 @@ Our team consists of volunteers. To provide better support, we are currently try
 
 We collect small issues at [https://github.com/JabRef/jabref/labels/good%20first%20issue](https://github.com/JabRef/jabref/labels/good%20first%20issue). In case you do not find something suitable, you are invited to get in touch with us. Comment at the issue, check the [the forum](https://discourse.jabref.org/) or join our [chatting channel](https://gitter.im/JabRef/jabref). For the brave, we also collect issues at [https://github.com/koppor/jabref/labels/good%20first%20issue](https://github.com/koppor/jabref/labels/good%20first%20issue).
 
-After finding something, please check our [CONTRIBUTING.md](https://github.com/JabRef/jabref/blob/master/CONTRIBUTING.md) for detailed information and further links.
+After finding something, please check our [CONTRIBUTING.md](https://github.com/JabRef/jabref/blob/main/CONTRIBUTING.md) for detailed information and further links.
 
 ## I want something with huge impact [![Discourse](https://img.shields.io/badge/discourse-online-green.svg)](https://discourse.jabref.org/c/features/6)
 
