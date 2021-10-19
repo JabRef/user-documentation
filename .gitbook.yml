@@ -12,13 +12,16 @@ redirects:
   contributing/translatinggui: ./faqcontributing/how-to-translate-the-ui.md
   download: ./installation.md
   EntryEditor: ./advanced/entryeditor/README.md
-  faq: ./faqgeneral.md
-  faq/faqgeneral: ./faqgeneral.md
+  faqcontributing: ./contributing/README.md
+  faqcontributing/how-to-improve-the-help-page: ./contributing/how-to-improve-the-help-page.md
+  faqcontributing/how-to-translate-the-ui: ./contributing/how-to-translate-the-ui.md
+  faq/faqgeneral: ./faq
+  faq/faqlinux: ./faq/linux.md
+  faq/faqs-on-operating-systems/faqwindows: ./faq/windows.md
+  faq/faqs-on-operating-systems/faqosx: ./faq/osx.md
+  faq/faqosx: ./faq/osx.md
   faq/faqsharing: ./collaborative-work/README.md
-  faq/faqwindows: ./installation.md
-  faq/faqs-on-operating-systems/faqwindows: ./installation.md
-  faq/faqosx: ./installation.md
-  faq/faqs-on-operating-systems/faqosx: ./installation.md
+  faq/faqwindows: ./faq/windows.md
   fields/setclearrenamefields: ./advanced/fields.md
   finding-sorting-and-cleaning-entries/import-using-publication-identifiers/isbntobibtex: ./collect/add-entry-using-an-id.md
   finding-sorting-and-cleaning-entries/import-using-publication-identifiers/doitobibtex: ./collect/add-entry-using-an-id.md
