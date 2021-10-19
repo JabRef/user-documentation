@@ -13,8 +13,11 @@ redirects:
   download: ./installation.md
   EntryEditor: ./advanced/entryeditor/README.md
   faqcontributing: ./contributing/README.md
+  faq/contributing: ./contributing/README.md
   faqcontributing/how-to-improve-the-help-page: ./contributing/how-to-improve-the-help-page.md
+  faq/contributing/how-to-improve-the-help-page: ./contributing/how-to-improve-the-help-page.md
   faqcontributing/how-to-translate-the-ui: ./contributing/how-to-translate-the-ui.md
+  faq/contributing/how-to-translate-the-ui: ./contributing/how-to-translate-the-ui.md
   faq/faqgeneral: ./faq
   faq/faqlinux: ./faq/linux.md
   faq/faqs-on-operating-systems/faqwindows: ./faq/windows.md
