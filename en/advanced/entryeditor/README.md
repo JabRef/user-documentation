@@ -1,7 +1,7 @@
 # Entry Editor
 
 {% hint style="warning" %}
-This information is outdated. Please help to improve it \([how to edit a help page](../../faqcontributing/how-to-improve-the-help-page.md#editing-help-pages-directly-in-the-browser)\)​.
+This information is outdated. Please help to improve it \([how to edit a help page](../../contributing/how-to-improve-the-help-page.md#editing-help-pages-directly-in-the-browser)\).
 {% endhint %}
 
 The entry editor opens from [main window](../main-window.md) \(table of entries\). To open it for a specific entry, you can either:

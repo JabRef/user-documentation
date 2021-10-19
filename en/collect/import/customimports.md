@@ -1,7 +1,7 @@
 # Custom import filters
 
 {% hint style="warning" %}
-This information is outdated. Please help to improve it \([how to edit a help page](../../faqcontributing/how-to-improve-the-help-page.md#editing-help-pages-directly-in-the-browser)\)​.
+This information is outdated. Please help to improve it \([how to edit a help page](../../contributing/how-to-improve-the-help-page.md#editing-help-pages-directly-in-the-browser)\).
 {% endhint %}
 
 JabRef allows you to define and use your own importers, in very much the same way as the standard import filters are defined. An import filter is defined by one or more Java _classes_, which parse the contents of a file from an input stream and create BibTex entries. So with some basic Java programming, you can add an importer for your favorite source of references or register a new, improved version of an existing importer. Also, this allows you to add compiled custom importers that you might have obtained e.g. from GitHub without rebuilding JabRef \(see "Sharing your work" below\).
