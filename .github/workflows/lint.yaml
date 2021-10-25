@@ -9,5 +9,5 @@ jobs:
       - name: Lint all files
         uses: avto-dev/markdown-lint@v1
         with:
-          args: 'en/'
+          args: 'README.md'
           config: '.markdownlint.yml'
