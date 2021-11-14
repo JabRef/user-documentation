@@ -6,15 +6,15 @@ When you import new entries from a supported reference format or fetch entries d
 
 ## The inspection window
 
-Entries are first shown in the inspection window. Note that, if this takes too long \(for example\), you can click on the button **Stop** at the bottom of the window.
+Entries are first shown in the inspection window. Note that, if this takes too long (for example), you can click on the button **Stop** at the bottom of the window.
 
 Once the entries displayed in the inspection window, none of them have been added to one of your databases yet.
 
-![Screenshot of the inspection window](../../.gitbook/assets/inspectionwindow%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%284%29%20%284%29%20%282%29.png)
+![Screenshot of the inspection window](<../../.gitbook/assets/inspectionwindow (2) (2) (2) (2) (2) (2) (2) (2) (4) (4) (2) (5).png>)
 
 By default, all the entries are selected for importation, as shown by the checked boxes in the _Keep_ column. You can select/unselect an entry by clicking on these checkboxes. On the left panel, buttons allow you to **Select all** the entries for importation, or to **Deselect all** the entries.
 
-A left-click on an entry \(out of the check box and icons\) let you choose it. It displays a preview of the entry below the entry table. As usual, you can choose several entries by using the Shift or the Ctrl keys. Then, pushing the button **Delete** on the left panel will remove the chosen entries from the table.
+A left-click on an entry (out of the check box and icons) let you choose it. It displays a preview of the entry below the entry table. As usual, you can choose several entries by using the Shift or the Ctrl keys. Then, pushing the button **Delete** on the left panel will remove the chosen entries from the table.
 
 A right-click on an entry displays a drop-down menu which allows you to:
 
@@ -27,7 +27,7 @@ A right-click on an entry displays a drop-down menu which allows you to:
 
 ### Duplicated entries
 
-Potential duplicates are pointed out by an icon in the second column. A click on this icon allows you to [check the similarities](../../finding-sorting-and-cleaning-entries/findduplicates.md). A button on the left panel allows you to **Deselect all duplicates** \(without inspection\).
+Potential duplicates are pointed out by an icon in the second column. A click on this icon allows you to [check the similarities](../../finding-sorting-and-cleaning-entries/findduplicates.md). A button on the left panel allows you to **Deselect all duplicates** (without inspection).
 
 ### Citation key generation
 
@@ -36,4 +36,3 @@ On the left panel, if the box **Generate keys** is checked, keys will be automat
 ### Import into the database
 
 Once you are done with the entry selection, you can add these entries to your database by clicking on **OK** at the bottom of the window. Alternatively, you can **Cancel** the import.
-
