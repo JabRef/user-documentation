@@ -83,7 +83,7 @@ For a group defined with a hierarchical context _Intersection_, only the entries
 
 This is especially relevant for groups based on keywords or search expression, where it is often useful to define a group that intersects its supergroup. For example, consider a supergroup containing entries with the keyword _distribution_ and a subgroup containing entries with the keyword _gauss_. With the subgroup _gauss_ defined as an intersection (of its supergroup), selecting the subgroup _gauss_ displays entries that match both conditions, i.e. are concerned with Gaussian distributions. Note that entries that only belong to the subgroup _gauss_ will not be shown, i.e. for an entry to be displayed when selecting _gauss_, it must be assigned to both the subgroup _gauss_ and the supergroup _distribution_. By adding another intersection group for _laplace_ to the supergroup _distribution_, the grouping can easily be extended to Laplace distributions.
 
-### Union between a group and its subgroups
+#### Union between a group and its subgroups
 
 The union of a group and its subgroups is the logical complement of the intersection: when defined as _union_, selecting the group displays _both_ the group's own entries and its subgroups' entries.
 
@@ -91,7 +91,7 @@ You can create a group for your references about music, and then subgroups about
 
 ### Nesting (sub)groups
 
-You can populate your Group pane by configuring JabRef to use the bibtex source's `keywords = {...},` by clicking the `+` icon and followwing the [previous instructions](groups.md#specified-keywords). You can nest subgroups by using the right chevron `>` ([see here](https://github.com/JabRef/jabref/pull/2703/files#diff-e8f986c28ee8a35397cde5cb1352d4662f62be7085cd7d8856db279f1205245dR17)). You achieve this by editing the `keywords = {...},` bibtex field in the entry source by placing `>` between any two keywords where the left-hand keyword is the parent group and the right-hand keyword will be its sub-group. The library entry will be placed there. Note: when you select `+` to do this, the first delimiter must be the right chevron, and the second must be whichever field separator you have configured (by default a comma `,`).
+You can populate your Group pane by configuring JabRef to use the bibtex source's `keywords = {...},` by clicking the `+` icon and following the [previous instructions](groups.md#specified-keywords). You can nest subgroups by using the right chevron `>` ([see here](https://github.com/JabRef/jabref/pull/2703/files#diff-e8f986c28ee8a35397cde5cb1352d4662f62be7085cd7d8856db279f1205245dR17)). You achieve this by editing the `keywords = {...},` bibtex field in the entry source by placing `>` between any two keywords where the left-hand keyword is the parent group and the right-hand keyword will be its sub-group. The library entry will be placed there. Note: when you select `+` to do this, the first delimiter must be the right chevron, and the second must be whichever field separator you have configured (by default a comma `,`).
 
 ### Mixing refining groups with including groups
 
