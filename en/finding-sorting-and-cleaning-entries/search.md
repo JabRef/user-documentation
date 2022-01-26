@@ -26,7 +26,7 @@ All entries that do not match are hidden, leaving for display the matching entri
 
 To stop displaying the search results, just clear the search field, press Esc or click on the "Clear" (`X`) button.
 
-## Search using regular expressions <a href="advanced" id="advanced"></a>
+## Search using regular expressions <a href="#advanced" id="advanced"></a>
 
 {% hint style="warning" %}
 Make sure that the button "regular expressions" is activated
@@ -62,7 +62,7 @@ JabRef defines the following pseudo fields:
 
 ### Advanced use of regular expressions
 
-Regular expressions (regex for short) define a language for specifying the text to be matched, for example when searching. JabRef uses regular expressions as defined in Java. For extensive information, please, look at the [Java documentation](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html) and at the [Java tutorial](https://docs.oracle.com/javase/tutorial/essential/regex/).
+Regular expressions (regex for short) define a language for specifying the text to be matched, for example when searching. JabRef uses regular expressions as defined in Java. For extensive information, please, look at the [Java documentation](https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/regex/Pattern.html) and at the [Java tutorial](https://docs.oracle.com/javase/tutorial/essential/regex/).
 
 #### Regular expressions and casing
 
