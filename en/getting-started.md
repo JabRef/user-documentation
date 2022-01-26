@@ -1,7 +1,15 @@
 # Getting started
 
 {% hint style="info" %}
-In French/En français: [Découvrir JabRef](https://github.com/JabRef/user-documentation/raw/main/en/.gitbook/assets/infodoc-jabref-2020-09-09-1.pdf) (external document, courtesy of INRAE)
+In French/En français: [Découvrir JabRef](https://ist.inrae.fr/wp-content/uploads/sites/21/2022/01/OpenClass\_Decouvrir\_JabRef\_2022.pdf) (external document, courtesy of INRAE)
+{% endhint %}
+
+{% hint style="info" %}
+Some videos to help you start using JabRef:
+
+* [Intro to JabRef](https://www.youtube.com/watch?v=11qMBE\_PSBw) by JoshTheEngineer (youtube - English - 22 minutes - January 2021)
+* [JabRef for beginners (Part 1): JabRef interface and creating a library](https://www.youtube.com/watch?v=oF22xJ9lDVk) by James Azam (youtube - English - 14 minutes - April 2021)
+* [JabRef for beginners (Part 2): How to manage and cite references in MS Word and LaTeX](https://www.youtube.com/watch?v=Q62nO-KDDZw)  by James Azam (youtube - English - 11 minutes - April 2021)
 {% endhint %}
 
 ## Main Window of JabRef
