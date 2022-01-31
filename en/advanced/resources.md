@@ -57,12 +57,6 @@ Using this tool you can easily create a custom export filter for JabRef to build
 
 [Bibtex4Word](http://www.ee.ic.ac.uk/hp/staff/dmb/perl/index.html) is an add-in for Microsoft Word that allows the citation of references and the insertion of a bibliography into your document using your choice of formatting style. It is lightweight, transparent and does not mess up your documents.
 
-### Library
-
-[Library](https://github.com/cgogolin/library) is an Open Source Android application to view BibTeX files in order to open \(and annotate\) linked PDFs. It also supports opening DOIs as well as sharing entries. Furthermore it is possible to filter entries and sort them by date, journal, author and title. There are no editing capabilities though.
-
-Library is unmaintained and no longer available from Google Play. It can still be installed from [F-Droid](https://f-droid.org/packages/com.cgogolin.library/).
-
 ### Eratosthenes Reference Manager
 
 Eratosthenes Reference Manager is a BibTeX-based bibliography manager for Android. It [integrates with JabRef](https://bitbucket.org/mkmatlock/eratosthenes/wiki/Home#!using-eratosthenes-with-jabref), supporting top-level groups and attached files/external links.
