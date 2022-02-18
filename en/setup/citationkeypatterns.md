@@ -112,10 +112,17 @@ Generally, modifiers are applied in the order they are specified. In the followi
 
 Formatters are primarily used as [save actions](../finding-sorting-and-cleaning-entries/saveactions.md), but their key value can be used as a modifier. All available actions can be found in the [list of save actions](../finding-sorting-and-cleaning-entries/saveactions.md#save-actions-as-modifiers).
 
+## Regular Expressions (RegEx)
+
+Regular expressions (or RegEx for short) match patterns within a string. In other words, they are a way to search for (or replace) text within a closed off sequence of characters. They can enhance citation key patterns by altering [modifiers](citationkeypatterns.md#modifiers) even further (e.g. via **`:regex("pattern", "replacement")`**). Another use case for them is to [replace existing key patterns](citationkeypatterns.md#replace-regular-expression).
+
+Documentation and examples for RegEx syntax can be found [in the Java documentation](https://docs.oracle.com/javase/9/docs/api/java/util/regex/Pattern.html) and [in the Jabref documentation](../finding-sorting-and-cleaning-entries/search.md#advanced).
+
+Keep in mind, Jabref uses a Java flavored regular expressions engine (there are multiple engines) and therefore treats `\` and some other special meta-characters as escape characters. If you want to include any backslash into your RegEx, you have to use `\\` instead of `\`.
+
 ## Replace (regular expression)
 
-In addition to using regular expression replacement as [modifiers](citationkeypatterns.md#modifiers) of the field markers within [citation key patterns](citationkeypatterns.md#citation-key-patterns) regular expression matching and replacement can be done after the key patterns have been applied. In this case, the regular expression and replacement string are entered in the separate text fields above the [citation key patterns](citationkeypatterns.md#citation-key-patterns) section. If the replacement string is empty, then matches of the regular expression will be removed from the generated key. Documentation on regular expressions in Java can be found [in the Java documentation](https://docs.oracle.com/javase/9/docs/api/java/util/regex/Pattern.html).
-Keep in mind to escape the backslash `\` infront of Java regular expressions, like, for example for Latin characters: `\\p{IsLatin}`. 
+In addition to using regular expression replacement as [modifiers](citationkeypatterns.md#modifiers) of the field markers within [citation key patterns](citationkeypatterns.md#citation-key-patterns), regular expression matching and replacement can be done after the key patterns have been applied. In this case, the regular expression and replacement string are entered in the separate text fields above the [citation key patterns](citationkeypatterns.md#citation-key-patterns) section. If the replacement string is empty, then matches of the regular expression will be removed from the generated key.
 
 ![Citation key generator preferences - regex replacement](<../.gitbook/assets/preferences-citation-key-generator-regex-replacement (2) (2) (2) (2) (2) (2) (2) (3) (3) (4) (2).png>)
 
