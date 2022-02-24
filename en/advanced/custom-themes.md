@@ -25,3 +25,6 @@ Since `JabRef 5.2` it is possible to use custom themes. In `Preferences > Appear
 **Dark Theme** ![Dark Theme](<../.gitbook/assets/theme-dark (1).png>)
 
 **Custom Theme** ![Custom Theme](<../.gitbook/assets/theme-custom (1).png>) (based on the Dark Theme)
+
+## Known bugs
+- [#8523](https://github.com/JabRef/jabref/issues/8523): On Windows 10, it is not possible to use fonts that were installed user-wide in the CSS, only system-wide fonts are working. A workaround to use fonts that are not installed system-wide is to include the font file via [`@font-face`](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face).
