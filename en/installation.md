@@ -110,9 +110,9 @@ This is one the one hand a font problem and seond a lognstanding [Java(fx) bug](
 
 ## Building From Source
 
-This method is mainly for package maintainers and users who would like to build the latest snapshots of JabRef directly from the source. If you want to setup JabRef for development, follow the instructions for [setting up a workspace](https://devdocs.jabref.org/guidelines-for-setting-up-a-local-workspace).
+This method is mainly for package maintainers and users who would like to build the latest snapshots of JabRef directly from the source. If you want to setup JabRef for development, follow the instructions for [setting up a workspace](https://devdocs.jabref.org/getting-into-the-code/guidelines-for-setting-up-a-local-workspace).
 
-To build JabRef from source, you first need to have a working Java Development (see above link for details) and Git installed on your system. After installing the two requirements, you open a terminal window (i.e., a command prompt) and type the following:
+To build JabRef from source, you first need to have a working Java Development Kit (see above link for details) and Git installed on your system. After installing the two requirements, you open a terminal window (i.e., a command prompt) and type the following:
 
 ```
 git clone --depth=10 https://github.com/JabRef/jabref
