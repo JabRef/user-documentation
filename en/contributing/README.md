@@ -6,7 +6,7 @@ We are really happy that you are interested in contributing to JabRef. Please ta
 {% tab title="I am not a programmer" %}
 ### I would like to improve the help page. What are the steps? [![Join the chat at https://gitter.im/JabRef/jabref](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/JabRef/jabref)
 
-Please use the "Edit on GitHub" link in the upper right corner. Then, follow [GitHub's guide to edit files in other user's repository](https://help.github.com/en/github/managing-files-in-a-repository/editing-files-in-another-users-repository).
+Please use the "Edit on GitHub" link in the upper right corner. Then, follow [GitHub's guide to edit files in other user's repository](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files#editing-files-in-another-users-repository).
 
 ### I would like to help translating JabRef to another language. How do I get started? [![Join the chat at https://gitter.im/JabRef/jabref](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/JabRef/jabref)
 
