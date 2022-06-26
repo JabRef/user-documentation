@@ -4,6 +4,9 @@
             "pattern": "^https://.*\\.crossref\\.org"
         },
         {
+            "pattern": "^https://.*\\.github\\.com"
+        },
+        {
             "pattern": "^https://dl\\.acm\\.org"
         },
         {
