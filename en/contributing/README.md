@@ -61,6 +61,6 @@ You can talk to the core developers of JabRef in the [gitter chat](https://gitte
 
 ### I want to learn about code quality [![Join the chat at https://gitter.im/JabRef/jabref](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/JabRef/jabref)
 
-Please head to [https://devdocs.jabref.org/code-quality](https://devdocs.jabref.org/code-quality) to learn about our current efforts to measure and improve code quality.
+Please head to [https://devdocs.jabref.org/advanced-reading/code-quality](https://devdocs.jabref.org/advanced-reading/code-quality) to learn about our current efforts to measure and improve code quality.
 {% endtab %}
 {% endtabs %}
