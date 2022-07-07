@@ -20,20 +20,39 @@ Normally, you simply install the extension from the browser store and are ready 
 
 While Chrome extensions can work in Edge \(and will install\), JabRef is configured to work with the Edge extension in the Edge Browser, and the Chrome extension in the Chrome Browser. It will not work if they are mixed.
 
+## Usage
+
+After the installation, you should be able to import bibliographic references into JabRef directly from your browser. Just visit a publisher site or some other website containing bibliographic information \(for example, [the arXiv](http://arxiv.org/list/gr-qc/pastweek?skip=0&show=5)\) and click the JabRef symbol in the Firefox search bar \(or press Alt+Shift+J\). Once the JabRef browser extension has extracted the references and downloaded the associated PDF's, the import window of JabRef opens.
+
+You might want to configure JabRef so that new entries are always imported in an already opened instance of JabRef. For this, activate "Listen to remote operation on port" under the "Network" tab of the JabRef Preferences.
+
+## Troubleshooting
+
+### In case you have Adblock Plus extension and Jabref extension doesn't work
+
+1\) Go to [zotero.org](https://zotero.org). 2\) Deactivate AdBlock plus extension for the whole domain \(zotero.org\) by clicking on the Adblock plus extension button and sliding the corresponding slider to allow adds on the whole domain. 3\) Close and reopen the browser in order to reload all the extension and their settings. 4\) Verify the functioning of the Jabref extension by visiting a page you know is working to extract its bibliographic data \(for example, [the arXiv](http://arxiv.org/list/gr-qc/pastweek?skip=0&show=5)\) by pressing the extension button or Alt + Shift + J.
+
+In case you encounter problems in this procedure refer to issue \#241 on GitHub for further help.
+
+### In case script jabrefHost.py doesn't work
+
+Error message `bad interpreter: /usr/bin/python3: no such file or directory` means that python3 is not installed at the expected location. Run `which python3` to see if python3 is installed elsewhere. Then copy that path at the first line of jabrefHost.py maintaining `#!` prefix.
+
+## Manual Installation
+
 Most JabRef installations include the necessary files, so test the extension before proceeding with the following instructions. However, sometimes, a manual installation is necessary \(e.g. if you use the portable version of JabRef\). In this case, please take the following steps:
 
 ### Windows
 
 1. Make sure you have at least [JabRef 5.0](https://www.jabref.org/#downloads) installed.
 2. Install the JabRef browser extension: [Firefox](https://addons.mozilla.org/en-US/firefox/addon/jabref/?src=external-github), [Chrome](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh), [Vivaldi](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh)
-3. On Windows 7, please [upgrade Powershell](https://www.microsoft.com/en-us/download/details.aspx?id=54616).
-4. Download the following files and copy them to the same directory as `JabRef.exe`
+3. Download the following files and copy them to the same directory as `JabRef.exe`
    * [jabref-firefox.json](https://raw.githubusercontent.com/JabRef/jabref/main/buildres/windows/jabref-firefox.json)
    * [jabref-chrome.json](https://raw.githubusercontent.com/JabRef/jabref/main/buildres/windows/jabref-chrome.json)
    * [JabRef.bat](https://raw.githubusercontent.com/JabRef/jabref/main/buildres/windows/JabRefHost.bat)
    * [JabRef.ps1](https://raw.githubusercontent.com/JabRef/jabref/main/buildres/windows/JabRefHost.ps1)
-5. Make sure that the correct file name of the `JabRef.bat` file is specified in `JabRefHost.ps1` under `$jabRefExe`.
-6. Run the following command from the console \(with the correct path to the `jabref.json` file\):
+4. Make sure that the correct file name of the `JabRef.bat` file is specified in `JabRefHost.ps1` under `$jabRefExe`.
+5. Run the following command from the console \(with the correct path to the `jabref.json` file\):
 
    a. For Firefox support:
 
@@ -122,22 +141,3 @@ Most JabRef installations include the necessary files, so test the extension bef
      When using the Stable release/channel, {Channel\_Name} is not required.
 
 3. Check that the Python script works. In Terminal run `/Applications/JabRef.app/Contents/Resources/jabrefHost.py`. If there are no errors the script is working properly. Stop the script by pressing `Ctrl + D`.
-
-## Usage
-
-After the installation, you should be able to import bibliographic references into JabRef directly from your browser. Just visit a publisher site or some other website containing bibliographic information \(for example, [the arXiv](http://arxiv.org/list/gr-qc/pastweek?skip=0&show=5)\) and click the JabRef symbol in the Firefox search bar \(or press Alt+Shift+J\). Once the JabRef browser extension has extracted the references and downloaded the associated PDF's, the import window of JabRef opens.
-
-You might want to configure JabRef so that new entries are always imported in an already opened instance of JabRef. For this, activate "Listen to remote operation on port" under the "Network" tab of the JabRef Preferences.
-
-## Troubleshooting
-
-### In case you have Adblock Plus extension and Jabref extension doesn't work
-
-1\) Go to [zotero.org](https://zotero.org). 2\) Deactivate AdBlock plus extension for the whole domain \(zotero.org\) by clicking on the Adblock plus extension button and sliding the corresponding slider to allow adds on the whole domain. 3\) Close and reopen the browser in order to reload all the extension and their settings. 4\) Verify the functioning of the Jabref extension by visiting a page you know is working to extract its bibliographic data \(for example, [the arXiv](http://arxiv.org/list/gr-qc/pastweek?skip=0&show=5)\) by pressing the extension button or Alt + Shift + J.
-
-In case you encounter problems in this procedure refer to issue \#241 on GitHub for further help.
-
-### In case script jabrefHost.py doesn't work
-
-Error message `bad interpreter: /usr/bin/python3: no such file or directory` means that python3 is not installed at the expected location. Run `which python3` to see if python3 is installed elsewhere. Then copy that path at the first line of jabrefHost.py maintaining `#!` prefix.
-
