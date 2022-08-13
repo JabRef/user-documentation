@@ -44,7 +44,7 @@ Most JabRef installations include the necessary files, so test the extension bef
 
 ### Windows
 
-1. Make sure you have at least [JabRef 5.0](https://www.jabref.org/#downloads) installed.
+1. Make sure you have at least [JabRef 5.0](https://www.jabref.org/#download) installed.
 2. Install the JabRef browser extension: [Firefox](https://addons.mozilla.org/en-US/firefox/addon/jabref/?src=external-github), [Chrome](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh), [Vivaldi](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh)
 3. Download the following files and copy them to the same directory as `JabRef.exe`
    * [jabref-firefox.json](https://raw.githubusercontent.com/JabRef/jabref/main/buildres/windows/jabref-firefox.json)
@@ -78,7 +78,7 @@ Most JabRef installations include the necessary files, so test the extension bef
 
 #### Deb, RPM or Portable
 
-1. Download and install the Debian package of [JabRef 5.0](https://www.jabref.org/#downloads)
+1. Download and install the Debian package of [JabRef](https://www.jabref.org/#download) (>= 5.0).
 2. Install the JabRef browser extension: [Firefox](https://addons.mozilla.org/en-US/firefox/addon/jabref/?src=external-github), [Chrome](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh), [Vivaldi](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh)
 
    a. Firefox: Download [org.jabref.jabref.json](https://raw.githubusercontent.com/JabRef/jabref/main/buildres/linux/native-messaging-host/firefox/org.jabref.jabref.json) and put it into
@@ -103,7 +103,7 @@ Most JabRef installations include the necessary files, so test the extension bef
 
 #### Snap
 
-1. Install the snap package of [JabRef 5.0](https://snapcraft.io/jabref)
+1. Install the snap package of [JabRef](https://snapcraft.io/jabref) (>= 5.0).
 2. Install the JabRef browser extension: [Firefox](https://addons.mozilla.org/en-US/firefox/addon/jabref/?src=external-github), [Chrome](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh), [Vivaldi](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh)
 3. Connect the appropriate plug for the selected browser:
    * Firefox: `snap connect jabref:hostfs-mozilla-native-messaging-jabref`
@@ -113,7 +113,7 @@ Most JabRef installations include the necessary files, so test the extension bef
 
 ### Mac OS
 
-1. Download and install the DMG package of [JabRef 5.0](https://www.jabref.org/#downloads).
+1. Download and install the DMG package of [JabRef](https://www.jabref.org/#download) (>= 5.0).
 2. Install the JabRef browser extension: [Firefox](https://addons.mozilla.org/en-US/firefox/addon/jabref/?src=external-github), [Chrome](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh), [Vivaldi](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh)
 
    a. Firefox: If it's not auto-installed for you, download [org.jabref.jabref.json](https://raw.githubusercontent.com/JabRef/jabref/main/buildres/mac/native-messaging-host/firefox/org.jabref.jabref.json) and put it into
