@@ -86,17 +86,17 @@ Most JabRef installations include the necessary files, so test the extension bef
    * `/usr/lib/mozilla/native-messaging-hosts/org.jabref.jabref.json` to install with admin rights for all users
    * `~/.mozilla/native-messaging-hosts/org.jabref.jabref.json` to install without admin rights for the current user
 
-     b. Chrome: Download [org.jabref.jabref.json](https://raw.githubusercontent.com/JabRef/jabref/main/buildres/linux/native-messaging-host/chromium/org.jabref.jabref.json) and put it into
+   b. Chrome: Download [org.jabref.jabref.json](https://raw.githubusercontent.com/JabRef/jabref/main/buildres/linux/native-messaging-host/chromium/org.jabref.jabref.json) and put it into
 
    * `/etc/opt/chrome/native-messaging-hosts/org.jabref.jabref.json` to install with admin rights for all users
    * `~/.config/google-chrome/NativeMessagingHosts/org.jabref.jabref.json` to install without admin rights for the current user
 
-     c. Chromium: Download [org.jabref.jabref.json](https://raw.githubusercontent.com/JabRef/jabref/main/buildres/linux/native-messaging-host/chromium/org.jabref.jabref.json) and put it into
+   c. Chromium: Download [org.jabref.jabref.json](https://raw.githubusercontent.com/JabRef/jabref/main/buildres/linux/native-messaging-host/chromium/org.jabref.jabref.json) and put it into
 
    * `/etc/chromium/native-messaging-hosts/org.jabref.jabref.json` to install with admin rights for all users
    * `~/.config/chromium/NativeMessagingHosts/org.jabref.jabref.json` to install without admin rights for the current user
 
-     d. Edge: Download [org.jabref.jabref.json](https://raw.githubusercontent.com/JabRef/jabref/main/buildres/linux/native-messaging-host/chromium/org.jabref.jabref.json) and put it into
+   d. Edge: Download [org.jabref.jabref.json](https://raw.githubusercontent.com/JabRef/jabref/main/buildres/linux/native-messaging-host/chromium/org.jabref.jabref.json) and put it into
 
    * `/etc/opt/edge/native-messaging-hosts/org.jabref.jabref.json` to install with admin rights for all users
    * `~/.config/microsoft-edge/NativeMessagingHosts/org.jabref.jabref.json` to install without admin rights for the current user
