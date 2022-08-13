@@ -100,6 +100,7 @@ Most JabRef installations include the necessary files, so test the extension bef
 
    * `/etc/opt/edge/native-messaging-hosts/org.jabref.jabref.json` to install with admin rights for all users
    * `~/.config/microsoft-edge/NativeMessagingHosts/org.jabref.jabref.json` to install without admin rights for the current user
+3. Open the file `org.jabref.jabref.json` with a text editor, and alter it so that its `path` variable matches the location of your `jabrefHost.py` file.
 
 #### Snap
 
