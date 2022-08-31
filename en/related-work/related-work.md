@@ -1,6 +1,6 @@
 # Related Work
 
-This page lists tools similar to JabRef JabRef.
+This page lists tools similar to JabRef.
 
 Please discuss with us at [the forum](http://discourse.jabref.org/) list if you miss features in JabRef being available at the other tools
 
