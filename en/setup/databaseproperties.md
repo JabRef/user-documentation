@@ -90,7 +90,7 @@ For more information see [Save Actions](../finding-sorting-and-cleaning-entries/
 
 ![LibraryProperties-StringConstants](https://user-images.githubusercontent.com/6931104/187706302-13ed07f4-c704-4a28-9460-f4c9eae5e36c.png)
 
-The [string constants](../advanced/strings) of the library.
+The [string constants](../advanced/strings.md) of the library.
 
 ## Tab "Citation key patterns"
 
