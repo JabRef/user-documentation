@@ -2,8 +2,6 @@
 
 Each library can have specific properties that can be modified through **Library→ Library properties**. These specific properties override the generic properties defined in **Options → Preferences**.
 
-![](<../.gitbook/assets/libraryproperties (1).png>)
-
 The library-specific properties are stored in the database itself. This way, when moving the database to another computer, these properties are preserved. In most of cases these are stored in the bib-file database using text blocks starting with _@Comment{jabref-meta:_ .
 
 {% hint style="warning" %}
@@ -15,9 +13,19 @@ The following properties are not available:
 * Save sort order
 {% endhint %}
 
-## General
+The library properties window consists of four tabs:
+- General
+- Saving
+- String constants
+- Citation key patterns
 
-### Library encoding
+## Tab "General"
+
+![LibraryProperties-General](https://user-images.githubusercontent.com/6931104/187705732-5e511c13-a249-4e2e-be8b-81b0ea151c9f.png)
+
+### General
+
+#### Library encoding
 
 This setting determines which character encoding JabRef will use when writing this library to disk. Changing this setting will override the setting made in Preferences dialog for this database. JabRef specifies the encoding near the top of the bib file, in order to be able to use the correct encoding next time you open the file. The drop-down menu allows to select one encoding.
 
@@ -25,11 +33,11 @@ This setting determines which character encoding JabRef will use when writing th
 UTF-8 is highly recommended
 {% endhint %}
 
-### Library mode
+#### Library mode
 
 You can select if your library follow the [BibTeX or the biblatex format](../cite/bibtex-and-biblatex.md).
 
-## Override default file directories
+### Override default file directories
 
 In your library, files (PDF, etc.) can be linked to an entry. The list of these files are stored in the _file_ field of the entry. The location of these files has to be specified.
 
@@ -46,7 +54,15 @@ Relative directories can be specified. This means that the location of the files
 The legacy PDF/PS links (i.e. the pdf and ps fields, which were used in JabRef versions prior to 2.3), should in current versions be replaced by general file links. This can be done using **Quality → Cleanup entries...** and enabling _Upgrade external PDF/PS links to use the 'file' field_.​
 {% endhint %}
 
-## Library protection​
+### Preamble
+
+The preamble defines some LaTeX commands that will be included in the bibliography once processed by BibTeX.
+
+## Tab "Saving"
+
+![LibraryProperties-Saving](https://user-images.githubusercontent.com/6931104/187706060-a25e735d-1695-4412-8a0f-296badf59261.png)
+
+### Library protection
 
 While you edit a shared library, another user may be editing it too. By default, saving the library will overwrite changes done by others (although a warning message about the changes will be displayed).​
 
@@ -56,7 +72,7 @@ To avoid discarding changes involuntarily, and hence to allow a smooth collabora
 **This is not a security feature**, merely a way to prevent users from overwriting other users' changes inadvertently. This feature does not protect your library against malicious users.​
 {% endhint %}
 
-## Save sort order
+### Save sort order
 
 When saving the library, the order of the entries will be preserved if **Save entries in their original order** is selected. Alternatively, by selecting **Save entries ordered as specified**, you can choose to sort the entries using three criteria. For each criterion, you can type-in the field to be used and select the order.
 
@@ -64,8 +80,21 @@ When saving the library, the order of the entries will be preserved if **Save en
 Entries containing a `crossref` field will always be placed prior to the other entries. This is a necessary preliminary for BibTeX to be able to determine the correct referenced values. (See: [Tame the BeaST](https://ctan.org/pkg/tamethebeast), p. 26)
 {% endhint %}
 
-## Save actions
+### Save actions
 
 Field formatting can be tidied up when saving the library. That ensures your entries to have consistent formatting. If you check **Enable save actions**, the list of actions can be configured.
 
 For more information see [Save Actions](../finding-sorting-and-cleaning-entries/saveactions.md).
+
+## Tab "String constants"
+
+![LibraryProperties-StringConstants](https://user-images.githubusercontent.com/6931104/187706302-13ed07f4-c704-4a28-9460-f4c9eae5e36c.png)
+
+The [string constants](../advanced/strings) of the library.
+
+## Tab "Citation key patterns"
+
+![LibraryProperties-CitationKeyPatterns](https://user-images.githubusercontent.com/6931104/187706432-5ed71148-e78f-4666-9a49-0b9548873260.png)
+
+The [citation key patterns](../setup/citationkeypatterns.md) to be used with this library.
+
