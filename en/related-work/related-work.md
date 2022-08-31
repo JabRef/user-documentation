@@ -21,7 +21,7 @@ Some of them are not listed at the lists above.
   * Development discontinued
 * [Bibfilex](https://sites.google.com/site/bibfilex/)
 * [Bibi](http://bibi.sourceforge.net/)
-* [Docear](http://www.docear.org/), successor of <http://www.sciplore.org>
+* [Docear](http://www.docear.org/) (successor of SciPlore)
   * Friendly fork of JabRef. Source: <https://github.com/Docear>
   * <https://github.com/stlanger/Docear> seems to be another fork
 * [ebib](https://github.com/joostkremers/ebib), plugin für EMACS
@@ -57,7 +57,6 @@ There are also scripts for working in an automated way on BibTeX files:
 * [ReadCube](https://www.readcube.com/)
   * Seems quite good to deal with pdf files
 
-## Collaborative
 
 * [Aigaion](https://sourceforge.net/projects/aigaion/)
 * [BibORB](http://savannah.nongnu.org/projects/biborb/)
