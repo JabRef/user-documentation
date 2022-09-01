@@ -49,8 +49,6 @@ Technial note: The search syntax is adapted from [Apache Lucene](https://lucene.
 
 ### ACM Portal
 
-Disabled in JabRef 5.2, because ACM changed their API. Will become available in JabRef 5.3.
-
 The [ACM Portal](https://dl.acm.org) includes two databases ([Wikipedia](https://en.wikipedia.org/wiki/Association\_for\_Computing\_Machinery#Portal\_and\_Digital\_Library)):
 
 * the **ACM Digital Library** is a text collection of every article published by the [Association for Computing Machinery](https://www.acm.org), including over 60 years of archives from articles, magazines and conference proceedings.
