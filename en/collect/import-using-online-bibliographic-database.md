@@ -60,6 +60,10 @@ The [ACM Portal](https://dl.acm.org) includes two databases ([Wikipedia](https:/
 
 [ArXiv](https://arxiv.org) is a repository of scientific preprints in the fields of mathematics, physics, astronomy, computer science, quantitative biology, statistics, and quantitative finance ([Wikipedia](https://en.wikipedia.org/wiki/ArXiv)).
 
+### Biodiversity Heritage Library
+[Biodiversity Heritage Library](https://www.biodiversitylibrary.org/) makes biodiversity literature openly available to the world as part of a global 
+biodiversity community. It is the world’s largest open access digital library for biodiversity literature and archives ([Wikipedia](https://en.wikipedia.org/wiki/Biodiversity_Heritage_Library)).
+
 ### CiteSeerX
 
 [CiteSeerX](http://csxstatic.ist.psu.edu/home) is a public search engine for scientific and academic papers primarily with a focus on computer and information science. However, CiteSeerX has been expanding into other scholarly domains such as economics, physics, and others ([Wikipedia](https://en.wikipedia.org/wiki/CiteSeer)).
