@@ -64,7 +64,7 @@ biodiversity community. It is the world’s largest open access digital library 
 
 ### CiteSeerX
 
-[CiteSeerX](http://csxstatic.ist.psu.edu/home) is a public search engine for scientific and academic papers primarily with a focus on computer and information science. However, CiteSeerX has been expanding into other scholarly domains such as economics, physics, and others ([Wikipedia](https://en.wikipedia.org/wiki/CiteSeer)).
+[CiteSeerX](https://csxstatic.ist.psu.edu/home) is a public search engine for scientific and academic papers primarily with a focus on computer and information science. However, CiteSeerX has been expanding into other scholarly domains such as economics, physics, and others ([Wikipedia](https://en.wikipedia.org/wiki/CiteSeer)).
 
 ### Collection of Computer Science Bibliographies (CCSB)
 
@@ -80,14 +80,14 @@ To fetch entries from Unpaywall indirectly through Crossref, choose **Search →
 
 ### DBLP
 
-[DBLP](http://dblp.uni-trier.de/db/) is a computer science bibliography website listing more than 3.1 million journal articles, conference papers, and other publications on computer science ([Wikipedia](https://en.wikipedia.org/wiki/DBLP)).
+[DBLP](https://dblp.uni-trier.de/db/) is a computer science bibliography website listing more than 3.1 million journal articles, conference papers, and other publications on computer science ([Wikipedia](https://en.wikipedia.org/wiki/DBLP)).
 
 ### DOAB
 [DOAB (Directory of Open Access Books)](https://doabooks.org) is  is a community-driven discovery service that indexes and provides access to scholarly, peer-reviewed open access books and helps users to find trusted open access book publishers. 
 
 ### DOAJ
 
-[DOAJ (Directory of Open Access Journals)](http://doaj.org) is a database covering more than 10000 open access journals covering all areas of science, technology, medicine, social science, and humanities ([Wikipedia](https://en.wikipedia.org/wiki/Directory\_of\_Open\_Access\_Journals)).
+[DOAJ (Directory of Open Access Journals)](https://doaj.org) is a database covering more than 10000 open access journals covering all areas of science, technology, medicine, social science, and humanities ([Wikipedia](https://en.wikipedia.org/wiki/Directory\_of\_Open\_Access\_Journals)).
 
 It is possible to limit the search by adding a field name to the search, as **field:text**. The supported fields are:
 
@@ -154,7 +154,7 @@ Year ranges are not supported. In case a year range is provided, it is ignored. 
 
 ### IEEEXplore
 
-[IEEEXplore](http://ieeexplore.ieee.org/Xplore/home.jsp) is a scholarly research database that indexes, abstracts, and provides full-text for articles and papers on computer science, electrical engineering and electronics. IEEEXplore comprises over 180 journals, over 1,400 conference proceedings, more than 3,800 technical standards, over 1,800 eBooks and over 400 educational courses ([Wikipedia](https://en.wikipedia.org/wiki/IEEE\_Xplore))
+[IEEEXplore](https://ieeexplore.ieee.org/Xplore/home.jsp) is a scholarly research database that indexes, abstracts, and provides full-text for articles and papers on computer science, electrical engineering and electronics. IEEEXplore comprises over 180 journals, over 1,400 conference proceedings, more than 3,800 technical standards, over 1,800 eBooks and over 400 educational courses ([Wikipedia](https://en.wikipedia.org/wiki/IEEE\_Xplore))
 
 ### INSPIRE
 
@@ -192,7 +192,7 @@ It is possible to limit the search by adding a field name to the search, such as
 
 ### MathSciNet
 
-[MathSciNet](http://www.ams.org/mathscinet/) is a searchable online bibliographic database. It contains all of the contents of the journal Mathematical Reviews (MR) since 1940 along with an extensive author database, links to other MR entries, citations, full journal entries, and links to original articles. It contains almost 3 million items and over 1.7 million links to original articles ([Wikipedia](https://en.wikipedia.org/wiki/MathSciNet)).
+[MathSciNet](https://www.ams.org/mathscinet/) is a searchable online bibliographic database. It contains all of the contents of the journal Mathematical Reviews (MR) since 1940 along with an extensive author database, links to other MR entries, citations, full journal entries, and links to original articles. It contains almost 3 million items and over 1.7 million links to original articles ([Wikipedia](https://en.wikipedia.org/wiki/MathSciNet)).
 
 ### Medline/PubMed
 
@@ -216,7 +216,7 @@ There are two ways of specifying which entries to download:
 
 ### SAO/NASA Astrophysics Data System
 
-[SAO/NASA Astrophysics Data System](http://www.adsabs.harvard.edu) is an online database of over eight million astronomy and physics papers from both peer-reviewed and non-peer-reviewed sources. Abstracts are available free online for almost all articles, and full scanned articles are available in Graphics Interchange Format (GIF) and Portable Document Format (PDF) for older articles ([Wikipedia](https://en.wikipedia.org/wiki/Astrophysics\_Data\_System)).
+[SAO/NASA Astrophysics Data System](https://www.adsabs.harvard.edu) is an online database of over eight million astronomy and physics papers from both peer-reviewed and non-peer-reviewed sources. Abstracts are available free online for almost all articles, and full scanned articles are available in Graphics Interchange Format (GIF) and Portable Document Format (PDF) for older articles ([Wikipedia](https://en.wikipedia.org/wiki/Astrophysics\_Data\_System)).
 
 ### SearchAll
 
