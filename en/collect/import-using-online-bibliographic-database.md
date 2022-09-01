@@ -82,6 +82,9 @@ To fetch entries from Unpaywall indirectly through Crossref, choose **Search →
 
 [DBLP](http://dblp.uni-trier.de/db/) is a computer science bibliography website listing more than 3.1 million journal articles, conference papers, and other publications on computer science ([Wikipedia](https://en.wikipedia.org/wiki/DBLP)).
 
+### DOAB
+[DOAB (Directory of Open Access Books)](https://doabooks.org) is  is a community-driven discovery service that indexes and provides access to scholarly, peer-reviewed open access books and helps users to find trusted open access book publishers. 
+
 ### DOAJ
 
 [DOAJ (Directory of Open Access Journals)](http://doaj.org) is a database covering more than 10000 open access journals covering all areas of science, technology, medicine, social science, and humanities ([Wikipedia](https://en.wikipedia.org/wiki/Directory\_of\_Open\_Access\_Journals)).
@@ -220,6 +223,9 @@ There are two ways of specifying which entries to download:
 {% hint style="info" %}
 To be detailed.
 {% endhint %}
+
+### Semantic Scholar
+[Semantic Scholar](https://www.semanticscholar.org/) is a free, AI-powered, research tool for scientific literature. Developed at the Allen Institute for AI, it uses advances in natural language processing to provide summaries for scholarly papers ([Wikipedia](https://en.wikipedia.org/wiki/Semantic_Scholar)).
 
 ### Springer
 
