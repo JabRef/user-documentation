@@ -16,11 +16,11 @@ Some of them are not listed at the lists above.
 
 ### Cross-Platform
 
-* [Bib-it](https://bib-it.sourceforge.net/index.php)
+* [Bib-it](http://bib-it.sourceforge.net/)
   * BibTeX style generator (bst): Bib-it features an advanced GUI based bst generator
   * Development discontinued
 * [Bibfilex](https://sites.google.com/site/bibfilex/)
-* [Bibi](https://bibi.sourceforge.net/)
+* [Bibi](http://bibi.sourceforge.net/)
 * [Docear](https://www.docear.org/) (successor of SciPlore)
   * Friendly fork of JabRef. Source: <https://github.com/Docear>
   * <https://github.com/stlanger/Docear> seems to be another fork
@@ -39,7 +39,7 @@ There are also scripts for working in an automated way on BibTeX files:
 
 ### Mac OS X
 
-* [BibDesk](https://bibdesk.sourceforge.net/), [Source Code](https://sourceforge.net/projects/bibdesk/files/BibDesk/)
+* [BibDesk](https://bibdesk.sourceforge.io/), [Source Code](https://sourceforge.net/projects/bibdesk/files/BibDesk/)
 
 ## Android
 
@@ -68,8 +68,8 @@ There are also scripts for working in an automated way on BibTeX files:
 * [Papyres](https://dl.acm.org/citation.cfm?id=1510120)
 * [PUMA](https://de.wikipedia.org/wiki/PUMA_(Akademisches_Publikationsmanagement))
   * Source code: <https://bitbucket.org/bibsonomy/puma>
-* [refbase](https://refbase.sourceforge.net)
-* [RefDB](https://refdb.sourceforge.net/)
+* [refbase](https://sourceforge.net/projects/refbase/)
+* [RefDB](http://refdb.sourceforge.net/)
 * [RefWorks](https://www.refworks.com/)
-* [Scientilla](https://www.scientilla.org/)
-* [WIKINDX](https://wikindx.sourceforge.net/)
+* [Scientilla](https://scientilla.it/)
+* [WIKINDX](https://wikindx.sourceforge.io/web/trunk/index.html)
