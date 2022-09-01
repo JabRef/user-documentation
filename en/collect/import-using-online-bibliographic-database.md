@@ -98,7 +98,9 @@ It is possible to limit the search by adding a field name to the search, as **fi
 
 ### Google Scholar
 
-(Currently not working, because Google changed their API)
+{% hint style="warning" %}
+Currently not working, because Google changed their API
+{% endhint %}
 
 [Google Scholar](https://scholar.google.com) is a freely accessible database that indexes the full text or metadata of scholarly literature across an array of publishing formats and disciplines. Google Scholar index includes most peer-reviewed online academic journals and books, conference papers, theses and dissertations, preprints, abstracts, technical reports, and other scholarly literature, including court opinions and patents ([Wikipedia](https://en.wikipedia.org/wiki/Google\_Scholar)).
 
@@ -171,6 +173,10 @@ The following list shows some of the field indicators that can be used:
 | `k`          | search in keywords                                                                                                                                                                                                                                   |
 
 ### Jstor
+
+{% hint style="warning" %}
+Currently disabled because of traffic limit
+{% endhint %}
 
 [Jstor](https://jstor.org) is an online database with access to more than 12 million journal articles, books, and sources in 75 disciplines. [About](https://about.jstor.org)
 
