@@ -9,7 +9,7 @@ Groups allow structuring of bibliographic libraries in a tree-like way that is s
 * While a file is always located in exactly one directory, an entry may be contained in more than one group.
 * Groups may use certain criteria to dynamically define their content. New entries that match these criteria are automatically added to these groups. This feature is not available in common file systems, but in several Email clients (e.g. Thunderbird and Opera).
 
-Selecting a group shows the entries contained in that group. Selecting multiple groups shows the entries contained in any group (union) or those entries common in any selected groups (intersection), depending on the current settings. All this is explained in detail below.
+Selecting a group shows the entries contained in that group. Selecting multiple groups shows the entries contained in any group (union) or those entries common in all selected groups (intersection), depending on the current settings. All this is explained in detail below.
 
 {% hint style="info" %}
 Group definitions are database-specific.​
@@ -17,13 +17,13 @@ Group definitions are database-specific.​
 
 ## Groups interface and first steps
 
-The group interface is shown in the side pane on the left of the screen. It can be toggled on or off by pressing `Alt + 3` or by the menu **View → Groups interface**. The interface has several buttons, but most functions are accessed via a context menu (i.e. a right-click). Drag-and-drop is also supported.
+The group interface is shown in the side pane on the left of the screen. It can be toggled on or off by pressing `Alt + 3` or by the menu **View → Groups**. The interface has several buttons, but most functions are accessed via a context menu (i.e. a right-click). Drag-and-drop is also supported.
 
 ![The main group interface](https://user-images.githubusercontent.com/6931104/188160207-63a74c16-8ce2-465a-8b2d-61171cd98608.png)
 
 ### Creating a group and adding entries to it
 
-To create a group and manually assign entries to it, press the **+** button, enter a name for the group, then press (leaving all values at their defaults). Now select the entries to be assigned to the group, and drag-and-drop them to the group (or use **Add to group** in the context menu of the group interface). Finally, select the group to see its content. Only the entries you just assigned to the group should be displayed in the entry table.
+To create a group and manually assign entries to it, press the **Add group** button located at the bottom of the pane, enter a name for the group, then press (leaving all values at their defaults). Now select the entries to be assigned to the group, and drag-and-drop them to the group (or use **Add selected entries to this group** in the context menu of the group interface). Finally, select the group to see its content. Only the entries you just assigned to the group should be displayed in the entry table.
 
 You can also automatically fill a group based on keywords. For this, you need to use a different [type of groups](groups.md#types-of-groups).
 
@@ -37,25 +37,23 @@ When selecting several groups, you can intersect or unionize them: _Union_ displ
 
 ![Button for toggling union/intersection](https://user-images.githubusercontent.com/6931104/188161059-7f91441b-19d4-411f-a065-1d62613f5edc.png)
 
-
 For example, if you have a group for the author 'Smith' and another one for the author 'Doe', selecting the groups displays the entries that they co-authored if 'Intersection' is selected. If 'Union' is selected, the entries that at least one of them authored are displayed.
 
-To test this, create two groups having some entries in common. Click the **Intersection/Union** button and make sure that **Union** is selected. Now select both groups. You should see all entries contained in any of the two groups. Click again on the **Intersection/Union** button and select **Intersection**. Now you should see only those entries contained in both groups (which might be none at all if groups do not share entries, or exactly the same entries if both groups contain the same entries).
+To test this, create two groups having some entries in common. Click the **Intersection/Union** button and make sure that **Union** is selected. Now select both groups. You should see all entries contained in any of the two groups. Click again on the **Intersection/Union**. This selects **Intersection**. Now you should see only those entries contained in both groups (which might be none at all if groups do not share entries, or exactly the same entries if both groups contain the same entries).
 
 ## Group tree. Creating and removing groups
 
-Just like directories, groups are structured like a tree, with the group _All Entries_ at the root. By right-clicking on a group and selecting **Add subgroup**, you can add a subgroup to the selected group. The **+** button (near the top of the pane) lets you create a new subgroup of the group **All Entries**, regardless of the currently selected group(s). The context menu also allows removing groups and/or subgroups, and to sort subgroups alphabetically. Moving groups to a different location in the tree can be done by drag-and-drop.
+Just like directories, groups are structured like a tree, with the group _All Entries_ at the root. By right-clicking on a group and selecting **Add subgroup**, you can add a subgroup to the selected group. The **Add group** button (at the bottom of the pane) lets you create a new subgroup of the group **All Entries**, regardless of the currently selected group(s). The context menu also allows removing groups and/or subgroups, and to sort subgroups alphabetically. Moving groups to a different location in the tree can be done by drag-and-drop.
 
 ## Group dialog window
 
-The properties of a group can be defined in the 'Edit group' dialog window (the same window is displayed when creating a new group). To modify the group properties, right-click on the group name in the group panel and select **Edit group** in the context menu.
+The properties of a group can be defined in the 'Edit group' dialog window (the same window is displayed when creating a new group). To modify the group properties, right-click on the group name in the group pane and select **Edit group** in the context menu.
 
 ![Edit group window](https://user-images.githubusercontent.com/6931104/188163107-c0e55fd7-51a6-4350-8ded-598aa720dc77.png)
 
-
 ### Name
 
-Defines the name of the group, as displayed in the group panel.
+Defines the name of the group, as displayed in the group pane.
 
 ### Description
 
@@ -77,7 +75,7 @@ The displayed entries depend on the hierarchical context of the group. When a gr
 
 #### Independent group
 
-By default, a group is **independent** of its position in the group's tree: When selected, the table of entries shows only the group's content (all of its entries).
+By default, a group is **independent** of its position in the group's tree: When selected, the table of entries shows only the group's content (i.e. all of its entries).
 
 #### Intersection between a group and its supergroup
 
@@ -89,7 +87,7 @@ This is especially relevant for groups based on keywords or search expression, w
 
 The union of a group and its subgroups is the logical complement of the intersection: when defined as _union_, selecting the group displays _both_ the group's own entries and its subgroups' entries.
 
-You can create a group for your references about music, and then subgroups about the music styles (classic, jazz, rock, etc.). By setting the group "Music" as _union_, when you subsequently add references to a subgroup, they will automatically appear in group "Music" as well (without additional action).
+For example, you can create a group for your references about music, and then subgroups about the music styles (classic, jazz, rock, etc.). By setting the group "Music" as _union_, when you subsequently add references to a subgroup, they will automatically appear in group "Music" as well (without additional action).
 
 ### Nesting (sub)groups
 
@@ -172,7 +170,9 @@ To see easily to which groups an entry belongs to, the entry table has a column 
 
 By hovering the mouse on this column, you can see the list of groups to which an entry belongs to.
 
-The "groups" column is displayed by default. To remove the "groups" column, go to **Options → Preferences**, tab **Entry table**, and click on the bin icon next to the item "Groups". To add the "groups" column, select the "Groups" item in the drop-down menu, and click on the **+** button located to the right of the drop-down menu.
+The "groups" column is displayed by default. Using the menu **Options → Preferences**, tab **Entry table**, you can:
+* remove the "groups" column by clicking on the bin icon next to the item "Groups".
+* add the "groups" column by selecting the "Groups" item in the drop-down menu, and clicking on the **+** button located to the right of the drop-down menu.
 
 ![Preferences for tab Entry table](https://user-images.githubusercontent.com/6931104/188165479-1beeed58-638b-4ef8-97d2-70bd350753fa.png)
 
@@ -201,7 +201,9 @@ The checkbox "Automatically assign new entry go selected grouping" makes it poss
 
 If checked (default), the number of entries in each group is displayed in the group name, at the right of the group pane.
 
+{% hint style="warning" %}
 Be careful, this can slow down JabRef when a library has numerous groups.
+{% endhint %}
 
 ### Keyword separator
 
