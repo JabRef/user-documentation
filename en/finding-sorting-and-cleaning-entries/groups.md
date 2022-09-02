@@ -19,7 +19,7 @@ Group definitions are database-specific.​
 
 The group interface is shown in the side pane on the left of the screen. It can be toggled on or off by pressing `Alt + 3` or by the menu **View → Groups interface**. The interface has several buttons, but most functions are accessed via a context menu (i.e. a right-click). Drag-and-drop is also supported.
 
-![The main group interface](<../.gitbook/assets/groups-interfacewhole-jabref5.2 (1).png>)
+![The main group interface](https://user-images.githubusercontent.com/6931104/188160207-63a74c16-8ce2-465a-8b2d-61171cd98608.png)
 
 ### Creating a group and adding entries to it
 
@@ -35,7 +35,8 @@ Selecting one group shows the entries contained in that group (accounting for [h
 
 When selecting several groups, you can intersect or unionize them: _Union_ displays all the entries of the selected groups while _Intersection_ displays all the entries shared among the selected groups.
 
-![Button for toggling union/intersection](<../.gitbook/assets/groups-unionbutton-jabref5.2 (1).png>)
+![Button for toggling union/intersection](https://user-images.githubusercontent.com/6931104/188161059-7f91441b-19d4-411f-a065-1d62613f5edc.png)
+
 
 For example, if you have a group for the author 'Smith' and another one for the author 'Doe', selecting the groups displays the entries that they co-authored if 'Intersection' is selected. If 'Union' is selected, the entries that at least one of them authored are displayed.
 
@@ -49,7 +50,8 @@ Just like directories, groups are structured like a tree, with the group _All En
 
 The properties of a group can be defined in the 'Edit group' dialog window (the same window is displayed when creating a new group). To modify the group properties, right-click on the group name in the group panel and select **Edit group** in the context menu.
 
-![Edit group window](<../.gitbook/assets/groups-groupwindow-jabref5.2 (1).png>)
+![Edit group window](https://user-images.githubusercontent.com/6931104/188163107-c0e55fd7-51a6-4350-8ded-598aa720dc77.png)
+
 
 ### Name
 
@@ -172,7 +174,7 @@ By hovering the mouse on this column, you can see the list of groups to which an
 
 The "groups" column is displayed by default. To remove the "groups" column, go to **Options → Preferences**, tab **Entry table**, and click on the bin icon next to the item "Groups". To add the "groups" column, select the "Groups" item in the drop-down menu, and click on the **+** button located to the right of the drop-down menu.
 
-![Preferences for tab Groups](<../.gitbook/assets/groups-preferences-jabref5.2 (1).png>)
+![Preferences for tab Entry table](https://user-images.githubusercontent.com/6931104/188165479-1beeed58-638b-4ef8-97d2-70bd350753fa.png)
 
 ## Groups and searching
 
