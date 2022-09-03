@@ -47,13 +47,19 @@ Our team consists of volunteers. To provide better support, we are currently try
 {% tab title="I am a programmer" %}
 ### I want to start with something easy [![Join the chat at https://gitter.im/JabRef/jabref](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/JabRef/jabref)
 
-We collect small issues at [https://github.com/JabRef/jabref/labels/good%20first%20issue](https://github.com/JabRef/jabref/labels/good%20first%20issue). In case you do not find something suitable, you are invited to get in touch with us. Comment at the issue, check the [the forum](https://discourse.jabref.org) or join our [chatting channel](https://gitter.im/JabRef/jabref). For the brave, we also collect issues at [https://github.com/koppor/jabref/labels/good%20first%20issue](https://github.com/koppor/jabref/labels/good%20first%20issue).
+We collect **small issues** at GitHub in JabRef's [main repository](https://github.com/JabRef/jabref/labels/good%20first%20issue) and also in [Koppor's repository](https://github.com/koppor/jabref/labels/good%20first%20issue). In case you do not find something suitable, you are invited to get in touch with us. Post in an issue you find interesting, check [the forum](https://discourse.jabref.org) or join our [chatting channel](https://gitter.im/JabRef/jabref). 
 
 After finding something, please check our [CONTRIBUTING.md](https://github.com/JabRef/jabref/blob/main/CONTRIBUTING.md) for detailed information and further links.
 
 ### I want something with huge impact [![Discourse](https://img.shields.io/badge/discourse-online-green.svg)](https://discourse.jabref.org/c/features/6)
 
-Look at the discussions in our forum at [https://discourse.jabref.org/c/features/6](https://discourse.jabref.org/c/features/6). Find an interesting topic, discuss it and start contributing.
+Look at the discussions in our forum about [new features](https://discourse.jabref.org/c/features/6). Find an interesting topic, discuss it and start contributing. Alternatively, you can check out [JabRefs projects page at GitHub](https://github.com/JabRef/jabref/projects?type=classic). The projects page has the advantage that these issues have already been screened by the team and sorted into roughly high, moderate and low priority. Of course, in principle, all issues are free to take, but be aware that the difficulty of bugs and features varies.
+
+### I am a student or lecturer [![Join the chat at https://gitter.im/JabRef/jabref](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/JabRef/jabref)
+
+JabRef offers special support to students and lecturers. In addition to small issues, check out [JabRefs candidates for university projects](https://github.com/orgs/JabRef/projects/3). For the brave and experienced (e.g. Master Students), the [Bug Board](https://github.com/JabRef/jabref/projects/5) or the [Feature Board](https://github.com/JabRef/jabref/projects/7) may turn out to be other pre-sorted issue sources.
+
+If you ask yourself how to integrate JabRef into your class, please read the [documentation about how to integrate JabRef into a class of software engineering training](https://devdocs.jabref.org/teaching.html#jabref-and-software-engineering-training). As student, you may notify your lecturer about this possibility.
 
 ### I need help with the code [![Join the chat at https://gitter.im/JabRef/jabref](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/JabRef/jabref)
 
@@ -61,6 +67,6 @@ You can talk to the core developers of JabRef in the [gitter chat](https://gitte
 
 ### I want to learn about code quality [![Join the chat at https://gitter.im/JabRef/jabref](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/JabRef/jabref)
 
-Please head to [https://devdocs.jabref.org/advanced-reading/code-quality](https://devdocs.jabref.org/advanced-reading/code-quality) to learn about our current efforts to measure and improve code quality.
+Please head to [devdocs about code-quality](https://devdocs.jabref.org/advanced-reading/code-quality) to learn about our current efforts to measure and improve code quality.
 {% endtab %}
 {% endtabs %}
