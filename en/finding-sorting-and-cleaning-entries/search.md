@@ -18,7 +18,7 @@ At the right of the search text field, 2 buttons allow for selecting some settin
 * Case sensitivity
   * Whether or not the search query is case sensitive.
 
-## Simple search
+## Simple search <a href="#simple-search" id="simple-search"></a>
 
 In a normal search, the program searches your library for all occurrences of the words in your search string, once you entered it. Only entries containing all words will be considered matches. To search for sequences of words, enclose the sequences in double-quotes. For instance, the query **progress "marine aquaculture"** will match entries containing both the word "progress" and the phrase "marine aquaculture".
 
@@ -26,7 +26,7 @@ All entries that do not match are hidden, leaving for display the matching entri
 
 To stop displaying the search results, just clear the search field, press Esc or click on the "Clear" (`X`) button.
 
-## Search using regular expressions <a href="#advanced" id="advanced"></a>
+## Search using regular expressions <a href="#regular-expressions" id="regular-expressions"></a>
 
 {% hint style="warning" %}
 Make sure that the button "regular expressions" is activated
@@ -34,19 +34,32 @@ Make sure that the button "regular expressions" is activated
 
 ### General syntax
 
-In order to search specific fields only and/or include logical operators in the search expression, a special syntax is available in which these can be specified. E.g. to search for entries whose an author contains **miller**, enter:
+In order to only search for content within specific fields and/or to include logical operators in the search expression, a special syntax is available in which these can be specified. Both the field specification and the search term support [regular expressions](search.md#regular-expressions).
 
-`author = miller`
+#### Search within specific Fields
 
-Both the field specification and the search term support [regular expressions](search.md#regular-expressions). If the search term contains spaces, enclose it in quotes. Do _not_ use spaces in the field specification! E.g. to search for entries about image processing, type:
+   To search for entries whose author contains **miller**, enter: `author = miller`. The `=` sign is actually a shorthand for `contains`. Searching for an exact match is possible using `matches` or `==`.
 
-`title|keywords = "image processing"`
+#### Search for terms containing spaces
 
-You can use `and`, `or`, `not`, and parentheses as intuitively expected:
+   If the search term contains spaces, enclose it in quotes. Do _not_ use spaces in the field specification! E.g to search for entries with the title "image processing", type: `title = "image processing"`
 
-`(author = miller or title|keywords = "image processing") and not author = brown`
+#### Search using parentheses, `and`, `or` and `not`
 
-The `=` sign is actually a shorthand for `contains`. Searching for an exact match is possible using `matches` or `==`. Using `!=` tests if the search term is _not_ contained in the field (equivalent to `not ... contains ...`). The selection of field types to search (required, optional, all) is always overruled by the field specification in the search expression. If a field is not given, all fields are searched. For example, `video and year == 1932` will search for entries with any field containing `video` and the field `year` being exactly `1932`.
+To search for entries with the title _or_ the keyword "image processing", type: `title|keywords = "image processing"`. To search for entries _without_ the title or the keyword "image processing", type: `title|keywords != "image processing"` It is also possible to chain search expressions. In general, you can use `and`, `or`, `not`, and parentheses as intuitively expected:
+  
+  `(author = miller or title|keywords = "image processing") and not author = brown and != author = blue`
+
+  Logical Operator / Symbol | Explanation
+  |:---|:---|
+  XY    | X followed by Y
+  X\|Y  | Either X or Y
+  (X)  | X, as a capturing group
+  | != | tests if the search term is _not_ contained in the field (equivalent to `not ... contains ...`)|
+  
+#### Regular Expression search and Field Types
+
+The selection of field types to search (required, optional, all) is always overruled by the field specification in the search expression. If a field is not given, all fields are searched. For example, `video and year == 1932` will search for entries with any field containing `video` and the field `year` being exactly `1932`.
 
 ### Pseudo fields
 
@@ -60,9 +73,9 @@ JabRef defines the following pseudo fields:
 | `key`            | Search for citation keys             | `citationkey == miller2005`: search for an entry whose citation key is **miller2005**                                                                                                                                                                              |
 | `entrytype`      | Search for entries of a certain type | `entrytype = thesis`: search entries whose type (as displayed in the `entrytype` column) contains the word **thesis** (which would be **phdthesis** and **mastersthesis**)                                                                                         |
 
-### Advanced use of regular expressions
+### Advanced use of regular expressions <a href="#regular-expressions-advanced" id="regular-expressions-advanced"></a>
 
-Regular expressions (regex for short) define a language for specifying the text to be matched, for example when searching. JabRef uses regular expressions as defined in Java. For extensive information, please, look at the [Java documentation](https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/regex/Pattern.html) and at the [Java tutorial](https://docs.oracle.com/javase/tutorial/essential/regex/).
+Regular expressions (RegEx for short) define a language for representing patterns matching text, for example when searching. There are different types of RegEx languages. JabRef uses regular expressions as defined in Java. For extensive advanced information about Java's RegEx patterns, please have a look at the [Java documentation](https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/regex/Pattern.html) and at the [Java tutorial](https://docs.oracle.com/javase/tutorial/essential/regex/).
 
 #### Regular expressions and casing
 
@@ -72,15 +85,22 @@ If casing is important to your search, activate the case-sensitive button.
 
 #### Searching for entries with an empty or missing field
 
-* `.` means any character
-* `+` means one or more times
+* `.` means: any character
+* `+` means: one or more times
 
 `author != .+` returns entries with empty or no author field.
 
+* `^` means: the beginning of a line
+* `[a-zA-Z]` means: a through z or A through Z, inclusive (range)
+* `$` means: the end of a line
+* `X{n}` means: X, exactly n times
+
+`owner != ^[a-zA-Z]{3}$` returns empty and non-three-letter owners
+
 #### Searching for a given word
 
-* `\b` means word boundary
-* `\B` means not a word boundary
+* `\b` means: word boundary
+* `\B` means: not a word boundary
 
 `keywords = \buv\b` matches _uv_ but not _lluvia_ (it does match _uv-b_ however)
 
@@ -92,8 +112,8 @@ If casing is important to your search, activate the case-sensitive button.
 
 #### Searching with optional spelling
 
-* `?` means none or one copy of the preceding character.
-* `{n,m}` means at least _n_, but not more than _m_ copies of the preceding character.
+* `?` means: none or one copy of the preceding character.
+* `{n,m}` means: at least _n_, but not more than _m_ copies of the preceding character.
 * `[ ]` defines a character class
 
 `title =neighbou?r` matches _neighbour_ and _neighbor_, and also _neighbours_ and _neighbors_, and _neighbouring_ and _neighboring_, etc.
@@ -122,6 +142,39 @@ It means that to search for a string including a backslash, two consecutive back
 
 The character `"` has a special meaning: it is used to group words into phrases for exact matches. So, if you search for a string that includes a double quotation, the double quotation character has to be replaced with the hexadecimal character 22 in ASCII table `\x22`.
 
-Hence, to search for `{\"o}quist` as an author, you must input `author = \{\\\x22o\}quist`, with regular expressions enabled (Note: the `{`, `_` and the `}` are escaped with a backslash; see above).
+Neither a simple backslash `\"`, nor a double backslash `\\"` will work as an escape for `"`. Neither `author = {\"o}quist` with regular expression disabled, nor `author = \{\\\"O\}quist` with regular expression enabled, will find anything, even if the name `{\"o}quist` exists in the library.
 
-Indeed, `\"` does not work as an escape for `"`. Hence, neither `author = {\"o}quist` with regular expression disabled, nor `author = \{\\\"O\}quist` with regular expression enabled, will find anything even if the name `{\"o}quist` exists in the library.
+Hence, to search for `{\"o}quist` as an author, you must input `author = \{\\\x22o\}quist`, with regular expressions enabled (Note: the `\`, `{`, `_` and the `}` are escaped with a backslash; see above).
+
+#### Greedy quantifiers
+
+Quantifier | Explanation
+|:---|:---|
+X?    |   X, once or not at all
+X*    |   X, zero or more times
+X+    |   X, one or more times
+X{n}  |  X, exactly n times
+X{n,} |  X, at least n times
+X{n,m}|  X, at least n but not more than m times
+
+#### Reluctant quantifiers
+
+Quantifier | Explanation
+|:---|:---|
+X??    | X, once or not at all
+X*?    | X, zero or more times
+X+?    | X, one or more times
+X{n}?  | X, exactly n times
+X{n,}?  | X, at least n times
+X{n,m}? | X, at least n but not more than m times
+
+#### Possessive quantifiers
+
+Quantifier | Explanation
+|:---|:---|
+X?+      | X, once or not at all
+X*+      | X, zero or more times
+X++      | X, one or more times
+X{n}+    | X, exactly n times
+X{n,}+    | X, at least n times
+X{n,m}+  | X, at least n but not more than m times
