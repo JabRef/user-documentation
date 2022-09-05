@@ -99,7 +99,7 @@ If casing is important to your search, activate the case-sensitive button.
 * `$` means: the end of a line
 * `X{n}` means: X, exactly n times
 
-`owner != ^[a-zA-Z]{3}$` returns empy and non-three-letter owners 
+`owner != ^[a-zA-Z]{3}$` returns empty and non-three-letter owners 
 
 #### Searching for a given word
 
