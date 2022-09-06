@@ -8,9 +8,9 @@ Note that no modifications you make in this dialog will be stored until you clic
 
 ## Using the entry customization dialog
 
-![Screenshot of the entry customization dialog ](../.gitbook/assets/jabrefcustomentrytypes%20%282%29%20%281%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%283%29%20%284%29%20%284%29%20%284%29.png)
+![Screenshot of the entry customization dialog](<../.gitbook/assets/jabrefcustomentrytypes (2) (1) (3) (3) (3) (3) (3) (3) (3) (4) (4) (4) (1).png>)
 
-The entry customization dialog is divided into two areas. On the left side all entry types \(including any custom types\) are listed. If you select a type from the left side, the right area shows all fields for the selected entry.
+The entry customization dialog is divided into two areas. On the left side all entry types (including any custom types) are listed. If you select a type from the left side, the right area shows all fields for the selected entry.
 
 ### Adding and removing entry types
 
@@ -33,4 +33,3 @@ To change the order of the fields you can use drag and drop.
 ### Either/or fields
 
 Certain entry types have an either-or condition in their required fields. For instance, a _book_ entry is complete with either the _author_ or the _editor_ field, or both. To indicate such a condition in a custom entry type, you should add a field named as the set of alternative fields separated by slashes, for instance _author/editor_ indicates the condition mentioned above for the _book_ entry type.
-

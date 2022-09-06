@@ -20,13 +20,13 @@ Now, one wants to have the full first names. In case, there is a DOI available, 
 
 1.  Determine the DOI: Switch to the "General" tab and click on "Look up DOI"
 
-    ![Screenshot of determine DOI](<../.gitbook/assets/expand-firstnames-step-1 (1).png>)
+    <img src="../.gitbook/assets/expand-firstnames-step-1.png" alt="Screenshot of determine DOI" data-size="original">
 2.  Fetch BibTeX data from the DOI: Click on "Get BibTeX data from DOI"
 
-    ![Screenshot of get BibTeX data from DOI](<../.gitbook/assets/expand-firstnames-step-2 (1).png>)
+    <img src="../.gitbook/assets/expand-firstnames-step-2.png" alt="Screenshot of get BibTeX data from DOI" data-size="original">
 3.  A popup appears. Select which data you want to merge into the existing entry
 
-    ![Screenshot of Merge Entries Dialog](<../.gitbook/assets/expand-firstnames-step-3 (1).png>)
+    <img src="../.gitbook/assets/expand-firstnames-step-3.png" alt="Screenshot of Merge Entries Dialog" data-size="original">
 4.  Now the first names are expanded:
 
-    ![Screenshot of Result](<../.gitbook/assets/expand-firstnames-step-4 (1).png>)
+    <img src="../.gitbook/assets/expand-firstnames-step-4.png" alt="Screenshot of Result" data-size="original">

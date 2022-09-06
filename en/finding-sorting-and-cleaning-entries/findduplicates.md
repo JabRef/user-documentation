@@ -6,27 +6,36 @@ This feature is accessible directly through **Quality → Find duplicates**. It 
 
 Detection of potential duplicates is done by an edit distance algorithm. Extra weighting is put on the fields _author_, _editor_, _title._ and _journal_.
 
-![Screenshot of the parallel display](<../.gitbook/assets/findduplicateswindow-paralleldisplay (1).png>)
+<figure><img src="../.gitbook/assets/duplicate-resolver-dialog.png" alt="Screenshot of the duplicate resolver dialog in light mode"><figcaption><p>Screenshot of the duplicate resolver dialog in light mode</p></figcaption></figure>
 
-The differences between the two entries can be emphasized through the drop-down menu located at the upper right-hand corner of the window. Five ways of displaying the differences are offered:
+The differences between the two entries can be configured through the toolbox located at the top of the window. From the toolbox, you can choose to show or hide differences, choose how to display differences _(Unified or Split)_ and you can also choose how to compare entries _(by words or characters)_.
 
-* **plain text**: as-is, no emphasis
-* **show diff** - word: differences are shown in the right entry. Full words are struck out in red if they are removed from the left entry or underlined in blue if they are added to the right entry.
-* **show diff** - character: differences are shown in the right entry. Individual characters are struck out in red or underlined in blue as above.
-* **show symmetric diff** - word: differences are shown on both sides. Words are underlined and displayed in color.
-* **show symmetric diff** - character: differences are shown on both sides. Characters are underlined and displayed in color.
+**Show or Hide Differences**
 
-In the central column, a radio button allows you to select which side to keep for each field: the **left side**, the **right side**, or **none**. By default, the left entry is kept and any fields not present in the left entry are obtained from the right entry.
+* **Plain Text —** This option hides the differences.
+* **Show Differences —** This option shows the differences.
 
-## Selecting which entry to keep
+**Choose Differences Display Mode**
 
-![Screenshot of the buttons to choose which entry to keep](<../.gitbook/assets/findduplicateswindow-selecting (1).png>)
+* **Unified View —** In this mode, differences are shown on the right side.
+* **Split View —** In this mode, differences are shown on both sides, with <mark style="color:red;">deletions</mark> on the left side and <mark style="color:green;">additions</mark> and <mark style="color:blue;">updates</mark> on the right side.
+
+**Choose Entries Comparison Method**
+
+* **Highlight words —** This option compares entries values in terms of words.
+* **Highlight characters —** This option compares entries values in terms of characters. It divides both entry values into characters before comparing each character individually. This is perfect for comparing values with small differences _(1 or 2 different characters)_.
+
+From the toolbox's top-left corner, you also can choose to select all the left entry values by clicking `Left` or selecting all the right entry values by clicking `Right`. Be aware that selecting all entry values will select a value even when it is empty.
+
+### Selecting which entry to keep
+
+![Screenshot of the buttons to choose which entry to keep](../.gitbook/assets/herdhjkkk.PNG)
 
 You are offered to:
 
-* **Automatically remove exact duplicates**. This button shows up if there are exact duplicates. Clicking that leads to all exact duplicates to be removed.
-* **Keep left** entry. Removes the right entry.
-* **Keep right** entry. Removes the left entry.
-* **Keep both** entries, meaning that you consider the two entries are not duplicates.
-* **Keep merged entry only**, meaning that the merged entry is the best. Both previous entries are removed.
-* **Cancel**, which will end the duplicate finding.
+* **Automatically remove exact duplicates**. This button shows up if there are exact duplicates. Click it to stop showing other exact duplicates and have them removed automatically.
+* **Keep left —**  Keeps the left entry and removes the right entry.
+* **Keep right —** Keeps the right entry and removes the left entry.
+* **Keep both** **—** Keeps both entries. This usually means that you don't consider the entries to be duplicates.
+* **Keep merged —** Keeps the merged entry only and removes the previous entries.
+* **Cancel —** Closes the dialog and stops showing other duplicates.
