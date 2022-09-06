@@ -61,7 +61,7 @@ JabRef offers special support to students and lecturers. In addition to small is
 
 If you ask yourself how to integrate JabRef into your class, please read the [documentation about how to integrate JabRef into a class of software engineering training](https://devdocs.jabref.org/teaching.html#jabref-and-software-engineering-training). As student, you may notify your lecturer about this possibility.
 
-#### I want to know how to contribute code and set up my workspace
+#### I want to know how to contribute code and set up my workspace [![Join the chat at https://gitter.im/JabRef/jabref](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/JabRef/jabref)
 
 Check out the [documentation for developers](https://devdocs.jabref.org/contributing.html#contribute-code)
 
