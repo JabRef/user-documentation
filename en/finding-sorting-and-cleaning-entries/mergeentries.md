@@ -1,24 +1,59 @@
 # Merge entries
 
-JabRef can help you merging entries of your library.
+JabRef can help you to merge entries of your library.
 
 First, select the two entries to be merged. Then select the menu **Quality → Merge entries**. Alternatively, select the right-click menu **Merge entries**.
 
-The **Merge entries** window will pop-up:
+The **Merge entries** window will pop up:
 
-![](<../.gitbook/assets/getdoi-mergeentrieswithdoiinformation-jabref5.2 (1) (1) (1).png>)
+![](<../.gitbook/assets/merge-entries-1.png>)
 
-The fields of the two entries are displayed side-by-side on the upper part of the window.
+## Diff Highlighting
 
-The differences between the two entries can be emphasized through the drop-down menu located at the upper left-hand corner of the window. Five ways of displaying the differences are offered:
+The differences between the two entries can be configured through the toolbox located at the top of the window. From the toolbox, you can choose to show or hide differences, choose how to display differences *(Unified or Split)* and you can also choose how to compare entries *(by words or characters)*.
 
-* **plain text**: as-is, no emphasis
-* **show diff** - word: differences are shown in the right entry. Full words are struck out in red if they are removed from the left entry or underlined in blue if they are added to the right entry.
-* **show diff** - character: differences are shown in the right entry. Individual characters are struck out in red or underlined in blue as above.
-* **show symmetric diff** - word: differences are shown on both sides. Words are underlined and displayed in color.
-* **show symmetric diff** - character: differences are shown on both sides. Characters are underlined and displayed in color.
+**Show or Hide Differences**
 
-In the central column, a radio button allows you to select which side to keep for each field: the **left side**, the **right side**, or **none**. By default, the left entry is kept, and any fields not present in the left entry are obtained from the right entry.
+- **Plain Text —** This option hides the differences.
+- **Show Differences —** This option shows the differences.
+
+**Choose Differences Display Mode**
+
+- **Unified View —** In this mode, differences are shown on the right side.
+- **Split View —** In this mode, differences are shown on both sides, with deletions on the left side and additions and updates on the right side.
+
+**Choose Entries Comparison Method**
+
+- **Highlight words —** This option compares entries values in terms of words.
+- **Highlight characters —** This option compares entries values in terms of characters. It divides both entry values into characters before comparing each character individually. This is perfect for comparing values with small differences *(1 or 2 different characters)*.
+
+From the toolbox's top-left corner, you also can choose to select all the left entry values by clicking `Left` or selecting all the right entry values by clicking `Right`. Be aware that selecting all entry values will select a value even when it is empty.
+
+### Select Both Field Values (AKA Merge Fields)
+
+When merging entries, sometimes you want to select both values for a certain field.
+A common use case for this would be wanting the merged entry to have both the left and right entry groups.
+Now, you can simply click the merge button next to the groups label and we’ll take care of the rest.
+We’ll merge the left and right entry groups, keeping only one copy of any common group.
+And this works for more than just groups - you can also merge keywords, comments and files.
+So go ahead and give it a try - it’ll make your life a lot easier.
+
+![](<../.gitbook/assets/three-way-merge-groups-keywords.png>)
+
+### Open DOIs and URLs from The Merge Dialog
+
+There are two buttons at the end of each field cell: one for copying the content of the field cell, and the other for opening links;
+at the moment, only URLs and DOIs can be opened.
+
+![](<../.gitbook/assets/three-way-merge-open-doi-copy.png>)
+
+### Select or Edit Merged Entry Manually
+
+For each field, you can select whether to choose the left entry value or the right one.
+You can do that by clicking on the given field cell. Once you did that, the merged entry will update its content to reflect the new change.
+
+You can also edit the merged entry values manually.
+Doing so, will update the selected field cell if the left or right cell equals that value you typed.
 
 Finally, after selecting which fields to keep, you can decide to **Merge entries**. Alternatively, you can press **Cancel**.
 
