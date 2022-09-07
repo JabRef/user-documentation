@@ -57,9 +57,13 @@ Look at the discussions in our forum about [new features](https://discourse.jabr
 
 #### I am a student or lecturer [![Join the chat at https://gitter.im/JabRef/jabref](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/JabRef/jabref)
 
-JabRef offers special support to students and lecturers. In addition to small issues, check out [JabRefs candidates for university projects](https://github.com/orgs/JabRef/projects/3). For the brave and experienced (e.g. Master Students), the [Bug Board](https://github.com/JabRef/jabref/projects/5) or the [Feature Board](https://github.com/JabRef/jabref/projects/7) may turn out to be other pre-sorted issue sources.
+JabRef offers special support to students and lecturers. In addition to small issues, check out [JabRefs candidates for university projects](https://github.com/orgs/JabRef/projects/3). For the brave and experienced (e.g. Master Students), the [bug board](https://github.com/JabRef/jabref/projects/5) or the [feature board](https://github.com/JabRef/jabref/projects/7) may turn out to be other pre-sorted issue sources.
 
 If you ask yourself how to integrate JabRef into your class, please read the [documentation about how to integrate JabRef into a class of software engineering training](https://devdocs.jabref.org/teaching.html#jabref-and-software-engineering-training). As student, you may notify your lecturer about this possibility.
+
+#### I want to know how to contribute code and set up my workspace [![Join the chat at https://gitter.im/JabRef/jabref](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/JabRef/jabref)
+
+Check out the [documentation for developers](https://devdocs.jabref.org/contributing.html#contribute-code)
 
 #### I need help with the code [![Join the chat at https://gitter.im/JabRef/jabref](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/JabRef/jabref)
 
@@ -67,6 +71,6 @@ You can talk to the core developers of JabRef in the [gitter chat](https://gitte
 
 #### I want to learn about code quality [![Join the chat at https://gitter.im/JabRef/jabref](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/JabRef/jabref)
 
-Please head to [devdocs about code-quality](https://devdocs.jabref.org/advanced-reading/code-quality) to learn about our current efforts to measure and improve code quality.
+Please head to [devdocs about code-quality](https://devdocs.jabref.org/code-howtos/code-quality.html#code-quality) to learn about our current efforts to measure and improve code quality.
 {% endtab %}
 {% endtabs %}
