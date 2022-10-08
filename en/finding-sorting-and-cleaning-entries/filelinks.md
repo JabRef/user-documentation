@@ -43,7 +43,7 @@ The rules for which file names can be auto-linked to a citation key can be set u
 
 For an entry, if you want to download a file and link it to the entry, you can do this by clicking the **Download** button in the entry editor.
 
-![Download from URL](<../.gitbook/assets/entryeditor-general-downloadfilefromurl (2) (3) (3) (3) (3) (3) (3) (3) (4) (4) (4) (2) (1) (4).png>)
+![Download from URL](<../.gitbook/assets/entryeditor-general-downloadfilefromurl (2) (3) (3) (3) (3) (3) (3) (3) (4) (4) (4) (2) (1) (1) (2).png>)
 
 A dialog box will appear, prompting you to enter the URL. The file will be downloaded to your main file directory, named based on the entry's citation key, and finally linked from the entry.
 

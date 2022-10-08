@@ -2,7 +2,7 @@
 
 The search bar is located in the icon bar.
 
-![Screenshot of the search bar](<../.gitbook/assets/search-bar-v5.2 (2) (1) (1) (2) (2) (2) (2) (2) (2) (2) (3) (3) (2) (4).png>)
+![Screenshot of the search bar](<../.gitbook/assets/search-bar-v5.2 (2) (1) (1) (2) (2) (2) (2) (2) (2) (2) (3) (3) (2) (1).png>)
 
 To make the cursor jump to the search field, you can:
 
@@ -38,25 +38,25 @@ In order to only search for content within specific fields and/or to include log
 
 #### Search within specific Fields
 
-   To search for entries whose author contains **miller**, enter: `author = miller`. The `=` sign is actually a shorthand for `contains`. Searching for an exact match is possible using `matches` or `==`.
+To search for entries whose author contains **miller**, enter: `author = miller`. The `=` sign is actually a shorthand for `contains`. Searching for an exact match is possible using `matches` or `==`.
 
 #### Search for terms containing spaces
 
-   If the search term contains spaces, enclose it in quotes. Do _not_ use spaces in the field specification! E.g to search for entries with the title "image processing", type: `title = "image processing"`
+If the search term contains spaces, enclose it in quotes. Do _not_ use spaces in the field specification! E.g to search for entries with the title "image processing", type: `title = "image processing"`
 
 #### Search using parentheses, `and`, `or` and `not`
 
 To search for entries with the title _or_ the keyword "image processing", type: `title|keywords = "image processing"`. To search for entries _without_ the title or the keyword "image processing", type: `title|keywords != "image processing"` It is also possible to chain search expressions. In general, you can use `and`, `or`, `not`, and parentheses as intuitively expected:
-  
-  `(author = miller or title|keywords = "image processing") and not author = brown and != author = blue`
 
-  Logical Operator / Symbol | Explanation
-  |:---|:---|
-  XY    | X followed by Y
-  X\|Y  | Either X or Y
-  (X)  | X, as a capturing group
-  | != | tests if the search term is _not_ contained in the field (equivalent to `not ... contains ...`)|
-  
+`(author = miller or title|keywords = "image processing") and not author = brown and != author = blue`
+
+| Logical Operator / Symbol | Explanation                                                                                     |
+| ------------------------- | ----------------------------------------------------------------------------------------------- |
+| XY                        | X followed by Y                                                                                 |
+| X\|Y                      | Either X or Y                                                                                   |
+| (X)                       | X, as a capturing group                                                                         |
+| !=                        | tests if the search term is _not_ contained in the field (equivalent to `not ... contains ...`) |
+
 #### Regular Expression search and Field Types
 
 The selection of field types to search (required, optional, all) is always overruled by the field specification in the search expression. If a field is not given, all fields are searched. For example, `video and year == 1932` will search for entries with any field containing `video` and the field `year` being exactly `1932`.
@@ -148,33 +148,33 @@ Hence, to search for `{\"o}quist` as an author, you must input `author = \{\\\x2
 
 #### Greedy quantifiers
 
-Quantifier | Explanation
-|:---|:---|
-X?    |   X, once or not at all
-X*    |   X, zero or more times
-X+    |   X, one or more times
-X{n}  |  X, exactly n times
-X{n,} |  X, at least n times
-X{n,m}|  X, at least n but not more than m times
+| Quantifier | Explanation                             |
+| ---------- | --------------------------------------- |
+| X?         | X, once or not at all                   |
+| X\*        | X, zero or more times                   |
+| X+         | X, one or more times                    |
+| X{n}       | X, exactly n times                      |
+| X{n,}      | X, at least n times                     |
+| X{n,m}     | X, at least n but not more than m times |
 
 #### Reluctant quantifiers
 
-Quantifier | Explanation
-|:---|:---|
-X??    | X, once or not at all
-X*?    | X, zero or more times
-X+?    | X, one or more times
-X{n}?  | X, exactly n times
-X{n,}?  | X, at least n times
-X{n,m}? | X, at least n but not more than m times
+| Quantifier | Explanation                             |
+| ---------- | --------------------------------------- |
+| X??        | X, once or not at all                   |
+| X\*?       | X, zero or more times                   |
+| X+?        | X, one or more times                    |
+| X{n}?      | X, exactly n times                      |
+| X{n,}?     | X, at least n times                     |
+| X{n,m}?    | X, at least n but not more than m times |
 
 #### Possessive quantifiers
 
-Quantifier | Explanation
-|:---|:---|
-X?+      | X, once or not at all
-X*+      | X, zero or more times
-X++      | X, one or more times
-X{n}+    | X, exactly n times
-X{n,}+    | X, at least n times
-X{n,m}+  | X, at least n but not more than m times
+| Quantifier | Explanation                             |
+| ---------- | --------------------------------------- |
+| X?+        | X, once or not at all                   |
+| X\*+       | X, zero or more times                   |
+| X++        | X, one or more times                    |
+| X{n}+      | X, exactly n times                      |
+| X{n,}+     | X, at least n times                     |
+| X{n,m}+    | X, at least n but not more than m times |

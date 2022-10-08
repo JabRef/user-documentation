@@ -20,7 +20,7 @@ After connecting to your shared database, your main window should look like this
 
 JabRef will automatically detect your changes and push them to the shared side. JabRef will also constantly check if there is a newer version available. If you experience connection issues, you can pull changes from your shared database via the icon in the icon bar. If a newer version is available, JabRef will try to automatically merge the new version and your local copy. If this fails, the **Update refused** dialog will show up. You will then have to manually merge using the **Update refused** dialog. The dialog helps you by pointing out the differences, you then will have to choose if you want to keep your local version or update to the shared version. Confirm your merge by clicking on **Merge entries**.
 
-![Screenshot of Update refused dialog](../../.gitbook/assets/update-refused-merge-dialog.png)
+![Screenshot of Update refused dialog](<../../.gitbook/assets/update-refused-merge-dialog (1).png>)
 
 The **Update refused** dialog can also take a different form, if the BibEntry you currently work on has been deleted on the shared side. You can choose to keep the BibEntry in the database by clicking **Keep** or update to the shared side and click **Close**.
 

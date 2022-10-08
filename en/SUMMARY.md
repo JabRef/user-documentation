@@ -1,6 +1,6 @@
 # Table of contents
 
-* [User Documentation](README.md)
+* [JabRef Bibliography Management](README.md)
 * [Installation](installation.md)
 * [Getting started](getting-started.md)
 * [Collect](collect/README.md)
@@ -34,7 +34,7 @@
   * [Export to Microsoft Word](cite/export-to-microsoft-word.md)
   * [OpenOffice/LibreOffice integration](cite/openofficeintegration.md)
 * [Share](collaborative-work/README.md)
-  * [Sharing a Bib\(la\)TeX Library](collaborative-work/sharedbibfile.md)
+  * [Sharing a Bib(la)TeX Library](collaborative-work/sharedbibfile.md)
   * [Shared SQL Database](collaborative-work/sqldatabase/README.md)
     * [Migration of pre-3.6 SQL databases into a shared SQL database](collaborative-work/sqldatabase/sqldatabasemigration.md)
   * [Export](collaborative-work/export/README.md)
@@ -61,7 +61,7 @@
   * [Field content selector](advanced/contentselector.md)
   * [URL and DOI links in JabRef](advanced/externalfiles.md)
   * [Command line use and options](advanced/commandline.md)
-  * [Automatic Backup \(.sav and .bak\) and Autosave](advanced/autosave.md)
+  * [Automatic Backup (.sav and .bak) and Autosave](advanced/autosave.md)
   * [XMP metadata support in JabRef](advanced/xmp.md)
   * [Remote operation](advanced/remote.md)
   * [Custom themes](advanced/custom-themes.md)
@@ -72,7 +72,7 @@
   * [License](advanced/license.md)
   * [Knowledge](advanced/knowledge/README.md)
     * [MS Office Bibliography XML format](advanced/knowledge/msofficebibfieldmapping.md)
-    * [Comparison of the Medline \(txt\), Medline \(xml\), and RIS format](advanced/knowledge/medlineris.md)
+    * [Comparison of the Medline (txt), Medline (xml), and RIS format](advanced/knowledge/medlineris.md)
     * [EndNote Export Filter](advanced/knowledge/endnote-export-filter.md)
 * [Frequently Asked Questions](faq/README.md)
   * [Linux](faq/linux.md)
@@ -82,4 +82,3 @@
 * [Contribute to JabRef](contributing/README.md)
   * [How to Improve the Help Page](contributing/how-to-improve-the-help-page.md)
   * [How to translate the JabRef User Interface](contributing/how-to-translate-the-ui.md)
-

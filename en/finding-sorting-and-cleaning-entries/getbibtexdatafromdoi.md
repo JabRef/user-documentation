@@ -16,7 +16,7 @@ In the entry table, right-click on the entry to complement, and select the menu 
 
 This opens the window _Merge entry with DOI information_:
 
-![](<../.gitbook/assets/getdoi-mergeentrieswithdoiinformation-jabref5.2 (1) (1) (1).png>)
+![](<../.gitbook/assets/getdoi-mergeentrieswithdoiinformation-jabref5.2 (1) (1) (1) (1).png>)
 
 The fields of the original entry and of the information gathered from the DOI are displayed side-by-side.
 

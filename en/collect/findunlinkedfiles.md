@@ -35,7 +35,7 @@ In case you have numerous PDF files and want to convert them into new entries, J
 5. Click on "Search" / "Scan directory".
 6.  In "Select files", the files not yet contained in the library are shown.
 
-    <img src="../.gitbook/assets/findunlinkedfiles-foundfiles-5.2 (2) (2) (2) (2) (2) (2) (2) (2) (4) (3) (1).png" alt="FindUnlinkedFiles - Found files" data-size="original">
+    <img src="../.gitbook/assets/findunlinkedfiles-foundfiles-5.2 (2) (2) (2) (2) (2) (2) (2) (2) (4) (3) (1) (4).png" alt="FindUnlinkedFiles - Found files" data-size="original">
 7. Select the entries you are interested in. Note: the button `Export selected files` allows you to export the list of the selected files (a text file containing on each line one filename with its path)
 8.  Click on `Import`.
 
@@ -63,7 +63,7 @@ We are also [thinking about](https://github.com/koppor/jabref/issues/169) replac
 
 ### Better filenames
 
-JabRef also offers to change the filenames. You can adapt the pattern at Preferences -> Import ![Preferences - Import](<../.gitbook/assets/preferences-import (1) (1) (2) (2) (2) (2) (2) (2) (2) (2) (2) (3) (2).png>)
+JabRef also offers to change the filenames. You can adapt the pattern at Preferences -> Import ![Preferences - Import](<../.gitbook/assets/preferences-import (1) (1) (2) (2) (2) (2) (2) (2) (2) (2) (2) (3) (2) (1) (3).png>)
 
 Select "Choose pattern" and choose "bibtexkey - title" ![Preferences - Import - Choose pattern](<../.gitbook/assets/preferences-import-choose-pattern (1) (2) (2) (2) (2) (2) (2) (2) (2) (2) (3) (1).png>) This results in the setting `\bibtexkey\begin{title} - \format[RemoveBrackets]{\title}\end{title}`.
 

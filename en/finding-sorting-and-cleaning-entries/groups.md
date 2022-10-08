@@ -166,11 +166,12 @@ The content of the group is updated dynamically whenever the `.aux` file changes
 
 To see easily to which groups an entry belongs to, the entry table has a column dedicated to groups. For each entry, a set of color bars is displayed. The number of bars and their colors depend on the groups to which the entry belongs to.
 
-![](<../.gitbook/assets/groups-groupcolorlabel-jabref5.2 (1) (1) (2).png>)
+![](<../.gitbook/assets/groups-groupcolorlabel-jabref5.2 (1) (1) (2) (1).png>)
 
 By hovering the mouse on this column, you can see the list of groups to which an entry belongs to.
 
 The "groups" column is displayed by default. Using the menu **Options → Preferences**, tab **Entry table**, you can:
+
 * remove the "groups" column by clicking on the bin icon next to the item "Groups".
 * add the "groups" column by selecting the "Groups" item in the drop-down menu, and clicking on the **+** button located to the right of the drop-down menu.
 

@@ -22,7 +22,7 @@ In case the `.bib` file should automatically be saved on each change, you can di
 
 This functionality runs in the background while you are working on a _bibliographic database_. It makes a _backup copy_ (in a `.bib.sav` file) and keeps that up-to-date on every user interaction. For instance, when you change a field the new value would get saved into the backup copy. Assuming that _JabRef_ crashes while you are working on a _BibTeX database_. When you try again to open the file _JabRef_ crashed with you will get the following dialog:
 
-![Screenshot of the backup dialog](<../.gitbook/assets/backup\_found (2) (2) (2) (2) (2) (2) (2) (2) (4) (4) (3) (1) (3).png>)
+![Screenshot of the backup dialog](<../.gitbook/assets/backup\_found (2) (2) (2) (2) (2) (2) (2) (2) (4) (4) (3) (1) (1) (3).png>)
 
 Now you have the possibility to restore your changes which would normally get lost.
 
