@@ -47,7 +47,13 @@ Our team consists of volunteers. To provide better support, we are currently try
 {% tab title="I am a programmer" %}
 **I am a student** [![Join the chat at https://gitter.im/JabRef/jabref](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/JabRef/jabref)
 
-We collect good issues to start with at our [list of good first issues](https://github.com/orgs/JabRef/projects/5/views/1). Moreover, JabRef offers special support to students and lecturers. Please check out [JabRefs candidates for university projects](https://github.com/orgs/JabRef/projects/3) for a list of possible projects to work on during a teaching period.&#x20;
+We collect good issues to start with at our [list of good first issues](https://github.com/orgs/JabRef/projects/5/views/1). After getting used to JabRef, one can check out [JabRefs candidates for university projects](https://github.com/orgs/JabRef/projects/3). There, a list of possible projects to work on during a teaching period is offered. After finding something, please check our [CONTRIBUTING.md](https://github.com/JabRef/jabref/blob/main/CONTRIBUTING.md) for detailed information and further links.
+
+
+
+**I want something with huge impact** [![Discourse](https://img.shields.io/badge/discourse-online-green.svg)](https://discourse.jabref.org/c/features/6)
+
+Look at the discussions in our forum about [new features](https://discourse.jabref.org/c/features/6). Find an interesting topic, discuss it and start contributing. Alternatively, you can check out [JabRefs projects page at GitHub](https://github.com/JabRef/jabref/projects?type=classic). The projects page has the advantage that these issues have already been screened by the team and sorted into roughly high, moderate and low priority. Of course, in principle, all issues are free to take, but be aware that the difficulty of bugs and features varies.
 
 
 
@@ -60,20 +66,6 @@ If you ask yourself how to integrate JabRef into your class, please read the [do
 **I want to know how to contribute code and set up my workspace** [![Join the chat at https://gitter.im/JabRef/jabref](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/JabRef/jabref)
 
 Check out the [documentation for developers](https://devdocs.jabref.org/contributing.html#contribute-code)
-
-
-
-**I want to start with something easy** [![Join the chat at https://gitter.im/JabRef/jabref](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/JabRef/jabref)
-
-For persons already experienced with Java development, reading GitHub issues, and JabRef, we collect **small issues** at GitHub in JabRef's [main repository](https://github.com/JabRef/jabref/labels/good%20first%20issue) and also in [Koppor's repository](https://github.com/koppor/jabref/labels/good%20first%20issue). In case you do not find something suitable, you are invited to get in touch with us. Post in an issue you find interesting, check [the forum](https://discourse.jabref.org) or join our [chatting channel](https://gitter.im/JabRef/jabref).
-
-After finding something, please check our [CONTRIBUTING.md](https://github.com/JabRef/jabref/blob/main/CONTRIBUTING.md) for detailed information and further links.
-
-
-
-**I want something with huge impact** [![Discourse](https://img.shields.io/badge/discourse-online-green.svg)](https://discourse.jabref.org/c/features/6)
-
-Look at the discussions in our forum about [new features](https://discourse.jabref.org/c/features/6). Find an interesting topic, discuss it and start contributing. Alternatively, you can check out [JabRefs projects page at GitHub](https://github.com/JabRef/jabref/projects?type=classic). The projects page has the advantage that these issues have already been screened by the team and sorted into roughly high, moderate and low priority. Of course, in principle, all issues are free to take, but be aware that the difficulty of bugs and features varies.
 
 
 
