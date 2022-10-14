@@ -47,7 +47,7 @@ Our team consists of volunteers. To provide better support, we are currently try
 {% tab title="I am a programmer" %}
 **I am a student** [![Join the chat at https://gitter.im/JabRef/jabref](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/JabRef/jabref)
 
-JabRef offers special support to students and lecturers. In addition to small issues, check out [JabRefs candidates for university projects](https://github.com/orgs/JabRef/projects/3). For the brave and experienced (e.g. Master Students), the [bug board](https://github.com/JabRef/jabref/projects/5) or the [feature board](https://github.com/JabRef/jabref/projects/7) may turn out to be other pre-sorted issue sources.
+We collect good issues to start with at our [list of good first issues](https://github.com/orgs/JabRef/projects/5/views/1). Moreover, JabRef offers special support to students and lecturers. Please check out [JabRefs candidates for university projects](https://github.com/orgs/JabRef/projects/3) for a list of possible projects to work on during a teaching period.&#x20;
 
 
 
