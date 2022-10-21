@@ -177,6 +177,12 @@ The "groups" column is displayed by default. Using the menu **Options → Prefer
 
 ![Preferences for tab Entry table](https://user-images.githubusercontent.com/6931104/188165479-1beeed58-638b-4ef8-97d2-70bd350753fa.png)
 
+## Adding articles to groups
+
+Articles may be added to groups either by dragging-and-dropping, or by right-clicking on the article and selecting "Add selected entries to this group."
+
+**Note** that, if you did not select "Explicit selection" in the "Collect by" section of the group creation dialogue, you will not be able to manually add articles to a group. However, you may convert an initially keyword-based group to an explicit selection group.
+
 ## Groups and searching
 
 When viewing the contents of selected group(s), a search can be performed within these contents using the [regular search facility](search.md#regular-expressions).
