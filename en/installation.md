@@ -29,9 +29,9 @@ Also, if the Linux version of JabRef portable is put into a folder named `bin`, 
 
 #### Development version
 
-In case, you want to take advantage of the [latest features](https://github.com/JabRef/jabref/blob/main/CHANGELOG.md#unreleased), you can use pre-built binaries crafted from the latest development branch. To use the prebuilt binaries, visit [builds.jabref.org/master](https://builds.jabref.org/main/) and download the packaged binaries (e.g., `dmg` files for MacOS and `exe` files for Windows), run them and follow the instructions.
+If you want to take advantage of the [latest features](https://github.com/JabRef/jabref/blob/main/CHANGELOG.md#unreleased), you can use pre-built binaries crafted from the latest development branch. To use the prebuilt binaries, visit [builds.jabref.org/main](https://builds.jabref.org/main/) and download the packaged binaries (e.g., `dmg` files for MacOS and `exe` files for Windows), run them and follow the instructions.
 
-If you want to try the development version in parallel with the stable version, we recommend to download the portable version (e.g. `JabRef-X.Y.portable_windows.zip`, `JabRef-X.Y.portable_macos.tar.gz`, or `JabRef-X.Y.portable_linux.tar.gz`) from [builds.jabref.org/master](https://builds.jabref.org/main/) to ensure that both versions do not conflict.
+If you want to try the development version in parallel with the stable version, we recommend to download the portable version (e.g. `JabRef-X.Y.portable_windows.zip`, `JabRef-X.Y.portable_macos.tar.gz`, or `JabRef-X.Y.portable_linux.tar.gz`) from [builds.jabref.org/main](https://builds.jabref.org/main/) to ensure that both versions do not conflict.
 
 ## Troubleshooting
 
