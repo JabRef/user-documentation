@@ -45,9 +45,20 @@ Our team consists of volunteers. To provide better support, we are currently try
 {% endtab %}
 
 {% tab title="I am a programmer" %}
-**I am a student** [![Join the chat at https://gitter.im/JabRef/jabref](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/JabRef/jabref)
+**I am a student and I want to start with something easy** [![Join the chat at https://gitter.im/JabRef/jabref](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/JabRef/jabref).
 
-We collect good issues to start with at our [list of good first issues](https://github.com/orgs/JabRef/projects/5/views/1). After getting used to JabRef, one can check out [JabRefs candidates for university projects](https://github.com/orgs/JabRef/projects/3). There, a list of possible projects to work on during a teaching period is offered. After finding something, please check our [CONTRIBUTING.md](https://github.com/JabRef/jabref/blob/main/CONTRIBUTING.md) for detailed information and further links.
+We collect good issues to start with at our [list of good first issues](https://github.com/orgs/JabRef/projects/5/views/1).
+After finding something, please check our [CONTRIBUTING.md](https://github.com/JabRef/jabref/blob/main/CONTRIBUTING.md) for detailed information and further links.
+
+
+**I am a student and I want to choose from a curated list of university projects** [![Join the chat at https://gitter.im/JabRef/jabref](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/JabRef/jabref)
+
+Have a look at [JabRefs candidates for university projects](https://github.com/orgs/JabRef/projects/3). There, a list of possible projects to work on during a teaching period is offered. After finding something, please check our [CONTRIBUTING.md](https://github.com/JabRef/jabref/blob/main/CONTRIBUTING.md) for detailed information and further links.
+
+
+**I am new to open source and want something easy** [![Join the chat at https://gitter.im/JabRef/jabref](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/JabRef/jabref)
+
+We collect good issues to start with at our [list of good first issues](https://github.com/orgs/JabRef/projects/5/views/1). After finding something, please check our [CONTRIBUTING.md](https://github.com/JabRef/jabref/blob/main/CONTRIBUTING.md) for detailed information and further links.
 
 
 
