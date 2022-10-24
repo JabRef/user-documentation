@@ -179,7 +179,7 @@ The "groups" column is displayed by default. Using the menu **Options → Prefer
 
 ## Adding articles to groups
 
-Articles may be added to groups either by dragging-and-dropping, or by right-clicking on the article and selecting "Add selected entries to this group."
+Articles may be added to groups either by dragging-and-dropping, or by right-clicking on the group and selecting "Add selected entries to this group."
 
 **Note** that, if you did not select "Explicit selection" in the "Collect by" section of the group creation dialogue, you will not be able to manually add articles to a group. However, you may convert an initially keyword-based group to an explicit selection group.
 
