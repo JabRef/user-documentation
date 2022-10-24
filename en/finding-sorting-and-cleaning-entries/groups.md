@@ -177,7 +177,7 @@ The "groups" column is displayed by default. Using the menu **Options → Prefer
 
 ![Preferences for tab Entry table](https://user-images.githubusercontent.com/6931104/188165479-1beeed58-638b-4ef8-97d2-70bd350753fa.png)
 
-## Adding articles to groups
+## Adding articles to groups you've already created
 
 Articles may be added to groups either by dragging-and-dropping, or by right-clicking on the group and selecting "Add selected entries to this group."
 
