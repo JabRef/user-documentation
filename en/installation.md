@@ -98,6 +98,11 @@ You might need to install an additional font for JabRef to display characters co
 | System    | Language | Font                                                            |
 | --------- | -------- | --------------------------------------------------------------- |
 | ArchLinux | Japanese | [otf-ipafont](https://archlinux.org/packages/?name=otf-ipafont) |
+
+#### Submenus from the menu bar close immediately after left click is let go of if the menu bar was clicked in its top half
+
+This issue seems to be related to this [JavaFX bug](https://bugs.openjdk.org/browse/JDK-8251240). A temporary workaround is to click the menu bar in its lower half. To fix the issue permanently set the following system property: ```java -Djdk.gtk.version=2```. This can be done globally by adding ```_JAVA_OPTIONS="-Djdk.gtk.version=2"``` to ```/etc/environment```.  It can also be set locally by editing `JabRef.cfg` in your installation folder (possibly located at `/opt/JabRef/lib/app/JabRef.cfg`) and add the line `-Djdk.gtk.version=2` in the `[JavaOptions]` section. 
+
 {% endtab %}
 
 {% tab title="macOS" %}
@@ -110,10 +115,6 @@ Some users with macOS Sierra have reported freezes when using JabRef. It seems t
 This is one the one hand a font problem and second a lognstanding [JavaFX bug](https://bugs.openjdk.java.net/browse/JDK-8176835). This might be a problem related to the font you are using. You can download some other font that supports mathematical alphanumeric symbols, for example, FreeSerif or Cambria Math. A list of fonts supporting Math Unicode blocks is available at [http://www.fileformat.info/info/unicode/block/mathematical\_alphanumeric\_symbols/fontsupport.htm](http://www.fileformat.info/info/unicode/block/mathematical\_alphanumeric\_symbols/fontsupport.htm).
 {% endtab %}
 {% endtabs %}
-
-#### Submenus from the menu bar close immediately after left click is let go of if the menu bar was clicked in its top half
-
-This issue seems to be related to this [JavaFX bug](https://bugs.openjdk.org/browse/JDK-8251240). A temporary workaround is to click the menu bar in its lower half. To fix the issue permanently set the following system property: ```java -Djdk.gtk.version=2```. This can be done globally by adding ```_JAVA_OPTIONS="-Djdk.gtk.version=2"``` to ```/etc/environment```.  It can also be set locally by editing `JabRef.cfg` in your installation folder (possibly located at `/opt/JabRef/lib/app/JabRef.cfg`) and add the line `-Djdk.gtk.version=2` in the `[JavaOptions]` section. 
 
 ## Building From Source
 
