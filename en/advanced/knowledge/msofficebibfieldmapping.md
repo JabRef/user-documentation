@@ -60,6 +60,7 @@ The field mapping for import and export is mostly the same, but there are some d
 | translator | Translator |
 | bookauthor | Bookauthor |
 | volumes | NumberVolumes |
+| urldate | YearAccessed, MonthAccessed, DayAccessed |
 
 ### BibTeX/BibLaTeX only fields
 
