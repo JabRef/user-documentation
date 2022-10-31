@@ -2,7 +2,6 @@ name: Check Markdown links
 
 on:
   push:
-  pull_request:
   workflow_dispatch:
   schedule:
     # Run everyday at 9:00 AM (See https://pubs.opengroup.org/onlinepubs/9699919799/utilities/crontab.html#tag_20_25_07)
