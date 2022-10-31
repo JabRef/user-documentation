@@ -122,7 +122,7 @@ Most JabRef installations include the necessary files, so test the extension bef
    * `/Library/Application Support/Mozilla/NativeMessagingHosts/org.jabref.jabref.json` to install with admin rights for all users
    * `~/Library/Application Support/Mozilla/NativeMessagingHosts/org.jabref.jabref.json` to install without admin rights for the current user
 
-   b. Chrome: If it's not auto-installed for you, download [org.jabref.jabref.json](https://raw.githubusercontent.com/JabRef/jabref/main/buildres/mac/native-messaging-host/chromium/org.jabref.jabref.json) and put it into
+   b. Chrome (and Brave): If it's not auto-installed for you, download [org.jabref.jabref.json](https://raw.githubusercontent.com/JabRef/jabref/main/buildres/mac/native-messaging-host/chromium/org.jabref.jabref.json) and put it into (Brave is using the Google file structure for `NativeMessagingHosts`)
 
    * `/Library/Google/Chrome/NativeMessagingHosts/org.jabref.jabref.json` to install with admin rights for all users
    * `~/Library/Application Support/Google/Chrome/NativeMessagingHosts/org.jabref.jabref.json` to install without admin rights for the current user
