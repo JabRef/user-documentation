@@ -6,7 +6,7 @@ description: Using online databases to search for references
 
 JabRef is not intended to be a tool for mass download of citations. The purpose of the Web search is to easily gather a few entries directly from within JabRef. If you use the search functionality too extensively you might get blocked (for some time). To fetch entries from an online database, choose **View → Web search**, and the search interface will appear in the side panel. Select the database you want to search (e.g., arXiv) in the dropdown menu. Note that it might be necessary to scroll downwards to find certain fetchers. An example for this is provided in the image below. You may opt to download the abstracts along with the cite information for each entry, by checking the **Include abstracts** checkbox.Then enter the words of your query, and press Enter, or the **Search** button. The results are displayed in the [import inspection dialog](import/importinspectiondialog.md). Some online services support advanced search queries. These are described below at the respective fetcher.
 
-![](<../.gitbook/assets/select-fetcher-in-menu (1).png>)
+![JabRefWebSearch](https://user-images.githubusercontent.com/6931104/199564571-2287248b-40ac-4089-9af7-9feda25744b7.png)
 
 Apart from fetching entries by using a full search, it is also possible to directly [create an entry using a unique identifier](add-entry-using-an-id.md).
 
@@ -20,7 +20,7 @@ If you need to use an HTTP proxy server, you can configure JabRef to use a proxy
 
 ## Search Syntax
 
-Sinve version [5.2](https://github.com/JabRef/jabref/blob/main/CHANGELOG.md#52--2020-12-24):
+Since version [5.2](https://github.com/JabRef/jabref/blob/main/CHANGELOG.md#52--2020-12-24):
 
 JabRef searches the databases by using the specified keywords. One can use quotes (`"`) to keep words togehter: An example is `"process mining"`. It is also possible to restrict the search to dedicated fields:
 
