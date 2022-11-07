@@ -4,7 +4,7 @@ This tool allows you to search for citations in LaTeX files.
 
 In the user interface, a tab was added to the entry editor, the aesthetics have been improved, and the tool was renamed to **Search for Citations in LaTeX files**.
 
-![LaTeX Citations tab](../../.gitbook/assets/latex-citations-window.png)
+![LaTeX Citations tab](<../../.gitbook/assets/latex-citations-window (1).png>)
 
 ## Overview
 
@@ -12,7 +12,7 @@ A new tab was added to the entry editor. It allows to search for citations to th
 
 See the image below to see how it works:
 
-![LaTeX Citations tab animation](../../.gitbook/assets/latex-citations.gif)
+![LaTeX Citations tab animation](<../../.gitbook/assets/latex-citations (1).gif>)
 
 ## Key Features
 

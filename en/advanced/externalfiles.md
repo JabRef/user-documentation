@@ -14,10 +14,10 @@ To change the external viewer settings, go to **Options → Preferences → Exte
 
 There are several ways to open an external web page. In the entry editor, click on the icon "open" right of the text field to open the respective DOI or URL.
 
-![Open DOI](../.gitbook/assets/entryeditor-doi-open.png)
+![Open DOI](<../.gitbook/assets/entryeditor-doi-open (1).png>)
 
 In the entry table you can select an entry and use the menu choice, keyboard shortcut or the right-click menu to open the file or web page. Finally, you can click on a URL or DOI icon.
 
-![Open DOI via popup](../.gitbook/assets/entrytable-doi-popup.png)
+![Open DOI via popup](<../.gitbook/assets/entrytable-doi-popup (1).png>)
 
 By default the entry table will contain a singly column containing an indicator whether there is a DOI or a URL linked. You can remove the "Link identifiers" column in **Options → Preferences → Entry table**.

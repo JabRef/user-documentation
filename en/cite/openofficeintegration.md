@@ -10,13 +10,13 @@ Throughout this help document, whenever the name _OpenOffice_ is used, it can be
 
 To communicate with OpenOffice, JabRef must first connect to a running OpenOffice instance. You need to start OpenOffice and enter your document before connecting from JabRef.
 
-![](<ConnectToLibreOffice (2) (1).gif>)
+![](<ConnectToLibreOffice (1) (1).gif>)
 
 JabRef needs to know the location of your OpenOffice executable (**soffice.exe** on Windows, and **soffice** on other platforms), and the directory where several OpenOffice jar files reside. If you connect by clicking the **Connect** button, JabRef will try to automatically determine these locations. If this does not work, you need to connect using the **Manual connect** button, which will open a window asking you for the needed locations.
 
 After the connection has been established, you can insert citations by selecting one or more entries in JabRef and using the **Push to OpenOffice** button in the dropdown menu of JabRef's toolbar, or by using the appropriate button in the OpenOffice panel in the side pane. This will insert citations for the selected entries at the current cursor position in the OpenOffice document, and update the bibliography to contain the full reference.
 
-![](<CiteLibreOffice (2) (2).gif>)
+![](<CiteLibreOffice (1).gif>)
 
 **Note:** JabRef does not use OpenOffice's built-in bibliography system, because of the limitations of that system. A document containing citations inserted from JabRef will not generally be compatible with other reference managers such as Bibus and Zotero.
 

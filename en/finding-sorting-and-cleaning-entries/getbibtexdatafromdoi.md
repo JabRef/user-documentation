@@ -12,11 +12,11 @@ JabRef can help you complement your entries from their DOI or ISBN.
 
 In the entry table, right-click on the entry to complement, and select the menu **Get bibliographic data from DOI/ISBN/...** (_obviously, this feature is disabled if your entry does not have a DOI/ISBN._). Alternatively, you can open the [entry editor](../advanced/entryeditor/), and in the General tab, click on the button **Get bibliographic data from DOI:**
 
-![](<../.gitbook/assets/getdoi-entryeditor-jabref5.2 (1) (2) (2) (2) (1).png>)
+![](<../.gitbook/assets/getdoi-entryeditor-jabref5.2 (1) (2) (2) (2) (2) (1) (1) (1).png>)
 
 This opens the window _Merge entry with DOI information_:
 
-![](<../.gitbook/assets/getdoi-mergeentrieswithdoiinformation-jabref5.2 (1) (1) (1) (1).png>)
+![](<../.gitbook/assets/getdoi-mergeentrieswithdoiinformation-jabref5.2 (1) (1) (1).png>)
 
 The fields of the original entry and of the information gathered from the DOI are displayed side-by-side.
 
