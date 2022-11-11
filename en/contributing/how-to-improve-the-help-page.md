@@ -16,7 +16,7 @@ At the top of each help page, you can find the GitHub icon with "Edit on GitHub"
 
 This leads you to the GitHub page associated with the help page:
 
-![](<../.gitbook/assets/screenshot-edit-pencil (1) (1) (1) (1) (1) (1) (2) (3) (3) (2) (1) (1).png>)
+![](<../.gitbook/assets/screenshot-edit-pencil (1) (1) (1) (1) (1) (1) (2) (3) (3) (1) (2) (2).png>)
 
 To actually edit the page, click on the pencil icon, as highlighted above.
 
@@ -30,19 +30,19 @@ Most text can be simply added/edited in this field as plain text. However, you c
 
 In order to review your changes, click on the "Preview changes" tab:
 
-![Edit view at GitHub](<../.gitbook/assets/screenshot-edit-preview (1) (1) (1) (1) (3) (3) (3) (2) (1) (1).png>)
+![Edit view at GitHub](<../.gitbook/assets/screenshot-edit-preview (1) (1) (1) (1) (3) (3) (3) (1) (2) (3).png>)
 
 ### 3. Saving the changes
 
 To save the changes, create a so-called "Commit" by scrolling down and pressing the "Propose File Change" button:
 
-![Save changes](<../.gitbook/assets/screenshot-edit-commit (1) (2) (2) (2) (2) (1) (1) (1).png>)
+![Save changes](<../.gitbook/assets/screenshot-edit-commit (1) (2) (2) (2) (1) (2) (2).png>)
 
 _Please note: The message you provide here will be visible in the history of the help page, so please consider your change and provide a meaningful description of your changes._
 
 As the last step, submit the changes you have made back to the JabRef team:
 
-![Create Pull Request](<../.gitbook/assets/screenshot-edit-pullrequest (1) (3) (3) (3) (2) (1) (1).png>)
+![Create Pull Request](<../.gitbook/assets/screenshot-edit-pullrequest (1) (3) (3) (3) (1) (2) (3).png>)
 
 Just press the "Create Pull Request" button, and confirm the creation of the request on the next page.
 

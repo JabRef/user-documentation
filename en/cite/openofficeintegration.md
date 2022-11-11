@@ -16,7 +16,7 @@ JabRef needs to know the location of your OpenOffice executable (**soffice.exe**
 
 After the connection has been established, you can insert citations by selecting one or more entries in JabRef and using the **Push to OpenOffice** button in the dropdown menu of JabRef's toolbar, or by using the appropriate button in the OpenOffice panel in the side pane. This will insert citations for the selected entries at the current cursor position in the OpenOffice document, and update the bibliography to contain the full reference.
 
-![](<CiteLibreOffice (1).gif>)
+![](<CiteLibreOffice (1) (2) (2).gif>)
 
 **Note:** JabRef does not use OpenOffice's built-in bibliography system, because of the limitations of that system. A document containing citations inserted from JabRef will not generally be compatible with other reference managers such as Bibus and Zotero.
 
