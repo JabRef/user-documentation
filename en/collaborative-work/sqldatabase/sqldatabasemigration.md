@@ -6,7 +6,7 @@ This situation occurs when you try to open an SQL database which was created wit
 
 With release of [JabRef 3.6](https://github.com/JabRef/jabref/releases/tag/v3.6) the SQL database structure has changed. So all SQL databases with an pre-3.6 structure are no longer supported.
 
-![Screenshot of migration popup](../../.gitbook/assets/migrate-pre-3.6-db.png)
+![Screenshot of migration popup](<../../.gitbook/assets/migrate-pre-3.6-db (1).png>)
 
 ## Migration
 

@@ -10,7 +10,7 @@ This feature has to be activated in **Options → Preferences → Entry Table** 
 
 The status of each special field can be displayed in the table of entries as dedicated columns.
 
-![Six special fields can be displayed in the table of entries](<../.gitbook/assets/specialfields-6columns-5.2 (3) (6) (6) (6) (6) (4) (6) (6) (11) (2) (1) (1) (9).png>)
+![Six special fields can be displayed in the table of entries](<../.gitbook/assets/specialfields-6columns-5.2 (3) (6) (6) (6) (6) (4) (6) (6) (11) (2) (1) (1) (1) (1) (4).png>)
 
 Like any other field, the special field columns can be turned on and off individually in **Options → Preferences → Entry Table.**
 
@@ -26,7 +26,7 @@ You can see the value of a special field by:
 
 An entry can be marked as relevant: a black-and-white star is displayed (in the first column of the image below).
 
-![](<../.gitbook/assets/specialfields-6columns-5.2 (3) (6) (6) (6) (6) (4) (6) (6) (11) (2) (1) (1) (9).png>)
+![](<../.gitbook/assets/specialfields-6columns-5.2 (3) (6) (6) (6) (6) (4) (6) (6) (11) (2) (1) (1) (1) (1) (4).png>)
 
 ### Read status
 
@@ -40,7 +40,7 @@ JabRef offers a rank from one to five yellow stars to rate your papers. By defau
 
 An entry may be marked as quality assured (fourth column in the image below). For example, you can mark the entries for which a thorough check of the field contents has been done.
 
-![](<../.gitbook/assets/specialfields-6columns-5.2 (3) (6) (6) (6) (6) (4) (6) (6) (11) (2) (1) (1) (9).png>)
+![](<../.gitbook/assets/specialfields-6columns-5.2 (3) (6) (6) (6) (6) (4) (6) (6) (11) (2) (1) (1) (1) (1) (4).png>)
 
 ### Priority
 

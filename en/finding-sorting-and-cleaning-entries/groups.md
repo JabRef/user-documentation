@@ -63,7 +63,7 @@ A description of the group, to help you remember what it is about. This descript
 
 An icon can be displayed in front of the group name. Choose your favorite icon among the ones available at [https://materialdesignicons.com/](https://materialdesignicons.com), and enter its name of the field _Icon_ (replacing any hyphens (`-`) with underscores (`_`)). The color of the icon can be set in the field _Color_.
 
-![](<../.gitbook/assets/groups-groupwindow-iconcolorhierarchy-jabref5.2 (1).png>)
+![](../.gitbook/assets/groups-groupwindow-iconcolorhierarchy-jabref5.2.png)
 
 ### Hierarchical context
 
@@ -112,7 +112,7 @@ JabRef has five types of groups:
 
 Groups based on explicit selection are populated only by manual assignment of entries.
 
-![Fields for collecting by using an explicit selection](<../.gitbook/assets/groups-groupwindow-typeexplicit-jabref5.2 (1).png>)
+![Fields for collecting by using an explicit selection](../.gitbook/assets/groups-groupwindow-typeexplicit-jabref5.2.png)
 
 After creating an explicit-selection group, you select the entries to be assigned to it and use either drag-and-drop or the context menu **Add selected entries to this group** of the group interface.
 
@@ -126,7 +126,7 @@ This method of grouping requires that all entries have a unique citation key. In
 
 This method groups entries in which a specified _field_ (e.g. _author_) contains a specified _keyword_ (e.g. _Smith_). The mentioned example will group all entries referring to the author _Smith_.
 
-![Fields for collecting by searching for a keyword](<../.gitbook/assets/groups-groupwindow-typekeyboard-jabref5.2 (1).png>)
+![Fields for collecting by searching for a keyword](../.gitbook/assets/groups-groupwindow-typekeyboard-jabref5.2.png)
 
 The search can be case-sensitive or not (checkbox 'Case sensitive'). The search can either be done as a plain-text or a regular-expression search (checkbox 'Regular expression').
 
@@ -138,7 +138,7 @@ The content of the group is updated dynamically whenever the database changes: J
 
 This is similar to the above, but rather than search for a single search term on a single field, a [search expression syntax](search.md#advanced) can be used. It supports logical operators (`AND`, `OR`, `NOT`) and allows searching multiple fields.
 
-![Fields for collecting by a free-form search expression](<../.gitbook/assets/groups-groupwindow-typefreeexpression-jabref5.2 (1).png>)
+![Fields for collecting by a free-form search expression](../.gitbook/assets/groups-groupwindow-typefreeexpression-jabref5.2.png)
 
 For example, the search expression `keywords=regression and not keywords=linear` groups entries concerned with non-linear regression.
 
@@ -150,7 +150,7 @@ With the group type "Specified keywords", you can quickly create a set of groups
 
 You can also specify characters to ignore, for instance, commas used between keywords. These will be treated as separators between words, and not part of them. This step is important for combined keywords such as `laplace distribution` to be recognized as a single semantic unit. (You cannot use this option to remove complete words. Instead, delete the unwanted groups manually after they were created automatically.)
 
-![Fields for collecting by specified keywords](<../.gitbook/assets/groups-groupwindow-typespecifiedkeywords-jabref5.2 (1).png>)
+![Fields for collecting by specified keywords](../.gitbook/assets/groups-groupwindow-typespecifiedkeywords-jabref5.2.png)
 
 The content of the group is updated dynamically whenever the database changes.
 
@@ -158,7 +158,7 @@ The content of the group is updated dynamically whenever the database changes.
 
 The group contains the entries cited in a LaTeX document, based on its '.aux' file. The .aux file has to be specified.
 
-![Fields for collecting by cited entries](<../.gitbook/assets/groups-groupwindow-typecited-jabref5.2 (1).png>)
+![Fields for collecting by cited entries](../.gitbook/assets/groups-groupwindow-typecited-jabref5.2.png)
 
 The content of the group is updated dynamically whenever the `.aux` file changes.
 
@@ -166,7 +166,7 @@ The content of the group is updated dynamically whenever the `.aux` file changes
 
 To see easily to which groups an entry belongs to, the entry table has a column dedicated to groups. For each entry, a set of color bars is displayed. The number of bars and their colors depend on the groups to which the entry belongs to.
 
-![](<../.gitbook/assets/groups-groupcolorlabel-jabref5.2 (1) (1) (2) (1).png>)
+![](<../.gitbook/assets/groups-groupcolorlabel-jabref5.2 (1) (1) (1).png>)
 
 By hovering the mouse on this column, you can see the list of groups to which an entry belongs to.
 
@@ -185,7 +185,7 @@ When viewing the contents of selected group(s), a search can be performed within
 
 General preferences for groups can be accessed using **Options → Preferences**, tab **Groups**.
 
-![Preferences for tab Groups](<../.gitbook/assets/groups-preferences-jabref5.2 (1).png>)
+![Preferences for tab Groups](../.gitbook/assets/groups-preferences-jabref5.2.png)
 
 ### View
 

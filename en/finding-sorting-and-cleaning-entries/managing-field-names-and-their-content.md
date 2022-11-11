@@ -12,7 +12,7 @@ After selecting a set of entries, go to **Edit → Manage field names and conten
 
 This dialog window is displayed:
 
-![](../.gitbook/assets/managefieldnamecontent-v5.2.png)
+![](<../.gitbook/assets/managefieldnamecontent-v5.2 (1).png>)
 
 Set the field name (by typing it in or using the drop-down menu), and select the action to be carried out. Additionally, a checkbox allows overwriting the existing field values.
 

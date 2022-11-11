@@ -16,7 +16,7 @@ The timestamp field can be edited in the **General fields** tab of the [entry ed
 
 You can manually alter the value by typing in the date and time of your choice. Also, by clicking on the calendar icon located at the right end of the field, you can select the date you want in a calendar.
 
-![Screenshot of the calendar](<../../.gitbook/assets/timestamp-calendar (1).png>)
+![Screenshot of the calendar](<../../.gitbook/assets/timestamp-calendar (2) (1) (1).png>)
 
 ## Formatting
 
