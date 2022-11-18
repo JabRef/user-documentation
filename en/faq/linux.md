@@ -30,4 +30,4 @@ In the background, JabRef uses [JavaFX](https://en.wikipedia.org/wiki/JavaFX). A
 
 ## Where can I find JabRef's log files?
 
-A: On Linux, the path to the log files is `~/.cache/org.jabref/logs/{version}`
+A: On Linux, the path to the log files is `~/.cache/jabref/logs/version/`
