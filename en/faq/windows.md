@@ -24,5 +24,5 @@ Start regedit and create the following key: `HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432
 
 ## Q: Where can I find JabRef's log files?
 
-A: On Windows, one finds the log files in `%APPDATA%\..\Local\harawata\jabref\{version}\logs`
+A: On Windows, one finds the log files in `%APPDATA%\..\Local\org.jabref\jabref\Logs\{version}`. `{version}` indicates the currently used JabRef version.
 
