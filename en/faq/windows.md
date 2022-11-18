@@ -22,3 +22,7 @@ Use [AutoHotkey](http://www.autohotkey.com/) and [JabRef.ahk](https://github.com
 
 Start regedit and create the following key: `HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\JavaSoft\Prefs`. \[[source](https://stackoverflow.com/a/20798112/873282)\]
 
+## Q: Where can I find JabRef's log files?
+
+A: Windows: `%APPDATA%\..\Local\harawata\jabref\version\logs`
+
