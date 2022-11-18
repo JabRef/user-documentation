@@ -40,6 +40,10 @@ With a correct Java set up, you can either simply run the `JabRef.jar` files we 
 
 We advise using **Oracle Java 1.8.0\_161** for JabRef 4.x on OS X. It is available at [http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
 
+## Q: Where can I find JabRef's log files?
+
+A: It's in `Users/.../Library/Logs/jabref/version`.
+
 ### Checking Java and installing the correct version
 
 A quick Java check can be done in the terminal. Open _Applications_ -&gt; _Utilities_ -&gt; _Terminal.app_ and type `java -version`. Your output should look like this
