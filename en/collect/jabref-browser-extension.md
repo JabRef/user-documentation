@@ -114,6 +114,13 @@ Most JabRef installations include the necessary files, so test the extension bef
    * Chromium: `snap connect jabref:etc-chromium-native-messaging-jabref`
    * Edge: `snap connect jabref:etc-opt-edge-native-messaging-jabref`
 
+#### Flatpak
+1. Install the flatpak of [Jabref](https://flathub.org/apps/details/org.jabref.jabref).
+2. Install the JabRef browser extension: [Firefox](https://addons.mozilla.org/en-US/firefox/addon/jabref/?src=external-github), [Chrome](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh), [Edge](https://microsoftedge.microsoft.com/addons/detail/pgkajmkfgbehiomipedjhoddkejohfna), [Vivaldi](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh)
+3. Enable the correct permissions (Note that this will partially disable confinement):
+   * via terminal command: `flatpak override --user --talk-name=org.freedesktop.Flatpak org.mozilla.firefox`
+   * via Flatseal app: add `org.freedesktop.Flatpak` to the `Session Bus Talk` section for `org.mozilla.firefox`
+
 ### Mac OS
 
 1. Download and install the DMG package of [JabRef](https://www.jabref.org/#download) (>= 5.0).
