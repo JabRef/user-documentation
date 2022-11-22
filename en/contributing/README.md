@@ -48,24 +48,23 @@ Our team consists of volunteers. To provide better support, we are currently try
 **I am a student and I want to start with something easy** [![Join the chat at https://gitter.im/JabRef/jabref](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/JabRef/jabref).
 
 We collect good issues to start with at our [list of good first issues](https://github.com/orgs/JabRef/projects/5/views/1).
-After finding something, please check our [CONTRIBUTING.md](https://github.com/JabRef/jabref/blob/main/CONTRIBUTING.md) for detailed information and further links.
+After finding something, please check our [CONTRIBUTING.md](https://github.com/JabRef/jabref/blob/main/CONTRIBUTING.md).
 
 
 **I am a student and I want to choose from a curated list of university projects** [![Join the chat at https://gitter.im/JabRef/jabref](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/JabRef/jabref)
 
-Have a look at [JabRefs candidates for university projects](https://github.com/orgs/JabRef/projects/3). There, a list of possible projects to work on during a teaching period is offered. After finding something, please check our [CONTRIBUTING.md](https://github.com/JabRef/jabref/blob/main/CONTRIBUTING.md) for detailed information and further links.
+Have a look at [JabRefs candidates for university projects](https://github.com/orgs/JabRef/projects/3). There, a list of possible projects to work on during a teaching period is offered. After finding something, please check our [CONTRIBUTING.md](https://github.com/JabRef/jabref/blob/main/CONTRIBUTING.md).
 
 
 **I am new to open source and want something easy** [![Join the chat at https://gitter.im/JabRef/jabref](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/JabRef/jabref)
 
-We collect good issues to start with at our [list of good first issues](https://github.com/orgs/JabRef/projects/5/views/1). After finding something, please check our [CONTRIBUTING.md](https://github.com/JabRef/jabref/blob/main/CONTRIBUTING.md) for detailed information and further links.
+We collect good issues to start with at our [list of good first issues](https://github.com/orgs/JabRef/projects/5/views/1). After finding something, please check our [CONTRIBUTING.md](https://github.com/JabRef/jabref/blob/main/CONTRIBUTING.md).
 
 
 
 **I want something with huge impact** [![Discourse](https://img.shields.io/badge/discourse-online-green.svg)](https://discourse.jabref.org/c/features/6)
 
-Look at the discussions in our forum about [new features](https://discourse.jabref.org/c/features/6). Find an interesting topic, discuss it and start contributing. Alternatively, you can check out [JabRefs projects page at GitHub](https://github.com/JabRef/jabref/projects?type=classic). The projects page has the advantage that these issues have already been screened by the team and sorted into roughly high, moderate and low priority. Of course, in principle, all issues are free to take, but be aware that the difficulty of bugs and features varies.
-
+Look at the discussions in our forum about [new features](https://discourse.jabref.org/c/features/6). Find an interesting topic, discuss it and start contributing. Alternatively, you can check out [JabRefs projects page at GitHub](https://github.com/JabRef/jabref/projects?query=is%3Aopen). Although, of course, you can choose to work on ANY issue, choosing from the projects page has the advantage that these issues have already been categorized, sorted and screened by JabRef maintainers. A typical sub-classifications scheme is "priority" (high, normal and low). Fixing high priority issues is preferred.
 
 
 **I am a lecturer**
