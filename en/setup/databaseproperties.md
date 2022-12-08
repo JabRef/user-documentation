@@ -35,7 +35,7 @@ UTF-8 is highly recommended
 
 #### Library mode
 
-You can select if your library follow the [BibTeX or the biblatex format](../cite/bibtex-and-biblatex.md).
+You can select if your library follows the [BibTeX or the biblatex format](../cite/bibtex-and-biblatex.md).
 
 ### Override default file directories
 
