@@ -34,6 +34,18 @@ A: You can try resetting the settings. Depending on your operating system, you m
 
 A: Don't panic. No data should be damaged in your bib library. Since version 5.0 the columns in the main entry table are stored differently internally. You can reset the preferences by command line. See above.
 
+## Q: I have a huge library. What can I do to mitigate performance issues?
+
+A: Check your configuration. Disable some or all of following preferences:
+   
+   - disable fulltext index (Options → Preferences → Linked files → Fulltext Index → ...)
+   - disable time stamps (Options → Preferences → General → Time Stamp → ...)
+   - disable field formatters (Library → Library Properties → Saving → Save actions → ...)
+   - disable autosave (Options → Preferences → File → Saving → ...)
+   - disable count of items in group (Options → Preferences → Groups → ...)
+   
+   Any preference that has the potential to affect all your entries at once is worth inspecting.
+
 ## Q: Are there any publications dealing with JabRef?
 
 A: We are collecting all publications we hear about at [https://github.com/JabRef/jabref/wiki/JabRef-in-the-media](https://github.com/JabRef/jabref/wiki/JabRef-in-the-media).
