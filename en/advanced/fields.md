@@ -79,21 +79,21 @@ BibTeX is extremely popular, and many people have used it to store information i
 
 Here is a list of some of the more common non-standard fields \("\*" = not directly supported by JabRef\):
 
-* **affiliation\*** The authors affiliation.
+* **affiliation** The authors affiliation.
 * **abstract** An abstract of the work.
 * **doi** The Digital Object Identifier, a permanent identifier given to documents.
-* **eid\*** The Electronic identifier is for electronic journals that also appear in print. This number replaces the page number, and is used to find the article within the printed volume. Sometimes also called _citation number_.
-* **contents\*** A table of contents
-* **copyright\*** Copyright information.
-* **ISBN\*** The International Standard Book Number.
-* **ISSN\*** The International Standard Serial Number. Used to identify a journal.
+* **eid** The Electronic identifier is for electronic journals that also appear in print. This number replaces the page number, and is used to find the article within the printed volume. Sometimes also called _citation number_.
+* **contents** A table of contents
+* **copyright** Copyright information.
+* **ISBN** The International Standard Book Number.
+* **ISSN** The International Standard Serial Number. Used to identify a journal.
 * **keywords** Key words used for searching or possibly for annotation.
-* **language\*** The language the document is in.
-* **location\*** A location associated with the entry, such as the city in which a conference took place.
-* **LCCN\*** The Library of Congress Control Number. I've also seen this as `lib-congress`.
-* **mrnumber\*** The number of Mathematical Reviews.
-* **price\*** The price of the document.
-* **size\*** The physical dimensions of a work.
+* **language** The language the document is in.
+* **location** A location associated with the entry, such as the city in which a conference took place.
+* **LCCN** The Library of Congress Control Number. I've also seen this as `lib-congress`.
+* **mrnumber** The number of Mathematical Reviews.
+* **price** The price of the document.
+* **size** The physical dimensions of a work.
 * **URL** The WWW Uniform Resource Locator that points to the item being referenced.
 
 ## JabRef-specific fields
@@ -134,28 +134,28 @@ You can create new fields by [editing \(or creating\) entry types](../setup/cust
 * [http://www.math.uiuc.edu/K-theory/aux/K-theory.bib](http://www.math.uiuc.edu/K-theory/aux/K-theory.bib) \(large file &gt; 6000 publications\)
 * [http://mirrors.ircam.fr/pub/CTAN/biblio/bibtex/contrib/test/test.bib](http://mirrors.ircam.fr/pub/CTAN/biblio/bibtex/contrib/test/test.bib)
 
-### BibLatex files
+### BibLaTeX files
 
 * [http://mirrors.ctan.org/macros/latex/contrib/biblatex/bibtex/bib/biblatex/biblatex-examples.bib](http://mirrors.ctan.org/macros/latex/contrib/biblatex/bibtex/bib/biblatex/biblatex-examples.bib)
 * [http://distrib-coffee.ipsl.jussieu.fr/pub/mirrors/ctan/macros/latex/contrib/biblatex/bibtex/bib/biblatex/biblatex-examples.bib](http://distrib-coffee.ipsl.jussieu.fr/pub/mirrors/ctan/macros/latex/contrib/biblatex/bibtex/bib/biblatex/biblatex-examples.bib)
 
-### Bib\(La\)TeX files in the JabRef repository
+### BibTeX and BibLaTeX files in the JabRef repository
 
 * [https://github.com/JabRef/jabref/tree/main/src/test/resources/testbib](https://github.com/JabRef/jabref/tree/main/src/test/resources/testbib)
 
-### Good references for the BibTex "standard"
+### Good references for the BibTeX "standard"
 
 * [http://texdoc.net/pkg/btxdoc](http://texdoc.net/pkg/btxdoc)
 * [http://maverick.inria.fr/~Xavier.Decoret/resources/xdkbibtex/bibtex\_summary.html](http://maverick.inria.fr/~Xavier.Decoret/resources/xdkbibtex/bibtex_summary.html)
 
-### BibLaTex standard
+### BibLaTeX standard
 
 * [http://ftp.fau.de/ctan/macros/latex/contrib/biblatex/doc/biblatex.pdf](http://ftp.fau.de/ctan/macros/latex/contrib/biblatex/doc/biblatex.pdf)
 * [https://github.com/plk/biblatex](https://github.com/plk/biblatex)
 
-### BibTeX parser
+### BibTeX parsers
 
 * [https://github.com/ambs/Text-BibTeX](https://github.com/ambs/Text-BibTeX)
 * [https://github.com/lvilnis/BibtexParser](https://github.com/lvilnis/BibtexParser)
 * [https://github.com/sciunto-org/python-bibtexparser](https://github.com/sciunto-org/python-bibtexparser)
-
+* [citation.js](https://citation.js.org/)
