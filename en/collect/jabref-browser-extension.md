@@ -83,7 +83,7 @@ Most JabRef installations include the necessary files, so test the extension bef
 
    - Firefox: Download [org.jabref.jabref.json](https://raw.githubusercontent.com/JabRef/jabref/main/buildres/linux/native-messaging-host/firefox/org.jabref.jabref.json) and put it into
 
-      * `/usr/lib/mozilla/native-messaging-hosts/org.jabref.jabref.json` to install with admin rights for all users
+      * `/usr/lib64/mozilla/native-messaging-hosts/org.jabref.jabref.json` (and `/usr/lib/mozilla/native-messaging-hosts/org.jabref.jabref.json`) to install with admin rights for all users
       * `~/.mozilla/native-messaging-hosts/org.jabref.jabref.json` to install without admin rights for the current user
 
    - Chrome and Brave: Download [org.jabref.jabref.json](https://raw.githubusercontent.com/JabRef/jabref/main/buildres/linux/native-messaging-host/chromium/org.jabref.jabref.json) and put it into
