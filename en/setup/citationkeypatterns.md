@@ -61,7 +61,7 @@ The name of institutions and companies often contain spaces and words that have 
 * **`[title]`**: Capitalize all the significant words of the title, and concatenate them. For example, `An awesome paper on JabRef` becomes `AnAwesomePaperonJabref`
 * **`[fulltitle]`**: The title with unchanged capitalization.
 
-JabRef considers the following words to be [function words](https://en.wikipedia.org/wiki/Function\_word): "a", "an", "the", "above", "about", "across", "against", "along", "among", "around", "at", "before", "behind", "below", "beneath", "beside", "between", "beyond", "by", "down", "during", "except", "for", "from", "in", "inside", "into", "like", "near", "of", "off", "on", "onto", "since", "to", "toward", "through", "under", "until", "up", "upon", "with", "within", "without", "and", "but", "for", "nor", "or", "so", "yet".
+JabRef considers the following words to be [function words](https://en.wikipedia.org/wiki/Function\_word): "a", "about", "above", "across", "against", "along", "among", "an", "and", "around", "at", "before", "behind", "below", "beneath", "beside", "between", "beyond", "but", "by", "down", "during", "except", "for", "for", "from", "in", "inside", "into", "like", "near", "nor", "of", "off", "on", "onto", "or", "since", "so", "the", "through", "to", "toward", "under", "until", "up", "upon", "with", "within", "without", "yet".
 
 #### Other field markers
 
