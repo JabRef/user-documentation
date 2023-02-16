@@ -108,6 +108,11 @@ This issue seems to be related to this [JavaFX bug](https://bugs.openjdk.org/bro
 {% endtab %}
 
 {% tab title="macOS" %}
+#### I cannot start JabRef 5.9 due to file beeing damaged
+
+Execute xattr -d com.apple.quarantine /Applications/JabRef.app
+(This is a known problem related to Apple's notarization)
+
 #### JabRef is slow/hangs sometimes
 
 Some users with macOS Sierra have reported freezes when using JabRef. It seems this is a bug in the networking part of Java on macOS. [Adding a host mapping for 127.0.0.1](https://dzone.com/articles/macos-sierra-problems-with-javanetinetaddress-getl) seems to solve these issues.
