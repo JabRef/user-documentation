@@ -117,7 +117,15 @@ Most JabRef installations include the necessary files, so test the extension bef
 #### Flatpak
 1. Install the flatpak of [Jabref](https://flathub.org/apps/details/org.jabref.jabref).
 2. Install the JabRef browser extension: [Firefox](https://addons.mozilla.org/en-US/firefox/addon/jabref/?src=external-github), [Chrome](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh), [Edge](https://microsoftedge.microsoft.com/addons/detail/pgkajmkfgbehiomipedjhoddkejohfna), [Vivaldi](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh)
-3. Enable the correct permissions (Note that this will partially disable confinement):
+
+#### Browser
+If the browser is installed as a snap or flatpak there is an extra step to enable the extension.
+
+With Firefox installed as a snap (default in Ubuntu):
+*  `flatpak permission-set webextensions org.jabref.jabref snap.firefox yes`
+
+With Firefox installed as a flatpak:
+* Enable the following permission (Note that this will partially disable confinement):
    * via terminal command: `flatpak override --user --talk-name=org.freedesktop.Flatpak org.mozilla.firefox`
    * via Flatseal app: add `org.freedesktop.Flatpak` to the `Session Bus Talk` section for `org.mozilla.firefox`
 
