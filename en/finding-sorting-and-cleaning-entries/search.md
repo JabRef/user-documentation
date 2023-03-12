@@ -9,6 +9,12 @@ To make the cursor jump to the search field, you can:
 * Click in the search field.
 * Press Ctrl + F.
 
+## Search history
+
+To find the search history, you can right click in the search field.
+Only ten recent searches will be displayed in the sub-menu.
+You can find clear history button under your search history.
+
 ## Search settings
 
 At the right of the search text field, 2 buttons allow for selecting some settings:
