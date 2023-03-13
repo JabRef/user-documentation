@@ -58,9 +58,13 @@ The [ACM Portal](https://dl.acm.org) includes two databases ([Wikipedia](https:/
 
 [ArXiv](https://arxiv.org) is a repository of scientific preprints in the fields of mathematics, physics, astronomy, computer science, quantitative biology, statistics, and quantitative finance ([Wikipedia](https://en.wikipedia.org/wiki/ArXiv)).
 
+### Bibliotheksverbund Bayern (BVB)
+
+The [Bibliotheksverbund Bayern (BVB)](https://bib-bvb.de) provides bibliographic information from all public libraries in Bavaria, Germany. The format used is [MarcXML](https://www.loc.gov/marc/bibliographic/), [which has been modified](https://www.bib-bvb.de/documents/10792/9f51a033-5ca1-42e2-b2d3-a75e7f1512d4), which in turn is [based on other modifications](https://www.dnb.de/marc21).
+
 ### Biodiversity Heritage Library
-[Biodiversity Heritage Library](https://www.biodiversitylibrary.org/) makes biodiversity literature openly available to the world as part of a global 
-biodiversity community. It is the world’s largest open access digital library for biodiversity literature and archives ([Wikipedia](https://en.wikipedia.org/wiki/Biodiversity_Heritage_Library)).
+
+[Biodiversity Heritage Library](https://www.biodiversitylibrary.org/) makes biodiversity literature openly available to the world as part of a global biodiversity community. It is the world’s largest open access digital library for biodiversity literature and archives ([Wikipedia](https://en.wikipedia.org/wiki/Biodiversity\_Heritage\_Library)).
 
 ### CiteSeerX
 
@@ -83,7 +87,8 @@ To fetch entries from Unpaywall indirectly through Crossref, choose **Search →
 [DBLP](https://dblp.uni-trier.de/db/) is a computer science bibliography website listing more than 3.1 million journal articles, conference papers, and other publications on computer science ([Wikipedia](https://en.wikipedia.org/wiki/DBLP)).
 
 ### DOAB
-[DOAB (Directory of Open Access Books)](https://doabooks.org) is  is a community-driven discovery service that indexes and provides access to scholarly, peer-reviewed open access books and helps users to find trusted open access book publishers. 
+
+[DOAB (Directory of Open Access Books)](https://doabooks.org) is is a community-driven discovery service that indexes and provides access to scholarly, peer-reviewed open access books and helps users to find trusted open access book publishers.
 
 ### DOAJ
 
@@ -225,7 +230,8 @@ To be detailed.
 {% endhint %}
 
 ### Semantic Scholar
-[Semantic Scholar](https://www.semanticscholar.org/) is a free, AI-powered, research tool for scientific literature. Developed at the Allen Institute for AI, it uses advances in natural language processing to provide summaries for scholarly papers ([Wikipedia](https://en.wikipedia.org/wiki/Semantic_Scholar)).
+
+[Semantic Scholar](https://www.semanticscholar.org/) is a free, AI-powered, research tool for scientific literature. Developed at the Allen Institute for AI, it uses advances in natural language processing to provide summaries for scholarly papers ([Wikipedia](https://en.wikipedia.org/wiki/Semantic\_Scholar)).
 
 ### Springer
 
