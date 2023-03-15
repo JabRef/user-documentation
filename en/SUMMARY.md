@@ -53,6 +53,7 @@
   * [Main Window](advanced/main-window.md)
   * [Entry Editor](advanced/entryeditor/README.md)
     * [Links to other entries](advanced/entryeditor/entrylinks.md)
+    * [The Bibtex / Biblatex source tab](advanced/entryeditor/add-entry-manually.md)
     * [The 'owner' field](advanced/entryeditor/owner.md)
     * [Time stamp field](advanced/entryeditor/timestamp.md)
     * [LaTeX Citations Tab](advanced/entryeditor/latex-citations.md)
