@@ -29,21 +29,32 @@ If JabRef saves an attached file and my login name matches the name stored in th
 
 In some settings, the bib file is stored in **the same directory** as the PDF files. Then, one ignores all the above directories and enable "Search and store files relative to library file location". In this case, JabRef starts searching for PDF files in the directory of the `bib` file. It is also possible to achieve this result by setting `.` as "General file directory" in the library properties.
 
-![Search and store files relative to library file location](<../.gitbook/assets/preferences-file-searchandstoreforfilesrelativetolibraryfilelocation (1) (1) (1) (1) (4) (4) (4) (1) (1) (3).png>).
+![Search and store files relative to library file location](<../.gitbook/assets/preferences-file-searchandstoreforfilesrelativetolibraryfilelocation (1) (1) (1) (1) (4) (4) (4) (1) (1) (2) (4).png>).
 
 Relative file directories obviously only work in the library properties for a bib file, e.g. `a.bib` Library → Library properties → General file directory → `papers`. Assume to have two bib files: `a.bib` and `b.bib` located in different directories: `a.bib` located at `C:\a.bib` and `b.bib` located at `X:\b.bib`. When I click on the `+` icon in the general Tab of file `a.bib`, the popup is opened in the directory `C:\papers` (assuming `C:\papers` exists).
 
-## Auto linking files
+## Auto-linking files
 
-If you have a file within or below one of your file directories with an extension matching one of the defined external file types, and a name starting with (or matching) an entry's citation key, the file can be auto-linked. JabRef will detect the file and display a "link-add" icon in the entry editor, at the left to the filename. Click on the "link-add" icon to link this file to the entry.
+If you have a file within or below one of your file directories with an extension matching one of the defined external file types, and a name starting with (or matching) an entry's citation key, the file can be auto-linked. JabRef will detect the file and display a "link-add" icon in the entry editor, at the left of the filename. Click on the "link-add" icon to link this file to the entry.
 
 The rules for which file names can be auto-linked to a citation key can be set up in **Options →** **Preferences → Linked files**, section _Autolink files_.
 
 ![](<../.gitbook/assets/preferences-linkedfiles-5.2 (1) (1) (1) (1) (1).png>)
 
+## Filename format and file directory pattern
+
+Files can be automatically renamed and organized in folders according to custom patterns. The pattern syntax follows the same as for the [citationkeypatterns.md](../setup/citationkeypatterns.md "mention"). JabRef can rename files according to this pattern, either automatically or as part of a cleanup operation.
+
+With file directory pattern, JabRef can automatically create subfolders and move the files into the directory based on the defined pattern. As an example, you have a single folder, e.g. _papers_ for all your PDFs linked to their corresponding entry in JabRef. Now you want to arrange them according to defined groups. Let's say you have two groups, **Automation** and **Biology,** with a couple of entries.\
+Now set the file directory pattern to: `[groups:(unknown)]`
+
+If you now execute the cleanup action "Move files", JabRef will automatically move the files of the corresponding in the file directory to the subfolders _papers/Automation_ and _papers/Biology_ respectively.
+
+_Explanation_: The expression in the brackets says: Create a subdirectory based on the field “groups” of the entry. If the field `groups` is not set or empty, use “unknown” as a fallback name for the directory. If you have one entry assigned to multiple groups, the directory will have the name “groupA, groupB”.
+
 For an entry, if you want to download a file and link it to the entry, you can do this by clicking the **Download** button in the entry editor.
 
-![Download from URL](<../.gitbook/assets/entryeditor-general-downloadfilefromurl (2) (3) (3) (3) (3) (3) (3) (3) (4) (4) (4) (1) (2) (1).png>)
+![Download from URL](<../.gitbook/assets/entryeditor-general-downloadfilefromurl (2) (3) (3) (3) (3) (3) (3) (3) (4) (4) (4) (1) (1) (2) (3).png>)
 
 A dialog box will appear, prompting you to enter the URL. The file will be downloaded to your main file directory, named based on the entry's citation key, and finally linked from the entry.
 
@@ -53,18 +64,18 @@ It is possible to have greater flexibility in the naming scheme by using regular
 
 If you open the preferences (**Options → Preferences → Linked Files**), you will find in the section _Autolink files_ an option called "Use regular expression search". Checking this option will allow you to enter your own regular expression for search in the PDF directories.
 
-![](<../.gitbook/assets/preferences-linkedfiles-5.2 (1) (1) (1) (1) (1).png>)
+![The linked files preferences](<../.gitbook/assets/preferences-linkedfiles-5.2 (1) (1) (1) (1) (1).png>)
 
 The following syntax is understood:
 
-* `*` - Search in all immediate subdirectories excluding the current and any deeper subdirectories.
+* `*` - Search in all immediate subdirectories, excluding the current and any deeper subdirectories.
 * `**` - Search in all subdirectories recursively AND the current directory.
 * `.` and `..` - The current directory and the parent directory.
 * `[title]` - All expressions in square brackets are replaced by their corresponding [citation key pattern](../setup/citationkeypatterns.md#citation-key-patterns).
 * `[extension]` - Is replaced by the file-extension of the field you are using.
 * All other text is interpreted as a regular expression. But caution: You need to escape backslashes by putting two backslashes after each other to not confuse them with the path-separator.
 
-The default for searches is `**/.*[citationkey].*\\.[extension]`. As you can see this will search in all subdirectories of the extension-based directory (for instance in the PDF directory) for any file that has the correct extension and contains the citation key somewhere.
+The default for searches is `**/.*[citationkey].*\\.[extension]`. As you can see, this will search in all subdirectories of the extension-based directory (for instance in the PDF directory) for any file that has the correct extension and contains the citation key somewhere.
 
 ## Opening external files
 

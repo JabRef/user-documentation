@@ -16,7 +16,7 @@ At the top of each help page, you can find the GitHub icon with "Edit on GitHub"
 
 This leads you to the GitHub page associated with the help page:
 
-![](<../.gitbook/assets/screenshot-edit-pencil (1) (1) (1) (1) (1) (1) (2) (3) (3) (1) (1) (3).png>)
+![](<../.gitbook/assets/screenshot-edit-pencil (1) (1) (1) (1) (1) (1) (2) (3) (3) (1) (1) (2) (4).png>)
 
 To actually edit the page, click on the pencil icon, as highlighted above.
 
@@ -24,13 +24,13 @@ To actually edit the page, click on the pencil icon, as highlighted above.
 
 The window to edit the page at GitHub looks like this:
 
-![Edit view at GitHub](<../.gitbook/assets/screenshot-edit-page (1) (3) (3) (3) (1) (2) (1).png>)
+![Edit view at GitHub](<../.gitbook/assets/screenshot-edit-page (1) (3) (3) (3) (1) (1) (2) (2).png>)
 
 Most text can be simply added/edited in this field as plain text. However, you can style your contribution by using [markdown](https://daringfireball.net/projects/markdown/). Markdown is a rather easy way to format text without the need for complex markup, such as with HTML. You can find an introduction to markdown [here](https://daringfireball.net/projects/markdown/) or [here](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
 In order to review your changes, click on the "Preview changes" tab:
 
-![Edit view at GitHub](<../.gitbook/assets/screenshot-edit-preview (1) (1) (1) (1) (3) (3) (3) (1) (1) (2).png>)
+![Edit view at GitHub](<../.gitbook/assets/screenshot-edit-preview (1) (1) (1) (1) (3) (3) (3) (1) (1) (2) (4).png>)
 
 ### 3. Saving the changes
 
@@ -42,7 +42,7 @@ _Please note: The message you provide here will be visible in the history of the
 
 As the last step, submit the changes you have made back to the JabRef team:
 
-![Create Pull Request](<../.gitbook/assets/screenshot-edit-pullrequest (1) (3) (3) (3) (1) (1).png>)
+![Create Pull Request](<../.gitbook/assets/screenshot-edit-pullrequest (1) (3) (3) (3) (1) (1) (2) (4).png>)
 
 Just press the "Create Pull Request" button, and confirm the creation of the request on the next page.
 

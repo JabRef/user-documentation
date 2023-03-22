@@ -13,7 +13,7 @@ We use the service of [Crowdin](https://translate.jabref.org) to keep our transl
 * visit [https://translate.jabref.org/](https://translate.jabref.org) to get started
 *   select your preferred language, login, and click on _JabRef\_en.properties_
 
-    <img src="../.gitbook/assets/crowdin-select-file (1) (2) (2) (2) (1) (1).png" alt="Screenshot of Crowdin select file page" data-size="original">
+    <img src="../.gitbook/assets/crowdin-select-file (1) (2) (2) (2) (1) (1) (2) (3).png" alt="Screenshot of Crowdin select file page" data-size="original">
 *   choose the string you want to translate in the left panel (strings to be translated are listed first)
 
     and enter the translation in the central panel (suggestions are given at the bottom)
