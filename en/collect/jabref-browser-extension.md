@@ -38,6 +38,10 @@ In case you encounter problems in this procedure refer to issue \#241 on GitHub 
 
 Error message `bad interpreter: /usr/bin/python3: no such file or directory` means that python3 is not installed at the expected location. Run `which python3` to see if python3 is installed elsewhere. Then copy that path at the first line of jabrefHost.py maintaining `#!` prefix.
 
+### In case PowerShell script JabRefHost.ps1 cannot be executed due to ExecutionPolicy
+
+Check your ExecutionPolicy by using `Get-ExecutionPolicy -List` in PowerShell. If you get something else than `Undefined` for your `MachinePolicy`, changes are high that this policy is set by Microsoft Group Policy. In this case the option `-ExecutionPolicy Bypass` in JabRefHost.bat won't work. If your `MachinePolicy` says `AllSigned` you can self-sign your JabRefHost.ps1 script, by following tutorials like [windows-10-signing-a-powershell-script-with-a-self-signed-certificate](https://community.spiceworks.com/how_to/153255-windows-10-signing-a-powershell-script-with-a-self-signed-certificate).
+
 ## Manual Installation
 
 Most JabRef installations include the necessary files, so test the extension before proceeding with the following instructions. However, sometimes, a manual installation is necessary \(e.g. if you use the portable version of JabRef\). In this case, please take the following steps:
