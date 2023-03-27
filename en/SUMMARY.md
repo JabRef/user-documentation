@@ -69,6 +69,7 @@
   * [Journal abbreviations](advanced/journalabbreviations.md)
   * [New subdatabase based on AUX file](advanced/newbasedonaux.md)
   * [How to expand first names of an entry](advanced/how-to-expand-firstnames.md)
+  * [Debugging your library file](advanced/debugging-your-library-file.md)
   * [Resources](advanced/resources.md)
   * [License](advanced/license.md)
   * [Knowledge](advanced/knowledge/README.md)

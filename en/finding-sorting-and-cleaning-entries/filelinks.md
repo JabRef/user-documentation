@@ -29,7 +29,7 @@ If JabRef saves an attached file and my login name matches the name stored in th
 
 In some settings, the bib file is stored in **the same directory** as the PDF files. Then, one ignores all the above directories and enable "Search and store files relative to library file location". In this case, JabRef starts searching for PDF files in the directory of the `bib` file. It is also possible to achieve this result by setting `.` as "General file directory" in the library properties.
 
-![Search and store files relative to library file location](<../.gitbook/assets/preferences-file-searchandstoreforfilesrelativetolibraryfilelocation (1) (1) (1) (1) (4) (4) (4) (1) (1) (2) (4).png>).
+![Search and store files relative to library file location](<../.gitbook/assets/preferences-file-searchandstoreforfilesrelativetolibraryfilelocation (1) (1) (1) (1) (4) (4) (4) (1) (1) (3).png>).
 
 Relative file directories obviously only work in the library properties for a bib file, e.g. `a.bib` Library → Library properties → General file directory → `papers`. Assume to have two bib files: `a.bib` and `b.bib` located in different directories: `a.bib` located at `C:\a.bib` and `b.bib` located at `X:\b.bib`. When I click on the `+` icon in the general Tab of file `a.bib`, the popup is opened in the directory `C:\papers` (assuming `C:\papers` exists).
 
@@ -54,7 +54,7 @@ _Explanation_: The expression in the brackets says: Create a subdirectory based 
 
 For an entry, if you want to download a file and link it to the entry, you can do this by clicking the **Download** button in the entry editor.
 
-![Download from URL](<../.gitbook/assets/entryeditor-general-downloadfilefromurl (2) (3) (3) (3) (3) (3) (3) (3) (4) (4) (4) (1) (1) (2) (3).png>)
+![Download from URL](<../.gitbook/assets/entryeditor-general-downloadfilefromurl (2) (3) (3) (3) (3) (3) (3) (3) (4) (4) (4) (1) (2) (1).png>)
 
 A dialog box will appear, prompting you to enter the URL. The file will be downloaded to your main file directory, named based on the entry's citation key, and finally linked from the entry.
 

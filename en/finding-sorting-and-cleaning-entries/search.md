@@ -2,7 +2,7 @@
 
 The search bar is located in the icon bar.
 
-![Screenshot of the search bar](<../.gitbook/assets/search-bar-v5.2 (2) (1) (1) (2) (2) (2) (2) (2) (2) (2) (3) (3) (2) (1) (1) (1) (2).png>)
+![Screenshot of the search bar](<../.gitbook/assets/search-bar-v5.2 (2) (1) (1) (2) (2) (2) (2) (2) (2) (2) (3) (3) (2) (1) (1) (1) (5).png>)
 
 To make the cursor jump to the search field, you can:
 
@@ -11,9 +11,7 @@ To make the cursor jump to the search field, you can:
 
 ## Search history
 
-To find the search history, you can right click in the search field.
-Only ten recent searches will be displayed in the sub-menu.
-You can find clear history button under your search history.
+To find the search history, you can right click in the search field. Only ten recent searches will be displayed in the sub-menu. You can find clear history button under your search history.
 
 ## Search settings
 
