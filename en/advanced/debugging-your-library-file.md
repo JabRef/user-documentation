@@ -4,6 +4,12 @@ description: When error ensues, how to debug your library file with various meth
 
 # Debugging your library file
 
+### To Do: Add section about backups once the backups PR is merged
+
+**Can you add a section before "half splitting" which explains how to navigate to the backup folder and restore a .bib file? I think, this could be more efficient than deleting entries of a working library.**
+
+**I have never tried to open a backup flel directly in JabRef. Could you try it? I think, it should "just work". Thus, the howto should be: Go to the backup folder, find the file, open the last backup. If works: great. If not, go back one file.**
+
 ## The method of half splitting
 
 The method of **half splitting** (also referred to as **halving**) can be used to find certain faults in your library file, which are caused by erroneous syntax, file conversions or incompatible encodings/charsets. These faults may make it impossible for JabRef to correctly parse, read or import the library file.\
@@ -14,7 +20,7 @@ An easy way to look at the method of halving is to repeatedly ask yourself the f
 
 1. Create a backup of your library file.
 2. Open your library with the text-editor of your choice (For example, [Notepad++](https://alternativeto.net/software/notepad-plus-plus/)).
-3. Delete half of your `entries.`
+3. Delete half of your [entries](https://docs.jabref.org/advanced/fields#standard-bibtex-format).
 4. Open your library with JabRef.
 5. If your library now miraculously does not trigger the error, don't stop and leave. Instead, rinse and repeat and use the technique of halving on the junk of entries that you just deleted (hence the need for backups!). Use the technique of halving on THAT part of the library.
 6. Repeat deleting entries until you can isolate the specific entry or entries that trigger errors.
