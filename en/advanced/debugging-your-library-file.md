@@ -4,11 +4,18 @@ description: When error ensues, how to debug your library file with various meth
 
 # Debugging your library file
 
-### To Do: Add section about backups once the backups PR is merged
+## Use Backups
 
-**Can you add a section before "half splitting" which explains how to navigate to the backup folder and restore a .bib file? I think, this could be more efficient than deleting entries of a working library.**
+If you encounter any errors that are related to wrong, erroneous, corrupt or vanished data in your library file or simply unintended behaviour that has unknown causes, the first thing that is advised to do, is to find and make use of your backups.
 
-**I have never tried to open a backup flel directly in JabRef. Could you try it? I think, it should "just work". Thus, the howto should be: Go to the backup folder, find the file, open the last backup. If works: great. If not, go back one file.**
+1. **Navigate to your** [**backup directory**](https://docs.jabref.org/advanced/autosave#where-can-i-find-the-backup-files)**.**
+2. **Find and select all** [**backups files**](https://docs.jabref.org/advanced/autosave#what-are-.sav-.bak-and-.tmp-files) (the `.bak` files).
+3. **Copy the backup files to a safe, but different location.** (Basically, create a backup of the backups. This step is very important, as each 20 seconds, after a change to the library, the current state of the library is saved to a .bak file, but JabRef at most stores 10 backup files and if you continue to work with your original library file (.bib), eventually JabRef will overwrite your old backup files)
+4. **Compare the backup file with the erroneous library.** You can do this by editing your chosen backup file (via JabRef or file editor) in such a way that the modification date is newer than that of your erroneous library. Open the erroneous library and the backup merge dialogue should trigger, which allows you to see what has changed in the file. Alternatively, to achieve the same result, it is possible to use third party file versioning systems like [Git](https://git-scm.com/) or visual difference and merge tools like [Meld](https://meldmerge.org/) or [WinMerge](https://winmerge.org/).
+
+If this method works: Great!\
+If this method does not work with the first backup file: Try an older backup file\
+If this method does not work with any backup file: Try the method of half splitting.
 
 ## The method of half splitting
 
