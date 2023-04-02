@@ -53,7 +53,7 @@ For shared remote libraries and more advanced history, we recommend to use [git 
 * **Windows:** \
   Windows 7/10:\
   `C:\Users\<Account>\AppData\org.jabref\jabref`\
-  ``Alternatively, open the run dialogue by pressing `Windows+R`, then enter `%APPDATA%..\Local\org.jabref\jabref` \
+  ``Alternatively, open the run dialogue by pressing `Windows+R`, then enter `%APPDATA%\..\Local\org.jabref\jabref` \
   Windows XP: \
   `C:\Documents and Settings\<Account>\Application Data\Local Settings\org.jabref\jabref>`
 * **Mac OS X:** \
