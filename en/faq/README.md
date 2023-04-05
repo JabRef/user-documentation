@@ -10,7 +10,7 @@ JabRef Development Team (2021). JabRef - An open-source, cross-platform citation
 
 If you are using biblatex, you can use the entry type software, for BibTex use `@misc`
 
-```text
+```bibtex
 @Software{JabRef2021,
   author    = {{JabRef Development Team}},
   title     = {JabRef --- An open-source, cross-platform citation and reference management software},
@@ -154,14 +154,6 @@ A: In JabRef 3.0 plugin support was removed because the development team cannot 
 
 A: Enter XYZ in the search field located at the upper left-hand corner of the preference window.
 
-## Q: My question is not answered here. What can I do?
-
-A: After consulting [JabRef's help](https://docs.jabref.org) and checking whether your question has been [regarded as issue](https://github.com/JabRef/jabref/issues?utf8=%E2%9C%93&q=is%3Aissue+) please head over to the [Forum](https://discourse.jabref.org/).
-
-## Q: There is a mistake in this FAQ, a dead link, or I have written a better/new explanation for a question! What can I do?
-
-A: See [How to improve the help page](../contributing/how-to-improve-the-help-page.md).
-
 ## Q: "Unable to monitor file changes. Please close files and processes and restart. You may encounter errors if you continue with this session."
 
 A: This error message has been observed on systems that use [inotify](https://www.man7.org/linux/man-pages//man7/inotify.7.html). System calls to `inotify_init` and `inotify_add_watch` set `errno` to `EMFILE` when `inotify` has reached its limit. The most common reason is that `inotify` is running too many instances. To solve this problem, contact your system administrator and request that they increase the limits defined in `/proc/sys/fs/inotify/max_user_*` files.
@@ -181,4 +173,16 @@ In addition, we have [many open issues dealing with collaboration](https://githu
 ## Q: How to do collaborative work on a library?
 
 A: You can either choose to [use an SQL database](../collaborative-work/sqldatabase/) or to [share a bib file](../collaborative-work/sharedbibfile.md).
+
+## Q: Which network protocols and ports are used by JabRef?
+
+A: JabRef uses `https` to connect to external catalogs to fetch bibliographic data. The concrete port used depends on the external service. Mostly, the standard port `443` is used. When connecting to a SQL database, the standard port for PostgreSQL and MySQL is used. JabRef offers a local interface used by the browser plugin. For that, JabRef uses a proprietary, text-based protocol offered on the configurable port `6050`.
+
+## Q: My question is not answered here. What can I do?
+
+A: After consulting [JabRef's help](https://docs.jabref.org) and checking whether your question has been [regarded as issue](https://github.com/JabRef/jabref/issues?utf8=%E2%9C%93&q=is%3Aissue+) please head over to the [Forum](https://discourse.jabref.org/).
+
+## Q: There is a mistake in this FAQ, a dead link, or I have written a better/new explanation for a question! What can I do?
+
+A: See [How to improve the help page](../contributing/how-to-improve-the-help-page.md).
 
