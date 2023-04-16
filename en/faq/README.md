@@ -38,11 +38,11 @@ A: Don't panic. No data should be damaged in your bib library. Since version 5.0
 
 A: Check your configuration. Disable some or all of following preferences:
    
-   - disable fulltext index (Options → Preferences → Linked files → Fulltext Index → ...)
-   - disable time stamps (Options → Preferences → General → Time Stamp → ...)
+   - disable fulltext index (File → Preferences → Linked files → Fulltext Index → ...)
+   - disable time stamps (File → Preferences → General → Time Stamp → ...)
    - disable field formatters (Library → Library Properties → Saving → Save actions → ...)
-   - disable autosave (Options → Preferences → File → Saving → ...)
-   - disable count of items in group (Options → Preferences → Groups → ...)
+   - disable autosave (File → Preferences → File → Saving → ...)
+   - disable count of items in group (File → Preferences → Groups → ...)
    
    Any preference that has the potential to affect all your entries at once is worth inspecting.
 
@@ -52,11 +52,11 @@ A: We are collecting all publications we hear about at [https://github.com/JabRe
 
 ## Q: Does JabRef support non-English languages or UTF8 in general?
 
-A: Yes. In **Options → Preferences → General**, set "Default Encoding" to _UTF8_ and select an alternative user interface language in "Language" if required.
+A: Yes. In **File → Preferences → General**, set "Default Encoding" to _UTF8_ and select an alternative user interface language in "Language" if required.
 
 ## Q: If I double click a BibTeX file in the file browser, JabRef always opens a new window. Can JabRef open the libraries in the same window just in a different tab?
 
-A: In **Options → Preferences → Network**, in the “Remote operation” section, put a checkmark to “Listen for remote operation on port”. This option allows new instances of JabRef to detect the instance already running, and pass files to that instead of opening a new window. \(Default option since [JabRef 3.0](https://github.com/JabRef/jabref/blob/main/CHANGELOG.md#30---2015-11-29)\).
+A: In **File → Preferences → Network**, in the “Remote operation” section, put a checkmark to “Listen for remote operation on port”. This option allows new instances of JabRef to detect the instance already running, and pass files to that instead of opening a new window. \(Default option since [JabRef 3.0](https://github.com/JabRef/jabref/blob/main/CHANGELOG.md#30---2015-11-29)\).
 
 ## Q: I have a DOI/ISBN/ePrint/etc. Is it possible to create an entry directly out of this identifier?
 
@@ -68,11 +68,11 @@ A: There are several reasons why JabRef cannot find your identifier online. For 
 
 ## Q: I miss a field _translator_, _lastfollowedon_, etc. How can I add such fields?
 
-A: To add this _translator_ field to all entry types, you can use **Options → Preferences → Custom editor tabs** and add a _translator_ field under one of JabRef's general field tabs \(see [Customize general field](../setup/generalfields.md)s\). To add this _translator_ field to a specific entry type, edit the specific entry type\(s\) \(**Options → Customize entry types**\) and add a _translator_ field under required fields or optional fields, as you like \(see [Customize entry types](../setup/customentrytypes.md)\).
+A: To add this _translator_ field to all entry types, you can use **File → Preferences → Custom editor tabs** and add a _translator_ field under one of JabRef's general field tabs \(see [Customize general field](../setup/generalfields.md)s\). To add this _translator_ field to a specific entry type, edit the specific entry type\(s\) \(**File → Customize entry types**\) and add a _translator_ field under required fields or optional fields, as you like \(see [Customize entry types](../setup/customentrytypes.md)\).
 
 ## Q: How do I prevent JabRef from introducing line breaks in certain fields \(such as “title”\) when saving the .bib file?
 
-A: Open **Options → Preferences**. In the “File” panel, you will find an option called “Do not wrap the following fields when saving”. This option contains a semicolon-separated list of field names. Any field you add to this list will always be stored without introduction of line breaks.
+A: Open **File → Preferences**. In the “File” panel, you will find an option called “Do not wrap the following fields when saving”. This option contains a semicolon-separated list of field names. Any field you add to this list will always be stored without introduction of line breaks.
 
 ## Q: Is it possible to append entries from a BibTeX file, e.g. from my web browser to the currently opened library?
 
@@ -96,7 +96,7 @@ A: Select the entries and go to **Library → Manage keywords**. There you can m
 
 ## Q: When linking a file, I cannot set the correct type. How do I add new types?
 
-In **Options → Preferences**, tab **External programs**, button "Manage external file types", you can add arbitrary types. See the [dedicated page about external file types](../setup/externalfiletypes.md).
+In **File → Preferences**, tab **External programs**, button "Manage external file types", you can add arbitrary types. See the [dedicated page about external file types](../setup/externalfiletypes.md).
 
 ## Q: When an organization is provided as author, my BibTeX style doesn't recognize it. For instance, why is “European Commission” converted to “Commission, E.”?
 
