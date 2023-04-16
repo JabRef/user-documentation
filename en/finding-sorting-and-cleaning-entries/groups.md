@@ -183,7 +183,7 @@ When viewing the contents of selected group(s), a search can be performed within
 
 ## Preferences about groups
 
-General preferences for groups can be accessed using **Options → Preferences**, tab **Groups**.
+General preferences for groups can be accessed using **File → Preferences**, tab **Groups**.
 
 ![Preferences for tab Groups](<../.gitbook/assets/groups-preferences-jabref5.2 (1).png>)
 
