@@ -15,28 +15,28 @@ Several special field markers are offered, which extract only a specific part of
 #### Author-related field markers
 
 * **`[auth]`**: The last name of the first author
-* **`[authEtAl]`**: The last name of the first author, and the last name of the second author if there are two authors or `EtAl` if there are more than two. This is similar to `auth.etal`. The difference is that the authors are not separated by `.` and in case of more than 2 authors `EtAl` instead of `.etal` is appended
 * **`[authFirstFull]`**: Get the `von` part and last name of the first author
 * **`[authForeIni]`**: The forename initial of the first author
-* **`[authIniN]`**: The beginning of each author's last name, using at most `N` characters
-* **`[authN]`**: The first `N` characters of the first author's last name
-* **`[authN_M]`**: The first `N` characters of the \`Mth author's last name
-* **`[authorIni]`**: The first 5 characters of the first author's last name, and the last name initial of the remaining authors
-* **`[authorLast]`**: The last name of the last author
-* **`[authorLastForeIni]`**: The forename initial of the last author
-* **`[authors]`**: The last name of all authors
+* **`[auth.etal]`**: The last name of the first author, and the last name of the second author if there are two authors or `.etal` if there are more than two.
+* **`[authEtAl]`**: The last name of the first author, and the last name of the second author if there are two authors or `EtAl` if there are more than two. This is similar to `auth.etal`. The difference is that the authors are not separated by `.` and in case of more than 2 authors `EtAl` instead of `.etal` is appended.
+* **`[auth.auth.ea]`**: The last name of the first two authors, separated by `.`. If there are more than two authors, adds `.ea`.
+* **`[authors]`**: The last name of all authors.
+* **`[authorsN]`**: The last name of up to `N` authors. If there are more authors, `EtAl` is appended
+* **`[authIniN]`**: The beginning of each author's last name, using at most `N` characters in total.
+* **`[authN]`**: The first `N` characters of the first author's last name.
+* **`[authN_M]`**: The first `N` characters of the `M`th author's last name.
+* **`[authorIni]`**: The first 5 characters of the first author's last name, and the last name initial of the remaining authors.
+* **`[authshort]`**: The last name if one author is given; the first character of up to three authors' last names if more than one author is given. A plus character is added, if there are more than three authors
 * **`[authorsAlpha]`**: Corresponds to the BibTeX style “alpha”,
   * One author: The first three letters of the last name
   * Two to four authors: The first letter of the last name of each author
   * More than four authors: The first letter of the first three authors' last name. A `+` is added at the end if it is not in the [list of unwanted characters](citationkeypatterns.md#removing-unwanted-characters).
-* **`[authorsN]`**: The last name of up to `N` authors. If there are more authors, `EtAl` is appended
-* **`[authshort]`**: The last name if one author is given; the first character of up to three authors' last names if more than one author is given. A plus character is added, if there are more than three authors
-* **`[auth.auth.ea]`**: The last name of the first two authors, separated by `.`. If there are more than two authors, adds `.ea`
-* **`[auth.etal]`**: The last name of the first author, and the last name of the second author if there are two authors or `.etal` if there are more than two
+* **`[authorLast]`**: The last name of the last author.
+* **`[authorLastForeIni]`**: The forename initial of the last author.
 
 **Note:** If there is no author (as in the case of an edited book), then all of the above **`[auth...]`** markers will use the editor(s) (if any) as a fallback. Thus, the editor(s) of a book with no author will be treated as the author(s) for label-generation purposes. If you do not want this behavior, i.e. you require a marker which expands to nothing if there is no author, use **`pureauth`** instead of **`auth`** in the above codes. For example, **`[pureauth]`**, or **`[pureauthors3]`**.
 
-The name of institutions and companies often contain spaces and words that have a specific meaning in the author field, e.g., `and`. The full name should be enclosed in braces to prevent the name from being miss-parsed for these cases. Names enclosed in braces are often abbreviated while generating citation keys to avoid creating excessively long keys. For example, `{European Union Aviation Safety Agency}` is abbreviated to `EUASA`.
+The name of institutions and companies often contain spaces and words that have a specific meaning in the author field, e.g., `and`. The full name should be enclosed in braces (`{}`) to prevent the name from being miss-parsed for these cases. Names enclosed in braces are often abbreviated while generating citation keys to avoid creating excessively long keys. For example, when using `[authors]`, `author = {European Union Aviation Safety Agency}` is abbreviated to `Agency`, whereas `author = {{European Union Aviation Safety Agency}}` is abbreviated to `EUASA`.
 
 #### Editor-related field markers
 
