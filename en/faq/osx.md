@@ -6,7 +6,7 @@ A: Currently this is necessary, since our code signing infrastructure is not ope
 
 ## Q: After installing JabRef 5.9 on macOS ventura I get the error message: JabRef 5.9 is damaged and cannot be opened
 
-A: Execute `xattr -d http://com.apple.quarantine /Applications/JabRef.app`
+A: Execute `xattr -d com.apple.quarantine /Applications/JabRef.app`
 
 Because we could not get 5.9 notarized correctly from Apple this step is unfortuantely necessary.
 
