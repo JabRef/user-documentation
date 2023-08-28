@@ -2,7 +2,7 @@
 
 ## General
 
-Since `JabRef 5.2` it is possible to use custom themes. In `Preferences > Appearance > Visual theme` the themes in general can be changed. Themes are just [CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting\_started\_with\_the\_web/CSS\_basics) files defining the look of the UI. You can find a collection of user contributed themes at [https://themes.jabref.org](https://themes.jabref.org/).&#x20;
+Since `JabRef 5.2` it is possible to use custom themes. In `Preferences > Appearance > Visual theme` the themes in general can be changed. Themes are just [CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting\_started\_with\_the\_web/CSS\_basics) files defining the look of the UI.&#x20;
 
 * **Light Theme**: The default theme is the light theme ([`Base.css`](https://github.com/JabRef/jabref/blob/main/src/main/java/org/jabref/gui/Base.css)).
 * **Dark Theme**: There is an alternative dark theme ([`Dark.css`](https://github.com/JabRef/jabref/blob/main/src/main/java/org/jabref/gui/Dark.css)) which is based on `Base.css` and just overwrites the colors.
