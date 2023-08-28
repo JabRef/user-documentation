@@ -28,8 +28,8 @@ JabRef generates `.sav`, `.bak` and `.tmp` files while working.
 * `.tmp` is a temporary file with changes that are supposed to be written to the `.bib` file.
 
 **Rough outline of what's happening during a write to the `.bib` file:**\
-****\
-****A `.tmp` will be written --> `.bib` copies to `.sav` --> `.tmp` copies to `.bib` --> `.sav` gets deleted --> 20 seconds later, a copy of the `.bib` file will be stored as`.bak` file in the user data dir.
+\
+A `.tmp` will be written --> `.bib` copies to `.sav` --> `.tmp` copies to `.bib` --> `.sav` gets deleted --> 20 seconds later, a copy of the `.bib` file will be stored as`.bak` file in the user data dir.
 
 #### How to ignore JabRef's .sav and .bak files in Git
 
@@ -39,7 +39,11 @@ By using the [gitignore.io](https://www.gitignore.io) service, you can generate 
 
 This functionality runs in the background while you are working on a _bibliographic database_. It makes a _backup copy_ (the `.bak` file) and keeps that up-to-date on every user interaction. For instance, when you change a field the new value would get saved into the backup copy. Assuming that _JabRef_ crashes while you are working on a _BibTeX database_. When you try again to open the file _JabRef_ crashed with you will get the following dialog:
 
+<div align="left">
+
 <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>Screenshot of the backup found dialog</p></figcaption></figure>
+
+</div>
 
 Now you have the possibility to restore and review your changes which would normally get lost.
 
@@ -49,11 +53,11 @@ For shared remote libraries and more advanced history, we recommend to use [git 
 
 * **The backup files (`.bak`) can be found in the** [**user data dir**](https://github.com/harawata/appdirs#supported-directories)**.**
 * **Unix/Linux:**\
-  ****`/home/<username>/.local/share/org.jabref/jabref`
+  `/home/<username>/.local/share/org.jabref/jabref`
 * **Windows:** \
   Windows 7/10:\
   `C:\Users\<Account>\AppData\org.jabref\jabref`\
-  ``Alternatively, open the run dialogue by pressing `Windows+R`, then enter `%APPDATA%\..\Local\org.jabref\jabref` \
+  Alternatively, open the run dialogue by pressing `Windows+R`, then enter `%APPDATA%\..\Local\org.jabref\jabref` \
   Windows XP: \
   `C:\Documents and Settings\<Account>\Application Data\Local Settings\org.jabref\jabref>`
 * **Mac OS X:** \
@@ -65,7 +69,11 @@ JabRef offers **automatic saving of the library.** No need to click on File --> 
 
 In case the `.bib` file should automatically be saved on each change, you can direct JabRef to do so. This feature needs to be activated in the preferences:
 
+<div align="center">
+
 <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Screenshot of the autosave preferences</p></figcaption></figure>
+
+</div>
 
 \
 \
