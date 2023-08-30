@@ -4,7 +4,7 @@ JabRef can be either installed (the preferred way) or be used as a portable appl
 
 ## Installation instructions
 
-To get the latest version, head to [www.fosshub.com/JabRef.html](https://www.fosshub.com/JabRef.html), download the installer for your system (e.g., `dmg` files for MacOS and `msi` files for Windows), run them and follow the on-screen instructions.
+To get the latest version, head to [downloads.jabref.org](https://downloads.jabref.org), download the installer for your system (e.g., `dmg` files for MacOS and `msi` files for Windows), run them and follow the on-screen instructions.
 
 JabRef 5.6 requires Mac OS 10.14 or higher.
 
