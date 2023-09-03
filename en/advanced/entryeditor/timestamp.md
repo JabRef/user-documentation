@@ -4,7 +4,7 @@ JabRef can optionally set a field to contain the date an entry was added to the 
 
 ## Configuration
 
-You can disable or enable this feature by entering **Options → Preferences → General**, and selecting/deselecting the line _'Mark new entries with addition date'_.
+You can disable or enable this feature by entering **File → Preferences → General**, and selecting/deselecting the line _'Mark new entries with addition date'_.
 
 If an entry with a timestamp is pasted or imported, the field is updated with the current date if _'Overwrite'_ is checked. The value of the timestamp field will be updated upon changes in the entry if _'Update timestamp on modification'_ is checked.
 
@@ -16,7 +16,7 @@ The timestamp field can be edited in the **General fields** tab of the [entry ed
 
 You can manually alter the value by typing in the date and time of your choice. Also, by clicking on the calendar icon located at the right end of the field, you can select the date you want in a calendar.
 
-![Screenshot of the calendar](<../../.gitbook/assets/timestamp-calendar (1) (1).png>)
+![Screenshot of the calendar](<../../.gitbook/assets/timestamp-calendar (1) (1) (2).png>)
 
 ## Formatting
 

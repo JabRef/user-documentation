@@ -170,7 +170,7 @@ To see easily to which groups an entry belongs to, the entry table has a column 
 
 By hovering the mouse on this column, you can see the list of groups to which an entry belongs to.
 
-The "groups" column is displayed by default. Using the menu **Options → Preferences**, tab **Entry table**, you can:
+The "groups" column is displayed by default. Using the menu **File → Preferences**, tab **Entry table**, you can:
 
 * remove the "groups" column by clicking on the bin icon next to the item "Groups".
 * add the "groups" column by selecting the "Groups" item in the drop-down menu, and clicking on the **+** button located to the right of the drop-down menu.
@@ -183,7 +183,7 @@ When viewing the contents of selected group(s), a search can be performed within
 
 ## Preferences about groups
 
-General preferences for groups can be accessed using **Options → Preferences**, tab **Groups**.
+General preferences for groups can be accessed using **File → Preferences**, tab **Groups**.
 
 ![Preferences for tab Groups](<../.gitbook/assets/groups-preferences-jabref5.2 (1).png>)
 

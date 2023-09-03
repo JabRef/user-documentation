@@ -1,6 +1,6 @@
 # Customize the citation key generator
 
-The pattern used in the auto generation of citation labels can be set for each of the standard entry types in **Options → Preferences**, tab **Citation key generator**. A detailed description can be found in the [default citation key pattern section](citationkeypatterns.md#default-citation-key-pattern).
+The pattern used in the auto generation of citation labels can be set for each of the standard entry types in **File → Preferences**, tab **Citation key generator**. A detailed description can be found in the [default citation key pattern section](citationkeypatterns.md#default-citation-key-pattern).
 
 ## Citation key patterns
 
@@ -15,28 +15,28 @@ Several special field markers are offered, which extract only a specific part of
 #### Author-related field markers
 
 * **`[auth]`**: The last name of the first author
-* **`[authEtAl]`**: The last name of the first author, and the last name of the second author if there are two authors or `EtAl` if there are more than two. This is similar to `auth.etal`. The difference is that the authors are not separated by `.` and in case of more than 2 authors `EtAl` instead of `.etal` is appended
 * **`[authFirstFull]`**: Get the `von` part and last name of the first author
 * **`[authForeIni]`**: The forename initial of the first author
-* **`[authIniN]`**: The beginning of each author's last name, using at most `N` characters
-* **`[authN]`**: The first `N` characters of the first author's last name
-* **`[authN_M]`**: The first `N` characters of the \`Mth author's last name
-* **`[authorIni]`**: The first 5 characters of the first author's last name, and the last name initial of the remaining authors
-* **`[authorLast]`**: The last name of the last author
-* **`[authorLastForeIni]`**: The forename initial of the last author
-* **`[authors]`**: The last name of all authors
+* **`[auth.etal]`**: The last name of the first author, and the last name of the second author if there are two authors or `.etal` if there are more than two.
+* **`[authEtAl]`**: The last name of the first author, and the last name of the second author if there are two authors or `EtAl` if there are more than two. This is similar to `auth.etal`. The difference is that the authors are not separated by `.` and in case of more than 2 authors `EtAl` instead of `.etal` is appended.
+* **`[auth.auth.ea]`**: The last name of the first two authors, separated by `.`. If there are more than two authors, adds `.ea`.
+* **`[authors]`**: The last name of all authors.
+* **`[authorsN]`**: The last name of up to `N` authors. If there are more authors, `EtAl` is appended
+* **`[authIniN]`**: The beginning of each author's last name, using at most `N` characters in total.
+* **`[authN]`**: The first `N` characters of the first author's last name.
+* **`[authN_M]`**: The first `N` characters of the `M`th author's last name.
+* **`[authorIni]`**: The first 5 characters of the first author's last name, and the last name initial of the remaining authors.
+* **`[authshort]`**: The last name if one author is given; the first character of up to three authors' last names if more than one author is given. A plus character is added, if there are more than three authors
 * **`[authorsAlpha]`**: Corresponds to the BibTeX style “alpha”,
   * One author: The first three letters of the last name
   * Two to four authors: The first letter of the last name of each author
   * More than four authors: The first letter of the first three authors' last name. A `+` is added at the end if it is not in the [list of unwanted characters](citationkeypatterns.md#removing-unwanted-characters).
-* **`[authorsN]`**: The last name of up to `N` authors. If there are more authors, `EtAl` is appended
-* **`[authshort]`**: The last name if one author is given; the first character of up to three authors' last names if more than one author is given. A plus character is added, if there are more than three authors
-* **`[auth.auth.ea]`**: The last name of the first two authors, separated by `.`. If there are more than two authors, adds `.ea`
-* **`[auth.etal]`**: The last name of the first author, and the last name of the second author if there are two authors or `.etal` if there are more than two
+* **`[authorLast]`**: The last name of the last author.
+* **`[authorLastForeIni]`**: The forename initial of the last author.
 
 **Note:** If there is no author (as in the case of an edited book), then all of the above **`[auth...]`** markers will use the editor(s) (if any) as a fallback. Thus, the editor(s) of a book with no author will be treated as the author(s) for label-generation purposes. If you do not want this behavior, i.e. you require a marker which expands to nothing if there is no author, use **`pureauth`** instead of **`auth`** in the above codes. For example, **`[pureauth]`**, or **`[pureauthors3]`**.
 
-The name of institutions and companies often contain spaces and words that have a specific meaning in the author field, e.g., `and`. The full name should be enclosed in braces to prevent the name from being miss-parsed for these cases. Names enclosed in braces are often abbreviated while generating citation keys to avoid creating excessively long keys. For example, `{European Union Aviation Safety Agency}` is abbreviated to `EUASA`.
+The name of institutions and companies often contain spaces and words that have a specific meaning in the author field, e.g., `and`. The full name should be enclosed in braces (`{}`) to prevent the name from being miss-parsed for these cases. Names enclosed in braces are often abbreviated while generating citation keys to avoid creating excessively long keys. For example, when using `[authors]`, `author = {European Union Aviation Safety Agency}` is abbreviated to `Agency`, whereas `author = {{European Union Aviation Safety Agency}}` is abbreviated to `EUASA`.
 
 #### Editor-related field markers
 
@@ -124,7 +124,7 @@ Keep in mind, Jabref uses a Java flavored regular expressions engine (there are 
 
 In addition to using regular expression replacement as [modifiers](citationkeypatterns.md#modifiers) of the field markers within [citation key patterns](citationkeypatterns.md#citation-key-patterns), regular expression matching and replacement can be done after the key patterns have been applied. In this case, the regular expression and replacement string are entered in the separate text fields above the [citation key patterns](citationkeypatterns.md#citation-key-patterns) section. If the replacement string is empty, then matches of the regular expression will be removed from the generated key.
 
-![Citation key generator preferences - regex replacement](<../.gitbook/assets/preferences-citation-key-generator-regex-replacement (2) (2) (2) (2) (2) (2) (2) (3) (3) (4) (1) (1) (4).png>)
+![Citation key generator preferences - regex replacement](<../.gitbook/assets/preferences-citation-key-generator-regex-replacement (2) (2) (2) (2) (2) (2) (2) (3) (3) (4) (1) (1) (1).png>)
 
 The regex `(?<=.{12}+).+` with an empty replacement string will cut the length of all citation keys to 12.
 
@@ -132,7 +132,7 @@ The regex `(?<=.{12}+).+` with an empty replacement string will cut the length o
 
 The citation key generator preferences contain an option for removing unwanted characters. Add or remove characters to the right of "Remove the following characters:" to control which characters are included in the citation keys.
 
-![Citation key generator preferences - unwanted characters](<../.gitbook/assets/preferences-citation-key-generator-remove-characters (1) (1) (1) (1) (2) (2) (3) (1) (1) (2).png>)
+![Citation key generator preferences - unwanted characters](<../.gitbook/assets/preferences-citation-key-generator-remove-characters (1) (1) (1) (1) (2) (2) (3) (1) (1) (1).png>)
 
 Removing `-` from this list will allow it to be used while generating citation keys.
 
@@ -152,13 +152,13 @@ To change the citation key pattern to `[authors][camel]` for all libraries witho
 
 1.  Open the preferences
 
-    <img src="../.gitbook/assets/optionspreferences (3) (2) (2) (2) (1) (3) (3) (4) (4) (5) (1) (1) (3).png" alt="Options Preferences" data-size="original">
+    <img src="../.gitbook/assets/optionspreferences (3) (2) (2) (2) (1) (3) (3) (4) (4) (5) (1) (1) (3).png" alt="File → Preferences" data-size="original">
 2.  Navigate to "Citation key generator"
 
-    <img src="../.gitbook/assets/preferences-citation-key-generator (1) (1) (1) (1).png" alt="Citation key generator preferences" data-size="original">
+    <img src="../.gitbook/assets/preferences-citation-key-generator (1) (1) (1) (2).png" alt="Citation key generator preferences" data-size="original">
 3.  Change the default pattern to `[authors][camel]`
 
-    <img src="../.gitbook/assets/preferences-citation-key-generator-authors-camel (2) (2) (2) (3) (3) (4) (4) (5) (1) (1) (1).png" alt="Citation key generator preferences - authors camel" data-size="original">
+    <img src="../.gitbook/assets/preferences-citation-key-generator-authors-camel (2) (2) (2) (3) (3) (4) (4) (5) (1) (1) (2) (1) (7).png" alt="Citation key generator preferences - authors camel" data-size="original">
 4. Press "Enter" (forgetting to do this is a leading cause of puzzlement)
 5. Click "Save"
 
@@ -168,10 +168,10 @@ To change the citation key patterns for a single library to `[auth][shortyear]`,
 
 1.  Make sure the library is open and selected in the JabRef main window
 
-    <img src="../.gitbook/assets/main-screen-selected-library (2) (2) (2) (3) (3) (4) (1) (1) (1).png" alt="Main screen selected library" data-size="original">
+    <img src="../.gitbook/assets/main-screen-selected-library (2) (2) (2) (3) (3) (4) (1) (1) (2) (1) (6).png" alt="Main screen selected library" data-size="original">
 2.  From the "Library" menu, open the "Citation key pattern" setting
 
-    <img src="../.gitbook/assets/library-citation-key-patterns (1) (1) (1) (1) (1) (1).png" alt="Library Citation key patterns" data-size="original">
+    <img src="../.gitbook/assets/library-citation-key-patterns (1) (1) (1) (1) (1) (2) (1) (2).png" alt="Library Citation key patterns" data-size="original">
 3.  Set the pattern for the desired entry types, and press the apply button.
 
-    <img src="../.gitbook/assets/citation-key-patterns (2) (2) (2) (2) (3) (3) (4) (1) (1) (2).png" alt="Citation key patterns" data-size="original">
+    <img src="../.gitbook/assets/citation-key-patterns (2) (2) (2) (2) (3) (3) (4) (1) (1) (1).png" alt="Citation key patterns" data-size="original">

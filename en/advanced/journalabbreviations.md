@@ -43,7 +43,7 @@ Once you click _Save changes_, if you have selected a file, and the table contai
 
 You can link to a number of external lists. These links can be set up on top of the **Manage journal abbreviations** window. External lists are similar to the personal list. The _Open existing list_ button allows you to select an existing file on your computer.
 
-![External list](<../.gitbook/assets/JournalAbbreviations-ExternalList (2) (2) (2) (2) (2) (2) (2) (2) (3) (3) (4) (1) (1) (2).png>)
+![External list](<../.gitbook/assets/JournalAbbreviations-ExternalList (2) (2) (2) (2) (2) (2) (2) (2) (3) (3) (4) (1) (1) (2) (1).png>)
 
 External lists can be found at [JabRef's repository abbreviation lists](http://abbrv.jabref.org). These data files are in CSV format (using semicolons as separators):
 

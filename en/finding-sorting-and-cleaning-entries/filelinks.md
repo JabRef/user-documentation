@@ -14,7 +14,7 @@ If the "file" field is included in [General fields](../setup/generalfields.md), 
 
 JabRef offers the following directory settings:
 
-1.  **Options → Preferences → Linked files**, item _Main file directory._
+1.  **File → Preferences → Linked files**, item _Main file directory._
 
     <img src="../.gitbook/assets/preferences-linkedfiles-5.2 (1) (1) (1) (1) (1).png" alt="Main file directory" data-size="original">
 2. **Library → Library properties**, items _General file directory,_ and _User-specific file directory_.![Override default file directories](../.gitbook/assets/jabref-lib-properties.png)
@@ -25,11 +25,11 @@ JabRef uses these 3 directories to search for the files: JabRef starts in the us
 
 JabRef enables setting a directory per database. When sharing a library across multiple persons, each user might have a different directory. Either, each user can set his directory in the "Main file directory". In case the group also shares papers and thus there are two directories (the private one and a group-shared one), one can set a directory within the library (the "General file directory"). In case a user has a different location of the shared folder (e.g., different paths on Linux and Windows), he can use the "User-specific file directory". This setting is persisted in the `bib` file in a way that it does not overwrite the setting of another user. For this, JabRef uses the username of the currently logged-in user (`-<loginname>` is used as a suffix in the `jabref-meta` field). So, both `mary` and `aileen` can set a different user-specific file directory.
 
-If JabRef saves an attached file and my login name matches the name stored in the `bib` file, it chooses that directory. If no match is found, it uses the "General file directory" of the bib file. If that is not found, it uses the one configured at Options → Preferences → Linked files.
+If JabRef saves an attached file and my login name matches the name stored in the `bib` file, it chooses that directory. If no match is found, it uses the "General file directory" of the bib file. If that is not found, it uses the one configured at File → Preferences → Linked files.
 
 In some settings, the bib file is stored in **the same directory** as the PDF files. Then, one ignores all the above directories and enable "Search and store files relative to library file location". In this case, JabRef starts searching for PDF files in the directory of the `bib` file. It is also possible to achieve this result by setting `.` as "General file directory" in the library properties.
 
-![Search and store files relative to library file location](<../.gitbook/assets/preferences-file-searchandstoreforfilesrelativetolibraryfilelocation (1) (1) (1) (1) (4) (4) (4) (1) (1) (3).png>).
+![Search and store files relative to library file location](<../.gitbook/assets/preferences-file-searchandstoreforfilesrelativetolibraryfilelocation (1) (1) (1) (1) (4) (4) (4) (1) (1) (2) (1) (3).png>).
 
 Relative file directories obviously only work in the library properties for a bib file, e.g. `a.bib` Library → Library properties → General file directory → `papers`. Assume to have two bib files: `a.bib` and `b.bib` located in different directories: `a.bib` located at `C:\a.bib` and `b.bib` located at `X:\b.bib`. When I click on the `+` icon in the general Tab of file `a.bib`, the popup is opened in the directory `C:\papers` (assuming `C:\papers` exists).
 
@@ -37,7 +37,7 @@ Relative file directories obviously only work in the library properties for a bi
 
 If you have a file within or below one of your file directories with an extension matching one of the defined external file types, and a name starting with (or matching) an entry's citation key, the file can be auto-linked. JabRef will detect the file and display a "link-add" icon in the entry editor, at the left of the filename. Click on the "link-add" icon to link this file to the entry.
 
-The rules for which file names can be auto-linked to a citation key can be set up in **Options →** **Preferences → Linked files**, section _Autolink files_.
+The rules for which file names can be auto-linked to a citation key can be set up in **File → Preferences → Linked files**, section _Autolink files_.
 
 ![](<../.gitbook/assets/preferences-linkedfiles-5.2 (1) (1) (1) (1) (1).png>)
 
@@ -54,7 +54,7 @@ _Explanation_: The expression in the brackets says: Create a subdirectory based 
 
 For an entry, if you want to download a file and link it to the entry, you can do this by clicking the **Download** button in the entry editor.
 
-![Download from URL](<../.gitbook/assets/entryeditor-general-downloadfilefromurl (2) (3) (3) (3) (3) (3) (3) (3) (4) (4) (4) (1) (2) (1).png>)
+![Download from URL](<../.gitbook/assets/entryeditor-general-downloadfilefromurl (2) (3) (3) (3) (3) (3) (3) (3) (4) (4) (4) (1) (1) (2) (1).png>)
 
 A dialog box will appear, prompting you to enter the URL. The file will be downloaded to your main file directory, named based on the entry's citation key, and finally linked from the entry.
 
@@ -62,7 +62,7 @@ A dialog box will appear, prompting you to enter the URL. The file will be downl
 
 It is possible to have greater flexibility in the naming scheme by using regular expressions for the search. In most cases, it should not be necessary though to adapt the given default.
 
-If you open the preferences (**Options → Preferences → Linked Files**), you will find in the section _Autolink files_ an option called "Use regular expression search". Checking this option will allow you to enter your own regular expression for search in the PDF directories.
+If you open the preferences (**File → Preferences → Linked Files**), you will find in the section _Autolink files_ an option called "Use regular expression search". Checking this option will allow you to enter your own regular expression for search in the PDF directories.
 
 ![The linked files preferences](<../.gitbook/assets/preferences-linkedfiles-5.2 (1) (1) (1) (1) (1).png>)
 

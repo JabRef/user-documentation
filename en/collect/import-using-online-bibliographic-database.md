@@ -16,7 +16,7 @@ However, it is still possible to import hundreds or even thousands of entries fr
 
 ## Using a Proxy Server
 
-If you need to use an HTTP proxy server, you can configure JabRef to use a proxy using the "Network" preferences (**Options → Preferences → Network**).
+If you need to use an HTTP proxy server, you can configure JabRef to use a proxy using the "Network" preferences (**File → Preferences → Network**).
 
 ## Search Syntax
 

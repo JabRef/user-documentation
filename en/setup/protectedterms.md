@@ -1,6 +1,6 @@
 # Manage protected terms
 
-This feature is available through **Options → Preferences → Protected terms files**.
+This feature is available through **File → Preferences → Protected terms files**.
 
 {% hint style="warning" %}
 This help page should describe the menu Options → Preferences → Protected terms files..

@@ -8,7 +8,8 @@ You can import your citations into a Microsoft Word document through JabRef's ex
 
       ***Mac OS users will not see a "Manage Sources" button. Mac users should follow these steps:***
 
-      a.) Copy the selected file to /Library/Containers/com.microsoft.word/Data/Library/Application Support/Microsoft/Office 
+      a.) Copy the selected file to /Library/Containers/com.microsoft.word/Data/Library/Application Support/Microsoft/Office or alternatively to
+      /Users/<username>/Library/Containers/com.microsoft.Word/Data/Library/Application Support/Microsoft/Office/ and name it Sources.xml
 
       b.) Restart Word
 

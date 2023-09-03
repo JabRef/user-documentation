@@ -1,6 +1,6 @@
 # Export
 
-The order of the exported entries can be set in **Options → Preferences,** tab **File**, under the menu "Export sort order".
+The order of the exported entries can be set in **File → Preferences,** tab **File**, under the menu "Export sort order".
 
 {% hint style="warning" %}
 This help page should describe the menu File -&gt; Export \(and the various file formats available\).
