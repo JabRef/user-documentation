@@ -1,16 +1,15 @@
 # Customize entry types
 
+
 To customize entry types, select the menu **File → Preferences → Entry types**.
 
 When customizing an entry type, you both define how its entry editor should look, and what it takes for JabRef to consider an entry complete. You can both make changes to the existing entry types, and define new ones.
-
-Note that no modifications you make in this dialog will be stored until you click **Apply**. If you click **Cancel** or simply close the dialog, unapplied changes will be lost.
 
 ## Using the entry customization dialog
 
 ![Screenshot of the entry customization dialog](<../.gitbook/assets/jabrefcustomentrytypes (2) (1) (3) (3) (3) (3) (3) (3) (3) (4) (4) (4) (1) (1) (1).png>)
 
-The entry customization dialog is divided into two areas. On the left side all entry types (including any custom types) are listed. If you select a type from the left side, the right area shows all fields for the selected entry.
+The entry customization interface is divided into two areas. On the left side all entry types (including any custom types) are listed. If you select a type from the left side, the right area shows all fields for the selected entry.
 
 ### Adding and removing entry types
 
