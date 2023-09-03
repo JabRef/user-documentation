@@ -47,7 +47,7 @@ For instance, if you see `#jan#` in the `month` field, the "real" BibTeX entry l
 
 ## Word/name autocompletion
 
-The entry editor offers autocompletion of words. In the **File → Preferences → Entry editor**, you can enable or disable autocompletion, and choose for which fields autocompletion is active.
+The entry editor offers autocompletion of words. In the **File → Preferences → Autocomplete**, you can enable or disable autocompletion, and choose for which fields autocompletion is active.
 
 With autocompletion, JabRef records all words that appear in each of the chosen fields throughout your database. Whenever you write the beginning of one of these words, it will be suggested visually. To ignore the suggestion, simply write on. To accept the suggestion, either press Enter or use your arrow keys or other keys to remove the selection box around the suggested characters.
 
