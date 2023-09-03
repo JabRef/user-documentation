@@ -1,6 +1,6 @@
 # Customize the citation key generator
 
-The pattern used in the auto generation of citation labels can be set for each of the standard entry types in **Options → Preferences**, tab **Citation key generator**. A detailed description can be found in the [default citation key pattern section](citationkeypatterns.md#default-citation-key-pattern).
+The pattern used in the auto generation of citation labels can be set for each of the standard entry types in **File → Preferences**, tab **Citation key generator**. A detailed description can be found in the [default citation key pattern section](citationkeypatterns.md#default-citation-key-pattern).
 
 ## Citation key patterns
 
@@ -152,7 +152,7 @@ To change the citation key pattern to `[authors][camel]` for all libraries witho
 
 1.  Open the preferences
 
-    <img src="../.gitbook/assets/optionspreferences (3) (2) (2) (2) (1) (3) (3) (4) (4) (5) (1) (1) (1).png" alt="Options Preferences" data-size="original">
+    <img src="../.gitbook/assets/optionspreferences (3) (2) (2) (2) (1) (3) (3) (4) (4) (5) (1) (1) (3).png" alt="File → Preferences" data-size="original">
 2.  Navigate to "Citation key generator"
 
     <img src="../.gitbook/assets/preferences-citation-key-generator (1) (1) (1) (2).png" alt="Citation key generator preferences" data-size="original">

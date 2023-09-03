@@ -6,13 +6,13 @@ description: Qualify your entries with tags that make sense to your work.
 
 A set of 6 special fields allows you to tag your entries in order to rate read papers, indicate their relevance to your work, indicate that their quality has been assured, etc. Internally, each special field is stored in a separate BibTeX field.
 
-This feature has to be activated in **Options → Preferences → Entry Table** by checking the item `Enable special fields`.
+This feature has to be activated in **File → Preferences → Entry Table** by checking the item `Enable special fields`.
 
 The status of each special field can be displayed in the table of entries as dedicated columns.
 
 ![Six special fields can be displayed in the table of entries](<../.gitbook/assets/specialfields-6columns-5.2 (3) (6) (6) (6) (6) (4) (6) (6) (11) (2) (1) (1) (1) (1) (1) (10) (1) (1).png>)
 
-Like any other field, the special field columns can be turned on and off individually in **Options → Preferences → Entry Table.**
+Like any other field, the special field columns can be turned on and off individually in **File → Preferences → Entry Table.**
 
 You can see the value of a special field by:
 
@@ -55,7 +55,7 @@ This field allows to state is the paper has been printed or not (sixth column in
 {% hint style="info" %}
 Pre JabRef 5.2
 
-The way the special fields are stored in the libraries can be set in **Options → Preferences → Entry Table**.​
+The way the special fields are stored in the libraries can be set in **File → Preferences → Entry Table**.​
 
 2 modes of storage are available:
 
