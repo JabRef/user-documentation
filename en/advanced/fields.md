@@ -24,7 +24,11 @@ To enable auto save, JabRef adds `% DBID: <id>` to the header. This helps JabRef
 
 ## Standard BibTeX Format
 
+<div align="center">
+
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>A BibTeX "Entry"</p></figcaption></figure>
+
+</div>
 
 An entry consists of entrytype, citekey, fields and field content. The BibTeX and Biblatex standards define a wide range of entrytypes and fields, which should give much leeway. Users that have further needs will be able to edit their entries and come up with custom entrytypes, fields and citekeys, as long as the syntax is honored.
 
