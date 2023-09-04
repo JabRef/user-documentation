@@ -8,3 +8,5 @@ JabRef allows to share both [Bib\(La\)TeX library](sharedbibfile.md) and [SQL da
 
 {% page-ref page="sqldatabase/" %}
 
+{% page-ref page="send-as-email/" %}
+
