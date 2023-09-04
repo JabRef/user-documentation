@@ -1,7 +1,5 @@
 # Send as email
 
-## Send as Email
-
 JabRef allows you to send entries to third parties via email.
 
 #### How to send as e-mail:
