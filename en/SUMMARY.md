@@ -39,6 +39,7 @@
     * [Migration of pre-3.6 SQL databases into a shared SQL database](collaborative-work/sqldatabase/sqldatabasemigration.md)
   * [Export](collaborative-work/export/README.md)
     * [Custom export filters](collaborative-work/export/customexports.md)
+  * [Send as email](collaborative-work/send-as-email.md)
 * [Configuration](setup/README.md)
   * [Customize the citation key generator](setup/citationkeypatterns.md)
   * [Customize entry types](setup/customentrytypes.md)

@@ -1,12 +1,15 @@
 # Share
 
-JabRef allows to share both [Bib\(La\)TeX library](sharedbibfile.md) and [SQL database](sqldatabase/). You can also [export your library to a variety of formats](export/).
+JabRef allows sharing both [Bib(La)TeX library](sharedbibfile.md) and [SQL database](sqldatabase/). You can also [export your library to a variety of formats](export/).
 
-{% page-ref page="sharedbibfile.md" %}
+{% content-ref url="sharedbibfile.md" %}
+[sharedbibfile.md](sharedbibfile.md)
+{% endcontent-ref %}
 
-{% page-ref page="export/" %}
+{% content-ref url="export/" %}
+[export](export/)
+{% endcontent-ref %}
 
-{% page-ref page="sqldatabase/" %}
-
-{% page-ref page="send-as-email/" %}
-
+{% content-ref url="sqldatabase/" %}
+[sqldatabase](sqldatabase/)
+{% endcontent-ref %}
