@@ -13,3 +13,7 @@ JabRef allows sharing both [Bib(La)TeX library](sharedbibfile.md) and [SQL datab
 {% content-ref url="sqldatabase/" %}
 [sqldatabase](sqldatabase/)
 {% endcontent-ref %}
+
+{% content-ref url="send-as-email.md" %}
+[send-as-email.md](send-as-email.md)
+{% endcontent-ref %}
