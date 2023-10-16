@@ -28,7 +28,7 @@ ID search is carried out using the [ArXiv identifier](https://arxiv.org/help/arx
 
 ### Crossref
 
-(Crossref)\[[https://en.wikipedia.org/wiki/Crossref](https://en.wikipedia.org/wiki/Crossref)] is an official Digital Object Identifier (DOI) Registration Agency of the International DOI Foundation.
+[Crossref](https://en.wikipedia.org/wiki/Crossref) is an official Digital Object Identifier (DOI) Registration Agency of the International DOI Foundation.
 
 ID search is carried out using the DOI.
 
