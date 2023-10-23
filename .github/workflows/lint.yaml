@@ -11,4 +11,6 @@ jobs:
       - name: markdownlint-cli2-action
         uses: DavidAnson/markdownlint-cli2-action@v9
         with:
-          globs: "**/*.md #node_modules"
+          globs: |
+            **/*.md
+            #node_modules
