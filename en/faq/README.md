@@ -4,7 +4,7 @@
 
 A: You are not obliged to cite JabRef, but we would greatly appreciate it if you do.
 
-```text
+```
 JabRef Development Team (2021). JabRef - An open-source, cross-platform citation and reference management software. Version 5.1. [https://www.jabref.org]
 ```
 
@@ -28,7 +28,7 @@ A: Yes it is. JabRef is distributed under the MIT License, which [allows the fol
 
 A: You can try resetting the settings. Depending on your operating system, you may need to pass the command line arguments `-d all -n` to JabRef.
 
-\(E.g. in Windows this means `jabref-X.Y.exe -d all -n`, where `X.Y` means the version number of JabRef. If this does not help, run `regedit` and delete the folder `HKEY_CURRENT_USER\SOFTWARE\JavaSoft\Prefs\net\sf\jabref`. Be careful with `regedit`, as you can easily corrupt the basic Windows configuration.\)
+(E.g. in Windows this means `jabref-X.Y.exe -d all -n`, where `X.Y` means the version number of JabRef. If this does not help, run `regedit` and delete the folder `HKEY_CURRENT_USER\SOFTWARE\JavaSoft\Prefs\net\sf\jabref`. Be careful with `regedit`, as you can easily corrupt the basic Windows configuration.)
 
 ## Q: I have tried the latest version of JabRef. Since then, the library entries are no longer displayed in any old version. What should I do?
 
@@ -38,13 +38,16 @@ A: Don't panic. No data should be damaged in your bib library. Since version 5.0
 
 A: Check your configuration. Disable some or all of following preferences:
 
-   - disable fulltext index (File → Preferences → Linked files → Fulltext Index → ...)
-   - disable time stamps (File → Preferences → General → Time Stamp → ...)
-   - disable field formatters (Library → Library Properties → Saving → Save actions → ...)
-   - disable autosave (File → Preferences → File → Saving → ...)
-   - disable count of items in group (File → Preferences → Groups → ...)
+* disable fulltext index (File → Preferences → Linked files → Fulltext Index → ...)
+* disable time stamps (File → Preferences → General → Time Stamp → ...)
+* disable field formatters (Library → Library Properties → Saving → Save actions → ...)
+* disable autosave (File → Preferences → File → Saving → ...)
+* disable count of items in group (File → Preferences → Groups → ...)
+* Sort the maintable columns from A-Z (low to highest), not from Z-A. See issue [8977](https://github.com/JabRef/jabref/issues/8977#issuecomment-1707854570).
 
-   Any preference that has the potential to affect all your entries at once is worth inspecting.
+Any preference that has the potential to affect all your entries at once is worth inspecting.
+
+We collect performance related issues [here](https://github.com/JabRef/jabref/labels/type%3A%20performance).
 
 ## Q: Are there any publications dealing with JabRef?
 
@@ -56,7 +59,7 @@ A: Yes. In **File → Preferences → General**, set "Default Encoding" to _UTF8
 
 ## Q: If I double click a BibTeX file in the file browser, JabRef always opens a new window. Can JabRef open the libraries in the same window just in a different tab?
 
-A: In **File → Preferences → Network**, in the “Remote operation” section, put a checkmark to “Listen for remote operation on port”. This option allows new instances of JabRef to detect the instance already running, and pass files to that instead of opening a new window. \(Default option since [JabRef 3.0](https://github.com/JabRef/jabref/blob/main/CHANGELOG.md#30---2015-11-29)\).
+A: In **File → Preferences → Network**, in the “Remote operation” section, put a checkmark to “Listen for remote operation on port”. This option allows new instances of JabRef to detect the instance already running, and pass files to that instead of opening a new window. (Default option since [JabRef 3.0](https://github.com/JabRef/jabref/blob/main/CHANGELOG.md#30---2015-11-29)).
 
 ## Q: I have a DOI/ISBN/ePrint/etc. Is it possible to create an entry directly out of this identifier?
 
@@ -68,9 +71,9 @@ A: There are several reasons why JabRef cannot find your identifier online. For 
 
 ## Q: I miss a field _translator_, _lastfollowedon_, etc. How can I add such fields?
 
-A: To add this _translator_ field to all entry types, you can use **File → Preferences → Custom editor tabs** and add a _translator_ field under one of JabRef's general field tabs \(see [Customize general field](../setup/generalfields.md)s\). To add this _translator_ field to a specific entry type, edit the specific entry type\(s\) \(**File → Customize entry types**\) and add a _translator_ field under required fields or optional fields, as you like \(see [Customize entry types](../setup/customentrytypes.md)\).
+A: To add this _translator_ field to all entry types, you can use **File → Preferences → Custom editor tabs** and add a _translator_ field under one of JabRef's general field tabs (see [Customize general field](../setup/generalfields.md)s). To add this _translator_ field to a specific entry type, edit the specific entry type(s) (**File → Customize entry types**) and add a _translator_ field under required fields or optional fields, as you like (see [Customize entry types](../setup/customentrytypes.md)).
 
-## Q: How do I prevent JabRef from introducing line breaks in certain fields \(such as “title”\) when saving the .bib file?
+## Q: How do I prevent JabRef from introducing line breaks in certain fields (such as “title”) when saving the .bib file?
 
 A: Open **File → Preferences**. In the “File” panel, you will find an option called “Do not wrap the following fields when saving”. This option contains a semicolon-separated list of field names. Any field you add to this list will always be stored without introduction of line breaks.
 
@@ -80,13 +83,13 @@ A: Yes, you can use the parameter `--importToOpen bibfile` of the [command line]
 
 ## Q: How do I link external files with paths relative to my .bib file, so I can move my library along with its files to another directory?
 
-A: You need to override the default file directory for this specific library. In **Library → Library properties** you can override the **Default file directory** setting. There, you can either enter the path in **General file directory** \(for it to be valid for all users of the file\) or in **User-specific file directory** \(for it to be valid for you only\). If you simply enter “.” \(a dot, without the quotes\), the file directory will be the same as the .bib file directory. To place your files in a subdirectory called **subdir**, you can enter **“./subdir”** \(without the quotes\). Files will automatically be linked with relative paths if the files are placed in the default file directory or in a directory below it. More details on the [help page about the library properties](../setup/databaseproperties.md).
+A: You need to override the default file directory for this specific library. In **Library → Library properties** you can override the **Default file directory** setting. There, you can either enter the path in **General file directory** (for it to be valid for all users of the file) or in **User-specific file directory** (for it to be valid for you only). If you simply enter “.” (a dot, without the quotes), the file directory will be the same as the .bib file directory. To place your files in a subdirectory called **subdir**, you can enter **“./subdir”** (without the quotes). Files will automatically be linked with relative paths if the files are placed in the default file directory or in a directory below it. More details on the [help page about the library properties](../setup/databaseproperties.md).
 
 ## Q: Can I use a bib-file specific PDF directory?
 
-A: In **Library → Library properties** you can choose a library-specific directory in the field “General file directory”. If you want to set a directory only for you \(so that other users should use the default directory\), use the field “User-specific file directory”.
+A: In **Library → Library properties** you can choose a library-specific directory in the field “General file directory”. If you want to set a directory only for you (so that other users should use the default directory), use the field “User-specific file directory”.
 
-## Q: How do I export my bibliography entries into a simple text file, so I can import them into a spreadsheet \(in LibreOffice, OpenOffice, MS Office, etc.\)?
+## Q: How do I export my bibliography entries into a simple text file, so I can import them into a spreadsheet (in LibreOffice, OpenOffice, MS Office, etc.)?
 
 A: Use **File → Export**. As “Filter” choose “OpenOffice/LibreOffice CSV”.
 
@@ -106,17 +109,17 @@ A: Use curly braces to tell BibTeX to keep your author field as-is: `{European C
 
 A: Take a look at “Bibliographies and citations” at the [UK List of TeX Frequently Asked Questions on the Web](http://www.tex.ac.uk/). For German readers, there is the [dante e.V. FAQ](http://projekte.dante.de/DanteFAQ/LiteraturVerzeichnis).
 
-## Q: How do I export a subset of my library to BibTeX \(or BibLaTeX\) format?
+## Q: How do I export a subset of my library to BibTeX (or BibLaTeX) format?
 
-A: Your JabRef library is already a file in Bib\(La\)TeX format. To export a specific subset of your library, select the entries to be exported and then choose **File → Export → Save selected as plain BibTeX...**.
+A: Your JabRef library is already a file in Bib(La)TeX format. To export a specific subset of your library, select the entries to be exported and then choose **File → Export → Save selected as plain BibTeX...**.
 
-## Q: I have the Bib\(La\)TeX code of a reference. How to add it to my library as a new entry?
+## Q: I have the Bib(La)TeX code of a reference. How to add it to my library as a new entry?
 
-A: Paste the Bib\(la\)Tex code of a reference into the table of entries, and JabRef will create the new corresponding entry.
+A: Paste the Bib(la)Tex code of a reference into the table of entries, and JabRef will create the new corresponding entry.
 
 ## Q: I have the PDF of a publication. How to make it a new entry of my library?
 
-A: Drag & drop a PDF onto the table of entries \(between two existing entries\). JabRef will analyze the PDF and create a new entry. More details about [Adding entries from PDFs.](../collect/findunlinkedfiles.md)
+A: Drag & drop a PDF onto the table of entries (between two existing entries). JabRef will analyze the PDF and create a new entry. More details about [Adding entries from PDFs.](../collect/findunlinkedfiles.md)
 
 ## Q: I am looking at a publication in my web browser. How to make it a new entry of my library?
 
@@ -132,7 +135,7 @@ A: JabRef can fetch the PDFs for you: select the entries and to **Lookup → Sea
 
 ## Q: How do I export a subset corresponding to my LaTeX file?
 
-A: Upon compilation, LaTeX generates a file with the extension ".aux". This file contains the keys of the cited references \(among other things\). Using this AUX file, JabRef can extract the relevant entries. Choose the menu **Tools → New sublibrary based on AUX file...** , then select the AUX file.
+A: Upon compilation, LaTeX generates a file with the extension ".aux". This file contains the keys of the cited references (among other things). Using this AUX file, JabRef can extract the relevant entries. Choose the menu **Tools → New sublibrary based on AUX file...** , then select the AUX file.
 
 ## Q: When I modify my library, I would like that JabRef performs entry cleaning automatically. How to do this?
 
@@ -140,15 +143,15 @@ A: In **Library → Library properties**, you will find a section named "Save ac
 
 ## Q: Search on Google scholar does not work anymore. Why?
 
-A: Google scholar is blocking "automated" crawls which generate too much traffic in a short time. JabRef already uses a two-step approach \(with the prefetched list before crawling the actual BibTeX data\) to circumvent this. However, after too many crawls JabRef is being blocked. To solve this issue, see the section [_Traffic limitations_](../collect/import-using-online-bibliographic-database.md#traffic-limitations) in the Google Scholar database.
+A: Google scholar is blocking "automated" crawls which generate too much traffic in a short time. JabRef already uses a two-step approach (with the prefetched list before crawling the actual BibTeX data) to circumvent this. However, after too many crawls JabRef is being blocked. To solve this issue, see the section [_Traffic limitations_](../collect/import-using-online-bibliographic-database.md#traffic-limitations) in the Google Scholar database.
 
 ## Q: JabRef does not push to vim, although I have configured the right path and server name. What is going on?
 
-A: You have to start vim with the option `--servername` \(such as `vim --servername MyVimServer`\). If you get the `Unknown option argument` message, it means your version of vim does not include the _clientserver_ feature \(you can check with `vim --version`\). In such a case, you have to install another version of `vim`.
+A: You have to start vim with the option `--servername` (such as `vim --servername MyVimServer`). If you get the `Unknown option argument` message, it means your version of vim does not include the _clientserver_ feature (you can check with `vim --version`). In such a case, you have to install another version of `vim`.
 
 ## Q: My plugins stopped working. Why?
 
-A: In JabRef 3.0 plugin support was removed because the development team cannot keep up plugin support anymore. Nevertheless, plugins can be integrated in JabRef. See [issue \#152](https://github.com/JabRef/jabref/issues/152) for the current status and discussion. Please contact the author of the respective plugin and ask them to port their plugin into JabRef's code.
+A: In JabRef 3.0 plugin support was removed because the development team cannot keep up plugin support anymore. Nevertheless, plugins can be integrated in JabRef. See [issue #152](https://github.com/JabRef/jabref/issues/152) for the current status and discussion. Please contact the author of the respective plugin and ask them to port their plugin into JabRef's code.
 
 ## Q: In the preferences, I want to change the option XYZ. How to find it?
 
@@ -156,13 +159,13 @@ A: Enter XYZ in the search field located at the upper left-hand corner of the pr
 
 ## Q: "Unable to monitor file changes. Please close files and processes and restart. You may encounter errors if you continue with this session."
 
-A: This error message has been observed on systems that use [inotify](https://www.man7.org/linux/man-pages//man7/inotify.7.html). System calls to `inotify_init` and `inotify_add_watch` set `errno` to `EMFILE` when `inotify` has reached its limit. The most common reason is that `inotify` is running too many instances. To solve this problem, contact your system administrator and request that they increase the limits defined in `/proc/sys/fs/inotify/max_user_*` files.
+A: This error message has been observed on systems that use [inotify](https://www.man7.org/linux/man-pages/man7/inotify.7.html). System calls to `inotify_init` and `inotify_add_watch` set `errno` to `EMFILE` when `inotify` has reached its limit. The most common reason is that `inotify` is running too many instances. To solve this problem, contact your system administrator and request that they increase the limits defined in `/proc/sys/fs/inotify/max_user_*` files.
 
-## Q: "I'm using JabRef with Linux \(Gnome desktop version\) and each time I want to see a pdf document in JabRef, the document viewer Evince is opened. I would prefer to open it with Okular."
+## Q: "I'm using JabRef with Linux (Gnome desktop version) and each time I want to see a pdf document in JabRef, the document viewer Evince is opened. I would prefer to open it with Okular."
 
-A: JabRef opens the pdf document with the application Gnome has set by default: Evince. If you want JabRef to open another application \(Okular or other\), in your file explorer, right-click on whatever pdf file &gt; properties &gt; Open With &gt; choose your application &gt; Set as default at the bottom right corner. From now on, both when you double-click a pdf file in your file explorer or when you ask JabRef to open it via its document viewer, your chosen application will be used.
+A: JabRef opens the pdf document with the application Gnome has set by default: Evince. If you want JabRef to open another application (Okular or other), in your file explorer, right-click on whatever pdf file > properties > Open With > choose your application > Set as default at the bottom right corner. From now on, both when you double-click a pdf file in your file explorer or when you ask JabRef to open it via its document viewer, your chosen application will be used.
 
-## Q: How does JabRef support me in sharing my Bib\(La\)TeX libraries?
+## Q: How does JabRef support me in sharing my Bib(La)TeX libraries?
 
 A: JabRef automatically recognizes a change in the `bib` file on disk and notifies the user of it. This is cool for network drives.
 
@@ -180,9 +183,8 @@ A: JabRef uses `https` to connect to external catalogs to fetch bibliographic da
 
 ## Q: My question is not answered here. What can I do?
 
-A: After consulting [JabRef's help](https://docs.jabref.org) and checking whether your question has been [regarded as issue](https://github.com/JabRef/jabref/issues?utf8=%E2%9C%93&q=is%3Aissue+) please head over to the [Forum](https://discourse.jabref.org/).
+A: After consulting [JabRef's help](https://docs.jabref.org) and checking whether your question has been [regarded as issue](https://github.com/JabRef/jabref/issues?utf8=%E2%9C%93\&q=is%3Aissue+) please head over to the [Forum](https://discourse.jabref.org/).
 
 ## Q: There is a mistake in this FAQ, a dead link, or I have written a better/new explanation for a question! What can I do?
 
 A: See [How to improve the help page](../contributing/how-to-improve-the-help-page.md).
-
