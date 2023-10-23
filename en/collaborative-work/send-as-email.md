@@ -2,7 +2,7 @@
 
 JabRef allows you to send entries to third parties via email.
 
-### How to send as e-mail:
+### How to send as e-mail
 
 1. Select one or multiple entries
 2. Choose **Tools → Send as email** in the menu

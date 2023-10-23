@@ -38,7 +38,7 @@ To edit an already loaded custom style file or to reload changes that you made t
 
 Here is an example style file:
 
-```
+```text
 NAME
 Example style file for JabRef-OpenOffice integration.
 
@@ -185,7 +185,7 @@ If you are using numbered citations, the number for each entry will be automatic
 ## Known issues
 
 * Make sure to save your Writer document in OpenDocument format (odt). Saving to Word format will lose your reference marks.
-  * Otherwise try to use the external tool [JabRef LibreOffice Converter](https://github.com/teertinker/JabRef\_LibreOffice\_Converter). This LibreOffice extension converts the reference marks to code that can be saved.
+  * Otherwise, try to use the external tool [JabRef LibreOffice Converter](https://github.com/teertinker/JabRef\_LibreOffice\_Converter). This LibreOffice extension converts the reference marks to code that can be saved.
 * There is currently no support for footnote based citations.
 * The cursor may be poorly positioned after inserting a citation.
 * Copy-pasting the example style file directly from this page can give an unparseable file. To avoid this, instead download the example file from the link in the download section.

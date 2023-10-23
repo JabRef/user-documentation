@@ -61,16 +61,12 @@ Have a look at [JabRefs candidates for university projects](https://github.com/o
 We collect good issues to start with at our [list of good first issues](https://github.com/orgs/JabRef/projects/5/views/1). After finding something, please check our [CONTRIBUTING.md](https://github.com/JabRef/jabref/blob/main/CONTRIBUTING.md).
 
 
-
 **I want something with huge impact** [![Discourse](https://img.shields.io/badge/discourse-online-green.svg)](https://discourse.jabref.org/c/features/6)
 
 Look at the discussions in our forum about [new features](https://discourse.jabref.org/c/features/6). Find an interesting topic, discuss it and start contributing. Alternatively, you can check out [JabRefs projects page at GitHub](https://github.com/JabRef/jabref/projects?query=is%3Aopen). Although, of course, you can choose to work on ANY issue, choosing from the projects page has the advantage that these issues have already been categorized, sorted and screened by JabRef maintainers. A typical sub-classifications scheme is "priority" (high, normal and low). Fixing high priority issues is preferred.
 
 
-**I am a lecturer**
-
-If you ask yourself how to integrate JabRef into your class, please read the [documentation about how to integrate JabRef into a class of software engineering training](https://devdocs.jabref.org/teaching.html#jabref-and-software-engineering-training). As student, you may notify your lecturer about this possibility.
-
+**I am a lecturer** If you ask yourself how to integrate JabRef into your class, please read the [documentation about how to integrate JabRef into a class of software engineering training](https://devdocs.jabref.org/teaching.html#jabref-and-software-engineering-training). As student, you may notify your lecturer about this possibility.
 
 
 **I want to know how to contribute code and set up my workspace** [![Join the chat at https://gitter.im/JabRef/jabref](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/JabRef/jabref)
@@ -78,11 +74,9 @@ If you ask yourself how to integrate JabRef into your class, please read the [do
 Check out the [documentation for developers](https://devdocs.jabref.org/contributing.html#contribute-code)
 
 
-
 **I need help with the code** [![Join the chat at https://gitter.im/JabRef/jabref](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/JabRef/jabref)
 
 You can talk to the core developers of JabRef in the [gitter chat](https://gitter.im/JabRef/jabref).
-
 
 
 **I want to learn about code quality** [![Join the chat at https://gitter.im/JabRef/jabref](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/JabRef/jabref)

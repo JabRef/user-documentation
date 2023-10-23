@@ -22,8 +22,8 @@ Download it from [downloads.jabref.org](https://downloads.jabref.org). These are
 
 * for Windows `JabRef.exe`.
 * for Linux
-    - either run`bin/JabRef`
-    - or `/lib/runtime/bin/JabRef`.
+    * either run`bin/JabRef`
+    * or `/lib/runtime/bin/JabRef`.
 * for Mac, this is the file `JabRef.app`.
 
 Be sure to activate "Load and Save preferences from/to jabref.xml on start-up (memory stick mode)" in Options → Preferences → General.
@@ -103,7 +103,7 @@ You might need to install an additional font for JabRef to display characters co
 
 #### Submenus from the menu bar close immediately after left click is let go of if the menu bar was clicked in its top half
 
-This issue seems to be related to this [JavaFX bug](https://bugs.openjdk.org/browse/JDK-8251240). A temporary workaround is to click the menu bar in its lower half. To fix the issue permanently set the following system property: ```java -Djdk.gtk.version=2```. This can be done globally by adding ```_JAVA_OPTIONS="-Djdk.gtk.version=2"``` to ```/etc/environment```.  It can also be set locally by editing `JabRef.cfg` in your installation folder (possibly located at `/opt/JabRef/lib/app/JabRef.cfg`) and add the line `-Djdk.gtk.version=2` in the `[JavaOptions]` section. 
+This issue seems to be related to this [JavaFX bug](https://bugs.openjdk.org/browse/JDK-8251240). A temporary workaround is to click the menu bar in its lower half. To fix the issue permanently set the following system property: ```java -Djdk.gtk.version=2```. This can be done globally by adding ```_JAVA_OPTIONS="-Djdk.gtk.version=2"``` to ```/etc/environment```. It can also be set locally by editing `JabRef.cfg` in your installation folder (possibly located at `/opt/JabRef/lib/app/JabRef.cfg`) and add the line `-Djdk.gtk.version=2` in the `[JavaOptions]` section.
 
 {% endtab %}
 
@@ -129,7 +129,7 @@ This method is mainly for package maintainers and users who would like to build 
 
 To build JabRef from source, you first need to have a working Java Development Kit (see above link for details) and Git installed on your system. After installing the two requirements, you open a terminal window (i.e., a command prompt) and type the following:
 
-```
+```shell
 git clone --depth=10 https://github.com/JabRef/jabref
 cd jabref
 ./gradlew assemble

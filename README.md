@@ -23,12 +23,18 @@ Use <https://github.com/koppor/gitbook-summary-generator>.
 
 You can use the [markdown-lint docker image](https://github.com/marketplace/actions/markdown-linting-action):
 
-```terminal
+```shell
 docker run --rm \
     -v "$(pwd):/tmp/check" \
     -e INPUT_CONFIG=/tmp/check/.markdownlint.yml \
     avtodev/markdown-lint:v1 \
     /tmp/check/en
+```
+
+Alternatively, you can run the GitHub Lint workflow:
+
+```shell
+act --rm --platform ubuntu-latest=fwilhe2/act-runner:latest -W .github/workflows/lint.yaml
 ```
 
 ### How to rename files
