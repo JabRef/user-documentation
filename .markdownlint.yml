@@ -3,6 +3,9 @@ default: true
 # Using h2 has side effects in GitBook's toc. Thus, we sometimes switch from h1 to h3
 MD001: false
 
+# GitBook mixes * and - as list styles
+MD004: false
+
 # Something goes wrong with the lists with GitBook
 MD007: false
 
@@ -25,7 +28,7 @@ MD026:
 
 MD033:
   # we have <a> tags with ids
-  allowed_elements: ['a']
+  allowed_elements: ['a', 'div', 'figure', 'figcaption', 'img', 'p', 'mark']
 
 # we allow images without alt text
 MD045: false

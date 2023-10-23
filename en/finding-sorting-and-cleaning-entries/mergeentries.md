@@ -12,17 +12,17 @@ The **Merge entries** window will pop up:
 
 The differences between the two entries can be configured through the toolbox located at the top of the window. From the toolbox, you can choose to show or hide differences, choose how to display differences *(Unified or Split)* and you can also choose how to compare entries *(by words or characters)*.
 
-**Show or Hide Differences**
+### Show or Hide Differences
 
 - **Plain Text —** This option hides the differences.
 - **Show Differences —** This option shows the differences.
 
-**Choose Differences Display Mode**
+### Choose Differences Display Mode
 
 - **Unified View —** In this mode, differences are shown on the right side.
 - **Split View —** In this mode, differences are shown on both sides, with deletions on the left side and additions and updates on the right side.
 
-**Choose Entries Comparison Method**
+### Choose Entries Comparison Method
 
 - **Highlight words —** This option compares entries values in terms of words.
 - **Highlight characters —** This option compares entries values in terms of characters. It divides both entry values into characters before comparing each character individually. This is perfect for comparing values with small differences *(1 or 2 different characters)*.

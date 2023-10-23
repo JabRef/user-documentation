@@ -27,7 +27,7 @@ Locate `JabRef.bat`, for example: `JabRef-5.0-portable_windows\JabRef\runtime\bi
 
 The following documentation is for Windows, but works equally well on Linux and macOS:
 
-```
+```cmd
 C:\portable-apps\JabRef-5.0-portable_windows\JabRef\runtime\bin\JabRef.bat [OPTIONS] [BIBTEX_FILE]
 ```
 
@@ -38,7 +38,7 @@ Take care to specify all options before your list of file names.\
 Ensure that the first file name is not misunderstood as being an argument for an option; this simply means that if a boolean option like `-n` or `-l` immediately precedes a file name, add the word `true` as an argument. \
 For instance, the command line will correctly load the file `original.bib`, export it in [docbook format](https://docbook.org/whatis) to `filetoexport.xml`, and suppress the GUI:
 
-```
+```cmd
 C:\portable-apps\JabRef-5.0-portable_windows\JabRef\runtime\bin\JabRef.bat -o filetoexport.xml,docbook5 -n true original.bib
 ```
 
@@ -97,7 +97,7 @@ _Note:_ The `-i` option can be specified only once, and for one file only.
 
 ### Export file: `-o filename[,export format]`
 
-(or `--output filename[,export format]`
+(or `--output filename[,export format]`)
 
 Export or save a file imported or loaded by the same command line.
 
@@ -117,13 +117,13 @@ _Note:_ The `-o` option can be specified only once, and for one file only.
 
 The first option is to export all entries, which are included in the `entries.bib` file to the specified `export.xmp` file. The second argument, separated by comma, is the type of exporter used by JabRef.
 
-```
+```cmd
 JabRef.bat -o path\export.xmp,xmp  path\entries.bib -n
 ```
 
 The second option is to export every entry in the entries.bib in a single .xmp file. Therefore, the file name is replaced by the keyword `split` without a file ending! JabRef generates individual .xmp files at the `path` location. The file name is a combination of the identifier provided by JabRef and the cite key of the entry.
 
-```
+```cmd
 JabRef.bat -o path\split,xmp  path\entries.bib -n
 ```
 

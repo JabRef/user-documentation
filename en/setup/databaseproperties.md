@@ -2,7 +2,7 @@
 
 Each library can have specific properties that can be modified through **Library→ Library properties**. These specific properties override the generic properties defined in **Options → Preferences**.
 
-The library-specific properties are stored in the database itself. This way, when moving the database to another computer, these properties are preserved. In most of cases these are stored in the bib-file database using text blocks starting with _@Comment{jabref-meta:_ .
+The library-specific properties are stored in the database itself. This way, when moving the database to another computer, these properties are preserved. In most of cases, these are stored in the bib-file database using text blocks starting with `@Comment{jabref-meta:`.
 
 {% hint style="warning" %}
 **For shared SQL databases**, some properties are not available as they are not handled like a .bib file.\
@@ -14,6 +14,7 @@ The following properties are not available:
 {% endhint %}
 
 The library properties window consists of four tabs:
+
 - General
 - Saving
 - String constants
@@ -97,4 +98,3 @@ The [string constants](../advanced/strings.md) of the library.
 ![LibraryProperties-CitationKeyPatterns](https://user-images.githubusercontent.com/6931104/187706432-5ed71148-e78f-4666-9a49-0b9548873260.png)
 
 The [citation key patterns](../setup/citationkeypatterns.md) to be used with this library.
-

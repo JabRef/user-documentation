@@ -8,7 +8,7 @@ JabRef can automatically toggle journal names between abbreviated and unabbrevia
 
 This feature can be configured under **Options → Preferences → Manage journal abbreviations**.
 
-JabRef includes a fairly extensive build-in list of journal abbreviations. This list is a merge of all lists available at [abbrv.jabref.org](https://abbrv.jabref.org). However, this might still be be incomplete (or outdated) for the purposes of some users. Thus, JabRef allows to add abbreviations in the form of a personal list or external lists.
+JabRef includes a fairly extensive build-in list of journal abbreviations. This list is a merge of all lists available at <https://abbrv.jabref.org>. However, this might still be incomplete (or outdated) for the purposes of some users. Thus, JabRef allows to add abbreviations in the form of a personal list or external lists.
 
 ![General view](<../.gitbook/assets/JournalAbbreviations (2) (2) (2) (2) (2) (2) (2) (2) (3) (3) (4) (1) (1) (1).png>)
 
@@ -47,14 +47,14 @@ You can link to a number of external lists. These links can be set up on top of 
 
 External lists can be found at [JabRef's repository abbreviation lists](http://abbrv.jabref.org). These data files are in CSV format (using semicolons as separators):
 
-```
-<full name>;<abbreviation>[;<shortest unique abbreviation>[;<frequency>]]
+```csv
+<full name>,<abbreviation>[,<shortest unique abbreviation>[,<frequency>]]
 ```
 
 The two last fields are optional, and you can omit them. JabRef supports the third field, which contains the shortest unique abbreviation. The last field is not currently used; its intention is gives frequency (e.g., `M` for monthly). For instance:
 
-```
-Accounts of Chemical Research;Acc. Chem. Res.;ACHRE4;M
+```csv
+Accounts of Chemical Research,Acc. Chem. Res.,ACHRE4,M
 ```
 
 #### Contributing an external journal list

@@ -150,13 +150,13 @@ The default key pattern is **`[auth][year]`**, and this could produce keys like 
 
 To change the citation key pattern to `[authors][camel]` for all libraries without individual settings, execute the following steps:
 
-1.  Open the preferences
+1. Open the preferences
 
     <img src="../.gitbook/assets/optionspreferences (3) (2) (2) (2) (1) (3) (3) (4) (4) (5) (1) (1) (3).png" alt="File → Preferences" data-size="original">
-2.  Navigate to "Citation key generator"
+2. Navigate to "Citation key generator"
 
     <img src="../.gitbook/assets/preferences-citation-key-generator (1) (1) (1) (2).png" alt="Citation key generator preferences" data-size="original">
-3.  Change the default pattern to `[authors][camel]`
+3. Change the default pattern to `[authors][camel]`
 
     <img src="../.gitbook/assets/preferences-citation-key-generator-authors-camel (2) (2) (2) (3) (3) (4) (4) (5) (1) (1) (2) (1) (7).png" alt="Citation key generator preferences - authors camel" data-size="original">
 4. Press "Enter" (forgetting to do this is a leading cause of puzzlement)
@@ -166,12 +166,12 @@ To change the citation key pattern to `[authors][camel]` for all libraries witho
 
 To change the citation key patterns for a single library to `[auth][shortyear]`,
 
-1.  Make sure the library is open and selected in the JabRef main window
+1. Make sure the library is open and selected in the JabRef main window
 
     <img src="../.gitbook/assets/main-screen-selected-library (2) (2) (2) (3) (3) (4) (1) (1) (2) (1) (6).png" alt="Main screen selected library" data-size="original">
-2.  From the "Library" menu, open the "Citation key pattern" setting
+2. From the "Library" menu, open the "Citation key pattern" setting
 
     <img src="../.gitbook/assets/library-citation-key-patterns (1) (1) (1) (1) (1) (2) (1) (2).png" alt="Library Citation key patterns" data-size="original">
-3.  Set the pattern for the desired entry types, and press the apply button.
+3. Set the pattern for the desired entry types, and press the apply button.
 
     <img src="../.gitbook/assets/citation-key-patterns (2) (2) (2) (2) (3) (3) (4) (1) (1) (1).png" alt="Citation key patterns" data-size="original">

@@ -6,7 +6,7 @@ description: When error ensues, how to debug your library file with various meth
 
 ## Use Backups
 
-If you encounter any errors that are related to wrong, erroneous, corrupt or vanished data in your library file or simply unintended behaviour that has unknown causes, the first thing that is advised to do, is to find and make use of your backups.
+If you encounter any errors that are related to wrong, erroneous, corrupt or vanished data in your library file or simply unintended behavior that has unknown causes, the first thing that is advised to do, is to find and make use of your backups.
 
 1. **Navigate to your** [**backup directory**](https://docs.jabref.org/advanced/autosave#where-can-i-find-the-backup-files)**.**
 2. **Find and select all** [**backups files**](https://docs.jabref.org/advanced/autosave#what-are-.sav-.bak-and-.tmp-files) (the `.bak` files).
@@ -51,7 +51,7 @@ Halving as a process of elimination will quickly lead to results, as the followi
 | ----------------- | - | - | - | - | - | - | - | - | -- | -- | -- | -- | --- | --- | --- |
 | Steps             | 1 | 2 | 2 | 3 | 3 | 3 | 3 | 4 | 4  | 5  | 6  | 7  | 8   | 9   | ... |
 
-#### Related Literature:
+#### Related Literature
 
 If you want to find out more about this method, the following articles explain the method of halving in various contexts:
 

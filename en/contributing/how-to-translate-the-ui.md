@@ -10,11 +10,11 @@ If the JabRef interface already exists in your language, you can help improve it
 
 We use the service of [Crowdin](https://translate.jabref.org) to keep our translations updated. It is a service directly running in the browser and one can quickly join and start translating.
 
-* visit [https://translate.jabref.org/](https://translate.jabref.org) to get started
-*   select your preferred language, login, and click on _JabRef\_en.properties_
+* Visit [https://translate.jabref.org/](https://translate.jabref.org) to get started
+* Select your preferred language, login, and click on _JabRef\_en.properties_
 
     <img src="../.gitbook/assets/crowdin-select-file (1) (2) (2) (2) (1) (1) (2) (1) (3).png" alt="Screenshot of Crowdin select file page" data-size="original">
-*   choose the string you want to translate in the left panel (strings to be translated are listed first)
+* Choose the string you want to translate in the left panel (strings to be translated are listed first)
 
     and enter the translation in the central panel (suggestions are given at the bottom)
 
@@ -48,7 +48,7 @@ For each language, there is the file `JabRef_xx.properties` (`xx` denotes the co
 
 Each entry is first given in English, then in the other language, with the two parts separated by an '=' character. For instance, a line can look like this in a German translation file:
 
-```
+```properties
 Background\ color\ for\ optional\ fields=Hintergrundfarbe für optionale Felder
 ```
 
@@ -56,7 +56,7 @@ Note that each space character is escaped (`\`) to make it a valid property key.
 
 Some entries contain "variables" that are inserted at runtime by JabRef - this can for instance be a file name or a file type name:
 
-```
+```properties
 Synchronizing\ %0\ links...=Synchronisiere %0-Links...
 ```
 
@@ -64,7 +64,7 @@ A variable is denoted by `%0`, `%1`, `%2` etc. In such entries, simply repeat th
 
 As we can see, there are several "special" characters: the percent sign and the equals sign, along with the colon character. If these characters are to be part of the actual text in an entry, they must be escaped in the English version, as with the colon in the following example:
 
-```
+```properties
 Error\ writing\ XMP\ to\ file\:_%0=Fehler beim Schreiben von XMP in die Datei: %0
 ```
 
