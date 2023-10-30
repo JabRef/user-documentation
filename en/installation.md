@@ -81,6 +81,13 @@ Depending on your use case and needed integrations it is advisable to choose the
 | LyX                   | ❌    | ✅       | ✅       | ✅   |
 | Vim/Emacs             | ❌    | ❌       | ✅       | ✅   |
 
+#### Change default application to open files for JabRef snap
+
+When JabRef is installed as a snap, it initially asks which application should be use to open PDFs (or other files). However, after selecting the same application three times, that application is set as default and there is no obvious way to select another application ("Preferences" -> "External File Types" does not help here, because the snap sandbox does not "see" any of the user's applications).
+This setting is stored in the XDG permission storage, and can be changed with a command like the following (see [this forum thread](https://forum.snapcraft.io/t/xdg-permissions-stores-should-be-configurable-with-snapd/25048) for further information):
+`flatpak permission-set --data "{'always-ask':<false>}" desktop-used-apps application/pdf snap.jabref okularApplication_pdf 0 3`
+In this example, the default application to open PDF files is set to `okularApplication_pdf`, and the counter for when to stop asking how to open PDF files is set to 0/3.
+
 #### Include JabRef in the start menu of Ubuntu
 
 See [http://askubuntu.com/a/721387/196423](http://askubuntu.com/a/721387/196423) for details.
