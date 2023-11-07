@@ -4,7 +4,7 @@
 
 A: You are not obliged to cite JabRef, but we would greatly appreciate it if you do.
 
-```
+```text
 JabRef Development Team (2021). JabRef - An open-source, cross-platform citation and reference management software. Version 5.1. [https://www.jabref.org]
 ```
 
