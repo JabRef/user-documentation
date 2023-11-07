@@ -6,7 +6,10 @@ JabRef can be either installed (the preferred way) or be used as a portable appl
 
 To get the latest version, head to [downloads.jabref.org](https://downloads.jabref.org), download the installer for your system (e.g., `dmg` files for MacOS and `msi` files for Windows), run them and follow the on-screen instructions.
 
-JabRef 5.6 requires Mac OS 10.14 or higher.
+| Version | 🍎 | 🐧 |
+|-------------|---------------|-------------------|
+| JabRef 5.6  | macOS 10.14 or higher |                |
+| JabRef 5.12 (dev) | macOS 11 or higher | GTK 3.8 or later |
 
 Alternatively, on **Windows**, you can use the [chocolatey package manager](https://chocolatey.org) and execute `choco install jabref` to get the latest version. On **Ubuntu**, you can use `snap install jabref` to get the latest stable version [from snapcraft](https://snapcraft.io/jabref).
 
@@ -111,7 +114,9 @@ You might need to install an additional font for JabRef to display characters co
 
 #### Submenus from the menu bar close immediately after left click is let go of if the menu bar was clicked in its top half
 
-This issue seems to be related to this [JavaFX bug](https://bugs.openjdk.org/browse/JDK-8251240). A temporary workaround is to click the menu bar in its lower half. To fix the issue permanently set the following system property: ```java -Djdk.gtk.version=2```. This can be done globally by adding ```_JAVA_OPTIONS="-Djdk.gtk.version=2"``` to ```/etc/environment```. It can also be set locally by editing `JabRef.cfg` in your installation folder (possibly located at `/opt/JabRef/lib/app/JabRef.cfg`) and add the line `-Djdk.gtk.version=2` in the `[JavaOptions]` section.
+This issue seems to be related to this [JavaFX bug](https://bugs.openjdk.org/browse/JDK-8251240). A temporary workaround is to click the menu bar in its lower half. To fix the issue permanently set the following system property: `java -Djdk.gtk.version=2`. This can be done globally by adding `_JAVA_OPTIONS="-Djdk.gtk.version=2"` to `/etc/environment`. It can also be set locally by editing `JabRef.cfg` in your installation folder (possibly located at `/opt/JabRef/lib/app/JabRef.cfg`) and add the line `-Djdk.gtk.version=2` in the `[JavaOptions]` section.
+
+Note: This could not work in JabRef 5.12. or later.
 
 {% endtab %}
 
