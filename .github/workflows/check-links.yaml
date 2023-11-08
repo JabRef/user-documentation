@@ -1,16 +1,35 @@
 name: Check Markdown links
 
 on:
+  push:
+    paths:
+      - '.github/workflows/check-links.yml'
+      - '**/*.md'
+  schedule:
+    # Run on the first of each month at 9:00 AM (See https://pubs.opengroup.org/onlinepubs/9699919799/utilities/crontab.html#tag_20_25_07)
+    - cron: "0 9 1 * *"
   workflow_dispatch:
 
+concurrency:
+  group: "${{ github.workflow }}-${{ github.head_ref }}"
+  cancel-in-progress: true
+
 jobs:
-  markdown-link-check:
+  lychee:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: gaurav-nelson/github-action-markdown-link-check@v1
+      - uses: actions/checkout@v4
         with:
-          use-quiet-mode: 'yes'
-          use-verbose-mode: 'no'
-          config-file: 'mlc_config.json'
-          folder-path: 'en'
+          show-progress: 'false'
+      - name: Restore lychee cache
+        uses: actions/cache@v3
+        with:
+          path: .lycheecache
+          key: cache-lychee-${{ github.sha }}
+          restore-keys: cache-lychee-
+      - name: Link Checker
+        id: lychee
+        uses: lycheeverse/lychee-action@v1.8.0
+        with:
+          fail: true
+          args: --max-concurrency 1 --cache --no-progress --exclude-all-private './**/*.md'
