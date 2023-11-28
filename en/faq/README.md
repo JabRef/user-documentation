@@ -4,19 +4,18 @@
 
 A: You are not obliged to cite JabRef, but we would greatly appreciate it if you do.
 
-```text
-JabRef Development Team (2021). JabRef - An open-source, cross-platform citation and reference management software. Version 5.1. [https://www.jabref.org]
-```
-
-If you are using biblatex, you can use the entry type software, for BibTex use `@misc`
-
 ```bibtex
-@Software{JabRef2021,
-  author    = {{JabRef Development Team}},
-  title     = {JabRef --- An open-source, cross-platform citation and reference management software},
-  year      = {2021},
-  version   = {5.1},
-  url       = {https://www.jabref.org/},
+@Article{jabref,
+  author  = {Oliver Kopp and Carl Christian Snethlage and Christoph Schwentker},
+  title   = {JabRef: BibTeX-based literature management software},
+  journal = {TUGboat},
+  issn    = {0896-3207},
+  issue   = {138},
+  volume  = {44},
+  number  = {3},
+  pages   = {441--447},
+  doi     = {10.47397/tb/44-3/tb138kopp-jabref},
+  year    = {2023},
 }
 ```
 
