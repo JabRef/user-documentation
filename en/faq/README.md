@@ -7,7 +7,7 @@ A: You are not obliged to cite JabRef, but we would greatly appreciate it if you
 ```bibtex
 @Article{jabref,
   author  = {Oliver Kopp and Carl Christian Snethlage and Christoph Schwentker},
-  title   = {JabRef: BibTeX-based literature management software},
+  title   = {{JabRef}: {BibTeX}-based literature management software},
   journal = {TUGboat},
   issn    = {0896-3207},
   issue   = {138},
