@@ -143,7 +143,7 @@ This method is mainly for package maintainers and users who would like to build 
 To build JabRef from source, you first need to have a working Java Development Kit (see above link for details) and Git installed on your system. After installing the two requirements, you open a terminal window (i.e., a command prompt) and type the following:
 
 ```shell
-git clone --depth=10 https://github.com/JabRef/jabref
+git clone --recurse-submodules --depth=10 https://github.com/JabRef/jabref
 cd jabref
 ./gradlew assemble
 ./gradlew jlink
