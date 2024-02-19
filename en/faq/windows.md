@@ -26,3 +26,12 @@ Start regedit and create the following key: `HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432
 
 A: On Windows, one finds the log files in `%APPDATA%\..\Local\org.jabref\jabref\Logs\{version}`. `{version}` indicates the currently used JabRef version.
 
+## Q: I have issues with the Chinese display language in Windows 10 Enterprise. What can I do?
+
+A: According to [source](https://discourse.jabref.org/t/chinese-character/4167), you may have to set the font manually by downloading the Base.css from Custom themes - JabRef. Then open the Base.css, and add the following text at the end of Base.css:
+
+```css
+.text {
+-fx-font-family: “Microsoft YaHei”;
+}
+```
