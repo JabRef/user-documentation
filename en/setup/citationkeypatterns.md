@@ -60,7 +60,7 @@ The name of institutions and companies often contain spaces and words that have 
 * **`[camel]`**: Capitalize and concatenate all the words of the title. For example, `An awesome paper on JabRef` becomes `AnAwesomePaperOnJabref`
 * **`[camelN]`**: Capitalize and concatenate no more than the first N words of the title. For example, `An awesome paper on JabRef plus four more words` becomes:
   * `AnAwesomePaperOnJabref` with `[camel5]`, and
-  * `AnAweseome` with `[camel2]`.
+  * `AnAwesome` with `[camel2]`.
 * **`[title]`**: Capitalize all the significant words of the title, and concatenate them. For example, `An awesome paper on JabRef` becomes `AnAwesomePaperonJabref`
 * **`[fulltitle]`**: The title with unchanged capitalization.
 
