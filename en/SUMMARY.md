@@ -85,3 +85,4 @@
 * [Contribute to JabRef](contributing/README.md)
   * [How to Improve the Help Page](contributing/how-to-improve-the-help-page.md)
   * [How to translate the JabRef User Interface](contributing/how-to-translate-the-ui.md)
+* [Comment on an entry](comment-on-an-entry.md)
