@@ -18,6 +18,7 @@
   * [Groups](finding-sorting-and-cleaning-entries/groups.md)
   * [Keywords](finding-sorting-and-cleaning-entries/keywords.md)
   * [Mark and grade](finding-sorting-and-cleaning-entries/specialfields.md)
+  * [Comment on an entry](finding-sorting-and-cleaning-entries/comment-on-an-entry.md)
   * [Searching within the library](finding-sorting-and-cleaning-entries/search.md)
   * [Complete information using online databases](finding-sorting-and-cleaning-entries/getbibtexdatafromdoi.md)
   * [Manage associated files](finding-sorting-and-cleaning-entries/filelinks.md)
@@ -85,4 +86,3 @@
 * [Contribute to JabRef](contributing/README.md)
   * [How to Improve the Help Page](contributing/how-to-improve-the-help-page.md)
   * [How to translate the JabRef User Interface](contributing/how-to-translate-the-ui.md)
-* [Comment on an entry](comment-on-an-entry.md)
