@@ -4,6 +4,10 @@ description: When error ensues, how to debug your library file with various meth
 
 # Debugging your library file
 
+## Enable debug log
+
+Sometimes, it helps to [ask JabRef to write some more debugging messages](https://docs.jabref.org/advanced/commandline#debug-mode-debug).
+
 ## Use Backups
 
 If you encounter any errors that are related to wrong, erroneous, corrupt or vanished data in your library file or simply unintended behavior that has unknown causes, the first thing that is advised to do, is to find and make use of your backups.
@@ -21,7 +25,7 @@ If this method does not work with any backup file: Try the method of half splitt
 
 The method of **half splitting** (also referred to as **halving**) can be used to find certain faults in your library file, which are caused by erroneous syntax, file conversions or incompatible encodings/charsets. These faults may make it impossible for JabRef to correctly parse, read or import the library file.\
 \
-An easy way to look at the method of halving is to repeatedly ask yourself the following question, after having deleted a part of your library file: "Is the error in the first part or the last part of the entries?"&#x20;
+An easy way to look at the method of halving is to repeatedly ask yourself the following question, after having deleted a part of your library file: "Is the error in the first part or the last part of the entries?"
 
 #### **How it works:**
 
@@ -34,8 +38,7 @@ An easy way to look at the method of halving is to repeatedly ask yourself the f
 7. Remove these entries with the error.\
    Add all the other entries back.\
    Open JabRef.\
-   Be happy :-)\
-
+   Be happy :-)\\
 
 #### **Example:**
 
