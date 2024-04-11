@@ -229,3 +229,13 @@ Show debug level messages. The log files are stored in an internal file. See FAQ
 ### Display output in the console: `--console`
 
 Show info and error messages in the console.
+
+## Development
+
+As developer, you pass arguments to the app using gradle's `--app` switch. Enclose the arguments in quotes. For instance `--args="--debug"` turns on debug mode.
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+You can then view the event log in JabRef as follows:
+
+<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>

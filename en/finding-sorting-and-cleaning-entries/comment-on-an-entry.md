@@ -12,7 +12,7 @@ JabRef offers to separate comments from  as well as user-specific comments field
 
 The following screenshots show the comments for the user `koppor`. As default, general comments are managed through the field `comment`. In addition, the field `comment-koppor` stores the comments of the user koppor.
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p>JabRef's entry editor showing two comment fields</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>JabRef's entry editor showing two comment fields</p></figcaption></figure>
 
 Now, lets assume, the library (.bib File) is shared among different users. `koppor` closed the library and opened it later again. He sees that a user `otheruser` has written a comment:
 
