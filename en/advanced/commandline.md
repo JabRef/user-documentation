@@ -224,7 +224,7 @@ Display the version number of JabRef.
 
 ### Debug mode: `--debug`
 
-Show debug level messages. The log files are stored in an internal file. See FAQs for [Windows](https://docs.jabref.org/faq/windows#q-where-can-i-find-jabrefs-log-files), [Linux](https://docs.jabref.org/faq/linux#where-can-i-find-jabrefs-log-files), [macOS ](https://docs.jabref.org/faq/osx#q-where-can-i-find-jabrefs-log-files)depending on your OS where to find it.
+Show debug level messages. The log files are stored in an internal file. See FAQs for [Windows](https://docs.jabref.org/faq/windows#q-where-can-i-find-jabrefs-log-files), [Linux](https://docs.jabref.org/faq/linux#where-can-i-find-jabrefs-log-files), [macOS](https://docs.jabref.org/faq/osx#q-where-can-i-find-jabrefs-log-files)depending on your OS where to find it.
 
 ### Display output in the console: `--console`
 
