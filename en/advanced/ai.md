@@ -6,7 +6,7 @@
 
 **Requirements**: choose one available from combo box
 
-Chat model specifies what AI models can you use. This will differ from one provider to other. Models vary in their accuracy, knowledge of the world, context window (what amount of information can they process).
+The Chat model setting specifies what AI models you can use. This will differ from one provider to other. Models vary in their accuracy, knowledge of the world, context window (what amount of information can they process).
 
 Currently only OpenAI models are supported.
 
@@ -16,11 +16,11 @@ Currently only OpenAI models are supported.
 
 **Requirements**: choose one available from combo box
 
-Embedding model transforms a document (or a piece of text) into a vector (an ordered collection of numbers). This is used to supply the AI with relevant information regarding your questions.
+The Embedding model transforms a document (or a piece of text) into a vector (an ordered collection of numbers). This is used to supply the AI with relevant information regarding your questions.
 
-Different embedding models have different performance: this includes accuracy and how fast embeddings can be computed. `Q` at the end of model name usually means *quantized* (meaning *reduced*, *simplified*). These models are fast, but provide less accuracy.
+Different embedding models have different performance: this includes accuracy and how fast embeddings can be computed. `Q` at the end of the model name usually means *quantized* (meaning *reduced*, *simplified*). These models are faster and smaller than their original counterpart, but provide slightly less accuracy.
 
-Currently only local embedding models are supported. That means you don't have to provide a new API key and all the logic will be run on your machine. 
+Currently, only local embedding models are supported. That means, you don't have to provide a new API key and all the logic will be run on your machine. 
 
 ## Instruction
 
