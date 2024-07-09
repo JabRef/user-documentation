@@ -120,7 +120,7 @@ Most JabRef installations include the necessary files, so test the extension bef
 
 #### Flatpak
 
-1. Install the flatpak of [Jabref](https://flathub.org/apps/details/org.jabref.jabref).
+1. Install the flatpak of [JabRef](https://flathub.org/apps/details/org.jabref.jabref).
 2. Install the JabRef browser extension: [Firefox](https://addons.mozilla.org/en-US/firefox/addon/jabref/?src=external-github), [Chrome](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh), [Edge](https://microsoftedge.microsoft.com/addons/detail/pgkajmkfgbehiomipedjhoddkejohfna), [Vivaldi](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh)
 
 #### Browser
