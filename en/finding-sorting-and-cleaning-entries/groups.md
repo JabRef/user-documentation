@@ -49,7 +49,7 @@ Just like directories, groups are structured like a tree, with the group _All En
 
 The properties of a group can be defined in the 'Edit group' dialog window (the same window is displayed when creating a new group). To modify the group properties, right-click on the group name in the group pane and select **Edit group** in the context menu.
 
-![Edit group window](https://user-images.githubusercontent.com/6931104/188163107-c0e55fd7-51a6-4350-8ded-598aa720dc77.png)
+![Edit group window](https://github.com/JabRef/user-documentation/assets/111776404/1160f401-8155-4628-8176-2824b55ab67e)
 
 ### Name
 
@@ -161,6 +161,14 @@ The group contains the entries cited in a LaTeX document, based on its '.aux' fi
 ![Fields for collecting by cited entries](<../.gitbook/assets/groups-groupwindow-typecited-jabref5.2 (1).png>)
 
 The content of the group is updated dynamically whenever the `.aux` file changes.
+
+#### Current Selection
+
+The group created acts as an explicit collection, but automatically includes all entries that are currently selected in the entry panel. If more than one entries is selected, this option is picked as default.
+
+![Field for collecting by current selection](https://github.com/JabRef/user-documentation/assets/111776404/02c8458d-1071-4de6-b4c7-bfb49c330e7a)
+
+The content of the group is not dynamically changed. 
 
 ## Group color bars in the entry table
 
