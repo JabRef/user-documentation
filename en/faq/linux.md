@@ -8,9 +8,7 @@ Yes, there is. See [http://askubuntu.com/a/721387/196423](http://askubuntu.com/a
 
 ### JabRef 5.x
 
-JabRef comes with a bundled JRE.
-There is no need to install Java separately.
-Thus, there should be no issues at start up.
+JabRef comes with a bundled JRE. There is no need to install Java separately. Thus, there should be no issues at start up.
 
 ### JabRef 4.x
 
@@ -28,8 +26,8 @@ For Ubuntu you may also have a look at the [Ubuntu page on Java](https://help.ub
 
 ## Everything looks too big or too small. How can I change it to to a more reasonable size?
 
-In the background, JabRef uses [JavaFX](https://en.wikipedia.org/wiki/JavaFX). Applications using JavaFX can be scaled via `java -Dglass.gtk.uiScale=1.5 -jar <application>.jar`. If you have installed JabRef via a package manager, you probably don't have a `.jar` file but a binary file. In this case, you need to find your `JabRef.cfg` in your installation folder \(possibly located at `/opt/JabRef/lib/app/JabRef.cfg`\) and add in the section `[JavaOptions]` the line `-Dglass.gtk.uiScale=1.5`. Then, restart JabRef. Try finding a value that is suitable for you. On high resolution displays, values around `1.5` seem to be reasonable.
+In the background, JabRef uses [JavaFX](https://en.wikipedia.org/wiki/JavaFX). Applications using JavaFX can be scaled via `java -Dglass.gtk.uiScale=1.5 -jar <application>.jar`. If you have installed JabRef via a package manager, you probably don't have a `.jar` file but a binary file. In this case, you need to find your `JabRef.cfg` in your installation folder (possibly located at `/opt/JabRef/lib/app/JabRef.cfg`) and add in the section `[JavaOptions]` the line `-Dglass.gtk.uiScale=1.5`. Then, restart JabRef. Try finding a value that is suitable for you. On high resolution displays, values around `1.5` seem to be reasonable.
 
 ## Where can I find JabRef's log files?
 
-A: On Linux, the path to the log files is `~/.local/share/jabref/logs/version/`
+A: On Linux, the path to the log files is `~/.local/share/jabref/logs/$version/`
