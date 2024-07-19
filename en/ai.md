@@ -1,6 +1,76 @@
 # AI functionality in JabRef
 
-## Chat model
+## AI chat tab
+
+We have made a new entry editor tab: "AI chat", where all the chatting happens.
+
+![AI chat tab screenshot](img/AiIntro.png)
+
+In this window you can see the following elements:
+
+- Chat history with your messages
+- Prompt for sending messages
+- A button for clearing the chat history (just in case)
+
+## How does AI work?
+
+In the background, JabRef analyses the linked PDF files of library entries. The information used after the indexing
+is then supplied to the AI, which, to be precise, in our case is a Large Language Model (LLM). The LLM is currently
+not stored on your computer. Instead, we used OpenAI's ChatGPT service, which is only available remotely via the
+internet. In short: we send chunks of text to OpenAI's service and then receive processed responses. In order to
+use it you need to configure JabRef to use your OpenAI [API](https://en.wikipedia.org/wiki/API) key.
+
+## What is an API key?
+
+An API key or API token is like a password that lets an app or program access information or services from another
+app or website, such as a Language Model (LLM) service. It ensures only authorized users or applications can use
+the service. For example, when an app uses an LLM service to generate text or answer questions, it includes its
+unique API key in the request. The LLM service checks this key to make sure the request is legitimate before
+providing the response. This process keeps the data secure and helps track how the service is being used.
+
+## How to get an OpenAI API key?
+
+Unfortunately, you need to pay OpenAI a minimum fee for using ChatGPT via API, which is at the date of writing 5$.
+We will describe all the necessary steps to get an API key in this section.
+
+To get an OpenAI API key you need to perform these steps:
+
+1. Login or create account [there](https://platform.openai.com/login?launch)
+2. Go to "API" section
+3. Go to "Dashboard" (upper-right corner)
+4. Go to "API keys" (left menu)
+5. Click "Create new secret key"
+6. Click "Create secret key"
+7. OpenAI will show you the key. Do not share it with anyone.
+
+Now you need to copy and paste it in JabRef preferences. To do this:
+
+1. Launch JabRef
+2. Go "File" -> "Preferences" -> "AI" (a new tab!)
+3. Check "Enable chatting with PDFs"
+3. Paste the key into "OpenAI token"
+9. Click "Save"
+
+If you have some money on your credit balance, you can chat with your library!
+
+In order to increase your credit balance on OpenAI, do this:
+
+1. Add payment method [there](https://platform.openai.com/settings/organization/billing/payment-methods).
+2. Add credit balance on [this](https://platform.openai.com/settings/organization/billing/overview) page.
+
+## AI preferences
+
+Here are some new options in the JabRef preferences.
+
+![AI preferences](../img/AiPreferences.png)
+
+- "Enable chatting with PDFs": by default chatting is turned off, so you need to check this option, if you want to use the new AI features
+- "OpenAI token": here you page your API token
+- "Expert settings": here you can change the parameters that affect how AI will generate your answers. If you don't understand the meaning of those settings, don't worry! We have experimented a lot and found the best parameters for you!
+
+## AI settings
+
+### Chat model
 
 **Type**: enumeration
 
@@ -10,7 +80,7 @@ The Chat model setting specifies what AI models you can use. This will differ fr
 
 Currently only OpenAI models are supported.
 
-## Embedding model
+### Embedding model
 
 **Type**: enumeration
 
@@ -20,9 +90,9 @@ The Embedding model transforms a document (or a piece of text) into a vector (an
 
 Different embedding models have different performance: this includes accuracy and how fast embeddings can be computed. `Q` at the end of the model name usually means *quantized* (meaning *reduced*, *simplified*). These models are faster and smaller than their original counterpart, but provide slightly less accuracy.
 
-Currently, only local embedding models are supported. That means, you don't have to provide a new API key and all the logic will be run on your machine. 
+Currently, only local embedding models are supported. That means, you don't have to provide a new API key and all the logic will be run on your machine.
 
-## Instruction
+### Instruction
 
 **Type**: string
 
@@ -30,7 +100,7 @@ Currently, only local embedding models are supported. That means, you don't have
 
 An instruction (also known as "system message") in a Large Language Models (LLMs) sets the tone and rules for the conversation. Think of it as instructions given to the AI before it starts interacting with a user. It guides the AI on how to respond, ensuring it stays on topic and behaves appropriately. For example, a system message might tell the AI to be formal, concise, or provide detailed explanations. This helps the AI provide more relevant and useful answers tailored to the specific needs of the user.
 
-## Message window size
+### Message window size
 
 **Type**: integer
 
@@ -40,7 +110,7 @@ The "message window size" in a Large Language Model (LLM) refers to the number o
 
 In LLMs, the context window is like a memory that helps the model understand the conversation flow and provide relevant responses. However, due to computational limits, LLMs cannot store unlimited amounts of chat history. Therefore, the "message window size" specifies the maximum number of previous messages or turns in a conversation that the LLM retains. This allows the LLM to focus on the most recent interactions, improving response accuracy without overwhelming the system with unnecessary data.
 
-## Document splitter chunk size
+### Document splitter chunk size
 
 **Type**: integer
 
@@ -50,7 +120,7 @@ The "chunk size" parameter in document splitting refers to the size of segments 
 
 These segments are then passed to the AI model for processing. This approach helps optimize performance by breaking down large documents into smaller, more digestible parts, enabling more efficient handling and analysis by the AI.
 
-## Document splitter chunk overlap
+### Document splitter chunk overlap
 
 **Type**: integer
 
@@ -58,7 +128,7 @@ These segments are then passed to the AI model for processing. This approach hel
 
 The "chunk overlap" parameter determines how much text from adjacent chunks is shared when dividing linked files into segments. This overlap is measured in characters and ensures continuity and context across segmented chunks. By sharing a specified amount of text between adjacent segments, typically at the beginning and/or end of each chunk, the AI model can maintain coherence and understanding of the content across segmented parts. This approach helps enhance the accuracy and relevance of responses generated by the AI from the segmented content.
 
-## Retrieval augmented generation maximum results count
+### Retrieval augmented generation maximum results count
 
 **Type**: integer
 
@@ -68,7 +138,7 @@ The parameter "Retrieval augmented generation: maximum results count" specifies 
 
 Setting this parameter controls the scope of information the AI model uses to generate responses, balancing between depth of context and computational efficiency. It ensures that the AI focuses on the most relevant segments to provide accurate and contextually rich answers based on the user's input or query.
 
-## Retrieval augmented generation minimum score
+### Retrieval augmented generation minimum score
 
 **Type**: float
 
