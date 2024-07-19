@@ -72,8 +72,6 @@ Here are some new options in the JabRef preferences.
 
 ### Chat model
 
-**Type**: enumeration
-
 **Requirements**: choose one available from combo box
 
 The Chat model setting specifies what AI models you can use. This will differ from one provider to other. Models vary in their accuracy, knowledge of the world, context window (what amount of information can they process).
@@ -81,8 +79,6 @@ The Chat model setting specifies what AI models you can use. This will differ fr
 Currently only OpenAI models are supported.
 
 ### Embedding model
-
-**Type**: enumeration
 
 **Requirements**: choose one available from combo box
 
@@ -100,15 +96,13 @@ Currently, only local embedding models are supported. That means, you don't have
 
 An instruction (also known as "system message") in a Large Language Models (LLMs) sets the tone and rules for the conversation. Think of it as instructions given to the AI before it starts interacting with a user. It guides the AI on how to respond, ensuring it stays on topic and behaves appropriately. For example, a system message might tell the AI to be formal, concise, or provide detailed explanations. This helps the AI provide more relevant and useful answers tailored to the specific needs of the user.
 
-### Message window size
+### Context window size
 
 **Type**: integer
 
 **Requirements**: > 0
 
-The "message window size" in a Large Language Model (LLM) refers to the number of recent messages or interactions that the model remembers during a conversation. This parameter determines how much context the LLM considers when generating responses.
-
-In LLMs, the context window is like a memory that helps the model understand the conversation flow and provide relevant responses. However, due to computational limits, LLMs cannot store unlimited amounts of chat history. Therefore, the "message window size" specifies the maximum number of previous messages or turns in a conversation that the LLM retains. This allows the LLM to focus on the most recent interactions, improving response accuracy without overwhelming the system with unnecessary data.
+The "context window size" in our application helps the AI remember and respond to conversations more effectively by keeping the most recent messages within a sliding window. As new messages are added, older messages are removed to make room, ensuring the AI always has the latest context. This feature enhances the AI's ability to provide accurate and relevant responses by focusing on the most current parts of the conversation, similar to how we remember the latest parts of a discussion. This process is managed automatically, so you can enjoy a smoother and more natural conversation experience without any additional effort.
 
 ### Document splitter chunk size
 
