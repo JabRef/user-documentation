@@ -212,6 +212,14 @@ The "Retrieval augmented generation: minimum score" parameter sets the threshold
 
 This parameter is crucial in ensuring that the AI model focuses on retrieving and utilizing only the most relevant information from the retrieved chunks. By filtering out segments that do not meet the specified relevance score, the AI enhances the quality and accuracy of its responses, aligning more closely with the user's needs and query context.
 
+## Troubleshooting
+
+### "Failed to load PyTorch native library" while trying the AI chat
+
+If you encounter this error, download the latest [Visual C++ redistributable from Miscrosoft](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#latest-microsoft-visual-c-redistributable-version).
+
+This installation is only required for AI features in JabRef, all other features can work without it.
+
 ## BONUS: running a local LLM model
 
 Notice:
