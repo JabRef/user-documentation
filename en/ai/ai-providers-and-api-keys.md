@@ -2,9 +2,9 @@
 
 ## What is an AI provider?
 
-AI provider is a company or a service that gives you the ability to send requests to and receive responses from LLM. In order to get the response, you also need to send an API key to authenticate and manage billing.
+An AI provider is a company or a service that gives you the ability to send requests to and receive responses from LLM. In order to get the response, you also need to send an API key to authenticate and manage billing.
 
-Here is the list of AI providers we currently support: OpenAI, Mistral AI, Hugging Face. Others include Google Vertex AI, Microsoft Azure OpenAI, Anthropic, etc.
+Here is the list of AI providers we currently support: OpenAI, Mistral AI, Hugging Face. Others include Google Vertex AI, Microsoft Azure OpenAI, Anthropic, etc. You can find more information on this topic on [langchain4j documentation website](https://docs.langchain4j.dev/category/language-models). This is the framework that we use in JabRef. This page lists available integrations.
 
 ## What is an API key?
 
