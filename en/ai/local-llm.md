@@ -1,6 +1,7 @@
 ## BONUS: running a local LLM model
 
 Notice:
+
 1. This tutorial is intended for expert users
 2. Local LLM model requires a lot of computational power
 3. Smaller models typically have less performance then bigger ones like OpenAI models
@@ -10,6 +11,7 @@ Notice:
 You can use any program that will create a server with OpenAI compatible API.
 
 After you started your service, you can do this:
+
 1. The "Chat Model" field in AI preference is editable, so you can write any model you have downloaded
 2. There is a field "API base URL" in "Expert Settings" where you need to supply the address of an OpenAI API compatible server
 

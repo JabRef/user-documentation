@@ -8,7 +8,7 @@ Here are some new options in the JabRef preferences.
 - "AI provider": you can choose either OpenAI, Mistral AI, or Hugging Face
 - "Chat model": choose the model you like (for OpenAI we recommend `gpt-4o-mini`, as it the cheapest and fastest)
 - "API token": here you write your API token
-- "Expert settings": here you can change the parameters that affect how AI will generate your answers. If you don't understand the meaning of those settings, don't worry! We have experimented a lot and found the best parameters for you! But if you are curious, then you can refer to [user documentation]()
+- "Expert settings": here you can change the parameters that affect how AI will generate your answers. If you don't understand the meaning of those settings, don't worry! We have experimented a lot and found the best parameters for you! But if you are curious, then you can refer to the AI expert settings section.
 
 ## AI expert settings
 

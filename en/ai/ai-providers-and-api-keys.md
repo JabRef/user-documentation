@@ -63,8 +63,8 @@ Now you need to copy and paste it in JabRef preferences. To do this:
 1. Launch JabRef
 2. Go "File" -> "Preferences" -> "AI" (a new tab!)
 3. Check "Enable chatting with PDFs"
-3. Paste the key into "OpenAI token"
-9. Click "Save"
+4. Paste the key into "OpenAI token"
+5. Click "Save"
 
 If you have some money on your credit balance, you can chat with your library!
 
@@ -90,8 +90,8 @@ You don't have to pay any cent for Hugging Face in order to send requests to LLM
 1. Launch JabRef
 2. Go "File" -> "Preferences" -> "AI" (a new tab!)
 3. Check "Enable chatting with PDFs"
-3. Paste the key into "OpenAI token"
-9. Click "Save"
+4. Paste the key into "OpenAI token"
+5. Click "Save"
 
 If you have some money on your credit balance, you can chat with your library!
 
