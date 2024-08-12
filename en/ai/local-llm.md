@@ -1,4 +1,4 @@
-## BONUS: running a local LLM model
+# BONUS: running a local LLM model
 
 Notice:
 
@@ -6,7 +6,7 @@ Notice:
 2. Local LLM model requires a lot of computational power
 3. Smaller models typically have less performance then bigger ones like OpenAI models
 
-### General explanation
+## General explanation
 
 You can use any program that will create a server with OpenAI compatible API.
 
@@ -17,7 +17,7 @@ After you started your service, you can do this:
 
 Voi la! You can use a local LLM right away in JabRef.
 
-### More detailed tutorial
+## More detailed tutorial
 
 In this section we will explain how to use `ollama` for downloading and running local LLMs.
 
