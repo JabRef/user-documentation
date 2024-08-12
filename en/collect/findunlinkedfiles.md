@@ -11,7 +11,7 @@ The simplest way to create a new entry based on a single PDF file is to drag & d
 This feature is available through **Lookup -> Search for unlinked local files**.
 
 {% hint style="warning" %}
-This page is partly outdated. Please, help.
+This information is partially outdated. Please help to improve it ([how to edit a help page](../../contributing/how-to-improve-the-help-page.md#editing-help-pages-directly-in-the-browser)).
 {% endhint %}
 
 The following description appeared first on [tex.stackexchange.com](http://tex.stackexchange.com/a/344310/9075).
