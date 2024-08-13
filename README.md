@@ -50,5 +50,5 @@ In case GitBook was fixed, with some command line magic, this could be solved:
 2. Execute in `en/.gitbook`. Otherwise, `fd` does not find any file.
 3. Repeat for `gif` instead of `png`.
 4. Create a script doing the renaming in all `.md` files: `fd -e md -x bash -c "echo sed -i '\"s/assets\/\([^%]*\)\(.*\).png/assets\/\\1.png/\"' {}" > fix-mds.sh`.
-5. Execute in the root repository folder.
+5. Execute in the root repository.
 6. Repeat for `gif` instead of `png`.

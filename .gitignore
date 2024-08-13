@@ -7,6 +7,9 @@ Gemfile.lock
 npm-debug.log
 bad-links.txt
 
+**/fix-filenames.sh
+**/fix-mds.sh
+
 #try to avoid "Page build warning"s at contributors
 #see for background information https://github.com/trek/beautiful-open/issues/43
 CNAME
