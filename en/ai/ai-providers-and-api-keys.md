@@ -68,6 +68,8 @@ Now you need to copy and paste it in JabRef preferences. To do this:
 
 If you have some money on your credit balance, you can chat with your library!
 
+![AI preferences](../.gitbook/assets/AiPreferences.png)
+
 ## How to increase money balance for API key?
 
 ### OpenAI
@@ -84,15 +86,3 @@ Make the subscription on [their website](https://console.mistral.ai/billing/subs
 ### Hugging Face
 
 You don't have to pay any cent for Hugging Face in order to send requests to LLMs. Though, the speed is very slow.
-
-## What should I do with the API key?
-
-1. Launch JabRef
-2. Go "File" -> "Preferences" -> "AI" (a new tab!)
-3. Check "Enable chatting with PDFs"
-4. Paste the key into "OpenAI token"
-5. Click "Save"
-
-If you have some money on your credit balance, you can chat with your library!
-
-![AI preferences](../.gitbook/assets/AiPreferences.png)
