@@ -1,5 +1,10 @@
 # AI functionality in JabRef
 
+Since version 6, JabRef has AI-functionality build in.
+
+- AI can generate a summary of a research paper
+- One can also chat with papers using a "smart" AI assistant
+
 ## AI summary tab
 
 We have made a new entry editor tab: "AI Summary", where AI will generate for you a quick overview of the paper.
@@ -33,4 +38,3 @@ In the background, JabRef analyses the linked PDF files of library entries. The 
 {% page-ref page="preferences.md" %}
 
 {% page-ref page="local-llm.md" %}
-

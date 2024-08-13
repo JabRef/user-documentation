@@ -12,5 +12,4 @@ If you still encounter this error, then try the approach discussed in the next s
 
 Don't worry! You need to delete embedding model cache.
 
-The name of the folder is ".djl.ai" and it's inside you home directory.
-
+The name of the folder is `.djl.ai` and it is inside you home directory.
