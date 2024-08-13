@@ -17,9 +17,9 @@ After you started your service, you can do this:
 
 Voi la! You can use a local LLM right away in JabRef.
 
-## More detailed tutorial
+## Step-by-step guide for `ollama`
 
-In this section we will explain how to use `ollama` for downloading and running local LLMs.
+The following steps guide you how to use `ollama` for downloading and running local LLMs.
 
 1. Install `ollama` from [their website](https://ollama.com/download)
 2. Select a model that you want to run. The `ollama` provides [a big list of models](https://ollama.com/library) to choose from (we recommend you to try [`gemma2:2b`](https://ollama.com/library/gemma2:2b), or [`mistral:7b`](https://ollama.com/library/mistral), or [`tinyllama`](https://ollama.com/library/tinyllama))
