@@ -2,7 +2,7 @@
 
 Here are some new options in the JabRef preferences.
 
-![AI preferences](../img/AiPreferences.png)
+![AI preferences](../.gitbook/assets/AiPreferences.png)
 
 - "Enable AI functionality in JabRef": by default it's turned off, so you need to check this option, if you want to use the new AI features
 - "AI provider": you can choose either OpenAI, Mistral AI, or Hugging Face
