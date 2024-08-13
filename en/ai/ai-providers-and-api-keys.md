@@ -95,8 +95,4 @@ You don't have to pay any cent for Hugging Face in order to send requests to LLM
 
 If you have some money on your credit balance, you can chat with your library!
 
-In order to increase your credit balance on OpenAI, do this:
-
-1. Add payment method [there](https://platform.openai.com/settings/organization/billing/payment-methods).
-2. Add credit balance on [this](https://platform.openai.com/settings/organization/billing/overview) page.
-
+![AI preferences](../.gitbook/assets/AiPreferences.png)
