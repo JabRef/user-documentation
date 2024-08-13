@@ -70,6 +70,8 @@ If you have some money on your credit balance, you can chat with your library!
 
 ![AI preferences](../.gitbook/assets/AiPreferences.png)
 
+{% page-ref page="preferences.md" %}
+
 ## How to increase money balance for API key?
 
 ### OpenAI

@@ -31,5 +31,4 @@ In this section we will explain how to use `ollama` for downloading and running 
 8. Set the "Chat Model" to whichever model you've downloaded in form `<MODEL>:<PARAMETERS>`
 9. Set the "API base URL" in "Expert Settings" to: `http://localhost:11434/v1/`
 
-And now you are all set!
-
+Now, you are all set and can chat "locally".
