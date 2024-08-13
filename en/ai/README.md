@@ -24,7 +24,7 @@ In this window you can see the following elements:
 
 In the background, JabRef analyses the linked PDF files of library entries. The information used after the indexing is then supplied to the AI, which, to be precise, in our case is a Large Language Model (LLM). The LLM is currently not stored on your computer. Instead, we have many integrations with AI providers (OpenAI, Mistral AI, Hugging Face), so you can choose the one you like the most. These AI providers are available only remotely via the internet. In short: we send chunks of text to AI service and then receive processed responses. In order to use it you need to configure JabRef to use your [API](https://en.wikipedia.org/wiki/API) key.
 
-{% page-ref page="ai-functionality.md" %}
+## More information
 
 {% page-ref page="ai-providers-and-api-keys.md" %}
 
