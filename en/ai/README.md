@@ -29,7 +29,7 @@ In this window you can see the following elements:
 
 JabRef uses external AI providers to do the actual work.
 You can choose between OpenAI, Mistral AI, and Hugging Face.
-They all run "Large Language Models" (LLMs) to process the quests.
+They all run "Large Language Models" (LLMs) to process the requests.
 The AI providers need chunks of text to work.
 For this, JabRef parses and indexes linked PDF files of entries:
 The file is split into parts of fixed-length (so-called *chunks*) and for each of them, an *embedding* is generated.
