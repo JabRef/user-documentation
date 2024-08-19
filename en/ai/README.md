@@ -27,9 +27,15 @@ In this window, you can see the following elements:
 
 ## How does the AI functionality work?
 
-In the background, JabRef analyses the linked PDF files of library entries. After indexing, this information is supplied to the AI, which, in our case, is a Large Language Model (LLM).
-The LLM is currently not stored on your computer. Instead, we have many integrations with AI providers (OpenAI, Mistral AI, Hugging Face), so you can choose the one you like the most.
-We send chunks of text to AI service and then receive processed responses. To use it, you need to configure JabRef with your API key.
+JabRef uses external AI providers to do the actual work.
+You can choose between OpenAI, Mistral AI, and Hugging Face.
+They all run "Large Language Models" (LLMs) to process the requests.
+The AI providers need chunks of text to work.
+For this, JabRef parses and indexes linked PDF files of entries:
+The file is split into parts of fixed-length (so-called *chunks*) and for each of them, an *embedding* is generated.
+An embedding itself is a representation of a part of text and in turn a vector that represents the meaning of the text.
+Each vector has a crucial property: texts with similar meaning have vectors that are close to (so-called *vector similarity*).
+As a result, whenever you ask AI a question, JabRef tries to find relevant pieces of text from the indexed files using vector similarity.
 
 ## More information
 
