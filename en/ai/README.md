@@ -1,25 +1,25 @@
 # AI functionality in JabRef
 
-Since version 6, JabRef has AI-functionality build in.
+Since version 6, JabRef has AI functionality built in.
 
 - AI can generate a summary of a research paper
-- One can also chat with papers using a "smart" AI assistant
+- You can also chat with papers using a "smart" AI assistant
 
 ## AI summary tab
 
-On activation of this tab, AI will generate for you a quick overview of the paper.
+When you activate this tab, AI will generate a quick overview of the paper for you.
 
 ![AI summary tab screenshot](../.gitbook/assets/AiSummary.png)
 
-The AI will mention main objectives of the research, methods used, key findings, and conclusions.
+The AI will mention the main objectives of the research, methods used, key findings, and conclusions.
 
 ## AI chat tab
 
-Here, one can ask questions, which are answered by the LLM.
+Here, you can ask questions, which are answered by the LLM.
 
 ![AI chat tab screenshot](../.gitbook/assets/AiChat.png)
 
-In this window you can see the following elements:
+In this window, you can see the following elements:
 
 - Chat history with your messages
 - Prompt for sending messages
