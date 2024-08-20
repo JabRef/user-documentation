@@ -91,4 +91,4 @@ Make the subscription on [their website](https://console.mistral.ai/billing/subs
 
 ### Hugging Face
 
-You do not have to pay anything for Hugging Face in order to send requests to LLMs. Though, the speed is very slow by default. You can [upgrade your user account](https://huggingface.co/pricing#pro) or switch to faster inference by [running a space on GPU](https://huggingface.co/docs/hub/spaces-gpus)
+You do not have to pay anything for Hugging Face in order to send requests to LLMs. Though, the speed is very slow by default. You can switch to faster inference by [upgrading your user account](https://huggingface.co/pricing#pro) or by [running a space on GPU](https://huggingface.co/docs/hub/spaces-gpus).
