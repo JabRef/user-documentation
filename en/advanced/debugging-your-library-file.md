@@ -44,7 +44,7 @@ An easy way to look at the method of halving is to repeatedly ask yourself the f
 
 Half splitting a library with two entries:
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
 
 #### How efficient is this method?
 
