@@ -4,7 +4,7 @@ JabRef can fetch automatically additional information about your entries. It can
 
 * To _find identifiers_ (arxiv, DOI)\_: select the entries and go to the menu **Lookup → search document identifier online**.​
 * To _find the DOI_: open the [entry editor](../advanced/entryeditor/), and in the General tab, click on the button **Lookup DOI**.
-* To _find the document_ related to an entry: select the entry and to the menu **Lookup → search full text documents online**.​
+* To _find the document_ related to an entry: select the entry and to the menu [**Lookup → search full text documents online**](../collect/add-pdfs-to-an-entry.md).​
 
 Be aware: The options above require your entry or entries to be filled with enough and correct bibliographic information. If the entry holds incomplete or inaccurate data, fetching the identifier or text document my fail.
 
