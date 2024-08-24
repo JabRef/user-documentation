@@ -6,7 +6,7 @@ In case you have a reference string, JabRef offers the functionality to convert 
 
 Example:
 
-```
+```text
 O. Kopp, A. Armbruster, und O. Zimmermann, "Markdown Architectural Decision Records: Format and Tool Support", in 10th ZEUS Workshop, 2018.
 ```
 
