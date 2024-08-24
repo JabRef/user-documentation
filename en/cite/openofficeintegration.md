@@ -38,7 +38,7 @@ To edit an already loaded custom style file or to reload changes that you made t
 
 Here is an example style file:
 
-```
+```text
 NAME
 Example style file for JabRef-OpenOffice integration.
 
