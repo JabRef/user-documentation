@@ -50,6 +50,14 @@ An instruction (also known as "system message") in a Large Language Models (LLMs
 
 The "context window size" in our application helps the AI remember and respond to conversations more effectively by keeping the most recent messages within a sliding window. As new messages are added, older messages are removed to make room, ensuring the AI always has the latest context. This feature enhances the AI's ability to provide accurate and relevant responses by focusing on the most current parts of the conversation, similar to how we remember the latest parts of a discussion. This process is managed automatically, so you can enjoy a smoother and more natural conversation experience without any additional effort.
 
+### Temperature
+
+**Type**: float
+
+**Requirements**: 0 >= && <= 2
+
+This setting controls how creative or focused the AI’s responses will be. A lower temperature (closer to 0) makes the AI more predictable, providing safer and more straightforward answers. A higher temperature (closer to 2) allows the AI to be more creative and varied in its responses, but it may also become less consistent. Adjust the temperature based on whether you prefer more accurate or more imaginative answers.
+
 ### Document splitter chunk size
 
 **Type**: integer
