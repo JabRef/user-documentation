@@ -25,19 +25,19 @@ JabRef offers a BibTeX key generation and offers different patterns described at
 In case you have numerous PDF files and want to convert them into new entries, JabRef can search automatically for the PDF files, let you select the relevant ones, and convert them into new entries.
 
 1. Create or open a `.bib` library.
-2.  Go to **Lookup -> Search for unlinked local files**. (or press `SHIFT + F7`)
+2. Go to **Lookup -> Search for unlinked local files**. (or press `SHIFT + F7`)
 
     ![FindUnlinkedFiles - Menu](<../.gitbook/assets/bildschirmfoto-2021-07-05-um-19.19.09 (1).png>) ![FindUnlinkedFiles - Menu](<../.gitbook/assets/findunlinkedfiles-menu-5.2 (6).png>)
-3.  The "Search for unlinked local files" dialog opens.
+3. The "Search for unlinked local files" dialog opens.
 
     <img src="../.gitbook/assets/findunlinkedfiles-window-5.2 (5).png" alt="FindUnlinkedFiles - Initial dialog" data-size="original">
 4. Choose a start directory using the "Browse" button.
 5. Click on "Search" / "Scan directory".
-6.  In "Select files", the files not yet contained in the library are shown.
+6. In "Select files", the files not yet contained in the library are shown.
 
     <img src="../.gitbook/assets/findunlinkedfiles-foundfiles-5.2.png" alt="FindUnlinkedFiles - Found files" data-size="original">
 7. Select the entries you are interested in. Note: the button `Export selected files` allows you to export the list of the selected files (a text file containing on each line one filename with its path)
-8.  Click on `Import`.
+8. Click on `Import`.
 
     The windows close and the entry table now contains the newly-imported entries.
 9. The entry editor with the last imported entry is shown ![FindUnlinkedFiles - 08 - entry editor](<../.gitbook/assets/findunlinkedfiles-08-entry-editor (1).png>)
