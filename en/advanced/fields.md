@@ -38,18 +38,10 @@ There is a lot of different fields in _BibTeX_, and some additional fields that 
 
 The following fields are recognized by the default bibliography styles:
 
-* **bibtexkey** A unique string used to refer to the entry in LaTeX documents. Note that when referencing an entry from LaTeX, the key must match case-sensitively with the reference string. Some characters should not be used in bibtexkey as they are not compatible or not recommended:
-
-    `{ } ( ) , \ " - # ~ ^ : '`
+* **bibtexkey** A unique string used to refer to the entry in LaTeX documents. Note that when referencing an entry from LaTeX, the key must match case-sensitively with the reference string. Some characters should not be used in bibtexkey as they are not compatible or not recommended: `{ } ( ) , \ " - # ~ ^ : '`
 * **address** Usually the address of the `publisher` or other type of institution. For major publishing houses, you may omit the information entirely or give simply the city. For small publishers, on the other hand, you can help the reader by giving the complete address.
 * **annote** An annotation. It is not used by the standard bibliography styles, but may be used by others that produce an annotated bibliography.
-* **author** This field should contain the complete author list for your entry. The names are separated by the word _and_, even if there are more than two authors. Each name can be written in two equivalent forms:
-
-    Donald E. Knuth _or_ Knuth, Donald E.
-
-    Eddie van Halen _or_ van Halen, Eddie
-
-    The second form should be used for authors with more than two names, to differentiate between middle names and last names.
+* **author** This field should contain the complete author list for your entry. The names are separated by the word _and_, even if there are more than two authors. Each name can be written in two equivalent forms: `Donald E. Knuth` _or_ `Knuth, Donald E.`, `Eddie van Halen` _or_ `van Halen, Eddie`. The second form should be used for authors with more than two names, to differentiate between middle names and last names.
 * **booktitle** Title of a book, part of which is being cited. For book entries, use the `title` field instead.
 * **chapter** A chapter (or section or whatever) number.
 * **crossref** The library key of the entry being cross referenced.
@@ -61,9 +53,7 @@ The following fields are recognized by the default bibliography styles:
 * **key** Used for alphabetizing, cross referencing, and creating a label when the \`\`author'' information is missing. This field should not be confused with the key that appears in the `\cite` command and at the beginning of the library entry.
 * **month** The month in which the work was published or, for an unpublished work, in which it was written. You should use the standard three-letter abbreviation of the English names (jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec).
 * **note** Any additional information that can help the reader. The first word should be capitalized.
-* **number**
-
-    The number of a journal, magazine, technical report, or of a work in a series. An issue of a journal or magazine is usually identified by its volume and number; the organization that issues a technical report usually gives it a number; and sometimes books are given numbers in a named series.
+* **number** The number of a journal, magazine, technical report, or of a work in a series. An issue of a journal or magazine is usually identified by its volume and number; the organization that issues a technical report usually gives it a number; and sometimes books are given numbers in a named series.
 * **organization** The organization that sponsors a conference or that publishes a manual.
 * **pages** One or more page numbers or range of numbers, such as `42--111` or `7,41,73--97` or `43+` (which indicates `page 43 and following pages`). The standard styles convert a single dash (as in `7-33`) to the double dash used in TeX to denote number ranges (as in `7--3`).
 * **publisher** The publisher's name.
@@ -120,11 +110,7 @@ You can create new fields by [editing (or creating) entry types](../setup/custom
 ## Hints on fields
 
 * Generally, you can use LaTeX commands inside of fields containing text. _BibTeX_ will automatically format your reference lists, and those fields that are included in the lists will be (de)capitalized according to your bibliography style. To ensure that certain characters remain capitalized, enclose them in braces, like in the word _{B}elgium_.
-* An institution name should be inside `{}` brackets.
-
-    If the institution name also includes its abbreviation, this abbreviation should be also in `{}` brackets.
-
-    For instance, `{The Attributed Graph Grammar System ({AGG})}`.
+* An institution name should be inside `{}` brackets. If the institution name also includes its abbreviation, this abbreviation should be also in `{}` brackets. For instance, `{The Attributed Graph Grammar System ({AGG})}`.
 
 ## Further information resources
 
