@@ -41,7 +41,7 @@ This functionality runs in the background while you are working on a _bibliograp
 
 <div align="left">
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>Screenshot of the backup found dialog</p></figcaption></figure>
+<figure><img src="broken-reference" alt=""><figcaption><p>Screenshot of the backup found dialog</p></figcaption></figure>
 
 </div>
 
@@ -71,7 +71,7 @@ In case the `.bib` file should automatically be saved on each change, you can di
 
 <div align="center">
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Screenshot of the autosave preferences</p></figcaption></figure>
+<figure><img src="broken-reference" alt=""><figcaption><p>Screenshot of the autosave preferences</p></figcaption></figure>
 
 </div>
 
