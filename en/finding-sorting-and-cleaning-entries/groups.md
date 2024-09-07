@@ -99,7 +99,7 @@ If a refining group is a subgroup of a group that includes its subgroups -- the 
 
 ### Types of groups
 
-JabRef has five types of groups:
+JabRef has six types of groups:
 
 * **Explicit selection**. The group contains entries that were assigned manually. It behaves like a directory on disk, and contains only those entries that you explicitly assigned to it.
 * **Searching for a keyword**. The group contain entries in which a certain field (e.g. `author`) contains a certain keyword (e.g. `Smith`). This method does not require manual assignment of entries but uses information that is already present in the database.
@@ -107,6 +107,7 @@ JabRef has five types of groups:
 * **Specified keywords**. This feature will gather all words found in a specific field of your choice, and create a group for each word.
   * **Authors' last names**. Groups can be generated for each author's last name.
 * **Cited entries**. The group contains the entries cited in a LaTeX document, based on its _.aux_ file.
+* **Current Selection**. The group created acts as an explicit collection, but automatically includes all entries that are currently selected in the entry panel.
 
 #### Explicit selection
 
@@ -168,7 +169,7 @@ The group created acts as an explicit collection, but automatically includes all
 
 ![Field for collecting by current selection](https://github.com/JabRef/user-documentation/assets/111776404/02c8458d-1071-4de6-b4c7-bfb49c330e7a)
 
-The content of the group is not dynamically changed. 
+The content of the group is not dynamically changed.
 
 ## Group color bars in the entry table
 
