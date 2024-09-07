@@ -14,6 +14,8 @@ To communicate with OpenOffice, JabRef must first connect to a running OpenOffic
 
 JabRef needs to know the location of your OpenOffice executable (**soffice.exe** on Windows, and **soffice** on other platforms), and the directory where several OpenOffice jar files reside. If you connect by clicking the **Connect** button, JabRef will try to automatically determine these locations. If this does not work, you need to connect using the **Manual connect** button, which will open a window asking you for the needed locations.
 
+If you are one of the rare users that have manually installed LibreOffice via a [deb](https://de.wikipedia.org/w/index.php?title=Debian-Paket&oldid=244262361) file in Linux Mint (an Ubuntu based distribution), you can choose the LibreOffice directory under `/opt/`. For example `/opt/libreoffice24.2/`. In this particular case, it is enough to choose the directory path. Finding the soffice file is not required. Note that installing deb files manually is not recommended. If you can, use the package manager of your distribution.
+
 After the connection has been established, you can insert citations by selecting one or more entries in JabRef and using the **Push to OpenOffice** button in the dropdown menu of JabRef's toolbar, or by using the appropriate button in the OpenOffice panel in the side pane. This will insert citations for the selected entries at the current cursor position in the OpenOffice document, and update the bibliography to contain the full reference.
 
 ![](<CiteLibreOffice (3).gif>)
