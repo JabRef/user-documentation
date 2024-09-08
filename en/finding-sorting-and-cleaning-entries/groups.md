@@ -49,7 +49,7 @@ Just like directories, groups are structured like a tree, with the group _All En
 
 The properties of a group can be defined in the 'Edit group' dialog window (the same window is displayed when creating a new group). To modify the group properties, right-click on the group name in the group pane and select **Edit group** in the context menu.
 
-![Edit group window](https://user-images.githubusercontent.com/6931104/188163107-c0e55fd7-51a6-4350-8ded-598aa720dc77.png)
+![Edit group window](https://github.com/JabRef/user-documentation/assets/111776404/1160f401-8155-4628-8176-2824b55ab67e)
 
 ### Name
 
@@ -99,7 +99,7 @@ If a refining group is a subgroup of a group that includes its subgroups -- the 
 
 ### Types of groups
 
-JabRef has five types of groups:
+JabRef has six types of groups:
 
 * **Explicit selection**. The group contains entries that were assigned manually. It behaves like a directory on disk, and contains only those entries that you explicitly assigned to it.
 * **Searching for a keyword**. The group contain entries in which a certain field (e.g. `author`) contains a certain keyword (e.g. `Smith`). This method does not require manual assignment of entries but uses information that is already present in the database.
@@ -107,6 +107,7 @@ JabRef has five types of groups:
 * **Specified keywords**. This feature will gather all words found in a specific field of your choice, and create a group for each word.
   * **Authors' last names**. Groups can be generated for each author's last name.
 * **Cited entries**. The group contains the entries cited in a LaTeX document, based on its _.aux_ file.
+* **Current Selection**. The group created acts as an explicit collection, but automatically includes all entries that are currently selected in the entry panel.
 
 #### Explicit selection
 
@@ -161,6 +162,14 @@ The group contains the entries cited in a LaTeX document, based on its '.aux' fi
 ![Fields for collecting by cited entries](<../.gitbook/assets/groups-groupwindow-typecited-jabref5.2 (1).png>)
 
 The content of the group is updated dynamically whenever the `.aux` file changes.
+
+#### Current Selection
+
+The group created acts as an explicit collection, but automatically includes all entries that are currently selected in the entry panel. If more than one entries is selected, this option is picked as default.
+
+![Field for collecting by current selection](https://github.com/JabRef/user-documentation/assets/111776404/02c8458d-1071-4de6-b4c7-bfb49c330e7a)
+
+The content of the group is not dynamically changed.
 
 ## Group color bars in the entry table
 
