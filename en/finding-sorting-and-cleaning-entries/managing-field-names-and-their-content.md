@@ -32,8 +32,6 @@ A dialog window will be displayed with multiple tabs. Within are shown the actio
 <figure><img src="../.gitbook/assets/Automatic_Field_Editor_Copy_Move_Swap_Light.png" alt=""><figcaption><p>Dialog window of the Automatic field editor in "Copy or Move content" tab.</p></figcaption></figure>
 
 *   _Copy content._ This copies content from one field to another. Choose both a "from" and a "to" field (by typing it in or using the drop-down menus). Then press the "copy content" button. For example, enter the string "year" in the "From" text box. Also enter the string "date" in the "To" text box. If the copy content button is pressed, field content from the "year" field will be copied to the "date" field, but only, if the date field's content is empty (if the date field does not yet exist, it will be created). Field content in the "date" field will only be overwritten, if the "Overwrite field content" checkbox is checked. It is not possible to append content with this particular action.\
-
-
     {% hint style="warning" %}
     Known issue: Copying content while the "Overwrite field content" checkbox is checked cannot be reverted, even if the "cancel" button is pressed
     {% endhint %}
