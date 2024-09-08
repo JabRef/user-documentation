@@ -48,7 +48,7 @@ An instruction (also known as a "system message") in Large Language Models (LLMs
 
 **Requirements**: > 0
 
-The "context window size" in our application helps the AI remember and respond to conversations more effectively by keeping the most recent messages within a sliding window. As new messages are added, older messages are removed to make room, ensuring the AI always has the latest context. This feature enhances the AI's ability to provide accurate and relevant responses by focusing on the most current parts of the conversation, similar to how we remember the latest parts of a discussion. This process is managed automatically, so you can enjoy a smoother and more natural conversation experience without any additional effort.
+The "context window size" in our application helps the AI remember and respond to conversations more effectively by keeping the most recent messages within a sliding window. As new messages are added, older messages are removed to make room, ensuring the AI always has the latest context. This feature enhances the AI's ability to provide accurate and relevant responses by focusing on the most current parts of the conversation, similar to how we remember the latest parts of a discussion. This process is managed automatically, so you can enjoy a smoother and more natural conversation experience without any additional effort. For the advanced user, we recommend to check the context window of the Large Language Model is trained on to find the largest possible parameter.
 
 ### Temperature
 
@@ -95,3 +95,12 @@ Setting this parameter controls the scope of information the AI model uses to ge
 The "Retrieval augmented generation: minimum score" parameter sets the relevance threshold when retrieving chunks of text for generation. It specifies the minimum score that segments must achieve to be included in the results. Any text segments scoring below this threshold are excluded from the AI's response generation process.
 
 This parameter is crucial for ensuring that the AI model focuses on retrieving and utilizing only the most relevant information from the retrieved chunks. By filtering out segments that do not meet the specified relevance score, the AI enhances the quality and accuracy of its responses, aligning more closely with the user's needs and query context.
+
+## Further literature
+
+- [Visual representation of samplers (Temperature, Top-P, Min-P, ...) by Artefact2](https://artefact2.github.io/llm-sampling/index.xhtml)
+- [What is a Context Window?](https://www.techtarget.com/whatis/definition/context-window)
+- [Is temperature the creativity of Large Language Models?](https://arxiv.org/abs/2405.00492)
+- [The Effect of Sampling Temperature on Problem Solving in Large Language Models](https://arxiv.org/abs/2402.05201)
+- [Min P Sampling: Balancing Creativity and Coherence at High Temperature](https://arxiv.org/abs/2407.01082)
+- [Challenges in Deploying Long-Context Transformers: A Theoretical Peak Performance Analysis](https://arxiv.org/abs/2405.08944)
