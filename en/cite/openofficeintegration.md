@@ -185,6 +185,7 @@ To indicate formatting in the bibliography, you can use the HTML-like tag pairs 
 If you are using numbered citations, the number for each entry will be automatically inserted at the start of each entry in the reference list. By default, the numbers will be enclosed in the same brackets defined for citations. The optional citation properties `BracketBeforeInList` and `BracketAfterInList` override `BracketBefore` and `BracketAfter` if set. These can be used if you want different types of brackets (or no brackets) in the reference list. Note that these need not be brackets as such - they can be any combination of characters.
 
 ## Listing page numbers in the bibliography
+
 The bibliography entries include the option to include on which document pages the references are cited. Currently, a JStyle must be selected in order for this feature to work. The setting can be accessed in the settings panel under the option `"Automatically add "Cited on pages..." at beginning of bibliographic entries"`. An example bibliography entry will look like such:
 
 ![](<cited-on-pages-reference.png>)
