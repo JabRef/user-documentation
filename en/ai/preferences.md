@@ -1,16 +1,22 @@
 # AI preferences
 
-Here are some new options in  JabRef preferences.
-
 ![AI preferences](../.gitbook/assets/AiPreferences.png)
 
+## General settings
+
 - "Enable AI functionality in JabRef": by default it is turned off, so you need to check this option if you want to use the new AI features
+- "Automatically generate embeddings for new entries": when this check box is switched on, for every new entry in the library, JabRef will automatically start an embeddings generation task. (If you do not know what are the embeddings, take a look at ["How does the AI functionality work?"](https://docs.jabref.org/ai#how-does-the-ai-functionality-work)).
+- "Automatically generate summaries for new entries": when this check box is switched on, for every new entry in the library, JabRef will automatically generate a summary.
+
+If you import a lot of entries at a time, we recommend you to switch off options "Automatically generate embeddings for new entries" and "Automatically generate summaries for new entries", because this may slow down your computer, and you may reach the usage limit of the AI provider.
+
+## Connection settings
+
 - "AI provider": you can choose either OpenAI, Mistral AI, or Hugging Face
 - "Chat model": choose the model you like (for OpenAI we recommend `gpt-4o-mini`, as to date, it is the cheapest and fastest, though we also recommend to look up the prices periodically, as they are subject to change)
 - "API token": enter your API token here
-- "Expert settings": the defaults provide good results. In case you would like to modify them, the next section provides an explanation of them
 
-## AI expert settings
+## Expert settings
 
 ### API base URL
 
