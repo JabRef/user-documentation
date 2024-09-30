@@ -23,9 +23,9 @@ The following steps guide you on how to use `ollama` to download and runn local 
 
 1. Install `ollama` from [their website](https://ollama.com/download)
 2. Select a model that you want to run. The `ollama` provides [a large list of models](https://ollama.com/library) to choose from (we recommend trying [`gemma2:2b`](https://ollama.com/library/gemma2:2b), or [`mistral:7b`](https://ollama.com/library/mistral), or [`tinyllama`](https://ollama.com/library/tinyllama))
-3. When you have selected your model, type `ollama pull <MODEL>:<PARAMETERS>` in your terminal. `<MODEL>` refers to the model name like `gemma2` or `mistral`, and `<PARAMETERS>` refers to parameters count like `2b` or `9b`
+3. When you have selected your model, type `ollama pull <MODEL>:<PARAMETERS>` in your terminal. `<MODEL>` refers to the model name like `gemma2` or `mistral`, and `<PARAMETERS>` refers to parameters count like `2b` or `9b`.
 4. `ollama` will download the model for you
-5. After that, you can run ollama serve to start a local web server. This server will accept requests and respond with LLM output. Note: The ollama server may already be running, so do not be alarmed by a cannot bind error.
+5. After that, you can run ollama serve to start a local web server. This server will accept requests and respond with LLM output. Note: The ollama server may already be running, so do not be alarmed by a cannot bind error. If it is not yet running, use the following command: `ollama run <MODEL>:<PARAMETERS>`
 6. Go to JabRef Preferences -> AI
 7. Set the "AI provider" to "OpenAI"
 8. Set the "Chat Model" to the model you have downloaded in the format `<MODEL>:<PARAMETERS>`
