@@ -45,7 +45,7 @@ You can link to a number of external lists. These links can be set up on top of 
 
 ![External list](<../.gitbook/assets/JournalAbbreviations-ExternalList (2).png>)
 
-External lists can be found at [JabRef's repository abbreviation lists](http://abbrv.jabref.org). These data files are in CSV format (using semicolons as separators):
+External lists can be found at [JabRef's repository abbreviation lists](http://abbrv.jabref.org). These data files are in CSV format (using comma as separators):
 
 ```csv
 <full name>,<abbreviation>[,<shortest unique abbreviation>[,<frequency>]]
