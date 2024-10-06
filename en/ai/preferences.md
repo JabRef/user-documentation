@@ -102,6 +102,32 @@ The "Retrieval augmented generation: minimum score" parameter sets the relevance
 
 This parameter is crucial for ensuring that the AI model focuses on retrieving and utilizing only the most relevant information from the retrieved chunks. By filtering out segments that do not meet the specified relevance score, the AI enhances the quality and accuracy of its responses, aligning more closely with the user's needs and query context.
 
+## Templates
+
+### General Description
+
+The **Templates** section in the AI settings allows you to customize the behavior of every task in JabRef that includes LLMs.
+
+To use the templates, we employ the [Apache Velocity](https://velocity.apache.org/) template engine. You can refer to the [User Guide](https://velocity.apache.org/engine/devel/user-guide.html) to learn the syntax of Apache Velocity.
+
+There are four templates that JabRef uses:
+
+- **System Message for Chatting**: This template constructs the system message (also known as the instruction) for every AI chat in JabRef (whether chatting with an entry or with a group).
+- **User Message for Chatting**: This template is also used in chats and is responsible for forming a request to AI with document embeddings. The user message created by this template is sent to AI; however, only the plain user question will be saved in the chat history.
+- **Summarization Chunk**: In cases where the chat model does not have enough context window to fit the entire document in one message, our algorithm will split the document into chunks. This template is used to summarize a single chunk of a document.
+- **Summarization Combine**: This template is used only when the document size exceeds the context window of a chat model. It combines the summarized chunks into one piece of text.
+
+You can create any template you want, but we advise starting from the default template, as it has been carefully designed and includes special syntax from Apache Velocity.
+
+### Contexts for Templates
+
+For each template, there is a context that holds all necessary variables used in the template. In this section, we will show you the available variables for each template and their structure.
+
+- **System Message for Chatting**: There is a single variable, `entries`, which is a list of BIB entries. You can use `CanonicalBibEntry.getCanonicalRepresentation(BibEntry entry)` to format the entries.
+- **User Message for Chatting**: There are two variables: `message` (the user question) and `excerpts` (pieces of information found in documents through the embeddings search). Each object in `excerpts` is of type `PaperExcerpt`, which has two fields: `citationKey` and `text`.
+- **Summarization Chunk**: There is only the `text` variable, which contains the chunk.
+- **Summarization Combine**: There is only the `chunks` variable, which contains a list of summarized chunks.
+
 ## Further literature
 
 - [Visual representation of samplers (Temperature, Top-P, Min-P, ...) by Artefact2](https://artefact2.github.io/llm-sampling/index.xhtml)
