@@ -94,9 +94,7 @@ Left to the image you have a hamburger with a "replace" option.
 
 In case GitBook was fixed, with some command line magic, this could be solved:
 
-1. Create a script renaming all images: `fd -e png -x bash -c "echo '{}' | sed 's/\([^(]*\)\(.*\).png/mv \"\\1\\2.png\" \"\\1.png\"/' | sed 's/ \.png/.png/'" | sort > fix-filenames.sh`.
-2. Execute in `en/.gitbook`. Otherwise, `fd` does not find any file.
-3. Repeat for `gif` instead of `png`.
-4. Create a script doing the renaming in all `.md` files: `fd -e md -x bash -c "echo sed -i '\"s/assets\/\([^%]*\)\(.*\).png/assets\/\\1.png/\"' {}" > fix-mds.sh`.
-5. Execute in the root repository.
-6. Repeat for `gif` instead of `png`.
+1. Create a script renaming all images: `fd -e png -x bash -c "echo '{}' | sed 's/\([^(]*\)\(.*\).png/mv \"\\1\\2.png\" \"\\1.png\"/' | sed 's/ \.png/.png/'" | sort > fix-filenames.sh`. Execute in `en/.gitbook`. Otherwise, `fd` does not find any file.
+2. Repeat for `gif` instead of `png`.
+3. Create a script doing the renaming in all `.md` files: `fd -e md -x bash -c "echo sed -i '\"s/assets\/\([^%]*\)\(.*\).png/assets\/\\1.png/\"' {}" > fix-mds.sh`. Execute in the root repository.
+4. Repeat for `gif` instead of `png`.
