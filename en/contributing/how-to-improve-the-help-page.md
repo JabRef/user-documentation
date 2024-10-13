@@ -1,10 +1,10 @@
 # How to Improve the Help Page
 
-Here is a quick start guide on how to improve help pages in the [Jabref User Documentation](https://docs.jabref.org).
+Here is a quick start guide on how to improve help pages in the [JabRef User Documentation](https://docs.jabref.org).
 
 ## Prerequisite
 
-The Jabref help pages are hosted at [GitBook](https://www.gitbook.com) with integration to GitHub, which provides version control based on [git](https://git-scm.com). In order to edit or create a JabRef help page, you need a GitHub account. You can sign up [here](https://github.com/join) for free. If you already have an account, please make sure that you are signed in.
+The JabRef help pages are hosted at [GitBook](https://www.gitbook.com) with integration to GitHub, which provides version control based on [git](https://git-scm.com). In order to edit or create a JabRef help page, you need a GitHub account. You can sign up [here](https://github.com/join) for free. If you already have an account, please make sure that you are signed in.
 
 ## Editing Help Pages directly in the browser
 
