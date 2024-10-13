@@ -8,7 +8,7 @@ A dialog window is displayed. By default, 5 common types of entries are displaye
 
 For other types of entries, click on `Others.` That expands the window and displays the other entry types available:
 
-![Window with all available entry types. Note: the actual content of the "others" menu depends on the database mode (BibTeX or biblatex).](<../.gitbook/assets/jabref-5.3-selectentrytype-expanded (1).png>)
+![Window with all available entry types. Note: the actual content of the "others" menu depends on the database mode (BibTeX or biblatex).](<../.gitbook/assets/jabref-5.3-selectentrytype-expanded.png>)
 
 Finally, the [entry editor](../advanced/entryeditor/) opens and let you fill in the various fields.
 

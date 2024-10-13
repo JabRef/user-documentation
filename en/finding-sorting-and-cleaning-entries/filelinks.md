@@ -29,7 +29,7 @@ If JabRef saves an attached file and my login name matches the name stored in th
 
 In some settings, the bib file is stored in **the same directory** as the PDF files. Then, one ignores all the above directories and enable "Search and store files relative to library file location". In this case, JabRef starts searching for PDF files in the directory of the `bib` file. It is also possible to achieve this result by setting `.` as "General file directory" in the library properties.
 
-![Search and store files relative to library file location](<../.gitbook/assets/preferences-file-searchandstoreforfilesrelativetolibraryfilelocation (4).png>).
+![Search and store files relative to library file location](<../.gitbook/assets/preferences-file-searchandstoreforfilesrelativetolibraryfilelocation.png>).
 
 Relative file directories obviously only work in the library properties for a bib file, e.g. `a.bib` Library → Library properties → General file directory → `papers`. Assume to have two bib files: `a.bib` and `b.bib` located in different directories: `a.bib` located at `C:\a.bib` and `b.bib` located at `X:\b.bib`. When I click on the `+` icon in the general Tab of file `a.bib`, the popup is opened in the directory `C:\papers` (assuming `C:\papers` exists).
 

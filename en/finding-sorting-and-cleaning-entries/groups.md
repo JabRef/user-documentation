@@ -112,7 +112,7 @@ JabRef has five types of groups:
 
 Groups based on explicit selection are populated only by manual assignment of entries.
 
-![Fields for collecting by using an explicit selection](<../.gitbook/assets/groups-groupwindow-typeexplicit-jabref5.2 (1).png>)
+![Fields for collecting by using an explicit selection](<../.gitbook/assets/groups-groupwindow-typeexplicit-jabref5.2.png>)
 
 After creating an explicit-selection group, you select the entries to be assigned to it and use either drag-and-drop or the context menu **Add selected entries to this group** of the group interface.
 
@@ -158,7 +158,7 @@ The content of the group is updated dynamically whenever the database changes.
 
 The group contains the entries cited in a LaTeX document, based on its '.aux' file. The .aux file has to be specified.
 
-![Fields for collecting by cited entries](<../.gitbook/assets/groups-groupwindow-typecited-jabref5.2 (1).png>)
+![Fields for collecting by cited entries](<../.gitbook/assets/groups-groupwindow-typecited-jabref5.2.png>)
 
 The content of the group is updated dynamically whenever the `.aux` file changes.
 

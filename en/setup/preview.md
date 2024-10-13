@@ -12,7 +12,7 @@ You can display the entry preview as a separate tab (see screenshot above) by ch
 
 The entry preview displays either the **Customized Preview Style** or a certain **Citation Style**. You can select the styles that should be available for display in **Options → Preferences → Entry preview**. In `Available` you find all styles selectable for display, in `Selected` all styles already selected for display:
 
-![Entry Preview Settings](<../.gitbook/assets/entryeditor-preview-settings (1).png>)
+![Entry Preview Settings](<../.gitbook/assets/entryeditor-preview-settings.png>)
 
 You can switch between all selected styles (customized preview and citation styles) in the entry preview in the main window by pressing `F9`.
 

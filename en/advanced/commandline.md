@@ -234,8 +234,8 @@ Show info and error messages in the console.
 
 As developer, you pass arguments to the app using gradle's `--app` switch. Enclose the arguments in quotes. For instance `--args="--debug"` turns on debug mode.
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 You can then view the event log in JabRef as follows:
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>

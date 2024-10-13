@@ -38,7 +38,7 @@ First, [eBook.de's](https://www.ebook.de/de/) API is used to fetch bibliographic
 
 ID search is carried out using the [International Standard Book Number](https://en.wikipedia.org/wiki/International\_Standard\_Book\_Number).
 
-![Screenshot of new entry dialog](<../.gitbook/assets/newentrychoosetype-idgeneratorhighlighted-isbn (3).png>)
+![Screenshot of new entry dialog](<../.gitbook/assets/newentrychoosetype-idgeneratorhighlighted-isbn.png>)
 
 ### DiVA
 
@@ -46,7 +46,7 @@ ID search is carried out using the [International Standard Book Number](https://
 
 ID search is carried out using the DiVA id (diva2).
 
-![Screenshot of new entry dialog](<../.gitbook/assets/newentrychoosetype-idgeneratorhighlighted-diva (1).png>)
+![Screenshot of new entry dialog](<../.gitbook/assets/newentrychoosetype-idgeneratorhighlighted-diva.png>)
 
 ### DOI
 
@@ -54,7 +54,7 @@ JabRef uses [http://dx.doi.org/](http://dx.doi.org) (provided by [http://crossre
 
 ID search is carried out using the DOI.
 
-![Screenshot of new entry dialog](<../.gitbook/assets/newentrychoosetype-idgeneratorhighlighted (1).png>)
+![Screenshot of new entry dialog](<../.gitbook/assets/newentrychoosetype-idgeneratorhighlighted.png>)
 
 {% hint style="warning" %}
 If JabRef cannot find the reference of your DOI using this ID type, please, try the same DOI with the ID type "mEDRA". The ID type mEDRA looks for the reference corresponding to a DOI too, but using another registration agency.
@@ -98,7 +98,7 @@ ID search is carried out using the DOI.
 
 ID search is carried out using the [ADS Bibcode](http://adsabs.github.io/help/actions/bibcode).
 
-![Screenshot of new entry dialog](<../.gitbook/assets/newentrychoosetype-idgeneratorhighlighted-ads (1).png>)
+![Screenshot of new entry dialog](<../.gitbook/assets/newentrychoosetype-idgeneratorhighlighted-ads.png>)
 
 ### Title
 

@@ -15,11 +15,11 @@ O. Kopp, A. Armbruster, und O. Zimmermann, "Markdown Architectural Decision Reco
     <img src="../.gitbook/assets/new-entry-from-plain-text-step-1.png" alt="New entry from plain text" data-size="original">
 2. The "Plain Reference Parser" window opens
 
-    <img src="../.gitbook/assets/new-entry-from-plain-text-step-2 (1).png" alt="Plain Reference Parser" data-size="original">
+    <img src="../.gitbook/assets/new-entry-from-plain-text-step-2.png" alt="Plain Reference Parser" data-size="original">
 3. Paste the reference text:
 
-    <img src="../.gitbook/assets/new-entry-from-plain-text-step-3 (1).png" alt="Paste" data-size="original">
+    <img src="../.gitbook/assets/new-entry-from-plain-text-step-3.png" alt="Paste" data-size="original">
 4. Click "Add to current library"
 5. The result is selected in the entry table:
 
-    <img src="../.gitbook/assets/new-entry-from-plain-text-step-4 (1).png" alt="Result of Grobid Parsing" data-size="original">
+    <img src="../.gitbook/assets/new-entry-from-plain-text-step-4.png" alt="Result of Grobid Parsing" data-size="original">

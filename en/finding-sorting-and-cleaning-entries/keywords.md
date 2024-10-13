@@ -37,7 +37,7 @@ To fasten the addition of often-used keywords, JabRef can store the list of your
 
 Go to **File → Manage content selectors**.
 
-![](<../.gitbook/assets/managecontentselectors-jabref5.2 (1).png>)
+![](<../.gitbook/assets/managecontentselectors-jabref5.2.png>)
 
 First, click on the field name "Keywords". Then, enter the list of your preferred keywords. Now, when you start to type one of your preferred keywords, JabRef will display a list of the matching ones (independently of the auto-completion). For more details, see the help section about [Managing content selectors](../advanced/contentselector.md).
 
