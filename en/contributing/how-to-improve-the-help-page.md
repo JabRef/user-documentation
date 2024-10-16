@@ -87,7 +87,7 @@ act --rm --platform ubuntu-latest=fwilhe2/act-runner:latest -W .github/workflows
 
 ## Run workflows through Github
 
-Another way to run the Lint and Check markdown links workflows is to use an online CI runner. On your fork of the repo, navigate to the Actions tab on Github. From here you can see the workflows on the left, and choose to run them.
+Another way to run the Lint and Check markdown links workflows is to use an online CI runner through the Github page. On your fork of the repo, navigate to the Actions tab on Github. From here you can see the workflows on the left, and choose to run them.
 
 ![../.gitbook/run-workflow-thru-github.png]
 
