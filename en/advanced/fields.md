@@ -26,7 +26,7 @@ To enable auto save, JabRef adds `% DBID: <id>` to the header. This helps JabRef
 
 <div align="center">
 
-<figure><img src="broken-reference" alt=""><figcaption><p>A BibTeX "Entry"</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/a-bibtex-entry.png" alt=""><figcaption><p>A BibTeX "Entry"</p></figcaption></figure>
 
 </div>
 
