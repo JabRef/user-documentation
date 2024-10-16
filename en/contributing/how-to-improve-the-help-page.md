@@ -85,6 +85,10 @@ Alternatively, you can run the GitHub Lint workflow:
 act --rm --platform ubuntu-latest=fwilhe2/act-runner:latest -W .github/workflows/lint.yaml
 ```
 
+Another way to run the GitHub Lint workflow is to use an online CI runner. On your fork of the repo, navigate to the Actions tab on Github. From here you can see the workflows on the left, and choose to run them. 
+
+![../.gitbook/run-workflow-thru-github.png]
+
 ### How to rename files
 
 The gitbook integration changes some of the file names and appends "(1) (2) (1)" or something like this.
