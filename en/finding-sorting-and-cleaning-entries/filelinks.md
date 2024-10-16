@@ -86,3 +86,15 @@ To access any of an entry's links, click on the icon with the right mouse button
 ## Setting up external file types
 
 In general, there is no need to change the settings of external file types. So, this setting is for advanced users. See [Manage external file types](../setup/externalfiletypes.md).
+
+## Adding additional columns to entry table for file types
+
+You can add extra columns to the entry table for storing linked files of a specific type, e.g. a column specifically for Markdown files which you use to write comments about particular entries. This can help you organise your linked files. 
+
+To add a specific column, navigate to **File > Preferences > Entry Table**. This will show the dialog box shown below. Tick the option for **Show Extra Columns**, and then either directly type in `extrafile:<fileType>` into the text box or enter the dropdown and find the option `<fileType> (Custom)`. Don't forget to click Save!
+
+![Showing the entry table preferences option box](../.gitbook/assets/extrafile-column-1.png)
+
+Then you may find the column on your entry table like so! (You may have to scroll right to find the column where you have added it, and drag it across to the position you desire).
+
+![Result after adding new file column](../.gitbook/assets/extrafile-column-2.png)
