@@ -89,7 +89,7 @@ In general, there is no need to change the settings of external file types. So, 
 
 ## Adding additional columns to entry table for file types
 
-You can add extra columns to the entry table for storing linked files of a specific type, e.g. a column specifically for Markdown files which you use to write comments about particular entries. This can help you organise your linked files. 
+You can add extra columns to the entry table for storing linked files of a specific type, e.g. a column specifically for Markdown files which you use to write comments about particular entries. This can help you organise your linked files.
 
 To add a specific column, navigate to **File > Preferences > Entry Table**. This will show the dialog box shown below. Tick the option for **Show Extra Columns**, and then either directly type in `extrafile:<fileType>` into the text box or enter the dropdown and find the option `<fileType> (Custom)`. Don't forget to click Save!
 
