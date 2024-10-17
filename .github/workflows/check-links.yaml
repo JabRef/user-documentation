@@ -1,4 +1,4 @@
-name: Check external href links in the documentation
+name: Check links
 
 on:
   push:

@@ -54,6 +54,28 @@ That's it! The JabRef team will review your changes and publish them on [docs.ja
 
 To edit more than one file at a time, add screenshots, and for other more advanced changes, we recommend that you checkout this repository locally and create a Pull Request of your changes using the standard git and GitHub workflow.
 
+### CI
+
+Two CI jobs (called "workflows" in GitHub terminology) are triggered each time you push or pull request.
+
+- Lint workflow checks for minor Markdown formatting style issues.
+
+- Check links workflow checks for broken links, e.g. to images or external resources.
+
+On PRs, you are able to view the results directly on the PR (though you have to wait for a maintainer to approve running the workflow). You can also view the results on the local fork of the repo that you pushed to (which you are recommended to check first so you can fix mistakes before the maintainer has to look at it).
+
+On your local fork, you can check the results of the workflows in the Actions tab > All actions panel on Github as shown below. Click on a specific workflow and its run to check the results.
+
+![Actions tab on Github](../.gitbook/assets/workflow-check-results.png)
+
+### Notes on links workflow
+
+Links to external resources that aren't essential should be added to `.lycheeignore`. Resources can change URL or be taken down, and it isn't the best use of contributor resources to constantly keep fixing them, so try to spare us the headache!
+
+Note that check links may fail on links which you did not modify in your changes, in which case you can ignore them. Just do make sure that you don't introduce any additional broken links.
+
+TEMPORARY NOTE: until [issue #533](https://github.com/JabRef/user-documentation/issues/533) is fixed, you will actually find a _lot_ of broken links.
+
 ### Tables
 
 The best way to enter tables is to use this [Table Generator](http://www.tablesgenerator.com/markdown\_tables) for Markdown. It has the nice feature to generate markdown tables from different sources, e.g. you can directly copy the table from a spreadsheet or upload a csv file. Just copy and paste the generated markdown into the documentation.
@@ -61,29 +83,6 @@ The best way to enter tables is to use this [Table Generator](http://www.tablesg
 ### How to regenerate `SUMMARY.md` from scratch
 
 Use <https://github.com/koppor/gitbook-summary-generator>.
-
-### How to find broken links
-
-1. Install [markdown-link-check](https://github.com/tcort/markdown-link-check): `npm install -g markdown-link check`
-2. `find . -name \*.md -exec markdown-link-check -qq {} \; > bad-links.txt`
-
-### How to find Markdown errors
-
-You can use the [markdown-lint docker image](https://github.com/marketplace/actions/markdown-linting-action):
-
-```shell
-docker run --rm \
-    -v "$(pwd):/tmp/check" \
-    -e INPUT_CONFIG=/tmp/check/.markdownlint.yml \
-    avtodev/markdown-lint:v1 \
-    /tmp/check/en
-```
-
-Alternatively, you can run the GitHub Lint workflow:
-
-```shell
-act --rm --platform ubuntu-latest=fwilhe2/act-runner:latest -W .github/workflows/lint.yaml
-```
 
 ### How to rename files
 
