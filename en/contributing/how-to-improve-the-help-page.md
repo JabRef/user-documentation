@@ -56,11 +56,13 @@ To edit more than one file at a time, add screenshots, and for other more advanc
 
 ### Github workflows
 
-In order to find broken links and find Markdown errors, you can use the "Check Links" and "Lint" workflows respectively. These are provided in `.github/workflows` and run each time you push to the documentation repo. You are recommended to check the results of these workflows on your local fork after pushing changes to it to catch minor mistakes.
+Two workflows are triggered each time you push or pull request. 
 - Lint workflow checks for minor Markdown formatting style issues.
 - Check links workflow checks for broken links, e.g. to images or external resources.
 
-On your local fork, you can check the results of the workflows in the Actions tab > All actions panel on Github as shown below. Click on a specific workflow and its run to check it.
+On PRs, you are able to view the results directly on the PR (though you have to wait for a maintainer to approve running the workflow). You can also view the results on the local fork of the repo that you pushed to (which you are recommended to check first so you can fix mistakes before the maintainer has to look at it). 
+
+On your local fork, you can check the results of the workflows in the Actions tab > All actions panel on Github as shown below. Click on a specific workflow and its run to check the results.
 
 ### Notes on links workflow
 
