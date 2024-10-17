@@ -1,0 +1,31 @@
+{
+    "ignorePatterns": [
+        {
+            "pattern": "^https://.*\\.crossref\\.org"
+        },
+        {
+            "pattern": "^https://.*\\.github\\.com"
+        },
+        {
+            "pattern": "^https://dl\\.acm\\.org"
+        },
+        {
+            "pattern": "^http://purl\\.org/net/bibteXMP"
+        },
+        {
+            "pattern": "^https://.*\\.jabref\\.org"
+        },
+        {
+            "pattern": "\\.tex\\.ac\\.uk/"
+        },
+        {
+          "pattern": "gitignore\\.io"
+        },
+        {
+          "pattern": "en\\.wikipedia\\.org"
+        },
+        {
+            "pattern": "^https://web.archive.org/"
+        }
+    ]
+}
