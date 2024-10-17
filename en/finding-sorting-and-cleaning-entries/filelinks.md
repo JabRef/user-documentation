@@ -93,13 +93,13 @@ You can add extra columns to the entry table for storing linked files of a speci
 
 To add a specific column, follow these steps:
 
-1. Navigate to **File > Preferences > Entry Table**. This will show the dialog box shown below. 
+1. Navigate to **File > Preferences > Entry Table**. This will show the dialog box shown below.
 
-2. Tick the option for **Show Extra Columns**. 
+2. Tick the option for **Show Extra Columns**.
 
 3. Replacing "X" in the following with the name of the file type you want, either directly type in `extrafile:X` into the text box, or enter the dropdown menu and find the option `X (Custom)`. So for instance if you wanted a Markdown file column, type in `extrafile:Markdown` or click the `Markdown (Custom)` option in the dropdown.
 
-4. Click the "plus" button next to the text box or hit the Enter key. Your new entry will appear as a choice at the end of the combo box, and you can scroll down to find it. 
+4. Click the "plus" button next to the text box or hit the Enter key. Your new entry will appear as a choice at the end of the combo box, and you can scroll down to find it.
 
 5. Click Save and exit the dialog box.
 
