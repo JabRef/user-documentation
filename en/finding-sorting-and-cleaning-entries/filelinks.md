@@ -89,12 +89,24 @@ In general, there is no need to change the settings of external file types. So, 
 
 ## Adding additional columns to entry table for file types
 
-You can add extra columns to the entry table for storing linked files of a specific type, e.g. a column specifically for Markdown files which you use to write comments about particular entries. This can help you organise your linked files.
+You can add extra columns to the entry table for storing linked files of a specific type. For instance, one might store longer comments in an external Markdown file. One wants to show the presence of this Markdown file using an extra column. This can be done with many other file types too such as Excel/XLSX, PNG, PowerPoint, etc.
 
-To add a specific column, navigate to **File > Preferences > Entry Table**. This will show the dialog box shown below. Tick the option for **Show Extra Columns**, and then either directly type in `extrafile:<fileType>` into the text box or enter the dropdown and find the option `<fileType> (Custom)`. Don't forget to click Save!
+To add a specific column, follow these steps:
 
-![Showing the entry table preferences option box](../.gitbook/assets/extrafile-column-1.png)
+1. Navigate to **File > Preferences > Entry Table**. This will show the dialog box shown below. 
 
-Then you may find the column on your entry table like so! (You may have to scroll right to find the column where you have added it, and drag it across to the position you desire).
+2. Tick the option for **Show Extra Columns**. 
 
-![Result after adding new file column](../.gitbook/assets/extrafile-column-2.png)
+3. Replacing "X" in the following with the name of the file type you want, either directly type in `extrafile:X` into the text box, or enter the dropdown menu and find the option `X (Custom)`. So for instance if you wanted a Markdown file column, type in `extrafile:Markdown` or click the `Markdown (Custom)` option in the dropdown.
+
+4. Click the "plus" button next to the text box or hit the Enter key. Your new entry will appear as a choice at the end of the combo box, and you can scroll down to find it. 
+
+5. Click Save and exit the dialog box.
+
+![Image showing how to navigate to the entry table preferences option box. Click "File" at the top, then "Preferences" in the resulting dropdown. Then click the "Entry Table" option on the left side within the dialogue (see next image).](../.gitbook/assets/extrafile-column-0.png)
+
+![Image showing the entry table preferences option box itself. Shows the dropdown in the middle of selecting Markdown (Custom). Other file column options shown in this image are OpenDocument Presentation (Custom), OpenDocument Spreadsheet (Custom), OpenDocument text (Custom), PNG Image (Custom), PostScript Image (Custom) and PowerPoint (Custom).](../.gitbook/assets/extrafile-column-1.png)
+
+Then you may find the column on your entry table like so! You may have to scroll right to find the column where you have added it, and drag it across to the position you desire.
+
+![Result after adding new file column. The column icon is a file icon, and so are the entries in that column.](../.gitbook/assets/extrafile-column-2.png)
