@@ -72,7 +72,9 @@ On your local fork, you can check the results of the workflows in the Actions ta
 
 Links to external resources that aren't essential should be added to `.lycheeignore`. Resources can change URL or be taken down, and it isn't the best use of contributor resources to constantly keep fixing them, so try to spare us the headache!
 
-Note that check links may fail on links which you did not modify in your changes, in which case you can ignore them. Just do make sure that you don't introduce any additional broken links. (Note: until [issue #533](https://github.com/JabRef/user-documentation/issues/533) is fixed, you will actually find a *lot* of broken links.)
+Note that check links may fail on links which you did not modify in your changes, in which case you can ignore them. Just do make sure that you don't introduce any additional broken links. 
+
+TEMPORARY NOTE: until [issue #533](https://github.com/JabRef/user-documentation/issues/533) is fixed, you will actually find a *lot* of broken links.
 
 ### Tables
 
