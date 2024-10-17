@@ -57,7 +57,9 @@ To edit more than one file at a time, add screenshots, and for other more advanc
 ### CI
 
 Two CI jobs (called "workflows" in GitHub terminology) are triggered each time you push or pull request.
+
 - Lint workflow checks for minor Markdown formatting style issues.
+
 - Check links workflow checks for broken links, e.g. to images or external resources.
 
 On PRs, you are able to view the results directly on the PR (though you have to wait for a maintainer to approve running the workflow). You can also view the results on the local fork of the repo that you pushed to (which you are recommended to check first so you can fix mistakes before the maintainer has to look at it).
