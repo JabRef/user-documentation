@@ -54,9 +54,9 @@ That's it! The JabRef team will review your changes and publish them on [docs.ja
 
 To edit more than one file at a time, add screenshots, and for other more advanced changes, we recommend that you checkout this repository locally and create a Pull Request of your changes using the standard git and GitHub workflow.
 
-### Github workflows
+### CI
 
-Two workflows are triggered each time you push or pull request. 
+Two CI jobs (called "workflows" in GitHub terminology) are triggered each time you push or pull request. 
 - Lint workflow checks for minor Markdown formatting style issues.
 - Check links workflow checks for broken links, e.g. to images or external resources.
 
