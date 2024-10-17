@@ -64,6 +64,8 @@ On PRs, you are able to view the results directly on the PR (though you have to 
 
 On your local fork, you can check the results of the workflows in the Actions tab > All actions panel on Github as shown below. Click on a specific workflow and its run to check the results.
 
+![Actions tab on Github](../.gitbook/assets/workflow-check-results.png)
+
 ### Notes on links workflow
 
 Links to external resources that aren't essential should be added to `.lycheeignore`. Resources can change URL or be taken down, and it isn't the best use of contributor resources to constantly keep fixing them, so try to spare us the headache!
@@ -77,14 +79,6 @@ The best way to enter tables is to use this [Table Generator](http://www.tablesg
 ### How to regenerate `SUMMARY.md` from scratch
 
 Use <https://github.com/koppor/gitbook-summary-generator>.
-
-```
-
-## Run workflows through Github
-
-Another way to run the Lint and Check markdown links workflows is to use an online CI runner through the Github page. On your fork of the repo, navigate to the Actions tab on Github. From here you can see the workflows on the left, and choose to run them.
-
-![../.gitbook/run-workflow-thru-github.png]
 
 ### How to rename files
 
