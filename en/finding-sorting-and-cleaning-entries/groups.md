@@ -206,10 +206,6 @@ If checked (default), the number of entries in each group is displayed in the gr
 Be careful, this can slow down JabRef when a library has numerous groups.
 {% endhint %}
 
-### Keyword separator
-
-The character separating two keywords can be set in this field. The default keyword separator is a comma (,).
-
 ## Groups in the library file
 
 Groups are saved as a `@COMMENT` block in the `.bib`-file and are shared among all users (future versions of JabRef might support user-dependent groups).

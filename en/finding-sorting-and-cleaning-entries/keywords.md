@@ -8,7 +8,7 @@ description: Keywords help you in organizing, sorting and searching your entries
 
 Keywords can be added to your entries in a specific field. In the entry editor, the keywords field is displayed in the General tab. There, you can add new keywords to an entry by typing it in. If auto-completion is activated for the field keywords (**File → Preferences → Entry editor**), suggestions are given based on existing keywords.
 
-By default, the keyword separator is a comma. It can be redefined in the preferences (**File → Preferences → Groups**).
+By default, the keyword separator is a comma. It can be redefined in the preferences (**File → Preferences → Entry**).
 
 {% hint style="info" %}
 If some entries have a keyword separator differing from the prescribed one, you can use menu **Edit → Find and replace**. For example, you may want to replace semi-columns (;) by commas (,). Select the radio button "Limit to Fields" and type in "keywords" as the relevant field.​​
