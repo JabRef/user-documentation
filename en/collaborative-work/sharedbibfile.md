@@ -7,7 +7,7 @@ _Note:_ the use of a version control system \(SVN, git, etc.\) is recommended as
 To make the sharing of a Bib\(la\)TeX library easier, it is recommended to set specific library properties. In the menu **Library → Library properties**:
 
 * Select `UTF-8` as encoding.
-* Define a `General file directory`, which will be used to store shared PDF \(and other\) files.
+* Define a `Library-specific file directory`, which will be used to store shared PDF \(and other\) files.
 * Check  `Refuse to save the library before external changes have been reviewed`.
 * Define a sort order \(`year`, `author`, `title` is recommended\)..
 * Check `Enable save formatters`, and defines these actions, to help enforcing a consistent format for the entries.
