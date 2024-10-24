@@ -42,10 +42,10 @@ You can select if your library follows the [BibTeX or the biblatex format](../ci
 
 In your library, files (PDF, etc.) can be linked to an entry. The list of these files are stored in the _file_ field of the entry. The location of these files has to be specified.
 
-For your library, you can define a **General file directory** and a **User-specific file directory**. These settings override the _main file directory_ defined in the Preferences dialog.
+For your library, you can define a **Library-specific file directory** and a **User-specific file directory**. These settings override the _main file directory_ defined in the Preferences dialog.
 
-The **General file directory** is a common path for all the users of a shared database.\
-The **User-specific file directory** allows each user to have its own file directory for the database. If defined, it overrides the **General file directory**.
+The **Library-specific file directory** is a common path for all the users of a shared database.\
+The **User-specific file directory** allows each user to have its own file directory for the database. If defined, it overrides the **Library-specific file directory**.
 
 JabRef stores the name of the current system alongside the **User-specific file directory**. This assumes that each user of the library has a different system name. For example, when using the computer _laptop_, the entry in the bib file is @Comment{jabref-meta: fileDirectory-jabref-laptop:\somedir;}
 

@@ -82,11 +82,11 @@ A: Yes, you can use the parameter `--importToOpen bibfile` of the [command line]
 
 ## Q: How do I link external files with paths relative to my .bib file, so I can move my library along with its files to another directory?
 
-A: You need to override the default file directory for this specific library. In **Library → Library properties** you can override the **Default file directory** setting. There, you can either enter the path in **General file directory** (for it to be valid for all users of the file) or in **User-specific file directory** (for it to be valid for you only). If you simply enter “.” (a dot, without the quotes), the file directory will be the same as the .bib file directory. To place your files in a subdirectory called **subdir**, you can enter **“./subdir”** (without the quotes). Files will automatically be linked with relative paths if the files are placed in the default file directory or in a directory below it. More details on the [help page about the library properties](../setup/databaseproperties.md).
+A: You need to override the default file directory for this specific library. In **Library → Library properties** you can override the **Default file directory** setting. There, you can either enter the path in **Library-specific file directory** (for it to be valid for all users of the file) or in **User-specific file directory** (for it to be valid for you only). If you simply enter “.” (a dot, without the quotes), the file directory will be the same as the .bib file directory. To place your files in a subdirectory called **subdir**, you can enter **“./subdir”** (without the quotes). Files will automatically be linked with relative paths if the files are placed in the default file directory or in a directory below it. More details on the [help page about the library properties](../setup/databaseproperties.md).
 
 ## Q: Can I use a bib-file specific PDF directory?
 
-A: In **Library → Library properties** you can choose a library-specific directory in the field “General file directory”. If you want to set a directory only for you (so that other users should use the default directory), use the field “User-specific file directory”.
+A: In **Library → Library properties** you can choose a library-specific directory in the field “Library-specific file directory”. If you want to set a directory only for you (so that other users should use the default directory), use the field “User-specific file directory”.
 
 ## Q: How do I export my bibliography entries into a simple text file, so I can import them into a spreadsheet (in LibreOffice, OpenOffice, MS Office, etc.)?
 
