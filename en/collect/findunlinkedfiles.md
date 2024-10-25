@@ -4,27 +4,49 @@ description: JabRef can create entries from PDF files.
 
 # Add entry using PDFs
 
+## Adding using drag and rop
+
 {% hint style="info" %}
 The simplest way to create a new entry based on a single PDF file is to drag & drop the file onto the table of entries (between two existing entries). JabRef will then analyze the PDF and create a new entry.
 {% endhint %}
 
+If you drop a PDF onto an entry in the main table or the entry preview in the entry editor, the PDF is simply attached to the entry.
+To add a new entry based on the PDF meta data, drop it **between** two entries in the main table or onto the empty area in the maintable (available for small libraries).
+The meta data of the PDF is then parsed and a new entry is added to the library.
+The PDF file is moved and renamed to the library as default.
+If you want to copy or just link it, hold the respective modifier keys.
+On Windows, <kbd>Ctrl</kbd> is for copying and <kbd>Alt</kbd> is for linking.
+
+### Better filenames
+
+JabRef changes the filenames automatically.
+You can adapt the pattern at Preferences -> Import ![Preferences - Import](../.gitbook/assets/preferences-import.png)
+
+Select "Choose pattern" and choose "bibtexkey - title" ![Preferences - Import - Choose pattern](<../.gitbook/assets/preferences-import-choose-pattern.png>).
+This results in the setting `\bibtexkey\begin{title} - \format[RemoveBrackets]{\title}\end{title}`.
+
+This makes the filenames start with the citation key followed by the full title.
+In the concrete case, `\bibtexkey` only may be the better option as the described bibtey key already contains the title.
+
+More details are given at [Managing Linked Files](../finding-sorting-and-cleaning-entries/filelinks).
+
+## Adding files currently not linked in the library
+
+In case you have numerous PDF files and want to convert them into new entries, JabRef can search automatically for the PDF files, let you select the relevant ones, and convert them into new entries.
+
 This feature is available through **Lookup -> Search for unlinked local files**.
+
+### Preparation: Adjust the JabRef key generation pattern to fit your needs
+
+JabRef offers a BibTeX key generation and offers different patterns described at [BibtexKeyPatterns](../setup/citationkeypatterns.md).
+
+### Using the Wizard "Search for unlinked local files"
 
 {% hint style="warning" %}
 This information is partially outdated. Please help to improve it ([how to edit a help page](../../contributing/how-to-improve-the-help-page.md#editing-help-pages-directly-in-the-browser)).
 {% endhint %}
 
-The following description appeared first on [tex.stackexchange.com](http://tex.stackexchange.com/a/344310/9075).
-
-## Preparation: Adjust the JabRef key generation pattern to fit your needs
-
-JabRef offers a BibTeX key generation and offers different patterns described at [BibtexKeyPatterns](../setup/citationkeypatterns.md).
-
-## Link the PDFs to your bib library
-
-In case you have numerous PDF files and want to convert them into new entries, JabRef can search automatically for the PDF files, let you select the relevant ones, and convert them into new entries.
-
-1. Create or open a `.bib` library.
+1. Create or open a library (AKA a `.bib` file).
 2. Go to **Lookup -> Search for unlinked local files**. (or press `SHIFT + F7`)
 
     ![FindUnlinkedFiles - Menu](<../.gitbook/assets/bildschirmfoto-2021-07-05-um-19.19.09.png>) ![FindUnlinkedFiles - Menu](<../.gitbook/assets/findunlinkedfiles-menu-5.2.png>)
@@ -55,23 +77,16 @@ The imported entries may need some editing because all the information gathered 
 
 ### PDFs for which it works
 
-The importer based on the content has been written for IEEE and [LNCS](https://github.com/latextemplates/LNCS) formatted papers. Other formats are not (yet) supported. In case a DOI is found on the first page, the DOI is used to generate the BibTeX information.
+The importer works well if there is BibTeX on the first page of the PDF, based on the content has been written for IEEE and [LNCS](https://github.com/latextemplates/LNCS) formatted papers.
+Other formats are not (yet) supported.
+In case a DOI is found on the first page, the DOI is used to generate the BibTeX information.
 
-The next development step is to extract the title of the PDF, use the "Lookup DOI" and then the [Get BibTeX data from DOI](../finding-sorting-and-cleaning-entries/getbibtexdatafromdoi.md) functionality from JabRef to fetch the BibTeX data.
+Background: 
 
-We are also [thinking about](https://github.com/koppor/jabref/issues/169) replacing the code completely by using another library. This is much effort and there is no timeline for that.
-
-### Better filenames
-
-JabRef also offers to change the filenames. You can adapt the pattern at Preferences -> Import ![Preferences - Import](../.gitbook/assets/preferences-import.png)
-
-Select "Choose pattern" and choose "bibtexkey - title" ![Preferences - Import - Choose pattern](<../.gitbook/assets/preferences-import-choose-pattern.png>) This results in the setting `\bibtexkey\begin{title} - \format[RemoveBrackets]{\title}\end{title}`.
-
-This makes the filenames start with the bibtey key followed by the full title. In the concrete case, `\bibtexkey` only may be the better option as the described bibtey key already contains the title.
-
-### Mr.DLib
-
-JabRef used to have support for [Mr.DLib](http://mr-dlib.org), which returned back a full BibTeX entry or a PDF. Due to unclear copyright situation of a used library, this service was removed. Further, Mr.DLib changes its focus and will provide literature recommendations. See [the realted articles tab](../advanced/entryeditor/#related-articles-tab).
+- Embedding BibTeX inside PDFs is done by the [LaTeX authorarchive package](https://ctan.org/pkg/authorarchive)
+- Having BibTeX on the first page is done by the [LaTeX CoverPage package](https://ctan.org/pkg/coverpage)
+- Embedding BibTeX data [using XMP is available in JabRef](../advanced/xmp.md)
+- Online parsing is enabled using the online service Grobid.
 
 ### Related questions on stack overflow
 
