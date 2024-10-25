@@ -81,7 +81,7 @@ The importer works well if there is BibTeX on the first page of the PDF, based o
 Other formats are not (yet) supported.
 In case a DOI is found on the first page, the DOI is used to generate the BibTeX information.
 
-Background: 
+Background:
 
 - Embedding BibTeX inside PDFs is done by the [LaTeX authorarchive package](https://ctan.org/pkg/authorarchive)
 - Having BibTeX on the first page is done by the [LaTeX CoverPage package](https://ctan.org/pkg/coverpage)
@@ -94,3 +94,5 @@ Background:
 * [Zotero: Extract references from PDF and create new library items from them](https://forums.zotero.org/discussion/16277/extract-references-from-pdf-and-create-new-library-items-from-them)
 * [Is there an open source tool for producing bibtex entries from paper PDFs?](http://academia.stackexchange.com/questions/15504/is-there-an-open-source-tool-for-producing-bibtex-entries-from-paper-pdfs)
 * [Extracting information from PDFs of research papers](http://stackoverflow.com/questions/1813427/extracting-information-from-pdfs-of-research-papers/3523416)
+
+<!-- markdownlint-disable-file MD033 -->
