@@ -4,7 +4,7 @@ description: JabRef can create entries from PDF files.
 
 # Add entry using PDFs
 
-## Adding using drag and rop
+## Adding using drag and drop
 
 {% hint style="info" %}
 The simplest way to create a new entry based on a single PDF file is to drag & drop the file onto the table of entries (between two existing entries). JabRef will then analyze the PDF and create a new entry.
