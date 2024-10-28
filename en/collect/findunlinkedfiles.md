@@ -28,13 +28,13 @@ This results in the setting `\bibtexkey\begin{title} - \format[RemoveBrackets]{\
 This makes the filenames start with the citation key followed by the full title.
 In the concrete case, `\bibtexkey` only may be the better option as the described bibtey key already contains the title.
 
-More details are given at [Managing Linked Files](../finding-sorting-and-cleaning-entries/filelinks).
+More details are given at [Managing Linked Files](../finding-sorting-and-cleaning-entries/filelinks.md).
 
 ## Adding files currently not linked in the library
 
 In case you have numerous PDF files and want to convert them into new entries, JabRef can search automatically for the PDF files, let you select the relevant ones, and convert them into new entries.
 
-This feature is available through **Lookup -> Search for unlinked local files**.
+This feature is available through **Lookup -&gt; Search for unlinked local files**.
 
 ### Preparation: Adjust the JabRef key generation pattern to fit your needs
 
@@ -43,7 +43,7 @@ JabRef offers a BibTeX key generation and offers different patterns described at
 ### Using the Wizard "Search for unlinked local files"
 
 {% hint style="warning" %}
-This information is partially outdated. Please help to improve it ([how to edit a help page](../../contributing/how-to-improve-the-help-page.md#editing-help-pages-directly-in-the-browser)).
+This information is partially outdated. Please help to improve it ([how to edit a help page](../../contributing/how-to-improve-the-help-page.md#editing-help-pages-directly-in-the-browser.md)).
 {% endhint %}
 
 1. Create or open a library (AKA a `.bib` file).
