@@ -43,7 +43,7 @@ JabRef offers a BibTeX key generation and offers different patterns described at
 ### Using the Wizard "Search for unlinked local files"
 
 {% hint style="warning" %}
-This information is partially outdated. Please help to improve it ([how to edit a help page](../../contributing/how-to-improve-the-help-page.md#editing-help-pages-directly-in-the-browser.md)).
+This information is partially outdated. Please help to improve it ([how to edit a help page](../contributing/how-to-improve-the-help-page.md#editing-help-pages-directly-in-the-browser.md)).
 {% endhint %}
 
 1. Create or open a library (AKA a `.bib` file).
