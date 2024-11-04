@@ -1,6 +1,6 @@
 # AI preferences
 
-![AI preferences](../.gitbook/assets/AiPreferences.png)
+![AI preferences](../.gitbook/assets/AiPreferences.jpg)
 
 ## General settings
 
