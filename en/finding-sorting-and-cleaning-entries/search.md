@@ -70,6 +70,10 @@ This applies to all "unfielded" search terms. Meaning: All search terms not spec
 
 ## Modifiers for fields
 
+{% hint style="warning" %}
+This has changed with JabRef v6
+{% endhint %}
+
 JabRef offers operators for the fielded search.
 The general idea is to have `=` for contains search and `==` for exact matches.
 Then, the `!` can be used to force case-sensitive matching (when used at the end) and as negation, when used in front.
@@ -112,10 +116,6 @@ This is how the search currently works in the development version.
 | `title = pa*ediatric AND 1.0` | On | No match.  Regex is disabled for this term |Matches "1.0", "1+0" "1/0", "1q0", ...  |
 
 ## Search using regular expressions <a href="#regular-expressions" id="regular-expressions"></a>
-
-{% hint style="warning" %}
-This has changed with JabRef v6
-{% endhint %}
 
 In order to only search for content within specific fields and/or to include logical operators in the search expression, a special syntax is available in which these can be specified. Both the field specification and the search term support [regular expressions](search.md#regular-expressions).
 
