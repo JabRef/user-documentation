@@ -8,7 +8,7 @@ _Strings_ are the _BibTeX_ equivalent to constants in a programming language. Ea
 
 For instance, if many entries are from a journal with an abbreviation that may be hard to remember, such as 'J. Theor. Biol.' \(Journal of Theoretical Biology\), a string named JTB could be defined to represent the journal's name. Instead of repeating the exact journal name in each entry, the characters '\#JTB\#' \(without quotes\) are put into the _journal_ field of each, ensuring the journal name is written identically each time.
 
-A string reference can appear anywhere in a field, always by enclosing the string's name in a pair of '\#' characters. This syntax is specific for JabRef, and differs slightly from the _BibTeX_ notation that is produced when you save your database. Strings can only be used for the fields defined under **File → Preferences → Entry**. You can add any other fields that may need to contain the '\#' character and that may be processed by BibTeX/LaTeX.
+A string reference can appear anywhere in a field, always by enclosing the string's name in a pair of '\#' characters. This syntax is specific for JabRef, and differs slightly from the _BibTeX_ notation that is produced when you save your library. Strings can only be used for the fields defined under **File → Preferences → Entry**. You can add any other fields for which you may enable BibTeX string support. Here, you cannot use the '\#' character for processing by BibTeX/LaTeX any more.
 
 A string may in the same way be referred in the content of another string, provided the referred string is defined _before_ the referring one.
 
