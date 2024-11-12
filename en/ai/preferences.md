@@ -1,16 +1,22 @@
 # AI preferences
 
-Here are some new options in  JabRef preferences.
+![AI preferences](../.gitbook/assets/AiPreferences.jpg)
 
-![AI preferences](../.gitbook/assets/AiPreferences.png)
+## General settings
 
 - "Enable AI functionality in JabRef": by default it is turned off, so you need to check this option if you want to use the new AI features
+- "Automatically generate embeddings for new entries": when this check box is switched on, for every new entry in the library, JabRef will automatically start an embeddings generation task. (If you do not know what are the embeddings, take a look at ["How does the AI functionality work?"](https://docs.jabref.org/ai#how-does-the-ai-functionality-work)).
+- "Automatically generate summaries for new entries": when this check box is switched on, for every new entry in the library, JabRef will automatically generate a summary.
+
+If you import a lot of entries at a time, we recommend you to switch off options "Automatically generate embeddings for new entries" and "Automatically generate summaries for new entries", because this may slow down your computer, and you may reach the usage limit of the AI provider.
+
+## Connection settings
+
 - "AI provider": you can choose either OpenAI, Mistral AI, or Hugging Face
 - "Chat model": choose the model you like (for OpenAI we recommend `gpt-4o-mini`, as to date, it is the cheapest and fastest, though we also recommend to look up the prices periodically, as they are subject to change)
 - "API token": enter your API token here
-- "Expert settings": the defaults provide good results. In case you would like to modify them, the next section provides an explanation of them
 
-## AI expert settings
+## Expert settings
 
 ### API base URL
 
@@ -95,6 +101,32 @@ Setting this parameter controls the scope of information the AI model uses to ge
 The "Retrieval augmented generation: minimum score" parameter sets the relevance threshold when retrieving chunks of text for generation. It specifies the minimum score that segments must achieve to be included in the results. Any text segments scoring below this threshold are excluded from the AI's response generation process.
 
 This parameter is crucial for ensuring that the AI model focuses on retrieving and utilizing only the most relevant information from the retrieved chunks. By filtering out segments that do not meet the specified relevance score, the AI enhances the quality and accuracy of its responses, aligning more closely with the user's needs and query context.
+
+## Templates
+
+### General Description
+
+The **Templates** section in the AI settings allows you to customize the behavior of every task in JabRef that includes LLMs.
+
+To use the templates, we employ the [Apache Velocity](https://velocity.apache.org/) template engine. You can refer to the [User Guide](https://velocity.apache.org/engine/devel/user-guide.html) to learn the syntax of Apache Velocity.
+
+There are four templates that JabRef uses:
+
+- **System Message for Chatting**: This template constructs the system message (also known as the instruction) for every AI chat in JabRef (whether chatting with an entry or with a group).
+- **User Message for Chatting**: This template is also used in chats and is responsible for forming a request to AI with document embeddings. The user message created by this template is sent to AI; however, only the plain user question will be saved in the chat history.
+- **Summarization Chunk**: In cases where the chat model does not have enough context window to fit the entire document in one message, our algorithm will split the document into chunks. This template is used to summarize a single chunk of a document.
+- **Summarization Combine**: This template is used only when the document size exceeds the context window of a chat model. It combines the summarized chunks into one piece of text.
+
+You can create any template you want, but we advise starting from the default template, as it has been carefully designed and includes special syntax from Apache Velocity.
+
+### Contexts for Templates
+
+For each template, there is a context that holds all necessary variables used in the template. In this section, we will show you the available variables for each template and their structure.
+
+- **System Message for Chatting**: There is a single variable, `entries`, which is a list of BIB entries. You can use `CanonicalBibEntry.getCanonicalRepresentation(BibEntry entry)` to format the entries.
+- **User Message for Chatting**: There are two variables: `message` (the user question) and `excerpts` (pieces of information found in documents through the embeddings search). Each object in `excerpts` is of type `PaperExcerpt`, which has two fields: `citationKey` and `text`.
+- **Summarization Chunk**: There is only the `text` variable, which contains the chunk.
+- **Summarization Combine**: There is only the `chunks` variable, which contains a list of summarized chunks.
 
 ## Further literature
 
