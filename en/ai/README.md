@@ -39,6 +39,8 @@ As a result, whenever you ask AI a question, JabRef tries to find relevant piece
 
 ## More information
 
+{% page-ref page="how-to-enable-ai-features.md" %}
+
 {% page-ref page="ai-providers-and-api-keys.md" %}
 
 {% page-ref page="troubleshooting.md" %}
