@@ -151,7 +151,7 @@ You can create new fields by [editing (or creating) entry types](../setup/custom
 
 ### Good references for the BibTeX "standard"
 
-* [https://mirros.ctan.org/biblio/bibtex/contrib/doc/btxdoc.pdf](https://mirros.ctan.org/biblio/bibtex/contrib/doc/btxdoc.pdf)
+* [https://mirrors.ctan.org/biblio/bibtex/contrib/doc/btxdoc.pdf](https://mirrors.ctan.org/biblio/bibtex/contrib/doc/btxdoc.pdf)
 * [http://maverick.inria.fr/\~Xavier.Decoret/resources/xdkbibtex/bibtex\_summary.html](http://maverick.inria.fr/\~Xavier.Decoret/resources/xdkbibtex/bibtex\_summary.html)
 
 ### BibLaTeX standard
