@@ -138,13 +138,12 @@ You can create new fields by [editing (or creating) entry types](../setup/custom
 
 * [https://github.com/lvilnis/BibtexParser/tree/master/inputs](https://github.com/lvilnis/BibtexParser/tree/master/inputs)
 * [https://github.com/environmentalinformatics-marburg/jabref](https://github.com/environmentalinformatics-marburg/jabref)
-* [http://www.math.uiuc.edu/K-theory/aux/K-theory.bib](http://www.math.uiuc.edu/K-theory/aux/K-theory.bib) (large file > 6000 publications)
-* [http://mirrors.ircam.fr/pub/CTAN/biblio/bibtex/contrib/test/test.bib](http://mirrors.ircam.fr/pub/CTAN/biblio/bibtex/contrib/test/test.bib)
+* [https://mirrors.ctan.org/biblio/bibtex/contrib/test/test.bib](https://mirrors.ctan.org/biblio/bibtex/contrib/test/test.bib)
 
 ### BibLaTeX files
 
 * [http://mirrors.ctan.org/macros/latex/contrib/biblatex/bibtex/bib/biblatex/biblatex-examples.bib](http://mirrors.ctan.org/macros/latex/contrib/biblatex/bibtex/bib/biblatex/biblatex-examples.bib)
-* [http://distrib-coffee.ipsl.jussieu.fr/pub/mirrors/ctan/macros/latex/contrib/biblatex/bibtex/bib/biblatex/biblatex-examples.bib](http://distrib-coffee.ipsl.jussieu.fr/pub/mirrors/ctan/macros/latex/contrib/biblatex/bibtex/bib/biblatex/biblatex-examples.bib)
+* [http://mirrors.ctan.org/macros/latex/contrib/biblatex/bibtex/bib/biblatex/biblatex-examples.bib](http://mirrors.ctan.org/macros/latex/contrib/biblatex/bibtex/bib/biblatex/biblatex-examples.bib)
 
 ### BibTeX and BibLaTeX files in the JabRef repository
 
@@ -152,12 +151,12 @@ You can create new fields by [editing (or creating) entry types](../setup/custom
 
 ### Good references for the BibTeX "standard"
 
-* [http://texdoc.net/pkg/btxdoc](http://texdoc.net/pkg/btxdoc)
+* [https://mirros.ctan.org/biblio/bibtex/contrib/doc/btxdoc.pdf](https://mirros.ctan.org/biblio/bibtex/contrib/doc/btxdoc.pdf)
 * [http://maverick.inria.fr/\~Xavier.Decoret/resources/xdkbibtex/bibtex\_summary.html](http://maverick.inria.fr/\~Xavier.Decoret/resources/xdkbibtex/bibtex\_summary.html)
 
 ### BibLaTeX standard
 
-* [http://ftp.fau.de/ctan/macros/latex/contrib/biblatex/doc/biblatex.pdf](http://ftp.fau.de/ctan/macros/latex/contrib/biblatex/doc/biblatex.pdf)
+* [http://mirrors.ctan.org/macros/latex/contrib/biblatex/doc/biblatex.pdf](http://mirrors.ctan.org/macros/latex/contrib/biblatex/doc/biblatex.pdf)
 * [https://github.com/plk/biblatex](https://github.com/plk/biblatex)
 
 ### BibTeX parsers
