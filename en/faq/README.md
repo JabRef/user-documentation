@@ -106,7 +106,7 @@ A: Use curly braces to tell BibTeX to keep your author field as-is: `{European C
 
 ## Q: Is there a FAQ on BibTeX?
 
-A: Take a look at “Bibliographies and citations” at the [UK List of TeX Frequently Asked Questions on the Web](http://www.tex.ac.uk/). For German readers, there is the [dante e.V. FAQ](http://projekte.dante.de/DanteFAQ/LiteraturVerzeichnis).
+A: Take a look at “Bibliographies and citations” at the [UK List of TeX Frequently Asked Questions on the Web](https://texfaq.org/). For German readers, there is the [dante e.V. FAQ](https://wiki.dante.de/dantefaq/literaturverzeichnis#).
 
 ## Q: How do I export a subset of my library to BibTeX (or BibLaTeX) format?
 
