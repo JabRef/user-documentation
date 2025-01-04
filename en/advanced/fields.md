@@ -128,7 +128,7 @@ You can create new fields by [editing (or creating) entry types](../setup/custom
 
 ## Further information resources
 
-* [Tame the BeaST - The B to X of BibTxX](http://texdoc.net/texmf-dist/doc/bibtex/tamethebeast/ttb\_en.pdf) - long manual explaining the workings of BibTeX, the BibTeX format, and the available entry types with required and optional fields.
+* [Tame the BeaST - The B to X of BibTxX](http://mirrors.ctan.org/info/bibtex/tamethebeast/ttb_en.pdf) - long manual explaining the workings of BibTeX, the BibTeX format, and the available entry types with required and optional fields.
 * [BibTeX format according to Wikibook](https://en.wikibooks.org/wiki/LaTeX/Bibliography\_Management#BibTeX)
 * [BibTeX format according to Wikipedia](https://en.wikipedia.org/wiki/BibTeX#Bibliographic\_information\_file)
 * [Reference documentation about BibTeX](https://ctan.org/tex-archive/biblio/bibtex/contrib/doc) --> `btxdoc.pdf`
