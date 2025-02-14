@@ -31,6 +31,16 @@ Several special field markers are offered, which extract only a specific part of
   * One author: The first three letters of the last name
   * Two to four authors: The first letter of the last name of each author
   * More than four authors: The first letter of the first three authors' last name. A `+` is added at the end if it is not in the [list of unwanted characters](citationkeypatterns.md#removing-unwanted-characters).
+* **`[authorsAlphaLNI]`**: Follows the LNI (Lecture Notes in Informatics) template style,
+  * **Single author or "and others" case**:
+    * First two characters of the first author's last name
+    * For organizations (names in braces), returns organization initials
+  * **Multiple authors without "and others"**:
+    * Takes the first letter of each author's last name 
+    * Maximum of 4 characters total
+  * **Special cases**:
+    * Prefixes like "van", "von" are ignored when getting the last name
+    * When "and others" is present with multiple authors, reverts to using first two characters of first author
 * **`[authorLast]`**: The last name of the last author.
 * **`[authorLastForeIni]`**: The forename initial of the last author.
 
