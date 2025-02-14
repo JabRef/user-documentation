@@ -6,5 +6,4 @@ The JabRef software is under the [MIT License](https://github.com/JabRef/jabref/
 
 ## The license of the JabRef documentation
 
-The documentation of JabRef is under the [Creative Commons Attribution 4.0 International License](https://github.com/JabRef/user-documentation/blob/main/LICENSE). In short, you can make a commercial use of it, distribute it, modify it and rename it. You must give credit, include copyright, and state changes. And you cannot sublicense it.
-
+The documentation of JabRef is under the [Creative Commons Attribution 4.0 International License](../../LICENSE/). In short, you can make a commercial use of it, distribute it, modify it and rename it. You must give credit, include copyright, and state changes. And you cannot sublicense it.

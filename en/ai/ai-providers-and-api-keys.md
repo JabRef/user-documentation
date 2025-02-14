@@ -2,29 +2,34 @@
 
 ## What is an AI provider?
 
-An AI provider is a company or a service that gives you the ability to send requests to and receive responses from an LLM. In order to get the response, you also need to send an API key to authenticate and manage billing.
+An AI provider is a company or a service that gives you the ability to send requests to and receive responses from an artificial intelligence. At date of writing, the most capable AI systems are based on Large Language Model (LLM) architectures.
 
-Here is the list of AI providers we currently support: OpenAI, Mistral AI, Hugging Face. Others include Google Vertex AI, Microsoft Azure OpenAI, Anthropic, etc. You can find more information on this topic on the [`langchain4j` documentation website](https://docs.langchain4j.dev/category/language-models). This is the framework that we use in JabRef. This page lists available integrations.
+Here is the list of AI providers currently supported by JabRef:
 
-## What is an API key?
+* OpenAI
+* Mistral AI
+* Google
+* Hugging Face.
+* GPT4All
+* Ollama
 
-An API key or API token is like a password that lets an app or program access information or services from another
-app or website, such as an LLM service. It ensures that only authorized users or applications can use
-the service. For example, when an app uses an LLM service to generate text or answer questions, it includes its
-unique API key in the request. The LLM service checks this key to make sure the request is legitimate before
-providing the response. This process keeps the data secure and helps track how the service is being used.
+You can find more information about providers in the [`langchain4j` documentation](https://docs.langchain4j.dev/category/language-models/). This is the framework that we use in JabRef. This page lists available integrations. It should be noted that JabRef is compatible with any provider that itself is compatible with the OpenAI API.
 
 ## Which AI provider should I use?
 
-For now, we recommend you choosing [OpenAI](https://platform.openai.com/docs/models).
+We cannot give a clear recommendation. Providers change their service and their prices regularly and our documentation page is too static to keep up with daily changes. It is recommended to look up LLM benchmarks on the internet or to use the trial and error method. To date, remote AI providers like OpenAI, Google, Mistral and others offer state of the art quality.
 
-For Mistral AI, you might need to make a subscription, whereas for OpenAI, a one-time payment option is available
+If you want to [run a model locally](https://docs.jabref.org/ai/local-llm), choose GPT4All or Ollama. In comparison to remote AI providers, open weight local models that are compatible with average consumer devices offer less capabilities. There are state of the art local models available, but they are very large (in terms of number of parameters) and the higher the number of parameters, the more memory is needed. To run the largest models, very expensive and capable hardware (preferably VRAM in GPU's or ASICs) is required. That said, even small models can be sufficient for the [add entry using refrence text](../collect/newentryfromplaintext.md) workflow.\
+\
+Hugging Face is a special case. One the one hand, it serves as a free hosting platform from where you can download numerous models to host them yourself locally. On the other hand Huggingface also is a remote AI provider that offers running numerous large and small open weight models for you.
 
-Hugging Face gives you access to numerous count of models for free.
-However, it may take a long time for Hugging Face to allocate free computing resources, resulting in longer response times
+## Why do I need an API key?
 
-In order to use any service, you always need an API key.
-Please head to the [AI user documentation](https://docs.jabref.org/ai/ai-providers-and-api-keys) to learn about how to receive a key and where to enter it in the preferences.
+In order to use any of the (proprietary) remote services and to receive a response, you always need an API key to authenticate and manage billing. The following sections down below teach you how to receive a key and where to enter it in the preferences.
+
+## What is an API key?
+
+An API key or API token is like a password that lets an app or program access information or services from another app or website, such as an LLM service. It ensures that only authorized users or applications can use the service. For example, when an app uses an LLM service to generate text or answer questions, it includes its unique API key in the request. The LLM service checks this key to make sure the request is legitimate before providing the response. This process keeps the data secure and helps track how the service is being used.
 
 ## How to get an API key?
 
@@ -65,18 +70,14 @@ Do not share the key with anyone, it is a secret that was created only for your 
 Now you need to copy and paste it into JabRef preferences. To do this:
 
 1. Launch JabRef
-2. Go "File" -> "Preferences" -> "AI" (a new tab!)
-3. Check "Enable chatting with PDFs"
-4. Paste the key into "OpenAI token"
+2. Go "File" -> "Preferences" -> "AI"
+3. Check "Enable AI functionality"
+4. Paste the key into the "API key" field
 5. Click "Save"
 
 If you have some money on your credit balance, you can chat with your library!
 
-![AI preferences](../.gitbook/assets/AiPreferences.png)
-
-{% page-ref page="preferences.md" %}
-
-## How to increase money balance for API key?
+## How to increase the money balance for an API key?
 
 ### OpenAI
 
@@ -91,4 +92,4 @@ Make the subscription on [their website](https://console.mistral.ai/billing/subs
 
 ### Hugging Face
 
-You do not have to pay anything for Hugging Face in order to send requests to LLMs. Though, the speed is very slow by default. You can switch to faster inference by [upgrading your user account](https://huggingface.co/pricing#pro) or by [running a space on GPU](https://huggingface.co/docs/hub/spaces-gpus).
+You do not have to pay anything for Hugging Face in order to send requests to LLMs. Though, the speed is very slow by default. It may take a long time to allocate free compute resources to your instance, resulting in longer response times. You can switch to faster inference by [upgrading your user account](https://huggingface.co/pricing#pro) or by [running a space on GPU](https://huggingface.co/docs/hub/spaces-gpus).

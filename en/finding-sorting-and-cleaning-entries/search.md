@@ -2,7 +2,7 @@
 
 The search bar is located in the icon bar.
 
-![Screenshot of the search bar](<../.gitbook/assets/search-bar-v5.2.png>)
+![Screenshot of the search bar](<../.gitbook/assets/search-bar-v5.2 (6).png>)
 
 To make the cursor jump to the search field, you can:
 
@@ -25,20 +25,19 @@ To stop displaying the search results, just clear the search field, press Esc or
 
 To search for entries whose author contains **miller**, enter: `author = miller`. The `=` sign is actually a shorthand for `contains`. Searching for an exact match is possible using `matches` or `==`.
 
-If a field is not given, all fields are searched and one can mix the selection:
-`video and year == 1932` will search for entries with any field containing `video` and the field `year` being exactly `1932`.
+If a field is not given, all fields are searched and one can mix the selection: `video and year == 1932` will search for entries with any field containing `video` and the field `year` being exactly `1932`.
 
 ### Pseudo fields
 
 JabRef defines the following pseudo fields:
 
-|                  |                                      |                                                                                                                                                                                                                                                                    |
-| ---------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Pseudo field** | **Purpose**                          | **Example**                                                                                                                                                                                                                                                        |
+|                    |                                      |                                                                                                                                                                                                                                                                    |
+| ------------------ | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Pseudo field**   | **Purpose**                          | **Example**                                                                                                                                                                                                                                                        |
 | `anyfield` / `any` | Search in any field                  | `anyfield contains fruit`: search for entries having one of its fields containing the word **fruit**. This is identical to just writing `apple`. It may be more useful as `anyfield matches apple`, where one field must be exactly `apple` for a match.           |
-| `anykeyword`     | Search among the keywords            | `anykeyword matches apple`: search for entries which have the word **apple** among its keywords. However, as this also matches `pineapple`, it may be more useful in searches of the type `anykeyword matches apple`, which will not match `apples` or `pineapple` |
-| `key`            | Search for citation keys             | `citationkey == miller2005`: search for an entry whose citation key is **miller2005**                                                                                                                                                                              |
-| `entrytype`      | Search for entries of a certain type | `entrytype = thesis`: search entries whose type (as displayed in the `entrytype` column) contains the word **thesis** (which would be **phdthesis** and **mastersthesis**)                                                                                         |
+| `anykeyword`       | Search among the keywords            | `anykeyword matches apple`: search for entries which have the word **apple** among its keywords. However, as this also matches `pineapple`, it may be more useful in searches of the type `anykeyword matches apple`, which will not match `apples` or `pineapple` |
+| `key`              | Search for citation keys             | `citationkey == miller2005`: search for an entry whose citation key is **miller2005**                                                                                                                                                                              |
+| `entrytype`        | Search for entries of a certain type | `entrytype = thesis`: search entries whose type (as displayed in the `entrytype` column) contains the word **thesis** (which would be **phdthesis** and **mastersthesis**)                                                                                         |
 
 ## Search for terms containing spaces
 
@@ -74,46 +73,41 @@ This applies to all "unfielded" search terms. Meaning: All search terms not spec
 This has changed with JabRef v6
 {% endhint %}
 
-JabRef offers operators for the fielded search.
-The general idea is to have `=` for contains search and `==` for exact matches.
-Then, the `!` can be used to force case-sensitive matching (when used at the end) and as negation, when used in front.
-Finally, the `~` sign is used to enable regular-expression-based search.
+JabRef offers operators for the fielded search. The general idea is to have `=` for contains search and `==` for exact matches. Then, the `!` can be used to force case-sensitive matching (when used at the end) and as negation, when used in front. Finally, the `~` sign is used to enable regular-expression-based search.
 
 This leads to following operator combinations:
 
-| Operator | Explanation                            |
-|----------|----------------------------------------|
-| `=`      | Case insensitive contains              |
-| `=!`     | Case sensitive contains                |
-| `==`     | Exact match, case insensitive          |
-| `==!`    | Exact match, case sensitive            |
-| `=~`     | Regex check, case insensitive          |
-| `=~!`    | Regex check, case sensitive            |
-| `!=`     | Negated case insensitive contains      |
-| `!=!`    | Negated case sensitive contains        |
-| `!==`    | Negated exact match, case insensitive  |
-| `!==!`   | Negated exact match, case sensitive    |
-| `!=~`    | Negated regex check, case insensitive  |
-| `!=~!`   | Negated regex check, case sensitive    |
+| Operator | Explanation                           |
+| -------- | ------------------------------------- |
+| `=`      | Case insensitive contains             |
+| `=!`     | Case sensitive contains               |
+| `==`     | Exact match, case insensitive         |
+| `==!`    | Exact match, case sensitive           |
+| `=~`     | Regex check, case insensitive         |
+| `=~!`    | Regex check, case sensitive           |
+| `!=`     | Negated case insensitive contains     |
+| `!=!`    | Negated case sensitive contains       |
+| `!==`    | Negated exact match, case insensitive |
+| `!==!`   | Negated exact match, case sensitive   |
+| `!=~`    | Negated regex check, case insensitive |
+| `!=~!`   | Negated regex check, case sensitive   |
 
-Remember, the regex option has no effect on "field = value" expressions.
-To use regex with field names, the expression must have the form "field =~ value", which will apply the regular expression regardless of the ".*" regex option.
-To put it another way, using `field = myterm` explicitly disables regex while `field =~ myterm` explicitly enables it, _on this term only without affecting the rest of the search._ Note that the "abc" case-sensitive option follows the same principle.
+Remember, the regex option has no effect on "field = value" expressions. To use regex with field names, the expression must have the form "field =\~ value", which will apply the regular expression regardless of the ".\*" regex option. To put it another way, using `field = myterm` explicitly disables regex while `field =~ myterm` explicitly enables it, _on this term only without affecting the rest of the search._ Note that the "abc" case-sensitive option follows the same principle.
 
 The idea makes sense, because it allows regex and non-regex terms to coexist in the same search.
 
- However, in practice this is totally unintuitive and not worth the trade-off. My suggestion for the maintainers is to keep "field =~ value" explicit (always apply regex syntax for this term) and make "field = value" apply standard or regex syntax, depending on the regex button/checkmark. In other words, `=` and `=~` should be treated as equivalent when the regex option is enabled.
+However, in practice this is totally unintuitive and not worth the trade-off. My suggestion for the maintainers is to keep "field =\~ value" explicit (always apply regex syntax for this term) and make "field = value" apply standard or regex syntax, depending on the regex button/checkmark. In other words, `=` and `=~` should be treated as equivalent when the regex option is enabled.
 
 Personally, I keep regex enabled all the time, so adding escape characters as needed has become second nature.
 
 This is how the search currently works in the development version.
 
-| Terms | Regex | Term 1 | Term 2 |
-|--------|--------|---------|---------|
-| `title =~ pa*ediatric AND 1.0` | Off | Matches "paediatric", "pediatric" | Matches "1.0" |
-| `title =~ pa*ediatric AND 1.0` | On |Matches "paediatric", "pediatric" | Matches "1.0", "1+0" "1/0", "1q0", ...  |
-| `title = pa*ediatric AND 1.0` | Off | No match. Regex is disabled | "1.0" |
-| `title = pa*ediatric AND 1.0` | On | No match.  Regex is disabled for this term |Matches "1.0", "1+0" "1/0", "1q0", ...  |
+| Terms                          | Regex | Term 1                                    | Term 2                                 |
+| ------------------------------ | ----- | ----------------------------------------- | -------------------------------------- |
+| `title =~ pa*ediatric AND 1.0` | Off   | Matches "paediatric", "pediatric"         | Matches "1.0"                          |
+| `title =~ pa*ediatric AND 1.0` | On    | Matches "paediatric", "pediatric"         | Matches "1.0", "1+0" "1/0", "1q0", ... |
+| `title = pa*ediatric AND 1.0`  | Off   | No match. Regex is disabled               | "1.0"                                  |
+| `title = pa*ediatric AND 1.0`  | On    | No match. Regex is disabled for this term | Matches "1.0", "1+0" "1/0", "1q0", ... |
 
 ## Search using regular expressions <a href="#regular-expressions" id="regular-expressions"></a>
 

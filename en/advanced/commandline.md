@@ -112,7 +112,7 @@ _Note:_ The `-o` option can be specified only once, and for one file only.
 
 #### Xmp export option
 
-[XMP](https://en.wikipedia.org/wiki/Extensible\_Metadata\_Platform) is an ISO standard for the creation, processing and interchange of standardized and custom metadata for digital documents and data sets.
+[XMP](https://en.wikipedia.org/wiki/Extensible_Metadata_Platform) is an ISO standard for the creation, processing and interchange of standardized and custom metadata for digital documents and data sets.
 
 The first option is to export all entries, which are included in the `entries.bib` file to the specified `export.xmp` file. The second argument, separated by comma, is the type of exporter used by JabRef.
 
@@ -238,4 +238,4 @@ As developer, you pass arguments to the app using gradle's `--app` switch. Enclo
 
 You can then view the event log in JabRef as follows:
 
-<figure><img src="../.gitbook/assets/dev-log.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/dev-log (2).png" alt=""><figcaption></figcaption></figure>
