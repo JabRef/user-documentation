@@ -4,17 +4,17 @@
 
 ## General settings
 
-- "Enable AI functionality in JabRef": by default it is turned off, so you need to check this option if you want to use the new AI features
-- "Automatically generate embeddings for new entries": when this check box is switched on, for every new entry in the library, JabRef will automatically start an embeddings generation task. (If you do not know what are the embeddings, take a look at ["How does the AI functionality work?"](https://docs.jabref.org/ai#how-does-the-ai-functionality-work)).
-- "Automatically generate summaries for new entries": when this check box is switched on, for every new entry in the library, JabRef will automatically generate a summary.
+* "Enable AI functionality in JabRef": by default it is turned off, so you need to check this option if you want to use the new AI features
+* "Automatically generate embeddings for new entries": when this check box is switched on, for every new entry in the library, JabRef will automatically start an embeddings generation task. (If you do not know what are the embeddings, take a look at ["How does the AI functionality work?"](https://docs.jabref.org/ai#how-does-the-ai-functionality-work)).
+* "Automatically generate summaries for new entries": when this check box is switched on, for every new entry in the library, JabRef will automatically generate a summary.
 
 If you import a lot of entries at a time, we recommend you to switch off options "Automatically generate embeddings for new entries" and "Automatically generate summaries for new entries", because this may slow down your computer, and you may reach the usage limit of the AI provider.
 
 ## Connection settings
 
-- "AI provider": you can choose either OpenAI, Mistral AI, or Hugging Face
-- "Chat model": choose the model you like (for OpenAI we recommend `gpt-4o-mini`, as to date, it is the cheapest and fastest, though we also recommend to look up the prices periodically, as they are subject to change)
-- "API token": enter your API token here
+* "AI provider": you can choose between [various providers](https://docs.jabref.org/ai/ai-providers-and-api-keys#what-is-an-ai-provider).
+* "Chat model": choose the model you like.
+* "API key": enter your API key here.
 
 ## Expert settings
 
@@ -34,7 +34,7 @@ You do not have to set this parameter manually or remember all the addresses. Ja
 
 The embedding model transforms a document (or a piece of text) into a vector (an ordered collection of numbers). This transformation provides the AI with relevant information for your questions.
 
-Different embedding models have varying performance, including accuracy and the speed of computing embeddings. The `_q` at the end of the model name usually denotes *quantized* (meaning reduced or simplified). These models are faster and smaller than their original counterparts but provide slightly less accuracy.
+Different embedding models have varying performance, including accuracy and the speed of computing embeddings. The `_q` at the end of the model name usually denotes _quantized_ (meaning reduced or simplified). These models are faster and smaller than their original counterparts but provide slightly less accuracy.
 
 Currently, only local embedding models are supported. This means you do not need to provide a new API key, as all the processing will be done on your machine.
 
@@ -112,10 +112,10 @@ To use the templates, we employ the [Apache Velocity](https://velocity.apache.or
 
 There are four templates that JabRef uses:
 
-- **System Message for Chatting**: This template constructs the system message (also known as the instruction) for every AI chat in JabRef (whether chatting with an entry or with a group).
-- **User Message for Chatting**: This template is also used in chats and is responsible for forming a request to AI with document embeddings. The user message created by this template is sent to AI; however, only the plain user question will be saved in the chat history.
-- **Summarization Chunk**: In cases where the chat model does not have enough context window to fit the entire document in one message, our algorithm will split the document into chunks. This template is used to summarize a single chunk of a document.
-- **Summarization Combine**: This template is used only when the document size exceeds the context window of a chat model. It combines the summarized chunks into one piece of text.
+* **System Message for Chatting**: This template constructs the system message (also known as the instruction) for every AI chat in JabRef (whether chatting with an entry or with a group).
+* **User Message for Chatting**: This template is also used in chats and is responsible for forming a request to AI with document embeddings. The user message created by this template is sent to AI; however, only the plain user question will be saved in the chat history.
+* **Summarization Chunk**: In cases where the chat model does not have enough context window to fit the entire document in one message, our algorithm will split the document into chunks. This template is used to summarize a single chunk of a document.
+* **Summarization Combine**: This template is used only when the document size exceeds the context window of a chat model. It combines the summarized chunks into one piece of text.
 
 You can create any template you want, but we advise starting from the default template, as it has been carefully designed and includes special syntax from Apache Velocity.
 
@@ -123,16 +123,16 @@ You can create any template you want, but we advise starting from the default te
 
 For each template, there is a context that holds all necessary variables used in the template. In this section, we will show you the available variables for each template and their structure.
 
-- **System Message for Chatting**: There is a single variable, `entries`, which is a list of BIB entries. You can use `CanonicalBibEntry.getCanonicalRepresentation(BibEntry entry)` to format the entries.
-- **User Message for Chatting**: There are two variables: `message` (the user question) and `excerpts` (pieces of information found in documents through the embeddings search). Each object in `excerpts` is of type `PaperExcerpt`, which has two fields: `citationKey` and `text`.
-- **Summarization Chunk**: There is only the `text` variable, which contains the chunk.
-- **Summarization Combine**: There is only the `chunks` variable, which contains a list of summarized chunks.
+* **System Message for Chatting**: There is a single variable, `entries`, which is a list of BIB entries. You can use `CanonicalBibEntry.getCanonicalRepresentation(BibEntry entry)` to format the entries.
+* **User Message for Chatting**: There are two variables: `message` (the user question) and `excerpts` (pieces of information found in documents through the embeddings search). Each object in `excerpts` is of type `PaperExcerpt`, which has two fields: `citationKey` and `text`.
+* **Summarization Chunk**: There is only the `text` variable, which contains the chunk.
+* **Summarization Combine**: There is only the `chunks` variable, which contains a list of summarized chunks.
 
 ## Further literature
 
-- [Visual representation of samplers (Temperature, Top-P, Min-P, ...) by Artefact2](https://artefact2.github.io/llm-sampling/index.xhtml)
-- [What is a Context Window?](https://www.techtarget.com/whatis/definition/context-window)
-- [Is temperature the creativity of Large Language Models?](https://arxiv.org/abs/2405.00492)
-- [The Effect of Sampling Temperature on Problem Solving in Large Language Models](https://arxiv.org/abs/2402.05201)
-- [Min P Sampling: Balancing Creativity and Coherence at High Temperature](https://arxiv.org/abs/2407.01082)
-- [Challenges in Deploying Long-Context Transformers: A Theoretical Peak Performance Analysis](https://arxiv.org/abs/2405.08944)
+* [Visual representation of samplers (Temperature, Top-P, Min-P, ...) by Artefact2](https://artefact2.github.io/llm-sampling/index.xhtml)
+* [What is a Context Window?](https://www.techtarget.com/whatis/definition/context-window)
+* [Is temperature the creativity of Large Language Models?](https://arxiv.org/abs/2405.00492)
+* [The Effect of Sampling Temperature on Problem Solving in Large Language Models](https://arxiv.org/abs/2402.05201)
+* [Min P Sampling: Balancing Creativity and Coherence at High Temperature](https://arxiv.org/abs/2407.01082)
+* [Challenges in Deploying Long-Context Transformers: A Theoretical Peak Performance Analysis](https://arxiv.org/abs/2405.08944)

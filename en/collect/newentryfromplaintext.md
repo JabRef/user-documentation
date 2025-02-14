@@ -39,7 +39,7 @@ O. Kopp, A. Armbruster, und O. Zimmermann, "Markdown Architectural Decision Reco
 
 
 
-    <figure><picture><source srcset="../.gitbook/assets/Bild 5 - rule based result is selected in entry table - dark mode.png" media="(prefers-color-scheme: dark)"><img src="../.gitbook/assets/new-entry-from-plain-text-step-4 (1).png" alt=""></picture><figcaption></figcaption></figure>
+    <figure><picture><source srcset="../.gitbook/assets/Bild 5 - rule based result is selected in entry table - dark mode.png" media="(prefers-color-scheme: dark)"><img src="../.gitbook/assets/Bild 5 - rule based result is selected in entry table - light mode.png" alt=""></picture><figcaption></figcaption></figure>
 
 ### Parser Explanation
 
@@ -51,7 +51,7 @@ This is the default parser. It does not require any extensive setups, nor does i
 
 JabRef uses the technology offered by [Grobid](https://github.com/kermitt2/grobid), a machine learning software project with decades of experience and development dedicated to bibliographic metadata extraction. The Grobid parser usually tends to achieve better results than the rule-based parser. Since JabRef runs Grobid on a remote instance, users will have to confirm sending data to JabRef's online service in the preferences (_File > Preferences > Web search > Remote Services_). Sending data is disabled by default. It cannot be guaranteed that JabRef's Grobid instance will always be up and running, but it is possible for you to set up your [own Grobid Instance](https://grobid.readthedocs.io/en/latest/Grobid-docker/).
 
-<figure><picture><source srcset="../.gitbook/assets/Bild 6 - Grobid Preferences - dark mode.png" media="(prefers-color-scheme: dark)"><img src="../.gitbook/assets/Bild 6 - Grobid Preferences - dark mode.png" alt=""></picture><figcaption><p>Grobid related preference section in JabRef</p></figcaption></figure>
+<figure><picture><source srcset="../.gitbook/assets/Bild 6 - Grobid Preferences - dark mode.png" media="(prefers-color-scheme: dark)"><img src="../.gitbook/assets/Bild 6 - Grobid Preferences - light mode.png" alt=""></picture><figcaption><p>Grobid related preference section in JabRef</p></figcaption></figure>
 
 #### LLM
 

@@ -3,8 +3,8 @@
 Notice:
 
 1. This tutorial is intended for expert users
-2. (Local) LLMs requires a lot of computational power
-3. Smaller models (in terms of parameter size) typically respond qualitatively worse than bigger ones, but they are faster and need less memory.
+2. (Local) LLMs require a lot of computational power
+3. Smaller models (in terms of parameter size) typically respond qualitatively worse than bigger ones, but they are faster, need less memory and might already be sufficient for your use case.
 
 ## High-level explanation
 
@@ -42,5 +42,5 @@ The following steps guide you on how to use `GPT4All`to download and run local L
 3. Open JabRef, go to "File" > "Preferences" > "AI"
 4. Set the "AI provider" to "GPT4All"
 5. Set the "Chat model" to the name (including the `.gguf`part) of the model you have downloaded in GPT4All.
-6. Set the "API base URL" in "Expert Settings" to \`http://localhost:4891/v1/chat/completions\`.
+6. Set the "API base URL" in "Expert Settings" to `http://localhost:4891/v1/chat/completions`.
 
