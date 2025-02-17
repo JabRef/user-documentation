@@ -1,3 +1,5 @@
+<!-- markdownlint-disable MD033 -->
+
 # Customize the citation key generator
 
 The pattern used in the auto generation of citation labels can be set for each of the standard entry types in **File → Preferences**, tab **Citation key generator**. A detailed description can be found in the [default citation key pattern section](citationkeypatterns.md#default-citation-key-pattern).
@@ -184,9 +186,9 @@ To change the citation key patterns for a single library to `[auth][shortyear]`,
 1. Make sure the library is open and selected in the JabRef main window
 
     <img src="../.gitbook/assets/main-screen-selected-library (7).png" alt="Main screen selected library" data-size="original">
-2. From the "Library" menu, open the "Citation key pattern" setting
+2. From the "Library" menu, open "Library properties"
 
-    <img src="../.gitbook/assets/library-citation-key-patterns (3).png" alt="Library Citation key patterns" data-size="original">
-3. Set the pattern for the desired entry types, and press the apply button.
+    <img src="../.gitbook/assets/library-menu.jpeg" alt="Library Citation key patterns" data-size="original">
+3. Set the pattern for the desired entry types (keeping in mind to press enter after setting each), and press the apply button.
 
-    <img src="../.gitbook/assets/citation-key-patterns (8).png" alt="Citation key patterns" data-size="original">
+    <img src="../.gitbook/assets/library-properties-citationkey.jpeg" alt="Citation key patterns" data-size="original">
