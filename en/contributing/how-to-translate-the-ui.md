@@ -1,3 +1,5 @@
+<!-- markdownlint-disable MD033 -->
+
 # How to translate the JabRef User Interface
 
 ## Introduction
@@ -11,10 +13,10 @@ If the JabRef interface already exists in your language, you can help improve it
 We use the service of [Crowdin](https://translate.jabref.org) to keep our translations updated. It is a service directly running in the browser and one can quickly join and start translating.
 
 * Visit [https://translate.jabref.org/](https://translate.jabref.org) to get started
-*   Select your preferred language, login, and click on _JabRef\_en.properties_
+* Select your preferred language, login, and click on _JabRef\_en.properties_
 
     <img src="../.gitbook/assets/crowdin-select-file (4).png" alt="Screenshot of Crowdin select file page" data-size="original">
-*   Choose the string you want to translate in the left panel (strings to be translated are listed first)
+* Choose the string you want to translate in the left panel (strings to be translated are listed first)
 
     and enter the translation in the central panel (suggestions are given at the bottom)
 

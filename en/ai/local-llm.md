@@ -38,7 +38,7 @@ Now, you are all set and can chat "locally".
 The following steps guide you on how to use `GPT4All`to download and run local LLMs.
 
 1. Install `GPT4All`from their [website](https://www.nomic.ai/gpt4all).
-2. Open GPT4All, [download a model](https://docs.gpt4all.io/gpt4all_desktop/models.html), configure it in the[ settings](https://docs.gpt4all.io/gpt4all_desktop/settings.html) and [run it as a server](https://docs.gpt4all.io/gpt4all_api_server/home.html).
+2. Open GPT4All, [download a model](https://docs.gpt4all.io/gpt4all_desktop/models.html), configure it in the [settings](https://docs.gpt4all.io/gpt4all_desktop/settings.html) and [run it as a server](https://docs.gpt4all.io/gpt4all_api_server/home.html).
 3. Open JabRef, go to "File" > "Preferences" > "AI"
 4. Set the "AI provider" to "GPT4All"
 5. Set the "Chat model" to the name (including the `.gguf`part) of the model you have downloaded in GPT4All.
