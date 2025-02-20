@@ -4,7 +4,7 @@ JabRef can check the consistency of a library.
 
 This feature is available through **Quality → Check consistency**.
 
-![Check integrity dialog](<../.gitbook/assets/checkconsistency.png>)
+![Check consistency dialog](<../.gitbook/assets/checkconsistency.png>)
 
 ## Results Window Explained
 
