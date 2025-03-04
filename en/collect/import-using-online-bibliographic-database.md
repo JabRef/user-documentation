@@ -60,7 +60,7 @@ The [ACM Portal](https://dl.acm.org) includes two databases ([Wikipedia](https:/
 
 ### Bibliotheksverbund Bayern (BVB)
 
-The [Bibliotheksverbund Bayern (BVB)](https://bib-bvb.de) provides bibliographic information from all public libraries in Bavaria, Germany. The format used is [MarcXML](https://www.loc.gov/marc/bibliographic/), [which has been modified](https://www.bib-bvb.de/documents/10792/9f51a033-5ca1-42e2-b2d3-a75e7f1512d4), which in turn is [based on other modifications](https://www.dnb.de/marc21).
+The [Bibliotheksverbund Bayern (BVB)](https://www.bib-bvb.de) provides bibliographic information from all public libraries in Bavaria, Germany. The format used is [MarcXML](https://www.loc.gov/marc/bibliographic/), [which has been modified](https://www.bib-bvb.de/documents/10792/9f51a033-5ca1-42e2-b2d3-a75e7f1512d4), which in turn is [based on other modifications](https://www.dnb.de/marc21).
 
 ### Biodiversity Heritage Library
 
@@ -72,7 +72,11 @@ The [Bibliotheksverbund Bayern (BVB)](https://bib-bvb.de) provides bibliographic
 
 ### Collection of Computer Science Bibliographies (CCSB)
 
-The [Collection of Computer Science Bibliographies](https://liinwww.ira.uka.de/bibliography/) is a public search engine for bibliographies of scientific literature in computer science.
+{% hint style="warning" %}
+As of July 2023, CCSB ceased its operations.
+{% endhint %}
+
+The [Collection of Computer Science Bibliographies](https://en.wikipedia.org/wiki/Collection_of_Computer_Science_Bibliographies) is a public search engine for bibliographies of scientific literature in computer science.
 
 ### Crossref / Unpaywalll
 

@@ -22,7 +22,7 @@ You can import your citations into a Microsoft Word document through JabRef's ex
       f.) Copy over your citations from the masters list.
 4. Click on "Bibliography" under the "References" tab to add your cited sources.
 
-More discussion at [https://tex.stackexchange.com/a/351452/9075](https://tex.stackexchange.com/a/351452/9075). See [https://www.youtube.com/watch?v=2PpLZTol9\_o](https://www.youtube.com/watch?v=2PpLZTol9_o)
+More discussion at [https://tex.stackexchange.com/a/351452/9075](https://tex.stackexchange.com/a/351452/9075). See <https://www.youtube.com/watch?v=2PpLZTol9_o>.
 
 For a detailed list of the fields which are exported in the Office 2007 XML format see the following page.
 
