@@ -50,7 +50,7 @@ There are also scripts for working in an automated way on BibTeX files:
 * [Bibus Bibliographic Software](https://sourceforge.net/projects/bibus-biblio/)
   * Also offers integration with MS Word and LibreOffice.org
 * [calibre](https://calibre-ebook.com/) for eBooks, [Source Code](https://github.com/kovidgoyal/calibre)
-* [EndNote](https://endnote.com/product-details/basic)
+* [EndNote](https://endnote.com)
 * [Zotero](https://www.zotero.org/)
   * Recommended plugin: [Zotero: Better Bib(La)TeX (BBT)](https://github.com/ZotPlus/zotero-better-bibtex)
   * Integration with JabRef: [JabFox Firefox Addon](https://addons.mozilla.org/en-US/firefox/addon/jabref/?src=external-github)
@@ -71,5 +71,6 @@ There are also scripts for working in an automated way on BibTeX files:
 * [refbase](https://sourceforge.net/projects/refbase/)
 * [RefDB](http://refdb.sourceforge.net/)
 * [RefWorks](https://www.refworks.com/)
-* [Scientilla](https://scientilla.it/)
+* [Scientilla](https://github.com/scientilla/scientilla).
+  * As [authors said](https://github.com/scientilla/scientilla?tab=readme-ov-file#current-status), Scientilla is under development and not ready for production.
 * [WIKINDX](https://wikindx.sourceforge.io/web/trunk/index.html)

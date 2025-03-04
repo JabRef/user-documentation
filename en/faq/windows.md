@@ -8,9 +8,9 @@ Further reading: [https://github.com/JabRef/jabref/issues/415](https://github.co
 
 ## Q: How can I use JabRef as backend for Microsoft Word?
 
-You can directly use the references in Word's internal reference manager. Short explanation: Export your bibliography in XML format and replace the Sources.xml in `%APPDATA%\Roaming\Microsoft\Bibliography`. Long explanation: check out [Export to Microsoft Word](../cite/export-to-microsoft-word.md). Also, see [https://www.youtube.com/watch?v=2PpLZTol9\_o](https://www.youtube.com/watch?v=2PpLZTol9_o) for a video explaining how to add and how to cite references in a Word document.
+You can directly use the references in Word's internal reference manager. Short explanation: Export your bibliography in XML format and replace the Sources.xml in `%APPDATA%\Roaming\Microsoft\Bibliography`. Long explanation: check out [Export to Microsoft Word](../cite/export-to-microsoft-word.md). Also, see <https://www.youtube.com/watch?v=2PpLZTol9_o> for a video explaining how to add and how to cite references in a Word document.
 
-Another option is to use [Bibtex4Word](http://www.ee.ic.ac.uk/hp/staff/dmb/perl/index.html). See [https://www.youtube.com/watch?v=9j3g4wfdM00](https://www.youtube.com/watch?v=9j3g4wfdM00) for a video explaining the usage.
+Another option is to use [Bibtex4Word](http://www.ee.ic.ac.uk/hp/staff/dmb/perl/index.html). See <https://www.youtube.com/watch?v=9j3g4wfdM00> for a video explaining the usage.
 
 The last option is to use [Docear4Word](https://github.com/Docear/Docear4Word), which is planned to be ported to JabRef \(see [JabRef4Word](https://github.com/JabRef/JabRef4Word)\).
 
