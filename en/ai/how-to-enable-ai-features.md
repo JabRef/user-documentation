@@ -6,11 +6,11 @@ Thank you for checking out JabRef AI features! We believe you can find them usef
 
 As you run the latest JabRef version, you will find 2 new entry editor tabs ("AI Chat" and "AI Summary"):
 
-![New entry editor tabs](../.gitbook/assets/ai-new-entries.png)
+// ![New entry editor tabs](../.gitbook/assets/ai-new-entries.png)
 
 However, the first time you open these tabs, JabRef will ask your permission for using AI features and accepting AI Privacy Policy:
 
-![AI Privacy Policy](../.gitbook/assets/ai-privacy-policy.png)
+// ![AI Privacy Policy](../.gitbook/assets/ai-privacy-policy.png)
 
 In AI Privacy Policy you can find links to Privacy Policies of external services like OpenAI, Mistral AI, etc.
 
@@ -24,7 +24,7 @@ After clicking "I agree" button, there is only one crucial step left for using A
 
 After you got your API key, you need to enter it in JabRef preferences. Open Preferences using menu `File -> Preferences`. Locate tab `AI`:
 
-![AI preferences](../.gitbook/assets/ai-preferences-connection.png)
+// ![AI preferences](../.gitbook/assets/ai-preferences-connection.png)
 
 Choose the AI provider you have the API key from and enter the API key (in this order, because JabRef stores several API keys tied to specific AI provider). Additionally you can choose chat model of the AI provider.[AI providers and API keys](ai-providers-and-api-keys.md) page to understand what is an AI provider and how to get an API key.
 
