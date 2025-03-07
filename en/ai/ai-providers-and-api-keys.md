@@ -37,7 +37,7 @@ An API key or API token is like a password that lets an app or program access in
 
 To get an OpenAI API key, follow these steps:
 
-1. Log in or create an account on the [OpenAI website](https://platform.openai.com/login?launch)
+1. Log in or create an account on the [OpenAI website](https://auth.openai.com/log-in)
 2. Go to the "API" section
 3. Go to the "Dashboard" (upper-right corner)
 4. Go to the "API keys" (left menu)
@@ -58,7 +58,7 @@ To get an OpenAI API key, follow these steps:
 Hugging Face refers to an "API key" as an "Access Token". It does not make much difference, you can interchangeably use either "API key", or "API token", or "access token".
 
 1. [Login](https://huggingface.co/login) or [create account](https://huggingface.co/join) on Hugging Face
-2. Go to [create access token](https://huggingface.co/settings/tokens/new?)
+2. Go to [create access token](https://huggingface.co/settings/tokens/new)
 3. Set "Token Type" to "Read"
 4. Name a token
 5. After you click "Create token", a popup will be shown with the API key
@@ -88,7 +88,7 @@ To increase your credit balance on OpenAI, follow these steps:
 
 ### Mistral AI
 
-Make the subscription on [their website](https://console.mistral.ai/billing/subscribe/).
+Make the subscription on [their website](https://admin.mistral.ai/organization/billing).
 
 ### Hugging Face
 

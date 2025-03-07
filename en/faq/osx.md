@@ -20,7 +20,7 @@ A: This is a problem some users experience in JabRef 4.0 or later on MacOS Sierr
 
 ## Q: Some characters are not displayed in the main table \(math characters or some upper-cased letter\)
 
-A: This might be a problem related to the font you are using. You can download some other font that supports mathematical alphanumeric symbols, for example, FreeSerif or Cambria Math. A list of fonts supporting Math Unicode blocks is available at [http://www.fileformat.info/info/unicode/block/mathematical\_alphanumeric\_symbols/fontsupport.htm](http://www.fileformat.info/info/unicode/block/mathematical_alphanumeric_symbols/fontsupport.htm).
+A: This might be a problem related to the font you are using. You can download some other font that supports mathematical alphanumeric symbols, for example, FreeSerif or Cambria Math. A list of fonts supporting Math Unicode blocks is available at <http://www.fileformat.info/info/unicode/block/mathematical_alphanumeric_symbols/fontsupport.htm>.
 
 ## Q: Where can I find JabRef's log files?
 

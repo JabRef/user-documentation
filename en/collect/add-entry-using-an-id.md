@@ -42,7 +42,7 @@ ID search is carried out using the [International Standard Book Number](https://
 
 ### DiVA
 
-[DiVA (Digitala Vetenskapliga Arkivet)](https://info.diva-portal.org/about-diva/) is a database with publications from about [40](https://www.diva-portal.org/smash/aboutdiva.jsf) Swedish universities and research institutions.
+[DiVA (Digitala Vetenskapliga Arkivet)](https://www.info.diva-portal.org/w/diva/om-diva/) is a database with publications from about [40](https://www.diva-portal.org/smash/aboutdiva.jsf?dswid=-7604).
 
 ID search is carried out using the DiVA id (diva2).
 
@@ -82,7 +82,7 @@ ID search is carried out using the MR number.
 
 [Medline/Pubmed](https://www.nlm.nih.gov/bsd/medline.html) is a bibliographic database of life sciences and biomedical information. It includes bibliographic information for articles from academic journals covering medicine, nursing, pharmacy, dentistry, veterinary medicine, and health care. Medline also covers much of the literature in biology and biochemistry, as well as fields such as molecular evolution ([Wikipedia](https://en.wikipedia.org/wiki/MEDLINE)).
 
-ID search is carried out using the [PubMed Unique Identifier](https://www.nlm.nih.gov/bsd/mms/medlineelements.html#pmid) (PMID).
+ID search is carried out using the PubMed Unique Identifier (PMID).
 
 [Screenshot of new entry dialog](https://github.com/JabRef/user-documentation/tree/4fe3bfdabd1204001f27cb7b138818d58c0ea1d0/en/.gitbook/assets/newentrychoosetype-idgeneratorhighlighted-medline.png)
 
