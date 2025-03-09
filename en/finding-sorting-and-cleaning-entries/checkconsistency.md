@@ -58,11 +58,3 @@ The following symbols will be used to indicate the presence or absence of fields
 - `-`: Field is absent.
 
 This simple system helps you quickly identify entries that need attention.
-
-## Call for Feedback
-
-This new feature is expected to make it much easier for users to ensure their BibTeX entries are properly formatted and consistent. We encourage you to try it out and let us know your thoughts.  
-
-In case you encounter any issues or have any suggestions for improvement, please report them by [raising an issue](https://github.com/JabRef/jabref/issues).  
-
-Looking forward to your feedback!
