@@ -19,18 +19,18 @@ Let’s say we have a .bib file like this:
 
 ```bibtex
 @Article{Corti_2009,
-  author  = {Corti, Roberto and Flammer, Andreas J. and Hollenberg, Norman K. and Lüscher, Thomas F.},
-  title   = {Cocoa and Cardiovascular Health},
+  author       = {Corti, Roberto and Flammer, Andreas J. and Hollenberg, Norman K. and Lüscher, Thomas F.},
+  title        = {Cocoa and Cardiovascular Health},
   journaltitle = {Circulation}, 
-  issn    = {1475-2662}, 
-  volume  = {119}
+  issn         = {1475-2662}, 
+  volume       = {119}
 }
 
 @Article{Cooper_2007,
-  author  = {Cooper, Karen A. and Donovan, Jennifer L. and Waterhouse, Andrew L. and Williamson, Gary},
-  title   = {Cocoa and health: a decade of research},
-  issn    = {1743-7075},
-  volume  = {99}
+  author       = {Cooper, Karen A. and Donovan, Jennifer L. and Waterhouse, Andrew L. and Williamson, Gary},
+  title        = {Cocoa and health: a decade of research},
+  issn         = {1743-7075},
+  volume       = {99}
 }
 ```
 
