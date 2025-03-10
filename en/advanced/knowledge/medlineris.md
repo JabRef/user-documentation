@@ -1,6 +1,6 @@
 # Comparison of the Medline \(txt\), Medline \(xml\), and RIS format
 
-The Medline \(txt\) format can be used by a simple text document. Here, you have to write the field names at the beginning of each line. The Medline \(xml\) format is a XML document. The field name has to be written between `<` and `>`. For further information visit [https://www.nlm.nih.gov/bsd/licensee/elements\_descriptions.html](https://www.nlm.nih.gov/bsd/licensee/elements_descriptions.html). Medline \(txt\) and Medline \(xml\) always take the type "article". RIS works similar to Medline \(txt\) with the difference that different fields are supported and the file extension is "ris".
+The Medline \(txt\) format can be used by a simple text document. Here, you have to write the field names at the beginning of each line. The Medline \(xml\) format is a XML document. The field name has to be written between `<` and `>`. For further information visit <https://www.nlm.nih.gov/bsd/licensee/elements_descriptions.html>. Medline \(txt\) and Medline \(xml\) always take the type "article". RIS works similar to Medline \(txt\) with the difference that different fields are supported and the file extension is "ris".
 
 In other sources, you might encounter "MedlinePlain" as a synonym for "Medline \(txt\)" and "Medline" as a synonym for "Medline \(XML\)".
 

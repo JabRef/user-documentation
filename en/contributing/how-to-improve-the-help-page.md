@@ -77,7 +77,7 @@ TEMPORARY NOTE: until [issue #533](https://github.com/JabRef/user-documentation/
 
 ### Tables
 
-The best way to enter tables is to use this [Table Generator](http://www.tablesgenerator.com/markdown_tables) for Markdown. It has the nice feature to generate markdown tables from different sources, e.g. you can directly copy the table from a spreadsheet or upload a csv file. Just copy and paste the generated markdown into the documentation.
+The best way to enter tables is to use this [Table Generator](https://www.tablesgenerator.com/markdown_tables) for Markdown. It has the nice feature to generate markdown tables from different sources, e.g. you can directly copy the table from a spreadsheet or upload a csv file. Just copy and paste the generated markdown into the documentation.
 
 ### How to regenerate `SUMMARY.md` from scratch
 
