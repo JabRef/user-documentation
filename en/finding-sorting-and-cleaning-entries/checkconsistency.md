@@ -7,7 +7,7 @@ This feature is available through **Quality → Check consistency**.
 ## How to use
 
 1. Open JabRef and go to the Quality menu.
-2. Click on Check Consistency (below Check Integrity).
+2. Click on "Check Consistency" (below "Check Integrity").
 3. JabRef will run the check on your entire library and show the results in a new window.
 4. The result window will display entries grouped by their entry type (e.g., articles, books).
 5. Each entry will be shown in a table with columns indicating whether required fields are present (x), optional fields are present (o), or if a field is missing (-).
