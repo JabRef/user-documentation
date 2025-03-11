@@ -4,6 +4,12 @@ JabRef can check the consistency of a library.
 
 This feature is available through **Quality → Check consistency**.
 
+## Background
+
+You’re finalizing your research paper for an upcoming conference, and the deadline is near. While reviewing your references, you notice inconsistencies - some citations are missing DOIs others are missing page numbers. Manually identifying these across dozens of entries is tedious and time-consuming.
+
+JabRef now makes this process effortless with its Bibliography Consistency Check feature. It automatically scans your references, identifies missing or inconsistent fields, and presents a structured report, allowing you to fix issues with just a few clicks.
+
 ## How to use
 
 1. Open JabRef and go to the Quality menu.
@@ -44,8 +50,9 @@ Here, the second entry is missing the journal field, which is required for an ar
 
 The result window is designed to present the consistency check results in an easily digestible format:
 
-- **EntryType Headings**: The first column lists the name of the selected entry type.
+- **Entry Type Headings**: The first column lists the name of the selected entry type.
 - **Choose Entry type**: Entry types (such as article, book, in-proceedings, etc.) will be listed in a dropdown menu.
+- **Columns**:
   - **Column 2**: Citation key of the entry.
   - **Other columns**: Represent the fields and their status (`x`, `o`, `?`, or `-`).
 - **Navigation**: Clicking on a line in the table will take you directly to the corresponding entry in the editor, making it easy to address inconsistencies.
