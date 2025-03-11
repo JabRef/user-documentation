@@ -38,7 +38,7 @@ Here, the second entry is missing the journal field, which is required for an ar
 
 ![Consistency check results](<../.gitbook/assets/consistencycheck_results.png>)
 
-## Results Window Explained
+## Results Window
 
 ![Check consistency dialog](<../.gitbook/assets/checkconsistency.png>)
 
