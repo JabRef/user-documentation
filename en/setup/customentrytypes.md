@@ -6,7 +6,7 @@ When customizing an entry type, you both define how its entry editor should look
 
 ## Using the entry customization dialog
 
-![Screenshot of the entry customization dialog](<../.gitbook/assets/jabrefcustomentrytypes (6).png>)
+![Screenshot of the entry customization dialog](<../.gitbook/assets/jabrefcustomentrytypes.png>)
 
 The entry customization interface is divided into two areas. On the left side all entry types (including any custom types) are listed. If you select a type from the left side, the right area shows all fields for the selected entry.
 

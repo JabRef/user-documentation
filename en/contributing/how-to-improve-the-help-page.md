@@ -16,7 +16,7 @@ At the top of each help page, you can find the GitHub icon with "Edit on GitHub"
 
 This leads you to the GitHub page associated with the help page:
 
-![](<../.gitbook/assets/screenshot-edit-pencil (5).png>)
+![](<../.gitbook/assets/screenshot-edit-pencil.png>)
 
 To actually edit the page, click on the pencil icon, as highlighted above.
 
@@ -24,25 +24,25 @@ To actually edit the page, click on the pencil icon, as highlighted above.
 
 The window to edit the page at GitHub looks like this:
 
-![Edit view at GitHub](<../.gitbook/assets/screenshot-edit-page (4).png>)
+![Edit view at GitHub](<../.gitbook/assets/screenshot-edit-page.png>)
 
 Most text can be simply added/edited in this field as plain text. However, you can style your contribution by using [markdown](https://daringfireball.net/projects/markdown/). Markdown is a rather easy way to format text without the need for complex markup, such as with HTML. You can find an introduction to markdown [here](https://daringfireball.net/projects/markdown/) or [here](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
 In order to review your changes, click on the "Preview changes" tab:
 
-![Edit view at GitHub](<../.gitbook/assets/screenshot-edit-preview (5).png>)
+![Edit view at GitHub](<../.gitbook/assets/screenshot-edit-preview.png>)
 
 ### 3. Saving the changes
 
 To save the changes, create a so-called "Commit" by scrolling down and pressing the "Propose File Change" button:
 
-![Save changes](<../.gitbook/assets/screenshot-edit-commit (4).png>)
+![Save changes](<../.gitbook/assets/screenshot-edit-commit.png>)
 
 _Please note: The message you provide here will be visible in the history of the help page, so please consider your change and provide a meaningful description of your changes._
 
 As the last step, submit the changes you have made back to the JabRef team:
 
-![Create Pull Request](<../.gitbook/assets/screenshot-edit-pullrequest (5).png>)
+![Create Pull Request](<../.gitbook/assets/screenshot-edit-pullrequest.png>)
 
 Just press the "Create Pull Request" button, and confirm the creation of the request on the next page.
 
@@ -93,3 +93,5 @@ In case GitBook was fixed, with some command line magic, this could be solved:
 2. Repeat for `gif` instead of `png`.
 3. Create a script doing the renaming in all `.md` files: `fd -e md -x bash -c "echo sed -i '\"s/assets\/\([^%]*\)\(.*\).png/assets\/\\1.png/\"' {}" > fix-mds.sh`. Execute in the root repository. You can also do manually in VSCode using `( \(\d\))+.png` as RegEx.
 4. Repeat for `gif` instead of `png`.
+
+On Ubuntu, use `fdfind` (and install it using `sudo apt install fd-find`).

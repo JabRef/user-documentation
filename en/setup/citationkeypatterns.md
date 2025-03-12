@@ -129,17 +129,17 @@ Formatters are primarily used as [save actions](../finding-sorting-and-cleaning-
 
 ## Regular Expressions (RegEx)
 
-Regular expressions (or RegEx for short) match patterns within a string. In other words, they are a way to search for (or replace) text within a closed off sequence of characters. They can enhance citation key patterns by altering [modifiers](citationkeypatterns.md#modifiers) even further (e.g. via **`:regex("pattern", "replacement")`**). Another use case for them is to [replace existing key patterns](citationkeypatterns.md#replace-regular-expression).
+Regular expressions (or RegEx for short) match patterns within a string. In other words, they are a way to search for (or replace) text within a closed off sequence of characters. They can enhance citation key patterns by altering [modifiers](citationkeypatterns.md#modifiers) even further (e.g. via **`:regex("pattern", "replacement")`**). Another use case for them is to [replace existing key patterns](citationkeypatterns.md#replace-via-regular-expression).
 
-Documentation and examples for RegEx syntax can be found [in the Java documentation](https://docs.oracle.com/javase/9/docs/api/java/util/regex/Pattern.html) and [in the Jabref documentation](../finding-sorting-and-cleaning-entries/search.md#advanced).
+Documentation and examples for RegEx syntax can be found [in the Java documentation](https://docs.oracle.com/javase/9/docs/api/java/util/regex/Pattern.html) and [in the JabRef documentation](../finding-sorting-and-cleaning-entries/search.md#modifiers-for-fields).
 
-Keep in mind, Jabref uses a Java flavored regular expressions engine (there are multiple engines) and therefore treats `\` and some other special meta-characters as escape characters. If you want to include any backslash into your RegEx, you have to use `\\` instead of `\`.
+Keep in mind, JabRef uses a Java flavored regular expressions engine (there are multiple engines) and therefore treats `\` and some other special meta-characters as escape characters. If you want to include any backslash into your RegEx, you have to use `\\` instead of `\`.
 
 ## Replace via Regular Expression
 
 In addition to using regular expression replacement as [modifiers](citationkeypatterns.md#modifiers) of the field markers within [citation key patterns](citationkeypatterns.md#citation-key-patterns), regular expression matching and replacement can be done after the key patterns have been applied. In this case, the regular expression and replacement string are entered in the separate text fields above the [citation key patterns](citationkeypatterns.md#citation-key-patterns) section. If the replacement string is empty, then matches of the regular expression will be removed from the generated key.
 
-![Citation key generator preferences - regex replacement](<../.gitbook/assets/preferences-citation-key-generator-regex-replacement (7).png>)
+![Citation key generator preferences - regex replacement](<../.gitbook/assets/preferences-citation-key-generator-regex-replacement.png>)
 
 The regex `(?<=.{12}+).+` with an empty replacement string will cut the length of all citation keys to 12.
 
@@ -147,7 +147,7 @@ The regex `(?<=.{12}+).+` with an empty replacement string will cut the length o
 
 The citation key generator preferences contain an option for removing unwanted characters. Add or remove characters to the right of "Remove the following characters:" to control which characters are included in the citation keys.
 
-![Citation key generator preferences - unwanted characters](<../.gitbook/assets/preferences-citation-key-generator-remove-characters (7).png>)
+![Citation key generator preferences - unwanted characters](<../.gitbook/assets/preferences-citation-key-generator-remove-characters.png>)
 
 Since JabRef 6.0, the default unwanted characters are `?`, `!`, `;`, `^`, `ʹ`, and backtick (\`). If you also want to have `-` be removed (e.g., "Al-Ketan, 2019" should be "AlK19" instead of "Al-19" when using `[auth3][shortyear]`, add `-` to this list.
 
@@ -169,13 +169,13 @@ To change the citation key pattern to `[authors][camel]` for all libraries witho
 
 1. Open the preferences
 
-    <img src="../.gitbook/assets/optionspreferences%20(10).png" alt="File → Preferences" data-size="original">
+    <img src="../.gitbook/assets/optionspreferences.png" alt="File → Preferences" data-size="original">
 2. Navigate to "Citation key generator"
 
-    <img src="../.gitbook/assets/preferences-citation-key-generator (2).png" alt="Citation key generator preferences" data-size="original">
+    <img src="../.gitbook/assets/preferences-citation-key-generator.png" alt="Citation key generator preferences" data-size="original">
 3. Change the default pattern to `[authors][camel]`
 
-    <img src="../.gitbook/assets/preferences-citation-key-generator-authors-camel (8).png" alt="Citation key generator preferences - authors camel" data-size="original">
+    <img src="../.gitbook/assets/preferences-citation-key-generator-authors-camel.png" alt="Citation key generator preferences - authors camel" data-size="original">
 4. Press "Enter" (forgetting to do this is a leading cause of puzzlement)
 5. Click "Save"
 
@@ -185,7 +185,7 @@ To change the citation key patterns for a single library to `[auth][shortyear]`,
 
 1. Make sure the library is open and selected in the JabRef main window
 
-    <img src="../.gitbook/assets/main-screen-selected-library (7).png" alt="Main screen selected library" data-size="original">
+    <img src="../.gitbook/assets/main-screen-selected-library.png" alt="Main screen selected library" data-size="original">
 2. From the "Library" menu, open "Library properties"
 
     <img src="../.gitbook/assets/library-menu.jpeg" alt="Library Citation key patterns" data-size="original">

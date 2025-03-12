@@ -2,7 +2,7 @@
 
 The search bar is located in the icon bar.
 
-![Screenshot of the search bar](<../.gitbook/assets/search-bar-v5.2 (6).png>)
+![Screenshot of the search bar](<../.gitbook/assets/search-bar-v5.2.png>)
 
 To make the cursor jump to the search field, you can:
 
@@ -61,7 +61,7 @@ To search for entries with the title _or_ the keyword "image processing", type: 
 At the right of the search text field, two buttons allow for selecting some settings:
 
 * Regular expressions
-  * Whether the search query uses [regular expressions](search.md#regular-expressions).
+  * Whether the search query uses regular expressions.
 * Case sensitivity
   * Whether the search query is case-sensitive.
 
@@ -109,9 +109,9 @@ This is how the search currently works in the development version.
 | `title = pa*ediatric AND 1.0`  | Off   | No match. Regex is disabled               | "1.0"                                  |
 | `title = pa*ediatric AND 1.0`  | On    | No match. Regex is disabled for this term | Matches "1.0", "1+0" "1/0", "1q0", ... |
 
-## Search using regular expressions <a href="#regular-expressions" id="regular-expressions"></a>
+## Search using regular expressions <a id="regular-expressions"></a>
 
-In order to only search for content within specific fields and/or to include logical operators in the search expression, a special syntax is available in which these can be specified. Both the field specification and the search term support [regular expressions](search.md#regular-expressions).
+In order to only search for content within specific fields and/or to include logical operators in the search expression, a special syntax is available in which these can be specified. Both the field specification and the search term support regular expressions.
 
 Regular expressions (RegEx for short) define a language for representing patterns matching text, for example when searching. There are different types of RegEx languages. JabRef uses regular expressions as defined in Java. For extensive advanced information about Java's RegEx patterns, please have a look at the [Java documentation](https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/regex/Pattern.html) and at the [Java tutorial](https://docs.oracle.com/javase/tutorial/essential/regex/).
 

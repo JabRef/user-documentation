@@ -22,15 +22,15 @@ While Chrome extensions can work in Edge \(and will install\), JabRef is configu
 
 ## Usage
 
-After the installation, you should be able to import bibliographic references into JabRef directly from your browser. Just visit a publisher site or some other website containing bibliographic information \(for example, [the arXiv](http://arxiv.org/list/gr-qc/pastweek?skip=0&show=25)\) and click the JabRef symbol in the Firefox search bar \(or press Alt+Shift+J\). Once the JabRef browser extension has extracted the references and downloaded the associated PDF's, the import window of JabRef opens.
+After the installation, you should be able to import bibliographic references into JabRef directly from your browser. Just visit a publisher site or some other website containing bibliographic information \(for example, [the arXiv](https://arxiv.org/list/gr-qc/pastweek?skip=0&show=25)\) and click the JabRef symbol in the Firefox search bar \(or press Alt+Shift+J\). Once the JabRef browser extension has extracted the references and downloaded the associated PDF's, the import window of JabRef opens.
 
 You might want to configure JabRef so that new entries are always imported in an already opened instance of JabRef. For this, activate "Listen to remote operation on port" under the "Network" tab of the JabRef Preferences.
 
 ## Troubleshooting
 
-### In case you have Adblock Plus extension and Jabref extension doesn't work
+### In case you have Adblock Plus extension and JabRef extension doesn't work
 
-1\) Go to [zotero.org](https://zotero.org). 2\) Deactivate AdBlock plus extension for the whole domain \(zotero.org\) by clicking on the Adblock plus extension button and sliding the corresponding slider to allow adds on the whole domain. 3\) Close and reopen the browser in order to reload all the extension and their settings. 4\) Verify the functioning of the Jabref extension by visiting a page you know is working to extract its bibliographic data \(for example, [the arXiv](http://arxiv.org/list/gr-qc/pastweek?skip=0&show=5)\) by pressing the extension button or Alt + Shift + J.
+1\) Go to [zotero.org](https://zotero.org). 2\) Deactivate AdBlock plus extension for the whole domain \(zotero.org\) by clicking on the Adblock plus extension button and sliding the corresponding slider to allow adds on the whole domain. 3\) Close and reopen the browser in order to reload all the extension and their settings. 4\) Verify the functioning of the JabRef extension by visiting a page you know is working to extract its bibliographic data \(for example, [the arXiv](https://arxiv.org/list/gr-qc/pastweek?skip=0&show=5)\) by pressing the extension button or <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>J</kbd>.
 
 In case you encounter problems in this procedure refer to issue \#241 on GitHub for further help.
 

@@ -47,11 +47,11 @@ The word _true_ prevents the file name from being interpreted as an argument to 
 
 * [Help: `-h`](commandline.md#help--h)
 * [No-GUI mode: `-n`](commandline.md#no-gui-mode--n)
-* [Import file: `-i filename[,import format]`](commandline.md#import-file--i-filenameimport-format/README.md)
+* [Import file: `-i filename[,import format]`](commandline.md#import-file--i-filenameimport-format)
 * [Export file: `-o filename[,export format]`](commandline.md#export-file--o-filenameexport-format)
 * [Import BibTeX: `-importBibtex`](commandline.md#import-bibtex--importbibtex)
 * [Export matching entries: `-m [field]searchTerm,outputFile:file[,exportFormat]`](commandline.md#export-matching-entries--m-fieldsearchtermoutputfilefileexportformat)
-* [Write BibTexEntry as XMP metadata to PDF: `-w CITEKEY1[,CITEKEY2][,CITEKEYn] | PDF1[,PDF2][,PDFn] | all`](commandline.md#write-bibtexentry-as-xmp-metadata-to-pdf--w-citekey1citekey2citekeyn--pdf1pdf2pdfn--all)
+* Write BibTexEntry as XMP metadata to PDF: `-w CITEKEY1[,CITEKEY2][,CITEKEYn] | PDF1[,PDF2][,PDFn] | all`
 * [Fetch entries from Web: `-f=FetcherName:QueryString`](commandline.md#fetch-entries-from-web--ffetchernamequerystring)
 * [Subdatabase from .aux file: `-a infile[.aux],outfile[.bib] base-BibTeX-file`](commandline.md#subdatabase-from-aux-file--a-infileauxoutfilebib-base-bibtex-file)
 * [Set file links: `-asfl`](commandline.md#set-file-links--asfl)
@@ -238,4 +238,4 @@ As developer, you pass arguments to the app using gradle's `--app` switch. Enclo
 
 You can then view the event log in JabRef as follows:
 
-<figure><img src="../.gitbook/assets/dev-log (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/dev-log.png" alt=""><figcaption></figcaption></figure>

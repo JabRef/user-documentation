@@ -14,9 +14,9 @@ If you drop a PDF onto an entry in the main table or the entry preview in the en
 
 ### Better filenames
 
-JabRef changes the filenames automatically. You can adapt the pattern at Preferences -> Import ![Preferences - Import](<../.gitbook/assets/preferences-import (4).png>)
+JabRef changes the filenames automatically. You can adapt the pattern at Preferences -> Import ![Preferences - Import](<../.gitbook/assets/preferences-import.png>)
 
-Select "Choose pattern" and choose "bibtexkey - title" ![Preferences - Import - Choose pattern](<../.gitbook/assets/preferences-import-choose-pattern (5).png>). This results in the setting `\bibtexkey\begin{title} - \format[RemoveBrackets]{\title}\end{title}`.
+Select "Choose pattern" and choose "bibtexkey - title" ![Preferences - Import - Choose pattern](<../.gitbook/assets/preferences-import-choose-pattern.png>). This results in the setting `\bibtexkey\begin{title} - \format[RemoveBrackets]{\title}\end{title}`.
 
 This makes the filenames start with the citation key followed by the full title. In the concrete case, `\bibtexkey` only may be the better option as the described bibtey key already contains the title.
 
@@ -35,31 +35,31 @@ JabRef offers a BibTeX key generation and offers different patterns described at
 ### Using the Wizard "Search for unlinked local files"
 
 {% hint style="warning" %}
-This information is partially outdated. Please help to improve it ([how to edit a help page](../contributing/how-to-improve-the-help-page.md#editing-help-pages-directly-in-the-browser.md)).
+This information is partially outdated. Please help to improve it ([how to edit a help page](../contributing/how-to-improve-the-help-page.md#editing-help-pages-directly-in-the-browser)).
 {% endhint %}
 
 1. Create or open a library (AKA a `.bib` file).
 2. Go to **Lookup -> Search for unlinked local files**. (or press `SHIFT + F7`)
 
-    ![FindUnlinkedFiles - Menu](<../.gitbook/assets/bildschirmfoto-2021-07-05-um-19.19.09 (1).png>) ![FindUnlinkedFiles - Menu](<../.gitbook/assets/findunlinkedfiles-menu-5.2 (6).png>)
+    ![FindUnlinkedFiles - Menu](<../.gitbook/assets/bildschirmfoto-2021-07-05-um-19.19.09.png>) ![FindUnlinkedFiles - Menu](<../.gitbook/assets/findunlinkedfiles-menu-5.2.png>)
 3. The "Search for unlinked local files" dialog opens.
 
-    <img src="../.gitbook/assets/findunlinkedfiles-window-5.2 (6).png" alt="FindUnlinkedFiles - Initial dialog" data-size="original">
+    <img src="../.gitbook/assets/findunlinkedfiles-window-5.2.png" alt="FindUnlinkedFiles - Initial dialog" data-size="original">
 4. Choose a start directory using the "Browse" button.
 5. Click on "Search" / "Scan directory".
 6. In "Select files", the files not yet contained in the library are shown.
 
-    <img src="../.gitbook/assets/findunlinkedfiles-foundfiles-5.2 (6).png" alt="FindUnlinkedFiles - Found files" data-size="original">
+    <img src="../.gitbook/assets/findunlinkedfiles-foundfiles-5.2.png" alt="FindUnlinkedFiles - Found files" data-size="original">
 7. Select the entries you are interested in. Note: the button `Export selected files` allows you to export the list of the selected files (a text file containing on each line one filename with its path)
 8. Click on `Import`.
 
     The windows close and the entry table now contains the newly-imported entries.
-9. The entry editor with the last imported entry is shown ![FindUnlinkedFiles - 08 - entry editor](<../.gitbook/assets/findunlinkedfiles-08-entry-editor (5).png>)
+9. The entry editor with the last imported entry is shown ![FindUnlinkedFiles - 08 - entry editor](<../.gitbook/assets/findunlinkedfiles-08-entry-editor.png>)
 10. You can now save the file and are finished.
-11. Optional: Click on "General" to see the linked file ![FindUnlinkedFiles - 09 - entry editor - General](<../.gitbook/assets/findunlinkedfiles-09-entry-editor-general (5).png>)
-12. Optional: Click on "BibTeX source" to see the BibTeX source ![FindUnlinkedFiles - 10 - entry editor - BibTeX source](<../.gitbook/assets/findunlinkedfiles-10-entry-editor-bibtex-source (1).png>)
-13. Optional: You have to shrink it to see the entry in the entry table, enlarge the JabRef window and use the mouse at the upper border of the entry editor ![FindUnlinkedFiles - 11 - entry editor - shrunk](<../.gitbook/assets/findunlinkedfiles-11-entry-editor-shrunk (1).png>)
-14. Optional: Press Esc to show the entry preview ![FindUnlinkedFiles - 12 - entry preview](<../.gitbook/assets/findunlinkedfiles-12-entry-preview (1).png>)
+11. Optional: Click on "General" to see the linked file ![FindUnlinkedFiles - 09 - entry editor - General](<../.gitbook/assets/findunlinkedfiles-09-entry-editor-general.png>)
+12. Optional: Click on "BibTeX source" to see the BibTeX source ![FindUnlinkedFiles - 10 - entry editor - BibTeX source](<../.gitbook/assets/findunlinkedfiles-10-entry-editor-bibtex-source.png>)
+13. Optional: You have to shrink it to see the entry in the entry table, enlarge the JabRef window and use the mouse at the upper border of the entry editor ![FindUnlinkedFiles - 11 - entry editor - shrunk](<../.gitbook/assets/findunlinkedfiles-11-entry-editor-shrunk.png>)
+14. Optional: Press Esc to show the entry preview ![FindUnlinkedFiles - 12 - entry preview](<../.gitbook/assets/findunlinkedfiles-12-entry-preview.png>)
 
 {% hint style="danger" %}
 The imported entries may need some editing because all the information gathered from the PDF files may not be accurate (see below "PDFs for which it works").
