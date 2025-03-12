@@ -149,7 +149,7 @@ Shortens lists of persons if there are more than 2 persons to \"et al.\".
 
 ## Save actions as modifiers
 
-The [field formatters listed above](saveactions.md#list-of-actions) can also be used as modifiers in [citation key patterns](../setup/citationkeypatterns.md) using their keys listed below.
+The field formatters listed above can also be used as modifiers in [citation key patterns](../setup/citationkeypatterns.md) using their keys listed below.
 
 | Save action | Key |
 | :--- | :--- |

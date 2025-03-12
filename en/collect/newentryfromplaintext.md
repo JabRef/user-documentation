@@ -26,7 +26,7 @@ O. Kopp, A. Armbruster, und O. Zimmermann, "Markdown Architectural Decision Reco
 
 3. Paste the reference text:
 
-    <div align="left"><figure><picture><source srcset="../.gitbook/assets/Bild 3 - paste text - dark mode (2).png" media="(prefers-color-scheme: dark)"><img src="../.gitbook/assets/new-entry-from-plain-text-step-3 (1).png" alt=""></picture><figcaption></figcaption></figure></div>
+    <div align="left"><figure><picture><source srcset="../.gitbook/assets/Bild 3 - paste text - dark mode.png" media="(prefers-color-scheme: dark)"><img src="../.gitbook/assets/new-entry-from-plain-text-step-3.png" alt=""></picture><figcaption></figcaption></figure></div>
 
 4. Choose a parser from the drop-down menu.
 

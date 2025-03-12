@@ -17,7 +17,7 @@ _The following features require your entry to have a DOI or ISBN and are disable
 * Option A) In the entry table, right-click on the entry to complement, and select the menu **Get bibliographic data from DOI/ISBN/...**
 * Option B) Open the [entry editor](../advanced/entryeditor/), and in the General tab, click on the button **Get bibliographic data from DOI**
 
-![](<../.gitbook/assets/getdoi-entryeditor-jabref5.2 (5).png>)
+![](<../.gitbook/assets/getdoi-entryeditor-jabref5.2.png>)
 
 Using any of the options opens the window _Merge entries_:
 
