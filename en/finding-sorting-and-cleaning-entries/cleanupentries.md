@@ -2,11 +2,11 @@
 description: Tidy up your library
 ---
 
-# Cleanup entries
+# Clean up entries
 
-JabRef can cleanup the entries of a library. To do a cleanup of the entries, go to **Quality → Cleanup entries**. Then select the actions to be carried out.
+JabRef can clean up the entries of a library. To do a clean up of the entries, go to **Quality → Clean up entries**. Then select the actions to be carried out.
 
-![The Cleanup entries dialog](<../.gitbook/assets/cleanupdialog (5).png>)
+![The Clean up entries dialog](<../.gitbook/assets/cleanupdialog.png>)
 
 under the table`Enable field formatters`. Then, under the table, you can select using 2 drop-down menus:
 
