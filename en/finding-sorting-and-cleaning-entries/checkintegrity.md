@@ -56,5 +56,5 @@ Validates the edition field to allow only numeric values or predefined words (Fi
 
 Ensures that the edition field contains only numeric values. Removes any invalid values.
 
-* `First` ⇒ ` `
-* `2nd` ⇒ ` `
+* `First` ⇒ ``
+* `2nd` ⇒ ``
