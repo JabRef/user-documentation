@@ -13,6 +13,7 @@ This feature is available through **Quality → Check integrity**.
 Ensures that uppercase letters in titles are properly enclosed in curly braces to preserve capitalization in BibTeX.
 
 * `Title Example` ⇒ `{T}itle {E}xample`
+* `Oliver Kopp and Carl Christian Snethlage and Christoph Schwentker` ⇒ `{O}liver {K}opp and {C}arl {C}hristian {S}nethlage and {C}hristoph {S}chwentker`
 
 ### Correct Date Format
 
@@ -38,6 +39,7 @@ Removes non-ASCII characters from the abstract field to ensure compatibility wit
 Sets a default citation key if it is missing.
 
 * `CROSSREF` field set to `UnknownKey`
+* `` field set to `DefaultKey`
 
 ### Capitalize First Letter
 
