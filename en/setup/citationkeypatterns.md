@@ -149,7 +149,7 @@ The citation key generator preferences contain an option for removing unwanted c
 
 ![Citation key generator preferences - unwanted characters](<../.gitbook/assets/preferences-citation-key-generator-remove-characters.png>)
 
-Since JabRef 6.0, the default unwanted characters are `?`, `!`, `;`, `^`, `ʹ`, and backtick (\`). If you also want to have `-` be removed (e.g., "Al-Ketan, 2019" should be "AlK19" instead of "Al-19" when using `[auth3][shortyear]`, add `-` to this list.
+Since JabRef 6.0, the default unwanted characters are `?`, `!`, `;`, `^`, `ʹ`, `$` and backtick (\`). If you also want to have `-` be removed (e.g., "Al-Ketan, 2019" should be "AlK19" instead of "Al-19" when using `[auth3][shortyear]`, add `-` to this list.
 
 Note that [characters not allowed in BibTeX](https://tex.stackexchange.com/a/408548/9075) are completely removed - independent of this configuraiton. These characters are `{`, `}`, `(`, `)`, `,`, `=`, `\`, `"`, `#`, `%`, `~`', and `'`.
 
