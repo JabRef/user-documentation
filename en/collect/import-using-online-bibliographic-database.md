@@ -1,10 +1,10 @@
 ---
-description: Using online databases to search for references
+description: Using online catalogs to search for references
 ---
 
 # Searching externally using Online Services
 
-JabRef is not intended to be a tool for mass download of citations. The purpose of the Web search is to easily gather a few entries directly from within JabRef. If you use the search functionality too extensively you might get blocked (for some time). To fetch entries from an online database, choose **View → Web search**, and the search interface will appear in the side panel. Select the database you want to search (e.g., arXiv) in the dropdown menu. Note that it might be necessary to scroll downwards to find certain fetchers. An example for this is provided in the image below. You may opt to download files (such as PDFs) linked to the search results by checking the **Download referenced files (PDFs, ...)** checkbox. Note that JabRef will only download files directly linked in the search results and will not attempt to find or retrieve full-text articles. Then enter the words of your query, and press Enter, or the **Search** button. The results are displayed in the [import inspection dialog](import/importinspectiondialog.md). Some online services support advanced search queries. These are described below at the respective fetcher.
+JabRef is not intended to be a tool for mass download of citations. The purpose of the Web search is to easily gather a few entries directly from within JabRef. If you use the search functionality too extensively you might get blocked (for some time). To fetch entries from an online catalog, choose **View → Web search**, and the search interface will appear in the side panel. Select the catalogs you want to search (e.g., arXiv) in the dropdown menu. Note that it might be necessary to scroll downwards to find certain fetchers. An example for this is provided in the image below. You may opt to download files (such as PDFs) linked to the search results by checking the **Download referenced files (PDFs, ...)** checkbox. Note that JabRef will only download files directly linked in the search results and will not attempt to find or retrieve full-text articles. Then enter the words of your query, and press Enter, or the **Search** button. The results are displayed in the [import inspection dialog](import/importinspectiondialog.md). Some online services support advanced search queries. These are described below at the respective fetcher.
 
 ![JabRefWebSearch](https://user-images.githubusercontent.com/6931104/199564571-2287248b-40ac-4089-9af7-9feda25744b7.png)
 
@@ -12,7 +12,7 @@ Apart from fetching entries by using a full search, it is also possible to direc
 
 ## Mass downloading of articles
 
-However, it is still possible to import hundreds or even thousands of entries from these databases. The process depends a bit on the specifics of each database, but in general works as follows: Search the database in your browser, export the result in one of the supported file formats and then [import the file into JabRef](import/).
+However, it is still possible to import hundreds or even thousands of entries from these catalogs. The process depends a bit on the specifics of each catalog, but in general works as follows: Search the catalog in your browser, export the result in one of the supported file formats and then [import the file into JabRef](import/).
 
 ## Using a Proxy Server
 
@@ -22,7 +22,7 @@ If you need to use an HTTP proxy server, you can configure JabRef to use a proxy
 
 Since version [5.2](https://github.com/JabRef/jabref/blob/main/CHANGELOG.md#52--2020-12-24):
 
-JabRef searches the databases by using the specified keywords. One can use quotes (`"`) to keep words togehter: An example is `"process mining"`. It is also possible to restrict the search to dedicated fields:
+JabRef searches the catalogs by using the specified keywords. One can use quotes (`"`) to keep words togehter: An example is `"process mining"`. It is also possible to restrict the search to dedicated fields:
 
 Thereby, JabRef supports following fields:
 
@@ -43,13 +43,13 @@ One can usually combine different searches using the Boolean operators `AND` and
 * `author:smith or author:jones`: search for references with either author "smith" or author "jones"
 * `author:smith and not title:processor`: search for author "smith" and omit references with "processor" in the title
 
-Technial note: The search syntax is adapted from [Apache Lucene](https://lucene.apache.org/core/2\_9\_4/queryparsersyntax.html). JabRef takes the Lucene syntax and transforms it to the syntax required by the supported databases.
+Technial note: The search syntax is adapted from [Apache Lucene](https://lucene.apache.org/core/2\_9\_4/queryparsersyntax.html). JabRef takes the Lucene syntax and transforms it to the syntax required by the supported catalogs.
 
-## Supported databases
+## Supported catalogs
 
 ### ACM Portal
 
-The [ACM Portal](https://dl.acm.org) includes two databases ([Wikipedia](https://en.wikipedia.org/wiki/Association\_for\_Computing\_Machinery#Portal\_and\_Digital\_Library)):
+The [ACM Portal](https://dl.acm.org) includes two catalogs ([Wikipedia](https://en.wikipedia.org/wiki/Association\_for\_Computing\_Machinery#Portal\_and\_Digital\_Library)):
 
 * the **ACM Digital Library** is a text collection of every article published by the [Association for Computing Machinery](https://www.acm.org), including over 60 years of archives from articles, magazines and conference proceedings.
 * the **Guide to Computing Literature** that is a bibliographic collection from major publishers in computing with over one million entries.
@@ -80,9 +80,9 @@ The [Collection of Computer Science Bibliographies](https://en.wikipedia.org/wik
 
 ### Crossref / Unpaywalll
 
-[Unpaywall](https://unpaywall.org) is an open database with over 20 million free scholarly articles harvested from over 50,000 journals and open-access repositories around the globe. Sources for these articles include repositories run by renowned universities, governments, and scholarly societies. Unpaywall is integrated into thousands of existing search engines, library platforms, and information products, making articles easy to find, track, and use for your scholarly communication needs.
+[Unpaywall](https://unpaywall.org) is an open catalog with over 20 million free scholarly articles harvested from over 50,000 journals and open-access repositories around the globe. Sources for these articles include repositories run by renowned universities, governments, and scholarly societies. Unpaywall is integrated into thousands of existing search engines, library platforms, and information products, making articles easy to find, track, and use for your scholarly communication needs.
 
-The Unpaywall database has a very simple structure: it has one record for each article with a Crossref DOI. It harvests from many sources to find Open Access content, and then matches this content to these DOIs using content fingerprints. So for any given DOI, we know about any OA versions that exist anywhere.
+The Unpaywall catalog has a very simple structure: it has one record for each article with a Crossref DOI. It harvests from many sources to find Open Access content, and then matches this content to these DOIs using content fingerprints. So for any given DOI, we know about any OA versions that exist anywhere.
 
 To fetch entries from Unpaywall indirectly through Crossref, choose **Search → Web search**, and the search interface will appear in the side pane. Select **Crossref** in the dropdown menu. To start a search, enter the words of your query, and press Enter or the **Fetch** button.
 
@@ -96,7 +96,7 @@ To fetch entries from Unpaywall indirectly through Crossref, choose **Search →
 
 ### DOAJ
 
-[DOAJ (Directory of Open Access Journals)](https://doaj.org) is a database covering more than 10000 open access journals covering all areas of science, technology, medicine, social science, and humanities ([Wikipedia](https://en.wikipedia.org/wiki/Directory\_of\_Open\_Access\_Journals)).
+[DOAJ (Directory of Open Access Journals)](https://doaj.org) is a catalog covering more than 10000 open access journals covering all areas of science, technology, medicine, social science, and humanities ([Wikipedia](https://en.wikipedia.org/wiki/Directory\_of\_Open\_Access\_Journals)).
 
 It is possible to limit the search by adding a field name to the search, as **field:text**. The supported fields are:
 
@@ -114,7 +114,7 @@ It is possible to limit the search by adding a field name to the search, as **fi
 Currently not working, because Google changed their API
 {% endhint %}
 
-[Google Scholar](https://scholar.google.com) is a freely accessible database that indexes the full text or metadata of scholarly literature across an array of publishing formats and disciplines. Google Scholar index includes most peer-reviewed online academic journals and books, conference papers, theses and dissertations, preprints, abstracts, technical reports, and other scholarly literature, including court opinions and patents ([Wikipedia](https://en.wikipedia.org/wiki/Google\_Scholar)).
+[Google Scholar](https://scholar.google.com) is a freely accessible catalog that indexes the full text or metadata of scholarly literature across an array of publishing formats and disciplines. Google Scholar index includes most peer-reviewed online academic journals and books, conference papers, theses and dissertations, preprints, abstracts, technical reports, and other scholarly literature, including court opinions and patents ([Wikipedia](https://en.wikipedia.org/wiki/Google\_Scholar)).
 
 #### Traffic limitations
 
@@ -124,7 +124,7 @@ Thus, the Google Scholar fetcher is not the best way to obtain lots of entries a
 
 ### GVK
 
-[GVK](https://gso.gbv.de), the GBV Union Catalogue, is a multimaterial bibliographic database of seven German federal states. It covers 41.5 million records of books, conference proceedings, periodicals, dissertations, microfilms and electronic resources.
+[GVK](https://gso.gbv.de), the GBV Union Catalogue, is a multimaterial bibliographic catalog of seven German federal states. It covers 41.5 million records of books, conference proceedings, periodicals, dissertations, microfilms and electronic resources.
 
 #### Advanced search
 
@@ -163,7 +163,7 @@ Year ranges are not supported. In case a year range is provided, it is ignored. 
 
 ### IEEEXplore
 
-[IEEEXplore](https://ieeexplore.ieee.org/Xplore/home.jsp) is a scholarly research database that indexes, abstracts, and provides full-text for articles and papers on computer science, electrical engineering and electronics. IEEEXplore comprises over 180 journals, over 1,400 conference proceedings, more than 3,800 technical standards, over 1,800 eBooks and over 400 educational courses ([Wikipedia](https://en.wikipedia.org/wiki/IEEE\_Xplore))
+[IEEEXplore](https://ieeexplore.ieee.org/Xplore/home.jsp) is a scholarly research catalog that indexes, abstracts, and provides full-text for articles and papers on computer science, electrical engineering and electronics. IEEEXplore comprises over 180 journals, over 1,400 conference proceedings, more than 3,800 technical standards, over 1,800 eBooks and over 400 educational courses ([Wikipedia](https://en.wikipedia.org/wiki/IEEE\_Xplore))
 
 ### INSPIRE
 
@@ -190,7 +190,7 @@ The following list shows some of the field indicators that can be used:
 Currently disabled because of traffic limit
 {% endhint %}
 
-[Jstor](https://jstor.org) is an online database with access to more than 12 million journal articles, books, and sources in 75 disciplines. [About](https://about.jstor.org)
+[Jstor](https://jstor.org) is an online catalog with access to more than 12 million journal articles, books, and sources in 75 disciplines. [About](https://about.jstor.org)
 
 It is possible to limit the search by adding a field name to the search, such as `field:"text"`. The supported fields are:
 
@@ -201,11 +201,11 @@ It is possible to limit the search by adding a field name to the search, such as
 
 ### MathSciNet
 
-[MathSciNet](https://www.ams.org/mathscinet/) is a searchable online bibliographic database. It contains all of the contents of the journal Mathematical Reviews (MR) since 1940 along with an extensive author database, links to other MR entries, citations, full journal entries, and links to original articles. It contains almost 3 million items and over 1.7 million links to original articles ([Wikipedia](https://en.wikipedia.org/wiki/MathSciNet)).
+[MathSciNet](https://www.ams.org/mathscinet/) is a searchable online bibliographic catalog. It contains all of the contents of the journal Mathematical Reviews (MR) since 1940 along with an extensive author catalog, links to other MR entries, citations, full journal entries, and links to original articles. It contains almost 3 million items and over 1.7 million links to original articles ([Wikipedia](https://en.wikipedia.org/wiki/MathSciNet)).
 
 ### Medline/PubMed
 
-[MEDLINE](https://www.nlm.nih.gov/bsd/pmresources.html) is a bibliographic database of life sciences and biomedical information. It includes bibliographic information for articles from academic journals covering medicine, nursing, pharmacy, dentistry, veterinary medicine, and health care. MEDLINE also covers much of the literature in biology and biochemistry, as well as fields such as molecular evolution ([Wikipedia](https://en.wikipedia.org/wiki/MEDLINE)).
+[MEDLINE](https://www.nlm.nih.gov/bsd/pmresources.html) is a bibliographic catalog of life sciences and biomedical information. It includes bibliographic information for articles from academic journals covering medicine, nursing, pharmacy, dentistry, veterinary medicine, and health care. MEDLINE also covers much of the literature in biology and biochemistry, as well as fields such as molecular evolution ([Wikipedia](https://en.wikipedia.org/wiki/MEDLINE)).
 
 The Medline syntax is completely different form the Lucene syntax. One cannot use fielded search there.
 
@@ -225,7 +225,7 @@ There are two ways of specifying which entries to download:
 
 ### SAO/NASA Astrophysics Data System
 
-[SAO/NASA Astrophysics Data System](https://www.adsabs.harvard.edu) is an online database of over eight million astronomy and physics papers from both peer-reviewed and non-peer-reviewed sources. Abstracts are available free online for almost all articles, and full scanned articles are available in Graphics Interchange Format (GIF) and Portable Document Format (PDF) for older articles ([Wikipedia](https://en.wikipedia.org/wiki/Astrophysics\_Data\_System)).
+[SAO/NASA Astrophysics Data System](https://www.adsabs.harvard.edu) is an online catalog of over eight million astronomy and physics papers from both peer-reviewed and non-peer-reviewed sources. Abstracts are available free online for almost all articles, and full scanned articles are available in Graphics Interchange Format (GIF) and Portable Document Format (PDF) for older articles ([Wikipedia](https://en.wikipedia.org/wiki/Astrophysics\_Data\_System)).
 
 ### SearchAll
 
@@ -239,11 +239,11 @@ To be detailed.
 
 ### Springer
 
-[Springer](https://www.springer.com) (aka Springer Science+Business Media) is a global publishing company that publishes books, e-books, and peer-reviewed journals in science, technical and medical publishing. Springer also hosts a number of scientific databases, including SpringerLink, Springer Protocols, and SpringerImages ([Wikipedia](https://en.wikipedia.org/wiki/Springer\_Science%2BBusiness\_Media)).
+[Springer](https://www.springer.com) (aka Springer Science+Business Media) is a global publishing company that publishes books, e-books, and peer-reviewed journals in science, technical and medical publishing. Springer also hosts a number of scientific catalogs, including SpringerLink, Springer Protocols, and SpringerImages ([Wikipedia](https://en.wikipedia.org/wiki/Springer\_Science%2BBusiness\_Media)).
 
 ### zbMATH Open
 
-[zbMATH Open](https://zbmath.org) is an abstracting and reviewing service in pure and applied mathematics. Its database contains about 4 million bibliographic entries with reviews or abstracts currently drawn from about 3,000 journals and book series, and 180,000 books. The coverage starts in the 18th century and is complete from 1868 to the present by the integration of the "Jahrbuch über die Fortschritte der Mathematik" database ([about](https://zbmath.org/about/)).
+[zbMATH Open](https://zbmath.org) is an abstracting and reviewing service in pure and applied mathematics. Its catalog contains about 4 million bibliographic entries with reviews or abstracts currently drawn from about 3,000 journals and book series, and 180,000 books. The coverage starts in the 18th century and is complete from 1868 to the present by the integration of the "Jahrbuch über die Fortschritte der Mathematik" catalog ([about](https://zbmath.org/about/)).
 
 #### Structured Search
 
