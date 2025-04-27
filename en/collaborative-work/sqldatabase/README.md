@@ -6,7 +6,7 @@ description: JabRef is able to support collaborative work using a shared SQL dat
 
 ## Usage
 
-To use this feature you have to connect to a remote database. To do so you have to open **File** in the menu bar and then click the **Connect to shared database** item. The **Connect to shared database** dialog will open and you will have to fill in the shared's database connection settings. Under the field **Database type** you can choose between PostgreSQL (at least version 9.1), MySQL (at least 5.5, not recommended, because there is no live synchronization), and Oracle depending on your shared database. Then, you have to fill out the remaining fields with the according information. If you like you can save your password by clicking the **Remember password?** checkbox.
+To use this feature you have to connect to a remote database. To do so you have to open **File** in the menu bar and then click the **Connect to shared database** item. The **Connect to shared database** dialog will open and you will have to fill in the shared's database connection settings. Then, you have to fill out the remaining fields with the according information. If you like you can save your password by clicking the **Remember password?** checkbox.
 
 ### SSL configuration
 
@@ -32,4 +32,5 @@ If you experience a problem with your connection to your shared database, the **
 
 ## Try it out
 
-You can test the shared SQL database support by using [https://www.freemysqlhosting.net](https://www.freemysqlhosting.net) for MySQL (not recommended) and [https://www.elephantsql.com/](https://www.elephantsql.com) for PostgreSQL (recommended).
+Choose one online provider and start a PostgreSQL database there.
+One list of providers is available at <https://www.postgresql.org/support/professional_hosting/>.
