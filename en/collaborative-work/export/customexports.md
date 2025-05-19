@@ -8,7 +8,7 @@ Existing public files are collected at [https://layouts.jabref.org](https://layo
 
 ## Adding a custom export filter
 
-The only requirement for a valid export filter is the existence of a file with the extension **.layout**. To add a new custom export filter, open the dialog box **File → Preferences**, go to the section **Custom export formats**, and click on **Add**. A new dialog box will appear, allowing you to specify a name for the export filter \(which will appear as one of the choices in the File type dropdown menu of the file dialog when you use the **File → Export** menu choice in the JabRef window\), the path to the **.layout** file, and the preferred file extension for the export filter \(which will be the suggested extension in the file dialog when you use the export filter\). Note that if you intend to use the custom export filter also for "Copy...-&gt;Export to Clipboard" in the maintable, the extension must be one of the following: `txt`, `rtf`, `rdf`, `xml`, `html`, `htm`, `csv`, or `ris`.
+The only requirement for a valid export filter is the existence of a file with the extension **.layout**. To add a new custom export filter, open the dialog box **File → Preferences**, go to the section **Custom export formats**, and click on **Add**. A new dialog box will appear, allowing you to specify a name for the export filter (which will appear as one of the choices in the File type dropdown menu of the file dialog when you use the **File → Export** menu choice in the JabRef window), the path to the **.layout** file, and the preferred file extension for the export filter (which will be the suggested extension in the file dialog when you use the export filter). Note that if you intend to use the custom export filter also for "Copy...->Export to Clipboard" in the maintable, the extension must be one of the following: `txt`, `rtf`, `rdf`, `xml`, `html`, `htm`, `csv`, or `ris`.
 
 ## Creating the export filter
 
@@ -50,9 +50,9 @@ You can also specify multiple formatters separated by commas. These will be call
 
 will cause the formatter **ToLowerCase** to be called first, and then **HTMLChars** will be called to format the result. You can list an arbitrary number of formatters in this way.
 
-The argument to the formatters, withing the curly braces, does not have to be a field command. Instead, you can insert normal text, which will then be passed to the formatters instead of the contents of any field. This can be useful for some fomatters, e.g. the CurrentDate formatter \(described below\).
+The argument to the formatters, withing the curly braces, does not have to be a field command. Instead, you can insert normal text, which will then be passed to the formatters instead of the contents of any field. This can be useful for some fomatters, e.g. the CurrentDate formatter (described below).
 
-Some formatters take an extra argument, given in parentheses immediately after the formatter name. The argument can be enclosed in quotes, which is necessary if it includes the parenthesis characters. For instance, `\format[Replace("\s,_")]{\journal}` calls the **Replace** formatter with the argument **\s,\_** \(which results in the "journal" field after replacing all whitespace by underscores\).
+Some formatters take an extra argument, given in parentheses immediately after the formatter name. The argument can be enclosed in quotes, which is necessary if it includes the parenthesis characters. For instance, `\format[Replace("\s,_")]{\journal}` calls the **Replace** formatter with the argument **\s,\_** (which results in the "journal" field after replacing all whitespace by underscores).
 
 See below for a list of built-in export formatters.
 
@@ -74,12 +74,9 @@ A conditional block can also be dependent on more than one field, and the conten
 * OR operator : `|`, `||`
 * NOT operator : `!`
 
-For example, to output text only if both `year` and `month` are set, use a block like the following: `\begin{year&&month}Month: \format[HTMLChars]{\month}\end{year&&month}`
-which will print "Month: " plus the contents of the `month` field, but only if also the `year` field is defined.
+For example, to output text only if both `year` and `month` are set, use a block like the following: `\begin{year&&month}Month: \format[HTMLChars]{\month}\end{year&&month}` which will print "Month: " plus the contents of the `month` field, but only if also the `year` field is defined.
 
-As an example for the usage of the NOT operator, consider the following:
-`\begin{!year}\format[HTMLChars]{(no year)}\end{!year}`
-Here, "no year" is printed as output text if no year field is defined.
+As an example for the usage of the NOT operator, consider the following: `\begin{!year}\format[HTMLChars]{(no year)}\end{!year}` Here, "no year" is printed as output text if no year field is defined.
 
 **Note:** Use of the `\begin` and `\end` commands is a key to creating layout files that work well with a variety of entry types.
 
@@ -96,28 +93,27 @@ For example, let's assume I wish to group by keyword. Before exporting the file,
 JabRef provides the following set of formatters:
 
 * `Authors` : this formatter provides formatting options for the author and editor fields; for detailed information, see below. It deprecates a range of dedicated formatters provided in versions of JabRef prior to 2.7.
-* `CreateBibORDFAuthors` : formats authors for according to the requirements of the Bibliographic Ontology \(bibo\).
+* `CreateBibORDFAuthors` : formats authors for according to the requirements of the Bibliographic Ontology (bibo).
 * `CreateDocBookAuthors` : formats the author field in DocBook style.
 * `CreateDocBookEditors` : formats the editor field in DocBook style.
-* `CurrentDate` : outputs the current date. With no argument, this formatter outputs the current date and time in the format "yyyy.MM.dd hh:mm:ss z" \(date, time and time zone\). By giving a different format string as argument, the date format can be customized. For example `\format[CurrentDate]{yyyy.MM.dd}` will give the date only, e.g. 2005.11.30.
-* `DateFormatter` : formats a date. With no argument, the date is given in ISO-format \(yyyy-MM-dd\), which is also the expected format of the input. The argument may contain `yyyy`, `MM`, and `dd` in any combination. For example `\format[DateFormatter(MM/yyyy)]{\date}` will output 07/2016 if the date field contains 2016-07-15.
+* `CurrentDate` : outputs the current date. With no argument, this formatter outputs the current date and time in the format "yyyy.MM.dd hh:mm:ss z" (date, time and time zone). By giving a different format string as argument, the date format can be customized. For example `\format[CurrentDate]{yyyy.MM.dd}` will give the date only, e.g. 2005.11.30.
+* `DateFormatter` : formats a date. With no argument, the date is given in ISO-format (yyyy-MM-dd), which is also the expected format of the input. The argument may contain `yyyy`, `MM`, and `dd` in any combination. For example `\format[DateFormatter(MM/yyyy)]{\date}` will output 07/2016 if the date field contains 2016-07-15.
 * `Default` : takes a single argument, which serves as a default value. If the string to format is non-empty, it is output without changes. If it is empty, the default value is output. For instance, `\format[Default(unknown)]{\year}` will output the entry's year if set, and "unknown" if no year is set.
 * `DOIStrip` : strips any prefixes from the DOI string.
 * `DOICheck` : provides the full url for a DOI link.
-* `EntryTypeFormatter` : camel case of entry types, so "inbook" -&gt; "InBook".
-* `FileLink(filetype)` : if no argument is given, this formatter outputs the first external file link encoded in the field. To work, the formatter must be supplied with the contents of the "file" field.
+* `EntryTypeFormatter` : camel case of entry types, so "inbook" -> "InBook".
+*   `FileLink(filetype)` : if no argument is given, this formatter outputs the first external file link encoded in the field. To work, the formatter must be supplied with the contents of the "file" field.
 
-  This formatter takes the name of an external file type as an optional argument, specified in parentheses after the formatter name. For instance, `\format[FileLink(pdf)]{\file}` specifies `pdf` as an argument. When an argument is given, the formatter selects the first file link of the specified type. In the example, the path to the first PDF link will be output.
-
+    This formatter takes the name of an external file type as an optional argument, specified in parentheses after the formatter name. For instance, `\format[FileLink(pdf)]{\file}` specifies `pdf` as an argument. When an argument is given, the formatter selects the first file link of the specified type. In the example, the path to the first PDF link will be output.
 * `FirstPage` : returns the first page from the "pages" field, if set. For instance, if the pages field is set to "345-360" or "345--360", this formatter will return "345".
 * `FormatChars` : This formatter converts LaTeX character sequences their equicalent unicode characters and removes other LaTeX commands without handling them.
 * `FormatPagesForHTML` : replaces "--" with "-".
 * `FormatPagesForXML` : replaces "--" with an XML en-dash.
-* `GetOpenOfficeType` : returns the number used by the OpenOffice.org bibliography system \(versions 1.x and 2.x\) to denote the type of this entry.
-* `HTMLChars` : replaces TeX-specific special characters \(e.g. `{\"{a}}` or `{\sigma})` with their HTML representations, and translates LaTeX commands `\emph`, `\textit`, `\textbf`, `\texttt`, `\underline`, `\textsuperscript`, `\textsubscript`, `\sout` into HTML equivalents.
-* `HTMLParagraphs` : interprets two consecutive newlines \(e.g. \n \n\) as the beginning of a new paragraph and creates paragraph-html-tags accordingly.
+* `GetOpenOfficeType` : returns the number used by the OpenOffice.org bibliography system (versions 1.x and 2.x) to denote the type of this entry.
+* `HTMLChars` : replaces TeX-specific special characters (e.g. `{\"{a}}` or `{\sigma})` with their HTML representations, and translates LaTeX commands `\emph`, `\textit`, `\textbf`, `\texttt`, `\underline`, `\textsuperscript`, `\textsubscript`, `\sout` into HTML equivalents.
+* `HTMLParagraphs` : interprets two consecutive newlines (e.g. \n \n) as the beginning of a new paragraph and creates paragraph-html-tags accordingly.
 * `IfPlural` : outputs its first argument if the input field looks like an author list with two or more names, or its second argument otherwise. E.g. `\format[IfPlural(Eds.,Ed.)]{\editor}` will output "Eds." if there is more than one editor, and "Ed." if there is only one.
-* `JournalAbbreviator` : The given input text is abbreviated according to the journal abbreviation lists. If no abbreviation for input is found \(e.g. not in list or already abbreviated\), the input will be returned unmodified. For instance, when using `\format[JournalAbbreviator]{\journal}`, "Physical Review Letters" gets "Phys. Rev. Lett."
+* `JournalAbbreviator` : The given input text is abbreviated according to the journal abbreviation lists. If no abbreviation for input is found (e.g. not in list or already abbreviated), the input will be returned unmodified. For instance, when using `\format[JournalAbbreviator]{\journal}`, "Physical Review Letters" gets "Phys. Rev. Lett."
 * `LastPage` : returns the last page from the "pages" field, if set. For instance, if the pages field is set to "345-360" or "345--360", this formatter will return "360".
 * `NoSpaceBetweenAbbreviations` : LayoutFormatter that removes the space between abbreviated First names. Example: J. R. R. Tolkien becomes J.R.R. Tolkien.
 * `NotFoundFormatter` : Formatter used to signal that a formatter hasn't been found. This can be used for graceful degradation if a layout uses an undefined format.
@@ -128,36 +124,33 @@ JabRef provides the following set of formatters:
 * `RemoveLatexCommands` : removes LaTeX commands like `\em`, `\textbf`, etc. If used together with `HTMLChars` or `XMLChars`, this formatter should be called last.
 * `RemoveTilde` : replaces the tilde character used in LaTeX as a non-breakable space by a regular space. Useful in combination with the `Authors` formatter discussed in the next section.
 * `RemoveWhitespace` : removes all whitespace characters.
-* `Replace(regexp,replacewith)` : does a regular expression replacement. To use this formatter, a two-part argument must be given. The parts are separated by a comma. To indicate the comma character, use an escape sequence: \,
+*   `Replace(regexp,replacewith)` : does a regular expression replacement. To use this formatter, a two-part argument must be given. The parts are separated by a comma. To indicate the comma character, use an escape sequence: ,
 
-  The first part is the regular expression to search for. Remember that any commma character must be preceded by a backslash, and consequently a literal backslash must be written as a pair of backslashes. A description of Java regular expressions can be found at [vogella's repository](https://www.vogella.com/tutorials/JavaRegularExpressions/article.html#rules-of-writing-regular-expressions).
+    The first part is the regular expression to search for. Remember that any commma character must be preceded by a backslash, and consequently a literal backslash must be written as a pair of backslashes. A description of Java regular expressions can be found at [vogella's repository](https://www.vogella.com/tutorials/JavaRegularExpressions/article.html#rules-of-writing-regular-expressions).
 
-  The second part is the text to replace all matches with.
-
+    The second part is the text to replace all matches with.
 * `RisAuthors` : to be documented.
 * `RisKeywords` : to be documented.
 * `RisMonth` : to be documented.
-* `RTFChars` : replaces TeX-specific special characters \(e.g. {\^a} or {\"{o}}\) with their RTF representations, and translates LaTeX commands \emph, \textit, \textbf into RTF equivalents.
-* `ShortMonth` : formats the month field to use 3 letter BibTeX strings \(`jan`, `feb`, `mar`, `apr`, ...\).
+* `RTFChars` : replaces TeX-specific special characters (e.g. {^a} or {"{o\}}) with their RTF representations, and translates LaTeX commands \emph, \textit, \textbf into RTF equivalents.
+* `ShortMonth` : formats the month field to use 3 letter BibTeX strings (`jan`, `feb`, `mar`, `apr`, ...).
 * `ToLowerCase` : turns all characters into lower case.
 * `ToUpperCase` : turns all characters into upper case.
-* `WrapContent` : This formatter outputs the input value after adding a prefix and a postfix, as long as the input value is non-empty. If the input value is empty, an empty string is output \(the prefix and postfix are not output in this case\). The formatter requires an argument containing the prefix and postix separated by a comma. To include the comma character in either, use an escape sequence \(\,\).
+* `WrapContent` : This formatter outputs the input value after adding a prefix and a postfix, as long as the input value is non-empty. If the input value is empty, an empty string is output (the prefix and postfix are not output in this case). The formatter requires an argument containing the prefix and postix separated by a comma. To include the comma character in either, use an escape sequence (,).
 * `WrapFileLinks` : See below.
-* `XMLChars` : replaces TeX-specific special characters \(e.g. {\^a} or {\"{o}}\) with their XML representations.
+* `XMLChars` : replaces TeX-specific special characters (e.g. {^a} or {"{o\}}) with their XML representations.
 
 ### The `Authors` formatter
 
 To accommodate for the numerous citation styles, the `Authors` formatter allows flexible control over the layout of the author list. The formatter takes a comma-separated list of options, by which the default values can be overridden. The following option/value pairs are currently available, where the default values are given in curly brackets.
 
-`AuthorSort = [ {FirstFirst} | LastFirst | LastFirstFirstFirst ]`
-specifies the order in which the author names are formatted.
+`AuthorSort = [ {FirstFirst} | LastFirst | LastFirstFirstFirst ]` specifies the order in which the author names are formatted.
 
 * `FirstFirst` : first names are followed by the surname.
 * `LastFirst` : the authors' surnames are followed by their first names, separated by a comma.
 * `LastFirstFirstFirst` : the first author is formatted as LastFirst, the subsequent authors as FirstFirst.
 
-`AuthorAbbr = [ FullName | LastName | {Initials} | InitialsNoSpace | FirstInitial | MiddleInitial ]`
-specifies how the author names are abbreviated.
+`AuthorAbbr = [ FullName | LastName | {Initials} | InitialsNoSpace | FirstInitial | MiddleInitial ]` specifies how the author names are abbreviated.
 
 * `FullName` : shows full author names; first names are not abbreviated.
 * `LastName` : show only surnames, first names are removed.
@@ -166,30 +159,24 @@ specifies how the author names are abbreviated.
 * `FirstInitial` : only first initial is shown.
 * `MiddleInitial` : first name is shown, but all middle names are abbreviated.
 
-`AuthorPunc = [ {FullPunc} | NoPunc | NoComma | NoPeriod ]`
-specifies the punctuation used in the author list when `AuthorAbbr` is used
+`AuthorPunc = [ {FullPunc} | NoPunc | NoComma | NoPeriod ]` specifies the punctuation used in the author list when `AuthorAbbr` is used
 
 * `FullPunc` : no changes are made to punctuation.
 * `NoPunc` : all full stops and commas are removed from the author name.
 * `NoComma` : all commas are removed from the author name.
 * `NoPeriod` : all full stops are removed from the author name.
 
-`AuthorSep = [ {Comma} | And | Colon | Semicolon | Sep=<string> ]`
-specifies the separator to be used between authors. Any separator can be specified, with the `Sep=<string>` option. Note that appropriate spaces need to be added around `string`.
+`AuthorSep = [ {Comma} | And | Colon | Semicolon | Sep=<string> ]` specifies the separator to be used between authors. Any separator can be specified, with the `Sep=<string>` option. Note that appropriate spaces need to be added around `string`.
 
-`AuthorLastSep = [ Comma | {And} | Colon | Semicolon | Amp | Oxford | LastSep=<string> ]`
-specifies the last separator in the author list. Any separator can be specified, with the `LastSep=<string>` option. Note that appropriate spaces need to be added around `string`.
+`AuthorLastSep = [ Comma | {And} | Colon | Semicolon | Amp | Oxford | LastSep=<string> ]` specifies the last separator in the author list. Any separator can be specified, with the `LastSep=<string>` option. Note that appropriate spaces need to be added around `string`.
 
-`AuthorNumber = [ {inf} | <integer> ]`
-specifies the number of authors that are printed. If the number of authors exceeds the maximum specified, the authorlist is replaced by the first author \(or any number specified by `AuthorNumberEtAl`\), followed by `EtAlString`.
+`AuthorNumber = [ {inf} | <integer> ]` specifies the number of authors that are printed. If the number of authors exceeds the maximum specified, the authorlist is replaced by the first author (or any number specified by `AuthorNumberEtAl`), followed by `EtAlString`.
 
-`AuthorNumberEtAl = [ {1} | <integer> ]`
-specifies the number of authors that are printed if the total number of authors exceeds `AuthorNumber`. This argument can only be given after `AuthorNumber` has already been given.
+`AuthorNumberEtAl = [ {1} | <integer> ]` specifies the number of authors that are printed if the total number of authors exceeds `AuthorNumber`. This argument can only be given after `AuthorNumber` has already been given.
 
-`EtAlString = [ { et al.} | EtAl=<string> ]`
-specifies the string used to replace multiple authors. Any string can be given, using `EtAl=<string>`
+`EtAlString = [ { et al.} | EtAl=<string> ]` specifies the string used to replace multiple authors. Any string can be given, using `EtAl=<string>`
 
-If an option is unspecified, the default value \(shown in curly brackets above\) is used. Therefore, only layout options that differ from the defaults need to be specified. The order in which the options are defined is \(mostly\) irrelevant. So, for example,
+If an option is unspecified, the default value (shown in curly brackets above) is used. Therefore, only layout options that differ from the defaults need to be specified. The order in which the options are defined is (mostly) irrelevant. So, for example,
 
 `\format[Authors(Initials,Oxford)]{\author}`
 
@@ -203,17 +190,13 @@ As mentioned, the order in which the options are specified is irrelevant. There 
 
 Given the following authors, _"Joe James Doe and Mary Jane and Bruce Bar and Arthur Kay"_ ,the `Authors` formatter will give the following results:
 
-`Authors()`, or equivalently, `Authors(FirstFirst,Initials,FullPunc,Comma,And,inf,EtAl= et al.)`
-J. J. Doe, M. Jane, B. Bar and A. Kay
+`Authors()`, or equivalently, `Authors(FirstFirst,Initials,FullPunc,Comma,And,inf,EtAl= et al.)` J. J. Doe, M. Jane, B. Bar and A. Kay
 
-`Authors(LastFirstFirstFirst,MiddleInitial,Semicolon)`
-Doe, Joe J.; Mary Jane; Bruce Bar and Arthur Kay
+`Authors(LastFirstFirstFirst,MiddleInitial,Semicolon)` Doe, Joe J.; Mary Jane; Bruce Bar and Arthur Kay
 
-`Authors(LastFirst,InitialsNoSpace,NoPunc,Oxford)`
-Doe JJ, Jane M, Bar B, and Kay A
+`Authors(LastFirst,InitialsNoSpace,NoPunc,Oxford)` Doe JJ, Jane M, Bar B, and Kay A
 
-`Authors(2,EtAl= and others)`
-J. J. Doe and others
+`Authors(2,EtAl= and others)` J. J. Doe and others
 
 Most commonly available citation formats should be possible with this formatter. For even more advanced options, consider using the Custom Formatters detailed below.
 
@@ -221,13 +204,13 @@ Most commonly available citation formats should be possible with this formatter.
 
 This formatter iterates over all file links, or all file links of a specified type, outputting a format string given as the first argument. The format string can contain a number of escape sequences indicating file link information to be inserted into the string.
 
-This formatter can take an optional second argument specifying the name of a file type. If specified, the iteration will only include those files with a file type matching the given name \(case-insensitively\). If specified as an empty argument, all file links will be included.
+This formatter can take an optional second argument specifying the name of a file type. If specified, the iteration will only include those files with a file type matching the given name (case-insensitively). If specified as an empty argument, all file links will be included.
 
 After the second argument, pairs of additional arguments can be added in order to specify regular expression replacements to be done upon the inserted link information before insertion into the output string. A non-paired argument will be ignored. In order to specify replacements without filtering on file types, use an empty second argument.
 
 The escape sequences for embedding information are as follows:
 
-* `\i` : This inserts the iteration index \(starting from 1\), and can be useful if the output list of files should be enumerated.
+* `\i` : This inserts the iteration index (starting from 1), and can be useful if the output list of files should be enumerated.
 * `\p` : This inserts the file path of the file link.
 * `\f` : This inserts the name of the file link's type.
 * `\x` : This inserts the file's extension, if any.
@@ -239,12 +222,12 @@ For instance, an entry could contain a file link to the file "/home/john/report.
 
 would give the following output:
 
-1. John's final report \(/home/john/report.pdf\)
+1. John's final report (/home/john/report.pdf)
 
 If the entry contained a second file link to the file "/home/john/draft.txt" of the "Text file" type with description 'An early "draft"', the output would be as follows:
 
-1. John's final report \(/home/john/report.pdf\)
-2. An early "draft" \(/home/john/draft.txt\)
+1. John's final report (/home/john/report.pdf)
+2. An early "draft" (/home/john/draft.txt)
 
 If the formatter was called with a second argument, the list would be filtered. For instance:
 
@@ -252,7 +235,7 @@ If the formatter was called with a second argument, the list would be filtered. 
 
 would show only the text file:
 
-1. An early "draft" \(/home/john/draft.txt\)
+1. An early "draft" (/home/john/draft.txt)
 
 If we wanted this output to be part of an XML styled output, the quotes in the file description could cause problems. Adding two additional arguments to translate the quotes into XML characters solves this:
 
@@ -260,13 +243,13 @@ If we wanted this output to be part of an XML styled output, the quotes in the f
 
 would give the following output:
 
-1. An early "draft" \(/home/john/draft.txt\)
+1. An early "draft" (/home/john/draft.txt)
 
 Additional pairs of replacements could be added.
 
 ### Custom formatters
 
-If none of the available formatters can do what you want to achieve, you can add your own by implementing the `net.sf.jabref.export.layout.LayoutFormatter` interface. If you insert your class into the `net.sf.jabref.export.layout.format` package, you can call the formatter by its class name only, like with the standard formatters. Otherwise, you must call the formatter by its fully qualified name \(including package name\). In any case, the formatter must be in your classpath when running JabRef.
+If none of the available formatters can do what you want to achieve, you can add your own by implementing the `net.sf.jabref.export.layout.LayoutFormatter` interface. If you insert your class into the `net.sf.jabref.export.layout.format` package, you can call the formatter by its class name only, like with the standard formatters. Otherwise, you must call the formatter by its fully qualified name (including package name). In any case, the formatter must be in your classpath when running JabRef.
 
 ## Using Custom Name Formatters
 
@@ -276,9 +259,9 @@ You can define your own formatter in the preference tab "Name Formatter" using t
 
 `<case1>@<range11>@<format>@<range12>@<format>@<range13>...@@ <case2>@<range21>@... and so on.`
 
-This format first splits the task to format a list of author into cases depending on how many authors there are \(this is since some formats differ depending on how many authors there are\). Each individual case is separated by @@ and contains instructions on how to format each author in the case. These instructions are separated by a @.
+This format first splits the task to format a list of author into cases depending on how many authors there are (this is since some formats differ depending on how many authors there are). Each individual case is separated by @@ and contains instructions on how to format each author in the case. These instructions are separated by a @.
 
-Cases are identified using integers \(1, 2, 3, etc.\) or the character \* \(matches any number of authors\) and will tell the formatter to apply the following instructions if there are a number of less or equal of authors given.
+Cases are identified using integers (1, 2, 3, etc.) or the character \* (matches any number of authors) and will tell the formatter to apply the following instructions if there are a number of less or equal of authors given.
 
 Ranges are either `<integer>..<integer>`, `<integer>` or the character `*` using a 1 based index for indexing authors from the given list of authors. Integer indexes can be negative to denote them to start from the end of the list where -1 is the last author.
 
@@ -291,9 +274,9 @@ For instance with an authorlist of "Joe Doe and Mary Jane and Bruce Bar and Arth
 
 The `<format>`-strings use the BibTeX formatter format:
 
-The four letters v, f, l, j indicate the name parts von, first, last, jr which are used within curly braces. A single letter v, f, l, j indicates that the name should be abbreviated. If one of these letters or letter pairs is encountered JabRef will output all the respective names \(possibly abbreviated\), but the whole expression in curly braces is only printed if the name part exists.
+The four letters v, f, l, j indicate the name parts von, first, last, jr which are used within curly braces. A single letter v, f, l, j indicates that the name should be abbreviated. If one of these letters or letter pairs is encountered JabRef will output all the respective names (possibly abbreviated), but the whole expression in curly braces is only printed if the name part exists.
 
-For instance if the format is "{ll} {vv {von Part}} {ff}" and the names are "Mary Kay and John von Neumann", then JabRef will output "Kay Mary" \(with two space between last and first\) and "Neuman von von Part John".
+For instance if the format is "{ll} {vv {von Part\}} {ff}" and the names are "Mary Kay and John von Neumann", then JabRef will output "Kay Mary" (with two space between last and first) and "Neuman von von Part John".
 
 I give two examples but would rather point you to the BibTeX documentation.
 
@@ -312,4 +295,3 @@ Large example:
 > you would use
 >
 > `1@*@{ll}, {f}.@@2@1@{ll}, {f}.@2@ and {ll}, {f}.@@*@1..-3@{ll}, {f}., @-2@{ll}, {f}.@-1@ and {ll}, {f}.`
-

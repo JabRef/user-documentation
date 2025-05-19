@@ -4,29 +4,30 @@ You can import your citations into a Microsoft Word document through JabRef's ex
 
 1. Select the "File" tab in the upper lefthand corner of JabRef, hover over "Export", and select "Export selected entries". Be sure to save your file as a "MS Office 2007" file.
 2. Open Microsoft Word and click on the "References" tab.
-3. Select "Manage Sources", click "Browse", and locate the desired file. The file type should be an XML document.
+3.  Select "Manage Sources", click "Browse", and locate the desired file. The file type should be an XML document.
 
-      ***Mac OS users will not see a "Manage Sources" button. Mac users should follow these steps:***
+    _**Mac OS users will not see a "Manage Sources" button. Mac users should follow these steps:**_
 
-      a.) Copy the selected file to /Library/Containers/com.microsoft.word/Data/Library/Application Support/Microsoft/Office or alternatively to
-      /Users/{username}/Library/Containers/com.microsoft.Word/Data/Library/Application Support/Microsoft/Office/ and name it Sources.xml
+    a.) Copy the selected file to /Library/Containers/com.microsoft.word/Data/Library/Application Support/Microsoft/Office or alternatively to /Users/{username}/Library/Containers/com.microsoft.Word/Data/Library/Application Support/Microsoft/Office/ and name it Sources.xml
 
-      b.) Restart Word
+    b.) Restart Word
 
-      c.) Select "References", and then select "Citations"
+    c.) Select "References", and then select "Citations"
 
-      d.) A sidebar will open on the right side of the window. Click the icon with three dots.
+    d.) A sidebar will open on the right side of the window. Click the icon with three dots.
 
-      e.) Click “Citation Sources Manager” from the drop down bar.
+    e.) Click “Citation Sources Manager” from the drop down bar.
 
-      f.) Copy over your citations from the masters list.
+    f.) Copy over your citations from the masters list.
 4. Click on "Bibliography" under the "References" tab to add your cited sources.
 
-More discussion at [https://tex.stackexchange.com/a/351452/9075](https://tex.stackexchange.com/a/351452/9075). See <https://www.youtube.com/watch?v=2PpLZTol9_o>.
+More discussion at [https://tex.stackexchange.com/a/351452/9075](https://tex.stackexchange.com/a/351452/9075). See [https://www.youtube.com/watch?v=2PpLZTol9\_o](https://www.youtube.com/watch?v=2PpLZTol9_o).
 
 For a detailed list of the fields which are exported in the Office 2007 XML format see the following page.
 
-{% page-ref page="../advanced/knowledge/msofficebibfieldmapping.md" %}
+{% content-ref url="../advanced/knowledge/msofficebibfieldmapping.md" %}
+[msofficebibfieldmapping.md](../advanced/knowledge/msofficebibfieldmapping.md)
+{% endcontent-ref %}
 
 {% hint style="warning" %}
 The only problem in the export could be when you have a "company" as author. That is simply exported as author and not in the company field.

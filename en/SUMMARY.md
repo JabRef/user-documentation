@@ -89,6 +89,7 @@
   * [Linux](faq/linux.md)
   * [Mac OS X](faq/osx.md)
   * [Windows](faq/windows.md)
+* [JabKit](jabkit.md)
 * [Discussion Forum](https://discourse.jabref.org/)
 * [Contribute to JabRef](contributing/README.md)
   * [How to Improve the Help Page](contributing/how-to-improve-the-help-page.md)

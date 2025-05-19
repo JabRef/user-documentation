@@ -22,11 +22,11 @@ You can find a collection of user contributed themes at [https://themes.jabref.o
 
 ## Examples
 
-**Light Theme** ![Light Theme](<../.gitbook/assets/theme-light.png>)
+**Light Theme** ![Light Theme](<../.gitbook/assets/theme-light (1).png>)
 
-**Dark Theme** ![Dark Theme](<../.gitbook/assets/theme-dark.png>)
+**Dark Theme** ![Dark Theme](<../.gitbook/assets/theme-dark (1).png>)
 
-**Custom Theme** ![Custom Theme](<../.gitbook/assets/theme-custom.png>) (based on the Dark Theme)
+**Custom Theme** ![Custom Theme](<../.gitbook/assets/theme-custom (1).png>) (based on the Dark Theme)
 
 ## Known bugs
 

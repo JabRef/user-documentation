@@ -1,5 +1,3 @@
-<!-- markdownlint-disable MD033 -->
-
 # Manage associated files
 
 JabRef lets you link up your entries with files of any type stored on your system. Thereby, it uses the field `file`, which contains a list of linked files. Each entry can have an arbitrary number of file links, and each linked file can be opened quickly from JabRef. The fields `url` and `doi` are used as links to documents on the web in the form of a URL or a DOI identifier, respectively (see [URL and DOI in JabRef](../advanced/externalfiles.md)).
@@ -10,17 +8,16 @@ In BibTeX/biblatex terms, the file links are stored as text in the field `file`.
 
 If the "file" field is included in [General fields](../setup/generalfields.md), you can edit the list of external links for an entry in the [Entry editor](../advanced/entryeditor/). The editor includes buttons for inserting, editing and removing links, as well as buttons for reordering the list of links.
 
-![](<../.gitbook/assets/jabref-entryeditor-files.png>)
+![](<../.gitbook/assets/jabref-entryeditor-files (1).png>)
 
 ## Directories for files
 
 JabRef offers the following directory settings:
 
-1. **File → Preferences → Linked files**, item _Main file directory._
+1.  **File → Preferences → Linked files**, item _Main file directory._
 
-    <img src="../.gitbook/assets/preferences-linkedfiles-5.2.png" alt="Main file directory" data-size="original">
-
-2. **Library → Library properties**, items _Library-specific file directory,_ and _User-specific file directory_.![Override default file directories](<../.gitbook/assets/jabref-lib-properties.png>)
+    <img src="../.gitbook/assets/preferences-linkedfiles-5.2 (2).png" alt="Main file directory" data-size="original">
+2. **Library → Library properties**, items _Library-specific file directory,_ and _User-specific file directory_.![Override default file directories](<../.gitbook/assets/jabref-lib-properties (1).png>)
 
 One of these settings is required. Mostly the "Main file directory" is enough.
 
@@ -32,7 +29,7 @@ If JabRef saves an attached file and my login name matches the name stored in th
 
 In some settings, the bib file is stored in **the same directory** as the PDF files. Then, one ignores all the above directories and enable "Search and store files relative to library file location". In this case, JabRef starts searching for PDF files in the directory of the `bib` file. It is also possible to achieve this result by setting `.` as "Library-specific file directory" in the library properties.
 
-![Search and store files relative to library file location](<../.gitbook/assets/preferences-file-searchandstoreforfilesrelativetolibraryfilelocation.png>).
+![Search and store files relative to library file location](<../.gitbook/assets/preferences-file-searchandstoreforfilesrelativetolibraryfilelocation (6).png>).
 
 Relative file directories obviously only work in the library properties for a bib file, e.g. `a.bib` Library → Library properties → Library-specific file directory → `papers`. Assume to have two bib files: `a.bib` and `b.bib` located in different directories: `a.bib` located at `C:\a.bib` and `b.bib` located at `X:\b.bib`. When I click on the `+` icon in the general Tab of file `a.bib`, the popup is opened in the directory `C:\papers` (assuming `C:\papers` exists).
 
@@ -42,7 +39,7 @@ If you have a file within or below one of your file directories with an extensio
 
 The rules for which file names can be auto-linked to a citation key can be set up in **File → Preferences → Linked files**, section _Autolink files_.
 
-![Linked FIles Preferences](<../.gitbook/assets/preferences-linkedfiles-5.2.png>)
+![Linked FIles Preferences](<../.gitbook/assets/preferences-linkedfiles-5.2 (2).png>)
 
 ## Filename format and file directory pattern
 
@@ -57,7 +54,7 @@ _Explanation_: The expression in the brackets says: Create a subdirectory based 
 
 For an entry, if you want to download a file and link it to the entry, you can do this by clicking the **Download** button in the entry editor.
 
-![Download from URL](<../.gitbook/assets/entryeditor-general-downloadfilefromurl.png>)
+![Download from URL](<../.gitbook/assets/entryeditor-general-downloadfilefromurl (5).png>)
 
 A dialog box will appear, prompting you to enter the URL. The file will be downloaded to your main file directory, named based on the entry's citation key, and finally linked from the entry.
 
@@ -67,7 +64,7 @@ It is possible to have greater flexibility in the naming scheme by using regular
 
 If you open the preferences (**File → Preferences → Linked Files**), you will find in the section _Autolink files_ an option called "Use regular expression search". Checking this option will allow you to enter your own regular expression for search in the PDF directories.
 
-![The linked files preferences](<../.gitbook/assets/preferences-linkedfiles-5.2.png>)
+![The linked files preferences](<../.gitbook/assets/preferences-linkedfiles-5.2 (2).png>)
 
 The following syntax is understood:
 

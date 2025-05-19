@@ -2,7 +2,7 @@
 
 The search bar is located in the icon bar.
 
-![Screenshot of the search bar](<../.gitbook/assets/search-bar-v5.2.png>)
+![Screenshot of the search bar](<../.gitbook/assets/search-bar-v5.2 (6).png>)
 
 To make the cursor jump to the search field, you can:
 
@@ -109,7 +109,7 @@ This is how the search currently works in the development version.
 | `title = pa*ediatric AND 1.0`  | Off   | No match. Regex is disabled               | "1.0"                                  |
 | `title = pa*ediatric AND 1.0`  | On    | No match. Regex is disabled for this term | Matches "1.0", "1+0" "1/0", "1q0", ... |
 
-## Search using regular expressions <a id="regular-expressions"></a>
+## Search using regular expressions <a href="#regular-expressions" id="regular-expressions"></a>
 
 In order to only search for content within specific fields and/or to include logical operators in the search expression, a special syntax is available in which these can be specified. Both the field specification and the search term support regular expressions.
 
