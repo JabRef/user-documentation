@@ -12,12 +12,20 @@ The easiest way to run JabKit is using [npx](https://docs.npmjs.com/cli/v8/comma
 npx @jbangdev/jbang jabkit@jabref
 ```
 
+You can also run it using [docker](https://www.docker.com/):
+
+```
+docker run ghcr.io/jabref/jabkit:edge --help
+```
+
+### Making JabKit available on the CLI as `jabkit`:
+
 In case JabKit should be available on the command line, execute following steps
 
 1. Install JBang by following one option at the [download page of JBang](https://www.jbang.dev/download/).
 2. Execute `jbang app install jabkit@jabref`
 
-Then, `jabkit` can be run as follows:
+Then,  JabKit can be run as follows:
 
 ```
 jabkit --help
