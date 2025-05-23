@@ -4,7 +4,7 @@ You can import your citations into a Microsoft Word document through JabRef's ex
 
 1. Select the "File" tab in the upper lefthand corner of JabRef, hover over "Export", and select "Export selected entries". Be sure to save your file as a "MS Office 2007" file.
 2. Open Microsoft Word and click on the "References" tab.
-3.  Select "Manage Sources", click "Browse", and locate the desired file. The file type should be an XML document.
+3. Select "Manage Sources", click "Browse", and locate the desired file. The file type should be an XML document.
 
     _**Mac OS users will not see a "Manage Sources" button. Mac users should follow these steps:**_
 
