@@ -7,7 +7,7 @@ We are really happy that you are interested in contributing to JabRef. Please ta
 In JabRef, there are dozens of bug fixes and new features introduced using GitHub's pull request mechansim.
 You can browse all at <https://github.com/JabRef/jabref/pulls>.
 The JabRef team really welcomes users to try out these changes and to comment on them.
-Getting in improvements at this stage is much easier than fixing afterwards.
+Improving on changes in active pull requests is much easier than fixing them later on after their acceptance.
 
 If you are familiar with the command line on your OS, then it is very easy to try out pull requests and give feedback.
 In the following, we try to give a minimal set of installation instructions to be able to run a contribution from a fork.
