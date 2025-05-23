@@ -14,7 +14,7 @@ In the following, we try to give a minimal set of installation instructions to b
 
 Required tooling:
 
-- [GitHubCLI](https://cli.github.com/) - A command-line client for GitHub. You can install it using the installer linked on their [homepage]((https://cli.github.com/)) or the commands given at the [installation hints](https://github.com/cli/cli#installation).
+- [GitHubCLI](https://cli.github.com/) - A command-line client for GitHub. You can install it using the installer linked on their [homepage](https://cli.github.com/) or the commands given at the [installation hints](https://github.com/cli/cli#installation).
 - [`gg.cmd`](https://github.com/eirikb/gg) - A cross-platform and cross-architecture version manager. Download [`gg.cmd`](https://github.com/eirikb/gg/releases/latest/download/gg.cmd) and store it in your home (or `Downloads`) directory.
 
 Initial setup:
