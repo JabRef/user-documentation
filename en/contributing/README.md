@@ -2,7 +2,7 @@
 
 We are really happy that you are interested in contributing to JabRef. Please take your time to look around here. We especially invite you to look into our [community members page](https://discourse.jabref.org/t/community-members/1868?u=koppor) where members introduce themselves.
 
-**I would like to try out a feature introduced at pull request. What are the steps?**
+**I would like to try out a feature introduced at pull request.**
 
 In JabRef, there are dozens of bug fixes and new features introduced using GitHub's pull request mechansim.
 You can browse all at <https://github.com/JabRef/jabref/pulls>.
