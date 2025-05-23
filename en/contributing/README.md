@@ -27,7 +27,7 @@ Try a branch:
 
 1. `cd` into the `JabRef` directory: `cd c:\git-repositories\JabRef`
 2. Checkout out the pull request: `gh pr checkout 13111` - where `13111` is the PR number, in this case [pr#13111](https://github.com/JabRef/jabref/pull/13111)
-3. Compile and run JabRef: `gg.cmd gradle run :jabgui:run` (on Linux and macOS, you need to prefix it with `sh`: `gg.cmd gradle run :jabgui:run`). This will also download the necessary JDK and gradle distribution. On the first run, please give the system enough time to accomodate and wait until the JabRef window launches. Depending on your hardware, this may take minutes.
+3. Compile and run JabRef: `gg.cmd gradle run :jabgui:run` (on Linux and macOS, you need to prefix it with `sh`: `gg.cmd gradle run :jabgui:run`). This will also download the necessary JDK and gradle distribution. On the first run, please give the system enough time to accommodate and wait until the JabRef window launches. Depending on your hardware, this may take minutes.
 
 Alternatives:
 
@@ -42,7 +42,7 @@ Please see [How to Improve the Help Page](how-to-improve-the-help-page.md)
 
 We encourage you to read about [translating the JabRef user interface](how-to-translate-the-ui.md).
 
-**I would like to keep Wikipedia pages up-to-date**
+**I would like to keep Wikipedia pages up-to-date.**
 
 JabRef improves -- and Wikipedia pages should keep up!
 
@@ -63,7 +63,7 @@ For changes in a specific language, go to the related page, and simply click on 
 
 If there is no page for your own language, you can easily create one.
 
-**I have some cool feature requests**
+**I have some cool feature requests.**
 
 [Come discuss it!](http://discourse.jabref.org)
 
@@ -76,4 +76,3 @@ Our team consists of volunteers. To provide better support, we are currently try
 **I would like to contribute code. How to?**
 
 Please head to our [Contributing Guide](https://github.com/JabRef/jabref/blob/main/CONTRIBUTING.md#contributing).
-
