@@ -38,7 +38,7 @@ Alternatives:
 
 Please see [How to Improve the Help Page](how-to-improve-the-help-page.md)
 
-**I would like to help to translate JabRef to another language. How do I get started?**
+**I would like to help translating JabRef to another language.**
 
 We encourage you to read about [translating the JabRef user interface](how-to-translate-the-ui.md).
 
