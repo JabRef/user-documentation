@@ -14,7 +14,7 @@ If the "file" field is included in [General fields](../setup/generalfields.md), 
 
 JabRef offers the following directory settings:
 
-1.  **File → Preferences → Linked files**, item _Main file directory._
+1. **File → Preferences → Linked files**, item _Main file directory._
 
     <img src="../.gitbook/assets/preferences-linkedfiles-5.2 (2).png" alt="Main file directory" data-size="original">
 2. **Library → Library properties**, items _Library-specific file directory,_ and _User-specific file directory_.![Override default file directories](<../.gitbook/assets/jabref-lib-properties (1).png>)
@@ -39,7 +39,7 @@ If you have a file within or below one of your file directories with an extensio
 
 The rules for which file names can be auto-linked to a citation key can be set up in **File → Preferences → Linked files**, section _Autolink files_.
 
-![Linked FIles Preferences](<../.gitbook/assets/preferences-linkedfiles-5.2 (2).png>)
+![Linked Files Preferences](<../.gitbook/assets/preferences-linkedfiles-5.2 (2).png>)
 
 ## Filename format and file directory pattern
 

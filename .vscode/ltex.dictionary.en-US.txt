@@ -2,3 +2,5 @@ JabRef
 Medline
 OpenDocument
 GitBook
+JabKit
+JBang
