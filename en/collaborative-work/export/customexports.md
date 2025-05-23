@@ -102,7 +102,7 @@ JabRef provides the following set of formatters:
 * `DOIStrip` : strips any prefixes from the DOI string.
 * `DOICheck` : provides the full url for a DOI link.
 * `EntryTypeFormatter` : camel case of entry types, so "inbook" -> "InBook".
-*   `FileLink(filetype)` : if no argument is given, this formatter outputs the first external file link encoded in the field. To work, the formatter must be supplied with the contents of the "file" field.
+* `FileLink(filetype)` : if no argument is given, this formatter outputs the first external file link encoded in the field. To work, the formatter must be supplied with the contents of the "file" field.
 
     This formatter takes the name of an external file type as an optional argument, specified in parentheses after the formatter name. For instance, `\format[FileLink(pdf)]{\file}` specifies `pdf` as an argument. When an argument is given, the formatter selects the first file link of the specified type. In the example, the path to the first PDF link will be output.
 * `FirstPage` : returns the first page from the "pages" field, if set. For instance, if the pages field is set to "345-360" or "345--360", this formatter will return "345".
@@ -124,7 +124,7 @@ JabRef provides the following set of formatters:
 * `RemoveLatexCommands` : removes LaTeX commands like `\em`, `\textbf`, etc. If used together with `HTMLChars` or `XMLChars`, this formatter should be called last.
 * `RemoveTilde` : replaces the tilde character used in LaTeX as a non-breakable space by a regular space. Useful in combination with the `Authors` formatter discussed in the next section.
 * `RemoveWhitespace` : removes all whitespace characters.
-*   `Replace(regexp,replacewith)` : does a regular expression replacement. To use this formatter, a two-part argument must be given. The parts are separated by a comma. To indicate the comma character, use an escape sequence: ,
+* `Replace(regexp,replacewith)` : does a regular expression replacement. To use this formatter, a two-part argument must be given. The parts are separated by a comma. To indicate the comma character, use an escape sequence: ,
 
     The first part is the regular expression to search for. Remember that any commma character must be preceded by a backslash, and consequently a literal backslash must be written as a pair of backslashes. A description of Java regular expressions can be found at [vogella's repository](https://www.vogella.com/tutorials/JavaRegularExpressions/article.html#rules-of-writing-regular-expressions).
 
@@ -132,11 +132,11 @@ JabRef provides the following set of formatters:
 * `RisAuthors` : to be documented.
 * `RisKeywords` : to be documented.
 * `RisMonth` : to be documented.
-* `RTFChars` : replaces TeX-specific special characters (e.g. {^a} or {"{o\}}) with their RTF representations, and translates LaTeX commands \emph, \textit, \textbf into RTF equivalents.
+* `RTFChars` : replaces TeX-specific special characters (e.g. {^a} or {"{o\}}) with their RTF representations, and translates LaTeX commands `\emph`, `\textit`, `\textbf` into RTF equivalents.
 * `ShortMonth` : formats the month field to use 3 letter BibTeX strings (`jan`, `feb`, `mar`, `apr`, ...).
 * `ToLowerCase` : turns all characters into lower case.
 * `ToUpperCase` : turns all characters into upper case.
-* `WrapContent` : This formatter outputs the input value after adding a prefix and a postfix, as long as the input value is non-empty. If the input value is empty, an empty string is output (the prefix and postfix are not output in this case). The formatter requires an argument containing the prefix and postix separated by a comma. To include the comma character in either, use an escape sequence (,).
+* `WrapContent` : This formatter outputs the input value after adding a prefix and a postfix, as long as the input value is non-empty. If the input value is empty, an empty string is output (the prefix and postfix are not output in this case). The formatter requires an argument containing the prefix and postfix separated by a comma. To include the comma character in either, use an escape sequence (,).
 * `WrapFileLinks` : See below.
 * `XMLChars` : replaces TeX-specific special characters (e.g. {^a} or {"{o\}}) with their XML representations.
 
@@ -184,11 +184,11 @@ is equivalent to
 
 `\format[Authors(Oxford,Initials)]{\author}`
 
-As mentioned, the order in which the options are specified is irrelevant. There is one possibility for ambiguity, and that is if both `AuthorSep` and `AuthorLastSep` are given. In that case, the first applicable value encountered would be for `AuthorSep`, and the second for `AuthorLastSep`. It is good practise to specify both when changing the default, to avoid ambiguity.
+As mentioned, the order in which the options are specified is irrelevant. There is one possibility for ambiguity, and that is if both `AuthorSep` and `AuthorLastSep` are given. In that case, the first applicable value encountered would be for `AuthorSep`, and the second for `AuthorLastSep`. It is good practice to specify both when changing the default, to avoid ambiguity.
 
 #### Examples
 
-Given the following authors, _"Joe James Doe and Mary Jane and Bruce Bar and Arthur Kay"_ ,the `Authors` formatter will give the following results:
+Given the following authors, _"Joe James Doe and Mary Jane and Bruce Bar and Arthur Kay"_, the `Authors` formatter will give the following results:
 
 `Authors()`, or equivalently, `Authors(FirstFirst,Initials,FullPunc,Comma,And,inf,EtAl= et al.)` J. J. Doe, M. Jane, B. Bar and A. Kay
 
