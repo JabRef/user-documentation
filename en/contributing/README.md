@@ -16,7 +16,7 @@ Prerequisites:
 
 - [`git`](https://git-scm.com/) - The version control system.
 - [GitHubCLI](https://cli.github.com/) - A command-line client for GitHub. You can install it using the installer linked on their [homepage]((https://cli.github.com/)) or the commands given at the [installation hints](https://github.com/cli/cli#installation).
-- A JabRef project checkout. On Windows, we recommend:
+- A JabRef project clone. On Windows, we recommend:
   - `mkdir c:\git-repositories`
   - `cd c:\git-repositories`
   - `git clone --recurse-submodules https://github.com/JabRef/jabref.git JabRef`
