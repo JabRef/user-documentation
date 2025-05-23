@@ -21,7 +21,7 @@ Prerequisites:
   - `cd c:\git-repositories`
   - `git clone --recurse-submodules https://github.com/JabRef/jabref.git JabRef`
   - `cd JabRef`
-- [`gg.cmd`](https://github.com/eirikb/gg) - A cross-platform and cross-architecture version manager. Download [`gg.cmd`](https://github.com/eirikb/gg/releases/latest/download/gg.cmd) and store it in the `JabRef` directory
+- [`gg.cmd`](https://github.com/eirikb/gg) - A cross-platform and cross-architecture version manager. Download [`gg.cmd`](https://github.com/eirikb/gg/releases/latest/download/gg.cmd) and store it in the `JabRef` directory.
 
 Try a branch:
 
