@@ -9,7 +9,7 @@ You can browse all at <https://github.com/JabRef/jabref/pulls>.
 The JabRef team really welcomes users to try out these additions and to comment on them.
 Getting in improvements at this stage is much easier than fixing afterwards.
 
-If you and the command line are friends, then it is very easy to try out pull requests and give feedback.
+If you are familiar with the command line on your OS, then it is very easy to try out pull requests and give feedback.
 In the following, we try to give a minimal set of installation instructions to be able to run a contribution from a fork.
 
 Prerequisites:
