@@ -27,7 +27,7 @@ Try a branch:
 
 1. `cd` into the `JabRef` directory: `cd c:\git-repositories\JabRef`
 2. Checkout out the pull request: `gh pr checkout 13111` - where `13111` is the PR number, in this case [pr#13111](https://github.com/JabRef/jabref/pull/13111)
-3. Compile and run JabRef `gg.cmd gradle run :jabgui:run` (on Linux and macOS, you need to prefix it with `sh`: `gg.cmd gradle run :jabgui:run`). This will also download the necessary JDK and gradle distribution. In the first run, please give the system about 4 minutes until the GUI is shown.
+3. Compile and run JabRef: `gg.cmd gradle run :jabgui:run` (on Linux and macOS, you need to prefix it with `sh`: `gg.cmd gradle run :jabgui:run`). This will also download the necessary JDK and gradle distribution. On the first run, please give the system enough time to accomodate and wait until the JabRef window launches. Depending on your hardware, this may take minutes.
 
 Alternatives:
 
