@@ -32,7 +32,7 @@ Try a branch:
 Alternatives:
 
 1. You "just" need a JDK installed to run `./gradlew`: Gradle automatically downloads the JDK
-2. You can use the "usual" `git clone`, `git remote add ...`, `git fetch ...`, and `git checkout ...` commands to checkout a pull request from a fork.
+2. You can use the "usual" `git clone ...`, `git remote add ...`, `git fetch ...`, and `git checkout ...` commands to checkout a pull request from a fork.
 
 **I would like to improve the help page.**
 
