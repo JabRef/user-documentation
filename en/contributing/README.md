@@ -14,7 +14,7 @@ In the following, we try to give a minimal set of installation instructions to b
 
 Prerequisites:
 
-- [`git`](https://git-scm.com/) - The version control system
+- [`git`](https://git-scm.com/) - The version control system.
 - [GitHubCLI](https://cli.github.com/) - A command-line client to GitHub install it using the installer linked from their [homepage]((https://cli.github.com/)) or [the commands given at the installation hints](https://github.com/cli/cli#installation).
 - A JabRef project checkout. On Windows, we recommend:
   - `mkdir c:\git-repositories`
