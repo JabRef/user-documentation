@@ -31,7 +31,7 @@ Try a branch:
 
 Alternatives:
 
-1. You "just" need a JDK installed to run `./gradlew`: Gradle automatically downloads the JDK
+1. You have the project clone ready but "just" need a JDK to run: In the `JabRef directory, execute `./gradlew run`. Gradle automatically downloads the JDK and launches JabRef.
 2. You can use the "usual" `git clone ...`, `git remote add ...`, `git fetch ...`, and `git checkout ...` commands to checkout a pull request from a fork.
 
 **I would like to improve the help page.**
