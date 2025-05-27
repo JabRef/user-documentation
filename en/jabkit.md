@@ -18,7 +18,7 @@ You can also run it using [docker](https://www.docker.com/):
 docker run ghcr.io/jabref/jabkit:edge --help
 ```
 
-### Making JabKit available on the CLI as `jabkit`:
+### Making JabKit available on the CLI as `jabkit`
 
 In case JabKit should be available on the command line, execute following steps
 
