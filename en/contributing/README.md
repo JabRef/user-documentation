@@ -2,7 +2,7 @@
 
 We are really happy that you are interested in contributing to JabRef. Please take your time to look around here. We especially invite you to look into our [community members page](https://discourse.jabref.org/t/community-members/1868?u=koppor) where members introduce themselves.
 
-## I would like to try out a feature introduced at pull request.
+## I would like to try out a feature introduced at pull request
 
 In JabRef, there are dozens of bug fixes and new features introduced using GitHub's pull request mechansim.
 You can browse all at <https://github.com/JabRef/jabref/pulls>.
@@ -58,8 +58,10 @@ On Windows, instead of `sh ./gg.cmd` use `.\gg.cmd`.
 Alternatives:
 
 1. In case you don't want to use `gg.cmd`:
+
   - You have the project clone ready and have some Java JDK available: In the `JabRef` directory, execute `./gradlew run`.
   - Install [GitHubCLI](https://cli.github.com/), a command-line client for GitHub by using the installer linked on their [homepage](https://cli.github.com/) or the commands given at the [installation hints](https://github.com/cli/cli#installation).
+
 2. In case you don't want to use GitHub's `gh` tool: You can use the "usual" `git clone ...`, `git remote add ...`, `git fetch ...`, and `git checkout ...` commands to checkout a pull request from a fork.
 
 **I would like to improve the help page.**
