@@ -14,7 +14,6 @@ In the following, we try to give a minimal set of installation instructions to b
 
 Required tooling:
 
-- [GitHubCLI](https://cli.github.com/) - A command-line client for GitHub. You can install it using the installer linked on their [homepage](https://cli.github.com/) or the commands given at the [installation hints](https://github.com/cli/cli#installation).
 - [`gg.cmd`](https://github.com/eirikb/gg) - A cross-platform and cross-architecture version manager. Download [`gg.cmd`](https://github.com/eirikb/gg/releases/latest/download/gg.cmd) and store it in your home (or `Downloads`) directory.
 
 Initial setup:
@@ -27,9 +26,9 @@ Initial setup:
   - Get `gg.cmd`
     - `wget ggcmd.io -OutFile gg.cmd`
   - Clone JabRef
-    - `./gg.cmd jbang https://github.com/JabRef/jabref/blob/main/.jbang/CloneJabRef.java JabRef`
+    - `./gg.cmd jbang https://github.com/JabRef/jabref/blob/main/.jbang/CloneJabRef.java jabref`
   - Make `gg.cmd` available in `JabRef` directory
-    - `cd JabRef`
+    - `cd jabref`
     - `move ..\gg.cmd .`
 - Linux:
   - Open a shell
@@ -50,14 +49,18 @@ Now you are all set: You have a directory `JabRef` containing the recent updates
 
 Try a branch:
 
-1. `cd` into the `JabRef` directory: `cd c:\git-repositories\JabRef`
-2. Checkout out the pull request: `gh pr checkout 13111` - where `13111` is the PR number, in this case [pr#13111](https://github.com/JabRef/jabref/pull/13111).
-3. Compile and run JabRef: `gg.cmd gradle run :jabgui:run` (on Linux and macOS, you need to prefix it with `sh`: `gg.cmd gradle run :jabgui:run`). This will also download the necessary JDK and gradle distribution. On the first run, please give the system enough time to accommodate and wait until the JabRef window launches. Depending on your hardware, this may take minutes.
+1. `cd` into the `jabref` directory: `cd c:\git-repositories\jabref`
+2. Checkout out the pull request: `sh ./gg.cmd gh pr checkout 13111` - where `13111` is the PR number, in this case [pr#13111](https://github.com/JabRef/jabref/pull/13111).
+3. Compile and run JabRef: `sh ./gg.cmd gradle run :jabgui:run` (on Linux and macOS, you need to prefix it with `sh`: `gg.cmd gradle run :jabgui:run`). This will also download the necessary JDK and gradle distribution. On the first run, please give the system enough time to accommodate and wait until the JabRef window launches. Depending on your hardware, this may take minutes.
+
+On Windows, instead of `sh ./gg.cmd` use `.\gg.cmd`.
 
 Alternatives:
 
-1. You don't want to use `gg.cmd`: You have the project clone ready and have some Java JDK available: In the `JabRef` directory, execute `./gradlew run`.
-2. You don't want to use GitHub's `gh` tool: You can use the "usual" `git clone ...`, `git remote add ...`, `git fetch ...`, and `git checkout ...` commands to checkout a pull request from a fork.
+1. In case you don't want to use `gg.cmd`:
+  - You have the project clone ready and have some Java JDK available: In the `JabRef` directory, execute `./gradlew run`.
+  - Install [GitHubCLI](https://cli.github.com/), a command-line client for GitHub by using the installer linked on their [homepage](https://cli.github.com/) or the commands given at the [installation hints](https://github.com/cli/cli#installation).
+2. In case you don't want to use GitHub's `gh` tool: You can use the "usual" `git clone ...`, `git remote add ...`, `git fetch ...`, and `git checkout ...` commands to checkout a pull request from a fork.
 
 **I would like to improve the help page.**
 
