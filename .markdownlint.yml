@@ -24,7 +24,7 @@ MD024: false
 
 # The FAQs state questions - we allow them
 MD026:
-  punctuation: '.,;:!'
+  punctuation: .,;:!
 
 MD033:
   # we have <a> tags with ids
