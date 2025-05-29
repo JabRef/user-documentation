@@ -26,8 +26,9 @@ Initial setup:
   - Get `gg.cmd`
     - `wget ggcmd.io -OutFile gg.cmd`
   - Clone JabRef
-    - `./gg.cmd jbang https://github.com/JabRef/jabref/blob/main/.jbang/CloneJabRef.java jabref`
-  - Make `gg.cmd` available in `JabRef` directory
+    - `.\gg.cmd jbang https://github.com/JabRef/jabref/blob/main/.jbang/CloneJabRef.java jabref`
+    - When JBang asks you for trust, you can choose "Trust once" by pressing <kbd>1</kbd> and then <kbd>Enter</kbd>
+  - Make `gg.cmd` available in `jabref` source directory
     - `cd jabref`
     - `move ..\gg.cmd .`
 - Linux:
@@ -39,21 +40,27 @@ Initial setup:
     - `wget ggcmd.io/gg.cmd`
     - Alternative: `curl -L ggcmd.io > gg.cmd`
   - Clone JabRef
-    - `sh ./gg.cmd jbang https://github.com/JabRef/jabref/blob/main/.jbang/CloneJabRef.java JabRef`
-    - NOTE: You can also use the native git client: `git clone --recurse-submodules https://github.com/JabRef/jabref.git JabRef` for achieving the same result.
-  - Make `gg.cmd` available in `JabRef` directory
-    - `cd JabRef`
+    - `sh ./gg.cmd jbang https://github.com/JabRef/jabref/blob/main/.jbang/CloneJabRef.java jabref`
+    - NOTE: You can also use the native git client: `git clone --recurse-submodules https://github.com/JabRef/jabref.git jabref` for achieving the same result.
+  - Make `gg.cmd` available in `jabref` source directory
+    - `cd jabref`
     - `mv ../gg.cmd .`
 
-Now you are all set: You have a directory `JabRef` containing the recent updates and also `gg.cmd` which you will need later for executing a JabRef build.
+Now you are all set: You have a directory `jabref` containing the recent updates and also `gg.cmd` which you will need later for executing a JabRef build.
 
 Try a branch:
 
-1. `cd` into the `jabref` directory: `cd c:\git-repositories\jabref`
-2. Checkout out the pull request: `sh ./gg.cmd gh pr checkout 13111` - where `13111` is the PR number, in this case [pr#13111](https://github.com/JabRef/jabref/pull/13111).
+1. `cd` into the `jabref` source directory: `cd c:\git-repositories\jabref`
+2. Checkout out the pull request: `sh ./gg.cmd gh pr checkout 13182` - where `13182` is the PR number, in this case [pr#13182](https://github.com/JabRef/jabref/pull/13182).
 3. Compile and run JabRef: `sh ./gg.cmd gradle run :jabgui:run` (on Linux and macOS, you need to prefix it with `sh`: `gg.cmd gradle run :jabgui:run`). This will also download the necessary JDK and gradle distribution. On the first run, please give the system enough time to accommodate and wait until the JabRef window launches. Depending on your hardware, this may take minutes.
 
 On Windows, instead of `sh ./gg.cmd` use `.\gg.cmd`.
+
+Instead of the number, you can also copy and paste the branch identifier output by GitHub.
+
+![pr-13182](../.gitbook/assets/pr-13182.png)
+
+In this case, you can run `sh ./gg.cmd gh pr checkout Yubo-Cao:walkthrough`
 
 Alternatives:
 
@@ -68,7 +75,7 @@ Alternatives:
 
 Please see [How to Improve the Help Page](how-to-improve-the-help-page.md)
 
-**I would like to help translating JabRef to another language.**
+**I would like to help to translate JabRef to another language.**
 
 We encourage you to read about [translating the JabRef user interface](how-to-translate-the-ui.md).
 
