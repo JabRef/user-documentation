@@ -51,21 +51,28 @@ Now you are all set: You have a directory `jabref` containing the recent updates
 ### Try a branch
 
 1. `cd` into the `jabref` source directory: `cd c:\git-repositories\jabref`
-2. Checkout out the pull request: `sh ./gg.cmd jbang https://github.com/JabRef/jabref/blob/main/.jbang/CheckoutPR.java 13182` - where `13182` is the PR number, in this case [pr#13182](https://github.com/JabRef/jabref/pull/13182).
+2. Checkout the PR and run JabRef: `sh ./gg.cmd gh/casey/just run-pr xyz` - replace `xyz` with the PR number or the unique branch identifier by GitHub
 
-   - Instead of the number, you can also copy and paste the branch identifier output by GitHub: `sh ./gg.cmd jbang https://github.com/JabRef/jabref/blob/main/.jbang/CheckoutPR.java Yubo-Cao:walkthrough`.
+   - Example: `13182` for [pr#13182](https://github.com/JabRef/jabref/pull/13182).
+   - Example: `Yubo-Cao:walkthroug` for the branch identifier output by GitHub
      ![pr-13182](../.gitbook/assets/pr-13182.png)
 
-3. Compile and run JabRef: `sh ./gg.cmd gradle run :jabgui:run`. This will also download the necessary JDK and a gradle distribution. On the first run, please give the system enough time to accommodate and wait until the JabRef window launches. Depending on your hardware, this may take a few minutes.
+This will download the necessary JDK and a gradle distribution.
+On the first run, please give the system enough time to accommodate and wait until the JabRef window launches.
+Depending on your hardware, this may take a few minutes.
 
 On Windows, instead of `sh ./gg.cmd` use `.\gg.cmd`.
 
 #### Alternatives
 
-1. In case you don't want to use `gg.cmd`: You can install [JBang](https://www.jbang.dev/) for yourself and execute the commands directly.
+1. In case you don't want to use `gg.cmd`: You can install [JBang](https://www.jbang.dev/) and a [Java JDK](https://adoptium.net/de/temurin/releases/?os=any&arch=any&version=21)for yourself and execute the commands directly. These are
+
+   - `jbang https://github.com/JabRef/jabref/blob/main/.jbang/CheckoutPR.java {{pr-id}}`
+   - `./gradlew :jabgui:run`
+
 2. In case you don't want to use `JBang`:
 
-   - You have the project clone ready and have some Java JDK available: In the `JabRef` directory, execute `./gradlew run`.
+   - You have the project clone ready and have some Java JDK available: In the `jabref` directory, execute `./gradlew run`.
    - Install `gh` (the [GitHub CLI](https://cli.github.com/), a command-line client for GitHub) by using the installer linked on their [homepage](https://cli.github.com/) or the commands given at the [installation hints](https://github.com/cli/cli#installation).
 
 3. In case you don't want to use `gh`: You can use the "usual" `git clone ...`, `git remote add ...`, `git fetch ...`, and `git checkout ...` commands to checkout a pull request from a fork.
