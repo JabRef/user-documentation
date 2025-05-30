@@ -65,8 +65,8 @@ On Windows, instead of `sh ./gg.cmd` use `.\gg.cmd`.
 1. In case you don't want to use `gg.cmd`: You can install [JBang](https://www.jbang.dev/) for yourself and execute the commands directly.
 2. In case you don't want to use `JBang`:
 
-  - You have the project clone ready and have some Java JDK available: In the `JabRef` directory, execute `./gradlew run`.
-  - Install `gh` (the [GitHub CLI](https://cli.github.com/), a command-line client for GitHub) by using the installer linked on their [homepage](https://cli.github.com/) or the commands given at the [installation hints](https://github.com/cli/cli#installation).
+   - You have the project clone ready and have some Java JDK available: In the `JabRef` directory, execute `./gradlew run`.
+   - Install `gh` (the [GitHub CLI](https://cli.github.com/), a command-line client for GitHub) by using the installer linked on their [homepage](https://cli.github.com/) or the commands given at the [installation hints](https://github.com/cli/cli#installation).
 
 3. In case you don't want to use `gh`: You can use the "usual" `git clone ...`, `git remote add ...`, `git fetch ...`, and `git checkout ...` commands to checkout a pull request from a fork.
 
