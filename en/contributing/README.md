@@ -65,7 +65,7 @@ On Windows, instead of `sh ./gg.cmd` use `.\gg.cmd`.
 
 #### Alternatives
 
-1. In case you don't want to use `gg.cmd`: You can install [JBang](https://www.jbang.dev/) and a [Java JDK](https://adoptium.net/de/temurin/releases/?os=any&arch=any&version=21)for yourself and execute the commands directly. These are
+1. In case you don't want to use `gg.cmd`: You can install [JBang](https://www.jbang.dev/) and a [Java JDK](https://adoptium.net/de/temurin/releases/?os=any&arch=any&version=21) for yourself and execute the commands directly. These are
 
    - `jbang https://github.com/JabRef/jabref/blob/main/.jbang/CheckoutPR.java {{pr-id}}`
    - `./gradlew :jabgui:run`
