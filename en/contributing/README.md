@@ -51,7 +51,7 @@ Now you are all set: You have a directory `jabref` containing the recent updates
 ### Try a branch
 
 1. `cd` into the `jabref` source directory: `cd c:\git-repositories\jabref`
-2. Checkout the PR and run JabRef: `sh ./gg.cmd gh/casey/just run-pr xyz` - replace `xyz` with the PR number or the unique branch identifier by GitHub
+2. Checkout the PR and run JabRef: `sh ./gg.cmd just run-pr xyz` - replace `xyz` with the PR number or the unique branch identifier by GitHub
 
    - Example: `13182` for [pr#13182](https://github.com/JabRef/jabref/pull/13182).
    - Example: `Yubo-Cao:walkthroug` for the branch identifier output by GitHub\
