@@ -56,7 +56,7 @@ Now you are all set: You have a directory `jabref` containing the recent updates
    - Instead of the number, you can also copy and paste the branch identifier output by GitHub: `sh ./gg.cmd jbang https://github.com/JabRef/jabref/blob/main/.jbang/CheckoutPR.java Yubo-Cao:walkthrough`.
      ![pr-13182](../.gitbook/assets/pr-13182.png)
 
-3. Compile and run JabRef: `sh ./gg.cmd gradle run :jabgui:run`. This will also download the necessary JDK and a gradle distribution. On the first run, please give the system enough time to accommodate and wait until the JabRef window launches. Depending on your hardware, this may take minutes.
+3. Compile and run JabRef: `sh ./gg.cmd gradle run :jabgui:run`. This will also download the necessary JDK and a gradle distribution. On the first run, please give the system enough time to accommodate and wait until the JabRef window launches. Depending on your hardware, this may take a few minutes.
 
 On Windows, instead of `sh ./gg.cmd` use `.\gg.cmd`.
 
