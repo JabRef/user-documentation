@@ -25,9 +25,11 @@ In the following, we try to give a minimal set of installation instructions to b
     - `cd c:\git-repositories`
   - Get `gg.cmd`
     - `wget ggcmd.io -OutFile gg.cmd`
+  - Have JBang trusting JabRef's code
+    - `.\gg.cmd jbang trust add https://github.com/JabRef/jabref/`
   - Clone JabRef
     - `.\gg.cmd jbang https://github.com/JabRef/jabref/blob/main/.jbang/CloneJabRef.java jabref`
-    - When JBang asks you for trust, you can choose "Trust once" by pressing <kbd>1</kbd> and then <kbd>Enter</kbd>
+    - NOTE: You can also use the native git client: `git clone --recurse-submodules https://github.com/JabRef/jabref.git` for achieving the same result.
   - Make `gg.cmd` available in `jabref` source directory
     - `cd jabref`
     - `move ..\gg.cmd .`
@@ -39,19 +41,23 @@ In the following, we try to give a minimal set of installation instructions to b
   - Get `gg.cmd` (using either `wget` or `curl`)
     - `wget ggcmd.io/gg.cmd`
     - Alternative: `curl -L ggcmd.io > gg.cmd`
+  - Have JBang trusting JabRef's code
+    - `sh ./gg.cmd jbang trust add https://github.com/JabRef/jabref/`
   - Clone JabRef
     - `sh ./gg.cmd jbang https://github.com/JabRef/jabref/blob/main/.jbang/CloneJabRef.java jabref`
-    - NOTE: You can also use the native git client: `git clone --recurse-submodules https://github.com/JabRef/jabref.git jabref` for achieving the same result.
+    - NOTE: You can also use the native git client: `git clone --recurse-submodules https://github.com/JabRef/jabref.git` for achieving the same result.
   - Make `gg.cmd` available in `jabref` source directory
     - `cd jabref`
     - `mv ../gg.cmd .`
 
 Now you are all set: You have a directory `jabref` containing the recent updates and also `gg.cmd` which you will need later for executing a JabRef build.
 
+Note: If you don't want to store JabRef's source code permanently, you can follow the steps at [our blog post on gg.cmd usage](https://blog.jabref.org/2025/05/31/run-pr/). There, JabRef's source is checked out in a temporary directory.
+
 ### Try a branch
 
 1. `cd` into the `jabref` source directory: `cd c:\git-repositories\jabref`
-2. Checkout the PR and run JabRef: `sh ./gg.cmd just run-pr xyz` - replace `xyz` with the PR number or the unique branch identifier by GitHub
+2. Checkout the PR and run JabRef: `sh ./gg.cmd just run-pr <pr-number>` - replace `<pr-number>` with the PR number or the unique branch identifier by GitHub
 
    - Example: `13182` for [pr#13182](https://github.com/JabRef/jabref/pull/13182).
    - Example: `Yubo-Cao:walkthroug` for the branch identifier output by GitHub\
@@ -61,18 +67,20 @@ This will download the necessary JDK and a gradle distribution.
 On the first run, please give the system enough time to accommodate and wait until the JabRef window launches.
 Depending on your hardware, this may take a few minutes.
 
-On Windows, instead of `sh ./gg.cmd` use `.\gg.cmd`.
+On Windows, instead of `sh ./gg.cmd` use `.\gg.cmd`:
+
+    .\gg.cmd just run-pr <pr-number>
 
 #### Alternatives
 
-1. In case you don't want to use `gg.cmd`: You can install [JBang](https://www.jbang.dev/) and a [Java JDK](https://adoptium.net/de/temurin/releases/?os=any&arch=any&version=21) for yourself and execute the commands directly. These are
+1. In case you don't want to use `gg.cmd`: You can install [JBang](https://www.jbang.dev/) for yourself and execute the commands directly. These are
 
-   - `jbang https://github.com/JabRef/jabref/blob/main/.jbang/CheckoutPR.java {{pr-id}}`
+   - `jbang https://github.com/JabRef/jabref/blob/main/.jbang/CheckoutPR.java <pr-number>`
    - `./gradlew :jabgui:run`
 
 2. In case you don't want to use `JBang`:
 
-   - You have the project clone ready and have some Java JDK available: In the `jabref` directory, execute `./gradlew run`.
+   - You have the project clone ready and have some [Java JDK](https://adoptium.net/de/temurin/releases/?os=any&arch=any&version=21) available: In the `jabref` directory, execute `./gradlew run`.
    - Install `gh` (the [GitHub CLI](https://cli.github.com/), a command-line client for GitHub) by using the installer linked on their [homepage](https://cli.github.com/) or the commands given at the [installation hints](https://github.com/cli/cli#installation).
 
 3. In case you don't want to use `gh`: You can use the "usual" `git clone ...`, `git remote add ...`, `git fetch ...`, and `git checkout ...` commands to checkout a pull request from a fork.
