@@ -25,11 +25,11 @@ In the following, we try to give a minimal set of installation instructions to b
     - `cd c:\git-repositories`
   - Get `gg.cmd`
     - `wget ggcmd.io -OutFile gg.cmd`
-  - Have JBang trusting JabRef's code
+  - Have JBang trust JabRef's source
     - `.\gg.cmd jbang trust add https://github.com/JabRef/jabref/`
   - Clone JabRef
     - `.\gg.cmd jbang https://github.com/JabRef/jabref/blob/main/.jbang/CloneJabRef.java jabref`
-    - NOTE: You can also use the native git client: `git clone --recurse-submodules https://github.com/JabRef/jabref.git` for achieving the same result.
+    - NOTE: You can also use the native git client: `git clone --recurse-submodules https://github.com/JabRef/jabref.git` to achieve the same result.
   - Make `gg.cmd` available in `jabref` source directory
     - `cd jabref`
     - `move ..\gg.cmd .`
@@ -41,11 +41,11 @@ In the following, we try to give a minimal set of installation instructions to b
   - Get `gg.cmd` (using either `wget` or `curl`)
     - `wget ggcmd.io/gg.cmd`
     - Alternative: `curl -L ggcmd.io > gg.cmd`
-  - Have JBang trusting JabRef's code
+  - Have JBang trust JabRef's source
     - `sh ./gg.cmd jbang trust add https://github.com/JabRef/jabref/`
   - Clone JabRef
     - `sh ./gg.cmd jbang https://github.com/JabRef/jabref/blob/main/.jbang/CloneJabRef.java jabref`
-    - NOTE: You can also use the native git client: `git clone --recurse-submodules https://github.com/JabRef/jabref.git` for achieving the same result.
+    - NOTE: You can also use the native git client: `git clone --recurse-submodules https://github.com/JabRef/jabref.git` to achieve the same result.
   - Make `gg.cmd` available in `jabref` source directory
     - `cd jabref`
     - `mv ../gg.cmd .`
@@ -60,7 +60,7 @@ Note: If you don't want to store JabRef's source code permanently, you can follo
 2. Checkout the PR and run JabRef: `sh ./gg.cmd just run-pr <pr-number>` - replace `<pr-number>` with the PR number or the unique branch identifier by GitHub
 
    - Example: `13182` for [pr#13182](https://github.com/JabRef/jabref/pull/13182).
-   - Example: `Yubo-Cao:walkthroug` for the branch identifier output by GitHub\
+   - Example: `Yubo-Cao:walkthrough` for the branch identifier output by GitHub\
      ![pr-13182](../.gitbook/assets/pr-13182.png)
 
 This will download the necessary JDK and a gradle distribution.
