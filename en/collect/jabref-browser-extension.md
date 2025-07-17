@@ -142,24 +142,24 @@ With Firefox installed as a flatpak:
 1. Download and install the DMG package of [JabRef](https://www.jabref.org/#download) (>= 5.0).
 2. Install the JabRef browser extension: [Firefox](https://addons.mozilla.org/en-US/firefox/addon/jabref/?src=external-github), [Chrome](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh), [Edge](https://microsoftedge.microsoft.com/addons/detail/pgkajmkfgbehiomipedjhoddkejohfna), [Vivaldi](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh)
 
-   - Firefox: If it's not auto-installed for you, download [org.jabref.jabref.json](https://github.com/JabRef/jabref/blob/main/jabgui/buildres/mac/Resources/native-messaging-host/firefox/org.jabref.jabref.json) and put it into
+   - Firefox: If it's not auto-installed for you, download [org.jabref.jabref.json](https://github.com/JabRef/jabref/blob/main/jabgui/buildres/macos/Resources/native-messaging-host/firefox/org.jabref.jabref.json) and put it into
 
       * `/Library/Application Support/Mozilla/NativeMessagingHosts/org.jabref.jabref.json` to install with admin rights for all users
       * `~/Library/Application Support/Mozilla/NativeMessagingHosts/org.jabref.jabref.json` to install without admin rights for the current user
 
-   - Chrome and Brave: If it's not auto-installed for you, download [org.jabref.jabref.json](https://github.com/JabRef/jabref/blob/main/jabgui/buildres/mac/Resources/native-messaging-host/chromium/org.jabref.jabref.json) and put it into
+   - Chrome and Brave: If it's not auto-installed for you, download [org.jabref.jabref.json](https://github.com/JabRef/jabref/blob/main/jabgui/buildres/macos/Resources/native-messaging-host/chromium/org.jabref.jabref.json) and put it into
 
       * `/Library/Google/Chrome/NativeMessagingHosts/org.jabref.jabref.json` to install with admin rights for all users
       * `~/Library/Application Support/Google/Chrome/NativeMessagingHosts/org.jabref.jabref.json` to install without admin rights for the current user
 
       Note: Brave is using the Google file structure for `NativeMessagingHosts`, see [Github Issue](https://github.com/brave/brave-browser/issues/5074).
 
-   - Chromium based: If it's not auto-installed for you, download [org.jabref.jabref.json](https://github.com/JabRef/jabref/blob/main/jabgui/buildres/mac/Resources/native-messaging-host/chromium/org.jabref.jabref.json) and put it into
+   - Chromium based: If it's not auto-installed for you, download [org.jabref.jabref.json](https://github.com/JabRef/jabref/blob/main/jabgui/buildres/macos/Resources/native-messaging-host/chromium/org.jabref.jabref.json) and put it into
 
       * `/Library/Application Support/Chromium/NativeMessagingHosts/org.jabref.jabref.json` to install with admin rights for all users
       * `~/Library/Application Support/Chromium/NativeMessagingHosts/org.jabref.jabref.json` to install without admin rights for the current user
 
-   - Edge: If it's not auto-installed for you, download [org.jabref.jabref.json](https://github.com/JabRef/jabref/blob/main/jabgui/buildres/mac/Resources/native-messaging-host/chromium/org.jabref.jabref.json) and put it into
+   - Edge: If it's not auto-installed for you, download [org.jabref.jabref.json](https://github.com/JabRef/jabref/blob/main/jabgui/buildres/macos/Resources/native-messaging-host/chromium/org.jabref.jabref.json) and put it into
 
       * `/Library/Microsoft/Edge/NativeMessagingHosts/org.jabref.jabref.json` to install with admin rights for all users
       * `~/Library/Application Support/Microsoft Edge {Channel_Name}/NativeMessagingHosts/org.jabref.jabref.json` to install without admin rights for the current user
