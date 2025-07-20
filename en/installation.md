@@ -148,6 +148,7 @@ cd jabref
 ./gradlew installDist
 jabgui/build/install/jabgui/bin/jabgui
 ```
+
 On Windows, replace the last command with `gradlew.bat run`.
 
 In a nutshell, you clone the latest snapshot of JabRef into `jabref` directory, initialize and update all its submodules, change directory to `jabref`, build the application, and run it.
