@@ -145,10 +145,11 @@ To build JabRef from source, you first need to have a working Java Development K
 ```shell
 git clone --recurse-submodules --depth=10 https://github.com/JabRef/jabref
 cd jabref
-./gradlew assemble
-./gradlew jlink
+./gradlew installDist
+jabgui/build/install/jabgui/bin/jabgui
 ```
 
-In a nutshell, you clone the latest snapshot of JabRef into `jabref` directory, change directory to `jabref`, initialize and update all the submodules (dependencies) of JabRef, assemble them to be built via JDK and finally build and link them together.
+In a nutshell, you clone the latest snapshot of JabRef into `jabref` directory, initialize and update all its submodules, change directory to `jabref`, build the application, and run it.
 
-The output should be the `jabgui/build/image` subdirectory that contains the JabRef binary with all of its Java dependencies. To start JabRef, you need to run `bin/JabRef` (in Linux and MacOS) or `bin/JabRef.bat` (in Windows) under `jabgui/build/image` subdirectory.
+To restart JabRef, rerun the last command, which should work in Linux and MacOS and when using PowerShell in Windows.
+
