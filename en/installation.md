@@ -136,23 +136,30 @@ This is one the one hand a font problem and second a lognstanding [JavaFX bug](h
 {% endtab %}
 {% endtabs %}
 
-## Building From Source
+## Building from source
 
 This method is mainly for package maintainers and users who would like to build the latest snapshots of JabRef directly from the source. If you want to setup JabRef for development, follow the instructions for [setting up a workspace](https://devdocs.jabref.org/getting-into-the-code/guidelines-for-setting-up-a-local-workspace).
 
-To build JabRef from source, you first need to have a working Java Development Kit (see above link for details) and Git installed on your system. After installing the two requirements, you open a terminal window (i.e., a command prompt) and type the following:
+To build JabRef from source, you first need to have a working Java Development Kit (see above link for details) and Git installed on your system. After installing the requirements, you open a terminal window (i.e., a command prompt) and type the following:
 
 ```shell
 git clone --recurse-submodules --depth=10 https://github.com/JabRef/jabref
 cd jabref
-./gradlew installDist
-jabgui/build/install/jabgui/bin/jabgui
+./gradlew jabgui:jpackage
 ```
 
-On Windows, replace the last command with `gradlew.bat run`.
+In a nutshell, you clone the latest snapshot of JabRef into `jabref` directory, initialize and update all its submodules, change directory to `jabref`, and build the application.
 
-In a nutshell, you clone the latest snapshot of JabRef into `jabref` directory, initialize and update all its submodules, change directory to `jabref`, build the application, and run it.
+The executable file will be written to an OS-specific subdirectory of `jabgui/build/packages`. On Windows, this would be `jabgui/build/packages/windows-latest/JabRef/JabRef.exe`.
 
-To restart JabRef, rerun the last command.
+## Running from source
+
+To run from source without building an executable, type the following in a terminal window:
+
+```shell
+./gradlew jabgui:run
+```
+
+
 
 
