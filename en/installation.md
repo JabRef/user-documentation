@@ -145,7 +145,7 @@ To build JabRef from source, you first need to have a working Java Development K
 ```shell
 git clone --recurse-submodules --depth=10 https://github.com/JabRef/jabref
 cd jabref
-./gradlew jabgui:jpackage
+./gradlew :jabgui:jpackage
 ```
 
 In a nutshell, you clone the latest snapshot of JabRef into `jabref` directory, initialize and update all its submodules, change directory to `jabref`, and build the application.
@@ -157,9 +157,5 @@ The executable file will be written to an OS-specific subdirectory of `jabgui/bu
 To run from source without building an executable, type the following in a terminal window:
 
 ```shell
-./gradlew jabgui:run
+./gradlew :jabgui:run
 ```
-
-
-
-
