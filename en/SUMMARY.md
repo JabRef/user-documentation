@@ -36,6 +36,7 @@
   * [Pushing to external editor application](cite/pushtoapplications.md)
   * [Export to Microsoft Word](cite/export-to-microsoft-word.md)
   * [OpenOffice/LibreOffice integration](cite/openofficeintegration.md)
+  * [Cite As You Write](cite/cite-as-you-write.md)
 * [Share](collaborative-work/README.md)
   * [Sharing a Bib(la)TeX Library](collaborative-work/sharedbibfile.md)
   * [Shared SQL Database](collaborative-work/sqldatabase/README.md)
