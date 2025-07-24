@@ -15,13 +15,14 @@ To use the Cite As You Write (CAYW) feature, you need to have JabRef running and
 You can enable the HTTP server in **File → Preferences → General** and under the **HTTP Server** section check the box
 for **Enable HTTP Server**.
 
-## Endpoint Parameters
+## Application setup
 
-We are working on becoming fully compatible with the CAYW Endpoint
+For instructions on how to setup your editor to use the CAYW endpoint, please consult the documentation of [Better BibTeX for Zotero](https://retorque.re/zotero-better-bibtex/citing/cayw/index.html).
+
+## Endpoint parameters
+
+We are working on becoming fully compatible with the CAYW endpoint
 of [Better BibTeX for Zotero](https://retorque.re/zotero-better-bibtex/citing/cayw/index.html).
-
-For Instructions on how to setup your editor to use the CAYW endpoint, you can see the Documentation of [Better BibTeX for Zotero](https://retorque.re/zotero-better-bibtex/citing/cayw/index.html).
-
 The endpoint is available under `http://localhost:23119/better-bibtex/cayw`.
 
 Currently, the following optional **GET** parameters are supported:
@@ -37,22 +38,22 @@ Currently, the following optional **GET** parameters are supported:
 | `select`      | If set to `true` or any non-empty value, it will select the selected entries in JabRef        |            |
 | `librarypath` | The path to the library file, if not set, it will use the currently opened library in JabRef  |            |
 
-This is the list of the currently supported formats:
+Following formats are supported:
 
 | Format        | Description                                                                                            |
 |---------------|--------------------------------------------------------------------------------------------------------|
 | `biblatex`    | Additional `command` parameter, which allows to use another command for citing, defaults to `autocite` |
 | `simple-json` | A simple json containing the entry ID and the citation key                                             |
 
-And this is the list of supported applications:
+Following applications are supported:
 
 - emacs
-- lyx
-- texmaker
-- texstudio
-- texworks
+- LyX
+- Sublime
+- Texmaker
+- TeXShop
+- TeXstudio
+- TeXworks
 - vim
-- winedt
-- sublime
-- texshop
-- vscode
+- VS Code
+- WinEdt
