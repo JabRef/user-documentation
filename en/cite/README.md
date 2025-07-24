@@ -12,3 +12,5 @@ description: Include citations of your references to your documents.
 
 {% page-ref page="pushtoapplications.md" %}
 
+{% page-ref page="cite-as-you-write.md" %}
+
