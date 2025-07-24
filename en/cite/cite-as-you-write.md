@@ -55,5 +55,5 @@ Following applications are supported:
 - TeXstudio
 - TeXworks
 - vim
-- VS Code
+- VSCode
 - WinEdt
