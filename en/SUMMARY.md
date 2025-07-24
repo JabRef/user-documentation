@@ -34,6 +34,7 @@
 * [Cite](cite/README.md)
   * [BibTeX and biblatex](cite/bibtex-and-biblatex.md)
   * [Pushing to external editor application](cite/pushtoapplications.md)
+  * [Cite As You Write](cite/cite-as-you-write.md)
   * [Export to Microsoft Word](cite/export-to-microsoft-word.md)
   * [OpenOffice/LibreOffice integration](cite/openofficeintegration.md)
 * [Share](collaborative-work/README.md)

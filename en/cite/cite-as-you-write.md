@@ -47,13 +47,15 @@ Following formats are supported:
 
 Following applications are supported:
 
-- emacs
-- LyX
-- Sublime
-- Texmaker
-- TeXShop
-- TeXstudio
-- TeXworks
-- vim
-- VSCode
-- WinEdt
+| Application | parameter  |
+|------------|-------------|
+| emacs      | `emacs`     |
+| LyX        | `lyx`       |
+| Sublime    | `sublime`   |
+| Texmaker   | `texmaker`  |
+| TeXShop    | `texshop`   |
+| TeXstudio  | `texstudio` |
+| TeXworks   | `texworks`  |
+| vim        | `vim`       |
+| VS Code    | `vscode`    |
+| WinEdt     | `winedt`    |
