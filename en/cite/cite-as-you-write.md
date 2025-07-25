@@ -1,5 +1,5 @@
 ---
-description: Using Cite As You Write to insert citations "on the fly" directly in your editor.
+description: Using Cite As You Write to insert citations "on the fly" directly into your editor.
 ---
 
 # Cite As You Write (CAYW)
@@ -38,14 +38,18 @@ Currently, the following optional **GET** parameters are supported:
 | `select`      | If set to `true` or any non-empty value, it will select the selected entries in JabRef        |            |
 | `librarypath` | The path to the library file, if not set, it will use the currently opened library in JabRef  |            |
 
-Following formats are supported:
+### Supported formats
+
+Supported values for paramter `format`:
 
 | Format        | Description                                                                                            |
 |---------------|--------------------------------------------------------------------------------------------------------|
 | `biblatex`    | Additional `command` parameter, which allows to use another command for citing, defaults to `autocite` |
 | `simple-json` | A simple json containing the entry ID and the citation key                                             |
 
-Following applications are supported:
+### Supported applications
+
+Supported values for paramter `application`:
 
 | Application | parameter  |
 |------------|-------------|
