@@ -19,8 +19,13 @@ Upon the first start of JabRef the main user interface is showing up the main el
 * Menu bar
 * Icon bar (shortcuts for most frequently used features)
 * Side bar (for groups and web search)
+* The Welcome Tab provides quick actions, common settings, and access to helpful walkthroughs.
+  * Quick settings allow you conveniently specify the [main file directory](https://docs.jabref.org/finding-sorting-and-cleaning-entries/filelinks#directories-for-files), change [themes](https://docs.jabref.org/advanced/custom-themes), enable [large library optimizations](https://docs.jabref.org/faq#q-i-have-a-huge-library.-what-can-i-do-to-mitigate-performance-issues), configure the [entry table](https://docs.jabref.org/advanced/main-window), adjust [online services](https://docs.jabref.org/collect/import-using-online-bibliographic-database), and set up [push to applications](https://docs.jabref.org/cite/pushtoapplications).
+  * The walkthroughs are designed to help you learn and discover JabRef's features, such as changing preferences, searching libraries, linking external files, and organizing entries into groups.
 
 ![Screenshot of main window](<.gitbook/assets/getting-started-main-screen (5).png>)
+
+
 
 ## Creation of a new library
 
