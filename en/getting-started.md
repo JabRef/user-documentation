@@ -25,8 +25,6 @@ Upon the first start of JabRef the main user interface is showing up the main el
 
 ![Screenshot of main window](<.gitbook/assets/getting-started-main-screen (5).png>)
 
-
-
 ## Creation of a new library
 
 A "library" is the main file that saves all the information about your collection of references. The storage format of the file is text-based in the BibTeX standard (by default).
