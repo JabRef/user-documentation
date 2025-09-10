@@ -47,6 +47,7 @@ Usage: jabkit [-dhpv] [COMMAND]
 Commands:
   generate-citation-keys  Generate citation keys for entries in a .bib file.
   check-consistency       Check consistency of the library.
+  check-integrity         Check integrity of the database.
   fetch                   Fetch entries from a provider.
   search                  Search in a library.
   convert                 Convert between bibliography formats.
