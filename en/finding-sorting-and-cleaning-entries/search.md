@@ -7,7 +7,7 @@ The search bar is located in the icon bar.
 To make the cursor jump to the search field, you can:
 
 * Click in the search field.
-* Press Ctrl + F.
+* Press <kbd>Ctrl</kbd> + <kbd>F</kbd>.
 
 ## Search history
 
