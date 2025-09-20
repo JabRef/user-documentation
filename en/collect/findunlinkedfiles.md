@@ -65,6 +65,54 @@ This information is partially outdated. Please help to improve it ([how to edit 
 The imported entries may need some editing because all the information gathered from the PDF files may not be accurate (see below "PDFs for which it works").
 {% endhint %}
 
+# How .gitignore affects “Find unlinked local files”
+
+JabRef’s “Find unlinked local files” feature respects `.gitignore` files. 
+A `.gitignore` file is a small text file where you list file names or patterns you don’t want to see; tools that support it (like Git and JabRef) skip those files during searches.
+
+## What JabRef does
+
+- Looks for an applicable `.gitignore` in the directory being scanned and applies its patterns.
+- Interprets patterns relative to the directory that contains the `.gitignore`.
+- Applies all patterns (not “first match wins”).
+- Also ignores the `.git` directory and common OS metadata by default, and ignores the `.gitignore` file itself.
+
+## Notes about pattern behavior
+
+- Patterns are matched against the path relative to the `.gitignore`’s directory.
+- Patterns like `ignore/*` and `ignore/**` work as in Git to ignore a named subdirectory and its contents.
+- Patterns starting with `**/` (for example, `**/*.png`) also match files in the top directory for convenience, so PNGs are ignored both in subdirectories and at the base level.
+
+## Examples
+
+Ignore all PNG images everywhere:
+
+```gitignore
+*.png
+```
+
+Ignore a specific subdirectory named ignore (and everything inside, including nested folders):
+
+```gitignore
+ignore/*
+ignore/**
+```
+
+Ignore PDFs in any subfolder (and also at the base directory):
+
+```gitignore
+**/*.pdf
+```
+
+## Tips
+
+- Place a `.gitignore` file in the folder you start the search in (or deeper) to control what is scanned.
+- If you use multiple `.gitignore` files in different subfolders, each one applies to the files under its directory.
+
+This behavior mirrors Git’s expectations in practice, while making it straightforward to exclude unneeded files from the unlinked-files search.
+
+
+
 ## Further information
 
 ### PDFs for which it works
