@@ -65,7 +65,7 @@ This information is partially outdated. Please help to improve it ([how to edit 
 The imported entries may need some editing because all the information gathered from the PDF files may not be accurate (see below "PDFs for which it works").
 {% endhint %}
 
-# How .gitignore affects “Find unlinked local files”
+## How .gitignore affects “Find unlinked local files”
 
 JabRef’s “Find unlinked local files” feature respects `.gitignore` files. 
 A `.gitignore` file is a small text file where you list file names or patterns you don’t want to see; tools that support it (like Git and JabRef) skip those files during searches.
