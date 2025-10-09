@@ -6,7 +6,7 @@ description: Inserting a citation directly in your editor.
 
 # Pushing to external editor application
 
-JabRef allows you to push any entries in your main window to an external editor through the push-to-external application feature. It works with Emacs, LyX/Kile, Texmaker, TeXstudio, Vim, and WInEdt.
+JabRef allows you to push any entries in your main window to an external editor through the push-to-external application feature. It works with [Emacs](https://www.gnu.org/software/emacs/), [LyX](https://www.lyx.org/), [Kile](https://apps.kde.org/kile/), [Sublime Text](https://www.sublimetext.com/), [Texmaker](https://www.xm1math.net/texmaker/), [TeXShop](https://pages.uoregon.edu/koch/texshop/), [TeXstudio](https://www.texstudio.org/), [TeXworks](https://www.tug.org/texworks/), [vim](https://www.vim.org/), [Visual Studio Code](https://code.visualstudio.com/), and [WinEdt](https://www.winedt.com/).
 
 To push as citation, first select the entries in your entry table that you would like to push. Then, either:
 
