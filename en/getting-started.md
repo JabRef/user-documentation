@@ -42,6 +42,13 @@ To create a new library, just select the "New library" menu item in the "File" m
 ![Creating a new library](<.gitbook/assets/getting-started-new-library (7).png>)
 
 The main screen is now showing an empty "entry table" we will now start to fill with some entries.
+{% hint style="info" %}
+*Open vs. Import*
+
+It is important to understand the difference between these two menu actions:
+* *File -> Open* is used to open a new library file (or an existing one). JabRef can keep multiple libraries open at the same time.
+* *File -> Import* is used to add the contents (all the entries) of an existing BibTeX or other reference file into the *library you currently have open*.
+{% endhint %}
 
 ## Adding of a new entry manually
 
