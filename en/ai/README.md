@@ -30,7 +30,6 @@ In this window, you can see the following elements:
 JabRef uses external AI providers to do the actual work. You can choose between various providers. They all run "Large Language Models" (LLMs) to process the requests and need chunks of text to work. For this, JabRef parses and indexes linked PDF files of entries: The file is split into parts of fixed-length (so-called _chunks_) and for each of them, an _embedding_ is generated. An embedding itself is a representation of a part of text and in turn a vector that represents the meaning of the text. Each vector has a crucial property: texts with similar meaning have vectors that are close to (so-called _vector similarity_). As a result, whenever you ask AI a question, JabRef tries to find relevant pieces of text from the indexed files using vector similarity and provides those to the LLM system to be processed.
 
 ## More information
-
 {% content-ref url="how-to-enable-ai-features.md" %}
 [how-to-enable-ai-features.md](how-to-enable-ai-features.md)
 {% endcontent-ref %}
