@@ -16,7 +16,7 @@ To push as citation, first select the entries in your entry table that you would
 
 ![](<../.gitbook/assets/push-external-button-windows (5).png>)
 
-By default the external editor used to push citations is TeXstudio. You can select another application in **Options → Preferences → External programs**. Under the **Push applications** section, click on the **Application to push entries to** field. This will cause a dropdown menu to appear, from which you are then able to select from a list of all the external editors you have configured.
+By default the external editor used to push citations is TeXstudio. You can select another application in **File → Preferences → External programs**. Under the **Push applications** section, click on the **Application to push entries to** field. This will cause a dropdown menu to appear, from which you are then able to select from a list of all the external editors you have configured.
 
 ![Preferences: External Programs: Configuration](../.gitbook/assets/pushtoapplications-preferences.png)
 
