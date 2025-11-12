@@ -105,9 +105,9 @@ JabRef has five types of groups:
 * **Searching for a keyword**. The group contain entries in which a certain field (e.g. `author`) contains a certain keyword (e.g. `Smith`). This method does not require manual assignment of entries but uses information that is already present in the database.
 * **Free search expression**. Similar to **Searching for a keyword**, but for several keywords in several fields.
 * **Specified keywords**. This feature will gather all words found in a specific field of your choice, and create a group for each word.
-  * **Authors' last names**. Groups can be generated for each author's last name.
+* **Authors' last names**. Groups can be generated for each author's last name.
 * **Cited entries**. The group contains the entries cited in a LaTeX document, based on its _.aux_ file.
-* **Date**. The group contains entries based on their publication date.
+* **Date**. The group contains all entries that satisfy a certain date criteria.
 * **Directory structure**. The group mirrors the local file system structure based on the root directory path specified.
 
 #### Explicit selection
@@ -175,11 +175,11 @@ The field _Date grouping option_ specifies how the entries are grouped, either b
 
 #### Using the directory structure
 
-This feature copy the local file system structure based on the root directory path specified. It also imports the PDF files contained in the directories as entries in the library. It then synchronizes the group structure when there is a change in the local file system.
+This feature mirrors a local structure and imports its PDF files as entries in the library. The group structure is updated dynamically whenever there is a change in the system.
 
 ![Fields for collecting by directory structure](<../.gitbook/assets/groups-groupwindow-typedirectorystructure-jabref6.0.png>)
 
-The folder icon at the right of the field _Root path_ allows browsing the file system to select the desired root directory. When the directory is selected, it automatically fills the field _Name_ with the directory name if it was empty. It also selects _Union_ as hierarchical context by default, since this is the most logical choice for this type of group.
+The folder icon at the right of the field _Root path_ allows browsing the file system to select the root directory. When the directory is selected, it automatically fills the field _Name_ with the directory name if it was empty. It also selects _Union_ as hierarchical context by default, since this is the most logical choice for this type of group.
 
 ## Group color bars in the entry table
 
