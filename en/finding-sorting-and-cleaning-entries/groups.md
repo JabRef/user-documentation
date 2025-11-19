@@ -105,7 +105,6 @@ JabRef has five types of groups:
 * **Searching for a keyword**. The group contain entries in which a certain field (e.g. `author`) contains a certain keyword (e.g. `Smith`). This method does not require manual assignment of entries but uses information that is already present in the database.
 * **Free search expression**. Similar to **Searching for a keyword**, but for several keywords in several fields.
 * **Specified keywords**. This feature will gather all words found in a specific field of your choice, and create a group for each word.
-* **Authors' last names**. Groups can be generated for each author's last name.
 * **Cited entries**. The group contains the entries cited in a LaTeX document, based on its _.aux_ file.
 * **Date**. The group contains all entries that satisfy a certain date criteria.
 * **Directory structure**. The group mirrors the local file system structure based on the root directory path specified.
@@ -153,6 +152,9 @@ With the group type "Specified keywords", you can quickly create a set of groups
 You can also specify characters to ignore, for instance, commas used between keywords. These will be treated as separators between words, and not part of them. This step is important for combined keywords such as `laplace distribution` to be recognized as a single semantic unit. (You cannot use this option to remove complete words. Instead, delete the unwanted groups manually after they were created automatically.)
 
 ![Fields for collecting by specified keywords](<../.gitbook/assets/groups-groupwindow-typespecifiedkeywords-jabref6.0.png>)
+
+
+If you enter `author` in the first _Field to group by_, a group will be created for each author's complete name (e.g. `John Smith`), containing all entries authored by this person. But if you enter `author` in the second _Field to group by_, a group will be created for each author's last name only (e.g. `Smith`), containing all entries authored by persons with this last name.
 
 The content of the group is updated dynamically whenever the database changes.
 
