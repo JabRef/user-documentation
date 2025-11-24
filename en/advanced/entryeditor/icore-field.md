@@ -2,7 +2,7 @@
 
 The [ICORE (International CORE Conference Rankings)](https://www.core.edu.au/home) is a ranking of Computer Science conferences (A*, A, B, C). JabRef allows you to lookup a conference's ICORE rank so you can find out how highly ranked a paper's venue is.
 
-By default, the `Icore` field shows up in the `General Tab` under the `DOI` field:
+By default, the `Icore` field shows up under the `General` tab below the `DOI` field:
 
 ![Icore Field In the General Tab](../../.gitbook/assets/icore-field-1.png)
 
