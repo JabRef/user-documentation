@@ -20,7 +20,7 @@ If you need to use an HTTP proxy server, you can configure JabRef to use a proxy
 
 ## Search Syntax
 
-Since version [Unreleased](https://github.com/JabRef/jabref/blob/main/CHANGELOG.md#unreleased):
+Since version [6.0](https://github.com/JabRef/jabref/blob/main/CHANGELOG.md#unreleased):
 
 JabRef searches the catalogs by using the specified keywords. One can use quotes (`"`) to keep words togehter: An example is `"process mining"`. It is also possible to restrict the search to dedicated fields:
 
