@@ -10,15 +10,15 @@ Throughout this help document, whenever the name _OpenOffice_ is used, it can be
 
 To communicate with OpenOffice, JabRef must first connect to a running OpenOffice instance. You need to start OpenOffice and enter your document before connecting from JabRef.
 
-![](<ConnectToLibreOffice (2).gif>)
+![](<../.gitbook/assets/ConnectToLibreOffice (2).gif>)
 
 JabRef needs to know the location of your OpenOffice executable (**soffice.exe** on Windows, and **soffice** on other platforms), and the directory where several OpenOffice jar files reside. If you connect by clicking the **Connect** button, JabRef will try to automatically determine these locations. If this does not work, you need to connect using the **Manual connect** button, which will open a window asking you for the needed locations.
 
-If you are one of the rare users that have manually installed LibreOffice via a [deb](https://de.wikipedia.org/w/index.php?title=Debian-Paket&oldid=244262361) file in Linux Mint (an Ubuntu based distribution), you can choose the LibreOffice program directory under `/opt/`. For example `/opt/libreoffice24.2/program`. In this particular case, it is enough to choose the directory path. Finding the soffice file is not required. Note that installing deb files manually is not recommended. If you can, use the package manager of your distribution.
+If you are one of the rare users that have manually installed LibreOffice via a [deb](https://de.wikipedia.org/w/index.php?title=Debian-Paket\&oldid=244262361) file in Linux Mint (an Ubuntu based distribution), you can choose the LibreOffice program directory under `/opt/`. For example `/opt/libreoffice24.2/program`. In this particular case, it is enough to choose the directory path. Finding the soffice file is not required. Note that installing deb files manually is not recommended. If you can, use the package manager of your distribution.
 
 After the connection has been established, you can insert citations by selecting one or more entries in JabRef and using the **Push to OpenOffice** button in the dropdown menu of JabRef's toolbar, or by using the appropriate button in the OpenOffice panel in the side pane. This will insert citations for the selected entries at the current cursor position in the OpenOffice document, and update the bibliography to contain the full reference.
 
-![](<CiteLibreOffice (3).gif>)
+![](<../.gitbook/assets/CiteLibreOffice (3).gif>)
 
 **Note:** JabRef does not use OpenOffice's built-in bibliography system, because of the limitations of that system. A document containing citations inserted from JabRef will not generally be compatible with other reference managers such as Bibus and Zotero.
 
@@ -40,7 +40,7 @@ To edit an already loaded custom style file or to reload changes that you made t
 
 Here is an example style file:
 
-```text
+```
 NAME
 Example style file for JabRef-OpenOffice integration.
 
@@ -188,12 +188,12 @@ If you are using numbered citations, the number for each entry will be automatic
 
 The bibliography entries include the option to include on which document pages the references are cited. Currently, a JStyle must be selected in order for this feature to work. The setting can be accessed in the settings panel under the option `"Automatically add "Cited on pages..." at beginning of bibliographic entries"`. An example bibliography entry will look like such:
 
-![](<cited-on-pages-reference.png>)
+![](../.gitbook/assets/cited-on-pages-reference.png)
 
 ## Known issues
 
 * Make sure to save your Writer document in OpenDocument format (odt). Saving to Word format will lose your reference marks.
-  * Otherwise, try to use the external tool [JabRef LibreOffice Converter](https://github.com/teertinker/JabRef\_LibreOffice\_Converter). This LibreOffice extension converts the reference marks to code that can be saved.
+  * Otherwise, try to use the external tool [JabRef LibreOffice Converter](https://github.com/teertinker/JabRef_LibreOffice_Converter). This LibreOffice extension converts the reference marks to code that can be saved.
 * There is currently no support for footnote based citations.
 * The cursor may be poorly positioned after inserting a citation.
 * Copy-pasting the example style file directly from this page can give an unparseable file. To avoid this, instead download the example file from the link in the download section.

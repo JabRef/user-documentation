@@ -2,7 +2,7 @@
 
 The search bar is located in the icon bar.
 
-![Screenshot of the search bar](<../.gitbook/assets/search-bar-v5.2 (6).png>)
+![Screenshot of the search bar](<../.gitbook/assets/search-bar-v5.2 (1).png>)
 
 To make the cursor jump to the search field, you can:
 

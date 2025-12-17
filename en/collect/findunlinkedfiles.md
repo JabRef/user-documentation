@@ -14,9 +14,9 @@ If you drop a PDF onto an entry in the main table or the entry preview in the en
 
 ### Better filenames
 
-JabRef changes the filenames automatically. You can adapt the pattern at Preferences -> Import ![Preferences - Import](<../.gitbook/assets/preferences-import (4).png>)
+JabRef changes the filenames automatically. You can adapt the pattern at Preferences -> Import ![Preferences - Import](<../.gitbook/assets/preferences-import (1).png>)
 
-Select "Choose pattern" and choose "bibtexkey - title" ![Preferences - Import - Choose pattern](<../.gitbook/assets/preferences-import-choose-pattern (5).png>). This results in the setting `\bibtexkey\begin{title} - \format[RemoveBrackets]{\title}\end{title}`.
+Select "Choose pattern" and choose "bibtexkey - title" ![Preferences - Import - Choose pattern](<../.gitbook/assets/preferences-import-choose-pattern (1).png>). This results in the setting `\bibtexkey\begin{title} - \format[RemoveBrackets]{\title}\end{title}`.
 
 This makes the filenames start with the citation key followed by the full title. In the concrete case, `\bibtexkey` only may be the better option as the described bibtey key already contains the title.
 
@@ -39,24 +39,24 @@ This information is partially outdated. Please help to improve it ([how to edit 
 {% endhint %}
 
 1. Create or open a library (AKA a `.bib` file).
-2. Go to **Lookup -> Search for unlinked local files**. (or press `SHIFT + F7`)
+2.  Go to **Lookup -> Search for unlinked local files**. (or press `SHIFT + F7`)
 
-    ![FindUnlinkedFiles - Menu](<../.gitbook/assets/bildschirmfoto-2021-07-05-um-19.19.09 (1).png>) ![FindUnlinkedFiles - Menu](<../.gitbook/assets/findunlinkedfiles-menu-5.2 (6).png>)
-3. The "Search for unlinked local files" dialog opens.
+    ![FindUnlinkedFiles - Menu](<../.gitbook/assets/bildschirmfoto-2021-07-05-um-19.19.09 (1).png>) ![FindUnlinkedFiles - Menu](<../.gitbook/assets/findunlinkedfiles-menu-5.2 (1).png>)
+3.  The "Search for unlinked local files" dialog opens.
 
-    <img src="../.gitbook/assets/findunlinkedfiles-window-5.2 (6).png" alt="FindUnlinkedFiles - Initial dialog" data-size="original">
+    <img src="../.gitbook/assets/findunlinkedfiles-window-5.2 (1).png" alt="FindUnlinkedFiles - Initial dialog" data-size="original">
 4. Choose a start directory using the "Browse" button.
 5. Click on "Search" / "Scan directory".
-6. In "Select files", the files not yet contained in the library are shown.
+6.  In "Select files", the files not yet contained in the library are shown.
 
-    <img src="../.gitbook/assets/findunlinkedfiles-foundfiles-5.2 (6).png" alt="FindUnlinkedFiles - Found files" data-size="original">
+    <img src="../.gitbook/assets/findunlinkedfiles-foundfiles-5.2 (1).png" alt="FindUnlinkedFiles - Found files" data-size="original">
 7. Select the entries you are interested in. Note: the button `Export selected files` allows you to export the list of the selected files (a text file containing on each line one filename with its path)
-8. Click on `Import`.
+8.  Click on `Import`.
 
     The windows close and the entry table now contains the newly-imported entries.
-9. The entry editor with the last imported entry is shown ![FindUnlinkedFiles - 08 - entry editor](<../.gitbook/assets/findunlinkedfiles-08-entry-editor (5).png>)
+9. The entry editor with the last imported entry is shown ![FindUnlinkedFiles - 08 - entry editor](<../.gitbook/assets/findunlinkedfiles-08-entry-editor (1).png>)
 10. You can now save the file and are finished.
-11. Optional: Click on "General" to see the linked file ![FindUnlinkedFiles - 09 - entry editor - General](<../.gitbook/assets/findunlinkedfiles-09-entry-editor-general (5).png>)
+11. Optional: Click on "General" to see the linked file ![FindUnlinkedFiles - 09 - entry editor - General](<../.gitbook/assets/findunlinkedfiles-09-entry-editor-general (1).png>)
 12. Optional: Click on "BibTeX source" to see the BibTeX source ![FindUnlinkedFiles - 10 - entry editor - BibTeX source](<../.gitbook/assets/findunlinkedfiles-10-entry-editor-bibtex-source (1).png>)
 13. Optional: You have to shrink it to see the entry in the entry table, enlarge the JabRef window and use the mouse at the upper border of the entry editor ![FindUnlinkedFiles - 11 - entry editor - shrunk](<../.gitbook/assets/findunlinkedfiles-11-entry-editor-shrunk (1).png>)
 14. Optional: Press Esc to show the entry preview ![FindUnlinkedFiles - 12 - entry preview](<../.gitbook/assets/findunlinkedfiles-12-entry-preview (1).png>)
@@ -67,21 +67,20 @@ The imported entries may need some editing because all the information gathered 
 
 ## How .gitignore affects “Find unlinked local files”
 
-JabRef’s “Find unlinked local files” feature respects `.gitignore` files.
-A `.gitignore` file is a small text file where you list file names or patterns you don’t want to see; tools that support it (like Git and JabRef) skip those files during searches.
+JabRef’s “Find unlinked local files” feature respects `.gitignore` files. A `.gitignore` file is a small text file where you list file names or patterns you don’t want to see; tools that support it (like Git and JabRef) skip those files during searches.
 
 ## What JabRef does
 
-- Looks for an applicable `.gitignore` in the directory being scanned and applies its patterns.
-- Interprets patterns relative to the directory that contains the `.gitignore`.
-- Applies all patterns (not “first match wins”).
-- Also ignores the `.git` directory and common OS metadata by default, and ignores the `.gitignore` file itself.
+* Looks for an applicable `.gitignore` in the directory being scanned and applies its patterns.
+* Interprets patterns relative to the directory that contains the `.gitignore`.
+* Applies all patterns (not “first match wins”).
+* Also ignores the `.git` directory and common OS metadata by default, and ignores the `.gitignore` file itself.
 
 ## Notes about pattern behavior
 
-- Patterns are matched against the path relative to the `.gitignore`’s directory.
-- Patterns like `ignore/*` and `ignore/**` work as in Git to ignore a named subdirectory and its contents.
-- Patterns starting with `**/` (for example, `**/*.png`) also match files in the top directory for convenience, so PNGs are ignored both in subdirectories and at the base level.
+* Patterns are matched against the path relative to the `.gitignore`’s directory.
+* Patterns like `ignore/*` and `ignore/**` work as in Git to ignore a named subdirectory and its contents.
+* Patterns starting with `**/` (for example, `**/*.png`) also match files in the top directory for convenience, so PNGs are ignored both in subdirectories and at the base level.
 
 ## Examples
 
@@ -106,12 +105,10 @@ Ignore PDFs in any subfolder (and also at the base directory):
 
 ## Tips
 
-- Place a `.gitignore` file in the folder you start the search in (or deeper) to control what is scanned.
-- If you use multiple `.gitignore` files in different subfolders, each one applies to the files under its directory.
+* Place a `.gitignore` file in the folder you start the search in (or deeper) to control what is scanned.
+* If you use multiple `.gitignore` files in different subfolders, each one applies to the files under its directory.
 
 This behavior mirrors Git’s expectations in practice, while making it straightforward to exclude unneeded files from the unlinked-files search.
-
-
 
 ## Further information
 

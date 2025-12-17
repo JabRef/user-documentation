@@ -38,7 +38,7 @@ First, [eBook.de's](https://www.ebook.de/de/) API is used to fetch bibliographic
 
 ID search is carried out using the [International Standard Book Number](https://en.wikipedia.org/wiki/International_Standard_Book_Number).
 
-![Screenshot of new entry dialog](<../.gitbook/assets/newentrychoosetype-idgeneratorhighlighted-isbn (8).png>)
+![Screenshot of new entry dialog](<../.gitbook/assets/newentrychoosetype-idgeneratorhighlighted-isbn (1).png>)
 
 ### DiVA
 

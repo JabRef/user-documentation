@@ -238,4 +238,4 @@ As developer, you pass arguments to the app using gradle's `--app` switch. Enclo
 
 You can then view the event log in JabRef as follows:
 
-<figure><img src="../.gitbook/assets/dev-log (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/dev-log (1).png" alt=""><figcaption></figcaption></figure>
