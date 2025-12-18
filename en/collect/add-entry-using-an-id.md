@@ -20,11 +20,11 @@ You can also add an entry by simply pasting its BibTex or its DOI from your clip
 
 ## Supported databases
 
-### Arxiv
+### arXiv
 
-[ArXiv](https://arxiv.org) is a repository of scientific preprints in the fields of mathematics, physics, astronomy, computer science, quantitative biology, statistics, and quantitative finance ([Wikipedia](https://en.wikipedia.org/wiki/ArXiv)).
+[arXiv](https://arxiv.org) is a repository of scientific preprints in the fields of mathematics, physics, astronomy, computer science, quantitative biology, statistics, and quantitative finance ([Wikipedia](https://en.wikipedia.org/wiki/ArXiv)).
 
-ID search is carried out using the [ArXiv identifier](https://arxiv.org/help/arxiv_identifier).
+ID search is carried out using the [arXiv identifier](https://arxiv.org/help/arxiv_identifier).
 
 ### Crossref
 
