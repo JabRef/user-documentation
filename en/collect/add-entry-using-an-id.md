@@ -18,7 +18,7 @@ Sometimes the new entry contains a `url` field. This field usually points to the
 You can also add an entry by simply pasting its BibTex or its DOI from your clipboard to the maintable.
 {% endhint %}
 
-## Supported databases
+## Supported catalogs
 
 ### arXiv
 
