@@ -31,3 +31,14 @@ In the background, JabRef uses [JavaFX](https://en.wikipedia.org/wiki/JavaFX). A
 ## Where can I find JabRef's log files?
 
 A: On Linux, the path to the log files is `~/.local/share/jabref/logs/$version/`
+
+## JabRef does not start on Wayland (Sway, Wayland GNOME, etc). What should I do?
+
+JabRef uses JavaFX for its user interface.
+
+Currently, JavaFX requires XWayland to run on Wayland-based systems.
+
+If XWayland is not installed, JabRef may fail to start.
+
+Installing XWayland usually resolves this issue.
+
