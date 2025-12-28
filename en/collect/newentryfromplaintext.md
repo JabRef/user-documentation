@@ -8,6 +8,8 @@ In case you have a reference string, JabRef offers the functionality to convert 
 Different parsers will lead to different results. It is strongly recommended to fact-check all conversions, regardless of parser choice. All of them can confabulate. For comparison, [adding entries using an ID](add-entry-using-an-id.md) is much more reliable and accurate.
 {% endhint %}
 
+The following example shows how a plain reference text can be pasted and converted into a BibTeX entry.
+
 Example:
 
 ```
