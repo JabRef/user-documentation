@@ -1,17 +1,3 @@
-## Beginner overview
-
-Custom export formats in JabRef let you control how bibliographic entries are written
-when exporting your library (for example to CSV, HTML, or plain text).
-
-If you are new to custom exports:
-- Start by **copying an existing layout file** and modifying it
-- You usually do **not** need to create a layout from scratch
-- Layout files are simple text files and can be edited with any text editor
-
-After creating or modifying a layout file, you register it in JabRef via  
-**File → Preferences → Custom export formats**, where you select the layout file
-and choose the file extension for the export.
-
 # Custom import filters
 
 {% hint style="warning" %}
