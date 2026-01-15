@@ -23,7 +23,7 @@ Journal name conversion can be accessed either from within the entry editor, or 
 
 If the current journal name is not found in your journal lists, the field will not be modified.
 
-To convert the journal names of many entries in bulk, you can select any number of entries, and choose **Quality → Abbreviate journal names → DEFAULT**, **Quality → Abbreviate journal names → MEDLINE**, **Quality → Abbreviate journal names → SHORTEST UNIQUE**, or **Quality → Unabbreviate journal names**. These three actions will abbreviate and unabbreviate the journal names of all selected entries for which the journal name could be found in your journal lists.
+To convert the journal names of many entries in bulk, you can select any number of entries and go to **Quality → Clean up entries → Journal-related → Manage journal abbreviations**. From the dropdown menu, choose an action: **Abbreviate (default)**, **Abbreviate (dotless)**, **Abbreviate (shortest unique)**, **Unabbreviate** or **No changes**. These actions will abbreviate or unabbreviate the journal names of all selected entries for which the journal name could be found in your journal lists.
 
 ## Setting up additional journal lists
 
