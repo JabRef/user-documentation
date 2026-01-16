@@ -31,8 +31,8 @@ JabRef uses external AI providers to do the actual work. You can choose between 
 
 ## More information
 
-{% content-ref url="how-to-enable-ai-features.md" %}
-[how-to-enable-ai-features.md](how-to-enable-ai-features.md)
+{% content-ref url="how-to-enable-and-use-ai-features.md" %}
+[how-to-enable-and-use-ai-features.md](how-to-enable-and-use-ai-features.md)
 {% endcontent-ref %}
 
 {% content-ref url="ai-providers-and-api-keys.md" %}
