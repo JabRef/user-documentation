@@ -165,13 +165,13 @@ The default key pattern is **`[auth][year]`**, and this could produce keys like 
 
 To change the citation key pattern to `[authors][camel]` for all libraries without individual settings, execute the following steps:
 
-1.  Open the preferences
+1. Open the preferences
 
     <img src="../.gitbook/assets/optionspreferences (1).png" alt="File → Preferences" data-size="original">
-2.  Navigate to "Citation key generator"
+2. Navigate to "Citation key generator"
 
     <img src="../.gitbook/assets/preferences-citation-key-generator (1).png" alt="Citation key generator preferences" data-size="original">
-3.  Change the default pattern to `[authors][camel]`
+3. Change the default pattern to `[authors][camel]`
 
     <img src="../.gitbook/assets/preferences-citation-key-generator-authors-camel (1).png" alt="Citation key generator preferences - authors camel" data-size="original">
 4. Press "Enter" (forgetting to do this is a leading cause of puzzlement)
@@ -181,12 +181,12 @@ To change the citation key pattern to `[authors][camel]` for all libraries witho
 
 To change the citation key patterns for a single library to `[auth][shortyear]`,
 
-1.  Make sure the library is open and selected in the JabRef main window
+1. Make sure the library is open and selected in the JabRef main window
 
     <img src="../.gitbook/assets/main-screen-selected-library (1).png" alt="Main screen selected library" data-size="original">
-2.  From the "Library" menu, open "Library properties"
+2. From the "Library" menu, open "Library properties"
 
     <img src="../.gitbook/assets/library-menu.jpeg" alt="Library Citation key patterns" data-size="original">
-3.  Set the pattern for the desired entry types (keeping in mind to press enter after setting each), and press the apply button.
+3. Set the pattern for the desired entry types (keeping in mind to press enter after setting each), and press the apply button.
 
     <img src="../.gitbook/assets/library-properties-citationkey.jpeg" alt="Citation key patterns" data-size="original">

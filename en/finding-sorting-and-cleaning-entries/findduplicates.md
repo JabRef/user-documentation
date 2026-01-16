@@ -29,7 +29,7 @@ From the toolbox's top-left corner, you also can choose to select all the left e
 
 ## Selecting which entry to keep
 
-![Screenshot of the buttons to choose which entry to keep](../.gitbook/assets/button bar.png)
+<figure><img src="../.gitbook/assets/button bar.png" alt="Screenshot of the buttons to choose which entry to keep"><figcaption><p>Screenshot of the buttons to choose which entry to keep</p></figcaption></figure>
 
 You are offered to:
 
