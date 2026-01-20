@@ -2,32 +2,44 @@
 
 Thank you for checking out JabRef AI features! We believe you can find them useful in your research or brainstorming process.
 
-## 1. Locate new entry editor tabs and accept AI Privacy Policy
+## 1. Locate and accept the AI Privacy Policy
 
-As you run the latest JabRef version, you will find 2 new entry editor tabs ("AI Chat" and "AI Summary"):
+1.  Run JabRef, open a library, select an entry and open the [entry editor](../advanced/entryeditor/). There you will see tabs that have AI in their name.<br>
 
-![New entry editor tabs](../.gitbook/assets/ai-new-entries.png)
+    <figure><img src="../.gitbook/assets/ai-new-entries.png" alt="AI related entry editor tabs (AI Summary and AI Chat)"><figcaption><p>AI related entry editor tabs</p></figcaption></figure>
+2.  Open the **AI Chat** or the **AI Summary** tab. The first time you open any of these tabs, JabRef will ask for your permission to accept the Privacy notice. In order to enable all AI features, you need to accept it, by pressing the **I agree** button. If you do not accept it, none of your information will be transmitted to external services.<br>
 
-However, the first time you open these tabs, JabRef will ask your permission for using AI features and accepting AI Privacy Policy:
+    <figure><img src="../.gitbook/assets/ai-preferences-connection.png" alt="AI privacy notice"><figcaption><p>AI privacy notice<br></p></figcaption></figure>
 
-![AI Privacy Policy](../.gitbook/assets/ai-privacy-policy.png)
+    In the AI Privacy notice you can find links to Privacy Policies of supported external services and an explanation what data is sent to external services.
 
-In AI Privacy Policy you can find links to Privacy Policies of external services like OpenAI, Mistral AI, etc.
+## 2. Attach a file to your entry
 
-In order to enable all AI features, you need to accept this Privacy Policy. If you do not accept it, none of your information will be transmitted to external services.
+In order to use the following AI features in the entry editor, you need to [add PDFs to an entry](../collect/add-pdfs-to-an-entry.md):
 
-## 2. Obtain API key
+* AI Chat and&#x20;
+* AI Summary tabs
 
-After clicking "I agree" button, there is only one crucial step left for using AI features. You need to setup connection to AI provider. Please refer to [AI providers and API keys](ai-providers-and-api-keys.md) page to understand what is an AI provider and how to get an API key.
+This in turn requires you to [set a main file directory](../finding-sorting-and-cleaning-entries/filelinks.md#directories-for-files). JabRef supports other AI features that do not require you to attach a file to your entry, such as [using a language model to turn plain reference text into an entry](../collect/newentryfromplaintext.md#llm) and if that's all you need, you can skip this step.
 
-## 3. Enter API key in JabRef
+## 3. Connect to an external AI provider
 
-After you got your API key, you need to enter it in JabRef preferences. Open Preferences using menu `File -> Preferences`. Locate tab `AI`:
+There is only one crucial step left for using AI features. You need to setup a connection to an external AI provider. With _external_, we mean a provider outside of JabRef, regardless, if that entails connecting to an [AI app on your local device](local-llm.md) or connecting to a remote online service.
 
-![AI preferences](../.gitbook/assets/ai-preferences-connection.png)
+While the former may or may not require an API key, online services most definitely will require you to enter one, therefore here is some guidance:
 
-Choose the AI provider you have the API key from and enter the API key (in this order, because JabRef stores several API keys tied to specific AI provider). Additionally you can choose chat model of the AI provider.[AI providers and API keys](ai-providers-and-api-keys.md) page to understand what is an AI provider and how to get an API key.
+#### 1. Obtain an API key
 
-Choose the AI provider you have the API key from and enter the API key (in this order, because JabRef stores several API keys tied to specific AI provider). Additionally, you can choose chat model of the AI provider that you want to use in JabRef.
+Please look at the [AI providers and API keys](ai-providers-and-api-keys.md) documentation page to understand what is an AI provider and how to get an API key.
 
-Save the preferences and after that you are able to use JabRef's AI features on full power!
+#### 2. Enter an API key
+
+After you got your API key, you need to enter it in JabRef's [preferences.md](preferences.md "mention").
+
+1. Open the preferences menu via `File > Preferences`.
+2. Locate the `AI` tab.
+3. Choose the AI provider you have the API key from and enter the API key (in this order, because JabRef can store several API keys, tied to specific AI providers).
+
+Finally, you can choose the chat model of the AI provider.
+
+Save the preferences and henceforth you are able to use JabRef's AI features as you see fit!

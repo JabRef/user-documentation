@@ -19,9 +19,7 @@ You can find more information about providers in the [`langchain4j` documentatio
 
 We cannot give a clear recommendation. Providers change their service and their prices regularly and our documentation page is too static to keep up with daily changes. It is recommended to look up LLM benchmarks on the internet or to use the trial and error method. To date, remote AI providers like OpenAI, Google, Mistral and others offer state of the art quality.
 
-If you want to [run a model locally](local-llm.md), choose GPT4All or Ollama. In comparison to remote AI providers, open weight local models that are compatible with average consumer devices offer less capabilities. There are state of the art local models available, but they are very large (in terms of number of parameters) and the higher the number of parameters, the more memory is needed. To run the largest models, very expensive and capable hardware (preferably VRAM in GPU's or ASICs) is required. That said, even small models can be sufficient for the [add entry using refrence text](../collect/newentryfromplaintext.md) workflow.\
-\
-Hugging Face is a special case. One the one hand, it serves as a free hosting platform from where you can download numerous models to host them yourself locally. On the other hand Huggingface also is a remote AI provider that offers running numerous large and small open weight models for you.
+If you want to [run a model locally](local-llm.md), choose GPT4All or Ollama or make use of the OpenAI API. In comparison to remote AI providers, open weight local models that are compatible with average consumer devices offer less capabilities. There are state of the art local models available, but they are very large (in terms of number of parameters) and the higher the number of parameters, the more memory is needed. To run the largest models, very expensive and capable hardware is required. That said, even small models can be sufficient for the [add entry using refrence text](../collect/newentryfromplaintext.md) workflow.
 
 ## Why do I need an API key?
 
@@ -92,4 +90,4 @@ Make the subscription on [their website](https://admin.mistral.ai/organization/b
 
 ### Hugging Face
 
-You do not have to pay anything for Hugging Face in order to send requests to LLMs. Though, the speed is very slow by default. It may take a long time to allocate free compute resources to your instance, resulting in longer response times. You can switch to faster inference by [upgrading your user account](https://huggingface.co/pricing#pro) or by [running a space on GPU](https://huggingface.co/docs/hub/spaces-gpus).
+You possibly may not have to pay anything for Hugging Face in order to send requests to LLMs. Though, the speed is very slow by default. It may take a long time to allocate free compute resources to your instance, resulting in longer response times. You can switch to faster inference by [upgrading your user account](https://huggingface.co/pricing#pro) or by [running a space on GPU](https://huggingface.co/docs/hub/spaces-gpus).
