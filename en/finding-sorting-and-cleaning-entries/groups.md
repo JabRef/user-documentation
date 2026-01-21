@@ -214,13 +214,13 @@ Groups are saved as a `@COMMENT` block in the `.bib`-file and are shared among a
 
 By default, entries in JabRef can belong to multiple groups at the same time. JabRef does not automatically enforce that an entry belongs to only one group.
 
-However, it is possible to create *mutually exclusive (disjoint) groups* by using **dynamic groups** with **free search expressions**.
+However, it is possible to create _mutually exclusive (disjoint) groups_ by using **dynamic groups** with **free search expressions**.
 
 This approach relies on search-based (dynamic) groups and does not change JabRef’s default behavior for static groups.
 
 ### Example
 
-Assume you want three groups: *Read*, *Skimmed*, and *Pending*, where an entry should only appear in one of them.
+Assume you want three groups: _Read_, _Skimmed_, and _Pending_, where an entry should only appear in one of them.
 
 You can define the groups as follows:
 
@@ -231,5 +231,5 @@ You can define the groups as follows:
 - **Pending** group:
   NOT (keywords = read OR keywords = skimmed)
 
-  With this setup, an entry will appear in the *Pending* group only if it is not marked as *Read* or *Skimmed*. When the keywords of an entry are updated, it automatically moves between these groups.
+  With this setup, an entry will appear in the _Pending_ group only if it is not marked as _Read_ or _Skimmed_. When the keywords of an entry are updated, it automatically moves between these groups.
 
