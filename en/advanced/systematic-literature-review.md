@@ -4,15 +4,11 @@ The Systematic Literature Review (SLR) tool in JabRef helps researchers conduct 
 
 This tool is especially useful for researchers who want to follow a systematic and transparent review methodology.
 
----
-
 ## Starting a Systematic Literature Review
 
 1. Open JabRef.
 2. Navigate to **Tools → Start new systematic literature review**.
 3. The **Define study parameters** window opens.
-
----
 
 ## Authors and Title
 
@@ -23,8 +19,6 @@ In the **Authors and Title** tab:
 
 Both fields are required before starting the survey.
 
----
-
 ## Research Questions
 
 In the **Research Questions** tab:
@@ -33,8 +27,6 @@ In the **Research Questions** tab:
 - These questions guide the scope and purpose of the review.
 
 Each question should be clear and specific to ensure a focused search process.
-
----
 
 ## Queries
 
@@ -46,8 +38,6 @@ In the **Queries** tab:
   - `OR`
   - `NOT`
 
----
-
 ## Catalogs
 
 In the **Catalogs** tab:
@@ -56,15 +46,13 @@ In the **Catalogs** tab:
 
 Examples include:
 
-- ACM Portal  
-- arXiv  
-- DBLP  
-- Crossref  
-- IEEE Xplore  
+- ACM Portal
+- arXiv
+- DBLP
+- Crossref
+- IEEE Xplore
 
 Choosing multiple catalogs increases coverage of the literature.
-
----
 
 ## Finalize
 
@@ -75,50 +63,44 @@ In the **Finalize** tab:
 
 Make sure all required fields are completed:
 
-- Study title  
-- At least one author  
-- At least one research question  
-- At least one query  
+- Study title
+- At least one author
+- At least one research question
+- At least one query
 
 Click **Start survey** to begin.
-
----
 
 ## After Starting the Survey
 
 Once the survey starts:
 
-- JabRef runs the defined queries on the selected catalogs
-- Results are collected and stored in the study
+- JabRef runs the defined queries on the selected catalogs.
+- Results are collected and stored in the study.
 
 References can then be:
 
-- Reviewed  
-- Filtered  
-- Tagged  
-- Exported  
+- Reviewed
+- Filtered
+- Tagged
+- Exported
 
 This supports a structured and reproducible review workflow.
 
----
-
 ## Tips for Effective SLRs
 
-- Use clear and specific research questions  
-- Start with broader queries and refine them  
-- Document all queries for reproducibility  
-- Use Boolean operators effectively  
-
----
+- Use clear and specific research questions.
+- Start with broader queries and refine them.
+- Document all queries for reproducibility.
+- Use Boolean operators effectively.
 
 ## Summary
 
 The SLR tool helps structure the entire review process:
 
-1. Define study metadata  
-2. Add research questions  
-3. Create search queries  
-4. Select catalogs  
-5. Run the survey and collect results  
+1. Define study metadata
+2. Add research questions
+3. Create search queries
+4. Select catalogs
+5. Run the survey and collect results
 
 This makes literature reviews more systematic, transparent, and repeatable.
