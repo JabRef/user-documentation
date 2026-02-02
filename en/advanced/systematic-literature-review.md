@@ -1,106 +1,166 @@
-# Systematic Literature Review (SLR) Tool
+# Systematic literature review
 
-The Systematic Literature Review (SLR) tool in JabRef helps researchers conduct structured and reproducible literature reviews. It supports defining research questions, creating search queries, selecting academic catalogs, and collecting references in an organized way.
+JabRef supports managing systematic literature reviews by structuring research questions, search queries, catalogs, and results within a dedicated study directory.  
+This feature assists in organizing the review workflow, but it does not replace methodological decisions made by the researcher.
 
-This tool is especially useful for researchers who want to follow a systematic and transparent review methodology.
+---
 
-## Starting a Systematic Literature Review
+## Starting a systematic literature review
 
-1. Open JabRef.
-2. Navigate to **Tools → Start new systematic literature review**.
-3. The **Define study parameters** window opens.
+A new study definition can be created via:
 
-## Authors and Title
+**Tools → Start new systematic literature review**
 
-In the **Authors and Title** tab:
+<figure>
+<img src="../.gitbook/assets/slr_start-menu.png" alt="Start new systematic literature review dialog">
+<figcaption>Starting a new systematic literature review</figcaption>
+</figure>
 
-- Enter the **study title**
-- Add at least one **author**
+This opens the **Define study parameters** dialog, where the study configuration is defined.
 
-Both fields are required before starting the survey.
+---
 
-## Research Questions
+## Study parameters
 
-In the **Research Questions** tab:
+The study definition dialog contains several sections that define the structure and behavior of the review.
 
-- Define one or more research questions.
-- These questions guide the scope and purpose of the review.
+<figure>
+<img src="../.gitbook/assets/slr-define-parameters.png" alt="Define study parameters window">
+<figcaption>Study definition dialog</figcaption>
+</figure>
 
-Each question should be clear and specific to ensure a focused search process.
+### Authors and title
 
-## Queries
+This section defines the study metadata:
 
-In the **Queries** tab:
+* Study title  
+* At least one author  
 
-- Add search queries used to retrieve relevant publications.
-- Queries typically combine keywords using Boolean operators such as:
-  - `AND`
-  - `OR`
-  - `NOT`
+These elements identify the study and are required before data collection can begin.
 
-## Catalogs
+---
 
-In the **Catalogs** tab:
+### Research questions
 
-- Select one or more academic catalogs to search in.
+Research questions define the conceptual scope of review.  
+They guide query formulation, screening decisions, and interpretation of results.
+
+Each question should be:
+
+* Clear  
+* Focused  
+* Methodologically motivated rather than tool-driven  
+
+<figure>
+<img src="../.gitbook/assets/slr-questions.png" alt="Research questions tab">
+<figcaption>Defining research questions</figcaption>
+</figure>
+
+---
+
+### Queries
+
+Queries define how literature is retrieved from external catalogs.
+
+<figure>
+<img src="../.gitbook/assets/slr-queries.png" alt="Queries tab of SLR setup">
+<figcaption>Defining search queries</figcaption>
+</figure>
+
+Queries typically combine keywords using Boolean operators:
+
+* `AND`
+* `OR`
+* `NOT`
+
+Queries should reflect the research questions and may be refined iteratively as the review progresses.
+
+---
+
+### Catalogs
+
+Catalogs define the external sources that are searched.
+
+<figure>
+<img src="../.gitbook/assets/slr-catalogs.png" alt="Catalog selection in SLR">
+<figcaption>Selecting catalogs</figcaption>
+</figure>
 
 Examples include:
 
-- ACM Portal
-- arXiv
-- DBLP
-- Crossref
-- IEEE Xplore
+* ACM Portal  
+* arXiv  
+* DBLP  
+* Crossref  
+* IEEE Xplore  
 
-Choosing multiple catalogs increases coverage of the literature.
+Using multiple catalogs increases coverage and reduces the risk of selection bias.
 
-## Finalize
+---
 
-In the **Finalize** tab:
+### Finalize
 
-- Select the directory where the study data will be stored.
-- JabRef creates the study structure in this folder.
+In this step, a directory for storing the study is selected.
 
-Make sure all required fields are completed:
+⚠ **The selected study directory must be empty before starting the survey.**  
+When the survey begins, JabRef initializes the directory by creating the internal study structure, configuration files, and result database.
 
-- Study title
-- At least one author
-- At least one research question
-- At least one query
+The **Start survey** button becomes available only after the study definition is complete. The definition must include:
 
-Click **Start survey** to begin.
+* Study title  
+* At least one author  
+* At least one research question  
+* At least one query  
 
-## After Starting the Survey
+This ensures that the study contains sufficient metadata and search configuration before data collection starts.
 
-Once the survey starts:
+---
 
-- JabRef runs the defined queries on the selected catalogs.
-- Results are collected and stored in the study.
+## After starting the survey
+
+Starting the survey triggers the automated data collection process based on the defined study parameters.
+
+During this process:
+
+* Queries are executed on the selected catalogs  
+* Retrieved records are stored in the study database  
+* The study directory structure is populated with configuration and result data  
 
 References can then be:
 
-- Reviewed
-- Filtered
-- Tagged
-- Exported
+* Screened  
+* Filtered  
+* Tagged  
+* Exported  
 
 This supports a structured and reproducible review workflow.
 
-## Tips for Effective SLRs
+<figure>
+<img src="../.gitbook/assets/slr-study-folder.png" alt="SLR study folder structure">
+<figcaption>Generated study directory structure after starting the survey</figcaption>
+</figure>
 
-- Use clear and specific research questions.
-- Start with broader queries and refine them.
-- Document all queries for reproducibility.
-- Use Boolean operators effectively.
+---
 
-## Summary
+## Role of the SLR feature
 
-The SLR tool helps structure the entire review process:
+The SLR feature provides structural and organizational support. It does **not**:
 
-1. Define study metadata
-2. Add research questions
-3. Create search queries
-4. Select catalogs
-5. Run the survey and collect results
+* Perform methodological quality assessment  
+* Replace screening decisions  
+* Replace inclusion or exclusion criteria  
+* Define research methodology  
 
-This makes literature reviews more systematic, transparent, and repeatable.
+It supports managing search processes and organizing review data within JabRef.
+
+---
+
+## Best practices
+
+* Define research questions before constructing queries  
+* Start with broader queries and refine iteratively  
+* Use multiple catalogs to reduce bias  
+* Document all queries for reproducibility  
+* Use tags and groups to track screening decisions  
+
+This enables organized, transparent, and repeatable literature review workflows.
