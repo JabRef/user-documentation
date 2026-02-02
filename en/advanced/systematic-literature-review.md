@@ -1,6 +1,6 @@
 # Systematic literature review
 
-JabRef supports managing systematic literature reviews by structuring research questions, search queries, catalogs, and results within a dedicated study directory created by JabRef.  
+JabRef supports managing systematic literature reviews by structuring research questions, search queries, catalogs, and results within a dedicated study directory created by JabRef.
 This feature helps organize search configuration and collected references, but it does not replace methodological decisions made by the researcher.
 
 ---
@@ -42,7 +42,7 @@ These elements identify the study and are required before the survey can begin.
 
 ### Research questions
 
-Research questions define the scope of the study within JabRef.  
+Research questions define the scope of the study within JabRef.
 They help relate queries and later screening decisions to the study purpose.
 
 Each question should be:
@@ -102,7 +102,7 @@ Using multiple catalogs increases coverage and reduces the risk of selection bia
 
 In this step, a directory for storing the study is selected.
 
-⚠ **The selected study directory must be empty before starting the survey.**  
+⚠ **The selected study directory must be empty before starting the survey.**
 When the survey begins, JabRef initializes the directory by creating the internal study structure, configuration files, and result database.
 
 The **Start survey** button becomes available only after the study definition is complete. The definition must include:
@@ -122,9 +122,9 @@ Starting the survey triggers the search and data collection process using the de
 
 During this process:
 
-* Queries are executed on the selected catalogs  
-* Retrieved records are written into the study database  
-* The study directory structure is populated with configuration and result data  
+* Queries are executed on the selected catalogs
+* Retrieved records are written into the study database
+* The study directory structure is populated with configuration and result data
 
 References can then be:
 
@@ -149,20 +149,26 @@ Consider a researcher investigating how machine learning techniques are used for
 The researcher defines the study in JabRef as follows:
 
 **Study title**
-Machine learning approaches for citation recommendation 
+
+Machine learning approaches for citation recommendation
 
 **Research questions**
+
 * What machine learning methods are used for citation recommendation?
 * Which evaluation datasets are commonly used?
 * How do recent approaches differ from traditional information retrieval methods?
 
 **Queries**
+
 The researcher defines several queries reflecting these questions:
+
 * "citation recommendation" AND "machine learning"
 * "reference recommendation" AND "neural network"
 
 **Catalogs**
+
 To ensure broad coverage, the researcher selects:
+
 * DBLP
 * Crossref
 * arXiv
@@ -171,7 +177,13 @@ To ensure broad coverage, the researcher selects:
 
 In this stage, the study database in JabRef contains the retrieved entries. The researcher now reviews titles and authors, removes irrelevant papers, and starts organizing the literature using tags, groups, and notes.
 
-<figure> <img src="../.gitbook/assets/slr-example.png" alt="Example of retrieved study entries in JabRef after executing the queries"> <figcaption>Example of retrieved study entries in JabRef after executing the queries</figcaption> </figure> JabRef stores and organizes the results, but the decision about which papers are relevant remains the responsibility of the researcher.
+<figure>
+<img src="../.gitbook/assets/slr-example.png" alt="Example of retrieved study entries in JabRef after executing the queries">
+<figcaption>Example of retrieved study entries in JabRef after executing the queries</figcaption>
+</figure>
+
+
+JabRef stores and organizes the results, but the decision about which papers are relevant remains the responsibility of the researcher.
 
 ## Best practices
 
