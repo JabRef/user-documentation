@@ -6,14 +6,13 @@ Thank you for checking out JabRef AI features! We believe you can find them usef
 
 1. Run JabRef, open a library, select an entry and open the [entry editor](../advanced/entryeditor/). There you will see tabs that have AI in their name.
 
-    ![AI related entry editor tabs](../.gitbook/assets/ai-new-entries.png)
+![AI related entry editor tabs](../.gitbook/assets/ai-new-entries.png)
 
 2. Open the **AI Chat** or the **AI Summary** tab. The first time you open any of these tabs, JabRef will ask for your permission to accept the Privacy notice. In order to enable all AI features, you need to accept it, by pressing the **I agree** button. If you do not accept it, none of your information will be transmitted to external services.
 
-    ![AI privacy notice](../.gitbook/assets/ai-preferences-connection.png)
+![AI privacy notice](../.gitbook/assets/ai-preferences-connection.png)
 
-
-    In the AI Privacy notice you can find links to Privacy Policies of supported external services and an explanation what data is sent to external services.
+In the AI Privacy notice you can find links to Privacy Policies of supported external services and an explanation what data is sent to external services.
 
 ## 2. Attach a file to your entry
 
