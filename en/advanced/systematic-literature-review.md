@@ -1,7 +1,7 @@
 # Systematic literature review
 
-JabRef supports managing systematic literature reviews by structuring research questions, search queries, catalogs, and results within a dedicated study directory.  
-This feature assists in organizing the review workflow, but it does not replace methodological decisions made by the researcher.
+JabRef supports managing systematic literature reviews by structuring research questions, search queries, catalogs, and results within a dedicated study directory created by JabRef.  
+This feature helps organize search configuration and collected references, but it does not replace methodological decisions made by the researcher.
 
 ---
 
@@ -16,13 +16,13 @@ A new study definition can be created via:
 <figcaption>Starting a new systematic literature review</figcaption>
 </figure>
 
-This opens the **Define study parameters** dialog, where the study configuration is defined.
+This opens the **Define study parameters** dialog, where JabRef stores the configuration used for search and data collection.
 
 ---
 
 ## Study parameters
 
-The study definition dialog contains several sections that define the structure and behavior of the review.
+The study definition dialog contains several sections that determine how JabRef performs searches and stores results.
 
 <figure>
 <img src="../.gitbook/assets/slr-define-parameters.png" alt="Define study parameters window">
@@ -36,20 +36,20 @@ This section defines the study metadata:
 * Study title  
 * At least one author  
 
-These elements identify the study and are required before data collection can begin.
+These elements identify the study and are required before the survey can begin.
 
 ---
 
 ### Research questions
 
-Research questions define the conceptual scope of review.  
-They guide query formulation, screening decisions, and interpretation of results.
+Research questions define the scope of the study within JabRef.  
+They help relate queries and later screening decisions to the study purpose.
 
 Each question should be:
 
 * Clear  
 * Focused  
-* Methodologically motivated rather than tool-driven  
+* Defined by the research goal rather than tool settings 
 
 <figure>
 <img src="../.gitbook/assets/slr-questions.png" alt="Research questions tab">
@@ -60,7 +60,7 @@ Each question should be:
 
 ### Queries
 
-Queries define how literature is retrieved from external catalogs.
+Queries define how JabRef retrieves literature from the selected catalogs.
 
 <figure>
 <img src="../.gitbook/assets/slr-queries.png" alt="Queries tab of SLR setup">
@@ -73,13 +73,13 @@ Queries typically combine keywords using Boolean operators:
 * `OR`
 * `NOT`
 
-Queries should reflect the research questions and may be refined iteratively as the review progresses.
+Queries can be adjusted later if search results need refinement.
 
 ---
 
 ### Catalogs
 
-Catalogs define the external sources that are searched.
+Catalogs define the external services that JabRef queries for literature.
 
 <figure>
 <img src="../.gitbook/assets/slr-catalogs.png" alt="Catalog selection in SLR">
@@ -112,18 +112,18 @@ The **Start survey** button becomes available only after the study definition is
 * At least one research question  
 * At least one query  
 
-This ensures that the study contains sufficient metadata and search configuration before data collection starts.
+These requirements ensure that JabRef can execute searches and store results using the defined study structure.
 
 ---
 
 ## After starting the survey
 
-Starting the survey triggers the automated data collection process based on the defined study parameters.
+Starting the survey triggers the search and data collection process using the defined study parameters.
 
 During this process:
 
 * Queries are executed on the selected catalogs  
-* Retrieved records are stored in the study database  
+* Retrieved records are written into the study database  
 * The study directory structure is populated with configuration and result data  
 
 References can then be:
@@ -132,8 +132,6 @@ References can then be:
 * Filtered  
 * Tagged  
 * Exported  
-
-This supports a structured and reproducible review workflow.
 
 <figure>
 <img src="../.gitbook/assets/slr-study-folder.png" alt="SLR study folder structure">
@@ -144,7 +142,7 @@ This supports a structured and reproducible review workflow.
 
 ## Role of the SLR feature
 
-The SLR feature provides structural and organizational support. It does **not**:
+The SLR feature provides structural and organizational support inside JabRef. It does **not**:
 
 * Perform methodological quality assessment  
 * Replace screening decisions  
@@ -158,9 +156,9 @@ It supports managing search processes and organizing review data within JabRef.
 ## Best practices
 
 * Define research questions before constructing queries  
-* Start with broader queries and refine iteratively  
-* Use multiple catalogs to reduce bias  
-* Document all queries for reproducibility  
-* Use tags and groups to track screening decisions  
+* Start with broader queries and refine if needed 
+* Use multiple catalogs to retrieve records from different sources  
+* Document queries used in the study definition  
+* Use tags and groups to organize screening decisions  
 
-This enables organized, transparent, and repeatable literature review workflows.
+This supports consistent and reproducible handling of search results in JabRef.
