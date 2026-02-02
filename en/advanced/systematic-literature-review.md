@@ -148,24 +148,24 @@ Consider a researcher investigating how machine learning techniques are used for
 
 The researcher defines the study in JabRef as follows:
 
-**Study title**
+### Study title
 
 Machine learning approaches for citation recommendation
 
-**Research questions**
+### Research questions
 
 * What machine learning methods are used for citation recommendation?
 * Which evaluation datasets are commonly used?
 * How do recent approaches differ from traditional information retrieval methods?
 
-**Queries**
+### Queries
 
 The researcher defines several queries reflecting these questions:
 
 * "citation recommendation" AND "machine learning"
 * "reference recommendation" AND "neural network"
 
-**Catalogs**
+### Catalogs
 
 To ensure broad coverage, the researcher selects:
 
