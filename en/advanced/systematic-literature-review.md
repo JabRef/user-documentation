@@ -47,9 +47,9 @@ They help relate queries and later screening decisions to the study purpose.
 
 Each question should be:
 
-* Clear  
-* Focused  
-* Defined by the research goal rather than tool settings 
+* Clear
+* Focused
+* Defined by the research goal rather than tool settings
 
 <figure>
 <img src="../.gitbook/assets/slr-questions.png" alt="Research questions tab">
@@ -155,10 +155,10 @@ It supports managing search processes and organizing review data within JabRef.
 
 ## Best practices
 
-* Define research questions before constructing queries  
-* Start with broader queries and refine if needed 
-* Use multiple catalogs to retrieve records from different sources  
-* Document queries used in the study definition  
-* Use tags and groups to organize screening decisions  
+* Define research questions before constructing queries
+* Start with broader queries and refine if needed
+* Use multiple catalogs to retrieve records from different sources
+* Document queries used in the study definition
+* Use tags and groups to organize screening decisions
 
 This supports consistent and reproducible handling of search results in JabRef.
