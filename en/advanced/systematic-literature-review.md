@@ -9,7 +9,7 @@ This feature assists in organizing the review workflow, but it does not replace 
 
 A new study definition can be created via:
 
-**Tools → Start new systematic literature review**
+`Tools → Start new systematic literature review`
 
 <figure>
 <img src="../.gitbook/assets/slr_start-menu.png" alt="Start new systematic literature review dialog">
