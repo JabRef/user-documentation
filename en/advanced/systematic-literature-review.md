@@ -107,8 +107,8 @@ When the survey begins, JabRef initializes the directory by creating the interna
 
 The **Start survey** button becomes available only after the study definition is complete. The definition must include:
 
-* Study title
 * At least one author
+* Study title
 * At least one research question
 * At least one query
 
@@ -140,18 +140,38 @@ References can then be:
 
 ---
 
-## Role of the SLR feature
+## Example: Literature review on citation recommendation using machine learning
 
-The SLR feature provides structural and organizational support inside JabRef. It does **not**:
+Consider a researcher investigating how machine learning techniques are used for **citation recommendation systems**.
 
-* Perform methodological quality assessment
-* Replace screening decisions
-* Replace inclusion or exclusion criteria
-* Define research methodology
+### Study setup
 
-It supports managing search processes and organizing review data within JabRef.
+The researcher defines the study in JabRef as follows:
 
----
+**Study title**
+Machine learning approaches for citation recommendation 
+
+**Research questions**
+* What machine learning methods are used for citation recommendation?
+* Which evaluation datasets are commonly used?
+* How do recent approaches differ from traditional information retrieval methods?
+
+**Queries**
+The researcher defines several queries reflecting these questions:
+* "citation recommendation" AND "machine learning"
+* "reference recommendation" AND "neural network"
+
+**Catalogs**
+To ensure broad coverage, the researcher selects:
+* DBLP
+* Crossref
+* arXiv
+
+### After starting the survey
+
+In this stage, the study database in JabRef contains the retrieved entries. The researcher now reviews titles and authors, removes irrelevant papers, and starts organizing the literature using tags, groups, and notes.
+
+<figure> <img src="../.gitbook/assets/slr-example.png" alt="Example of retrieved study entries in JabRef after executing the queries"> <figcaption>Example of retrieved study entries in JabRef after executing the queries</figcaption> </figure> JabRef stores and organizes the results, but the decision about which papers are relevant remains the responsibility of the researcher.
 
 ## Best practices
 
