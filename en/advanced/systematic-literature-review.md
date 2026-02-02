@@ -33,8 +33,8 @@ The study definition dialog contains several sections that determine how JabRef 
 
 This section defines the study metadata:
 
-* Study title  
-* At least one author  
+* Study title
+* At least one author
 
 These elements identify the study and are required before the survey can begin.
 
@@ -47,9 +47,9 @@ They help relate queries and later screening decisions to the study purpose.
 
 Each question should be:
 
-* Clear  
-* Focused  
-* Defined by the research goal rather than tool settings 
+* Clear
+* Focused
+* Defined by the research goal rather than tool settings
 
 <figure>
 <img src="../.gitbook/assets/slr-questions.png" alt="Research questions tab">
@@ -88,11 +88,11 @@ Catalogs define the external services that JabRef queries for literature.
 
 Examples include:
 
-* ACM Portal  
-* arXiv  
-* DBLP  
-* Crossref  
-* IEEE Xplore  
+* ACM Portal
+* arXiv
+* DBLP
+* Crossref
+* IEEE Xplore
 
 Using multiple catalogs increases coverage and reduces the risk of selection bias.
 
@@ -107,10 +107,10 @@ When the survey begins, JabRef initializes the directory by creating the interna
 
 The **Start survey** button becomes available only after the study definition is complete. The definition must include:
 
-* Study title  
-* At least one author  
-* At least one research question  
-* At least one query  
+* Study title
+* At least one author
+* At least one research question
+* At least one query
 
 These requirements ensure that JabRef can execute searches and store results using the defined study structure.
 
@@ -128,10 +128,10 @@ During this process:
 
 References can then be:
 
-* Screened  
-* Filtered  
-* Tagged  
-* Exported  
+* Screened
+* Filtered
+* Tagged
+* Exported
 
 <figure>
 <img src="../.gitbook/assets/slr-study-folder.png" alt="SLR study folder structure">
@@ -144,10 +144,10 @@ References can then be:
 
 The SLR feature provides structural and organizational support inside JabRef. It does **not**:
 
-* Perform methodological quality assessment  
-* Replace screening decisions  
-* Replace inclusion or exclusion criteria  
-* Define research methodology  
+* Perform methodological quality assessment
+* Replace screening decisions
+* Replace inclusion or exclusion criteria
+* Define research methodology
 
 It supports managing search processes and organizing review data within JabRef.
 
@@ -155,10 +155,10 @@ It supports managing search processes and organizing review data within JabRef.
 
 ## Best practices
 
-* Define research questions before constructing queries  
-* Start with broader queries and refine if needed 
-* Use multiple catalogs to retrieve records from different sources  
-* Document queries used in the study definition  
-* Use tags and groups to organize screening decisions  
+* Define research questions before constructing queries
+* Start with broader queries and refine if needed
+* Use multiple catalogs to retrieve records from different sources
+* Document queries used in the study definition
+* Use tags and groups to organize screening decisions
 
 This supports consistent and reproducible handling of search results in JabRef.
