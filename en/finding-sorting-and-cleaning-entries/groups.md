@@ -225,11 +225,11 @@ Assume you want three groups: _Read_, _Skimmed_, and _Pending_, where an entry s
 You can define the groups as follows:
 
 - **Read** group:
-  keywords = read
+  `keywords = read`
 - **Skimmed** group:
-  keywords = skimmed
+  `keywords = skimmed`
 - **Pending** group:
-  NOT (keywords = read OR keywords = skimmed)
+  `NOT (keywords = read OR keywords = skimmed)`
 
   With this setup, an entry will appear in the _Pending_ group only if it is not marked as _Read_ or _Skimmed_. When the keywords of an entry are updated, it automatically moves between these groups.
 
