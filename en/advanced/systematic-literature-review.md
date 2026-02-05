@@ -140,50 +140,133 @@ References can then be:
 
 ---
 
-## Example: Literature review on citation recommendation using machine learning
+## Example Study
+The example demonstrates how Jabref supports systematic-literature reviews.
 
-Consider a researcher investigating how machine learning techniques are used for **citation recommendation systems**.
+### Study Title
+Machine Learning Techniques for Phishing Detection: A Systematic Study
 
-### Study setup
+---
 
-The researcher defines the study in JabRef as follows:
+### Research Questions
+* RQ1: What ML techniques are used in research for phishing detection?
+* RQ2: How is the performance of ML models measured for phishing detection?
+* RQ3: What are the open challenges in implementing ML techniques for detecting phishing?
 
-### Study title
-
-Machine learning approaches for citation recommendation
-
-### Research questions
-
-* What machine learning methods are used for citation recommendation?
-* Which evaluation datasets are commonly used?
-* How do recent approaches differ from traditional information retrieval methods?
-
-### Queries
-
-The researcher defines several queries reflecting these questions:
-
-* "citation recommendation" AND "machine learning"
-* "reference recommendation" AND "neural network"
-
-### Catalogs
-
-To ensure broad coverage, the researcher selects:
-
-* DBLP
-* Crossref
-* arXiv
-
-### After starting the survey
-
-In this stage, the study database in JabRef contains the retrieved entries. The researcher now reviews titles and authors, removes irrelevant papers, and starts organizing the literature using tags, groups, and notes.
+These research questions mainly focus on the technical side of phishing detection research. RQ1 aims to identify the approaches proposed for detecting phishing attacks. We can then categorize what methods actually exist and hence understand trends in those applied techniques. RQ2 focuses on how researchers analyse and evaluate their models, including the performance metrics. Finally, RQ3 highlights the challenges and the research gaps. This helps identify directions for future research.
 
 <figure>
-<img src="../.gitbook/assets/slr-example.png" alt="Example of retrieved study entries in JabRef after executing the queries">
-<figcaption>Example of retrieved study entries in JabRef after executing the queries</figcaption>
+<img src="../.gitbook/assets/example-research-slr.png" alt="Research Questions on Jabref">
+<figcaption>Research Questions on Jabref</figcaption>
 </figure>
 
+---
+### Search Strategy
+The goal of the search is to gather relevant research studies on machine learning techniques applied to phishing detection.
 
-JabRef stores and organizes the results, but the decision about which papers are relevant remains the responsibility of the researcher.
+#### Queries:
+("phishing" OR "phishing website" OR "phishing email") AND ("machine learning" OR "ML" OR "artificial intelligence" OR "deep learning")
+
+<figure>
+<img src="../.gitbook/assets/example-queries-slr.png" alt="Queries on Jabref">
+<figcaption>Queries on Jabref</figcaption>
+</figure>
+
+#### Catalogs:
+The search was conducted using major academic bibliographic databases to ensure wide coverage of research in computer science and security. The databases include IEEE Xplore, CiteSeerX and Crossref.
+
+#### Inclusion-Exclusion criteria
+To ensure that only relevant and high-quality studies are selected, inclusion and exclusion criteria are defined.
+
+* Inclusion: Studies must focus on phishing detection as the primary problem and apply machine learning techniques. Studies must report experimental evaluation or performance analysis of the proposed methods.
+
+* Exclusion: Studies are excluded if they do not use machine learning techniques or are not related to phishing detection. Studies are also excluded if they are duplicates, opinion papers, tutorials, or if the full text is not accessible.
+
+---
+
+### Study Selection Process
+
+Initial search results: 120 studies  
+After title screening: 77  
+After abstract screening: 66
+After relevance filtering: 59
+Further quality filtering: 34  
+Finally selected primary studies: 24
+
+In JabRef, these stages can be represented using groups for screening levels, keywords to mark inclusion or exclusion decisions, and notes to record screening justifications.
+
+<figure>
+<img src="../.gitbook/assets/initial_research.png" alt="Initial search results">
+<figcaption>Initial Search Results</figcaption>
+</figure>
+
+<figure>
+<img src="../.gitbook/assets/title_screening.png" alt="After Title Screening">
+<figcaption>After Title Screening</figcaption>
+</figure>
+
+<figure>
+<img src="../.gitbook/assets/abstract_screening.png" alt="After Abstract Screening">
+<figcaption>After Abstract Screening</figcaption>
+</figure>
+
+<figure>
+<img src="../.gitbook/assets/relevance-filtering.png" alt="After Relevance filtering">
+<figcaption>After Relevance filtering</figcaption>
+</figure>
+
+<figure>
+<img src="../.gitbook/assets/quality-filtering.png" alt="After Quality filtering">
+<figcaption>After Quality filtering</figcaption>
+</figure>
+
+<figure>
+<img src="../.gitbook/assets/selected_studies.png" alt="Selected Primary studies">
+<figcaption>Selected Primary Studies</figcaption>
+</figure>
+
+---
+
+### Data Extraction
+
+For the 24 selected papers, some basic info was written in the Notes section of each entry in JabRef. Things noted included:
+* Which ML method the paper used
+* What it tries to detect (email, URL, website, etc.)
+* What type of input or features were used
+* Which performance metrics were reported
+* Any strengths or limitations mentioned in the paper
+
+This shows how JabRef can be used to store small notes about each study while doing the review.
+
+**Notes related to RQ1- Techniques observed**
+* Many papers use traditional ML like Random Forest, SVM, XGBoost
+* These depend on manual features like URL, email headers, text patterns
+* Deep learning is also common — CNN, LSTM for text/email/web content
+* Transformer models are used for text classification in some studies
+* Recent work includes Large Language Models
+* Some papers fine-tune transformers
+* Some use in-context learning or multi-agent setups
+* A few try self-supervised or contrastive learning
+
+**Notes related to RQ2- Performance evaluation**
+* Most studies report accuracy, precision, recall, F1-score
+* Traditional ML often performs well and is lighter
+* Deep learning and transformers show higher results with more data
+* LLM-based systems tested for understanding realistic phishing content
+* Some papers test against adversarial or modified inputs
+
+**Notes related to RQ3- Challenges observed**
+* Phishing emails and websites look more real now
+* Normal URL/text features are not always enough
+* In some studies, datasets are old
+* New types of phishing are not much covered
+
+---
+
+### Outcome of the example
+This example shows how Jabref supports structuring an SLR workflow, organising screening stages, and storing extracted notes for selected studies.
+
+---
 
 ## Best practices
 
