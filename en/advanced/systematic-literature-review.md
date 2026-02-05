@@ -238,6 +238,7 @@ In JabRef, these stages can be represented using groups for screening levels, ke
 ### Data Extraction
 
 For the 24 selected papers, some basic info was written in the Notes section of each entry in JabRef. Things noted included:
+
 * Which ML method the paper used
 * What it tries to detect (email, URL, website, etc.)
 * What type of input or features were used
