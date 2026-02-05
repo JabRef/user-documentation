@@ -141,14 +141,17 @@ References can then be:
 ---
 
 ## Example Study
+
 The example demonstrates how Jabref supports systematic-literature reviews.
 
 ### Study Title
+
 Machine Learning Techniques for Phishing Detection: A Systematic Study
 
 ---
 
 ### Research Questions
+
 * RQ1: What ML techniques are used in research for phishing detection?
 * RQ2: How is the performance of ML models measured for phishing detection?
 * RQ3: What are the open challenges in implementing ML techniques for detecting phishing?
@@ -161,10 +164,13 @@ These research questions mainly focus on the technical side of phishing detectio
 </figure>
 
 ---
+
 ### Search Strategy
+
 The goal of the search is to gather relevant research studies on machine learning techniques applied to phishing detection.
 
-#### Queries:
+#### Queries
+
 ("phishing" OR "phishing website" OR "phishing email") AND ("machine learning" OR "ML" OR "artificial intelligence" OR "deep learning")
 
 <figure>
@@ -172,10 +178,12 @@ The goal of the search is to gather relevant research studies on machine learnin
 <figcaption>Queries on Jabref</figcaption>
 </figure>
 
-#### Catalogs:
+#### Catalogs
+
 The search was conducted using major academic bibliographic databases to ensure wide coverage of research in computer science and security. The databases include IEEE Xplore, CiteSeerX and Crossref.
 
 #### Inclusion-Exclusion criteria
+
 To ensure that only relevant and high-quality studies are selected, inclusion and exclusion criteria are defined.
 
 * Inclusion: Studies must focus on phishing detection as the primary problem and apply machine learning techniques. Studies must report experimental evaluation or performance analysis of the proposed methods.
@@ -238,7 +246,8 @@ For the 24 selected papers, some basic info was written in the Notes section of 
 
 This shows how JabRef can be used to store small notes about each study while doing the review.
 
-**Notes related to RQ1- Techniques observed**
+#### Notes related to RQ1- Techniques observed
+
 * Many papers use traditional ML like Random Forest, SVM, XGBoost
 * These depend on manual features like URL, email headers, text patterns
 * Deep learning is also common — CNN, LSTM for text/email/web content
@@ -248,14 +257,16 @@ This shows how JabRef can be used to store small notes about each study while do
 * Some use in-context learning or multi-agent setups
 * A few try self-supervised or contrastive learning
 
-**Notes related to RQ2- Performance evaluation**
+#### Notes related to RQ2- Performance evaluation
+
 * Most studies report accuracy, precision, recall, F1-score
 * Traditional ML often performs well and is lighter
 * Deep learning and transformers show higher results with more data
 * LLM-based systems tested for understanding realistic phishing content
 * Some papers test against adversarial or modified inputs
 
-**Notes related to RQ3- Challenges observed**
+#### Notes related to RQ3- Challenges observed
+
 * Phishing emails and websites look more real now
 * Normal URL/text features are not always enough
 * In some studies, datasets are old
@@ -264,6 +275,7 @@ This shows how JabRef can be used to store small notes about each study while do
 ---
 
 ### Outcome of the example
+
 This example shows how Jabref supports structuring an SLR workflow, organising screening stages, and storing extracted notes for selected studies.
 
 ---
