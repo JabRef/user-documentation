@@ -4,12 +4,7 @@ JabRef can be either installed (the preferred way) or be used as a portable appl
 
 ## Installation instructions
 
-To get the latest version, head to [downloads.jabref.org](https://downloads.jabref.org), download the installer for your system (e.g., `dmg` files for MacOS and `msi` files for Windows), run them and follow the on-screen instructions.
-
-| Version | 🍎 | 🐧 |
-|-------------|---------------|-------------------|
-| JabRef 5.6  | macOS 10.14 or higher |                |
-| JabRef 5.12 (dev) | macOS 11 or higher | GTK 3.8 or later |
+To get the latest version, head to [jabref.org](https://jabref.org/#download) to download the installer for your system, run them and follow the on-screen instructions.
 
 Alternatively, on **Windows**, you can use the [chocolatey package manager](https://chocolatey.org) and execute `choco install jabref` to get the latest version. On **Ubuntu**, you can use `snap install jabref` to get the latest stable version [from snapcraft](https://snapcraft.io/jabref).
 
