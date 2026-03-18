@@ -31,3 +31,8 @@ In the background, JabRef uses [JavaFX](https://en.wikipedia.org/wiki/JavaFX). A
 ## Where can I find JabRef's log files?
 
 A: On Linux, the path to the log files is `~/.local/share/jabref/logs/$version/`
+
+## JabRef does not start on a Wayland-based system. What can I do?
+
+JabRef relies on [XWayland](https://wayland.freedesktop.org/docs/html/ch05.html) to run in Wayland environments. If your system is missing this dependency, the application will fail to launch (often showing an `Unable to open DISPLAY` error). To fix this, simply install XWayland using your distribution's package manager.
+For example, on Debian/Ubuntu systems, run: `sudo apt install xwayland`
