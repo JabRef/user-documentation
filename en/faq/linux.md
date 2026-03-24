@@ -6,6 +6,12 @@ Yes, there is. See [http://askubuntu.com/a/721387/196423](http://askubuntu.com/a
 
 ## JabRef does not start under Linux! What can I do?
 
+### Wayland-based systems
+
+JabRef relies on [XWayland](https://wayland.freedesktop.org/docs/html/ch05.html) to run in Wayland environments.
+If your system is missing this dependency, the application will fail to launch (often showing an `Unable to open DISPLAY` error).
+To fix this, install `xwayland` using your distribution's package manager.
+
 ### JabRef 5.x
 
 JabRef comes with a bundled JRE. There is no need to install Java separately. Thus, there should be no issues at start up.
