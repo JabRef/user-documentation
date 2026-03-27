@@ -48,6 +48,7 @@ The directory must be **empty** when starting a new SLR. JabRef initializes a Gi
 
 {% hint style="info" %}
 Before you can click **Start survey**, the following are required:
+
 - Study title
 - At least one author
 - At least one research question
@@ -90,7 +91,8 @@ For software engineering SLRs, ACM and IEEE are typically the most relevant.
 ## What JabRef Creates in Your Directory
 
 After confirming your study parameters, JabRef creates this structure:
-```
+
+```text
 my-slr/
 ├── study.yml              ← Your study configuration
 ├── studyResult.bib        ← Merged, deduplicated results
@@ -119,7 +121,8 @@ databases:
 ### Per-database `.bib` files
 
 Each database gets its own subfolder with one `.bib` file per query:
-```
+
+```text
 my-slr/
 ├── ACM/
 │   └── modeling language AND Industry 4.0.bib
@@ -135,7 +138,9 @@ The merged and deduplicated result across all databases and queries. **Open this
 
 After setup, run the search at any time via:
 
-**Library → Update Systematic Literature Review**
+### Running the Search
+
+Go to **Tools → Update study search results**.
 
 JabRef will:
 
@@ -163,27 +168,34 @@ Recommended workflow:
 
 Using the Industry 4.0 modeling languages study:
 
-**1. Start a new SLR**
+### 1. Start a new SLR
+
 - Study name: `industry40-modeling-slr`
 - Research question: *Which modeling languages are used in Industry 4.0 systems?*
 
-**2. Define the query**
+### 2. Define the query
+
 - `"modeling language" AND ("Industry 4.0" OR "Industrie 4.0")`
 
-**3. Select databases**
+### 3. Select databases
+
 - IEEE Xplore, ACM Digital Library, Springer
 
-**4. Choose a directory**
+### 4. Choose a directory
+
 - `~/research/industry40-modeling-slr/`
 
-**5. Run the search**
+### 5. Run the search
+
 - JabRef queries all three databases and writes results to `studyResult.bib`.
 
-**6. Screen results**
+### 6. Screen results
+
 - Open `studyResult.bib`, create groups, and assign each paper.
 
-**7. Re-run later**
-- Run **Update Systematic Literature Review** to find new publications.
+### 7. Re-run later
+
+- Run **Tools → Update study search results** to find new publications.
 - Check the Git log to see exactly which papers are new.
 
 ## Best Practices
