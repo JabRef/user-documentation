@@ -24,19 +24,19 @@ This study searched IEEE Xplore, ACM Digital Library, and Springer using the que
 
 ### Step 1: Open the SLR Dialog
 
-Go to **Library → Start New Systematic Literature Review…**
+Go to **Tools → Start new systematic literature review**
 
-This opens the **Define New Study** dialog.
+This opens the **Define study parameters** dialog.
 
 {% hint style="info" %}
-To continue an existing SLR, use **Library → Update Systematic Literature Review** instead.
+To continue an existing SLR, use **Tools → Update study search results** instead.
 {% endhint %}
 
 ### Step 2: Fill in the Study Parameters
 
 | Field | Description | Example |
 |---|---|---|
-| **Study name** | A short identifier for your study | `industry40-modeling-languages` |
+| **Study title** | A short identifier for your study | `industry40-modeling-languages` |
 | **Research questions** | The questions your SLR will answer | `Which modeling languages are used in Industry 4.0?` |
 | **Search queries** | Query strings sent to each database | `"modeling language" AND "Industry 4.0"` |
 | **Databases** | The academic libraries to search | ACM, IEEE, Springer |
@@ -46,16 +46,44 @@ To continue an existing SLR, use **Library → Update Systematic Literature Revi
 The directory must be **empty** when starting a new SLR. JabRef initializes a Git repository there to track all changes automatically.
 {% endhint %}
 
+{% hint style="info" %}
+Before you can click **Start survey**, the following are required:
+- Study title
+- At least one author
+- At least one research question
+- At least one query
+  {% endhint %}
+
 ### Step 3: Select Databases
 
 JabRef can query the following databases:
 
-- ACM Digital Library
-- IEEE Xplore
-- Springer
-- Semantic Scholar
+- ACM Portal
 - arXiv
+- Bibliotheksverbund Bayern (Experimental)
+- Biodiversity Heritage
+- CiteSeerX
+- Crossref
 - DBLP
+- DOAB
+- DOAJ
+- Europe/PMCID
+- GVK
+- IEEEXplore
+- INSPIRE
+- ISIDORE
+- LOBID
+- MathSciNet
+- Medline/PubMed
+- OpenAlex
+- ResearchGate
+- SAO/NASA ADS
+- ScholarArchive
+- Scopus
+- SemanticScholar
+- Springer
+- Unpaywall
+- zbMATH
 
 For software engineering SLRs, ACM and IEEE are typically the most relevant.
 
