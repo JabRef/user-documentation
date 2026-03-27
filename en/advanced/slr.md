@@ -106,6 +106,7 @@ Stores all your study parameters. You can add your own notes or fields — JabRe
 
 Example:
 ```yaml
+
 study-name: "industry40-modeling-languages"
 last-search-date: 2024-01-15
 research-questions:
