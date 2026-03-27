@@ -29,7 +29,7 @@ Go to **Tools → Start new systematic literature review**
 This opens the **Define study parameters** dialog.
 
 {% hint style="info" %}
-To continue an existing SLR, use **Tools → Update study search results** instead.
+To continue an existing SLR, use **Tools → Update study search results** to re-run searches, or **Tools → Manage study definition** to edit the study parameters without re-running the search.instead.
 {% endhint %}
 
 ### Step 2: Fill in the Study Parameters
@@ -39,7 +39,8 @@ To continue an existing SLR, use **Tools → Update study search results** inste
 | **Study title** | A short identifier for your study | `industry40-modeling-languages` |
 | **Research questions** | The questions your SLR will answer | `Which modeling languages are used in Industry 4.0?` |
 | **Search queries** | Query strings sent to each database | `"modeling language" AND "Industry 4.0"` |
-| **Databases** | The academic libraries to search | ACM, IEEE, Springer |
+| **Authors** | The authors conducting the review | `Smith, J.` |
+| **Catalogs** | The academic libraries to search | ACM Portal, IEEEXplore, Springer |
 | **Directory** | A local folder to store all SLR files | `~/my-slr/` |
 
 {% hint style="warning" %}
@@ -53,6 +54,7 @@ Before you can click **Start survey**, the following are required:
 - At least one author
 - At least one research question
 - At least one query
+- A study directory must be selected
   {% endhint %}
 
 ### Step 3: Select Databases
@@ -96,8 +98,8 @@ After confirming your study parameters, JabRef creates this structure:
 my-slr/
 ├── study.yml              ← Your study configuration
 ├── studyResult.bib        ← Merged, deduplicated results
-└── <DatabaseName>/
-    └── <QueryString>.bib  ← Raw results per database per query
+└── <QueryString>/
+    └── <CatalogName>.bib  ← Raw results per query per catalog
 ```
 
 ### `study.yml`
@@ -107,15 +109,13 @@ Stores all your study parameters. You can add your own notes or fields — JabRe
 Example:
 
 ```yaml
-study-name: "industry40-modeling-languages"
-last-search-date: 2024-01-15
 research-questions:
   - "Which modeling languages are used in Industry 4.0?"
 queries:
   - query: '"modeling language" AND "Industry 4.0"'
-databases:
-  - name: ACM
-  - name: IEEE
+catalogs:
+  - name: ACM Portal
+  - name: IEEEXplore
   - name: Springer
 ```
 
@@ -138,8 +138,6 @@ The merged and deduplicated result across all databases and queries. **Open this
 ## Running the Search
 
 After setup, run the search at any time via:
-
-### Running the Search
 
 Go to **Tools → Update study search results**.
 
