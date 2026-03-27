@@ -105,8 +105,8 @@ my-slr/
 Stores all your study parameters. You can add your own notes or fields — JabRef will ignore anything it does not recognize.
 
 Example:
-```yaml
 
+```yaml
 study-name: "industry40-modeling-languages"
 last-search-date: 2024-01-15
 research-questions:
