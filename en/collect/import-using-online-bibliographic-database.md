@@ -20,7 +20,7 @@ If you need to use an HTTP proxy server, you can configure JabRef to use a proxy
 
 ## Search Syntax
 
-Since version [5.2](https://github.com/JabRef/jabref/blob/main/CHANGELOG.md#52--2020-12-24):
+Since version [6.0](https://github.com/JabRef/jabref/blob/main/CHANGELOG.md#unreleased):
 
 JabRef searches the catalogs by using the specified keywords. One can use quotes (`"`) to keep words togehter: An example is `"process mining"`. It is also possible to restrict the search to dedicated fields:
 
@@ -39,11 +39,11 @@ One can usually combine different searches using the Boolean operators `AND` and
 
 ### Examples
 
-* `author:smith and author:jones`: search for references with authors "smith" and "jones"
-* `author:smith or author:jones`: search for references with either author "smith" or author "jones"
-* `author:smith and not title:processor`: search for author "smith" and omit references with "processor" in the title
+* `author=smith and author=jones`: search for references with authors "smith" and "jones"
+* `author=smith or author=jones`: search for references with either author "smith" or author "jones"
+* `author=smith and not title=processor`: search for author "smith" and omit references with "processor" in the title
 
-Technial note: The search syntax is adapted from [Apache Lucene](https://lucene.apache.org/core/2\_9\_4/queryparsersyntax.html). JabRef takes the Lucene syntax and transforms it to the syntax required by the supported catalogs.
+Technial note: The web search syntax currently uses the same one local search functionality in JabRef. The terms are transformed in to the required format for specific APIs that are used in the background.
 
 ## Supported catalogs
 
@@ -158,8 +158,8 @@ Year ranges are not supported. In case a year range is provided, it is ignored. 
 #### Sample queries
 
 * `marx kapital`
-* `author:grodke and title:db2`
-* `author:"Maas,jan?"`
+* `author=grodke and title=db2`
+* `author="Maas,jan?"`
 
 ### IEEEXplore
 
@@ -192,7 +192,7 @@ Currently disabled because of traffic limit
 
 [Jstor](https://jstor.org) is an online catalog with access to more than 12 million journal articles, books, and sources in 75 disciplines. [About](https://about.jstor.org)
 
-It is possible to limit the search by adding a field name to the search, such as `field:"text"`. The supported fields are:
+It is possible to limit the search by adding a field name to the search, such as `field="text"`. The supported fields are:
 
 * `title`: The title of the article
 * `author`: an author of the article
@@ -270,14 +270,14 @@ You cannot use the same query syntax as in the one-line search at zbmath.org; yo
 #### Examples
 
 * \`\`[`algebra*`](https://zbmath.org/?q=algebra\*): Searches for publications containing a term starting with algebra (e.g. algebra, algebras, algebraic, etc.) in any field.
-* [`title:"Graph Theory"`](https://zbmath.org/?q=ti%3A+%E2%80%9CGraph+Theory%E2%80%9D): Searches for publications with the exact phrase _Graph Theory_ in their `title` field.
-* [`an:0492.90056`](https://zbmath.org/?q=an%3A0492.90056): Searches for the document with zbl number _0492.90056_.
-* [`author:Berge and title:"Graph Theory"`](https://zbmath.org/?q=au%3A+Berge+%26+ti%3A+%E2%80%9CGraph+Theory%E2%80%9D): Searches for entries written by _Berge_ with `Graph Theory` in their **title** field.
-* [`dt:b author:Berge`](https://zbmath.org/?q=dt%3A+b+au%3A+Berge): Searches for all books written by Berge.
-* [`title:"Graph Theory" yearrange:2010-2020`](https://zbmath.org/?q=ti%3A+%E2%80%9CGraph+Theory%E2%80%9D+py%3A+2010-2020): Searches for documents containing the exact phrase `Graph Theory` in their **title** that are published between _2010_ and _2020_.
-* [`so:Combinatorica`](https://zbmath.org/?q=so%3A+Combinatorica): Searches for documents published in the journal `Combinatorica`.
-* [`cc:"(05C|90C)"`](https://zbmath.org/?q=cc%3A+%2805C%7C90C%29): Searches for documents with **MSC code** in `05C` or `90C`.
-* [`la:"es | pt"`](https://zbmath.org/?q=la%3A+es+%7C+pt): Searches for documents written in Spanish or Portuguese.
-* [`sw:python`](https://zbmath.org/?q=sw%3Apython): Searches for publications using the **software** `python`.
-* [`en:arXiv`](https://zbmath.org/?q=en%3AarXiv): Searches for entries with a link to an `arXiv` preprint.
-* [`br:"Claude Berge"`](https://zbmath.org/?q=br%3AClaude+Berge): Searches for publications with biographical information on `Claude Berge`.
+* [`title="Graph Theory"`](https://zbmath.org/?q=ti%3A+%E2%80%9CGraph+Theory%E2%80%9D): Searches for publications with the exact phrase _Graph Theory_ in their `title` field.
+* [`an=0492.90056`](https://zbmath.org/?q=an%3A0492.90056): Searches for the document with zbl number _0492.90056_.
+* [`author=Berge and title="Graph Theory"`](https://zbmath.org/?q=au%3A+Berge+%26+ti%3A+%E2%80%9CGraph+Theory%E2%80%9D): Searches for entries written by _Berge_ with `Graph Theory` in their **title** field.
+* [`dt=b author=Berge`](https://zbmath.org/?q=dt%3A+b+au%3A+Berge): Searches for all books written by Berge.
+* [`title="Graph Theory" yearrange=2010-2020`](https://zbmath.org/?q=ti%3A+%E2%80%9CGraph+Theory%E2%80%9D+py%3A+2010-2020): Searches for documents containing the exact phrase `Graph Theory` in their **title** that are published between _2010_ and _2020_.
+* [`so=Combinatorica`](https://zbmath.org/?q=so%3A+Combinatorica): Searches for documents published in the journal `Combinatorica`.
+* [`cc="(05C|90C)"`](https://zbmath.org/?q=cc%3A+%2805C%7C90C%29): Searches for documents with **MSC code** in `05C` or `90C`.
+* [`la="es | pt"`](https://zbmath.org/?q=la%3A+es+%7C+pt): Searches for documents written in Spanish or Portuguese.
+* [`sw=python`](https://zbmath.org/?q=sw%3Apython): Searches for publications using the **software** `python`.
+* [`en=arXiv`](https://zbmath.org/?q=en%3AarXiv): Searches for entries with a link to an `arXiv` preprint.
+* [`br="Claude Berge"`](https://zbmath.org/?q=br%3AClaude+Berge): Searches for publications with biographical information on `Claude Berge`.
