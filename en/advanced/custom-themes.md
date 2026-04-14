@@ -10,7 +10,7 @@ Since `JabRef 5.2` it is possible to use custom themes. In `Preferences > Appear
 
 You can find a collection of user contributed themes at [https://themes.jabref.org](https://themes.jabref.org/).
 
-{% file src="../.gitbook/assets/dark-custom (6).css" %}
+{% file src="../.gitbook/assets/dark-custom (1).css" %}
 
 ## Selection of Useful CSS selectors
 
