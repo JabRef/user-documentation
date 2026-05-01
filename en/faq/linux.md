@@ -37,3 +37,18 @@ In the background, JabRef uses [JavaFX](https://en.wikipedia.org/wiki/JavaFX). A
 ## Where can I find JabRef's log files?
 
 A: On Linux, the path to the log files is `~/.local/share/jabref/logs/$version/`
+
+### JabRef does not quit completely on Linux
+
+On some Linux distributions (especially with Wayland/GNOME), closing the window or using the close button does not fully exit JabRef — the process keeps running in the background.
+
+#### Workarounds
+
+- Use **File → Quit** or the keyboard shortcut **`Ctrl + Q`** instead of the window's close button.
+- Try running JabRef with one of these commands:
+  ```bash
+  # Option 1
+  jabref --jvm-opt="-Dprism.order=sw"
+
+  # Option 2
+  JAVAFX_GLX=1 jabref
