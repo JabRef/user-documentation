@@ -6,9 +6,66 @@ The custom export format of JabRef is an alternative to the [Citation Style Lang
 
 Existing public files are collected at [https://layouts.jabref.org](https://layouts.jabref.org).
 
-## Adding a custom export filter
+## Adding and modifying custom exports
 
-The only requirement for a valid export filter is the existence of a file with the extension **.layout**. To add a new custom export filter, open the dialog box **File → Preferences**, go to the section **Custom export formats**, and click on **Add**. A new dialog box will appear, allowing you to specify a name for the export filter (which will appear as one of the choices in the File type dropdown menu of the file dialog when you use the **File → Export** menu choice in the JabRef window), the path to the **.layout** file, and the preferred file extension for the export filter (which will be the suggested extension in the file dialog when you use the export filter). Note that if you intend to use the custom export filter also for "Copy...->Export to Clipboard" in the maintable, the extension must be one of the following: `txt`, `rtf`, `rdf`, `xml`, `html`, `htm`, `csv`, or `ris`.
+### 1. Locate the layout files
+
+JabRef uses **layout files** to define how exported files (CSV, OpenOffice, etc.) look.
+
+- Layout files are in the repo at:
+  `jablib/src/main/resources/resource/openoffice/`
+
+- Example files:
+  - `openoffice-csv.begin.layout` → defines **column headers**
+  - `openoffice-csv.layout` → defines **each entry row** (data)
+
+### 2. Make a copy of the files
+
+Do **not modify the original files** directly.
+
+1. Create a folder on your computer, e.g., `CustomFiles`.
+2. Copy the following files into it:
+   - `openoffice-csv.begin.layout`
+   - `openoffice-csv.layout`
+3. You will edit **these copies** for your custom export.
+
+### 3. Add a new field
+
+If you want to include a new field (e.g., `Asset`):
+
+1. Open `openoffice-csv.layout` in your folder and add `\asset` at the **end of the row**.
+2. Open `openoffice-csv.begin.layout` and add `"Asset"` at the **end of the headers**.
+
+> Make sure the **name in both files matches exactly** (`\asset` and `"Asset"`).
+
+### 4. Modify an existing export
+
+To change an existing export:
+
+1. Open the copied layout files (`*.layout` and `*.begin.layout`).
+2. Edit columns or fields as needed.
+3. Save the files in your folder.
+
+### 5. Add your custom export in JabRef
+
+1. Open JabRef → **Preferences → Custom Export Formats**.
+2. Click **Add**.
+3. Fill in the fields:
+   - **Format name:** e.g., `Asset Export`
+   - **Main layout file:** select your copied `openoffice-csv.layout`
+   - **File extension:** `csv`
+4. Click **Save** and **restart JabRef**.
+5. If it does not appear, double-check the layout file path and restart JabRef again.
+
+### 6. Export your library
+
+1. Open your `.bib` library in JabRef.
+2. Go to **File → Export**.
+3. Select your custom export (`Asset Export`).
+4. Choose a location and file name, e.g., `MyLibrary.csv`.
+5. Click **Save / Export**.
+
+The exported CSV will now include your **new column and data**.
 
 ## Creating the export filter
 
