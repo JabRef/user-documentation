@@ -92,7 +92,7 @@ To fetch entries from Unpaywall indirectly through Crossref, choose **Search →
 
 ### DOAB
 
-[DOAB (Directory of Open Access Books)](https://doabooks.org) is is a community-driven discovery service that indexes and provides access to scholarly, peer-reviewed open access books and helps users to find trusted open access book publishers.
+[DOAB (Directory of Open Access Books)](https://doabooks.org) is a community-driven discovery service that indexes and provides access to scholarly, peer-reviewed open access books and helps users to find trusted open access book publishers.
 
 ### DOAJ
 
