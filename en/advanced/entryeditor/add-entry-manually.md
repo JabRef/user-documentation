@@ -8,7 +8,7 @@ Additionally, here the data is shown "as is", which means special symbols that a
 
 As an example, let's inspect the file field of this example entry:
 
-```
+```bibtex
 @Article{BennLazar2021www,
 author = {Benn, Claire and Lazar, Seth},
 date = {2021-09},
