@@ -17,6 +17,8 @@ If you encounter any errors that are related to wrong, erroneous, corrupt or van
 3. **Copy the backup files to a safe, but different location.** (Basically, create a backup of the backups. This step is very important, as each 20 seconds, after a change to the library, the current state of the library is saved to a .bak file, but JabRef at most stores 10 backup files and if you continue to work with your original library file (.bib), eventually JabRef will overwrite your old backup files)
 4. **Compare the backup file with the erroneous library.** You can do this by editing your chosen backup file (via JabRef or file editor) in such a way that the modification date is newer than that of your erroneous library. Open the erroneous library and the backup merge dialogue should trigger, which allows you to see what has changed in the file. Alternatively, to achieve the same result, it is possible to use third party file versioning systems like [Git](https://git-scm.com/) or visual difference and merge tools like [Meld](https://meldmerge.org/) or [WinMerge](https://winmerge.org/).
 
+Alternatively, you can use Merge action under File to compare your current library with any BibTeX file (for example, a backup) and review the changes in JabRef.
+
 If this method works: Great!\
 If this method does not work with the first backup file: Try an older backup file\
 If this method does not work with any backup file: Try the method of half splitting.
