@@ -5,8 +5,6 @@
 ## General settings
 
 * "Enable AI functionality in JabRef": by default it is turned off, so you need to check this option if you want to use the new AI features
-* "Automatically generate embeddings for new entries": when this check box is switched on, for every new entry in the library, JabRef will automatically start an embeddings generation task. (If you do not know what are the embeddings, take a look at ["How does the AI functionality work?"](https://docs.jabref.org/ai#how-does-the-ai-functionality-work)).
-* "Automatically generate summaries for new entries": when this check box is switched on, for every new entry in the library, JabRef will automatically generate a summary.
 
 If you import a lot of entries at a time, we recommend you to switch off options "Automatically generate embeddings for new entries" and "Automatically generate summaries for new entries", because this may slow down your computer, and you may reach the usage limit of the AI provider.
 
@@ -117,9 +115,10 @@ To use the templates, we employ the [Apache Velocity](https://velocity.apache.or
 There are four templates that JabRef uses:
 
 * **System Message for Chatting**: This template constructs the system message (also known as the instruction) for every AI chat in JabRef (whether chatting with an entry or with a group).
-* **User Message for Chatting**: This template is also used in chats and is responsible for forming a request to AI with document embeddings. The user message created by this template is sent to AI; however, only the plain user question will be saved in the chat history.
+* **User Message for Chatting**: This template is also used in chats and is responsible for forming a request to AI with the relevant information found by an answer engine. The user message created by this template is sent to AI; however, only the plain user question will be saved in the chat history.
 * **Summarization Chunk**: In cases where the chat model does not have enough context window to fit the entire document in one message, our algorithm will split the document into chunks. This template is used to summarize a single chunk of a document.
 * **Summarization Combine**: This template is used only when the document size exceeds the context window of a chat model. It combines the summarized chunks into one piece of text.
+* **System message for 'full document' summarization**: This template is used for the "Full document" summarizator. For more information about different types of summarization algorithms, check out ["Summarization Algorithms"](./summarization-algorithms.md).
 
 You can create any template you want, but we advise starting from the default template, as it has been carefully designed and includes special syntax from Apache Velocity.
 
@@ -131,6 +130,28 @@ For each template, there is a context that holds all necessary variables used in
 * **User Message for Chatting**: There are two variables: `message` (the user question) and `excerpts` (pieces of information found in documents through the embeddings search). Each object in `excerpts` is of type `PaperExcerpt`, which has two fields: `citationKey` and `text`.
 * **Summarization Chunk**: There is only the `text` variable, which contains the chunk.
 * **Summarization Combine**: There is only the `chunks` variable, which contains a list of summarized chunks.
+* **System message for 'full document' summarization**: No additional context.
+
+## Miscellaneous settings
+
+* "Automatically generate embeddings for new entries": when this check box is switched on, for every new entry in the library, JabRef will automatically start an embeddings generation task. (If you do not know what are the embeddings, take a look at ["How does the AI functionality work?"](https://docs.jabref.org/ai#how-does-the-ai-functionality-work)).
+* "Automatically generate summaries for new entries": when this check box is switched on, for every new entry in the library, JabRef will automatically generate a summary.
+* "Generate follow-up questions after AI response" and "Number of follow-up questions": controls the generation of follow-up questions in the AI chat.
+* "Default summarization algorithm": the summarization algorithm used by default. For more information about summarization algorithms, check ["Summarization algorithms"](./summarization-algorithms.md).
+* "Default answer engine": the answer engine used by default in AI chat. For more information about answer engines, check ["Answer Engines"](./answer-engines.md).
+* "Default token estimation algorithm": the token estimation algorithm used by default for various AI tasks. For more information about token estimators, check the section ["Token Estimators"](#token-estimators).
+
+### Token Estimators
+
+Some AI features require estimating whether a message will exceed the context window of the underlying language model. However, the exact tokenizer used by the model is not always accessible. For this reason, JabRef provides a separate option called "Token Estimator", which approximates the number of tokens in a message.
+
+The following estimation strategies are available:
+
+- **Average**: Computes the average of the Words and Characters estimations.
+- **Words**: Estimates tokens based on the number of words, assuming that 0.75 words ≈ 1 token.
+- **Characters**: Estimates tokens based on the number of characters, assuming that 4 characters ≈ 1 token.
+- **Max**: Takes the maximum value between the Words and Characters estimations.
+- **Min**: Takes the minimum value between the Words and Characters estimations.
 
 ## Further literature
 

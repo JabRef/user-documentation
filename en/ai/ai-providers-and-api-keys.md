@@ -80,8 +80,8 @@ If you have some money on your credit balance, you can chat with your library!
 
 To increase your credit balance on OpenAI, follow these steps:
 
-1. Add payment method [here](https://platform.openai.com/settings/organization/billing/payment-methods).
-2. Add credit balance on [this](https://platform.openai.com/settings/organization/billing/overview) page.
+1. Add payment method [on this page](https://platform.openai.com/settings/organization/billing/payment-methods).
+2. Add credit balance [on this page](https://platform.openai.com/settings/organization/billing/overview).
 
 ### Mistral AI
 
