@@ -11,7 +11,7 @@ OCRmyPDF must be installed on your system to use this feature. See the installat
 ### How to install [OCRmyPDF](https://github.com/ocrmypdf/ocrmypdf)
    * Check [installation guide](https://ocrmypdf.readthedocs.io/en/latest/installation.html) according to your operating system.
 
-2. How to perform OCR on a scanned PDF file in JabRef
+### How to perform OCR on a scanned PDF file in JabRef
    1. Open JabRef and go to the entry for the scanned PDF you want to OCR.
    2. Right-click on the File and select "Perform OCR and embed text into new PDF file".
        ![perform-ocr.png](perform-ocr.png)
