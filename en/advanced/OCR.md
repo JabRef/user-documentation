@@ -8,6 +8,10 @@
 
 ## How to perform OCR on a scanned PDF file in JabRef
 
+{% hint style="warning" %}
+OCRmyPDF must be installed on your system to use this feature. See the installation instructions below.
+{% endhint %}
+
 1. Open JabRef and go to the entry for the scanned PDF you want to OCR.
 2. Right-click on the File and select "Perform OCR and embed text into new PDF file".
     ![perform-ocr.png](perform-ocr.png)
@@ -19,7 +23,3 @@
 * Now you can select and search text in the new PDF file.
 
     ![comparison-between-original-and-ocred-file.png](comparison-between-original-and-ocred-file.png)
-
-{% hint style="warning" %}
-OCRmyPDF must be installed on your system to use this feature. See the installation instructions below.
-{% endhint %}
