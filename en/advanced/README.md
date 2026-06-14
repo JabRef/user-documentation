@@ -12,6 +12,8 @@
 
 {% page-ref page="externalfiles.md" %}
 
+{% page-ref page="OCR.md" %}
+
 {% page-ref page="commandline.md" %}
 
 {% page-ref page="autosave.md" %}
