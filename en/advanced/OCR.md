@@ -8,7 +8,7 @@ OCR (Optical Character Recognition) is defined as the electronic or mechanic con
 OCRmyPDF must be installed on your system to use this feature. See the installation instructions below.
 {% endhint %}
 
-1. How to install [OCRmyPDF](https://github.com/ocrmypdf/ocrmypdf?tab=readme-ov-file)
+### How to install [OCRmyPDF](https://github.com/ocrmypdf/ocrmypdf)
    * Check [installation guide](https://ocrmypdf.readthedocs.io/en/latest/installation.html) according to your operating system.
 
 2. How to perform OCR on a scanned PDF file in JabRef
