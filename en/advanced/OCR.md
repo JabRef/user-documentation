@@ -5,13 +5,16 @@ OCR (Optical Character Recognition) is defined as the electronic or mechanic con
 ## OCRmyPDF
 
 {% hint style="warning" %}
-OCRmyPDF must be installed on your system before using this feature. See the installation instructions below.
+OCRmyPDF must be installed on your system to use this feature. See the installation instructions below.
 {% endhint %}
 
-* Once you have OCRmyPDF installed, you can use it to perform OCR on your scanned PDFs. To do this, follow these steps:
-  1. Open JabRef and go to the entry for the scanned PDF you want to OCR.
-  2. Right-click on the File and select "Perform OCR and embed text into new PDF file".
-      ![perform-ocr.png](perform-ocr.png)
+1. How to install [OCRmyPDF](https://github.com/ocrmypdf/ocrmypdf?tab=readme-ov-file)
+   * Check [installation guide](https://ocrmypdf.readthedocs.io/en/latest/installation.html) according to your operating system.
+
+2. How to perform OCR on a scanned PDF file in JabRef
+   1. Open JabRef and go to the entry for the scanned PDF you want to OCR.
+   2. Right-click on the File and select "Perform OCR and embed text into new PDF file".
+       ![perform-ocr.png](perform-ocr.png)
 
 * After performing OCR, JabRef creates a new PDF file with the OCR text embedded, and it will be linked in all the entries that have the old file linked to them. The original scanned PDF will remain unchanged.
 
