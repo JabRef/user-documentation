@@ -1,6 +1,6 @@
 # OCR
 
-OCR (Optical Character Recognition) is a technology that is used to convert scanned PDFs into editable and searchable data. OCR can be used via multiple tools and engines. Currently, JabRef provides OCR using [OCRmyPDF](https://ocrmypdf.readthedocs.io/en/latest/) and more engine are coming soon.
+OCR (Optical Character Recognition) is defined as the electronic or mechanic conversion of images of typed, handwritten or printed text into machine-encoded text. In other words, it is a technique that adds editable and searchable data to PDFs and other files in your library. OCR can be used via multiple tools and engines. Currently, JabRef provides OCR using [OCRmyPDF](https://ocrmypdf.readthedocs.io/en/latest/).
 
 ## OCRmyPDF
 
