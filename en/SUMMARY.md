@@ -72,6 +72,7 @@
   * [Strings](advanced/strings.md)
   * [Field content selector](advanced/contentselector.md)
   * [URL and DOI links in JabRef](advanced/externalfiles.md)
+  * [OCR](advanced/OCR.md)
   * [Command line use and options](advanced/commandline.md)
   * [Automatic Backup (.sav and .bak) and Autosave](advanced/autosave.md)
   * [XMP metadata support in JabRef](advanced/xmp.md)
