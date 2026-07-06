@@ -69,15 +69,15 @@ The integration with TeX editors is fine if JabRef is a deb/rpm, and the editor 
 
 Depending on your use case and needed integrations it is advisable to choose the proper packages. Watch this page for new developments on the interactions with external programs.
 
-|                       | Snap | Flatpak | deb/rpm | tar |
-| --------------------- | ---- | ------- | ------- | --- |
-| Libreoffice (system)  | ❌    | ❌       | ✅       | ✅   |
-| Libreoffice (snap)    | ❌    | ❌       | ❌       | ❌   |
-| Libreoffice (flatpak) | ❌    | ❌       | ❌       | ❌   |
-| TexShow               | ❌    | ✅       | ✅       | ✅   |
-| TexMaker              | ❌    | ✅       | ✅       | ✅   |
-| LyX                   | ❌    | ✅       | ✅       | ✅   |
-| Vim/Emacs             | ❌    | ❌       | ✅       | ✅   |
+|                        | Snap | Flatpak | deb/rpm | tar |
+| ---------------------- | ---- | ------- | ------- | --- |
+| Libreoffice (system)   | ❌   | ❌      | ✅      | ✅  |
+| Libreoffice (snap)     | ❌   | ❌      | ❌      | ❌  |
+| Libreoffice (flatpak)  | ❌   | ❌      | ❌      | ❌  |
+| TexShow                | ❌   | ✅      | ✅      | ✅  |
+| TexMaker               | ❌   | ✅      | ✅      | ✅  |
+| LyX                    | ❌   | ✅      | ✅      | ✅  |
+| Vim/Emacs              | ❌   | ❌      | ✅      | ✅  |
 
 #### Change default application to open files for JabRef snap
 
