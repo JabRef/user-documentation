@@ -36,7 +36,7 @@ The embedding model transforms a document (or a piece of text) into a vector (an
 
 Different embedding models have varying performance, including accuracy and the speed of computing embeddings. The `_q` at the end of the model name usually denotes _quantized_ (meaning reduced or simplified). These models are faster and smaller than their original counterparts but provide slightly less accuracy.
 
-Currently, only local embedding models are supported. This means you do not need to provide a new API key, as all the processing will be done on your machine.
+Currently, only local embedding models are supported. This means you do not need to provide a separate API key for them, as all the processing will be done on your machine.
 
 ### Instruction
 
@@ -73,6 +73,10 @@ This setting controls how creative or focused the AI’s responses will be. A lo
 The "chunk size" parameter in document splitting refers to the size of segments into which linked files are divided for processing by AI models. When dealing with linked files, such as PDFs, they are segmented into smaller chunks based on this parameter. Each segment typically contains a specified number of words or characters, ensuring manageable units for analysis and generating answers.
 
 These segments are then passed to the AI model for processing. This approach helps optimize performance by breaking down large documents into smaller, more digestible parts, allowing for more efficient handling and analysis by the AI.
+
+{% hint style="warning" %}
+The chunk size should not exceed the capabilities of the embedding model, otherwise embeddings may fail to be generated. Users have to set the chunk size of the embedding model to `"max_position_embeddings": *,`. Model makers publish this info usually as part of the config.json (mostly at [https://huggingface.co](https://huggingface.co)). For example [https://huggingface.co/intfloat/multilingual-e5-large/blob/main/config.json](https://huggingface.co/intfloat/multilingual-e5-large/blob/main/config.json)
+{% endhint %}
 
 ### Document splitter chunk overlap
 

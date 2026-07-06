@@ -3,3 +3,5 @@ dirs:
 useGitIgnore: true
 ignorePatterns:
   - pattern: '^https://arxiv\.org/'
+  # Automated access blocked by Cloudflare, see issue for context: https://github.com/JabRef/jabref/issues/13404
+  - pattern: "onlinelibrary\\.wiley\\.com"
