@@ -5,7 +5,8 @@
 JabRef can push entries, i.e., insert `\cite{key}` commands, to the following text editors:
 
 * [Emacs](https://www.gnu.org/software/emacs/)
-* [LyX/Kile](http://www.lyx.org/)
+* [Kate](https://apps.kde.org/en-gb/kate/)
+* [LyX](http://www.lyx.org/)/[Kile](https://apps.kde.org/en/kile/)
 * [TeXstudio](http://www.texstudio.org/)
 * [Texmaker](http://www.xm1math.net/texmaker/)
 * [Vim](http://www.vim.org/)

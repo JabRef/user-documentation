@@ -47,17 +47,22 @@ Usage: jabkit [-dhpv] [COMMAND]
 Commands:
   generate-citation-keys  Generate citation keys for entries in a .bib file.
   check-consistency       Check consistency of the library.
+  check-integrity         Check integrity of the database.
   fetch                   Fetch entries from a provider.
   search                  Search in a library.
   convert                 Convert between bibliography formats.
   generate-bib-from-aux   Generate small bib from aux file.
   preferences             Manage JabKit preferences.
   pdf                     Manage PDF metadata.
+  get-cited-works         Get the cited works (bibliography).
+  get-citing-works        Get the works citing the work at hand.
 ```
+
+Hint: Using `jabkit <COMMAND> --help` will show the supported options for each command.
 
 ## Updating JabKit
 
-Make use of --fresh to update JabKit
+Make use of `--fresh` to update JabKit
 
 `jbang --fresh jabkit@jabref`
 
