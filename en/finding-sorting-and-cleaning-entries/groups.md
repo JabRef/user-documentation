@@ -99,7 +99,7 @@ If a refining group is a subgroup of a group that includes its subgroups -- the 
 
 ### Types of groups
 
-JabRef has five types of groups:
+JabRef has six types of groups:
 
 * **Explicit selection**. The group contains entries that were assigned manually. It behaves like a directory on disk, and contains only those entries that you explicitly assigned to it.
 * **Searching for a keyword**. The group contain entries in which a certain field (e.g. `author`) contains a certain keyword (e.g. `Smith`). This method does not require manual assignment of entries but uses information that is already present in the database.
@@ -107,7 +107,6 @@ JabRef has five types of groups:
 * **Specified keywords**. This feature will gather all words found in a specific field of your choice, and create a group for each word.
 * **Cited entries**. The group contains the entries cited in a LaTeX document, based on its _.aux_ file.
 * **Date**. The group contains all entries that satisfy a certain date criteria.
-* **Directory structure**. The group mirrors the local file system structure based on the root directory path specified.
 
 #### Explicit selection
 
@@ -153,7 +152,6 @@ You can also specify characters to ignore, for instance, commas used between key
 
 ![Fields for collecting by specified keywords](<../.gitbook/assets/groups-groupwindow-typespecifiedkeywords-jabref6.0.png>)
 
-
 If you enter `author` in the first _Field to group by_, a group will be created for each author's complete name (e.g. `John Smith`), containing all entries authored by this person. But if you enter `author` in the second _Field to group by_, a group will be created for each author's last name only (e.g. `Smith`), containing all entries authored by persons with this last name.
 
 The content of the group is updated dynamically whenever the database changes.
@@ -174,14 +172,6 @@ This feature groups entries based on the date of a selected field.
 
 The field _Field to extract date from_ specifies the entry's field from which the date is extracted.
 The field _Date grouping option_ specifies how the entries are grouped, either by year, by month or by both year and month.
-
-#### Using the directory structure
-
-This feature mirrors a local structure and imports its PDF files as entries in the library. The group structure is updated dynamically whenever there is a change in the system.
-
-![Fields for collecting by directory structure](<../.gitbook/assets/groups-groupwindow-typedirectorystructure-jabref6.0.png>)
-
-The folder icon at the right of the field _Root path_ allows browsing the file system to select the root directory. When the directory is selected, it automatically fills the field _Name_ with the directory name if it was empty. It also selects _Union_ as hierarchical context by default, since this is the most logical choice for this type of group.
 
 ## Group color bars in the entry table
 
