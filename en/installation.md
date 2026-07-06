@@ -116,7 +116,7 @@ Note: This could not work in JabRef 5.12. or later.
 {% endtab %}
 
 {% tab title="macOS" %}
-#### I cannot start JabRef 5.9 due to file beeing damaged
+#### I cannot start JabRef 5.9 due to file being damaged
 
 Execute xattr -d com.apple.quarantine /Applications/JabRef.app
 (This is a known problem related to Apple's notarization)
