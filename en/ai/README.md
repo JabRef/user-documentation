@@ -50,3 +50,11 @@ JabRef uses external AI providers to do the actual work. You can choose between 
 {% content-ref url="local-llm.md" %}
 [local-llm.md](local-llm.md)
 {% endcontent-ref %}
+
+{% content-ref url="response-engines.md" %}
+[response-engines.md](response-engines.md)
+{% endcontent-ref %}
+
+{% content-ref url="summarization-algorithms.md" %}
+[summarization-algorithms.md](summarization-algorithms.md)
+{% endcontent-ref %}
