@@ -46,7 +46,7 @@ A: Check your configuration. Disable some or all of following preferences:
 
 Any preference that has the potential to affect all your entries at once is worth inspecting.
 
-We collect performance related issues [here](https://github.com/JabRef/jabref/labels/dev%3A%20performance).
+We collect performance related issues in the [performance label on GitHub](https://github.com/JabRef/jabref/labels/dev%3A%20performance).
 
 ## Q: Are there any publications dealing with JabRef?
 

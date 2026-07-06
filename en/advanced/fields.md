@@ -4,7 +4,7 @@ description: The data format of JabRef is Bib(La)TeX
 
 # About BibTeX/biblatex and its fields
 
-JabRef is is a program for working with BibTeX and biblatex databases. JabRef program uses no separate internal file format but directly works with BibTeX and biblatex. That means, your BibTeX/biblatex file is kept as is when opening in JabRef and saving again: You normally load and save your libraries directly in the BibTeX/biblatex`.bib` format. In addition, you can also [import](../collect/) and export bibliography libraries in a number of other formats into JabRef.
+JabRef is a program for working with BibTeX and biblatex databases. JabRef program uses no separate internal file format but directly works with BibTeX and biblatex. That means, your BibTeX/biblatex file is kept as is when opening in JabRef and saving again: You normally load and save your libraries directly in the BibTeX/biblatex`.bib` format. In addition, you can also [import](../collect/) and export bibliography libraries in a number of other formats into JabRef.
 
 JabRef helps you work with your _BibTeX_ libraries, but there are still rules to keep in mind when editing your entries, to ensure that your library is treated properly by the _BibTeX_ program.
 

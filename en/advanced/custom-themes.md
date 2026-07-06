@@ -10,7 +10,7 @@ Since `JabRef 5.2` it is possible to use custom themes. In `Preferences > Appear
 
 You can find a collection of user contributed themes at [https://themes.jabref.org](https://themes.jabref.org/).
 
-{% file src="../.gitbook/assets/dark-custom (1).css" %}
+{% file src="../.gitbook/assets/dark-custom.css" %}
 
 ## Selection of Useful CSS selectors
 
@@ -22,11 +22,11 @@ You can find a collection of user contributed themes at [https://themes.jabref.o
 
 ## Examples
 
-**Light Theme** ![Light Theme](<../.gitbook/assets/theme-light (1).png>)
+**Light Theme** ![Light Theme](../.gitbook/assets/theme-light.png)
 
-**Dark Theme** ![Dark Theme](<../.gitbook/assets/theme-dark (1).png>)
+**Dark Theme** ![Dark Theme](../.gitbook/assets/theme-dark.png)
 
-**Custom Theme** ![Custom Theme](<../.gitbook/assets/theme-custom (1).png>) (based on the Dark Theme)
+**Custom Theme** ![Custom Theme](../.gitbook/assets/theme-custom.png) (based on the Dark Theme)
 
 ## Known bugs
 

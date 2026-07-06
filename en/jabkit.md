@@ -54,11 +54,15 @@ Commands:
   generate-bib-from-aux   Generate small bib from aux file.
   preferences             Manage JabKit preferences.
   pdf                     Manage PDF metadata.
+  get-cited-works         Get the cited works (bibliography).
+  get-citing-works        Get the works citing the work at hand.
 ```
+
+Hint: Using `jabkit <COMMAND> --help` will show the supported options for each command.
 
 ## Updating JabKit
 
-Make use of --fresh to update JabKit
+Make use of `--fresh` to update JabKit
 
 `jbang --fresh jabkit@jabref`
 
