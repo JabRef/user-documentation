@@ -43,7 +43,7 @@ One can usually combine different searches using the Boolean operators `AND` and
 * `author=smith or author=jones`: search for references with either author "smith" or author "jones"
 * `author=smith and not title=processor`: search for author "smith" and omit references with "processor" in the title
 
-Technial note: The web search syntax currently uses the same one local search functionality in JabRef. The terms are transformed in to the required format for specific APIs that are used in the background.
+Technical note: The web search syntax currently uses the same syntax as the [local search functionality](../finding-sorting-and-cleaning-entries/search.md) in JabRef. The terms are then transformed into the required format for the specific APIs used in the background.
 
 ## Supported catalogs
 
