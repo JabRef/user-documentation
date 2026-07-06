@@ -10,7 +10,7 @@ This feature can be configured under **Options → Preferences → Manage journa
 
 JabRef includes a fairly extensive build-in list of journal abbreviations. This list is a merge of all lists available at [https://abbrv.jabref.org](https://abbrv.jabref.org). However, this might still be incomplete (or outdated) for the purposes of some users. Thus, JabRef allows to add abbreviations in the form of a personal list or external lists.
 
-![General view](<../.gitbook/assets/JournalAbbreviations (1).png>)
+![General view](../.gitbook/assets/JournalAbbreviations.png)
 
 ## Using the feature
 
@@ -23,7 +23,7 @@ Journal name conversion can be accessed either from within the entry editor, or 
 
 If the current journal name is not found in your journal lists, the field will not be modified.
 
-To convert the journal names of many entries in bulk, you can select any number of entries, and choose **Quality → Abbreviate journal names → DEFAULT**, **Quality → Abbreviate journal names → MEDLINE**, **Quality → Abbreviate journal names → SHORTEST UNIQUE**, or **Quality → Unabbreviate journal names**. These three actions will abbreviate and unabbreviate the journal names of all selected entries for which the journal name could be found in your journal lists.
+To convert the journal names of many entries in bulk, you can select any number of entries and go to **Quality → Clean up entries → Journal-related → Manage journal abbreviations**. From the dropdown menu, choose an action: **Abbreviate (default)**, **Abbreviate (dotless)**, **Abbreviate (shortest unique)**, **Unabbreviate** or **No changes**. These actions will abbreviate or unabbreviate the journal names of all selected entries for which the journal name could be found in your journal lists.
 
 ## Setting up additional journal lists
 
@@ -43,7 +43,7 @@ Once you click _Save changes_, if you have selected a file, and the table contai
 
 You can link to a number of external lists. These links can be set up on top of the **Manage journal abbreviations** window. External lists are similar to the personal list. The _Open existing list_ button allows you to select an existing file on your computer.
 
-![External list](<../.gitbook/assets/JournalAbbreviations-ExternalList (1).png>)
+![External list](../.gitbook/assets/JournalAbbreviations-ExternalList.png)
 
 External lists can be found at [JabRef's repository abbreviation lists](http://abbrv.jabref.org). These data files are in CSV format (using comma as separators):
 

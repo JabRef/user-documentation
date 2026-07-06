@@ -8,7 +8,7 @@ Additionally, here the data is shown "as is", which means special symbols that a
 
 As an example, let's inspect the file field of this example entry:
 
-```
+```bibtex
 @Article{BennLazar2021www,
 author = {Benn, Claire and Lazar, Seth},
 date = {2021-09},
@@ -31,4 +31,4 @@ If we compare the field contents of the _{} biblatex source_ tab (a representati
 
 <figure><picture><source srcset="../../.gitbook/assets/file field in {} biblatex source tab (1).png" media="(prefers-color-scheme: dark)"><img src="../../.gitbook/assets/grafik (7).png" alt="Picture showing the {} bilatex source tab that includes the file field with its raw data."></picture><figcaption><p>In this "{} biblatex source" tab, the file field contains `:JabRefBibLinkedFiles/BennLazar2021www Benn &#x26; Lazar (2021-09) What’s Wrong Automated 125--148.pdf:pdf`</p></figcaption></figure>
 
-<figure><picture><source srcset="../../.gitbook/assets/file field in General Tab.png" media="(prefers-color-scheme: dark)"><img src="../../.gitbook/assets/grafik (8).png" alt="Picture showing the entry editor with the file field in the General tab."></picture><figcaption><p>In the "General" Tab, the file field depicts: `JabRefBibLinkedFiles\BennLazar2021www Benn &#x26; Lazar (2021-09) What’s Wrong Automated 125--148.pdf`</p></figcaption></figure>
+<figure><picture><source srcset="../../.gitbook/assets/file field in General Tab.png" media="(prefers-color-scheme: dark)"><img src="../../.gitbook/assets/grafik (1).png" alt="Picture showing the entry editor with the file field in the General tab."></picture><figcaption><p>In the "General" Tab, the file field depicts: `JabRefBibLinkedFiles\BennLazar2021www Benn &#x26; Lazar (2021-09) What’s Wrong Automated 125--148.pdf`</p></figcaption></figure>

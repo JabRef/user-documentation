@@ -18,7 +18,7 @@ You can find more information about providers in the [`langchain4j` documentatio
 
 We cannot give a clear recommendation. Providers change their service and their prices regularly and our documentation page is too static to keep up with daily changes. It is recommended to look up LLM benchmarks on the internet or to use the trial and error method. To date, remote AI providers like OpenAI, Google, Mistral and others offer state of the art quality.
 
-If you want to [run a model locally](local-llm.md), you can choose Ollama or make use of the OpenAI API. In comparison to remote AI providers, open weight local models that are compatible with average consumer devices offer less capabilities. There are state of the art local models available, but they are very large (in terms of number of parameters) and the higher the number of parameters, the more memory is needed. To run the largest models, very expensive and capable hardware is required. That said, even small models can be sufficient for the [add entry using refrence text](../collect/newentryfromplaintext.md) workflow.
+If you want to [run a model locally](local-llm.md), you can choose Ollama or make use of the OpenAI API. In comparison to remote AI providers, open weight local models that are compatible with average consumer devices offer less capabilities. There are state of the art local models available, but they are very large (in terms of number of parameters) and the higher the number of parameters, the more memory is needed. To run the largest models, very expensive and capable hardware is required. That said, even small models can be sufficient for the [add entry using reference text](../collect/newentryfromplaintext.md) workflow.
 
 ## Why do I need an API key?
 
@@ -80,7 +80,7 @@ If you have some money on your credit balance, you can chat with your library!
 
 To increase your credit balance on OpenAI, follow these steps:
 
-1. Add payment method [here](https://platform.openai.com/settings/organization/billing/payment-methods).
+1. Add a [payment method](https://platform.openai.com/settings/organization/billing/payment-methods).
 2. Add credit balance on [this](https://platform.openai.com/settings/organization/billing/overview) page.
 
 ### Mistral AI
