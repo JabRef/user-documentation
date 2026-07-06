@@ -203,6 +203,8 @@ It is possible to limit the search by adding a field name to the search, such as
 
 [MathSciNet](https://www.ams.org/mathscinet/) is a searchable online bibliographic catalog. It contains all of the contents of the journal Mathematical Reviews (MR) since 1940 along with an extensive author catalog, links to other MR entries, citations, full journal entries, and links to original articles. It contains almost 3 million items and over 1.7 million links to original articles ([Wikipedia](https://en.wikipedia.org/wiki/MathSciNet)).
 
+You can also search directly using the MR number, e.g. `MR3300361`.
+
 ### Medline/PubMed
 
 [MEDLINE](https://www.nlm.nih.gov/bsd/pmresources.html) is a bibliographic catalog of life sciences and biomedical information. It includes bibliographic information for articles from academic journals covering medicine, nursing, pharmacy, dentistry, veterinary medicine, and health care. MEDLINE also covers much of the literature in biology and biochemistry, as well as fields such as molecular evolution ([Wikipedia](https://en.wikipedia.org/wiki/MEDLINE)).
