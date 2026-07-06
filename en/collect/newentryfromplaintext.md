@@ -22,10 +22,8 @@ O. Kopp, A. Armbruster, und O. Zimmermann, "Markdown Architectural Decision Reco
     <div align="left"><figure><picture><source srcset="../.gitbook/assets/Bild 2 - Plain citations parser dialog opens - dark mode.png" media="(prefers-color-scheme: dark)"><img src="../.gitbook/assets/Bild 2 - Plain citations parser dialog opens - light mode.png" alt=""></picture><figcaption></figcaption></figure></div>
 3. Paste the reference text:
 
-    <div align="left"><figure><picture><source srcset="../.gitbook/assets/Bild 3 - paste text - dark mode (2).png" media="(prefers-color-scheme: dark)"><img src="../.gitbook/assets/new-entry-from-plain-text-step-3 (1).png" alt=""></picture><figcaption></figcaption></figure></div>
+    <div align="left"><figure><picture><source srcset="../.gitbook/assets/Bild 3 - paste text - dark mode.png" media="(prefers-color-scheme: dark)"><img src="../.gitbook/assets/new-entry-from-plain-text-step-3.png" alt=""></picture><figcaption></figcaption></figure></div>
 4. Choose a parser from the drop-down menu.
-
-    <div align="left"><figure><picture><source srcset="../.gitbook/assets/Bild%204%20-%20Parser%20Choise%20(Rule-based" media="(prefers-color-scheme: dark)"><img src="../.gitbook/assets/Bild%204%20-%20Parser%20Choise%20(Rule-based,%20Grobid%20and%20LLM)%20-%20light%20mode.png" alt=""></picture><figcaption></figcaption></figure></div>
 5. Click "Add to current library"
 6. The result is selected in the entry table:
 

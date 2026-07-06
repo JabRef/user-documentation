@@ -46,20 +46,30 @@ Supported values for paramter `format`:
 |---------------|--------------------------------------------------------------------------------------------------------|
 | `biblatex`    | Additional `command` parameter, which allows to use another command for citing, defaults to `autocite` |
 | `simple-json` | A simple json containing the entry ID and the citation key                                             |
+| `natbib`      | Additional `command` parameter, which defaults to `cite`                                               |
+| `latex`       | Additional `command` parameter, which defaults to `cite`                                               |
+| `cite`        | Additional `command` parameter, which defaults to `cite`                                               |
+| `citep`       | Additional `command` parameter, which defaults to `citep`                                              |
+| `citet`       | Additional `command` parameter, which defaults to `citet`                                              |
+| `mmd`         | MultiMarkdown                                                                                          |
+| `pandoc`      | Pandoc mardown                                                                                         |
+| `typst`       | Typst                                                                                                  |
+
+If the `format` parameter used is not supported, `biblatex` will be used.
 
 ### Supported applications
 
 Supported values for paramter `application`:
 
-| Application | parameter  |
-|------------|-------------|
-| emacs      | `emacs`     |
-| LyX        | `lyx`       |
-| Sublime    | `sublime`   |
-| Texmaker   | `texmaker`  |
-| TeXShop    | `texshop`   |
-| TeXstudio  | `texstudio` |
-| TeXworks   | `texworks`  |
-| vim        | `vim`       |
-| VS Code    | `vscode`    |
-| WinEdt     | `winedt`    |
+| Application | parameter   |
+| ----------- | ----------- |
+| emacs       | `emacs`     |
+| LyX         | `lyx`       |
+| Sublime     | `sublime`   |
+| Texmaker    | `texmaker`  |
+| TeXShop     | `texshop`   |
+| TeXstudio   | `texstudio` |
+| TeXworks    | `texworks`  |
+| vim         | `vim`       |
+| VS Code     | `vscode`    |
+| WinEdt      | `winedt`    |
