@@ -50,7 +50,7 @@ You can also specify multiple formatters separated by commas. These will be call
 
 will cause the formatter **ToLowerCase** to be called first, and then **HTMLChars** will be called to format the result. You can list an arbitrary number of formatters in this way.
 
-The argument to the formatters, withing the curly braces, does not have to be a field command. Instead, you can insert normal text, which will then be passed to the formatters instead of the contents of any field. This can be useful for some fomatters, e.g. the CurrentDate formatter (described below).
+The argument to the formatters, within the curly braces, does not have to be a field command. Instead, you can insert normal text, which will then be passed to the formatters instead of the contents of any field. This can be useful for some formatters, e.g. the CurrentDate formatter (described below).
 
 Some formatters take an extra argument, given in parentheses immediately after the formatter name. The argument can be enclosed in quotes, which is necessary if it includes the parenthesis characters. For instance, `\format[Replace("\s,_")]{\journal}` calls the **Replace** formatter with the argument **\s,\_** (which results in the "journal" field after replacing all whitespace by underscores).
 

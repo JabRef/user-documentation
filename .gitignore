@@ -1,5 +1,6 @@
 _site/
 .idea/
+.github/styles/
 !/.editorconfig
 !/.git*
 !/.travis.yml
