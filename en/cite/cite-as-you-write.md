@@ -61,15 +61,15 @@ If the `format` parameter used is not supported, `biblatex` will be used.
 
 Supported values for paramter `application`:
 
-| Application | parameter  |
-|------------|-------------|
-| emacs      | `emacs`     |
-| LyX        | `lyx`       |
-| Sublime    | `sublime`   |
-| Texmaker   | `texmaker`  |
-| TeXShop    | `texshop`   |
-| TeXstudio  | `texstudio` |
-| TeXworks   | `texworks`  |
-| vim        | `vim`       |
-| VS Code    | `vscode`    |
-| WinEdt     | `winedt`    |
+| Application | parameter   |
+| ----------- | ----------- |
+| emacs       | `emacs`     |
+| LyX         | `lyx`       |
+| Sublime     | `sublime`   |
+| Texmaker    | `texmaker`  |
+| TeXShop     | `texshop`   |
+| TeXstudio   | `texstudio` |
+| TeXworks    | `texworks`  |
+| vim         | `vim`       |
+| VS Code     | `vscode`    |
+| WinEdt      | `winedt`    |

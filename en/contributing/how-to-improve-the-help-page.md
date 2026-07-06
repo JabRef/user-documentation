@@ -4,7 +4,7 @@ Here is a quick start guide on how to improve help pages in the [JabRef User Doc
 
 ## Prerequisite
 
-The JabRef help pages are hosted at [GitBook](https://www.gitbook.com) with integration to GitHub, which provides version control based on [git](https://git-scm.com). In order to edit or create a JabRef help page, you need a GitHub account. You can sign up [here](https://github.com/join) for free. If you already have an account, please make sure that you are signed in.
+The JabRef help pages are hosted at [GitBook](https://www.gitbook.com) with integration to GitHub, which provides version control based on [git](https://git-scm.com). In order to edit or create a JabRef help page, you need a GitHub account. You can [sign up for a GitHub account](https://github.com/join) for free. If you already have an account, please make sure that you are signed in.
 
 ## Editing Help Pages directly in the browser
 
@@ -26,7 +26,7 @@ The window to edit the page at GitHub looks like this:
 
 ![Edit view at GitHub](../.gitbook/assets/screenshot-edit-page.png)
 
-Most text can be simply added/edited in this field as plain text. However, you can style your contribution by using [markdown](https://daringfireball.net/projects/markdown/). Markdown is a rather easy way to format text without the need for complex markup, such as with HTML. You can find an introduction to markdown [here](https://daringfireball.net/projects/markdown/) or [here](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+Most text can be simply added/edited in this field as plain text. However, you can style your contribution by using [markdown](https://daringfireball.net/projects/markdown/). Markdown is a rather easy way to format text without the need for complex markup, such as with HTML. You can find an introduction to markdown in [Daring Fireball's Markdown documentation](https://daringfireball.net/projects/markdown/) or in [GitHub's basic writing and formatting syntax guide](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
 In order to review your changes, click on the "Preview changes" tab:
 

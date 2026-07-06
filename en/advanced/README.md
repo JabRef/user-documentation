@@ -24,7 +24,7 @@
 [externalfiles.md](externalfiles.md)
 {% endcontent-ref %}
 
-{% content-ref url="https://github.com/JabRef/user-documentation/blob/main/en/advanced/OCR.md" %}
+{% content-ref url="<https://github.com/JabRef/user-documentation/blob/main/en/advanced/OCR.md>" %}
 [https://github.com/JabRef/user-documentation/blob/main/en/advanced/OCR.md](https://github.com/JabRef/user-documentation/blob/main/en/advanced/OCR.md)
 {% endcontent-ref %}
 
