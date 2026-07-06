@@ -49,7 +49,7 @@ Just like directories, groups are structured like a tree, with the group _All En
 
 The properties of a group can be defined in the 'Edit group' dialog window (the same window is displayed when creating a new group). To modify the group properties, right-click on the group name in the group pane and select **Edit group** in the context menu.
 
-![Edit group window](https://user-images.githubusercontent.com/6931104/188163107-c0e55fd7-51a6-4350-8ded-598aa720dc77.png)
+![Edit group window](<../.gitbook/assets/groups-groupwindow-jabref6.0.png>)
 
 ### Name
 
@@ -63,7 +63,7 @@ A description of the group, to help you remember what it is about. This descript
 
 An icon can be displayed in front of the group name. Choose your favorite icon among the ones available at [https://materialdesignicons.com/](https://materialdesignicons.com), and enter its name of the field _Icon_ (replacing any hyphens (`-`) with underscores (`_`)). The color of the icon can be set in the field _Color_.
 
-![](../.gitbook/assets/groups-groupwindow-iconcolorhierarchy-jabref5.2.png)
+![](<../.gitbook/assets/groups-groupwindow-iconcolorhierarchy-jabref6.0.png>)
 
 ### Hierarchical context
 
@@ -99,20 +99,20 @@ If a refining group is a subgroup of a group that includes its subgroups -- the 
 
 ### Types of groups
 
-JabRef has five types of groups:
+JabRef has six types of groups:
 
 * **Explicit selection**. The group contains entries that were assigned manually. It behaves like a directory on disk, and contains only those entries that you explicitly assigned to it.
 * **Searching for a keyword**. The group contain entries in which a certain field (e.g. `author`) contains a certain keyword (e.g. `Smith`). This method does not require manual assignment of entries but uses information that is already present in the database.
 * **Free search expression**. Similar to **Searching for a keyword**, but for several keywords in several fields.
 * **Specified keywords**. This feature will gather all words found in a specific field of your choice, and create a group for each word.
-  * **Authors' last names**. Groups can be generated for each author's last name.
 * **Cited entries**. The group contains the entries cited in a LaTeX document, based on its _.aux_ file.
+* **Date**. The group contains all entries that satisfy a certain date criteria.
 
 #### Explicit selection
 
 Groups based on explicit selection are populated only by manual assignment of entries.
 
-![Fields for collecting by using an explicit selection](../.gitbook/assets/groups-groupwindow-typeexplicit-jabref5.2.png)
+![Fields for collecting by using an explicit selection](<../.gitbook/assets/groups-groupwindow-typeexplicit-jabref6.0.png>)
 
 After creating an explicit-selection group, you select the entries to be assigned to it and use either drag-and-drop or the context menu **Add selected entries to this group** of the group interface.
 
@@ -126,7 +126,7 @@ This method of grouping requires that all entries have a unique citation key. In
 
 This method groups entries in which a specified _field_ (e.g. _author_) contains a specified _keyword_ (e.g. _Smith_). The mentioned example will group all entries referring to the author _Smith_.
 
-![Fields for collecting by searching for a keyword](../.gitbook/assets/groups-groupwindow-typekeyboard-jabref5.2.png)
+![Fields for collecting by searching for a keyword](<../.gitbook/assets/groups-groupwindow-typekeyboard-jabref6.0.png>)
 
 The search can be case-sensitive or not (checkbox 'Case sensitive'). The search can either be done as a plain-text or a regular-expression search (checkbox 'Regular expression').
 
@@ -138,7 +138,7 @@ The content of the group is updated dynamically whenever the database changes: J
 
 This is similar to the above, but rather than search for a single search term on a single field, a [search expression syntax](search.md) can be used. It supports logical operators (`AND`, `OR`, `NOT`) and allows searching multiple fields.
 
-![Fields for collecting by a free-form search expression](../.gitbook/assets/groups-groupwindow-typefreeexpression-jabref5.2.png)
+![Fields for collecting by a free-form search expression](<../.gitbook/assets/groups-groupwindow-typefreeexpression-jabref6.0.png>)
 
 For example, the search expression `keywords=regression and not keywords=linear` groups entries concerned with non-linear regression.
 
@@ -150,7 +150,9 @@ With the group type "Specified keywords", you can quickly create a set of groups
 
 You can also specify characters to ignore, for instance, commas used between keywords. These will be treated as separators between words, and not part of them. This step is important for combined keywords such as `laplace distribution` to be recognized as a single semantic unit. (You cannot use this option to remove complete words. Instead, delete the unwanted groups manually after they were created automatically.)
 
-![Fields for collecting by specified keywords](../.gitbook/assets/groups-groupwindow-typespecifiedkeywords-jabref5.2.png)
+![Fields for collecting by specified keywords](<../.gitbook/assets/groups-groupwindow-typespecifiedkeywords-jabref6.0.png>)
+
+If you enter `author` in the first _Field to group by_, a group will be created for each author's complete name (e.g. `John Smith`), containing all entries authored by this person. But if you enter `author` in the second _Field to group by_, a group will be created for each author's last name only (e.g. `Smith`), containing all entries authored by persons with this last name.
 
 The content of the group is updated dynamically whenever the database changes.
 
@@ -158,15 +160,24 @@ The content of the group is updated dynamically whenever the database changes.
 
 The group contains the entries cited in a LaTeX document, based on its '.aux' file. The .aux file has to be specified.
 
-![Fields for collecting by cited entries](../.gitbook/assets/groups-groupwindow-typecited-jabref5.2.png)
+![Fields for collecting by cited entries](<../.gitbook/assets/groups-groupwindow-typecited-jabref6.0.png>)
 
 The content of the group is updated dynamically whenever the `.aux` file changes.
+
+#### Using the publication date
+
+This feature groups entries based on the date of a selected field.
+
+![Fields for collecting by date](<../.gitbook/assets/groups-groupwindow-typedate-jabref6.0.png>)
+
+The field _Field to extract date from_ specifies the entry's field from which the date is extracted.
+The field _Date grouping option_ specifies how the entries are grouped, either by year, by month or by both year and month.
 
 ## Group color bars in the entry table
 
 To see easily to which groups an entry belongs to, the entry table has a column dedicated to groups. For each entry, a set of color bars is displayed. The number of bars and their colors depend on the groups to which the entry belongs to.
 
-![](../.gitbook/assets/groups-groupcolorlabel-jabref5.2.png)
+![](<../.gitbook/assets/groups-groupcolorlabel-jabref5.2 (2).png>)
 
 By hovering the mouse on this column, you can see the list of groups to which an entry belongs to.
 
@@ -185,7 +196,7 @@ When viewing the contents of selected group(s), a search can be performed within
 
 General preferences for groups can be accessed using **File → Preferences**, tab **Groups**.
 
-![Preferences for tab Groups](../.gitbook/assets/groups-preferences-jabref5.2.png)
+![Preferences for tab Groups](<../.gitbook/assets/groups-preferences-jabref5.2 (1).png>)
 
 ### View
 
