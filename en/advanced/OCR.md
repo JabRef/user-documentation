@@ -35,7 +35,7 @@ OCRmyPDF must be installed on your system to use this feature.
 * Some PDFs may contain a mix of scanned pages and pages with embedded text.
 * In such cases, you will have three options:
 
-1. You can choose to perform OCR only on the scanned pages(Skip pages with text).
+1. You can choose to perform OCR only on the scanned pages(Skip pages with text), this is the default behavior if not specified.
 2. Force OCR on all pages(Overwrite text in pages containing text).
 3. Redo OCR for pages containing OCR text(Redo text in pages containing OCRed text).
 
