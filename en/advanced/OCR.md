@@ -32,7 +32,7 @@ OCRmyPDF must be installed on your system to use this feature.
 
 ### Partially scanned PDFs
 
-* Some PDFs may contain a mix of scanned pages and pages with embedded text.
+* Some PDFs may contain a mix of pages with and without embedded text.
 * In such cases, you will have three options:
 
 1. **Skip pages with text**: Performs OCR only on the pages without already embedded text. This is the default behaviour, if not specified.
