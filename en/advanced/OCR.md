@@ -36,8 +36,8 @@ OCRmyPDF must be installed on your system to use this feature.
 * In such cases, you will have three options:
 
 1. You can choose to perform OCR only on the scanned pages(Skip pages with text), this is the default behavior if not specified.
-2. Force OCR on all pages(Overwrite text in pages containing text).
-3. Redo OCR for pages containing OCR text(Redo text in pages containing OCRed text).
+2. **Redo text in pages containing OCRed text**: Uses OCR on pages containing text created by a prior OCR run.
+3. **Overwrite text in pages containing text**: Forces OCR with rasterization on all pages, potentially reducing quality or losing vector content, but this technique works, even when the `Redo text in pages containing text` option doesn't work.
 
 * This can be configured in Partially scanned PDFs section in the OCR preferences.
 
