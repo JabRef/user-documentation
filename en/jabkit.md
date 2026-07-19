@@ -56,9 +56,18 @@ Commands:
   pdf                     Manage PDF metadata.
   get-cited-works         Get the cited works (bibliography).
   get-citing-works        Get the works citing the work at hand.
+  shorten                 Shorten a paper's references until it fits a page count.
 ```
 
 Hint: Using `jabkit <COMMAND> --help` will show the supported options for each command.
+
+The `shorten` command compiles a LaTeX paper with `latexmk` and shortens its
+cited references — abbreviating author lists to the first author, abbreviating
+journal names, and cleaning up DOIs — until the compiled document fits a target
+page count (`--pages`, defaulting to one page fewer than the current length).
+The referenced `.bib` file is rewritten in place; use `--output` to write the
+shortened `.bib` elsewhere. A local TeX installation (`latexmk`) is used when
+available, otherwise the `texlive/texlive` Docker image.
 
 ## Updating JabKit
 
