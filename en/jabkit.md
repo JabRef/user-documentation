@@ -60,6 +60,25 @@ Commands:
 
 Hint: Using `jabkit <COMMAND> --help` will show the supported options for each command.
 
+## Extracting References from a PDF
+
+`jabkit pdf extract-references` parses the "References" section at the end of one or more PDFs and outputs the found entries as BibTeX — the same extraction the JabRef GUI offers via the "Extract references" right-click action on a linked PDF.
+
+```bash
+# single PDF, BibTeX printed to stdout
+jabkit pdf extract-references paper.pdf
+
+# multiple PDFs, one .bib file written next to each source PDF
+jabkit pdf extract-references paper1.pdf paper2.pdf
+
+# write into a specific directory instead
+jabkit pdf extract-references --output-dir out/ paper1.pdf paper2.pdf
+```
+
+Use `--mode` to choose the extraction strategy: `RULE_BASED` (offline, no external service), `GROBID` (sends the PDF to a [Grobid](https://grobid.readthedocs.io/) server; `--grobid-url` overrides the configured server for a single call), or `LLM` (experimental, uses the configured AI provider). Without `--mode`, the command mirrors the GUI's behavior and picks `GROBID` if it is enabled in your preferences, otherwise `RULE_BASED`.
+
+See `jabkit pdf extract-references --help` for all options.
+
 ## Updating JabKit
 
 Make use of `--fresh` to update JabKit
