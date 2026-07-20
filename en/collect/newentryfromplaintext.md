@@ -33,7 +33,7 @@ O. Kopp, A. Armbruster, und O. Zimmermann, "Markdown Architectural Decision Reco
 
 ### Rule-based
 
-This is the default parser. It does not require any extensive setups, nor does it send data to remote services. Any conversions are executed locally on your device. The rule-based parser also is deterministic, as the rules are hard-coded. Unfortunately, at time of writing, the rule-based parser is far from perfect. As one can see in the example above, the number "10" was wrongly interpreted as a page number, which is clearly not the intended result. The underlying rules are insufficient to account for all possibilities that bibliographic metadata may contain and ideally would require a way more fine-grained, but an ever more complex rule-set. It is recommended to use the rule-based parser as a last-resort, when the Grobid or LLM based parsers are not available or not desireable.
+This is the default parser. It does not require any extensive setups, nor does it send data to remote services. Any conversions are executed locally on your device. The rule-based parser also is deterministic, as the rules are hard-coded. Unfortunately, at time of writing, the rule-based parser is far from perfect. As one can see in the example above, the number "10" was wrongly interpreted as a page number, which is clearly not the intended result. The underlying rules are insufficient to account for all possibilities that bibliographic metadata may contain and ideally would require a way more fine-grained, but an ever more complex rule-set. It is recommended to use the rule-based parser as a last-resort, when the Grobid or LLM based parsers are not available or not desirable.
 
 ### Grobid
 
