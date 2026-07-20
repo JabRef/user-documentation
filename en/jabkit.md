@@ -6,6 +6,33 @@ description: JabKit is JabRef's CLI tool
 
 ## Installing and Running
 
+### Native binary (recommended)
+
+JabKit is available as a native binary for Linux (amd64/arm64) and macOS (Apple Silicon). It is a self-contained executable: no Java runtime is required, and it starts instantly. Download it from the [JabRef builds server](https://builds.jabref.org/main/) and unpack it:
+
+```bash
+# Linux (amd64)
+curl -L https://builds.jabref.org/main/linux-amd64/tools/jabkit-native_linux.tar.gz | tar xz
+./jabkit/jabkit --help
+```
+
+```bash
+# Linux (arm64)
+curl -L https://builds.jabref.org/main/linux-arm/tools/jabkit-native_linux_arm64.tar.gz | tar xz
+./jabkit/jabkit --help
+```
+
+```bash
+# macOS (Apple Silicon)
+curl -LO https://builds.jabref.org/main/macOS-silicon/tools/jabkit-native_macos-silicon.zip
+unzip jabkit-native_macos-silicon.zip
+./jabkit/jabkit --help
+```
+
+On other platforms (e.g. Windows, Intel macOS), use one of the options below.
+
+### JBang and Docker
+
 The easiest way to run JabKit is using [npx](https://docs.npmjs.com/cli/v8/commands/npx) and [jbang](https://www.jbang.dev/):
 
 ```bash
