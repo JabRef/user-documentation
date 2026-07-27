@@ -41,6 +41,7 @@ layout:
     This is a longer description
     that spans multiple lines
   ```
+
 * **`icon:`** - Icon name from Font Awesome (e.g., `book-open`, `bolt`, `stars`, `icons`, `brackets-curly`)
 * **`hidden: true`** - Hides the page from the table of contents in published documentation
 * **`vars:`** - Page-level variables (key-value pairs) that can be referenced in expressions:
@@ -50,6 +51,7 @@ layout:
     version: v1.2.3
     api_key: example_key
   ```
+
 * **`if:`** - Adaptive content visibility condition. Controls when the page is visible based on visitor attributes:
 
   ```yaml
@@ -85,6 +87,7 @@ layout:
     pagination:
       visible: false
   ```
+
 * **`cover:`** - Path to a hero/banner image displayed at the top of the page. Typically a `.gitbook/assets/` path:
 
   ```yaml
@@ -97,6 +100,7 @@ layout:
   ```yaml
   coverY: -72
   ```
+
 * **`layout.cover.visible:`** / **`layout.cover.size:`** - Control cover rendering. `size` is either `full` (full-bleed hero) or `hero` (smaller banner):
 
   ```yaml

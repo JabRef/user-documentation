@@ -5,6 +5,8 @@ metadata:
 description: "Write, author, edit, and format GitBook documentation pages in Git-synced repos, IDEs, or any text editor. Use whenever a task involves creating or editing a GitBook markdown page, writing or updating a README.md or SUMMARY.md, inserting a hint, tab, stepper, card, or other GitBook block, configuring page frontmatter or layout options, setting up variables or expressions, or formatting content for GitBook outside the GitBook UI."
 ---
 
+# GitBook Documentation Writing
+
 ### When to Use This Skill
 
 Use this skill when working with GitBook documentation through:
@@ -26,7 +28,7 @@ GitBook organizes content through pages, spaces, and collections:
 
 **File structure:**
 
-```
+```text
 /
   .gitbook/
     assets/              # GitBook-managed images and files

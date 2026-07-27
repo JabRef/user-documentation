@@ -20,7 +20,7 @@ nothing changed, or errors, report exactly that.
 
 Every call is a Bearer-authenticated request to `https://api.gitbook.com/v1`. The token lives
 in **`GITBOOK_TOKEN`** in the repo-root `.env` (create one at
-https://app.gitbook.com/account/developer). **Never print the token; never write it to a
+<https://app.gitbook.com/account/developer>). **Never print the token; never write it to a
 tracked file.** Define this helper once per session and use it for every call below — it fails
 loudly on any non-2xx and prints the API's error body (`curl --fail-with-body`, curl ≥ 7.76 /
 stock on current macOS):
@@ -238,13 +238,13 @@ gbapi POST "/spaces/<space>/change-requests/<cr>/reviews" --data '{"status":"cha
 2. `POST …/reviews` with `{"status":"<verdict>"}` *(gate — records a real review and notifies the
    author)*. Report the result verbatim.
 3. **Reviewer lifecycle note:** once you submit a review you move off the CR's
-   `requested-reviewers` list into `reviews`. So if a CR shows zero requested reviewers, it may
+   `requested-reviewers` list into `reviews`. If a CR shows zero requested reviewers, it may
    simply mean reviews are already in — check `GET …/reviews`.
 
 ## Files
 
-- `curl` + `jq` and the `gbapi` helper perform every action in this skill. There is no helper
-  script and no CLI.
+- `curl` + `jq` and the `gbapi` helper perform every action in this skill; no separate helper
+  script or CLI exists.
 - See the companion **`cr-create`** skill for the authoring side over the API (create a
   CR, push content, request reviewers, notify Slack, fix/resolve comments) — its `.env` /
   `GITBOOK_TOKEN` setup, the human-vs-agent comment split, and the markdown round-trip caveat are

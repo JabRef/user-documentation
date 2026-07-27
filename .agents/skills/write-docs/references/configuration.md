@@ -29,7 +29,7 @@ redirects:
 
 For repositories with multiple documentation projects:
 
-```
+```text
 /
   packages/
     docs/
@@ -57,7 +57,7 @@ When using Git Sync, GitBook creates a `.gitbook` directory in your repository t
 
 **Directory structure:**
 
-```
+```text
 .gitbook/
   assets/          # Uploaded images and files
   includes/        # Reusable content blocks (exported as individual .md files)

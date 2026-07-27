@@ -384,7 +384,7 @@ OpenAPI specifications must be uploaded through one of these methods:
 
 For an API reference space, instead of hand-authoring one page per endpoint, use the `builtin:openapi` pattern in `SUMMARY.md` to auto-generate the entire page tree from a registered spec. The entry is a fenced YAML block as the bullet content:
 
-```markdown
+````markdown
 # Table of contents
 
 * [Overview](README.md)
@@ -403,7 +403,8 @@ For an API reference space, instead of hand-authoring one page per endpoint, use
         kind: openapi
         spec: my-api-v1
   ```
-```
+
+````
 
 `spec: my-api-v1` is the slug of a spec registered with the GitBook organization (configured separately via the GitBook API or UI — the SUMMARY entry just references it). The generated operation pages are virtual and don't correspond to files in the repo; only the parent `README.md` files need to exist as real files. Pair each resource section with a brief prose README covering base URL, version policy, and what the resource is for.
 
@@ -431,14 +432,16 @@ This tab contains markdown:
 // Code blocks work too
 const example = true;
 ```
+
 {% endtab %}
 {% endtabs %}
+
 ````
 
 ## Complete page example
 
-````
-```markdown
+````markdown
+
 # API Authentication Guide
 
 Learn how to authenticate with our API using API keys or OAuth 2.0.
@@ -467,16 +470,19 @@ More secure for user-facing applications:
 {% stepper %}
 {% step %}
 ## Register your application
+
 Get your client ID and secret from the developer dashboard.
 {% endstep %}
 
 {% step %}
 ## Request authorization
+
 Redirect users to our OAuth endpoint.
 {% endstep %}
 
 {% step %}
 ## Exchange code for token
+
 Use the authorization code to get an access token.
 {% endstep %}
 {% endstepper %}
@@ -484,15 +490,18 @@ Use the authorization code to get an access token.
 {% endtabs %}
 
 ## Rate Limits
+
 {% columns %}
 {% column %}
 ### Free Tier
+
 1,000 requests/hour
 10,000 requests/day
 {% endcolumn %}
 
 {% column %}
 ### Pro Tier
+
 10,000 requests/hour
 100,000 requests/day
 {% endcolumn %}
@@ -505,5 +514,5 @@ Contact our sales team to discuss enterprise plans with custom rate limits and S
 </details>
 
 <a href="https://example.com/signup" class="button primary" data-icon="rocket">Get Started</a>
-```
+
 ````

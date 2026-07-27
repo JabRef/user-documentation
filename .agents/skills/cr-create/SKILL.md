@@ -14,6 +14,7 @@ reviewed. This is the authoring-side companion to `cr-review` (the reviewer side
 same API). Every action here is a plain HTTP call — there is no CLI and no helper script.
 
 The same actions serve three purposes with no separate code paths:
+
 - **CR-creation demo** — create a change request and push content (one existing page updated, one new page created).
 - **Notify/review demo** — request reviewers, drop a Slack link, pull comments, fix, re-push, resolve.
 - **Real use** — the identical actions against the user's own content.
@@ -25,7 +26,7 @@ something that doesn't actually work. Keep it that way: never fake an output.
 
 Every call is a Bearer-authenticated request to `https://api.gitbook.com/v1`. The token
 lives in **`GITBOOK_TOKEN`** in the repo-root `.env` (create one at
-https://app.gitbook.com/account/developer).
+<https://app.gitbook.com/account/developer>).
 **Never print the token; never write it to a tracked file.** If it's missing, prompt the
 user for it and write it to `.env`; don't invent one.
 
@@ -308,6 +309,7 @@ never invent one or skip the step silently. See "Slack is a stopgap."
 The demo is these actions in sequence with narration — no demo-only logic.
 
 **Part 1 — CR creation + content (shows both page operations):**
+
 1. Health check (`GET /user`, `GET …/content/pages`) and confirm the space.
 2. `POST …/change-requests` *(gate)* → capture the returned `id` and `urls.app`.
 3. `POST …/content` with a `changes` array containing **both** an `update_page` and an
