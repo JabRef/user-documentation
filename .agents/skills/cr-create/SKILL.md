@@ -177,7 +177,7 @@ Report both links together, e.g.: *"Change request #42 created — [review the d
      shared state)
   Content pushes and pulling comments do not need a gate.
 - **Reply before you resolve (enforce it yourself).** The resolve call sets `resolved:true`
-  unconditionally — the API has no reply-first guard. So *the skill* must confirm the comment
+  unconditionally — the API has no reply-first guard, so *the skill* must confirm the comment
   carries a reply before resolving (see "Closing the loop").
 - **Secrets stay in `.env`.** `GITBOOK_TOKEN` and `SLACK_WEBHOOK_URL` live only in the
   gitignored `.env`; never print them, never commit them.
@@ -388,8 +388,8 @@ remove step 6.
 
 ## Files
 
-- `curl` + `jq` and the `gbapi` helper perform every action except the Slack step (also `curl`).
-  There is no helper script and no CLI.
+- `curl` + `jq` and the `gbapi` helper perform every action except the Slack step (also `curl`);
+  no separate helper script or CLI exists.
 - `references/env.example` — template for the repo-root `.env`; documents `GITBOOK_TOKEN` (API auth) and
   `SLACK_WEBHOOK_URL` (Slack).
 - `references/gitbook-review.config.json` — reference values (spaceId, demo page IDs); non-secret;
