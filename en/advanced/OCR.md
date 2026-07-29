@@ -30,7 +30,7 @@ OCRmyPDF must be installed on your system to use this feature.
 
     ![OCR preferences](../.gitbook/assets/ocr-preferences.png)
 
-### Partially scanned PDFs
+### Handling of pre-existing text
 
 * Some PDFs may contain a mix of pages with and without embedded text.
 * In such cases, you will have three options:
