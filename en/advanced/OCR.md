@@ -14,7 +14,9 @@ OCRmyPDF must be installed on your system to use this feature.
 
 1. Open JabRef and select the entry with the PDFs you want to OCR.
 2. Scroll down the Main Tab of the Entry Editor till you reach the Files and Links section.
-3. Right-click on the File and select "Perform OCR and embed text into new PDF file", or select the file and use the shortcut `Ctrl+Shift+R`. ![Perform OCR](../.gitbook/assets/perform-ocr.png)
+3. Right-click on the File and select "Perform OCR and embed text into new PDF file", or select the file and use the shortcut `Ctrl+Alt+R`.
+
+    ![Perform OCR](../.gitbook/assets/perform-ocr.png)
 
 * After performing OCR, JabRef creates a new PDF file with the OCR text embedded, and it will be linked to all the entries that have the old file linked to them. The original scanned PDF will remain unchanged.
 
