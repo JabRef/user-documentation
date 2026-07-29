@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "skills": {
+    "cr-create": {
+      "source": "GitBookIO/gitbook-skills",
+      "sourceType": "github",
+      "skillPath": "skills/cr-create/SKILL.md",
+      "computedHash": "fdcc20832c0fb050881b0629963c2e27dda89a27d04efc4b8aab813501881545"
+    },
+    "cr-review": {
+      "source": "GitBookIO/gitbook-skills",
+      "sourceType": "github",
+      "skillPath": "skills/cr-review/SKILL.md",
+      "computedHash": "8ea89a48bc7d5ee3b8430a47ad0fbcf6b0f1e8ccc72609da2a2fdeaab0d0a61f"
+    },
+    "write-docs": {
+      "source": "GitBookIO/gitbook-skills",
+      "sourceType": "github",
+      "skillPath": "skills/write-docs/SKILL.md",
+      "computedHash": "ed696d33f8417054a32cab7d1f5fcc6ff475ed25c48466df10c789e4830d8f8c"
+    }
+  }
+}
