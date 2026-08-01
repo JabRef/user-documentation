@@ -13,19 +13,35 @@ The entry editor opens from [main window](../main-window.md) (table of entries).
 
 Then you can modify the content of the entry (see below). When done, click on the top left-hand corner of the entry editor or press **ESC** to close the entry editor and go back to the table of entries.
 
-In this panel you can specify all relevant information on a single entry. The entry editor checks the type of your entry, and lists all the fields that are required, and the ones that are optional, for referring the entry with _BibTeX_. In addition, there are several fields termed _General fields_, that are common to all entry types.
+In this panel you can specify all relevant information on a single entry. The entry editor checks the type of your entry, and lists all the fields that are required, and the ones that are optional, for referring the entry with _BibTeX_.
 
-You can fully customize which fields should be regarded as required and optional for each type of entry, and which fields appear in the General fields tabs. See [Customizing entry types](../../setup/customentrytypes.md) for more information about this.
+You can fully customize which fields should be regarded as required and optional for each type of entry. See [Customizing entry types](../../setup/customentrytypes.md) for more information about this.
 
 For information about how the fields should be filled out, see [BibTeX help](../fields.md).
 
-## The entry editor's panels
+## The entry editor's tabs
 
-The entry editor contains six panels: _Required fields_, _Optional fields_, _General_, _Abstract_, _Comments_ and _Bib(la)TeX source_, where _General_, _Abstract_ and _Comments_ can be customized (see [Customizing general fields](../../setup/generalfields.md) for details). Inside the three first panels, Tab and Shift + Tab are used to switch focus between the text fields.
+You can choose which tabs are shown, and in which order, under **File → Preferences → Entry Editor → Editor tabs**.
 
-Up to JabRef 4.1, the field was called "Review". The field name was changed to "Comments" as "Review" indicated some external reviews or some fundamental comments.
+### The Main tab
 
-Switch panels by clicking on the tabs, or navigate to the panel to the left or right using the following key combinations: Ctrl + Tab or Ctrl + + switch to the tab to the right, and Ctrl + Shift + Tab or Ctrl + - switch to the tab to the left. You can also switch to the next or previous entry by pressing Ctrl + Shift + Down or Ctrl + Shift + Up, respectively, or by clicking the appropriate toolbar button.
+The **Main** tab shows all of the entry's fields in a single scrollable list. Required and optional fields for the entry's type are listed directly, with one-click chips for adding any optional field that isn't set yet, and a free-form box for adding arbitrary (non-standard) fields.
+
+A few groups of fields are broken out into their own collapsible sections, each collapsed by default when empty and offering chips for its own unset fields:
+
+* **Identifiers** — DOI, ISBN, ISSN, ePrint/arXiv fields, PMID, MR Number
+* **Files and links** — linked files, URL, URI, URL date
+* **Bibliometrics** — citation count, ICORE ranking
+* **Comments** — the entry's comment field(s)
+* **Meta** — crossref, groups, owner, timestamps and the [special fields](../../finding-sorting-and-cleaning-entries/specialfields.md) (ranking, priority, read status, etc.)
+
+### Other tabs
+
+Besides Main, the entry editor offers: **Bib(la)TeX source** (see below), **Related articles**, **AI summary** and **AI chat** (if [AI features](../../ai/) are enabled), **File annotations**, **LaTeX citations**, **Citations**, and **Fulltext search results**.
+
+Up to JabRef 4.1, the comment field was called "Review". The field name was changed to "Comments" as "Review" indicated some external reviews or some fundamental comments.
+
+Switch tabs by clicking on them, or navigate to the tab to the left or right using the following key combinations: Ctrl + Tab or Ctrl + + switch to the tab to the right, and Ctrl + Shift + Tab or Ctrl + - switch to the tab to the left. You can also switch to the next or previous entry by pressing Ctrl + Shift + Down or Ctrl + Shift + Up, respectively, or by clicking the appropriate toolbar button.
 
 _BibTeX source_ (termed _biblatex_ _source_ in case of a biblatex library) shows how th entry will appear when the database is saved in _BibTeX_ (or _biblatex_) format. If you wish, you can edit the source directly in this panel. When you move to a different panel, press Ctrl + S or close the entry editor, JabRef will try to parse the contents of the source panel. If there are problems, you will be notified, and given the option to edit your entry further, or to revert to the former contents.
 
@@ -74,6 +90,10 @@ Pressing Ctrl + Shift + K causes the citation key for your entry to be copied to
 Press Ctrl + G or the 'gen key' button (the magic wand) to autogenerate a citation key for your entry based on the contents of its required fields.
 
 For more information on how JabRef generates citation keys, see [Customizing the citation key generator](../../setup/citationkeypatterns.md).
+
+## Jump to field
+
+Press Ctrl + J or the toolbar button to open a dialog for jumping directly to a specific field in the Main tab.
 
 ## Related Articles Tab
 

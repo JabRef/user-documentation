@@ -6,7 +6,7 @@ In BibTeX/biblatex terms, the file links are stored as text in the field `file`.
 
 ## Adding external links to an entry
 
-If the "file" field is included in [General fields](../setup/generalfields.md), you can edit the list of external links for an entry in the [Entry editor](../advanced/entryeditor/). The editor includes buttons for inserting, editing and removing links, as well as buttons for reordering the list of links.
+The "file" field is shown in the **Files and links** section of the [Entry editor](../advanced/entryeditor/)'s Main tab, where you can edit the list of external links for an entry. The editor includes buttons for inserting, editing and removing links, as well as buttons for reordering the list of links.
 
 ![](../.gitbook/assets/jabref-entryeditor-files.png)
 
@@ -31,7 +31,7 @@ In some settings, the bib file is stored in **the same directory** as the PDF fi
 
 ![Search and store files relative to library file location](../.gitbook/assets/preferences-file-searchandstoreforfilesrelativetolibraryfilelocation.png).
 
-Relative file directories obviously only work in the library properties for a bib file, e.g. `a.bib` Library → Library properties → Library-specific file directory → `papers`. Assume to have two bib files: `a.bib` and `b.bib` located in different directories: `a.bib` located at `C:\a.bib` and `b.bib` located at `X:\b.bib`. When I click on the `+` icon in the general Tab of file `a.bib`, the popup is opened in the directory `C:\papers` (assuming `C:\papers` exists).
+Relative file directories obviously only work in the library properties for a bib file, e.g. `a.bib` Library → Library properties → Library-specific file directory → `papers`. Assume to have two bib files: `a.bib` and `b.bib` located in different directories: `a.bib` located at `C:\a.bib` and `b.bib` located at `X:\b.bib`. When I click on the `+` icon in the Files and links section of file `a.bib`, the popup is opened in the directory `C:\papers` (assuming `C:\papers` exists).
 
 ## Auto-linking files
 

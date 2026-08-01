@@ -53,7 +53,7 @@
 * [Configuration](setup/README.md)
   * [Customize the citation key generator](setup/citationkeypatterns.md)
   * [Customize entry types](setup/customentrytypes.md)
-  * [Customize general fields](setup/generalfields.md)
+  * [Entry editor tabs](setup/generalfields.md)
   * [Customize key bindings](setup/customkeybindings.md)
   * [Library properties](setup/databaseproperties.md)
   * [Entry preview setup](setup/preview.md)

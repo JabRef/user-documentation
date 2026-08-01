@@ -108,7 +108,7 @@ Here is a list of some of the more common non-standard fields ("\*" = not direct
 To help in managing your bibliography, and extend the features of BibTeX, JabRef defines some specific fields:
 
 * [External files](externalfiles.md)
-* [General fields](../setup/generalfields.md)
+* [Entry editor tabs](../setup/generalfields.md)
 * [Owner](entryeditor/owner.md)
 * [Quality and grading](../finding-sorting-and-cleaning-entries/specialfields.md)
 * [Time stamp](entryeditor/timestamp.md)

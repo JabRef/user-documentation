@@ -26,9 +26,14 @@ Two different types of citations can be inserted - either a citation in parenthe
 
 If you modify entries in JabRef after inserting their citations into OpenOffice, you will need to synchronize the bibliography. By default, **Automatically sync bibliography when inserting citations** is enabled. This can be disabled by clicking the **Settings** button and unchecking **Automatically sync bibliography when inserting citations**. The **Sync OO bibliography** button will update all entries of the bibliography, provided their citation keys have not been altered (JabRef encodes the citation key into the reference name for each citation to keep track of which citation key the original JabRef entry has).
 
+The **Settings** menu also offers:
+
+* **Add space before citation** / **Add space after citation** — insert a space before and/or after each inserted citation marker if one isn't already there.
+* **Zotero compatibility mode** — when using a CSL style (not a legacy JStyle), makes JabRef emit citations in a form that Zotero can also read, and lets JabRef read citations that Zotero inserted.
+
 ## The style file
 
-To customize the citation style you need to select a style file, or use one of the default styles. The style defines the format of citations and the format of the bibliography. You can use standard JabRef export formatters to process fields before they are sent to OpenOffice. Through the style file, the intention is to give as much flexibility in citation styles as possible. You can switch style files at any time, and use the **Update** button to refresh your bibliography to follow the new style.
+To customize the citation style you need to select a style file, or use one of the default styles. In addition to JabRef's own JStyle format described below, you can also select a CSL style or, experimentally, a BibTeX `.bst` style file for the bibliography. The style defines the format of citations and the format of the bibliography. You can use standard JabRef export formatters to process fields before they are sent to OpenOffice. Through the style file, the intention is to give as much flexibility in citation styles as possible. You can switch style files at any time, and use the **Update** button to refresh your bibliography to follow the new style.
 
 By clicking the **Select style** button you can bring up a window that allows selection of either the default style or an external style file. If you want to create a new style based on the default, you can click the **View** button to bring up the default style contents, which can be copied into a text editor and modified.
 
