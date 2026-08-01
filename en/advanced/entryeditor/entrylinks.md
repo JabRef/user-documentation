@@ -8,7 +8,7 @@ Following fields are supported:
 * `crossref` - single entry which is cross referenced.
 * `related` - comma separated list of citation keys which are in some kind related to this entry. The type of **all** relations can be specified by a single `relatedtype` \(see [https://github.com/plk/biblatex/issues/475\#issuecomment-246931180](https://github.com/plk/biblatex/issues/475#issuecomment-246931180)\). Note: biblatex prints this information if `related` is active at the biblatex package.
 
-To use the `crossref` field, navigate to the general tab and insert the Crossref at the top.
+To use the `crossref` field, navigate to the Main tab's **Meta** section and insert the Crossref there.
 
 To use `cites` and `related`, follow these steps:
 
@@ -16,7 +16,7 @@ To use `cites` and `related`, follow these steps:
 2. Insert `related = {citationkey},`
 3. Close the entry editor
 4. Open the entry editor
-5. Navigate to "Other fields"
+5. Navigate to the Main tab
 6. There, you now see "related" with the possibilities to \(i\) navigate to the entry, \(ii\) add new related entries, \(iii\) remove related entries.
 
 ## Notes

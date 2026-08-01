@@ -57,7 +57,7 @@ After clicking on the "Article" button, the dialog closes and the so called "Ent
 
 ![Main window now showing the entry editor](.gitbook/assets/getting-started-entry-editor.png)
 
-The most important information about the references to be added can now be entered in the "Required Fields" tab. "Author", "Title", "Journal", and "Year" should be self-explanatory - however, a "citationkey", might not be familiar to you. Basically, the idea of the "citationkey" is coming from working with BibTeX, where it is necessary to have an unique identifier for each entry. This allows for referencing within a document you might be creating using the stored information in your library. Moreover, also within JabRef this "key" is used for example for cross-references to other related entries or to determine file names for full-text references.
+The most important information about the reference to be added can now be entered in the "Main" tab. "Author", "Title", "Journal", and "Year" should be self-explanatory - however, a "citationkey", might not be familiar to you. Basically, the idea of the "citationkey" is coming from working with BibTeX, where it is necessary to have an unique identifier for each entry. This allows for referencing within a document you might be creating using the stored information in your library. Moreover, also within JabRef this "key" is used for example for cross-references to other related entries or to determine file names for full-text references.
 
 The key usually follows a global pattern and can be easily created automatically by clicking on the "generate" button next to the field.
 

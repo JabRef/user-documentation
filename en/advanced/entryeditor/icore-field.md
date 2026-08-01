@@ -2,19 +2,19 @@
 
 The [ICORE (International CORE Conference Rankings)](https://www.core.edu.au/home) is a ranking of Computer Science conferences (A*, A, B, C). JabRef allows you to lookup a conference's ICORE rank so you can find out how highly ranked a paper's venue is.
 
-By default, the `Icore` field shows up under the `General` tab below the `DOI` field:
+By default, the `Icore` field shows up in the **Bibliometrics** section of the entry editor's Main tab, alongside the citation count:
 
 ![Icore Field In the General Tab](../../.gitbook/assets/icore-field-1.png)
 
 {% hint style="info" %}
-If you can't find it, you can [update your preferences](../../setup/generalfields.md) and add the `icore` field to the `General` tab.
+The screenshots on this page predate the entry editor redesign and still show the old "General" tab layout; the `Icore` field itself is unchanged, only its location moved to the Bibliometrics section described above.
 {% endhint %}
 
 Let's do a quick example. Add a new Entry of type `InProceedings` and enter a conference acronym in parentheses under the `Booktitle` field (we'll use SIGCOMM here).
 
 ![Booktitle field with SIGCOMM in it](../../.gitbook/assets/icore-field-2.png)
 
-Now, navigate to the General Tab and click the "Lookup conference rank" button to see the ICORE rank for the conference (which would be A*).
+Now, navigate to the Bibliometrics section of the Main tab and click the "Lookup conference rank" button to see the ICORE rank for the conference (which would be A*).
 
 ![SIGCOMM conference rank is A*](../../.gitbook/assets/icore-field-3.png)
 
@@ -24,7 +24,7 @@ In case an acronym isn't present in the title, JabRef will then use the full `Bo
 
 > Proceedings of the 3rd International Conference on Cloud Computing and Service Science, 8-10 May 2013, Aachen, Germany
 
-Copy-paste it into the `Booktitle` field, go to the `General` Tab, and click on the Lookup button again to see the conference's rank (which would be C).
+Copy-paste it into the `Booktitle` field, go to the Bibliometrics section, and click on the Lookup button again to see the conference's rank (which would be C).
 
 ![A long booktitle with conference title in it](../../.gitbook/assets/icore-field-4.png)
 
