@@ -66,22 +66,22 @@ Performing OCR will fail if wrong engine path is provided, make sure that the co
 
 1. **Type the path manually**: Enter the path directly into the text field. This can be a bare command name (e.g. `ocrmypdf`, `docling`, or `python -m ocrmypdf`) if it is available on your system PATH, or a full absolute path to the executable (e.g. `/home/user/.local/bin/ocrmypdf`).
 
-   ![Text field for engine path](../.gitbook/assets/text-field-for-engine-path.png)
+    ![Text field for engine path](../.gitbook/assets/text-field-for-engine-path.png)
 
 2. **Browse**: Click the folder icon to open a file chooser and navigate to the engine's executable on your system.
 
-   ![Browse engine path button](../.gitbook/assets/browse-engine-path-button.png)
+    ![Browse engine path button](../.gitbook/assets/browse-engine-path-button.png)
 
 * JabRef also **auto-detects the path automatically** whenever you change the selected engine in the dropdown, you don't need to trigger this manually. When you switch engines, JabRef tries the following commands, in order, and fills in the path field with the first one that works:
 
   **For OCRmyPDF:**
-  1. `ocrmypdf`
-  2. `python -m ocrmypdf`
-  3. `py -m ocrmypdf`
-  4. `python3 -m ocrmypdf`
+    1. `ocrmypdf`
+    2. `python -m ocrmypdf`
+    3. `py -m ocrmypdf`
+    4. `python3 -m ocrmypdf`
 
   **For Docling:**
-  1. `docling`
+    1. `docling`
 
 If none of these succeed, the path field will remain unchanged and you will need to set the path manually.
 
