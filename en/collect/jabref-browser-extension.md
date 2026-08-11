@@ -172,6 +172,17 @@ With Firefox installed as a flatpak:
 
 3. Check that the Python script works. In Terminal run `/Applications/JabRef.app/Contents/Resources/jabrefHost.py`. If there are no errors the script is working properly. Stop the script by pressing `Ctrl + D`.
 
+#### Native messaging host not found in Chrome
+
+If Chrome reports `Specified native messaging host not found.`, its registered JabRef host manifest may refer to an old location for `jabrefHost.py`. Reinstall the manifest bundled with the currently installed JabRef application:
+
+```sh
+sudo cp "/Applications/JabRef.app/Contents/Resources/native-messaging-host/chromium/org.jabref.jabref.json" \
+  "/Library/Google/Chrome/NativeMessagingHosts/org.jabref.jabref.json"
+```
+
+Quit Chrome completely and reopen it afterwards. This assumes JabRef is installed in `/Applications`; adjust the first path if it is installed elsewhere.
+
 #### Local JabRef installs
 
 org.jabref.jabref.json directs the browser extension to a python script in the JabRef app, which is set to the most common install path by default (`/Applications/JabRef.app/Contents/Resources/jabrefHost.py`). If you have installed JabRef somewhere else, most likely to your local applications folder (`~/Applications/JabRef`), then you will need to update this path to the correct location. For example, in local installs this would be `/Users/USER/Applications/JabRef.app/Contents/Resources/jabrefHost.py`, where `USER` is your username.
