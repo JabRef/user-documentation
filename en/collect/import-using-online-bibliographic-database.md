@@ -68,6 +68,10 @@ The [Bibliotheksverbund Bayern (BVB)](https://www.bib-bvb.de) provides bibliogra
 
 ### CiteSeerX
 
+{% hint style="warning" %}
+The CiteSeerX fetcher was removed from JabRef because the service is defunct and its links now redirect to the Wayback Machine.
+{% endhint %}
+
 [CiteSeerX](https://csxstatic.ist.psu.edu/home) is a public search engine for scientific and academic papers primarily with a focus on computer and information science. However, CiteSeerX has been expanding into other scholarly domains such as economics, physics, and others ([Wikipedia](https://en.wikipedia.org/wiki/CiteSeer)).
 
 ### Collection of Computer Science Bibliographies (CCSB)

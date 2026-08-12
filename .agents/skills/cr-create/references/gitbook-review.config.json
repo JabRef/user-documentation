@@ -1,0 +1,12 @@
+{
+  "spaceId": "",
+  "repo": "",
+  "branch": "main",
+  "slack": {
+    "mode": "webhook"
+  },
+  "demo": {
+    "existingPageId": "",
+    "newPageParentId": ""
+  }
+}
