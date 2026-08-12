@@ -174,11 +174,22 @@ With Firefox installed as a flatpak:
 
 #### Native messaging host not found in Chrome
 
-If Chrome reports `Specified native messaging host not found.`, its registered JabRef host manifest may refer to an old location for `jabrefHost.py`. Reinstall the manifest bundled with the currently installed JabRef application:
+If Chrome reports `Specified native messaging host not found.`, its registered JabRef host manifest may refer to an old location for `jabrefHost.py`. Reinstall the manifest bundled with the currently installed JabRef application in the Chrome manifest location you use:
+
+* For a system-wide Chrome installation (all users), run:
 
 ```sh
+sudo mkdir -p "/Library/Google/Chrome/NativeMessagingHosts"
 sudo cp "/Applications/JabRef.app/Contents/Resources/native-messaging-host/chromium/org.jabref.jabref.json" \
   "/Library/Google/Chrome/NativeMessagingHosts/org.jabref.jabref.json"
+```
+
+* For a per-user Chrome installation (current user only), run:
+
+```sh
+mkdir -p "$HOME/Library/Application Support/Google/Chrome/NativeMessagingHosts"
+cp "/Applications/JabRef.app/Contents/Resources/native-messaging-host/chromium/org.jabref.jabref.json" \
+  "$HOME/Library/Application Support/Google/Chrome/NativeMessagingHosts/org.jabref.jabref.json"
 ```
 
 Quit Chrome completely and reopen it afterwards. This assumes JabRef is installed in `/Applications`; adjust the first path if it is installed elsewhere.
