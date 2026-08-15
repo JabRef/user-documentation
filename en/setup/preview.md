@@ -23,3 +23,13 @@ The layout is automatically created using the same mechanism as used by the [Cus
 ## Modification of the Customized Preview Style
 
 To customize the appearance and contents of the customize entry preview you need to edit/modify the customized preview style in the entry preview settings (see screenshot above) using the custom export filter syntax described in the [Documentation](../collaborative-work/export/customexports.md).
+
+## Add or Delete Customized Preview Styles
+
+![Entry Preview Settings](../.gitbook/assets/entryeditor-preview-settings-customized-tab.png)
+
+To add a custom preview style `Options → Preferences → Entry preview → Customized Tab → '+' (add button)`. To delete a custom preview style, `Options → Preferences → Entry preview → Customized Tab → Select custom style  under the 'Customized' tab → '-' (delete button)`. Note that you can only add or delete custom styles under the 'Customized' tab.
+
+## Rename Customized Preview Styles
+
+To rename a custom preview style `Options → Preferences → Entry preview → Customized Tab → Under this tab, select custom style to rename → 'Name' text box -> Type name → Hit 'Enter'` Note you may only rename styles under the 'Customized' Tab. Duplicate names are not allowed
