@@ -32,4 +32,4 @@ To add a custom preview style `Options → Preferences → Entry preview → Cus
 
 ## Rename Customized Preview Styles
 
-To rename a custom preview style `Options → Preferences → Entry preview → Customized Tab → Under this tab, select custom style to rename → 'Name' text box -> Type name → Hit 'Enter'` Note you may only rename styles under the 'Customized' Tab. Duplicate names are not allowed
+To rename a custom preview style `Options → Preferences → Entry preview → Customized Tab → Under this tab, select custom style to rename → 'Name' text box → Type name → Hit 'Enter'` Note you may only rename styles under the 'Customized' Tab. Duplicate names are not allowed
