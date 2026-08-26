@@ -35,7 +35,7 @@ Override it for one color scheme only. The media query follows the color scheme 
 ```
 
 {% hint style="info" %}
-Custom themes written for JabRef 6.x and earlier used `-jr-*` variables (such as `-jr-theme` or `-jr-accent`). These no longer exist and JabRef ignores them; replace them by the corresponding `-color-*` variables.
+Custom themes written for JabRef 5.x used `-jr-*` variables (such as `-jr-theme` or `-jr-accent`). These no longer exist and JabRef ignores them; replace them by the corresponding `-color-*` variables.
 {% endhint %}
 
 ## Selection of Useful CSS selectors
