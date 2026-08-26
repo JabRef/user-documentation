@@ -28,6 +28,6 @@ A: According to [source](https://discourse.jabref.org/t/chinese-character/4167),
 
 ```css
 .text {
--fx-font-family: “Microsoft YaHei”;
+-fx-font-family: "Microsoft YaHei";
 }
 ```
