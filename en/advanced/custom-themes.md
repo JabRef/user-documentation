@@ -8,7 +8,7 @@
 * **Color scheme**: _Follow system_, _Light_, or _Dark_.
 * **Custom theme**: a CSS file of your own. JabRef applies it _on top_ of the selected theme and color scheme, so it only needs to contain what you want to change.
 
-JabRef picks up changes to the custom CSS file while it is running, so you can edit the file and see the result immediately.
+JabRef picks up changes to the custom CSS file while running, so you can edit the file and see the result immediately.
 
 You can find a collection of user contributed themes at [https://themes.jabref.org](https://themes.jabref.org/).
 
