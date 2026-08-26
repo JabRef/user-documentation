@@ -2,19 +2,19 @@
 
 ## General
 
-The look of JabRef is defined by [CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics) files. In `Preferences > General > Appearance` you choose three things:
+[CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics) files define the look of JabRef. In `Preferences > General > Appearance` you choose three things:
 
 * **Theme**: the base look, currently _JabRef theme_ ([`jabref-theme.css`](https://github.com/JabRef/jabref/blob/first-class-theme-support/jabgui/src/main/resources/org/jabref/gui/theme/jabref-theme.css)) or _Primer theme_ ([`primer-theme.css`](https://github.com/JabRef/jabref/blob/first-class-theme-support/jabgui/src/main/resources/org/jabref/gui/theme/primer-theme.css), based on [AtlantaFX](https://mkpaz.github.io/atlantafx/)). Every theme comes with a light and a dark variant.
 * **Color scheme**: _Follow system_, _Light_, or _Dark_.
-* **Custom theme**: an additional CSS file of your own. It is applied _on top_ of the selected theme and color scheme, so it only needs to contain what you want to change.
+* **Custom theme**: a CSS file of your own. JabRef applies it _on top_ of the selected theme and color scheme, so it only needs to contain what you want to change.
 
-Changes to the custom CSS file are picked up while JabRef is running, so you can edit the file and see the result immediately.
+JabRef picks up changes to the custom CSS file while it is running, so you can edit the file and see the result immediately.
 
 You can find a collection of user contributed themes at [https://themes.jabref.org](https://themes.jabref.org/).
 
 ## Writing a custom theme
 
-All colors of a theme are defined as `-color-*` variables (for example `-color-accent`, `-color-bg-primary`, `-color-fg-default`, `-color-selection`). The full list is in [`jabref-theme.css`](https://github.com/JabRef/jabref/blob/first-class-theme-support/jabgui/src/main/resources/org/jabref/gui/theme/jabref-theme.css); the rest of JabRef's styling only uses these variables, so overriding them is enough to re-color the whole UI.
+A theme defines all its colors as `-color-*` variables (for example `-color-accent`, `-color-bg-primary`, `-color-fg-default`, `-color-selection`). The full list is in [`jabref-theme.css`](https://github.com/JabRef/jabref/blob/first-class-theme-support/jabgui/src/main/resources/org/jabref/gui/theme/jabref-theme.css); the rest of JabRef's styling only uses these variables, so overriding them is enough to re-color the whole UI.
 
 Override a variable for both color schemes:
 
@@ -35,7 +35,7 @@ Override it for one color scheme only. The media query follows the color scheme 
 ```
 
 {% hint style="info" %}
-Custom themes written for JabRef 6.x and earlier used `-jr-*` variables (such as `-jr-theme` or `-jr-accent`). These no longer exist and are ignored; replace them by the corresponding `-color-*` variables.
+Custom themes written for JabRef 6.x and earlier used `-jr-*` variables (such as `-jr-theme` or `-jr-accent`). These no longer exist and JabRef ignores them; replace them by the corresponding `-color-*` variables.
 {% endhint %}
 
 ## Selection of Useful CSS selectors
