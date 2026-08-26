@@ -2,15 +2,41 @@
 
 ## General
 
-Since `JabRef 5.2` it is possible to use custom themes. In `Preferences > Appearance > Visual theme` the themes in general can be changed. Themes are just [CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics) files defining the look of the UI.
+[CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics) files define the look of JabRef. In `Preferences > General > Appearance` you choose three things:
 
-* **Light Theme**: The default theme is the light theme ([`Base.css`](https://github.com/JabRef/jabref/blob/main/src/main/java/org/jabref/gui/Base.css)).
-* **Dark Theme**: There is an alternative dark theme ([`Dark.css`](https://github.com/JabRef/jabref/blob/main/src/main/java/org/jabref/gui/Dark.css)) which is based on `Base.css` and just overwrites the colors.
-* **Custom Theme**: In `Preferences > Appearance > Visual theme > Custom theme` there can be set a custom theme by simply selecting a custom CSS (based on `Base.css` or `Dark.css`), for instance:
+* **Theme**: the base look, currently _JabRef theme_ ([`jabref-theme.css`](https://github.com/JabRef/jabref/blob/main/jabgui/src/main/resources/org/jabref/gui/theme/jabref-theme.css)) or _Primer theme_ ([`primer-theme.css`](https://github.com/JabRef/jabref/blob/main/jabgui/src/main/resources/org/jabref/gui/theme/primer-theme.css), based on [AtlantaFX](https://mkpaz.github.io/atlantafx/)). Every theme comes with a light and a dark variant.
+* **Color scheme**: _Follow system_, _Light_, or _Dark_.
+* **Custom theme**: a CSS file of your own. JabRef applies it _on top_ of the selected theme and color scheme, so it only needs to contain what you want to change.
+
+JabRef picks up changes to the custom CSS file while running, so you can edit the file and see the result immediately.
 
 You can find a collection of user contributed themes at [https://themes.jabref.org](https://themes.jabref.org/).
 
-{% file src="../.gitbook/assets/dark-custom.css" %}
+## Writing a custom theme
+
+A theme defines all its colors as `-color-*` variables (for example `-color-accent`, `-color-bg-primary`, `-color-fg-default`, `-color-selection`). The full list is in [`jabref-theme.css`](https://github.com/JabRef/jabref/blob/main/jabgui/src/main/resources/org/jabref/gui/theme/jabref-theme.css); the rest of JabRef's styling only uses these variables, so overriding them is enough to re-color the whole UI.
+
+Override a variable for both color schemes:
+
+```css
+.root {
+    -color-accent: #8F0D11;
+}
+```
+
+Override it for one color scheme only. The media query follows the color scheme selected in JabRef (or the operating system, with _Follow system_):
+
+```css
+@media (prefers-color-scheme: dark) {
+    .root {
+        -color-accent: #ff79c6;
+    }
+}
+```
+
+{% hint style="info" %}
+Custom themes written for JabRef 6.x and earlier used `-jr-*` variables (such as `-jr-theme` or `-jr-accent`). These no longer exist and JabRef ignores them; replace them by the corresponding `-color-*` variables.
+{% endhint %}
 
 ## Selection of Useful CSS selectors
 
@@ -19,14 +45,6 @@ You can find a collection of user contributed themes at [https://themes.jabref.o
 | preview box                      | `#previewBody`     |
 | `{} biblatex source` tab         | `.code-area`       |
 | text in `{} biblatex source` tab | `.code-area .text` |
-
-## Examples
-
-**Light Theme** ![Light Theme](../.gitbook/assets/theme-light.png)
-
-**Dark Theme** ![Dark Theme](../.gitbook/assets/theme-dark.png)
-
-**Custom Theme** ![Custom Theme](../.gitbook/assets/theme-custom.png) (based on the Dark Theme)
 
 ## Known bugs
 
