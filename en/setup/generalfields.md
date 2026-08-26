@@ -13,7 +13,7 @@ The **Tabs** column lists all tabs of the entry editor. There, you can
 
 Custom tabs are shown for all entry types. Note that all fields of an entry are always available in the entry editor's [Main tab](../advanced/entryeditor/#the-main-tab); custom tabs are an additional view on the fields you select.
 
-Below the two columns, **Add classic tabs** adds the tabs "General" and "Abstract" known from JabRef 5 (as custom tabs, directly after the Main tab), and **Reset to default tabs** restores the built-in tabs and removes all custom tabs.
+Below the two columns, **Add classic 5.x tabs** adds the tabs "General" and "Abstract" known from JabRef 5 (as custom tabs, directly after the Main tab), and **Reset to default tabs** restores the built-in tabs and removes all custom tabs.
 
 ## Fields
 
