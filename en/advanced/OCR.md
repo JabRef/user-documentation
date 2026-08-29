@@ -93,6 +93,13 @@ If none of these succeed, the path field will remain unchanged and you will need
 
 * **Default behavior:** If no language is selected, JabRef defaults to English (`eng`).
 * **Multiple languages:** You can check multiple languages from the list to improve text recognition accuracy for multilingual documents.
+
+{% hint style="warning" %}
+Only English is installed by default. To use additional languages, you must download the corresponding language packs:
+
+* **For OCRmyPDF (Tesseract):** Follow the [Tesseract language data installation guide](https://tesseract-ocr.github.io/tessdoc/Installation.html#additional-language-data).
+* **For Docling:** See the [Docling language support documentation](https://docling-project.github.io/docling/concepts/OCR/#rapidocr-language-support).
+{% endhint %}
   
 ### Handling of pre-existing text
 
