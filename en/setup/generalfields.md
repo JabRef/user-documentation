@@ -11,16 +11,16 @@ The **Tabs** column lists all tabs of the entry editor. There, you can
 * add a custom tab by typing its name into the box below the list, and
 * remove a custom tab via its delete icon.
 
-Custom tabs are shown for all entry types. A field shown on a custom tab is omitted from the [Main tab](../advanced/entryeditor/#the-main-tab)'s remaining-fields list; fields belonging to the entry type (such as author, title, or doi) always stay in the Main tab as well.
+Custom tabs appear for all entry types. A field on a custom tab disappears from the [Main tab](../advanced/entryeditor/#the-main-tab)'s remaining-fields list; fields belonging to the entry type (such as author, title, or doi) always stay in the Main tab as well.
 
 Below the two columns, **Add classic 5.x tabs** adds the tabs "General", "Abstract", and "Comments" known from JabRef 5 (as custom tabs, directly after the Main tab), and **Reset to default tabs** restores the built-in tabs and removes all custom tabs.
 
 ## Fields
 
-Selecting a custom tab in the **Tabs** column shows its fields in the **Fields** column. Fields can be added by name, removed, and reordered by dragging.
+Selecting a custom tab in the **Tabs** column shows its fields in the **Fields** column. There, you can add fields by name, remove them, and reorder them by dragging.
 
-A field name can also be a [regular expression](https://en.wikipedia.org/wiki/Regular_expression). For example, `comment-.*` shows all user-specific comment fields of an entry. A plain field name is always shown on the tab (even while the field is empty); a regular expression shows the matching fields that are set on the entry.
+A field name can also be a [regular expression](https://en.wikipedia.org/wiki/Regular_expression). For example, `comment-.*` shows all user-specific comment fields of an entry. A plain field name always appears on the tab (even while the field is empty); a regular expression shows the matching fields that have a value in the entry.
 
-If the same field is listed on more than one tab, a warning sign is shown next to it.
+JabRef shows a warning sign next to a field that appears on more than one tab.
 
-It does not matter how a field's name is capitalised. In the entry editor, normally a field's first letter is capitalised, i.e. _abstract_ is represented as _Abstract_, _KEYwords_ would be represented as _Keywords_ (_DOI_, _ISBN_, _URL_ are exceptions in that all letters are capitalised). In the bibtex code, all field names use lower case: _KEYwords_ is _keywords_ in the entry's bibtex code.
+The capitalisation of a field's name does not matter. In the entry editor, JabRef normally capitalises a field's first letter, i.e. _abstract_ appears as _Abstract_ and _KEYwords_ as _Keywords_ (_DOI_, _ISBN_, _URL_ appear in all upper case). In the bibtex code, all field names use lower case: _KEYwords_ is _keywords_ in the entry's bibtex code.
