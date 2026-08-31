@@ -11,9 +11,9 @@ The **Tabs** column lists all tabs of the entry editor. There, you can
 * add a custom tab by typing its name into the box below the list, and
 * remove a custom tab via its delete icon.
 
-Custom tabs appear for all entry types. A field on a custom tab disappears from the [Main tab](../advanced/entryeditor/#the-main-tab)'s remaining-fields list; fields belonging to the entry type (such as author, title, or doi) always stay in the Main tab as well.
+Custom tabs appear for all entry types. A field on a custom tab moves there: the [Main tab](../advanced/entryeditor/#the-main-tab) no longer shows an editor or an add button for it, so no field appears twice.
 
-Below the two columns, **Add classic 5.x tabs** adds the tabs "General", "Abstract", and "Comments" known from JabRef 5 (as custom tabs, directly after the Main tab), and **Reset to default tabs** restores the built-in tabs and removes all custom tabs.
+Below the two columns, **Reset to default tabs** restores the built-in tabs and removes all custom tabs.
 
 ## Fields
 
