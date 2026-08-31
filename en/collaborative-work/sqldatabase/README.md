@@ -4,13 +4,17 @@ description: JabRef is able to support collaborative work using a shared SQL dat
 
 # Shared SQL Database
 
+JabRef uses [PostgreSQL](https://www.postgresql.org/) as the database system for shared databases. Support for MySQL/MariaDB and Oracle was removed due to high maintenance effort.
+
 ## Usage
 
-To use this feature you have to connect to a remote database. To do so you have to open **File** in the menu bar and then click the **Connect to shared database** item. The **Connect to shared database** dialog will open and you will have to fill in the shared's database connection settings. Then, you have to fill out the remaining fields with the according information. If you like you can save your password by clicking the **Remember password?** checkbox.
+To use this feature you have to connect to a remote database. To do so you have to open **File** in the menu bar and then click **Shared database** and **Connect to shared database**. The **Connect to shared database** dialog will open and you will have to fill in the shared's database connection settings. Then, you have to fill out the remaining fields with the according information. If you like you can save your password by clicking the **Remember password?** checkbox.
+
+If the database was already used by an older version of JabRef, its content is migrated to the new table structure automatically when the first client connects. The old tables are kept untouched, so older JabRef versions can still be used with them.
 
 ### SSL configuration
 
-Since version 5.0 JabRef supports secure SSL connection to the database. For PostgreSQL make sure the server supports SSL and you have correctly setup the [certificates](https://www.postgresql.org/docs/current/static/ssl-tcp.html). Then [convert the client certificates](https://jdbc.postgresql.org/documentation/ssl/#configuring-the-client) into a java readable format and import them into a (custom) keystore. For MySQL the procedure is similar. [Setting up MySQL with SSL](https://dev.mysql.com/doc/refman/8.0/en/using-encrypted-connections.html) and converting the certificates for the java keystore. However, it has only been tested with PostgreSQL. Once the certificates are imported into the keystore, specify the path to the keystore file in the connection dialog and the password for accessing the keystore.
+Since version 5.0 JabRef supports secure SSL connection to the database. Make sure the server supports SSL and you have correctly setup the [certificates](https://www.postgresql.org/docs/current/static/ssl-tcp.html). Then [convert the client certificates](https://jdbc.postgresql.org/documentation/ssl/#configuring-the-client) into a java readable format and import them into a (custom) keystore. Once the certificates are imported into the keystore, specify the path to the keystore file in the connection dialog and the password for accessing the keystore.
 
 ![Screenshot of Connect to shared database dialog](../../.gitbook/assets/open-shared-database-dialog.png)
 
@@ -18,7 +22,7 @@ After connecting to your shared database, your main window should look like this
 
 ![Screenshot of JabRef with an open shared database](../../.gitbook/assets/open-shared-databse-screenshot.png)
 
-JabRef will automatically detect your changes and push them to the shared side. JabRef will also constantly check if there is a newer version available. If you experience connection issues, you can pull changes from your shared database via the icon in the icon bar. If a newer version is available, JabRef will try to automatically merge the new version and your local copy. If this fails, the **Update refused** dialog will show up. You will then have to manually merge using the **Update refused** dialog. The dialog helps you by pointing out the differences, you then will have to choose if you want to keep your local version or update to the shared version. Confirm your merge by clicking on **Merge entries**.
+JabRef will automatically detect your changes and push them to the shared side. Changes made by other users arrive automatically as well: JabRef listens for change notifications from the database, so edits, new groups, and changed library settings show up in all connected JabRef instances without any manual action. If a newer version is available, JabRef will try to automatically merge the new version and your local copy. If this fails, the **Update refused** dialog will show up. You will then have to manually merge using the **Update refused** dialog. The dialog helps you by pointing out the differences, you then will have to choose if you want to keep your local version or update to the shared version. Confirm your merge by clicking on **Merge entries**.
 
 ![Screenshot of Update refused dialog](../../.gitbook/assets/update-refused-merge-dialog.png)
 
