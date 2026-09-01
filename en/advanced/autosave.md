@@ -23,7 +23,7 @@ First introduction of the autosave and backup features.\
 `.bak` preserves the last state of the library after saving
 {% endhint %}
 
-## What are `.sav`, `.bak`/`.bib` backup and `.tmp` files?
+## What are `.sav`, `.bak` and `.tmp` files?
 
 JabRef generates `.sav`, `.tmp` and automatic backup files while working.
 
