@@ -24,6 +24,8 @@ After connecting to your shared database, your main window should look like this
 
 ![Screenshot of JabRef with an open shared database](../../.gitbook/assets/open-shared-databse-screenshot.png)
 
+Shared databases that are still connected when you quit JabRef are reconnected automatically on the next start, just like local libraries (when **Open last edited libraries on startup** is enabled in the preferences).
+
 JabRef will automatically detect your changes and push them to the shared side. Changes made by other users arrive automatically as well: JabRef listens for change notifications from the database, so edits, new groups, and changed library settings show up in all connected JabRef instances without any manual action. If a newer version is available, JabRef will try to automatically merge the new version and your local copy. If this fails, the **Update refused** dialog will show up. You will then have to manually merge using the **Update refused** dialog. The dialog helps you by pointing out the differences, you then will have to choose if you want to keep your local version or update to the shared version. Confirm your merge by clicking on **Merge entries**.
 
 ![Screenshot of Update refused dialog](../../.gitbook/assets/update-refused-merge-dialog.png)
