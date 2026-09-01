@@ -1,4 +1,4 @@
-# Automatic Backup (.sav and .bak) and Autosave
+# Automatic backup (.sav and .bak) and synchronization
 
 {% hint style="info" %}
 Changelog:\
@@ -12,6 +12,9 @@ Major rework and a change in what .bak and .sav denote. Henceforth,\
 \
 JabRef 5.1\
 To reduce the amount of configuration options, the possibility to disable the  creation of `.bak` files was removed.\
+\
+JabRef 6.0\
+Autosave became "Synchronize local libraries with their files": external changes to the file are merged in automatically.\
 \
 JabRef 3.7\
 First introduction of the autosave and backup features.\
@@ -63,14 +66,18 @@ For shared remote libraries and more advanced history, we recommend to use [git 
 * **Mac OS X:** \
   `/Users/username/Library/Application Support/org.jabref/jabref`
 
-## Automatic saving of the current library
+## Automatic saving and synchronization of the current library
 
-JabRef offers **automatic saving of the library.** No need to click on File --> Save or pressing Ctrl+S anymore: The opened database are saved automatically without manual intervention.
+JabRef can keep a local library and its `.bib` file the same in both directions. Enable **Synchronize local libraries with their files** in Preferences → General → Saving:
 
-In case the `.bib` file should automatically be saved on each change, you can direct JabRef to do so. This feature needs to be activated in the preferences:
+* Changes you make in JabRef are saved to the `.bib` file automatically. No need to click on File → Save or to press Ctrl+S anymore.
+* Changes another program makes to the `.bib` file (a text editor, a `git pull`, a cloud synchronization client) are merged into the open library automatically. A short notification reports how many changes were merged. If the same entry was also edited in JabRef, the fields changed on disk are still taken over.
+* JabRef only asks you to review external changes when they collide with your own unsaved edits: the same field changed differently in JabRef and in the file, or an entry deleted on one side and changed on the other. The "External changes detected" notification then offers a review of only those items.
+
+When the option is off, JabRef reports every external change with the "External changes detected" notification and leaves it to you to review or dismiss them.
 
 <div align="center">
 
-<figure><img src="../.gitbook/assets/preferences-autosave.png" alt=""><figcaption><p>Screenshot of the autosave preferences</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/preferences-autosave.png" alt=""><figcaption><p>Screenshot of the synchronization preference</p></figcaption></figure>
 
 </div>
