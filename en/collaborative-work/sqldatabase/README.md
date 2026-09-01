@@ -16,7 +16,7 @@ If the database was already used by an older version of JabRef, its content is m
 
 ### SSL configuration
 
-Tick **Use SSL** in the **Advanced** section to require an encrypted connection with a verified server certificate. Make sure the server supports SSL and has its [certificates](https://www.postgresql.org/docs/current/static/ssl-tcp.html) set up. If the server uses a certificate that is not signed by a well-known authority (e.g. a self-signed one), add its certificate under **Preferences → Network → Custom certificates**; JabRef then trusts it for shared database connections as well. Hosting providers that hand out a URL with `sslmode=require` work without any certificate setup: paste the URL and the connection is encrypted without certificate verification, as the URL requests.
+Tick **Use SSL** in the **Advanced** section to require an encrypted connection. Like `psql`, this does not verify the server's certificate, so managed PostgreSQL providers with their own certificate authorities work out of the box; a pasted URL with `sslmode=require` ticks the box for you. If you want the server certificate verified, use the expert mode with a JDBC URL such as `jdbc:postgresql://host:5432/database?sslmode=verify-full&sslrootcert=/path/to/ca.pem`; a pasted URL with `sslmode=verify-full` sets this up automatically.
 
 ![Screenshot of Connect to shared database dialog](../../.gitbook/assets/open-shared-database-dialog.png)
 
