@@ -14,7 +14,7 @@ If the database was already used by an older version of JabRef, its content is m
 
 ### SSL configuration
 
-JabRef supports secure SSL connections to the database. Make sure the server supports SSL and you have correctly setup the [certificates](https://www.postgresql.org/docs/current/static/ssl-tcp.html). The server certificate is validated against the certificates JabRef trusts: if your server uses a self-signed or organization-internal certificate, add it under **Preferences** → **Network** → **Custom certificates**. A separate keystore is no longer needed.
+Checking **Use SSL** encrypts the connection without authenticating the server — the same behavior as `psql` — so managed PostgreSQL providers work without any certificate setup. A separate keystore is no longer needed. If you additionally want the server certificate verified, use expert mode with a custom JDBC URL containing `sslmode=verify-full` (see the [PostgreSQL JDBC documentation](https://jdbc.postgresql.org/documentation/ssl/)).
 
 ![Screenshot of Connect to shared database dialog](../../.gitbook/assets/open-shared-database-dialog.png)
 
