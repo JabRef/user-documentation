@@ -8,7 +8,9 @@ JabRef uses [PostgreSQL](https://www.postgresql.org/) as the database system for
 
 ## Usage
 
-To use this feature you have to connect to a remote database. To do so you have to open **File** in the menu bar and then click **Shared database** and **Connect to shared database**. The **Connect to shared database** dialog will open and you will have to fill in the shared's database connection settings. Then, you have to fill out the remaining fields with the according information. If you like you can save your password by clicking the **Remember password?** checkbox.
+To use this feature you have to connect to a remote database. To do so you have to open **File** in the menu bar and then click **Shared database** and **Connect to shared database**. The **Connect to shared database** dialog will open. The quickest way to fill it in is to paste the connection URL of your database (as shown by your hosting provider, e.g. `postgres://user:password@host:5432/database?sslmode=require`, or a JDBC URL) into the **Connection URL** field: host, port, database, user, and password are filled in automatically. Alternatively, enter these details by hand. If you like you can save your password by ticking the **Remember password** checkbox.
+
+Settings that are rarely needed (SSL, keystore, server timezone, and a custom JDBC URL for the *expert mode*) are found in the collapsible **Advanced** section. When a pasted URL contains parameters JabRef has no dedicated field for (such as `sslmode=require`), expert mode is switched on and the parameters are kept in the custom JDBC URL, so the connection is made exactly as the URL says.
 
 If the database was already used by an older version of JabRef, its content is migrated to the new table structure automatically when the first client connects. The old tables are kept untouched, so older JabRef versions can still be used with them.
 
