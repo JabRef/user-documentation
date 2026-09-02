@@ -26,9 +26,7 @@ JabRef will automatically detect your changes and push them to the shared side. 
 
 ![Screenshot of Update refused dialog](../../.gitbook/assets/update-refused-merge-dialog.png)
 
-The **Update refused** dialog can also take a different form, if the BibEntry you currently work on has been deleted on the shared side. You can choose to keep the BibEntry in the database by clicking **Keep** or update to the shared side and click **Close**.
-
-![Screenshot of Update refused dialog due to a deleted entry](../../.gitbook/assets/update-refused-deleted-entry-dialog.png)
+If somebody else deletes entries, they disappear from your library as well and a notification tells you how many were deleted on the shared side. If you were still working on one of them, use **Undo** to get it back: it is inserted into the shared database again.
 
 If you experience a problem with your connection to your shared database, the **Connection lost** dialog will show up. You can choose to **Reconnect**, **Work offline** or **Close database**. Most of the time simply reconnecting will fix this problem, if that's not the case you will have to choose between **Work offline** or **Close database**. Pick **Work offline** if you want to make sure your changes are saved. If you think there is nothing to save just pick **Close database**. If you choose to work offline, JabRef will convert the shared database to a local .bib database. Since you are no longer working online, but instead on a local database, you will have to import your work via copy and paste into the shared database. However before you import it into the shared database, make sure to check if changes happened during your offline time. Otherwise you might override someone else's work.
 
