@@ -28,9 +28,9 @@ JabRef will automatically detect your changes and push them to the shared side. 
 
 If somebody else deletes entries, they disappear from your library as well and a notification tells you how many were deleted on the shared side. If you were still working on one of them, use **Undo** to get it back: it is inserted into the shared database again.
 
-If you experience a problem with your connection to your shared database, the **Connection lost** dialog will show up. You can choose to **Reconnect**, **Work offline** or **Close database**. Most of the time simply reconnecting will fix this problem, if that's not the case you will have to choose between **Work offline** or **Close database**. Pick **Work offline** if you want to make sure your changes are saved. If you think there is nothing to save just pick **Close database**. If you choose to work offline, JabRef will convert the shared database to a local .bib database. Since you are no longer working online, but instead on a local database, you will have to import your work via copy and paste into the shared database. However before you import it into the shared database, make sure to check if changes happened during your offline time. Otherwise you might override someone else's work.
+If the connection to the shared database is lost, JabRef tells you so in a notification and keeps working: every change you make is kept locally and JabRef reconnects by itself, trying again in increasing intervals. Once the connection is back, a notification tells you so, your changes are synchronized, and everything that happened on the shared side meanwhile is pulled in. If somebody else changed an entry you edited during that time, the **Update refused** dialog described above opens for that entry.
 
-![Screenshot of Connection lost dialog](../../.gitbook/assets/connection-lost-dialog.png)
+The changes you made without connection also survive closing JabRef: they are synchronized the next time you connect to the same shared database.
 
 ## Try it out
 
