@@ -38,6 +38,12 @@ UTF-8 is highly recommended
 
 You can select if your library follows the [BibTeX or the biblatex format](../cite/bibtex-and-biblatex.md).
 
+#### Keyword separator
+
+The character that separates keywords in the `keywords` field of this library, for example `,` or `;`. It overrides the keyword separator set in the Preferences dialog.
+
+When a library does not declare a separator, JabRef uses the one its keyword fields already use, so opening a library does not rewrite its keywords. If the keywords contain no separator at all, the global preference applies. Clear the field to remove the library-specific setting.
+
 ### Override default file directories
 
 In your library, files (PDF, etc.) can be linked to an entry. The list of these files are stored in the _file_ field of the entry. The location of these files has to be specified.
