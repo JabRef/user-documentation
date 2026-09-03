@@ -14,7 +14,7 @@ Some videos to help you start using JabRef:
 
 ## Main Window of JabRef
 
-Upon the first start of JabRef the main user interface is showing up the main elements are:
+Upon the first start of JabRef, the main user interface appears. The main elements are:
 
 * Menu bar
 * Icon bar (shortcuts for most frequently used features)
@@ -51,13 +51,13 @@ This opens a dialog where you can select the type of reference you want to store
 
 ![Screenshot of "new entry" dialog](.gitbook/assets/getting-started-new-entry.png)
 
-For our running example we will select "Article".
+For our running example, we will select "Article".
 
-After clicking on the "Article" button, the dialog closes and the so called "Entry Editor" is opened for the newly created entry:
+After clicking on the "Article" button, the dialog closes and the so-called "Entry Editor" is opened for the newly created entry:
 
 ![Main window now showing the entry editor](.gitbook/assets/getting-started-entry-editor.png)
 
-The most important information about the reference to be added can now be entered in the "Main" tab. "Author", "Title", "Journal", and "Year" should be self-explanatory - however, a "citationkey", might not be familiar to you. Basically, the idea of the "citationkey" is coming from working with BibTeX, where it is necessary to have an unique identifier for each entry. This allows for referencing within a document you might be creating using the stored information in your library. Moreover, also within JabRef this "key" is used for example for cross-references to other related entries or to determine file names for full-text references.
+The most important information about the reference to be added can now be entered in the "Main" tab. "Author", "Title", "Journal", and "Year" should be self-explanatory - however, a "citationkey", might not be familiar to you. Basically, the idea of the "citationkey" is coming from working with BibTeX, where it is necessary to have a unique identifier for each entry. This allows for referencing within a document you might be creating using the stored information in your library. Moreover, also within JabRef this "key" is used for example for cross-references to other related entries or to determine file names for full-text references.
 
 The key usually follows a global pattern and can be easily created automatically by clicking on the "generate" button next to the field.
 
@@ -82,7 +82,7 @@ After creating the basic information the addition of all other bibliographical d
 ![Update information from web](.gitbook/assets/getting-started-entry-editor-update-from-web.png)
 
 {% hint style="info" %}
-The found information is most accurate if an identifier like a "DOI" or "ISBN" is maintained. If you already know such an unique identifier, this can also be already the starting point to create a new entry without manual entering any information by using the "create from ID" feature in the Create entry dialog. For more information see: [Collect](https://docs.jabref.org/collect) > ["Add entry using an ID"](https://docs.jabref.org/collect/add-entry-using-an-id)
+The found information is most accurate if an identifier like a "DOI" or "ISBN" is maintained. If you already know such a unique identifier, this can also be already the starting point to create a new entry without manual entering any information by using the "create from ID" feature in the Create entry dialog. For more information see: [Collect](https://docs.jabref.org/collect) > ["Add entry using an ID"](https://docs.jabref.org/collect/add-entry-using-an-id)
 {% endhint %}
 
 If additional information is found you will be asked in a dialog which information should be taken over:
@@ -91,10 +91,10 @@ If additional information is found you will be asked in a dialog which informati
 
 ## Adding a full text document
 
-Usually, you also want to attach a reference to the full-text of a reference. For this, you can use the "file" field in the "General" tab. Here you can either attach a file manually, search for an already existing local file matching the citationkey pattern, or trying to automatically download a matching full text from the web.
+Usually, you also want to attach a reference to the full-text of a reference. For this, you can use the "file" field in the "General" tab. Here you can either attach a file manually, search for an already existing local file matching the citationkey pattern, or try to automatically download a matching full text from the web.
 
 {% hint style="info" %}
-In order to use the automated feature, it is necessary to set-up a file directory first. To do so, please go to "Options" > "Preferences", go to "Linked files" section, and select there an existing folder as the "Main file directory":
+In order to use the automated feature, it is necessary to set-up a file directory first. To do so, please go to "Options" > "Preferences", go to "Linked files" section, and select an existing folder there as the "Main file directory":
 {% endhint %}
 
 To test the automatic download of full texts you can click on the "Get full-text" icon next to the file field, or choose "Lookup" -> "Search full text documents online" from the menu. As soon as a full-text is found, the file will be stored in the local file directory and linked to the entry:
@@ -107,15 +107,15 @@ To open the downloaded full text you can click on the "file" icon before the fil
 
 If you want to search for other references, it is also possible to directly trigger a search in many of the most common bibliographic databases. To start a search just use the "Web Search" feature of JabRef: First select one of the existing data sources, enter a search term and click on "search":
 
-The search results will be shown in an window where you can select all the search hits to be added to your library.
+The search results will be shown in a window where you can select all the search hits to be added to your library.
 
 ![Web Search: Trigger and result window](.gitbook/assets/getting-started-import-from-web.png)
 
 ## Next steps
 
-After adding more and more entries, your library might be a bit too unstructured. In order to keep all you references organized JabRef is offering a lot of helpful features like grouping, consistency checks, etc.
+After adding more and more entries, your library might be a bit too unstructured. In order to keep all your references organized, JabRef is offering a lot of helpful features like grouping, consistency checks, etc.
 
-You can find more information on this topics in the "Organize" section of the documentation:
+You can find more information on these topics in the "Organize" section of the documentation:
 
 {% content-ref url="finding-sorting-and-cleaning-entries/" %}
 [finding-sorting-and-cleaning-entries](finding-sorting-and-cleaning-entries/)
