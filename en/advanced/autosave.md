@@ -76,6 +76,10 @@ JabRef can keep a local library and its `.bib` file the same in both directions.
 
 When the option is off, JabRef reports every external change with the "External changes detected" notification and leaves it to you to review or dismiss them.
 
+### Conflicted copies of sync clients
+
+When the library lives in a folder synchronized by Dropbox, Nextcloud, ownCloud, OneDrive, or Syncthing and two machines change it between two syncs, the sync client keeps one version as a "conflicted copy" next to the library (for example `library (conflicted copy 2026-09-03).bib`). With synchronization enabled, JabRef merges such a copy into the open library with the same rules: silently, unless the same item was changed differently in both. A "Conflicted copy merged" notification then offers to delete the copy; JabRef never deletes it on its own. Copies OneDrive names after another computer are not recognized, since any file with a `-Name` suffix could be an unrelated library.
+
 <div align="center">
 
 <figure><img src="../.gitbook/assets/preferences-autosave.png" alt=""><figcaption><p>Screenshot of the synchronization preference</p></figcaption></figure>
