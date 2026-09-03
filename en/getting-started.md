@@ -97,7 +97,7 @@ Usually, you also want to attach a reference to the full-text of a reference. Fo
 In order to use the automated feature, it is necessary to set-up a file directory first. To do so, please go to "Options" > "Preferences", go to "Linked files" section, and select there an existing folder as the "Main file directory":
 {% endhint %}
 
-To test the automatic download of full texts you can click on the "Get full-text" icon next to the file field, or choose "Lookup" -> "Search full text documents online" from the menu. As soon as a full-text is found, the file will be stored in the local file directory and linked to the entry:
+To test the automatic download of full texts you can click on the "Get full-text" icon next to the file field, or choose "Lookup" -> "Search full text documents online" from the menu, or "Get fulltext" from the entry's right-click menu. As soon as a full-text is found, the file will be stored in the local file directory and linked to the entry:
 
 ![Finding a full-text document online](.gitbook/assets/getting-started-entry-editor-full-text.png)
 
