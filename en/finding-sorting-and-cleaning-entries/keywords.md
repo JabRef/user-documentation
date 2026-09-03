@@ -8,10 +8,10 @@ description: Keywords help you in organizing, sorting and searching your entries
 
 Keywords can be added to your entries in a specific field. In the entry editor, the keywords field is displayed in the Main tab. There, you can add new keywords to an entry by typing it in. If auto-completion is activated for the field keywords (**File → Preferences → Entry editor**), suggestions are given based on existing keywords.
 
-By default, the keyword separator is a comma. It can be redefined in the preferences (**File → Preferences → Entry**). To use the separator character within a keyword itself, you can escape it with a backslash (`\`).
+By default, the keyword separator is a comma. It can be redefined globally in the preferences (**File → Preferences → Entry**) and per library in the [library properties](../setup/databaseproperties.md#keyword-separator) (**Library → Library properties → General**). A separator set in the library properties takes precedence over the global preference. To use the separator character within a keyword itself, you can escape it with a backslash (`\`).
 
 {% hint style="info" %}
-When importing BibTeX entries, JabRef automatically detects keyword delimiters (such as `;`) that differ from your configured separator and normalizes them on import.
+When opening a library that does not declare a separator, JabRef keeps the separator its keyword fields already use (for example `;`) instead of rewriting them to the global preference. Keyword fields that use a different delimiter than the library's separator are normalized on import.
 {% endhint %}
 
 {% hint style="info" %}
