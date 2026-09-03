@@ -1,10 +1,26 @@
 # Entry editor tabs
 
-{% hint style="info" %}
-Since the entry editor's redesign, it is no longer possible to define custom tabs with an arbitrary set of fields. All fields of an entry are shown together in the entry editor's [Main tab](../advanced/entryeditor/#the-main-tab), grouped into collapsible sections (Identifiers, Files and links, Bibliometrics, Comments, Meta). The rest of this page describes the tabs that remain configurable.
-{% endhint %}
+You can configure the entry editor's tabs under **File → Preferences → Entry Editor → Editor tabs**. The configuration has two columns: **Tabs** and **Fields**.
 
-You can choose which of the entry editor's built-in tabs are shown, and in which order, under **File → Preferences → Entry Editor → Editor tabs**. Untick a tab to hide it for all entry types; the tab list includes the Main tab, Bib(la)TeX source, Related articles, AI summary, AI chat, File annotations, LaTeX citations, Citations and Fulltext search results.
+## Tabs
 
-It does not matter how a field's name is capitalised. In the entry editor, normally a field's first letter is capitalised, i.e. _abstract_ is represented as _Abstract_, _KEYwords_ would be represented as _Keywords_ (_DOI_, _ISBN_, _URL_ are exceptions in that all letters are capitalised). In the bibtex code, all field names use lower case: _KEYwords_ is _keywords_ in the entry's bibtex code.
+The **Tabs** column lists all tabs of the entry editor. There, you can
 
+* untick a built-in tab (Main, Bib(la)TeX source, Related articles, AI summary, AI chat, File annotations, LaTeX citations, Citations, Fulltext search results) to hide it,
+* reorder tabs by dragging them,
+* add a custom tab by typing its name into the box below the list, and
+* remove a custom tab via its delete icon.
+
+Custom tabs appear for all entry types. A field on a custom tab moves there: the [Main tab](../advanced/entryeditor/#the-main-tab) no longer shows an editor or an add button for it, so no field appears twice.
+
+Below the two columns, **Reset to default tabs** restores the built-in tabs and removes all custom tabs.
+
+## Fields
+
+Selecting a custom tab in the **Tabs** column shows its fields in the **Fields** column. There, you can add fields by name, remove them, and reorder them by dragging.
+
+A field name can also be a [regular expression](https://en.wikipedia.org/wiki/Regular_expression). For example, `comment-.*` shows all user-specific comment fields of an entry. A plain field name always appears on the tab (even while the field is empty); a regular expression shows the matching fields that have a value in the entry.
+
+JabRef shows a warning sign next to a field that appears on more than one tab.
+
+The capitalisation of a field's name does not matter. In the entry editor, JabRef normally capitalises a field's first letter, i.e. _abstract_ appears as _Abstract_ and _KEYwords_ as _Keywords_ (_DOI_, _ISBN_, _URL_ appear in all upper case). In the bibtex code, all field names use lower case: _KEYwords_ is _keywords_ in the entry's bibtex code.
