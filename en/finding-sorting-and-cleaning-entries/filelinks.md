@@ -35,7 +35,7 @@ Relative file directories obviously only work in the library properties for a bi
 
 ## Auto-linking files
 
-If you have a file within or below one of your file directories with an extension matching one of the defined external file types, and a name starting with (or matching) an entry's citation key, the file can be auto-linked. JabRef will detect the file and display a "link-add" icon in the entry editor, at the left of the filename. Click on the "link-add" icon to link this file to the entry.
+If you have a file within or below one of your file directories with an extension matching one of the defined external file types, and a name starting with (or matching) an entry's citation key, the file can be auto-linked. JabRef will detect the file and display it in the entry editor with a gray background and a "link-add" icon at the left of the filename. Click on the "link-add" icon to link this file to the entry.
 
 The rules for which file names can be auto-linked to a citation key can be set up in **File → Preferences → Linked files**, section _Autolink files_.
 
