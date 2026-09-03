@@ -15,7 +15,7 @@ When opening a library that does not declare a separator, JabRef keeps the separ
 {% endhint %}
 
 {% hint style="info" %}
-If entries already in your library have a keyword separator differing from the prescribed one, you can use menu **Edit → Find and replace**. For example, you may want to replace semi-columns (;) by commas (,). Select the radio button "Limit to Fields" and type in "keywords" as the relevant field.​​
+If entries already in your library have a keyword separator differing from the prescribed one, use the cleanup "Normalize keyword delimiters" (**Quality → Cleanup entries**, section "Field formatters"). It rewrites the keywords of the selected entries to the library's keyword separator. The cleanup is also part of the default save actions (**Library → Library properties → Saving**), so entries you edit are normalized when the library is saved.
 {% endhint %}
 
 Additionally, the [special field](specialfields.md) values (relevance, priority, etc.) can be added to the keywords field automatically. This will allow you to group, sort, and search your library based on the special field values. See in **File → Preferences → Entry table** the item "Special fields" and select "Synchronize with keywords".
