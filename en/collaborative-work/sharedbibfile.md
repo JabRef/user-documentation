@@ -2,7 +2,7 @@
 
 When sharing a Bib\(la\)TeX library, JabRef automatically recognizes a change in the `bib` file on disk and notifies the user of it. This works well on network drives.
 
-_Note:_ the use of a version control system \(SVN, git, etc.\) is recommended as this will allow for reverting changes.
+_Note:_ the use of a version control system \(SVN, git, etc.\) is recommended as this will allow for reverting changes. JabRef has [built-in Git integration](git-integration.md), so you can commit, push and pull your library without leaving the application.
 
 To make the sharing of a Bib\(la\)TeX library easier, it is recommended to set specific library properties. In the menu **Library → Library properties**:
 
