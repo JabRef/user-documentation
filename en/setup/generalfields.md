@@ -11,7 +11,7 @@ The **Tabs** column lists all tabs of the entry editor. There, you can
 * add a custom tab by typing its name into the box below the list, and
 * remove a custom tab via its delete icon.
 
-Custom tabs appear for all entry types. A field on a custom tab moves there: the [Main tab](../advanced/entryeditor/#the-main-tab) no longer shows an editor or an add button for it, so no field appears twice.
+Custom tabs appear for all entry types. The **Extract field** checkbox next to a field controls where the field lives: when you check it, the field moves to the custom tab and the [Main tab](../advanced/entryeditor/#the-main-tab) no longer shows an editor or an add button for it. When you leave it unchecked (the default), the custom tab only mirrors the field and the Main tab keeps showing it.
 
 Below the two columns, **Reset to default tabs** restores the built-in tabs and removes all custom tabs.
 
