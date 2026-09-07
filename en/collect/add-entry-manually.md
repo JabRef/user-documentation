@@ -14,6 +14,8 @@ For other types of entries, click on `Others.` That expands the window and displ
 
 Finally, the [entry editor](../advanced/entryeditor/) opens and let you fill in the various fields.
 
+JabRef focuses the citation key field, so you can type the key right away.
+
 {% hint style="info" %}
 You can directly create a new entry of a specific entry type by using a keyboard shortcut. We strongly recommend learning the shortcuts for the entry types you use most often, e.g. `Ctrl + Shift + A` for adding an article entry.​ See **File → Preferences → Keyboard Shortcuts**.
 {% endhint %}
