@@ -2,6 +2,8 @@
 
 To add a new entry, select **Library → Add entry using...**, press `CTRL + N​` or click on the dedicated icon of the toolbar.
 
+A double click on the empty space below the last entry of the entry table also adds an entry, using the entry type you created last.
+
 The "Choose entry type" dialog window is displayed. By default, 5 common types of entries are displayed:
 
 ![Window for selecting default entry types. Note: the actual content of the "others" menu depends on the database mode (BibTeX or biblatex).](../.gitbook/assets/jabref-5.3-selectentrytype.png)
