@@ -62,3 +62,5 @@ The way the special fields are stored in the libraries can be set in **File → 
 * With _Write values of special fields as separated fields_ (default configuration since version 5.2)_,_ each special field is stored in a separate field of the entry.
 * With _Synchronize with keywords_ enabled, the values of the special fields are stored twice: in a separated field and as a keyword. Each change in a special field is reflected in the keyword field, and, vice versa, each change in a keyword leads to a change in the special field. Additionally, when loading a database or pasting a new entry, the keywords are used to set the special field values.
 {% endhint %}
+
+When you open a library that still stores special field values as keywords (for example `prio1` or `rank3`), JabRef offers to move them to separate fields. The dialog lists every conversion of the library to the current format; deselect a conversion to keep the data unchanged.
