@@ -142,7 +142,7 @@ A: In **Library → Library properties**, you will find a section named "Save ac
 
 ## Q: Search on Google scholar does not work anymore. Why?
 
-A: Google scholar is blocking "automated" crawls which generate too much traffic in a short time. JabRef already uses a two-step approach (with the prefetched list before crawling the actual BibTeX data) to circumvent this. However, after too many crawls JabRef is being blocked. To solve this issue, see the section [_Traffic limitations_](../collect/import-using-online-bibliographic-database.md#traffic-limitations) in the Google Scholar catalog.
+A: Google scholar is blocking "automated" crawls which generate too much traffic in a short time. JabRef already uses a two-step approach (with the prefetched list before crawling the actual BibTeX data) to circumvent this. After too many crawls, Google blocks JabRef. To solve this issue, see the section [_Traffic limitations_](../collect/import-using-online-bibliographic-database.md#traffic-limitations) in the Google Scholar section.
 
 ## Q: JabRef does not push to vim, although I have configured the right path and server name. What is going on?
 

@@ -105,7 +105,7 @@ To open the downloaded full text you can click on the "file" icon before the fil
 
 ## Finding more references in the web
 
-If you want to search for other references, it is also possible to directly trigger a search in many of the most common bibliographic catalogs. To start a search just use the "Web Search" feature of JabRef: First select one of the existing data sources, enter a search term and click on "search":
+If you want to search for other references, you can also trigger a search directly in many of the most common bibliographic catalogs. To start a search just use the "Web Search" feature of JabRef: First select one of the existing data sources, enter a search term and click on "search":
 
 The search results will be shown in a window where you can select all the search hits to be added to your library.
 
