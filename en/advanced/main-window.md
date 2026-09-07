@@ -23,6 +23,6 @@ This is the main window from where you work with your databases. Below the menub
 You can copy or move entries between open library tabs:
 
 1. Select one or more entries in the source library.
-2. Drag the entries to the target library's tab:<br>
-   - By default, JabRef **copies** the entries to the target library.<br>
+2. Drag the entries to the target library's tab:
+   - By default, JabRef **copies** the entries to the target library.
    - Hold `Shift` while dragging to **move** the entries. The entries are removed from the source library after they have been successfully added to the target library.
