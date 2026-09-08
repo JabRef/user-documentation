@@ -8,7 +8,7 @@ description: JabRef is able to support collaborative work using a shared SQL dat
 
 To use this feature you have to connect to a remote database. To do so you have to open **File** in the menu bar and then click the **Connect to shared database** item. The **Connect to shared database** dialog will open and you will have to fill in the shared's database connection settings. Then, you have to fill out the remaining fields with the according information. If you like you can save your password by clicking the **Remember password?** checkbox.
 
-Every database you connect to is remembered. The **Saved connections** list at the top of the dialog lets you pick a previous connection to fill in the fields again, and **Remove** deletes the selected one together with its stored password. To change a saved connection, select it, adjust the fields and connect; the connection is stored again with the new settings.
+Every database you connect to is remembered. The **Saved connections** list at the top of the dialog lets you pick a previous connection to fill in the fields again, and **Remove** deletes the selected one together with its stored password. Connecting to a database that is already in the list updates its entry, so the list holds each database once; connecting with changed server, database or user details adds a new entry.
 
 ### SSL configuration
 
