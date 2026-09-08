@@ -4,7 +4,7 @@
 
 [CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics) files define the look of JabRef. In `Preferences > General > Appearance` you choose three things:
 
-* **Theme**: the base look. JabRef brings two themes of its own, _JabRef theme_ ([`jabref-theme.css`](https://github.com/JabRef/jabref/blob/main/jabgui/src/main/resources/org/jabref/gui/theme/jabref-theme.css)) and _Primer theme_ ([`primer-theme.css`](https://github.com/JabRef/jabref/blob/main/jabgui/src/main/resources/org/jabref/gui/theme/primer-theme.css), based on [AtlantaFX](https://mkpaz.github.io/atlantafx/)), and bundles the community themes from [themes.jabref.org](https://themes.jabref.org/) that cover both color schemes, such as _Nord_, _Everforest_, _ChocolateHoney_, and the _DinoGirls Themes_. Every theme comes with a light and a dark variant.
+* **Theme**: the base look. JabRef brings two themes of its own, _JabRef theme_ ([`jabref-theme.css`](https://github.com/JabRef/jabref/blob/main/jabgui/src/main/resources/org/jabref/gui/theme/jabref-theme.css)) and _Primer theme_ ([`primer-theme.css`](https://github.com/JabRef/jabref/blob/main/jabgui/src/main/resources/org/jabref/gui/theme/primer-theme.css), based on [AtlantaFX](https://mkpaz.github.io/atlantafx/)), and bundles the community themes from [themes.jabref.org](https://themes.jabref.org/) that cover both color schemes, such as _Nord_, _Everforest_, _Papers_, _Chocolate Honey_, and _Dino Girl's themes_. Every theme comes with a light and a dark variant.
 * **Color scheme**: _Follow system_, _Light_, or _Dark_.
 * **Custom theme**: a CSS file of your own. JabRef applies it _on top_ of the selected theme and color scheme, so it only needs to contain what you want to change.
 
