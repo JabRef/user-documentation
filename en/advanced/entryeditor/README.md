@@ -25,7 +25,7 @@ You can choose which tabs are shown, and in which order, under **File → Prefer
 
 ### The Main tab
 
-The **Main** tab shows all the entry's fields in a single scrollable list. It lists the required and optional fields for the entry's type directly, followed by the abstract, which JabRef always shows. Multiline fields such as the abstract grow with their text up to five lines; click into one to see the complete text. Below them, one-click chips add any optional field that isn't set yet, and a free-form box adds arbitrary (non-standard) fields.
+The **Main** tab shows all the entry's fields in a single scrollable list. It lists the required and optional fields for the entry's type directly. Below them, one-click chips add any optional field that isn't set yet, the last chip adds an abstract, and a free-form box adds arbitrary (non-standard) fields. Multiline fields such as the abstract grow with their text up to five lines; click into one to see the complete text.
 
 A few groups of fields are broken out into their own collapsible sections, each collapsed by default when empty and offering chips for its own unset fields:
 
