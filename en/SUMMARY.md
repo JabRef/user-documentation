@@ -21,7 +21,7 @@
   * [Mark and grade](finding-sorting-and-cleaning-entries/specialfields.md)
   * [Comment on an entry](finding-sorting-and-cleaning-entries/comment-on-an-entry.md)
   * [Searching within the library](finding-sorting-and-cleaning-entries/search.md)
-  * [Complete information using online databases](finding-sorting-and-cleaning-entries/getbibtexdatafromdoi.md)
+  * [Complete information using online catalogs](finding-sorting-and-cleaning-entries/getbibtexdatafromdoi.md)
   * [Manage associated files](finding-sorting-and-cleaning-entries/filelinks.md)
   * [Manage field names and their content](finding-sorting-and-cleaning-entries/managing-field-names-and-their-content.md)
   * [Best practices](finding-sorting-and-cleaning-entries/bestpractices.md)

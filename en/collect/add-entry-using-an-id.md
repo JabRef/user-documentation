@@ -74,13 +74,13 @@ ID search is carried out using the [Library of Congress Control Number](https://
 
 ### MathSciNet
 
-[MathSciNet](http://www.ams.org/mathscinet/) is a searchable online bibliographic database. It contains all of the contents of the journal Mathematical Reviews (MR) since 1940 along with an extensive author database, links to other MR entries, citations, full journal entries, and links to original articles. It contains almost 3 million items and over 1.7 million links to original articles ([Wikipedia](https://en.wikipedia.org/wiki/MathSciNet)).
+[MathSciNet](http://www.ams.org/mathscinet/) is a searchable online bibliographic catalog. It contains the complete contents of the journal Mathematical Reviews (MR) since 1940 along with an extensive author database, links to other MR entries, citations, full journal entries, and links to original articles. It contains almost 3 million items and over 1.7 million links to original articles ([Wikipedia](https://en.wikipedia.org/wiki/MathSciNet)).
 
 ID search is carried out using the MR number, e.g. `MR3300361`.
 
 ### Medline/Pubmed
 
-[Medline/Pubmed](https://www.nlm.nih.gov/bsd/medline.html) is a bibliographic database of life sciences and biomedical information. It includes bibliographic information for articles from academic journals covering medicine, nursing, pharmacy, dentistry, veterinary medicine, and health care. Medline also covers much of the literature in biology and biochemistry, as well as fields such as molecular evolution ([Wikipedia](https://en.wikipedia.org/wiki/MEDLINE)).
+[Medline/Pubmed](https://www.nlm.nih.gov/bsd/medline.html) is a bibliographic catalog of life sciences and biomedical information. It includes bibliographic information for articles from academic journals covering medicine, nursing, pharmacy, dentistry, veterinary medicine, and health care. Medline also covers much of the literature in biology and biochemistry, as well as fields such as molecular evolution ([Wikipedia](https://en.wikipedia.org/wiki/MEDLINE)).
 
 ID search is carried out using the PubMed Unique Identifier (PMID).
 
@@ -94,7 +94,7 @@ ID search is carried out using the DOI.
 
 ### SAO/NASA ADS
 
-[SAO/NASA Astrophysics Data System](http://www.adsabs.harvard.edu) is an online database of over eight million astronomy and physics papers from both peer reviewed and non-peer reviewed sources. Abstracts are available free online for almost all articles, and full scanned articles are available in Graphics Interchange Format (GIF) and Portable Document Format (PDF) for older articles ([Wikipedia](https://en.wikipedia.org/wiki/Astrophysics_Data_System)).
+[SAO/NASA Astrophysics Data System](http://www.adsabs.harvard.edu) is an online catalog of over eight million astronomy and physics papers from both peer reviewed and non-peer reviewed sources. Abstracts are available free online for almost all articles, and full scanned articles are available in Graphics Interchange Format (GIF) and Portable Document Format (PDF) for older articles ([Wikipedia](https://en.wikipedia.org/wiki/Astrophysics_Data_System)).
 
 ID search is carried out using the [ADS Bibcode](http://adsabs.github.io/help/actions/bibcode).
 
@@ -116,6 +116,6 @@ ID search is carried out using the (Request for Comments number) (RFC) of the IE
 
 ### zbMATH Open
 
-[zbMATH Open](https://zbmath.org) is an abstracting and reviewing service in pure and applied mathematics. Its database contains about 4 million bibliographic entries with reviews or abstracts currently drawn from about 3,000 journals and book series, and 180,000 books. The coverage starts in the 18th century and is complete from 1868 to the present by the integration of the "Jahrbuch über die Fortschritte der Mathematik" database ([about](https://zbmath.org/about/)).
+[zbMATH Open](https://zbmath.org) is an abstracting and reviewing service in pure and applied mathematics. Its catalog contains about 4 million bibliographic entries with reviews or abstracts currently drawn from about 3,000 journals and book series, and 180,000 books. The coverage starts in the 18th century and is complete from 1868 to the present by the integration of the "Jahrbuch über die Fortschritte der Mathematik" catalog ([about](https://zbmath.org/about/)).
 
 ID search is carried out using the Zbl number.

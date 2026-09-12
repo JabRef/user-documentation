@@ -37,7 +37,6 @@ jobs:
         run: npm run textlint
   vale-lint:
     runs-on: ubuntu-latest
-    continue-on-error: true
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v4
@@ -45,5 +44,6 @@ jobs:
           show-progress: ''
       - name: vale
         uses: vale-cli/vale-action@v2
+        continue-on-error: true
         with:
           fail_on_error: false
