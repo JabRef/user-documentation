@@ -34,6 +34,10 @@ When you chat with a PDF or let JabRef summarize it, three things happen:
 
 Which model makes sense depends on your hardware budget. A typical laptop runs models below 9b. A workstation or GPU server for a research group or a small company runs models between 27b and 120b. Larger models need two or more data center GPUs.
 
+{% hint style="info" %}
+This information is dated mid September 2026. New models appear every few months, so if you read this later, try more modern models of a similar size from [Ollama's model library](https://ollama.com/library).
+{% endhint %}
+
 | GPU memory | Model | Notes |
 | --- | --- | --- |
 | 128 GB or more | `qwen3.8-flash-next:125b-a6b-q4` | About 105 GB; mixture of experts, so it answers fast |
@@ -42,8 +46,6 @@ Which model makes sense depends on your hardware budget. A typical laptop runs m
 | 16 GB | `gpt-oss:20b` | Faster, answers slightly shorter |
 | 8 to 12 GB | `granite4.2:8b` | Thinks longer before answering |
 | no GPU | `granite4.2:3b` | Slow, weaker answers; enough to [add entries using reference text](../collect/newentryfromplaintext.md) |
-
-[Ollama's model library](https://ollama.com/library) lists many more models.
 
 {% hint style="warning" %}
 Model names ending in `cloud` (for instance `deepseek-v4-pro:cloud`) do not run on your hardware. Ollama sends your requests to its own servers. Many of the largest models are only available this way in Ollama.
