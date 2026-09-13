@@ -31,6 +31,9 @@ The following steps guide you on how to use `ollama` to download and run local L
 6. Go to JabRef Preferences -> AI
 7. Set the "AI provider" to "OpenAI"
 8. Set the "Chat Model" to the model you have downloaded in the format `<MODEL>:<PARAMETERS>`
-9. Set the "API base URL" in "Expert Settings" to `http://localhost:11434/v1/`
+9. Check "Customize expert settings" in "Expert Settings". Otherwise, JabRef ignores the next setting and sends your requests to OpenAI.
+10. Set the "API base URL" in "Expert Settings" to `http://localhost:11434/v1/`
 
 Now, you are all set and can chat "locally".
+
+If the model runs on a GPU server instead of your own computer, follow [Keeping your PDFs private: AI on your own GPU server](private-llm-server.md).
