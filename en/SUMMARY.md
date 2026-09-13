@@ -50,6 +50,7 @@
   * [AI preferences](ai/preferences.md)
   * [AI troubleshooting](ai/troubleshooting.md)
   * [Running a local language model](ai/local-llm.md)
+  * [AI on your own GPU server](ai/private-llm-server.md)
 * [Configuration](setup/README.md)
   * [Customize the citation key generator](setup/citationkeypatterns.md)
   * [Customize entry types](setup/customentrytypes.md)
