@@ -1,8 +1,13 @@
-# Keeping your PDFs private: AI on your own GPU server
+# Running AI on your own computer or GPU server
 
-Many research groups have a GPU server in the basement, while the researchers work on their laptops. This page shows how to let JabRef use a language model on such a server, so that the content of your PDFs never reaches a commercial AI provider. This matters, for instance, when you work with unpublished manuscripts, reviews under confidentiality, or data covered by research ethics rules.
+This page shows how to let JabRef use a language model that runs on your own hardware, so that the content of your PDFs never reaches a commercial AI provider. This matters, for instance, when you work with unpublished manuscripts, reviews under confidentiality, or data covered by research ethics rules.
 
-We use this example setup throughout the page. Replace the names with your own.
+The model can run in two places:
+
+* **On your own computer.** This works if your computer has a GPU with enough memory, or for small models.
+* **On a GPU server.** Many research groups have a GPU server in the basement, while the researchers work on their laptops.
+
+The steps are the same for both; if the model runs on your own computer, skip Step 2. We use this example setup throughout the page. Replace the names with your own.
 
 | What | Example |
 | --- | --- |
@@ -17,17 +22,41 @@ When you chat with a PDF or let JabRef summarize it, three things happen:
 
 1. JabRef reads the PDF on your laptop and cuts the text into small pieces.
 2. JabRef computes the "embeddings" of these pieces, also on your laptop. JabRef downloads the embedding model once; JabRef uploads no text of your PDFs.
-3. JabRef sends the relevant pieces together with your question to the language model. **This is the only step where PDF text leaves your laptop.** With the setup below, it goes to your own server and nowhere else.
+3. JabRef sends the relevant pieces together with your question to the language model. **This is the only step where PDF text leaves JabRef.** With the setup below, it goes to your own computer or server and nowhere else.
 
-## Step 1: Install Ollama on the server
+## Choosing hardware and a model
 
+* The whole model should fit into the GPU memory (VRAM). Otherwise, the model runs partly in the main memory (slow) or even on the disk (unusable).
+* The "b" in a model name stands for **b**illion parameters. With the usual 4-bit compression, a model needs roughly 0.6 GB per billion parameters, plus some memory for the context window.
+* Smaller models are faster but answer worse. Start with a model that fits your hardware and switch to a larger one if the answers are not good enough.
+* Speed depends above all on how fast the hardware can read its memory. A modern GPU with lots of memory is best. Apple computers with M-series chips also work well, because the GPU shares the main memory.
+
+| GPU memory | Model | Notes |
+| --- | --- | --- |
+| 24 GB | `qwen3.8:27b` | Good answers, also for non-English questions |
+| 16 GB | `gpt-oss:20b` | Faster, answers slightly shorter |
+| 8 to 12 GB | `granite4.2:8b` | Thinks longer before answering |
+| no GPU | `granite4.2:3b` | Slow, weaker answers; enough to [add entries using reference text](../collect/newentryfromplaintext.md) |
+
+[Ollama's model library](https://ollama.com/library) lists many more models.
+
+## Step 1: Install Ollama
+
+{% tabs %}
+{% tab title="On your own computer" %}
+Download and install [Ollama](https://ollama.com/download). Ollama then runs in the background.
+{% endtab %}
+
+{% tab title="On a GPU server" %}
 Log in to the server and install [Ollama](https://ollama.com/download):
 
 ```shell
 curl -fsSL https://ollama.com/install.sh | sh
 ```
+{% endtab %}
+{% endtabs %}
 
-Download a model. For a GPU with 24 GB of memory, `qwen3.8:27b` is a good starting point, and `gpt-oss:20b` answers faster; GPUs with about 12 GB can use `granite4.2:8b`. The whole model should fit into the GPU memory, otherwise it becomes slow (see [Hardware recommendations](local-llm.md#hardware-recommendations)).
+Download a model (see [Choosing hardware and a model](#choosing-hardware-and-a-model)):
 
 ```shell
 ollama pull qwen3.8:27b
@@ -41,16 +70,34 @@ curl http://localhost:11434/v1/chat/completions -d '{"model": "qwen3.8:27b", "me
 
 The reply contains `"content":"OK"` (possibly with some more words).
 
-Depending on its version and your GPU, Ollama may give the model a context window of only a few thousand tokens. For chatting with whole papers, raise it. Run `sudo systemctl edit ollama` and add:
+Depending on its version and your GPU, Ollama may give the model a context window of only a few thousand tokens. For chatting with whole papers, raise it to `32768`:
+
+{% tabs %}
+{% tab title="On your own computer" %}
+Open the Ollama app, go to "Settings", and move the "Context length" slider.
+{% endtab %}
+
+{% tab title="On a GPU server" %}
+Run `sudo systemctl edit ollama` and add:
 
 ```ini
 [Service]
 Environment="OLLAMA_CONTEXT_LENGTH=32768"
 ```
 
-Then restart Ollama with `sudo systemctl restart ollama`. A larger context needs more GPU memory, so increase it step by step.
+Then restart Ollama with `sudo systemctl restart ollama`.
+{% endtab %}
+{% endtabs %}
+
+A larger context needs more GPU memory, so increase it step by step.
+
+{% hint style="info" %}
+Ollama is one option. Any program that provides an OpenAI-compatible API works, for instance [LM Studio](https://lmstudio.ai/) or [llama.cpp](https://github.com/ggml-org/llama.cpp). Use its address as "API base URL" in Step 3.
+{% endhint %}
 
 ## Step 2: Connect your laptop to the server
+
+Skip this step if Ollama runs on your own computer.
 
 Ollama has no password and does not encrypt its traffic, so do not open its port to the network. Instead, connect through SSH, which you most likely already use to log in to the server. The SSH tunnel makes the server's Ollama appear on your laptop as `localhost:11434`, and SSH encrypts everything on the way.
 
@@ -86,7 +133,7 @@ Open **File → Preferences → AI** and set:
 | API key | `ollama` (any text works; Ollama ignores it) |
 | Expert settings → **Customize expert settings** | **checked** |
 | Expert settings → API base URL (used only for LLM) | `http://localhost:11434/v1` |
-| Expert settings → Context window size | `32768` (the value you set for `OLLAMA_CONTEXT_LENGTH`) |
+| Expert settings → Context window size | `32768` (the context length you set in Ollama) |
 | Expert settings → Embedding model | `BAAI/bge-small-en-v1.5` for English papers, `BAAI/bge-m3` for other languages (larger and slower) |
 
 The embedding model always runs on your laptop, not on the server. If you change it after JabRef already processed your PDFs, run **Tools → Clear embeddings cache** so that JabRef computes the embeddings again.
@@ -124,11 +171,11 @@ Note that this also blocks these providers for all other programs on your laptop
 
 ## Step 5: Try it
 
-1. Start the SSH tunnel (Step 2).
+1. If the model runs on a GPU server, start the SSH tunnel (Step 2).
 2. Open a library in JabRef and select an entry with a linked PDF.
 3. Open the "AI chat" tab in the entry editor and ask "What is the main contribution of this paper?".
 
-While JabRef is waiting for the answer, you can watch the model work on the server:
+While JabRef is waiting for the answer, you can watch the model work (on the server, if you use one):
 
 ```shell
 ollama ps
@@ -141,11 +188,11 @@ The output shows `qwen3.8:27b` together with its memory usage.
 The AI features are not the only part of JabRef that talks to online services. If your PDFs must stay private, check these as well:
 
 * **Grobid.** In **File → Preferences → Web search**, section "Remote services", keep "Allow sending PDF files and raw citation strings to a JabRef online service (Grobid) to determine Metadata" unchecked. When JabRef asks whether to use Grobid on import, answer "No". Grobid receives the complete PDF file.
-* **Citation parsing.** In **File → Preferences → Web search**, the "Default plain citation parser" "LLM" uses the language model you configured above and thus stays on your server. "Grobid" uses the Grobid service.
+* **Citation parsing.** In **File → Preferences → Web search**, the "Default plain citation parser" "LLM" uses the language model you configured above and thus stays on your hardware. "Grobid" uses the Grobid service.
 * **Metadata lookup.** When you import a PDF, JabRef looks up its DOI, arXiv ID, or ISBN online. JabRef sends only these identifiers, not the content of the PDF.
 
 ## Troubleshooting
 
-* **JabRef cannot connect to the model**: the SSH tunnel is not running. Start it again (Step 2).
-* **The answer ignores most of the paper**: increase `OLLAMA_CONTEXT_LENGTH` on the server and "Context window size" in JabRef.
-* **Answers take minutes**: the model does not fit into the GPU memory. Run `ollama ps` on the server: if the "PROCESSOR" column shows a CPU share, choose a smaller model or a smaller context window.
+* **JabRef cannot connect to the model**: Ollama is not running, or the SSH tunnel is not running. Start Ollama, or start the tunnel again (Step 2).
+* **The answer ignores most of the paper**: increase the context length in Ollama and "Context window size" in JabRef.
+* **Answers take minutes**: the model does not fit into the GPU memory. Run `ollama ps`: if the "PROCESSOR" column shows a CPU share, choose a smaller model or a smaller context window.
