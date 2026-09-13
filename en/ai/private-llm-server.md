@@ -29,16 +29,25 @@ When you chat with a PDF or let JabRef summarize it, three things happen:
 * The whole model should fit into the GPU memory (VRAM). Otherwise, the model runs partly in the main memory (slow) or even on the disk (unusable).
 * The "b" in a model name stands for **b**illion parameters. With the usual 4-bit compression, a model needs roughly 0.6 GB per billion parameters, plus some memory for the context window.
 * Smaller models are faster but answer worse. Start with a model that fits your hardware and switch to a larger one if the answers are not good enough.
+* Some models are a "mixture of experts": `125b-a6b` means 125 billion parameters, of which only 6 billion work on each word. Such a model needs the memory of its full size but answers as fast as a small model.
 * Speed depends above all on how fast the hardware can read its memory. A modern GPU with lots of memory is best. Apple computers with M-series chips also work well, because the GPU shares the main memory.
+
+Which model makes sense depends on your hardware budget. A typical laptop runs models below 9b. A workstation or GPU server for a research group or a small company runs models between 27b and 120b. Larger models need two or more data center GPUs.
 
 | GPU memory | Model | Notes |
 | --- | --- | --- |
+| 128 GB or more | `qwen3.8-flash-next:125b-a6b-q4` | About 105 GB; mixture of experts, so it answers fast |
+| 80 GB | `gpt-oss:120b` | About 65 GB; mixture of experts, so it answers fast |
 | 24 GB | `qwen3.8:27b` | Good answers, also for non-English questions |
 | 16 GB | `gpt-oss:20b` | Faster, answers slightly shorter |
 | 8 to 12 GB | `granite4.2:8b` | Thinks longer before answering |
 | no GPU | `granite4.2:3b` | Slow, weaker answers; enough to [add entries using reference text](../collect/newentryfromplaintext.md) |
 
 [Ollama's model library](https://ollama.com/library) lists many more models.
+
+{% hint style="warning" %}
+Model names ending in `cloud` (for instance `deepseek-v4-pro:cloud`) do not run on your hardware. Ollama sends your requests to its own servers. Many of the largest models are only available this way in Ollama.
+{% endhint %}
 
 ## Step 1: Install Ollama
 
