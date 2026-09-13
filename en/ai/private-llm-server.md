@@ -16,7 +16,7 @@ We use this example setup throughout the page. Replace the names with your own.
 When you chat with a PDF or let JabRef summarize it, three things happen:
 
 1. JabRef reads the PDF on your laptop and cuts the text into small pieces.
-2. JabRef computes the "embeddings" of these pieces, also on your laptop. JabRef downloads the embedding model once; no text of your PDFs is uploaded.
+2. JabRef computes the "embeddings" of these pieces, also on your laptop. JabRef downloads the embedding model once; JabRef uploads no text of your PDFs.
 3. JabRef sends the relevant pieces together with your question to the language model. **This is the only step where PDF text leaves your laptop.** With the setup below, it goes to your own server and nowhere else.
 
 ## Step 1: Install Ollama on the server
@@ -27,7 +27,7 @@ Log in to the server and install [Ollama](https://ollama.com/download):
 curl -fsSL https://ollama.com/install.sh | sh
 ```
 
-Download a model. For a GPU with 24 GB of memory, `gpt-oss:20b` or `qwen3:30b` are good starting points; smaller GPUs can use `granite4:3b` or `qwen3:8b`. The whole model should fit into the GPU memory, otherwise it becomes very slow (see [Hardware recommendations](local-llm.md#hardware-recommendations)).
+Download a model. For a GPU with 24 GB of memory, `gpt-oss:20b` or `qwen3:30b` are good starting points; smaller GPUs can use `granite4:3b` or `qwen3:8b`. The whole model should fit into the GPU memory, otherwise it becomes slow (see [Hardware recommendations](local-llm.md#hardware-recommendations)).
 
 ```shell
 ollama pull gpt-oss:20b
@@ -52,9 +52,9 @@ Then restart Ollama with `sudo systemctl restart ollama`. A larger context needs
 
 ## Step 2: Connect your laptop to the server
 
-Ollama has no password and does not encrypt its traffic. Therefore, do not open its port to the network. Instead, connect through SSH, which you most likely already use to log in to the server. The SSH tunnel makes the server's Ollama appear on your laptop as `localhost:11434`, and everything in between is encrypted.
+Ollama has no password and does not encrypt its traffic, so do not open its port to the network. Instead, connect through SSH, which you most likely already use to log in to the server. The SSH tunnel makes the server's Ollama appear on your laptop as `localhost:11434`, and SSH encrypts everything on the way.
 
-Open a terminal on your laptop (on Windows: "Terminal" or "PowerShell"; `ssh` and `curl` are included in Windows 10 and 11) and run:
+Open a terminal on your laptop (on Windows: "Terminal" or "PowerShell"; Windows 10 and 11 ship `ssh` and `curl`) and run:
 
 ```shell
 ssh -N -L 11434:localhost:11434 alice@gpu-server.example.org
@@ -91,7 +91,7 @@ Open **File → Preferences → AI** and set:
 Click "Save".
 
 {% hint style="warning" %}
-**"Customize expert settings" must be checked.** If it is unchecked, JabRef ignores the API base URL you entered and sends the requests to OpenAI's servers. The placeholder API key does not protect you: OpenAI rejects the request, but only after it has received the text. The same happens after "Reset expert settings to default". Step 4 guards against this.
+**Check "Customize expert settings".** Otherwise, JabRef ignores the API base URL you entered and sends the requests to OpenAI's servers. The placeholder API key does not protect you: OpenAI rejects the request, but only after it has received the text. The same happens after "Reset expert settings to default". Step 4 guards against this.
 {% endhint %}
 
 Never enter a real API key of a commercial provider here. If you used one before, clear the "API key" field for each provider you used.
@@ -139,7 +139,7 @@ The AI features are not the only part of JabRef that talks to online services. I
 
 * **Grobid.** In **File → Preferences → Web search**, section "Remote services", keep "Allow sending PDF files and raw citation strings to a JabRef online service (Grobid) to determine Metadata" unchecked. When JabRef asks whether to use Grobid on import, answer "No". Grobid receives the complete PDF file.
 * **Citation parsing.** In **File → Preferences → Web search**, the "Default plain citation parser" "LLM" uses the language model you configured above and thus stays on your server. "Grobid" uses the Grobid service.
-* **Metadata lookup.** When you import a PDF, JabRef looks up its DOI, arXiv ID, or ISBN online. Only these identifiers are sent, not the content of the PDF.
+* **Metadata lookup.** When you import a PDF, JabRef looks up its DOI, arXiv ID, or ISBN online. JabRef sends only these identifiers, not the content of the PDF.
 
 ## Troubleshooting
 
