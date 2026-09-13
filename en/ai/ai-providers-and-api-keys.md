@@ -18,7 +18,7 @@ You can find more information about providers in the [`langchain4j` documentatio
 
 We cannot give a clear recommendation. Providers change their service and their prices regularly and our documentation page is too static to keep up with daily changes. It is recommended to look up LLM benchmarks on the internet or to use the trial and error method. To date, remote AI providers like OpenAI, Google, Mistral and others offer state of the art quality.
 
-If you want to [run a model locally](local-llm.md), you can choose Ollama or make use of the OpenAI API. In comparison to remote AI providers, open weight local models that are compatible with average consumer devices offer less capabilities. There are state of the art local models available, but they are very large (in terms of number of parameters) and the higher the number of parameters, the more memory is needed. To run the largest models, very expensive and capable hardware is required. That said, even small models can be sufficient for the [add entry using reference text](../collect/newentryfromplaintext.md) workflow.
+If you want to [run a model on your own computer or GPU server](private-llm-server.md), use the provider "OpenAI (or API compatible)" with Ollama or another OpenAI-compatible server. Compared to remote AI providers, open weight models that run on average consumer devices offer fewer capabilities. State of the art open weight models exist, but they have many parameters, and the more parameters a model has, the more memory it needs. The largest models need expensive and capable hardware. That said, even small models can be enough for the [add entry using reference text](../collect/newentryfromplaintext.md) workflow.
 
 ## Why do I need an API key?
 
