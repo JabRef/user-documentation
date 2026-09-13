@@ -5,7 +5,7 @@
 1. Large Language Models (LLMs) require a lot of computational power, so they need lots of electricity and dedicated hardware. The following advice assumes a small scale project and availability of consumer hardware.
 2. Smaller models typically respond qualitatively worse than bigger ones, but they are faster, need less memory and might already be enough for your use case (so start out with the small ones and if need be, scale up).
 3. You can measure the size of a model in number of parameters in its neural network. The "b" in the model name typically stands for **b**illion parameters. You can also measure it in gigabytes required to load the model into your devices RAM/VRAM.
-4. The model should always fit into VRAM (fast), otherwise the LLM runtime typically offloads layers to RAM (slow) and if it doesn't fit in there either, it will use your harddrive, typically a SSD or HDD (abysmally slow).
+4. The model should always completely fit into your GPUs VRAM (fast), otherwise the LLM runtime typically offloads some layers to RAM (slow) and if it doesn't fit in there either, it will use your harddrive, typically a SSD or HDD (abysmally slow).
 5. The Hardware recommendation to maximize prompt processing and token generation speed is a device with high _bandwidth_. To date, a modern GPU with lots of VRAM fits this need best.
 
 ## High-level explanation
