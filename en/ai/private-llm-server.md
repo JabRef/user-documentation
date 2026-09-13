@@ -87,6 +87,9 @@ Open **File → Preferences → AI** and set:
 | Expert settings → **Customize expert settings** | **checked** |
 | Expert settings → API base URL (used only for LLM) | `http://localhost:11434/v1` |
 | Expert settings → Context window size | `32768` (the value you set for `OLLAMA_CONTEXT_LENGTH`) |
+| Expert settings → Embedding model | `BAAI/bge-small-en-v1.5` for English papers, `BAAI/bge-m3` for other languages (larger and slower) |
+
+The embedding model always runs on your laptop, not on the server. If you change it after JabRef already processed your PDFs, run **Tools → Clear embeddings cache** so that JabRef computes the embeddings again.
 
 Click "Save".
 
