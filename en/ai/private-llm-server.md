@@ -53,6 +53,7 @@ Log in to the server and install [Ollama](https://ollama.com/download):
 ```shell
 curl -fsSL https://ollama.com/install.sh | sh
 ```
+
 {% endtab %}
 {% endtabs %}
 
