@@ -9,7 +9,7 @@ We use this example setup throughout the page. Replace the names with your own.
 | GPU server | `gpu-server.example.org`, running Linux |
 | Your account there | `alice` |
 | Your computer | Windows laptop with JabRef |
-| Language model | `gpt-oss:20b` (needs about 14 GB of GPU memory) |
+| Language model | `qwen3.8:27b` (needs about 17 GB of GPU memory) |
 
 ## What stays where
 
@@ -27,16 +27,16 @@ Log in to the server and install [Ollama](https://ollama.com/download):
 curl -fsSL https://ollama.com/install.sh | sh
 ```
 
-Download a model. For a GPU with 24 GB of memory, `gpt-oss:20b` or `qwen3:30b` are good starting points; smaller GPUs can use `granite4:3b` or `qwen3:8b`. The whole model should fit into the GPU memory, otherwise it becomes slow (see [Hardware recommendations](local-llm.md#hardware-recommendations)).
+Download a model. For a GPU with 24 GB of memory, `qwen3.8:27b` is a good starting point, and `gpt-oss:20b` answers faster; GPUs with about 12 GB can use `granite4.2:8b`. The whole model should fit into the GPU memory, otherwise it becomes slow (see [Hardware recommendations](local-llm.md#hardware-recommendations)).
 
 ```shell
-ollama pull gpt-oss:20b
+ollama pull qwen3.8:27b
 ```
 
 Check that the model answers:
 
 ```shell
-curl http://localhost:11434/v1/chat/completions -d '{"model": "gpt-oss:20b", "messages": [{"role": "user", "content": "Say OK"}]}'
+curl http://localhost:11434/v1/chat/completions -d '{"model": "qwen3.8:27b", "messages": [{"role": "user", "content": "Say OK"}]}'
 ```
 
 The reply contains `"content":"OK"` (possibly with some more words).
@@ -68,7 +68,7 @@ Check the connection in a second terminal window:
 curl http://localhost:11434/v1/models
 ```
 
-The output lists the models you downloaded, for instance `gpt-oss:20b`.
+The output lists the models you downloaded, for instance `qwen3.8:27b`.
 
 {% hint style="info" %}
 If you do not have SSH access to the server, ask your administrator to make Ollama reachable within your institute's network. Then you use `http://gpu-server.example.org:11434/v1` instead of `http://localhost:11434/v1` in the next step. Keep in mind that the text of your PDFs then travels unencrypted through that network.
@@ -82,7 +82,7 @@ Open **File → Preferences → AI** and set:
 | --- | --- |
 | Enable AI functionality in JabRef | checked |
 | AI provider | OpenAI (or API compatible) |
-| Chat model | `gpt-oss:20b` (type the name, it does not need to be in the list) |
+| Chat model | `qwen3.8:27b` (type the name, it does not need to be in the list) |
 | API key | `ollama` (any text works; Ollama ignores it) |
 | Expert settings → **Customize expert settings** | **checked** |
 | Expert settings → API base URL (used only for LLM) | `http://localhost:11434/v1` |
@@ -134,7 +134,7 @@ While JabRef is waiting for the answer, you can watch the model work on the serv
 ollama ps
 ```
 
-The output shows `gpt-oss:20b` together with its memory usage.
+The output shows `qwen3.8:27b` together with its memory usage.
 
 ## Other ways PDFs can leave your laptop
 
