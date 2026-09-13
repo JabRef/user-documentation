@@ -14,7 +14,7 @@ JabRef 5.1\
 To reduce the amount of configuration options, the possibility to disable the  creation of `.bak` files was removed.\
 \
 JabRef 6.0\
-Autosave became "Synchronize local libraries with their files": external changes to the file are merged in automatically.\
+Synchronization with the library file: external changes are merged in automatically, per library or as a global default.\
 \
 JabRef 3.7\
 First introduction of the autosave and backup features.\
@@ -68,17 +68,18 @@ For shared remote libraries and more advanced history, we recommend to use [git 
 
 ## Automatic saving and synchronization of the current library
 
-JabRef can keep a local library and its `.bib` file the same in both directions. Enable **Synchronize local libraries with their files** in Preferences → General → Saving:
+JabRef can keep a local library and its `.bib` file the same in both directions. Two options control this, both off unless you enable them:
 
-* Changes you make in JabRef are saved to the `.bib` file automatically. No need to click on File → Save or to press Ctrl+S anymore.
-* Changes another program makes to the `.bib` file (a text editor, a `git pull`, a cloud synchronization client) are merged into the open library automatically. A short notification reports how many changes were merged. If the same entry was also edited in JabRef, the fields changed on disk are still taken over.
-* JabRef only asks you to review external changes when they collide with your own unsaved edits: the same field changed differently in JabRef and in the file, or an entry deleted on one side and changed on the other. The "External changes detected" notification then offers a review of only those items.
+* **Autosave local libraries** (Preferences → General → Saving): changes you make in JabRef are saved to the `.bib` file automatically. No need to click on File → Save or to press Ctrl+S anymore.
+* **Synchronize with the library file**: changes another program makes to the `.bib` file (a text editor, a `git pull`, a cloud synchronization client) are merged into the open library automatically. A short notification reports how many changes were merged. If the same entry was also edited in JabRef, the fields changed on disk are still taken over. JabRef only asks you to review external changes when they collide with your own unsaved edits: the same field changed differently in JabRef and in the file, or an entry deleted on one side and changed on the other. The "External changes detected" notification then offers a review of only those items.
 
-When the option is off, JabRef reports every external change with the "External changes detected" notification and leaves it to you to review or dismiss them.
+Synchronization is decided per library: open Library → Library properties → Saving and choose **On** or **Off** under "Synchronization with the library file". A library set to **Use global setting** follows the preference **Synchronize local libraries with their files** in Preferences → General → Saving, which is off by default. The per-library choice is stored in the `.bib` file, so it travels with the library.
+
+When synchronization is off, JabRef reports every external change with the "External changes detected" notification and leaves it to you to review or dismiss them.
 
 ### Conflicted copies of sync clients
 
-When the library lives in a folder synchronized by Dropbox, Nextcloud, ownCloud, OneDrive, or Syncthing and two machines change it between two syncs, the sync client keeps one version as a "conflicted copy" next to the library (for example `library (conflicted copy 2026-09-03).bib`). With synchronization enabled, JabRef merges such a copy into the open library with the same rules: silently, unless the same item was changed differently in both. A "Conflicted copy merged" notification then offers to delete the copy; JabRef never deletes it on its own. Copies OneDrive names after another computer are not recognized, since any file with a `-Name` suffix could be an unrelated library.
+When the library lives in a folder synchronized by Dropbox, Nextcloud, ownCloud, OneDrive, or Syncthing and two machines change it between two syncs, the sync client keeps one version as a "conflicted copy" next to the library (for example `library (conflicted copy 2026-09-03).bib`). With synchronization enabled and **Merge conflicted copies left by sync clients** switched on (per library in Library properties → Saving, or as the global default in Preferences → General → Saving; off by default), JabRef merges such a copy into the open library with the same rules: silently, unless the same item was changed differently in both. A "Conflicted copy merged" notification then offers to delete the copy; JabRef never deletes it on its own. Copies OneDrive names after another computer are not recognized, since any file with a `-Name` suffix could be an unrelated library.
 
 <div align="center">
 
