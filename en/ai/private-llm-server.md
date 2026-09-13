@@ -35,7 +35,7 @@ When you chat with a PDF or let JabRef summarize it, three things happen:
 Which model makes sense depends on your hardware budget. A typical laptop runs models below 9b. A workstation or GPU server for a research group or a small company runs models between 27b and 120b. Larger models need two or more data center GPUs.
 
 {% hint style="info" %}
-This information is dated mid September 2026. New models appear every few months, so if you read this later, try more modern models of a similar size from [Ollama's model library](https://ollama.com/library).
+This information dates from mid September 2026. New models appear every few months, so if you read this later, try more modern models of a similar size from [Ollama's model library](https://ollama.com/library).
 {% endhint %}
 
 | GPU memory | Model | Notes |
