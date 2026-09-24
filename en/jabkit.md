@@ -87,6 +87,17 @@ Commands:
 
 Hint: Using `jabkit <COMMAND> --help` will show the supported options for each command.
 
+## Input sources
+
+Wherever a command takes an input file, you can also pass an `http(s)` or `ftp` URL, or the PostgreSQL connection URL of a [shared SQL library](collaborative-work/sqldatabase/README.md):
+
+```bash
+jabkit convert 'postgresql://user:secret@host:5432/library' --output refs.bib
+```
+
+The shared library is read once and not written back to; changes made by JabKit stay in the output file.
+Quote the URL so that your shell does not interpret the special characters in it, and be aware that the password becomes part of your shell history.
+
 ## Updating JabKit
 
 Make use of `--fresh` to update JabKit
