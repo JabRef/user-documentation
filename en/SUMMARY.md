@@ -74,7 +74,7 @@
   * [URL and DOI links in JabRef](advanced/externalfiles.md)
   * [OCR](advanced/OCR.md)
   * [Command line use and options](advanced/commandline.md)
-  * [Automatic Backup (.sav and .bak) and Autosave](advanced/autosave.md)
+  * [Automatic backup (.sav and .bak) and synchronization](advanced/autosave.md)
   * [XMP metadata support in JabRef](advanced/xmp.md)
   * [Remote operation](advanced/remote.md)
   * [Custom themes](advanced/custom-themes.md)
