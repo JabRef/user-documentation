@@ -5,6 +5,7 @@ structure:
   summary: ./SUMMARY.md
 
 redirects:
+  ai/local-llm: ./ai/private-llm-server.md
   cn: ./README.md
   en: ./README.md
   de: ./README.md
