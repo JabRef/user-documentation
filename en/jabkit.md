@@ -87,6 +87,20 @@ Commands:
 
 Hint: Using `jabkit <COMMAND> --help` will show the supported options for each command.
 
+## Managing PDFs
+
+The `pdf` command groups subcommands that work on PDF files:
+
+* `jabkit pdf update` writes XMP metadata and/or an embedded BibTeX attachment to linked PDFs (`--format=xmp,bibtex-attachment`).
+* `jabkit pdf extract-references` extracts the references from the "References" section of one or more PDFs and outputs them as BibTeX, mirroring the GUI's "Extract references" action. Each PDF can be a local file or an http(s)/ftp URL, for example:
+
+```bash
+jabkit pdf extract-references paper.pdf --output paper-refs.bib
+jabkit pdf extract-references paper1.pdf paper2.pdf --output-dir refs/
+```
+
+By default it uses rule-based extraction, or Grobid if Grobid is enabled in your preferences; pass `--mode=RULE_BASED`, `--mode=GROBID` or the experimental `--mode=LLM` to override this.
+
 ## Updating JabKit
 
 Make use of `--fresh` to update JabKit
