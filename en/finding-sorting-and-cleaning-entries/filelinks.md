@@ -79,7 +79,7 @@ The default for searches is `**/.*[citationkey].*\\.[extension]`. As you can see
 
 ## Opening external files
 
-There are several ways to open an external file or web page. In the entry table, you can click on the PDF icon to open the PDF. In case there are multiple PDFs linked, always the first one is opened. You can also right-click on the line of the entry in the entry table and select "Open file". There is also a keyboard shortcut for this: In the default setting, this is `F4`, but [it can also be customized](../setup/customkeybindings.md).
+There are several ways to open an external file or web page. In the entry table, you can click on the PDF icon to open the PDF. In case there are multiple PDFs linked, always the first one is opened. You can also right-click on the line of the entry in the entry table and select "More file operations..." > "Open file". There is also a keyboard shortcut for this: In the default setting, this is `F4`, but [it can also be customized](../setup/customkeybindings.md).
 
 To access any of an entry's links, click on the icon with the right mouse button (or `Ctrl + Click` on Mac OS X) to bring up a menu showing all links.
 
