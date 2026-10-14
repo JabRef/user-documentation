@@ -13,6 +13,7 @@ This is the main window from where you work with your databases. Below the menub
 * Double-click a line of the entry table to edit the entry content. You can navigate the table with the arrow keys.
 
     ![Edit entry on the main table](../.gitbook/assets/entry-table-edit.png)
+* To center the selected entry, choose **View → Center selected entry** or use the keyboard shortcut (`Ctrl + Alt + L` on Windows and Linux). Near the beginning or end of the table, JabRef moves the entry as close to the center as possible.
 * To quickly change the sort order within the entry table, click the header of a column to set it as the primary sort criterion, or reverse the sorting if it is already set. Another click will deselect the column as sorting criterion. Hold down Ctrl and click a column to add, reverse or remove it as a sub-criterion after the primary column. You can add an arbitrary number of sub-criteria, but only three levels will be stored for the next time you start JabRef.
 * Adjust the width of each column by dragging the borders between their headers.
 
