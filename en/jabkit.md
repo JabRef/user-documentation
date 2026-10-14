@@ -81,11 +81,24 @@ Commands:
   generate-bib-from-aux   Generate small bib from aux file.
   preferences             Manage JabKit preferences.
   pdf                     Manage PDF metadata.
+  git                     Git integration for .bib files.
   get-cited-works         Get the cited works (bibliography).
   get-citing-works        Get the works citing the work at hand.
 ```
 
 Hint: Using `jabkit <COMMAND> --help` will show the supported options for each command.
+
+Any command that reads an input file also accepts a PostgreSQL connection URL of a JabRef shared library instead of a file path; JabKit exports the shared library read-only to a temporary `.bib` file before running the command.
+
+### Git merge driver for `.bib` files
+
+`jabkit git merge-driver` performs a semantic three-way merge of `.bib` files, so that concurrent changes to different entries (or different fields) merge automatically instead of producing textual Git conflicts. To use it for every `.bib` file in a repository:
+
+```bash
+git config --global merge.jabref.name "JabRef semantic .bib merge"
+git config --global merge.jabref.driver "jabkit git merge-driver --porcelain %O %A %B"
+echo "*.bib merge=jabref" >> .gitattributes
+```
 
 ## Updating JabKit
 
