@@ -49,7 +49,7 @@
   * [AI providers and API keys](ai/ai-providers-and-api-keys.md)
   * [AI preferences](ai/preferences.md)
   * [AI troubleshooting](ai/troubleshooting.md)
-  * [Running a local language model](ai/local-llm.md)
+  * [Running AI on your own computer or GPU server](ai/private-llm-server.md)
 * [Configuration](setup/README.md)
   * [Customize the citation key generator](setup/citationkeypatterns.md)
   * [Customize entry types](setup/customentrytypes.md)
