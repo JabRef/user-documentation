@@ -24,4 +24,4 @@ Once you share your library to GitHub, you will be able to use Git features from
 
 For more information on how these commands work, see the [Git documentation](https://git-scm.com/doc).
 
-Note that this procedure automatically shares all files in the **libraries** directory of your project. Because of this we recommend to check that folder does not contain unrelated files before sharing, or to use a .gitignore file to exclude files from being shared.
+Note that this procedure automatically shares all files in the **libraries** directory of your project. Because of this we recommend to check that folder does not contain unrelated files, or to use a .gitignore file to exclude files, before sharing.
