@@ -2,6 +2,8 @@
 
 JabRef allows sharing both [Bib(La)TeX library](sharedbibfile.md) and [SQL database](sqldatabase/). You can also [export your library to a variety of formats](export/).
 
+Jabref also supports sharing libraries with Git and GitHub [Git integration tools](gitintegration.md).
+
 {% content-ref url="sharedbibfile.md" %}
 [sharedbibfile.md](sharedbibfile.md)
 {% endcontent-ref %}
