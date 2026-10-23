@@ -19,3 +19,8 @@ Jabref also supports sharing libraries with [Git and GitHub](gitintegration.md).
 {% content-ref url="send-as-email.md" %}
 [send-as-email.md](send-as-email.md)
 {% endcontent-ref %}
+
+{% content-ref url="gitintegration.md" %}
+[gitintegration.md](gitintegration.md)
+{% endcontent-ref %}
+

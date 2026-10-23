@@ -44,6 +44,7 @@
   * [Export](collaborative-work/export/README.md)
     * [Custom export filters](collaborative-work/export/customexports.md)
   * [Send as email](collaborative-work/send-as-email.md)
+  * [Share with Git and GitHub](collaborative-work/gitintegration.md)
 * [AI functionality](ai/README.md)
   * [How to enable and use AI features?](ai/how-to-enable-and-use-ai-features.md)
   * [AI providers and API keys](ai/ai-providers-and-api-keys.md)
