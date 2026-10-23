@@ -7,7 +7,7 @@ JabRef allows you to use Git and GitHub to share entries with others. You can al
 
 ### Setting up GitHub sharing
 
-To set up this sharing with Git, you must follow these steps:
+To set up sharing with Git, first ensure that the bibliography file is correctly saved. Then follow these steps:
 
 1. *Create a remote GitHub Repository*: To begin, create a GitHub repository to store your entries remotely. You will need a GitHub account for this step - see [Creating a GitHub Repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository).
 2. *Create a Personal Access Token (PAT)*: To create a Personal Access Token for your GitHub account, follow the steps at: [Creating a GitHub PAT](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic). When prompted on what accesses the token should have, select the 'repo' permission. Make sure to copy the token or save it somewhere, as required for step 3.
