@@ -16,26 +16,3 @@ Now that the code is shared to GitHub, you will be able to use Git features from
 For more information on how these commands work, consider reading the git documentation.
 
 Note that this procedure automatically shares all files in the **libraries** directory of your project. Because of this it is recommended before sharing to check that folder does not contain unrelated files, or to explicitly exclude files you wish to with your .gitignore file first.
-
-
-# Share
-
-JabRef allows sharing both [Bib(La)TeX library](sharedbibfile.md) and [SQL database](sqldatabase/). You can also [export your library to a variety of formats](export/).
-
-Jabref also supports sharing libraries with Git and GitHub [Git integration tools](gitintegration.md).
-
-{% content-ref url="sharedbibfile.md" %}
-[sharedbibfile.md](sharedbibfile.md)
-{% endcontent-ref %}
-
-{% content-ref url="export/" %}
-[export](export/)
-{% endcontent-ref %}
-
-{% content-ref url="sqldatabase/" %}
-[sqldatabase](sqldatabase/)
-{% endcontent-ref %}
-
-{% content-ref url="send-as-email.md" %}
-[send-as-email.md](send-as-email.md)
-{% endcontent-ref %}
