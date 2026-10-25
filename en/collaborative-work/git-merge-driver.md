@@ -24,12 +24,12 @@ Enable the driver in each repository holding a library, by adding this line to t
 ## What the driver merges
 
 The driver receives the common ancestor of both sides, your version, and the other version.
-It writes your version plus the changes of the other side back into your file: for every entry, identified by its citation key, a field that only the other side changed takes the other side's value, and an entry that only the other side added or deleted is added or deleted.
-The entry type and the comment written above an entry are merged the same way.
+It writes your version plus the changes of the other side back into your file: for every entry, identified by its citation key, a field that only the other side changed takes the other side's value, and it adds or deletes an entry that only the other side added or deleted.
+It merges the entry type and the comment written above an entry the same way.
 
 An entry is a conflict when both sides changed the same field to different values, changed the entry type or the comment differently, or when one side deleted the entry while the other side changed it.
 Conflicting entries keep your version.
-Everything outside entries with a citation key - `@String` definitions, the preamble, entries without a citation key, custom entry types, and the library properties - is taken from your version as it is.
+Everything outside entries with a citation key - `@String` definitions, the preamble, entries without a citation key, custom entry types, and the library properties - it keeps from your version as it is.
 
 The driver exits with `0` when it merged everything, which makes Git continue with the merge.
 Any other exit code makes Git mark the file as conflicted.
