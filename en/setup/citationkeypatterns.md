@@ -116,10 +116,25 @@ Generally, modifiers are applied in the order they are specified. In the followi
 * **`:capitalize`**: Changes the first character of each word to uppercase, all other characters are converted to lowercase. For example, `an example title` will be converted to `An Example Title`
 * **`:titlecase`**: Changes the first character of all normal words to uppercase, all function words (see above) are converted to lowercase. Example: `example title with An function Word` will be converted to `Example Title with an Function Word`
 * **`:truncateN`**: Truncates the string after the N:th character and trims any trailing whitespaces. For example, **`[fulltitle:truncate3]`** will convert `A Title` to `A T`.
+* **`:transliterate`**: Converts non-Latin characters to their Latin equivalents. For example, **`[auth:transliterate]`** turns `Карпенко` into `Karpenko`, and Chinese characters are converted to pinyin.
 * **`:sentencecase`**: Changes the first character of the first word to uppercase, all remaining words are converted to lowercase. Example: `an Example Title` will be converted to `An example title`
 * **`:regex("pattern", "replacement")`**: Applies regular expression pattern matching and replacement. For example,
   * **`[auth.etal:regex("\.etal","EtAl"):regex("\.","And")]`** will extract the last name of the first author, and the last name of the second author, if there are two authors or .etal if there are more than two. The first `regex()` replaces `.etal` with `EtAl`. The second `regex()` replaces any `.` between entries with two authors with `And`.
 * **`:(x)`**: The string between the parentheses will be inserted if the field marker preceding this modifier resolves to an empty value. The placeholder `x` may be any string. For instance, the marker **`[VOLUME:(unknown)]`** will return the entry's volume if set, and the string **unknown** if the entry's `VOLUME` field is not set.
+
+### Authors with Chinese names
+
+By default, JabRef keeps the characters of the author name, so the author `万征` with the year 2016 gives the key `万征2016`.
+Some LaTeX setups cannot handle such keys.
+To get pinyin keys, combine the `transliterate` and `camel` modifiers:
+
+* **`[auth:transliterate:camel][authForeIni:transliterate:camel][year]`** gives `WanZheng2016` for `万征` and `WangXiao2016` for `王, 小明`.
+* **`[auth:transliterate:camel][authForeIni:transliterate:truncate1:upper][year]`** gives `WanZ2016` for `万, 征`.
+
+If the author field contains no comma, the whole name is treated as the last name.
+Different surnames can share the same pinyin (for example, `王` and `汪` both become `Wang`).
+JabRef then adds a letter to keep keys unique (`Wang2020`, `Wang2020a`), and existing keys are kept when you add or import entries.
+To make sure existing keys are never changed when regenerating keys, uncheck "Overwrite existing keys" in the citation key generator preferences.
 
 ### Formatters
 
