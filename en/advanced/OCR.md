@@ -1,6 +1,6 @@
 # OCR
 
-[OCR](https://en.wikipedia.org/wiki/Optical_character_recognition) (Optical Character Recognition) is defined as the electronic or mechanic conversion of images of typed, handwritten or printed text into machine-encoded text. Consequently, with this technology it is possible to add editable and searchable data to PDFs and other files in your Jabref library. OCR can be used via multiple tools and engines. Currently, JabRef supports [OCRmyPDF](https://ocrmypdf.readthedocs.io/en/latest/) (with a selectable OCR backend: Tesseract, EasyOCR, PaddleOCR, or AppleOCR) and [Docling](https://github.com/docling-project/docling).
+[OCR](https://en.wikipedia.org/wiki/Optical_character_recognition) (Optical Character Recognition) converts images of typed, handwritten, or printed text into machine-encoded text. With OCR, you can add editable and searchable text to PDFs and other files in your JabRef library. JabRef supports [OCRmyPDF](https://ocrmypdf.readthedocs.io/en/latest/) (with a selectable OCR backend: Tesseract, EasyOCR, PaddleOCR, or AppleOCR) and [Docling](https://github.com/docling-project/docling).
 
 ## How to install an OCR engine
 
@@ -49,7 +49,7 @@ The OCR engine selected in your preferences must be installed on your system to 
 * Available engines:
 
 1. **Tesseract**: the default engine. Runs via OCRmyPDF and is well suited for general-purpose OCR on scanned PDFs.
-2. **EasyOCR**, **PaddleOCR**, **AppleOCR**: alternative OCR backends, also run via OCRmyPDF through its respective plugin. Each plugin must be installed separately in addition to OCRmyPDF itself.
+2. **EasyOCR**, **PaddleOCR**, **AppleOCR**: alternative OCR backends, also run via OCRmyPDF through its respective plugin. Install each plugin separately, alongside OCRmyPDF itself.
 3. **Docling**: a separate engine with strong handling of complex layouts and documents containing tables or figures (slower than the OCRmyPDF-based engines).
 
 * Changing the selected engine automatically re-runs **auto-detection** for that engine's path (see below), so if the newly selected engine is installed in a standard location, its path field will populate automatically.

@@ -63,7 +63,7 @@ jabkit --help
 ```bash
 Usage: jabkit [-dhpv] [COMMAND]
   -d, --debug       Enable debug output
-  -h, --help        display this help message
+  -h, --help        Display this help message
   -p, --porcelain   Enable script-friendly output
   -v, --version     display version info
 ```
@@ -72,33 +72,26 @@ Usage: jabkit [-dhpv] [COMMAND]
 
 ```pre
 Commands:
-  generate-citation-keys  Generate citation keys for entries in a .bib file.
-  check-consistency       Check consistency of the library.
-  check-integrity         Check integrity of the database.
-  fetch                   Fetch entries from a provider.
-  search                  Search in a library.
-  convert                 Convert between bibliography formats.
-  generate-bib-from-aux   Generate small bib from aux file.
-  preferences             Manage JabKit preferences.
-  pdf                     Manage PDF metadata.
-  git                     Git integration for .bib files.
-  get-cited-works         Get the cited works (bibliography).
-  get-citing-works        Get the works citing the work at hand.
+  check                  Check the integrity and consistency of a library.
+  citationkeys           Manage citation keys.
+  convert                Convert between bibliography formats.
+  doi-to-bibtex          Converts a DOI to BibTeX
+  fetch                  Fetch entries from a provider.
+  generate-bib-from-aux  Generate small bib from aux file.
+  get-cited-works        Outputs a list of works cited ("bibliography")
+  get-citing-works       Outputs a list of works citing the work at hand
+  git                    Git integration for .bib files.
+  pdf                    Manage PDF metadata.
+  preferences            Manage JabKit preferences.
+  pseudonymize           Perform pseudonymization of the library
+  search                 Search in a library.
 ```
 
 Hint: Using `jabkit <COMMAND> --help` will show the supported options for each command.
 
 Any command that reads an input file also accepts a PostgreSQL connection URL of a JabRef shared library instead of a file path; JabKit exports the shared library read-only to a temporary `.bib` file before running the command.
 
-### Git merge driver for `.bib` files
-
-`jabkit git merge-driver` performs a semantic three-way merge of `.bib` files, so that concurrent changes to different entries (or different fields) merge automatically instead of producing textual Git conflicts. To use it for every `.bib` file in a repository:
-
-```bash
-git config --global merge.jabref.name "JabRef semantic .bib merge"
-git config --global merge.jabref.driver "jabkit git merge-driver --porcelain %O %A %B"
-echo "*.bib merge=jabref" >> .gitattributes
-```
+To let Git merge `.bib` files entry by entry, set up the [JabKit Git merge driver](collaborative-work/git-merge-driver.md).
 
 ## Updating JabKit
 
