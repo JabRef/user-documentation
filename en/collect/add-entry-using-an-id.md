@@ -100,6 +100,12 @@ ID search is carried out using the [ADS Bibcode](http://adsabs.github.io/help/ac
 
 ![Screenshot of new entry dialog](../.gitbook/assets/newentrychoosetype-idgeneratorhighlighted-ads.png)
 
+### Software Heritage
+
+[Software Heritage](https://www.softwareheritage.org) is a universal archive that collects, preserves, and shares the source code of publicly available software.
+
+ID search is carried out using a [SoftWare Heritage persistent IDentifier (SWHID)](https://www.softwareheritage.org/swhid/), e.g. `swh:1:dir:d198bc9d7a6bcf6db04f476d29314f157507d505`. JabRef accepts both a bare SWHID and a full `https://archive.softwareheritage.org/swh:1:...` URL.
+
 ### Title
 
 Based on the title of your publication, JabRef call Crossref, which return the corresponding DOI. Then JabRef fetches the reference based on this DOI.

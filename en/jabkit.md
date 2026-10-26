@@ -119,6 +119,8 @@ jabkit convert 'postgresql://user:secret@host:5432/library' --output refs.bib
 The shared library is read once and not written back to; changes made by JabKit stay in the output file.
 Quote the URL so that your shell does not interpret the special characters in it, and be aware that the password becomes part of your shell history.
 
+To let Git merge `.bib` files entry by entry, set up the [JabKit Git merge driver](collaborative-work/git-merge-driver.md).
+
 ## Updating JabKit
 
 Make use of `--fresh` to update JabKit
