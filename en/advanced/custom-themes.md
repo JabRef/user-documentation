@@ -2,15 +2,41 @@
 
 ## General
 
-Since `JabRef 5.2` it is possible to use custom themes. In `Preferences > Appearance > Visual theme` the themes in general can be changed. Themes are just [CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics) files defining the look of the UI.
+[CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics) files define the look of JabRef. In `Preferences > General > Appearance` you choose three things:
 
-* **Light Theme**: The default theme is the light theme ([`Base.css`](https://github.com/JabRef/jabref/blob/main/src/main/java/org/jabref/gui/Base.css)).
-* **Dark Theme**: There is an alternative dark theme ([`Dark.css`](https://github.com/JabRef/jabref/blob/main/src/main/java/org/jabref/gui/Dark.css)) which is based on `Base.css` and just overwrites the colors.
-* **Custom Theme**: In `Preferences > Appearance > Visual theme > Custom theme` there can be set a custom theme by simply selecting a custom CSS (based on `Base.css` or `Dark.css`), for instance:
+* **Color scheme**: _Follow system_, _Light_, or _Dark_.
+* **Theme**: the base look. JabRef brings its own _JabRef theme_ ([`jabref-theme.css`](https://github.com/JabRef/jabref/blob/main/jabgui/src/main/resources/org/jabref/gui/theme/jabref-theme.css)) and bundles the themes from [themes.jabref.org](https://themes.jabref.org/) that cover both color schemes: _Primer_ (based on [AtlantaFX](https://mkpaz.github.io/atlantafx/)), _Everforest_, _Nord_, _Papers_, _Chocolate Honey_, and _Dino Girl's themes_. Every theme comes with a light and a dark variant; Dino Girl's themes pair a dark and a light hue in one entry and show the name of the hue matching your color scheme. A preview image below the list shows the selected theme in the selected color scheme (both, when following the system).
+* **Custom theme**: a CSS file of your own. JabRef applies it _on top_ of the selected theme and color scheme, so it only needs to contain what you want to change.
 
-You can find a collection of user contributed themes at [https://themes.jabref.org](https://themes.jabref.org/).
+JabRef picks up changes to the custom CSS file while running, so you can edit the file and see the result immediately.
 
-{% file src="../.gitbook/assets/dark-custom.css" %}
+You can find the full collection of user contributed themes at [https://themes.jabref.org](https://themes.jabref.org/). Themes that cover only one color scheme are not bundled; load them as custom theme.
+
+## Writing a custom theme
+
+A theme defines all its colors as `-color-*` variables (for example `-color-accent`, `-color-bg-primary`, `-color-fg-default`, `-color-selection`). The full list is in [`jabref-theme.css`](https://github.com/JabRef/jabref/blob/main/jabgui/src/main/resources/org/jabref/gui/theme/jabref-theme.css); the rest of JabRef's styling only uses these variables, so overriding them is enough to re-color the whole UI.
+
+Override a variable for both color schemes:
+
+```css
+.root {
+    -color-accent: #8F0D11;
+}
+```
+
+Override it for one color scheme only. The media query follows the color scheme selected in JabRef (or the operating system, with _Follow system_):
+
+```css
+@media (prefers-color-scheme: dark) {
+    .root {
+        -color-accent: #ff79c6;
+    }
+}
+```
+
+{% hint style="info" %}
+Custom themes written for JabRef 5.x used `-jr-*` variables (such as `-jr-theme` or `-jr-accent`). These no longer exist and JabRef ignores them; replace them by the corresponding `-color-*` variables.
+{% endhint %}
 
 ## Selection of Useful CSS selectors
 
@@ -19,15 +45,3 @@ You can find a collection of user contributed themes at [https://themes.jabref.o
 | preview box                      | `#previewBody`     |
 | `{} biblatex source` tab         | `.code-area`       |
 | text in `{} biblatex source` tab | `.code-area .text` |
-
-## Examples
-
-**Light Theme** ![Light Theme](../.gitbook/assets/theme-light.png)
-
-**Dark Theme** ![Dark Theme](../.gitbook/assets/theme-dark.png)
-
-**Custom Theme** ![Custom Theme](../.gitbook/assets/theme-custom.png) (based on the Dark Theme)
-
-## Known bugs
-
-* [#8523](https://github.com/JabRef/jabref/issues/8523): On Windows 10, it is not possible to use fonts that were installed user-wide in the CSS, only system-wide fonts are working. A workaround to use fonts that are not installed system-wide is to include the font file via [`@font-face`](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face).

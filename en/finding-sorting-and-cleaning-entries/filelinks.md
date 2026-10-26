@@ -33,9 +33,11 @@ In some settings, the bib file is stored in **the same directory** as the PDF fi
 
 Relative file directories obviously only work in the library properties for a bib file, e.g. `a.bib` Library → Library properties → Library-specific file directory → `papers`. Assume to have two bib files: `a.bib` and `b.bib` located in different directories: `a.bib` located at `C:\a.bib` and `b.bib` located at `X:\b.bib`. When I click on the `+` icon in the Files and links section of file `a.bib`, the popup is opened in the directory `C:\papers` (assuming `C:\papers` exists).
 
+The preferences for the directories specific to a library file are found at [Library properties](../setup/databaseproperties.md#override-default-file-directories).
+
 ## Auto-linking files
 
-If you have a file within or below one of your file directories with an extension matching one of the defined external file types, and a name starting with (or matching) an entry's citation key, the file can be auto-linked. JabRef will detect the file and display a "link-add" icon in the entry editor, at the left of the filename. Click on the "link-add" icon to link this file to the entry.
+If you have a file within or below one of your file directories with an extension matching one of the defined external file types, and a name starting with (or matching) an entry's citation key, the file can be auto-linked. JabRef will detect the file and display it in the entry editor with a gray background and a "link-add" icon at the left of the filename. Click on the "link-add" icon to link this file to the entry.
 
 The rules for which file names can be auto-linked to a citation key can be set up in **File → Preferences → Linked files**, section _Autolink files_.
 

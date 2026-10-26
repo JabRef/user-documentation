@@ -24,10 +24,10 @@ A: On Windows, one finds the log files in `%APPDATA%\..\Local\org.jabref\jabref\
 
 ## Q: I have issues with the Chinese display language in Windows 10 Enterprise. What can I do?
 
-A: According to [source](https://discourse.jabref.org/t/chinese-character/4167), you may have to set the font manually by downloading the Base.css from Custom themes - JabRef. Then open the Base.css, and add the following text at the end of Base.css:
+A: According to [source](https://discourse.jabref.org/t/chinese-character/4167), you may have to set the font manually with a [custom theme](../advanced/custom-themes.md): create a CSS file with the following content and select it in `Preferences > General > Appearance > Custom theme`:
 
 ```css
 .text {
--fx-font-family: “Microsoft YaHei”;
+-fx-font-family: "Microsoft YaHei";
 }
 ```

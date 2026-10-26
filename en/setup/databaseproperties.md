@@ -51,6 +51,8 @@ JabRef stores the name of the current system alongside the **User-specific file 
 
 Relative directories can be specified. This means that the location of the files will be interpreted relative to the location of the bib file. Simply setting a directory to "." (without quotes) means that the files should reside in the same directory as the bib file.
 
+For more information, see [Directories for files](../finding-sorting-and-cleaning-entries/filelinks.md#directories-for-files).
+
 {% hint style="info" %}
 The legacy PDF/PS links (i.e. the pdf and ps fields, which were used in JabRef versions prior to 2.3), should in current versions be replaced by general file links. This can be done using **Quality → Cleanup entries...** and enabling _Upgrade external PDF/PS links to use the 'file' field_.​
 {% endhint %}
