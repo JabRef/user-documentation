@@ -29,6 +29,7 @@ jobs:
           gh label create "jabref-pr: ready" --repo "$REPO" --color 1f883d --description "Referenced JabRef PR is open" --force
           gh label create "jabref-pr: draft" --repo "$REPO" --color 59636e --description "Referenced JabRef PR is a draft" --force
           gh label create "jabref-pr: merged" --repo "$REPO" --color 8250df --description "Referenced JabRef PR is merged" --force
+          gh label create "jabref-pr: closed" --repo "$REPO" --color cf222e --description "Referenced JabRef PR is closed without merge" --force
 
           gh pr list --repo "$REPO" --state open --limit 500 --json number,body,labels \
             --jq '.[] | [.number, ((.body // "") | [scan("JabRef/jabref(?:#|/pull/)([0-9]+)")][0][0] // ""), ([.labels[].name | select(startswith("jabref-pr: "))] | join(","))] | @tsv' |
@@ -36,7 +37,7 @@ jobs:
             want=""
             if [ -n "$ref" ]; then
               # Fails for issue references; those get no label
-              state=$(gh pr view "$ref" --repo JabRef/jabref --json state,isDraft --jq 'if .state == "MERGED" then "merged" elif .state == "OPEN" then (if .isDraft then "draft" else "ready" end) else "" end' 2>/dev/null || true)
+              state=$(gh pr view "$ref" --repo JabRef/jabref --json state,isDraft --jq 'if .state == "MERGED" then "merged" elif .state == "OPEN" then (if .isDraft then "draft" else "ready" end) else "closed" end' 2>/dev/null || true)
               [ -n "$state" ] && want="jabref-pr: $state"
             fi
             [ "$want" = "$current" ] && continue
