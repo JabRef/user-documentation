@@ -89,7 +89,16 @@ Commands:
 
 Hint: Using `jabkit <COMMAND> --help` will show the supported options for each command.
 
-Any command that reads an input file also accepts a PostgreSQL connection URL of a JabRef shared library instead of a file path; JabKit exports the shared library read-only to a temporary `.bib` file before running the command.
+## Input sources
+
+Wherever a command takes an input file, you can also pass an `http(s)` or `ftp` URL, or the PostgreSQL connection URL of a [shared SQL library](collaborative-work/sqldatabase/README.md):
+
+```bash
+jabkit convert 'postgresql://user:secret@host:5432/library' --output refs.bib
+```
+
+The shared library is read once and not written back to; changes made by JabKit stay in the output file.
+Quote the URL so that your shell does not interpret the special characters in it, and be aware that the password becomes part of your shell history.
 
 To let Git merge `.bib` files entry by entry, set up the [JabKit Git merge driver](collaborative-work/git-merge-driver.md).
 

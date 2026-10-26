@@ -47,6 +47,6 @@ JabRef uses external AI providers to do the actual work. You can choose between 
 [preferences.md](preferences.md)
 {% endcontent-ref %}
 
-{% content-ref url="local-llm.md" %}
-[local-llm.md](local-llm.md)
+{% content-ref url="private-llm-server.md" %}
+[private-llm-server.md](private-llm-server.md)
 {% endcontent-ref %}
