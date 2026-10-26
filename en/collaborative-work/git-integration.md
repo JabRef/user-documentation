@@ -4,24 +4,24 @@ description: Version-control your library with Git directly from JabRef.
 
 # Git Integration
 
-JabRef can track your `.bib` library with [Git](https://git-scm.com/) directly from the application — no external Git client is required for the everyday commit/push/pull workflow. This is reached via **File → Git**, which offers:
+JabRef can track your `.bib` library with [Git](https://git-scm.com/) directly from the application — you need no external Git client for the everyday commit/push/pull workflow. Open **File → Git**, which offers:
 
 * **Commit**
 * **Pull**
 * **Push**
 * **Share this library to GitHub**
 
-**Commit** and **Share this library to GitHub** require the library to be saved as a local `.bib` file first. **Pull** and **Push** are only enabled once the library's Git repository has a remote configured (e.g. after sharing it to GitHub, or by using a repository you cloned yourself).
+**Commit** and **Share this library to GitHub** require you to save the library as a local `.bib` file first. JabRef enables **Pull** and **Push** only once the library's Git repository has a remote configured (e.g. after sharing it to GitHub, or by using a repository you cloned yourself).
 
 ## Committing changes
 
 Choosing **File → Git → Commit** opens the "Git commit" dialog:
 
-* Enter a commit message in the text field (it is focused automatically when the dialog opens). If you leave it empty, JabRef uses the default message "Update references".
+* Enter a commit message in the text field (it receives focus automatically when the dialog opens). If you leave it empty, JabRef uses the default message "Update references".
 * Click **Show diff** to open a "Diff view" dialog listing the changed entries, so you can review what changed before committing.
 * Click **Commit** to commit only, or **Commit and push** to commit and immediately push to the configured remote in one step.
 
-If your library has unsaved changes when you commit, JabRef saves it first automatically (when [autosave](../advanced/autosave.md) is enabled), or otherwise asks you to save it before the commit can proceed.
+If your library has unsaved changes when you commit, JabRef saves it first automatically (when you have enabled [autosave](../advanced/autosave.md)), or otherwise asks you to save it before the commit can proceed.
 
 ### Initializing a repository
 
@@ -57,7 +57,7 @@ SSH-based remotes work without any separate configuration inside JabRef: JabRef 
 * **Check GitHub access** — verifies the token has push access to the repository.
 * **Remember Git settings** — reuses the entered credentials for later commits/pushes.
 
-This dialog can also be reopened for a library that is already shared and has an existing Git remote, for example to re-check your token's access or to pull remote changes.
+You can also reopen this dialog for a library that is already shared and has an existing Git remote, for example to re-check your token's access or to pull remote changes.
 
 {% hint style="info" %}
 For a lighter-weight alternative that does not require Git, see [sharing a Bib(la)TeX library](sharedbibfile.md) over a network drive.

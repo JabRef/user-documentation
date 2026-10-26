@@ -39,7 +39,7 @@ A `.tmp` will be written --> `.bib` copies to `.sav` --> `.tmp` copies to `.bib`
 
 By using the [gitignore.io](https://www.gitignore.io) service, you can generate an appropriate `.gitignore` file by opening [https://www.gitignore.io/api/jabref](https://www.gitignore.io/api/jabref). A `gitignore` file specifies intentionally untracked files that Git should ignore. Files already tracked by Git are not affected; See [https://git-scm.com/docs/gitignore](https://git-scm.com/docs/gitignore) for further details.&#x20;
 
-Note that automatic backups are stored in JabRef's user data directory by default (see below), so they normally do not end up inside your Git-tracked library folder at all; only the `.sav` file, written next to your library while saving, typically needs to be ignored there.
+Note that JabRef stores automatic backups in its user data directory by default (see below), so they normally do not end up inside your Git-tracked library folder at all; there, you typically only need to ignore the `.sav` file, which JabRef writes next to your library while saving.
 
 ## Automatic backup of current library edits
 
