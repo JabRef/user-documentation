@@ -37,6 +37,9 @@ jobs:
         run: npm run textlint
   vale-lint:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v4
@@ -46,4 +49,5 @@ jobs:
         uses: vale-cli/vale-action@v2
         continue-on-error: true
         with:
+          reporter: github-pr-review
           fail_on_error: false
