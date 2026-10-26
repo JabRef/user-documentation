@@ -89,6 +89,10 @@ Commands:
 
 Hint: Using `jabkit <COMMAND> --help` will show the supported options for each command.
 
+## Updating PDF Metadata
+
+`jabkit pdf update` writes XMP metadata and/or an embedded BibTeX attachment to linked PDFs (`--format=xmp,bibtex-attachment`).
+
 ## Extracting References from a PDF
 
 `jabkit pdf extract-references` parses the "References" section at the end of one or more PDFs and outputs the found entries as BibTeX — the same extraction the JabRef GUI offers via the "Extract references" right-click action on a linked PDF.

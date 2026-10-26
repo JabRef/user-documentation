@@ -39,6 +39,8 @@ A `.tmp` will be written --> `.bib` copies to `.sav` --> `.tmp` copies to `.bib`
 
 By using the [gitignore.io](https://www.gitignore.io) service, you can generate an appropriate `.gitignore` file by opening [https://www.gitignore.io/api/jabref](https://www.gitignore.io/api/jabref). A `gitignore` file specifies intentionally untracked files that Git should ignore. Files already tracked by Git are not affected; See [https://git-scm.com/docs/gitignore](https://git-scm.com/docs/gitignore) for further details.&#x20;
 
+Note that JabRef stores automatic backups in its user data directory by default (see below), so they normally do not end up inside your Git-tracked library folder at all; there, you typically only need to ignore the `.sav` file, which JabRef writes next to your library while saving.
+
 ## Automatic backup of current library edits
 
 This functionality runs in the background while you are working on a _bibliographic database_. It makes a _backup copy_ (a `.bib` file in the user data dir) and keeps that up-to-date on every user interaction. For instance, when you change a field the new value would get saved into the backup copy. Assuming that _JabRef_ crashes while you are working on a _BibTeX database_. When you try again to open the file _JabRef_ crashed with you will get the following dialog:
@@ -51,7 +53,7 @@ This functionality runs in the background while you are working on a _bibliograp
 
 Now you have the possibility to restore and review your changes which would normally get lost.
 
-For shared remote libraries and more advanced history, we recommend to use [git as version control system](https://git-scm.com/book).
+For shared remote libraries and more advanced history, we recommend to use [git as version control system](https://git-scm.com/book) — JabRef has [built-in Git integration](../collaborative-work/git-integration.md) for this.
 
 #### Where can I find the backup files?
 
