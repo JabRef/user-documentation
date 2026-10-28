@@ -114,3 +114,5 @@ In the entry editor, you can now select the tab "File annotations" and you will 
 If you have multiple PDFs linked to the entry, you can select the document as well in the File Annotation tab.
 
 ![](../../.gitbook/assets/grafik.png)
+
+To jump to an annotation in the PDF itself, select it in the list and press the button next to the copy button, or simply double click it. The PDF opens at the page of that annotation, either in your PDF reader or in JabRef's own document viewer.
