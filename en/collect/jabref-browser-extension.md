@@ -10,7 +10,7 @@ JabRef offers an official browser extension. When you find an interesting articl
 
 ## Installation and Configuration
 
-Download the extension for the browser you are using. Here are the links to the extensions download location of currently supported browsers:
+Download the extension for the browser you are using:
 
 > [Firefox](https://addons.mozilla.org/en-US/firefox/addon/jabref/?src=external-github) - [Chrome](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh) - [Edge](https://microsoftedge.microsoft.com/addons/detail/pgkajmkfgbehiomipedjhoddkejohfna) - [Vivaldi](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh)
 
