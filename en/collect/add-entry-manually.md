@@ -2,6 +2,8 @@
 
 To add a new entry, select **Library → Add entry using...**, press `CTRL + N​` or click on the dedicated icon of the toolbar.
 
+A double click on the empty space below the last entry of the entry table also adds an entry, using the entry type you created last.
+
 The "Choose entry type" dialog window is displayed. By default, 5 common types of entries are displayed:
 
 ![Window for selecting default entry types. Note: the actual content of the "others" menu depends on the database mode (BibTeX or biblatex).](../.gitbook/assets/jabref-5.3-selectentrytype.png)
@@ -11,6 +13,8 @@ For other types of entries, click on `Others.` That expands the window and displ
 ![Window with all available entry types. Note: the actual content of the "others" menu depends on the database mode (BibTeX or biblatex).](../.gitbook/assets/jabref-5.3-selectentrytype-expanded.png)
 
 Finally, the [entry editor](../advanced/entryeditor/) opens and let you fill in the various fields.
+
+JabRef focuses the citation key field, so you can type the key right away.
 
 {% hint style="info" %}
 You can directly create a new entry of a specific entry type by using a keyboard shortcut. We strongly recommend learning the shortcuts for the entry types you use most often, e.g. `Ctrl + Shift + A` for adding an article entry.​ See **File → Preferences → Keyboard Shortcuts**.
