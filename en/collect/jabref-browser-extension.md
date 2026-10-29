@@ -1,54 +1,28 @@
 ---
 description: >-
-  The official browser extension automatically identifies and extracts
+  The official JabRef browser extension automatically identifies and extracts
   bibliographic information on websites and sends them to JabRef with one click.
 ---
 
 # Browser Extension
 
-> [Firefox](https://addons.mozilla.org/en-US/firefox/addon/jabref/?src=external-github) - [Chrome](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh) - [Edge](https://microsoftedge.microsoft.com/addons/detail/pgkajmkfgbehiomipedjhoddkejohfna) - [Vivaldi](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh)
-
-{% hint style="warning" %} The browser extension is currently non-functional on Chrome, as of [issue 616](https://github.com/JabRef/JabRef-Browser-Extension/issues/616). {% endhint %}
-
-JabRef offers an official browser extension. It automatically identifies and extracts bibliographic information on websites and sends them to JabRef with one click.
-
-When you find an interesting article through Google Scholar, the arXiv or journal websites, this browser extension allows you to add those references to JabRef. Even links to accompanying PDFs are sent to JabRef, where those documents can easily be downloaded, renamed, and placed in the correct folder. [A wide range of publisher sites, library catalogs, and databases are supported](https://www.zotero.org/support/translators).
+JabRef offers an official browser extension. When you find an interesting article through Google Scholar, the arXiv or journal websites, this browser extension allows you to add those references to JabRef. Even links to accompanying PDFs are sent to JabRef, where those documents can easily be downloaded, renamed, and placed in the correct folder. [A wide range of publisher sites, library catalogs, and databases are supported](https://www.zotero.org/support/translators).
 
 ## Installation and Configuration
 
-Normally, you simply install the extension from the browser store and are ready to go.
+Download the extension for the browser you are using:
 
 > [Firefox](https://addons.mozilla.org/en-US/firefox/addon/jabref/?src=external-github) - [Chrome](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh) - [Edge](https://microsoftedge.microsoft.com/addons/detail/pgkajmkfgbehiomipedjhoddkejohfna) - [Vivaldi](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh)
 
 While Chrome extensions can work in Edge \(and will install\), JabRef is configured to work with the Edge extension in the Edge Browser, and the Chrome extension in the Chrome Browser. It will not work if they are mixed.
 
-## Usage
-
-After the installation, you should be able to import bibliographic references into JabRef directly from your browser. Just visit a publisher site or some other website containing bibliographic information \(for example, [the arXiv](https://arxiv.org/list/gr-qc/pastweek?skip=0&show=25)\) and click the JabRef symbol in the Firefox search bar \(or press Alt+Shift+J\). Once the JabRef browser extension has extracted the references and downloaded the associated PDF's, the import window of JabRef opens.
-
-You might want to configure JabRef so that new entries are always imported in an already opened instance of JabRef. For this, activate "Listen to remote operation on port" under the "Network" tab of the JabRef Preferences.
-
-## Troubleshooting
-
-### In case you have Adblock Plus extension and JabRef extension doesn't work
-
-1\) Go to [zotero.org](https://zotero.org). 2\) Deactivate AdBlock plus extension for the whole domain \(zotero.org\) by clicking on the Adblock plus extension button and sliding the corresponding slider to allow adds on the whole domain. 3\) Close and reopen the browser in order to reload all the extension and their settings. 4\) Verify the functioning of the JabRef extension by visiting a page you know is working to extract its bibliographic data \(for example, [the arXiv](https://arxiv.org/list/gr-qc/pastweek?skip=0&show=5)\) by pressing the extension button or <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>J</kbd>.
-
-In case you encounter problems in this procedure refer to issue \#241 on GitHub for further help.
-
-### In case script jabrefHost.py doesn't work
-
-Error message `bad interpreter: /usr/bin/python3: no such file or directory` means that python3 is not installed at the expected location. Run `which python3` to see if python3 is installed elsewhere. Then copy that path at the first line of jabrefHost.py maintaining `#!` prefix.
-
-### In case PowerShell script JabRefHost.ps1 cannot be executed due to ExecutionPolicy
-
-Check your ExecutionPolicy by using `Get-ExecutionPolicy -List` in PowerShell. If you get something else than `Undefined` for your `MachinePolicy`, changes are high that this policy is set by Microsoft Group Policy. In this case the option `-ExecutionPolicy Bypass` in JabRefHost.bat won't work. If your `MachinePolicy` says `AllSigned` you can self-sign your JabRefHost.ps1 script, by following tutorials like [windows-10-signing-a-powershell-script-with-a-self-signed-certificate](https://community.spiceworks.com/how_to/153255-windows-10-signing-a-powershell-script-with-a-self-signed-certificate).
-
 ## Manual Installation
 
 Most JabRef installations include the necessary files, so test the extension before proceeding with the following instructions. However, sometimes, a manual installation is necessary \(e.g. if you use the portable version of JabRef\). In this case, please take the following steps:
 
-### Windows
+<details>
+
+<summary>Windows</summary>
 
 1. Make sure you have at least [JabRef 5.0](https://www.jabref.org/#download) installed.
 2. Install the JabRef browser extension: [Firefox](https://addons.mozilla.org/en-US/firefox/addon/jabref/?src=external-github), [Chrome](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh), [Edge](https://microsoftedge.microsoft.com/addons/detail/pgkajmkfgbehiomipedjhoddkejohfna), [Vivaldi](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh)
@@ -80,7 +54,11 @@ Most JabRef installations include the necessary files, so test the extension bef
 
    You may need to change the root `HKEY_LOCAL_MACHINE` to `HKEY_CURRENT_USER` if you don't have admin rights.
 
-### Linux
+</details>
+
+<details>
+
+<summary>Linux</summary>
 
 #### Deb, RPM or Portable
 
@@ -139,7 +117,11 @@ With Firefox installed as a flatpak:
    * via terminal command: `flatpak override --user --talk-name=org.freedesktop.Flatpak org.mozilla.firefox`
    * via Flatseal app: add `org.freedesktop.Flatpak` to the `Session Bus Talk` section for `org.mozilla.firefox`
 
-### macOS
+</details>
+
+<details>
+
+<summary>macOS</summary>
 
 1. Download and install the DMG package of [JabRef](https://www.jabref.org/#download) (>= 5.0).
 2. Install the JabRef browser extension: [Firefox](https://addons.mozilla.org/en-US/firefox/addon/jabref/?src=external-github), [Chrome](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh), [Edge](https://microsoftedge.microsoft.com/addons/detail/pgkajmkfgbehiomipedjhoddkejohfna), [Vivaldi](https://chrome.google.com/webstore/detail/jabref-browser-extension/bifehkofibaamoeaopjglfkddgkijdlh)
@@ -197,3 +179,27 @@ Quit Chrome completely and reopen it afterwards. This assumes JabRef is installe
 #### Local JabRef installs
 
 org.jabref.jabref.json directs the browser extension to a python script in the JabRef app, which is set to the most common install path by default (`/Applications/JabRef.app/Contents/Resources/jabrefHost.py`). If you have installed JabRef somewhere else, most likely to your local applications folder (`~/Applications/JabRef`), then you will need to update this path to the correct location. For example, in local installs this would be `/Users/USER/Applications/JabRef.app/Contents/Resources/jabrefHost.py`, where `USER` is your username.
+
+</details>
+
+## Usage
+
+After the installation, you should be able to import bibliographic references into JabRef directly from your browser. Just visit a publisher site or some other website containing bibliographic information \(for example, [arXiv](https://arxiv.org/list/gr-qc/pastweek?skip=0&show=25)\) and click the JabRef symbol in the Firefox search bar \(or press Alt+Shift+J\). Once the JabRef browser extension has extracted the references and downloaded the associated PDF's, the import window of JabRef opens.
+
+You might want to configure JabRef so that new entries are always imported in an already opened instance of JabRef. For this, activate "Listen to remote operation on port" under the "Network" tab of the JabRef Preferences.
+
+## Troubleshooting
+
+### In case you have Adblock Plus extension and JabRef extension doesn't work
+
+1\) Go to [zotero.org](https://zotero.org). 2\) Deactivate AdBlock plus extension for the whole domain \(zotero.org\) by clicking on the Adblock plus extension button and sliding the corresponding slider to allow adds on the whole domain. 3\) Close and reopen the browser in order to reload all the extension and their settings. 4\) Verify the functioning of the JabRef extension by visiting a page you know is working to extract its bibliographic data \(for example, [the arXiv](https://arxiv.org/list/gr-qc/pastweek?skip=0&show=5)\) by pressing the extension button or <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>J</kbd>.
+
+In case you encounter problems in this procedure refer to issue \#241 on GitHub for further help.
+
+### In case script jabrefHost.py doesn't work
+
+Error message `bad interpreter: /usr/bin/python3: no such file or directory` means that python3 is not installed at the expected location. Run `which python3` to see if python3 is installed elsewhere. Then copy that path at the first line of jabrefHost.py maintaining `#!` prefix.
+
+### In case PowerShell script JabRefHost.ps1 cannot be executed due to ExecutionPolicy
+
+Check your ExecutionPolicy by using `Get-ExecutionPolicy -List` in PowerShell. If you get something else than `Undefined` for your `MachinePolicy`, chances are high that this policy is set by Microsoft Group Policy. In this case the option `-ExecutionPolicy Bypass` in JabRefHost.bat won't work. If your `MachinePolicy` says `AllSigned` you can self-sign your JabRefHost.ps1 script, by following tutorials like [windows-10-signing-a-powershell-script-with-a-self-signed-certificate](https://community.spiceworks.com/how_to/153255-windows-10-signing-a-powershell-script-with-a-self-signed-certificate).
