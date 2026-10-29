@@ -110,6 +110,7 @@ To help in managing your bibliography, and extend the features of BibTeX, JabRef
 * [External files](externalfiles.md)
 * [Entry editor tabs](../setup/generalfields.md)
 * [Owner](entryeditor/owner.md)
+* [Page offset](../collect/multi-paper-pdfs.md#the-pageoffset-field)
 * [Quality and grading](../finding-sorting-and-cleaning-entries/specialfields.md)
 * [Time stamp](entryeditor/timestamp.md)
 
