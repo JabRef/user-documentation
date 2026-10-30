@@ -10,7 +10,7 @@ The "file" field is shown in the **Files and links** section of the [Entry edito
 
 ![](../.gitbook/assets/jabref-entryeditor-files.png)
 
-When you add a PDF to an entry that has `pages` and the PDF contains more than these pages, JabRef also links a copy containing only these pages. When you add a PDF that contains several papers to a proceedings, collection, or book entry, JabRef creates one entry per paper. See [Multi-paper PDFs](../collect/multi-paper-pdfs.md#splitting-a-pdf-attached-to-an-existing-entry).
+When you add a PDF to an entry that has `pages` and the PDF contains more than these pages, JabRef offers to link a copy containing only these pages. When you add a PDF that contains several papers to a proceedings, collection, or book entry, JabRef offers to create one entry per paper. You can also split an attached PDF later by right-clicking it and choosing **Split PDF**. See [Multi-paper PDFs](../collect/multi-paper-pdfs.md#splitting-a-pdf-attached-to-an-existing-entry).
 
 ## Directories for files
 
@@ -87,7 +87,7 @@ You can open an external file or web page in different ways. In the entry table,
 
 To access any of an entry's links, click on the icon with the right mouse button (or `Ctrl + Click` on Mac OS X) to bring up a menu showing all links.
 
-To read a PDF inside JabRef, select the entry and choose **View → Open document viewer**. The viewer opens the PDF at the first page given in `pages`. If the entry has no PDF but cross-references an entry that has one, JabRef offers to open that PDF at the entry's first page. See [Multi-paper PDFs](../collect/multi-paper-pdfs.md#opening-a-paper-at-its-first-page).
+To read a PDF inside JabRef, select the entry and choose **View → Open document viewer**. The viewer opens the PDF at the first page given in `pages`, or at page 1 if the PDF holds only the entry's pages. If the entry has no PDF but cross-references an entry that has one, JabRef offers to open that PDF at the entry's first page. See [Multi-paper PDFs](../collect/multi-paper-pdfs.md#opening-a-paper-at-its-first-page).
 
 ## Setting up external file types
 

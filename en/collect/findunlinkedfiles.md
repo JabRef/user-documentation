@@ -12,7 +12,7 @@ The simplest way to create a new entry based on a single PDF file is to drag & d
 
 If you drop a PDF onto an entry in the main table or the entry preview in the entry editor, the PDF is simply attached to the entry. To add a new entry based on the PDF meta data, drop it **between** two entries in the main table or onto the empty area in the maintable (available for small libraries). The meta data of the PDF is then parsed and a new entry is added to the library. The PDF file is moved and renamed to the library as default. If you want to copy or just link it, hold the respective modifier keys. On Windows, Ctrl is for copying and Alt is for linking.
 
-If the PDF contains several papers, such as conference proceedings, JabRef creates an entry for the whole PDF and one entry per paper. See [Multi-paper PDFs](multi-paper-pdfs.md).
+If the PDF contains several papers, such as conference proceedings, JabRef asks whether to create an entry for the whole PDF and one entry per paper. See [Multi-paper PDFs](multi-paper-pdfs.md).
 
 ### Better filenames
 
@@ -30,7 +30,7 @@ In case you have numerous PDF files and want to convert them into new entries, J
 
 This feature is available through **Lookup -> Search for unlinked local files**.
 
-A selected PDF that contains several papers, such as conference proceedings, is imported as an entry for the whole PDF and one entry per paper. See [Multi-paper PDFs](multi-paper-pdfs.md).
+For a selected PDF that contains several papers, such as conference proceedings, JabRef asks whether to import it as an entry for the whole PDF and one entry per paper, or as one entry. See [Multi-paper PDFs](multi-paper-pdfs.md).
 
 ### Preparation: Adjust the JabRef key generation pattern to fit your needs
 
