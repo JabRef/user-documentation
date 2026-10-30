@@ -16,6 +16,8 @@ JabRef provides you with many ways to add a new entry.
 
 {% page-ref page="findunlinkedfiles.md" %}
 
+{% page-ref page="multi-paper-pdfs.md" %}
+
 {% page-ref page="jabref-browser-extension.md" %}
 
 {% page-ref page="import/" %}
