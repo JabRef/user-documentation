@@ -24,6 +24,8 @@ In this window, you can see the following elements:
 * Chat history with your messages
 * Prompt for sending messages
 * A button for clearing the chat history (just in case)
+* A find bar (<kbd>Ctrl</kbd> + <kbd>F</kbd>) to search within the chat history
+* A right-click context menu on a message to copy it, delete it, or retry (regenerate the AI's answer, or re-send a question you asked)
 
 ## How does the AI functionality work?
 

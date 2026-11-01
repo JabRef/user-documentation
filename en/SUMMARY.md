@@ -43,6 +43,7 @@
   * [Merging a Bib(la)TeX Library with Git](collaborative-work/git-merge-driver.md)
   * [Shared SQL Database](collaborative-work/sqldatabase/README.md)
     * [Migration of pre-3.6 SQL databases into a shared SQL database](collaborative-work/sqldatabase/sqldatabasemigration.md)
+  * [Push to CiteDrive](collaborative-work/citedrive.md)
   * [Export](collaborative-work/export/README.md)
     * [Custom export filters](collaborative-work/export/customexports.md)
   * [Send as email](collaborative-work/send-as-email.md)
