@@ -1,6 +1,6 @@
 # Share
 
-JabRef allows sharing both [Bib(La)TeX library](sharedbibfile.md) and [SQL database](sqldatabase/). It also has [built-in Git integration](git-integration.md) for versioning your library. You can also [export your library to a variety of formats](export/).
+JabRef allows sharing both [Bib(La)TeX library](sharedbibfile.md) and [SQL database](sqldatabase/). It also has [built-in Git integration](git-integration.md) for versioning your library, and can [push your library to CiteDrive](citedrive.md). You can also [export your library to a variety of formats](export/).
 
 Jabref also supports sharing libraries with [Git and GitHub](gitintegration.md).
 
@@ -10,6 +10,10 @@ Jabref also supports sharing libraries with [Git and GitHub](gitintegration.md).
 
 {% content-ref url="git-integration.md" %}
 [git-integration.md](git-integration.md)
+{% endcontent-ref %}
+
+{% content-ref url="citedrive.md" %}
+[citedrive.md](citedrive.md)
 {% endcontent-ref %}
 
 {% content-ref url="export/" %}
