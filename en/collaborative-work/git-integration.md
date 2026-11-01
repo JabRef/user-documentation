@@ -17,7 +17,7 @@ JabRef can track your `.bib` library with [Git](https://git-scm.com/) directly f
 
 Choosing **File → Git → Commit** opens the "Git commit" dialog:
 
-* The commit message field is pre-filled with a message summarizing the change (e.g. "Add 2 entries, modify 1 entry" or "Modify author of Smith2024"), which you can edit or replace. If no message is generated or you clear the field, JabRef uses the default message "Update references".
+* JabRef pre-fills the commit message field with a message summarizing the change (e.g. "Add 2 entries, modify 1 entry" or "Modify author of Smith2024"), which you can edit or replace. If JabRef cannot generate a message, or you clear the field, it uses the default message "Update references".
 * Click **Show diff** to open a "Diff view" dialog listing the changed entries, so you can review what changed before committing.
 * Click **Commit** to commit only, or **Commit and push** to commit and immediately push to the configured remote in one step.
 

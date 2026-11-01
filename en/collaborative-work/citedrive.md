@@ -16,7 +16,7 @@ CiteDrive is opt-in. Enable it under **File → Preferences → External storage
 
 ## Logging in
 
-Choose **File → CiteDrive → Log in to CiteDrive**. JabRef opens the CiteDrive login page in your browser. Logging in needs JabRef's HTTP server (**File → Preferences → General**, **Enable HTTP Server**) to receive the result from the browser; if it is disabled, JabRef asks whether to enable it.
+Choose **File → CiteDrive → Log in to CiteDrive**. JabRef opens the CiteDrive login page in your browser. Logging in needs JabRef's HTTP server (**File → Preferences → General**, **Enable HTTP Server**) to receive the result from the browser; if you haven't enabled it, JabRef offers to turn it on.
 
 ## Pushing a library
 
