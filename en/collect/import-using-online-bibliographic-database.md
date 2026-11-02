@@ -66,15 +66,15 @@ The [ACM Portal](https://dl.acm.org) includes two catalogs ([Wikipedia](https://
 
 The [Bibliotheksverbund Bayern (BVB)](https://www.bib-bvb.de) provides bibliographic information from all public libraries in Bavaria, Germany. The format used is [MarcXML](https://www.loc.gov/marc/bibliographic/), [which has been modified](https://www.bib-bvb.de/documents/10792/9f51a033-5ca1-42e2-b2d3-a75e7f1512d4), which in turn is [based on other modifications](https://www.dnb.de/marc21).
 
-### Biodiversity Heritage Library
-
-[Biodiversity Heritage Library](https://www.biodiversitylibrary.org/) makes biodiversity literature openly available to the world as part of a global biodiversity community. It is the world’s largest open access digital library for biodiversity literature and archives ([Wikipedia](https://en.wikipedia.org/wiki/Biodiversity\_Heritage\_Library)).
-
 ### BibSonomy
 
 [BibSonomy](https://www.bibsonomy.org) is a free social bookmarking and publication-sharing system, where users collect and share bibliographic entries ([Wikipedia](https://en.wikipedia.org/wiki/BibSonomy)).
 
-To search BibSonomy, you need a BibSonomy account and an API key. Log in to BibSonomy, open **Settings**, and copy your API key from the **API** tab. Then, in JabRef, enter your BibSonomy username and API key in TODO.
+To search BibSonomy, you need a BibSonomy account and an API key. Log in to BibSonomy, open **Settings**, and copy your API key from the **API** tab. Then, in JabRef, go to **File → Preferences → Web search**, click the key icon next to BibSonomy, and enter your username and API key as `username:apikey`. JabRef can search BibSonomy and import results; it does not upload or sync entries.
+
+### Biodiversity Heritage Library
+
+[Biodiversity Heritage Library](https://www.biodiversitylibrary.org/) makes biodiversity literature openly available to the world as part of a global biodiversity community. It is the world’s largest open access digital library for biodiversity literature and archives ([Wikipedia](https://en.wikipedia.org/wiki/Biodiversity\_Heritage\_Library)).
 
 ### CiteSeerX
 
