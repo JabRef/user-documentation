@@ -25,6 +25,8 @@ If you use `crossref`, JabRef will move these entries first in the bibliography 
 
 Please note that biblatex treats `crossref` differently than BibTeX.
 
+If an entry has no PDF of its own, **View → Open document viewer** offers to open the PDF of the entry it cross-references, at the entry's first page. See [Multi-paper PDFs](../../collect/multi-paper-pdfs.md#opening-a-paper-at-its-first-page).
+
 ## Unsupported fields
 
 * `citedBy` - this is the opposite of `cites`. Use `cites` instead.
