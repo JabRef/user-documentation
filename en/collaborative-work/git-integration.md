@@ -4,6 +4,10 @@ description: Version-control your library with Git directly from JabRef.
 
 # Git Integration
 
+{% hint style="info" %}
+These Git features are currently only available in the [v6.0 beta](https://github.com/JabRef/jabref/releases/tag/v6.0-beta.1) and not in the current standard download at the [JabRef home page](https://www.jabref.org). To access them, download the v6.0 beta version of JabRef or build it from source.
+{% endhint %}
+
 JabRef can track your `.bib` library with [Git](https://git-scm.com/) directly from the application — you need no external Git client for the everyday commit/push/pull workflow. Open **File → Git**, which offers:
 
 * **Commit**
@@ -67,6 +71,10 @@ Before sharing, [create a repository on GitHub](https://docs.github.com/en/repos
 * **Remember Git settings** — reuses the entered credentials for later commits/pushes.
 
 JabRef then initializes a local Git repository (if needed), adds the GitHub repository as a remote, and pushes your library to it.
+
+{% hint style="warning" %}
+Sharing commits and pushes all files in the library's folder, not only the library file. Before sharing, check that the folder contains no unrelated or private files, or exclude them with a `.gitignore` file.
+{% endhint %}
 
 You can also reopen this dialog for a library that is already shared and has an existing Git remote, for example to re-check your token's access or to pull remote changes.
 
