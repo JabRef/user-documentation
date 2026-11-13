@@ -14,6 +14,8 @@ Settings that are rarely needed (SSL and a custom JDBC URL for the *expert mode*
 
 If the database was already used by an older version of JabRef, its content is migrated to the new table structure automatically when the first client connects. The old tables are kept untouched, so older JabRef versions can still be used with them.
 
+Every database you connect to is remembered. The **Saved connections** list at the top of the dialog lets you pick a previous connection to fill in the fields again, and **Remove** deletes the selected one together with its stored password. Connecting to a database that is already in the list updates its entry, so the list holds each database once; connecting with changed server, database or user details adds a new entry.
+
 ### SSL configuration
 
 Tick **Use SSL** in the **Advanced** section to require an encrypted connection. Like `psql`, this does not verify the server's certificate, so managed PostgreSQL providers with their own certificate authorities work out of the box; a pasted URL with `sslmode=require` ticks the box for you. If you want the server certificate verified, use the expert mode with a JDBC URL such as `jdbc:postgresql://host:5432/database?sslmode=verify-full&sslrootcert=/path/to/ca.pem`; a pasted URL with `sslmode=verify-full` sets this up automatically.
