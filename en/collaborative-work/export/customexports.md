@@ -112,7 +112,17 @@ JabRef provides the following set of formatters:
 * `GetOpenOfficeType` : returns the number used by the OpenOffice.org bibliography system (versions 1.x and 2.x) to denote the type of this entry.
 * `HTMLChars` : replaces TeX-specific special characters (e.g. `{\"{a}}` or `{\sigma})` with their HTML representations, and translates LaTeX commands `\emph`, `\textit`, `\textbf`, `\texttt`, `\underline`, `\textsuperscript`, `\textsubscript`, `\sout` into HTML equivalents.
 * `HTMLParagraphs` : interprets two consecutive newlines (e.g. \n \n) as the beginning of a new paragraph and creates paragraph-html-tags accordingly.
-* `IfPlural` : outputs its first argument if the input field looks like an author list with two or more names, or its second argument otherwise. E.g. `\format[IfPlural(Eds.,Ed.)]{\editor}` will output "Eds." if there is more than one editor, and "Ed." if there is only one.
+* `IfPlural` : outputs its first argument if the input field contains two or more individuals or organizations, or its second argument if it contains only one. An organization name enclosed in braces counts as one name, even if it contains `and`. Use ` and ` outside the braces to separate editors.
+
+    For example, `\format[IfPlural(Eds.,Ed.)]{\editor}` produces the following output:
+
+    | Editor field | Output |
+    | --- | --- |
+    | `Jane Doe` | `Ed.` |
+    | `Jane Doe and John Smith` | `Eds.` |
+    | `{Research and Development Institute}` | `Ed.` |
+    | `{Research and Development Institute} and Jane Doe` | `Eds.` |
+
 * `JournalAbbreviator` : The given input text is abbreviated according to the journal abbreviation lists. If no abbreviation for input is found (e.g. not in list or already abbreviated), the input will be returned unmodified. For instance, when using `\format[JournalAbbreviator]{\journal}`, "Physical Review Letters" gets "Phys. Rev. Lett."
 * `LastPage` : returns the last page from the "pages" field, if set. For instance, if the pages field is set to "345-360" or "345--360", this formatter will return "360".
 * `NoSpaceBetweenAbbreviations` : LayoutFormatter that removes the space between abbreviated First names. Example: J. R. R. Tolkien becomes J.R.R. Tolkien.
