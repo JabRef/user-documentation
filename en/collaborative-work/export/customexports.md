@@ -10,9 +10,24 @@ Existing public files are collected at [https://layouts.jabref.org](https://layo
 
 The only requirement for a valid export filter is the existence of a file with the extension **.layout**. To add a new custom export filter, open the dialog box **File → Preferences**, go to the section **Custom export formats**, and click on **Add**. A new dialog box will appear, allowing you to specify a name for the export filter (which will appear as one of the choices in the File type dropdown menu of the file dialog when you use the **File → Export** menu choice in the JabRef window), the path to the **.layout** file, and the preferred file extension for the export filter (which will be the suggested extension in the file dialog when you use the export filter). Note that if you intend to use the custom export filter also for "Copy...->Export to Clipboard" in the maintable, the extension must be one of the following: `txt`, `rtf`, `rdf`, `xml`, `html`, `htm`, `csv`, or `ris`.
 
+## Modifying an existing export filter
+
+You can also start from one of the standard export filters and change it. For example, to add a new column to the CSV export (OpenOffice/LibreOffice CSV):
+
+1. Download the files `openoffice-csv.layout` and `openoffice-csv.begin.layout` from the [JabRef repository](https://github.com/JabRef/jabref/tree/main/jablib/src/main/resources/resource/layout/openoffice) and put them in a new folder on your computer, for example `mycustomcsvexporter`. The location does not matter.
+2. Open `openoffice-csv.begin.layout` in a text editor. This file contains the first line of the CSV file with the column names. Add the name of your new column at the end of the line, for example `,Asset`.
+3. Open `openoffice-csv.layout`. This file describes one line of the CSV file for each entry. Add the field command for your field at the end of the line, for example `,"\asset"`.
+4. In JabRef, open **File → Preferences → Custom export formats** and click on **Add**.
+5. Enter a name, for example `MyCustomCSVExporter`, select `openoffice-csv.layout` as the main layout file and enter `csv` as file extension.
+6. Your new export filter is now available in **File → Export**. Make sure to select it as file type in the export dialog.
+
+The `.begin.layout` and `.end.layout` files are optional. JabRef finds them automatically if they are in the same folder as the main layout file.
+
+Note that field commands must be written in lowercase, for example `\asset` and not `\Asset`.
+
 ## Creating the export filter
 
-To see examples of how export filters are made, look for the package containing the layout files for the standard export filters on our download page.
+To see examples of how export filters are made, have a look at the layout files of the standard export filters in the [JabRef repository](https://github.com/JabRef/jabref/tree/main/jablib/src/main/resources/resource/layout).
 
 Regarding tool support, there is the [Export-Filter Editor for Jabref](https://github.com/teertinker/Export-Filter-Editor) to quickly create export filters.
 
