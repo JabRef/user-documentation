@@ -4,10 +4,6 @@ description: Version-control your library with Git directly from JabRef.
 
 # Git Integration
 
-{% hint style="info" %}
-These Git features are currently only available in the [v6.0 beta](https://github.com/JabRef/jabref/releases/tag/v6.0-beta.1) and not in the current standard download at the [JabRef home page](https://www.jabref.org). To access them, download the v6.0 beta version of JabRef or build it from source.
-{% endhint %}
-
 JabRef can track your `.bib` library with [Git](https://git-scm.com/) directly from the application — you need no external Git client for the everyday commit/push/pull workflow. Open **File → Git**, which offers:
 
 * **Commit**
