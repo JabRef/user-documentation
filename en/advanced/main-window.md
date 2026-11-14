@@ -18,4 +18,4 @@ This is the main window from where you work with your databases. Below the menub
 
     ![Adjust width of columns](../.gitbook/assets/adjust-width-of-columns.png)
 * You can drag selected entries to another open library's tab to copy them. Hold `Shift` while dragging to move them instead.
-* You can copy and paste entries between open libraries using `Ctrl+C` and `Ctrl+V` (Windows/Linux).
+* You can copy and paste entries between open libraries using <kbd>ctrl</kbd>+<kbd>c</kbd> and <kbd>ctrl</kbd>+<kbd>V</kbd> (Windows/Linux), or <kbd>cmd</kbd>+<kbd>C</kbd> and <kbd>cmd</kbd>+<kbd>V</kbd> on macOS.
