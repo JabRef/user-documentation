@@ -10,6 +10,7 @@
   * [Searching externally using Online Services](collect/import-using-online-bibliographic-database.md)
   * [Add entry using PDFs](collect/findunlinkedfiles.md)
   * [Add PDFs to an entry](collect/add-pdfs-to-an-entry.md)
+  * [Multi-paper PDFs](collect/multi-paper-pdfs.md)
   * [Browser Extension](collect/jabref-browser-extension.md)
   * [Import](collect/import/README.md)
     * [Custom import filters](collect/import/customimports.md)
