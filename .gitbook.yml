@@ -10,6 +10,7 @@ redirects:
   en: ./README.md
   de: ./README.md
   advanced/saveactions: ./finding-sorting-and-cleaning-entries/saveactions.md
+  collaborative-work/gitintegration: ./collaborative-work/git-integration.md
   contributing/translatinggui: ./faqcontributing/how-to-translate-the-ui.md
   download: ./installation.md
   EntryEditor: ./advanced/entryeditor/README.md
