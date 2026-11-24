@@ -56,7 +56,14 @@ Now you have the possibility to restore and review your changes which would norm
 For shared remote libraries and more advanced history, we recommend to use [git as version control system](https://git-scm.com/book) — JabRef has [built-in Git integration](../collaborative-work/git-integration.md) for this.
 
 #### Where can I find the backup files?
+You can configure the backup settings in JabRef's preferences:
 
+1. Open the **General** preferences tab.
+2. Select **Create backup** to enable automatic backups. Uncheck it to disable backup creation.
+3. Specify your preferred backup directory in the text field, or use the **Browse** button to select a directory.
+4. When backup creation is disabled, the backup directory field is also disabled.
+
+By default, JabRef uses the application data directory for storing backup files. If you change the backup directory, make sure to save your preferences.
 * **The backup files can be found in the** [**user data dir**](https://github.com/harawata/appdirs#supported-directories)**.** They are named `<prefix>--<library name>--<date>--<time>.bib` (`.bak` in JabRef versions before 6.0), for example `4a070cf3--library.bib--2024-09-19--09.24.59.bib`.
 * **Unix/Linux:**\
   `/home/<username>/.local/share/org.jabref/jabref`
