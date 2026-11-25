@@ -123,6 +123,12 @@ Converts units to LaTeX formatting. This includes:
 * Replace hyphen with non-break hyphen
 * Replace space with a hard space
 
+### Protect terms
+
+Adds `{}` brackets around acronyms, month names, countries, and user-defined protected terms to preserve their case.
+
+- `In CDMA` ⇒ `In {CDMA}`
+
 ### Unprotect terms
 
 Remove protective braces from words.
@@ -177,6 +183,7 @@ The field formatters listed above can also be used as modifiers in [citation key
 | [Latex to Unicode](saveactions.md#latex-to-unicode) | `latex_to_unicode` |
 | [LaTeX to Unicode-aware LaTeX](saveactions.md#latex-to-unicode-aware-latex) | `latex_to_unicode_aware_latex` |
 | [Units to LaTeX](saveactions.md#units-to-latex) | `units_to_latex` |
+| [Protect terms](saveactions.md#protect-terms) | `protect_terms` |
 | [Unprotect terms](saveactions.md#unprotect-terms) | `unprotect_terms` |
 | [Capitalize](saveactions.md#capitalize) | `capitalize` |
 | [Lower case](saveactions.md#lower-case) | `lower_case` |
