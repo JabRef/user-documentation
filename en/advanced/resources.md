@@ -56,7 +56,7 @@ Using this tool you can easily create a custom export filter for JabRef to build
 
 ### Bibtex4word
 
-[Bibtex4Word](http://www.ee.ic.ac.uk/hp/staff/dmb/perl/index.html) is an add-in for Microsoft Word that allows the citation of references and the insertion of a bibliography into your document using your choice of formatting style. It is lightweight, transparent and does not mess up your documents.
+[Bibtex4Word](https://imperialcollegelondon.github.io/sap-bibtex4word/index.html) is an add-in for Microsoft Word that allows the citation of references and the insertion of a bibliography into your document using your choice of formatting style. It is lightweight, transparent and does not mess up your documents.
 
 ### Eratosthenes Reference Manager
 

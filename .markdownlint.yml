@@ -28,7 +28,7 @@ MD026:
 
 MD033:
   # we have <a> tags with ids
-  allowed_elements: ['a', 'div', 'figure', 'figcaption', 'img', 'kbd', 'mark', 'p', 'picture', 'source']
+  allowed_elements: ['a', 'div', 'figure', 'figcaption', 'img', 'kbd', 'mark', 'p', 'picture', 'source', 'details', 'summary']
 
 # we allow images without alt text
 MD045: false

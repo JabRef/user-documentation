@@ -109,6 +109,12 @@ Converts LaTeX to Unicode characters if possible.
 
 * `$\acute{\omega}$` ⇒ `ώ`
 
+### LaTeX to Unicode-aware LaTeX
+
+Converts LaTeX commands that encode a single character, such as `\textcopyright{}` or `\"{o}`, to that Unicode character, while keeping all other LaTeX markup (math, commands, escaped characters) untouched.
+
+* `M{\"o}nch, 50\%` ⇒ `Mönch, 50\%`
+
 ### Units to LaTeX
 
 Converts units to LaTeX formatting. This includes:
@@ -169,6 +175,7 @@ The field formatters listed above can also be used as modifiers in [citation key
 | [Shorten DOI](saveactions.md#shorten-doi) | `short_doi` |
 | [Unicode to LaTeX](saveactions.md#unicode-to-latex) | `unicode_to_latex` |
 | [Latex to Unicode](saveactions.md#latex-to-unicode) | `latex_to_unicode` |
+| [LaTeX to Unicode-aware LaTeX](saveactions.md#latex-to-unicode-aware-latex) | `latex_to_unicode_aware_latex` |
 | [Units to LaTeX](saveactions.md#units-to-latex) | `units_to_latex` |
 | [Unprotect terms](saveactions.md#unprotect-terms) | `unprotect_terms` |
 | [Capitalize](saveactions.md#capitalize) | `capitalize` |

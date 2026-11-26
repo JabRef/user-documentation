@@ -38,6 +38,12 @@ UTF-8 is highly recommended
 
 You can select if your library follows the [BibTeX or the biblatex format](../cite/bibtex-and-biblatex.md).
 
+#### Keyword separator
+
+The character that separates keywords in the `keywords` field of this library, for example `,` or `;`. It overrides the keyword separator set in the Preferences dialog.
+
+When a library does not declare a separator, JabRef uses the one its keyword fields already use, so opening a library does not rewrite its keywords. If the keywords contain no separator at all, the global preference applies. Clear the field to remove the library-specific setting.
+
 ### Override default file directories
 
 In your library, files (PDF, etc.) can be linked to an entry. The list of these files are stored in the _file_ field of the entry. The location of these files has to be specified.
@@ -50,6 +56,8 @@ The **User-specific file directory** allows each user to have its own file direc
 JabRef stores the name of the current system alongside the **User-specific file directory**. This assumes that each user of the library has a different system name. For example, when using the computer _laptop_, the entry in the bib file is @Comment{jabref-meta: fileDirectory-jabref-laptop:\somedir;}
 
 Relative directories can be specified. This means that the location of the files will be interpreted relative to the location of the bib file. Simply setting a directory to "." (without quotes) means that the files should reside in the same directory as the bib file.
+
+For more information, see [Directories for files](../finding-sorting-and-cleaning-entries/filelinks.md#directories-for-files).
 
 {% hint style="info" %}
 The legacy PDF/PS links (i.e. the pdf and ps fields, which were used in JabRef versions prior to 2.3), should in current versions be replaced by general file links. This can be done using **Quality → Cleanup entries...** and enabling _Upgrade external PDF/PS links to use the 'file' field_.​

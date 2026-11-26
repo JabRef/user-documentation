@@ -77,7 +77,7 @@ There are further possibilities to add entries to your library which are describ
 
 ## Enhancing the information
 
-After creating the basic information the addition of all other bibliographical details is often cumbersome and error-prone. To ease this task, JabRef allows for an automatic completion of the bibliographic information by looking up the data in public databases. To use this feature just click on the "Update with bibliographic information from the web" button in the editor:
+After creating the basic information the addition of all other bibliographical details is often cumbersome and error-prone. To ease this task, JabRef allows for an automatic completion of the bibliographic information by looking up the data in public catalogs. To use this feature just click on the "Update with bibliographic information from the web" button in the editor:
 
 ![Update information from web](.gitbook/assets/getting-started-entry-editor-update-from-web.png)
 
@@ -97,7 +97,7 @@ Usually, you also want to attach a reference to the full-text of a reference. Fo
 In order to use the automated feature, it is necessary to set-up a file directory first. To do so, please go to "Options" > "Preferences", go to "Linked files" section, and select an existing folder there as the "Main file directory":
 {% endhint %}
 
-To test the automatic download of full texts you can click on the "Get full-text" icon next to the file field, or choose "Lookup" -> "Search full text documents online" from the menu. As soon as a full-text is found, the file will be stored in the local file directory and linked to the entry:
+To test the automatic download of full texts you can click on the "Get full-text" icon next to the file field, or choose "Lookup" -> "Search full text documents online" from the menu, or "Get fulltext" from the entry's right-click menu. As soon as JabRef finds a full-text, it stores the file in the local file directory and links it to the entry:
 
 ![Finding a full-text document online](.gitbook/assets/getting-started-entry-editor-full-text.png)
 
@@ -105,7 +105,7 @@ To open the downloaded full text you can click on the "file" icon before the fil
 
 ## Finding more references in the web
 
-If you want to search for other references, it is also possible to directly trigger a search in many of the most common bibliographic databases. To start a search just use the "Web Search" feature of JabRef: First select one of the existing data sources, enter a search term and click on "search":
+If you want to search for other references, you can also trigger a search directly in many of the most common bibliographic catalogs. To start a search just use the "Web Search" feature of JabRef: First select one of the existing data sources, enter a search term and click on "search":
 
 The search results will be shown in a window where you can select all the search hits to be added to your library.
 

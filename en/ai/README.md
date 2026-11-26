@@ -24,6 +24,8 @@ In this window, you can see the following elements:
 * Chat history with your messages
 * Prompt for sending messages
 * A button for clearing the chat history (just in case)
+* A find bar (<kbd>Ctrl</kbd> + <kbd>F</kbd>) to search within the chat history
+* A right-click context menu on a message to copy it, delete it, or retry (regenerate the AI's answer, or re-send a question you asked)
 
 ## How does the AI functionality work?
 
@@ -47,6 +49,6 @@ JabRef uses external AI providers to do the actual work. You can choose between 
 [preferences.md](preferences.md)
 {% endcontent-ref %}
 
-{% content-ref url="local-llm.md" %}
-[local-llm.md](local-llm.md)
+{% content-ref url="private-llm-server.md" %}
+[private-llm-server.md](private-llm-server.md)
 {% endcontent-ref %}

@@ -58,9 +58,19 @@ The [ACM Portal](https://dl.acm.org) includes two catalogs ([Wikipedia](https://
 
 [ArXiv](https://arxiv.org) is a repository of scientific preprints in the fields of mathematics, physics, astronomy, computer science, quantitative biology, statistics, and quantitative finance ([Wikipedia](https://en.wikipedia.org/wiki/ArXiv)).
 
+### BASE (Bielefeld Academic Search Engine)
+
+[BASE](https://www.base-search.net) is one of the world's most voluminous search engines for academic open access web resources, operated by Bielefeld University Library ([Wikipedia](https://en.wikipedia.org/wiki/BASE_(search_engine))).
+
 ### Bibliotheksverbund Bayern (BVB)
 
 The [Bibliotheksverbund Bayern (BVB)](https://www.bib-bvb.de) provides bibliographic information from all public libraries in Bavaria, Germany. The format used is [MarcXML](https://www.loc.gov/marc/bibliographic/), [which has been modified](https://www.bib-bvb.de/documents/10792/9f51a033-5ca1-42e2-b2d3-a75e7f1512d4), which in turn is [based on other modifications](https://www.dnb.de/marc21).
+
+### BibSonomy
+
+[BibSonomy](https://www.bibsonomy.org) is a free social bookmarking and publication-sharing system, where users collect and share bibliographic entries ([Wikipedia](https://en.wikipedia.org/wiki/BibSonomy)).
+
+To search BibSonomy, you need a BibSonomy account and an API key. Log in to BibSonomy, open **Settings**, and copy your API key from the **API** tab. Then, in JabRef, go to **File → Preferences → Web search**, click the key icon next to BibSonomy, and enter your username and API key as `username:apikey`. JabRef can search BibSonomy and import results; it does not upload or sync entries.
 
 ### Biodiversity Heritage Library
 
@@ -93,6 +103,10 @@ To fetch entries from Unpaywall indirectly through Crossref, choose **Search →
 ### DBLP
 
 [DBLP](https://dblp.uni-trier.de/db/) is a computer science bibliography website listing more than 3.1 million journal articles, conference papers, and other publications on computer science ([Wikipedia](https://en.wikipedia.org/wiki/DBLP)).
+
+### DNB
+
+The [Deutsche Nationalbibliothek (DNB)](https://www.dnb.de), the German National Library, provides bibliographic data for German-language publications via its SRU interface. JabRef queries it using MARC XML records, the same format used by the Bibliotheksverbund Bayern (BVB) catalog above.
 
 ### DOAB
 

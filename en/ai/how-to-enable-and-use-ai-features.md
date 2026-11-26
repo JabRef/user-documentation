@@ -24,7 +24,7 @@ This in turn requires you to [set a main file directory](../finding-sorting-and-
 
 ## 3. Connect to an external AI provider
 
-There is only one crucial step left for using AI features. You need to setup a connection to an external AI provider. With _external_, we mean a provider outside of JabRef, regardless, if that entails connecting to an [AI app on your local device](local-llm.md) or connecting to a remote online service.
+One crucial step remains before you can use AI features. You need to setup a connection to an external AI provider. With _external_, we mean a provider outside of JabRef, regardless, if that entails connecting to an [AI app on your local device](private-llm-server.md) or connecting to a remote online service.
 
 While the former may or may not require an API key, online services most definitely will require you to enter one, therefore here is some guidance:
 

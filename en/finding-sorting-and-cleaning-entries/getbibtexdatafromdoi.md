@@ -1,4 +1,4 @@
-# Complete information using online databases
+# Complete information using online catalogs
 
 JabRef can fetch automatically additional information about your entries. It can even get the publication file!​
 
