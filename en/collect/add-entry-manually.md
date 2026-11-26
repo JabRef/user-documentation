@@ -1,14 +1,14 @@
 # Add entry manually
 
-To add a new entry, select **Library → Add entry using...**, press `CTRL + N​` or click on the dedicated icon of the toolbar.
+To add a new entry, select **Library → Add entry using...**  `CTRL + N​` or click on the **plus** icon of the toolbar.
 
 The "Choose entry type" dialog window is displayed. By default, 5 common types of entries are displayed:
 
-![Window for selecting default entry types. Note: the actual content of the "others" menu depends on the database mode (BibTeX or biblatex).](../.gitbook/assets/jabref-5.3-selectentrytype.png)
+![Window for selecting default entry types. Note: the actual content of the "others" menu depends on the database mode (BibTeX or biblatex).](img.png)
 
-For other types of entries, click on `Others.` That expands the window and displays the other entry types available:
+For other types of entries, click on `Other types` That expands the window and displays the other entry types available:
 
-![Window with all available entry types. Note: the actual content of the "others" menu depends on the database mode (BibTeX or biblatex).](../.gitbook/assets/jabref-5.3-selectentrytype-expanded.png)
+![Window with all available entry types. Note: the actual content of the "others" menu depends on the database mode (BibTeX or biblatex).](img_1.png)
 
 Finally, the [entry editor](../advanced/entryeditor/) opens and let you fill in the various fields.
 
